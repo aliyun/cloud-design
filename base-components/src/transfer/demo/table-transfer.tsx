@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Transfer, Table } from '@alife/alicloud-components'
+import { Transfer, Table } from '@alicloudfe/components'
 
 // 生成 transfer 数据源
 const generateTransferDataSource = (i, j) => {

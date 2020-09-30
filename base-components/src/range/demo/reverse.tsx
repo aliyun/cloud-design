@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Range } from '@alife/alicloud-components'
+import { Range } from '@alicloudfe/components'
 
 const style = {
   marginBottom: '15px'

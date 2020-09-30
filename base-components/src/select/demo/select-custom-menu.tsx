@@ -12,7 +12,7 @@ import {
   Icon,
   Button,
   Input
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 const Option = Select.Option
 

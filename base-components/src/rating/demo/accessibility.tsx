@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Rating } from '@alife/alicloud-components'
+import { Rating } from '@alicloudfe/components'
 
 const starMap = {
   1: 'Bad',

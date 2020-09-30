@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { ConfigProvider, Button } from '@alife/alicloud-components'
+import { ConfigProvider, Button } from '@alicloudfe/components'
 
 const { ErrorBoundary, config } = ConfigProvider
 

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Typography } from '@alife/alicloud-components'
+import { Typography } from '@alicloudfe/components'
 
 const { H1, H2, Paragraph, Text } = Typography
 

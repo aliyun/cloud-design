@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tag } from '@alife/alicloud-components'
+import { Tag } from '@alicloudfe/components'
 
 const { Group: TagGroup, Selectable: SelectableTag } = Tag
 const dataSource = [

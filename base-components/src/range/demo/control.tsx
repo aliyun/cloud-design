@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Range, NumberPicker, Grid, Icon } from '@alife/alicloud-components'
+import { Range, NumberPicker, Grid, Icon } from '@alicloudfe/components'
 
 const { Row, Col } = Grid
 

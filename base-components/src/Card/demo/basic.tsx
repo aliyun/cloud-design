@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Card, Button } from '@alife/alicloud-components'
+import { Card, Button } from '@alicloudfe/components'
 
 const commonProps = {
   subTitle: 'SubTitle',

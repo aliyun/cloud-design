@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Transfer } from '@alife/alicloud-components'
+import { Transfer } from '@alicloudfe/components'
 
 const dataSource = (() => {
   const dataSource = []

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Field, DatePicker, Switch } from '@alife/alicloud-components'
+import { Field, DatePicker, Switch } from '@alicloudfe/components'
 import moment from 'moment'
 
 class App extends React.Component {

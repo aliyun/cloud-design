@@ -16,7 +16,7 @@ import {
   DatePicker,
   TimePicker,
   Field
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 const CheckboxGroup = Checkbox.Group
 const RadioGroup = Radio.Group

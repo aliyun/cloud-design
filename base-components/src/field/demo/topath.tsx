@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Input, Button, Field } from '@alife/alicloud-components'
+import { Input, Button, Field } from '@alicloudfe/components'
 
 class App extends React.Component {
   field = new Field(this, {

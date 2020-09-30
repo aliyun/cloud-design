@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Message, Button } from '@alife/alicloud-components'
+import { Message, Button } from '@alicloudfe/components'
 
 const showSuccess = () => Message.success('success')
 const showWarning = () => Message.warning('warning')

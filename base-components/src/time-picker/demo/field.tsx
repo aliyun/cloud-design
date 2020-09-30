@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { TimePicker, Field, Button } from '@alife/alicloud-components'
+import { TimePicker, Field, Button } from '@alicloudfe/components'
 import moment from 'moment'
 
 class Demo extends React.Component {

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Timeline } from '@alife/alicloud-components'
+import { Timeline } from '@alicloudfe/components'
 
 const TimelineItem = Timeline.Item
 

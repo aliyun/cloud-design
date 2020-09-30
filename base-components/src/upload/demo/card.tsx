@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Upload } from '@alife/alicloud-components'
+import { Upload } from '@alicloudfe/components'
 
 function onPreview(info) {
   console.log('onPreview callback : ', info)

@@ -13,7 +13,7 @@ import {
   TimePicker,
   NumberPicker,
   Select
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 const FormItem = Form.Item
 

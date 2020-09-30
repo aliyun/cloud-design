@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Affix, Button } from '@alife/alicloud-components'
+import { Affix, Button } from '@alicloudfe/components'
 
 class Demo extends React.Component {
   _containerRefHandler(ref) {

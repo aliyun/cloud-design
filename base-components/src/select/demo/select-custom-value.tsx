@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Select } from '@alife/alicloud-components'
+import { Select } from '@alicloudfe/components'
 
 const dataSource = [
   { value: 'Lilith', age: 22, gender: 'F' },

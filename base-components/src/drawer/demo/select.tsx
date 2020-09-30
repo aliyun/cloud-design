@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Radio, Drawer, Select } from '@alife/alicloud-components'
+import { Radio, Drawer, Select } from '@alicloudfe/components'
 
 const Option = Select.Option
 

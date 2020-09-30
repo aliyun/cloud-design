@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Icon } from '@alife/alicloud-components'
+import { Icon } from '@alicloudfe/components'
 
 const sizes = ['xxs', 'xs', 'small', 'medium', 'large', 'xl', 'xxl', 'xxxl']
 

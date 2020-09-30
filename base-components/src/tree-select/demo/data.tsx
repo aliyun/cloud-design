@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { TreeSelect } from '@alife/alicloud-components'
+import { TreeSelect } from '@alicloudfe/components'
 
 const treeData = [
   {

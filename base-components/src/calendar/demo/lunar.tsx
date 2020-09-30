@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Calendar } from '@alife/alicloud-components'
+import { Calendar } from '@alicloudfe/components'
 import moment from 'moment'
 import solarLunar from 'solarlunar'
 

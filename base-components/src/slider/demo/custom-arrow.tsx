@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Slider, Icon } from '@alife/alicloud-components'
+import { Slider, Icon } from '@alicloudfe/components'
 
 const slides = [
   {

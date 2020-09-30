@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Loading, Form, Input, Button } from '@alife/alicloud-components'
+import { Loading, Form, Input, Button } from '@alicloudfe/components'
 
 const FormItem = Form.Item
 

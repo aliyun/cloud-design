@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { CascaderSelect } from '@alife/alicloud-components'
+import { CascaderSelect } from '@alicloudfe/components'
 import 'whatwg-fetch'
 
 class Demo extends React.Component {

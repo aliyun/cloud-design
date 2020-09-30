@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Step } from '@alife/alicloud-components'
+import { Step } from '@alicloudfe/components'
 
 const steps = [
   ['Step 1', 'Open the refrigerator door'],

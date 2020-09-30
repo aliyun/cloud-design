@@ -12,7 +12,7 @@ import {
   Button,
   Checkbox,
   Field
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 import { combineReducers, createStore } from 'redux'
 import { Provider, connect } from 'react-redux'
 

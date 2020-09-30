@@ -12,7 +12,7 @@ import {
   Checkbox,
   Switch,
   Radio
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 const FormItem = Form.Item
 

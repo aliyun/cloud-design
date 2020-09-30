@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Switch } from '@alife/alicloud-components'
+import { Switch } from '@alicloudfe/components'
 
 class App extends React.Component {
   constructor(props) {

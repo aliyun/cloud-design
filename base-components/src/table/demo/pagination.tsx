@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Pagination } from '@alife/alicloud-components'
+import { Table, Pagination } from '@alicloudfe/components'
 
 const dataSource = (j) => {
     const result = []

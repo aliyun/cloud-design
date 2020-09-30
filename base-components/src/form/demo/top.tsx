@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Form, Input, Select } from '@alife/alicloud-components'
+import { Form, Input, Select } from '@alicloudfe/components'
 
 const FormItem = Form.Item
 const Option = Select.Option

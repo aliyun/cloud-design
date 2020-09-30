@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Icon } from '@alife/alicloud-components'
+import { Icon } from '@alicloudfe/components'
 
 export default function DemoComponent() {
   return (

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { TimePicker } from '@alife/alicloud-components'
+import { TimePicker } from '@alicloudfe/components'
 
 const disabledHours = [1, 2, 3, 4, 5]
 const disabledMinutes = [10, 20, 30, 40, 50]

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tab, Button } from '@alife/alicloud-components'
+import { Tab, Button } from '@alicloudfe/components'
 
 function handleChange(key) {
   console.log(key)

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Upload, Icon, Button } from '@alife/alicloud-components'
+import { Upload, Icon, Button } from '@alicloudfe/components'
 
 function handleClick(e) {
   e.stopPropagation()

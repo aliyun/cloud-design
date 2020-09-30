@@ -17,7 +17,7 @@ import {
   ResponsiveGrid,
   ConfigProvider,
   Box
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 const FormItem = Form.Item
 const { Row, Col } = Grid

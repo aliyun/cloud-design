@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tab, Button, Icon } from '@alife/alicloud-components'
+import { Tab, Button, Icon } from '@alicloudfe/components'
 
 const panes = [
   { tab: 'Mail', key: 1, closeable: false },

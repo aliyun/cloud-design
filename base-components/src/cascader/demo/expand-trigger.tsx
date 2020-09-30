@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Radio, Cascader } from '@alife/alicloud-components'
+import { Radio, Cascader } from '@alicloudfe/components'
 import 'whatwg-fetch'
 
 const RadioGroup = Radio.Group

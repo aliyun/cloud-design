@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Badge, Button, Icon } from '@alife/alicloud-components'
+import { Badge, Button, Icon } from '@alicloudfe/components'
 
 const ButtonGroup = Button.Group
 

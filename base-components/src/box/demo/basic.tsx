@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Box } from '@alife/alicloud-components'
+import { Box } from '@alicloudfe/components'
 
 class BoxDemo extends React.Component {
   render() {

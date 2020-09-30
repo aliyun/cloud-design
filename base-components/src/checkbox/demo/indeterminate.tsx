@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Checkbox, Button } from '@alife/alicloud-components'
+import { Checkbox, Button } from '@alicloudfe/components'
 
 class IndeterminateApp extends React.Component {
   constructor(props) {

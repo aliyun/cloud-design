@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Radio } from '@alife/alicloud-components'
+import { Radio } from '@alicloudfe/components'
 
 const Shape = {
   NORMAL: 'normal',

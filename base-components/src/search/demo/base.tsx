@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Search } from '@alife/alicloud-components'
+import { Search } from '@alicloudfe/components'
 
 function onSearch(v) {
   console.log(v)

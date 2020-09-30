@@ -17,7 +17,7 @@ import {
   Upload,
   Grid,
   Field
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 const RadioGroup = Radio.Group
 const { Row, Col } = Grid

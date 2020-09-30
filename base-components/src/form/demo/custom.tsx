@@ -14,7 +14,7 @@ import {
   Button,
   Icon,
   Balloon
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 const FormItem = Form.Item
 const { Row, Col } = Grid

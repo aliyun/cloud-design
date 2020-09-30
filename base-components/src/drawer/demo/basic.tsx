@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Drawer } from '@alife/alicloud-components'
+import { Button, Drawer } from '@alicloudfe/components'
 
 class Demo extends React.Component {
   state = {

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Pagination } from '@alife/alicloud-components'
+import { Pagination } from '@alicloudfe/components'
 
 class Demo extends React.Component {
   constructor(props) {

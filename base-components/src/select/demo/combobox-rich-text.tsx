@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Select, Icon } from '@alife/alicloud-components'
+import { Select, Icon } from '@alicloudfe/components'
 import jsonp from 'jsonp'
 
 const { AutoComplete } = Select

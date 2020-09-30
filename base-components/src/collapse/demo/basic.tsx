@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Collapse, Radio } from '@alife/alicloud-components'
+import { Collapse, Radio } from '@alicloudfe/components'
 
 const Panel = Collapse.Panel
 const RadioGroup = Radio.Group

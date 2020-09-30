@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Menu, Box, Typography } from '@alife/alicloud-components'
+import { Menu, Box, Typography } from '@alicloudfe/components'
 
 const { SubMenu, Item, PopupItem, Divider } = Menu
 const popupProps = {

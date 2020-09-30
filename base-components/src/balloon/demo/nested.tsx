@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Balloon, DatePicker, Select } from '@alife/alicloud-components'
+import { Button, Balloon, DatePicker, Select } from '@alicloudfe/components'
 import moment from 'moment'
 
 const showSelect = <Button className="btrigger">Show Select</Button>

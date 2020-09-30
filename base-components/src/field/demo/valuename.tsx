@@ -12,7 +12,7 @@ import {
   Radio,
   Switch,
   Field
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 class App extends React.Component {
   field = new Field(this)

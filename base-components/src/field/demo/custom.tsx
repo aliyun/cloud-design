@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Field } from '@alife/alicloud-components'
+import { Button, Field } from '@alicloudfe/components'
 
 class Custom extends React.Component {
   constructor(props) {

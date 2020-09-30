@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { ResponsiveGrid, Radio } from '@alife/alicloud-components'
+import { ResponsiveGrid, Radio } from '@alicloudfe/components'
 
 const { Cell } = ResponsiveGrid
 

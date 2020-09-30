@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Button } from '@alife/alicloud-components'
+import { Table, Button } from '@alicloudfe/components'
 
 const columns = new Array(4).fill({
   dataIndex: 'data',

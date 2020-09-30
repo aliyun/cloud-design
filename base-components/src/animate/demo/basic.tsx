@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Animate } from '@alife/alicloud-components'
+import { Animate } from '@alicloudfe/components'
 
 class Demo extends React.Component {
   constructor(props) {

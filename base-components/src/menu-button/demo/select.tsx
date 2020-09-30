@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { MenuButton } from '@alife/alicloud-components'
+import { MenuButton } from '@alicloudfe/components'
 
 const { Item } = MenuButton
 const menu = ['Undo', 'Redo', 'Cut', 'Copy', 'Paste'].map((item) => (

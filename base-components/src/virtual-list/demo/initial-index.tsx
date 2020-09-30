@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { VirtualList } from '@alife/alicloud-components'
+import { VirtualList } from '@alicloudfe/components'
 
 const dataSource = []
 

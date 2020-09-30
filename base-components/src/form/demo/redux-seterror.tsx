@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Form, Input, Button, Field } from '@alife/alicloud-components'
+import { Form, Input, Button, Field } from '@alicloudfe/components'
 import { combineReducers, createStore } from 'redux'
 import { Provider, connect } from 'react-redux'
 

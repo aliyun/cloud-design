@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tab, Select } from '@alife/alicloud-components'
+import { Tab, Select } from '@alicloudfe/components'
 
 class Demo extends React.Component {
   state = {

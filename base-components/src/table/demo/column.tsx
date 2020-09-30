@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Button, Dialog, Checkbox } from '@alife/alicloud-components'
+import { Table, Button, Dialog, Checkbox } from '@alicloudfe/components'
 
 const { Group } = Checkbox
 const dataSource = () => {

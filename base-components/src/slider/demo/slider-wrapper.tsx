@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Slider, Select } from '@alife/alicloud-components'
+import { Slider, Select } from '@alicloudfe/components'
 
 const { Option } = Select
 

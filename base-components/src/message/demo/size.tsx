@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Message, Radio } from '@alife/alicloud-components'
+import { Message, Radio } from '@alicloudfe/components'
 
 const types = ['success', 'warning', 'error', 'notice', 'help', 'loading']
 const list = [

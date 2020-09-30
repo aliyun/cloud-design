@@ -19,7 +19,7 @@ import {
   NumberPicker,
   Select,
   Upload
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 const FormItem = Form.Item
 const formItemLayout = {

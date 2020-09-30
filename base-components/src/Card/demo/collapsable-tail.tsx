@@ -3,7 +3,7 @@
  */
 
 import React, { useState } from 'react'
-import { Card } from '@alife/alicloud-components'
+import { Card } from '@alicloudfe/components'
 
 interface IProps {}
 

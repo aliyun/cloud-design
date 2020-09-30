@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Checkbox, Tree } from '@alife/alicloud-components'
+import { Checkbox, Tree } from '@alicloudfe/components'
 
 const data = [
   {

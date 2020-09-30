@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table } from '@alife/alicloud-components'
+import { Table } from '@alicloudfe/components'
 import { DragDropContext, DragSource, DropTarget } from 'react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
 import classnames from 'classnames'

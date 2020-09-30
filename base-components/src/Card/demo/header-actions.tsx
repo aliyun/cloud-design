@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Card, Icon } from '@alife/alicloud-components'
+import { Card, Icon } from '@alicloudfe/components'
 
 const commonProps = {
   extra: (

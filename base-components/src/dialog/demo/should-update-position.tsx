@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Switch, Button, Dialog } from '@alife/alicloud-components'
+import { Switch, Button, Dialog } from '@alicloudfe/components'
 
 const shortContent = (
   <p>Start your business here by searching a popular product</p>

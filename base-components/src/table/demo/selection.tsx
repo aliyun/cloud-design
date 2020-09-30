@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Icon, MenuButton } from '@alife/alicloud-components'
+import { Table, Icon, MenuButton } from '@alicloudfe/components'
 
 const { Item } = MenuButton
 

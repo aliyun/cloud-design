@@ -21,7 +21,7 @@ import {
   Select,
   Upload,
   Table
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 import enUS from '@alifd/next/lib/locale/en-us'
 import zhCN from '@alifd/next/lib/locale/zh-cn'

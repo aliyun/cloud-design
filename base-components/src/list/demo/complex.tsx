@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { List, Avatar, Box, Button, Divider } from '@alife/alicloud-components'
+import { List, Avatar, Box, Button, Divider } from '@alicloudfe/components'
 
 const actions = (
   <Box

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Notification, Button } from '@alife/alicloud-components'
+import { Notification, Button } from '@alicloudfe/components'
 
 const openNotification = (placement) => {
   Notification.config({ placement })

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Collapse } from '@alife/alicloud-components'
+import { Collapse } from '@alicloudfe/components'
 
 const list = [
   {

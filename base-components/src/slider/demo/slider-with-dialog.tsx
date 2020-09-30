@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Slider, Dialog, Button } from '@alife/alicloud-components'
+import { Slider, Dialog, Button } from '@alicloudfe/components'
 import PropTypes from 'prop-types'
 
 const slides = [

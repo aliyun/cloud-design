@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Balloon } from '@alife/alicloud-components'
+import { Button, Balloon } from '@alicloudfe/components'
 
 const defaultTrigger = (
   <Button className="btrigger" style={{ margin: '5px' }}>

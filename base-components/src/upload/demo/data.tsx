@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Upload, Button } from '@alife/alicloud-components'
+import { Upload, Button } from '@alicloudfe/components'
 
 function beforeUpload(info) {
   console.log('beforeUpload callback : ', info)

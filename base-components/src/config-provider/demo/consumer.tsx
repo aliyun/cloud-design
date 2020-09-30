@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { ConfigProvider } from '@alife/alicloud-components'
+import { ConfigProvider } from '@alicloudfe/components'
 import PropTypes from 'prop-types'
 
 const localeSettings = {

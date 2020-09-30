@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tree } from '@alife/alicloud-components'
+import { Tree } from '@alicloudfe/components'
 
 function createDataSource(level = 3, count = 5) {
   const dataSource = []

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { ConfigProvider, Button, Select } from '@alife/alicloud-components'
+import { ConfigProvider, Button, Select } from '@alicloudfe/components'
 import PropTypes from 'prop-types'
 
 const { config, getContextProps } = ConfigProvider

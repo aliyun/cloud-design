@@ -17,7 +17,7 @@ import {
   TimePicker,
   Timeline,
   Select
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 const { SubMenu, Item, Group, Divider } = Menu
 const RangePicker = DatePicker.RangePicker

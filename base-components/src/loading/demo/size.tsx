@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Loading } from '@alife/alicloud-components'
+import { Loading } from '@alicloudfe/components'
 
 export default function DemoComponent() {
   return (

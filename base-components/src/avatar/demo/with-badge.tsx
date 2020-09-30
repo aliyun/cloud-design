@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Avatar, Badge } from '@alife/alicloud-components'
+import { Avatar, Badge } from '@alicloudfe/components'
 
 export default function DemoComponent() {
   return (

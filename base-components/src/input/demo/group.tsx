@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Input, Select, Button } from '@alife/alicloud-components'
+import { Input, Select, Button } from '@alicloudfe/components'
 
 const select = (
   <Select aria-label="please select">

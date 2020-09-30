@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Input, Table, Field } from '@alife/alicloud-components'
+import { Button, Input, Table, Field } from '@alicloudfe/components'
 
 class Demo extends React.Component {
   constructor(props) {

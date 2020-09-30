@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Progress, Button, Icon } from '@alife/alicloud-components'
+import { Progress, Button, Icon } from '@alicloudfe/components'
 
 class CustomProgress extends React.Component {
   constructor(props) {

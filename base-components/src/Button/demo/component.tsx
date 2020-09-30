@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button } from '@alife/alicloud-components'
+import { Button } from '@alicloudfe/components'
 
 const props = {
   component: 'a',

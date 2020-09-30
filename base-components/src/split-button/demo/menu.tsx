@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { SplitButton } from '@alife/alicloud-components'
+import { SplitButton } from '@alicloudfe/components'
 
 const { Item, Group, Divider } = SplitButton
 

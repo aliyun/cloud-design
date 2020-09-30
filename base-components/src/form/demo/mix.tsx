@@ -22,7 +22,7 @@ import {
   Switch,
   Upload,
   Grid
-} from '@alife/alicloud-components'
+} from '@alicloudfe/components'
 
 const FormItem = Form.Item
 const Option = Select.Option

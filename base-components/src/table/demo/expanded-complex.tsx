@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Button } from '@alife/alicloud-components'
+import { Table, Button } from '@alicloudfe/components'
 /*eslint-disable react/prop-types, react/no-multi-comp*/
 class ExpandedApp extends React.Component {
   constructor(props) {

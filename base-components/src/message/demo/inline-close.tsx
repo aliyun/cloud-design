@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Message } from '@alife/alicloud-components'
+import { Message } from '@alicloudfe/components'
 
 const onClose = () => console.log('onClose triggered!')
 const afterClose = () => console.log('afterClose triggered!')

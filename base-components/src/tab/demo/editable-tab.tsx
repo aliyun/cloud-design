@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tab, Input } from '@alife/alicloud-components'
+import { Tab, Input } from '@alicloudfe/components'
 
 class EditableTabPane extends React.Component {
   constructor(props) {

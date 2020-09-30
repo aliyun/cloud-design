@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { NumberPicker } from '@alife/alicloud-components'
+import { NumberPicker } from '@alicloudfe/components'
 
 function onChange(value) {
   console.log('changed', value)

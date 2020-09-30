@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { DatePicker, Field, Button } from '@alife/alicloud-components'
+import { DatePicker, Field, Button } from '@alicloudfe/components'
 
 const { RangePicker, YearPicker, MonthPicker } = DatePicker
 

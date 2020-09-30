@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Form, Input, Checkbox } from '@alife/alicloud-components'
+import { Form, Input, Checkbox } from '@alicloudfe/components'
 
 const FormItem = Form.Item
 

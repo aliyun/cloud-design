@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Slider } from '@alife/alicloud-components'
+import { Slider } from '@alicloudfe/components'
 import PropTypes from 'prop-types'
 
 const pages = [1, 2, 3, 4]

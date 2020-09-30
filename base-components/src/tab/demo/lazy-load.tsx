@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tab } from '@alife/alicloud-components'
+import { Tab } from '@alicloudfe/components'
 
 const tabs = [
   { tab: 'Home', key: 0, content: 'This is home page' },

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Message, Icon } from '@alife/alicloud-components'
+import { Message, Icon } from '@alicloudfe/components'
 
 import CopyToClipboard from 'react-copy-to-clipboard'
 

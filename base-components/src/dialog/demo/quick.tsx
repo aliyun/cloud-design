@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Dialog, ConfigProvider } from '@alife/alicloud-components'
+import { Button, Dialog, ConfigProvider } from '@alicloudfe/components'
 
 const popupAlert = () => {
   Dialog.alert({

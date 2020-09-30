@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Upload, Button, Dialog } from '@alife/alicloud-components'
+import { Upload, Button, Dialog } from '@alicloudfe/components'
 import Cropper from 'react-cropper'
 import 'cropperjs/dist/cropper.css'
 

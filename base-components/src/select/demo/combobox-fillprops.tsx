@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Select, Radio } from '@alife/alicloud-components'
+import { Select, Radio } from '@alicloudfe/components'
 
 const { AutoComplete } = Select
 const dataSource = [

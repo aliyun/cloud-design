@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tree, Button } from '@alife/alicloud-components'
+import { Tree, Button } from '@alicloudfe/components'
 
 const TreeNode = Tree.Node
 

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Upload, Input } from '@alife/alicloud-components'
+import { Upload, Input } from '@alicloudfe/components'
 
 class App extends React.Component {
   onPaste = (e) => {

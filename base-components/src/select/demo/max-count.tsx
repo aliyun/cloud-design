@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Select, Balloon } from '@alife/alicloud-components'
+import { Select, Balloon } from '@alicloudfe/components'
 
 const { Tooltip } = Balloon
 

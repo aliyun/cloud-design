@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tab, Grid } from '@alife/alicloud-components'
+import { Tab, Grid } from '@alicloudfe/components'
 
 const { Row, Col } = Grid
 

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table } from '@alife/alicloud-components'
+import { Table } from '@alicloudfe/components'
 import PropTypes from 'prop-types'
 /* eslint-disable react/no-multi-comp,react/prop-types */
 const { Header, Cell } = Table

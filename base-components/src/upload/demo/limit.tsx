@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Upload, Button } from '@alife/alicloud-components'
+import { Upload, Button } from '@alicloudfe/components'
 
 const onError = (file, fileList) => {
   console.log('Exceed limit', file, fileList)

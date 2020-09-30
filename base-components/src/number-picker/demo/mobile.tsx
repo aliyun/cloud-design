@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { NumberPicker, Radio } from '@alife/alicloud-components'
+import { NumberPicker, Radio } from '@alicloudfe/components'
 
 class Demo extends React.Component {
   state = {

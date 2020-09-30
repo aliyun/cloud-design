@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Button, Icon } from '@alife/alicloud-components'
+import { Table, Button, Icon } from '@alicloudfe/components'
 
 const dataSource = () => {
     const result = []

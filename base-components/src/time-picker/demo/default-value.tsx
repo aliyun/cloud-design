@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { TimePicker } from '@alife/alicloud-components'
+import { TimePicker } from '@alicloudfe/components'
 import moment from 'moment'
 
 const defaultVal = moment('12:00:00', 'HH:mm:ss', true)

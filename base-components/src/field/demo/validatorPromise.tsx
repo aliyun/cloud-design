@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 import ReactDOM from 'react-dom'
 import React from 'react'
-import { Input, Button, Checkbox, Field } from '@alife/alicloud-components'
+import { Input, Button, Checkbox, Field } from '@alicloudfe/components'
 
 const CheckboxGroup = Checkbox.Group
 

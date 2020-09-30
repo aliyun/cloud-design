@@ -3,7 +3,7 @@
  */
 
 import React from 'react'
-import { Skeleton } from '@alife/alicloud-components'
+import { Skeleton } from '@alicloudfe/components'
 
 interface IProps {}
 

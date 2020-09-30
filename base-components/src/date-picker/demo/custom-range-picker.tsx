@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { DatePicker } from '@alife/alicloud-components'
+import { DatePicker } from '@alicloudfe/components'
 
 class CustomRangePicker extends React.Component {
   constructor(props, context) {

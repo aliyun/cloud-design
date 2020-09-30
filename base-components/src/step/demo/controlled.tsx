@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Step, Button, Select, Icon } from '@alife/alicloud-components'
+import { Step, Button, Select, Icon } from '@alicloudfe/components'
 
 const StepItem = Step.Item,
   ButtonGroup = Button.Group

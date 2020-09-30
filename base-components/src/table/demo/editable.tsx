@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Input } from '@alife/alicloud-components'
+import { Table, Input } from '@alicloudfe/components'
 
 const result = [
   {

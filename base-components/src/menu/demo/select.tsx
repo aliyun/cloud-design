@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Switch, Menu } from '@alife/alicloud-components'
+import { Switch, Menu } from '@alicloudfe/components'
 
 const { SubMenu, Item } = Menu
 

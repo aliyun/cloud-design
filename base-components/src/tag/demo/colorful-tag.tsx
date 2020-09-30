@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tag, Icon } from '@alife/alicloud-components'
+import { Tag, Icon } from '@alicloudfe/components'
 
 const { Group: TagGroup } = Tag
 

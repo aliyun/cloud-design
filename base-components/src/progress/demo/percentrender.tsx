@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Progress, Icon } from '@alife/alicloud-components'
+import { Progress, Icon } from '@alicloudfe/components'
 
 const textRender = (percent) => {
   if (percent === 100) {

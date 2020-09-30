@@ -13,7 +13,7 @@ module.exports = {
   jsx: 'react',
   plugins: [vpr, mdx(), pages({ pagesDir, findPages, useHashRouter: true })],
   alias: {
-    '@alife/alicloud-components': '/src'
+    '@alicloudfe/components': '/src'
   },
   optimizeDeps: {
     include: [

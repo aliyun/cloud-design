@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Notification, Button, NumberPicker } from '@alife/alicloud-components'
+import { Notification, Button, NumberPicker } from '@alicloudfe/components'
 
 let duration = 4500
 const openNotification = () => {

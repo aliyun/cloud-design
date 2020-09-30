@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Nav } from '@alife/alicloud-components'
+import { Nav } from '@alicloudfe/components'
 
 const { Item, Group } = Nav
 

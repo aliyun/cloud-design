@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Select } from '@alife/alicloud-components'
+import { Select } from '@alicloudfe/components'
 import classNames from 'classnames'
 /* eslint-disable react/prop-types, react/no-multi-comp */
 

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Input, Icon } from '@alife/alicloud-components'
+import { Input, Icon } from '@alicloudfe/components'
 
 class App extends React.Component {
   state = {

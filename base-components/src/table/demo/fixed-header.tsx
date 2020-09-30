@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Button, Select } from '@alife/alicloud-components'
+import { Table, Button, Select } from '@alicloudfe/components'
 
 const Option = Select.Option
 const dataSource = (length) => {

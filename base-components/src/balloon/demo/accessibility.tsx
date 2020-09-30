@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Balloon, Input } from '@alife/alicloud-components'
+import { Button, Balloon, Input } from '@alicloudfe/components'
 import moment from 'moment'
 
 const { Tooltip } = Balloon

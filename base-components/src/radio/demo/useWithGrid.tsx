@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Radio, Grid } from '@alife/alicloud-components'
+import { Radio, Grid } from '@alicloudfe/components'
 
 const { Row, Col } = Grid
 const RadioGroup = Radio.Group

@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Upload, Button, Field, Form } from '@alife/alicloud-components'
+import { Upload, Button, Field, Form } from '@alicloudfe/components'
 
 const FormItem = Form.Item
 

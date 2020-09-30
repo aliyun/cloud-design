@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Icon, Switch } from '@alife/alicloud-components'
+import { Button, Icon, Switch } from '@alicloudfe/components'
 
 class Test extends React.Component {
   constructor(props) {

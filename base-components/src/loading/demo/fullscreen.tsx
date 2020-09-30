@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Loading, Button } from '@alife/alicloud-components'
+import { Loading, Button } from '@alicloudfe/components'
 
 class App extends React.Component {
   constructor(props, context) {

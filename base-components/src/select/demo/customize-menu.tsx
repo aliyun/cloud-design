@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Select, Icon } from '@alife/alicloud-components'
+import { Select, Icon } from '@alicloudfe/components'
 
 const dataSource = [
   { value: '#FF0000', label: 'red', title: 'red' },

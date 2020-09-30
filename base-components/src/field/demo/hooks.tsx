@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 import ReactDOM from 'react-dom'
 import React from 'react'
-import { Input, Button, Field } from '@alife/alicloud-components'
+import { Input, Button, Field } from '@alicloudfe/components'
 
 function App() {
   const field = Field.useField()

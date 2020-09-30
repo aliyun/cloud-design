@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Form, Input, Radio, Field, Button } from '@alife/alicloud-components'
+import { Form, Input, Radio, Field, Button } from '@alicloudfe/components'
 
 const FormItem = Form.Item
 const RadioGroup = Radio.Group
