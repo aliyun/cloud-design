@@ -1,0 +1,34 @@
+$menu-prefix: '.' + $css-prefix + 'menu';
+
+#{$menu-prefix} {
+  padding: var(--menu-padding);
+  &#{&}#{&}#{&}#{&} #{&}-symbol-icon-selected {
+    color: var(--menu-icon-selected-color);
+    width: var(--menu-icon-selected-size, 16px);
+    font-size: var(--menu-icon-selected-size, 16px);
+    &::before {
+      width: var(--menu-icon-selected-size, 16px);
+      font-size: var(--menu-icon-selected-size, 16px);
+    }
+  }
+  &[aria-multiselectable] {
+    // 可选择的menu，增加padding以便容纳勾选图标
+    #{$menu-prefix}-item {
+      // 对于checkbox 和 radio 选择模式的menu，不需要增加padding容纳勾选图标
+      &:not([role='menuitemcheckbox']):not([role='menuitemradio']) {
+        --menu-padding-horizontal: var(--menu-padding-horizontal-selectable);
+      }
+    }
+  }
+  &-item-inner {
+    .#{$css-prefix}checkbox {
+      margin-right: var(--menu-checkbox-mr, 8px);
+    }
+  }
+}
+
+.#{$css-prefix}selected {
+  &#{&}#{&}#{&}#{&}#{$menu-prefix}-item {
+    background-color: var(--menu-background-selected);
+  }
+}

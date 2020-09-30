@@ -1,0 +1,21 @@
+// 存放公共的 sass 变量
+$css-prefix: 'next-' !default;
+$css-var-scope: ':root';
+
+@mixin alicloud-scrollbar {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    opacity: 0.5;
+    background: #eaedf0;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    opacity: 0.5;
+    background: #abb6c0;
+    border-radius: 3px;
+  }
+}

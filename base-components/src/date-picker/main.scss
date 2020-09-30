@@ -1,0 +1,26 @@
+@mixin active-shadow {
+  transition: box-shadow var(--active-transition);
+  &:hover,
+  &[aria-expanded='true'] {
+    box-shadow: var(--active-shadow);
+  }
+}
+
+@mixin picker-style-generator($name) {
+  $picker-prefix: '.' + #{$css-prefix}#{$name} + '-picker';
+  #{$picker-prefix} {
+    #{$picker-prefix}-trigger {
+      @include active-shadow;
+      #{$picker-prefix}-trigger-input {
+        // 关掉input本身的hover shadow
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@include picker-style-generator(date);
+@include picker-style-generator(range);
+@include picker-style-generator(month);
+@include picker-style-generator(year);
+@include picker-style-generator(week);

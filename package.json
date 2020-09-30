@@ -1,0 +1,39 @@
+{
+  "name": "components",
+  "private": "true",
+  "workspaces": [
+    "base-components",
+    "extend-components/*",
+    "."
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "boot": "yarn && lerna run prepare",
+    "clean": "lerna clean -y && git clean -qfdx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:alibabacloud-components/components.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ali/lerna": "^1.0.1",
+    "@alicloud/console-toolkit-preset-wind-component": "^1.0.6",
+    "@types/react": "^16.9.46",
+    "@types/react-router-dom": "^5.1.5",
+    "moment": "^2.27.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1",
+    "vite-pages-theme-basic": "^0.8.8",
+    "vite-plugin-mdx": "^0.3.7",
+    "vite-plugin-react": "^3.0.2"
+  },
+  "resolutions": {
+    "vite/@rollup/plugin-commonjs": "npm:@csr632/rollup-plugin-commonjs@^14.0.0"
+  }
+}

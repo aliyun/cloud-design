@@ -1,0 +1,56 @@
+{
+  "name": "@alife/alicloud-components-console-menu",
+  "version": "0.1.0",
+  "description": "React component for Alibaba Cloud.",
+  "main": "lib/index.js",
+  "typings": "cc-dev-out/index.d.ts",
+  "module": "es/index.js",
+  "publishConfig": {
+    "registry": "https://registry.npm.alibaba-inc.com"
+  },
+  "keywords": [
+    "wind",
+    "wind-rc-console-menu",
+    "react",
+    "react component"
+  ],
+  "author": {
+    "name": "csr632",
+    "email": "632882184@qq.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "scripts": {
+    "dev": "vite serve -c vite.demos.ts",
+    "babel": "breezr build --engine babel",
+    "babel:esm": "breezr build --engine babel --es-module",
+    "types": "tsc -p src --emitDeclarationOnly",
+    "build": "breezr build --engine webpack",
+    "clean": "rm -rf dist lib es",
+    "prepare": "npm run clean && concurrently \"npm:babel\" \"npm:babel:esm\" \"npm:types\" \"npm:build\" && echo \"Prepare package successfully!\""
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "classnames": "^2.2.6",
+    "warning": "^4.0.3",
+    "@pika/react": "^16.13.1",
+    "@pika/react-dom": "^16.13.1"
+  },
+  "peerDependencies": {
+    "@alife/alicloud-components": "*",
+    "prop-types": "^15.7.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "@alife/alicloud-components": "^0.2.0",
+    "@alicloud/console-toolkit-cli": "^1.0.8",
+    "@alife/alicloud-components-fake-browser": "^1.0.0",
+    "concurrently": "^5.3.0",
+    "vite": "^1.0.0-rc.4",
+    "typescript": "^3.9.7"
+  }
+}

@@ -1,0 +1,74 @@
+/**
+ * @title 日期时间选择
+ * @description 如果需要同时选择时间，可以通过 `showTime` 属性开启，`showTime` 支持传入 TimePickerPanel 的属性，例如 `format`, `defaultValue` 等。
+ */
+
+import * as React from 'react'
+import styled from 'styled-components'
+
+import { DatePicker } from '@alife/alicloud-components'
+import moment from 'moment'
+
+const { RangePicker } = DatePicker
+const onChange = (value) => console.log(value)
+const onOk = (value) =>
+  console.log('onOK:', value.format('YYYY-MM-DD HH:mm:ss'))
+const onRangeOk = (value) =>
+  console.log(
+    'onOk: [%s, %s]',
+    value[0].format('YYYY-MM-DD HH:mm:ss'),
+    value[1].format('YYYY-MM-DD HH:mm:ss')
+  )
+
+const defaultTimeValue = moment('09:00:00', 'HH:mm:ss', true)
+const defaultTimeValues = [
+  moment('09:00:00', 'HH:mm:ss', true),
+  moment('23:59:59', 'HH:mm:ss', true)
+]
+
+export default function DemoComponent() {
+  return (
+    <Style>
+      <div>
+        <p>DatePicker With Time</p>
+        <DatePicker showTime onChange={onChange} onOk={onOk} />
+        <p>DatePicker with Time, reset 00:00:00 for every select</p>
+        <DatePicker showTime onChange={onChange} onOk={onOk} resetTime />
+        <p>DatePicker with Time, with default time value</p>
+        <DatePicker
+          showTime={{ defaultValue: defaultTimeValue, secondStep: 10 }}
+          onChange={onChange}
+          onOk={onOk}
+        />
+        <p>RangePicker with Time</p>
+        <RangePicker showTime onChange={onChange} onOk={onRangeOk} />
+        <p>RangePicker with Time, reset 00:00:00 for every select</p>
+        <RangePicker showTime resetTime onChange={onChange} onOk={onRangeOk} />
+        <p>RangePicker with Time, with default time value, hide seconds</p>
+        <RangePicker
+          showTime={{
+            defaultValue: defaultTimeValue,
+            format: 'HH:mm',
+            minuteStep: 15
+          }}
+          onChange={onChange}
+          onOk={onRangeOk}
+        />
+        <p>
+          RangePicker with Time, with default start & end time value, hide
+          seconds
+        </p>
+        <RangePicker
+          showTime={{
+            defaultValue: defaultTimeValues,
+            format: 'HH:mm',
+            minuteStep: 15
+          }}
+          onChange={onChange}
+          onOk={onRangeOk}
+        />
+      </div>
+    </Style>
+  )
+}
+const Style = styled.div``

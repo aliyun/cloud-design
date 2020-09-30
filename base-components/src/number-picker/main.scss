@@ -1,0 +1,64 @@
+$input-group: '.' + $css-prefix + 'input-group';
+$number-picker: '.' + $css-prefix + 'number-picker';
+
+#{$number-picker} {
+  &-handler {
+    .#{$css-prefix}btn {
+      border: none;
+    }
+  }
+  &-inline {
+    #{$input-group} {
+      border: 1px solid #c0c6cc;
+      border-radius: 2px;
+      padding: 4px;
+      #{$input-group}-addon {
+        .#{$css-prefix}btn {
+          border: none;
+          border-radius: 2px;
+        }
+      }
+      .#{$css-prefix}input {
+        border: none;
+      }
+    }
+  }
+}
+
+#{$number-picker}.#{$css-prefix}disabled {
+  background-color: var(--input-disabled-bg-color, #f7f9fa);
+  #{$input-group} {
+    box-shadow: none;
+  }
+  #{$input-group}-addon {
+    .#{$css-prefix}btn {
+      background-color: var(--input-disabled-bg-color, #f7f9fa);
+    }
+  }
+}
+
+@mixin number-picker-inline-size($size) {
+  #{$number-picker}-inline.#{$css-prefix}#{$size} {
+    #{$input-group} {
+      #{$input-group}-addon {
+        .#{$css-prefix}btn {
+          // 让整体高度等于 --number-picker-height-#{$size}
+          height: calc(var(--number-picker-height-#{$size}) - 10px);
+          width: calc(var(--number-picker-height-#{$size}) - 10px);
+        }
+      }
+      .#{$css-prefix}input {
+        height: calc(var(--number-picker-height-#{$size}) - 10px);
+        line-height: calc(var(--number-picker-height-#{$size}) - 10px);
+        input {
+          height: calc(var(--number-picker-height-#{$size}) - 10px);
+          line-height: calc(var(--number-picker-height-#{$size}) - 10px);
+        }
+      }
+    }
+  }
+}
+
+@include number-picker-inline-size(medium);
+@include number-picker-inline-size(small);
+@include number-picker-inline-size(large);

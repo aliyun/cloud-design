@@ -1,0 +1,53 @@
+$input-prefix: '.' + $css-prefix + 'input';
+
+#{$input-prefix} {
+  &:hover,
+  &.#{$css-prefix}focus {
+    box-shadow: var(--active-shadow);
+  }
+  &.#{$css-prefix}disabled {
+    box-shadow: none;
+  }
+
+  &-group {
+    transition: box-shadow var(--active-transition);
+    &:hover {
+      box-shadow: var(--active-shadow);
+    }
+    #{$input-prefix} {
+      box-shadow: none;
+    }
+  }
+
+  $clear: #{$input-prefix}-clear-icon;
+  $hint: #{$input-prefix}-hint;
+
+  #{$clear}#{$clear}#{$clear},
+  #{$hint}#{$hint}#{$hint} {
+    color: #333333;
+    border-radius: 50%;
+    width: var(--input-hint-icon-outer-size, 16px);
+    height: var(--input-hint-icon-outer-size, 16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #{$clear}#{$clear}#{$clear} {
+    &:hover {
+      background-color: #f7f9fa;
+    }
+    &::before {
+      width: var(--input-hint-icon-inner-size, 12px);
+      font-size: var(--input-hint-icon-inner-size, 12px);
+      line-height: var(--input-hint-icon-inner-size, 12px);
+      transform: scale(0.59);
+    }
+  }
+  #{$hint}#{$hint}#{$hint} {
+    &::before {
+      width: var(--input-hint-icon-inner-size, 12px);
+      font-size: var(--input-hint-icon-inner-size, 12px);
+      line-height: var(--input-hint-icon-inner-size, 12px);
+    }
+  }
+}

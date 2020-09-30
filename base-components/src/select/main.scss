@@ -1,0 +1,25 @@
+$select-prefix: '.' + $css-prefix + 'select';
+$select-menu: '.' + $css-prefix + 'select-menu';
+$single-select-menu: '.' + $css-prefix + 'select-single-menu';
+$multi-select-menu: '.' + $css-prefix + 'select-multiple-menu';
+$icon-select: '.' + $css-prefix + 'icon-select';
+$selected-cls: '.' + $css-prefix + 'selected';
+
+#{$select-prefix} {
+  &.#{$css-prefix}active {
+    #{$select-prefix}-inner {
+      box-shadow: var(--active-shadow);
+      border-color: var(--input-focus-border-color, #0064c8);
+    }
+  }
+}
+
+#{$select-menu}#{$single-select-menu},
+#{$select-menu}#{$multi-select-menu} {
+  #{$icon-select} {
+    margin-left: var(--select-menu-select-icon-ml, -20px);
+  }
+  #{$select-menu}-item#{$selected-cls} {
+    font-weight: var(--select-selected-font-weight, 400);
+  }
+}

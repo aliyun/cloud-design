@@ -1,0 +1,85 @@
+{
+  "name": "@alicloudfe/components",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "sideEffects": [
+    "dist/*",
+    "**/*.scss"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist lib es",
+    "dev": "vite serve -c ./vite.config.ts",
+    "debug": "npx --node-arg=--inspect vite serve -c ./vite.config.ts",
+    "debug-build": "npx --node-arg=--inspect vite build -c ./vite.config.ts",
+    "demos-build": "rm -rf docs-dist && vite build -c ./vite.config.ts && serve -s docs-dist",
+    "demos-deploy": "rm -rf docs-dist && vite build -c ./vite.config.ts --base \"/alibabacloud-components/components\" && gh-pages -d docs-dist -t",
+    "babel": "tsc -p src --outDir ./lib --module commonjs",
+    "babel:esm": "tsc -p src --outDir ./es --module es2015",
+    "build": "breezr build --engine webpack",
+    "tsc": "tsc -p src --emitDeclarationOnly",
+    "cpy-comp": "node ./scripts/copy-comp.js",
+    "cpy-scss": "cpy \"**/*.scss\" \"../lib\" --cwd=src --parents",
+    "build-css": "node ./scripts/build-css.js",
+    "prepare": "npm run clean && concurrently \"npm:babel\" \"npm:cpy-scss\" \"npm:build-css\" \"npm:babel:esm\" \"npm:build\" \"npm:tsc\" && echo \"Prepare package successfully!\"",
+    "sync-demo": "node ./scripts/sync-demo.js",
+    "gene-def": "node ./scripts/gene-css-def.js",
+    "update-theme": "node ./scripts/update-theme.js"
+  },
+  "dependencies": {
+    "@alifd/next": "1.21.5",
+    "@pika/react": "^16.13.1",
+    "@pika/react-dom": "^16.13.1",
+    "classnames": "^2.2.6",
+    "hoist-non-react-statics": "^3.3.2",
+    "react-loading-skeleton": "^2.1.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@alicloud/console-toolkit-plugin-sass": "^1.0.1",
+    "@alicloud/console-toolkit-preset-official": "^1.0.11",
+    "@alicloud/console-toolkit-cli": "^1.0.8",
+    "chalk": "^4.1.0",
+    "concurrently": "^5.3.0",
+    "cpy-cli": "^3.1.1",
+    "cssnano": "^4.1.10",
+    "download": "^8.0.0",
+    "fs-extra": "^9.0.1",
+    "gh-pages": "^3.1.0",
+    "glob": "^7.1.6",
+    "jsonp": "^0.2.1",
+    "postcss-cli": "^7.1.1",
+    "prettier": "^2.0.5",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-cropper": "^1.3.0",
+    "react-dnd": "^7.0.0",
+    "react-dnd-html5-backend": "^7.0.0",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "sass": "^1.26.10",
+    "sass-extract": "^2.1.0",
+    "serve": "^11.3.2",
+    "solarlunar": "^2.0.7",
+    "typescript": "^3.9.7",
+    "vite": "npm:@alife/vite-fixed",
+    "vite-pages-theme-basic": "^0.9.1",
+    "vite-plugin-mdx": "^0.4.0",
+    "vite-plugin-react": "^3.0.2",
+    "vite-plugin-react-pages": "^0.8.2",
+    "whatwg-fetch": "^3.3.1"
+  },
+  "peerDependencies": {
+    "moment": "^2.27.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "demoDependencies": {
+    "@alife/alicloud-components": "~1.0.1"
+  }
+}

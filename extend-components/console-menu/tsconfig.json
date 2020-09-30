@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@alife/alicloud-components-console-menu": ["./src"],
+      "@alife/alicloud-components-console-menu/*": ["./src/*"]
+    }
+  }
+}

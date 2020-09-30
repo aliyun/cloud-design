@@ -1,0 +1,77 @@
+$search-prefix: '.' + $css-prefix + 'search';
+$input-prefix: '.' + $css-prefix + 'input';
+$next-normal: '.' + $css-prefix + 'normal';
+
+#{$search-prefix} {
+  transition: box-shadow var(--active-transition);
+  &#{&}#{&} {
+    &:hover,
+    &.focusing,
+    &.visible {
+      box-shadow: var(--active-shadow);
+    }
+    &.disabled {
+      box-shadow: none;
+    }
+  }
+  // search 内部的input取消shadow，否则会叠加
+  &#{&}#{&} #{$input-prefix}:hover {
+    box-shadow: none;
+  }
+  &#{&}#{&} #{$input-prefix}-group:hover {
+    box-shadow: none;
+  }
+  &#{&}#{&} .#{$css-prefix}btn {
+    &:hover {
+      box-shadow: none;
+      // background-color: var(--search-btn-hover-bg);
+    }
+  }
+  &-simple {
+    // 将search按钮放在左边
+    #{$input-prefix} {
+      display: flex;
+      input {
+        padding-left: 0;
+      }
+      #{$input-prefix}-inner {
+        width: auto;
+        order: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .#{$css-prefix}search-icon {
+          margin-right: 0;
+          padding: 0 12px;
+        }
+      }
+    }
+  }
+  &#{$next-normal} {
+    &.disabled {
+      #{$input-prefix}-group {
+        border-color: var(--search-simple-normal-color, #dedede);
+      }
+    }
+    .#{$css-prefix}after {
+      .#{$css-prefix}btn-normal {
+        padding: 0 8px;
+        .#{$css-prefix}icon-search {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &#{$next-normal}.custom-search-text {
+    .#{$css-prefix}after {
+      .#{$css-prefix}btn-normal {
+        padding: 0 16px;
+      }
+    }
+  }
+  #{$input-prefix}.#{$css-prefix}disabled {
+    * {
+      cursor: not-allowed;
+    }
+  }
+}

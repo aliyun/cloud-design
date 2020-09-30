@@ -1,0 +1,10 @@
+{
+  "exclude": ["**/demo/**/*"],
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@alife/alicloud-components": ["./src"]
+    }
+  }
+}

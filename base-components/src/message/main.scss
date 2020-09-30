@@ -1,0 +1,23 @@
+$message-prefix: '.' + $css-prefix + 'message';
+$toast-prefix: '.' + $css-prefix + 'toast';
+
+#{$message-prefix} {
+  &-title {
+    font-weight: var(--message-title-weight, 600);
+  }
+  &#{$message-prefix}-success#{$toast-prefix} {
+    border-left: 4px solid #00a700;
+  }
+  &#{$message-prefix}-warning#{$toast-prefix} {
+    border-left: 4px solid #fac800;
+  }
+  &#{$message-prefix}-error#{$toast-prefix} {
+    border-left: 4px solid #c80000;
+  }
+  &#{$message-prefix}-notice#{$toast-prefix} {
+    border-left: 4px solid #0064c8;
+  }
+  &#{$message-prefix}-help#{$toast-prefix} {
+    border-left: 4px solid #888888;
+  }
+}

@@ -1,0 +1,19 @@
+$pagination-prefix: '.' + $css-prefix + 'pagination';
+$pagination-item: $pagination-prefix + '-item';
+
+#{$pagination-prefix} {
+  #{$pagination-item} {
+    &:not(.#{$css-prefix}current):hover {
+      background-color: var(--pagination-item-hover-bg, var(--color-white));
+    }
+    &#{$pagination-item}#{$pagination-item} {
+      &.#{$css-prefix}prev,
+      &.#{$css-prefix}next {
+        &[disabled]:hover {
+          --pagination-item-hover-bg: initial;
+        }
+        border-color: var(--pagination-item-border-color, transparent);
+      }
+    }
+  }
+}

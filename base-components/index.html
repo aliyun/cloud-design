@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-xconsole">
+  <script type="module">
+    if (import.meta.env.DEV) {
+      // 禁止vite使用CSSStyleSheet
+      window.CSSStyleSheet = null
+    }
+  </script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>📘Vite Pages</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/@pages-infra/main.js"></script>
+  </body>
+</html>

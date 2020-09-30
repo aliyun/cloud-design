@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@alife/alicloud-components-fake-browser": ["./src"],
+      "@alife/alicloud-components-fake-browser/": ["./src/"]
+    }
+  }
+}

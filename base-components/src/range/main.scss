@@ -1,0 +1,14 @@
+.#{$css-prefix}range {
+  &-scale-item {
+    &#{&}#{&}#{&} {
+      top: var(--range-scale-item-position-top, 0px);
+      width: var(--range-scale-item-width, 1px);
+    }
+  }
+  // &-track {
+  //   &#{&} {
+  //     width: calc(100% + 12px);
+  //     left: -6px;
+  //   }
+  // }
+}
