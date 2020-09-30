@@ -53,7 +53,7 @@ npm run gene-def
 
 ### 发布
 ```js
-tnpm publish // 会自动执行 npm run prepublishOnly
+npm publish
 ```
 
 ### 同步预览站点
