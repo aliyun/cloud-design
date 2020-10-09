@@ -24,6 +24,7 @@ export { default as Loading, Skeleton } from './loading';
 export { default as Menu } from './menu';
 export { default as MenuButton } from './menu-button';
 export { default as Message } from './message';
+export { default as Modal } from './modal';
 export { default as Nav } from './nav';
 export { default as NumberPicker } from './number-picker';
 export { default as Overlay } from './overlay';

@@ -1,0 +1,17 @@
+$modal-prefix: '.' + $css-prefix + 'modal';
+$modal-header-height: 60px;
+
+body#{$modal-prefix}-open {
+  overflow: hidden;
+}
+
+#{$modal-prefix} {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1001;
+  background: #f0f0f0;
+}
