@@ -45,10 +45,10 @@ demo 放在 `src/[component]/demo` 文件夹里面，支持热更新
   npm run babel:esm
   ```
 
-### 生成 css variable 主题变量
+### 更新主题包
 
 ```sh
-npm run gene-def
+npm run update-theme
 ```
 
 ### 发布

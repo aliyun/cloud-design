@@ -4,6 +4,9 @@ const fs = require('fs-extra')
 const cwd = process.cwd()
 const log = console.log
 const themes = require('./theme-data')
+const chalk = require('chalk');
+
+log(chalk.green('generate css variables...'));
 
 themes.forEach((theme) => {
   const { themeName } = theme

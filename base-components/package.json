@@ -30,7 +30,7 @@
     "prepare": "npm run clean && concurrently \"npm:babel\" \"npm:cpy-scss\" \"npm:build-css\" \"npm:babel:esm\" \"npm:build\" \"npm:tsc\" && echo \"Prepare package successfully!\"",
     "sync-demo": "node ./scripts/sync-demo.js",
     "gene-def": "node ./scripts/gene-css-def.js",
-    "update-theme": "node ./scripts/update-theme.js"
+    "update-theme": "node ./scripts/update-theme.js && npm run gene-def"
   },
   "dependencies": {
     "@alifd/next": "1.21.5",
