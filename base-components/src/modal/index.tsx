@@ -81,7 +81,10 @@ export interface IModalProps {
   canCloseByEsc?: boolean
 }
 
-class Modal extends React.Component<IModalProps, {visible: boolean, isEditing: boolean}> {
+class Modal extends React.Component<
+  IModalProps,
+  { visible: boolean; isEditing: boolean }
+> {
   static defaultProps = {
     prefix: 'next-',
     sideDrawerWidth: 400,
@@ -89,140 +92,151 @@ class Modal extends React.Component<IModalProps, {visible: boolean, isEditing: b
     onClose: () => {},
     onSideDrawerVisibleChange: () => {},
     onEditTitleChange: () => {},
-    canCloseByEsc: true,
+    canCloseByEsc: true
   }
 
-  container: HTMLDivElement | null;
+  container: HTMLDivElement | null
 
-  _keydownEvents: any;
+  _keydownEvents: any
 
   constructor(props: IModalProps) {
-    super(props);
+    super(props)
     this.state = {
-      visible: 'visible' in props ? props.visible : (props.defaultVisible || false),
-      isEditing: false,
-    };
-    this.container = document.createElement('div');
+      visible:
+        'visible' in props ? props.visible : props.defaultVisible || false,
+      isEditing: false
+    }
+    this.container = document.createElement('div')
   }
 
   componentDidMount() {
-    document.body.appendChild(this.container);
+    document.body.appendChild(this.container)
     if (this.state.visible) {
-      document.body.classList.add('next-modal-open');
+      document.body.classList.add('next-modal-open')
     }
-    this.addDocumentEvents();
+    this.addDocumentEvents()
   }
 
   addDocumentEvents = () => {
     if (this.props.canCloseByEsc) {
-      this._keydownEvents = events.on(document, 'keydown', this.handleDocumentKeyDown);
+      this._keydownEvents = events.on(
+        document,
+        'keydown',
+        this.handleDocumentKeyDown
+      )
     }
   }
 
   handleDocumentKeyDown = (e: React.KeyboardEvent) => {
     if (this.state.visible && e.keyCode === KEYCODE.ESC) {
       this.setState({
-        visible: false,
-      });
+        visible: false
+      })
     }
   }
 
   removeDocumentEvents = () => {
     if (this._keydownEvents) {
-      this._keydownEvents.off();
-      this._keydownEvents = null;
+      this._keydownEvents.off()
+      this._keydownEvents = null
     }
   }
 
   UNSAFE_componentWillReceiveProps(nextProps: IModalProps) {
     if (nextProps.visible !== this.props.visible) {
       this.setState({
-        visible: nextProps.visible,
-      });
+        visible: nextProps.visible
+      })
     }
   }
 
   componentDidUpdate() {
     if (this.state.visible === false) {
-      document.body.classList.remove('next-modal-open');
+      document.body.classList.remove('next-modal-open')
     }
   }
 
   componentWillUnmount() {
-    document.body.removeChild(this.container);
-    document.body.classList.remove('next-modal-open');
-    this.container = null;
-    this.removeDocumentEvents();
+    document.body.removeChild(this.container)
+    document.body.classList.remove('next-modal-open')
+    this.container = null
+    this.removeDocumentEvents()
   }
 
   onSideDrawerVisibleChange = (checked: boolean) => {
-    this.props.onSideDrawerVisibleChange(checked);
+    this.props.onSideDrawerVisibleChange(checked)
   }
 
   onEditTitleChange = (value: string) => {
-    this.props.onEditTitleChange(value);
+    this.props.onEditTitleChange(value)
   }
 
   onEnterEditing = () => {
     this.setState({
-      isEditing: true,
-    });
+      isEditing: true
+    })
   }
 
   onLeaveEditing = () => {
     this.setState({
-      isEditing: false,
-    });
+      isEditing: false
+    })
   }
 
   onClose = () => {
-    const { onClose } = this.props;
+    const { onClose } = this.props
     if (!('visible' in this.props)) {
       this.setState({
-        visible: false,
-      });
+        visible: false
+      })
     }
-    onClose();
+    onClose()
   }
 
   renderTitle = () => {
-    const { prefix, title, titleEditable, titleEditTooltip, titleInputWidth } = this.props;
-    const { isEditing } = this.state;
-    const editTitle = isEditing ?
-      (<Input
+    const {
+      prefix,
+      title,
+      titleEditable,
+      titleEditTooltip,
+      titleInputWidth
+    } = this.props
+    const { isEditing } = this.state
+    const editTitle = isEditing ? (
+      <Input
         autoFocus
         value={title}
         onChange={this.onEditTitleChange}
         onBlur={this.onLeaveEditing}
         onPressEnter={this.onLeaveEditing}
         style={{ width: titleInputWidth }}
-      />)
-      :
-      (
-        <span>
-          <span className="edit-title">{title}</span>
-          <Tooltip
-            trigger={
-              <Button
-                className={`${prefix}modal-edit-icon`}
-                type="secondary"
-                onClick={this.onEnterEditing}
-              >
-                <Icon type="pencil" />
-              </Button>}
-            align="r"
-          >
-            {titleEditTooltip}
-          </Tooltip>
-        </span>
-      );
+      />
+    ) : (
+      <span>
+        <span className="edit-title">{title}</span>
+        <Tooltip
+          trigger={
+            <Button
+              className={`${prefix}modal-edit-icon`}
+              type="secondary"
+              onClick={this.onEnterEditing}
+              size="small"
+              text
+            >
+              <Icon type="pencil" />
+            </Button>
+          }
+          align="r"
+        >
+          {titleEditTooltip}
+        </Tooltip>
+      </span>
+    )
     return (
       <div className={`${prefix}modal-title`}>
-        {
-          titleEditable ? editTitle : title
-        }
+        {titleEditable ? editTitle : title}
       </div>
-    );
+    )
   }
 
   renderHeader = () => {
@@ -232,86 +246,95 @@ class Modal extends React.Component<IModalProps, {visible: boolean, isEditing: b
       operations,
       sideDrawer,
       sideDrawerLabel,
-      sideDrawerVisible,
-    } = this.props;
-    const title = this.renderTitle();
+      sideDrawerVisible
+    } = this.props
+    const title = this.renderTitle()
     return (
       <div className={`${prefix}modal-header`}>
         <div className="left-part">
-          { title }
-          <div className={`${prefix}modal-description`}>
-            { description }
-          </div>
+          {title}
+          <div className={`${prefix}modal-description`}>{description}</div>
         </div>
         <div className="right-part">
           <div className={`${prefix}modal-operations`}>{operations}</div>
-          {
-            sideDrawer ?
-              <div className={`${prefix}modal-side-drawer-switch`}>
-                <span className={`${prefix}modal-side-drawer-switch-label`}>{sideDrawerLabel}</span>
-                <Switch size="small" checked={sideDrawerVisible} onChange={this.onSideDrawerVisibleChange} />
-              </div> : null
-          }
-          <Button className={`${prefix}modal-close`} onClick={this.onClose}>
+          {sideDrawer ? (
+            <div className={`${prefix}modal-side-drawer-switch`}>
+              <span className={`${prefix}modal-side-drawer-switch-label`}>
+                {sideDrawerLabel}
+              </span>
+              <Switch
+                size="small"
+                checked={sideDrawerVisible}
+                onChange={this.onSideDrawerVisibleChange}
+              />
+            </div>
+          ) : null}
+          <Button
+            className={`${prefix}modal-close`}
+            onClick={this.onClose}
+            size="small"
+            text
+          >
             <Icon type="remove" />
           </Button>
         </div>
       </div>
-    );
+    )
   }
 
   renderBody = () => {
-    const { prefix, sideDrawer, sideDrawerVisible, sideDrawerWidth, children } = this.props;
+    const {
+      prefix,
+      sideDrawer,
+      sideDrawerVisible,
+      sideDrawerWidth,
+      children
+    } = this.props
     return (
       <div className={`${prefix}modal-body`}>
         <div className={`${prefix}modal-children`}>{children}</div>
-        {
-          sideDrawer ?
-            <div
-              className={cls({
-                [`${prefix}modal-side-drawer`]: true,
-                [`${prefix}modal-side-drawer-visible`]: sideDrawerVisible,
-              })}
-              style={{
-                width: sideDrawerVisible ? sideDrawerWidth : 0,
-              }}
-            >
-              {sideDrawer}
-            </div> : null
-        }
+        {sideDrawer ? (
+          <div
+            className={cls({
+              [`${prefix}modal-side-drawer`]: true,
+              [`${prefix}modal-side-drawer-visible`]: sideDrawerVisible
+            })}
+            style={{
+              width: sideDrawerVisible ? sideDrawerWidth : 0
+            }}
+          >
+            {sideDrawer}
+          </div>
+        ) : null}
       </div>
-    );
+    )
   }
 
   renderModal = () => {
-    const { prefix, className, style } = this.props;
-    const header = this.renderHeader();
-    const body = this.renderBody();
+    const { prefix, className, style } = this.props
+    const header = this.renderHeader()
+    const body = this.renderBody()
     return (
       <div
         className={cls({
           [`${prefix}modal`]: true,
-          [className]: !!className,
+          [className]: !!className
         })}
         style={style}
       >
-        { header }
-        { body }
+        {header}
+        {body}
       </div>
-    );
+    )
   }
 
   render() {
-    const { visible } = this.state;
+    const { visible } = this.state
     if (visible) {
-      return ReactDOM.createPortal(
-        this.renderModal(),
-        this.container
-      );
+      return ReactDOM.createPortal(this.renderModal(), this.container)
     }
-    return null;
+    return null
   }
 }
 
-export default ConfigProvider.config(Modal);
-
+export default ConfigProvider.config(Modal)
