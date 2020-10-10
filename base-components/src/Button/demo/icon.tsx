@@ -13,7 +13,11 @@ export default function DemoComponent() {
     <Style>
       <div>
         <Button>
-          <Icon type="atm" /> ATM
+          <Icon type="atm"/>
+        </Button>{' '}
+        &nbsp;&nbsp;
+        <Button type="primary">
+          <Icon type="home"/>
         </Button>{' '}
         &nbsp;&nbsp;
         <Button text>
