@@ -190,7 +190,6 @@ class Modal extends React.Component<IModalProps, {visible: boolean, isEditing: b
     const { isEditing } = this.state;
     const editTitle = isEditing ?
       (<Input
-        size="small"
         autoFocus
         value={title}
         onChange={this.onEditTitleChange}

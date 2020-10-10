@@ -1,6 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import { Button, Modal, Icon } from '@alicloudfe/components'
+
 const Demo = () => {
   const [visible, onVisibleChange] = React.useState(false)
   const onClose = () => {
@@ -9,15 +10,22 @@ const Demo = () => {
   const onOpen = () => {
     onVisibleChange(true)
   }
+  const [sideDrawerVisible, onSideDrawerVisibleChange] = React.useState(true)
+  const [title, onChangeTitle] = React.useState('标题')
   return (
     <Style>
       <div>
         <Button onClick={onOpen}>打开Modal</Button>
         <Modal
-          title="标题"
-          description="描述区域"
+          title={title}
+          titleEditable
+          onEditTitleChange={onChangeTitle}
           visible={visible}
           onClose={onClose}
+          sideDrawerLabel="侧栏"
+          sideDrawer={<div className="custom-content" />}
+          sideDrawerVisible={sideDrawerVisible}
+          onSideDrawerVisibleChange={onSideDrawerVisibleChange}
           operations={
             <>
               <Button type="secondary">
