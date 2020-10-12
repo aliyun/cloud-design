@@ -3,8 +3,9 @@ $number-picker: '.' + $css-prefix + 'number-picker';
 
 #{$number-picker} {
   &-handler {
-    .#{$css-prefix}btn {
+    .#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn {
       border: none;
+      min-width: unset;
     }
   }
   &-inline {
@@ -16,6 +17,7 @@ $number-picker: '.' + $css-prefix + 'number-picker';
         .#{$css-prefix}btn {
           border: none;
           border-radius: 2px;
+          min-width: unset;
         }
       }
       .#{$css-prefix}input {
@@ -45,6 +47,7 @@ $number-picker: '.' + $css-prefix + 'number-picker';
           // 让整体高度等于 --number-picker-height-#{$size}
           height: calc(var(--number-picker-height-#{$size}) - 10px);
           width: calc(var(--number-picker-height-#{$size}) - 10px);
+          min-width: unset;
         }
       }
       .#{$css-prefix}input {

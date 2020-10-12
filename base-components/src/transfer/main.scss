@@ -10,7 +10,9 @@
       padding: 0;
       width: var(--transfer-operation-width, 24px);
       height: var(--transfer-operation-height, 24px);
-      min-width: unset;
+      &.#{$css-prefix}btn {
+        min-width: unset;
+      }
       &[disabled],
       &[disabled]:hover {
         // 禁用态的样式应该是primary button的样式
