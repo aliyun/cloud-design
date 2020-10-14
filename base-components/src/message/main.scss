@@ -3,7 +3,13 @@ $toast-prefix: '.' + $css-prefix + 'toast';
 
 #{$message-prefix} {
   &-title {
-    font-weight: var(--message-title-weight, 600);
+    font-weight: var(--message-title-weight, 500);
+  }
+  #{$message-prefix}-close .#{$css-prefix}icon-close:before {
+    width: var(--message-close-icon-size, 12px);
+    height: var(--message-close-icon-size, 12px);
+    font-size: var(--message-close-icon-size, 12px);
+    line-height: var(--message-close-icon-size, 12px);
   }
   &#{$message-prefix}-success#{$toast-prefix} {
     border-left: 4px solid #00a700;

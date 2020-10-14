@@ -3880,7 +3880,7 @@
     --timeline-item-title-font-weight: var(--font-weight-3, bold);
     
     
-    --timeline-item-title-margin-top: var(--s-1, 4px);
+    --timeline-item-title-margin-top: var(--s-2, 8px);
     
     
     --timeline-item-time-margin-top: var(--s-1, 4px);
@@ -4114,13 +4114,13 @@
     --search-normal-normal-split-color: var(--color-line1-1, #E6E6E6);
     
     
-    --search-normal-normal-hover-color: var(--color-line1-4, #FFFFFF);
+    --search-normal-normal-hover-color: var(--color-line1-2, #D9D9D9);
     
     
     --search-normal-normal-shadow: var(--shadow-zero, none);
     
     
-    --search-normal-normal-btn-bg-color: var(--color-fill1-1, #FFFFFF);
+    --search-normal-normal-btn-bg-color: var(--color-line1-1, #E6E6E6);
     
     
     --search-normal-normal-btn-text-color: var(--color-text1-3, #262626);
@@ -4291,7 +4291,7 @@
     /* ------------------------ tree ------------------------ */
     
     
-    --tree-node-padding: var(--s-2, 8px);
+    --tree-node-padding: var(--s-1, 4px);
     
     
     --tree-node-title-margin: var(--s-1, 4px);
@@ -4567,7 +4567,7 @@
     --range-normal-slider-border-color: var(--color-brand1-6, #0064C8);
     
     
-    --range-normal-slider-border-color-disabled: var(--color-fill1-6, #666666);
+    --range-normal-slider-border-color-disabled: var(--color-line1-3, #CCCCCC);
     
     
     --range-normal-mark-color-disabled: var(--color-text1-1, #CCCCCC);
@@ -4825,7 +4825,7 @@
     --switch-normal-off-bg-color: var(--color-text1-1, #CCCCCC);
     
     
-    --switch-hover-off-bg-color: var(--color-text1-2, #333333);
+    --switch-hover-off-bg-color: var(--color-fill1-4, #D9D9D9);
     
     
     --switch-disabled-off-bg-color: var(--color-fill1-3, #E6E6E6);
@@ -5008,7 +5008,7 @@
     --upload-text-list-corner: var(--corner-zero, 0);
     
     
-    --upload-text-list-bg-color: var(--color-fill1-2, #F7F7F7);
+    --upload-text-list-bg-color: var(--color-transparent, transparent);
     
     
     --upload-text-list-bg-color-hover: var(--color-fill1-2, #F7F7F7);
@@ -5038,7 +5038,7 @@
     --upload-text-list-size-font-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --upload-text-list-progressbar-height: var(--s-2, 8px);
+    --upload-text-list-progressbar-height: 4px;
     
     
     --upload-image-list-item-padding: var(--s-2, 8px);
@@ -5062,10 +5062,10 @@
     --upload-image-list-item-font-size: var(--font-size-body-1, 12px);
     
     
-    --upload-image-list-close-icon-size: var(--icon-xs, 12px);
+    --upload-image-list-close-icon-size: var(--icon-s, 16px);
     
     
-    --upload-image-list-close-icon-right: var(--s-1, 4px);
+    --upload-image-list-close-icon-right: var(--s-2, 8px);
     
     
     --upload-image-list-item-border-width: var(--line-1, 1px);
@@ -5095,13 +5095,13 @@
     --upload-image-list-item-border-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --upload-image-list-item-picture-border-color: var(--color-line1-2, #D9D9D9);
+    --upload-image-list-item-picture-border-color: var(--color-transparent, transparent);
     
     
     --upload-image-list-item-picture-background-color: var(--color-fill1-2, #F7F7F7);
     
     
-    --upload-image-list-progressbar-height: var(--s-2, 8px);
+    --upload-image-list-progressbar-height: 4px;
     
     
     --upload-card-size: var(--s-25, 100px);
@@ -5122,7 +5122,7 @@
     --upload-card-bg-color: var(--color-white, #FFFFFF);
     
     
-    --upload-card-border-style: var(--line-dashed, dashed);
+    --upload-card-border-style: var(--line-solid, solid);
     
     
     --upload-card-border-color: var(--color-line1-3, #CCCCCC);
@@ -5158,7 +5158,7 @@
     --upload-card-list-padding: var(--s-zero, 0px);
     
     
-    --upload-card-list-corner: var(--corner-zero, 0);
+    --upload-card-list-corner: var(--corner-1, 2px);
     
     
     --upload-card-list-border-color: var(--color-line1-3, #CCCCCC);
@@ -5287,13 +5287,13 @@
     --tag-size-l-padding-lr: 6px;
     
     
-    --tag-size-m-padding-lr: 6px;
+    --tag-size-m-padding-lr: var(--s-2, 8px);
     
     
-    --tag-size-s-padding-lr: var(--s-1, 4px);
+    --tag-size-s-padding-lr: 6px;
     
     
-    --tag-corner-radius: var(--corner-1, 2px);
+    --tag-corner-radius: var(--corner-3, 50px);
     
     
     --tag-checkable-corner-radius: var(--corner-1, 2px);
@@ -5413,10 +5413,10 @@
     --tag-fill-tail-color: var(--color-brand1-6, #0064C8);
     
     
-    --tag-fill-border-color: var(--color-brand1-4, #589ADB);
+    --tag-fill-border-color: var(--color-brand1-3, #90C0EF);
     
     
-    --tag-fill-border-color-hover: var(--color-brand1-4, #589ADB);
+    --tag-fill-border-color-hover: var(--color-brand1-3, #90C0EF);
     
     
     --tag-fill-text-color-disabled: var(--color-text1-1, #CCCCCC);
@@ -5431,7 +5431,7 @@
     --tag-fill-tail-color-disabled: var(--color-text1-1, #CCCCCC);
     
     
-    --tag-bordered-text-color: var(--color-text1-3, #262626);
+    --tag-bordered-text-color: var(--color-fill1-6, #666666);
     
     
     --tag-bordered-tail-color: var(--color-text1-3, #262626);
@@ -5449,7 +5449,7 @@
     --tag-fill-tail-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --tag-bordered-text-color-hover: var(--color-text1-4, #1A1A1A);
+    --tag-bordered-text-color-hover: var(--color-text1-2, #333333);
     
     
     --tag-bordered-tail-color-hover: var(--color-text1-4, #1A1A1A);
@@ -5476,7 +5476,7 @@
     --tag-secondary-border-color: var(--color-brand1-6, #0064C8);
     
     
-    --tag-checkable-normal-bg-selected: var(--color-brand1-6, #0064C8);
+    --tag-checkable-normal-bg-selected: var(--color-transparent, transparent);
     
     
     --tag-checkable-secondary-bg-selected: var(--color-brand1-6, #0064C8);
@@ -5488,7 +5488,7 @@
     --tag-secondary-border-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --tag-checkable-normal-bg-selected-hover: var(--color-brand1-6, #0064C8);
+    --tag-checkable-normal-bg-selected-hover: var(--color-transparent, transparent);
     
     
     --tag-checkable-secondary-bg-selected-hover: var(--color-brand1-9, #003263);
@@ -5623,10 +5623,10 @@
     --tag-checkable-secondary-bg-selected-disabled: var(--color-line1-1, #E6E6E6);
     
     
-    --tag-checkable-normal-icon-color-selected: var(--color-white, #FFFFFF);
+    --tag-checkable-normal-icon-color-selected: var(--color-transparent, transparent);
     
     
-    --tag-checkable-normal-icon-color-selected-hover: var(--color-white, #FFFFFF);
+    --tag-checkable-normal-icon-color-selected-hover: var(--color-transparent, transparent);
     
     
     --tag-checkable-normal-icon-color-selected-disabled: var(--color-white, #FFFFFF);
@@ -6358,10 +6358,10 @@
     --input-maxlen-font-size: var(--font-size-caption, 12px);
     
     
-    --input-hint-color: var(--color-text1-2, #333333);
+    --input-hint-color: var(--color-fill1-4, #D9D9D9);
     
     
-    --input-hint-hover-color: var(--color-text1-3, #262626);
+    --input-hint-hover-color: var(--color-fill1-5, #B3B3B3);
     
     
     --input-feedback-clear-icon: var(--icon-content-delete-filling, "");
@@ -7195,10 +7195,10 @@
     --number-picker-normal-l-button-width: var(--s-5, 20px);
     
     
-    --number-picker-normal-m-input-width: var(--s-14, 56px);
+    --number-picker-normal-m-input-width: var(--s-32, 128px);
     
     
-    --number-picker-normal-l-input-width: var(--s-18, 72px);
+    --number-picker-normal-l-input-width: var(--s-32, 128px);
     
     
     --number-picker-normal-s-button-icon-size: var(--icon-xxs, 8px);
@@ -7462,13 +7462,13 @@
     --message-size-l-title-content-padding-right: var(--s-8, 32px);
     
     
-    --message-size-l-title-font: var(--font-size-title, 18px);
+    --message-size-l-title-font: var(--font-size-body-2, 14px);
     
     
-    --message-size-l-content-margin-top: var(--s-3, 12px);
+    --message-size-l-content-margin-top: var(--s-2, 8px);
     
     
-    --message-size-l-content-font: var(--font-size-body-2, 14px);
+    --message-size-l-content-font: var(--font-size-body-1, 12px);
     
     
     --message-size-l-close-top: var(--s-3, 12px);
@@ -7489,7 +7489,7 @@
     --message-size-m-title-content-padding-left: var(--s-2, 8px);
     
     
-    --message-size-m-title-content-padding-right: var(--s-8, 32px);
+    --message-size-m-title-content-padding-right: var(--s-5, 20px);
     
     
     --message-size-m-title-font: var(--font-size-body-2, 14px);
@@ -7498,7 +7498,7 @@
     --message-size-m-content-margin-top: var(--s-2, 8px);
     
     
-    --message-size-m-content-font: var(--font-size-body-2, 14px);
+    --message-size-m-content-font: var(--font-size-body-1, 12px);
     
     
     --message-size-m-close-top: var(--s-2, 8px);
@@ -7534,7 +7534,7 @@
     --message-shadow-toast: var(--shadow-3-down, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
     
     
-    --message-success-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-success-color-bg-inline: var(--color-success-1, #F0FFF7);
     
     
     --message-success-color-bg-addon: var(--color-transparent, transparent);
@@ -7543,13 +7543,13 @@
     --message-success-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-success-color-border-inline: var(--color-line1-1, #E6E6E6);
+    --message-success-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-success-color-border-toast: var(--color-white, #FFFFFF);
+    --message-success-color-border-toast: var(--color-line1-1, #E6E6E6);
     
     
-    --message-success-color-title-inline: var(--color-text1-4, #1A1A1A);
+    --message-success-color-title-inline: var(--color-text1-2, #333333);
     
     
     --message-success-color-title-addon: var(--color-text1-4, #1A1A1A);
@@ -7558,13 +7558,13 @@
     --message-success-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-success-color-content-inline: var(--color-text1-3, #262626);
+    --message-success-color-content-inline: var(--color-text1-2, #333333);
     
     
     --message-success-color-content-addon: var(--color-text1-2, #333333);
     
     
-    --message-success-color-content-toast: var(--color-text1-3, #262626);
+    --message-success-color-content-toast: var(--color-fill1-6, #666666);
     
     
     --message-success-color-icon-inline: var(--color-success-4, #43BF7E);
@@ -7576,7 +7576,7 @@
     --message-success-color-icon-toast: var(--color-success-4, #43BF7E);
     
     
-    --message-error-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-error-color-bg-inline: var(--color-error-1, #FFF1F0);
     
     
     --message-error-color-bg-addon: var(--color-transparent, transparent);
@@ -7585,10 +7585,10 @@
     --message-error-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-error-color-border-inline: var(--color-line1-1, #E6E6E6);
+    --message-error-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-error-color-border-toast: var(--color-white, #FFFFFF);
+    --message-error-color-border-toast: var(--color-line1-1, #E6E6E6);
     
     
     --message-error-color-title-inline: var(--color-text1-4, #1A1A1A);
@@ -7600,13 +7600,13 @@
     --message-error-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-error-color-content-inline: var(--color-text1-3, #262626);
+    --message-error-color-content-inline: var(--color-fill1-6, #666666);
     
     
     --message-error-color-content-addon: var(--color-text1-2, #333333);
     
     
-    --message-error-color-content-toast: var(--color-text1-3, #262626);
+    --message-error-color-content-toast: var(--color-fill1-6, #666666);
     
     
     --message-error-color-icon-inline: var(--color-error-4, #ED675A);
@@ -7618,7 +7618,7 @@
     --message-error-color-icon-toast: var(--color-error-4, #ED675A);
     
     
-    --message-warning-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-warning-color-bg-inline: var(--color-warning-1, #FFF8F0);
     
     
     --message-warning-color-bg-addon: var(--color-transparent, transparent);
@@ -7627,10 +7627,10 @@
     --message-warning-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-warning-color-border-inline: var(--color-line1-1, #E6E6E6);
+    --message-warning-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-warning-color-border-toast: var(--color-white, #FFFFFF);
+    --message-warning-color-border-toast: var(--color-line1-1, #E6E6E6);
     
     
     --message-warning-color-title-inline: var(--color-text1-4, #1A1A1A);
@@ -7642,13 +7642,13 @@
     --message-warning-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-warning-color-content-inline: var(--color-text1-3, #262626);
+    --message-warning-color-content-inline: var(--color-fill1-6, #666666);
     
     
     --message-warning-color-content-addon: var(--color-text1-2, #333333);
     
     
-    --message-warning-color-content-toast: var(--color-text1-3, #262626);
+    --message-warning-color-content-toast: var(--color-fill1-6, #666666);
     
     
     --message-warning-color-icon-inline: var(--color-warning-4, #FFA545);
@@ -7660,7 +7660,7 @@
     --message-warning-color-icon-toast: var(--color-warning-4, #FFA545);
     
     
-    --message-notice-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-notice-color-bg-inline: var(--color-notice-1, #F0F7FF);
     
     
     --message-notice-color-bg-addon: var(--color-transparent, transparent);
@@ -7669,10 +7669,10 @@
     --message-notice-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-notice-color-border-inline: var(--color-line1-1, #E6E6E6);
+    --message-notice-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-notice-color-border-toast: var(--color-white, #FFFFFF);
+    --message-notice-color-border-toast: var(--color-line1-1, #E6E6E6);
     
     
     --message-notice-color-title-inline: var(--color-text1-4, #1A1A1A);
@@ -7684,13 +7684,13 @@
     --message-notice-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-notice-color-content-inline: var(--color-text1-2, #333333);
+    --message-notice-color-content-inline: var(--color-fill1-6, #666666);
     
     
     --message-notice-color-content-addon: var(--color-text1-2, #333333);
     
     
-    --message-notice-color-content-toast: var(--color-text1-3, #262626);
+    --message-notice-color-content-toast: var(--color-fill1-6, #666666);
     
     
     --message-notice-color-icon-inline: var(--color-brand1-6, #0064C8);
@@ -7702,7 +7702,7 @@
     --message-notice-color-icon-toast: var(--color-brand1-6, #0064C8);
     
     
-    --message-help-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-help-color-bg-inline: var(--color-help-1, #FFFCF0);
     
     
     --message-help-color-bg-addon: var(--color-transparent, transparent);
@@ -7711,10 +7711,10 @@
     --message-help-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-help-color-border-inline: var(--color-line1-1, #E6E6E6);
+    --message-help-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-help-color-border-toast: var(--color-white, #FFFFFF);
+    --message-help-color-border-toast: var(--color-line1-1, #E6E6E6);
     
     
     --message-help-color-title-inline: var(--color-text1-4, #1A1A1A);
@@ -7726,16 +7726,16 @@
     --message-help-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-help-color-content-inline: var(--color-text1-3, #262626);
+    --message-help-color-content-inline: var(--color-fill1-6, #666666);
     
     
     --message-help-color-content-addon: var(--color-text1-3, #262626);
     
     
-    --message-help-color-content-toast: var(--color-text1-3, #262626);
+    --message-help-color-content-toast: var(--color-fill1-6, #666666);
     
     
-    --message-help-color-icon-inline: var(--color-help-3, #FFEE96);
+    --message-help-color-icon-inline: var(--color-help-5, #FAD414);
     
     
     --message-help-color-icon-addon: var(--color-help-3, #FFEE96);
@@ -7744,7 +7744,7 @@
     --message-help-color-icon-toast: var(--color-help-3, #FFEE96);
     
     
-    --message-loading-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-loading-color-bg-inline: var(--color-notice-1, #F0F7FF);
     
     
     --message-loading-color-bg-addon: var(--color-transparent, transparent);
@@ -7753,10 +7753,10 @@
     --message-loading-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-loading-color-border-inline: var(--color-line1-1, #E6E6E6);
+    --message-loading-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-loading-color-border-toast: var(--color-white, #FFFFFF);
+    --message-loading-color-border-toast: var(--color-line1-1, #E6E6E6);
     
     
     --message-loading-color-title-inline: var(--color-text1-4, #1A1A1A);
@@ -7768,13 +7768,13 @@
     --message-loading-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-loading-color-content-inline: var(--color-text1-3, #262626);
+    --message-loading-color-content-inline: var(--color-fill1-6, #666666);
     
     
     --message-loading-color-content-addon: var(--color-text1-3, #262626);
     
     
-    --message-loading-color-content-toast: var(--color-text1-3, #262626);
+    --message-loading-color-content-toast: var(--color-fill1-6, #666666);
     
     
     --message-loading-color-icon-inline: var(--color-brand1-6, #0064C8);
@@ -7786,25 +7786,25 @@
     --message-loading-color-icon-toast: var(--color-brand1-6, #0064C8);
     
     
-    --message-close-icon-color: var(--color-fill1-6, #666666);
+    --message-close-icon-color: var(--color-text1-2, #333333);
     
     
-    --message-hover-close-icon-color: var(--color-fill1-6, #666666);
+    --message-hover-close-icon-color: var(--color-text1-2, #333333);
     
     
     --message-success-icon-content: var(--icon-content-success-filling, "");
     
     
-    --message-warning-icon-content: var(--icon-content-warning, "");
+    --message-warning-icon-content: var(--icon-content-warning-o-fill, "");
     
     
     --message-error-icon-content: var(--icon-content-delete-filling, "");
     
     
-    --message-notice-icon-content: var(--icon-content-prompt, "");
+    --message-notice-icon-content: var(--icon-content-tips-2-o, "");
     
     
-    --message-help-icon-content: var(--icon-content-help, "");
+    --message-help-icon-content: var(--icon-content-help-o, "");
     
     
     --message-loading-icon-content: var(--icon-content-loading, "");
@@ -7927,7 +7927,7 @@
     --progress-circle-underlay-color: var(--color-fill1-3, #E6E6E6);
     
     
-    --progress-circle-text-color: var(--color-text1-2, #333333);
+    --progress-circle-text-color: var(--color-fill1-6, #666666);
     
     
     --progress-circle-corner: round;
@@ -8314,10 +8314,10 @@
     --collapse-content-color: var(--color-text1-2, #333333);
     
     
-    --collapse-fold-icon-content: var(--icon-content-arrow-right, "");
+    --collapse-fold-icon-content: var(--icon-content-triangle-right-s, "");
     
     
-    --collapse-unfold-icon-content: var(--icon-reset);
+    --collapse-unfold-icon-content: var(--icon-content-triangle-down-s, "");
     
     
     /* ------------------------ divider ------------------------ */
@@ -8863,7 +8863,7 @@
     --time-picker-menu-border-color: var(--color-line1-1, #E6E6E6);
     
     
-    --time-picker-menu-title-color: var(--color-text1-2, #333333);
+    --time-picker-menu-title-color: var(--color-fill1-6, #666666);
     
     
     --time-picker-menu-title-background: var(--color-white, #FFFFFF);
@@ -8929,7 +8929,7 @@
     --radio-bg-color: var(--color-white, #FFFFFF);
     
     
-    --radio-hovered-bg-color: var(--color-white, #FFFFFF);
+    --radio-hovered-bg-color: var(--color-brand1-1, #F0F7FF);
     
     
     --radio-checked-bg-color: var(--color-white, #FFFFFF);
@@ -8941,7 +8941,7 @@
     --radio-checked-hovered-bg-color: var(--color-brand1-2, #CAE3FD);
     
     
-    --radio-checked-disabled-bg-color: var(--color-fill1-3, #E6E6E6);
+    --radio-checked-disabled-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
     --radio-border-color: var(--color-line1-1, #E6E6E6);
@@ -8971,13 +8971,13 @@
     --radio-checked-hovered-circle-color: var(--color-brand1-6, #0064C8);
     
     
-    --radio-checked-disabled-circle-color: var(--color-fill1-6, #666666);
+    --radio-checked-disabled-circle-color: var(--color-fill1-5, #B3B3B3);
     
     
     --radio-normal-font-color: var(--color-text1-4, #1A1A1A);
     
     
-    --radio-normal-font-color-disabled: var(--color-text1-1, #CCCCCC);
+    --radio-normal-font-color-disabled: var(--color-fill1-4, #D9D9D9);
     
     
     --radio-button-height-large: var(--s-10, 40px);
@@ -9547,10 +9547,10 @@
     --tab-pure-bg-color: var(--color-transparent, transparent);
     
     
-    --tab-pure-text-color-hover: var(--color-text1-4, #1A1A1A);
+    --tab-pure-text-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --tab-pure-text-color-selected: var(--color-text1-4, #1A1A1A);
+    --tab-pure-text-color-selected: var(--color-brand1-6, #0064C8);
     
     
     --tab-pure-text-color-disabled: var(--color-text1-1, #CCCCCC);
@@ -9640,7 +9640,7 @@
     --tab-capsule-text-color-hover: var(--color-text1-4, #1A1A1A);
     
     
-    --tab-capsule-text-color-selected: var(--color-white, #FFFFFF);
+    --tab-capsule-text-color-selected: var(--color-brand1-6, #0064C8);
     
     
     --tab-capsule-text-color-disabled: var(--color-text1-1, #CCCCCC);
@@ -9652,7 +9652,7 @@
     --tab-capsule-bg-color-hover: var(--color-fill1-2, #F7F7F7);
     
     
-    --tab-capsule-bg-color-selected: var(--color-brand1-6, #0064C8);
+    --tab-capsule-bg-color-selected: var(--color-white, #FFFFFF);
     
     
     --tab-capsule-bg-color-disabled: var(--color-fill1-1, #FFFFFF);
@@ -9664,7 +9664,7 @@
     --tab-capsule-tab-border-line-color-hover: var(--color-line1-1, #E6E6E6);
     
     
-    --tab-capsule-tab-border-line-color-active: var(--color-brand1-6, #0064C8);
+    --tab-capsule-tab-border-line-color-active: var(--color-line1-1, #E6E6E6);
     
     
     --tab-capsule-tab-border-line-color-disabled: var(--color-line1-1, #E6E6E6);
