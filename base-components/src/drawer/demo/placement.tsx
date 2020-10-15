@@ -46,6 +46,7 @@ class Demo extends React.Component {
           open{' '}
         </Button>
         <Drawer
+          width={440}
           title="标题"
           visible={this.state.visible}
           placement={this.state.placement}
