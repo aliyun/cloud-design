@@ -7,13 +7,17 @@ module.exports = {
     [
       require.resolve("@alicloud/console-toolkit-preset-demos"),
       {
-        consoleOSId: "xconsole-chart-demos",
+        consoleOSId: "alicloud-component-demos",
         getDemos() {
           const baseDir = path.resolve(__dirname, "../base-components/src/");
           const paths = globby.sync("**/demo/*.tsx", { cwd: baseDir });
           const res = paths.map((relativePath) => {
+            const match = relativePath.match(/^(.*)\/demo\/(.*)\.tsx$/)
+            if (!match) throw new Error(`非预期的demo路径"${relativePath}"`)
+            const componentName = match[1];
+            const demoName = match[2];
             return {
-              key: "./" + relativePath,
+              key: `${componentName}/${demoName}`,
               path: path.resolve(baseDir, relativePath),
             };
           });
