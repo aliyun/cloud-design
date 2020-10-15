@@ -6,6 +6,7 @@ const { Tooltip: NextTooltip } = NextBalloon;
 
 const Tooltip: typeof NextTooltip = React.forwardRef(
   (props: NextTooltipProps, ref) => {
+    // @ts-ignore
     return <NextTooltip delay={200} {...props} ref={ref as any} />
   }
 )as any

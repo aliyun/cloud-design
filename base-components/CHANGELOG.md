@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.2 (2020.10.15)
+### Features
+- Upgrade fusion version
+
 ## 1.0.1 (2020.10.10)
 ### Bug Fixes
 - remove duplicate styles
