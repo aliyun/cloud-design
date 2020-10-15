@@ -84,10 +84,11 @@ $btn-prefix: '.' + $css-prefix + 'btn';
   &-group {
     #{$btn-prefix} {
       &#{$btn-prefix}#{$btn-prefix}#{$btn-prefix} {
-        border-color: rgba(255, 255, 255, 0.2);
+        min-width: unset;
       }
       &#{$btn-prefix}-primary {
         border-style: solid;
+        border-color: rgba(255, 255, 255, 0.2);
       }
     }
   }
