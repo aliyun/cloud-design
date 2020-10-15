@@ -337,4 +337,4 @@ class Modal extends React.Component<
   }
 }
 
-export default ConfigProvider.config(Modal)
+export default ConfigProvider.config(Modal, 'Modal')
