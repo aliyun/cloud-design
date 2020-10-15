@@ -1,6 +1,6 @@
 {
   "name": "@alicloudfe/components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "lib/index.d.ts",
@@ -19,7 +19,7 @@
     "debug": "npx --node-arg=--inspect vite serve -c ./vite.config.ts",
     "debug-build": "npx --node-arg=--inspect vite build -c ./vite.config.ts",
     "demos-build": "rm -rf docs-dist && vite build -c ./vite.config.ts && serve -s docs-dist",
-    "demos-deploy": "rm -rf docs-dist && vite build -c ./vite.config.ts --base \"/alibabacloud-components/components\" && gh-pages -d docs-dist -t",
+    "demos-deploy": "rm -rf docs-dist && vite build -c ./vite.config.ts --base \"/cloud-design\" && touch ./docs-dist/.nojekyll && gh-pages -d docs-dist -t",
     "babel": "tsc -p src --outDir ./lib --module commonjs",
     "babel:esm": "tsc -p src --outDir ./es --module es2015",
     "build": "breezr build --engine webpack",

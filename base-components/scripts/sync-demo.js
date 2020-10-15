@@ -9,7 +9,7 @@ const prettier = require('prettier')
 
 const fusionDocs = '/Users/csr/workspace/next/docs'
 const root = path.join(__dirname, '../')
-const prettierConfig = fs.readJsonSync(path.join(root, '.prettierrc'))
+const prettierConfig = fs.readJsonSync(path.join(root, '../.prettierrc'))
 
 const blocklist = ['pagination/demo/react-router.md']
 
@@ -56,7 +56,7 @@ glob('*/demo/*.md', { cwd: fusionDocs }, (err, res) => {
       let generateCode = demo.replace(reactdom_render_regexp, '')
       generateCode = generateCode.replace(
         /from ['"]@alifd\/next['"]/,
-        `from '@alife/alicloud-components'`
+        `from '@alicloudfe/components'`
       )
       generateCode = generateCode.replace(
         /from ['"]react-router['"]/,
