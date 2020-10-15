@@ -1,8 +1,9 @@
 {
   "name": "@alife/alicloud-components-console-page",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "lib/index.js",
-  "module": "es/index.js","publishConfig": {
+  "module": "es/index.js",
+  "publishConfig": {
     "registry": "https://registry.npm.alibaba-inc.com"
   },
   "scripts": {
@@ -18,9 +19,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@alife/alicloud-components-truncate": "^1.0.0",
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
-    "@alife/alicloud-components-truncate": "^0.1.0",
     "@researchgate/react-intersection-observer": "^1.0.1"
   },
   "devDependencies": {
