@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.3 (2020.10.15)
+### Features
+- Upgrade Xconsole theme
+
 ## 1.0.2 (2020.10.15)
 ### Features
 - Upgrade fusion version
