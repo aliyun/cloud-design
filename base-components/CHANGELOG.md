@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.0.4 (2020.10.16)
+### Features
+- Upgrade hybridcloud、hybridcloud-dark theme
+- Prettier several components
+
 ## 1.0.3 (2020.10.15)
 ### Features
 - Upgrade Xconsole theme
