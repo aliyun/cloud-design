@@ -340,7 +340,7 @@
     /* ------------------------ icon ------------------------ */
     
     
-    --icon-font-path: "//at.alicdn.com/t/font_1984235_pt6rt0abxy";
+    --icon-font-path: "//at.alicdn.com/t/font_1984235_l5ug3daxbq";
     
     
     --icon-font-name: "icon";
@@ -3481,6 +3481,12 @@
     --icon-content-line-checkbox: "\e9f1";
     
     
+    --icon-content-helfling1: "\e9f0";
+    
+    
+    --icon-content-xiegang: "\e9f2";
+    
+    
     /* ------------------------ shadow ------------------------ */
     
     
@@ -3835,7 +3841,7 @@
     --checkbox-margin-left: var(--s-2, 8px);
     
     
-    --checkbox-semi-select-icon-content: var(--icon-content-ziyuan, "");
+    --checkbox-semi-select-icon-content: var(--icon-content-line-checkbox, "");
     
     
     --checkbox-select-icon-content: var(--icon-content-CombinedShape2x, "");
@@ -3853,7 +3859,7 @@
     --timeline-item-custom-node-font-size: var(--font-size-caption, 12px);
     
     
-    --timeline-item-node-padding: var(--s-1, 4px);
+    --timeline-item-node-padding: 0px;
     
     
     --timeline-item-dot-size: var(--s-2, 8px);
@@ -4894,7 +4900,7 @@
     --menu-line-height: var(--s-8, 32px);
     
     
-    --menu-font-size: var(--font-size-body-2, 14px);
+    --menu-font-size: var(--font-size-body-1, 12px);
     
     
     --menu-submenu-title-size: var(--font-size-body-1, 12px);
@@ -7195,10 +7201,10 @@
     --number-picker-normal-l-button-width: var(--s-5, 20px);
     
     
-    --number-picker-normal-m-input-width: var(--s-14, 56px);
+    --number-picker-normal-m-input-width: var(--s-32, 128px);
     
     
-    --number-picker-normal-l-input-width: var(--s-18, 72px);
+    --number-picker-normal-l-input-width: var(--s-32, 128px);
     
     
     --number-picker-normal-s-button-icon-size: var(--icon-xxs, 8px);
@@ -7735,7 +7741,7 @@
     --message-help-color-content-toast: var(--color-text1-3, #CCCCCC);
     
     
-    --message-help-color-icon-inline: var(--color-help-3, #8A7406);
+    --message-help-color-icon-inline: var(--color-brand1-6, #0D7BE9);
     
     
     --message-help-color-icon-addon: var(--color-help-3, #8A7406);
@@ -7801,7 +7807,7 @@
     --message-error-icon-content: var(--icon-content-delete-filling, "");
     
     
-    --message-notice-icon-content: var(--icon-content-warning, "");
+    --message-notice-icon-content: var(--icon-content-prompt-o, "");
     
     
     --message-help-icon-content: var(--icon-content-help, "");
@@ -8527,7 +8533,7 @@
     --step-circle-vertical-item-body-margin-left: var(--s-4, 16px);
     
     
-    --step-circle-vertical-item-title-margin-top: var(--s-7, 28px);
+    --step-circle-vertical-item-title-margin-top: var(--s-1, 4px);
     
     
     --step-circle-vertical-item-content-margin-top: var(--s-1, 4px);
@@ -8653,7 +8659,7 @@
     --step-dot-vertical-item-title-margin-top: var(--s-zero, 0px);
     
     
-    --step-dot-vertical-item-content-margin-top: var(--s-6, 24px);
+    --step-dot-vertical-item-content-margin-top: var(--s-1, 4px);
     
     
     --step-dot-item-content-font-size: var(--font-size-caption, 12px);
@@ -10087,7 +10093,7 @@
     --breadcrumb-icon-color: var(--color-text1-1, #6B6B6B);
     
     
-    --breadcrumb-icon-sep-content: var(--icon-content-arrow-right, "");
+    --breadcrumb-icon-sep-content: var(--icon-content-xiegang, "");
     
     
     --breadcrumb-text-color-hover: var(--color-brand1-6, #0D7BE9);

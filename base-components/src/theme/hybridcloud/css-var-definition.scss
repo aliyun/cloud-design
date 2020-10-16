@@ -340,7 +340,7 @@
     /* ------------------------ icon ------------------------ */
     
     
-    --icon-font-path: "//at.alicdn.com/t/font_1984231_3vw3ikr80y2";
+    --icon-font-path: "//at.alicdn.com/t/font_1984231_4z5yc5sqfuv";
     
     
     --icon-font-name: "icon";
@@ -3481,6 +3481,15 @@
     --icon-content-line-checkbox3: "\e9f1";
     
     
+    --icon-content-xiegang: "\e9f1";
+    
+    
+    --icon-content-helfling1: "\e9f2";
+    
+    
+    --icon-content-CombinedShape: "\e9f3";
+    
+    
     /* ------------------------ shadow ------------------------ */
     
     
@@ -3778,7 +3787,7 @@
     --checkbox-border-width: var(--line-1, 1px);
     
     
-    --checkbox-circle-size: var(--icon-xs, 12px);
+    --checkbox-circle-size: var(--icon-s, 16px);
     
     
     --checkbox-shadow: var(--shadow-zero, none);
@@ -3805,7 +3814,7 @@
     --checkbox-label-color: var(--color-text1-3, #262626);
     
     
-    --checkbox-disabled-label-color: var(--color-text1-4, #1A1A1A);
+    --checkbox-disabled-label-color: var(--color-text1-1, #CCCCCC);
     
     
     --checkbox-disabled-circle-color: var(--color-text1-1, #CCCCCC);
@@ -3826,7 +3835,7 @@
     --checkbox-checked-hovered-bg-color: var(--color-brand1-7, #0057AD);
     
     
-    --checkbox-disabled-bg-color: var(--color-fill1-1, #FFFFFF);
+    --checkbox-disabled-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
     --checkbox-font-size: var(--font-size-body-1, 12px);
@@ -3835,10 +3844,10 @@
     --checkbox-margin-left: var(--s-2, 8px);
     
     
-    --checkbox-semi-select-icon-content: var(--icon-content-ziyuan, "");
+    --checkbox-semi-select-icon-content: var(--icon-content-line-checkbox, "");
     
     
-    --checkbox-select-icon-content: var(--icon-content-CombinedShape2x, "");
+    --checkbox-select-icon-content: var(--icon-content-CombinedShape, "");
     
     
     /* ------------------------ timeline ------------------------ */
@@ -4300,7 +4309,7 @@
     --tree-node-title-padding: var(--s-1, 4px);
     
     
-    --tree-node-title-font-size: var(--font-size-body-2, 14px);
+    --tree-node-title-font-size: var(--font-size-body-1, 12px);
     
     
     --tree-switch-arrow-size: var(--icon-xxs, 8px);
@@ -4366,7 +4375,7 @@
     --tree-switch-hover-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
-    --tree-switch-hover-border-color: var(--color-line1-4, #FFFFFF);
+    --tree-switch-hover-border-color: var(--color-line1-2, #D9D9D9);
     
     
     --tree-node-selected-color: var(--color-text1-2, #333333);
@@ -5116,7 +5125,7 @@
     --upload-card-add-text-size: var(--font-size-body-1, 12px);
     
     
-    --upload-card-add-text-margin-top: var(--s-3, 12px);
+    --upload-card-add-text-margin-top: var(--s-2, 8px);
     
     
     --upload-card-bg-color: var(--color-white, #FFFFFF);
@@ -5185,7 +5194,7 @@
     --upload-card-list-name-font-color: var(--color-text1-3, #262626);
     
     
-    --upload-card-list-progressbar-height: var(--s-2, 8px);
+    --upload-card-list-progressbar-height: var(--s-1, 4px);
     
     
     --upload-select-card-tool-bg-color: var(--color-black, #000000);
@@ -5218,7 +5227,7 @@
     --upload-drag-zone-upload-icon: var(--icon-content-upload, "");
     
     
-    --upload-drag-zone-upload-icon-color: var(--color-text1-3, #262626);
+    --upload-drag-zone-upload-icon-color: var(--color-brand1-6, #0064C8);
     
     
     --upload-drag-zone-upload-normal-title-color: var(--color-text1-3, #262626);
@@ -6358,10 +6367,10 @@
     --input-maxlen-font-size: var(--font-size-caption, 12px);
     
     
-    --input-hint-color: var(--color-fill1-4, #D9D9D9);
+    --input-hint-color: var(--color-fill1-5, #B3B3B3);
     
     
-    --input-hint-hover-color: var(--color-fill1-5, #B3B3B3);
+    --input-hint-hover-color: var(--color-fill1-6, #666666);
     
     
     --input-feedback-clear-icon: var(--icon-content-delete-filling, "");
@@ -7702,7 +7711,7 @@
     --message-notice-color-icon-toast: var(--color-brand1-6, #0064C8);
     
     
-    --message-help-color-bg-inline: var(--color-help-1, #FFFCF0);
+    --message-help-color-bg-inline: var(--color-notice-1, #F0F7FF);
     
     
     --message-help-color-bg-addon: var(--color-transparent, transparent);
@@ -7735,13 +7744,13 @@
     --message-help-color-content-toast: var(--color-fill1-6, #666666);
     
     
-    --message-help-color-icon-inline: var(--color-help-5, #FAD414);
+    --message-help-color-icon-inline: var(--color-brand1-6, #0064C8);
     
     
     --message-help-color-icon-addon: var(--color-help-3, #FFEE96);
     
     
-    --message-help-color-icon-toast: var(--color-help-3, #FFEE96);
+    --message-help-color-icon-toast: var(--color-brand1-6, #0064C8);
     
     
     --message-loading-color-bg-inline: var(--color-notice-1, #F0F7FF);
@@ -7795,13 +7804,13 @@
     --message-success-icon-content: var(--icon-content-success-filling, "");
     
     
-    --message-warning-icon-content: var(--icon-content-warning-o-fill, "");
+    --message-warning-icon-content: var(--icon-content-prompt-o, "");
     
     
     --message-error-icon-content: var(--icon-content-delete-filling, "");
     
     
-    --message-notice-icon-content: var(--icon-content-tips-2-o, "");
+    --message-notice-icon-content: var(--icon-content-warning, "");
     
     
     --message-help-icon-content: var(--icon-content-help-o, "");
@@ -8971,7 +8980,7 @@
     --radio-checked-hovered-circle-color: var(--color-brand1-6, #0064C8);
     
     
-    --radio-checked-disabled-circle-color: var(--color-fill1-5, #B3B3B3);
+    --radio-checked-disabled-circle-color: var(--color-text1-1, #CCCCCC);
     
     
     --radio-normal-font-color: var(--color-text1-4, #1A1A1A);
@@ -9493,7 +9502,7 @@
     --tab-nav-arrow-down-positon-right: var(--s-2, 8px);
     
     
-    --tab-item-padding-tb-size-m: var(--s-3, 12px);
+    --tab-item-padding-tb-size-m: 7px;
     
     
     --tab-item-padding-tb-size-s: var(--s-2, 8px);
@@ -9637,7 +9646,7 @@
     --tab-capsule-text-color: var(--color-text1-4, #1A1A1A);
     
     
-    --tab-capsule-text-color-hover: var(--color-text1-4, #1A1A1A);
+    --tab-capsule-text-color-hover: var(--color-text1-3, #262626);
     
     
     --tab-capsule-text-color-selected: var(--color-brand1-6, #0064C8);
@@ -10087,7 +10096,7 @@
     --breadcrumb-icon-color: var(--color-line1-1, #E6E6E6);
     
     
-    --breadcrumb-icon-sep-content: var(--icon-content-arrow-right, "");
+    --breadcrumb-icon-sep-content: var(--icon-content-xiegang, "");
     
     
     --breadcrumb-text-color-hover: var(--color-brand1-6, #0064C8);
