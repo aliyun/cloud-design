@@ -1,6 +1,6 @@
 # [@alicloudfe/components](https://www.npmjs.com/package/@alicloudfe/components)
 
-阿里云前端组件库，由混合云&公有云前端团队共建。[预览地址](https://pds.alibaba-inc.com/alibabacloud-components/components/)
+阿里云前端组件库，由混合云&公有云前端团队共建。[预览地址](https://aliyun.github.io/cloud-design/#/button)
 
 
 ## 相关命令
