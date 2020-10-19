@@ -1,12 +1,5 @@
 # Tag
 
--   category: Components
--   family: DataDisplay
--   chinese: 标签
--   type: 展示
-
----
-
 ## Guide
 
 标签用于标记事物的属性和维度，或者可以使用标签来对一组事物分类。

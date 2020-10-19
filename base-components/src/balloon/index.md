@@ -1,12 +1,5 @@
 # Balloon
 
--   category: Components
--   family: Feedback
--   chinese: 气泡提示
--   type: 弹层
-
----
-
 ## 开发指南
 
 气泡组件

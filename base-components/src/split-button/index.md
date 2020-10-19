@@ -1,12 +1,5 @@
 # SplitButton
 
--   category: Components
--   family: General
--   chinese: 分隔按钮
--   type: 基本
-
----
-
 ## 使用指南
 
 SplitButton 同样由 Button 和 Menu 组成，其在触发区域上可以分为两部分，其中 Icon 部分作为弹层菜单的触发区域。

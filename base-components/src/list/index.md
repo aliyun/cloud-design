@@ -1,12 +1,5 @@
 # List
 
--   category: Components
--   family: DataDisplay
--   chinese: 列表
--   type: 展示
-
----
-
 ## 开发指南
 
 1.19.4+ 版本支持

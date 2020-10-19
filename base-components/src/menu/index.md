@@ -1,12 +1,5 @@
 # Menu
 
--   category: Components
--   family: DataDisplay
--   chinese: 菜单
--   type: 展示
-
----
-
 ## API
 
 ### Menu

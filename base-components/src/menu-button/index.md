@@ -1,12 +1,5 @@
 # MenuButton
 
--   category: Components
--   family: General
--   chinese: 菜单按钮
--   type: 基本
-
----
-
 ## 使用指南
 
 1.  通过触发按钮打开弹层菜单。支持透传所有的 Button 属性。

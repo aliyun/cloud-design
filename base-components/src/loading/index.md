@@ -1,12 +1,5 @@
 # Loading
 
--   category: Components
--   family: Feedback
--   chinese: 加载
--   type: 基本
-
----
-
 ## 开发指南
 
 ### 何时使用

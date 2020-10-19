@@ -1,13 +1,5 @@
 # Icon
 
--   category: Components
--   family: General
--   chinese: 图标
--   type: 展示
--   cols: 1
-
----
-
 ## Q&A
 
 -   Q: 如何添加自定义Icon呢？<br/>

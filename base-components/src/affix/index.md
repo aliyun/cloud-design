@@ -1,12 +1,5 @@
 # Affix
 
--   category: Components
--   family: Util
--   chinese: 固钉
--   type: 基本
-
----
-
 ## Guide
 
 ### 何时使用

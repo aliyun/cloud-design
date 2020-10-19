@@ -1,13 +1,5 @@
 # Pagination
 
--   category: Components
--   family: Navigation
--   chinese: 翻页器
--   cols: 1
--   type: 导航
-
----
-
 ## 开发指南
 
 ### 何时使用

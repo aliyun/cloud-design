@@ -1,12 +1,5 @@
 # Checkbox
 
--   category: Components
--   family: DataEntry
--   chinese: 复选按钮
--   type: 表单
-
----
-
 ## 开发指南
 
 多选框

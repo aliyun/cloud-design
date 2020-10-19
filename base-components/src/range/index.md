@@ -1,12 +1,5 @@
 # Range
 
--   category: Components
--   family: DataEntry
--   chinese: 区段选择器
--   type: 表单
-
----
-
 ## 开发指南
 
 区间选择

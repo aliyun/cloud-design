@@ -1,12 +1,5 @@
 # ConfigProvider
 
--   category: Components
--   family: Util
--   chinese: 全局配置 Next 组件
--   type: 基本
-
----
-
 ## 开发指南
 
 ### 何时使用

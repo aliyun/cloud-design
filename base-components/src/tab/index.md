@@ -1,12 +1,5 @@
 # Tab
 
--   category: Components
--   family: Navigation
--   chinese: 选项卡
--   type: 导航
-
----
-
 ## Guide
 
 TAB 让用户可以在不同子任务、视图、模式之间切换，它具有全局导航的作用，

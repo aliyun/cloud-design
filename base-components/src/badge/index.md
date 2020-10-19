@@ -1,12 +1,5 @@
 # Badge
 
--   category: Components
--   family: DataDisplay
--   chinese: 徽标数
--   type: 展示
-
----
-
 ## 开发指南
 
 ### 何时使用

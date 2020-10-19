@@ -1,13 +1,5 @@
 # Table
 
--   category: Components
--   family: DataDisplay
--   chinese: 表格
--   cols: 1
--   type: 展示
-
----
-
 ## 开发指南
 
 Table 负责将数据呈现为高度可定制和具备可访问性的 HTML 表格，其核心功能为将结构化的数据使用表格的方式展现，然后可以使用各种参数来向表格中加入一些特性，比如排序，过滤，滚动，锁列等。

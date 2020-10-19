@@ -1,12 +1,5 @@
 # Message
 
--   category: Components
--   family: Feedback
--   chinese: 信息提示
--   type: 展示
-
----
-
 ## 开发指南
 
 ## API

@@ -1,12 +1,5 @@
 # Card
 
--   category: Components
--   family: DataDisplay
--   chinese: 卡片
--   type: 基本
-
----
-
 ## Guide
 
 一个通用的卡片组件。

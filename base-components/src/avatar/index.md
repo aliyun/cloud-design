@@ -1,12 +1,5 @@
 # Avatar
 
--   category: Components
--   family: DataDisplay
--   chinese: 头像
--   type: 展示
-
----
-
 ## 开发指南
 
 1.19.0+ 版本支持

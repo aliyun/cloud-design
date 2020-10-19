@@ -1,12 +1,5 @@
 # Button
 
--   category: Components
--   family: General
--   chinese: 按钮
--   type: 表单
-
----
-
 按钮用于开始一个即时操作。
 
 ## Guide

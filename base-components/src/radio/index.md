@@ -1,12 +1,5 @@
 # Radio
 
--   category: Components
--   family: DataEntry
--   chinese: 单选框
--   type: 表单
-
----
-
 ## 开发指南
 
 单选框

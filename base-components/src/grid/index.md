@@ -1,13 +1,5 @@
 # Grid
 
--   category: Components
--   family: General
--   chinese: 栅格
--   type: 布局
--   cols: 1
-
----
-
 ## 开发指南
 
 ### 基本使用

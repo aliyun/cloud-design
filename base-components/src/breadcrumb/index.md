@@ -1,13 +1,5 @@
 # Breadcrumb
 
--   category: Components
--   family: Navigation
--   chinese: 面包屑
--   type: 导航
--   cols: 1
-
----
-
 ## 开发指南
 
 ### 何时使用

@@ -1,12 +1,5 @@
 # TreeSelect
 
--   category: Components
--   family: DataEntry
--   chinese: 树型选择控件
--   type: 基本
-
----
-
 ## 开发指南
 
 ### 何时使用

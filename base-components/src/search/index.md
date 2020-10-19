@@ -1,13 +1,5 @@
 # Search
 
--   category: Components
--   family: DataEntry
--   chinese: 搜索
--   type: 表单
--   cols: 1
-
----
-
 ## 开发指南
 
 ### 何时使用

@@ -1,12 +1,5 @@
 # Timeline
 
--   category: Components
--   family: DataDisplay
--   chinese: 时间轴
--   type: 展示
-
----
-
 ## Guide
 
 垂直展示的时间流信息。

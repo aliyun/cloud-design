@@ -1,12 +1,5 @@
 # Shell
 
--   category: Components
--   family: General
--   chinese: 框架
--   type: 布局
-
----
-
 仅支持IE10+
 
 ## Guide

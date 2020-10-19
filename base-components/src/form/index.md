@@ -1,13 +1,5 @@
 # Form
 
--   category: Components
--   family: DataEntry
--   chinese: 表单
--   cols: 1
--   type: 表单
-
----
-
 ## 开发指南
 
 ### 何时使用

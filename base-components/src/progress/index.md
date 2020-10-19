@@ -1,12 +1,5 @@
 # Progress
 
--   category: Components
--   family: DataDisplay
--   chinese: 进度指示器
--   type: 展示
-
----
-
 ## Guide
 
 展示操作的当前进度。

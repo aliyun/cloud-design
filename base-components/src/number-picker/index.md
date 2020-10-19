@@ -1,12 +1,5 @@
 # NumberPicker
 
--   category: Components
--   family: DataEntry
--   chinese: 数字输入框
--   type: 表单
-
----
-
 ## 开发指南
 
 ### 何时使用

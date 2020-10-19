@@ -1,12 +1,5 @@
 # Paragraph
 
--   category: Components
--   family: General
--   chinese: 段落
--   type: 基本
-
----
-
 ## Guide
 
 （已废弃，请使用Typography）段落用于控制页面整体的文本视觉，主要由行间距及文本大小体现。

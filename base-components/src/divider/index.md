@@ -1,12 +1,5 @@
 # Divider
 
--   category: Components
--   family: General
--   chinese: 分隔符
--   type: 展示
-
----
-
 ## 开发指南
 
 区隔内容的分割线, 支持 1.19+

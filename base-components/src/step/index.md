@@ -1,12 +1,5 @@
 # Step
 
--   category: Components
--   family: Navigation
--   chinese: 步骤
--   type: 展示
-
----
-
 ## API
 
 ### Step

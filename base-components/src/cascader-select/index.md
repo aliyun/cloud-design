@@ -1,12 +1,5 @@
 # CascaderSelect
 
--   category: Components
--   family: DataEntry
--   chinese: 级联选择
--   type: 基本
-
----
-
 ## 开发指南
 
 ### 何时使用

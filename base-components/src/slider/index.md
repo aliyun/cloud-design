@@ -1,12 +1,5 @@
 # Slider
 
--   category: Components
--   family: DataDisplay
--   chinese: 图片轮播
--   type: 展示
-
----
-
 ## Guide
 
 轮播组件，就是以幻灯片的方式，在页面中横向展示诸多内容的组件。

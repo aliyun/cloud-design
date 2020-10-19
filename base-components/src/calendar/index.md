@@ -1,12 +1,5 @@
 # Calendar
 
--   category: Components
--   family: DataDisplay
--   chinese: 日历
--   type: 展示
-
----
-
 ## Guide
 
 按照日历形式展示数据的容器。

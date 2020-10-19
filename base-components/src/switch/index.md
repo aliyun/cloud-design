@@ -1,12 +1,5 @@
 # Switch
 
--   category: Components
--   family: DataEntry
--   chinese: 开关组件
--   type: 表单
-
----
-
 ## 开发指南
 
 开关组件

@@ -1,12 +1,5 @@
 # Collapse
 
--   category: Components
--   family: DataDisplay
--   chinese: 折叠面板
--   type: 布局
-
----
-
 ## 开发指南
 
 ### 何时使用

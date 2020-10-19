@@ -1,12 +1,5 @@
 # Input
 
--   category: Components
--   family: DataEntry
--   chinese: 输入框
--   type: 表单
-
----
-
 ## 开发指南
 
 ### 何时使用

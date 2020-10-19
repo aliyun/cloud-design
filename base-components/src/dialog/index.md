@@ -1,12 +1,5 @@
 # Dialog
 
--   chinese: 弹窗
--   family: Feedback
--   category: Components
--   type: 弹层
-
----
-
 ## 使用指南
 
 对话框

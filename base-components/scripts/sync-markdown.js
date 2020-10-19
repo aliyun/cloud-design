@@ -18,6 +18,10 @@ glob('*/index.md', { cwd: fusionDocs }, (err, res) => {
     let content = fs.readFileSync(path.join(fusionDocs, readmePath), 'utf8')
     // 修复上游markdown的语法问题
     content = content.replace(/<br>/g, '<br/>')
+    const title = content.match(/^#.*/)[0]
+    // 将fusion文档开头的元数据定义去掉
+    content = content.replace(/(?=^#)([\s\S]*?)---/, '')
+    content = title + content
     const writePath = path.join(root, `src/${componentName}/index.md`)
     fs.ensureDirSync(path.dirname(writePath))
     fs.writeFileSync(writePath, content)

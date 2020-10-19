@@ -1,13 +1,5 @@
 # Nav
 
--   category: Components
--   family: Navigation
--   chinese: 导航
--   type: 导航
--   cols: 1
-
----
-
 ## 开发指南
 
 ### 何时使用

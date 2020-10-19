@@ -1,12 +1,5 @@
 # Typography
 
--   category: Components
--   family: General
--   chinese: 排版
--   type: 基本
-
----
-
 文本的基本格式。
 
 ## 何时使用

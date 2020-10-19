@@ -1,12 +1,5 @@
 # TimePicker
 
--   category: Components
--   family: DataEntry
--   chinese: 时间选择框
--   type: 表单
-
----
-
 ## Guide
 
 ### 何时使用

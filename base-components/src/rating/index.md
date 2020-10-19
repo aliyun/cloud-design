@@ -1,12 +1,5 @@
 # Rating
 
--   category: Components
--   family: DataEntry
--   chinese: 评分
--   type: 基本
-
----
-
 ## Guide
 
 评分组件通常用于用户反馈场景。

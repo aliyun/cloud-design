@@ -1,12 +1,5 @@
 # ResponsiveGrid
 
--   category: Components
--   family: General
--   chinese: 栅格布局
--   type: 展示
-
----
-
 ## 开发指南
 
 ### 何时使用

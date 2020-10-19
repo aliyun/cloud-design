@@ -1,12 +1,5 @@
 # Cascader
 
--   category: Components
--   family: DataDisplay
--   chinese: 级联
--   type: 基本
-
----
-
 ## 开发指南
 
 ### 何时使用

@@ -1,12 +1,5 @@
 # Box
 
--   category: Components
--   family: General
--   chinese: 弹性布局
--   type: 展示
-
----
-
 ## 开发指南
 
 ### 何时使用

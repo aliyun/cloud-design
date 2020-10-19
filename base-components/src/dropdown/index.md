@@ -1,12 +1,5 @@
 # Dropdown
 
--   category: Components
--   family: Util
--   chinese: 下拉菜单
--   type: 弹层
-
----
-
 ## 开发指南
 
 ### 何时使用

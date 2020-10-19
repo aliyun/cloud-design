@@ -1,11 +1,5 @@
 # Overlay
 
--   category: Utility
--   family: Util
--   chinese: 弹层
-
----
-
 用于生成弹层的工具类集合.
 
 ## 开发指南

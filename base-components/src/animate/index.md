@@ -1,11 +1,5 @@
 # Animate
 
--   category: Utility
--   family: Util
--   chinese: 动画
-
----
-
 ## 开发指南
 
 ### 何时使用

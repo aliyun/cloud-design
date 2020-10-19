@@ -1,12 +1,5 @@
 # Select
 
--   category: Components
--   family: DataEntry
--   chinese: 选择器
--   type: 表单
-
----
-
 ## Guide
 
 ### 何时使用

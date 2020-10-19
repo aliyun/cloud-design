@@ -1,4 +1,4 @@
-# Next - Core
+# Next - Core# Next - Core
 
 ## 简介
 

@@ -1,13 +1,5 @@
 # Upload
 
--   category: Components
--   family: DataEntry
--   chinese: 上传组件
--   cols: 1
--   type: 表单
-
----
-
 ## 开发指南
 
 ### 何时使用

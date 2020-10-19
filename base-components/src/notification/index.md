@@ -1,12 +1,5 @@
 # Notification
 
--   category: Components
--   family: Feedback
--   chinese: 通知
--   type: 展示
-
----
-
 全局展示通知提醒信息。
 
 

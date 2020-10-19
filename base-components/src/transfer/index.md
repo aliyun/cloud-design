@@ -1,12 +1,5 @@
 # Transfer
 
--   category: Components
--   family: DataEntry
--   chinese: 穿梭框
--   type: 基本
-
----
-
 ## 开发指南
 
 ### 何时使用
