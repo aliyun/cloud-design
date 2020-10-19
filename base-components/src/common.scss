@@ -30,3 +30,7 @@ $overlay-prefix: '.' + $css-prefix + 'overlay';
 #{$overlay-prefix}-wrapper #{$overlay-prefix}-inner {
   @include alicloud-scrollbar;
 }
+
+body {
+  line-height: 1.5;
+}
