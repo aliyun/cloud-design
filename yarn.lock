@@ -217,15 +217,18 @@
     request-promise-native "^1.0.7"
     safe-require "^1.0.3"
 
-"@alicloud/console-toolkit-plugin-os@^0.3.18":
-  version "0.3.18"
-  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-plugin-os/download/@alicloud/console-toolkit-plugin-os-0.3.18.tgz#83e28f6eb59c636cf82e11555939995cb81470dc"
-  integrity sha1-g+KPbrWcY2z4LhFVWTmZXLgUcNw=
+"@alicloud/console-toolkit-plugin-os@0.2.10":
+  version "0.2.10"
+  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-plugin-os/download/@alicloud/console-toolkit-plugin-os-0.2.10.tgz#75885615ae1521c9e4ba75aad2bbc724dc2dd686"
+  integrity sha1-dYhWFa4VIcnkunWq0rvHJNwt1oY=
   dependencies:
     "@alicloud/console-toolkit-shared-utils" "^1.0.0"
+    "@types/node" "^12.7.0"
+    escape-string-regexp "^2.0.0"
     lodash "^4.17.11"
+    object-assign "^4.1.1"
     package-json "^6.5.0"
-    postcss-prefix-wrapper "^0.3.8"
+    postcss "^7.0.17"
     webpack-assets-manifest "^3.1.1"
     webpack-sources "^1.4.1"
 
@@ -460,20 +463,21 @@
     webpack-dev-server "^3.3.1"
     webpack-merge "^4.2.1"
 
-"@alicloud/console-toolkit-preset-multi-entry@^1.0.42":
-  version "1.0.42"
-  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-preset-multi-entry/download/@alicloud/console-toolkit-preset-multi-entry-1.0.42.tgz#81e89158b8a793c0971c3166295d53840f0bbaab"
-  integrity sha1-geiRWLink8CXHDFmKV1ThA8Luqs=
+"@alicloud/console-toolkit-preset-multi-entry@^1.0.47":
+  version "1.0.47"
+  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-preset-multi-entry/download/@alicloud/console-toolkit-preset-multi-entry-1.0.47.tgz#55f2f981fab280b9b5b62361931051d3e4f07177"
+  integrity sha1-VfL5gfqygLm1tiNhkxBR0+TwcXc=
   dependencies:
     "@alicloud/console-os-react-portal" "^0.4.0-alpha.3"
     "@alicloud/console-toolkit-fusion-css-loader" "^1.0.4"
-    "@alicloud/console-toolkit-plugin-os" "^0.3.18"
+    "@alicloud/console-toolkit-plugin-os" "0.2.10"
     "@alicloud/console-toolkit-preset-official" "^1.0.0"
     "@alicloud/console-toolkit-shared-utils" "^1.0.1"
     "@babel/core" "^7.11.6"
     "@mdx-js/loader" "^1.6.18"
     gray-matter "^4.0.2"
     jest-docblock "^26.0.0"
+    lodash.debounce "^4.0.8"
     react-animate-height "^2.0.23"
     react-syntax-highlighter "^15.2.1"
     webpack-virtual-modules "^0.3.1"
@@ -4312,6 +4316,11 @@
   version "14.11.8"
   resolved "https://registry.npm.alibaba-inc.com/@types/node/download/@types/node-14.11.8.tgz#fe2012f2355e4ce08bca44aeb3abbb21cf88d33f"
   integrity sha1-/iAS8jVeTOCLykSus6u7Ic+I0z8=
+
+"@types/node@^12.7.0":
+  version "12.12.68"
+  resolved "https://registry.npm.alibaba-inc.com/@types/node/download/@types/node-12.12.68.tgz#dd5acf4a52a458ff1d9ef4fd66406fba0afbbb33"
+  integrity sha1-3VrPSlKkWP8dnvT9ZkBvugr7uzM=
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -16065,17 +16074,6 @@ postcss-ordered-values@^4.1.2:
     cssnano-util-get-arguments "^4.0.0"
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
-
-postcss-prefix-wrapper@^0.3.8:
-  version "0.3.8"
-  resolved "https://registry.npm.alibaba-inc.com/postcss-prefix-wrapper/download/postcss-prefix-wrapper-0.3.8.tgz#30ebbaaa8b0bacdaed2b729847d80a0630a2a1af"
-  integrity sha1-MOu6qosLrNrtK3KYR9gKBjCioa8=
-  dependencies:
-    escape-string-regexp "^2.0.0"
-    glob "^7.1.6"
-    lodash "^4.17.11"
-    object-assign "^4.1.1"
-    postcss "^7.0.17"
 
 postcss-reduce-initial@^4.0.3:
   version "4.0.3"
