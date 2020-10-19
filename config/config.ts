@@ -37,12 +37,14 @@ module.exports = {
           })
           return res
         },
-        chainWebpack(chain: Chain) {
-          chain.resolve.alias.set(
-            '@alicloudfe/components',
-            path.resolve(__dirname, '../base-components/src/')
-          )
-        }
+        // chainWebpack(chain: Chain) {
+        //   chain.resolve.alias.set(
+        //     '@alicloudfe/components',
+        //     path.resolve(__dirname, '../base-components/src/')
+        //   )
+        // },
+        demoWrapperPath: path.resolve(__dirname, "demoWrapper.tsx"),
+        initializerPath: path.resolve(__dirname, "initCss.ts"),
       }
     ]
   ]

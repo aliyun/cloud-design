@@ -12,7 +12,9 @@
   "scripts": {
     "boot": "yarn && lerna run prepare",
     "clean": "lerna clean -y && git clean -qfdx",
-    "dev": "breezr start --port 3335"
+    "dev": "breezr start --port 3335",
+    "dev-serve": "DEV_SERVE=true breezr start --port 3335",
+    "build-docs": "breezr build"
   },
   "repository": {
     "type": "git",
@@ -24,9 +26,10 @@
   "devDependencies": {
     "@ali/lerna": "^1.0.1",
     "@alicloud/console-toolkit-cli": "^1.1.0",
-    "@alicloud/console-toolkit-preset-multi-entry": "^1.0.39",
+    "@alicloud/console-toolkit-preset-multi-entry": "^1.0.42",
     "@types/react": "^16.9.46",
     "@types/react-router-dom": "^5.1.5",
+    "ali-oss": "^6.11.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "styled-components": "^5.2.0",
