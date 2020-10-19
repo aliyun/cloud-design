@@ -23,7 +23,7 @@ PC first，其他屏幕支持自适应，因此默认情况下 `device` 处于 `
 
 | 参数        | 说明                                                                               | 类型                      | 默认值       |
 | --------- | -------------------------------------------------------------------------------- | ----------------------- | --------- |
-| device    | 设备，用来做自适应，默认为 PC<br><br>**可选值**:<br>'phone'(手机)<br>'tablet'(平板)<br>'desktop'(PC) | Enum                    | 'desktop' |
+| device    | 设备，用来做自适应，默认为 PC<br/><br/>**可选值**:<br/>'phone'(手机)<br/>'tablet'(平板)<br/>'desktop'(PC) | Enum                    | 'desktop' |
 | columns   | 分为几列， 默认是 12 列                                                                   | Number/String           | -         |
 | gap       | 每个 cell 之间的间距， [bottom&top, right&left]                                          | Array&lt;Number>/Number | -         |
 | component | 设置标签类型                                                                           | custom                  | 'div'     |
