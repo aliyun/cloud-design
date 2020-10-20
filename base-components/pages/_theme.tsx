@@ -25,9 +25,9 @@ const mapThemeToImport = {
   'theme-hybridcloud': () =>
     import('../src/theme/hybridcloud/index-no-var.scss?pureCSS'),
   'theme-hybridcloud-dark': () =>
-    import('../src/theme/hybridcloud/index-no-var.scss?pureCSS'),
+    import('../src/theme/hybridcloud-dark/index-no-var.scss?pureCSS'),
   'theme-yunxiao': () =>
-    import('../src/theme/hybridcloud/index-no-var.scss?pureCSS')
+    import('../src/theme/yunxiao/index-no-var.scss?pureCSS')
 }
 
 const styleEl = document.createElement('style')
