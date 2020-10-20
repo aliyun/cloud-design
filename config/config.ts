@@ -24,18 +24,18 @@ module.exports = {
           return res
         },
         getMarkdownEntries: () => {
-          const baseDir = path.resolve(__dirname, '../base-components/src/')
-          const paths = globby.sync('*/index.md', { cwd: baseDir })
+          const baseDir = path.resolve(__dirname, './dev-docs/contents')
+          const paths = globby.sync('*', { cwd: baseDir })
 
-          const res = paths.map((relativePath: string) => {
-            const match = relativePath.match(/(.*)\/index\.md/)
+          const docs = paths.map((relativePath: string) => {
+            const match = relativePath.match(/(.*)\.md/)
             if (!match) throw new Error(`unexpected path ${relativePath}`)
             return {
               key: 'docs/' + match[1],
               path: path.resolve(baseDir, relativePath)
             }
           })
-          return res
+          return docs
         },
         // chainWebpack(chain: Chain) {
         //   chain.resolve.alias.set(
@@ -43,8 +43,8 @@ module.exports = {
         //     path.resolve(__dirname, '../base-components/src/')
         //   )
         // },
-        demoWrapperPath: path.resolve(__dirname, "demoWrapper.tsx"),
-        initializerPath: path.resolve(__dirname, "initCss.ts"),
+        demoWrapperPath: path.resolve(__dirname, 'demoWrapper.tsx'),
+        initializerPath: path.resolve(__dirname, 'initCss.ts')
       }
     ]
   ]
