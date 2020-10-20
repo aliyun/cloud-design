@@ -3154,10 +3154,10 @@
     --menu-divider-width: var(--line-1, 1px);
     
     
-    --menu-divider-margin-ver: var(--s-2, 8px);
+    --menu-divider-margin-ver: 8px;
     
     
-    --menu-divider-margin-hoz: var(--s-3, 12px);
+    --menu-divider-margin-hoz: var(--s-2, 8px);
     
     
     --menu-icon-selected-size: var(--icon-s, 16px);
@@ -3211,7 +3211,7 @@
     --menu-arrow-color-hover: var(--color-fill1-6, #8B8B8B);
     
     
-    --menu-icon-selected-hover-color: var(--color-transparent, transparent);
+    --menu-icon-selected-hover-color: var(--color-brand1-6, #1B9AEE);
     
     
     --menu-color-disabled: var(--color-text1-1, #CECECE);
@@ -3523,13 +3523,13 @@
     /* ------------------------ tag ------------------------ */
     
     
-    --tag-size-l-height: var(--s-7, 28px);
+    --tag-size-l-height: var(--s-9, 36px);
     
     
-    --tag-size-m-height: var(--s-6, 24px);
+    --tag-size-m-height: var(--s-8, 32px);
     
     
-    --tag-size-s-height: var(--s-5, 20px);
+    --tag-size-s-height: var(--s-6, 24px);
     
     
     --tag-size-l-padding-lr: var(--s-4, 16px);
@@ -3538,7 +3538,7 @@
     --tag-size-m-padding-lr: 8px;
     
     
-    --tag-size-s-padding-lr: var(--s-1, 4px);
+    --tag-size-s-padding-lr: var(--s-2, 8px);
     
     
     --tag-corner-radius: var(--corner-1, 4px);
@@ -3547,13 +3547,13 @@
     --tag-checkable-corner-radius: var(--corner-1, 4px);
     
     
-    --tag-border-width: var(--line-1, 1px);
+    --tag-border-width: var(--line-zero, 0px);
     
     
     --tag-shadow: var(--shadow-zero, none);
     
     
-    --tag-size-l-text-size: var(--font-size-subhead, 16px);
+    --tag-size-l-text-size: var(--font-size-body-2, 14px);
     
     
     --tag-size-m-text-size: var(--font-size-body-1, 14px);
@@ -3568,10 +3568,10 @@
     --tag-size-m-content-min-width: 36px;
     
     
-    --tag-size-l-content-min-width: var(--s-12, 48px);
+    --tag-size-l-content-min-width: var(--s-10, 40px);
     
     
-    --tag-size-l-icon-font: var(--icon-xs, 12px);
+    --tag-size-l-icon-font: var(--icon-s, 16px);
     
     
     --tag-size-m-icon-font: var(--icon-s, 16px);
@@ -3580,19 +3580,19 @@
     --tag-size-s-icon-font: var(--icon-xs, 12px);
     
     
-    --tag-size-l-tick-icon-size: var(--icon-s, 16px);
+    --tag-size-l-tick-icon-size: var(--icon-xs, 12px);
     
     
-    --tag-size-m-tick-icon-size: var(--icon-xs, 12px);
+    --tag-size-m-tick-icon-size: var(--icon-xxs, 8px);
     
     
     --tag-size-s-tick-icon-size: var(--icon-xxs, 8px);
     
     
-    --tag-size-l-tick-icon-bg-size: var(--s-1, 4px);
+    --tag-size-l-tick-icon-bg-size: var(--s-6, 24px);
     
     
-    --tag-size-m-tick-icon-bg-size: var(--s-1, 4px);
+    --tag-size-m-tick-icon-bg-size: var(--s-5, 20px);
     
     
     --tag-size-s-tick-icon-bg-size: var(--s-5, 20px);
@@ -3613,16 +3613,16 @@
     --tag-closable-normal-icon-color-disabled: var(--color-white, #FFFFFF);
     
     
-    --tag-closable-normal-bg: var(--color-line1-1, #E8E8E8);
+    --tag-closable-normal-bg: var(--color-transparent, transparent);
     
     
     --tag-closable-normal-bg-hover: var(--color-fill1-3, #E8E8E8);
     
     
-    --tag-closable-normal-bg-disabled: var(--color-line1-1, #E8E8E8);
+    --tag-closable-normal-bg-disabled: var(--color-transparent, transparent);
     
     
-    --tag-closable-bordered-text-color: var(--color-text1-3, #575757);
+    --tag-closable-bordered-text-color: var(--color-text1-2, #6E6E6E);
     
     
     --tag-closable-bordered-border-color: var(--color-transparent, transparent);
@@ -3631,7 +3631,7 @@
     --tag-closable-bordered-bg: var(--color-fill1-2, #F7F7F7);
     
     
-    --tag-closable-bordered-text-color-hover: var(--color-text1-3, #575757);
+    --tag-closable-bordered-text-color-hover: var(--color-text1-2, #6E6E6E);
     
     
     --tag-closable-bordered-border-color-hover: var(--color-transparent, transparent);
@@ -3640,13 +3640,13 @@
     --tag-closable-bordered-bg-hover: var(--color-fill1-3, #E8E8E8);
     
     
-    --tag-closable-bordered-tail-color: var(--color-text1-2, #6E6E6E);
+    --tag-closable-bordered-tail-color: var(--color-transparent, transparent);
     
     
-    --tag-closable-bordered-tail-color-hover: var(--color-text1-2, #6E6E6E);
+    --tag-closable-bordered-tail-color-hover: var(--color-fill1-6, #8B8B8B);
     
     
-    --tag-closable-bordered-tail-color-disabled: var(--color-text1-1, #CECECE);
+    --tag-closable-bordered-tail-color-disabled: var(--color-transparent, transparent);
     
     
     --tag-closable-bordered-border-color-disabled: var(--color-line1-1, #E8E8E8);
@@ -3655,10 +3655,10 @@
     --tag-closable-bordered-text-color-disabled: var(--color-text1-1, #CECECE);
     
     
-    --tag-closable-bordered-bg-disabled: var(--color-white, #FFFFFF);
+    --tag-closable-bordered-bg-disabled: var(--color-fill1-2, #F7F7F7);
     
     
-    --tag-fill-tail-color: var(--color-brand1-6, #1B9AEE);
+    --tag-fill-tail-color: var(--color-transparent, transparent);
     
     
     --tag-fill-border-color: var(--color-transparent, transparent);
@@ -3667,19 +3667,19 @@
     --tag-fill-border-color-hover: var(--color-transparent, transparent);
     
     
-    --tag-fill-text-color-disabled: var(--color-text1-1, #CECECE);
+    --tag-fill-text-color-disabled: var(--color-notice-3, #90CDF5);
     
     
-    --tag-fill-border-color-disabled: var(--color-line1-1, #E8E8E8);
+    --tag-fill-border-color-disabled: var(--color-transparent, transparent);
     
     
-    --tag-fill-bg-color-disabled: var(--color-white, #FFFFFF);
+    --tag-fill-bg-color-disabled: var(--color-brand1-1, #F0F9FF);
     
     
-    --tag-fill-tail-color-disabled: var(--color-text1-1, #CECECE);
+    --tag-fill-tail-color-disabled: var(--color-transparent, transparent);
     
     
-    --tag-bordered-text-color: var(--color-text1-3, #575757);
+    --tag-bordered-text-color: var(--color-text1-2, #6E6E6E);
     
     
     --tag-bordered-tail-color: var(--color-text1-3, #575757);
@@ -3694,10 +3694,10 @@
     --tag-fill-text-color-hover: var(--color-brand1-6, #1B9AEE);
     
     
-    --tag-fill-tail-color-hover: var(--color-brand1-6, #1B9AEE);
+    --tag-fill-tail-color-hover: var(--color-notice-4, #41AAF0);
     
     
-    --tag-bordered-text-color-hover: var(--color-text1-3, #575757);
+    --tag-bordered-text-color-hover: var(--color-text1-2, #6E6E6E);
     
     
     --tag-bordered-tail-color-hover: var(--color-text1-4, #292929);
@@ -3709,10 +3709,10 @@
     --tag-bordered-text-color-disabled: var(--color-text1-1, #CECECE);
     
     
-    --tag-bordered-border-color-disabled: var(--color-line1-1, #E8E8E8);
+    --tag-bordered-border-color-disabled: var(--color-transparent, transparent);
     
     
-    --tag-bordered-bg-disabled: var(--color-white, #FFFFFF);
+    --tag-bordered-bg-disabled: var(--color-fill1-2, #F7F7F7);
     
     
     --tag-secondary-text-color-hover: var(--color-brand1-6, #1B9AEE);
@@ -3721,7 +3721,7 @@
     --tag-bordered-border-color: var(--color-transparent, transparent);
     
     
-    --tag-secondary-border-color: var(--color-brand1-6, #1B9AEE);
+    --tag-secondary-border-color: var(--color-transparent, transparent);
     
     
     --tag-checkable-normal-bg-selected: var(--color-brand1-6, #1B9AEE);
@@ -3733,10 +3733,10 @@
     --tag-bordered-border-color-hover: var(--color-transparent, transparent);
     
     
-    --tag-secondary-border-color-hover: var(--color-brand1-6, #1B9AEE);
+    --tag-secondary-border-color-hover: var(--color-transparent, transparent);
     
     
-    --tag-checkable-normal-bg-selected-hover: var(--color-brand1-6, #1B9AEE);
+    --tag-checkable-normal-bg-selected-hover: var(--color-brand1-3, #90CDF5);
     
     
     --tag-checkable-secondary-bg-selected-hover: var(--color-brand1-9, #064C7A);
@@ -3751,7 +3751,7 @@
     --tag-bordered-bg: var(--color-fill1-2, #F7F7F7);
     
     
-    --tag-secondary-bg: var(--color-transparent, transparent);
+    --tag-secondary-bg: var(--color-brand1-1, #F0F9FF);
     
     
     --tag-fill-bg-color-hover: var(--color-brand1-2, #C5E8FF);
@@ -3760,7 +3760,7 @@
     --tag-bordered-bg-hover: var(--color-fill1-3, #E8E8E8);
     
     
-    --tag-secondary-bg-hover: var(--color-brand1-1, #F0F9FF);
+    --tag-secondary-bg-hover: var(--color-notice-2, #C5E8FF);
     
     
     --tag-text-color-disabled: var(--color-text1-1, #CECECE);
@@ -3769,22 +3769,22 @@
     --tag-border-color-disabled: var(--color-line1-1, #E8E8E8);
     
     
-    --tag-checkable-fill-text-color: var(--color-text1-3, #575757);
+    --tag-checkable-fill-text-color: var(--color-text1-2, #6E6E6E);
     
     
-    --tag-checkable-fill-bg-color: var(--color-fill1-3, #E8E8E8);
+    --tag-checkable-fill-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
-    --tag-checkable-fill-border-color: var(--color-fill1-3, #E8E8E8);
+    --tag-checkable-fill-border-color: var(--color-transparent, transparent);
     
     
-    --tag-checkable-fill-text-color-hover: var(--color-text1-4, #292929);
+    --tag-checkable-fill-text-color-hover: var(--color-text1-2, #6E6E6E);
     
     
-    --tag-checkable-fill-bg-color-hover: var(--color-fill1-4, #DBDBDB);
+    --tag-checkable-fill-bg-color-hover: var(--color-notice-1, #F0F9FF);
     
     
-    --tag-checkable-fill-border-color-hover: var(--color-fill1-4, #DBDBDB);
+    --tag-checkable-fill-border-color-hover: var(--color-transparent, transparent);
     
     
     --tag-checkable-fill-tail-color: var(--color-text1-3, #575757);
@@ -3802,64 +3802,64 @@
     --tag-checkable-fill-border-color-disabled: var(--color-fill1-1, #FFFFFF);
     
     
-    --tag-checkable-fill-bg-color-disabled: var(--color-fill1-1, #FFFFFF);
+    --tag-checkable-fill-bg-color-disabled: var(--color-fill1-2, #F7F7F7);
     
     
-    --tag-checkable-normal-text-color: var(--color-text1-3, #575757);
+    --tag-checkable-normal-text-color: var(--color-brand1-6, #1B9AEE);
     
     
-    --tag-checkable-normal-border-color: var(--color-line1-1, #E8E8E8);
+    --tag-checkable-normal-border-color: var(--color-transparent, transparent);
     
     
-    --tag-checkable-normal-bg: var(--color-white, #FFFFFF);
+    --tag-checkable-normal-bg: var(--color-notice-1, #F0F9FF);
     
     
-    --tag-checkable-normal-text-color-hover: var(--color-text1-4, #292929);
+    --tag-checkable-normal-text-color-hover: var(--color-brand1-6, #1B9AEE);
     
     
-    --tag-checkable-normal-border-color-hover: var(--color-line1-1, #E8E8E8);
+    --tag-checkable-normal-border-color-hover: var(--color-transparent, transparent);
     
     
-    --tag-checkable-normal-bg-hover: var(--color-fill1-2, #F7F7F7);
+    --tag-checkable-normal-bg-hover: var(--color-brand1-1, #F0F9FF);
     
     
     --tag-checkable-normal-text-selected-disabled: var(--color-text1-1, #CECECE);
     
     
-    --tag-checkable-normal-border-selected-disabled: var(--color-line1-1, #E8E8E8);
+    --tag-checkable-normal-border-selected-disabled: var(--color-transparent, transparent);
     
     
-    --tag-checkable-normal-bg-selected-disabled: var(--color-fill1-1, #FFFFFF);
+    --tag-checkable-normal-bg-selected-disabled: var(--color-fill1-2, #F7F7F7);
     
     
-    --tag-checkable-normal-tick-bg-selected-disabled: var(--color-line1-1, #E8E8E8);
+    --tag-checkable-normal-tick-bg-selected-disabled: var(--color-fill1-4, #DBDBDB);
     
     
-    --tag-checkable-primary-text-color: var(--color-white, #FFFFFF);
+    --tag-checkable-primary-text-color: var(--color-brand1-6, #1B9AEE);
     
     
-    --tag-checkable-primary-bg-color: var(--color-brand1-6, #1B9AEE);
+    --tag-checkable-primary-bg-color: var(--color-brand1-1, #F0F9FF);
     
     
-    --tag-checkable-primary-border-color: var(--color-brand1-6, #1B9AEE);
+    --tag-checkable-primary-border-color: var(--color-transparent, transparent);
     
     
-    --tag-checkable-primary-text-color-disabled: var(--color-text1-1, #CECECE);
+    --tag-checkable-primary-text-color-disabled: var(--color-notice-3, #90CDF5);
     
     
-    --tag-checkable-primary-text-color-hover: var(--color-white, #FFFFFF);
+    --tag-checkable-primary-text-color-hover: var(--color-brand1-6, #1B9AEE);
     
     
-    --tag-checkable-primary-bg-color-hover: var(--color-brand1-9, #064C7A);
+    --tag-checkable-primary-bg-color-hover: var(--color-notice-2, #C5E8FF);
     
     
-    --tag-checkable-primary-border-color-hover: var(--color-brand1-9, #064C7A);
+    --tag-checkable-primary-border-color-hover: var(--color-transparent, transparent);
     
     
     --tag-checkable-primary-border-color-disabled: var(--color-fill1-1, #FFFFFF);
     
     
-    --tag-checkable-primary-bg-color-disabled: var(--color-fill1-1, #FFFFFF);
+    --tag-checkable-primary-bg-color-disabled: var(--color-brand1-1, #F0F9FF);
     
     
     --tag-checkable-primary-tail-color: var(--color-white, #FFFFFF);
@@ -3907,13 +3907,13 @@
     --tag-closable-primary-fill-bg-color-hover: var(--color-brand1-2, #C5E8FF);
     
     
-    --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #CECECE);
+    --tag-closable-primary-fill-text-color-disabled: var(--color-notice-3, #90CDF5);
     
     
-    --tag-closable-primary-fill-border-color-disabled: var(--color-line1-1, #E8E8E8);
+    --tag-closable-primary-fill-border-color-disabled: var(--color-transparent, transparent);
     
     
-    --tag-closable-primary-fill-bg-color-disabled: var(--color-white, #FFFFFF);
+    --tag-closable-primary-fill-bg-color-disabled: var(--color-brand1-1, #F0F9FF);
     
     
     /* ------------------------ table ------------------------ */
@@ -8407,7 +8407,7 @@
     --form-element-small-icon-size: var(--icon-xs, 12px);
     
     
-    --form-element-medium-icon-size: var(--icon-xs, 12px);
+    --form-element-medium-icon-size: var(--icon-s, 16px);
     
     
     --form-element-large-icon-size: var(--icon-s, 16px);
@@ -8419,7 +8419,7 @@
     --form-element-medium-corner: var(--corner-1, 4px);
     
     
-    --form-element-large-corner: var(--corner-2, 2px);
+    --form-element-large-corner: var(--corner-1, 4px);
     
     
     /* ------------------------ mask ------------------------ */
