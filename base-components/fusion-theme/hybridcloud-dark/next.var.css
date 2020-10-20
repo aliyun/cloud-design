@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.8.2 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.8.3 (https://fusion.design)
  * @alifd/next@1.21.8 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -7803,8 +7803,8 @@ small {
       cursor: default; }
 
 .next-collapse[dir=rtl] .next-collapse-panel-title {
-  padding: 8px 32px 8px 0;
-  padding: var(--collapse-title-padding-tb, 8px) 32px var(--collapse-title-padding-tb, 8px) 0; }
+  padding: 8px 36px 8px 0;
+  padding: var(--collapse-title-padding-tb, 8px) 36px var(--collapse-title-padding-tb, 8px) 0; }
 
 .next-collapse[dir=rtl] .next-collapse-panel-icon {
   left: inherit;
@@ -7816,8 +7816,8 @@ small {
   margin-right: 0px; }
   .next-collapse[dir=rtl] .next-collapse-panel-icon:before,
   .next-collapse[dir=rtl] .next-collapse-panel-icon .next-icon-remote {
-    width: 12px;
-    font-size: 12px;
+    width: 16px;
+    font-size: 16px;
     line-height: inherit; }
 
 /* put your code here */
@@ -7841,8 +7841,8 @@ small {
     border-top: var(--collapse-title-border-width, 1px) solid var(--collapse-panel-border-color, #383838); }
   .next-collapse .next-collapse-panel-icon {
     position: absolute;
-    color: #4D4D4D;
-    color: var(--collapse-icon-color, #4D4D4D);
+    color: #A8A8A8;
+    color: var(--collapse-icon-color, #A8A8A8);
     -webkit-transition: -webkit-transform 100ms linear;
     transition: -webkit-transform 100ms linear;
     transition: transform 100ms linear;
@@ -7853,8 +7853,8 @@ small {
     margin-right: 0px; }
     .next-collapse .next-collapse-panel-icon:before,
     .next-collapse .next-collapse-panel-icon .next-icon-remote {
-      width: 12px;
-      font-size: 12px;
+      width: 16px;
+      font-size: 16px;
       line-height: inherit; }
   .next-collapse-panel-title {
     position: relative;
@@ -7864,29 +7864,29 @@ small {
     background: var(--collapse-title-bg-color, #292929);
     font-size: 14px;
     font-size: var(--collapse-title-font-size, 14px);
-    font-weight: normal;
-    font-weight: var(--collapse-title-font-weight, normal);
+    font-weight: 500;
+    font-weight: var(--collapse-title-font-weight, 500);
     color: #CCCCCC;
     color: var(--collapse-title-font-color, #CCCCCC);
     cursor: pointer;
-    padding: 8px 0 8px 32px;
-    padding: var(--collapse-title-padding-tb, 8px) 0 var(--collapse-title-padding-tb, 8px) 32px;
+    padding: 8px 0 8px 36px;
+    padding: var(--collapse-title-padding-tb, 8px) 0 var(--collapse-title-padding-tb, 8px) 36px;
     -webkit-transition: background 100ms linear;
     transition: background 100ms linear; }
     .next-collapse-panel-title:hover {
       background: #383838;
       background: var(--collapse-title-hover-bg-color, #383838);
-      color: #CCCCCC;
-      color: var(--collapse-title-hover-font-color, #CCCCCC);
-      font-weight: normal;
-      font-weight: var(--collapse-title-hover-font-weight, normal); }
+      color: #EAEAEA;
+      color: var(--collapse-title-hover-font-color, #EAEAEA);
+      font-weight: 500;
+      font-weight: var(--collapse-title-hover-font-weight, 500); }
       .next-collapse-panel-title:hover .next-collapse-panel-icon {
         color: #EAEAEA;
         color: var(--collapse-icon-hover-color, #EAEAEA); }
   .next-collapse-panel-content {
     height: 0;
-    padding: 0 32px;
-    padding: 0 var(--collapse-content-padding-x, 32px);
+    padding: 0 36px;
+    padding: 0 var(--collapse-content-padding-x, 36px);
     background: #292929;
     background: var(--collapse-content-bg-color, #292929);
     font-size: 12px;
@@ -7898,29 +7898,21 @@ small {
     opacity: 0; }
   .next-collapse-panel-expanded > .next-collapse-panel-content {
     display: block;
-    padding: 12px 32px;
-    padding: var(--collapse-content-padding-y, 12px) var(--collapse-content-padding-x, 32px);
+    padding: 8px 36px;
+    padding: var(--collapse-content-padding-y, 8px) var(--collapse-content-padding-x, 36px);
     height: auto;
     opacity: 1; }
   .next-collapse .next-collapse-unfold-icon::before {
-    content: "";
-    content: var(--collapse-unfold-icon-content, ""); }
+    content: "\E730";
+    content: var(--collapse-unfold-icon-content, "\E730"); }
   .next-collapse-panel-hidden > .next-collapse-panel-content {
     overflow: hidden; }
   .next-collapse .next-collapse-panel-icon::before {
-    content: "\E619";
-    content: var(--collapse-fold-icon-content, "\E619"); }
-  .next-collapse .next-collapse-panel-icon.next-collapse-panel-icon-expanded {
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    margin-left: 0px;
-    margin-right: 0px; }
-    .next-collapse .next-collapse-panel-icon.next-collapse-panel-icon-expanded:before,
-    .next-collapse .next-collapse-panel-icon.next-collapse-panel-icon-expanded .next-icon-remote {
-      width: 12px;
-      font-size: 12px;
-      line-height: inherit; }
+    content: "\E725";
+    content: var(--collapse-fold-icon-content, "\E725"); }
+  .next-collapse .next-collapse-panel-icon.next-collapse-panel-icon-expanded::before {
+    content: "\E730";
+    content: var(--collapse-unfold-icon-content, "\E730"); }
   .next-collapse-disabled {
     border-color: #383838;
     border-color: var(--collapse-disabled-border-color, #383838); }
@@ -7937,8 +7929,8 @@ small {
     color: #6B6B6B;
     color: var(--collapse-title-font-disabled-color, #6B6B6B); }
   .next-collapse-panel-disabled .next-collapse-panel-title:hover {
-    font-weight: normal;
-    font-weight: var(--collapse-title-font-weight, normal); }
+    font-weight: 500;
+    font-weight: var(--collapse-title-font-weight, 500); }
     .next-collapse-panel-disabled .next-collapse-panel-title:hover .next-collapse-panel-icon {
       color: #6B6B6B;
       color: var(--collapse-title-font-disabled-color, #6B6B6B); }
@@ -20620,8 +20612,8 @@ small {
           background-color: transparent; }
         .next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab.active {
           z-index: 1;
-          color: #EAEAEA;
-          color: var(--tab-pure-text-color-selected, #EAEAEA);
+          color: #0D7BE9;
+          color: var(--tab-pure-text-color-selected, #0D7BE9);
           background-color: transparent; }
         .next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab.disabled {
           pointer-events: none;

@@ -2026,7 +2026,7 @@
     --checkbox-border-width: var(--line-1, 1px);
     
     
-    --checkbox-circle-size: var(--icon-xs, 12px);
+    --checkbox-circle-size: var(--icon-xxs, 8px);
     
     
     --checkbox-shadow: var(--shadow-zero, none);
@@ -2041,7 +2041,7 @@
     --checkbox-checked-border-color: var(--color-transparent, transparent);
     
     
-    --checkbox-disabled-border-color: var(--color-line1-1, #E8E8E8);
+    --checkbox-disabled-border-color: var(--color-line1-2, #DBDBDB);
     
     
     --checkbox-checked-hovered-border-color: var(--color-transparent, transparent);
@@ -2074,7 +2074,7 @@
     --checkbox-checked-hovered-bg-color: var(--color-brand1-7, #127FC7);
     
     
-    --checkbox-disabled-bg-color: var(--color-fill1-1, #FFFFFF);
+    --checkbox-disabled-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
     --checkbox-font-size: var(--font-size-body-1, 14px);
@@ -2101,7 +2101,7 @@
     --timeline-item-custom-node-font-size: var(--font-size-caption, 12px);
     
     
-    --timeline-item-node-padding: var(--s-1, 4px);
+    --timeline-item-node-padding: var(--s-zero, 0px);
     
     
     --timeline-item-dot-size: var(--s-2, 8px);
@@ -2116,25 +2116,25 @@
     --timeline-item-left-content-width: var(--s-20, 80px);
     
     
-    --timeline-item-content-margin-left: var(--s-3, 12px);
+    --timeline-item-content-margin-left: var(--s-2, 8px);
     
     
     --timeline-item-body-margin-top: var(--s-2, 8px);
     
     
-    --timeline-item-title-font-size: var(--font-size-subhead, 16px);
+    --timeline-item-title-font-size: var(--font-size-body-1, 14px);
     
     
     --timeline-item-title-font-weight: var(--font-weight-3, bold);
     
     
-    --timeline-item-title-margin-top: var(--s-1, 4px);
+    --timeline-item-title-margin-top: 2px;
     
     
-    --timeline-item-time-margin-top: var(--s-1, 4px);
+    --timeline-item-time-margin-top: var(--s-2, 8px);
     
     
-    --timeline-item-time-margin-bottom: var(--s-5, 20px);
+    --timeline-item-time-margin-bottom: var(--s-10, 40px);
     
     
     --timeline-item-body-font-size: var(--font-size-body-1, 14px);
@@ -2158,10 +2158,10 @@
     --timeline-item-title-color: var(--color-text1-4, #292929);
     
     
-    --timeline-item-body-color: var(--color-text1-3, #575757);
+    --timeline-item-body-color: var(--color-fill1-6, #8B8B8B);
     
     
-    --timeline-item-left-body-color: var(--color-text1-2, #6E6E6E);
+    --timeline-item-left-body-color: var(--color-text1-1, #CECECE);
     
     
     --timeline-item-time-color: var(--color-text1-1, #CECECE);
@@ -2338,7 +2338,7 @@
     --search-normal-secondary-btn-text-padding-left: var(--s-zero, 0px);
     
     
-    --search-normal-secondary-l-height: var(--s-12, 48px);
+    --search-normal-secondary-l-height: var(--s-9, 36px);
     
     
     --search-normal-secondary-l-icon-size: var(--icon-l, 24px);
@@ -2347,7 +2347,7 @@
     --search-normal-secondary-l-btn-text-size: var(--font-size-subhead, 16px);
     
     
-    --search-normal-secondary-m-height: var(--s-10, 40px);
+    --search-normal-secondary-m-height: var(--s-8, 32px);
     
     
     --search-normal-secondary-m-icon-size: var(--icon-s, 16px);
@@ -2356,7 +2356,7 @@
     --search-normal-secondary-m-btn-text-size: var(--font-size-subhead, 16px);
     
     
-    --search-normal-normal-color: var(--color-line1-3, #CECECE);
+    --search-normal-normal-color: var(--color-line1-1, #E8E8E8);
     
     
     --search-normal-normal-split-color: var(--color-line1-1, #E8E8E8);
@@ -2386,7 +2386,7 @@
     --search-normal-normal-btn-text-padding-left: var(--s-zero, 0px);
     
     
-    --search-normal-normal-l-height: var(--s-12, 48px);
+    --search-normal-normal-l-height: var(--s-9, 36px);
     
     
     --search-normal-normal-l-icon-size: var(--icon-l, 24px);
@@ -2395,7 +2395,7 @@
     --search-normal-normal-l-btn-text-size: var(--font-size-subhead, 16px);
     
     
-    --search-normal-normal-m-height: var(--s-10, 40px);
+    --search-normal-normal-m-height: var(--s-8, 32px);
     
     
     --search-normal-normal-m-icon-size: var(--icon-s, 16px);
@@ -2455,7 +2455,7 @@
     --search-normal-dark-m-btn-text-size: var(--font-size-subhead, 16px);
     
     
-    --search-simple-corner: var(--corner-2, 2px);
+    --search-simple-corner: var(--corner-1, 4px);
     
     
     --search-simple-l-icon-margin-right: var(--s-4, 16px);
@@ -2647,7 +2647,7 @@
     --cascader-menu-height: var(--s-48, 192px);
     
     
-    --cascader-menu-icon-expand-size: var(--icon-s, 16px);
+    --cascader-menu-icon-expand-size: var(--icon-xs, 12px);
     
     
     --cascader-menu-border-color: var(--color-line1-1, #E8E8E8);
@@ -2656,10 +2656,10 @@
     --cascader-menu-border-radius: var(--corner-1, 4px);
     
     
-    --cascader-menu-icon-expand-color: var(--color-text1-3, #575757);
+    --cascader-menu-icon-expand-color: var(--color-fill1-5, #B3B3B3);
     
     
-    --cascader-menu-icon-hover-expand-color: var(--color-text1-4, #292929);
+    --cascader-menu-icon-hover-expand-color: var(--color-fill1-5, #B3B3B3);
     
     
     --cascader-menu-item-expanded-color: var(--color-text1-4, #292929);
@@ -2881,7 +2881,7 @@
     --card-body-hide-divider-padding-top: var(--s-zero, 0px);
     
     
-    --card-content-font-size: var(--font-size-body-1, 14px);
+    --card-content-font-size: var(--font-size-caption, 12px);
     
     
     --card-content-line-height: var(--font-lineheight-2, 1.5);
@@ -3055,10 +3055,10 @@
     --switch-disabled-on-trigger-bg-color: var(--color-white, #FFFFFF);
     
     
-    --switch-normal-on-color-font: var(--color-white, #FFFFFF);
+    --switch-normal-on-color-font: var(--color-transparent, transparent);
     
     
-    --switch-disabled-on-color-font: var(--color-text1-1, #CECECE);
+    --switch-disabled-on-color-font: var(--color-transparent, transparent);
     
     
     --switch-disabled-on-border-color: var(--color-line1-3, #CECECE);
@@ -3070,10 +3070,10 @@
     --switch-on-shadow: var(--shadow-zero, none);
     
     
-    --switch-normal-off-bg-color: var(--color-text1-1, #CECECE);
+    --switch-normal-off-bg-color: var(--color-fill1-6, #8B8B8B);
     
     
-    --switch-hover-off-bg-color: var(--color-text1-2, #6E6E6E);
+    --switch-hover-off-bg-color: var(--color-fill1-5, #B3B3B3);
     
     
     --switch-disabled-off-bg-color: var(--color-fill1-3, #E8E8E8);
@@ -3091,10 +3091,10 @@
     --switch-handle-disabled-border-color: var(--color-line1-1, #E8E8E8);
     
     
-    --switch-normal-off-color-font: var(--color-text1-2, #6E6E6E);
+    --switch-normal-off-color-font: var(--color-transparent, transparent);
     
     
-    --switch-disabled-off-color-font: var(--color-line1-3, #CECECE);
+    --switch-disabled-off-color-font: var(--color-transparent, transparent);
     
     
     --switch-handle-off-border-color: var(--color-transparent, transparent);
@@ -3115,7 +3115,7 @@
     /* ------------------------ paragraph ------------------------ */
     
     
-    --paragraph-text-color: var(--color-text1-4, #292929);
+    --paragraph-text-color: var(--color-text1-2, #6E6E6E);
     
     
     --paragraph-s-font-size: var(--font-size-body-1, 14px);
@@ -3136,7 +3136,7 @@
     --menu-padding-vertical: var(--s-2, 8px);
     
     
-    --menu-padding-horizontal: var(--s-2, 8px);
+    --menu-padding-horizontal: var(--s-5, 20px);
     
     
     --menu-line-height: var(--s-9, 36px);
@@ -3169,7 +3169,7 @@
     --menu-icon-size: var(--icon-s, 16px);
     
     
-    --menu-hoz-icon-size: var(--icon-xs, 12px);
+    --menu-hoz-icon-size: var(--icon-s, 16px);
     
     
     --menu-icon-margin: var(--s-1, 4px);
@@ -3178,7 +3178,7 @@
     --menu-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
     
     
-    --menu-color: var(--color-text1-4, #292929);
+    --menu-color: var(--color-text1-2, #6E6E6E);
     
     
     --menu-divider-style: var(--line-solid, solid);
@@ -3190,7 +3190,7 @@
     --menu-background: var(--color-white, #FFFFFF);
     
     
-    --menu-arrow-color: var(--color-text1-3, #575757);
+    --menu-arrow-color: var(--color-fill1-5, #B3B3B3);
     
     
     --menu-background-selected: var(--color-brand1-1, #F0F9FF);
@@ -3208,7 +3208,7 @@
     --menu-color-hover: var(--color-text1-4, #292929);
     
     
-    --menu-arrow-color-hover: var(--color-text1-4, #292929);
+    --menu-arrow-color-hover: var(--color-fill1-6, #8B8B8B);
     
     
     --menu-icon-selected-hover-color: var(--color-transparent, transparent);
@@ -3226,7 +3226,7 @@
     --menu-unfold-icon-content: var(--icon-reset);
     
     
-    --menu-popupfold-icon-content: var(--icon-content-arrow-right, "");
+    --menu-popupfold-icon-content: var(--icon-content-chevron-right-s, "");
     
     
     /* ------------------------ upload ------------------------ */
@@ -3235,25 +3235,25 @@
     --upload-disable-text-color: var(--color-text1-1, #CECECE);
     
     
-    --upload-disable-border-color: var(--color-line1-1, #E8E8E8);
+    --upload-disable-border-color: var(--color-transparent, transparent);
     
     
-    --upload-text-list-height: var(--s-15, 60px);
+    --upload-text-list-height: var(--s-9, 36px);
     
     
-    --upload-text-list-padding-left-right: var(--s-4, 16px);
+    --upload-text-list-padding-left-right: 12px;
     
     
-    --upload-text-list-font-size: var(--font-size-body-1, 14px);
+    --upload-text-list-font-size: var(--font-size-caption, 12px);
     
     
-    --upload-text-list-close-icon-size: var(--icon-s, 16px);
+    --upload-text-list-close-icon-size: var(--icon-xs, 12px);
     
     
-    --upload-text-list-close-icon-right: var(--s-3, 12px);
+    --upload-text-list-close-icon-right: var(--s-4, 16px);
     
     
-    --upload-text-list-corner: var(--corner-zero, 0);
+    --upload-text-list-corner: var(--corner-1, 4px);
     
     
     --upload-text-list-bg-color: var(--color-white, #FFFFFF);
@@ -3286,7 +3286,7 @@
     --upload-text-list-size-font-color-hover: var(--color-text1-2, #6E6E6E);
     
     
-    --upload-text-list-progressbar-height: var(--s-2, 8px);
+    --upload-text-list-progressbar-height: var(--s-1, 4px);
     
     
     --upload-image-list-item-padding: var(--s-2, 8px);
@@ -3295,13 +3295,13 @@
     --upload-image-list-item-picture-size: var(--s-12, 48px);
     
     
-    --upload-image-list-item-picture-icon-size: var(--icon-l, 24px);
+    --upload-image-list-item-picture-icon-size: var(--icon-s, 16px);
     
     
-    --upload-image-list-item-picture-border-width: var(--line-1, 1px);
+    --upload-image-list-item-picture-border-width: var(--line-zero, 0px);
     
     
-    --upload-image-list-item-picture-corner: var(--corner-zero, 0);
+    --upload-image-list-item-picture-corner: var(--corner-1, 4px);
     
     
     --upload-image-list-item-thumbnail-font-color: var(--color-text1-1, #CECECE);
@@ -3313,7 +3313,7 @@
     --upload-image-list-close-icon-size: var(--icon-s, 16px);
     
     
-    --upload-image-list-close-icon-right: var(--s-3, 12px);
+    --upload-image-list-close-icon-right: var(--s-4, 16px);
     
     
     --upload-image-list-item-border-width: var(--line-1, 1px);
@@ -3349,7 +3349,7 @@
     --upload-image-list-item-picture-background-color: var(--color-fill1-2, #F7F7F7);
     
     
-    --upload-image-list-progressbar-height: var(--s-2, 8px);
+    --upload-image-list-progressbar-height: var(--s-1, 4px);
     
     
     --upload-card-size: var(--s-25, 100px);
@@ -3358,10 +3358,10 @@
     --upload-card-margin-bottom: var(--s-4, 16px);
     
     
-    --upload-card-add-icon-size: var(--icon-l, 24px);
+    --upload-card-add-icon-size: var(--icon-m, 20px);
     
     
-    --upload-card-add-text-size: var(--font-size-body-1, 14px);
+    --upload-card-add-text-size: var(--font-size-caption, 12px);
     
     
     --upload-card-add-text-margin-top: var(--s-3, 12px);
@@ -3400,16 +3400,16 @@
     --upload-card-list-bg-color-error: var(--color-fill1-1, #FFFFFF);
     
     
-    --upload-card-list-margin-right: var(--s-3, 12px);
+    --upload-card-list-margin-right: var(--s-4, 16px);
     
     
     --upload-card-list-padding: var(--s-zero, 0px);
     
     
-    --upload-card-list-corner: var(--corner-zero, 0);
+    --upload-card-list-corner: var(--corner-1, 4px);
     
     
-    --upload-card-list-border-color: var(--color-line1-3, #CECECE);
+    --upload-card-list-border-color: var(--color-transparent, transparent);
     
     
     --upload-card-list-border-color-error: var(--color-error-3, #F7AAA3);
@@ -3424,7 +3424,7 @@
     --upload-card-list-thumbnail-icon-size: var(--icon-xxl, 48px);
     
     
-    --upload-card-list-name-margin-top: var(--s-1, 4px);
+    --upload-card-list-name-margin-top: var(--s-2, 8px);
     
     
     --upload-card-list-name-font-size: var(--font-size-caption, 12px);
@@ -3442,7 +3442,7 @@
     --upload-select-card-tool-bg-opacity: 0.36;
     
     
-    --upload-drag-zone-border-color: var(--color-line1-3, #CECECE);
+    --upload-drag-zone-border-color: var(--color-transparent, transparent);
     
     
     --upload-drag-zone-over-border-color: var(--color-brand1-6, #1B9AEE);
@@ -3460,7 +3460,7 @@
     --upload-drag-zone-hint-font-size: var(--font-size-caption, 12px);
     
     
-    --upload-drag-zone-bg-color: var(--color-transparent, transparent);
+    --upload-drag-zone-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
     --upload-drag-zone-upload-icon: var(--icon-content-upload, "");
@@ -3535,13 +3535,13 @@
     --tag-size-l-padding-lr: var(--s-4, 16px);
     
     
-    --tag-size-m-padding-lr: var(--s-3, 12px);
+    --tag-size-m-padding-lr: 8px;
     
     
     --tag-size-s-padding-lr: var(--s-1, 4px);
     
     
-    --tag-corner-radius: var(--corner-3, 50px);
+    --tag-corner-radius: var(--corner-1, 4px);
     
     
     --tag-checkable-corner-radius: var(--corner-1, 4px);
@@ -3556,7 +3556,7 @@
     --tag-size-l-text-size: var(--font-size-subhead, 16px);
     
     
-    --tag-size-m-text-size: var(--font-size-body-2, 14px);
+    --tag-size-m-text-size: var(--font-size-body-1, 14px);
     
     
     --tag-size-s-text-size: var(--font-size-caption, 12px);
@@ -3565,7 +3565,7 @@
     --tag-size-s-content-min-width: var(--s-8, 32px);
     
     
-    --tag-size-m-content-min-width: var(--s-10, 40px);
+    --tag-size-m-content-min-width: 36px;
     
     
     --tag-size-l-content-min-width: var(--s-12, 48px);
@@ -3574,7 +3574,7 @@
     --tag-size-l-icon-font: var(--icon-xs, 12px);
     
     
-    --tag-size-m-icon-font: var(--icon-xs, 12px);
+    --tag-size-m-icon-font: var(--icon-s, 16px);
     
     
     --tag-size-s-icon-font: var(--icon-xs, 12px);
@@ -3640,7 +3640,7 @@
     --tag-closable-bordered-bg-hover: var(--color-fill1-3, #E8E8E8);
     
     
-    --tag-closable-bordered-tail-color: var(--color-text1-3, #575757);
+    --tag-closable-bordered-tail-color: var(--color-text1-2, #6E6E6E);
     
     
     --tag-closable-bordered-tail-color-hover: var(--color-text1-2, #6E6E6E);
@@ -4528,10 +4528,10 @@
     --input-multiple-corner: var(--corner-1, 4px);
     
     
-    --input-addon-bg-color: var(--color-white, #FFFFFF);
+    --input-addon-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
-    --input-addon-text-color: var(--color-text1-2, #6E6E6E);
+    --input-addon-text-color: var(--color-text1-1, #CECECE);
     
     
     --input-addon-padding: var(--s-2, 8px);
@@ -4546,7 +4546,7 @@
     --input-l-icon-padding-right: var(--s-2, 8px);
     
     
-    --input-m-padding: var(--s-2, 8px);
+    --input-m-padding: var(--s-3, 12px);
     
     
     --input-m-label-padding-left: var(--s-2, 8px);
@@ -4555,7 +4555,7 @@
     --input-m-icon-padding-right: var(--s-2, 8px);
     
     
-    --input-s-padding: var(--s-1, 4px);
+    --input-s-padding: var(--s-2, 8px);
     
     
     --input-s-label-padding-left: var(--s-2, 8px);
@@ -4606,13 +4606,13 @@
     --input-maxlen-font-size: var(--font-size-caption, 12px);
     
     
-    --input-hint-color: var(--color-text1-2, #6E6E6E);
+    --input-hint-color: var(--color-fill1-5, #B3B3B3);
     
     
     --input-hint-hover-color: var(--color-text1-3, #575757);
     
     
-    --input-feedback-clear-icon: var(--icon-content-delete-filling, "");
+    --input-feedback-clear-icon: var(--icon-content-remove-o-fill, "");
     
     
     /* ------------------------ loading ------------------------ */
@@ -4657,13 +4657,13 @@
     --badge-size-count-font: var(--font-size-body-1, 14px);
     
     
-    --badge-color-bg: var(--color-error-4, #ED675A);
+    --badge-color-bg: var(--color-link-3, #1B9AEE);
     
     
     --badge-size-count-border-radius: var(--s-2, 8px);
     
     
-    --badge-dot-color-bg: var(--color-error-4, #ED675A);
+    --badge-dot-color-bg: var(--color-brand1-6, #1B9AEE);
     
     
     --badge-size-dot-border-radius: var(--s-2, 8px);
@@ -5443,10 +5443,10 @@
     --number-picker-normal-l-button-width: var(--s-5, 20px);
     
     
-    --number-picker-normal-m-input-width: var(--s-14, 56px);
+    --number-picker-normal-m-input-width: var(--s-32, 128px);
     
     
-    --number-picker-normal-l-input-width: var(--s-18, 72px);
+    --number-picker-normal-l-input-width: var(--s-32, 128px);
     
     
     --number-picker-normal-s-button-icon-size: var(--icon-xxs, 8px);
@@ -5476,7 +5476,7 @@
     --number-picker-inline-m-button-icon-size: var(--icon-xs, 12px);
     
     
-    --number-picker-inline-m-button-margin: 2px;
+    --number-picker-inline-m-button-margin: -2px;
     
     
     --number-picker-inline-m-button-corner: var(--corner-1, 4px);
@@ -5488,7 +5488,7 @@
     --number-picker-inline-l-button-icon-size: var(--icon-xs, 12px);
     
     
-    --number-picker-inline-l-button-margin: 2px;
+    --number-picker-inline-l-button-margin: -1px;
     
     
     --number-picker-inline-l-button-corner: var(--corner-1, 4px);
@@ -5581,10 +5581,10 @@
     --balloon-size-max-width: 300px;
     
     
-    --balloon-size-padding-top: var(--s-3, 12px);
+    --balloon-size-padding-top: var(--s-2, 8px);
     
     
-    --balloon-size-padding-right: var(--s-3, 12px);
+    --balloon-size-padding-right: 9px;
     
     
     --balloon-size-padding-closable-right: var(--s-10, 40px);
@@ -5596,7 +5596,7 @@
     --balloon-content-font-weight: var(--font-weight-2, normal);
     
     
-    --balloon-normal-border-width: var(--line-zero, 0px);
+    --balloon-normal-border-width: var(--line-1, 1px);
     
     
     --balloon-primary-border-width: var(--line-1, 1px);
@@ -5614,13 +5614,13 @@
     --balloon-size-close: var(--icon-s, 16px);
     
     
-    --balloon-size-close-margin-top: 10px;
+    --balloon-size-close-margin-top: 7px;
     
     
-    --balloon-size-close-margin-right: var(--s-3, 12px);
+    --balloon-size-close-margin-right: var(--s-2, 8px);
     
     
-    --balloon-size-arrow-size: var(--s-3, 12px);
+    --balloon-size-arrow-size: 8px;
     
     
     --balloon-size-arrow-margin: var(--s-3, 12px);
@@ -5647,7 +5647,7 @@
     --balloon-normal-color-bg: var(--color-white, #FFFFFF);
     
     
-    --balloon-normal-color-border: var(--color-transparent, transparent);
+    --balloon-normal-color-border: var(--color-line1-1, #E8E8E8);
     
     
     --balloon-normal-shadow: var(--shadow-3-down, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
@@ -5698,7 +5698,7 @@
     /* ------------------------ message ------------------------ */
     
     
-    --message-size-l-padding: var(--s-5, 20px);
+    --message-size-l-padding: var(--s-4, 16px);
     
     
     --message-size-l-border-width: var(--line-1, 1px);
@@ -5707,7 +5707,7 @@
     --message-size-l-title-content-padding-left: var(--s-2, 8px);
     
     
-    --message-size-l-title-content-padding-right: var(--s-8, 32px);
+    --message-size-l-title-content-padding-right: var(--s-7, 28px);
     
     
     --message-size-l-title-font: var(--font-size-subhead, 16px);
@@ -5815,7 +5815,7 @@
     --message-success-color-content-toast: var(--color-text1-3, #575757);
     
     
-    --message-success-color-icon-inline: var(--color-success-4, #43BF7E);
+    --message-success-color-icon-inline: var(--color-success-5, #23B066);
     
     
     --message-success-color-icon-addon: var(--color-success-4, #43BF7E);
@@ -5983,13 +5983,13 @@
     --message-help-color-content-toast: var(--color-text1-3, #575757);
     
     
-    --message-help-color-icon-inline: var(--color-help-3, #FFEE96);
+    --message-help-color-icon-inline: var(--color-fill1-6, #8B8B8B);
     
     
-    --message-help-color-icon-addon: var(--color-help-3, #FFEE96);
+    --message-help-color-icon-addon: var(--color-fill1-6, #8B8B8B);
     
     
-    --message-help-color-icon-toast: var(--color-help-3, #FFEE96);
+    --message-help-color-icon-toast: var(--color-fill1-6, #8B8B8B);
     
     
     --message-loading-color-bg-inline: var(--color-white, #FFFFFF);
@@ -6040,7 +6040,7 @@
     --message-hover-close-icon-color: var(--color-fill1-6, #8B8B8B);
     
     
-    --message-success-icon-content: var(--icon-content-success-filling, "");
+    --message-success-icon-content: var(--icon-content-tick-o-fill, "");
     
     
     --message-warning-icon-content: var(--icon-content-warning, "");
@@ -6052,7 +6052,7 @@
     --message-notice-icon-content: var(--icon-content-prompt, "");
     
     
-    --message-help-icon-content: var(--icon-content-help, "");
+    --message-help-icon-content: var(--icon-content-question-o-fill, "");
     
     
     --message-loading-icon-content: var(--icon-content-loading, "");
@@ -6301,7 +6301,7 @@
     --pagination-ellipsis-size: var(--icon-xs, 12px);
     
     
-    --pagination-ellipsis-margin: var(--s-2, 8px);
+    --pagination-ellipsis-margin: var(--s-1, 4px);
     
     
     --pagination-current-font-size: var(--font-size-body-1, 14px);
@@ -6313,10 +6313,10 @@
     --pagination-jump-font-size: var(--font-size-body-1, 14px);
     
     
-    --pagination-input-width: var(--s-10, 40px);
+    --pagination-input-width: var(--s-12, 48px);
     
     
-    --pagination-input-margin: var(--s-2, 8px);
+    --pagination-input-margin: var(--s-1, 4px);
     
     
     --pagination-size-selector-title-margin-right: var(--s-1, 4px);
@@ -6325,10 +6325,10 @@
     --pagination-size-selector-number-padding: var(--s-3, 12px);
     
     
-    --pagination-large-item-split: var(--s-2, 8px);
+    --pagination-large-item-split: var(--s-1, 4px);
     
     
-    --pagination-large-item-border-width: var(--line-1, 1px);
+    --pagination-large-item-border-width: var(--line-zero, 0px);
     
     
     --pagination-large-item-corner: var(--corner-1, 4px);
@@ -6337,16 +6337,16 @@
     --pagination-large-ellipsis-size: var(--icon-s, 16px);
     
     
-    --pagination-large-current-font-size: var(--font-size-subhead, 16px);
+    --pagination-large-current-font-size: var(--font-size-body-1, 14px);
     
     
-    --pagination-large-total-font-size: var(--font-size-subhead, 16px);
+    --pagination-large-total-font-size: var(--font-size-body-1, 14px);
     
     
-    --pagination-large-input-width: var(--s-12, 48px);
+    --pagination-large-input-width: var(--s-16, 64px);
     
     
-    --pagination-large-jump-font-size: var(--font-size-subhead, 16px);
+    --pagination-large-jump-font-size: var(--font-size-body-1, 14px);
     
     
     --pagination-large-size-selector-number-padding: var(--s-4, 16px);
@@ -6448,7 +6448,7 @@
     --pagination-icon-ellipsis-content: var(--icon-content-ellipsis, "");
     
     
-    --pagination-item-current-hover-border-color: var(--color-transparent, transparent);
+    --pagination-item-current-hover-border-color: var(--color-fill1-2, #F7F7F7);
     
     
     --pagination-item-current-hover-shadow: var(--shadow-zero, none);
@@ -6481,13 +6481,13 @@
     /* ------------------------ collapse ------------------------ */
     
     
-    --collapse-border-width: var(--line-1, 1px);
+    --collapse-border-width: var(--line-zero, 0px);
     
     
     --collapse-border-corner: var(--corner-1, 4px);
     
     
-    --collapse-border-color: var(--color-line1-1, #E8E8E8);
+    --collapse-border-color: var(--color-transparent, transparent);
     
     
     --collapse-panel-border-color: var(--color-line1-1, #E8E8E8);
@@ -6496,7 +6496,7 @@
     --collapse-disabled-border-color: var(--color-line1-1, #E8E8E8);
     
     
-    --collapse-title-border-width: var(--line-1, 1px);
+    --collapse-title-border-width: var(--line-zero, 0px);
     
     
     --collapse-title-height: var(--s-6, 24px);
@@ -6511,28 +6511,28 @@
     --collapse-title-disabled-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
-    --collapse-title-font-color: var(--color-text1-3, #575757);
+    --collapse-title-font-color: var(--color-text1-4, #292929);
     
     
     --collapse-title-font-disabled-color: var(--color-text1-1, #CECECE);
     
     
-    --collapse-title-hover-font-color: var(--color-text1-2, #6E6E6E);
+    --collapse-title-hover-font-color: var(--color-text1-4, #292929);
     
     
     --collapse-title-font-size: var(--font-size-body-2, 14px);
     
     
-    --collapse-title-font-weight: var(--font-weight-2, normal);
+    --collapse-title-font-weight: var(--font-weight-medium, 500);
     
     
-    --collapse-title-hover-font-weight: var(--font-weight-2, normal);
+    --collapse-title-hover-font-weight: var(--font-weight-medium, 500);
     
     
     --collapse-title-padding-tb: var(--s-2, 8px);
     
     
-    --collapse-icon-size: var(--icon-xs, 12px);
+    --collapse-icon-size: var(--icon-s, 16px);
     
     
     --collapse-icon-color: var(--color-fill1-6, #8B8B8B);
@@ -6550,10 +6550,10 @@
     --collapse-content-bg-color: var(--color-white, #FFFFFF);
     
     
-    --collapse-content-padding-x: var(--s-8, 32px);
+    --collapse-content-padding-x: var(--s-9, 36px);
     
     
-    --collapse-content-padding-y: var(--s-2, 8px);
+    --collapse-content-padding-y: var(--s-3, 12px);
     
     
     --collapse-content-font-size: var(--font-size-body-1, 14px);
@@ -6562,7 +6562,7 @@
     --collapse-content-color: var(--color-text1-2, #6E6E6E);
     
     
-    --collapse-fold-icon-content: var(--icon-content-arrow-right, "");
+    --collapse-fold-icon-content: var(--icon-content-triangle-right-s, "");
     
     
     --collapse-unfold-icon-content: var(--icon-reset);
@@ -6652,7 +6652,7 @@
     --step-circle-item-node-icon-size: var(--icon-s, 16px);
     
     
-    --step-circle-item-node-font-size: var(--font-size-caption, 12px);
+    --step-circle-item-node-font-size: var(--font-size-body-2, 14px);
     
     
     --step-circle-item-node-corner: var(--corner-circle, 50%);
@@ -6661,7 +6661,7 @@
     --step-circle-item-tail-size: var(--line-1, 1px);
     
     
-    --step-circle-item-title-margin-top: var(--s-2, 8px);
+    --step-circle-item-title-margin-top: var(--s-3, 12px);
     
     
     --step-circle-item-content-margin-top: var(--s-2, 8px);
@@ -6682,7 +6682,7 @@
     --step-circle-item-node-wait-size: var(--s-8, 32px);
     
     
-    --step-circle-item-node-process-size: var(--s-7, 28px);
+    --step-circle-item-node-process-size: var(--s-6, 24px);
     
     
     --step-circle-item-node-finish-size: var(--s-8, 32px);
@@ -6691,10 +6691,10 @@
     --step-circle-item-node-disabled-size: var(--s-8, 32px);
     
     
-    --step-circle-item-tail-wait-color: var(--color-line1-1, #E8E8E8);
+    --step-circle-item-tail-wait-color: var(--color-line1-2, #DBDBDB);
     
     
-    --step-circle-item-tail-process-color: var(--color-line1-1, #E8E8E8);
+    --step-circle-item-tail-process-color: var(--color-line1-2, #DBDBDB);
     
     
     --step-circle-item-tail-finish-color: var(--color-brand1-6, #1B9AEE);
@@ -6727,16 +6727,16 @@
     --step-circle-item-title-disabled-color: var(--color-text1-1, #CECECE);
     
     
-    --step-circle-item-node-wait-border-color: var(--color-line1-1, #E8E8E8);
+    --step-circle-item-node-wait-border-color: var(--color-transparent, transparent);
     
     
-    --step-circle-item-node-wait-background: var(--color-white, #FFFFFF);
+    --step-circle-item-node-wait-background: var(--color-fill1-3, #E8E8E8);
     
     
-    --step-circle-item-node-wait-color: var(--color-text1-1, #CECECE);
+    --step-circle-item-node-wait-color: var(--color-fill1-6, #8B8B8B);
     
     
-    --step-circle-item-node-process-border-color: var(--color-brand1-6, #1B9AEE);
+    --step-circle-item-node-process-border-color: var(--color-transparent, transparent);
     
     
     --step-circle-item-node-process-background: var(--color-brand1-6, #1B9AEE);
@@ -6751,10 +6751,10 @@
     --step-circle-item-node-process-percent-size: var(--font-size-body-1, 14px);
     
     
-    --step-circle-item-node-finish-border-color: var(--color-brand1-6, #1B9AEE);
+    --step-circle-item-node-finish-border-color: var(--color-transparent, transparent);
     
     
-    --step-circle-item-node-finish-background: var(--color-white, #FFFFFF);
+    --step-circle-item-node-finish-background: var(--color-brand1-1, #F0F9FF);
     
     
     --step-circle-item-node-finish-color: var(--color-brand1-6, #1B9AEE);
@@ -6775,7 +6775,7 @@
     --step-circle-vertical-item-body-margin-left: var(--s-4, 16px);
     
     
-    --step-circle-vertical-item-title-margin-top: var(--s-2, 8px);
+    --step-circle-vertical-item-title-margin-top: var(--s-1, 4px);
     
     
     --step-circle-vertical-item-content-margin-top: var(--s-1, 4px);
@@ -6835,7 +6835,7 @@
     --step-dot-item-tail-wait-color: var(--color-line1-3, #CECECE);
     
     
-    --step-dot-item-tail-process-color: var(--color-line1-3, #CECECE);
+    --step-dot-item-tail-process-color: var(--color-line1-2, #DBDBDB);
     
     
     --step-dot-item-tail-finish-color: var(--color-brand1-6, #1B9AEE);
@@ -7219,7 +7219,7 @@
     --radio-checked-hovered-circle-color: var(--color-brand1-1, #F0F9FF);
     
     
-    --radio-checked-disabled-circle-color: var(--color-fill1-6, #8B8B8B);
+    --radio-checked-disabled-circle-color: var(--color-other-2, #FFFFFF);
     
     
     --radio-normal-font-color: var(--color-text1-4, #292929);
@@ -7228,13 +7228,13 @@
     --radio-normal-font-color-disabled: var(--color-text1-1, #CECECE);
     
     
-    --radio-button-height-large: var(--s-10, 40px);
+    --radio-button-height-large: var(--s-9, 36px);
     
     
-    --radio-button-height-medium: var(--s-7, 28px);
+    --radio-button-height-medium: var(--s-8, 32px);
     
     
-    --radio-button-height-small: var(--s-5, 20px);
+    --radio-button-height-small: 24px;
     
     
     --radio-button-padding-large: var(--s-4, 16px);
@@ -7246,7 +7246,7 @@
     --radio-button-padding-small: var(--s-2, 8px);
     
     
-    --radio-button-corner-large: var(--corner-2, 2px);
+    --radio-button-corner-large: var(--corner-1, 4px);
     
     
     --radio-button-corner-medium: var(--corner-1, 4px);
@@ -7264,43 +7264,43 @@
     --radio-button-font-size-small: var(--font-size-caption, 12px);
     
     
-    --radio-button-bg-color: var(--color-white, #FFFFFF);
+    --radio-button-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
-    --radio-button-bg-color-hovered: var(--color-white, #FFFFFF);
+    --radio-button-bg-color-hovered: var(--color-fill1-2, #F7F7F7);
     
     
     --radio-button-bg-color-checked: var(--color-white, #FFFFFF);
     
     
-    --radio-button-bg-color-disabled: var(--color-fill1-1, #FFFFFF);
+    --radio-button-bg-color-disabled: var(--color-fill1-2, #F7F7F7);
     
     
-    --radio-button-bg-color-checked-disabled: var(--color-fill1-2, #F7F7F7);
+    --radio-button-bg-color-checked-disabled: var(--color-fill1-1, #FFFFFF);
     
     
-    --radio-button-border-color: var(--color-line1-3, #CECECE);
+    --radio-button-border-color: var(--color-transparent, transparent);
     
     
-    --radio-button-border-color-hovered: var(--color-brand1-6, #1B9AEE);
+    --radio-button-border-color-hovered: var(--color-transparent, transparent);
     
     
-    --radio-button-border-color-checked: var(--color-brand1-6, #1B9AEE);
+    --radio-button-border-color-checked: var(--color-line1-2, #DBDBDB);
     
     
-    --radio-button-border-color-disabled: var(--color-line1-1, #E8E8E8);
+    --radio-button-border-color-disabled: var(--color-transparent, transparent);
     
     
-    --radio-button-border-color-checked-disabled: var(--color-line1-1, #E8E8E8);
+    --radio-button-border-color-checked-disabled: var(--color-line1-2, #DBDBDB);
     
     
-    --radio-button-font-color: var(--color-text1-4, #292929);
+    --radio-button-font-color: var(--color-text1-2, #6E6E6E);
     
     
     --radio-button-font-color-hovered: var(--color-text1-4, #292929);
     
     
-    --radio-button-font-color-checked: var(--color-brand1-6, #1B9AEE);
+    --radio-button-font-color-checked: var(--color-text1-4, #292929);
     
     
     --radio-button-font-color-disabled: var(--color-text1-1, #CECECE);
@@ -7741,13 +7741,13 @@
     --tab-nav-arrow-down-positon-right: var(--s-2, 8px);
     
     
-    --tab-item-padding-tb-size-m: var(--s-3, 12px);
+    --tab-item-padding-tb-size-m: 8px;
     
     
     --tab-item-padding-tb-size-s: var(--s-2, 8px);
     
     
-    --tab-item-padding-lr-size-m: var(--s-4, 16px);
+    --tab-item-padding-lr-size-m: var(--s-6, 24px);
     
     
     --tab-item-padding-lr-size-s: var(--s-3, 12px);
@@ -7882,37 +7882,37 @@
     --tab-wrapped-bg-color-disabled: var(--color-fill1-1, #FFFFFF);
     
     
-    --tab-capsule-text-color: var(--color-text1-4, #292929);
+    --tab-capsule-text-color: var(--color-fill1-6, #8B8B8B);
     
     
     --tab-capsule-text-color-hover: var(--color-text1-4, #292929);
     
     
-    --tab-capsule-text-color-selected: var(--color-white, #FFFFFF);
+    --tab-capsule-text-color-selected: var(--color-text1-4, #292929);
     
     
     --tab-capsule-text-color-disabled: var(--color-text1-1, #CECECE);
     
     
-    --tab-capsule-bg-color: var(--color-white, #FFFFFF);
+    --tab-capsule-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
     --tab-capsule-bg-color-hover: var(--color-fill1-2, #F7F7F7);
     
     
-    --tab-capsule-bg-color-selected: var(--color-brand1-6, #1B9AEE);
+    --tab-capsule-bg-color-selected: var(--color-line1-4, #FFFFFF);
     
     
     --tab-capsule-bg-color-disabled: var(--color-fill1-1, #FFFFFF);
     
     
-    --tab-capsule-tab-border-line-color: var(--color-line1-1, #E8E8E8);
+    --tab-capsule-tab-border-line-color: var(--color-transparent, transparent);
     
     
-    --tab-capsule-tab-border-line-color-hover: var(--color-line1-1, #E8E8E8);
+    --tab-capsule-tab-border-line-color-hover: var(--color-transparent, transparent);
     
     
-    --tab-capsule-tab-border-line-color-active: var(--color-brand1-6, #1B9AEE);
+    --tab-capsule-tab-border-line-color-active: var(--color-line1-2, #DBDBDB);
     
     
     --tab-capsule-tab-border-line-color-disabled: var(--color-line1-1, #E8E8E8);
@@ -7930,19 +7930,19 @@
     --tab-text-item-sep-width: var(--line-1, 1px);
     
     
-    --tab-text-item-sep-height: var(--s-2, 8px);
+    --tab-text-item-sep-height: var(--s-3, 12px);
     
     
     --tab-text-item-sep-color: var(--color-line1-2, #DBDBDB);
     
     
-    --tab-text-text-color-normal: var(--color-text1-3, #575757);
+    --tab-text-text-color-normal: var(--color-fill1-6, #8B8B8B);
     
     
-    --tab-text-text-color-hover: var(--color-text1-4, #292929);
+    --tab-text-text-color-hover: var(--color-brand1-6, #1B9AEE);
     
     
-    --tab-text-text-color-selected: var(--color-brand1-6, #1B9AEE);
+    --tab-text-text-color-selected: var(--color-text1-4, #292929);
     
     
     --tab-text-text-color-disabled: var(--color-text1-1, #CECECE);
@@ -8041,7 +8041,7 @@
     --calendar-fullscreen-table-head-font-weight: var(--font-weight-3, bold);
     
     
-    --calendar-fullscreen-table-head-font-size: var(--font-size-subhead, 16px);
+    --calendar-fullscreen-table-head-font-size: var(--font-size-body-1, 14px);
     
     
     --calendar-fullscreen-table-head-padding-r: var(--s-3, 12px);
@@ -8053,7 +8053,7 @@
     --calendar-fullscreen-table-cell-font-size: var(--font-size-body-2, 14px);
     
     
-    --calendar-fullscreen-table-cell-boder-top-width: var(--line-2, 2px);
+    --calendar-fullscreen-table-cell-boder-top-width: var(--line-1, 1px);
     
     
     --calendar-fullscreen-table-cell-margin-tb: var(--s-zero, 0px);
@@ -8080,7 +8080,7 @@
     --calendar-fullscreen-table-cell-normal-color: var(--color-text1-2, #6E6E6E);
     
     
-    --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-2, #DBDBDB);
+    --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-1, #E8E8E8);
     
     
     --calendar-fullscreen-table-cell-hover-background: var(--color-fill1-2, #F7F7F7);
@@ -8089,7 +8089,7 @@
     --calendar-fullscreen-table-cell-hover-color: var(--color-text1-2, #6E6E6E);
     
     
-    --calendar-fullscreen-table-cell-hover-border-color: var(--color-brand1-6, #1B9AEE);
+    --calendar-fullscreen-table-cell-hover-border-color: var(--color-line1-1, #E8E8E8);
     
     
     --calendar-fullscreen-table-cell-select-background: var(--color-brand1-1, #F0F9FF);
@@ -8098,7 +8098,7 @@
     --calendar-fullscreen-table-cell-select-color: var(--color-brand1-6, #1B9AEE);
     
     
-    --calendar-fullscreen-table-cell-select-border-color: var(--color-brand1-6, #1B9AEE);
+    --calendar-fullscreen-table-cell-select-border-color: var(--color-line1-1, #E8E8E8);
     
     
     --calendar-fullscreen-table-cell-select-font-weight: var(--font-weight-3, bold);
@@ -8110,7 +8110,7 @@
     --calendar-fullscreen-table-cell-current-color: var(--color-brand1-6, #1B9AEE);
     
     
-    --calendar-fullscreen-table-cell-current-border-color: var(--color-brand1-6, #1B9AEE);
+    --calendar-fullscreen-table-cell-current-border-color: var(--color-line1-1, #E8E8E8);
     
     
     --calendar-fullscreen-table-cell-current-font-weight: var(--font-weight-3, bold);
@@ -8134,31 +8134,31 @@
     --calendar-fullscreen-table-cell-disabled-border-color: var(--color-line1-1, #E8E8E8);
     
     
-    --calendar-card-header-margin-bottom: var(--s-2, 8px);
+    --calendar-card-header-margin-bottom: var(--s-3, 12px);
     
     
-    --calendar-card-table-head-font-size: var(--font-size-caption, 12px);
+    --calendar-card-table-head-font-size: var(--font-size-body-1, 14px);
     
     
     --calendar-card-table-head-font-weight: var(--font-weight-2, normal);
     
     
-    --calendar-card-table-cell-font-size: var(--font-size-caption, 12px);
+    --calendar-card-table-cell-font-size: var(--font-size-body-1, 14px);
     
     
     --calendar-card-table-cell-date-border-radius: var(--corner-1, 4px);
     
     
-    --calendar-card-table-cell-date-width: var(--s-8, 32px);
+    --calendar-card-table-cell-date-width: 32px;
     
     
-    --calendar-card-table-cell-date-height: var(--s-8, 32px);
+    --calendar-card-table-cell-date-height: 32px;
     
     
     --calendar-card-table-cell-month-border-radius: var(--corner-1, 4px);
     
     
-    --calendar-card-table-cell-month-width: var(--s-16, 64px);
+    --calendar-card-table-cell-month-width: var(--s-20, 80px);
     
     
     --calendar-card-table-cell-month-height: var(--s-8, 32px);
@@ -8167,13 +8167,13 @@
     --calendar-card-table-cell-year-border-radius: var(--corner-1, 4px);
     
     
-    --calendar-card-table-cell-year-width: var(--s-16, 64px);
+    --calendar-card-table-cell-year-width: var(--s-20, 80px);
     
     
     --calendar-card-table-cell-year-height: var(--s-8, 32px);
     
     
-    --calendar-card-table-head-color: var(--color-text1-2, #6E6E6E);
+    --calendar-card-table-head-color: var(--color-text1-1, #CECECE);
     
     
     --calendar-card-table-cell-corner: var(--corner-zero, 0);
@@ -8188,10 +8188,10 @@
     --calendar-card-table-cell-normal-border-color: var(--color-white, #FFFFFF);
     
     
-    --calendar-card-table-cell-hover-background: var(--color-brand1-1, #F0F9FF);
+    --calendar-card-table-cell-hover-background: var(--color-fill1-2, #F7F7F7);
     
     
-    --calendar-card-table-cell-hover-color: var(--color-brand1-6, #1B9AEE);
+    --calendar-card-table-cell-hover-color: var(--color-text1-3, #575757);
     
     
     --calendar-card-table-cell-hover-border-color: var(--color-transparent, transparent);
@@ -8236,7 +8236,7 @@
     --calendar-card-table-cell-current-border-color: var(--color-transparent, transparent);
     
     
-    --calendar-card-table-cell-current-font-weight: var(--font-weight-3, bold);
+    --calendar-card-table-cell-current-font-weight: var(--font-weight-medium, 500);
     
     
     --calendar-card-table-cell-inrange-background: var(--color-brand1-1, #F0F9FF);
@@ -8251,7 +8251,7 @@
     --calendar-panel-header-margin-bottom: var(--s-2, 8px);
     
     
-    --calendar-panel-header-height: var(--s-6, 24px);
+    --calendar-panel-header-height: var(--s-8, 32px);
     
     
     --calendar-panel-header-border-bottom-width: var(--line-1, 1px);
@@ -8269,7 +8269,7 @@
     --calendar-btn-date-margin-lr: var(--s-1, 4px);
     
     
-    --calendar-btn-arrow-single-offset-lr: var(--s-7, 28px);
+    --calendar-btn-arrow-single-offset-lr: var(--s-8, 32px);
     
     
     --calendar-btn-arrow-double-offset-lr: var(--s-2, 8px);
@@ -8290,10 +8290,10 @@
     --calendar-btn-date-color-hover: var(--color-link-3, #1B9AEE);
     
     
-    --calendar-btn-arrow-content-prev: var(--icon-content-arrow-left, "");
+    --calendar-btn-arrow-content-prev: var(--icon-content-chevron-left-s, "");
     
     
-    --calendar-btn-arrow-content-next: var(--icon-content-arrow-right, "");
+    --calendar-btn-arrow-content-next: var(--icon-content-chevron-right-s, "");
     
     
     --calendar-btn-arrow-content-prev-super: var(--icon-content-arrow-double-left, "");
@@ -8350,10 +8350,10 @@
     /* ------------------------ date-picker ------------------------ */
     
     
-    --date-picker-panel-footer-padding-lr: var(--s-2, 8px);
+    --date-picker-panel-footer-padding-lr: var(--s-3, 12px);
     
     
-    --date-picker-panel-footer-padding-tb: var(--s-2, 8px);
+    --date-picker-panel-footer-padding-tb: var(--s-3, 12px);
     
     
     --date-picker-panel-background: var(--color-white, #FFFFFF);
@@ -8434,7 +8434,7 @@
     /* ------------------------ popup ------------------------ */
     
     
-    --popup-local-border-width: var(--line-1, 1px);
+    --popup-local-border-width: var(--line-zero, 0px);
     
     
     --popup-local-border-style: var(--line-solid, solid);
@@ -8446,7 +8446,7 @@
     --popup-local-corner: var(--corner-1, 4px);
     
     
-    --popup-local-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
+    --popup-local-shadow: var(--shadow-3-down, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
     
     
     --popup-global-border-width: var(--line-zero, 0px);
