@@ -1,6 +1,6 @@
 import React from 'react'
-import ConsoleMenu, { IItemDescriptor } from '@alife/alicloud-components-console-menu'
-import { FakeBrowserWithWrapper as FakeBrowser } from '@alife/alicloud-components-fake-browser'
+import ConsoleMenu, { IItemDescriptor } from '@alicloudfe/components-console-menu'
+import { FakeBrowserWithWrapper as FakeBrowser } from '@alicloudfe/components-fake-browser'
 
 const items: IItemDescriptor[] = [
   // Defination with label

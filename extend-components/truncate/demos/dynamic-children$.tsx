@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Truncate from '@alife/alicloud-components-truncate'
-import { Input } from '@alife/alicloud-components'
+import Truncate from '@alicloudfe/components-truncate'
+import { Input } from '@alicloudfe/components'
 
 const Demo = () => {
   const [text, setText] = useState('')

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import Truncate from '@alife/alicloud-components-truncate'
+import Truncate from '@alicloudfe/components-truncate'
 
 const sentence2 =
   '毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。'

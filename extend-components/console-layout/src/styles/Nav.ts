@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon } from '@alife/alicloud-components'
+import { Icon } from '@alicloudfe/components'
 import styled from 'styled-components'
 
 const navWidth = 208
@@ -17,8 +17,7 @@ const calcLeft = (props: INavProps) =>
 const getRotate = (props: INavCollapseTriggerProps) =>
   props.collapsed ? 180 : 0
 
-const tiggerOpcity = (props: INavProps) =>
-  props.collapsed ? 1 : 0
+const tiggerOpcity = (props: INavProps) => (props.collapsed ? 1 : 0)
 
 interface INavProps {
   collapsed: boolean
@@ -43,7 +42,7 @@ const Nav = styled.div<INavProps>`
   min-width: ${calcWidth}px;
   position: relative;
   z-index: 100;
-  border-right: 1px solid #C0C6CC;
+  border-right: 1px solid #c0c6cc;
   transition: width 0.3s ease-in-out, min-width 0.3s ease-in-out;
 
   ${NavChildenWrapper} {
@@ -76,7 +75,7 @@ export const NavWrapper = styled.div`
     ${NavCollapseTriggerWrapper} {
       opacity: 1;
     }
-    box-shadow: var(--console-menu-box-shadow, 2px 0 4px 0 rgba(0,0,0,0.16));
+    box-shadow: var(--console-menu-box-shadow, 2px 0 4px 0 rgba(0, 0, 0, 0.16));
   }
 `
 
@@ -89,11 +88,11 @@ export const NavCollapseTrigger = styled.span<INavCollapseTriggerProps>`
   height: ${triggerHeight}px;
   position: absolute;
   top: calc(50% - ${triggerHeight / 2}px);
-	left: 0;
+  left: 0;
   z-index: 99;
-  line-height: ${triggerHeight - 18}px;  
-  border: 1px solid #C0C6CC;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16);
+  line-height: ${triggerHeight - 18}px;
+  border: 1px solid #c0c6cc;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
   border-left: ${triggerWidth}px solid #fff;
   cursor: pointer;
   color: #bfbfbf;
@@ -120,7 +119,7 @@ export const NavCollapseTriggerContainer = styled.div`
   &:hover {
     ${NavCollapseTrigger} {
       border-left: ${triggerWidth + evulsedWidth}px solid #ebebeb;
-      border-left-color: #EFF3F8;
+      border-left-color: #eff3f8;
     }
   }
 `

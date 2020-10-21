@@ -1,7 +1,7 @@
 import React from 'react'
-import RoutableMenu from '@alife/alicloud-components-console-menu/RoutableMenu'
-import { IRoutableItemDescriptor } from '@alife/alicloud-components-console-menu'
-import { FakeBrowserWithWrapper as FakeBrowser } from '@alife/alicloud-components-fake-browser'
+import RoutableMenu from '@alicloudfe/components-console-menu/RoutableMenu'
+import { IRoutableItemDescriptor } from '@alicloudfe/components-console-menu'
+import { FakeBrowserWithWrapper as FakeBrowser } from '@alicloudfe/components-fake-browser'
 
 const regions = ['cn-beijing', 'cn-shanghai', 'cn-hangzhou']
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Truncate from 'react-truncate-markup'
-import type { Balloon } from '@alife/alicloud-components'
+import type { Balloon } from '@alicloudfe/components'
 
 import { useTooltip } from './utils'
 import { AlignType } from './constants'

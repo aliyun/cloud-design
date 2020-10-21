@@ -1,6 +1,6 @@
 import React from 'react'
-import ConsoleMenu from '@alife/alicloud-components-console-menu'
-import { FakeBrowserWithWrapper as FakeBrowser } from '@alife/alicloud-components-fake-browser'
+import ConsoleMenu from '@alicloudfe/components-console-menu'
+import { FakeBrowserWithWrapper as FakeBrowser } from '@alicloudfe/components-fake-browser'
 
 /**
  * @param {String|Number} key 被点击的 `<Item>` 的 key

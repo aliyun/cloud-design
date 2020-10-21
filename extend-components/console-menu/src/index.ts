@@ -1,3 +1,4 @@
+import './index.less'
 import ConsoleMenu from './ConsoleMenu'
 import { SubMenu, Item, Divider, Header, Menu, SecondaryMenu } from './styles'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import type { Nav } from '@alife/alicloud-components'
+import { Nav } from '@alicloudfe/components'
 import * as S from './styles'
 import { IItemDescriptor, mapItemToJSX } from './ItemDescriptor'
 import Header from './Header'
@@ -13,7 +13,7 @@ type NavProps = React.ComponentProps<typeof Nav>
 const PrimaryMenu: React.FC<{
   fusionPrefix: string
   [key: string]: any
-}> = props => (
+}> = (props) => (
   <S.Menu
     openMode="multiple"
     {...props}
@@ -31,7 +31,7 @@ const PrimaryMenu: React.FC<{
 const SecondaryMenu: React.FC<{
   fusionPrefix: string
   [key: string]: any
-}> = props => (
+}> = (props) => (
   <S.SecondaryMenu
     {...props}
     type="line"
@@ -109,12 +109,14 @@ export interface IConsoleMenuProps
   ) => void
 }
 
-const ConsoleMenu: React.FC<IConsoleMenuProps & {
-  /**
-   * 来自ConfigProvider
-   */
-  fusionConfig: any
-}> = ({
+const ConsoleMenu: React.FC<
+  IConsoleMenuProps & {
+    /**
+     * 来自ConfigProvider
+     */
+    fusionConfig: any
+  }
+> = ({
   type = 'primary',
   header,
   headers,

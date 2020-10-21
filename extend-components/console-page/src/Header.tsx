@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Truncate from '@alife/alicloud-components-truncate'
+import Truncate from '@alicloudfe/components-truncate'
+import * as PropTypes from 'prop-types'
 import * as S from './styles'
 import BackArrow from './BackArrow'
 
@@ -120,6 +121,19 @@ const Header: React.FC<IHeaderProps> = ({
       )}
     </>
   )
+}
+
+Header.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.objectOf(PropTypes.any),
+  children: PropTypes.node,
+  hasBackArrow: PropTypes.bool,
+  renderBackArrow: PropTypes.func,
+  onBackArrowClick: PropTypes.func,
+  title: PropTypes.node,
+  subTitle: PropTypes.node,
+  breadcrumb: PropTypes.node,
+  childrenAlign: PropTypes.oneOf(['left', 'right']),
 }
 
 export default Header

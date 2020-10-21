@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Menu } from '@alife/alicloud-components'
+import { Menu } from '@alicloudfe/components'
 
 const SMenu = styled(MenuFilterProps)`
   &&& {

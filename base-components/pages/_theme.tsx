@@ -1,6 +1,6 @@
 import { createTheme } from 'vite-pages-theme-basic'
 import React from 'react'
-import { Select, ConfigProvider } from '@alife/alicloud-components'
+import { Select, ConfigProvider } from '@alicloudfe/components'
 import './style.scss'
 
 import './theme-vars/xconsole.scss'

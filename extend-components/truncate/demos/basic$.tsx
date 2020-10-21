@@ -1,5 +1,5 @@
 import React from 'react'
-import Truncate from '@alife/alicloud-components-truncate'
+import Truncate from '@alicloudfe/components-truncate'
 
 const sentence1 = 'To be or not to be, this is a question. —— Hamlet'
 const sentence2 =

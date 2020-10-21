@@ -9,15 +9,15 @@ module.exports = {
   optimizeDeps: {
     include: [
       'styled-components',
-      '@alife/alicloud-components',
+      '@alicloudfe/components',
       'react-router-dom',
-      '@alife/alicloud-components-console-page',
-      '@alife/alicloud-components-console-menu',
+      '@alicloudfe/components-console-page',
+      '@alicloudfe/components-console-menu',
       'classnames'
     ]
   },
   alias: {
-    '@alife/alicloud-components-console-layout': '/src'
+    '@alicloudfe/components-console-layout': '/src'
   },
   minify: false
 } as UserConfig

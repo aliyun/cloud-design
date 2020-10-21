@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Truncate from '@alife/alicloud-components-truncate'
-import { FakeBrowserWithWrapper as FakeBrowser } from '@alife/alicloud-components-fake-browser'
+import Truncate from '@alicloudfe/components-truncate'
+import { FakeBrowserWithWrapper as FakeBrowser } from '@alicloudfe/components-fake-browser'
 
 const sentence =
   '改变窗口的大小，我只会在宽度不足的时候截断。宽度足够的时候我不会截断！'

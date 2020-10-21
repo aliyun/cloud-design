@@ -9,17 +9,17 @@ module.exports = {
   optimizeDeps: {
     include: [
       'styled-components',
-      '@alife/alicloud-components',
+      '@alicloudfe/components',
       'react-router-dom',
-      '@alife/alicloud-components-fake-browser',
+      '@alicloudfe/components-fake-browser',
       'lodash.truncate',
       'prop-types',
       'classnames',
-      '@alife/alicloud-components-truncate'
+      '@alicloudfe/components-truncate'
     ]
   },
   alias: {
-    '@alife/alicloud-components-console-page': '/src'
+    '@alicloudfe/components-console-page': '/src'
   },
   minify: false
 } as UserConfig

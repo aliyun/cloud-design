@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Icon } from '@alife/alicloud-components'
+import { Icon } from '@alicloudfe/components'
 import { headerHeight } from './Header'
 
 export const BackArrowIcon = styled(Icon)`

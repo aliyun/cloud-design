@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import { HashRouter } from 'react-router-dom'
-import { Button, Badge } from '@alife/alicloud-components'
-import ConsoleMenu from '@alife/alicloud-components-console-menu'
-import Page from '@alife/alicloud-components-console-page'
-// import Table from '@alife/alicloud-components-table'
-// import '@alife/alicloud-components-table/dist/index.css'
-import AppLayout from '@alife/alicloud-components-console-layout'
+import { Button, Badge } from '@alicloudfe/components'
+import ConsoleMenu from '@alicloudfe/components-console-menu'
+import Page from '@alicloudfe/components-console-page'
+// import Table from '@alicloudfe/components-table'
+// import '@alicloudfe/components-table/dist/index.css'
+import AppLayout from '@alicloudfe/components-console-layout'
 
 const dataSource = (() =>
   new Array(100).fill(true).map((item, i) => ({

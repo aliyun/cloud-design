@@ -1,5 +1,5 @@
 import React from 'react'
-import Truncate from '@alife/alicloud-components-truncate'
+import Truncate from '@alicloudfe/components-truncate'
 import { createGlobalStyle } from 'styled-components'
 
 const sentence =

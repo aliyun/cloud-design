@@ -1,5 +1,5 @@
 import { createTheme } from 'vite-pages-theme-basic'
-import '@alife/alicloud-components/dist/console.css'
+import '@alicloudfe/components/dist/console.css'
 
 export default createTheme({
   topNavs: [

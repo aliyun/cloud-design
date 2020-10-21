@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { Breadcrumb as RawBreadcrumb } from '@alife/alicloud-components'
+import { Breadcrumb as RawBreadcrumb } from '@alicloudfe/components'
 
-// type BreadcrumbItemType = typeof import('@alife/alicloud-components/types/breadcrumb').Item
+// type BreadcrumbItemType = typeof import('@alicloudfe/components/types/breadcrumb').Item
 
 /**
  * @public

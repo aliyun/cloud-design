@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Button, Input } from '@alife/alicloud-components'
+import { Button, Input } from '@alicloudfe/components'
 // eslint-disable-next-line import/no-unresolved
-import Page from '@alife/alicloud-components-console-page'
-import { FakeBrowserWithWrapper as FakeBrowser } from '@alife/alicloud-components-fake-browser'
+import Page from '@alicloudfe/components-console-page'
+import { FakeBrowserWithWrapper as FakeBrowser } from '@alicloudfe/components-fake-browser'
 
 const { Breadcrumb } = Page
 

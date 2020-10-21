@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Nav } from '@alife/alicloud-components'
+import { Nav } from '@alicloudfe/components'
 import Item from './Item'
 import SubMenu from './SubMenu'
 import { getPriority } from '../utils'
@@ -22,7 +22,8 @@ const PrimaryMenu = styled(NavFilterProps)<{
 
     .${getPrefix}menu-header {
       box-sizing: border-box;
-      padding: var(--console-menu-padding, 24px) 0 calc(var(--console-menu-padding, 24px) - 8px);
+      padding: var(--console-menu-padding, 24px) 0
+        calc(var(--console-menu-padding, 24px) - 8px);
     }
 
     ${SubMenu} {
@@ -35,10 +36,11 @@ const PrimaryMenu = styled(NavFilterProps)<{
       .${getPrefix}nav-item.${getPrefix}menu-item {
         background-color: var(--console-menu-bg, #fff);
         color: var(--console-menu-normal-text, #333333);
-        padding: 0 var(--console-menu-padding, 24px) 0 var(--console-menu-padding, 24px);
+        padding: 0 var(--console-menu-padding, 24px) 0
+          var(--console-menu-padding, 24px);
 
         &:hover {
-          background-color: var(--console-menu-hover-bg, #F7F9FA);
+          background-color: var(--console-menu-hover-bg, #f7f9fa);
         }
 
         &.${getPrefix}opened {
@@ -61,7 +63,7 @@ const PrimaryMenu = styled(NavFilterProps)<{
       padding: 0 16px;
 
       &:hover {
-        background-color: var(--console-menu-hover-bg, #F7F9FA);
+        background-color: var(--console-menu-hover-bg, #f7f9fa);
       }
 
       a {
@@ -72,10 +74,10 @@ const PrimaryMenu = styled(NavFilterProps)<{
       }
 
       &.${getPrefix}nav-item.${getPrefix}menu-item.${getPrefix}selected.${getPrefix}selected {
-        background-color: var(--console-menu-active-bg, #EFF3F8);
-        color: var(--console-menu-active-text-color, #0064C8);
+        background-color: var(--console-menu-active-bg, #eff3f8);
+        color: var(--console-menu-active-text-color, #0064c8);
         a {
-          color: var(--console-menu-active-text-color, #0064C8);
+          color: var(--console-menu-active-text-color, #0064c8);
         }
       }
 

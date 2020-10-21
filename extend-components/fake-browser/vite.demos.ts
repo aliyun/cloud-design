@@ -9,12 +9,12 @@ module.exports = {
   optimizeDeps: {
     include: [
       'styled-components',
-      '@alife/alicloud-components',
+      '@alicloudfe/components',
       'react-router-dom'
     ]
   },
   alias: {
-    '@alife/alicloud-components-fake-browser': '/src'
+    '@alicloudfe/components-fake-browser': '/src'
   },
   minify: false
 } as UserConfig

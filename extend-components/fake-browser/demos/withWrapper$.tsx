@@ -1,5 +1,5 @@
 import React from 'react'
-import { FakeBrowserWithWrapper } from '@alife/alicloud-components-fake-browser'
+import { FakeBrowserWithWrapper } from '@alicloudfe/components-fake-browser'
 import { Switch, Route, Link, RouteComponentProps } from 'react-router-dom'
 
 const Home: React.FC = () => (

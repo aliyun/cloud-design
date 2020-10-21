@@ -1,4 +1,5 @@
 import React, { useLayoutEffect } from 'react'
+import * as PropTypes from 'prop-types'
 import * as S from './styles'
 
 enum SceneryThemeColorMap {
@@ -82,6 +83,20 @@ const Page: React.FC<IPageProps> = ({
       {children}
     </S.Page>
   )
+}
+
+Page.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node,
+  style: PropTypes.objectOf(PropTypes.any),
+  // eslint-disable-next-line react/no-unused-prop-types
+  sceneryTheme: PropTypes.oneOf(['white', 'grey']),
+  // eslint-disable-next-line react/no-unused-prop-types
+  sceneryRef: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.bool,
+    PropTypes.func,
+  ]),
 }
 
 export default Page

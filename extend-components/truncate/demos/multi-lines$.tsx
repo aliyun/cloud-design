@@ -1,6 +1,6 @@
 import React from 'react'
-import { MultiLines } from '@alife/alicloud-components-truncate'
-import { FakeBrowserWithWrapper as FakeBrowser } from '@alife/alicloud-components-fake-browser'
+import { MultiLines } from '@alicloudfe/components-truncate'
+import { FakeBrowserWithWrapper as FakeBrowser } from '@alicloudfe/components-fake-browser'
 
 const longText = '毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。'.repeat(
   10

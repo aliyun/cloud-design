@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Radio } from '@alife/alicloud-components'
-import Page from '@alife/alicloud-components-console-page'
+import { Radio } from '@alicloudfe/components'
+import Page from '@alicloudfe/components-console-page'
 
 enum Theme {
   WHITE = 'white',
