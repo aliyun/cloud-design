@@ -1,9 +1,10 @@
 {
   "name": "@alicloudfe/components-console-page",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "lib/index.js",
-  "module": "es/index.js","publishConfig": {
-    "registry": "https://registry.npm.alibaba-inc.com"
+  "module": "es/index.js",
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "dev": "vite serve -c vite.demos.ts",
@@ -29,6 +30,6 @@
     "concurrently": "^5.3.0",
     "typescript": "^3.9.7",
     "vite": "^1.0.0-rc.4",
-    "vite-plugin-react-pages": "^0.7.2"
+    "vite-plugin-react-pages": "^0.8.2"
   }
 }
