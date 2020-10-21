@@ -1,4 +1,4 @@
-import type { RouteComponentProps } from 'react-router-dom'
+import { RouteComponentProps } from 'react-router-dom'
 import { Location } from 'history'
 import { IConsoleMenuProps } from './ConsoleMenu'
 import { IRoutableItemDescriptor } from './ItemDescriptor'

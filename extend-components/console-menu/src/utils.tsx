@@ -1,5 +1,5 @@
 import React from 'react'
-import { ConfigProvider } from '@alife/alicloud-components'
+import { ConfigProvider } from '@alicloudfe/components'
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 

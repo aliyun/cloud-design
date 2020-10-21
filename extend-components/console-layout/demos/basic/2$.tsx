@@ -1,8 +1,8 @@
 import React from 'react'
-import { Message } from '@alife/alicloud-components'
-import AppLayout from '@alife/alicloud-components-console-layout'
-import ConsoleMenu from '@alife/alicloud-components-console-menu'
-import Page from '@alife/alicloud-components-console-page'
+import { Message } from '@alicloudfe/components'
+import AppLayout from '@alicloudfe/components-console-layout'
+import ConsoleMenu from '@alicloudfe/components-console-menu'
+import Page from '@alicloudfe/components-console-page'
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 

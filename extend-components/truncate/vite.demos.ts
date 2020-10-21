@@ -9,14 +9,14 @@ module.exports = {
   optimizeDeps: {
     include: [
       'styled-components',
-      '@alife/alicloud-components',
+      '@alicloudfe/components',
       'react-router-dom',
       'lodash.truncate',
-      '@alife/alicloud-components-fake-browser'
+      '@alicloudfe/components-fake-browser'
     ]
   },
   alias: {
-    '@alife/alicloud-components-truncate': '/src'
+    '@alicloudfe/components-truncate': '/src'
   },
   minify: false
 } as UserConfig

@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
-import { NumberPicker } from '@alife/alicloud-components'
-import Page from '@alife/alicloud-components-console-page'
+import { NumberPicker } from '@alicloudfe/components'
+import Page from '@alicloudfe/components-console-page'
 
 const { Breadcrumb, Menu } = Page
 

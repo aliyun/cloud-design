@@ -1,4 +1,5 @@
 import React, { CSSProperties } from 'react'
+import * as PropTypes from 'prop-types'
 import * as S from './styles'
 import MenuContainer from './MenuContainer'
 
@@ -51,5 +52,13 @@ const Content: React.FC<IContentProps> = ({
     </S.ContentMain>
   </S.Content>
 )
+
+Content.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.objectOf(PropTypes.any),
+  menu: PropTypes.node,
+  adjustHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  children: PropTypes.node,
+}
 
 export default Content

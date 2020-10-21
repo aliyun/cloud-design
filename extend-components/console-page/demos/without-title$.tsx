@@ -1,5 +1,5 @@
 import React from 'react'
-import Page from '@alife/alicloud-components-console-page'
+import Page from '@alicloudfe/components-console-page'
 
 const { Breadcrumb } = Page
 

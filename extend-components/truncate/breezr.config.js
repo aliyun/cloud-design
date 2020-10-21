@@ -3,11 +3,11 @@ module.exports = {
     [
       '@alicloud/console-toolkit-preset-wind-component',
       {
-        moduleName: '@alife/alicloud-components-console-page',
+        moduleName: '@alicloudfe/components-console-page',
         useTypescript: true,
         disableStyleRemove: true,
         externals: {
-          '@alife/alicloud-components': '@alife/alicloud-components',
+          '@alicloudfe/components': '@alicloudfe/components',
           'react-router-dom': 'react-router-dom'
         }
       }

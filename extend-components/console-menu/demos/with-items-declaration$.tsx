@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
 import { Link, Route } from 'react-router-dom'
 import { Location } from 'history'
-import ConsoleMenu, { IItemDescriptor } from '@alife/alicloud-components-console-menu'
-import { Input } from '@alife/alicloud-components'
-import { FakeBrowserWithWrapper as FakeBrowser } from '@alife/alicloud-components-fake-browser'
+import ConsoleMenu, { IItemDescriptor } from '@alicloudfe/components-console-menu'
+import { Input } from '@alicloudfe/components'
+import { FakeBrowserWithWrapper as FakeBrowser } from '@alicloudfe/components-fake-browser'
 
 const renderLinkItem = ({ key, label }: IItemDescriptor) => (
   <Link to={key}>{label}</Link>

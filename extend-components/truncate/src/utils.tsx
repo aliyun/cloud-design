@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Balloon } from '@alife/alicloud-components'
+import { Balloon } from '@alicloudfe/components'
 import classnames from 'classnames'
 import {
   AlignType,

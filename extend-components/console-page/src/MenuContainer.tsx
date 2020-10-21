@@ -1,4 +1,5 @@
 import * as React from 'react'
+import * as PropTypes from 'prop-types'
 import IntersectionObserver from '@researchgate/react-intersection-observer'
 import * as S from './styles'
 
@@ -32,6 +33,11 @@ const MenuContainer: React.FC<IProps> = ({ adjustHeight, children }) => {
       </S.MenuIntersectionContainer>
     </>
   )
+}
+MenuContainer.propTypes = {
+  adjustHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+    .isRequired,
+  children: PropTypes.node,
 }
 
 export default MenuContainer

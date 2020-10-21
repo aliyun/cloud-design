@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Nav } from '@alife/alicloud-components'
+import { Nav } from '@alicloudfe/components'
 
 export const Item = styled(Nav.Item)``
 export const Group = styled(Nav.Group)``

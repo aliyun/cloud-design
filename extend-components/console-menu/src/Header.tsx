@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Icon, Dropdown, Menu } from '@alife/alicloud-components'
+import { Icon, Dropdown, Menu } from '@alicloudfe/components'
 import cs from 'classnames'
 import * as S from './styles'
 import { IConsoleMenuProps, IOnSelect } from './ConsoleMenu'

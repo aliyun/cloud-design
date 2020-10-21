@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Button } from '@alife/alicloud-components'
-import AppLayout from '@alife/alicloud-components-console-layout'
-import ConsoleMenu from '@alife/alicloud-components-console-menu'
-import Page from '@alife/alicloud-components-console-page'
+import { Button } from '@alicloudfe/components'
+import AppLayout from '@alicloudfe/components-console-layout'
+import ConsoleMenu from '@alicloudfe/components-console-menu'
+import Page from '@alicloudfe/components-console-page'
 
 const Nav = () => (
   <ConsoleMenu header="产品控制台">

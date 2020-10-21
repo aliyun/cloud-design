@@ -3,6 +3,7 @@ import Header from './Header'
 import Breadcrumb from './Breadcrumb'
 import Content from './Content'
 import Menu from './Menu'
+import './index.less'
 
 /**
  * 我们通过Page的对象属性导出了其余的相关组件。

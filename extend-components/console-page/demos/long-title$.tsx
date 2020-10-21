@@ -1,7 +1,7 @@
 import React from 'react'
-import { Button, Icon } from '@alife/alicloud-components'
-import { FakeBrowserWithWrapper as FakeBrowser } from '@alife/alicloud-components-fake-browser'
-import Page from '@alife/alicloud-components-console-page'
+import { Button, Icon } from '@alicloudfe/components'
+import { FakeBrowserWithWrapper as FakeBrowser } from '@alicloudfe/components-fake-browser'
+import Page from '@alicloudfe/components-console-page'
 
 const { Breadcrumb } = Page
 

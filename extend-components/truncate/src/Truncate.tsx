@@ -1,6 +1,6 @@
 import React from 'react'
 import _SizeMe from 'react-sizeme'
-import type { Balloon } from '@alife/alicloud-components'
+import type { Balloon } from '@alicloudfe/components'
 import classnames from 'classnames'
 import TruncateByLength from './TruncateByLength'
 import TruncateByWidth from './TruncateByWidth'

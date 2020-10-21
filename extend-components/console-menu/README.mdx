@@ -1,4 +1,4 @@
-# @alife/alicloud-components-console-menu
+# @alicloudfe/components-console-menu
 
 为阿里云控制台提供标准的应用级别的导航菜单，也可以应用在其他的中后台产品中
 
@@ -11,7 +11,7 @@
 在之前的版本中默认导出的 `<ConsoleMenu>` 组件包含了完整的路由行为，在 1.0 中，默认导出的组件 **不再包含** 路由行为，你可以根据自己项目中的路由环境来映射 `<ConsoleMenu>` 的展现和行为（如设置 `activeKey` 等）。
 
 ```javascript
-import ConsoleMenu from '@alife/alicloud-components-console-menu'
+import ConsoleMenu from '@alicloudfe/components-console-menu'
 import { Route, Link } from 'react-router-dom'
 
 const mapLocationToActiveKey = (location) => {
@@ -54,7 +54,7 @@ const App = () => (
 你也可以用结构化的描述来定制 `<ConsoleMenu>` 的内容。下面的示例作用和上面的作用完全相同：
 
 ```javascript
-import ConsoleMenu from '@alife/alicloud-components-console-menu'
+import ConsoleMenu from '@alicloudfe/components-console-menu'
 import { Route, Link } from 'react-router-dom'
 
 const mapLocationToActiveKey = (location) => {
@@ -104,7 +104,7 @@ const App = () => (
 _（截止目前为止， `<RoutableMenu>` 必须使用 items 进行结构化的传值，使用组件声明方式来编写子组件的方式可能会存在问题，我们计划在不久之后来修复这个问题）_
 
 ```javascript
-import RoutableMenu from '@alife/alicloud-components-console-menu/RoutableMenu'
+import RoutableMenu from '@alicloudfe/components-console-menu/RoutableMenu'
 
 const items = [
   {
@@ -175,7 +175,7 @@ const App = () => (
 
 ```javascript
 import styled from 'styled-components'
-import ConsoleMenu, { StyledComponents } from '@alife/alicloud-components-console-menu'
+import ConsoleMenu, { StyledComponents } from '@alicloudfe/components-console-menu'
 
 const CustomizedConsoleMenu = styled(ConsoleMenu)`
   ${StyledComponents.Item} {
@@ -228,7 +228,7 @@ const App = () => (
 ##### 使用 L2 导航
 
 ```javascript
-import RoutableMenu from '@alife/alicloud-components-console-menu/RoutableMenu'
+import RoutableMenu from '@alicloudfe/components-console-menu/RoutableMenu'
 import Page from '@ali/wind-rc-page'
 
 const menu = (
@@ -264,12 +264,12 @@ const MyPage = () => (
 | `react` | `^16.8.0` |
 | `react-dom` | `^16.8.0` |
 | `prop-types` | `^15.7.0` |
-| `@alife/alicloud-components` | `^1.0.0` |
+| `@alicloudfe/components` | `^1.0.0` |
 
 ### 安装最新版本
 
 ```bash
-npm i -S @alife/alicloud-components-console-menu
+npm i -S @alicloudfe/components-console-menu
 ```
 
 ## 使用示例
