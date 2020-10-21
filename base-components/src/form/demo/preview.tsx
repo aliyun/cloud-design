@@ -66,7 +66,6 @@ const fileList = [
 
 class Demo extends React.Component {
   state = {
-    size: 'medium',
     preview: false
   }
   submitHandler = (e) => {
@@ -90,7 +89,6 @@ class Demo extends React.Component {
         <Form
           {...formItemLayout}
           isPreview={this.state.preview}
-          size={this.state.size}
           style={{ maxWidth: '800px' }}
         >
           <FormItem

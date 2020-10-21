@@ -30,7 +30,6 @@ export default function DemoComponent() {
   return (
     <Style>
       <Select
-        style={{ width: 200 }}
         id="basic-demo"
         onChange={onChange}
         onToggleHighlightItem={onToggleHighlightItem}

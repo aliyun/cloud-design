@@ -72,7 +72,9 @@ class Demo extends React.Component {
           title="Welcome to Alibaba.com"
           visible={visible}
           isFullScreen={isFullScreen}
-          closeable={closeOnMaskClick ? 'close,esc,mask' : 'close,esc'}
+          closeMode={
+            closeOnMaskClick ? ['close', 'esc', 'mask'] : ['close', 'esc']
+          }
           onOk={this.onClose}
           onCancel={this.onClose}
           onClose={this.onClose}

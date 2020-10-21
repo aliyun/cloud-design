@@ -35,7 +35,7 @@ class Demo extends React.Component {
   render() {
     const drawerProps = {
       placement: this.state.placement,
-      closeable: 'mask',
+      closeMode: 'mask',
       bodyStyle: { padding: 0 }
     }
     return (

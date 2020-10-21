@@ -10,6 +10,7 @@ import { Upload, Button } from '@alicloudfe/components'
 
 class App extends React.Component {
   saveUploaderRef = (ref) => {
+    if (!ref) return
     this.uploaderRef = ref.getInstance()
   }
 

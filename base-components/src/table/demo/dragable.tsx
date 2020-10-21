@@ -1,6 +1,6 @@
 /**
  * @title 拖拽排序
- * @description 可拖拽的表格。拖拽功能的实现依赖react-dnd@7.x 及react-dnd-html5-backend@7.x， 它要求react react-dom 版本高于16.3.x
+ * @description 可拖拽的表格。拖拽功能的实现依赖react-dnd@7.x 及react-dnd-html5-backend@7.x， 它要求react react-dom 版本高于16.3.x。在线Demo可以参考 https://codesandbox.io/s/draggable-table-drt4m
  */
 
 import * as React from 'react'
@@ -190,7 +190,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <SortableTable dataSource={this.state.dataSource}>
+        <SortableTable dataSource={this.state.dataSource} onSort={console.log}>
           <Table.Column title="Id" dataIndex="id" width={100} lock />
           <Table.Column title="Title" dataIndex="title.name" width={400} />
           <Table.Column title="Time" dataIndex="time" width={300} />

@@ -55,6 +55,20 @@ export default function DemoComponent() {
           disabledDate={disabledDate}
           onChange={(val) => console.log(val)}
         />
+        <br />
+        <br />
+        <RangePicker
+          type="month"
+          disabledDate={disabledDate}
+          onChange={(val) => console.log(val)}
+        />
+        <br />
+        <br />
+        <RangePicker
+          type="year"
+          disabledDate={disabledDate}
+          onChange={(val) => console.log(val)}
+        />
       </div>
     </Style>
   )

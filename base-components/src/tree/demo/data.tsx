@@ -8,12 +8,12 @@ import styled from 'styled-components'
 
 import { Tree } from '@alicloudfe/components'
 
-const data = [
+const data = Object.freeze([
   {
     label: 'Component',
     key: '1',
     children: [
-      {
+      Object.freeze({
         label: 'Form',
         key: '2',
         selectable: false,
@@ -28,7 +28,7 @@ const data = [
             disabled: true
           }
         ]
-      },
+      }),
       {
         label: 'Display',
         key: '3',
@@ -41,7 +41,7 @@ const data = [
       }
     ]
   }
-]
+])
 
 class Demo extends React.Component {
   onSelect(keys, info) {
