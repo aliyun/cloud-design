@@ -3,6 +3,7 @@
  * @description 默认 `Row` 的宽度被设置为100%，可以通过设置 `fixed` 属性为 true，来让 `Row` 的宽度不立刻随着是视口大小变动而变动，而是在某个断点下维持固定的宽度，也可以通过设置 `fixedWidth` 属性为某一断点值，从而固定 `Row` 的宽度，不再随着视口大小变动而变动。
  */
 
+import * as ReactDOM from 'react-dom'
 import * as React from 'react'
 import styled from 'styled-components'
 

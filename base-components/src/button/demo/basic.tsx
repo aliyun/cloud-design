@@ -12,10 +12,8 @@ export default function DemoComponent() {
   return (
     <Style>
       <div>
-        <Button type="normal">确认</Button> &nbsp;&nbsp;
-        <Button type="primary">确认吗</Button> &nbsp;&nbsp;
-        <Button type="primary">非常确认</Button> &nbsp;&nbsp;
-        <Button type="primary">非常非常确认</Button> &nbsp;&nbsp;
+        <Button type="normal">Normal</Button> &nbsp;&nbsp;
+        <Button type="primary">Prirmary</Button> &nbsp;&nbsp;
         <Button type="secondary">Secondary</Button>
         <br />
         <br />

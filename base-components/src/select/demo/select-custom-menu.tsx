@@ -6,13 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import {
-  Select,
-  Divider,
-  Icon,
-  Button,
-  Input
-} from '@alicloudfe/components'
+import { Select, Divider, Icon, Button, Input } from '@alicloudfe/components'
 
 const Option = Select.Option
 

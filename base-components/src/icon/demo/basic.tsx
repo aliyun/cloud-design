@@ -12,7 +12,6 @@ export default function DemoComponent() {
   return (
     <Style>
       <Icon type="atm" />
-      <Icon type="Aone" />
     </Style>
   )
 }

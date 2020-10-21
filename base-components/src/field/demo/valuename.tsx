@@ -6,13 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import {
-  Button,
-  Checkbox,
-  Radio,
-  Switch,
-  Field
-} from '@alicloudfe/components'
+import { Button, Checkbox, Radio, Switch, Field } from '@alicloudfe/components'
 
 class App extends React.Component {
   field = new Field(this)

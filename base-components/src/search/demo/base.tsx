@@ -19,14 +19,6 @@ const App = () => [
     onSearch={onSearch}
     style={{ width: '400px' }}
   />,
-  <p key="2.4">disabled</p>,
-  <Search
-    key="2.5"
-    shape="simple"
-    disabled
-    onSearch={onSearch}
-    style={{ width: '400px' }}
-  />,
   <p key="3">default</p>,
   <Search key="4" onSearch={onSearch} style={{ width: '400px' }} />,
   <p key="5">custom text </p>,

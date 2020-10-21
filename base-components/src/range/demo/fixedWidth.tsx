@@ -60,7 +60,6 @@ class App extends React.Component {
           fixedWidth
           step={10}
           defaultValue={[20, 40]}
-          scales={10}
           marks={10}
           style={styleX3}
         />
@@ -68,7 +67,6 @@ class App extends React.Component {
           fixedWidth
           step={2}
           defaultValue={[60, 80]}
-          scales={[0, 100]}
           marks={[0, 30, 100]}
           style={style}
           marksPosition="below"

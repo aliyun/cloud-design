@@ -1,6 +1,6 @@
 /**
  * @title 刻度及标识
- * @description 通过 `scales` 与 `marks` 属性设置刻度及标识。
+ * @description 通过 `marks` 属性设置刻度及标识。
  */
 
 import * as React from 'react'
@@ -22,7 +22,6 @@ export default function DemoComponent() {
         <Range
           slider={'double'}
           defaultValue={[20, 40]}
-          scales={[0, 100]}
           marks={[0, 100]}
           style={style}
         />
@@ -37,14 +36,12 @@ export default function DemoComponent() {
         <Range
           slider={'double'}
           defaultValue={[20, 40]}
-          scales={[0, 100]}
           marks={[0, 100]}
           style={style}
           marksPosition="below"
         />
         <Range
           defaultValue={30}
-          scales={[0, 100]}
           marks={[0, 100]}
           style={style}
           marksPosition="below"
@@ -54,7 +51,6 @@ export default function DemoComponent() {
         <Range
           slider={'double'}
           defaultValue={[20, 40]}
-          scales={10}
           marks={10}
           style={style}
         />
@@ -62,7 +58,6 @@ export default function DemoComponent() {
           disabled
           slider={'double'}
           defaultValue={[20, 40]}
-          scales={10}
           marks={10}
           style={style}
         />

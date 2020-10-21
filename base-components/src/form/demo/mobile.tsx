@@ -6,13 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import {
-  Form,
-  Input,
-  Checkbox,
-  Switch,
-  Radio
-} from '@alicloudfe/components'
+import { Form, Input, Checkbox, Switch, Radio } from '@alicloudfe/components'
 
 const FormItem = Form.Item
 
