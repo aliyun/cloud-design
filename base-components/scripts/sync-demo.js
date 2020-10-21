@@ -7,11 +7,13 @@ const prettier = require('prettier')
 // 运行这个脚本之前，把这个参数改成本地fusion仓库的docs目录
 const fusionDocs = '/Users/csr/workspace/next/docs'
 
-
 const root = path.join(__dirname, '../')
 const prettierConfig = fs.readJsonSync(path.join(root, '../.prettierrc'))
 
-const blocklist = ['pagination/demo/react-router.md']
+const blocklist = [
+  'pagination/demo/react-router.md',
+  'config-provider/demo/components.md'
+]
 
 glob('*/demo/*.md', { cwd: fusionDocs }, (err, res) => {
   if (err) throw err
@@ -75,6 +77,10 @@ glob('*/demo/*.md', { cwd: fusionDocs }, (err, res) => {
       )
         generateCode = `import * as React from 'react';\n` + generateCode
 
+      if (componentName === 'grid' && demoFilePath === 'type') {
+        generateCode = `import * as ReactDOM from 'react-dom';\n` + generateCode
+      }
+
       generateCode = `
 /**
  * @title ${title}
@@ -87,7 +93,7 @@ ${generateCode}`
         ...prettierConfig,
         parser: 'babel'
       })
-      assert(!/@alifd\/next/.test(generateCode))
+      assert(!/@alifd\/next/.test(generateCode), generateCode)
       const writePath = path.join(
         root,
         `src/${componentName}/demo/${demoFilePath}.tsx`
@@ -95,4 +101,4 @@ ${generateCode}`
       fs.ensureDirSync(path.dirname(writePath))
       fs.writeFileSync(writePath, generateCode)
     })
-});
+})
