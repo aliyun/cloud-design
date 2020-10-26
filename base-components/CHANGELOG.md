@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.0.5 (2020.10.26)
+### Features
+- Upgrade hybridcloud、hybridcloud-dark、yunxiao theme
+- Prettier several components
+
 ## 1.0.4 (2020.10.16)
 ### Features
 - Upgrade hybridcloud、hybridcloud-dark theme
