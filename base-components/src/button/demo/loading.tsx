@@ -33,7 +33,7 @@ class Demo extends React.Component {
           loading={this.state.loading}
           onClick={this.setLoading}
         >
-          Click to loading
+          点击加载
         </Button>
       </div>
     )
