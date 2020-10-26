@@ -43,7 +43,7 @@ $btn-prefix: '.' + $css-prefix + 'btn';
     &:not(.isOnlyIcon) {
       min-width: var(--btn-large-min-width, 60px);
     }
-    &.isTwoToFourCNCharBtn {
+    &.isTwoToFourCNCharBtn:not(#{$btn-prefix}-loading) {
       width: var(--btn-small-cn-width, 64px);
       padding: 0;
     }
@@ -57,7 +57,7 @@ $btn-prefix: '.' + $css-prefix + 'btn';
     &:not(.isOnlyIcon) {
       min-width: var(--btn-large-min-width, 68px);
     }
-    &.isTwoToFourCNCharBtn {
+    &.isTwoToFourCNCharBtn:not(#{$btn-prefix}-loading) {
       width: var(--btn-medium-cn-width, 72px);
       padding: 0;
     }
@@ -71,7 +71,7 @@ $btn-prefix: '.' + $css-prefix + 'btn';
     &:not(.isOnlyIcon) {
       min-width: var(--btn-large-min-width, 76px);
     }
-    &.isTwoToFourCNCharBtn {
+    &.isTwoToFourCNCharBtn:not(#{$btn-prefix}-loading) {
       width: var(--btn-large-cn-width, 80px);
       padding: 0;
     }
