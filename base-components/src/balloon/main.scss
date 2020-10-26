@@ -1,3 +1,20 @@
 .#{$css-prefix}balloon {
-  
+  &#{&}#{&}::after {
+    box-shadow: none;
+  }
+  &#{&}-bottom-right::after, &#{&}-bottom-left::after, &#{&}-bottom::after {
+    border-bottom-right-radius: var(--balloon-arrow-border-radius, 2px);
+  }
+
+  &#{&}-top-right::after, &#{&}-top-left::after, &#{&}-top::after {
+    border-top-left-radius: var(--balloon-arrow-border-radius, 2px);
+  }
+
+  &#{&}-right-top::after, &#{&}-right-bottom::after, &#{&}-right::after {
+    border-top-right-radius: var(--balloon-arrow-border-radius, 2px);
+  }
+
+  &#{&}-left-top::after, &#{&}-left-bottom::after, &#{&}-left::after {
+    border-bottom-left-radius: var(--balloon-arrow-border-radius, 2px);
+  }
 }
