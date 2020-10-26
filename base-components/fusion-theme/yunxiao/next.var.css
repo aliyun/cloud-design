@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-yunxiao-v1@0.4.17 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.4.19 (https://fusion.design)
  * @alifd/next@1.21.8 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -8791,8 +8791,8 @@ small {
       line-height: 14px;
       line-height: var(--message-size-m-title-font, 14px); }
     .next-message.next-medium .next-message-content {
-      margin-top: 4px;
-      margin-top: var(--message-size-m-content-margin-top, 4px);
+      margin-top: 8px;
+      margin-top: var(--message-size-m-content-margin-top, 8px);
       padding: 0 32px 0 24px;
       padding: 0 var(--message-size-m-title-content-padding-right, 32px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 16px));
       font-size: 14px;
@@ -8808,8 +8808,8 @@ small {
       line-height: 16px;
       line-height: var(--message-size-m-icon, 16px); }
     .next-message.next-medium .next-message-close {
-      top: 8px;
-      top: var(--message-size-m-close-top, 8px);
+      top: 12px;
+      top: var(--message-size-m-close-top, 12px);
       right: 12px;
       right: var(--message-size-m-close-right, 12px); }
     .next-message.next-medium.next-inline {
@@ -8843,8 +8843,8 @@ small {
       line-height: 16px;
       line-height: var(--message-size-l-title-font, 16px); }
     .next-message.next-large .next-message-content {
-      margin-top: 4px;
-      margin-top: var(--message-size-l-content-margin-top, 4px);
+      margin-top: 12px;
+      margin-top: var(--message-size-l-content-margin-top, 12px);
       padding: 0 28px 0 28px;
       padding: 0 var(--message-size-l-title-content-padding-right, 28px) 0 calc(var(--message-size-l-title-content-padding-left, 8px) + var(--message-size-l-icon, 20px));
       font-size: 14px;
@@ -8860,8 +8860,8 @@ small {
       line-height: 20px;
       line-height: var(--message-size-l-icon, 20px); }
     .next-message.next-large .next-message-close {
-      top: 12px;
-      top: var(--message-size-l-close-top, 12px);
+      top: 16px;
+      top: var(--message-size-l-close-top, 16px);
       right: 12px;
       right: var(--message-size-l-close-right, 12px); }
     .next-message.next-large.next-inline {
@@ -20862,11 +20862,11 @@ small {
   .next-tabs-capsule > .next-tabs-bar .next-tabs-tab {
     -webkit-transition: background-color 100ms linear;
     transition: background-color 100ms linear;
-    border: 1px solid transparent;
-    border: var(--tab-capsule-tab-border-line-width, 1px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
+    border: 0px solid transparent;
+    border: var(--tab-capsule-tab-border-line-width, 0px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
     border-right-color: transparent;
-    margin-right: -1px;
-    margin-right: calc(0px - var(--tab-capsule-tab-border-line-width, 1px));
+    margin-right: 0px;
+    margin-right: calc(0px - var(--tab-capsule-tab-border-line-width, 0px));
     color: #8B8B8B;
     color: var(--tab-capsule-text-color, #8B8B8B);
     background-color: #F7F7F7;
@@ -20877,11 +20877,11 @@ small {
     .next-tabs-capsule > .next-tabs-bar .next-tabs-tab:last-child {
       border-radius: 0 4px 4px 0;
       border-radius: 0 var(--tab-capsule-corner-radius, 4px) var(--tab-capsule-corner-radius, 4px) 0;
-      border-right: 1px solid transparent;
-      border-right: var(--tab-capsule-tab-border-line-width, 1px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent); }
+      border-right: 0px solid transparent;
+      border-right: var(--tab-capsule-tab-border-line-width, 0px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent); }
     .next-tabs-capsule > .next-tabs-bar .next-tabs-tab.active {
-      border-right: 1px solid transparent;
-      border-right: var(--tab-capsule-tab-border-line-width, 1px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
+      border-right: 0px solid transparent;
+      border-right: var(--tab-capsule-tab-border-line-width, 0px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
       border-color: #DBDBDB;
       border-color: var(--tab-capsule-tab-border-line-color-active, #DBDBDB); }
     .next-tabs-capsule > .next-tabs-bar .next-tabs-tab.disabled {
@@ -20889,8 +20889,8 @@ small {
       border-color: var(--tab-capsule-tab-border-line-color-disabled, #E8E8E8); }
     .next-tabs-capsule > .next-tabs-bar .next-tabs-tab:hover {
       z-index: 2;
-      border-right: 1px solid transparent;
-      border-right: var(--tab-capsule-tab-border-line-width, 1px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
+      border-right: 0px solid transparent;
+      border-right: var(--tab-capsule-tab-border-line-width, 0px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
       border-color: transparent;
       border-color: var(--tab-capsule-tab-border-line-color-hover, transparent); }
     .next-tabs-capsule > .next-tabs-bar .next-tabs-tab:hover {
@@ -21005,12 +21005,12 @@ small {
   left: 0; }
 
 .next-tabs[dir='rtl'].next-tabs-capsule > .next-tabs-bar .next-tabs-tab {
-  border-top: 1px solid transparent;
-  border-top: var(--tab-capsule-tab-border-line-width, 1px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
-  border-bottom: 1px solid transparent;
-  border-bottom: var(--tab-capsule-tab-border-line-width, 1px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
-  border-right: 1px solid transparent;
-  border-right: var(--tab-capsule-tab-border-line-width, 1px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
+  border-top: 0px solid transparent;
+  border-top: var(--tab-capsule-tab-border-line-width, 0px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
+  border-bottom: 0px solid transparent;
+  border-bottom: var(--tab-capsule-tab-border-line-width, 0px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
+  border-right: 0px solid transparent;
+  border-right: var(--tab-capsule-tab-border-line-width, 0px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
   border-left: 0; }
   .next-tabs[dir='rtl'].next-tabs-capsule > .next-tabs-bar .next-tabs-tab:first-child {
     border-left: 0;
@@ -21019,14 +21019,14 @@ small {
   .next-tabs[dir='rtl'].next-tabs-capsule > .next-tabs-bar .next-tabs-tab:last-child {
     border-radius: 4px 0 0 4px;
     border-radius: var(--tab-capsule-corner-radius, 4px) 0 0 var(--tab-capsule-corner-radius, 4px);
-    border-left: 1px solid transparent;
-    border-left: var(--tab-capsule-tab-border-line-width, 1px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent); }
+    border-left: 0px solid transparent;
+    border-left: var(--tab-capsule-tab-border-line-width, 0px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent); }
   .next-tabs[dir='rtl'].next-tabs-capsule > .next-tabs-bar .next-tabs-tab.active {
-    margin-left: -1px;
-    margin-left: calc(0px - var(--tab-capsule-tab-border-line-width, 1px));
+    margin-left: 0px;
+    margin-left: calc(0px - var(--tab-capsule-tab-border-line-width, 0px));
     margin-right: auto;
-    border-left: 1px solid transparent;
-    border-left: var(--tab-capsule-tab-border-line-width, 1px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
+    border-left: 0px solid transparent;
+    border-left: var(--tab-capsule-tab-border-line-width, 0px) var(--tab-capsule-tab-border-line-style, solid) var(--tab-capsule-tab-border-line-color, transparent);
     border-color: #DBDBDB;
     border-color: var(--tab-capsule-tab-border-line-color-active, #DBDBDB); }
 
