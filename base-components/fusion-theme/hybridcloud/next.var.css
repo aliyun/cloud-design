@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.7.2 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.7.3 (https://fusion.design)
  * @alifd/next@1.21.8 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -1848,8 +1848,8 @@ small {
 
 @font-face {
   font-family: NextIcon;
-  src: url("//at.alicdn.com/t/font_1984231_4z5yc5sqfuv.eot");
-  src: url("//at.alicdn.com/t/font_1984231_4z5yc5sqfuv.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1984231_4z5yc5sqfuv.woff2") format("woff2"), url("//at.alicdn.com/t/font_1984231_4z5yc5sqfuv.woff") format("woff"), url("//at.alicdn.com/t/font_1984231_4z5yc5sqfuv.ttf") format("truetype"), url("//at.alicdn.com/t/font_1984231_4z5yc5sqfuv.svg#NextIcon") format("svg"); }
+  src: url("//at.alicdn.com/t/font_1984231_1hv19y2g2hb.eot");
+  src: url("//at.alicdn.com/t/font_1984231_1hv19y2g2hb.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1984231_1hv19y2g2hb.woff2") format("woff2"), url("//at.alicdn.com/t/font_1984231_1hv19y2g2hb.woff") format("woff"), url("//at.alicdn.com/t/font_1984231_1hv19y2g2hb.ttf") format("truetype"), url("//at.alicdn.com/t/font_1984231_1hv19y2g2hb.svg#NextIcon") format("svg"); }
 
 .next-icon {
   display: inline-block;
@@ -2138,8 +2138,8 @@ small {
   max-width: var(--balloon-size-max-width, 300px);
   border-style: solid;
   border-style: var(--balloon-border-style, solid);
-  border-radius: 4px;
-  border-radius: var(--balloon-corner, 4px);
+  border-radius: 2px;
+  border-radius: var(--balloon-corner, 2px);
   font-size: 12px;
   font-size: var(--balloon-content-font-size, 12px);
   font-weight: normal;
@@ -2206,10 +2206,10 @@ small {
         color: var(--balloon-primary-color-close-hover, #CCCCCC); }
     .next-balloon-primary:after {
       position: absolute;
-      width: 12px;
-      width: var(--balloon-size-arrow-size, 12px);
-      height: 12px;
-      height: var(--balloon-size-arrow-size, 12px);
+      width: 8px;
+      width: var(--balloon-size-arrow-size, 8px);
+      height: 8px;
+      height: var(--balloon-size-arrow-size, 8px);
       content: '';
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
@@ -2222,37 +2222,37 @@ small {
       background-color: var(--balloon-primary-color-bg, #333333);
       z-index: -1; }
     .next-balloon-primary.next-balloon-top:after {
-      top: -7px;
-      top: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
-      left: calc(50% - 7px);
-      left: calc(50% - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      top: -5px;
+      top: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
+      left: calc(50% - 5px);
+      left: calc(50% - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       border-right: none;
       border-bottom: none;
       -webkit-box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-primary.next-balloon-right:after {
-      top: calc(50% - 7px);
-      top: calc(50% - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
-      right: -7px;
-      right: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      top: calc(50% - 5px);
+      top: calc(50% - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
+      right: -5px;
+      right: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       border-left: none;
       border-bottom: none;
       -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-primary.next-balloon-bottom:after {
-      bottom: -7px;
-      bottom: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
-      left: calc(50% - 7px);
-      left: calc(50% - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      bottom: -5px;
+      bottom: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
+      left: calc(50% - 5px);
+      left: calc(50% - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       border-top: none;
       border-left: none;
       -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-primary.next-balloon-left:after {
-      top: calc(50% - 7px);
-      top: calc(50% - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
-      left: -7px;
-      left: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      top: calc(50% - 5px);
+      top: calc(50% - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
+      left: -5px;
+      left: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       border-top: none;
       border-right: none;
       -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
@@ -2260,8 +2260,8 @@ small {
     .next-balloon-primary.next-balloon-left-top:after {
       top: 12px;
       top: var(--balloon-size-arrow-margin, 12px);
-      left: -7px;
-      left: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      left: -5px;
+      left: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       border-top: none;
       border-right: none;
       -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
@@ -2269,8 +2269,8 @@ small {
     .next-balloon-primary.next-balloon-left-bottom:after {
       bottom: 12px;
       bottom: var(--balloon-size-arrow-margin, 12px);
-      left: -7px;
-      left: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      left: -5px;
+      left: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       border-top: none;
       border-right: none;
       -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
@@ -2278,15 +2278,15 @@ small {
     .next-balloon-primary.next-balloon-right-top:after {
       top: 12px;
       top: var(--balloon-size-arrow-margin, 12px);
-      right: -7px;
-      right: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      right: -5px;
+      right: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       border-bottom: none;
       border-left: none;
       -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-primary.next-balloon-right-bottom:after {
-      right: -7px;
-      right: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      right: -5px;
+      right: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       bottom: 12px;
       bottom: var(--balloon-size-arrow-margin, 12px);
       border-bottom: none;
@@ -2294,8 +2294,8 @@ small {
       -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-primary.next-balloon-top-left:after {
-      top: -7px;
-      top: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      top: -5px;
+      top: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       left: 12px;
       left: var(--balloon-size-arrow-margin, 12px);
       border-right: none;
@@ -2303,8 +2303,8 @@ small {
       -webkit-box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-primary.next-balloon-top-right:after {
-      top: -7px;
-      top: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      top: -5px;
+      top: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       right: 12px;
       right: var(--balloon-size-arrow-margin, 12px);
       border-right: none;
@@ -2312,8 +2312,8 @@ small {
       -webkit-box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-primary.next-balloon-bottom-left:after {
-      bottom: -7px;
-      bottom: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      bottom: -5px;
+      bottom: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       left: 12px;
       left: var(--balloon-size-arrow-margin, 12px);
       border-top: none;
@@ -2323,8 +2323,8 @@ small {
     .next-balloon-primary.next-balloon-bottom-right:after {
       right: 12px;
       right: var(--balloon-size-arrow-margin, 12px);
-      bottom: -7px;
-      bottom: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+      bottom: -5px;
+      bottom: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
       border-top: none;
       border-left: none;
       -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
@@ -2332,16 +2332,16 @@ small {
   .next-balloon-normal {
     color: #1A1A1A;
     color: var(--balloon-normal-color, #1A1A1A);
-    border-color: transparent;
-    border-color: var(--balloon-normal-color-border, transparent);
+    border-color: #E6E6E6;
+    border-color: var(--balloon-normal-color-border, #E6E6E6);
     background-color: #FFFFFF;
     background-color: var(--balloon-normal-color-bg, #FFFFFF);
     -webkit-box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: var(--balloon-normal-shadow, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
             box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.1);
             box-shadow: var(--balloon-normal-shadow, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
-    border-width: 0px;
-    border-width: var(--balloon-normal-border-width, 0px); }
+    border-width: 1px;
+    border-width: var(--balloon-normal-border-width, 1px); }
     .next-balloon-normal .next-balloon-close {
       position: absolute;
       top: 8px;
@@ -2374,53 +2374,53 @@ small {
         color: var(--balloon-normal-color-close-hover, #262626); }
     .next-balloon-normal:after {
       position: absolute;
-      width: 12px;
-      width: var(--balloon-size-arrow-size, 12px);
-      height: 12px;
-      height: var(--balloon-size-arrow-size, 12px);
+      width: 8px;
+      width: var(--balloon-size-arrow-size, 8px);
+      height: 8px;
+      height: var(--balloon-size-arrow-size, 8px);
       content: '';
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
               transform: rotate(45deg);
       -webkit-box-sizing: content-box !important;
               box-sizing: content-box !important;
-      border: 0px solid transparent;
-      border: var(--balloon-normal-border-width, 0px) var(--balloon-border-style, solid) var(--balloon-normal-color-border, transparent);
+      border: 1px solid #E6E6E6;
+      border: var(--balloon-normal-border-width, 1px) var(--balloon-border-style, solid) var(--balloon-normal-color-border, #E6E6E6);
       background-color: #FFFFFF;
       background-color: var(--balloon-normal-color-bg, #FFFFFF);
       z-index: -1; }
     .next-balloon-normal.next-balloon-top:after {
-      top: -7px;
-      top: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
-      left: calc(50% - 7px);
-      left: calc(50% - 1px - var(--balloon-size-arrow-size, 12px)/2);
+      top: -5px;
+      top: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
+      left: calc(50% - 5px);
+      left: calc(50% - 1px - var(--balloon-size-arrow-size, 8px)/2);
       border-right: none;
       border-bottom: none;
       -webkit-box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-normal.next-balloon-right:after {
-      top: calc(50% - 7px);
-      top: calc(50% - 1px - var(--balloon-size-arrow-size, 12px)/2);
-      right: -7px;
-      right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+      top: calc(50% - 5px);
+      top: calc(50% - 1px - var(--balloon-size-arrow-size, 8px)/2);
+      right: -5px;
+      right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
       border-left: none;
       border-bottom: none;
       -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-normal.next-balloon-bottom:after {
-      bottom: -7px;
-      bottom: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
-      left: calc(50% - 7px);
-      left: calc(50% - 1px - var(--balloon-size-arrow-size, 12px)/2);
+      bottom: -5px;
+      bottom: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
+      left: calc(50% - 5px);
+      left: calc(50% - 1px - var(--balloon-size-arrow-size, 8px)/2);
       border-top: none;
       border-left: none;
       -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-normal.next-balloon-left:after {
-      top: calc(50% - 7px);
-      top: calc(50% - 1px - var(--balloon-size-arrow-size, 12px)/2);
-      left: -7px;
-      left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+      top: calc(50% - 5px);
+      top: calc(50% - 1px - var(--balloon-size-arrow-size, 8px)/2);
+      left: -5px;
+      left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
       border-top: none;
       border-right: none;
       -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
@@ -2428,8 +2428,8 @@ small {
     .next-balloon-normal.next-balloon-left-top:after {
       top: 12px;
       top: var(--balloon-size-arrow-margin, 12px);
-      left: -7px;
-      left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+      left: -5px;
+      left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
       border-top: none;
       border-right: none;
       -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
@@ -2437,8 +2437,8 @@ small {
     .next-balloon-normal.next-balloon-left-bottom:after {
       bottom: 12px;
       bottom: var(--balloon-size-arrow-margin, 12px);
-      left: -7px;
-      left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+      left: -5px;
+      left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
       border-top: none;
       border-right: none;
       -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
@@ -2446,15 +2446,15 @@ small {
     .next-balloon-normal.next-balloon-right-top:after {
       top: 12px;
       top: var(--balloon-size-arrow-margin, 12px);
-      right: -7px;
-      right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+      right: -5px;
+      right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
       border-bottom: none;
       border-left: none;
       -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-normal.next-balloon-right-bottom:after {
-      right: -7px;
-      right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+      right: -5px;
+      right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
       bottom: 12px;
       bottom: var(--balloon-size-arrow-margin, 12px);
       border-bottom: none;
@@ -2462,8 +2462,8 @@ small {
       -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-normal.next-balloon-top-left:after {
-      top: -7px;
-      top: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+      top: -5px;
+      top: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
       left: 12px;
       left: var(--balloon-size-arrow-margin, 12px);
       border-right: none;
@@ -2471,8 +2471,8 @@ small {
       -webkit-box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-normal.next-balloon-top-right:after {
-      top: -7px;
-      top: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+      top: -5px;
+      top: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
       right: 12px;
       right: var(--balloon-size-arrow-margin, 12px);
       border-right: none;
@@ -2480,8 +2480,8 @@ small {
       -webkit-box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1);
               box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
     .next-balloon-normal.next-balloon-bottom-left:after {
-      bottom: -7px;
-      bottom: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+      bottom: -5px;
+      bottom: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
       left: 12px;
       left: var(--balloon-size-arrow-margin, 12px);
       border-top: none;
@@ -2491,8 +2491,8 @@ small {
     .next-balloon-normal.next-balloon-bottom-right:after {
       right: 12px;
       right: var(--balloon-size-arrow-margin, 12px);
-      bottom: -7px;
-      bottom: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+      bottom: -5px;
+      bottom: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
       border-top: none;
       border-left: none;
       -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
@@ -2516,8 +2516,8 @@ small {
   max-width: var(--balloon-size-max-width, 300px);
   border-style: solid;
   border-style: var(--balloon-tooltip-border-style, solid);
-  border-radius: 4px;
-  border-radius: var(--balloon-corner, 4px);
+  border-radius: 2px;
+  border-radius: var(--balloon-corner, 2px);
   font-size: 12px;
   font-size: var(--balloon-tooltip-content-font-size, 12px);
   font-weight: normal;
@@ -2545,10 +2545,10 @@ small {
             box-sizing: border-box; }
   .next-balloon-tooltip:after {
     position: absolute;
-    width: 12px;
-    width: var(--balloon-size-arrow-size, 12px);
-    height: 12px;
-    height: var(--balloon-size-arrow-size, 12px);
+    width: 8px;
+    width: var(--balloon-size-arrow-size, 8px);
+    height: 8px;
+    height: var(--balloon-size-arrow-size, 8px);
     content: '';
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -2561,78 +2561,78 @@ small {
     background-color: var(--balloon-tooltip-color-bg, #333333);
     z-index: -1; }
   .next-balloon-tooltip-top:after {
-    top: -7px;
-    top: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
-    left: calc(50% - 7px);
-    left: calc(50% - 1px - var(--balloon-size-arrow-size, 12px)/2);
+    top: -5px;
+    top: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
+    left: calc(50% - 5px);
+    left: calc(50% - 1px - var(--balloon-size-arrow-size, 8px)/2);
     border-right: none;
     border-bottom: none; }
   .next-balloon-tooltip-right:after {
-    top: calc(50% - 7px);
-    top: calc(50% - 1px - var(--balloon-size-arrow-size, 12px)/2);
-    right: -7px;
-    right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    top: calc(50% - 5px);
+    top: calc(50% - 1px - var(--balloon-size-arrow-size, 8px)/2);
+    right: -5px;
+    right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     border-left: none;
     border-bottom: none; }
   .next-balloon-tooltip-bottom:after {
-    bottom: -7px;
-    bottom: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
-    left: calc(50% - 7px);
-    left: calc(50% - 1px - var(--balloon-size-arrow-size, 12px)/2);
+    bottom: -5px;
+    bottom: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
+    left: calc(50% - 5px);
+    left: calc(50% - 1px - var(--balloon-size-arrow-size, 8px)/2);
     border-top: none;
     border-left: none; }
   .next-balloon-tooltip-left:after {
-    top: calc(50% - 7px);
-    top: calc(50% - 1px - var(--balloon-size-arrow-size, 12px)/2);
-    left: -7px;
-    left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    top: calc(50% - 5px);
+    top: calc(50% - 1px - var(--balloon-size-arrow-size, 8px)/2);
+    left: -5px;
+    left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     border-top: none;
     border-right: none; }
   .next-balloon-tooltip-left-top:after {
     top: 12px;
     top: var(--balloon-size-arrow-margin, 12px);
-    left: -7px;
-    left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    left: -5px;
+    left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     border-top: none;
     border-right: none; }
   .next-balloon-tooltip-left-bottom:after {
     bottom: 12px;
     bottom: var(--balloon-size-arrow-margin, 12px);
-    left: -7px;
-    left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    left: -5px;
+    left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     border-top: none;
     border-right: none; }
   .next-balloon-tooltip-right-top:after {
     top: 12px;
     top: var(--balloon-size-arrow-margin, 12px);
-    right: -7px;
-    right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    right: -5px;
+    right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     border-bottom: none;
     border-left: none; }
   .next-balloon-tooltip-right-bottom:after {
-    right: -7px;
-    right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    right: -5px;
+    right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     bottom: 12px;
     bottom: var(--balloon-size-arrow-margin, 12px);
     border-bottom: none;
     border-left: none; }
   .next-balloon-tooltip-top-left:after {
-    top: -7px;
-    top: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    top: -5px;
+    top: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     left: 12px;
     left: var(--balloon-size-arrow-margin, 12px);
     border-right: none;
     border-bottom: none; }
   .next-balloon-tooltip-top-right:after {
-    top: -7px;
-    top: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    top: -5px;
+    top: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     right: 12px;
     right: var(--balloon-size-arrow-margin, 12px);
     border-right: none;
     border-bottom: none; }
   .next-balloon-tooltip-bottom-left:after {
-    bottom: -7px;
-    bottom: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    bottom: -5px;
+    bottom: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     left: 12px;
     left: var(--balloon-size-arrow-margin, 12px);
     border-top: none;
@@ -2640,8 +2640,8 @@ small {
   .next-balloon-tooltip-bottom-right:after {
     right: 12px;
     right: var(--balloon-size-arrow-margin, 12px);
-    bottom: -7px;
-    bottom: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    bottom: -5px;
+    bottom: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     border-top: none;
     border-left: none; }
   .next-balloon-tooltip.visible {
@@ -2659,8 +2659,8 @@ small {
     left: var(--balloon-size-close-margin-right, 12px);
     right: auto; }
   .next-balloon[dir="rtl"].next-balloon-primary.next-balloon-right:after {
-    left: -7px;
-    left: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+    left: -5px;
+    left: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
     right: auto;
     border-right: none;
     border-top: none;
@@ -2669,8 +2669,8 @@ small {
     -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
             box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1); }
   .next-balloon[dir="rtl"].next-balloon-primary.next-balloon-left:after {
-    right: -7px;
-    right: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+    right: -5px;
+    right: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
     left: auto;
     border-left: none;
     border-bottom: none;
@@ -2679,8 +2679,8 @@ small {
     -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
   .next-balloon[dir="rtl"].next-balloon-primary.next-balloon-left-top:after {
-    right: -7px;
-    right: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+    right: -5px;
+    right: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
     left: auto;
     border-left: none;
     border-bottom: none;
@@ -2689,8 +2689,8 @@ small {
     -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
   .next-balloon[dir="rtl"].next-balloon-primary.next-balloon-left-bottom:after {
-    right: -7px;
-    right: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+    right: -5px;
+    right: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
     left: auto;
     border-left: none;
     border-bottom: none;
@@ -2699,8 +2699,8 @@ small {
     -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
   .next-balloon[dir="rtl"].next-balloon-primary.next-balloon-right-top:after {
-    left: -7px;
-    left: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+    left: -5px;
+    left: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
     right: auto;
     border-right: none;
     border-top: none;
@@ -2709,8 +2709,8 @@ small {
     -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
             box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1); }
   .next-balloon[dir="rtl"].next-balloon-primary.next-balloon-right-bottom:after {
-    left: -7px;
-    left: calc(0px - var(--balloon-size-arrow-size, 12px)/2 - var(--balloon-primary-border-width, 1px));
+    left: -5px;
+    left: calc(0px - var(--balloon-size-arrow-size, 8px)/2 - var(--balloon-primary-border-width, 1px));
     right: auto;
     border-right: none;
     border-top: none;
@@ -2739,8 +2739,8 @@ small {
     left: var(--balloon-size-close-margin-right, 12px);
     right: auto; }
   .next-balloon[dir="rtl"].next-balloon-normal.next-balloon-right:after {
-    left: -7px;
-    left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    left: -5px;
+    left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     right: auto;
     border-right: none;
     border-top: none;
@@ -2749,8 +2749,8 @@ small {
     -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
             box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1); }
   .next-balloon[dir="rtl"].next-balloon-normal.next-balloon-left:after {
-    right: -7px;
-    right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    right: -5px;
+    right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     left: auto;
     border-left: none;
     border-bottom: none;
@@ -2759,8 +2759,8 @@ small {
     -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
   .next-balloon[dir="rtl"].next-balloon-normal.next-balloon-left-top:after {
-    right: -7px;
-    right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    right: -5px;
+    right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     left: auto;
     border-left: none;
     border-bottom: none;
@@ -2769,8 +2769,8 @@ small {
     -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
   .next-balloon[dir="rtl"].next-balloon-normal.next-balloon-left-bottom:after {
-    right: -7px;
-    right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    right: -5px;
+    right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     left: auto;
     border-left: none;
     border-bottom: none;
@@ -2779,8 +2779,8 @@ small {
     -webkit-box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.1); }
   .next-balloon[dir="rtl"].next-balloon-normal.next-balloon-right-top:after {
-    left: -7px;
-    left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    left: -5px;
+    left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     right: auto;
     border-right: none;
     border-top: none;
@@ -2789,8 +2789,8 @@ small {
     -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1);
             box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.1); }
   .next-balloon[dir="rtl"].next-balloon-normal.next-balloon-right-bottom:after {
-    left: -7px;
-    left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    left: -5px;
+    left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     right: auto;
     border-right: none;
     border-top: none;
@@ -2821,48 +2821,48 @@ small {
 .next-balloon-tooltip[dir="rtl"] {
   /* size */ }
   .next-balloon-tooltip[dir="rtl"].next-balloon-tooltip-right:after {
-    left: -7px;
-    left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    left: -5px;
+    left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     right: auto;
     border-top: none;
     border-right: none;
     border-left: inherit;
     border-bottom: inherit; }
   .next-balloon-tooltip[dir="rtl"].next-balloon-tooltip-left:after {
-    right: -7px;
-    right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    right: -5px;
+    right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     left: auto;
     border-top: inherit;
     border-right: inherit;
     border-left: none;
     border-bottom: none; }
   .next-balloon-tooltip[dir="rtl"].next-balloon-tooltip-left-top:after {
-    right: -7px;
-    right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    right: -5px;
+    right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     left: auto;
     border-top: inherit;
     border-right: inherit;
     border-left: none;
     border-bottom: none; }
   .next-balloon-tooltip[dir="rtl"].next-balloon-tooltip-left-bottom:after {
-    right: -7px;
-    right: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    right: -5px;
+    right: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     left: auto;
     border-top: inherit;
     border-right: inherit;
     border-left: none;
     border-bottom: none; }
   .next-balloon-tooltip[dir="rtl"].next-balloon-tooltip-right-top:after {
-    left: -7px;
-    left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    left: -5px;
+    left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     right: auto;
     border-top: none;
     border-right: none;
     border-left: inherit;
     border-bottom: inherit; }
   .next-balloon-tooltip[dir="rtl"].next-balloon-tooltip-right-bottom:after {
-    left: -7px;
-    left: calc(-1px - var(--balloon-size-arrow-size, 12px)/2);
+    left: -5px;
+    left: calc(-1px - var(--balloon-size-arrow-size, 8px)/2);
     right: auto;
     border-top: none;
     border-right: none;
@@ -5113,23 +5113,23 @@ small {
     .next-tag-small > .next-tag-body {
       font-size: 12px;
       font-size: var(--tag-size-s-text-size, 12px);
-      padding: 0 6px;
-      padding: 0 var(--tag-size-s-padding-lr, 6px);
-      min-width: 32px;
-      min-width: var(--tag-size-s-content-min-width, 32px); }
+      padding: 0 8px;
+      padding: 0 var(--tag-size-s-padding-lr, 8px);
+      min-width: 4px;
+      min-width: var(--tag-size-s-content-min-width, 4px); }
     .next-tag-small.next-tag-closable > .next-tag-body {
-      padding: 0 0 0 6px;
-      padding: 0 0 0 var(--tag-size-s-padding-lr, 6px);
-      max-width: calc(100% - 30px);
-      max-width: calc(100% - var(--tag-size-s-icon-font, 12px) - var(--tag-size-s-icon-font, 12px) - var(--tag-size-s-padding-lr, 6px)); }
+      padding: 0 0 0 8px;
+      padding: 0 0 0 var(--tag-size-s-padding-lr, 8px);
+      max-width: calc(100% - 32px);
+      max-width: calc(100% - var(--tag-size-s-icon-font, 12px) - var(--tag-size-s-icon-font, 12px) - var(--tag-size-s-padding-lr, 8px)); }
     .next-tag-small[dir=rtl].next-tag-closable > .next-tag-body {
-      padding: 0 6px 0 0;
-      padding: 0 var(--tag-size-s-padding-lr, 6px) 0 0; }
+      padding: 0 8px 0 0;
+      padding: 0 var(--tag-size-s-padding-lr, 8px) 0 0; }
     .next-tag-small.next-tag-closable > .next-tag-close-btn {
       margin-left: 12px;
       margin-left: var(--tag-size-s-icon-font, 12px);
-      padding-right: 6px;
-      padding-right: var(--tag-size-s-padding-lr, 6px); }
+      padding-right: 8px;
+      padding-right: var(--tag-size-s-padding-lr, 8px); }
       .next-tag-small.next-tag-closable > .next-tag-close-btn .next-icon:before,
       .next-tag-small.next-tag-closable > .next-tag-close-btn .next-icon .next-icon-remote {
         width: 12px;
@@ -5142,8 +5142,8 @@ small {
       margin-right: var(--tag-size-s-icon-font, 12px);
       margin-left: 0;
       padding-right: 0;
-      padding-left: 6px;
-      padding-left: var(--tag-size-s-padding-lr, 6px); }
+      padding-left: 8px;
+      padding-left: var(--tag-size-s-padding-lr, 8px); }
   .next-tag-default {
     cursor: default; }
   .next-tag-closable {
@@ -5376,21 +5376,21 @@ small {
   .next-checkbox-wrapper.disabled input[type="checkbox"] {
     cursor: not-allowed; }
   .next-checkbox-wrapper.disabled .next-checkbox-inner {
-    border-color: #E6E6E6;
-    border-color: var(--checkbox-disabled-border-color, #E6E6E6);
-    background: #F7F7F7;
-    background: var(--checkbox-disabled-bg-color, #F7F7F7); }
+    border-color: transparent;
+    border-color: var(--checkbox-disabled-border-color, transparent);
+    background: #D9D9D9;
+    background: var(--checkbox-disabled-bg-color, #D9D9D9); }
   .next-checkbox-wrapper.disabled.checked .next-checkbox-inner, .next-checkbox-wrapper.disabled.indeterminate .next-checkbox-inner {
-    border-color: #E6E6E6;
-    border-color: var(--checkbox-disabled-border-color, #E6E6E6);
-    background: #F7F7F7;
-    background: var(--checkbox-disabled-bg-color, #F7F7F7); }
+    border-color: transparent;
+    border-color: var(--checkbox-disabled-border-color, transparent);
+    background: #D9D9D9;
+    background: var(--checkbox-disabled-bg-color, #D9D9D9); }
     .next-checkbox-wrapper.disabled.checked .next-checkbox-inner:hover, .next-checkbox-wrapper.disabled.checked .next-checkbox-inner.hovered, .next-checkbox-wrapper.disabled.indeterminate .next-checkbox-inner:hover, .next-checkbox-wrapper.disabled.indeterminate .next-checkbox-inner.hovered {
-      border-color: #E6E6E6;
-      border-color: var(--checkbox-disabled-border-color, #E6E6E6); }
+      border-color: transparent;
+      border-color: var(--checkbox-disabled-border-color, transparent); }
     .next-checkbox-wrapper.disabled.checked .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.disabled.indeterminate .next-checkbox-inner > .next-icon {
-      color: #CCCCCC;
-      color: var(--checkbox-disabled-circle-color, #CCCCCC);
+      color: #FFFFFF;
+      color: var(--checkbox-disabled-circle-color, #FFFFFF);
       opacity: 1; }
   .next-checkbox-wrapper.disabled .next-checkbox-label {
     color: #CCCCCC;
@@ -5743,8 +5743,8 @@ small {
     .next-input input:-webkit-autofill {
       -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset;
       -webkit-box-shadow: 0 0 0 1000px var(--input-bg-color, #FFFFFF) inset;
-      border-radius: 4px;
-      border-radius: var(--form-element-large-corner, 4px); }
+      border-radius: 2px;
+      border-radius: var(--form-element-large-corner, 2px); }
   .next-input textarea {
     resize: none; }
   .next-input input,
@@ -5864,8 +5864,8 @@ small {
       line-height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2); }
     .next-input.next-medium .next-icon:before,
     .next-input.next-medium .next-icon .next-icon-remote {
-      width: 12px;
-      font-size: 12px;
+      width: 16px;
+      font-size: 16px;
       line-height: inherit; }
     .next-input.next-medium .next-input-control {
       border-radius: 0 2px 2px 0;
@@ -5873,8 +5873,8 @@ small {
   .next-input.next-large {
     height: 36px;
     height: var(--form-element-large-height, 36px);
-    border-radius: 4px;
-    border-radius: var(--form-element-large-corner, 4px); }
+    border-radius: 2px;
+    border-radius: var(--form-element-large-corner, 2px); }
     .next-input.next-large .next-input-label {
       padding-left: 12px;
       padding-left: var(--input-l-label-padding-left, 12px);
@@ -5922,8 +5922,8 @@ small {
       font-size: 16px;
       line-height: inherit; }
     .next-input.next-large .next-input-control {
-      border-radius: 0 4px 4px 0;
-      border-radius: 0 var(--form-element-large-corner, 4px) var(--form-element-large-corner, 4px) 0; }
+      border-radius: 0 2px 2px 0;
+      border-radius: 0 var(--form-element-large-corner, 2px) var(--form-element-large-corner, 2px) 0; }
   .next-input.next-input-textarea {
     height: auto;
     border-radius: 2px;
@@ -6055,8 +6055,8 @@ small {
       content: "\E63A";
       content: var(--input-feedback-success-icon, "\E63A"); }
   .next-input-control .next-input-loading-icon {
-    color: #D9D9D9;
-    color: var(--input-feedback-loading-color, #D9D9D9); }
+    color: #B3B3B3;
+    color: var(--input-feedback-loading-color, #B3B3B3); }
     .next-input-control .next-input-loading-icon::before {
       content: "\E646";
       content: var(--input-feedback-loading-icon, "\E646");
@@ -6166,10 +6166,10 @@ small {
       border-bottom-left-radius: 2px !important;
       border-bottom-left-radius: var(--form-element-medium-corner, 2px) !important; }
     .next-input-group > .next-input:first-child.next-large {
-      border-top-left-radius: 4px !important;
-      border-top-left-radius: var(--form-element-large-corner, 4px) !important;
-      border-bottom-left-radius: 4px !important;
-      border-bottom-left-radius: var(--form-element-large-corner, 4px) !important; }
+      border-top-left-radius: 2px !important;
+      border-top-left-radius: var(--form-element-large-corner, 2px) !important;
+      border-bottom-left-radius: 2px !important;
+      border-bottom-left-radius: var(--form-element-large-corner, 2px) !important; }
     .next-input-group > .next-input:last-child.next-small {
       border-top-right-radius: 2px !important;
       border-top-right-radius: var(--form-element-small-corner, 2px) !important;
@@ -6181,10 +6181,10 @@ small {
       border-bottom-right-radius: 2px !important;
       border-bottom-right-radius: var(--form-element-medium-corner, 2px) !important; }
     .next-input-group > .next-input:last-child.next-large {
-      border-top-right-radius: 4px !important;
-      border-top-right-radius: var(--form-element-large-corner, 4px) !important;
-      border-bottom-right-radius: 4px !important;
-      border-bottom-right-radius: var(--form-element-large-corner, 4px) !important; }
+      border-top-right-radius: 2px !important;
+      border-top-right-radius: var(--form-element-large-corner, 2px) !important;
+      border-bottom-right-radius: 2px !important;
+      border-bottom-right-radius: var(--form-element-large-corner, 2px) !important; }
   .next-input-group-addon {
     width: 1px;
     display: table-cell;
@@ -6259,8 +6259,8 @@ small {
     .next-input-group-text.next-large {
       font-size: 14px;
       font-size: var(--form-element-large-font-size, 14px);
-      border-radius: 4px;
-      border-radius: var(--form-element-large-corner, 4px); }
+      border-radius: 2px;
+      border-radius: var(--form-element-large-corner, 2px); }
 
 .next-input[dir="rtl"].next-small .next-input-label {
   padding-left: 0;
@@ -6318,10 +6318,10 @@ small {
 .next-input-group[dir="rtl"] > .next-input:first-child.next-large {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
-  border-top-right-radius: 4px !important;
-  border-top-right-radius: var(--form-element-large-corner, 4px) !important;
-  border-bottom-right-radius: 4px !important;
-  border-bottom-right-radius: var(--form-element-large-corner, 4px) !important; }
+  border-top-right-radius: 2px !important;
+  border-top-right-radius: var(--form-element-large-corner, 2px) !important;
+  border-bottom-right-radius: 2px !important;
+  border-bottom-right-radius: var(--form-element-large-corner, 2px) !important; }
 
 .next-input-group[dir="rtl"] > .next-input:last-child.next-small {
   border-top-left-radius: 2px !important;
@@ -6340,10 +6340,10 @@ small {
   border-bottom-right-radius: 0 !important; }
 
 .next-input-group[dir="rtl"] > .next-input:last-child.next-large {
-  border-top-left-radius: 4px !important;
-  border-top-left-radius: var(--form-element-large-corner, 4px) !important;
-  border-bottom-left-radius: 4px !important;
-  border-bottom-left-radius: var(--form-element-large-corner, 4px) !important;
+  border-top-left-radius: 2px !important;
+  border-top-left-radius: var(--form-element-large-corner, 2px) !important;
+  border-bottom-left-radius: 2px !important;
+  border-bottom-left-radius: var(--form-element-large-corner, 2px) !important;
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important; }
 
@@ -6371,10 +6371,10 @@ small {
     .next-input-group[dir="rtl"] .next-input-group-addon:first-child.next-large,
     .next-input-group[dir="rtl"] .next-input-group-addon:first-child > .next-input.next-large,
     .next-input-group[dir="rtl"] .next-input-group-addon:first-child > * > .next-input.next-large {
-      border-bottom-right-radius: 4px !important;
-      border-bottom-right-radius: var(--form-element-large-corner, 4px) !important;
-      border-top-right-radius: 4px !important;
-      border-top-right-radius: var(--form-element-large-corner, 4px) !important; }
+      border-bottom-right-radius: 2px !important;
+      border-bottom-right-radius: var(--form-element-large-corner, 2px) !important;
+      border-top-right-radius: 2px !important;
+      border-top-right-radius: var(--form-element-large-corner, 2px) !important; }
   .next-input-group[dir="rtl"] .next-input-group-addon:first-child > * {
     margin-left: -1px;
     margin-left: calc(0px - var(--input-border-width, 1px));
@@ -6402,10 +6402,10 @@ small {
     .next-input-group[dir="rtl"] .next-input-group-addon:last-child.next-large,
     .next-input-group[dir="rtl"] .next-input-group-addon:last-child > .next-input.next-large,
     .next-input-group[dir="rtl"] .next-input-group-addon:last-child > * > .next-input.next-large {
-      border-bottom-left-radius: 4px !important;
-      border-bottom-left-radius: var(--form-element-large-corner, 4px) !important;
-      border-top-left-radius: 4px !important;
-      border-top-left-radius: var(--form-element-large-corner, 4px) !important; }
+      border-bottom-left-radius: 2px !important;
+      border-bottom-left-radius: var(--form-element-large-corner, 2px) !important;
+      border-top-left-radius: 2px !important;
+      border-top-left-radius: var(--form-element-large-corner, 2px) !important; }
   .next-input-group[dir="rtl"] .next-input-group-addon:last-child > * {
     margin-right: -1px;
     margin-right: calc(0px - var(--input-border-width, 1px));
@@ -7115,8 +7115,8 @@ small {
 .next-calendar-panel .next-calendar-th,
 .next-calendar-range .next-calendar-th {
   text-align: center;
-  color: #333333;
-  color: var(--calendar-card-table-head-color, #333333);
+  color: #9c9c9c;
+  color: var(--calendar-card-table-head-color, #9c9c9c);
   font-size: 12px;
   font-size: var(--calendar-card-table-head-font-size, 12px);
   font-weight: normal;
@@ -7535,8 +7535,8 @@ small {
     color: #0057AD;
     color: var(--card-title-extra-color, #0057AD); }
   .next-card-body {
-    padding-bottom: 12px;
-    padding-bottom: var(--card-body-padding-bottom, 12px);
+    padding-bottom: 20px;
+    padding-bottom: var(--card-body-padding-bottom, 20px);
     padding-left: 20px;
     padding-left: var(--card-padding-lr, 20px);
     padding-right: 20px;
@@ -7574,8 +7574,8 @@ small {
     padding: 0 var(--card-padding-lr, 20px);
     margin-bottom: 12px;
     margin-bottom: var(--card-body-show-divider-padding-top, 12px);
-    margin-top: 12px;
-    margin-top: var(--card-body-padding-bottom, 12px); }
+    margin-top: 20px;
+    margin-top: var(--card-body-padding-bottom, 20px); }
   .next-card-media,
   .next-card-media > * {
     display: block;
@@ -7614,8 +7614,8 @@ small {
     padding-right: var(--card-padding-lr, 20px);
     padding-top: 12px;
     padding-top: var(--card-body-show-divider-padding-top, 12px);
-    padding-bottom: 12px;
-    padding-bottom: var(--card-body-padding-bottom, 12px); }
+    padding-bottom: 20px;
+    padding-bottom: var(--card-body-padding-bottom, 20px); }
     .next-card-actions .next-btn:not(:last-child) {
       margin-right: 12px;
       vertical-align: middle; }
@@ -7635,8 +7635,8 @@ small {
   .next-card-content-container {
     margin-top: 12px;
     margin-top: var(--card-body-show-divider-padding-top, 12px);
-    padding-bottom: 12px;
-    padding-bottom: var(--card-body-padding-bottom, 12px);
+    padding-bottom: 20px;
+    padding-bottom: var(--card-body-padding-bottom, 20px);
     padding-left: 20px;
     padding-left: var(--card-padding-lr, 20px);
     padding-right: 20px;
@@ -7823,8 +7823,8 @@ small {
 .next-collapse {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid #E6E6E6;
-  border: var(--collapse-border-width, 1px) solid var(--collapse-border-color, #E6E6E6);
+  border: 0px solid transparent;
+  border: var(--collapse-border-width, 0px) solid var(--collapse-border-color, transparent);
   border-radius: 2px;
   border-radius: var(--collapse-border-corner, 2px); }
   .next-collapse *,
@@ -7836,12 +7836,12 @@ small {
   .next-collapse *:focus {
     outline: 0; }
   .next-collapse-panel:not(:first-child) {
-    border-top: 1px solid #E6E6E6;
-    border-top: var(--collapse-title-border-width, 1px) solid var(--collapse-panel-border-color, #E6E6E6); }
+    border-top: 0px solid #E6E6E6;
+    border-top: var(--collapse-title-border-width, 0px) solid var(--collapse-panel-border-color, #E6E6E6); }
   .next-collapse .next-collapse-panel-icon {
     position: absolute;
-    color: #666666;
-    color: var(--collapse-icon-color, #666666);
+    color: #9c9c9c;
+    color: var(--collapse-icon-color, #9c9c9c);
     -webkit-transition: -webkit-transform 100ms linear;
     transition: -webkit-transform 100ms linear;
     transition: transform 100ms linear;
@@ -7859,8 +7859,8 @@ small {
     position: relative;
     line-height: 20px;
     line-height: var(--collapse-title-height, 20px);
-    background: #FFFFFF;
-    background: var(--collapse-title-bg-color, #FFFFFF);
+    background: #F7F7F7;
+    background: var(--collapse-title-bg-color, #F7F7F7);
     font-size: 14px;
     font-size: var(--collapse-title-font-size, 14px);
     font-weight: 500;
@@ -7873,15 +7873,15 @@ small {
     -webkit-transition: background 100ms linear;
     transition: background 100ms linear; }
     .next-collapse-panel-title:hover {
-      background: #F7F7F7;
-      background: var(--collapse-title-hover-bg-color, #F7F7F7);
+      background: #E6E6E6;
+      background: var(--collapse-title-hover-bg-color, #E6E6E6);
       color: #333333;
       color: var(--collapse-title-hover-font-color, #333333);
       font-weight: 500;
       font-weight: var(--collapse-title-hover-font-weight, 500); }
       .next-collapse-panel-title:hover .next-collapse-panel-icon {
-        color: #1A1A1A;
-        color: var(--collapse-icon-hover-color, #1A1A1A); }
+        color: #9c9c9c;
+        color: var(--collapse-icon-hover-color, #9c9c9c); }
   .next-collapse-panel-content {
     height: 0;
     padding: 0 36px;
@@ -7897,8 +7897,8 @@ small {
     opacity: 0; }
   .next-collapse-panel-expanded > .next-collapse-panel-content {
     display: block;
-    padding: 8px 36px;
-    padding: var(--collapse-content-padding-y, 8px) var(--collapse-content-padding-x, 36px);
+    padding: 12px 36px;
+    padding: var(--collapse-content-padding-y, 12px) var(--collapse-content-padding-x, 36px);
     height: auto;
     opacity: 1; }
   .next-collapse .next-collapse-unfold-icon::before {
@@ -7955,8 +7955,8 @@ small {
     font-size: var(--time-picker-menu-title-font-size, 12px);
     font-weight: normal;
     font-weight: var(--time-pikcer-menu-title-font-weight, normal);
-    color: #666666;
-    color: var(--time-picker-menu-title-color, #666666);
+    color: #9c9c9c;
+    color: var(--time-picker-menu-title-color, #9c9c9c);
     background: #FFFFFF;
     background: var(--time-picker-menu-title-background, #FFFFFF); }
   .next-time-picker-menu ul {
@@ -8142,8 +8142,8 @@ small {
       background-color: #F7F7F7;
       background-color: var(--input-disabled-bg-color, #F7F7F7); }
   .next-range-picker.next-large .next-range-picker-trigger, .next-range-picker.next-large .next-range-picker-panel-input {
-    border-radius: 4px;
-    border-radius: var(--form-element-large-corner, 4px); }
+    border-radius: 2px;
+    border-radius: var(--form-element-large-corner, 2px); }
   .next-range-picker.next-medium .next-range-picker-trigger, .next-range-picker.next-medium .next-range-picker-panel-input {
     border-radius: 2px;
     border-radius: var(--form-element-medium-corner, 2px); }
@@ -9083,8 +9083,8 @@ small {
   .next-drawer-header {
     padding: 12px 20px 12px 20px;
     padding: var(--drawer-title-padding-top, 12px) var(--drawer-title-padding-left-right, 20px) var(--drawer-title-padding-bottom, 12px) var(--drawer-title-padding-left-right, 20px);
-    border-bottom: 1px solid #D9D9D9;
-    border-bottom: var(--drawer-title-border-width, 1px) var(--line-solid, solid) var(--drawer-title-border-color, #D9D9D9);
+    border-bottom: 1px solid #E6E6E6;
+    border-bottom: var(--drawer-title-border-width, 1px) var(--line-solid, solid) var(--drawer-title-border-color, #E6E6E6);
     font-size: 16px;
     font-size: var(--drawer-title-font-size, 16px);
     background: #FFFFFF;
@@ -15215,11 +15215,11 @@ small {
       width: 20px;
       width: var(--number-picker-normal-l-button-width, 20px); }
       .next-number-picker-normal.next-large .next-btn:first-child {
-        border-top-right-radius: 4px;
-        border-top-right-radius: var(--form-element-large-corner, 4px); }
+        border-top-right-radius: 2px;
+        border-top-right-radius: var(--form-element-large-corner, 2px); }
       .next-number-picker-normal.next-large .next-btn:last-child {
-        border-bottom-right-radius: 4px;
-        border-bottom-right-radius: var(--form-element-large-corner, 4px); }
+        border-bottom-right-radius: 2px;
+        border-bottom-right-radius: var(--form-element-large-corner, 2px); }
     .next-number-picker-normal.next-large .next-icon:before,
     .next-number-picker-normal.next-large .next-icon .next-icon-remote {
       width: 12px;
@@ -15337,8 +15337,8 @@ small {
     border-top-left-radius: 2px;
     border-top-left-radius: var(--form-element-medium-corner, 2px); }
   .next-number-picker-normal[dir="rtl"] .next-btn:first-child.next-large {
-    border-top-left-radius: 4px;
-    border-top-left-radius: var(--form-element-large-corner, 4px); }
+    border-top-left-radius: 2px;
+    border-top-left-radius: var(--form-element-large-corner, 2px); }
 
 .next-number-picker-normal[dir="rtl"] .next-btn:last-child {
   border-right: 1px solid #CCCCCC;
@@ -15352,8 +15352,8 @@ small {
     border-bottom-left-radius: 2px;
     border-bottom-left-radius: var(--form-element-medium-corner, 2px); }
   .next-number-picker-normal[dir="rtl"] .next-btn:last-child.next-large {
-    border-bottom-left-radius: 4px;
-    border-bottom-left-radius: var(--form-element-large-corner, 4px); }
+    border-bottom-left-radius: 2px;
+    border-bottom-left-radius: var(--form-element-large-corner, 2px); }
 
 .next-number-picker-normal[dir="rtl"] .next-input .next-input-control {
   padding-left: 0; }
@@ -17159,22 +17159,22 @@ small {
       border-color: #D9D9D9;
       border-color: var(--search-normal-normal-hover-color, #D9D9D9); }
     .next-search-normal.next-normal .next-search-btn {
-      background: #E6E6E6;
-      background: var(--search-normal-normal-btn-bg-color, #E6E6E6);
+      background: #FFFFFF;
+      background: var(--search-normal-normal-btn-bg-color, #FFFFFF);
       border-color: #CCCCCC;
       border-color: var(--search-normal-normal-color, #CCCCCC);
-      color: #262626;
-      color: var(--search-normal-normal-btn-text-color, #262626); }
+      color: #333333;
+      color: var(--search-normal-normal-btn-text-color, #333333); }
       .next-search-normal.next-normal .next-search-btn:hover {
-        background: #E6E6E6;
-        background: var(--search-normal-normal-btn-hover-bg-color, #E6E6E6);
+        background: #F7F7F7;
+        background: var(--search-normal-normal-btn-hover-bg-color, #F7F7F7);
         border-color: #D9D9D9;
         border-color: var(--search-normal-normal-hover-color, #D9D9D9);
         color: #1A1A1A;
         color: var(--search-normal-normal-btn-hover-text-color, #1A1A1A); }
       .next-search-normal.next-normal .next-search-btn .next-icon {
-        color: #262626;
-        color: var(--search-normal-normal-btn-text-color, #262626); }
+        color: #333333;
+        color: var(--search-normal-normal-btn-text-color, #333333); }
         .next-search-normal.next-normal .next-search-btn .next-icon:hover {
           color: #1A1A1A;
           color: var(--search-normal-normal-btn-hover-text-color, #1A1A1A); }
@@ -23957,14 +23957,14 @@ small {
       border-color: var(--upload-card-list-border-color-error, #F7AAA3); }
 
 .next-upload-card {
-  border: 1px dashed #CCCCCC;
-  border: 1px var(--upload-card-border-style, dashed) var(--upload-card-border-color, #CCCCCC);
+  border: 1px dashed #F7F7F7;
+  border: 1px var(--upload-card-border-style, dashed) var(--upload-card-border-color, #F7F7F7);
   width: 100px;
   width: var(--upload-card-size, 100px);
   height: 100px;
   height: var(--upload-card-size, 100px);
-  background-color: #FFFFFF;
-  background-color: var(--upload-card-bg-color, #FFFFFF);
+  background-color: #F7F7F7;
+  background-color: var(--upload-card-bg-color, #F7F7F7);
   text-align: center;
   cursor: pointer;
   -webkit-transition: border-color 100ms linear;
@@ -23972,8 +23972,8 @@ small {
   display: table-cell;
   vertical-align: middle; }
   .next-upload-card .next-icon {
-    color: #262626;
-    color: var(--upload-card-icon-color, #262626); }
+    color: #CCCCCC;
+    color: var(--upload-card-icon-color, #CCCCCC); }
     .next-upload-card .next-icon:before,
     .next-upload-card .next-icon .next-icon-remote {
       width: 24px;
@@ -23987,18 +23987,18 @@ small {
     font-size: var(--upload-card-add-text-size, 12px);
     margin-top: 8px;
     margin-top: var(--upload-card-add-text-margin-top, 8px);
-    color: #262626;
-    color: var(--upload-card-font-color, #262626);
+    color: #CCCCCC;
+    color: var(--upload-card-font-color, #CCCCCC);
     outline: none; }
   .next-upload-card:hover {
-    border-color: #0064C8;
-    border-color: var(--upload-card-hover-border-color, #0064C8); }
+    border-color: #E6E6E6;
+    border-color: var(--upload-card-hover-border-color, #E6E6E6); }
     .next-upload-card:hover .next-icon {
-      color: #0064C8;
-      color: var(--upload-card-hover-font-color, #0064C8); }
+      color: #9c9c9c;
+      color: var(--upload-card-hover-font-color, #9c9c9c); }
     .next-upload-card:hover .next-upload-text {
-      color: #0064C8;
-      color: var(--upload-card-hover-font-color, #0064C8); }
+      color: #9c9c9c;
+      color: var(--upload-card-hover-font-color, #9c9c9c); }
 
 .next-upload-dragable .next-upload-inner {
   display: block; }
