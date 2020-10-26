@@ -145,7 +145,7 @@
     --color-fill1-3: #1F1F1F;
     
     
-    --color-fill1-4: #292929;
+    --color-fill1-4: rgba(48,48,48,1);
     
     
     --color-text1-1: #6B6B6B;
@@ -220,7 +220,7 @@
     --color-help-5: #E0BE12;
     
     
-    --color-text1-5: #CCCCCC;
+    --color-text1-5: rgba(168,168,168,1);
     
     
     --color-fill1-8: #8A8A8A;
@@ -340,7 +340,7 @@
     /* ------------------------ icon ------------------------ */
     
     
-    --icon-font-path: "//at.alicdn.com/t/font_1984235_l5ug3daxbq";
+    --icon-font-path: "//at.alicdn.com/t/font_1984235_kwbj4zg3s4";
     
     
     --icon-font-name: "icon";
@@ -3790,16 +3790,16 @@
     --checkbox-shadow: var(--shadow-zero, none);
     
     
-    --checkbox-border-color: var(--color-line1-3, #6B6B6B);
+    --checkbox-border-color: var(--color-transparent, transparent);
     
     
-    --checkbox-hovered-border-color: var(--color-brand1-4, #0066CC);
+    --checkbox-hovered-border-color: var(--color-brand1-5, #358FE9);
     
     
     --checkbox-checked-border-color: var(--color-transparent, transparent);
     
     
-    --checkbox-disabled-border-color: var(--color-line1-2, #4D4D4D);
+    --checkbox-disabled-border-color: var(--color-transparent, transparent);
     
     
     --checkbox-checked-hovered-border-color: var(--color-transparent, transparent);
@@ -3826,7 +3826,7 @@
     --checkbox-checked-bg-color: var(--color-brand1-6, #0D7BE9);
     
     
-    --checkbox-hovered-bg-color: var(--color-brand1-1, #001A33);
+    --checkbox-hovered-bg-color: var(--color-fill1-1, #151515);
     
     
     --checkbox-checked-hovered-bg-color: var(--color-brand1-7, #0066CC);
@@ -4423,7 +4423,7 @@
     --cascader-menu-item-expanded-color: var(--color-text1-4, #EAEAEA);
     
     
-    --cascader-menu-item-expanded-background-color: var(--color-fill1-6, #6B6B6B);
+    --cascader-menu-item-expanded-background-color: var(--color-fill1-5, #4D4D4D);
     
     
     /* ------------------------ rating ------------------------ */
@@ -4528,7 +4528,7 @@
     --range-normal-selected-color: var(--color-brand1-6, #0D7BE9);
     
     
-    --range-normal-slider-bg-color: var(--color-fill1-4, #292929);
+    --range-normal-slider-bg-color: var(--color-fill1-4, #303030);
     
     
     --range-normal-mark-color: var(--color-text1-1, #6B6B6B);
@@ -4567,7 +4567,7 @@
     --range-normal-selected-color-disabled: var(--color-line1-2, #4D4D4D);
     
     
-    --range-normal-slider-bg-color-disabled: var(--color-fill1-4, #292929);
+    --range-normal-slider-bg-color-disabled: var(--color-fill1-4, #303030);
     
     
     --range-normal-slider-border-color: var(--color-brand1-6, #0D7BE9);
@@ -4666,7 +4666,7 @@
     --card-border-color: var(--color-transparent, transparent);
     
     
-    --card-background: var(--color-fill1-2, #383838);
+    --card-background: var(--color-fill1-1, #151515);
     
     
     --card-header-background: var(--color-transparent, transparent);
@@ -4945,13 +4945,13 @@
     --menu-divider-color: var(--color-line1-1, #383838);
     
     
-    --menu-background: var(--color-fill1-2, #383838);
+    --menu-background: var(--color-fill1-4, #303030);
     
     
     --menu-arrow-color: var(--color-text1-3, #CCCCCC);
     
     
-    --menu-background-selected: var(--color-fill1-6, #6B6B6B);
+    --menu-background-selected: var(--color-fill1-5, #4D4D4D);
     
     
     --menu-color-selected: var(--color-text1-4, #EAEAEA);
@@ -4960,7 +4960,7 @@
     --menu-icon-selected-color: var(--color-other-2, #FFFFFF);
     
     
-    --menu-background-hover: var(--color-fill1-5, #4D4D4D);
+    --menu-background-hover: var(--color-fill1-2, #383838);
     
     
     --menu-color-hover: var(--color-text1-4, #EAEAEA);
@@ -5125,25 +5125,25 @@
     --upload-card-add-text-margin-top: var(--s-3, 12px);
     
     
-    --upload-card-bg-color: var(--color-transparent, transparent);
+    --upload-card-bg-color: var(--color-fill1-2, #383838);
     
     
-    --upload-card-border-style: var(--line-dashed, dashed);
+    --upload-card-border-style: var(--line-solid, solid);
     
     
-    --upload-card-border-color: var(--color-line1-3, #6B6B6B);
+    --upload-card-border-color: var(--color-transparent, transparent);
     
     
-    --upload-card-hover-border-color: var(--color-brand1-6, #0D7BE9);
+    --upload-card-hover-border-color: var(--color-line1-3, #6B6B6B);
     
     
-    --upload-card-font-color: var(--color-text1-3, #CCCCCC);
+    --upload-card-font-color: var(--color-text1-5, #a8a8a8);
     
     
-    --upload-card-icon-color: var(--color-line1-3, #6B6B6B);
+    --upload-card-icon-color: var(--color-fill1-6, #6B6B6B);
     
     
-    --upload-card-hover-font-color: var(--color-brand1-6, #0D7BE9);
+    --upload-card-hover-font-color: var(--color-text1-5, #a8a8a8);
     
     
     --upload-card-add-icon: var(--icon-content-add, "");
@@ -5539,10 +5539,10 @@
     --tag-checkable-fill-text-color-hover: var(--color-text1-4, #EAEAEA);
     
     
-    --tag-checkable-fill-bg-color-hover: var(--color-fill1-4, #292929);
+    --tag-checkable-fill-bg-color-hover: var(--color-fill1-4, #303030);
     
     
-    --tag-checkable-fill-border-color-hover: var(--color-fill1-4, #292929);
+    --tag-checkable-fill-border-color-hover: var(--color-fill1-4, #303030);
     
     
     --tag-checkable-fill-tail-color: var(--color-text1-3, #CCCCCC);
@@ -5740,7 +5740,7 @@
     --table-normal-border-style: var(--line-solid, solid);
     
     
-    --table-th-bg: var(--color-fill1-4, #292929);
+    --table-th-bg: var(--color-fill1-4, #303030);
     
     
     --table-th-color: var(--color-text1-4, #EAEAEA);
@@ -5938,10 +5938,10 @@
     --btn-pure-secondary-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    --btn-pure-secondary-bg-disabled: var(--color-fill1-2, #383838);
+    --btn-pure-secondary-bg-disabled: var(--color-transparent, transparent);
     
     
-    --btn-pure-secondary-border-color-disabled: var(--color-line1-2, #4D4D4D);
+    --btn-pure-secondary-border-color-disabled: var(--color-transparent, transparent);
     
     
     --btn-pure-secondary-color: var(--color-brand1-6, #0D7BE9);
@@ -5950,16 +5950,16 @@
     --btn-pure-secondary-color-hover: var(--color-brand1-6, #0D7BE9);
     
     
-    --btn-pure-secondary-color-active: var(--color-brand1-6, #0D7BE9);
+    --btn-pure-secondary-color-active: var(--color-brand1-5, #358FE9);
     
     
     --btn-pure-secondary-bg: var(--color-transparent, transparent);
     
     
-    --btn-pure-secondary-bg-hover: var(--color-fill1-2, #383838);
+    --btn-pure-secondary-bg-hover: var(--color-brand1-2, #02305E);
     
     
-    --btn-pure-secondary-bg-active: var(--color-fill1-5, #4D4D4D);
+    --btn-pure-secondary-bg-active: var(--color-brand1-3, #00488F);
     
     
     --btn-pure-secondary-border-color: var(--color-transparent, transparent);
@@ -6187,7 +6187,7 @@
     --btn-text-secondary-color-hover: var(--color-brand1-6, #0D7BE9);
     
     
-    --btn-text-normal-color: var(--color-text1-5, #CCCCCC);
+    --btn-text-normal-color: var(--color-text1-5, #a8a8a8);
     
     
     --btn-text-normal-color-hover: var(--color-brand1-6, #0D7BE9);
@@ -6241,7 +6241,7 @@
     --input-label-color: var(--color-text1-3, #CCCCCC);
     
     
-    --input-hover-border-color: var(--color-line1-3, #6B6B6B);
+    --input-hover-border-color: var(--color-line1-2, #4D4D4D);
     
     
     --input-hover-bg-color: var(--color-fill1-1, #151515);
@@ -6511,7 +6511,7 @@
     --shell-light-local-navigation-width: var(--s-42, 168px);
     
     
-    --shell-light-local-navigation-background: var(--color-fill1-4, #292929);
+    --shell-light-local-navigation-background: var(--color-fill1-4, #303030);
     
     
     --shell-light-local-navigation-paddingTop: var(--s-2, 8px);
@@ -6604,7 +6604,7 @@
     --shell-light-tooldock-width: var(--s-13, 52px);
     
     
-    --shell-light-tooldock-background: var(--color-fill1-4, #292929);
+    --shell-light-tooldock-background: var(--color-fill1-4, #303030);
     
     
     --shell-light-tooldock-paddingTop: var(--s-2, 8px);
@@ -6724,7 +6724,7 @@
     --shell-dark-local-navigation-width: var(--s-42, 168px);
     
     
-    --shell-dark-local-navigation-background: var(--color-fill1-4, #292929);
+    --shell-dark-local-navigation-background: var(--color-fill1-4, #303030);
     
     
     --shell-dark-local-navigation-paddingTop: var(--s-2, 8px);
@@ -6817,7 +6817,7 @@
     --shell-dark-tooldock-width: var(--s-13, 52px);
     
     
-    --shell-dark-tooldock-background: var(--color-fill1-4, #292929);
+    --shell-dark-tooldock-background: var(--color-fill1-4, #303030);
     
     
     --shell-dark-tooldock-paddingTop: var(--s-2, 8px);
@@ -6937,7 +6937,7 @@
     --shell-brand-local-navigation-width: var(--s-42, 168px);
     
     
-    --shell-brand-local-navigation-background: var(--color-fill1-4, #292929);
+    --shell-brand-local-navigation-background: var(--color-fill1-4, #303030);
     
     
     --shell-brand-local-navigation-paddingTop: var(--s-2, 8px);
@@ -7030,7 +7030,7 @@
     --shell-brand-tooldock-width: var(--s-13, 52px);
     
     
-    --shell-brand-tooldock-background: var(--color-fill1-4, #292929);
+    --shell-brand-tooldock-background: var(--color-fill1-4, #303030);
     
     
     --shell-brand-tooldock-paddingTop: var(--s-2, 8px);
@@ -8245,10 +8245,10 @@
     --collapse-border-corner: var(--corner-1, 2px);
     
     
-    --collapse-border-color: var(--color-line1-1, #383838);
+    --collapse-border-color: var(--color-transparent, transparent);
     
     
-    --collapse-panel-border-color: var(--color-line1-1, #383838);
+    --collapse-panel-border-color: var(--color-transparent, transparent);
     
     
     --collapse-disabled-border-color: var(--color-line1-1, #383838);
@@ -8260,22 +8260,22 @@
     --collapse-title-height: var(--s-6, 24px);
     
     
-    --collapse-title-bg-color: var(--color-fill1-4, #292929);
+    --collapse-title-bg-color: var(--color-fill1-4, #303030);
     
     
-    --collapse-title-hover-bg-color: var(--color-fill1-2, #383838);
+    --collapse-title-hover-bg-color: var(--color-fill1-5, #4D4D4D);
     
     
     --collapse-title-disabled-bg-color: var(--color-fill1-2, #383838);
     
     
-    --collapse-title-font-color: var(--color-text1-3, #CCCCCC);
+    --collapse-title-font-color: var(--color-text1-5, #a8a8a8);
     
     
     --collapse-title-font-disabled-color: var(--color-text1-1, #6B6B6B);
     
     
-    --collapse-title-hover-font-color: var(--color-text1-4, #EAEAEA);
+    --collapse-title-hover-font-color: var(--color-fill1-7, #A8A8A8);
     
     
     --collapse-title-font-size: var(--font-size-body-2, 14px);
@@ -8296,7 +8296,7 @@
     --collapse-icon-color: var(--color-fill1-7, #A8A8A8);
     
     
-    --collapse-icon-hover-color: var(--color-text1-4, #EAEAEA);
+    --collapse-icon-hover-color: var(--color-fill1-7, #A8A8A8);
     
     
     --collapse-icon-margin-r: var(--s-2, 8px);
@@ -8305,7 +8305,7 @@
     --collapse-icon-margin-l: var(--s-3, 12px);
     
     
-    --collapse-content-bg-color: var(--color-fill1-4, #292929);
+    --collapse-content-bg-color: var(--color-fill1-4, #303030);
     
     
     --collapse-content-padding-x: var(--s-9, 36px);
@@ -8317,7 +8317,7 @@
     --collapse-content-font-size: var(--font-size-body-1, 12px);
     
     
-    --collapse-content-color: var(--color-text1-2, #8A8A8A);
+    --collapse-content-color: var(--color-text1-1, #6B6B6B);
     
     
     --collapse-fold-icon-content: var(--icon-content-triangle-right-s, "");
@@ -8869,7 +8869,7 @@
     --time-picker-menu-border-color: var(--color-line1-2, #4D4D4D);
     
     
-    --time-picker-menu-title-color: var(--color-text1-2, #8A8A8A);
+    --time-picker-menu-title-color: var(--color-text1-1, #6B6B6B);
     
     
     --time-picker-menu-title-background: var(--color-transparent, transparent);
@@ -9340,7 +9340,7 @@
     --nav-normal-item-hover-active-color: var(--color-brand1-6, #0D7BE9);
     
     
-    --nav-normal-sub-nav-hover-bg-color: var(--color-fill1-4, #292929);
+    --nav-normal-sub-nav-hover-bg-color: var(--color-fill1-4, #303030);
     
     
     --nav-normal-sub-nav-hover-text-color: var(--color-text1-4, #EAEAEA);
@@ -9955,7 +9955,7 @@
     --calendar-card-table-cell-hover-border-color: var(--color-transparent, transparent);
     
     
-    --calendar-card-table-cell-select-background: var(--color-fill1-6, #6B6B6B);
+    --calendar-card-table-cell-select-background: var(--color-brand1-6, #0D7BE9);
     
     
     --calendar-card-table-cell-select-color: var(--color-white, #FFFFFF);
@@ -10114,7 +10114,7 @@
     --date-picker-panel-footer-padding-tb: var(--s-2, 8px);
     
     
-    --date-picker-panel-background: var(--color-fill1-4, #292929);
+    --date-picker-panel-background: var(--color-fill1-4, #303030);
     
     
     --date-picker-panel-time-panel-separator-color: var(--color-line1-2, #4D4D4D);
@@ -10177,7 +10177,7 @@
     --form-element-medium-corner: var(--corner-1, 2px);
     
     
-    --form-element-large-corner: var(--corner-2, 4px);
+    --form-element-large-corner: var(--corner-1, 2px);
     
     
     /* ------------------------ mask ------------------------ */
