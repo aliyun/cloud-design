@@ -3,17 +3,25 @@
 
 export default function modifyCodesandbox(
   files: {
-    [file: string]: string;
+    [file: string]: string
   },
   demoMeta
 ): { [file: string]: string } {
-  files["src/bootstrap.tsx"] =
+  files['src/bootstrap.tsx'] =
     `import "@alicloud/console-components/dist/wind.css";\n` +
-    files["src/bootstrap.tsx"];
+    files['src/bootstrap.tsx']
 
-  const pkgJson = JSON.parse(files["package.json"]);
-  pkgJson.dependencies["moment"] = "latest";
-  pkgJson.name = demoMeta.title ?? "demo";
-  files["package.json"] = JSON.stringify(pkgJson, null, 2);
-  return files;
+  Object.entries(files).forEach(([fileName, content]) => {
+    files[fileName] = content.replace(
+      /@alicloudfe\/components/g,
+      '@alicloud/console-components'
+    )
+  })
+
+  const pkgJson = JSON.parse(files['package.json'])
+  pkgJson.dependencies['moment'] = 'latest'
+  pkgJson.name = demoMeta.title ?? 'demo'
+  files['package.json'] = JSON.stringify(pkgJson, null, 2)
+
+  return files
 }
