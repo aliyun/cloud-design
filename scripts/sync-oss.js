@@ -5,7 +5,7 @@ const path = require('path')
 let client = new OSS({
   bucket: 'opensource-microapp',
   region: 'oss-cn-hangzhou',
-  accessKeyId: 'LTAI4GCmLfs7pZ89ViXk6Kkw',
+  accessKeyId: process.env.OSS_K,
   accessKeySecret: process.env.OSS_S
 })
 
