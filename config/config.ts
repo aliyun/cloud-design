@@ -44,7 +44,11 @@ module.exports = {
         //   )
         // },
         demoWrapperPath: path.resolve(__dirname, 'demoWrapper.tsx'),
-        initializerPath: path.resolve(__dirname, 'initCss.ts')
+        initializerPath: path.resolve(__dirname, 'initCss.ts'),
+        codesandboxModifierPath: path.resolve(
+          __dirname,
+          "modifyCodesandbox.ts"
+        ),
       }
     ]
   ]
