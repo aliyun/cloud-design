@@ -1,8 +1,8 @@
 .#{$css-prefix}transfer {
   $tmp: &;
   &#{&} &-panel-list {
-    padding: 0 var(--menu-padding);
-    margin: var(--menu-padding) 0;
+    padding: var(--transfer-panel-padding-mb, 0) var(--transfer-panel-padding-lr, 8px);
+    margin: var(--transfer-panel-margin-mb, 8px) 0;
     @include alicloud-scrollbar;
   }
   &-operations {
