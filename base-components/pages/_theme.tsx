@@ -31,7 +31,7 @@ const mapThemeToImport = {
   'theme-yunxiao': () =>
     import('../src/theme/yunxiao/index-no-var.scss?pureCSS'),
   'theme-aone': () =>
-    import('../src/theme/yunxiao/index-no-var.scss?pureCSS')
+    import('../src/theme/aone/index-no-var.scss?pureCSS')
 }
 
 const styleEl = document.createElement('style')
