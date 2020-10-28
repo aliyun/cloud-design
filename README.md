@@ -1,6 +1,6 @@
 <h1 align="center">Cloud Design</h1>
 
-<div align="center">阿里云前端通用组件库，based on [Fusion](https://github.com/alibaba-fusion/next)。</div>
+<div align="center">阿里云前端通用组件库，based on <a href="https://github.com/alibaba-fusion/next">Fusion</a></div>
 
 
 ## ✨ 特性
