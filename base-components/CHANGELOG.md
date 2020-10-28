@@ -1,7 +1,7 @@
 # Change Log
 
-## 1.0.7 (2020.10.28)
-### Bug Fixes
+## 1.0.8s (2020.10.28)
+### Features
 - Add Aone theme
 
 ## 1.0.7 (2020.10.28)
