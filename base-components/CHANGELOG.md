@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.7 (2020.10.28)
+### Bug Fixes
+- fix dialog footer margin
+
 ## 1.0.6 (2020.10.28)
 ### Features
 - Upgrade hybridcloud、hybridcloud-dark、yunxiao theme
