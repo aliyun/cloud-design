@@ -41,7 +41,7 @@ $btn-prefix: '.' + $css-prefix + 'btn';
 
   &.#{$css-prefix}small {
     &:not(.isOnlyIcon) {
-      min-width: var(--btn-large-min-width, 60px);
+      min-width: var(--btn-small-min-width, 60px);
     }
     &.isTwoToFourCNCharBtn:not(#{$btn-prefix}-loading) {
       width: var(--btn-small-cn-width, 64px);
@@ -55,7 +55,7 @@ $btn-prefix: '.' + $css-prefix + 'btn';
 
   &.#{$css-prefix}medium {
     &:not(.isOnlyIcon) {
-      min-width: var(--btn-large-min-width, 68px);
+      min-width: var(--btn-medium-min-width, 68px);
     }
     &.isTwoToFourCNCharBtn:not(#{$btn-prefix}-loading) {
       width: var(--btn-medium-cn-width, 72px);
