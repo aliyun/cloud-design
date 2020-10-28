@@ -66,7 +66,7 @@ export default createTheme({
         'https://yuque.antfin-inc.com/docs/share/c343f5a6-0b4e-4653-8739-9038a3adccc7?#'
     }
   ],
-  logo: 'Alicloud Components',
+  logo: 'Cloud Design',
   topbarOperations: <ToggleTheme />
 })
 
