@@ -1,6 +1,7 @@
 // 自定义样式
 // 云组件公共变量
 $btn-prefix: '.' + $css-prefix + 'btn';
+$text-btn: $btn-prefix + '-text';
 
 #{$btn-prefix} {
   font-weight: var(--btn-font-weight, 400);
@@ -40,7 +41,7 @@ $btn-prefix: '.' + $css-prefix + 'btn';
   }
 
   &.#{$css-prefix}small {
-    &:not(.isOnlyIcon) {
+    &:not(.isOnlyIcon):not(#{$text-btn}) {
       min-width: var(--btn-large-min-width, 60px);
     }
     &.isTwoToFourCNCharBtn:not(#{$btn-prefix}-loading) {
@@ -54,7 +55,7 @@ $btn-prefix: '.' + $css-prefix + 'btn';
   }
 
   &.#{$css-prefix}medium {
-    &:not(.isOnlyIcon) {
+    &:not(.isOnlyIcon):not(#{$text-btn}) {
       min-width: var(--btn-large-min-width, 68px);
     }
     &.isTwoToFourCNCharBtn:not(#{$btn-prefix}-loading) {
@@ -68,7 +69,7 @@ $btn-prefix: '.' + $css-prefix + 'btn';
   }
 
   &.#{$css-prefix}large {
-    &:not(.isOnlyIcon) {
+    &:not(.isOnlyIcon):not(#{$text-btn}) {
       min-width: var(--btn-large-min-width, 76px);
     }
     &.isTwoToFourCNCharBtn:not(#{$btn-prefix}-loading) {
