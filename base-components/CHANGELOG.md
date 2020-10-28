@@ -2,6 +2,10 @@
 
 ## 1.0.7 (2020.10.28)
 ### Bug Fixes
+- Add Aone theme
+
+## 1.0.7 (2020.10.28)
+### Bug Fixes
 - fix dialog footer margin
 
 ## 1.0.6 (2020.10.28)
