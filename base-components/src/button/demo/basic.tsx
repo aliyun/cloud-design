@@ -18,11 +18,11 @@ export default function DemoComponent() {
         <br />
         <br />
         <Button type="normal" text>
-          Normal
+          你好
         </Button>{' '}
         &nbsp;&nbsp;
         <Button type="primary" text>
-          Primary
+          你好
         </Button>{' '}
         &nbsp;&nbsp;
         <Button type="secondary" text>

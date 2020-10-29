@@ -31,7 +31,7 @@ const mapThemeToImport = {
   'theme-yunxiao': () =>
     import('../src/theme/yunxiao/index-no-var.scss?pureCSS'),
   'theme-aone': () =>
-    import('../src/theme/yunxiao/index-no-var.scss?pureCSS')
+    import('../src/theme/aone/index-no-var.scss?pureCSS')
 }
 
 const styleEl = document.createElement('style')
@@ -66,7 +66,7 @@ export default createTheme({
         'https://yuque.antfin-inc.com/docs/share/c343f5a6-0b4e-4653-8739-9038a3adccc7?#'
     }
   ],
-  logo: 'Alicloud Components',
+  logo: 'Cloud Design',
   topbarOperations: <ToggleTheme />
 })
 

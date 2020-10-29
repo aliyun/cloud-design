@@ -1,17 +1,11 @@
-# [@alicloudfe/components](https://www.npmjs.com/package/@alicloudfe/components)
+<h1 align="center">
+<a href="https://www.npmjs.com/package/@alicloudfe/components">@alicloudfe/components</a>
+</h1>
 
-阿里云前端组件库，由混合云&公有云前端团队共建。[预览地址](https://aliyun.github.io/cloud-design/#/button)
+<div align="center">阿里云前端基础组件库，由混合云&公有云前端团队共建。 <a href="https://aliyun.github.io/cloud-design/#/button">预览地址</a></div>
 
 
 ## 相关命令
-
-### 本地开发
-
-```sh
-npm install / yarn
-npm run dev
-```
-demo 放在 `src/[component]/demo` 文件夹里面，支持热更新
 
 ### 构建
 
@@ -60,4 +54,17 @@ npm publish
 ```sh
 npm run demos-deploy
 ```
+
+### 📖 目录结构
+
+```
+
+```
+
+基础组件样式入口在`base-components/src/theme/[theme-name]`。其中包含:
+
+- css 样式
+- css 变量定义
+
+如果要增加新的主题，要在`base-components/scripts/theme-data.js`增加 fusion 主题包信息。以便我们能通过脚本拉取 fusion 主题包。
 
