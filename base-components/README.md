@@ -2,7 +2,7 @@
 <a href="https://www.npmjs.com/package/@alicloudfe/components">@alicloudfe/components</a>
 </h1>
 
-<div align="center">阿里云前端组件库，由混合云&公有云前端团队共建。 <a href="https://aliyun.github.io/cloud-design/#/button">预览地址</a></div>
+<div align="center">阿里云前端基础组件库，由混合云&公有云前端团队共建。 <a href="https://aliyun.github.io/cloud-design/#/button">预览地址</a></div>
 
 
 ## 相关命令
