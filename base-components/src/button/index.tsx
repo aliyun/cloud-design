@@ -35,7 +35,7 @@ const Button: React.FC<NextButtonProps> = ({
       </NextButton>
     )
   }
-  return <NextButton {...restProps}>{children}</NextButton>
+  return <NextButton className={className} {...restProps}>{children}</NextButton>
 }
 
 hoistNonReactStatics(Button, NextButton)
