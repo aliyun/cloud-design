@@ -63,12 +63,15 @@ import '@alicloudfe/components/dist/hybridcloud.css';
 ## 💄关于样式文件
 本组件库没有默认的样式主题，大家可根据业务选择不同的样式文件，目前的主题包括：
 
-- `hybridcloud`: 混合云亮色主题
-- `hybridcloud-dark`: 混合云暗色主题
-- `xconsole`:公有云 xconsole 主题
-- `wind`: 公有云 wind（旧版 xconsole） 主题
-- `yunxiao`: 云效主题
-- `aone`: Aone 主题
+- PaaS 系列主题
+  - `hybridcloud`: 混合云亮色主题
+  - `hybridcloud-dark`: 混合云暗色主题
+  - `xconsole`:公有云 xconsole 主题
+  - `wind`: 公有云 wind（旧版 xconsole） 主题
+
+- SaaS 系列主题
+  - `yunxiao`: 云效主题
+  - `aone`: Aone 主题
 
 对于每一个主题，我们生成了对应的四份样式文件供大家使用，以混合云亮色主题为例：
 - [`hybridcloud.css`](https://unpkg.alibaba-inc.com/@alicloudfe/components/dist/hybridcloud.css) : 全量未压缩样式（组件样式 + css var）
@@ -78,5 +81,5 @@ import '@alicloudfe/components/dist/hybridcloud.css';
 
 
 
-## 🤝 参与共建
+# 🤝 参与共建
 一个好的开源组件库是需要不断打磨的，本组件库也是我们和 [fusion](https://github.com/alibaba-fusion/next) 团队共建后的成果，欢迎大家提 PR，或者联系[佐七](https://github.com/zuoqi705)、[萧雨](https://github.com/csr632)成为仓库成员来提 MR。如何贡献请参考[贡献指南](https://github.com/aliyun/cloud-design/blob/master/base-components/docs/CONTRIBUTING.md)。
