@@ -32,3 +32,6 @@ export { ConsoleMenu }
 export * from './ItemDescriptor'
 export * from './RoutableMenuTypes'
 export { Item, SubMenu, Divider, StyledComponents }
+
+export { HybridCloudLightTheme } from './theme/hybridcloud-light'
+export { HybridCloudDarkTheme } from './theme/hybridcloud-dark'

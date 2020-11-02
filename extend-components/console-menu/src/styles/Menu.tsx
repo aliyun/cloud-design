@@ -11,9 +11,8 @@ import { getPriority } from '../utils'
 const PrimaryMenu = styled(NavFilterProps)<{
   fusionPrefix: string
 }>`
+  ${(props) => props.theme.varDef}
   ${getPriority(5)} {
-    --nav-ver-height: 32px;
-    --nav-ver-sub-nav-height: 32px;
     padding: 0;
     border: 0;
     border-radius: 0;
@@ -22,20 +21,14 @@ const PrimaryMenu = styled(NavFilterProps)<{
 
     .${getPrefix}menu-header {
       box-sizing: border-box;
-      padding: var(--console-menu-padding, 24px) 0
-        calc(var(--console-menu-padding, 24px) - 8px);
+      padding: var(--console-menu-header-padding, 24px 24px 16px);
     }
 
     ${SubMenu} {
       background-color: var(--console-menu-bg, #fff);
-      > .${getPrefix}nav-item {
-        > .${getPrefix}menu-item-inner {
-          padding-right: var(--console-menu-padding-inner, 28px);
-        }
-      }
       .${getPrefix}nav-item.${getPrefix}menu-item {
         background-color: var(--console-menu-bg, #fff);
-        color: var(--console-menu-normal-text, #333333);
+        color: var(--console-menu-normal-text-color, #333333);
         padding: 0 var(--console-menu-padding, 24px) 0
           var(--console-menu-padding, 24px);
 
@@ -44,30 +37,35 @@ const PrimaryMenu = styled(NavFilterProps)<{
         }
 
         &.${getPrefix}opened {
-          color: var(--console-menu-normal-text, #333333);
+          color: var(--console-menu-normal-text-color, #333333);
         }
 
         .${getPrefix}menu-item-inner {
           position: relative;
-          .${getPrefix}menu-icon-arrow {
-            color: #a8a8a8;
-            right: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: var(--console-menu-item-height, 32px);
+          > .${getPrefix}menu-icon-arrow {
+            color: var(--console-menu-icon-arrow-color, #a8a8a8);
+            line-height: 12px;
+            position: static;
           }
         }
       }
     }
 
     ${Item} {
-      color: var(--console-menu-normal-text, #333333);
+      color: var(--console-menu-normal-text-color, #333333);
       background-color: var(--console-menu-bg, #fff);
-      padding: 0 16px;
+      padding: 0 var(--console-menu-padding, 24px);
 
       &:hover {
         background-color: var(--console-menu-hover-bg, #f7f9fa);
       }
 
       a {
-        color: var(--console-menu-normal-text, #333333);
+        color: var(--console-menu-normal-text-color, #333333);
         &:hover {
           text-decoration: none;
         }
@@ -79,24 +77,27 @@ const PrimaryMenu = styled(NavFilterProps)<{
         a {
           color: var(--console-menu-active-text-color, #0064c8);
         }
-      }
-
-      > .${getPrefix}menu-item {
-        > .${getPrefix}menu-item-inner {
-          padding-right: var(--console-menu-padding-inner, 28px);
+        ::before {
+          display: var(--console-menu-active-bar-display, block);
+          right: 0;
         }
       }
 
+      > .${getPrefix}menu-item-inner {
+        height: var(--console-menu-item-height, 32px);
+        display: flex;
+        align-items: center;
+      }
+
       &.${getPrefix}nav-item.${getPrefix}menu-item.${getPrefix}disabled {
-        color: #c1c1c1;
+        color: var(--console-menu-disabled-text-color, #c1c1c1);
 
         a {
           background-color: #f5f5f5;
         }
 
         &:hover {
-          background-color: #f5f5f5;
-          color: #c1c1c1;
+          background-color: var(--console-menu-disabled-bg, #f5f5f5);
         }
       }
     }
@@ -162,6 +163,6 @@ function getPrefix({ fusionPrefix }: { fusionPrefix: string }) {
   return fusionPrefix
 }
 
-function NavFilterProps({ fusionPrefix, ...props }: any) {
+function NavFilterProps({ fusionPrefix, theme, ...props }: any) {
   return <Nav {...props} />
 }
