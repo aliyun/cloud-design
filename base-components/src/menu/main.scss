@@ -11,6 +11,9 @@ $menu-prefix: '.' + $css-prefix + 'menu';
       font-size: var(--menu-icon-selected-size, 16px);
     }
   }
+  &-item {
+    border-radius: var(--corner-1);
+  }
   &[aria-multiselectable] {
     // 可选择的menu，增加padding以便容纳勾选图标
     #{$menu-prefix}-item {

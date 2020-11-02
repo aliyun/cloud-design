@@ -1,0 +1,17 @@
+// 云效胶囊 tab 独有样式覆盖
+
+.next-tabs.next-tabs-capsule {
+  &.next-medium {
+    .next-tabs-nav {
+      height: 36px;
+      .next-tabs-tab.active {
+        background: #fff;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+        border-radius: 4px;
+      }
+    }
+    .next-tabs-tab-inner {
+      height: 32px;
+    }
+  }
+}
