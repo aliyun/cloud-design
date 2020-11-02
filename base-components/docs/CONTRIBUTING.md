@@ -121,6 +121,31 @@ $css-var-scope: '.theme-hybridcloud'; // 定义生效 scope
 
 新增完主题数据配置后，执行 `npm run update-theme` 即可拉取新的 fusion 主题包样式文件到 `fusion-theme/` 下面
 
+### 添加新主题预览
+
+首先进入 `base-components/pages/theme-vars/` 新建一份新主题 css var 变量文件，参考 [`hybridcloud.scss`](https://github.com/aliyun/cloud-design/blob/master/base-components/pages/theme-vars/hybridcloud.scss)
+
+然后进入 [`base-components/pages/_theme.tsx`](https://github.com/aliyun/cloud-design/blob/master/base-components/pages/_theme.tsx) 里面，参考其他主题加载逻辑：
+
+```tsx
+import './theme-vars/[new-theme].scss' // 引入新主题变量
+
+const dataSource = [
+  ...
+  { label: 'Aone主题', value: 'theme-aone' },
+  { label: [主题名称], value: [主题作用域值]},
+]
+
+const mapThemeToImport = {
+  ...
+  'theme-aone': () =>
+    import('../src/theme/aone/index-no-var.scss?pureCSS'),
+  '[主题作用域值]': () =>
+    import('../src/theme/[new-theme]/index-no-var.scss?pureCSS')
+}
+```
+重新启动项目，即可预览。
+
 ### 独有主题组件样式覆盖
 有时候我们的组件样式无法放到 `main.scss` 里面成为组件公共样式，我们可以在 `src/[component]/` 下面新增一份自己独有主题的样式文件，然后在 `src/theme/[theme-name]/overwrite.scss` 下面引入，可以参考[这里](https://github.com/aliyun/cloud-design/blob/master/base-components/src/theme/hybridcloud/overwrite.scss)和[这里](https://github.com/aliyun/cloud-design/blob/master/base-components/src/checkbox/hybridcloud.scss)
 
