@@ -1,6 +1,6 @@
 # 贡献指南
 
-这篇指南会指导你如何为 Cloud Design 贡献一份自己的力量
+这篇指南会指导你如何为 Cloud Design 贡献一份自己的力量，如想成为仓库成员，请联系[佐七](https://github.com/zuoqi705)、[萧雨](https://github.com/csr632)。
 
 ## 👩‍💻 开发流程
 首先 clone 代码，安装依赖，进入到基础组件目录下面
