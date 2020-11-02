@@ -32,6 +32,8 @@ $ cd base-components/
 ├── LICENSE
 ├── README.md
 ├── breezr.config.js                      # 构建配置
+├── lib                                   # es5 组件
+├── es                                    # es6 组件，用于 tree-shaking
 ├── dist                                  # 构建产物目录
 │   ├── aone-no-var.css                   # 纯组件样式（不带 css var 定义）
 │   ├── aone-var.css                      # css var 定义文件，用于主题切换
