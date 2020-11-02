@@ -12,7 +12,7 @@
 
 ## ⌨️ 本地开发
 
-本仓库的代码组织方式是 lerna+yarn workspace 管理的 monorepo。
+本仓库的代码组织方式是 lerna + yarn workspace 管理的 monorepo。
 
 ### 🛠 克隆代码&安装依赖
 ```bash
@@ -30,3 +30,7 @@ $ cd base-components/
 $ npm run dev
 ```
 打开浏览器访问 http://127.0.0.1:3000，即可预览
+
+
+## 🤝 参与共建
+如果想为自己的业务定制一份新的主题或者任何共建诉求，欢迎联系[佐七](https://github.com/zuoqi705)、[萧雨](https://github.com/csr632)。具体请参考[贡献指南](https://github.com/aliyun/cloud-design/blob/master/base-components/docs/CONTRIBUTING.md)。

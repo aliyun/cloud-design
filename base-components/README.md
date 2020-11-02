@@ -63,13 +63,13 @@ import '@alicloudfe/components/dist/hybridcloud.css';
 ## 💄关于样式文件
 本组件库没有默认的样式主题，大家可根据业务选择不同的样式文件，目前的主题包括：
 
-- PaaS 系列主题
+- PaaS 侧
   - `hybridcloud`: 混合云亮色主题
   - `hybridcloud-dark`: 混合云暗色主题
   - `xconsole`:公有云 xconsole 主题
   - `wind`: 公有云 wind（旧版 xconsole） 主题
 
-- SaaS 系列主题
+- SaaS 侧
   - `yunxiao`: 云效主题
   - `aone`: Aone 主题
 
@@ -79,6 +79,12 @@ import '@alicloudfe/components/dist/hybridcloud.css';
 - [`hybridcloud-no-var.css`](https://unpkg.alibaba-inc.com/@alicloudfe/components/dist/hybridcloud-no-var.css) : 纯组件样式，不包括 css var 定义
 - [`hybridcloud-var.css`](https://unpkg.alibaba-inc.com/@alicloudfe/components/dist/hybridcloud-var.css) : 纯 css var 定义样式文件，用于主题切换
 
+
+## 🔌 相关插件
+
+- [@alicloud/console-toolkit-fusion-css-loader](https://github.com/aliyun/alibabacloud-console-toolkit/tree/preset-demos/packages/fusion-css-loader): 一个 webpack loader，用来修改 fusion 的 css 的选择器类名前缀。比如把 `.next-btn` 的类名修改成 `.my-prefix-btn`。 这样做的目的是，控制 fusion 样式的作用范围，让一个页面中可以同时存在多份不同版本的 fusion，同时不会出现样式冲突。
+
+- [build-plugin-fusion-css](https://www.npmjs.com/package/build-plugin-fusion-css): build-scripts 插件，功能同上，用于 build-scripts 体系
 
 
 # 🤝 参与共建
