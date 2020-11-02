@@ -85,10 +85,6 @@ $ cd base-components/
 └── vite.config.ts                         # 本地开发配置
 ```
 
-
-
-如果要增加新的主题，要在`base-components/scripts/theme-data.js`增加 fusion 主题包信息。以便我们能通过脚本拉取 fusion 主题包。
-
 ## 🎨 新增主题
 本组件库的定位是**阿里云通用基础组件库**，原则为通过一份 js、多份 css 来覆盖不同业务，所以**能用 css 实现的尽可能通过 css 实现**，在这一点上需要和设计师们拉齐。接下来将介绍如何新增一份主题：
 
@@ -120,6 +116,8 @@ $css-var-scope: '.theme-hybridcloud'; // 定义生效 scope
 - `packageName`: fusion 主题包名
 - `themeName`: 主题名称
 - `ignore`: 是否生成对应主题到 `fusion-theme` 文件夹中，默认为 `false`，如果新增的主题是基于已有主题的，则设为 `true`，可参考 `aone` 主题
+
+新增完主题数据配置后，执行 `npm run update-theme` 即可拉取新的 fusion 主题包样式文件到 `fusion-theme/` 下面
 
 ### 独有主题组件样式覆盖
 有时候我们的组件样式无法放到 `main.scss` 里面成为组件公共样式，我们可以在 `src/[component]/` 下面新增一份自己独有主题的样式文件，然后在 `src/theme/[theme-name]/overwrite.scss` 下面引入，可以参考[这里](https://github.com/aliyun/cloud-design/blob/master/base-components/src/theme/hybridcloud/overwrite.scss)和[这里](https://github.com/aliyun/cloud-design/blob/master/base-components/src/checkbox/hybridcloud.scss)
