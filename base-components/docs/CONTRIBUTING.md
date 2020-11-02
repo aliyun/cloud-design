@@ -84,7 +84,7 @@ $ cd base-components/
 |   ├── common.scss                       # 公共组件样式
 │   └── virtual-list
 ├── tsconfig.json
-└── vite.config.ts                         # 本地开发配置
+└── vite.config.ts                        # 本地开发配置
 ```
 
 ## 🎨 新增主题
