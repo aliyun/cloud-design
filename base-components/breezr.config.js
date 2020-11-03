@@ -5,7 +5,10 @@ module.exports = {
       {
         moduleName: 'AliCloudComponents',
         useTypescript: true,
-        disableStyleRemove: true
+        disableStyleRemove: true,
+        externals: {
+          'moment': 'moment',
+        }
       }
     ]
   ]
