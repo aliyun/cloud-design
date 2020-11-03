@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-yunxiao-v1@0.5.3 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.5.5 (https://fusion.design)
  * @alifd/next@1.21.8 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -8904,8 +8904,8 @@ small {
     margin-right: 4px;
     margin-left: 0; }
   .next-dialog[dir=rtl] .next-dialog-close {
-    left: 16px;
-    left: var(--dialog-close-right, 16px);
+    left: 20px;
+    left: var(--dialog-close-right, 20px);
     right: auto; }
 
 .next-dialog {
@@ -8917,8 +8917,8 @@ small {
   background: var(--dialog-bg, #FFFFFF);
   border: 0px solid transparent;
   border: var(--dialog-border-width, 0px) var(--dialog-border-style, solid) var(--dialog-border-color, transparent);
-  border-radius: 2px;
-  border-radius: var(--dialog-corner, 2px);
+  border-radius: 4px;
+  border-radius: var(--dialog-corner, 4px);
   -webkit-box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: var(--dialog-shadow, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
           box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.1);
@@ -8959,8 +8959,8 @@ small {
     color: #6E6E6E;
     color: var(--dialog-content-color, #6E6E6E); }
   .next-dialog-footer {
-    padding: 16px 16px 16px 16px;
-    padding: var(--dialog-footer-padding-top, 16px) var(--dialog-footer-padding-left-right, 16px) var(--dialog-footer-padding-bottom, 16px) var(--dialog-footer-padding-left-right, 16px);
+    padding: 16px 20px 16px 20px;
+    padding: var(--dialog-footer-padding-top, 16px) var(--dialog-footer-padding-left-right, 20px) var(--dialog-footer-padding-bottom, 16px) var(--dialog-footer-padding-left-right, 20px);
     border-top: 1px solid transparent;
     border-top: var(--dialog-footer-border-width, 1px) var(--line-solid, solid) var(--dialog-footer-border-color, transparent);
     background: transparent;
@@ -8980,10 +8980,10 @@ small {
     margin-left: var(--dialog-footer-button-spacing, 8px); }
   .next-dialog-close {
     position: absolute;
-    top: 16px;
-    top: var(--dialog-close-top, 16px);
-    right: 16px;
-    right: var(--dialog-close-right, 16px);
+    top: 20px;
+    top: var(--dialog-close-top, 20px);
+    right: 20px;
+    right: var(--dialog-close-right, 20px);
     width: 16px;
     width: var(--dialog-close-width, 16px);
     height: 16px;

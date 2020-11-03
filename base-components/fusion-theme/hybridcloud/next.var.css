@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.8.2 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.8.4 (https://fusion.design)
  * @alifd/next@1.21.8 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -8909,8 +8909,8 @@ small {
   background: var(--dialog-bg, #FFFFFF);
   border: 0px solid transparent;
   border: var(--dialog-border-width, 0px) var(--dialog-border-style, solid) var(--dialog-border-color, transparent);
-  border-radius: 4px;
-  border-radius: var(--dialog-corner, 4px);
+  border-radius: 2px;
+  border-radius: var(--dialog-corner, 2px);
   -webkit-box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: var(--dialog-shadow, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
           box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.1);
@@ -8944,8 +8944,8 @@ small {
     color: #1A1A1A;
     color: var(--dialog-title-color, #1A1A1A); }
   .next-dialog-body {
-    padding: 4px 20px 16px 20px;
-    padding: var(--dialog-content-padding-top, 4px) var(--dialog-content-padding-left-right, 20px) var(--dialog-content-padding-bottom, 16px) var(--dialog-content-padding-left-right, 20px);
+    padding: 4px 16px 16px 16px;
+    padding: var(--dialog-content-padding-top, 4px) var(--dialog-content-padding-left-right, 16px) var(--dialog-content-padding-bottom, 16px) var(--dialog-content-padding-left-right, 16px);
     font-size: 14px;
     font-size: var(--dialog-content-font-size, 14px);
     color: #333333;
@@ -15507,13 +15507,13 @@ small {
 
 .next-pagination[dir="rtl"].next-small .next-pagination-item.next-prev:not([disabled]) i,
 .next-pagination[dir="rtl"].next-small .next-pagination-item.next-next:not([disabled]) i {
-  color: #333333;
-  color: var(--pagination-arrow-color, #333333); }
+  color: #666666;
+  color: var(--pagination-arrow-color, #666666); }
 
 .next-pagination[dir="rtl"].next-small .next-pagination-item:hover.next-prev:not([disabled]) i,
 .next-pagination[dir="rtl"].next-small .next-pagination-item:hover.next-next:not([disabled]) i {
-  color: #003263;
-  color: var(--pagination-arrow-hover-color, #003263); }
+  color: #595959;
+  color: var(--pagination-arrow-hover-color, #595959); }
 
 .next-pagination[dir="rtl"].next-medium .next-pagination-list {
   margin: 0 8px;
@@ -15581,13 +15581,13 @@ small {
 
 .next-pagination[dir="rtl"].next-medium .next-pagination-item.next-prev:not([disabled]) i,
 .next-pagination[dir="rtl"].next-medium .next-pagination-item.next-next:not([disabled]) i {
-  color: #333333;
-  color: var(--pagination-arrow-color, #333333); }
+  color: #666666;
+  color: var(--pagination-arrow-color, #666666); }
 
 .next-pagination[dir="rtl"].next-medium .next-pagination-item:hover.next-prev:not([disabled]) i,
 .next-pagination[dir="rtl"].next-medium .next-pagination-item:hover.next-next:not([disabled]) i {
-  color: #003263;
-  color: var(--pagination-arrow-hover-color, #003263); }
+  color: #595959;
+  color: var(--pagination-arrow-hover-color, #595959); }
 
 .next-pagination[dir="rtl"].next-large .next-pagination-list {
   margin: 0 8px;
@@ -15655,13 +15655,13 @@ small {
 
 .next-pagination[dir="rtl"].next-large .next-pagination-item.next-prev:not([disabled]) i,
 .next-pagination[dir="rtl"].next-large .next-pagination-item.next-next:not([disabled]) i {
-  color: #333333;
-  color: var(--pagination-arrow-color, #333333); }
+  color: #666666;
+  color: var(--pagination-arrow-color, #666666); }
 
 .next-pagination[dir="rtl"].next-large .next-pagination-item:hover.next-prev:not([disabled]) i,
 .next-pagination[dir="rtl"].next-large .next-pagination-item:hover.next-next:not([disabled]) i {
-  color: #003263;
-  color: var(--pagination-arrow-hover-color, #003263); }
+  color: #595959;
+  color: var(--pagination-arrow-hover-color, #595959); }
 
 .next-pagination {
   -webkit-box-sizing: border-box;
@@ -15706,10 +15706,10 @@ small {
   .next-pagination .next-pagination-item.next-current {
     border-color: transparent;
     border-color: var(--pagination-item-current-border-color, transparent);
-    background: #F0F7FF;
-    background: var(--pagination-item-current-bg, #F0F7FF);
-    color: #1A1A1A;
-    color: var(--pagination-item-current-color, #1A1A1A);
+    background: #0064C8;
+    background: var(--pagination-item-current-bg, #0064C8);
+    color: #FFFFFF;
+    color: var(--pagination-item-current-color, #FFFFFF);
     -webkit-box-shadow: none;
     -webkit-box-shadow: var(--pagination-item-current-shadow, none);
             box-shadow: none;
@@ -15717,10 +15717,10 @@ small {
   .next-pagination .next-pagination-item.next-current:hover, .next-pagination .next-pagination-item.next-current:focus {
     border-color: transparent;
     border-color: var(--pagination-item-current-hover-border-color, transparent);
-    background: #F0F7FF;
-    background: var(--pagination-item-current-hover-bg, #F0F7FF);
-    color: #003263;
-    color: var(--pagination-item-current-hover-color, #003263);
+    background: #0064C8;
+    background: var(--pagination-item-current-hover-bg, #0064C8);
+    color: #FFFFFF;
+    color: var(--pagination-item-current-hover-color, #FFFFFF);
     -webkit-box-shadow: none;
     -webkit-box-shadow: var(--pagination-item-current-hover-shadow, none);
             box-shadow: none;
@@ -15852,12 +15852,12 @@ small {
     padding: 0 var(--pagination-small-size-selector-number-padding, 8px); }
   .next-pagination.next-small .next-pagination-item.next-prev:not([disabled]) i,
   .next-pagination.next-small .next-pagination-item.next-next:not([disabled]) i {
-    color: #333333;
-    color: var(--pagination-arrow-color, #333333); }
+    color: #666666;
+    color: var(--pagination-arrow-color, #666666); }
   .next-pagination.next-small .next-pagination-item:hover.next-prev:not([disabled]) i,
   .next-pagination.next-small .next-pagination-item:hover.next-next:not([disabled]) i {
-    color: #003263;
-    color: var(--pagination-arrow-hover-color, #003263); }
+    color: #595959;
+    color: var(--pagination-arrow-hover-color, #595959); }
   .next-pagination.next-small.next-arrow-only .next-pagination-item.next-prev, .next-pagination.next-small.next-arrow-only .next-pagination-item.next-next {
     width: 20px;
     padding: 0; }
@@ -15943,12 +15943,12 @@ small {
     padding: 0 var(--pagination-size-selector-number-padding, 12px); }
   .next-pagination.next-medium .next-pagination-item.next-prev:not([disabled]) i,
   .next-pagination.next-medium .next-pagination-item.next-next:not([disabled]) i {
-    color: #333333;
-    color: var(--pagination-arrow-color, #333333); }
+    color: #666666;
+    color: var(--pagination-arrow-color, #666666); }
   .next-pagination.next-medium .next-pagination-item:hover.next-prev:not([disabled]) i,
   .next-pagination.next-medium .next-pagination-item:hover.next-next:not([disabled]) i {
-    color: #003263;
-    color: var(--pagination-arrow-hover-color, #003263); }
+    color: #595959;
+    color: var(--pagination-arrow-hover-color, #595959); }
   .next-pagination.next-medium.next-arrow-only .next-pagination-item.next-prev, .next-pagination.next-medium.next-arrow-only .next-pagination-item.next-next {
     width: 28px;
     padding: 0; }
@@ -16034,12 +16034,12 @@ small {
     padding: 0 var(--pagination-large-size-selector-number-padding, 16px); }
   .next-pagination.next-large .next-pagination-item.next-prev:not([disabled]) i,
   .next-pagination.next-large .next-pagination-item.next-next:not([disabled]) i {
-    color: #333333;
-    color: var(--pagination-arrow-color, #333333); }
+    color: #666666;
+    color: var(--pagination-arrow-color, #666666); }
   .next-pagination.next-large .next-pagination-item:hover.next-prev:not([disabled]) i,
   .next-pagination.next-large .next-pagination-item:hover.next-next:not([disabled]) i {
-    color: #003263;
-    color: var(--pagination-arrow-hover-color, #003263); }
+    color: #595959;
+    color: var(--pagination-arrow-hover-color, #595959); }
   .next-pagination.next-large.next-arrow-only .next-pagination-item.next-prev, .next-pagination.next-large.next-arrow-only .next-pagination-item.next-next {
     width: 40px;
     padding: 0; }
@@ -16075,8 +16075,8 @@ small {
     content: "\E619";
     content: var(--pagination-icon-next-content, "\E619"); }
   .next-pagination-icon-ellipsis::before {
-    content: "\E654";
-    content: var(--pagination-icon-ellipsis-content, "\E654"); }
+    content: "\E700";
+    content: var(--pagination-icon-ellipsis-content, "\E700"); }
 
 .next-paragraph {
   color: #1A1A1A;
