@@ -15,7 +15,7 @@ $ cd base-components/
 
 - `npm run dev` 在本地运行基础组件工程
 
-- `npm run prepublishOnly` 构建全部，包括 js、css
+- `npm run prepare` 构建全部，包括 js、css
 - `npm run build` 构建 js
 - `npm run build-css` 构建 css
 
