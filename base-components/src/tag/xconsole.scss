@@ -1,0 +1,24 @@
+$tag-prefix: '.' + $css-prefix + 'tag';
+$icon-prefix: '.' + $css-prefix + 'icon';
+
+#{$tag-prefix} {
+  &-large {
+    border-radius: var(--tag-large-corner-radius, 14px);
+  }
+  &:not([disabled]) {
+    #{$tag-prefix}-body {
+      cursor: var(--tag-cursor, default);
+    }
+    &#{$tag-prefix}#{$tag-prefix}:focus {
+      color: var(--tag-focus-color);
+      background-color: var(--tag-focus-bg);
+    }
+    &#{$tag-prefix}#{$tag-prefix}:hover {
+      color: var(--tag-hover-color);
+      background-color: var(--tag-hover-bg);
+      #{$icon-prefix}-close::before {
+        content: var(--icon-content-delete-filling);
+      }
+    }
+  }
+}
