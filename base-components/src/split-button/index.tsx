@@ -1,7 +1,10 @@
+import { SplitButton as NextSplitButton } from '@alifd/next'
+import hoistNonReactStatics from 'hoist-non-react-statics'
+import HOC from '../utils/popupHoc'
 
-  import { SplitButton as NextSplitButton } from '@alifd/next'
-  import HOC from '../utils/popupHoc'
+let SplitButton: typeof NextSplitButton
+SplitButton = HOC(SplitButton) as any
 
-  export default HOC(NextSplitButton);
-    
-  
+hoistNonReactStatics(SplitButton, NextSplitButton)
+
+export default HOC(SplitButton)
