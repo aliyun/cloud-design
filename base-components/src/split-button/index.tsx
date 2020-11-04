@@ -7,4 +7,4 @@ SplitButton = HOC(SplitButton) as any
 
 hoistNonReactStatics(SplitButton, NextSplitButton)
 
-export default HOC(SplitButton)
+export default SplitButton
