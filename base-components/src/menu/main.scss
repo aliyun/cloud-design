@@ -14,7 +14,7 @@ $menu-prefix: '.' + $css-prefix + 'menu';
   &-item {
     border-radius: var(--corner-1);
   }
-  &[aria-multiselectable] {
+  &-selectable-multiple, &-selectable-single {
     // 可选择的menu，增加padding以便容纳勾选图标
     #{$menu-prefix}-item {
       // 对于checkbox 和 radio 选择模式的menu，不需要增加padding容纳勾选图标
