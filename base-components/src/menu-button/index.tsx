@@ -8,8 +8,7 @@ import HOC from '../utils/popupHoc'
 //   return <NextMenuButton autoWidth={false} {...props} />
 // }) as any
 
-let MenuButton: typeof NextMenuButton
-MenuButton = HOC(MenuButton) as any
+const MenuButton: typeof NextMenuButton = HOC(NextMenuButton) as any
 
 hoistNonReactStatics(MenuButton, NextMenuButton)
 
