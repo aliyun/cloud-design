@@ -33,6 +33,8 @@ $overlay-prefix: '.' + $css-prefix + 'overlay';
 
 body {
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code, kbd, pre, samp {
