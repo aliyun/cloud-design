@@ -3,7 +3,6 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
 #{$dialog-prefix} {
   min-width: 440px;
   &:not(#{$dialog-prefix}-quick) {
-    min-height: 400px;
     #{$dialog-prefix}-header {
       --dialog-title-padding-bottom: 12px;
       --dialog-title-padding-top: 12px;
