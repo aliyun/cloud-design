@@ -31,12 +31,19 @@ $overlay-prefix: '.' + $css-prefix + 'overlay';
   @include alicloud-scrollbar;
 }
 
+//reset 样式
 body {
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 
 code, kbd, pre, samp {
   font-family: Consolas,Menlo,Courier,monospace;
+}
+
+a {
+  &:link, &:visited, &:hover, &:active {
+    text-decoration: none;
+  }
 }
