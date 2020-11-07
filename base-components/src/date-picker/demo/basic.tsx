@@ -15,7 +15,7 @@ export default function DemoComponent() {
   return (
     <Style>
       <div>
-        <DatePicker onChange={onChange} /> <br />
+        <DatePicker onChange={onChange} defaultVisible /> <br />
         <br />
         <DatePicker showTime onChange={onChange} /> <br />
         <br />
