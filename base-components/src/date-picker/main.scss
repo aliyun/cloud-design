@@ -19,14 +19,31 @@
   }
 }
 
+@include picker-style-generator(date);
+@include picker-style-generator(range);
+@include picker-style-generator(month);
+@include picker-style-generator(year);
+@include picker-style-generator(week);
+
+// 解决 datepicker header 抖动的问题
 .next-calendar-panel-header-left .next-calendar-btn,
 .next-calendar-panel-header-right .next-calendar-btn,
 .next-calendar-panel-header-full .next-calendar-btn {
   line-height: 30px;
 }
 
-@include picker-style-generator(date);
-@include picker-style-generator(range);
-@include picker-style-generator(month);
-@include picker-style-generator(year);
-@include picker-style-generator(week);
+.next-date-picker-panel-footer,
+.next-range-picker-panel-footer,
+.next-month-picker-panel-footer,
+.next-year-picker-panel-footer,
+.next-week-picker-panel-footer {
+  --popup-local-border-width: 1px;
+}
+
+.next-date-picker-panel-header,
+.next-range-picker-panel-header,
+.next-month-picker-panel-header,
+.next-year-picker-panel-header,
+.next-week-picker-panel-header {
+  padding: 8px;
+}
