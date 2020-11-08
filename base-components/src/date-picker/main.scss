@@ -19,6 +19,12 @@
   }
 }
 
+.next-calendar-panel-header-left .next-calendar-btn,
+.next-calendar-panel-header-right .next-calendar-btn,
+.next-calendar-panel-header-full .next-calendar-btn {
+  line-height: 30px;
+}
+
 @include picker-style-generator(date);
 @include picker-style-generator(range);
 @include picker-style-generator(month);
