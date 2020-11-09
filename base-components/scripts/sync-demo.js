@@ -66,7 +66,8 @@ glob('*/demo/*.md', { cwd: fusionDocs }, (err, res) => {
         `from 'react-router-dom'`
       )
       generateCode += `export default function DemoComponent() {
-      return (<Style>${renderJSX}</Style>);
+      const content = (${renderJSX});
+      return (<Style>{content}</Style>);
     }`
       generateCode += `const Style = styled.div\`${css}\`;`
       generateCode = `import styled from 'styled-components';\n` + generateCode
