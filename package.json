@@ -13,8 +13,9 @@
     "boot": "yarn && lerna run prepare",
     "clean": "lerna clean -y && git clean -qfdx",
     "dev": "breezr start --port 3335",
-    "dev-serve": "DEV_SERVE=true breezr start --port 3335",
-    "build-docs": "breezr build"
+    "build-docs": "breezr build",
+    "upload": "OSS_NAME=@alicloudfe/components oss-upload",
+    "upload:pre": "OSS_TAG=pre npm run upload"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,8 @@
   "license": "ISC",
   "devDependencies": {
     "@ali/lerna": "^1.0.1",
-    "@alicloud/console-toolkit-cli": "^1.1.0",
-    "@alicloud/console-toolkit-preset-multi-entry": "^2.0.1",
+    "@alicloud/console-toolkit-cli": "^1.1.8",
+    "@alicloud/console-toolkit-preset-multi-entry": "^2.0.25",
     "@types/fs-extra": "^9.0.2",
     "@types/react": "^16.9.46",
     "@types/react-router-dom": "^5.1.5",

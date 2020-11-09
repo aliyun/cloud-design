@@ -37,18 +37,24 @@ module.exports = {
           })
           return docs
         },
-        // chainWebpack(chain: Chain) {
-        //   chain.resolve.alias.set(
-        //     '@alicloudfe/components',
-        //     path.resolve(__dirname, '../base-components/src/')
-        //   )
-        // },
         demoWrapperPath: path.resolve(__dirname, 'demoWrapper.tsx'),
-        initializerPath: path.resolve(__dirname, 'initCss.ts'),
+        // initializerPath: path.resolve(__dirname, 'initCss.ts'),
         codesandboxModifierPath: path.resolve(
           __dirname,
-          "modifyCodesandbox.ts"
+          'modifyCodesandbox.ts'
         ),
+        /**
+         * 在站点文档中：加载者会覆盖 @alicloudfe/components 和 style
+         * 在站点预览中：使用 微应用自己打包的@alicloudfe/components 和 style，微应用自己打包的依赖中要做样式隔离
+         */
+        externals: [
+          {
+            moduleName: '@alicloudfe/components',
+            usePathInDev: path.resolve(__dirname, './configComponents.tsx')
+            // optional: true,
+          },
+          'styled-components'
+        ]
       }
     ]
   ]
