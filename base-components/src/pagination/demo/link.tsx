@@ -11,10 +11,7 @@ import { Pagination } from '@alicloudfe/components'
 const format = `${window.location.href}#/{page}`
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Pagination defaultCurrent={2} link={format} />
-    </Style>
-  )
+  const content = <Pagination defaultCurrent={2} link={format} />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

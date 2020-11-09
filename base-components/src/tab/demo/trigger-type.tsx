@@ -31,34 +31,33 @@ function onMouseLeave(key, e) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="fusion-demo">
-        <div className="demo-item-title">Click to trigger change</div>
-        <Tab triggerType="click" onChange={onChange}>
-          {tabs.map((item) => (
-            <Tab.Item key={item.key} title={item.tab} onClick={handleClick}>
-              {item.content}
-            </Tab.Item>
-          ))}
-        </Tab>
-        <div className="demo-item-title">Hover to trigger change</div>
-        <Tab triggerType="hover" onChange={onChange}>
-          {tabs.map((item) => (
-            <Tab.Item
-              key={item.key}
-              title={item.tab}
-              onClick={handleClick}
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
-            >
-              {item.content}
-            </Tab.Item>
-          ))}
-        </Tab>
-      </div>
-    </Style>
+  const content = (
+    <div className="fusion-demo">
+      <div className="demo-item-title">Click to trigger change</div>
+      <Tab triggerType="click" onChange={onChange}>
+        {tabs.map((item) => (
+          <Tab.Item key={item.key} title={item.tab} onClick={handleClick}>
+            {item.content}
+          </Tab.Item>
+        ))}
+      </Tab>
+      <div className="demo-item-title">Hover to trigger change</div>
+      <Tab triggerType="hover" onChange={onChange}>
+        {tabs.map((item) => (
+          <Tab.Item
+            key={item.key}
+            title={item.tab}
+            onClick={handleClick}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
+            {item.content}
+          </Tab.Item>
+        ))}
+      </Tab>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .fusion-demo .demo-item-title {

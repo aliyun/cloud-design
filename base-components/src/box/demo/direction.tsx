@@ -35,11 +35,8 @@ class BoxDemo extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <BoxDemo />
-    </Style>
-  )
+  const content = <BoxDemo />
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .list {

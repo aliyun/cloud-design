@@ -86,10 +86,7 @@ class IndeterminateApp extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <IndeterminateApp />
-    </Style>
-  )
+  const content = <IndeterminateApp />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

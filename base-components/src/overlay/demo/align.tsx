@@ -11,40 +11,39 @@ import { Overlay } from '@alicloudfe/components'
 const { Popup } = Overlay
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <div id="container1" className="overlay-container">
-          normal example
-          <Overlay target="container1" visible align="tr tr">
-            <span>123</span>
-          </Overlay>
-          <Overlay target="container1" visible align="cc cr">
-            <span>123</span>
-          </Overlay>
-          <Overlay target="container1" visible align="bc bc">
-            <span>123</span>
-          </Overlay>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <div id="container2" className="overlay-container" dir="rtl">
-          dir=rtl example
-          <Overlay target="container2" rtl visible align="tr tr">
-            <span>123</span>
-          </Overlay>
-          <Overlay target="container2" rtl visible align="cc cr">
-            <span>123</span>
-          </Overlay>
-          <Overlay target="container2" rtl visible align="bc bc">
-            <span>123</span>
-          </Overlay>
-        </div>
+  const content = (
+    <div>
+      <div id="container1" className="overlay-container">
+        normal example
+        <Overlay target="container1" visible align="tr tr">
+          <span>123</span>
+        </Overlay>
+        <Overlay target="container1" visible align="cc cr">
+          <span>123</span>
+        </Overlay>
+        <Overlay target="container1" visible align="bc bc">
+          <span>123</span>
+        </Overlay>
       </div>
-    </Style>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div id="container2" className="overlay-container" dir="rtl">
+        dir=rtl example
+        <Overlay target="container2" rtl visible align="tr tr">
+          <span>123</span>
+        </Overlay>
+        <Overlay target="container2" rtl visible align="cc cr">
+          <span>123</span>
+        </Overlay>
+        <Overlay target="container2" rtl visible align="bc bc">
+          <span>123</span>
+        </Overlay>
+      </div>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .overlay-container {

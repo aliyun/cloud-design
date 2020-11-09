@@ -11,14 +11,13 @@ import { Timeline } from '@alicloudfe/components'
 const TimelineItem = Timeline.Item
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Timeline>
-        <TimelineItem title="Receipt" state="process" />
-        <TimelineItem title="Ship" />
-        <TimelineItem title="Order" />
-      </Timeline>
-    </Style>
+  const content = (
+    <Timeline>
+      <TimelineItem title="Receipt" state="process" />
+      <TimelineItem title="Ship" />
+      <TimelineItem title="Order" />
+    </Timeline>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

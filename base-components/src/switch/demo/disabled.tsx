@@ -48,10 +48,7 @@ class Test extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Test />
-    </Style>
-  )
+  const content = <Test />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

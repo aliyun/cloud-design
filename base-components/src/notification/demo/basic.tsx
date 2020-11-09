@@ -20,12 +20,11 @@ const openNotification = () => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Button type="primary" onClick={openNotification}>
-        Open Notification
-      </Button>
-    </Style>
+  const content = (
+    <Button type="primary" onClick={openNotification}>
+      Open Notification
+    </Button>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -9,18 +9,17 @@ import styled from 'styled-components'
 import { Rating } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Rating defaultValue={3.2} size="small" />
-        <br />
-        <br />
-        <Rating defaultValue={3.2} />
-        <br />
-        <br />
-        <Rating defaultValue={3.2} size="large" />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Rating defaultValue={3.2} size="small" />
+      <br />
+      <br />
+      <Rating defaultValue={3.2} />
+      <br />
+      <br />
+      <Rating defaultValue={3.2} size="large" />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

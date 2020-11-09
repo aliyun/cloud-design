@@ -33,10 +33,7 @@ const list = [
 ]
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Collapse dataSource={list} />
-    </Style>
-  )
+  const content = <Collapse dataSource={list} />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

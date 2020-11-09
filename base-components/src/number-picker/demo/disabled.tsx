@@ -9,15 +9,14 @@ import styled from 'styled-components'
 import { NumberPicker } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <NumberPicker defaultValue={0} disabled />
-        <br />
-        <br />
-        <NumberPicker defaultValue={0} type="inline" disabled />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <NumberPicker defaultValue={0} disabled />
+      <br />
+      <br />
+      <NumberPicker defaultValue={0} type="inline" disabled />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -12,19 +12,18 @@ const onClose = () => console.log('onClose triggered!')
 const afterClose = () => console.log('afterClose triggered!')
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Message
-          title="title"
-          closeable
-          onClose={onClose}
-          afterClose={afterClose}
-        >
-          Content Content Content Content
-        </Message>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Message
+        title="title"
+        closeable
+        onClose={onClose}
+        afterClose={afterClose}
+      >
+        Content Content Content Content
+      </Message>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

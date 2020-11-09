@@ -87,11 +87,8 @@ class CloseableTab extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <CloseableTab />
-    </Style>
-  )
+  const content = <CloseableTab />
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-tab {

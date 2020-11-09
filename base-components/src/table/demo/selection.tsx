@@ -34,58 +34,57 @@ const selectItem = (id) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Table
-        dataSource={dataSource()}
-        rowSelection={{
-          onChange: onChange,
-          getProps: (record, index) => {
-            console.log(record, index)
+  const content = (
+    <Table
+      dataSource={dataSource()}
+      rowSelection={{
+        onChange: onChange,
+        getProps: (record, index) => {
+          console.log(record, index)
 
-            return index === 2
-              ? {
-                  disabled: true,
-                  children: index
-                }
-              : {
-                  children: index
-                }
-          },
-          columnProps: () => {
-            return {
-              lock: 'left',
-              width: 90,
-              align: 'center'
-            }
-          },
-          titleProps: () => {
-            return {
-              // remove the select all button
-              // style: {display: 'none'},
-              disabled: true,
-              children: (
-                <MenuButton
-                  text
-                  onItemClick={selectItem}
-                  menuProps={{
-                    isSelectIconRight: true
-                  }}
-                >
-                  <Item key="odd">odd</Item>
-                  <Item key="even">even</Item>
-                </MenuButton>
-              )
-            }
+          return index === 2
+            ? {
+                disabled: true,
+                children: index
+              }
+            : {
+                children: index
+              }
+        },
+        columnProps: () => {
+          return {
+            lock: 'left',
+            width: 90,
+            align: 'center'
           }
-        }}
-      >
-        <Table.Column title="Id" dataIndex="id" width={200} />
-        <Table.Column title="Title" dataIndex="title.name" width={200} />
-        <Table.Column title="Time" dataIndex="time" width={200} />
-        <Table.Column cell={render} width={200} />
-      </Table>
-    </Style>
+        },
+        titleProps: () => {
+          return {
+            // remove the select all button
+            // style: {display: 'none'},
+            disabled: true,
+            children: (
+              <MenuButton
+                text
+                onItemClick={selectItem}
+                menuProps={{
+                  isSelectIconRight: true
+                }}
+              >
+                <Item key="odd">odd</Item>
+                <Item key="even">even</Item>
+              </MenuButton>
+            )
+          }
+        }
+      }}
+    >
+      <Table.Column title="Id" dataIndex="id" width={200} />
+      <Table.Column title="Title" dataIndex="title.name" width={200} />
+      <Table.Column title="Time" dataIndex="time" width={200} />
+      <Table.Column cell={render} width={200} />
+    </Table>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

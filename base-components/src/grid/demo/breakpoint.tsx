@@ -11,26 +11,25 @@ import { Grid } from '@alicloudfe/components'
 const { Row, Col } = Grid
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="breakpoint-demo">
-        <div className="demo-title">
-          Resize browser to see how each column changes
-        </div>
-        <Row>
-          <Col xs={12} s={8} m={6}>
-            Col
-          </Col>
-          <Col xs={6} s={8} m={6}>
-            Col
-          </Col>
-          <Col xs={6} s={8} m={12}>
-            Col
-          </Col>
-        </Row>
+  const content = (
+    <div className="breakpoint-demo">
+      <div className="demo-title">
+        Resize browser to see how each column changes
       </div>
-    </Style>
+      <Row>
+        <Col xs={12} s={8} m={6}>
+          Col
+        </Col>
+        <Col xs={6} s={8} m={6}>
+          Col
+        </Col>
+        <Col xs={6} s={8} m={12}>
+          Col
+        </Col>
+      </Row>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .breakpoint-demo .demo-title {

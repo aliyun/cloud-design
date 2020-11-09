@@ -13,15 +13,14 @@ const style = {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div style={{ width: '400px', margin: '50px' }}>
-        <h4>single slider - from left to right</h4>
-        <Range defaultValue={30} style={style} hasTip={false} />
-        <h4>single slider - from right to left</h4>
-        <Range defaultValue={30} style={style} reverse hasTip={false} />
-      </div>
-    </Style>
+  const content = (
+    <div style={{ width: '400px', margin: '50px' }}>
+      <h4>single slider - from left to right</h4>
+      <Range defaultValue={30} style={style} hasTip={false} />
+      <h4>single slider - from right to left</h4>
+      <Range defaultValue={30} style={style} reverse hasTip={false} />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

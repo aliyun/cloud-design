@@ -15,13 +15,12 @@ const disabledDate = function (date) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="wrapped-calendar">
-        <Calendar disabledDate={disabledDate} shape="card" />
-      </div>
-    </Style>
+  const content = (
+    <div className="wrapped-calendar">
+      <Calendar disabledDate={disabledDate} shape="card" />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .wrapped-calendar {

@@ -11,22 +11,18 @@ import { SplitButton } from '@alicloudfe/components'
 const { Item, Group, Divider } = SplitButton
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <SplitButton
-        label="Edit Document"
-        onItemClick={(key) => console.log(key)}
-      >
-        <Item>Undo</Item>
-        <Item>Redo</Item>
-        <Divider />
-        <Group>
-          <Item helper="CTRL + X">Cut</Item>
-          <Item helper="CTRL + C">Copy</Item>
-          <Item helper="CTRL + V">Paste</Item>
-        </Group>
-      </SplitButton>
-    </Style>
+  const content = (
+    <SplitButton label="Edit Document" onItemClick={(key) => console.log(key)}>
+      <Item>Undo</Item>
+      <Item>Redo</Item>
+      <Divider />
+      <Group>
+        <Item helper="CTRL + X">Cut</Item>
+        <Item helper="CTRL + C">Copy</Item>
+        <Item helper="CTRL + V">Paste</Item>
+      </Group>
+    </SplitButton>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

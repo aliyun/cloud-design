@@ -17,20 +17,19 @@ function onCorrect(obj) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <NumberPicker
-          type="inline"
-          step={3}
-          min={6}
-          max={30}
-          defaultValue={6}
-          onChange={onChange}
-          onCorrect={onCorrect}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <NumberPicker
+        type="inline"
+        step={3}
+        min={6}
+        max={30}
+        defaultValue={6}
+        onChange={onChange}
+        onCorrect={onCorrect}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -11,15 +11,14 @@ import { Pagination } from '@alicloudfe/components'
 const total = 50
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Pagination
-        className="custom-pagination"
-        total={total}
-        totalRender={(total) => `Total: ${total}`}
-      />
-    </Style>
+  const content = (
+    <Pagination
+      className="custom-pagination"
+      total={total}
+      totalRender={(total) => `Total: ${total}`}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-pagination {

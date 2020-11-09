@@ -11,22 +11,21 @@ import { Typography } from '@alicloudfe/components'
 const { Text } = Typography
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Text>Fusion Design</Text>
-        <br />
-        <Text mark>Fusion Design</Text>
-        <br />
-        <Text code>Fusion Design</Text>
-        <br />
-        <Text underline>Fusion Design</Text>
-        <br />
-        <Text delete>Fusion Design</Text>
-        <br />
-        <Text strong>Fusion Design</Text>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Text>Fusion Design</Text>
+      <br />
+      <Text mark>Fusion Design</Text>
+      <br />
+      <Text code>Fusion Design</Text>
+      <br />
+      <Text underline>Fusion Design</Text>
+      <br />
+      <Text delete>Fusion Design</Text>
+      <br />
+      <Text strong>Fusion Design</Text>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

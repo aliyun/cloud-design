@@ -13,15 +13,14 @@ function onChange(value, e) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <NumberPicker onChange={onChange} />
-        <br />
-        <br />
-        <NumberPicker defaultValue={0} type="inline" onChange={onChange} />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <NumberPicker onChange={onChange} />
+      <br />
+      <br />
+      <NumberPicker defaultValue={0} type="inline" onChange={onChange} />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

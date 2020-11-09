@@ -9,18 +9,17 @@ import styled from 'styled-components'
 import { Badge } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Badge count={100}>
-          <a href="#" className="head-example"></a>
-        </Badge>
-        <Badge count={200} overflowCount={199}>
-          <a href="#" className="head-example"></a>
-        </Badge>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Badge count={100}>
+        <a href="#" className="head-example"></a>
+      </Badge>
+      <Badge count={200} overflowCount={199}>
+        <a href="#" className="head-example"></a>
+      </Badge>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .next-badge {

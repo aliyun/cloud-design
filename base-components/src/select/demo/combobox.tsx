@@ -37,14 +37,13 @@ const onChange = (v) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Select.AutoComplete
-        style={{ width: 300 }}
-        onChange={onChange}
-        dataSource={dataSource}
-      />
-    </Style>
+  const content = (
+    <Select.AutoComplete
+      style={{ width: 300 }}
+      onChange={onChange}
+      dataSource={dataSource}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

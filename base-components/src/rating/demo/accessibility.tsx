@@ -17,18 +17,17 @@ const starMap = {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Rating
-          id="rating-a11y-1"
-          defaultValue={3}
-          readAs={(val) => starMap[val]}
-          onChange={(val) => console.log('change:', val)}
-          onHoverChange={(val) => console.log('hover:', val)}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Rating
+        id="rating-a11y-1"
+        defaultValue={3}
+        readAs={(val) => starMap[val]}
+        onChange={(val) => console.log('change:', val)}
+        onHoverChange={(val) => console.log('hover:', val)}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

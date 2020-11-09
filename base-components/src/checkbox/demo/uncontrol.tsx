@@ -51,10 +51,7 @@ class UnControlApp extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <UnControlApp />
-    </Style>
-  )
+  const content = <UnControlApp />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

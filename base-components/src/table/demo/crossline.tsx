@@ -26,15 +26,14 @@ const render = (current) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Table dataSource={dataSource()} crossline>
-        <Table.Column title="Id" dataIndex="id" />
-        <Table.Column title="Title" dataIndex="title.name" />
-        <Table.Column title="Time" dataIndex="time" />
-        <Table.Column title="Operation" dataIndex="id" cell={render} />
-      </Table>
-    </Style>
+  const content = (
+    <Table dataSource={dataSource()} crossline>
+      <Table.Column title="Id" dataIndex="id" />
+      <Table.Column title="Title" dataIndex="title.name" />
+      <Table.Column title="Time" dataIndex="time" />
+      <Table.Column title="Operation" dataIndex="id" cell={render} />
+    </Table>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

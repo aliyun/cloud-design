@@ -11,23 +11,22 @@ import { Tree } from '@alicloudfe/components'
 const TreeNode = Tree.Node
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Tree defaultExpandAll showLine>
-        <TreeNode label="Trunk">
-          <TreeNode label="Branch">
-            <TreeNode label="Branch">
-              <TreeNode label="Leaf" />
-            </TreeNode>
-            <TreeNode label="Leaf" />
-          </TreeNode>
+  const content = (
+    <Tree defaultExpandAll showLine>
+      <TreeNode label="Trunk">
+        <TreeNode label="Branch">
           <TreeNode label="Branch">
             <TreeNode label="Leaf" />
-            <TreeNode label="Leaf" />
           </TreeNode>
+          <TreeNode label="Leaf" />
         </TreeNode>
-      </Tree>
-    </Style>
+        <TreeNode label="Branch">
+          <TreeNode label="Leaf" />
+          <TreeNode label="Leaf" />
+        </TreeNode>
+      </TreeNode>
+    </Tree>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

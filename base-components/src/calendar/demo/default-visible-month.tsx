@@ -22,14 +22,13 @@ function onVisibleMonthChange(value, reason) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Calendar
-        onSelect={onSelect}
-        defaultVisibleMonth={() => moment('2018-01', 'YYYY-MM', true)}
-        onVisibleMonthChange={onVisibleMonthChange}
-      />
-    </Style>
+  const content = (
+    <Calendar
+      onSelect={onSelect}
+      defaultVisibleMonth={() => moment('2018-01', 'YYYY-MM', true)}
+      onVisibleMonthChange={onVisibleMonthChange}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

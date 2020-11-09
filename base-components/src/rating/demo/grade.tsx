@@ -17,10 +17,9 @@ const starMap = {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Rating defaultValue={2} showGrade readAs={(val) => starMap[val]} />
-    </Style>
+  const content = (
+    <Rating defaultValue={2} showGrade readAs={(val) => starMap[val]} />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

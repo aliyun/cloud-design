@@ -9,10 +9,7 @@ import styled from 'styled-components'
 import { TimePicker } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <TimePicker onChange={(val) => console.log(val)} />
-    </Style>
-  )
+  const content = <TimePicker onChange={(val) => console.log(val)} />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

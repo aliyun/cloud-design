@@ -26,17 +26,16 @@ function handleChange(value) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Select
-        aria-label="tag mode"
-        mode="tag"
-        defaultValue={['10001']}
-        onChange={handleChange}
-        dataSource={dataSource}
-        style={{ width: 300 }}
-      />
-    </Style>
+  const content = (
+    <Select
+      aria-label="tag mode"
+      mode="tag"
+      defaultValue={['10001']}
+      onChange={handleChange}
+      dataSource={dataSource}
+      style={{ width: 300 }}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -15,29 +15,28 @@ const slides = [1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
 ))
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div style={{ width: '600px' }}>
-        <div className="demo-item-title">slide one picture one at a time</div>
-        <Slider slidesToShow={4} arrowPosition="outer" dots={false} lazyLoad>
-          {slides}
-        </Slider>
+  const content = (
+    <div style={{ width: '600px' }}>
+      <div className="demo-item-title">slide one picture one at a time</div>
+      <Slider slidesToShow={4} arrowPosition="outer" dots={false} lazyLoad>
+        {slides}
+      </Slider>
 
-        <div className="demo-item-title">
-          slide multiple picture one at a time
-        </div>
-        <Slider
-          slidesToShow={4}
-          slidesToScroll={4}
-          arrowPosition="outer"
-          lazyLoad
-          dots={false}
-        >
-          {slides}
-        </Slider>
+      <div className="demo-item-title">
+        slide multiple picture one at a time
       </div>
-    </Style>
+      <Slider
+        slidesToShow={4}
+        slidesToScroll={4}
+        arrowPosition="outer"
+        lazyLoad
+        dots={false}
+      >
+        {slides}
+      </Slider>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .next-slick .h3,

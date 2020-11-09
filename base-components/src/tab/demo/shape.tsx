@@ -22,23 +22,22 @@ const tabs = [
 const shapes = ['pure', 'wrapped', 'text', 'capsule']
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="fusion-demo">
-        {shapes.map((shape) => (
-          <div key={shape} className="fusion-demo-item">
-            <Tab shape={shape} onChange={onChange}>
-              {tabs.map((tab) => (
-                <Tab.Item title={tab.tab} key={tab.key}>
-                  {tab.content}
-                </Tab.Item>
-              ))}
-            </Tab>
-          </div>
-        ))}
-      </div>
-    </Style>
+  const content = (
+    <div className="fusion-demo">
+      {shapes.map((shape) => (
+        <div key={shape} className="fusion-demo-item">
+          <Tab shape={shape} onChange={onChange}>
+            {tabs.map((tab) => (
+              <Tab.Item title={tab.tab} key={tab.key}>
+                {tab.content}
+              </Tab.Item>
+            ))}
+          </Tab>
+        </div>
+      ))}
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .fusion-demo-item {

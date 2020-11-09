@@ -38,11 +38,8 @@ class Demo extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Demo />
-    </Style>
-  )
+  const content = <Demo />
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .my-custom-menu {

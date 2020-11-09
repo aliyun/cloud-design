@@ -11,21 +11,20 @@ import { Grid } from '@alicloudfe/components'
 const { Row, Col } = Grid
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="basic-demo">
-        <div className="demo-title">Rendered as `ul` and `li`</div>
-        <Row component="ul">
-          <Col span="12" component="li">
-            col-12
-          </Col>
-          <Col span="12" component="li">
-            col-12
-          </Col>
-        </Row>
-      </div>
-    </Style>
+  const content = (
+    <div className="basic-demo">
+      <div className="demo-title">Rendered as `ul` and `li`</div>
+      <Row component="ul">
+        <Col span="12" component="li">
+          col-12
+        </Col>
+        <Col span="12" component="li">
+          col-12
+        </Col>
+      </Row>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .basic-demo ul {

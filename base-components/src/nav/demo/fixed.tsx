@@ -18,19 +18,18 @@ const footer = (
 )
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        请查看{' '}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://codepen.io/aboutblank/pen/JjdNKrm"
-        >
-          https://codepen.io/aboutblank/pen/JjdNKrm
-        </a>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      请查看{' '}
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://codepen.io/aboutblank/pen/JjdNKrm"
+      >
+        https://codepen.io/aboutblank/pen/JjdNKrm
+      </a>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

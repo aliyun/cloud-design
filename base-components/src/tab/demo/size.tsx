@@ -15,43 +15,42 @@ const tabs = [
 ]
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Tab size="small">
-          {tabs.map((item) => (
-            <Tab.Item key={item.key} title={item.tab}>
-              {item.content}
-            </Tab.Item>
-          ))}
-        </Tab>
-        <br />
-        <Tab size="small" shape="wrapped">
-          {tabs.map((item) => (
-            <Tab.Item key={item.key} title={item.tab}>
-              {item.content}
-            </Tab.Item>
-          ))}
-        </Tab>
-        <br />
-        <Tab size="small" shape="text">
-          {tabs.map((item) => (
-            <Tab.Item key={item.key} title={item.tab}>
-              {item.content}
-            </Tab.Item>
-          ))}
-        </Tab>
-        <br />
-        <Tab size="small" shape="capsule">
-          {tabs.map((item) => (
-            <Tab.TabPane key={item.key} title={item.tab}>
-              {item.content}
-            </Tab.TabPane>
-          ))}
-        </Tab>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Tab size="small">
+        {tabs.map((item) => (
+          <Tab.Item key={item.key} title={item.tab}>
+            {item.content}
+          </Tab.Item>
+        ))}
+      </Tab>
+      <br />
+      <Tab size="small" shape="wrapped">
+        {tabs.map((item) => (
+          <Tab.Item key={item.key} title={item.tab}>
+            {item.content}
+          </Tab.Item>
+        ))}
+      </Tab>
+      <br />
+      <Tab size="small" shape="text">
+        {tabs.map((item) => (
+          <Tab.Item key={item.key} title={item.tab}>
+            {item.content}
+          </Tab.Item>
+        ))}
+      </Tab>
+      <br />
+      <Tab size="small" shape="capsule">
+        {tabs.map((item) => (
+          <Tab.TabPane key={item.key} title={item.tab}>
+            {item.content}
+          </Tab.TabPane>
+        ))}
+      </Tab>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .next-tabs-content {

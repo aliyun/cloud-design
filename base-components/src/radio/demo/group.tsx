@@ -79,11 +79,8 @@ class RadioGroup extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <RadioGroup />
-    </Style>
-  )
+  const content = <RadioGroup />
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .rendered-container {

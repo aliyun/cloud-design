@@ -9,25 +9,24 @@ import styled from 'styled-components'
 import { Search } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Search
-          size="large"
-          defaultValue="large"
-          searchText="Search"
-          placeholder="What are you looking for..."
-        />
-        <br />
-        <br />
-        <Search
-          size="medium"
-          defaultValue="medium"
-          searchText="Search"
-          placeholder="What are you looking for..."
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Search
+        size="large"
+        defaultValue="large"
+        searchText="Search"
+        placeholder="What are you looking for..."
+      />
+      <br />
+      <br />
+      <Search
+        size="medium"
+        defaultValue="medium"
+        searchText="Search"
+        placeholder="What are you looking for..."
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

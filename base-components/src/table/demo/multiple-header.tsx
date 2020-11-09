@@ -81,10 +81,7 @@ class App extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <App />
-    </Style>
-  )
+  const content = <App />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

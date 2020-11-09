@@ -11,24 +11,23 @@ import { Overlay } from '@alicloudfe/components'
 const { Popup } = Overlay
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Popup trigger={<button>Open first overlay</button>} triggerType="click">
-        <div className="overlay-demo">
-          <Popup
-            trigger={<button>Open second overlay</button>}
-            triggerType="click"
-            container={(trigger) => trigger.parentNode}
-          >
-            <div className="overlay-demo">
-              <p>Hello World From Second Overlay!</p>
-            </div>
-          </Popup>
-          <p>Hello World From First Overlay!</p>
-        </div>
-      </Popup>
-    </Style>
+  const content = (
+    <Popup trigger={<button>Open first overlay</button>} triggerType="click">
+      <div className="overlay-demo">
+        <Popup
+          trigger={<button>Open second overlay</button>}
+          triggerType="click"
+          container={(trigger) => trigger.parentNode}
+        >
+          <div className="overlay-demo">
+            <p>Hello World From Second Overlay!</p>
+          </div>
+        </Popup>
+        <p>Hello World From First Overlay!</p>
+      </div>
+    </Popup>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .overlay-demo {

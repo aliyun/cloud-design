@@ -38,33 +38,32 @@ function generateData(len, isOption) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Select
-          dataSource={generateData(100)}
-          useVirtual
-          onChange={onChange}
-          defaultValue="option0"
-        />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <Select useVirtual onChange={onChange} defaultValue="option50">
-          {generateData(100, true)}
-        </Select>
-        <br />
-        <br />
-        <Select
-          style={{ width: 300 }}
-          hasSelectAll
-          tagInline
-          mode="multiple"
-          dataSource={generateData(100)}
-          useVirtual
-          onChange={onChange}
-          defaultValue={['option0']}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Select
+        dataSource={generateData(100)}
+        useVirtual
+        onChange={onChange}
+        defaultValue="option0"
+      />
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <Select useVirtual onChange={onChange} defaultValue="option50">
+        {generateData(100, true)}
+      </Select>
+      <br />
+      <br />
+      <Select
+        style={{ width: 300 }}
+        hasSelectAll
+        tagInline
+        mode="multiple"
+        dataSource={generateData(100)}
+        useVirtual
+        onChange={onChange}
+        defaultValue={['option0']}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

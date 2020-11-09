@@ -13,18 +13,17 @@ function onChange(checked) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Switch
-          checkedChildren="on"
-          onChange={onChange}
-          unCheckedChildren="off"
-          aria-label="accessible switch"
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Switch
+        checkedChildren="on"
+        onChange={onChange}
+        unCheckedChildren="off"
+        aria-label="accessible switch"
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .large-width {

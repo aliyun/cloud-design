@@ -20,15 +20,14 @@ const handleChange = (value) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Select
-        label="size:"
-        innerAfter={<span style={{ color: '#999', marginRight: 4 }}>GB</span>}
-        dataSource={dataSource}
-        onChange={handleChange}
-      />
-    </Style>
+  const content = (
+    <Select
+      label="size:"
+      innerAfter={<span style={{ color: '#999', marginRight: 4 }}>GB</span>}
+      dataSource={dataSource}
+      onChange={handleChange}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

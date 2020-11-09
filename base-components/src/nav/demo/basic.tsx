@@ -18,26 +18,25 @@ const footer = (
 )
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Nav
-        className="basic-nav"
-        direction="hoz"
-        type="primary"
-        header={header}
-        footer={footer}
-        defaultSelectedKeys={['home']}
-        triggerType="hover"
-      >
-        <Item key="home">Home</Item>
-        <SubNav label="Component">
-          <Item key="next">Next</Item>
-          <Item key="mext">Mext</Item>
-        </SubNav>
-        <Item key="document">Document</Item>
-      </Nav>
-    </Style>
+  const content = (
+    <Nav
+      className="basic-nav"
+      direction="hoz"
+      type="primary"
+      header={header}
+      footer={footer}
+      defaultSelectedKeys={['home']}
+      triggerType="hover"
+    >
+      <Item key="home">Home</Item>
+      <SubNav label="Component">
+        <Item key="next">Next</Item>
+        <Item key="mext">Mext</Item>
+      </SubNav>
+      <Item key="document">Document</Item>
+    </Nav>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .basic-nav .fusion {

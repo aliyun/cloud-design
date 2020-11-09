@@ -19,26 +19,25 @@ const tabs = (function (length) {
 })(15)
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="custom-wrapper">
-        <Row className="custom-row">
-          <Col fixedSpan="12" className="custom-col-sidebar">
-            Sidebar
-          </Col>
-          <Col className="custom-col-content">
-            <Tab>
-              {tabs.map((item) => (
-                <Tab.Item key={item.key} title={item.tab}>
-                  {item.content}
-                </Tab.Item>
-              ))}
-            </Tab>
-          </Col>
-        </Row>
-      </div>
-    </Style>
+  const content = (
+    <div className="custom-wrapper">
+      <Row className="custom-row">
+        <Col fixedSpan="12" className="custom-col-sidebar">
+          Sidebar
+        </Col>
+        <Col className="custom-col-content">
+          <Tab>
+            {tabs.map((item) => (
+              <Tab.Item key={item.key} title={item.tab}>
+                {item.content}
+              </Tab.Item>
+            ))}
+          </Tab>
+        </Col>
+      </Row>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-row {

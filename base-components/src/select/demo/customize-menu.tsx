@@ -71,25 +71,24 @@ const itemRender2 = (item, searchKey) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="demo-container">
-        <Select
-          dataSource={dataSource}
-          itemRender={itemRender}
-          valueRender={valueRender}
-          placeholder="pick your color"
-        />
-        <Select
-          showSearch
-          dataSource={dataSource2}
-          itemRender={itemRender2}
-          placeholder="highlight keywords"
-          style={{ minWidth: 200 }}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div className="demo-container">
+      <Select
+        dataSource={dataSource}
+        itemRender={itemRender}
+        valueRender={valueRender}
+        placeholder="pick your color"
+      />
+      <Select
+        showSearch
+        dataSource={dataSource2}
+        itemRender={itemRender2}
+        placeholder="highlight keywords"
+        style={{ minWidth: 200 }}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .demo-container {

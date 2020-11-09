@@ -10,12 +10,11 @@ import { Calendar } from '@alicloudfe/components'
 import moment from 'moment'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Calendar shape="panel" value={moment().add(1, 'days')} />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Calendar shape="panel" value={moment().add(1, 'days')} />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

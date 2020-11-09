@@ -27,48 +27,46 @@ const defaultTimeValues = [
 ]
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <p>DatePicker With Time</p>
-        <DatePicker showTime onChange={onChange} onOk={onOk} />
-        <p>DatePicker with Time, reset 00:00:00 for every select</p>
-        <DatePicker showTime onChange={onChange} onOk={onOk} resetTime />
-        <p>DatePicker with Time, with default time value</p>
-        <DatePicker
-          showTime={{ defaultValue: defaultTimeValue, secondStep: 10 }}
-          onChange={onChange}
-          onOk={onOk}
-        />
-        <p>RangePicker with Time</p>
-        <RangePicker showTime onChange={onChange} onOk={onRangeOk} />
-        <p>RangePicker with Time, reset 00:00:00 for every select</p>
-        <RangePicker showTime resetTime onChange={onChange} onOk={onRangeOk} />
-        <p>RangePicker with Time, with default time value, hide seconds</p>
-        <RangePicker
-          showTime={{
-            defaultValue: defaultTimeValue,
-            format: 'HH:mm',
-            minuteStep: 15
-          }}
-          onChange={onChange}
-          onOk={onRangeOk}
-        />
-        <p>
-          RangePicker with Time, with default start & end time value, hide
-          seconds
-        </p>
-        <RangePicker
-          showTime={{
-            defaultValue: defaultTimeValues,
-            format: 'HH:mm',
-            minuteStep: 15
-          }}
-          onChange={onChange}
-          onOk={onRangeOk}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <p>DatePicker With Time</p>
+      <DatePicker showTime onChange={onChange} onOk={onOk} />
+      <p>DatePicker with Time, reset 00:00:00 for every select</p>
+      <DatePicker showTime onChange={onChange} onOk={onOk} resetTime />
+      <p>DatePicker with Time, with default time value</p>
+      <DatePicker
+        showTime={{ defaultValue: defaultTimeValue, secondStep: 10 }}
+        onChange={onChange}
+        onOk={onOk}
+      />
+      <p>RangePicker with Time</p>
+      <RangePicker showTime onChange={onChange} onOk={onRangeOk} />
+      <p>RangePicker with Time, reset 00:00:00 for every select</p>
+      <RangePicker showTime resetTime onChange={onChange} onOk={onRangeOk} />
+      <p>RangePicker with Time, with default time value, hide seconds</p>
+      <RangePicker
+        showTime={{
+          defaultValue: defaultTimeValue,
+          format: 'HH:mm',
+          minuteStep: 15
+        }}
+        onChange={onChange}
+        onOk={onRangeOk}
+      />
+      <p>
+        RangePicker with Time, with default start & end time value, hide seconds
+      </p>
+      <RangePicker
+        showTime={{
+          defaultValue: defaultTimeValues,
+          format: 'HH:mm',
+          minuteStep: 15
+        }}
+        onChange={onChange}
+        onOk={onRangeOk}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

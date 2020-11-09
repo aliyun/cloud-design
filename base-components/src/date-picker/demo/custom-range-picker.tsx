@@ -82,13 +82,12 @@ class CustomRangePicker extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <CustomRangePicker />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <CustomRangePicker />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-sep {

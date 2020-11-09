@@ -35,15 +35,14 @@ const indicator = (
 const CustomLoading = (props) => <Loading indicator={indicator} {...props} />
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Table dataSource={dataSource()} loading loadingComponent={CustomLoading}>
-        <Table.Column title="Id" dataIndex="id" />
-        <Table.Column title="Title" dataIndex="title.name" />
-        <Table.Column title="Time" dataIndex="time" />
-        <Table.Column cell={render} />
-      </Table>
-    </Style>
+  const content = (
+    <Table dataSource={dataSource()} loading loadingComponent={CustomLoading}>
+      <Table.Column title="Id" dataIndex="id" />
+      <Table.Column title="Title" dataIndex="title.name" />
+      <Table.Column title="Time" dataIndex="time" />
+      <Table.Column cell={render} />
+    </Table>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

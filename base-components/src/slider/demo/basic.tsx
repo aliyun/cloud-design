@@ -34,11 +34,8 @@ const itemNodes = slides.map((item, index) => (
 ))
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Slider>{itemNodes}</Slider>
-    </Style>
-  )
+  const content = <Slider>{itemNodes}</Slider>
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .slider-img-wrapper img {

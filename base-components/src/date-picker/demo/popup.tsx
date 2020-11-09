@@ -11,15 +11,14 @@ import { DatePicker } from '@alicloudfe/components'
 const { RangePicker } = DatePicker
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <p>Change popup align</p>
-        <DatePicker popupAlign="bl tl" />
-        <p>Change popup container</p>
-        <RangePicker popupContainer={(target) => target.parentNode} />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <p>Change popup align</p>
+      <DatePicker popupAlign="bl tl" />
+      <p>Change popup container</p>
+      <RangePicker popupContainer={(target) => target.parentNode} />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

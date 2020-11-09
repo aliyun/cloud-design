@@ -68,18 +68,17 @@ const tabRender = (key, { title }) => (
 )
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Tab defaultActiveKey="1" tabRender={tabRender}>
-        <Tab.Item title="Double Click To Edit Me" key="1">
-          Editable tab
-        </Tab.Item>
-        <Tab.Item title="Double Click To Edit Me" key="2">
-          Editable tab
-        </Tab.Item>
-      </Tab>
-    </Style>
+  const content = (
+    <Tab defaultActiveKey="1" tabRender={tabRender}>
+      <Tab.Item title="Double Click To Edit Me" key="1">
+        Editable tab
+      </Tab.Item>
+      <Tab.Item title="Double Click To Edit Me" key="2">
+        Editable tab
+      </Tab.Item>
+    </Tab>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .editable-tab-wrapper {

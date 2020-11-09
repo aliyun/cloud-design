@@ -71,11 +71,8 @@ class SliderWrapper extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <SliderWrapper />
-    </Style>
-  )
+  const content = <SliderWrapper />
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .next-slick .h3,

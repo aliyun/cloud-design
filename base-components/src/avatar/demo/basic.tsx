@@ -9,24 +9,23 @@ import styled from 'styled-components'
 import { Avatar } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
+  const content = (
+    <div>
       <div>
-        <div>
-          <Avatar size={64} icon="account" />
-          <Avatar size="large" icon="account" />
-          <Avatar icon="account" />
-          <Avatar size="small" icon="account" />
-        </div>
-        <div>
-          <Avatar shape="square" size={64} icon="account" />
-          <Avatar shape="square" size="large" icon="account" />
-          <Avatar shape="square" icon="account" />
-          <Avatar shape="square" size="small" icon="account" />
-        </div>
+        <Avatar size={64} icon="account" />
+        <Avatar size="large" icon="account" />
+        <Avatar icon="account" />
+        <Avatar size="small" icon="account" />
       </div>
-    </Style>
+      <div>
+        <Avatar shape="square" size={64} icon="account" />
+        <Avatar shape="square" size="large" icon="account" />
+        <Avatar shape="square" icon="account" />
+        <Avatar shape="square" size="small" icon="account" />
+      </div>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .next-avatar {

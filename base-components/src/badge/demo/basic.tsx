@@ -9,21 +9,20 @@ import styled from 'styled-components'
 import { Badge } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Badge count={5}>
-          <a href="#" className="basic-example"></a>
-        </Badge>
+  const content = (
+    <div>
+      <Badge count={5}>
+        <a href="#" className="basic-example"></a>
+      </Badge>
 
-        <Badge count={5}>
-          <a href="#" className="basic-example">
-            <span className="next-sr-only">unread messages</span>
-          </a>
-        </Badge>
-      </div>
-    </Style>
+      <Badge count={5}>
+        <a href="#" className="basic-example">
+          <span className="next-sr-only">unread messages</span>
+        </a>
+      </Badge>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .basic-example {

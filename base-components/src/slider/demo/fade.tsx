@@ -23,32 +23,31 @@ const settings = {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Slider {...settings}>
-          {[1, 2, 3, 4, 5, 6].map(function (d) {
-            return (
-              <div key={d}>
-                <h3 onClick={() => console.log(d)}>{d}</h3>
-              </div>
-            )
-          })}
-        </Slider>
-        <Slider {...settings}>
-          {[1, 2, 3, 4, 5, 6].map(function (d) {
-            return (
-              <div key={d}>
-                <a href={`https://www.taobao.com/?some=${d}`} target="_blank">
-                  {d}
-                </a>
-              </div>
-            )
-          })}
-        </Slider>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Slider {...settings}>
+        {[1, 2, 3, 4, 5, 6].map(function (d) {
+          return (
+            <div key={d}>
+              <h3 onClick={() => console.log(d)}>{d}</h3>
+            </div>
+          )
+        })}
+      </Slider>
+      <Slider {...settings}>
+        {[1, 2, 3, 4, 5, 6].map(function (d) {
+          return (
+            <div key={d}>
+              <a href={`https://www.taobao.com/?some=${d}`} target="_blank">
+                {d}
+              </a>
+            </div>
+          )
+        })}
+      </Slider>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-slide h3,

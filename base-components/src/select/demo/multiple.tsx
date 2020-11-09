@@ -26,19 +26,18 @@ function handleChange(value) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Select
-          mode="multiple"
-          showSearch
-          defaultValue={['10001']}
-          onChange={handleChange}
-          dataSource={dataSource}
-          style={{ width: 300 }}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Select
+        mode="multiple"
+        showSearch
+        defaultValue={['10001']}
+        onChange={handleChange}
+        dataSource={dataSource}
+        style={{ width: 300 }}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

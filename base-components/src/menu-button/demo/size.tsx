@@ -14,22 +14,21 @@ const menu = ['Undo', 'Redo', 'Cut', 'Copy', 'Paste'].map((item) => (
 ))
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <MenuButton label="Edit Document" size="small">
-          {menu}
-        </MenuButton>{' '}
-        &nbsp; &nbsp;
-        <MenuButton label="Edit Document" size="medium">
-          {menu}
-        </MenuButton>{' '}
-        &nbsp; &nbsp;
-        <MenuButton label="Edit Document" size="large">
-          {menu}
-        </MenuButton>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <MenuButton label="Edit Document" size="small">
+        {menu}
+      </MenuButton>{' '}
+      &nbsp; &nbsp;
+      <MenuButton label="Edit Document" size="medium">
+        {menu}
+      </MenuButton>{' '}
+      &nbsp; &nbsp;
+      <MenuButton label="Edit Document" size="large">
+        {menu}
+      </MenuButton>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

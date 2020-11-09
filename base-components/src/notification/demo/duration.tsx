@@ -20,22 +20,21 @@ const openNotification = () => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <NumberPicker
-          defaultValue={duration}
-          onChange={(v) => (duration = v || 0)}
-        />
-        <Button
-          type="primary"
-          onClick={openNotification}
-          style={{ marginLeft: 20 }}
-        >
-          Open Notification
-        </Button>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <NumberPicker
+        defaultValue={duration}
+        onChange={(v) => (duration = v || 0)}
+      />
+      <Button
+        type="primary"
+        onClick={openNotification}
+        style={{ marginLeft: 20 }}
+      >
+        Open Notification
+      </Button>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

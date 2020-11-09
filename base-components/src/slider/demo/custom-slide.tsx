@@ -33,11 +33,8 @@ const slider = (
 )
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>{slider}</div>
-    </Style>
-  )
+  const content = <div>{slider}</div>
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-inner {

@@ -27,22 +27,21 @@ const onBlur = () => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Select
-        id="basic-demo"
-        onChange={onChange}
-        onToggleHighlightItem={onToggleHighlightItem}
-        defaultValue="jack"
-        onFocus={onFocus}
-        onBlur={onBlur}
-        aria-label="name is"
-      >
-        <Option value="jack">Jack</Option>
-        <Option value="frank">Frank</Option>
-        <Option value="hugo">Hugo</Option>
-      </Select>
-    </Style>
+  const content = (
+    <Select
+      id="basic-demo"
+      onChange={onChange}
+      onToggleHighlightItem={onToggleHighlightItem}
+      defaultValue="jack"
+      onFocus={onFocus}
+      onBlur={onBlur}
+      aria-label="name is"
+    >
+      <Option value="jack">Jack</Option>
+      <Option value="frank">Frank</Option>
+      <Option value="hugo">Hugo</Option>
+    </Select>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

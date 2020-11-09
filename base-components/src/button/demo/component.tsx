@@ -15,22 +15,21 @@ const props = {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Button {...props} type="primary">
-          alibaba.com
-        </Button>{' '}
-        &nbsp;&nbsp;
-        <Button {...props} type="secondary">
-          alibaba.com
-        </Button>{' '}
-        &nbsp;&nbsp;
-        <Button {...props} type="normal">
-          alibaba.com
-        </Button>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Button {...props} type="primary">
+        alibaba.com
+      </Button>{' '}
+      &nbsp;&nbsp;
+      <Button {...props} type="secondary">
+        alibaba.com
+      </Button>{' '}
+      &nbsp;&nbsp;
+      <Button {...props} type="normal">
+        alibaba.com
+      </Button>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

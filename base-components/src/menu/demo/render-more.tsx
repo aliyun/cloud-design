@@ -131,61 +131,60 @@ const SubPanel = (props) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Menu
-        hozInLine
-        direction="hoz"
-        mode="popup"
-        className="my-hoz-menu"
-        popupClassName="my-hoz-menu"
-        popupProps={popupProps}
-        renderMore={(more) => {
-          const newDs = more.map((item, i) => {
-            const data = item.props.children.props
-            return {
-              title: item.props.label,
-              dataSource: data.dataSource
-            }
-          })
+  const content = (
+    <Menu
+      hozInLine
+      direction="hoz"
+      mode="popup"
+      className="my-hoz-menu"
+      popupClassName="my-hoz-menu"
+      popupProps={popupProps}
+      renderMore={(more) => {
+        const newDs = more.map((item, i) => {
+          const data = item.props.children.props
+          return {
+            title: item.props.label,
+            dataSource: data.dataSource
+          }
+        })
 
-          return (
-            <PopupItem noIcon triggerType="click" key="0-more" label="更多">
-              <Panel dataSource={newDs} />
-            </PopupItem>
-          )
-        }}
-      >
-        <PopupItem key="0" label="Popup item 1" noIcon>
-          <SubPanel dataSource={ds} />
-        </PopupItem>
-        <PopupItem key="1" label="Popup item 2" noIcon>
-          <SubPanel dataSource={ds} />
-        </PopupItem>
-        <PopupItem key="2" label="Popup item 3" noIcon>
-          <SubPanel dataSource={ds} />
-        </PopupItem>
-        <PopupItem key="3" label="Popup item 4" noIcon>
-          <SubPanel dataSource={ds} />
-        </PopupItem>
-        <PopupItem key="4" label="Popup item 5" noIcon>
-          <SubPanel dataSource={ds} />
-        </PopupItem>
-        <PopupItem key="5" label="Popup item 6" noIcon>
-          <SubPanel dataSource={ds} />
-        </PopupItem>
-        <PopupItem key="6" label="Popup item 7" noIcon>
-          <SubPanel dataSource={ds} />
-        </PopupItem>
-        <PopupItem key="7" label="Popup item 8" noIcon>
-          <SubPanel dataSource={ds} />
-        </PopupItem>
-        <PopupItem key="8" label="Popup item 9" noIcon>
-          <SubPanel dataSource={ds} />
-        </PopupItem>
-      </Menu>
-    </Style>
+        return (
+          <PopupItem noIcon triggerType="click" key="0-more" label="更多">
+            <Panel dataSource={newDs} />
+          </PopupItem>
+        )
+      }}
+    >
+      <PopupItem key="0" label="Popup item 1" noIcon>
+        <SubPanel dataSource={ds} />
+      </PopupItem>
+      <PopupItem key="1" label="Popup item 2" noIcon>
+        <SubPanel dataSource={ds} />
+      </PopupItem>
+      <PopupItem key="2" label="Popup item 3" noIcon>
+        <SubPanel dataSource={ds} />
+      </PopupItem>
+      <PopupItem key="3" label="Popup item 4" noIcon>
+        <SubPanel dataSource={ds} />
+      </PopupItem>
+      <PopupItem key="4" label="Popup item 5" noIcon>
+        <SubPanel dataSource={ds} />
+      </PopupItem>
+      <PopupItem key="5" label="Popup item 6" noIcon>
+        <SubPanel dataSource={ds} />
+      </PopupItem>
+      <PopupItem key="6" label="Popup item 7" noIcon>
+        <SubPanel dataSource={ds} />
+      </PopupItem>
+      <PopupItem key="7" label="Popup item 8" noIcon>
+        <SubPanel dataSource={ds} />
+      </PopupItem>
+      <PopupItem key="8" label="Popup item 9" noIcon>
+        <SubPanel dataSource={ds} />
+      </PopupItem>
+    </Menu>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .my-custom-menu {

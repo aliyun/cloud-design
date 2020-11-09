@@ -18,12 +18,11 @@ const menu = (
 )
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Dropdown trigger={<a>Click me</a>} triggerType="click">
-        {menu}
-      </Dropdown>
-    </Style>
+  const content = (
+    <Dropdown trigger={<a>Click me</a>} triggerType="click">
+      {menu}
+    </Dropdown>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

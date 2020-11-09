@@ -16,18 +16,17 @@ const showHelp = () => Message.help('help')
 const showLoading = () => Message.loading('loading')
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="message-toast-quick-demo">
-        <Button onClick={showSuccess}>success</Button>
-        <Button onClick={showWarning}>warning</Button>
-        <Button onClick={showError}>error</Button>
-        <Button onClick={showNotice}>notice</Button>
-        <Button onClick={showHelp}>help</Button>
-        <Button onClick={showLoading}>loading</Button>
-      </div>
-    </Style>
+  const content = (
+    <div className="message-toast-quick-demo">
+      <Button onClick={showSuccess}>success</Button>
+      <Button onClick={showWarning}>warning</Button>
+      <Button onClick={showError}>error</Button>
+      <Button onClick={showNotice}>notice</Button>
+      <Button onClick={showHelp}>help</Button>
+      <Button onClick={showLoading}>loading</Button>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .message-toast-quick-demo .next-btn.next-medium {

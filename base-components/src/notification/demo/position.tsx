@@ -18,16 +18,15 @@ const openNotification = (placement) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="button-row">
-        <Button onClick={() => openNotification('tl')}>Top Left</Button>
-        <Button onClick={() => openNotification('tr')}>Top Right</Button>
-        <Button onClick={() => openNotification('bl')}>Bottom Left</Button>
-        <Button onClick={() => openNotification('br')}>Bottom Right</Button>
-      </div>
-    </Style>
+  const content = (
+    <div className="button-row">
+      <Button onClick={() => openNotification('tl')}>Top Left</Button>
+      <Button onClick={() => openNotification('tr')}>Top Right</Button>
+      <Button onClick={() => openNotification('bl')}>Bottom Left</Button>
+      <Button onClick={() => openNotification('br')}>Bottom Right</Button>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .button-row .next-btn {

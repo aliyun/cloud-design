@@ -9,17 +9,16 @@ import styled from 'styled-components'
 import { Pagination } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <h3>small</h3>
-        <Pagination defaultCurrent={2} size="small" />
-        <h3>medium</h3>
-        <Pagination defaultCurrent={2} size="medium" />
-        <h3>large</h3>
-        <Pagination defaultCurrent={2} size="large" />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <h3>small</h3>
+      <Pagination defaultCurrent={2} size="small" />
+      <h3>medium</h3>
+      <Pagination defaultCurrent={2} size="medium" />
+      <h3>large</h3>
+      <Pagination defaultCurrent={2} size="large" />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -13,13 +13,12 @@ function onDateChange(value) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="wrapped-calendar">
-        <Calendar onSelect={onDateChange} shape="card" />
-      </div>
-    </Style>
+  const content = (
+    <div className="wrapped-calendar">
+      <Calendar onSelect={onDateChange} shape="card" />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .wrapped-calendar {

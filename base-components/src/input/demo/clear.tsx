@@ -16,41 +16,40 @@ const onBlur = (e) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Input
-          hasClear
-          defaultValue="clear by click"
-          size="small"
-          aria-label="input with config of hasClear"
-          onChange={onChange}
-        />
-        <br />
-        <br />
+  const content = (
+    <div>
+      <Input
+        hasClear
+        defaultValue="clear by click"
+        size="small"
+        aria-label="input with config of hasClear"
+        onChange={onChange}
+      />
+      <br />
+      <br />
 
-        <Input
-          hasClear
-          defaultValue="2019-09-10 10:10:20"
-          aria-label="input with config of hasClear"
-          onChange={onChange}
-          onBlur={onBlur}
-          hint="calendar"
-        />
-        <br />
-        <br />
+      <Input
+        hasClear
+        defaultValue="2019-09-10 10:10:20"
+        aria-label="input with config of hasClear"
+        onChange={onChange}
+        onBlur={onBlur}
+        hint="calendar"
+      />
+      <br />
+      <br />
 
-        <Input
-          hasClear
-          defaultValue="clear by click"
-          size="large"
-          aria-label="input with config of hasClear"
-          onChange={onChange}
-        />
-        <br />
-        <br />
-      </div>
-    </Style>
+      <Input
+        hasClear
+        defaultValue="clear by click"
+        size="large"
+        aria-label="input with config of hasClear"
+        onChange={onChange}
+      />
+      <br />
+      <br />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

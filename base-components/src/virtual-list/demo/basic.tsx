@@ -41,7 +41,8 @@ const demo = (
 )
 
 export default function DemoComponent() {
-  return <Style>demo</Style>
+  const content = demo
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .virtual-box {

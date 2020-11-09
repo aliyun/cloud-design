@@ -16,26 +16,25 @@ function onVisibleMonthChange(val, reason) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <p>Setting last month as default visible month</p>
-        <DatePicker
-          defaultVisibleMonth={() => moment().add(-1, 'months')}
-          onVisibleMonthChange={onVisibleMonthChange}
-        />
-        <br />
-        <br />
-        <RangePicker
-          defaultVisibleMonth={() => moment().add(-1, 'months')}
-          onVisibleMonthChange={onVisibleMonthChange}
-        />
-        <br />
-        <br />
-        <p>Setting 2017 as default visible year</p>
-        <MonthPicker defaultVisibleYear={() => moment('2017', 'YYYY')} />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <p>Setting last month as default visible month</p>
+      <DatePicker
+        defaultVisibleMonth={() => moment().add(-1, 'months')}
+        onVisibleMonthChange={onVisibleMonthChange}
+      />
+      <br />
+      <br />
+      <RangePicker
+        defaultVisibleMonth={() => moment().add(-1, 'months')}
+        onVisibleMonthChange={onVisibleMonthChange}
+      />
+      <br />
+      <br />
+      <p>Setting 2017 as default visible year</p>
+      <MonthPicker defaultVisibleYear={() => moment('2017', 'YYYY')} />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

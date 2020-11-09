@@ -19,14 +19,13 @@ const show = () => {
 const hide = () => Message.hide()
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="message-toast-demo">
-        <Button onClick={show}>Show</Button>
-        <Button onClick={hide}>Hide</Button>
-      </div>
-    </Style>
+  const content = (
+    <div className="message-toast-demo">
+      <Button onClick={show}>Show</Button>
+      <Button onClick={hide}>Hide</Button>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .message-toast-demo .next-btn.next-medium {

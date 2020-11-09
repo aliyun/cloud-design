@@ -69,11 +69,8 @@ class SlickGoTo extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <SlickGoTo />
-    </Style>
-  )
+  const content = <SlickGoTo />
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .slider-img-wrapper img {

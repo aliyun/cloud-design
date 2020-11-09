@@ -9,15 +9,14 @@ import styled from 'styled-components'
 import { Affix, Button } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="custom-affix-wrapper">
-        <Affix>
-          <Button type="secondary">Affixed Button</Button>
-        </Affix>
-      </div>
-    </Style>
+  const content = (
+    <div className="custom-affix-wrapper">
+      <Affix>
+        <Button type="secondary">Affixed Button</Button>
+      </Affix>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-affix-wrapper {

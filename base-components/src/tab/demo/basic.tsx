@@ -9,21 +9,20 @@ import styled from 'styled-components'
 import { Tab } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Tab>
-        <Tab.Item title="Home" key="1">
-          Home content
-        </Tab.Item>
-        <Tab.Item title="Documentation" key="2">
-          Doc content
-        </Tab.Item>
-        <Tab.Item title="Help" key="3">
-          Help Content
-        </Tab.Item>
-      </Tab>
-    </Style>
+  const content = (
+    <Tab>
+      <Tab.Item title="Home" key="1">
+        Home content
+      </Tab.Item>
+      <Tab.Item title="Documentation" key="2">
+        Doc content
+      </Tab.Item>
+      <Tab.Item title="Help" key="3">
+        Help Content
+      </Tab.Item>
+    </Tab>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .next-tabs-content {

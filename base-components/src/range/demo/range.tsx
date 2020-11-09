@@ -14,28 +14,27 @@ const style = {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div style={{ width: '400px', margin: '50px' }}>
-        <p>Range 0 ~ 1024</p>
-        <Range
-          defaultValue={128}
-          min={0}
-          max={1024}
-          marks={[0, 1024]}
-          style={style}
-        />
-        <p>Range 0 ~ 1024，step 128</p>
-        <Range
-          defaultValue={512}
-          min={0}
-          max={1024}
-          step={128}
-          marks={[0, 1024]}
-          style={style}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div style={{ width: '400px', margin: '50px' }}>
+      <p>Range 0 ~ 1024</p>
+      <Range
+        defaultValue={128}
+        min={0}
+        max={1024}
+        marks={[0, 1024]}
+        style={style}
+      />
+      <p>Range 0 ~ 1024，step 128</p>
+      <Range
+        defaultValue={512}
+        min={0}
+        max={1024}
+        step={128}
+        marks={[0, 1024]}
+        style={style}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

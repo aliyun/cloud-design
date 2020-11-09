@@ -12,29 +12,28 @@ const { RangePicker } = DatePicker
 const onChange = (val) => console.log(val)
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <DatePicker format="YYYY-M-D" onChange={onChange} />
-        <br />
-        <br />
-        <DatePicker
-          format="YYYY-M-D"
-          onChange={onChange}
-          showTime={{ format: 'HH:mm' }}
-        />
-        <br />
-        <br />
-        <RangePicker format="YYYY-M-D" onChange={onChange} />
-        <br />
-        <br />
-        <RangePicker
-          format="YYYY-M-D"
-          onChange={onChange}
-          showTime={{ format: 'HH:mm' }}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <DatePicker format="YYYY-M-D" onChange={onChange} />
+      <br />
+      <br />
+      <DatePicker
+        format="YYYY-M-D"
+        onChange={onChange}
+        showTime={{ format: 'HH:mm' }}
+      />
+      <br />
+      <br />
+      <RangePicker format="YYYY-M-D" onChange={onChange} />
+      <br />
+      <br />
+      <RangePicker
+        format="YYYY-M-D"
+        onChange={onChange}
+        showTime={{ format: 'HH:mm' }}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

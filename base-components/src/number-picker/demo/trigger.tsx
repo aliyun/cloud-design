@@ -16,15 +16,14 @@ function onCorrect(obj) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <NumberPicker alwaysShowTrigger />
-        <br />
-        <br />
-        <NumberPicker hasTrigger={false} />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <NumberPicker alwaysShowTrigger />
+      <br />
+      <br />
+      <NumberPicker hasTrigger={false} />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

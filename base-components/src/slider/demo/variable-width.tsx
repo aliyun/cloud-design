@@ -19,30 +19,29 @@ const settings = {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Slider {...settings}>
-        <div style={{ width: 100 }}>
-          <p>100</p>
-        </div>
-        <div style={{ width: 200 }}>
-          <p>200</p>
-        </div>
-        <div style={{ width: 75 }}>
-          <p>75</p>
-        </div>
-        <div style={{ width: 300 }}>
-          <p>300</p>
-        </div>
-        <div style={{ width: 225 }}>
-          <p>225</p>
-        </div>
-        <div style={{ width: 175 }}>
-          <p>175</p>
-        </div>
-      </Slider>
-    </Style>
+  const content = (
+    <Slider {...settings}>
+      <div style={{ width: 100 }}>
+        <p>100</p>
+      </div>
+      <div style={{ width: 200 }}>
+        <p>200</p>
+      </div>
+      <div style={{ width: 75 }}>
+        <p>75</p>
+      </div>
+      <div style={{ width: 300 }}>
+        <p>300</p>
+      </div>
+      <div style={{ width: 225 }}>
+        <p>225</p>
+      </div>
+      <div style={{ width: 175 }}>
+        <p>175</p>
+      </div>
+    </Slider>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .variable-width .next-slick-slide p {

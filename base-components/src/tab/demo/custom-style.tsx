@@ -37,53 +37,52 @@ const detachedContentStyle = {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="fusion-demo">
-        <div className="demo-item-title">
-          Customize with contentStyle or contentClassName
-        </div>
-        <Tab shape="wrapped" contentStyle={detachedContentStyle}>
-          {panes.map((pane) => (
-            <Tab.Item title={pane.tab} key={pane.key}>
-              {pane.tab}
-            </Tab.Item>
-          ))}
-        </Tab>
+  const content = (
+    <div className="fusion-demo">
+      <div className="demo-item-title">
+        Customize with contentStyle or contentClassName
+      </div>
+      <Tab shape="wrapped" contentStyle={detachedContentStyle}>
+        {panes.map((pane) => (
+          <Tab.Item title={pane.tab} key={pane.key}>
+            {pane.tab}
+          </Tab.Item>
+        ))}
+      </Tab>
 
-        <div className="demo-item-title">
-          Setting className and style in Tab.Item
-        </div>
-        <Tab shape="wrapped" navStyle={{ background: '#DEE8FF' }}>
-          {panes.map((pane) => {
-            return (
-              <Tab.Item
-                title={pane.tab}
-                key={pane.key}
-                className="custom-tab-item"
-                style={{ background: '#FFF' }}
-              >
-                {pane.tab}
-              </Tab.Item>
-            )
-          })}
-        </Tab>
-
-        <div className="demo-item-title">Tabs with equal width</div>
-        <Tab shape="capsule">
-          {panes.map((pane) => (
+      <div className="demo-item-title">
+        Setting className and style in Tab.Item
+      </div>
+      <Tab shape="wrapped" navStyle={{ background: '#DEE8FF' }}>
+        {panes.map((pane) => {
+          return (
             <Tab.Item
               title={pane.tab}
               key={pane.key}
-              className="justify-tabs-tab"
+              className="custom-tab-item"
+              style={{ background: '#FFF' }}
             >
               {pane.tab}
             </Tab.Item>
-          ))}
-        </Tab>
-      </div>
-    </Style>
+          )
+        })}
+      </Tab>
+
+      <div className="demo-item-title">Tabs with equal width</div>
+      <Tab shape="capsule">
+        {panes.map((pane) => (
+          <Tab.Item
+            title={pane.tab}
+            key={pane.key}
+            className="justify-tabs-tab"
+          >
+            {pane.tab}
+          </Tab.Item>
+        ))}
+      </Tab>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .fusion-demo .demo-item-title {

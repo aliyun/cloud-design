@@ -9,22 +9,21 @@ import styled from 'styled-components'
 import { Button, Icon } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Button.Group>
-          <Button type="primary" aria-label="prompt button">
-            <Icon type="prompt" />
-          </Button>
-          <Button type="primary" aria-label="clock button">
-            <Icon type="clock" />
-          </Button>
-          <Button type="primary" aria-label="set button">
-            <Icon type="set" />
-          </Button>
-        </Button.Group>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Button.Group>
+        <Button type="primary" aria-label="prompt button">
+          <Icon type="prompt" />
+        </Button>
+        <Button type="primary" aria-label="clock button">
+          <Icon type="clock" />
+        </Button>
+        <Button type="primary" aria-label="set button">
+          <Icon type="set" />
+        </Button>
+      </Button.Group>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -9,21 +9,20 @@ import styled from 'styled-components'
 import { Loading } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Loading tip="normal(size default large)">
-          <div className="demo">test</div>
-        </Loading>
-        <Loading tip="large" size="large">
-          <div className="demo">test</div>
-        </Loading>
-        <Loading tip="medium" size="medium">
-          <div className="demo">test</div>
-        </Loading>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Loading tip="normal(size default large)">
+        <div className="demo">test</div>
+      </Loading>
+      <Loading tip="large" size="large">
+        <div className="demo">test</div>
+      </Loading>
+      <Loading tip="medium" size="medium">
+        <div className="demo">test</div>
+      </Loading>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .demo {

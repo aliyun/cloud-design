@@ -56,17 +56,16 @@ const itemRender = (item) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <CascaderSelect
-        style={{ width: '452px' }}
-        listStyle={{ width: '150px', height: '160px' }}
-        displayRender={(labels) => labels[labels.length - 1]}
-        defaultValue="3431"
-        dataSource={dataSource}
-        itemRender={itemRender}
-      />
-    </Style>
+  const content = (
+    <CascaderSelect
+      style={{ width: '452px' }}
+      listStyle={{ width: '150px', height: '160px' }}
+      displayRender={(labels) => labels[labels.length - 1]}
+      defaultValue="3431"
+      dataSource={dataSource}
+      itemRender={itemRender}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

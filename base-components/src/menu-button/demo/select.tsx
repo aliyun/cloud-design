@@ -14,18 +14,17 @@ const menu = ['Undo', 'Redo', 'Cut', 'Copy', 'Paste'].map((item) => (
 ))
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <MenuButton
-          label="Document Edit"
-          selectMode="single"
-          onSelect={(keys) => console.log(keys)}
-        >
-          {menu}
-        </MenuButton>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <MenuButton
+        label="Document Edit"
+        selectMode="single"
+        onSelect={(keys) => console.log(keys)}
+      >
+        {menu}
+      </MenuButton>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

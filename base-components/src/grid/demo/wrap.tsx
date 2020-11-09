@@ -11,26 +11,25 @@ import { Grid } from '@alicloudfe/components'
 const { Row, Col } = Grid
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="wrap-demo">
-        <div className="demo-title">No wrap</div>
-        <Row>
-          <Col span="6">col-6</Col>
-          <Col span="6">col-6</Col>
-          <Col span="6">col-6</Col>
-          <Col span="8">col-8</Col>
-        </Row>
-        <div className="demo-title">Wrap</div>
-        <Row wrap>
-          <Col span="6">col-6</Col>
-          <Col span="6">col-6</Col>
-          <Col span="6">col-6</Col>
-          <Col span="8">col-8</Col>
-        </Row>
-      </div>
-    </Style>
+  const content = (
+    <div className="wrap-demo">
+      <div className="demo-title">No wrap</div>
+      <Row>
+        <Col span="6">col-6</Col>
+        <Col span="6">col-6</Col>
+        <Col span="6">col-6</Col>
+        <Col span="8">col-8</Col>
+      </Row>
+      <div className="demo-title">Wrap</div>
+      <Row wrap>
+        <Col span="6">col-6</Col>
+        <Col span="6">col-6</Col>
+        <Col span="6">col-6</Col>
+        <Col span="8">col-8</Col>
+      </Row>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .wrap-demo .demo-title {

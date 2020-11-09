@@ -20,21 +20,20 @@ const indicator7 = (
 )
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Loading tip="default animation">
-          <div className="demo">test</div>
-        </Loading>
-        <Loading indicator={indicator1}>
-          <div className="demo">test</div>
-        </Loading>
-        <Loading indicator={indicator7}>
-          <div className="demo">test</div>
-        </Loading>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Loading tip="default animation">
+        <div className="demo">test</div>
+      </Loading>
+      <Loading indicator={indicator1}>
+        <div className="demo">test</div>
+      </Loading>
+      <Loading indicator={indicator7}>
+        <div className="demo">test</div>
+      </Loading>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .demo {

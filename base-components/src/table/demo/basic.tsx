@@ -26,15 +26,14 @@ const render = (value, index, record) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Table dataSource={dataSource()}>
-        <Table.Column title="Id" htmlTitle="Unique Id" dataIndex="id" />
-        <Table.Column title="Title" dataIndex="title.name" />
-        <Table.Column title="Time" dataIndex="time" />
-        <Table.Column cell={render} />
-      </Table>
-    </Style>
+  const content = (
+    <Table dataSource={dataSource()}>
+      <Table.Column title="Id" htmlTitle="Unique Id" dataIndex="id" />
+      <Table.Column title="Title" dataIndex="title.name" />
+      <Table.Column title="Time" dataIndex="time" />
+      <Table.Column cell={render} />
+    </Table>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

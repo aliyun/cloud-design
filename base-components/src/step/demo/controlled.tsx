@@ -208,11 +208,8 @@ class Component extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Component />
-    </Style>
-  )
+  const content = <Component />
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-step-option {

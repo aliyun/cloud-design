@@ -62,11 +62,8 @@ class TodoList extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <TodoList />
-    </Style>
-  )
+  const content = <TodoList />
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .fade-appear {

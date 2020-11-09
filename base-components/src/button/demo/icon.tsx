@@ -9,27 +9,26 @@ import styled from 'styled-components'
 import { Button, Icon } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Button>
-          <Icon type="atm" /> ATM
-        </Button>{' '}
-        &nbsp;&nbsp;
-        <Button text>
-          <Icon type="atm" /> ATM
-        </Button>{' '}
-        &nbsp;&nbsp;
-        <Button warning>
-          <Icon type="atm" /> ATM
-        </Button>{' '}
-        &nbsp;&nbsp;
-        <Button iconSize="xxs">
-          <Icon type="arrow-left" /> ARROW
-        </Button>{' '}
-        &nbsp;&nbsp;
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Button>
+        <Icon type="atm" /> ATM
+      </Button>{' '}
+      &nbsp;&nbsp;
+      <Button text>
+        <Icon type="atm" /> ATM
+      </Button>{' '}
+      &nbsp;&nbsp;
+      <Button warning>
+        <Icon type="atm" /> ATM
+      </Button>{' '}
+      &nbsp;&nbsp;
+      <Button iconSize="xxs">
+        <Icon type="arrow-left" /> ARROW
+      </Button>{' '}
+      &nbsp;&nbsp;
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

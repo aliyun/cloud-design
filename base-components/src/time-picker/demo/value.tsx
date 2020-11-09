@@ -28,12 +28,11 @@ class ControlledTimePicker extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <ControlledTimePicker
-        onChange={(val) => console.log(val.format('HH:mm:ss'))}
-      />
-    </Style>
+  const content = (
+    <ControlledTimePicker
+      onChange={(val) => console.log(val.format('HH:mm:ss'))}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

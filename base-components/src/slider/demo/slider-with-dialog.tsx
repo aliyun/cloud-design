@@ -83,11 +83,8 @@ class FlappySlider extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <FlappySlider slides={slides} />
-    </Style>
-  )
+  const content = <FlappySlider slides={slides} />
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .slider-img-wrapper img {

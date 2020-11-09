@@ -16,29 +16,28 @@ const textRender = (percent) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        {[1, 2, 3, 4, 5, 6].map((value, index) => (
-          <Progress
-            key={index}
-            percent={(value / 6) * 100}
-            shape="circle"
-            color={`hsl(${index * 60 + 60}, 90%, 50%)`}
-            textRender={textRender}
-          />
-        ))}
-        {[1, 2, 3, 4, 5, 6].map((value, index) => (
-          <Progress
-            key={index}
-            percent={(value / 6) * 100}
-            shape="line"
-            color={`hsl(${index * 60 + 60}, 90%, 50%)`}
-            textRender={textRender}
-          />
-        ))}
-      </div>
-    </Style>
+  const content = (
+    <div>
+      {[1, 2, 3, 4, 5, 6].map((value, index) => (
+        <Progress
+          key={index}
+          percent={(value / 6) * 100}
+          shape="circle"
+          color={`hsl(${index * 60 + 60}, 90%, 50%)`}
+          textRender={textRender}
+        />
+      ))}
+      {[1, 2, 3, 4, 5, 6].map((value, index) => (
+        <Progress
+          key={index}
+          percent={(value / 6) * 100}
+          shape="line"
+          color={`hsl(${index * 60 + 60}, 90%, 50%)`}
+          textRender={textRender}
+        />
+      ))}
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

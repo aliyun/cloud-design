@@ -9,24 +9,23 @@ import styled from 'styled-components'
 import { Badge, Icon } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Badge
-          content="hot"
-          style={{ backgroundColor: '#FC0E3D', color: '#FFFFFF' }}
-        >
-          <a href="#" className="head-example"></a>
-        </Badge>
-        <Badge
-          content={<Icon type="error" />}
-          style={{ backgroundColor: 'transparent', color: 'red', padding: 0 }}
-        >
-          <a href="#" className="head-example"></a>
-        </Badge>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Badge
+        content="hot"
+        style={{ backgroundColor: '#FC0E3D', color: '#FFFFFF' }}
+      >
+        <a href="#" className="head-example"></a>
+      </Badge>
+      <Badge
+        content={<Icon type="error" />}
+        style={{ backgroundColor: 'transparent', color: 'red', padding: 0 }}
+      >
+        <a href="#" className="head-example"></a>
+      </Badge>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .next-badge {

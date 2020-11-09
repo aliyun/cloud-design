@@ -51,21 +51,20 @@ const CustomPrevArrow = (props) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Slider
-        nextArrow={<CustomNextArrow />}
-        prevArrow={<CustomPrevArrow />}
-        lazyLoad
-      >
-        {slides.map((item, index) => (
-          <div key={index} className="slider-img-wrapper">
-            <img src={item.url} alt={item.text} />
-          </div>
-        ))}
-      </Slider>
-    </Style>
+  const content = (
+    <Slider
+      nextArrow={<CustomNextArrow />}
+      prevArrow={<CustomPrevArrow />}
+      lazyLoad
+    >
+      {slides.map((item, index) => (
+        <div key={index} className="slider-img-wrapper">
+          <img src={item.url} alt={item.text} />
+        </div>
+      ))}
+    </Slider>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .slider-img-wrapper img {

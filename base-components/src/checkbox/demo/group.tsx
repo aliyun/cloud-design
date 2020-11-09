@@ -30,10 +30,7 @@ const CheckboxGroup = () => (
 )
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <CheckboxGroup />
-    </Style>
-  )
+  const content = <CheckboxGroup />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -94,10 +94,7 @@ const columns = [
 ]
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Table columns={columns} dataSource={dataSource()} />
-    </Style>
-  )
+  const content = <Table columns={columns} dataSource={dataSource()} />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

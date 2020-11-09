@@ -9,18 +9,17 @@ import styled from 'styled-components'
 import { Button } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div style={{ clear: 'both' }}>
-        <div className="ghost-light-background">
-          <Button ghost="light">Ghost light</Button>
-        </div>
-        <div className="ghost-dark-background">
-          <Button ghost="dark">Ghost dark</Button>
-        </div>
+  const content = (
+    <div style={{ clear: 'both' }}>
+      <div className="ghost-light-background">
+        <Button ghost="light">Ghost light</Button>
       </div>
-    </Style>
+      <div className="ghost-dark-background">
+        <Button ghost="dark">Ghost dark</Button>
+      </div>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .ghost-light-background {

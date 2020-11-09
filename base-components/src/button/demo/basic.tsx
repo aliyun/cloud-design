@@ -9,37 +9,36 @@ import styled from 'styled-components'
 import { Button } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Button type="normal">Normal</Button> &nbsp;&nbsp;
-        <Button type="primary">Prirmary</Button> &nbsp;&nbsp;
-        <Button type="secondary">Secondary</Button>
-        <br />
-        <br />
-        <Button type="normal" text>
-          你好
-        </Button>{' '}
-        &nbsp;&nbsp;
-        <Button type="primary" text>
-          你好
-        </Button>{' '}
-        &nbsp;&nbsp;
-        <Button type="secondary" text>
-          Secondary
-        </Button>
-        <br />
-        <br />
-        <Button type="normal" warning>
-          Normal
-        </Button>{' '}
-        &nbsp;&nbsp;
-        <Button type="primary" warning>
-          Primary
-        </Button>{' '}
-        &nbsp;&nbsp;
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Button type="normal">Normal</Button> &nbsp;&nbsp;
+      <Button type="primary">Prirmary</Button> &nbsp;&nbsp;
+      <Button type="secondary">Secondary</Button>
+      <br />
+      <br />
+      <Button type="normal" text>
+        Normal
+      </Button>{' '}
+      &nbsp;&nbsp;
+      <Button type="primary" text>
+        Primary
+      </Button>{' '}
+      &nbsp;&nbsp;
+      <Button type="secondary" text>
+        Secondary
+      </Button>
+      <br />
+      <br />
+      <Button type="normal" warning>
+        Normal
+      </Button>{' '}
+      &nbsp;&nbsp;
+      <Button type="primary" warning>
+        Primary
+      </Button>{' '}
+      &nbsp;&nbsp;
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

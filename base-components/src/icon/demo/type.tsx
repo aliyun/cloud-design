@@ -79,48 +79,45 @@ if (window.customIcons) {
 const handleCopy = () => Message.success('Copied!')
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <div className="icon-list-title">
-          Click on the icon to copy the code.
+  const content = (
+    <div>
+      <div className="icon-list-title">Click on the icon to copy the code.</div>
+      <ul className="icon-list">
+        {types.map((type, index) => (
+          <CopyToClipboard
+            key={index}
+            text={`<Icon type="${type}" />`}
+            onCopy={handleCopy}
+          >
+            <li>
+              <Icon type={type} size="xl" />
+              <span>{type}</span>
+            </li>
+          </CopyToClipboard>
+        ))}
+      </ul>
+      {customTypes.length ? (
+        <div>
+          <div className="icon-list-custom-title">Custom Icon</div>
+          <ul className="icon-list">
+            {customTypes.map((type, index) => (
+              <CopyToClipboard
+                key={index}
+                text={`<Icon type="${type}" />`}
+                onCopy={handleCopy}
+              >
+                <li>
+                  <Icon type={type} size="xl" />
+                  <span>{type}</span>
+                </li>
+              </CopyToClipboard>
+            ))}
+          </ul>
         </div>
-        <ul className="icon-list">
-          {types.map((type, index) => (
-            <CopyToClipboard
-              key={index}
-              text={`<Icon type="${type}" />`}
-              onCopy={handleCopy}
-            >
-              <li>
-                <Icon type={type} size="xl" />
-                <span>{type}</span>
-              </li>
-            </CopyToClipboard>
-          ))}
-        </ul>
-        {customTypes.length ? (
-          <div>
-            <div className="icon-list-custom-title">Custom Icon</div>
-            <ul className="icon-list">
-              {customTypes.map((type, index) => (
-                <CopyToClipboard
-                  key={index}
-                  text={`<Icon type="${type}" />`}
-                  onCopy={handleCopy}
-                >
-                  <li>
-                    <Icon type={type} size="xl" />
-                    <span>{type}</span>
-                  </li>
-                </CopyToClipboard>
-              ))}
-            </ul>
-          </div>
-        ) : null}
-      </div>
-    </Style>
+      ) : null}
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .icon-list-title {

@@ -15,37 +15,36 @@ const presetColors = ['blue', 'green', 'orange', 'red', 'turquoise', 'yellow']
 const customColos = ['#f50', '#2db7f5', '#87d068', '#108ee9']
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="tag-list">
-        <h4>presets</h4>
-        <TagGroup>
-          {presetColors.map((color) => (
-            <Tag key={`p_n_${color}`} type="normal" color={color}>
-              {color}
-            </Tag>
-          ))}
-        </TagGroup>
+  const content = (
+    <div className="tag-list">
+      <h4>presets</h4>
+      <TagGroup>
+        {presetColors.map((color) => (
+          <Tag key={`p_n_${color}`} type="normal" color={color}>
+            {color}
+          </Tag>
+        ))}
+      </TagGroup>
 
-        <TagGroup>
-          {presetColors.map((color) => (
-            <Tag key={`p_p_${color}`} type="primary" color={color}>
-              {color}
-            </Tag>
-          ))}
-        </TagGroup>
+      <TagGroup>
+        {presetColors.map((color) => (
+          <Tag key={`p_p_${color}`} type="primary" color={color}>
+            {color}
+          </Tag>
+        ))}
+      </TagGroup>
 
-        <h4>custom colors</h4>
+      <h4>custom colors</h4>
 
-        <TagGroup>
-          {customColos.map((color) => (
-            <Tag key={`c_${color}`} color={color}>
-              {color}
-            </Tag>
-          ))}
-        </TagGroup>
-      </div>
-    </Style>
+      <TagGroup>
+        {customColos.map((color) => (
+          <Tag key={`c_${color}`} color={color}>
+            {color}
+          </Tag>
+        ))}
+      </TagGroup>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -12,21 +12,20 @@ import moment from 'moment'
 const defaultVal = moment('12:00:00', 'HH:mm:ss', true)
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <TimePicker
-          defaultValue={defaultVal}
-          onChange={(val) => console.log(val)}
-        />
-        <br />
-        <br />
-        <TimePicker
-          defaultValue="12:00:00"
-          onChange={(val) => console.log(val)}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <TimePicker
+        defaultValue={defaultVal}
+        onChange={(val) => console.log(val)}
+      />
+      <br />
+      <br />
+      <TimePicker
+        defaultValue="12:00:00"
+        onChange={(val) => console.log(val)}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

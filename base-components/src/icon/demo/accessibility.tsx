@@ -9,27 +9,26 @@ import styled from 'styled-components'
 import { Icon } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        button: <br />
-        <Icon
-          type="atm"
-          role="button"
-          aria-label="icon atm"
-          style={{ margin: '5px' }}
-        />
-        <Icon
-          type="smile"
-          role="button"
-          aria-label="icon smile"
-          style={{ margin: '5px' }}
-        />
-        <br />
-        decoration: <br />
-        <Icon type="success" aria-hidden style={{ margin: '5px' }} />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      button: <br />
+      <Icon
+        type="atm"
+        role="button"
+        aria-label="icon atm"
+        style={{ margin: '5px' }}
+      />
+      <Icon
+        type="smile"
+        role="button"
+        aria-label="icon smile"
+        style={{ margin: '5px' }}
+      />
+      <br />
+      decoration: <br />
+      <Icon type="success" aria-hidden style={{ margin: '5px' }} />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

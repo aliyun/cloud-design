@@ -17,26 +17,25 @@ const select = (
 const button = <Button>search</Button>
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Input.Group addonBefore={select} addonAfter={button}>
-          <Input
-            hasClear
-            defaultValue="abc"
-            style={{ width: '100%' }}
-            aria-label="please input"
-          />
-        </Input.Group>
-        <br />
-        <br />
+  const content = (
+    <div>
+      <Input.Group addonBefore={select} addonAfter={button}>
         <Input
-          addonTextAfter=".com"
-          addonBefore={select}
+          hasClear
+          defaultValue="abc"
+          style={{ width: '100%' }}
           aria-label="please input"
         />
-      </div>
-    </Style>
+      </Input.Group>
+      <br />
+      <br />
+      <Input
+        addonTextAfter=".com"
+        addonBefore={select}
+        aria-label="please input"
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

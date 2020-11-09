@@ -14,15 +14,14 @@ function onDateChange(value) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Calendar
-          onSelect={onDateChange}
-          defaultValue={moment().add(1, 'days')}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Calendar
+        onSelect={onDateChange}
+        defaultValue={moment().add(1, 'days')}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -92,16 +92,13 @@ const store = createStore(
 )
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      (
-      <Provider store={store}>
-        <div>
-          <ReduxDemo />
-        </div>
-      </Provider>
-      )
-    </Style>
+  const content = (
+    <Provider store={store}>
+      <div>
+        <ReduxDemo />
+      </div>
+    </Provider>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

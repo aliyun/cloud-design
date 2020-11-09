@@ -18,17 +18,16 @@ const openNotification = (type) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="button-row">
-        <Button onClick={() => openNotification('success')}>success</Button>
-        <Button onClick={() => openNotification('warning')}>warning</Button>
-        <Button onClick={() => openNotification('error')}>error</Button>
-        <Button onClick={() => openNotification('notice')}>notice</Button>
-        <Button onClick={() => openNotification('help')}>help</Button>
-      </div>
-    </Style>
+  const content = (
+    <div className="button-row">
+      <Button onClick={() => openNotification('success')}>success</Button>
+      <Button onClick={() => openNotification('warning')}>warning</Button>
+      <Button onClick={() => openNotification('error')}>error</Button>
+      <Button onClick={() => openNotification('notice')}>notice</Button>
+      <Button onClick={() => openNotification('help')}>help</Button>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .button-row .next-btn {

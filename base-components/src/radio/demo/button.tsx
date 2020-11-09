@@ -117,10 +117,7 @@ class ControlApp extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <ControlApp />
-    </Style>
-  )
+  const content = <ControlApp />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

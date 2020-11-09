@@ -62,11 +62,8 @@ class CustomProgress extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <CustomProgress />
-    </Style>
-  )
+  const content = <CustomProgress />
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .progress-panel {

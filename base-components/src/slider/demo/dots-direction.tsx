@@ -9,43 +9,42 @@ import styled from 'styled-components'
 import { Slider } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Slider dotsDirection="hoz" arrows={false}>
-          <div>
-            <h3 className="h3">1</h3>
-          </div>
-          <div>
-            <h3 className="h3">2</h3>
-          </div>
-          <div>
-            <h3 className="h3">3</h3>
-          </div>
-          <div>
-            <h3 className="h3">4</h3>
-          </div>
-        </Slider>
+  const content = (
+    <div>
+      <Slider dotsDirection="hoz" arrows={false}>
+        <div>
+          <h3 className="h3">1</h3>
+        </div>
+        <div>
+          <h3 className="h3">2</h3>
+        </div>
+        <div>
+          <h3 className="h3">3</h3>
+        </div>
+        <div>
+          <h3 className="h3">4</h3>
+        </div>
+      </Slider>
 
-        <br />
+      <br />
 
-        <Slider dotsDirection="ver" arrows={false}>
-          <div>
-            <h3 className="h3">1</h3>
-          </div>
-          <div>
-            <h3 className="h3">2</h3>
-          </div>
-          <div>
-            <h3 className="h3">3</h3>
-          </div>
-          <div>
-            <h3 className="h3">4</h3>
-          </div>
-        </Slider>
-      </div>
-    </Style>
+      <Slider dotsDirection="ver" arrows={false}>
+        <div>
+          <h3 className="h3">1</h3>
+        </div>
+        <div>
+          <h3 className="h3">2</h3>
+        </div>
+        <div>
+          <h3 className="h3">3</h3>
+        </div>
+        <div>
+          <h3 className="h3">4</h3>
+        </div>
+      </Slider>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .next-slick .h3,

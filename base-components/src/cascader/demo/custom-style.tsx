@@ -48,15 +48,14 @@ const dataSource = [
 ]
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Cascader
-        defaultValue="3439"
-        defaultExpandedValue={['3371', '3430']}
-        listStyle={{ width: '200px', height: '256px' }}
-        dataSource={dataSource}
-      />
-    </Style>
+  const content = (
+    <Cascader
+      defaultValue="3439"
+      defaultExpandedValue={['3371', '3430']}
+      listStyle={{ width: '200px', height: '256px' }}
+      dataSource={dataSource}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

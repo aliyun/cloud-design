@@ -48,10 +48,7 @@ class CompositeSplitButton extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <CompositeSplitButton />
-    </Style>
-  )
+  const content = <CompositeSplitButton />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -9,16 +9,15 @@ import styled from 'styled-components'
 import { TimePicker } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <TimePicker size="large" />
-        &nbsp;&nbsp;
-        <TimePicker />
-        &nbsp;&nbsp;
-        <TimePicker size="small" />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <TimePicker size="large" />
+      &nbsp;&nbsp;
+      <TimePicker />
+      &nbsp;&nbsp;
+      <TimePicker size="small" />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

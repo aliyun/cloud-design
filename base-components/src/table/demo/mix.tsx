@@ -162,36 +162,35 @@ const tableMixTreeLock = (
 )
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="mix-demo">
-        <div className="row">
-          <h4>tree & select</h4>
-          {tableMixTree}
-        </div>
-        <div className="row">
-          <h4>extra & select</h4>
-          {tableMixExpanded}
-        </div>
-        <div className="row">
-          <h4>tree & lock column & select</h4>
-          {tableMixSelectionTreeLock}
-        </div>
-        <div className="row">
-          <h4>extra & lock column & select</h4>
-          {tableMixExpandedLock}
-        </div>
-        <div className="row">
-          <h4>lock column & select</h4>
-          {tableMixLock}
-        </div>
-        <div className="row">
-          <h4>tree & lock column</h4>
-          {tableMixTreeLock}
-        </div>
+  const content = (
+    <div className="mix-demo">
+      <div className="row">
+        <h4>tree & select</h4>
+        {tableMixTree}
       </div>
-    </Style>
+      <div className="row">
+        <h4>extra & select</h4>
+        {tableMixExpanded}
+      </div>
+      <div className="row">
+        <h4>tree & lock column & select</h4>
+        {tableMixSelectionTreeLock}
+      </div>
+      <div className="row">
+        <h4>extra & lock column & select</h4>
+        {tableMixExpandedLock}
+      </div>
+      <div className="row">
+        <h4>lock column & select</h4>
+        {tableMixLock}
+      </div>
+      <div className="row">
+        <h4>tree & lock column</h4>
+        {tableMixTreeLock}
+      </div>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .mix-demo .row {

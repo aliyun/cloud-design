@@ -44,18 +44,17 @@ const setCellProps = (rowIndex, colIndex, dataIndex, record) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Table
-        dataSource={dataSource()}
-        rowProps={setRowProps}
-        cellProps={setCellProps}
-      >
-        <Table.Column title="Id" dataIndex="id" />
-        <Table.Column title="Title" dataIndex="title.name" />
-        <Table.Column title="Time" dataIndex="time" />
-      </Table>
-    </Style>
+  const content = (
+    <Table
+      dataSource={dataSource()}
+      rowProps={setRowProps}
+      cellProps={setCellProps}
+    >
+      <Table.Column title="Id" dataIndex="id" />
+      <Table.Column title="Title" dataIndex="title.name" />
+      <Table.Column title="Time" dataIndex="time" />
+    </Table>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

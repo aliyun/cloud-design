@@ -27,27 +27,26 @@ function itemRender2(index, status) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="fusion-demo">
-        <div className="fusion-demo-item">
-          <Step current={2} animation={false} itemRender={itemRender}>
-            {steps.map((item) => (
-              <Step.Item key={item} title={item} />
-            ))}
-          </Step>
-        </div>
-
-        <div className="fusion-demo-item">
-          <Step current={2} animation={false} itemRender={itemRender2}>
-            {steps.map((item) => (
-              <Step.Item key={item} title={item} />
-            ))}
-          </Step>
-        </div>
+  const content = (
+    <div className="fusion-demo">
+      <div className="fusion-demo-item">
+        <Step current={2} animation={false} itemRender={itemRender}>
+          {steps.map((item) => (
+            <Step.Item key={item} title={item} />
+          ))}
+        </Step>
       </div>
-    </Style>
+
+      <div className="fusion-demo-item">
+        <Step current={2} animation={false} itemRender={itemRender2}>
+          {steps.map((item) => (
+            <Step.Item key={item} title={item} />
+          ))}
+        </Step>
+      </div>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .fusion-demo-item {

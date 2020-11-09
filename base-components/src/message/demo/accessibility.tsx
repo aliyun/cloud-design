@@ -11,12 +11,11 @@ import { Message, Button } from '@alicloudfe/components'
 const showSuccess = () => Message.success('success')
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="message-toast-quick-demo">
-        <Button onClick={showSuccess}>success</Button>
-      </div>
-    </Style>
+  const content = (
+    <div className="message-toast-quick-demo">
+      <Button onClick={showSuccess}>success</Button>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

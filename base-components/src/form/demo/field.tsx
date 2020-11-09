@@ -134,10 +134,7 @@ class BasicDemo extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <BasicDemo />
-    </Style>
-  )
+  const content = <BasicDemo />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

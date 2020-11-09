@@ -28,29 +28,28 @@ const bigSlides = [
 ]
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Slider>
-          {bigSlides.map((item, index) => (
-            <div key={index} className="slider-img-wrapper">
-              <img src={item.url} alt={item.text} />
-            </div>
-          ))}
-        </Slider>
+  const content = (
+    <div>
+      <Slider>
+        {bigSlides.map((item, index) => (
+          <div key={index} className="slider-img-wrapper">
+            <img src={item.url} alt={item.text} />
+          </div>
+        ))}
+      </Slider>
 
-        <br />
+      <br />
 
-        <Slider arrowSize="large">
-          {bigSlides.map((item, index) => (
-            <div key={index} className="slider-img-wrapper">
-              <img src={item.url} alt={item.text} />
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </Style>
+      <Slider arrowSize="large">
+        {bigSlides.map((item, index) => (
+          <div key={index} className="slider-img-wrapper">
+            <img src={item.url} alt={item.text} />
+          </div>
+        ))}
+      </Slider>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .slider-img-wrapper img {

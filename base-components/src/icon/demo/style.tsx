@@ -9,33 +9,29 @@ import styled from 'styled-components'
 import { Icon } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <div className="icon-style-demo">
-          <Icon
-            type="success"
-            style={{ color: '#1DC11D', marginRight: '10px' }}
-          />
-          This is a success message!
-        </div>
-        <div className="icon-style-demo">
-          <Icon
-            type="warning"
-            style={{ color: '#FFA003', marginRight: '10px' }}
-          />
-          This is a warning message!
-        </div>
-        <div className="icon-style-demo">
-          <Icon
-            type="error"
-            style={{ color: '#FF3333', marginRight: '10px' }}
-          />
-          This is a failure message!
-        </div>
+  const content = (
+    <div>
+      <div className="icon-style-demo">
+        <Icon
+          type="success"
+          style={{ color: '#1DC11D', marginRight: '10px' }}
+        />
+        This is a success message!
       </div>
-    </Style>
+      <div className="icon-style-demo">
+        <Icon
+          type="warning"
+          style={{ color: '#FFA003', marginRight: '10px' }}
+        />
+        This is a warning message!
+      </div>
+      <div className="icon-style-demo">
+        <Icon type="error" style={{ color: '#FF3333', marginRight: '10px' }} />
+        This is a failure message!
+      </div>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .icon-style-demo {

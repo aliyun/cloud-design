@@ -13,10 +13,7 @@ import moment from 'moment'
 moment.locale('zh-cn')
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Calendar />
-    </Style>
-  )
+  const content = <Calendar />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

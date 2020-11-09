@@ -15,29 +15,28 @@ const tabs = [
 ]
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <div>Render all tab contents</div>
-        <Tab lazyLoad={false}>
-          {tabs.map((item) => (
-            <Tab.Item key={item.key} title={item.tab}>
-              {item.content}
-            </Tab.Item>
-          ))}
-        </Tab>
+  const content = (
+    <div>
+      <div>Render all tab contents</div>
+      <Tab lazyLoad={false}>
+        {tabs.map((item) => (
+          <Tab.Item key={item.key} title={item.tab}>
+            {item.content}
+          </Tab.Item>
+        ))}
+      </Tab>
 
-        <div>Unmount inactive tabs</div>
-        <Tab unmountInactiveTabs>
-          {tabs.map((item) => (
-            <Tab.Item key={item.key} title={item.tab}>
-              {item.content}
-            </Tab.Item>
-          ))}
-        </Tab>
-      </div>
-    </Style>
+      <div>Unmount inactive tabs</div>
+      <Tab unmountInactiveTabs>
+        {tabs.map((item) => (
+          <Tab.Item key={item.key} title={item.tab}>
+            {item.content}
+          </Tab.Item>
+        ))}
+      </Tab>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .next-tabs-content {

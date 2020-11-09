@@ -13,41 +13,40 @@ function onChange(v) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Input
-          size="large"
-          placeholder="Large"
-          onChange={onChange}
-          aria-label="Large"
-        />
-        <br />
-        <br />
+  const content = (
+    <div>
+      <Input
+        size="large"
+        placeholder="Large"
+        onChange={onChange}
+        aria-label="Large"
+      />
+      <br />
+      <br />
 
-        <span id="J_InputMedium" style={{ display: 'none' }}>
-          Aria Labelby Demo{' '}
-        </span>
-        <Input
-          placeholder="Medium"
-          aria-label="Medium"
-          aria-labelledby="J_InputMedium"
-        />
-        <br />
-        <br />
+      <span id="J_InputMedium" style={{ display: 'none' }}>
+        Aria Labelby Demo{' '}
+      </span>
+      <Input
+        placeholder="Medium"
+        aria-label="Medium"
+        aria-labelledby="J_InputMedium"
+      />
+      <br />
+      <br />
 
-        <Input
-          placeholder="Small"
-          size="small"
-          label="SIZE :"
-          id="J_InputSmall"
-        />
-        <br />
-        <br />
+      <Input
+        placeholder="Small"
+        size="small"
+        label="SIZE :"
+        id="J_InputSmall"
+      />
+      <br />
+      <br />
 
-        <Input.TextArea placeholder="TextArea" aria-label="TextArea" />
-      </div>
-    </Style>
+      <Input.TextArea placeholder="TextArea" aria-label="TextArea" />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

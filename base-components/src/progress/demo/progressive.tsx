@@ -9,14 +9,13 @@ import styled from 'styled-components'
 import { Progress } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Progress percent={20} progressive />
-        <Progress percent={60} progressive />
-        <Progress percent={90} progressive />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Progress percent={20} progressive />
+      <Progress percent={60} progressive />
+      <Progress percent={90} progressive />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

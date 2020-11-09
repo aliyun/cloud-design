@@ -13,10 +13,7 @@ const change = function (value) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Pagination defaultCurrent={2} onChange={change} />
-    </Style>
-  )
+  const content = <Pagination defaultCurrent={2} onChange={change} />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

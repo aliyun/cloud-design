@@ -37,15 +37,14 @@ const onChange = function (...args) {
   }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Table dataSource={dataSource()} rowSelection={rowSelection}>
-        <Table.Column title="Id" dataIndex="id" />
-        <Table.Column title="Title" dataIndex="title.name" />
-        <Table.Column title="Time" dataIndex="time" />
-        <Table.Column cell={render} width={200} />
-      </Table>
-    </Style>
+  const content = (
+    <Table dataSource={dataSource()} rowSelection={rowSelection}>
+      <Table.Column title="Id" dataIndex="id" />
+      <Table.Column title="Title" dataIndex="title.name" />
+      <Table.Column title="Time" dataIndex="time" />
+      <Table.Column cell={render} width={200} />
+    </Table>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

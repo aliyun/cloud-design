@@ -11,14 +11,13 @@ import { DatePicker } from '@alicloudfe/components'
 const { RangePicker } = DatePicker
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <DatePicker disabled />
-        &nbsp;&nbsp;
-        <RangePicker disabled />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <DatePicker disabled />
+      &nbsp;&nbsp;
+      <RangePicker disabled />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

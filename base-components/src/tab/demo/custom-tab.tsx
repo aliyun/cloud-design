@@ -23,20 +23,19 @@ const panes = [
 ]
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Tab
-        shape="wrapped"
-        tabRender={(key, props) => <CustomTabItem key={key} {...props} />}
-      >
-        {panes.map((pane) => (
-          <Tab.Item key={pane.key} {...pane} tabStyle={{ height: '60px' }}>
-            {pane.desc}
-          </Tab.Item>
-        ))}
-      </Tab>
-    </Style>
+  const content = (
+    <Tab
+      shape="wrapped"
+      tabRender={(key, props) => <CustomTabItem key={key} {...props} />}
+    >
+      {panes.map((pane) => (
+        <Tab.Item key={pane.key} {...pane} tabStyle={{ height: '60px' }}>
+          {pane.desc}
+        </Tab.Item>
+      ))}
+    </Tab>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-tab-item {

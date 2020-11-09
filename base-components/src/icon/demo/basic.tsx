@@ -9,10 +9,7 @@ import styled from 'styled-components'
 import { Icon } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Icon type="atm" />
-    </Style>
-  )
+  const content = <Icon type="atm" />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

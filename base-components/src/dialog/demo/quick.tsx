@@ -51,17 +51,16 @@ const popupCustomIcon = () => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <ConfigProvider locale={{ Dialog: { ok: 'OK', cancel: 'Cancel' } }}>
-        <span>
-          <Button onClick={popupAlert}>Alert</Button> &nbsp;
-          <Button onClick={popupConfirm}>Confirm</Button> &nbsp;
-          <Button onClick={popupShow}>Show</Button> &nbsp;
-          <Button onClick={popupCustomIcon}>Custom Icon</Button>
-        </span>
-      </ConfigProvider>
-    </Style>
+  const content = (
+    <ConfigProvider locale={{ Dialog: { ok: 'OK', cancel: 'Cancel' } }}>
+      <span>
+        <Button onClick={popupAlert}>Alert</Button> &nbsp;
+        <Button onClick={popupConfirm}>Confirm</Button> &nbsp;
+        <Button onClick={popupShow}>Show</Button> &nbsp;
+        <Button onClick={popupCustomIcon}>Custom Icon</Button>
+      </span>
+    </ConfigProvider>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

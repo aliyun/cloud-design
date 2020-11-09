@@ -17,19 +17,18 @@ const disabledItems = (list) => (index) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <p>Disable TimePicker</p>
-        <TimePicker disabled />
-        <p>Disable Hours/Minutes/Seconds</p>
-        <TimePicker
-          disabledHours={disabledItems(disabledHours)}
-          disabledMinutes={disabledItems(disabledMinutes)}
-          disabledSeconds={disabledItems(disabledSeconds)}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <p>Disable TimePicker</p>
+      <TimePicker disabled />
+      <p>Disable Hours/Minutes/Seconds</p>
+      <TimePicker
+        disabledHours={disabledItems(disabledHours)}
+        disabledMinutes={disabledItems(disabledMinutes)}
+        disabledSeconds={disabledItems(disabledSeconds)}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -66,21 +66,20 @@ function onSuccess(info) {
   console.log('onSuccess : ', info)
 }
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Upload
-        action="https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload"
-        beforeUpload={beforeUpload}
-        onChange={onChange}
-        onSuccess={onSuccess}
-        listType="text"
-        defaultValue={defaultValue}
-      >
-        <Button type="primary" style={{ margin: '0 0 10px' }}>
-          Upload File
-        </Button>
-      </Upload>
-    </Style>
+  const content = (
+    <Upload
+      action="https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload"
+      beforeUpload={beforeUpload}
+      onChange={onChange}
+      onSuccess={onSuccess}
+      listType="text"
+      defaultValue={defaultValue}
+    >
+      <Button type="primary" style={{ margin: '0 0 10px' }}>
+        Upload File
+      </Button>
+    </Upload>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

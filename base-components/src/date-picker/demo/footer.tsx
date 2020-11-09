@@ -15,15 +15,14 @@ function footerRender() {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <DatePicker footerRender={footerRender} />
-        &nbsp;&nbsp;
-        <RangePicker footerRender={footerRender} />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <DatePicker footerRender={footerRender} />
+      &nbsp;&nbsp;
+      <RangePicker footerRender={footerRender} />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-footer {

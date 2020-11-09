@@ -16,41 +16,37 @@ const timeStamp = moment(1581938105000)
 const onChange = (val) => console.log(val)
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <DatePicker defaultValue={startValue} onChange={onChange} />
-        <br />
-        <br />
-        <DatePicker defaultValue={timeStamp} onChange={onChange} />
-        <br />
-        <br />
-        <MonthPicker defaultValue={startValue} onChange={onChange} />
-        <br />
-        <br />
-        <YearPicker defaultValue={startValue} onChange={onChange} />
-        <br />
-        <br />
-        <RangePicker
-          type="year"
-          defaultValue={[startValue, endValue]}
-          onChange={onChange}
-        />
-        <br />
-        <br />
-        <RangePicker
-          type="month"
-          defaultValue={[startValue, endValue]}
-          onChange={onChange}
-        />
-        <br />
-        <br />
-        <RangePicker
-          defaultValue={[startValue, endValue]}
-          onChange={onChange}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <DatePicker defaultValue={startValue} onChange={onChange} />
+      <br />
+      <br />
+      <DatePicker defaultValue={timeStamp} onChange={onChange} />
+      <br />
+      <br />
+      <MonthPicker defaultValue={startValue} onChange={onChange} />
+      <br />
+      <br />
+      <YearPicker defaultValue={startValue} onChange={onChange} />
+      <br />
+      <br />
+      <RangePicker
+        type="year"
+        defaultValue={[startValue, endValue]}
+        onChange={onChange}
+      />
+      <br />
+      <br />
+      <RangePicker
+        type="month"
+        defaultValue={[startValue, endValue]}
+        onChange={onChange}
+      />
+      <br />
+      <br />
+      <RangePicker defaultValue={[startValue, endValue]} onChange={onChange} />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

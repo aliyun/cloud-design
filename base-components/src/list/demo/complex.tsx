@@ -59,23 +59,22 @@ const actions = (
 )
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <List
-        dataSource={data}
-        renderItem={(item, i) => (
-          <List.Item
-            key={i}
-            extra={actions}
-            media={<img width="161" height="108" src={item.img} />}
-            title={item.title}
-          >
-            <p style={{ margin: '12px 0' }}>{item.description}</p>
-            <div>{item.author}</div>
-          </List.Item>
-        )}
-      />
-    </Style>
+  const content = (
+    <List
+      dataSource={data}
+      renderItem={(item, i) => (
+        <List.Item
+          key={i}
+          extra={actions}
+          media={<img width="161" height="108" src={item.img} />}
+          title={item.title}
+        >
+          <p style={{ margin: '12px 0' }}>{item.description}</p>
+          <div>{item.author}</div>
+        </List.Item>
+      )}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -11,23 +11,22 @@ import { Radio } from '@alicloudfe/components'
 const RadioGroup = Radio.Group
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <span id="radio-a11y">Programming language ：</span>
-        <RadioGroup aria-labelledby="radio-a11y">
-          <Radio id="python" value="python">
-            python
-          </Radio>
-          <Radio id="java" value="java">
-            java
-          </Radio>
-          <Radio id="c" value="c">
-            c
-          </Radio>
-        </RadioGroup>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <span id="radio-a11y">Programming language ：</span>
+      <RadioGroup aria-labelledby="radio-a11y">
+        <Radio id="python" value="python">
+          python
+        </Radio>
+        <Radio id="java" value="java">
+          java
+        </Radio>
+        <Radio id="c" value="c">
+          c
+        </Radio>
+      </RadioGroup>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

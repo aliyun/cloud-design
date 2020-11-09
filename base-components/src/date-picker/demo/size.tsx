@@ -9,14 +9,13 @@ import styled from 'styled-components'
 import { DatePicker } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <DatePicker size="large" /> &nbsp;&nbsp;
-        <DatePicker /> &nbsp;&nbsp;
-        <DatePicker size="small" />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <DatePicker size="large" /> &nbsp;&nbsp;
+      <DatePicker /> &nbsp;&nbsp;
+      <DatePicker size="small" />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

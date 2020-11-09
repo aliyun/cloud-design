@@ -80,15 +80,14 @@ const popupConfirm = () => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Demo />
-        <Button type="primary" warning onClick={popupConfirm}>
-          Quick Confirm Promise
-        </Button>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Demo />
+      <Button type="primary" warning onClick={popupConfirm}>
+        Quick Confirm Promise
+      </Button>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

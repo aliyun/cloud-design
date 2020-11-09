@@ -27,16 +27,15 @@ function handleChange(value) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Select
-        useDetailValue
-        defaultValue={{ value: '10001', label: 'Lucy King' }}
-        onChange={handleChange}
-        dataSource={dataSource}
-        style={{ width: 150 }}
-      />
-    </Style>
+  const content = (
+    <Select
+      useDetailValue
+      defaultValue={{ value: '10001', label: 'Lucy King' }}
+      onChange={handleChange}
+      dataSource={dataSource}
+      style={{ width: 150 }}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -51,31 +51,30 @@ const dataSource = [
 ]
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Table
-        type="primary"
-        dataSource={dataSource}
-        cellProps={(rowIndex, colIndex) => {
-          if (colIndex === 0) {
-            return {
-              colSpan: 1,
-              rowSpan: 2
-            }
+  const content = (
+    <Table
+      type="primary"
+      dataSource={dataSource}
+      cellProps={(rowIndex, colIndex) => {
+        if (colIndex === 0) {
+          return {
+            colSpan: 1,
+            rowSpan: 2
           }
-          if (colIndex === columns.length - 1) {
-            return {
-              colSpan: 1,
-              rowSpan: 3
-            }
+        }
+        if (colIndex === columns.length - 1) {
+          return {
+            colSpan: 1,
+            rowSpan: 3
           }
-        }}
-      >
-        {columns.map((col, i) => {
-          return <Table.Column key={i} {...col} />
-        })}
-      </Table>
-    </Style>
+        }
+      }}
+    >
+      {columns.map((col, i) => {
+        return <Table.Column key={i} {...col} />
+      })}
+    </Table>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

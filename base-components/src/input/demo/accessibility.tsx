@@ -16,18 +16,17 @@ function onKeyDown(v) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Input
-          size="large"
-          placeholder="please input"
-          onChange={onChange}
-          onKeyDown={onKeyDown}
-          aria-label="this is input"
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Input
+        size="large"
+        placeholder="please input"
+        onChange={onChange}
+        onKeyDown={onKeyDown}
+        aria-label="this is input"
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

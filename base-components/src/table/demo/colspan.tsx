@@ -45,19 +45,18 @@ const onRowClick = function (record, index, e) {
   }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Table
-        dataSource={dataSource()}
-        onRowClick={onRowClick}
-        cellProps={cellProps}
-      >
-        <Table.Column title="Id" dataIndex="id" />
-        <Table.Column title="Title" dataIndex="title.name" />
-        <Table.Column title="Time" colSpan={2} dataIndex="year" />
-        <Table.Column colSpan={0} dataIndex="month" />
-      </Table>
-    </Style>
+  const content = (
+    <Table
+      dataSource={dataSource()}
+      onRowClick={onRowClick}
+      cellProps={cellProps}
+    >
+      <Table.Column title="Id" dataIndex="id" />
+      <Table.Column title="Title" dataIndex="title.name" />
+      <Table.Column title="Time" colSpan={2} dataIndex="year" />
+      <Table.Column colSpan={0} dataIndex="month" />
+    </Table>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

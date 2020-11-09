@@ -18,18 +18,17 @@ const menu = (
 )
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Dropdown
-          trigger={<button>Hello dropdown</button>}
-          triggerType={['click', 'hover']}
-          afterOpen={() => console.log('after open')}
-        >
-          {menu}
-        </Dropdown>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Dropdown
+        trigger={<button>Hello dropdown</button>}
+        triggerType={['click', 'hover']}
+        afterOpen={() => console.log('after open')}
+      >
+        {menu}
+      </Dropdown>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

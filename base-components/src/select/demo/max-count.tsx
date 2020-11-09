@@ -37,73 +37,72 @@ const maxTagPlaceholder = (selectedValues, totalValues) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        hasSelectAll:
-        <br />
-        <Select
-          hasSelectAll
-          mode="multiple"
-          onChange={handleChange}
-          dataSource={dataSource}
-          style={{ width: 200 }}
-        />
-        <br />
-        <br />
-        maxTagCount=2
-        <br />
-        <Select
-          maxTagCount={2}
-          defaultValue={['10001', '10002', '-1']}
-          mode="multiple"
-          onChange={handleChange}
-          dataSource={dataSource}
-          style={{ width: 200 }}
-        />{' '}
-        <br />
-        <br />
-        maxTagPlaceholder
-        <br />
-        <Select
-          maxTagCount={2}
-          maxTagPlaceholder={maxTagPlaceholder}
-          defaultValue={['10001', '10002', '-1']}
-          mode="multiple"
-          onChange={handleChange}
-          dataSource={dataSource}
-          style={{ width: 200 }}
-        />
-        <br />
-        <br />
-        tagInline <br />
-        <Select
-          maxTagCount={2}
-          tagInline
-          mode="multiple"
-          defaultValue={['10001', '10002', '-1']}
-          onChange={handleChange}
-          dataSource={dataSource}
-          style={{ width: 200 }}
-        />
-        <br />
-        <br />
-        maxTagPlaceholder
-        <br />
-        <Select
-          maxTagCount={2}
-          tagInline
-          maxTagPlaceholder={maxTagPlaceholder}
-          defaultValue={['10001', '10002', '-1']}
-          mode="multiple"
-          onChange={handleChange}
-          dataSource={dataSource}
-          style={{ width: 200 }}
-        />
-        <br />
-        <br />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      hasSelectAll:
+      <br />
+      <Select
+        hasSelectAll
+        mode="multiple"
+        onChange={handleChange}
+        dataSource={dataSource}
+        style={{ width: 200 }}
+      />
+      <br />
+      <br />
+      maxTagCount=2
+      <br />
+      <Select
+        maxTagCount={2}
+        defaultValue={['10001', '10002', '-1']}
+        mode="multiple"
+        onChange={handleChange}
+        dataSource={dataSource}
+        style={{ width: 200 }}
+      />{' '}
+      <br />
+      <br />
+      maxTagPlaceholder
+      <br />
+      <Select
+        maxTagCount={2}
+        maxTagPlaceholder={maxTagPlaceholder}
+        defaultValue={['10001', '10002', '-1']}
+        mode="multiple"
+        onChange={handleChange}
+        dataSource={dataSource}
+        style={{ width: 200 }}
+      />
+      <br />
+      <br />
+      tagInline <br />
+      <Select
+        maxTagCount={2}
+        tagInline
+        mode="multiple"
+        defaultValue={['10001', '10002', '-1']}
+        onChange={handleChange}
+        dataSource={dataSource}
+        style={{ width: 200 }}
+      />
+      <br />
+      <br />
+      maxTagPlaceholder
+      <br />
+      <Select
+        maxTagCount={2}
+        tagInline
+        maxTagPlaceholder={maxTagPlaceholder}
+        defaultValue={['10001', '10002', '-1']}
+        mode="multiple"
+        onChange={handleChange}
+        dataSource={dataSource}
+        style={{ width: 200 }}
+      />
+      <br />
+      <br />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

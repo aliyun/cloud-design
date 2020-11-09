@@ -11,46 +11,45 @@ import { Grid } from '@alicloudfe/components'
 const { Row, Col } = Grid
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="justify-demo">
-        <div className="demo-title">start</div>
-        <Row justify="start">
-          <Col span="4">col-4</Col>
-          <Col span="4">col-4</Col>
-          <Col span="4">col-4</Col>
-        </Row>
+  const content = (
+    <div className="justify-demo">
+      <div className="demo-title">start</div>
+      <Row justify="start">
+        <Col span="4">col-4</Col>
+        <Col span="4">col-4</Col>
+        <Col span="4">col-4</Col>
+      </Row>
 
-        <div className="demo-title">center</div>
-        <Row justify="center">
-          <Col span="4">col-4</Col>
-          <Col span="4">col-4</Col>
-          <Col span="4">col-4</Col>
-        </Row>
+      <div className="demo-title">center</div>
+      <Row justify="center">
+        <Col span="4">col-4</Col>
+        <Col span="4">col-4</Col>
+        <Col span="4">col-4</Col>
+      </Row>
 
-        <div className="demo-title">end</div>
-        <Row justify="end">
-          <Col span="4">col-4</Col>
-          <Col span="4">col-4</Col>
-          <Col span="4">col-4</Col>
-        </Row>
+      <div className="demo-title">end</div>
+      <Row justify="end">
+        <Col span="4">col-4</Col>
+        <Col span="4">col-4</Col>
+        <Col span="4">col-4</Col>
+      </Row>
 
-        <div className="demo-title">space-between</div>
-        <Row justify="space-between">
-          <Col span="4">col-4</Col>
-          <Col span="4">col-4</Col>
-          <Col span="4">col-4</Col>
-        </Row>
+      <div className="demo-title">space-between</div>
+      <Row justify="space-between">
+        <Col span="4">col-4</Col>
+        <Col span="4">col-4</Col>
+        <Col span="4">col-4</Col>
+      </Row>
 
-        <div className="demo-title">space-around</div>
-        <Row justify="space-around">
-          <Col span="4">col-4</Col>
-          <Col span="4">col-4</Col>
-          <Col span="4">col-4</Col>
-        </Row>
-      </div>
-    </Style>
+      <div className="demo-title">space-around</div>
+      <Row justify="space-around">
+        <Col span="4">col-4</Col>
+        <Col span="4">col-4</Col>
+        <Col span="4">col-4</Col>
+      </Row>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .justify-demo .demo-title {

@@ -80,45 +80,42 @@ function onChange(info) {
   console.log('onChange callback : ', info)
 }
 export default function DemoComponent() {
-  return (
-    <Style>
-      (
-      <div>
-        <Upload
-          listType="text"
-          action="https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload"
-          accept="image/png, image/jpg, image/jpeg, image/gif, image/bmp"
-          beforeUpload={beforeUpload}
-          onChange={onChange}
-          fileNameRender={(file) => (
-            <span>
-              <Icon type="attachment" size="xs" style={{ marginRight: 8 }} />
-              {file.name}
-            </span>
-          )}
-          defaultValue={data}
-        />
-        <br />
-        <Upload
-          listType="image"
-          action="https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload"
-          accept="image/png, image/jpg, image/jpeg, image/gif, image/bmp"
-          beforeUpload={beforeUpload}
-          onChange={onChange}
-          actionRender={actionRender}
-          defaultValue={data}
-        />
-        <br />
-        <Upload.Card
-          listType="card"
-          accept="image/png, image/jpg, image/jpeg, image/gif, image/bmp"
-          defaultValue={data}
-          itemRender={itemRender}
-        />
-        ,
-      </div>
-      )
-    </Style>
+  const content = (
+    <div>
+      <Upload
+        listType="text"
+        action="https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload"
+        accept="image/png, image/jpg, image/jpeg, image/gif, image/bmp"
+        beforeUpload={beforeUpload}
+        onChange={onChange}
+        fileNameRender={(file) => (
+          <span>
+            <Icon type="attachment" size="xs" style={{ marginRight: 8 }} />
+            {file.name}
+          </span>
+        )}
+        defaultValue={data}
+      />
+      <br />
+      <Upload
+        listType="image"
+        action="https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload"
+        accept="image/png, image/jpg, image/jpeg, image/gif, image/bmp"
+        beforeUpload={beforeUpload}
+        onChange={onChange}
+        actionRender={actionRender}
+        defaultValue={data}
+      />
+      <br />
+      <Upload.Card
+        listType="card"
+        accept="image/png, image/jpg, image/jpeg, image/gif, image/bmp"
+        defaultValue={data}
+        itemRender={itemRender}
+      />
+      ,
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

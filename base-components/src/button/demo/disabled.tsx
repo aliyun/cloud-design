@@ -9,42 +9,41 @@ import styled from 'styled-components'
 import { Button } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
+  const content = (
+    <div>
+      <Button type="primary">Primary</Button>&nbsp;&nbsp;
+      <Button component="a" type="primary" disabled>
+        Primary
+      </Button>
+      <br />
+      <br />
+      <Button type="secondary">Secondary</Button>&nbsp;&nbsp;
+      <Button type="secondary" disabled>
+        Secondary
+      </Button>
+      <br />
+      <br />
+      <Button type="normal">Normal</Button>&nbsp;&nbsp;
+      <Button type="normal" disabled>
+        Normal
+      </Button>
+      <br />
+      <br />
       <div>
-        <Button type="primary">Primary</Button>&nbsp;&nbsp;
-        <Button component="a" type="primary" disabled>
-          Primary
-        </Button>
-        <br />
-        <br />
-        <Button type="secondary">Secondary</Button>&nbsp;&nbsp;
-        <Button type="secondary" disabled>
-          Secondary
-        </Button>
-        <br />
-        <br />
-        <Button type="normal">Normal</Button>&nbsp;&nbsp;
-        <Button type="normal" disabled>
-          Normal
-        </Button>
-        <br />
-        <br />
-        <div>
-          <div className="ghost-light-background">
-            <Button ghost="light" disabled>
-              Ghost Light
-            </Button>
-          </div>
-          <div className="ghost-dark-background">
-            <Button ghost="dark" disabled>
-              Ghost Dark
-            </Button>
-          </div>
+        <div className="ghost-light-background">
+          <Button ghost="light" disabled>
+            Ghost Light
+          </Button>
+        </div>
+        <div className="ghost-dark-background">
+          <Button ghost="dark" disabled>
+            Ghost Dark
+          </Button>
         </div>
       </div>
-    </Style>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .ghost-light-background {

@@ -7,16 +7,15 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://codepen.io/acejerry/pen/ZEOQjzr"
-      >
-        点击查看 Message.withContext Demo
-      </a>
-    </Style>
+  const content = (
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://codepen.io/acejerry/pen/ZEOQjzr"
+    >
+      点击查看 Message.withContext Demo
+    </a>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

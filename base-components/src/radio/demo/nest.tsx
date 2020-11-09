@@ -53,10 +53,7 @@ class NestApp extends React.Component {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <NestApp />
-    </Style>
-  )
+  const content = <NestApp />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

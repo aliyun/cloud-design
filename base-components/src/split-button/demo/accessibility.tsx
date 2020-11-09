@@ -14,18 +14,17 @@ const menu = ['Undo', 'Redo', 'Cut', 'Copy', 'Paste'].map((item) => (
 ))
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <SplitButton
-          label="Edit Document"
-          type="primary"
-          triggerProps={{ 'aria-label': 'click to see more menu option' }}
-        >
-          {menu}
-        </SplitButton>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <SplitButton
+        label="Edit Document"
+        type="primary"
+        triggerProps={{ 'aria-label': 'click to see more menu option' }}
+      >
+        {menu}
+      </SplitButton>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

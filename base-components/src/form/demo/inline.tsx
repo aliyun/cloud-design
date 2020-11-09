@@ -15,32 +15,31 @@ function handleSubmit(v) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Form inline>
-          <FormItem label="Username:">
-            <FormItem>
-              <Input name="first" style={{ width: 80 }} placeholder="first" />
-            </FormItem>
-            <FormItem>
-              <Input name="second" style={{ width: 80 }} placeholder="second" />
-            </FormItem>
+  const content = (
+    <div>
+      <Form inline>
+        <FormItem label="Username:">
+          <FormItem>
+            <Input name="first" style={{ width: 80 }} placeholder="first" />
           </FormItem>
-          <FormItem label="Password:" required hasFeedback={false}>
-            <Input
-              htmlType="password"
-              name="inlinePass"
-              placeholder="Please enter your password!"
-            />
+          <FormItem>
+            <Input name="second" style={{ width: 80 }} placeholder="second" />
           </FormItem>
+        </FormItem>
+        <FormItem label="Password:" required hasFeedback={false}>
+          <Input
+            htmlType="password"
+            name="inlinePass"
+            placeholder="Please enter your password!"
+          />
+        </FormItem>
 
-          <FormItem label=" ">
-            <Form.Submit onClick={handleSubmit}>Submit</Form.Submit>
-          </FormItem>
-        </Form>
-      </div>
-    </Style>
+        <FormItem label=" ">
+          <Form.Submit onClick={handleSubmit}>Submit</Form.Submit>
+        </FormItem>
+      </Form>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -22,30 +22,29 @@ const steps = [
 ))
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <h3>Arrow</h3>
-        <Step current={1} shape="arrow">
-          {steps}
-        </Step>
+  const content = (
+    <div>
+      <h3>Arrow</h3>
+      <Step current={1} shape="arrow">
+        {steps}
+      </Step>
 
-        <h3>Circle</h3>
-        <Step current={1} shape="circle">
-          {steps}
-        </Step>
+      <h3>Circle</h3>
+      <Step current={1} shape="circle">
+        {steps}
+      </Step>
 
-        <h3>Circle(Horizontal content)</h3>
-        <Step current={1} shape="circle" labelPlacement="hoz">
-          {steps}
-        </Step>
+      <h3>Circle(Horizontal content)</h3>
+      <Step current={1} shape="circle" labelPlacement="hoz">
+        {steps}
+      </Step>
 
-        <h3>Dot</h3>
-        <Step current={1} shape="dot">
-          {steps}
-        </Step>
-      </div>
-    </Style>
+      <h3>Dot</h3>
+      <Step current={1} shape="dot">
+        {steps}
+      </Step>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

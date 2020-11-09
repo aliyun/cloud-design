@@ -24,16 +24,15 @@ const valueRender = (v) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Select
-        mode="multiple"
-        placeholder="custom value"
-        valueRender={valueRender}
-        dataSource={dataSource}
-        onChange={handleChange}
-      />
-    </Style>
+  const content = (
+    <Select
+      mode="multiple"
+      placeholder="custom value"
+      valueRender={valueRender}
+      dataSource={dataSource}
+      onChange={handleChange}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

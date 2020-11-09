@@ -41,53 +41,52 @@ const popupProps = {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <h3>default align - 'tl bl'</h3>
-        <Pagination
-          pageSizeSelector="dropdown"
-          total="10"
-          pageSizePosition="start"
-          onPageSizeChange={handlePageSizeChange}
-        />
-        <h3>custom align - 'bl tl'</h3>
-        <Pagination
-          pageSizeSelector="dropdown"
-          total="10"
-          pageSizePosition="start"
-          onPageSizeChange={handlePageSizeChange}
-          popupProps={popupProps}
-        />
-        <h3>Inside parent with "overlflow: auto"</h3>
-        <div style={containerStyle}>
-          <div style={boxStyle}>
-            <div style={tempStyle}>scroll down to see the example</div>
-            <div style={parentStyle}>
-              <div>
-                <h3>default align - 'tl bl'</h3>
-                <Pagination
-                  pageSizeSelector="dropdown"
-                  total="10"
-                  pageSizePosition="start"
-                  onPageSizeChange={handlePageSizeChange}
-                />
-              </div>
-              <div>
-                <h3>custom align - 'bl tl'</h3>
-                <Pagination
-                  pageSizeSelector="dropdown"
-                  total="10"
-                  pageSizePosition="start"
-                  onPageSizeChange={handlePageSizeChange}
-                  popupProps={popupProps}
-                />
-              </div>
+  const content = (
+    <div>
+      <h3>default align - 'tl bl'</h3>
+      <Pagination
+        pageSizeSelector="dropdown"
+        total="10"
+        pageSizePosition="start"
+        onPageSizeChange={handlePageSizeChange}
+      />
+      <h3>custom align - 'bl tl'</h3>
+      <Pagination
+        pageSizeSelector="dropdown"
+        total="10"
+        pageSizePosition="start"
+        onPageSizeChange={handlePageSizeChange}
+        popupProps={popupProps}
+      />
+      <h3>Inside parent with "overlflow: auto"</h3>
+      <div style={containerStyle}>
+        <div style={boxStyle}>
+          <div style={tempStyle}>scroll down to see the example</div>
+          <div style={parentStyle}>
+            <div>
+              <h3>default align - 'tl bl'</h3>
+              <Pagination
+                pageSizeSelector="dropdown"
+                total="10"
+                pageSizePosition="start"
+                onPageSizeChange={handlePageSizeChange}
+              />
+            </div>
+            <div>
+              <h3>custom align - 'bl tl'</h3>
+              <Pagination
+                pageSizeSelector="dropdown"
+                total="10"
+                pageSizePosition="start"
+                onPageSizeChange={handlePageSizeChange}
+                popupProps={popupProps}
+              />
             </div>
           </div>
         </div>
       </div>
-    </Style>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

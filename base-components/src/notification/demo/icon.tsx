@@ -19,18 +19,17 @@ const openNotification = () => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Button
-          type="primary"
-          onClick={openNotification}
-          style={{ marginLeft: 20 }}
-        >
-          Open Notification
-        </Button>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Button
+        type="primary"
+        onClick={openNotification}
+        style={{ marginLeft: 20 }}
+      >
+        Open Notification
+      </Button>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

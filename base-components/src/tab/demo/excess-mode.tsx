@@ -32,29 +32,28 @@ function onClick(key) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="fusion-demo" style={{ maxWidth: '520px' }}>
-        <div className="demo-item-title">Dropdown mode</div>
-        <Tab excessMode="dropdown">
-          {tabs.map((item) => (
-            <Tab.Item key={item.key} title={item.tab} onClick={onClick}>
-              {item.tab} content, content, content
-            </Tab.Item>
-          ))}
-        </Tab>
+  const content = (
+    <div className="fusion-demo" style={{ maxWidth: '520px' }}>
+      <div className="demo-item-title">Dropdown mode</div>
+      <Tab excessMode="dropdown">
+        {tabs.map((item) => (
+          <Tab.Item key={item.key} title={item.tab} onClick={onClick}>
+            {item.tab} content, content, content
+          </Tab.Item>
+        ))}
+      </Tab>
 
-        <div className="demo-item-title">Slide mode</div>
-        <Tab excessMode="slide">
-          {tabs.map((item) => (
-            <Tab.Item key={item.key} title={item.tab} onClick={onClick}>
-              {item.tab} content, content, content
-            </Tab.Item>
-          ))}
-        </Tab>
-      </div>
-    </Style>
+      <div className="demo-item-title">Slide mode</div>
+      <Tab excessMode="slide">
+        {tabs.map((item) => (
+          <Tab.Item key={item.key} title={item.tab} onClick={onClick}>
+            {item.tab} content, content, content
+          </Tab.Item>
+        ))}
+      </Tab>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .fusion-demo .demo-item-title {

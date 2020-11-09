@@ -72,14 +72,13 @@ function monthCellRender(date) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Calendar
-        dateCellRender={dateCellRender}
-        monthCellRender={monthCellRender}
-      />
-    </Style>
+  const content = (
+    <Calendar
+      dateCellRender={dateCellRender}
+      monthCellRender={monthCellRender}
+    />
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-calendar-guide {

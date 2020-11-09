@@ -9,18 +9,17 @@ import styled from 'styled-components'
 import { Search } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Search
-          key="3"
-          placeholder="Please enter the search content"
-          onSearch={(v) => console.log(v)}
-          searchText={<span>search</span>}
-          style={{ width: '400px' }}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Search
+        key="3"
+        placeholder="Please enter the search content"
+        onSearch={(v) => console.log(v)}
+        searchText={<span>search</span>}
+        style={{ width: '400px' }}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

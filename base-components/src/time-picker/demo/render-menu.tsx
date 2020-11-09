@@ -18,10 +18,7 @@ const renderTimeMenuItems = (list) => {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <TimePicker renderTimeMenuItems={renderTimeMenuItems} />
-    </Style>
-  )
+  const content = <TimePicker renderTimeMenuItems={renderTimeMenuItems} />
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

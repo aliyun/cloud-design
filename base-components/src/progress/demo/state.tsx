@@ -9,30 +9,29 @@ import styled from 'styled-components'
 import { Progress } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div className="">
-        <Progress
-          percent={20}
-          shape="circle"
-          state="normal"
-          className="custom-progress"
-        />
-        <Progress
-          percent={95}
-          shape="circle"
-          state="success"
-          className="custom-progress"
-        />
-        <Progress
-          percent={95}
-          shape="circle"
-          state="error"
-          className="custom-progress"
-        />
-      </div>
-    </Style>
+  const content = (
+    <div className="">
+      <Progress
+        percent={20}
+        shape="circle"
+        state="normal"
+        className="custom-progress"
+      />
+      <Progress
+        percent={95}
+        shape="circle"
+        state="success"
+        className="custom-progress"
+      />
+      <Progress
+        percent={95}
+        shape="circle"
+        state="error"
+        className="custom-progress"
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-progress {

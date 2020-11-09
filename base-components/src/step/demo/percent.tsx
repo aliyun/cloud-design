@@ -9,47 +9,46 @@ import styled from 'styled-components'
 import { Step } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Step current={1} animation={false} shape="dot">
-          <Step.Item
-            title="Step 1"
-            content="Open the refrigerator door"
-            icon="calendar"
-          />
-          <Step.Item
-            title="Step 2"
-            content="Put the elephant in the refrigerator"
-            percent={40}
-          />
-          <Step.Item
-            title="Step 3"
-            content="Close the refrigerator door"
-            icon="smile"
-          />
-        </Step>
-        <br />
-        <br />
-        <Step current={1} animation={false}>
-          <Step.Item
-            title="Step 1"
-            content="Open the refrigerator door"
-            icon="calendar"
-          />
-          <Step.Item
-            title="Step 2"
-            content="Put the elephant in the refrigerator"
-            percent={40}
-          />
-          <Step.Item
-            title="Step 3"
-            content="Close the refrigerator door"
-            icon="smile"
-          />
-        </Step>
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Step current={1} animation={false} shape="dot">
+        <Step.Item
+          title="Step 1"
+          content="Open the refrigerator door"
+          icon="calendar"
+        />
+        <Step.Item
+          title="Step 2"
+          content="Put the elephant in the refrigerator"
+          percent={40}
+        />
+        <Step.Item
+          title="Step 3"
+          content="Close the refrigerator door"
+          icon="smile"
+        />
+      </Step>
+      <br />
+      <br />
+      <Step current={1} animation={false}>
+        <Step.Item
+          title="Step 1"
+          content="Open the refrigerator door"
+          icon="calendar"
+        />
+        <Step.Item
+          title="Step 2"
+          content="Put the elephant in the refrigerator"
+          percent={40}
+        />
+        <Step.Item
+          title="Step 3"
+          content="Close the refrigerator door"
+          icon="smile"
+        />
+      </Step>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

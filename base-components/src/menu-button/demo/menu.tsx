@@ -15,19 +15,18 @@ function selectItem(id) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <MenuButton type="primary" label="Document Edit" onItemClick={selectItem}>
-        <Item key="undo">Undo</Item>
-        <Item key="redo">Redo</Item>
-        <Divider />
-        <Group>
-          <Item key="cut">Cut</Item>
-          <Item key="copy">Copy</Item>
-          <Item key="paste">Paste</Item>
-        </Group>
-      </MenuButton>
-    </Style>
+  const content = (
+    <MenuButton type="primary" label="Document Edit" onItemClick={selectItem}>
+      <Item key="undo">Undo</Item>
+      <Item key="redo">Redo</Item>
+      <Divider />
+      <Group>
+        <Item key="cut">Cut</Item>
+        <Item key="copy">Copy</Item>
+        <Item key="paste">Paste</Item>
+      </Group>
+    </MenuButton>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

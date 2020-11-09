@@ -9,22 +9,21 @@ import styled from 'styled-components'
 import { Breadcrumb } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <Breadcrumb separator="/">
-        <Breadcrumb.Item link="javascript:void(0);">Home</Breadcrumb.Item>
-        <Breadcrumb.Item link="javascript:void(0);">
-          All Categories
-        </Breadcrumb.Item>
-        <Breadcrumb.Item link="javascript:void(0);">
-          Women’s Clothing
-        </Breadcrumb.Item>
-        <Breadcrumb.Item link="javascript:void(0);">
-          Blouses & Shirts
-        </Breadcrumb.Item>
-        <Breadcrumb.Item>T-shirts</Breadcrumb.Item>
-      </Breadcrumb>
-    </Style>
+  const content = (
+    <Breadcrumb separator="/">
+      <Breadcrumb.Item link="javascript:void(0);">Home</Breadcrumb.Item>
+      <Breadcrumb.Item link="javascript:void(0);">
+        All Categories
+      </Breadcrumb.Item>
+      <Breadcrumb.Item link="javascript:void(0);">
+        Women’s Clothing
+      </Breadcrumb.Item>
+      <Breadcrumb.Item link="javascript:void(0);">
+        Blouses & Shirts
+      </Breadcrumb.Item>
+      <Breadcrumb.Item>T-shirts</Breadcrumb.Item>
+    </Breadcrumb>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

@@ -14,21 +14,20 @@ const menu = ['Undo', 'Redo', 'Cut', 'Copy', 'Paste'].map((item) => (
 ))
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <SplitButton label="Edit Document">{menu}</SplitButton> &nbsp; &nbsp;
-        <SplitButton label="Edit Document" type="primary">
-          {menu}
-        </SplitButton>
-        &nbsp;&nbsp;
-        <SplitButton label="Edit Document" type="secondary">
-          {menu}
-        </SplitButton>
-        <br />
-        <br />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <SplitButton label="Edit Document">{menu}</SplitButton> &nbsp; &nbsp;
+      <SplitButton label="Edit Document" type="primary">
+        {menu}
+      </SplitButton>
+      &nbsp;&nbsp;
+      <SplitButton label="Edit Document" type="secondary">
+        {menu}
+      </SplitButton>
+      <br />
+      <br />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

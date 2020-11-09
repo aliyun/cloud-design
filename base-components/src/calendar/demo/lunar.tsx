@@ -34,17 +34,16 @@ function dateCellRender(value) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Calendar
-          onSelect={onDateChange}
-          dateCellRender={dateCellRender}
-          defaultValue={moment().add(1, 'days')}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Calendar
+        onSelect={onDateChange}
+        dateCellRender={dateCellRender}
+        defaultValue={moment().add(1, 'days')}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .custom-cell {

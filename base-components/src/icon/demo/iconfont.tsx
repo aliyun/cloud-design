@@ -15,26 +15,25 @@ const CustomIcon = Icon.createFromIconfontCN({
 })
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <div className="icon-list-2">
-          <CustomIcon type="icon-store" />
-          <CustomIcon type="icon-pic" />
-          <CustomIcon type="icon-gift" />
-        </div>
-        <br />
-        <ul className="icon-sizes">
-          {sizes.map((size, index) => (
-            <li key={index}>
-              <CustomIcon type="icon-pic" size={size} />
-              <span>{size}</span>
-            </li>
-          ))}
-        </ul>
+  const content = (
+    <div>
+      <div className="icon-list-2">
+        <CustomIcon type="icon-store" />
+        <CustomIcon type="icon-pic" />
+        <CustomIcon type="icon-gift" />
       </div>
-    </Style>
+      <br />
+      <ul className="icon-sizes">
+        {sizes.map((size, index) => (
+          <li key={index}>
+            <CustomIcon type="icon-pic" size={size} />
+            <span>{size}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div`
   .icon-list-2 i {

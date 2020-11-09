@@ -13,31 +13,27 @@ function onChange(v) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <Input.Password
-          placeholder="please input password"
-          onChange={onChange}
-        />
-        <br />
-        <br />
-        <Input.Password
-          size="large"
-          placeholder="please input password"
-          onChange={onChange}
-        />
-        <br />
-        <br />
-        <Input.Password
-          size="small"
-          placeholder="please input password"
-          onChange={onChange}
-        />
-        <br />
-        <br />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <Input.Password placeholder="please input password" onChange={onChange} />
+      <br />
+      <br />
+      <Input.Password
+        size="large"
+        placeholder="please input password"
+        onChange={onChange}
+      />
+      <br />
+      <br />
+      <Input.Password
+        size="small"
+        placeholder="please input password"
+        onChange={onChange}
+      />
+      <br />
+      <br />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``

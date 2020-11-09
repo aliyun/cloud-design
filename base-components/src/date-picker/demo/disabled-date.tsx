@@ -30,47 +30,46 @@ const disabledDate = function (date, view) {
 }
 
 export default function DemoComponent() {
-  return (
-    <Style>
-      <div>
-        <DatePicker
-          disabledDate={disabledDate}
-          onChange={(val) => console.log(val)}
-        />
-        <br />
-        <br />
-        <MonthPicker
-          disabledDate={disabledDate}
-          onChange={(val) => console.log(val)}
-        />
-        <br />
-        <br />
-        <YearPicker
-          disabledDate={disabledDate}
-          onChange={(val) => console.log(val)}
-        />
-        <br />
-        <br />
-        <RangePicker
-          disabledDate={disabledDate}
-          onChange={(val) => console.log(val)}
-        />
-        <br />
-        <br />
-        <RangePicker
-          type="month"
-          disabledDate={disabledDate}
-          onChange={(val) => console.log(val)}
-        />
-        <br />
-        <br />
-        <RangePicker
-          type="year"
-          disabledDate={disabledDate}
-          onChange={(val) => console.log(val)}
-        />
-      </div>
-    </Style>
+  const content = (
+    <div>
+      <DatePicker
+        disabledDate={disabledDate}
+        onChange={(val) => console.log(val)}
+      />
+      <br />
+      <br />
+      <MonthPicker
+        disabledDate={disabledDate}
+        onChange={(val) => console.log(val)}
+      />
+      <br />
+      <br />
+      <YearPicker
+        disabledDate={disabledDate}
+        onChange={(val) => console.log(val)}
+      />
+      <br />
+      <br />
+      <RangePicker
+        disabledDate={disabledDate}
+        onChange={(val) => console.log(val)}
+      />
+      <br />
+      <br />
+      <RangePicker
+        type="month"
+        disabledDate={disabledDate}
+        onChange={(val) => console.log(val)}
+      />
+      <br />
+      <br />
+      <RangePicker
+        type="year"
+        disabledDate={disabledDate}
+        onChange={(val) => console.log(val)}
+      />
+    </div>
   )
+  return <Style>{content}</Style>
 }
 const Style = styled.div``
