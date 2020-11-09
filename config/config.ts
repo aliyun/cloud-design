@@ -39,6 +39,7 @@ module.exports = {
         },
         demoWrapperPath: path.resolve(__dirname, 'demoWrapper.tsx'),
         // initializerPath: path.resolve(__dirname, 'initCss.ts'),
+        demoOptsPath: path.resolve(__dirname, "./demoOpts"),
         codesandboxModifierPath: path.resolve(
           __dirname,
           'modifyCodesandbox.ts'
