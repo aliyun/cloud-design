@@ -53,7 +53,8 @@ module.exports = {
             usePathInDev: path.resolve(__dirname, './configComponents.tsx')
             // optional: true,
           },
-          'styled-components'
+          'styled-components',
+          'moment'
         ]
       }
     ]
