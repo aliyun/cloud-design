@@ -9,6 +9,7 @@ import './theme-vars/hybridcloud.scss'
 import './theme-vars/hybridcloud-dark.scss'
 import './theme-vars/yunxiao.scss'
 import './theme-vars/aone.scss'
+import './theme-vars/teamix.scss'
 
 const dataSource = [
   { label: '公有云主题', value: 'theme-xconsole' },
@@ -16,7 +17,8 @@ const dataSource = [
   { label: '混合云亮色主题', value: 'theme-hybridcloud' },
   { label: '混合云暗色主题', value: 'theme-hybridcloud-dark' },
   { label: '云效主题', value: 'theme-yunxiao' },
-  { label: 'Aone主题', value: 'theme-aone' }
+  { label: 'Aone主题', value: 'theme-aone' },
+  { label: 'Teamix主题', value: 'theme-teamix' }
 ]
 
 const mapThemeToImport = {
@@ -31,7 +33,9 @@ const mapThemeToImport = {
   'theme-yunxiao': () =>
     import('../src/theme/yunxiao/index-no-var.scss?pureCSS'),
   'theme-aone': () =>
-    import('../src/theme/aone/index-no-var.scss?pureCSS')
+    import('../src/theme/aone/index-no-var.scss?pureCSS'),
+  'theme-teamix': () =>
+    import('../src/theme/teamix/index-no-var.scss?pureCSS'),
 }
 
 const styleEl = document.createElement('style')

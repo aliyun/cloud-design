@@ -24,4 +24,9 @@ module.exports = [
     themeName: 'aone',
     ignore: true,
   },
+  {
+    packageName: '@alife/theme-yunxiao-v1',
+    themeName: 'teamix',
+    ignore: true,
+  }
 ]
