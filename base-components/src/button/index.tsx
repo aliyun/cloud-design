@@ -8,17 +8,16 @@ type NextButtonProps = React.ComponentProps<typeof NextButton>
 const rxTwoToFourCNChar = /^[\u4e00-\u9fa5]{2,4}$/
 const isTwoToFourCNChar = rxTwoToFourCNChar.test.bind(rxTwoToFourCNChar)
 
-const Button: React.FC<NextButtonProps> = ({
-  children,
-  className,
-  ...restProps
-}) => {
-  // 判断是否是2-4个汉字
+const Button: typeof NextButton = React.forwardRef(
+  (props: NextButtonProps, ref) => {
+    const { children, className } = props
+     // 判断是否是2-4个汉字
   if (typeof children === 'string' && isTwoToFourCNChar(children)) {
     return (
       <NextButton
         className={cls('isTwoToFourCNCharBtn', className)}
-        {...restProps}
+        {...props}
+        ref={ref as any}
       >
         {children}
       </NextButton>
@@ -30,16 +29,19 @@ const Button: React.FC<NextButtonProps> = ({
     (children as any)?.type?.displayName === 'Config(Icon)'
   ) {
     return (
-      <NextButton className={cls('isOnlyIcon', className)} {...restProps}>
+      <NextButton className={cls('isOnlyIcon', className)} {...props} ref={ref as any}>
         {children}
       </NextButton>
     )
   }
-  return <NextButton className={className} {...restProps}>{children}</NextButton>
-}
+  return <NextButton className={className} {...props} ref={ref as any}>{children}</NextButton>
+  }
+)as any
 
 hoistNonReactStatics(Button, NextButton)
 
-const exported: typeof NextButton = Button as any
+export default Button;
 
-export default exported
+// const exported: typeof NextButton = Button as any
+
+// export default exported
