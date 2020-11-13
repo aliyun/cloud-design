@@ -5,8 +5,8 @@ $menu-prefix: '.' + $css-prefix + 'menu';
   &#{&}#{&}#{&}#{&} #{&}-symbol-icon-selected {
     // color: var(--menu-icon-selected-color);
     width: var(--menu-icon-selected-size, 16px);
-    height: var(--menu-icon-selected-size, 16px);
     font-size: var(--menu-icon-selected-size, 16px);
+    height: 100%;
     overflow: hidden;
     &::before {
       width: var(--menu-icon-selected-size, 16px);
