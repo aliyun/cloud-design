@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.22 (2020.11.13)
+### Bug Fixes
+- fix(menu): icon overflow causing scrollbar
+
 ## 1.0.11 (2020.10.28)
 ### Bug Fixes
 - Remove text button min-width
