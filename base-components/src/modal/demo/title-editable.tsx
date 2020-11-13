@@ -29,11 +29,13 @@ const Demo = () => {
           operations={
             <>
               <Button type="secondary">
-                <Icon type="paper-pen" />
+                {/* <Icon type="paper-pen" /> */}
+                <Icon type="edit" />
                 编辑
               </Button>
               <Button type="secondary">
-                <Icon type="save" />
+                {/* <Icon type="save" /> */}
+                <Icon type="success" />
                 保存
               </Button>
             </>
