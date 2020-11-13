@@ -1,5 +1,9 @@
 module.exports = [
   {
+    packageName: '@alife/theme-5785@0.4.0',
+    themeName: 'b-design',
+  },
+  {
     packageName: '@alife/theme-xconsole-v4',
     themeName: 'xconsole',
   },

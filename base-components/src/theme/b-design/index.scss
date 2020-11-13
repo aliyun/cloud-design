@@ -1,0 +1,9 @@
+// be-desing主题样式入口
+
+// 云组件公共变量
+@import '../../common-var.scss';
+@import './index-no-var.scss';
+
+
+// 优先考虑使用css-var来定制主题样式
+@import './css-var-definition';
