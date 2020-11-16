@@ -5,7 +5,7 @@ import * as Chain from 'webpack-chain'
 module.exports = {
   presets: [
     [
-      require.resolve('@alicloud/console-toolkit-preset-multi-entry'),
+      require.resolve('@alicloud/console-toolkit-preset-docs'),
       {
         consoleOSId: 'alicloud-component-demos',
         getDemos() {

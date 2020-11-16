@@ -87,25 +87,39 @@
     package-json "^6.3.0"
     string.prototype.padend "^3.0.0"
 
-"@alicloud/console-toolkit-fusion-css-loader@^1.0.4":
-  version "1.0.7"
-  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-fusion-css-loader/download/@alicloud/console-toolkit-fusion-css-loader-1.0.7.tgz#d1b7ebfa016079eb193f099933d5203e543ed086"
-  integrity sha1-0bfr+gFgeesZPwmZM9UgPlQ+0IY=
+"@alicloud/console-toolkit-docs-consumer@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-docs-consumer/download/@alicloud/console-toolkit-docs-consumer-1.0.2.tgz#b5a93f88036755558ea8216154da14fd437b3e98"
+  integrity sha1-tak/iANnVVWOqCFhVNoU/UN7Ppg=
+  dependencies:
+    "@alicloud/console-os-react-app" "^0.4.0-alpha.4"
+    "@alicloud/console-toolkit-docs-shared" "1.0.2"
+    query-string "^6.13.6"
+
+"@alicloud/console-toolkit-docs-shared@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-docs-shared/download/@alicloud/console-toolkit-docs-shared-1.0.2.tgz#e0913b47cc8a1e58c67de4894eaf849008dddc06"
+  integrity sha1-4JE7R8yKHljGfeSJTq+EkAjd3AY=
+
+"@alicloud/console-toolkit-fusion-css-loader@1.0.11":
+  version "1.0.11"
+  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-fusion-css-loader/download/@alicloud/console-toolkit-fusion-css-loader-1.0.11.tgz#63028c884a871a8c0bcb0bf5fc8d4039285629b5"
+  integrity sha1-YwKMiEqHGowLywv1/I1AOShWKbU=
   dependencies:
     loader-utils "^2.0.0"
+    pascal-case "^3.1.1"
     postcss "^8.1.1"
     query-string "^6.13.5"
     semver "^7.3.2"
 
-"@alicloud/console-toolkit-markdown-renderer@^2.0.10":
-  version "2.0.10"
-  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-markdown-renderer/download/@alicloud/console-toolkit-markdown-renderer-2.0.10.tgz#9400628e1826aacc6896676e0da0ff7bc4d6fd6d"
-  integrity sha1-lABijhgmqsxolmduDaD/e8TW/W0=
+"@alicloud/console-toolkit-markdown-renderer@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-markdown-renderer/download/@alicloud/console-toolkit-markdown-renderer-3.0.1.tgz#9d56ccda727abcd253f5622f2ea0e6e7b0158c87"
+  integrity sha1-nVbM2nJ6vNJT9WIvLqDm57AVjIc=
   dependencies:
-    "@alicloud/console-toolkit-multi-entry-loader" "^2.0.0"
+    "@alicloud/console-toolkit-docs-consumer" "1.0.2"
     "@mdx-js/mdx" "^1.6.19"
     "@mdx-js/react" "^1.6.19"
-    buble-jsx-only "^0.19.8"
     classnames "^2.2.6"
     lodash.debounce "^4.0.8"
     lodash.isequal "^4.5.0"
@@ -114,7 +128,7 @@
     rehype-raw "^5.0.0"
     rehype-react "^6.1.0"
     rehype-sanitize "^4.0.0"
-    rehype-slug "^3.0.0"
+    rehype-slug "^4.0.0"
     remark-gfm "^1.0.0"
     remark-parse "^9.0.0"
     remark-react "^8.0.0"
@@ -123,14 +137,6 @@
     styled-components "^5.2.0"
     unified "^9.2.0"
     unist-util-visit-parents "^3.1.1"
-
-"@alicloud/console-toolkit-multi-entry-loader@^2.0.0":
-  version "2.0.5"
-  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-multi-entry-loader/download/@alicloud/console-toolkit-multi-entry-loader-2.0.5.tgz#0214a77fcdfe0eafb3d62c09104909ed8bc89c42"
-  integrity sha1-AhSnf83+Dq+z1iwJEEkJ7YvInEI=
-  dependencies:
-    "@alicloud/console-os-react-app" "^0.4.0-alpha.4"
-    query-string "^6.13.6"
 
 "@alicloud/console-toolkit-plugin-arms@^1.1.3":
   version "1.1.3"
@@ -468,14 +474,16 @@
     webpack-dev-server "^3.3.1"
     webpack-merge "^4.2.1"
 
-"@alicloud/console-toolkit-preset-multi-entry@^2.0.31":
-  version "2.0.31"
-  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-preset-multi-entry/download/@alicloud/console-toolkit-preset-multi-entry-2.0.31.tgz#f0d6e0b449b1808d17e79b6797203378692fb096"
-  integrity sha1-8NbgtEmxgI0X55tnlyAzeGkvsJY=
+"@alicloud/console-toolkit-preset-docs@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npm.alibaba-inc.com/@alicloud/console-toolkit-preset-docs/download/@alicloud/console-toolkit-preset-docs-1.0.4.tgz#44d8fc8ee2e2f332603a9fef2de3c0a8dbba7f33"
+  integrity sha1-RNj8juLi8zJgOp/vLePAqNu6fzM=
   dependencies:
     "@alicloud/console-os-react-portal" "^0.4.0-alpha.3"
-    "@alicloud/console-toolkit-fusion-css-loader" "^1.0.4"
-    "@alicloud/console-toolkit-markdown-renderer" "^2.0.10"
+    "@alicloud/console-toolkit-docs-consumer" "1.0.2"
+    "@alicloud/console-toolkit-docs-shared" "1.0.2"
+    "@alicloud/console-toolkit-fusion-css-loader" "1.0.11"
+    "@alicloud/console-toolkit-markdown-renderer" "3.0.1"
     "@alicloud/console-toolkit-plugin-os" "0.2.10"
     "@alicloud/console-toolkit-preset-official" "^1.1.4"
     "@alicloud/console-toolkit-shared-utils" "^1.0.1"
@@ -483,11 +491,12 @@
     "@babel/plugin-transform-modules-amd" "^7.12.1"
     "@babel/plugin-transform-react-jsx" "^7.12.5"
     "@babel/preset-typescript" "^7.12.1"
-    "@mdx-js/loader" "^1.6.18"
     ali-oss "^6.11.2"
     codemirror "^5.58.2"
+    connect-history-api-fallback "^1.6.0"
     get-port "^5.1.1"
     gray-matter "^4.0.2"
+    http-proxy-middleware "^1.0.6"
     jest-docblock "^26.0.0"
     open "^7.3.0"
     query-string "^6.13.7"
@@ -495,6 +504,7 @@
     react-animate-height "^2.0.23"
     react-codemirror2 "^7.2.1"
     react-error-boundary "^3.0.2"
+    webpack-chain "^6.5.1"
     webpack-virtual-modules "^0.3.1"
 
 "@alicloud/console-toolkit-preset-official@^1.0.11", "@alicloud/console-toolkit-preset-official@^1.1.4":
@@ -2794,16 +2804,7 @@
   dependencies:
     unist-util-visit "^1.3.0"
 
-"@mdx-js/loader@^1.6.18":
-  version "1.6.21"
-  resolved "https://registry.npm.alibaba-inc.com/@mdx-js/loader/download/@mdx-js/loader-1.6.21.tgz#e5b2b5c48d182e495d36104b0c7a5da96964a2dd"
-  integrity sha1-5bK1xI0YLkldNhBLDHpdqWlkot0=
-  dependencies:
-    "@mdx-js/mdx" "1.6.21"
-    "@mdx-js/react" "1.6.21"
-    loader-utils "2.0.0"
-
-"@mdx-js/mdx@1.6.21", "@mdx-js/mdx@^1.6.16", "@mdx-js/mdx@^1.6.19":
+"@mdx-js/mdx@^1.6.16", "@mdx-js/mdx@^1.6.19":
   version "1.6.21"
   resolved "https://registry.npm.alibaba-inc.com/@mdx-js/mdx/download/@mdx-js/mdx-1.6.21.tgz#d3651b4802db7bdc399270c0ffa9e2aa99dd4b00"
   integrity sha1-02UbSALbe9w5knDA/6niqpndSwA=
@@ -2828,7 +2829,7 @@
     unist-builder "2.0.3"
     unist-util-visit "2.0.3"
 
-"@mdx-js/react@1.6.21", "@mdx-js/react@^1.6.16", "@mdx-js/react@^1.6.19":
+"@mdx-js/react@^1.6.16", "@mdx-js/react@^1.6.19":
   version "1.6.21"
   resolved "https://registry.npm.alibaba-inc.com/@mdx-js/react/download/@mdx-js/react-1.6.21.tgz#86d962471a5e160c59a6b32054aa55c0c7ca404e"
   integrity sha1-htliRxpeFgxZprMgVKpVwMfKQE4=
@@ -3885,6 +3886,13 @@
   resolved "https://registry.npm.alibaba-inc.com/@types/http-errors/download/@types/http-errors-1.8.0.tgz#682477dbbbd07cd032731cb3b0e7eaee3d026b69"
   integrity sha1-aCR327vQfNAycxyzsOfq7j0Ca2k=
 
+"@types/http-proxy@^1.17.4":
+  version "1.17.4"
+  resolved "https://registry.npm.alibaba-inc.com/@types/http-proxy/download/@types/http-proxy-1.17.4.tgz#e7c92e3dbe3e13aa799440ff42e6d3a17a9d045b"
+  integrity sha1-58kuPb4+E6p5lED/QubToXqdBFs=
+  dependencies:
+    "@types/node" "*"
+
 "@types/is-function@^1.0.0":
   version "1.0.0"
   resolved "https://registry.npm.alibaba-inc.com/@types/is-function/download/@types/is-function-1.0.0.tgz#1b0b819b1636c7baf0d6785d030d12edf70c3e83"
@@ -4594,11 +4602,6 @@ accepts@^1.3.5, accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
-acorn-dynamic-import@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npm.alibaba-inc.com/acorn-dynamic-import/download/acorn-dynamic-import-4.0.0.tgz#482210140582a36b83c3e342e1cfebcaa9240948"
-  integrity sha1-SCIQFAWCo2uDw+NC4c/ryqkkCUg=
-
 acorn-globals@^4.1.0, acorn-globals@^4.3.0:
   version "4.3.4"
   resolved "https://registry.npm.alibaba-inc.com/acorn-globals/download/acorn-globals-4.3.4.tgz#9fa1926addc11c97308c4e66d7add0d40c3272e7"
@@ -4606,11 +4609,6 @@ acorn-globals@^4.1.0, acorn-globals@^4.3.0:
   dependencies:
     acorn "^6.0.1"
     acorn-walk "^6.0.1"
-
-acorn-jsx@^5.0.1:
-  version "5.3.1"
-  resolved "https://registry.npm.alibaba-inc.com/acorn-jsx/download/acorn-jsx-5.3.1.tgz#fc8661e11b7ac1539c47dbfea2e72b3af34d267b"
-  integrity sha1-/IZh4Rt6wVOcR9v+oucrOvNNJns=
 
 acorn-walk@^6.0.1:
   version "6.2.0"
@@ -4627,7 +4625,7 @@ acorn@^5.5.3:
   resolved "https://registry.npm.alibaba-inc.com/acorn/download/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
   integrity sha1-Po2KmUfQWZoXltECJddDL0pKz14=
 
-acorn@^6.0.1, acorn@^6.0.2, acorn@^6.1.1, acorn@^6.4.1:
+acorn@^6.0.1, acorn@^6.0.2, acorn@^6.4.1:
   version "6.4.2"
   resolved "https://registry.npm.alibaba-inc.com/acorn/download/acorn-6.4.2.tgz#35866fd710528e92de10cf06016498e47e39e1e6"
   integrity sha1-NYZv1xBSjpLeEM8GAWSY5H454eY=
@@ -6101,19 +6099,6 @@ btoa-lite@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.alibaba-inc.com/btoa-lite/download/btoa-lite-1.0.0.tgz#337766da15801210fdd956c22e9c6891ab9d0337"
   integrity sha1-M3dm2hWAEhD92VbCLpxokaudAzc=
-
-buble-jsx-only@^0.19.8:
-  version "0.19.8"
-  resolved "https://registry.npm.alibaba-inc.com/buble-jsx-only/download/buble-jsx-only-0.19.8.tgz#6e3524aa0f1c523de32496ac9aceb9cc2b493867"
-  integrity sha1-bjUkqg8cUj3jJJasms65zCtJOGc=
-  dependencies:
-    acorn "^6.1.1"
-    acorn-dynamic-import "^4.0.0"
-    acorn-jsx "^5.0.1"
-    chalk "^2.4.2"
-    magic-string "^0.25.3"
-    minimist "^1.2.0"
-    regexpu-core "^4.5.4"
 
 buffer-alloc-unsafe@^1.1.0:
   version "1.1.0"
@@ -10562,10 +10547,10 @@ hast-util-has-property@^1.0.0:
   resolved "https://registry.npm.alibaba-inc.com/hast-util-has-property/download/hast-util-has-property-1.0.4.tgz#9f137565fad6082524b382c1e7d7d33ca5059f36"
   integrity sha1-nxN1ZfrWCCUks4LB59fTPKUFnzY=
 
-hast-util-is-element@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.npm.alibaba-inc.com/hast-util-is-element/download/hast-util-is-element-1.1.0.tgz#3b3ed5159a2707c6137b48637fbfe068e175a425"
-  integrity sha1-Oz7VFZonB8YTe0hjf7/gaOF1pCU=
+hast-util-heading-rank@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.npm.alibaba-inc.com/hast-util-heading-rank/download/hast-util-heading-rank-1.0.1.tgz#28dfd8b0724cfb0da48308e2a794b1d9f24fd80d"
+  integrity sha1-KN/YsHJM+w2kgwjip5Sx2fJP2A0=
 
 hast-util-parse-selector@^2.0.0:
   version "2.2.5"
@@ -10919,7 +10904,18 @@ http-proxy-middleware@0.19.1:
     lodash "^4.17.11"
     micromatch "^3.1.10"
 
-http-proxy@^1.16.2, http-proxy@^1.17.0:
+http-proxy-middleware@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npm.alibaba-inc.com/http-proxy-middleware/download/http-proxy-middleware-1.0.6.tgz#0618557722f450375d3796d701a8ac5407b3b94e"
+  integrity sha1-BhhVdyL0UDddN5bXAaisVAezuU4=
+  dependencies:
+    "@types/http-proxy" "^1.17.4"
+    http-proxy "^1.18.1"
+    is-glob "^4.0.1"
+    lodash "^4.17.20"
+    micromatch "^4.0.2"
+
+http-proxy@^1.16.2, http-proxy@^1.17.0, http-proxy@^1.18.1:
   version "1.18.1"
   resolved "https://registry.npm.alibaba-inc.com/http-proxy/download/http-proxy-1.18.1.tgz#401541f0534884bbf95260334e72f88ee3976549"
   integrity sha1-QBVB8FNIhLv5UmAzTnL4juOXZUk=
@@ -12989,15 +12985,6 @@ loader-utils@1.2.3:
     emojis-list "^2.0.0"
     json5 "^1.0.1"
 
-loader-utils@2.0.0, loader-utils@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npm.alibaba-inc.com/loader-utils/download/loader-utils-2.0.0.tgz#e4cace5b816d425a166b5f097e10cd12b36064b0"
-  integrity sha1-5MrOW4FtQloWa18JfhDNErNgZLA=
-  dependencies:
-    big.js "^5.2.2"
-    emojis-list "^3.0.0"
-    json5 "^2.1.2"
-
 loader-utils@^0.2.16:
   version "0.2.17"
   resolved "https://registry.npm.alibaba-inc.com/loader-utils/download/loader-utils-0.2.17.tgz#f86e6374d43205a6e6c60e9196f17c0299bfb348"
@@ -13016,6 +13003,15 @@ loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3, loader-utils@^1.4
     big.js "^5.2.2"
     emojis-list "^3.0.0"
     json5 "^1.0.1"
+
+loader-utils@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.alibaba-inc.com/loader-utils/download/loader-utils-2.0.0.tgz#e4cace5b816d425a166b5f097e10cd12b36064b0"
+  integrity sha1-5MrOW4FtQloWa18JfhDNErNgZLA=
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^3.0.0"
+    json5 "^2.1.2"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -13351,7 +13347,7 @@ macos-release@^2.2.0:
   resolved "https://registry.npm.alibaba-inc.com/macos-release/download/macos-release-2.4.1.tgz#64033d0ec6a5e6375155a74b1a1eba8e509820ac"
   integrity sha1-ZAM9Dsal5jdRVadLGh66jlCYIKw=
 
-magic-string@^0.25.2, magic-string@^0.25.3, magic-string@^0.25.7:
+magic-string@^0.25.2, magic-string@^0.25.7:
   version "0.25.7"
   resolved "https://registry.npm.alibaba-inc.com/magic-string/download/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
   integrity sha1-P0l9b9NMZpxnmNy4IfLvMfVEUFE=
@@ -17382,7 +17378,7 @@ regexp.prototype.flags@^1.2.0, regexp.prototype.flags@^1.3.0:
     define-properties "^1.1.3"
     es-abstract "^1.17.0-next.1"
 
-regexpu-core@^4.5.4, regexpu-core@^4.7.1:
+regexpu-core@^4.7.1:
   version "4.7.1"
   resolved "https://registry.npm.alibaba-inc.com/regexpu-core/download/regexpu-core-4.7.1.tgz#2dea5a9a07233298fbf0db91fa9abc4c6e0f8ad6"
   integrity sha1-LepamgcjMpj78NuR+pq8TG4PitY=
@@ -17457,14 +17453,14 @@ rehype-sanitize@^4.0.0:
   dependencies:
     hast-util-sanitize "^3.0.0"
 
-rehype-slug@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npm.alibaba-inc.com/rehype-slug/download/rehype-slug-3.0.0.tgz#8416257df9665981894a1f0cd42b13c407bbcc8e"
-  integrity sha1-hBYlfflmWYGJSh8M1CsTxAe7zI4=
+rehype-slug@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.npm.alibaba-inc.com/rehype-slug/download/rehype-slug-4.0.1.tgz#313274501cffa997bd52dd57bf2da5851959747a"
+  integrity sha1-MTJ0UBz/qZe9Ut1Xvy2lhRlZdHo=
   dependencies:
     github-slugger "^1.1.1"
     hast-util-has-property "^1.0.0"
-    hast-util-is-element "^1.0.0"
+    hast-util-heading-rank "^1.0.0"
     hast-util-to-string "^1.0.0"
     unist-util-visit "^2.0.0"
 
@@ -20721,7 +20717,7 @@ webpack-bundle-analyzer@^3.7.0:
     opener "^1.5.1"
     ws "^6.0.0"
 
-webpack-chain@*, webpack-chain@^6.0.0:
+webpack-chain@*, webpack-chain@^6.0.0, webpack-chain@^6.5.1:
   version "6.5.1"
   resolved "https://registry.npm.alibaba-inc.com/webpack-chain/download/webpack-chain-6.5.1.tgz#4f27284cbbb637e3c8fbdef43eef588d4d861206"
   integrity sha1-TycoTLu2N+PI+970Pu9YjU2GEgY=
