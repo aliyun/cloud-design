@@ -13,6 +13,7 @@ html:not(.theme-xconsole) .vp-theme-shell-light .vp-theme-shell-header, html:not
 
 body{
   font-family:Roboto,'Helvetica Neue','PingFang SC','Microsoft YaHei';
+  letter-spacing: 0.4px;
 }
 
 a:link {
@@ -236,10 +237,20 @@ a:link {
     transform: scale(0.7);
   }
   .next-breadcrumb .next-breadcrumb-separator .next-icon:before {
-    color: #727272;
+    // color: #727272;
+    color: #595959;
   } 
 }
-
+.next-breadcrumb{
+  letter-spacing: 0.4px;
+  .next-breadcrumb-item{
+    height: 100%;
+  }
+}
+.next-breadcrumb .next-breadcrumb-text{
+  height: 18px;
+  line-height: 18px;
+}
 // button
 .next-btn{
   letter-spacing: 1.25px;
@@ -306,6 +317,12 @@ a:link {
     color: #727272;
   }
 }
+.next-cascader{
+  border: none;
+}
+.next-cascader-menu-wrapper + .next-cascader-menu-wrapper{
+  border-left: none;
+}
 // 去除滚动条
 .next-cascader-select-dropdown{
   border: none;
@@ -320,3 +337,23 @@ a:link {
 .next-cascader-menu-wrapper::-webkit-scrollbar {
   display: none; /* Chrome Safari */
 }
+
+// collapse
+.next-collapse{
+  font-family: PingFangSC-Regular;
+  letter-spacing: 0.4px;
+  line-height: 18px;
+}
+.next-collapse .next-collapse-panel:not(.next-collapse-panel-disabled) .next-collapse-panel-icon{
+  color: #737373;
+}
+.next-collapse .next-collapse-panel-icon:before{
+  width: 20px;
+  font-size: 20px;
+}
+.next-collapse .next-collapse-panel-icon.next-collapse-panel-icon-expanded:before{
+  width: 20px;
+  font-size: 20px;
+}
+
+// radio
