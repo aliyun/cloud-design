@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-test1234@0.5.5 (https://fusion.design)
+ * @alife/theme-test1234@0.5.6 (https://fusion.design)
  * @alifd/next@1.21.8 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -8785,18 +8785,18 @@ small {
     padding: var(--message-size-m-padding, 8px); }
     .next-message.next-medium .next-message-symbol {
       float: left;
-      line-height: 16px;
-      line-height: var(--message-size-m-icon, 16px); }
+      line-height: 20px;
+      line-height: var(--message-size-m-icon, 20px); }
       .next-message.next-medium .next-message-symbol:before,
       .next-message.next-medium .next-message-symbol .next-icon-remote {
-        width: 16px;
-        width: var(--message-size-m-icon, 16px);
-        font-size: 16px;
-        font-size: var(--message-size-m-icon, 16px);
+        width: 20px;
+        width: var(--message-size-m-icon, 20px);
+        font-size: 20px;
+        font-size: var(--message-size-m-icon, 20px);
         line-height: inherit; }
     .next-message.next-medium .next-message-title {
-      padding: 0 16px 0 24px;
-      padding: 0 var(--message-size-m-title-content-padding-right, 16px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 16px));
+      padding: 0 16px 0 28px;
+      padding: 0 var(--message-size-m-title-content-padding-right, 16px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px));
       font-size: 14px;
       font-size: var(--message-size-m-title-font, 14px);
       line-height: 14px;
@@ -8804,8 +8804,8 @@ small {
     .next-message.next-medium .next-message-content {
       margin-top: 8px;
       margin-top: var(--message-size-m-content-margin-top, 8px);
-      padding: 0 16px 0 24px;
-      padding: 0 var(--message-size-m-title-content-padding-right, 16px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 16px));
+      padding: 0 16px 0 28px;
+      padding: 0 var(--message-size-m-title-content-padding-right, 16px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px));
       font-size: 12px;
       font-size: var(--message-size-m-content-font, 12px);
       line-height: 12px;
@@ -8813,11 +8813,11 @@ small {
     .next-message.next-medium .next-message-symbol + .next-message-content {
       margin-top: 0; }
     .next-message.next-medium.next-title-content .next-message-title {
-      line-height: 16px;
-      line-height: var(--message-size-m-icon, 16px); }
+      line-height: 20px;
+      line-height: var(--message-size-m-icon, 20px); }
     .next-message.next-medium.next-only-content .next-message-content {
-      line-height: 16px;
-      line-height: var(--message-size-m-icon, 16px); }
+      line-height: 20px;
+      line-height: var(--message-size-m-icon, 20px); }
     .next-message.next-medium .next-message-close {
       top: 8px;
       top: var(--message-size-m-close-top, 8px);
@@ -8886,8 +8886,8 @@ small {
   float: right; }
 
 .next-message[dir="rtl"].next-medium .next-message-title {
-  padding: 0 24px 0 16px;
-  padding: 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 16px)) 0 var(--message-size-m-title-content-padding-right, 16px); }
+  padding: 0 28px 0 16px;
+  padding: 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px)) 0 var(--message-size-m-title-content-padding-right, 16px); }
 
 .next-message[dir="rtl"].next-medium .next-message-close {
   left: 8px;
