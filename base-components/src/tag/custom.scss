@@ -1,0 +1,99 @@
+// 混合云&云效公共覆盖样式
+
+// .next-tag-medium.next-tag-closable, .next-tag-small.next-tag-closable {
+//   z-index: 1;
+//   .next-tag-body {
+//     // 标签最大宽度暂定 180px
+//     max-width: 180px;
+//     z-index: 1;
+//     transition: padding-right 200ms ease;
+//     padding-right: 8px;
+//   }
+//   .next-tag-close-btn {
+//     position: absolute;
+//     top: 0px;
+//     right: 0px;
+//     transition: opacity 100ms ease;
+//     margin-left: 0;
+//     padding-right: 4px;
+//     z-index: 0;
+//     opacity: 0;
+//   }
+//   &:not(.disabled):not([disabled]):hover {
+//     .next-tag-body {
+//       padding-right: 24px;
+//     }
+//     .next-tag-close-btn {
+//       opacity: 1;
+//       z-index: 2;
+//     }
+//   }
+// }
+
+.next-tag-medium.next-tag-closable,
+.next-tag-small.next-tag-closable {
+  border-color: transparent;
+  .next-tag-body {
+    // 标签最大宽度暂定 180px
+    max-width: 180px;
+  }
+  .next-tag-close-btn {
+    padding-right: 4px;
+    margin-left: 4px;
+  }
+}
+
+.next-tag-blue-inverse {
+  background-color: var(--color-notice-1);
+  border: none;
+  color: var(--color-notice-5);
+}
+
+.next-tag-blue {
+  background-color: var(--color-notice-5);
+  border: none;
+}
+
+.next-tag-green-inverse {
+  background-color: var(--color-success-1);
+  border: none;
+  color: var(--color-success-5);
+}
+
+.next-tag-green {
+  background-color: var(--color-success-5);
+  border: none;
+}
+
+.next-tag-red-inverse {
+  background-color: var(--color-error-1);
+  border: none;
+  color: var(--color-error-5);
+}
+
+.next-tag-red {
+  background-color: var(--color-error-5);
+  border: none;
+}
+
+.next-tag-orange-inverse {
+  background-color: var(--color-warning-1);
+  border: none;
+  color: var(--color-warning-5);
+}
+
+.next-tag-orange {
+  background-color: var(--color-warning-5);
+  border: none;
+}
+
+.next-tag-yellow-inverse {
+  background-color: var(--color-help-1);
+  border: none;
+  color: var(--color-help-5);
+}
+
+.next-tag-yellow {
+  background-color: var(--color-help-5);
+  border: none;
+}
