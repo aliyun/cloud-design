@@ -16,8 +16,8 @@ const menu = ['Undo', 'Redo', 'Cut', 'Copy', 'Paste'].map((item) => (
 export default function DemoComponent() {
   const content = (
     <div>
-      <MenuButton label="Document Edit">{menu}</MenuButton>&nbsp;&nbsp;
-      <MenuButton type="primary" label="Document Edit">
+      <MenuButton label="关联">{menu}</MenuButton>&nbsp;&nbsp;
+      <MenuButton type="primary" label="是的是的">
         {menu}
       </MenuButton>
       &nbsp;&nbsp;
