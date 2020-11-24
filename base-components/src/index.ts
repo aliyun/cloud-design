@@ -58,4 +58,3 @@ export { default as Avatar } from './avatar';
 export { default as ResponsiveGrid } from './responsive-grid';
 export { default as Box } from './box';
 export { default as List } from './list';
-export { default as version } from './version';
