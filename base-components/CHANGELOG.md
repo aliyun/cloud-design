@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.37
+- 调整了 tag 等组件样式
+
+## 1.0.36
+- 为混合云主题新增 no-reset 样式文件
+
 ## 1.0.22 (2020.11.13)
 ### Bug Fixes
 - fix(menu): icon overflow causing scrollbar
