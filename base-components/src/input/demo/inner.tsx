@@ -28,7 +28,7 @@ class App extends React.Component {
       <div>
         <Input
           innerBefore={
-            <Icon type="search" style={{ margin: 4 }} onClick={this.onClick} />
+            <Icon type="search" onClick={this.onClick} />
           }
           placeholder="search"
           value={this.state.v}
@@ -44,7 +44,6 @@ class App extends React.Component {
               type="search"
               size="xs"
               onClick={this.onClick}
-              style={{ margin: 4 }}
             />
           }
           placeholder="search"
