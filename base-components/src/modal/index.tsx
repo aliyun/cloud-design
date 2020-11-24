@@ -223,7 +223,8 @@ class Modal extends React.Component<
               size="small"
               text
             >
-              <Icon type="pencil" />
+              {/* <Icon type="pencil" /> */}
+              <Icon type="edit" />
             </Button>
           }
           align="r"
@@ -275,7 +276,8 @@ class Modal extends React.Component<
             size="small"
             text
           >
-            <Icon type="remove" />
+            {/* <Icon type="remove" /> */}
+            <Icon type="close" />
           </Button>
         </div>
       </div>
