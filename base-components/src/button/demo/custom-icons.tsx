@@ -29,7 +29,7 @@ class Demo extends React.Component {
           iconSize="xs"
           loading
           icons={{
-            loading: <Icon type="loading" style={{ color: 'orange' }} />
+            loading: <Icon type="loading" style={{ color: '#1b58f4' }} />
           }}
         >
           Custom loading icon
@@ -40,7 +40,7 @@ class Demo extends React.Component {
           loading={this.state.loading}
           onClick={this.setLoading}
           icons={{
-            loading: <Icon type="loading" style={{ color: 'orange' }} />
+            loading: <Icon type="loading" style={{ color: '#1b58f4' }} />
           }}
         >
           Click to loading and show loading icon

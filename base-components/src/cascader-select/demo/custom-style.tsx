@@ -58,8 +58,10 @@ const itemRender = (item) => {
 export default function DemoComponent() {
   const content = (
     <CascaderSelect
-      style={{ width: '452px' }}
-      listStyle={{ width: '150px', height: '160px' }}
+      // style={{ width: '452px' }}
+      // listStyle={{ width: '150px', height: '160px' }}
+      style={{ width: '302px' }}
+      listStyle={{ width: '302px', height: '160px' }}
       displayRender={(labels) => labels[labels.length - 1]}
       defaultValue="3431"
       dataSource={dataSource}

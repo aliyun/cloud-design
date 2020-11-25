@@ -79,7 +79,7 @@ class Demo extends React.Component {
         <CascaderSelect
           dataSource={this.state.data}
           onChange={this.handleChange}
-          listStyle={{ width: '200px', height: '256px' }}
+          // listStyle={{ width: '200px', height: '256px' }}
           aria-labelledby="a11y-cascader-select"
         />
       </div>
