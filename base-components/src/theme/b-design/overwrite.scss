@@ -87,27 +87,67 @@ h6{
 }
 .next-balloon-medium:not(.next-balloon-closable) {
   padding: 8px 16px 8px 16px;
+  // padding: 16px;
 }
 .next-balloon-close:hover {
   background-color: transparent;
 }
 .next-balloon-tooltip-medium {
   padding: 8px 16px;
+  // padding: 16px;
 }
-
+.next-balloon{
+  p{
+    margin-bottom: 0px;
+  }
+}
 
 // dialog相关 这里可配
 .next-dialog-header{
-  padding:16px;
+  padding:16px 24px 0px 24px;
+  letter-spacing: 0.15px;
 }
 .next-dialog-body{
-  padding: 4px 36px;
+  margin: 40px 22px 0px 0px;
+  padding: 0px 38px 0px 60px;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.next-dialog-body::-webkit-scrollbar{
+  width: 5px;
+  height: 0px;
+  background-color: transparent;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.next-dialog-body::-webkit-scrollbar-track{
+  border-radius: 5px;
+  background-color: transparent;
+}
+/*定义滑块 内阴影+圆角*/
+.next-dialog-body::-webkit-scrollbar-thumb{
+  height: 20px;
+  width: 4px;
+  border-radius: 2px;
+  background-color: #d9d9d9;
 }
 .next-dialog-footer{
-  padding: 36px;
+  padding: 36px 60px 36px 60px;
+  // 无法判断那些是长内容
+  // box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.10);
+  // border-radius: 0 0 8px 8px;
 }
-.next-dialog-quick .next-dialog-body{
-  padding: 16px 16px 4px;
+.next-dialog-quick{
+  .next-dialog-body{
+    padding: 36px 36px 24px 36px;
+    .next-message-content{
+      padding: 0px;
+    }
+  }
+  .next-message-title{
+    padding-left: 32px;
+  }
+  .next-dialog-footer{
+    padding: 0px 36px 24px 36px;
+  }
 }
 
 // avadar相关 可配
@@ -337,6 +377,18 @@ h6{
   // hover时会有抖动
   .next-btn:not(:last-child){
     z-index: 99;
+  }
+}
+.next-btn-ghost.next-btn-light{
+  &:hover,&[disabled],&[disabled]:hover{
+    color: var(--btn-ghost-light-color, #FFFFFF);
+    border-color: var(--btn-ghost-light-border-color, #E5E5E5);
+  }
+}
+.next-btn-ghost.next-btn-dark{
+  &:hover,&[disabled],&[disabled]:hover{
+    color: var(--btn-ghost-dark-color, #FFFFFF);
+    border-color: var(--btn-ghost-dark-border-color, #E5E5E5);
   }
 }
 // calendar相关
@@ -778,5 +830,6 @@ h6{
 //     background: #29A64E;
 //   }
 // }
+
  // form
  // 间距问题
