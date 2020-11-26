@@ -103,41 +103,48 @@ h6{
 }
 
 // dialog相关 这里可配
-.next-dialog-header{
-  padding:16px 24px 0px 24px;
-  letter-spacing: 0.15px;
+.next-dialog:not(.next-dialog-quick){
+  .next-dialog-header{
+    padding:16px 24px 0px 24px;
+    letter-spacing: 0.15px;
+  }
+  .next-dialog-body{
+    margin: 40px 22px 0px 0px;
+    padding: 0px 38px 0px 60px;
+  }
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  .next-dialog-body::-webkit-scrollbar{
+    width: 4px;
+    background-color: transparent;
+  }
+  /*定义滚动条轨道 内阴影+圆角*/
+  .next-dialog-body::-webkit-scrollbar-track{
+    border-radius: 2px;
+    background-color: transparent;
+  }
+  /*定义滑块 内阴影+圆角*/
+  .next-dialog-body::-webkit-scrollbar-thumb{
+    height: 20px!important;
+    border-radius: 2px;
+    background-color: #d9d9d9;
+  }
+  .next-dialog-footer{
+    padding: 36px 60px 36px 60px;
+    display: flex;
+    justify-content: space-between;
+    .next-btn{
+      flex: 1;
+      width: 100%;
+    }
+    // 无法判断那些是长内容
+    // box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.10);
+    // border-radius: 0 0 8px 8px;
+  }
 }
-.next-dialog-body{
-  margin: 40px 22px 0px 0px;
-  padding: 0px 38px 0px 60px;
-}
-/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
-.next-dialog-body::-webkit-scrollbar{
-  width: 5px;
-  height: 0px;
-  background-color: transparent;
-}
-/*定义滚动条轨道 内阴影+圆角*/
-.next-dialog-body::-webkit-scrollbar-track{
-  border-radius: 5px;
-  background-color: transparent;
-}
-/*定义滑块 内阴影+圆角*/
-.next-dialog-body::-webkit-scrollbar-thumb{
-  height: 20px;
-  width: 4px;
-  border-radius: 2px;
-  background-color: #d9d9d9;
-}
-.next-dialog-footer{
-  padding: 36px 60px 36px 60px;
-  // 无法判断那些是长内容
-  // box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.10);
-  // border-radius: 0 0 8px 8px;
-}
-.next-dialog-quick{
+.next-dialog.next-dialog-quick{
   .next-dialog-body{
     padding: 36px 36px 24px 36px;
+    margin: 0px;
     .next-message-content{
       padding: 0px;
     }
@@ -274,40 +281,66 @@ h6{
 // 	border-image: -moz-linear-gradient(#219644,#21C052,#17E4D4)1 10 1;
 //   border-image: linear-gradient(#219644,#21C052,#17E4D4)1 10 1; /* 标准的必须写在最后 */
 // }
-.next-message.next-message-success.next-toast {
-  border: none;
-  border-top: 4px solid;
-  border-image: -webkit-linear-gradient(to right,#21C052,#17E4D4)1 10 1; /* 控制边框颜色渐变 */
-	border-image: -moz-linear-gradient(to right,#21C052,#17E4D4)1 10 1;
-  border-image: linear-gradient(to right,#21C052,#17E4D4)1 10 1; /* 标准的必须写在最后 */
-}
-.next-message.next-message-warning.next-toast {
-  border: none;
-  border-top: 4px solid;
-  border-image: -webkit-linear-gradient(to right,#FFA85D,#FBCD30)1 10 1; /* 控制边框颜色渐变 */
-	border-image: -moz-linear-gradient(to right,#FFA85D,#FBCD30)1 10 1;
-  border-image: linear-gradient(to right,#FFA85D,#FBCD30)1 10 1; /* 标准的必须写在最后 */
-}
-.next-message.next-message-error.next-toast {
-  border: none;
-  border-top: 4px solid;
-  border-image: -webkit-linear-gradient(to right,#EE1520,#FD337F)1 10 1; /* 控制边框颜色渐变 */
-	border-image: -moz-linear-gradient(to right,#EE1520,#FD337F)1 10 1;
-  border-image: linear-gradient(to right,#EE1520,#FD337F)1 10 1; /* 标准的必须写在最后 */
-}
-.next-message.next-message-notice.next-toast {
-  border: none;
-  border-top: 4px solid;
-  border-image: -webkit-linear-gradient(to right,#1B58F4,#1CBDFC)1 10 1; /* 控制边框颜色渐变 */
-	border-image: -moz-linear-gradient(to right,#1B58F4,#1CBDFC)1 10 1;
-  border-image: linear-gradient(to right,#1B58F4,#1CBDFC)1 10 1; /* 标准的必须写在最后 */
-}
-.next-message.next-message-help.next-toast {
-  border: none;
-  border-top: 4px solid;
-  border-image: -webkit-linear-gradient(to right,#888888,#888888)1 10 1; /* 控制边框颜色渐变 */
-	border-image: -moz-linear-gradient(to right,#888888,#888888)1 10 1;
-  border-image: linear-gradient(to right,#888888,#888888)1 10 1; /* 标准的必须写在最后 */
+.next-notification{
+  .next-message.next-toast[class*='next-message-']{
+    box-shadow: var(--notification-box-shadow,0px 2px 4px 0px rgba(0, 0, 0, 0.1));
+    display: block;
+    padding: 30px 24px 24px 24px;
+    .next-message-title{
+      font-size: 16px;
+      color: #1A1A1A;
+      letter-spacing: 0.15px;
+      margin-left: 24px;
+      padding: 0px;
+    }
+    .next-message-content{
+      font-size: 12px;
+      color: #595959;
+      margin-top: 16px;
+      padding: 0px;
+      padding-left: 24px;
+      line-height: 18px;
+    }
+    .next-message-close{
+      top: 16px;
+      right: 16px;
+    }
+  }
+  .next-message.next-message-success.next-toast {
+    border: none;
+    border-top: 4px solid;
+    border-image: -webkit-linear-gradient(to right,#21C052,#17E4D4)1 10 1; /* 控制边框颜色渐变 */
+    border-image: -moz-linear-gradient(to right,#21C052,#17E4D4)1 10 1;
+    border-image: linear-gradient(to right,#21C052,#17E4D4)1 10 1; /* 标准的必须写在最后 */
+  }
+  .next-message.next-message-warning.next-toast {
+    border: none;
+    border-top: 4px solid;
+    border-image: -webkit-linear-gradient(to right,#FFA85D,#FBCD30)1 10 1; /* 控制边框颜色渐变 */
+    border-image: -moz-linear-gradient(to right,#FFA85D,#FBCD30)1 10 1;
+    border-image: linear-gradient(to right,#FFA85D,#FBCD30)1 10 1; /* 标准的必须写在最后 */
+  }
+  .next-message.next-message-error.next-toast {
+    border: none;
+    border-top: 4px solid;
+    border-image: -webkit-linear-gradient(to right,#EE1520,#FD337F)1 10 1; /* 控制边框颜色渐变 */
+    border-image: -moz-linear-gradient(to right,#EE1520,#FD337F)1 10 1;
+    border-image: linear-gradient(to right,#EE1520,#FD337F)1 10 1; /* 标准的必须写在最后 */
+  }
+  .next-message.next-message-notice.next-toast {
+    border: none;
+    border-top: 4px solid;
+    border-image: -webkit-linear-gradient(to right,#1B58F4,#1CBDFC)1 10 1; /* 控制边框颜色渐变 */
+    border-image: -moz-linear-gradient(to right,#1B58F4,#1CBDFC)1 10 1;
+    border-image: linear-gradient(to right,#1B58F4,#1CBDFC)1 10 1; /* 标准的必须写在最后 */
+  }
+  .next-message.next-message-help.next-toast {
+    border: none;
+    border-top: 4px solid;
+    border-image: -webkit-linear-gradient(to right,#888888,#888888)1 10 1; /* 控制边框颜色渐变 */
+    border-image: -moz-linear-gradient(to right,#888888,#888888)1 10 1;
+    border-image: linear-gradient(to right,#888888,#888888)1 10 1; /* 标准的必须写在最后 */
+  }
 }
 
 // breadcrumb
@@ -509,6 +542,9 @@ h6{
 .next-tabs-capsule > .next-tabs-bar .next-tabs-tab.disabled{
   border-color: #f3f3f3;
 }
+.next-tabs-wrapped > .next-tabs-bar .next-tabs-tab .next-tabs-tab-close{
+  transform: scale(0.7);
+}
 
 // date-picker
 .next-input.next-date-picker-input, 
@@ -552,7 +588,7 @@ h6{
   }
   .next-calendar.next-calendar-panel{
     background: #F9F9F9;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+    // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
     border-radius: 4px;
     background-color: #F9F9F9;
   }
@@ -580,11 +616,24 @@ h6{
     background-color: #f9f9f9;
   }
 }
-
-// notification
-.next-message{
-  box-shadow: var(--notification-box-shadow,0px 2px 4px 0px rgba(0, 0, 0, 0.1));
+.next-time-picker-menu{
+  .next-time-picker-menu-title{
+    border-bottom: var(--time-picker-menu-border-width, 1px) var(--line-solid, solid) var(--time-picker-menu-border-color, #E5E5E5);
+  }
+  ul::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  ul::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 3px;
+  }
+  ul::-webkit-scrollbar-thumb{
+    border-radius: 7px;
+    background-color: transparent;
+  }
 }
+
 
 // pagination
 .next-pagination-pages{
@@ -823,6 +872,69 @@ h6{
  }
 .next-cascader-inner{
   width: unset;
+}
+
+// message
+.next-message.next-addon[class*='next-message-']{
+  background: #FFFFFF;
+}
+.next-message.next-addon[class*='next-message-'],.next-message.next-inline[class*='next-message-'],.next-message.next-toast[class*='next-message-']{
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+  padding: 15px 16px;
+  border: none;
+  border-radius: 4px;
+  .next-message-title{
+    font-size: 12px;
+    padding: 0px 0px 0px 8px;
+  }
+  .next-message-content{
+    margin: 0px;
+    padding-left: 4px;
+    color: #1a1a1a;
+    margin-top: 0px;
+  }
+  .next-message-close{
+    right: 20px;
+    top: 18px;
+  }
+  &.next-message-success{
+    .next-message-title{
+      color: #29A64E;
+    }
+  }
+  &.next-message-error{
+    .next-message-title{
+      color: #C82728;
+    }
+  }
+  &.next-message-warning{
+    .next-message-title{
+      color: #FFAA14;
+    }
+  }
+  &.next-message-notice{
+    .next-message-title{
+      color: #1A1A1A;
+    }
+  }
+}
+.next-message.next-toast[class*='next-message-']{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+  padding: 13px 16px;
+  // &.next-message-success,&.next-message-warning,&.next-message-error,&.next-message-notice,&.next-message-help,&.next-message-loading{
+  &[class*='next-message-']{
+    .next-message-title{
+      color: #1a1a1a;
+      font-weight: normal;
+    }
+  }
+}
+.next-message{
+  .next-message-close .next-icon-close{
+    transform: scale(0.7);
+  }
 }
 // badge
 // .next-badge {

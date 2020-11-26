@@ -68,7 +68,7 @@ class Demo extends React.Component {
 
         <FormItem label="NumberPicker:">
           <NumberPicker min={1} max={10} name="numberPicker" defaultValue={3} />
-          <span>Something in here</span>
+          <span style={{ marginLeft: '8px' }}>Something in here</span>
         </FormItem>
 
         <FormItem label="Switch:" required>
