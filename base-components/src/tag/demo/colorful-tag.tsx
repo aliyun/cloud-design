@@ -28,7 +28,7 @@ export default function DemoComponent() {
 
       <TagGroup>
         {presetColors.map((color) => (
-          <Tag key={`p_p_${color}`} type="primary" color={color}>
+          <Tag key={`p_p_${color}`} type="primary" color={color} size="medium">
             {color}
           </Tag>
         ))}

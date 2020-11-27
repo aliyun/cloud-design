@@ -660,11 +660,16 @@ h6{
   box-shadow: var(--active-shadow);
 }
 .next-search.focusing{
-  border: 1px solid #1B58F4;
-  border-radius: 4px;
+  // border: 1px solid #1B58F4;
+  // border-radius: 4px;
   .next-after,.next-search-left,.next-btn{
-    border: none;
+    // border: none;
+    // border: 1px solid #1B58F4;
+    border-color: #1b58f4!important;
   }
+  // .next-btn{
+  //   border-left-color: #d9d9d9!important;
+  // }
 }
 .next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab{
   margin-right: 36px;
@@ -935,6 +940,11 @@ h6{
   .next-message-close .next-icon-close{
     transform: scale(0.7);
   }
+}
+
+// time-picker
+.next-time-picker-panel-input.next-input{
+  padding: 0px;
 }
 // badge
 // .next-badge {
