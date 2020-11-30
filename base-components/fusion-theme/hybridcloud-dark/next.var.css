@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.8.24 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.8.26 (https://fusion.design)
  * @alifd/next@1.21.10 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -4433,8 +4433,8 @@ small {
   margin: 0;
   margin-left: 8px;
   margin-left: var(--radio-font-margin-left, 8px);
-  font-size: 14px;
-  font-size: var(--radio-font-size, 14px);
+  font-size: 12px;
+  font-size: var(--radio-font-size, 12px);
   vertical-align: middle;
   line-height: 1;
   color: #EAEAEA;
@@ -8718,8 +8718,8 @@ small {
         font-size: var(--message-size-m-icon, 16px);
         line-height: inherit; }
     .next-message.next-medium .next-message-title {
-      padding: 0 32px 0 24px;
-      padding: 0 var(--message-size-m-title-content-padding-right, 32px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 16px));
+      padding: 0 8px 0 24px;
+      padding: 0 var(--message-size-m-title-content-padding-right, 8px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 16px));
       font-size: 14px;
       font-size: var(--message-size-m-title-font, 14px);
       line-height: 14px;
@@ -8727,8 +8727,8 @@ small {
     .next-message.next-medium .next-message-content {
       margin-top: 8px;
       margin-top: var(--message-size-m-content-margin-top, 8px);
-      padding: 0 32px 0 24px;
-      padding: 0 var(--message-size-m-title-content-padding-right, 32px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 16px));
+      padding: 0 8px 0 24px;
+      padding: 0 var(--message-size-m-title-content-padding-right, 8px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 16px));
       font-size: 14px;
       font-size: var(--message-size-m-content-font, 14px);
       line-height: 14px;
@@ -8809,8 +8809,8 @@ small {
   float: right; }
 
 .next-message[dir="rtl"].next-medium .next-message-title {
-  padding: 0 24px 0 32px;
-  padding: 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 16px)) 0 var(--message-size-m-title-content-padding-right, 32px); }
+  padding: 0 24px 0 8px;
+  padding: 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 16px)) 0 var(--message-size-m-title-content-padding-right, 8px); }
 
 .next-message[dir="rtl"].next-medium .next-message-close {
   left: 12px;
@@ -14502,26 +14502,30 @@ small {
             box-shadow: var(--nav-primary-shadow, 0px 6px 24px 0px rgba(0, 0, 0, 0.64)); }
     .next-nav.next-primary.next-hoz {
       line-height: 44px;
+      line-height: var(--nav-hoz-height, 44px);
+      line-height: 44px;
       line-height: calc(var(--nav-hoz-height, 44px) - var(--nav-primary-border-width, 0px)*2); }
-      .next-nav.next-primary.next-hoz .next-menu-header {
-        height: 44px;
-        height: calc(var(--nav-hoz-height, 44px) - var(--nav-primary-border-width, 0px)*2); }
-      .next-nav.next-primary.next-hoz .next-menu-footer {
-        height: 44px;
-        height: calc(var(--nav-hoz-height, 44px) - var(--nav-primary-border-width, 0px)*2); }
+      .next-nav.next-primary.next-hoz .next-menu-header,
+      .next-nav.next-primary.next-hoz .next-menu-footer,
       .next-nav.next-primary.next-hoz .next-menu-item-inner {
+        line-height: 44px;
+        line-height: var(--nav-hoz-height, 44px);
         height: 44px;
         height: calc(var(--nav-hoz-height, 44px) - var(--nav-primary-border-width, 0px)*2); }
       .next-nav.next-primary.next-hoz.next-top .next-nav-item:before {
+        top: 0;
         top: 0px;
         top: calc(0px - var(--nav-primary-border-width, 0px)); }
       .next-nav.next-primary.next-hoz.next-bottom .next-nav-item:before {
+        bottom: 0;
         bottom: 0px;
         bottom: calc(0px - var(--nav-primary-border-width, 0px)); }
     .next-nav.next-primary.next-ver.next-left .next-nav-item:before {
+      left: 0;
       left: 0px;
       left: calc(0px - var(--nav-primary-border-width, 0px)); }
     .next-nav.next-primary.next-ver.next-right .next-nav-item:before {
+      right: 0;
       right: 0px;
       right: calc(0px - var(--nav-primary-border-width, 0px)); }
     .next-nav.next-primary .next-nav-item.next-menu-item {
@@ -14603,26 +14607,30 @@ small {
             box-shadow: var(--nav-secondary-shadow, 0px 6px 24px 0px rgba(0, 0, 0, 0.64)); }
     .next-nav.next-secondary.next-hoz {
       line-height: 44px;
+      line-height: var(--nav-hoz-height, 44px);
+      line-height: 44px;
       line-height: calc(var(--nav-hoz-height, 44px) - var(--nav-secondary-border-width, 0px)*2); }
-      .next-nav.next-secondary.next-hoz .next-menu-header {
-        height: 44px;
-        height: calc(var(--nav-hoz-height, 44px) - var(--nav-secondary-border-width, 0px)*2); }
-      .next-nav.next-secondary.next-hoz .next-menu-footer {
-        height: 44px;
-        height: calc(var(--nav-hoz-height, 44px) - var(--nav-secondary-border-width, 0px)*2); }
+      .next-nav.next-secondary.next-hoz .next-menu-header,
+      .next-nav.next-secondary.next-hoz .next-menu-footer,
       .next-nav.next-secondary.next-hoz .next-menu-item-inner {
+        line-height: 44px;
+        line-height: var(--nav-hoz-height, 44px);
         height: 44px;
         height: calc(var(--nav-hoz-height, 44px) - var(--nav-secondary-border-width, 0px)*2); }
       .next-nav.next-secondary.next-hoz.next-top .next-nav-item:before {
+        top: 0;
         top: 0px;
         top: calc(0px - var(--nav-secondary-border-width, 0px)); }
       .next-nav.next-secondary.next-hoz.next-bottom .next-nav-item:before {
+        bottom: 0;
         bottom: 0px;
         bottom: calc(0px - var(--nav-secondary-border-width, 0px)); }
     .next-nav.next-secondary.next-ver.next-left .next-nav-item:before {
+      left: 0;
       left: 0px;
       left: calc(0px - var(--nav-secondary-border-width, 0px)); }
     .next-nav.next-secondary.next-ver.next-right .next-nav-item:before {
+      right: 0;
       right: 0px;
       right: calc(0px - var(--nav-secondary-border-width, 0px)); }
     .next-nav.next-secondary .next-nav-item.next-menu-item {
@@ -14852,6 +14860,10 @@ small {
   .next-nav.next-icon-only .next-menu-item-inner {
     text-overflow: clip; }
   .next-nav.next-icon-only.next-normal .next-nav-icon.next-icon {
+    margin-left: 1px;
+    margin-left: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
+    margin-right: 1px;
+    margin-right: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
     margin-left: 0px;
     margin-left: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px) - var(--popup-local-border-width, 1px));
     margin-right: 0px;
@@ -14863,7 +14875,18 @@ small {
       font-size: 16px;
       font-size: var(--nav-icon-only-font-size, 16px);
       line-height: inherit; }
+    .next-nav.next-icon-only.next-normal .next-nav-icon.next-icon:before,
+    .next-nav.next-icon-only.next-normal .next-nav-icon.next-icon .next-icon-remote {
+      width: 16px;
+      width: var(--nav-icon-only-font-size, 16px);
+      font-size: 16px;
+      font-size: var(--nav-icon-only-font-size, 16px);
+      line-height: inherit; }
   .next-nav.next-icon-only.next-primary .next-nav-icon.next-icon {
+    margin-left: 1px;
+    margin-left: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
+    margin-right: 1px;
+    margin-right: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
     margin-left: 1px;
     margin-left: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px) - var(--nav-primary-border-width, 0px));
     margin-right: 1px;
@@ -14875,11 +14898,29 @@ small {
       font-size: 16px;
       font-size: var(--nav-icon-only-font-size, 16px);
       line-height: inherit; }
+    .next-nav.next-icon-only.next-primary .next-nav-icon.next-icon:before,
+    .next-nav.next-icon-only.next-primary .next-nav-icon.next-icon .next-icon-remote {
+      width: 16px;
+      width: var(--nav-icon-only-font-size, 16px);
+      font-size: 16px;
+      font-size: var(--nav-icon-only-font-size, 16px);
+      line-height: inherit; }
   .next-nav.next-icon-only.next-secondary .next-nav-icon.next-icon {
+    margin-left: 1px;
+    margin-left: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
+    margin-right: 1px;
+    margin-right: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
     margin-left: 1px;
     margin-left: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px) - var(--nav-secondary-border-width, 0px));
     margin-right: 1px;
     margin-right: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px) - var(--nav-secondary-border-width, 0px)); }
+    .next-nav.next-icon-only.next-secondary .next-nav-icon.next-icon:before,
+    .next-nav.next-icon-only.next-secondary .next-nav-icon.next-icon .next-icon-remote {
+      width: 16px;
+      width: var(--nav-icon-only-font-size, 16px);
+      font-size: 16px;
+      font-size: var(--nav-icon-only-font-size, 16px);
+      line-height: inherit; }
     .next-nav.next-icon-only.next-secondary .next-nav-icon.next-icon:before,
     .next-nav.next-icon-only.next-secondary .next-nav-icon.next-icon .next-icon-remote {
       width: 16px;
@@ -14940,7 +14981,20 @@ small {
       margin-left: 1px;
       margin-left: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
       margin-right: 1px;
+      margin-right: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
+      margin-left: 1px;
+      margin-left: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
+      margin-right: 1px;
       margin-right: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px)); }
+      .next-nav-embeddable.next-primary.next-icon-only .next-nav-icon.next-icon:before,
+      .next-nav-embeddable.next-primary.next-icon-only .next-nav-icon.next-icon .next-icon-remote, .next-nav-embeddable.next-secondary.next-icon-only .next-nav-icon.next-icon:before,
+      .next-nav-embeddable.next-secondary.next-icon-only .next-nav-icon.next-icon .next-icon-remote, .next-nav-embeddable.next-normal.next-icon-only .next-nav-icon.next-icon:before,
+      .next-nav-embeddable.next-normal.next-icon-only .next-nav-icon.next-icon .next-icon-remote {
+        width: 16px;
+        width: var(--nav-icon-only-font-size, 16px);
+        font-size: 16px;
+        font-size: var(--nav-icon-only-font-size, 16px);
+        line-height: inherit; }
       .next-nav-embeddable.next-primary.next-icon-only .next-nav-icon.next-icon:before,
       .next-nav-embeddable.next-primary.next-icon-only .next-nav-icon.next-icon .next-icon-remote, .next-nav-embeddable.next-secondary.next-icon-only .next-nav-icon.next-icon:before,
       .next-nav-embeddable.next-secondary.next-icon-only .next-nav-icon.next-icon .next-icon-remote, .next-nav-embeddable.next-normal.next-icon-only .next-nav-icon.next-icon:before,
@@ -14986,31 +15040,37 @@ small {
   right: 0; }
 
 .next-nav[dir="rtl"].next-ver.next-left .next-nav-item:before {
+  right: 0;
   right: -1px;
   right: calc(0px - var(--popup-local-border-width, 1px));
   left: auto; }
 
 .next-nav[dir="rtl"].next-ver.next-right .next-nav-item:before {
+  left: 0;
   left: -1px;
   left: calc(0px - var(--popup-local-border-width, 1px));
   right: auto; }
 
 .next-nav[dir="rtl"].next-primary.next-ver.next-left .next-nav-item:before {
+  right: 0;
   right: 0px;
   right: calc(0px - var(--nav-primary-border-width, 0px));
   left: auto; }
 
 .next-nav[dir="rtl"].next-primary.next-ver.next-right .next-nav-item:before {
+  left: 0;
   left: 0px;
   left: calc(0px - var(--nav-primary-border-width, 0px));
   right: auto; }
 
 .next-nav[dir="rtl"].next-secondary.next-ver.next-left .next-nav-item:before {
+  right: 0;
   right: 0px;
   right: calc(0px - var(--nav-secondary-border-width, 0px));
   left: auto; }
 
 .next-nav[dir="rtl"].next-secondary.next-ver.next-right .next-nav-item:before {
+  left: 0;
   left: 0px;
   left: calc(0px - var(--nav-secondary-border-width, 0px));
   right: auto; }
@@ -17884,8 +17944,8 @@ small {
         -webkit-transition: background-color 100ms linear;
         transition: background-color 100ms linear; }
         .next-step-arrow > .next-step-item-wait .next-step-item-node-circle .next-icon {
-          -webkit-animation: zoomIn 100ms linear;
-                  animation: zoomIn 100ms linear; }
+          -webkit-animation: zoomIn 300ms linear;
+                  animation: zoomIn 300ms linear; }
           .next-step-arrow > .next-step-item-wait .next-step-item-node-circle .next-icon:before,
           .next-step-arrow > .next-step-item-wait .next-step-item-node-circle .next-icon .next-icon-remote {
             width: 16px;
@@ -17956,8 +18016,8 @@ small {
         -webkit-transition: background-color 100ms linear;
         transition: background-color 100ms linear; }
         .next-step-arrow > .next-step-item-process .next-step-item-node-circle .next-icon {
-          -webkit-animation: zoomIn 100ms linear;
-                  animation: zoomIn 100ms linear; }
+          -webkit-animation: zoomIn 300ms linear;
+                  animation: zoomIn 300ms linear; }
           .next-step-arrow > .next-step-item-process .next-step-item-node-circle .next-icon:before,
           .next-step-arrow > .next-step-item-process .next-step-item-node-circle .next-icon .next-icon-remote {
             width: 16px;
@@ -18028,8 +18088,8 @@ small {
         -webkit-transition: background-color 100ms linear;
         transition: background-color 100ms linear; }
         .next-step-arrow > .next-step-item-finish .next-step-item-node-circle .next-icon {
-          -webkit-animation: zoomIn 100ms linear;
-                  animation: zoomIn 100ms linear; }
+          -webkit-animation: zoomIn 300ms linear;
+                  animation: zoomIn 300ms linear; }
           .next-step-arrow > .next-step-item-finish .next-step-item-node-circle .next-icon:before,
           .next-step-arrow > .next-step-item-finish .next-step-item-node-circle .next-icon .next-icon-remote {
             width: 16px;
@@ -18101,8 +18161,8 @@ small {
         -webkit-transition: background-color 100ms linear;
         transition: background-color 100ms linear; }
         .next-step-arrow .next-step-item-disabled .next-step-item-node-circle .next-icon {
-          -webkit-animation: zoomIn 100ms linear;
-                  animation: zoomIn 100ms linear; }
+          -webkit-animation: zoomIn 300ms linear;
+                  animation: zoomIn 300ms linear; }
           .next-step-arrow .next-step-item-disabled .next-step-item-node-circle .next-icon:before,
           .next-step-arrow .next-step-item-disabled .next-step-item-node-circle .next-icon .next-icon-remote {
             width: 16px;
@@ -18224,8 +18284,8 @@ small {
     -webkit-transition: background-color 100ms linear;
     transition: background-color 100ms linear; }
     .next-step-circle > .next-step-item-wait .next-step-item-node-circle .next-icon {
-      -webkit-animation: zoomIn 100ms linear;
-              animation: zoomIn 100ms linear; }
+      -webkit-animation: zoomIn 300ms linear;
+              animation: zoomIn 300ms linear; }
       .next-step-circle > .next-step-item-wait .next-step-item-node-circle .next-icon:before,
       .next-step-circle > .next-step-item-wait .next-step-item-node-circle .next-icon .next-icon-remote {
         width: 16px;
@@ -18306,8 +18366,8 @@ small {
     -webkit-transition: background-color 100ms linear;
     transition: background-color 100ms linear; }
     .next-step-circle > .next-step-item-process .next-step-item-node-circle .next-icon {
-      -webkit-animation: zoomIn 100ms linear;
-              animation: zoomIn 100ms linear; }
+      -webkit-animation: zoomIn 300ms linear;
+              animation: zoomIn 300ms linear; }
       .next-step-circle > .next-step-item-process .next-step-item-node-circle .next-icon:before,
       .next-step-circle > .next-step-item-process .next-step-item-node-circle .next-icon .next-icon-remote {
         width: 16px;
@@ -18382,8 +18442,8 @@ small {
     -webkit-transition: background-color 100ms linear;
     transition: background-color 100ms linear; }
     .next-step-circle > .next-step-item-finish .next-step-item-node-circle .next-icon {
-      -webkit-animation: zoomIn 100ms linear;
-              animation: zoomIn 100ms linear; }
+      -webkit-animation: zoomIn 300ms linear;
+              animation: zoomIn 300ms linear; }
       .next-step-circle > .next-step-item-finish .next-step-item-node-circle .next-icon:before,
       .next-step-circle > .next-step-item-finish .next-step-item-node-circle .next-icon .next-icon-remote {
         width: 16px;
@@ -18458,8 +18518,8 @@ small {
     -webkit-transition: background-color 100ms linear;
     transition: background-color 100ms linear; }
     .next-step-circle .next-step-item-disabled .next-step-item-node-circle .next-icon {
-      -webkit-animation: zoomIn 100ms linear;
-              animation: zoomIn 100ms linear; }
+      -webkit-animation: zoomIn 300ms linear;
+              animation: zoomIn 300ms linear; }
       .next-step-circle .next-step-item-disabled .next-step-item-node-circle .next-icon:before,
       .next-step-circle .next-step-item-disabled .next-step-item-node-circle .next-icon .next-icon-remote {
         width: 16px;
@@ -19021,8 +19081,8 @@ small {
     -webkit-transition: background-color 100ms linear;
     transition: background-color 100ms linear; }
     .next-step-dot > .next-step-item-wait .next-step-item-node-circle .next-icon {
-      -webkit-animation: zoomIn 100ms linear;
-              animation: zoomIn 100ms linear; }
+      -webkit-animation: zoomIn 300ms linear;
+              animation: zoomIn 300ms linear; }
       .next-step-dot > .next-step-item-wait .next-step-item-node-circle .next-icon:before,
       .next-step-dot > .next-step-item-wait .next-step-item-node-circle .next-icon .next-icon-remote {
         width: 16px;
@@ -19123,8 +19183,8 @@ small {
     -webkit-transition: background-color 100ms linear;
     transition: background-color 100ms linear; }
     .next-step-dot > .next-step-item-process .next-step-item-node-circle .next-icon {
-      -webkit-animation: zoomIn 100ms linear;
-              animation: zoomIn 100ms linear; }
+      -webkit-animation: zoomIn 300ms linear;
+              animation: zoomIn 300ms linear; }
       .next-step-dot > .next-step-item-process .next-step-item-node-circle .next-icon:before,
       .next-step-dot > .next-step-item-process .next-step-item-node-circle .next-icon .next-icon-remote {
         width: 16px;
@@ -19221,8 +19281,8 @@ small {
     -webkit-transition: background-color 100ms linear;
     transition: background-color 100ms linear; }
     .next-step-dot > .next-step-item-finish .next-step-item-node-circle .next-icon {
-      -webkit-animation: zoomIn 100ms linear;
-              animation: zoomIn 100ms linear; }
+      -webkit-animation: zoomIn 300ms linear;
+              animation: zoomIn 300ms linear; }
       .next-step-dot > .next-step-item-finish .next-step-item-node-circle .next-icon:before,
       .next-step-dot > .next-step-item-finish .next-step-item-node-circle .next-icon .next-icon-remote {
         width: 16px;
@@ -19317,8 +19377,8 @@ small {
     -webkit-transition: background-color 100ms linear;
     transition: background-color 100ms linear; }
     .next-step-dot .next-step-item-disabled .next-step-item-node-circle .next-icon {
-      -webkit-animation: zoomIn 100ms linear;
-              animation: zoomIn 100ms linear; }
+      -webkit-animation: zoomIn 300ms linear;
+              animation: zoomIn 300ms linear; }
       .next-step-dot .next-step-item-disabled .next-step-item-node-circle .next-icon:before,
       .next-step-dot .next-step-item-disabled .next-step-item-node-circle .next-icon .next-icon-remote {
         width: 16px;
