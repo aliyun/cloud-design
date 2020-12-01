@@ -34,7 +34,15 @@ npm install @alicloudfe/components --save
 <script src="https://unpkg.alibaba-inc.com/@alicloudfe/components@1.0.12/dist/index.js"></script>
 ```
 
-关于样式文件的说明请参考[这里](#关于样式文件)
+其中 @alicloudfe/components 默认 external 了这些依赖： `react` 、 `react-dom` 、 `prop-types` 、`moment` 
+参考 html 如下：
+```html
+ <script src="https://unpkg.alipay.com/react@16.14.0/umd/react.development.js"></script>
+ <script src="https://unpkg.alipay.com/react-dom@16.14.0/umd/react-dom.development.js"></script>
+ <script src="https://unpkg.alipay.com/prop-types@15.7.1/prop-types.js"></script>
+ <script src="https://unpkg.alipay.com/moment@2.29.1/moment.js"></script>
+ <script src="https://unpkg.alibaba-inc.com/@alicloudfe/components/dist/index.js"></script>
+```
 
 ## ☔️ 依赖
 
@@ -72,6 +80,8 @@ import '@alicloudfe/components/dist/hybridcloud.css';
 - SaaS 侧
   - `yunxiao`: 云效主题
   - `aone`: Aone 主题
+  - `teamix`: Teamix 主题
+  - `b-design`: Bdesign 主题
 
 对于每一个主题，我们生成了对应的四份样式文件供大家使用，以混合云亮色主题为例：
 - [`hybridcloud.css`](https://unpkg.alibaba-inc.com/@alicloudfe/components/dist/hybridcloud.css) : 全量未压缩样式（组件样式 + css var）
