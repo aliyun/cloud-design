@@ -3,6 +3,8 @@
   --btn-pure-normal-bg-image: linear-gradient(90deg, #1B58F4 0%, #457AFF 100%);
   --btn-pure-primary-bg-hover: #E5E5E5;
   --btn-pure-primary-border-color-hover: #E5E5E5;
+  // progress
+  --progress-line-normal-bg-color: linear-gradient(90deg, #1B58F4 0%, #457AFF 100%);
   /* nav */
   // --nav-primary-item-selected-bg: #000000;
   --nav-secondary-item-selected-bg: transparent;
@@ -46,6 +48,7 @@
   --search-normal-normal-btn-hover-text-color: #595959;
   --search-normal-primary-hover-color: #d9d9d9;
   --search-normal-secondary-hover-color: #d9d9d9;
+  --search-simple-corner: 4px;
   // --search-normal-normal-btn-text-padding-left: 0px;
   /* message */
   --message-help-color-icon-toast: #888888;
@@ -113,7 +116,8 @@
   // input
   --input-border-color: #d9d9d9;
   --input-feedback-error-border-color: #D32020;
-  --active-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+  // --active-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+  --active-shadow: 0 4px 8px 0 rgba(0,0,0,0.01);
   --active-transition: 0.3s;
   // notification
   --notification-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
@@ -121,9 +125,15 @@
   --pagination-item-split: 1px;
   --pagination-item-hover-bg: #E5E5E5;
   --pagination-item-disabled-bg: #f3f3f3;
+  --pagination-large-item-split: 1px;
+  --pagination-small-item-split: 1px;
   // tab
   --tab-wrapped-tab-margin-right: 1px;
   --tab-wrapped-tab-margin-bottom: 1px;
+  --tab-item-padding-tb-size-s: 10px;
+  --tab-item-padding-lr-size-s: 16px;
+  --tab-item-padding-tb-size-m: 12px;
+  --tab-item-padding-lr-size-m: 16px;
   // list
   --list-size-m-item-media-margin: 16px;
   --list-size-m-item-padding-lr: 16px;
@@ -160,7 +170,15 @@
   --message-error-color-icon-toast: #C82728;
   --message-error-color-icon-inline: #C82728;
   --message-error-color-icon-addon: #C82728;
-  
+  // drawer
+  --drawer-title-border-width: 0px;
+  // upload
+  --upload-card-add-text-margin-top: 4px;
+  // range
+  --range-size-m-track-radius: 2px;
+  // table
+  --table-cell-padding-top: 10px;
+  --table-header-padding-top: 10px;
   // select
   // --menu-padding-horizontal: 32px;
   // form

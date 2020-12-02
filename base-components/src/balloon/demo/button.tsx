@@ -19,7 +19,7 @@ const Content = () => (
     <p>balloon content</p>
     <p>多段落的内容悬浮出现的气泡，相关的内容复杂，可以是一行，也可以是多行</p>
     <div style={{ marginTop: '16px',display: 'flex',justifyContent: 'space-between', alignItems: 'center' }}>
-      <span style={{ color: '#A6A6A6' }}>查看更多</span>
+      <span style={{ color: '#A6A6A6', cursor: 'pointer' }}>查看更多</span>
       <Button type="normal">主要按钮</Button>
     </div>
   </div>

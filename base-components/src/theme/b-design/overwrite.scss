@@ -145,6 +145,9 @@ h6{
   .next-dialog-body{
     padding: 36px 36px 24px 36px;
     margin: 0px;
+    .next-message[class*=next-message-]{
+      box-shadow: none;
+    }
     .next-message-content{
       padding: 0px;
     }
@@ -562,7 +565,8 @@ h6{
 .next-year-picker,
 .next-week-picker{
   &:hover{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+    // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01);
   }
 }
 .next-range-picker:hover .next-range-picker-trigger{
@@ -633,7 +637,25 @@ h6{
     background-color: transparent;
   }
 }
-
+.next-calendar-range{
+  .next-calendar-body-left{
+    display: flex;
+    justify-content: center;
+  }
+  .next-calendar-body-right{
+    display: flex;
+    justify-content: center;
+  }
+  .next-calendar-table{
+    width: auto;
+    margin: 0px;
+    .next-inrange {
+      .next-calendar-date{
+        border-radius: 0px;
+      }
+    }
+  }
+}
 
 // pagination
 .next-pagination-pages{
@@ -650,8 +672,16 @@ h6{
     color: #BEBEBE;
     background: #F3F3F3;
   }
+  .next-input input{
+    padding: 0px;
+    text-align: center;
+  }
 }
-
+.next-pagination-size-selector{
+  .next-menu-item{
+    padding: 0px 16px;
+  }
+}
 // search
 .next-search .next-input-group:hover{
   box-shadow: var(--active-shadow);
@@ -713,8 +743,8 @@ h6{
 }
 .next-nav.next-normal:not(.next-icon-only):not(.next-hoz) .next-menu-item.next-nav-item:not(.next-selected):not(.next-child-selected):hover{
   // opacity: 0.2;
-  background: #E0E0E0;
-  background-color: #E0E0E0;
+  background: rgba(#E0E0E0,0.2);
+  background-color: rgba(#E0E0E0,0.2);
   color: #1a1a1a;
   .next-nav-icon.next-icon{
     color: #565656;
@@ -842,7 +872,24 @@ h6{
   }
   .next-list-item-content,.next-list-item-extra{
     padding: 16px 0px;
-    border-bottom: var(--line-1, 1px) solid var(--list-divider-color, #E5E5E5);
+    // border-bottom: var(--line-1, 1px) solid var(--list-divider-color, #E5E5E5);
+    border-bottom: none;
+    position: relative;
+  }
+  .next-list-item:not(:last-child){
+    .next-list-item-content:after,.next-list-item-extra:after{
+      content: "  ";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      // height: 1px;
+      border-bottom: 1px solid #e5e5e5;
+      // background-color: #f00;
+      /* 如果不用 background-color, 使用 border-top:1px solid #f00; 效果是一样的*/
+      -webkit-transform: scaleY(.5);
+      transform:scaleY(.5);
+    }
   }
   .next-list-item-extra{
     padding-right: 16px;
@@ -867,6 +914,25 @@ h6{
     }
   }
 }
+// .next-list {
+//   .next-list-header{
+//     position: relative;
+//     border-bottom: none;
+//   }
+//   .next-list-header:after{
+//     content: "  ";
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     width: 100%;
+//     // height: 1px;
+//     border-bottom: 1px solid #e5e5e5;
+//     // background-color: #f00;
+//     /* 如果不用 background-color, 使用 border-top:1px solid #f00; 效果是一样的*/
+//     -webkit-transform: scaleY(.5);
+//     transform:scaleY(.5);
+//   }
+// } 
 
  // input 
  .next-input .next-input-inner.next-before{
@@ -927,7 +993,6 @@ h6{
 }
 .next-message.next-toast[class*='next-message-']{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
-  padding: 13px 16px;
   // &.next-message-success,&.next-message-warning,&.next-message-error,&.next-message-notice,&.next-message-help,&.next-message-loading{
   &[class*='next-message-']{
     .next-message-title{
@@ -953,5 +1018,33 @@ h6{
 //   }
 // }
 
+// upload
+.next-upload-dragable .next-upload-drag-text{
+  margin: 4px 0px 0px;
+}
+
+// progress
+.next-progress-line-overlay-normal{
+  background-image: var(--progress-line-normal-bg-color);
+  background-color: unset;
+}
+
+// table
+.next-table{
+  th.next-table-prerow .next-table-cell-wrapper{
+    padding: 10px 16px;
+    height: 38px;
+    .next-checkbox-wrapper {
+      display: inline-block;
+      margin-top: -6px;
+    }
+  }
+  td.next-table-prerow .next-table-cell-wrapper{
+    padding: 10px 16px;
+  }
+}
+.next-table.only-bottom-border table tr td:first-child, .next-table.only-bottom-border table tr th:first-child{
+  height: 38px;
+}
  // form
  // 间距问题

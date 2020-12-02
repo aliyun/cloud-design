@@ -146,7 +146,7 @@ class Demo extends React.Component {
             >
               Submit
             </Form.Submit>
-            <Form.Reset style={{ marginLeft: 130 }}>Reset</Form.Reset>
+            <Form.Reset >Reset</Form.Reset>
           </FormItem>
         </Form>
       </div>
