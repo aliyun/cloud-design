@@ -548,6 +548,9 @@ h6{
 .next-tabs-wrapped > .next-tabs-bar .next-tabs-tab .next-tabs-tab-close{
   transform: scale(0.7);
 }
+.next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab:before{
+  border-radius: 2.5px;
+}
 
 // date-picker
 .next-input.next-date-picker-input, 
@@ -664,9 +667,33 @@ h6{
   }
   .next-pagination-item.next-prev{
     border-radius: 4px 0 0 4px;
+    .next-pagination-icon-prev::before{
+      content: "◀";
+      color: #737373;
+      transform: scale(0.7);
+    }
+    &[disabled]{
+      .next-pagination-icon-prev::before{
+        content: "◀";
+        color: #BEBEBE;
+        transform: scale(0.7);
+      }
+    }
   }
   .next-pagination-item.next-next{
     border-radius: 0 4px 4px 0;
+    .next-pagination-icon-next::before{
+      content: "▶";
+      color: #737373;
+      transform: scale(0.7);
+    }
+    &[disabled]{
+      .next-pagination-icon-next::before{
+        content: "▶";
+        color: #BEBEBE;
+        transform: scale(0.7);
+      }
+    }
   }
   .next-btn[disabled]{
     color: #BEBEBE;
@@ -731,7 +758,7 @@ h6{
 //   padding: 0px 32px;
 // }
 .next-nav:not(.next-icon-only):not(.next-hoz) .next-nav-item.next-menu-item.next-selected{
-  background-image: linear-gradient(270deg, rgba(87,174,255,0.10) 0%, #0168FF 100%);
+  background-image: linear-gradient(270deg, rgba(87,174,255,0.10) 0%, rgba(1,104,255,0.2) 100%);
   border: none;
   color: #236BEF;
   .next-nav-icon.next-icon{
@@ -751,7 +778,7 @@ h6{
   }
 }
 .next-nav.next-normal:not(.next-icon-only):not(.next-hoz) .next-nav-item.next-menu-item.next-child-selected{
-  background-image: linear-gradient(270deg, rgba(87,174,255,0.10) 0%, #0168FF 100%);
+  background-image: linear-gradient(270deg, rgba(87,174,255,0.10) 0%, rgba(1,104,255,0.2) 100%);
   border: none;
   color: #236BEF;
   .next-nav-icon.next-icon{
@@ -945,6 +972,62 @@ h6{
   width: unset;
 }
 
+// input 与 select结合
+.next-input-group{
+  .next-input-group-addon:first-child{
+    .next-input{
+      border-right: 1px solid transparent;
+    }
+  }
+  .next-input-group-text:first-child {
+    border: 1px solid #d9d9d9;
+    + .next-input.next-large{
+      border-left: none;
+      input {
+        height: 12px;
+        line-height: 12px;
+        margin: 11px 0px;
+        border-left: 1px solid transparent;
+        position: relative;
+        z-index: 9;
+      }
+    }
+    + .next-input:not(.next-large){
+      border-left: none;
+      input {
+        height: 12px;
+        line-height: 12px;
+        margin: 9px 0px;
+        border-left: 1px solid transparent;
+        position: relative;
+        z-index: 9;
+      }
+    }
+  }
+  >.next-input.next-large{
+    border-left: none;
+    input {
+      height: 12px;
+      line-height: 12px;
+      margin: 11px 0px;
+      border-left: 1px solid #d9d9d9;
+      position: relative;
+      z-index: 9;
+    }
+  }
+  >.next-input:not(.next-large){
+    border-left: none;
+    input {
+      height: 12px;
+      line-height: 12px;
+      margin: 9px 0px;
+      border-left: 1px solid #d9d9d9;
+      position: relative;
+      z-index: 9;
+    }
+  }
+}
+
 // message
 .next-message.next-addon[class*='next-message-']{
   background: #FFFFFF;
@@ -1045,6 +1128,30 @@ h6{
 }
 .next-table.only-bottom-border table tr td:first-child, .next-table.only-bottom-border table tr th:first-child{
   height: 38px;
+}
+.next-table.only-bottom-border:not(.next-table-lock):not(.next-table-scrolling-to-right):not(.next-table-lock-left):not(.next-table-lock-right){
+  border: 1px solid var(--table-normal-border-color, #E5E5E5);
+  border-bottom: none;
+  .next-table-header th{
+    border-right: 1px solid var(--table-normal-border-color, #E5E5E5);
+    &:nth-last-child(2){
+      border-right: none;
+    }
+    &:last-child{
+      border-left: 1px solid var(--table-normal-border-color, #E5E5E5);
+    }
+  }
+  .next-table-body{
+    .next-table-row {
+      .next-table-cell.first{
+        border-right: 1px solid var(--table-normal-border-color, #E5E5E5);
+      }
+      .next-table-cell.last{
+        border-left: 1px solid var(--table-normal-border-color, #E5E5E5);
+        border-right: 1px solid transparent;
+      }
+    }
+  }
 }
  // form
  // 间距问题

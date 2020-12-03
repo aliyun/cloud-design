@@ -58,7 +58,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <Table dataSource={this.state.dataSource}>
+        <Table dataSource={this.state.dataSource} hasBorder={false}>
           <Table.Column title="Id" dataIndex="id" />
           <Table.Column title="Title" dataIndex="title.name" />
           <Table.Column title="Time" dataIndex="time" />
