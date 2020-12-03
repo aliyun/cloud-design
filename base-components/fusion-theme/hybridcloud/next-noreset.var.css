@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.8.24 (https://fusion.design)
- * @alifd/next@1.21.10 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.8.25 (https://fusion.design)
+ * @alifd/next@1.21.13 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -4536,42 +4536,42 @@
       -webkit-animation: zoomIn 0.4s cubic-bezier(0.78, 0.14, 0.15, 0.86);
               animation: zoomIn 0.4s cubic-bezier(0.78, 0.14, 0.15, 0.86); }
     .next-tag-checkable.next-tag-small:not(.next-tag-level-primary):before {
-      right: -10px;
-      right: calc(0px - var(--tag-size-s-tick-icon-bg-size, 20px)/2);
-      bottom: -10px;
-      bottom: calc(0px - var(--tag-size-s-tick-icon-bg-size, 20px)/2);
-      width: 20px;
-      width: var(--tag-size-s-tick-icon-bg-size, 20px);
-      height: 20px;
-      height: var(--tag-size-s-tick-icon-bg-size, 20px); }
+      right: 0px;
+      right: calc(0px - var(--tag-size-s-tick-icon-bg-size, 0px)/2);
+      bottom: 0px;
+      bottom: calc(0px - var(--tag-size-s-tick-icon-bg-size, 0px)/2);
+      width: 0px;
+      width: var(--tag-size-s-tick-icon-bg-size, 0px);
+      height: 0px;
+      height: var(--tag-size-s-tick-icon-bg-size, 0px); }
     .next-tag-checkable.next-tag-small:not(.next-tag-level-primary):after {
       font-size: 8px;
       line-height: 8px;
       right: 0;
       bottom: 0; }
     .next-tag-checkable.next-tag-medium:not(.next-tag-level-primary):before {
-      right: -14px;
-      right: calc(0px - var(--tag-size-m-tick-icon-bg-size, 28px)/2);
-      bottom: -14px;
-      bottom: calc(0px - var(--tag-size-m-tick-icon-bg-size, 28px)/2);
-      width: 28px;
-      width: var(--tag-size-m-tick-icon-bg-size, 28px);
-      height: 28px;
-      height: var(--tag-size-m-tick-icon-bg-size, 28px); }
+      right: 0px;
+      right: calc(0px - var(--tag-size-m-tick-icon-bg-size, 0px)/2);
+      bottom: 0px;
+      bottom: calc(0px - var(--tag-size-m-tick-icon-bg-size, 0px)/2);
+      width: 0px;
+      width: var(--tag-size-m-tick-icon-bg-size, 0px);
+      height: 0px;
+      height: var(--tag-size-m-tick-icon-bg-size, 0px); }
     .next-tag-checkable.next-tag-medium:not(.next-tag-level-primary):after {
       font-size: 12px;
       line-height: 12px;
       right: 0;
       bottom: 0; }
     .next-tag-checkable.next-tag-large:not(.next-tag-level-primary):before {
-      right: -18px;
-      right: calc(0px - var(--tag-size-l-tick-icon-bg-size, 36px)/2);
-      bottom: -18px;
-      bottom: calc(0px - var(--tag-size-l-tick-icon-bg-size, 36px)/2);
-      width: 36px;
-      width: var(--tag-size-l-tick-icon-bg-size, 36px);
-      height: 36px;
-      height: var(--tag-size-l-tick-icon-bg-size, 36px); }
+      right: 0px;
+      right: calc(0px - var(--tag-size-l-tick-icon-bg-size, 0px)/2);
+      bottom: 0px;
+      bottom: calc(0px - var(--tag-size-l-tick-icon-bg-size, 0px)/2);
+      width: 0px;
+      width: var(--tag-size-l-tick-icon-bg-size, 0px);
+      height: 0px;
+      height: var(--tag-size-l-tick-icon-bg-size, 0px); }
     .next-tag-checkable.next-tag-large:not(.next-tag-level-primary):after {
       font-size: 16px;
       line-height: 16px;
@@ -4773,7 +4773,8 @@
       opacity: 1; }
   .next-checkbox-wrapper.disabled .next-checkbox-label {
     color: #CCCCCC;
-    color: var(--checkbox-disabled-label-color, #CCCCCC); }
+    color: var(--checkbox-disabled-label-color, #CCCCCC);
+    cursor: not-allowed; }
 
 .next-checkbox-group .next-checkbox-wrapper {
   display: inline-block;
