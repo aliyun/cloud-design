@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.36
+- 新增 index-with-locales.js 文件，用于支持 cdn 引入国际化
+- 调整了 message、toggle 等组件样式
+
 ## 1.0.34
 - 调整了 tag 等组件样式
 
