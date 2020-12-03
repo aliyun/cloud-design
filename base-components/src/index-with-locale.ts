@@ -28,4 +28,4 @@ AliCloudComponentsWithLocales.locales['zh-tw'] = zhtw;
 AliCloudComponentsWithLocales.locales['vi-vn'] = vivn;
 AliCloudComponentsWithLocales.locales['it-it'] = itit;
 
-export default AliCloudComponentsWithLocales;
+module.exports = AliCloudComponentsWithLocales;
