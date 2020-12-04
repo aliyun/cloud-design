@@ -27,7 +27,7 @@ class Demo extends React.Component {
 
   render() {
     return (
-      <Pagination current={this.state.current} onChange={this.handleChange} />
+      <Pagination current={this.state.current} onChange={this.handleChange} shape="arrow-only"/>
     )
   }
 }

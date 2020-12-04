@@ -3,9 +3,24 @@
   --btn-pure-normal-bg-image: linear-gradient(90deg, #1B58F4 0%, #457AFF 100%);
   --btn-pure-primary-bg-hover: #E5E5E5;
   --btn-pure-primary-border-color-hover: #E5E5E5;
+  // progress
+  --progress-line-normal-bg-color: linear-gradient(90deg, #1B58F4 0%, #457AFF 100%);
   /* nav */
-  --nav-primary-item-selected-bg: #000000;
+  // --nav-primary-item-selected-bg: #000000;
   --nav-secondary-item-selected-bg: transparent;
+  --nav-ver-height: 32px;
+  --menu-background-selected: transparent;
+  // --nav-ver-item-padding-lr: 32px;
+  --nav-normal-item-selected-text-color: #236BEF;
+  --nav-ver-item-selected-active-line: 0px;
+  --nav-ver-sub-nav-height: 32px;
+  --nav-normal-item-selected-text-style: normal;
+  --nav-primary-item-selected-text-style: normal;
+  --nav-group-height: 32px;
+  --nav-group-font-size: 12px;
+  --menu-padding-title-horizontal: 20px;
+  // --nav-primary-bg-color: transparent;
+  // --nav-primary-sub-nav-bg-color: transparent;
   /* avatar */
   --next-avatar-bg-color: #1B58F4;
   /* checkbox */
@@ -24,8 +39,8 @@
   --balloon-size-close-margin-top: 9px;
   --balloon-size-close: 8px;
   /* menu */
-  --menu-padding-horizontal-selectable: 16px;
-  // --menu-padding-horizontal-selectable: 32px;
+  // --menu-padding-horizontal-selectable: 16px;
+  --menu-padding-horizontal-selectable: 32px;
   --select-menu-select-icon-ml: -16px;
   /* search */
   --search-normal-normal-hover-color: #d9d9d9;
@@ -33,6 +48,8 @@
   --search-normal-normal-btn-hover-text-color: #595959;
   --search-normal-primary-hover-color: #d9d9d9;
   --search-normal-secondary-hover-color: #d9d9d9;
+  --search-simple-corner: 4px;
+  // --search-normal-normal-btn-text-padding-left: 0px;
   /* message */
   --message-help-color-icon-toast: #888888;
   --message-help-color-icon-inline: #888888;
@@ -43,6 +60,10 @@
   --breadcrumb-icon-color: #727272;
   // --breadcrumb-text-keyword-color: #BEBEBE;
   // button
+  --btn-ghost-light-border-color: #1B59F4;
+  --btn-ghost-light-color: #1B59F4;
+  --btn-ghost-dark-border-color: rgba(255,255,255,0.1);
+  --btn-ghost-dark-color: #457AFF;
   // --btn-normal-hover-shadow: 0 4px 8px 0 rgba(27,89,244,0.30);
   --btn-pure-secondary-bg-hover: #F5FAFF;
   --btn-pure-secondary-border-color-hover: #154CD9;
@@ -52,15 +73,24 @@
   --btn-warning-primary-border-color-hover: #C11919;
   // cascader
   --cascader-menu-icon-hover-expand-color: #727272;
-  // data-picker calendar
+  --menu-checkbox-mr: 16px;
+  // --menu-padding: 16px;
+  // date-picker calendar
   --calendar-card-table-cell-hover-background: #E5E5E5;
   --calendar-card-table-cell-hover-color: #595959;
   --calendar-card-table-cell-hover-border-color: #E5E5E5;
+  --calendar-card-table-cell-normal-background: transparent;
+  --calendar-card-table-cell-normal-border-color: transparent;
+  --calendar-card-table-cell-current-background: transparent;
+  --calendar-card-table-cell-current-border-color: transparent;
+  --time-picker-menu-item-background: #f9f9f9;
+  --time-picker-menu-title-background: #f9f9f9;
   // collapse
   --collapse-title-height: 18px;
   --collapse-icon-color: #737373;
   --collapse-title-font-disabled-color:#BEBEBE;
   --collapse-title-disabled-bg-color:#F3F3F3;
+  --collapse-title-hover-bg-color: #e5e5e5;
   // radio
   --radio-hovered-bg-color: transparent;
   --radio-checked-bg-color: transparent;
@@ -75,15 +105,22 @@
   --radio-disabled-border-color: #bebebe;
   --radio-disabled-bg-color: #bebebe;
   --radio-border-color: #8c8c8c;
+  --radio-button-corner-small: 4px;
+  --radio-button-corner-medium: 4px;
+  --radio-button-corner-large: 4px;
   // progress
   --progress-circle-underlay-width: 4px;
   --progress-circle-overlay-width: 4px;
   // checkbox
   --checkbox-disabled-circle-color: #cccccc;
+  --checkbox-checked-hovered-bg-color: #1752E4;
+  --checkbox-checked-hovered-border-color: transparent;
+  --checkbox-checked-hovered-circle-color: #ffffff;
   // input
   --input-border-color: #d9d9d9;
   --input-feedback-error-border-color: #D32020;
-  --active-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+  // --active-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+  --active-shadow: 0 4px 8px 0 rgba(0,0,0,0.01);
   --active-transition: 0.3s;
   // notification
   --notification-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
@@ -91,6 +128,62 @@
   --pagination-item-split: 1px;
   --pagination-item-hover-bg: #E5E5E5;
   --pagination-item-disabled-bg: #f3f3f3;
+  --pagination-large-item-split: 1px;
+  --pagination-small-item-split: 1px;
   // tab
   --tab-wrapped-tab-margin-right: 1px;
+  --tab-wrapped-tab-margin-bottom: 1px;
+  --tab-item-padding-tb-size-s: 10px;
+  --tab-item-padding-lr-size-s: 16px;
+  --tab-item-padding-tb-size-m: 12px;
+  --tab-item-padding-lr-size-m: 16px;
+  // list
+  --list-size-m-item-media-margin: 16px;
+  --list-size-m-item-padding-lr: 16px;
+  --list-size-m-item-title-font-size: 12px;
+  --list-size-m-item-content-font-size: 12px;
+  --list-size-s-item-padding-tb: 16px;
+  --list-size-s-item-padding-lr: 16px;
+  --list-size-s-item-media-margin: 16px;
+  --list-size-s-item-title-font-size: 12px;
+  // badge
+  --badge-color-bg: #C82727;
+  // dialog
+  --dialog-close-width: 12px;
+  --dialog-close-height: 12px;
+  --dialog-close-right: 22px;
+  --dialog-close-top: 22px;
+  --dialog-close-color: #737373;
+  --dialog-title-color: #000000;
+  // message
+  --message-size-m-border-radius: 4px;
+  --message-close-icon-color: #737373;
+  --message-notice-color-bg-inline: #EAF1FE;
+  --message-notice-color-border-inline: #EAF1FE;
+  --message-error-color-bg-inline: #FFEBEC;
+  --message-error-color-border-inline: #FFEBEC;
+  --message-waring-color-bg-inline: #FFF7E5;
+  --message-waring-color-border-inline: #FFF7E5;
+  --message-warning-color-icon-toast: #FFAA14;
+  --message-warning-color-icon-inline: #FFAA14;
+  --message-warning-color-icon-addon: #FFAA14;
+  --message-success-color-icon-toast: #29A64E;
+  --message-success-color-icon-inline: #29A64E;
+  --message-success-color-icon-addon: #29A64E;
+  --message-error-color-icon-toast: #C82728;
+  --message-error-color-icon-inline: #C82728;
+  --message-error-color-icon-addon: #C82728;
+  // drawer
+  --drawer-title-border-width: 0px;
+  // upload
+  --upload-card-add-text-margin-top: 4px;
+  // range
+  --range-size-m-track-radius: 2px;
+  // table
+  --table-cell-padding-top: 10px;
+  --table-header-padding-top: 10px;
+  // select
+  // --menu-padding-horizontal: 32px;
+  // form
+  // --form-item-m-margin-b: 0px;
 }

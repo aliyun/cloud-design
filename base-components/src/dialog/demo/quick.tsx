@@ -13,7 +13,8 @@ const popupAlert = () => {
     title: 'Alert',
     content: 'alert content alert content...',
     okProps: { children: 'Custom OK' },
-    onOk: () => console.log('ok')
+    onOk: () => console.log('ok'),
+    closeable: false
   })
 }
 
@@ -22,7 +23,8 @@ const popupConfirm = () => {
     title: 'Confirm',
     content: 'confirm content confirm content...',
     onOk: () => console.log('ok'),
-    onCancel: () => console.log('cancel')
+    onCancel: () => console.log('cancel'),
+    closeable: false
   })
 }
 
@@ -34,7 +36,8 @@ const popupShow = () => {
       <Button warning type="primary" onClick={() => dialog.hide()}>
         Custom button
       </Button>
-    )
+    ),
+    closeable: false
   })
 }
 
@@ -46,7 +49,8 @@ const popupCustomIcon = () => {
       type: 'warning'
     },
     onOk: () => console.log('ok'),
-    onCancel: () => console.log('cancel')
+    onCancel: () => console.log('cancel'),
+    closeable: false
   })
 }
 

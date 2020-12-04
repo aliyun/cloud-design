@@ -29,8 +29,8 @@ const App = () => (
         label="Age :"
         id="balloon-input-1"
       />
-      <br />
-      <br />
+      {/* <br />
+      <br /> */}
     </Balloon>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <Balloon
@@ -54,8 +54,8 @@ const App = () => (
           label="Age :"
           id="balloon-input-2"
         />
-        <br />
-        <br />
+        {/* <br />
+        <br /> */}
       </Balloon>
       <br />
       please input your name:
@@ -65,8 +65,8 @@ const App = () => (
         label="Name :"
         id="balloon-input-3"
       />
-      <br />
-      <br />
+      {/* <br />
+      <br /> */}
     </Balloon>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <Tooltip trigger={triggerTooltip} id="aria-tooltip">

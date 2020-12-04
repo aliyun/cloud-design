@@ -45,6 +45,7 @@ class Demo extends React.Component {
           {...formItemLayout}
           size={this.state.size}
           style={{ maxWidth: '800px' }}
+          labelTextAlign="left"
         >
           <FormItem required label="username:">
             <Input
@@ -136,7 +137,7 @@ class Demo extends React.Component {
           <FormItem label="Note:">
             <Input.TextArea placeholder="description" name="a11yRemark" />
           </FormItem>
-          <FormItem wrapperCol={{ offset: 5 }}>
+          <FormItem wrapperCol={{ offset: 7 }}>
             <Form.Submit
               validate
               type="primary"
@@ -145,7 +146,7 @@ class Demo extends React.Component {
             >
               Submit
             </Form.Submit>
-            <Form.Reset style={{ marginLeft: 130 }}>Reset</Form.Reset>
+            <Form.Reset >Reset</Form.Reset>
           </FormItem>
         </Form>
       </div>

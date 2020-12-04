@@ -71,6 +71,7 @@ class Demo extends React.Component {
               max={1024}
               step={1}
               onChange={this.onChangeInt.bind(this)}
+              style={{ marginLeft: '10px' }}
             />
           </Col>
         </Row>
@@ -92,6 +93,7 @@ class Demo extends React.Component {
               max={1}
               step={0.01}
               onChange={this.onChangeDec.bind(this)}
+              style={{ marginLeft: '10px' }}
             />
           </Col>
         </Row>

@@ -13,13 +13,13 @@ export default function DemoComponent() {
     <div>
       <Badge
         content="hot"
-        style={{ backgroundColor: '#FC0E3D', color: '#FFFFFF' }}
+        style={{ backgroundColor: '#C82727', color: '#FFFFFF' }}
       >
         <a href="#" className="head-example"></a>
       </Badge>
       <Badge
         content={<Icon type="error" />}
-        style={{ backgroundColor: 'transparent', color: 'red', padding: 0 }}
+        style={{ backgroundColor: 'transparent', color: '#C82727', padding: 0 }}
       >
         <a href="#" className="head-example"></a>
       </Badge>

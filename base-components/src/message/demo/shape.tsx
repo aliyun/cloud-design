@@ -51,7 +51,7 @@ class Demo extends React.Component {
         />
 
         {types.map((type) => (
-          <Message key={type} title={type} type={type} shape={shape}>
+          <Message key={type} title={type} type={type} shape={shape} closeable={true}>
             Content Content Content Content
           </Message>
         ))}

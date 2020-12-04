@@ -71,8 +71,8 @@ const leftBottom = (
 
 const Content = () => (
   <div>
-    <h4 style={{ marginTop: 0 }}>balloon title</h4>
-    <hr />
+    <h4 style={{ marginTop: 0 }}>标题</h4>
+    {/* <hr /> */}
     <p>balloon content</p>
   </div>
 )
