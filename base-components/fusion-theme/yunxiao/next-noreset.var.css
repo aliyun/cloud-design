@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-yunxiao-v1@0.6.5 (https://fusion.design)
- * @alifd/next@1.21.10 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.6.6 (https://fusion.design)
+ * @alifd/next@1.21.13 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -3797,8 +3797,8 @@
   font-size: var(--radio-button-font-size-large, 16px); }
 
 .next-radio-button-medium > label {
-  padding: 0 8px;
-  padding: 0 var(--radio-button-padding-medium, 8px);
+  padding: 0 12px;
+  padding: 0 var(--radio-button-padding-medium, 12px);
   height: 32px;
   height: var(--radio-button-height-medium, 32px);
   line-height: 32px;
@@ -4772,8 +4772,9 @@
       color: var(--checkbox-disabled-circle-color, #CECECE);
       opacity: 1; }
   .next-checkbox-wrapper.disabled .next-checkbox-label {
-    color: #292929;
-    color: var(--checkbox-disabled-label-color, #292929); }
+    color: #CECECE;
+    color: var(--checkbox-disabled-label-color, #CECECE);
+    cursor: not-allowed; }
 
 .next-checkbox-group .next-checkbox-wrapper {
   display: inline-block;
@@ -20534,8 +20535,8 @@
     border-bottom: 1px solid #E8E8E8;
     border-bottom: var(--table-normal-border-width, 1px) var(--table-normal-border-style, solid) var(--table-normal-border-color, #E8E8E8); }
     .next-table th .next-table-cell-wrapper {
-      padding: 12px 16px;
-      padding: var(--table-header-padding-top, 12px) var(--table-header-padding-left, 16px);
+      padding: 8px 16px;
+      padding: var(--table-header-padding-top, 8px) var(--table-header-padding-left, 16px);
       overflow: hidden;
       text-overflow: ellipsis;
       word-break: break-all; }
@@ -20561,8 +20562,8 @@
     border-bottom: 1px solid #E8E8E8;
     border-bottom: var(--table-normal-border-width, 1px) var(--table-normal-border-style, solid) var(--table-normal-border-color, #E8E8E8); }
     .next-table td .next-table-cell-wrapper {
-      padding: 12px 16px;
-      padding: var(--table-cell-padding-top, 12px) var(--table-cell-padding-left, 16px);
+      padding: 8px 16px;
+      padding: var(--table-cell-padding-top, 8px) var(--table-cell-padding-left, 16px);
       overflow: hidden;
       text-overflow: ellipsis;
       word-break: break-all; }
@@ -20694,8 +20695,8 @@
 .next-table-body,
 .next-table-header {
   overflow: auto;
-  font-size: 12px;
-  font-size: var(--table-th-font-size, 12px); }
+  font-size: 14px;
+  font-size: var(--table-th-font-size, 14px); }
 
 .next-table-header {
   margin-bottom: -20px;
