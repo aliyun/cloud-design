@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-yunxiao-v1@0.6.6 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.6.7 (https://fusion.design)
  * @alifd/next@1.21.13 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -23160,8 +23160,8 @@ small {
       display: inline-block;
       border-left: 1px solid #CECECE;
       border-left: var(--tree-line-width, 1px) var(--tree-line-style, solid) var(--tree-line-color, #CECECE);
-      height: 32px;
-      height: calc(var(--tree-node-padding, 8px) + var(--line-2, 2px)*2 + 20px);
+      height: 28px;
+      height: calc(var(--tree-node-padding, 4px) + var(--line-2, 2px)*2 + 20px);
       left: 7.5px;
       left: calc(var(--tree-switch-size, 16px)/2 - var(--tree-line-width, 1px)/2); }
   .next-tree-switcher {
@@ -23234,8 +23234,8 @@ small {
             width: 16px;
             font-size: 16px; } }
     .next-tree-switcher.next-noline:not(.next-disabled):hover .next-tree-switcher-icon {
-      color: #6E6E6E;
-      color: var(--tree-switch-hover-arrow-color, #6E6E6E); }
+      color: #1B9AEE;
+      color: var(--tree-switch-hover-arrow-color, #1B9AEE); }
     .next-tree-switcher.next-noline.next-disabled {
       cursor: not-allowed; }
       .next-tree-switcher.next-noline.next-disabled .next-tree-switcher-icon {
@@ -23358,8 +23358,8 @@ small {
     display: block;
     width: 16.5px;
     width: calc(24px - var(--tree-switch-size, 16px)/2 + var(--tree-line-width, 1px)/2);
-    height: 26px;
-    height: calc(20px + var(--tree-node-padding, 8px) - var(--tree-line-width, 1px)*2);
+    height: 22px;
+    height: calc(20px + var(--tree-node-padding, 4px) - var(--tree-line-width, 1px)*2);
     border-left: 1px solid #CECECE;
     border-left: var(--tree-line-width, 1px) var(--tree-line-style, solid) var(--tree-line-color, #CECECE);
     border-bottom: 1px solid #CECECE;
@@ -23379,10 +23379,10 @@ small {
   .next-tree.next-node-indent .next-tree-node .next-tree-node {
     margin-left: 24px; }
   .next-tree.next-node-indent .next-tree-node-inner {
-    padding-top: 4px;
-    padding-top: calc(var(--tree-node-padding, 8px)/2);
-    padding-bottom: 4px;
-    padding-bottom: calc(var(--tree-node-padding, 8px)/2); }
+    padding-top: 2px;
+    padding-top: calc(var(--tree-node-padding, 4px)/2);
+    padding-bottom: 2px;
+    padding-bottom: calc(var(--tree-node-padding, 4px)/2); }
     .next-tree.next-node-indent .next-tree-node-inner:focus .next-tree-node-label {
       color: #6E6E6E;
       color: var(--tree-node-hover-color, #6E6E6E);
@@ -23409,8 +23409,8 @@ small {
     background-color: #F7F7F7;
     background-color: var(--tree-node-hover-bg-color, #F7F7F7); }
   .next-tree.next-node-indent .next-tree-node-inner.next-selected .next-tree-node-label {
-    color: #6E6E6E;
-    color: var(--tree-node-selected-color, #6E6E6E);
+    color: #1B9AEE;
+    color: var(--tree-node-selected-color, #1B9AEE);
     background-color: #F0F9FF;
     background-color: var(--tree-node-selected-background, #F0F9FF); }
   .next-tree.next-node-indent .next-tree-node-inner.next-disabled .next-tree-node-label,
@@ -23432,10 +23432,10 @@ small {
     border-bottom-color: #1B9AEE;
     border-bottom-color: var(--color-brand1-6, #1B9AEE); }
   .next-tree.next-node-block .next-tree-node-inner {
-    padding-top: 8px;
-    padding-top: var(--tree-node-padding, 8px);
-    padding-bottom: 8px;
-    padding-bottom: var(--tree-node-padding, 8px);
+    padding-top: 4px;
+    padding-top: var(--tree-node-padding, 4px);
+    padding-bottom: 4px;
+    padding-bottom: var(--tree-node-padding, 4px);
     -webkit-transition: color 100ms linear, background-color 100ms linear;
     transition: color 100ms linear, background-color 100ms linear;
     cursor: pointer;
@@ -23449,8 +23449,8 @@ small {
       background-color: #F7F7F7;
       background-color: var(--tree-node-hover-bg-color, #F7F7F7); }
     .next-tree.next-node-block .next-tree-node-inner.next-selected {
-      color: #6E6E6E;
-      color: var(--tree-node-selected-color, #6E6E6E);
+      color: #1B9AEE;
+      color: var(--tree-node-selected-color, #1B9AEE);
       background-color: #F0F9FF;
       background-color: var(--tree-node-selected-background, #F0F9FF); }
     .next-tree.next-node-block .next-tree-node-inner.next-disabled, .next-tree.next-node-block .next-tree-node-inner.next-disabled:hover {
