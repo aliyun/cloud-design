@@ -241,6 +241,9 @@
     --color-notice-7: rgba(124,169,247,1);
     
     
+    --color-text1-6: rgba(102,102,102,1);
+    
+    
     /* ------------------------ corner ------------------------ */
     
     
@@ -4351,7 +4354,7 @@
     --tree-node-normal-background: var(--color-white, #FFFFFF);
     
     
-    --tree-node-title-border-radius: var(--corner-2, 4px);
+    --tree-node-title-border-radius: var(--corner-1, 2px);
     
     
     --tree-switch-arrow-color: var(--color-text1-2, #333333);
@@ -4381,7 +4384,7 @@
     --tree-node-hover-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
-    --tree-switch-hover-arrow-color: var(--color-text1-2, #333333);
+    --tree-switch-hover-arrow-color: var(--color-notice-5, #0064C8);
     
     
     --tree-switch-hover-icon-color: var(--color-text1-4, #1A1A1A);
@@ -4393,7 +4396,7 @@
     --tree-switch-hover-border-color: var(--color-line1-2, #D9D9D9);
     
     
-    --tree-node-selected-color: var(--color-text1-2, #333333);
+    --tree-node-selected-color: var(--color-notice-5, #0064C8);
     
     
     --tree-node-selected-background: var(--color-brand1-1, #F0F7FF);
@@ -5299,7 +5302,7 @@
     /* ------------------------ tag ------------------------ */
     
     
-    --tag-size-l-height: var(--s-7, 28px);
+    --tag-size-l-height: var(--s-8, 32px);
     
     
     --tag-size-m-height: var(--s-6, 24px);
@@ -5308,7 +5311,7 @@
     --tag-size-s-height: var(--s-5, 20px);
     
     
-    --tag-size-l-padding-lr: 6px;
+    --tag-size-l-padding-lr: 16px;
     
     
     --tag-size-m-padding-lr: var(--s-2, 8px);
@@ -5317,7 +5320,7 @@
     --tag-size-s-padding-lr: 8px;
     
     
-    --tag-corner-radius: var(--corner-3, 50px);
+    --tag-corner-radius: var(--corner-1, 2px);
     
     
     --tag-checkable-corner-radius: var(--corner-1, 2px);
@@ -5329,10 +5332,10 @@
     --tag-shadow: var(--shadow-zero, none);
     
     
-    --tag-size-l-text-size: var(--font-size-subhead, 16px);
+    --tag-size-l-text-size: var(--font-size-body-2, 14px);
     
     
-    --tag-size-m-text-size: var(--font-size-body-2, 14px);
+    --tag-size-m-text-size: var(--font-size-body-1, 12px);
     
     
     --tag-size-s-text-size: var(--font-size-caption, 12px);
@@ -5347,10 +5350,10 @@
     --tag-size-l-content-min-width: var(--s-12, 48px);
     
     
-    --tag-size-l-icon-font: var(--icon-xs, 12px);
+    --tag-size-l-icon-font: var(--icon-s, 16px);
     
     
-    --tag-size-m-icon-font: var(--icon-xs, 12px);
+    --tag-size-m-icon-font: var(--icon-s, 16px);
     
     
     --tag-size-s-icon-font: var(--icon-xs, 12px);
@@ -5365,13 +5368,13 @@
     --tag-size-s-tick-icon-size: var(--icon-xxs, 8px);
     
     
-    --tag-size-l-tick-icon-bg-size: var(--s-9, 36px);
+    --tag-size-l-tick-icon-bg-size: var(--s-zero, 0px);
     
     
-    --tag-size-m-tick-icon-bg-size: var(--s-7, 28px);
+    --tag-size-m-tick-icon-bg-size: var(--s-zero, 0px);
     
     
-    --tag-size-s-tick-icon-bg-size: var(--s-5, 20px);
+    --tag-size-s-tick-icon-bg-size: var(--s-zero, 0px);
     
     
     --tag-normal-text-color: var(--color-text1-4, #1A1A1A);
@@ -5401,10 +5404,10 @@
     --tag-closable-bordered-text-color: var(--color-text1-3, #262626);
     
     
-    --tag-closable-bordered-border-color: var(--color-line1-1, #E6E6E6);
+    --tag-closable-bordered-border-color: var(--color-transparent, transparent);
     
     
-    --tag-closable-bordered-bg: var(--color-transparent, transparent);
+    --tag-closable-bordered-bg: var(--color-fill1-2, #F7F7F7);
     
     
     --tag-closable-bordered-text-color-hover: var(--color-text1-3, #262626);
@@ -5437,10 +5440,10 @@
     --tag-fill-tail-color: var(--color-brand1-6, #0064C8);
     
     
-    --tag-fill-border-color: var(--color-brand1-3, #90C0EF);
+    --tag-fill-border-color: var(--color-transparent, transparent);
     
     
-    --tag-fill-border-color-hover: var(--color-brand1-3, #90C0EF);
+    --tag-fill-border-color-hover: var(--color-transparent, transparent);
     
     
     --tag-fill-text-color-disabled: var(--color-text1-1, #CCCCCC);
@@ -5473,7 +5476,7 @@
     --tag-fill-tail-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --tag-bordered-text-color-hover: var(--color-text1-2, #333333);
+    --tag-bordered-text-color-hover: var(--color-fill1-6, #666666);
     
     
     --tag-bordered-tail-color-hover: var(--color-text1-4, #1A1A1A);
@@ -5494,7 +5497,7 @@
     --tag-secondary-text-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --tag-bordered-border-color: var(--color-line1-1, #E6E6E6);
+    --tag-bordered-border-color: var(--color-transparent, transparent);
     
     
     --tag-secondary-border-color: var(--color-brand1-6, #0064C8);
@@ -5506,7 +5509,7 @@
     --tag-checkable-secondary-bg-selected: var(--color-brand1-6, #0064C8);
     
     
-    --tag-bordered-border-color-hover: var(--color-line1-1, #E6E6E6);
+    --tag-bordered-border-color-hover: var(--color-transparent, transparent);
     
     
     --tag-secondary-border-color-hover: var(--color-brand1-6, #0064C8);
@@ -5518,22 +5521,22 @@
     --tag-checkable-secondary-bg-selected-hover: var(--color-brand1-9, #003263);
     
     
-    --tag-fill-bg-color: var(--color-white, #FFFFFF);
+    --tag-fill-bg-color: var(--color-brand1-1, #F0F7FF);
     
     
     --tag-primary-background-color: var(--color-brand1-6, #0064C8);
     
     
-    --tag-bordered-bg: var(--color-transparent, transparent);
+    --tag-bordered-bg: var(--color-fill1-2, #F7F7F7);
     
     
     --tag-secondary-bg: var(--color-transparent, transparent);
     
     
-    --tag-fill-bg-color-hover: var(--color-brand1-1, #F0F7FF);
+    --tag-fill-bg-color-hover: var(--color-brand1-2, #CAE3FD);
     
     
-    --tag-bordered-bg-hover: var(--color-fill1-2, #F7F7F7);
+    --tag-bordered-bg-hover: var(--color-fill1-3, #E6E6E6);
     
     
     --tag-secondary-bg-hover: var(--color-brand1-1, #F0F7FF);
@@ -5584,7 +5587,7 @@
     --tag-checkable-normal-text-color: var(--color-text1-3, #262626);
     
     
-    --tag-checkable-normal-border-color: var(--color-line1-1, #E6E6E6);
+    --tag-checkable-normal-border-color: var(--color-line1-2, #D9D9D9);
     
     
     --tag-checkable-normal-bg: var(--color-white, #FFFFFF);
@@ -5593,7 +5596,7 @@
     --tag-checkable-normal-text-color-hover: var(--color-text1-4, #1A1A1A);
     
     
-    --tag-checkable-normal-border-color-hover: var(--color-line1-1, #E6E6E6);
+    --tag-checkable-normal-border-color-hover: var(--color-fill1-4, #D9D9D9);
     
     
     --tag-checkable-normal-bg-hover: var(--color-fill1-2, #F7F7F7);
@@ -5668,19 +5671,19 @@
     --tag-closable-primary-fill-text-color: var(--color-brand1-6, #0064C8);
     
     
-    --tag-closable-primary-fill-border-color: var(--color-brand1-3, #90C0EF);
+    --tag-closable-primary-fill-border-color: var(--color-transparent, transparent);
     
     
-    --tag-closable-primary-fill-bg-color: var(--color-white, #FFFFFF);
+    --tag-closable-primary-fill-bg-color: var(--color-brand1-1, #F0F7FF);
     
     
     --tag-closable-primary-fill-text-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --tag-closable-primary-fill-border-color-hover: var(--color-brand1-3, #90C0EF);
+    --tag-closable-primary-fill-border-color-hover: var(--color-transparent, transparent);
     
     
-    --tag-closable-primary-fill-bg-color-hover: var(--color-brand1-1, #F0F7FF);
+    --tag-closable-primary-fill-bg-color-hover: var(--color-brand1-2, #CAE3FD);
     
     
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #CCCCCC);
@@ -5722,7 +5725,7 @@
     --table-tree-expanded-icon-size: var(--icon-xs, 12px);
     
     
-    --table-cell-padding-top: var(--s-3, 12px);
+    --table-cell-padding-top: var(--s-2, 8px);
     
     
     --table-cell-padding-left: var(--s-4, 16px);
@@ -6256,7 +6259,7 @@
     --input-border-color: var(--color-line1-2, #D9D9D9);
     
     
-    --input-label-color: var(--color-text1-3, #262626);
+    --input-label-color: var(--color-line1-5, #9c9c9c);
     
     
     --input-hover-border-color: var(--color-line1-3, #CCCCCC);
@@ -7105,7 +7108,7 @@
     --dialog-title-padding-bottom: var(--s-2, 8px);
     
     
-    --dialog-title-padding-left-right: var(--s-4, 16px);
+    --dialog-title-padding-left-right: var(--s-5, 20px);
     
     
     --dialog-title-border-width: var(--line-1, 1px);
@@ -7123,13 +7126,13 @@
     --dialog-content-font-size: var(--font-size-body-2, 14px);
     
     
-    --dialog-content-padding-top: var(--s-1, 4px);
+    --dialog-content-padding-top: var(--s-4, 16px);
     
     
     --dialog-content-padding-bottom: var(--s-4, 16px);
     
     
-    --dialog-content-padding-left-right: var(--s-4, 16px);
+    --dialog-content-padding-left-right: var(--s-5, 20px);
     
     
     --dialog-footer-border-width: var(--line-1, 1px);
@@ -7141,7 +7144,7 @@
     --dialog-footer-padding-bottom: var(--s-4, 16px);
     
     
-    --dialog-footer-padding-left-right: var(--s-4, 16px);
+    --dialog-footer-padding-left-right: var(--s-5, 20px);
     
     
     --dialog-footer-button-spacing: var(--s-2, 8px);
@@ -7513,7 +7516,7 @@
     --message-size-m-title-content-padding-left: var(--s-2, 8px);
     
     
-    --message-size-m-title-content-padding-right: var(--s-5, 20px);
+    --message-size-m-title-content-padding-right: var(--s-4, 16px);
     
     
     --message-size-m-title-font: var(--font-size-body-2, 14px);
@@ -8941,7 +8944,7 @@
     --radio-font-margin-left: var(--s-2, 8px);
     
     
-    --radio-font-size: var(--font-size-body-2, 14px);
+    --radio-font-size: var(--font-size-body-1, 12px);
     
     
     --radio-shadow: var(--shadow-zero, none);
@@ -9016,7 +9019,7 @@
     --radio-button-padding-large: var(--s-4, 16px);
     
     
-    --radio-button-padding-medium: var(--s-2, 8px);
+    --radio-button-padding-medium: var(--s-3, 12px);
     
     
     --radio-button-padding-small: var(--s-2, 8px);

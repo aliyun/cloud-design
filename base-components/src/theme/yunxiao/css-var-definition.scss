@@ -235,6 +235,9 @@
     --color-notice-7: rgba(104,187,242,1);
     
     
+    --color-line1-5: rgba(173,173,173,1);
+    
+    
     /* ------------------------ corner ------------------------ */
     
     
@@ -2068,7 +2071,7 @@
     --checkbox-label-color: var(--color-text1-3, #575757);
     
     
-    --checkbox-disabled-label-color: var(--color-text1-4, #292929);
+    --checkbox-disabled-label-color: var(--color-text1-1, #CECECE);
     
     
     --checkbox-disabled-circle-color: var(--color-text1-1, #CECECE);
@@ -2374,10 +2377,10 @@
     --search-normal-normal-color: var(--color-line1-1, #E8E8E8);
     
     
-    --search-normal-normal-split-color: var(--color-line1-1, #E8E8E8);
+    --search-normal-normal-split-color: var(--color-line1-2, #DBDBDB);
     
     
-    --search-normal-normal-hover-color: var(--color-line1-4, #FFFFFF);
+    --search-normal-normal-hover-color: var(--color-line1-2, #DBDBDB);
     
     
     --search-normal-normal-shadow: var(--shadow-zero, none);
@@ -2554,7 +2557,7 @@
     /* ------------------------ tree ------------------------ */
     
     
-    --tree-node-padding: var(--s-2, 8px);
+    --tree-node-padding: var(--s-1, 4px);
     
     
     --tree-node-title-margin: var(--s-1, 4px);
@@ -2620,7 +2623,7 @@
     --tree-node-hover-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
-    --tree-switch-hover-arrow-color: var(--color-text1-2, #6E6E6E);
+    --tree-switch-hover-arrow-color: var(--color-brand1-6, #1B9AEE);
     
     
     --tree-switch-hover-icon-color: var(--color-text1-4, #292929);
@@ -2632,7 +2635,7 @@
     --tree-switch-hover-border-color: var(--color-line1-3, #CECECE);
     
     
-    --tree-node-selected-color: var(--color-text1-2, #6E6E6E);
+    --tree-node-selected-color: var(--color-brand1-6, #1B9AEE);
     
     
     --tree-node-selected-background: var(--color-brand1-1, #F0F9FF);
@@ -3538,13 +3541,13 @@
     /* ------------------------ tag ------------------------ */
     
     
-    --tag-size-l-height: var(--s-9, 36px);
+    --tag-size-l-height: var(--s-7, 28px);
     
     
-    --tag-size-m-height: var(--s-8, 32px);
+    --tag-size-m-height: var(--s-6, 24px);
     
     
-    --tag-size-s-height: var(--s-6, 24px);
+    --tag-size-s-height: var(--s-5, 20px);
     
     
     --tag-size-l-padding-lr: var(--s-4, 16px);
@@ -3673,7 +3676,7 @@
     --tag-closable-bordered-bg-disabled: var(--color-fill1-2, #F7F7F7);
     
     
-    --tag-fill-tail-color: var(--color-notice-4, #41AAF0);
+    --tag-fill-tail-color: var(--color-brand1-6, #1B9AEE);
     
     
     --tag-fill-border-color: var(--color-transparent, transparent);
@@ -3709,7 +3712,7 @@
     --tag-fill-text-color-hover: var(--color-brand1-6, #1B9AEE);
     
     
-    --tag-fill-tail-color-hover: var(--color-notice-4, #41AAF0);
+    --tag-fill-tail-color-hover: var(--color-brand1-6, #1B9AEE);
     
     
     --tag-bordered-text-color-hover: var(--color-text1-2, #6E6E6E);
@@ -3937,7 +3940,7 @@
     --table-normal-border-width: var(--line-1, 1px);
     
     
-    --table-th-font-size: var(--font-size-caption, 12px);
+    --table-th-font-size: var(--font-size-body-1, 14px);
     
     
     --table-th-font-weight: var(--font-weight-2, normal);
@@ -3961,13 +3964,13 @@
     --table-tree-expanded-icon-size: var(--icon-xs, 12px);
     
     
-    --table-cell-padding-top: var(--s-3, 12px);
+    --table-cell-padding-top: var(--s-2, 8px);
     
     
     --table-cell-padding-left: var(--s-4, 16px);
     
     
-    --table-header-padding-top: var(--s-3, 12px);
+    --table-header-padding-top: var(--s-2, 8px);
     
     
     --table-header-padding-left: var(--s-4, 16px);
@@ -4108,7 +4111,7 @@
     --btn-size-m-font: var(--font-size-body-1, 14px);
     
     
-    --btn-size-m-icon-size: var(--icon-s, 16px);
+    --btn-size-m-icon-size: var(--icon-m, 20px);
     
     
     --btn-size-m-icon-margin: var(--s-1, 4px);
@@ -4132,7 +4135,7 @@
     --btn-size-l-font: var(--font-size-body-2, 14px);
     
     
-    --btn-size-l-icon-size: var(--icon-s, 16px);
+    --btn-size-l-icon-size: var(--icon-m, 20px);
     
     
     --btn-size-l-icon-margin: var(--s-1, 4px);
@@ -4495,7 +4498,7 @@
     --input-border-color: var(--color-line1-1, #E8E8E8);
     
     
-    --input-label-color: var(--color-text1-3, #575757);
+    --input-label-color: var(--color-line1-5, #adadad);
     
     
     --input-hover-border-color: var(--color-line1-2, #DBDBDB);
@@ -5677,7 +5680,7 @@
     --balloon-normal-color-close-hover: var(--color-text1-3, #575757);
     
     
-    --balloon-primary-color-bg: var(--color-text1-2, #6E6E6E);
+    --balloon-primary-color-bg: var(--color-fill1-7, #595959);
     
     
     --balloon-primary-color-border: var(--color-transparent, transparent);
@@ -5695,7 +5698,7 @@
     --balloon-primary-color-close-hover: var(--color-text1-1, #CECECE);
     
     
-    --balloon-tooltip-color-bg: var(--color-text1-2, #6E6E6E);
+    --balloon-tooltip-color-bg: var(--color-fill1-7, #595959);
     
     
     --balloon-tooltip-shadow: var(--shadow-zero, none);
@@ -5722,7 +5725,7 @@
     --message-size-l-title-content-padding-left: var(--s-2, 8px);
     
     
-    --message-size-l-title-content-padding-right: var(--s-7, 28px);
+    --message-size-l-title-content-padding-right: var(--s-5, 20px);
     
     
     --message-size-l-title-font: var(--font-size-subhead, 16px);
@@ -5743,7 +5746,7 @@
     --message-size-l-icon: var(--icon-m, 20px);
     
     
-    --message-size-m-padding: var(--s-3, 12px);
+    --message-size-m-padding: var(--s-2, 8px);
     
     
     --message-size-m-border-width: var(--line-1, 1px);
@@ -5752,7 +5755,7 @@
     --message-size-m-title-content-padding-left: var(--s-2, 8px);
     
     
-    --message-size-m-title-content-padding-right: var(--s-8, 32px);
+    --message-size-m-title-content-padding-right: var(--s-2, 8px);
     
     
     --message-size-m-title-font: var(--font-size-body-2, 14px);
@@ -5770,7 +5773,7 @@
     --message-size-m-close-right: var(--s-3, 12px);
     
     
-    --message-size-m-icon: var(--icon-s, 16px);
+    --message-size-m-icon: var(--icon-m, 20px);
     
     
     --message-close-icon-size: var(--icon-s, 16px);
@@ -5797,7 +5800,7 @@
     --message-shadow-toast: var(--shadow-3-down, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
     
     
-    --message-success-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-success-color-bg-inline: var(--color-success-1, #F0FFF7);
     
     
     --message-success-color-bg-addon: var(--color-transparent, transparent);
@@ -5806,10 +5809,10 @@
     --message-success-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-success-color-border-inline: var(--color-line1-1, #E8E8E8);
+    --message-success-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-success-color-border-toast: var(--color-white, #FFFFFF);
+    --message-success-color-border-toast: var(--color-line1-1, #E8E8E8);
     
     
     --message-success-color-title-inline: var(--color-text1-4, #292929);
@@ -5839,7 +5842,7 @@
     --message-success-color-icon-toast: var(--color-success-5, #23B066);
     
     
-    --message-error-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-error-color-bg-inline: var(--color-error-1, #FFF1F0);
     
     
     --message-error-color-bg-addon: var(--color-transparent, transparent);
@@ -5848,10 +5851,10 @@
     --message-error-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-error-color-border-inline: var(--color-line1-1, #E8E8E8);
+    --message-error-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-error-color-border-toast: var(--color-white, #FFFFFF);
+    --message-error-color-border-toast: var(--color-line1-1, #E8E8E8);
     
     
     --message-error-color-title-inline: var(--color-text1-4, #292929);
@@ -5881,7 +5884,7 @@
     --message-error-color-icon-toast: var(--color-error-5, #E84738);
     
     
-    --message-warning-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-warning-color-bg-inline: var(--color-warning-1, #FFF8F0);
     
     
     --message-warning-color-bg-addon: var(--color-transparent, transparent);
@@ -5890,10 +5893,10 @@
     --message-warning-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-warning-color-border-inline: var(--color-line1-1, #E8E8E8);
+    --message-warning-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-warning-color-border-toast: var(--color-white, #FFFFFF);
+    --message-warning-color-border-toast: var(--color-line1-1, #E8E8E8);
     
     
     --message-warning-color-title-inline: var(--color-text1-4, #292929);
@@ -5923,7 +5926,7 @@
     --message-warning-color-icon-toast: var(--color-warning-5, #F98E1B);
     
     
-    --message-notice-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-notice-color-bg-inline: var(--color-notice-1, #F0F9FF);
     
     
     --message-notice-color-bg-addon: var(--color-transparent, transparent);
@@ -5932,10 +5935,10 @@
     --message-notice-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-notice-color-border-inline: var(--color-line1-1, #E8E8E8);
+    --message-notice-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-notice-color-border-toast: var(--color-white, #FFFFFF);
+    --message-notice-color-border-toast: var(--color-line1-1, #E8E8E8);
     
     
     --message-notice-color-title-inline: var(--color-text1-4, #292929);
@@ -5965,7 +5968,7 @@
     --message-notice-color-icon-toast: var(--color-brand1-6, #1B9AEE);
     
     
-    --message-help-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-help-color-bg-inline: var(--color-notice-1, #F0F9FF);
     
     
     --message-help-color-bg-addon: var(--color-transparent, transparent);
@@ -5974,10 +5977,10 @@
     --message-help-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-help-color-border-inline: var(--color-line1-1, #E8E8E8);
+    --message-help-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-help-color-border-toast: var(--color-white, #FFFFFF);
+    --message-help-color-border-toast: var(--color-line1-1, #E8E8E8);
     
     
     --message-help-color-title-inline: var(--color-text1-4, #292929);
@@ -5998,7 +6001,7 @@
     --message-help-color-content-toast: var(--color-text1-3, #575757);
     
     
-    --message-help-color-icon-inline: var(--color-fill1-6, #8B8B8B);
+    --message-help-color-icon-inline: var(--color-notice-5, #1B9AEE);
     
     
     --message-help-color-icon-addon: var(--color-fill1-6, #8B8B8B);
@@ -6007,7 +6010,7 @@
     --message-help-color-icon-toast: var(--color-fill1-6, #8B8B8B);
     
     
-    --message-loading-color-bg-inline: var(--color-white, #FFFFFF);
+    --message-loading-color-bg-inline: var(--color-notice-1, #F0F9FF);
     
     
     --message-loading-color-bg-addon: var(--color-transparent, transparent);
@@ -6016,10 +6019,10 @@
     --message-loading-color-bg-toast: var(--color-white, #FFFFFF);
     
     
-    --message-loading-color-border-inline: var(--color-line1-1, #E8E8E8);
+    --message-loading-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-loading-color-border-toast: var(--color-white, #FFFFFF);
+    --message-loading-color-border-toast: var(--color-line1-1, #E8E8E8);
     
     
     --message-loading-color-title-inline: var(--color-text1-4, #292929);
@@ -7255,7 +7258,7 @@
     --radio-button-padding-large: var(--s-4, 16px);
     
     
-    --radio-button-padding-medium: var(--s-2, 8px);
+    --radio-button-padding-medium: var(--s-3, 12px);
     
     
     --radio-button-padding-small: var(--s-2, 8px);
@@ -8419,13 +8422,13 @@
     --form-element-large-preview-font-size: var(--font-size-subhead, 16px);
     
     
-    --form-element-small-icon-size: var(--icon-xs, 12px);
+    --form-element-small-icon-size: var(--icon-s, 16px);
     
     
-    --form-element-medium-icon-size: var(--icon-s, 16px);
+    --form-element-medium-icon-size: var(--icon-m, 20px);
     
     
-    --form-element-large-icon-size: var(--icon-s, 16px);
+    --form-element-large-icon-size: var(--icon-m, 20px);
     
     
     --form-element-small-corner: var(--corner-1, 4px);

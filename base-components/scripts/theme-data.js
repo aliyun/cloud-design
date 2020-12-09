@@ -1,6 +1,6 @@
 module.exports = [
   {
-    packageName: '@alife/theme-5785@0.4.0',
+    packageName: '@alife/theme-5785@0.4.1',
     themeName: 'b-design',
   },
   {
