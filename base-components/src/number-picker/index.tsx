@@ -1,6 +1,4 @@
+import { NumberPicker as NextNumberPicker } from '@alifd/next'
+import { withThemeClass } from '../utils/withThemeClass'
 
-  import { NumberPicker as NextNumberPicker } from '@alifd/next'
-
-  export default NextNumberPicker;
-    
-  
+export default withThemeClass(NextNumberPicker)

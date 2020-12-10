@@ -1,27 +1,54 @@
+$input-prefix: '.' + $css-prefix + 'input';
 $input-group: '.' + $css-prefix + 'input-group';
 $number-picker: '.' + $css-prefix + 'number-picker';
 
 #{$number-picker} {
-  &-handler {
-    .#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn {
-      border: none;
-      min-width: unset;
+  // type=normal
+  > #{$input-prefix} {
+    border: var(--number-picker-normal-border, 1px solid #dedede);
+    &:hover {
+      border: var(--number-picker-normal-border-hover, 1px solid #737373);
+    }
+    #{$number-picker}-handler {
+      .#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn {
+        min-width: unset;
+        border: var(--number-picker-handler-btn-border, none);
+        &:hover {
+          border: var(--number-picker-handler-btn-border-hover, none);
+        }
+        &:first-child {
+          border-right: none;
+          border-top: none;
+        }
+        &:last-child {
+          border-right: none;
+          border-bottom: none;
+        }
+      }
     }
   }
+
+  // type=inline
   &-inline {
     #{$input-group} {
-      border: 1px solid #c0c6cc;
-      border-radius: 2px;
-      padding: 4px;
+      border: var(--number-picker-inline-group-border, 1px solid #c0c6cc);
+      border-radius: var(--number-picker-border-radius, 2px);
+      padding: var(--number-picker-inline-group-padding, 4px);
       #{$input-group}-addon {
         .#{$css-prefix}btn {
-          border: none;
-          border-radius: 2px;
+          border: var(--number-picker-inline-group-btn-border, none);
+          &:hover {
+            border: var(--number-picker-inline-group-btn-border-hover, none);
+          }
+          border-radius: var(--number-picker-border-radius, 2px);
           min-width: unset;
         }
       }
-      .#{$css-prefix}input {
-        border: none;
+      #{$input-prefix} {
+        border: var(--number-picker-inline-group-btn-border, none);
+        &:hover {
+          border: var(--number-picker-inline-group-btn-border-hover, none);
+        }
       }
     }
   }
@@ -29,12 +56,29 @@ $number-picker: '.' + $css-prefix + 'number-picker';
 
 #{$number-picker}.#{$css-prefix}disabled {
   background-color: var(--input-disabled-bg-color, #f7f9fa);
-  #{$input-group} {
-    box-shadow: none;
+  > #{$input-prefix} {
+    border: var(--number-picker-normal-border, 1px solid #dedede);
   }
-  #{$input-group}-addon {
-    .#{$css-prefix}btn {
-      background-color: var(--input-disabled-bg-color, #f7f9fa);
+  #{$input-group} {
+    &:hover {
+      // hover的时候border不变化
+      border: var(--number-picker-inline-group-border, 1px solid #c0c6cc);
+    }
+    box-shadow: none;
+    #{$input-group}-addon {
+      .#{$css-prefix}btn {
+        background-color: var(--input-disabled-bg-color, #f7f9fa);
+        &:hover {
+          // hover的时候border不变化
+          border: var(--number-picker-inline-group-btn-border, none);
+        }
+      }
+    }
+    #{$input-prefix} {
+      &:hover {
+        // hover的时候border不变化
+        border: var(--number-picker-inline-group-btn-border, none);
+      }
     }
   }
 }
@@ -45,17 +89,30 @@ $number-picker: '.' + $css-prefix + 'number-picker';
       #{$input-group}-addon {
         .#{$css-prefix}btn {
           // 让整体高度等于 --number-picker-height-#{$size}
-          height: calc(var(--number-picker-height-#{$size}) - 10px);
-          width: calc(var(--number-picker-height-#{$size}) - 10px);
+          height: var(
+            --number-picker-final-height-#{$size},
+            calc(var(--number-picker-height-#{$size}) - 10px)
+          );
+          width: var(
+            --number-picker-final-height-#{$size},
+            calc(var(--number-picker-height-#{$size}) - 10px)
+          );
           min-width: unset;
         }
       }
-      .#{$css-prefix}input {
-        height: calc(var(--number-picker-height-#{$size}) - 10px);
-        line-height: calc(var(--number-picker-height-#{$size}) - 10px);
+      #{$input-prefix} {
+        display: inline-block;
+        height: var(
+          --number-picker-final-height-#{$size},
+          calc(var(--number-picker-height-#{$size}) - 10px)
+        );
+        line-height: var(
+          --number-picker-final-height-#{$size},
+          calc(var(--number-picker-height-#{$size}) - 10px)
+        );
         input {
-          height: calc(var(--number-picker-height-#{$size}) - 10px);
-          line-height: calc(var(--number-picker-height-#{$size}) - 10px);
+          display: inline-block;
+          height: 100%;
         }
       }
     }

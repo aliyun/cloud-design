@@ -2,6 +2,11 @@
 $css-prefix: 'next-' !default;
 $css-var-scope: ':root';
 
+// 在xconsole和wind之间切换的的时候，有些样式很难仅通过css-var来切换，
+// 因此我们需要通过动态classname来辅助切换样式。
+// 在一些关键节点，会在使用wind主题的时候应用'.is-wind'类名
+$wind-cls: '.is-wind';
+
 @mixin alicloud-scrollbar {
   &::-webkit-scrollbar {
     width: 4px;

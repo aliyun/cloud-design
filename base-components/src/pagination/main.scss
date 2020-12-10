@@ -3,6 +3,10 @@ $pagination-item: $pagination-prefix + '-item';
 
 #{$pagination-prefix} {
   #{$pagination-item} {
+    &.#{$css-prefix}current.#{$css-prefix}current.#{$css-prefix}current {
+      // 避免border被其他盖住
+      z-index: 2;
+    }
     &:not(.#{$css-prefix}current):hover {
       background-color: var(--pagination-item-hover-bg, #fff);
     }

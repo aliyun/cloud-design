@@ -1,6 +1,4 @@
+import { Step as NextStep } from '@alifd/next'
+import { withThemeClass } from '../utils/withThemeClass'
 
-  import { Step as NextStep } from '@alifd/next'
-
-  export default NextStep;
-    
-  
+export default withThemeClass(NextStep)

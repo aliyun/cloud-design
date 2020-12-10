@@ -1,6 +1,4 @@
+import { Tag as NextTag } from '@alifd/next'
+import { withThemeClass } from '../utils/withThemeClass'
 
-  import { Tag as NextTag } from '@alifd/next'
-
-  export default NextTag;
-    
-  
+export default withThemeClass(NextTag)

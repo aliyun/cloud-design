@@ -1,6 +1,4 @@
+import { Pagination as NextPagination } from '@alifd/next'
+import { withThemeClass } from '../utils/withThemeClass'
 
-  import { Pagination as NextPagination } from '@alifd/next'
-
-  export default NextPagination;
-    
-  
+export default withThemeClass(NextPagination)

@@ -1,3 +1,112 @@
-body {
-  color: var(--color-text1-9);
-}
+
+// 从console-components仓库收集的所有旧版主题的css覆盖
+// 大部分已经移动到xconsole样式中
+
+// $radio-cls-name: '#{$css-prefix}radio';
+// $radio-group-cls-name: '#{$radio-cls-name}-group';
+// $radio-box-size: 14px !default;
+
+// @mixin square-box($size) {
+//   width: $size !important;
+//   height: $size !important;
+// }
+
+// .#{$radio-cls-name} {
+//   &-label {
+//     margin-left: calc(#{$size-base} * 2);
+//   }
+
+//   &-wrapper {
+//     display: inline-block;
+//     vertical-align: middle;
+//     line-height: 0.5;
+
+//     .#{$radio-cls-name}-inner {
+//       @include square-box($radio-box-size);
+
+//       > .next-icon {
+//         display: inline-block;
+//         line-height: $radio-box-size;
+//         position: static;
+//         margin: 0;
+//         vertical-align: top;
+//       }
+//     }
+
+//     input[type='radio'] {
+//       @include square-box($radio-box-size);
+//     }
+//   }
+// }
+
+// .#{$radio-group-cls-name} {
+//   &.#{$radio-cls-name}-button {
+//     .#{$radio-cls-name}-wrapper {
+//       // background-color: red !;
+//       text-align: center;
+//     }
+//   }
+// }
+
+// .#{$css-prefix}search {
+//   .#{$css-prefix}input.#{$css-prefix}medium {
+//     height: 30px;
+//   }
+
+//   .#{$css-prefix}input-group-addon.#{$css-prefix}after {
+//     .#{$css-prefix}btn {
+//       .#{$css-prefix}btn-icon.#{$css-prefix}icon-first {
+//         margin-right: 0;
+//       }
+//     }
+//   }
+
+//   .#{$css-prefix}search-left-addon {
+//     .#{$css-prefix}select-values {
+//       line-height: 20px;
+//     }
+//   }
+// }
+
+// 被选中项目的 `√` 图标位置居右
+// .#{$css-prefix}menu.#{$css-prefix}select-menu {
+//   .#{$css-prefix}menu-icon-selected.#{$css-prefix}icon {
+//     position: absolute;
+//     top: 0;
+//     right: calc(#{$size-base} * 2);
+//     margin-left: 0;
+//   }
+// }
+
+// .next-step-circle.next-step-horizontal.next-step-label-horizontal.next-enhanced-step-size-small>.next-step-item .next-step-item-body .next-step-item-title {
+// 	margin-top: 3px;
+// }
+
+// .#{$css-prefix}switch-small {
+//   width: 28px;
+//   height: 16px;
+
+//   &:after {
+//     width: 14px;
+//     height: 14px;
+//   }
+
+//   // switch内部的内容
+//   & > .#{$css-prefix}switch-children {
+//     height: 16px;
+//     line-height: 16px;
+//   }
+// }
+
+
+
+
+// .#{$css-prefix}tree-switcher {
+//   &.#{$css-prefix}line {
+//     &.#{$css-prefix}disabled {
+//       background-color: #f5f5f5;
+//       border-color: #dedede;
+//       color: #c1c1c1;
+//     }
+//   }
+// }

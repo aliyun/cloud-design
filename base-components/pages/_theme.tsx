@@ -34,10 +34,8 @@ const mapThemeToImport = {
     import('../src/theme/hybridcloud-dark/index-no-var.scss?pureCSS'),
   'theme-yunxiao': () =>
     import('../src/theme/yunxiao/index-no-var.scss?pureCSS'),
-  'theme-aone': () =>
-    import('../src/theme/aone/index-no-var.scss?pureCSS'),
-  'theme-teamix': () =>
-    import('../src/theme/teamix/index-no-var.scss?pureCSS'),
+  'theme-aone': () => import('../src/theme/aone/index-no-var.scss?pureCSS'),
+  'theme-teamix': () => import('../src/theme/teamix/index-no-var.scss?pureCSS'),
   'theme-b-design': () =>
     import('../src/theme/b-design/index-no-var.scss?pureCSS')
 }
@@ -82,5 +80,10 @@ function loadTheme(val: string) {
   document.documentElement.className = val
   mapThemeToImport[val]().then(({ default: cssText }) => {
     styleEl.innerHTML = cssText
+
+    window['__recheck_css_var'] = window['__recheck_css_var'] ?? []
+    window['__recheck_css_var'].forEach(
+      (check) => typeof check === 'function' && check()
+    )
   })
 }
