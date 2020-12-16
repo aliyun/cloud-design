@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-yunxiao-v1@0.6.7 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.7.0 (https://fusion.design)
  * @alifd/next@1.21.13 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -1290,8 +1290,8 @@
 
 @font-face {
   font-family: NextIcon;
-  src: url("//at.alicdn.com/t/font_1984240_kh7e55mijfo.eot");
-  src: url("//at.alicdn.com/t/font_1984240_kh7e55mijfo.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1984240_kh7e55mijfo.woff2") format("woff2"), url("//at.alicdn.com/t/font_1984240_kh7e55mijfo.woff") format("woff"), url("//at.alicdn.com/t/font_1984240_kh7e55mijfo.ttf") format("truetype"), url("//at.alicdn.com/t/font_1984240_kh7e55mijfo.svg#NextIcon") format("svg"); }
+  src: url("//at.alicdn.com/t/font_1984240_loqffh3zye.eot");
+  src: url("//at.alicdn.com/t/font_1984240_loqffh3zye.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1984240_loqffh3zye.woff2") format("woff2"), url("//at.alicdn.com/t/font_1984240_loqffh3zye.woff") format("woff"), url("//at.alicdn.com/t/font_1984240_loqffh3zye.ttf") format("truetype"), url("//at.alicdn.com/t/font_1984240_loqffh3zye.svg#NextIcon") format("svg"); }
 
 .next-icon {
   display: inline-block;
@@ -20542,6 +20542,8 @@
       word-break: break-all; }
     .next-table th.next-table-prerow .next-table-cell-wrapper {
       padding: 12px 16px; }
+    .next-table th.next-table-fix-left, .next-table th.next-table-fix-right {
+      z-index: 1; }
   .next-table-affix {
     z-index: 1;
     overflow: hidden; }
@@ -20818,7 +20820,7 @@
   display: none; }
 
 .next-table-wrap-empty > .next-table-inner > .next-table-body > table {
-  table-layout: auto; }
+  table-layout: fixed; }
 
 .next-table-lock-left,
 .next-table-lock-right {
@@ -20945,8 +20947,7 @@
 .next-table-fix-left, .next-table-fix-right {
   background: inherit;
   position: -webkit-sticky;
-  position: sticky;
-  z-index: 1; }
+  position: sticky; }
 
 .next-table-ping-left .next-table-fix-left-last {
   border-right-width: 0; }
@@ -20956,7 +20957,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    bottom: -1px;
+    bottom: 0;
     width: 30px;
     content: '';
     pointer-events: none;
@@ -20971,7 +20972,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  bottom: -1px;
+  bottom: 0;
   width: 30px;
   content: '';
   pointer-events: none;
@@ -20986,7 +20987,7 @@
   position: absolute;
   top: 0;
   right: -30px;
-  bottom: -1px;
+  bottom: 0;
   width: 30px;
   content: '';
   pointer-events: none;
@@ -25033,10 +25034,6 @@ h6.next-typography-title {
   content: "\E66D";
   content: var(--icon-content-team-location, "\E66D"); }
 
-.next-icon-team-compass::before {
-  content: "\E66E";
-  content: var(--icon-content-team-compass, "\E66E"); }
-
 .next-icon-team-flag::before {
   content: "\E66F";
   content: var(--icon-content-team-flag, "\E66F"); }
@@ -25996,3 +25993,15 @@ h6.next-typography-title {
 .next-icon-treenode-single::before {
   content: "\E7A2";
   content: var(--icon-content-treenode-single, "\E7A2"); }
+
+.next-icon-gitlab::before {
+  content: "\E816";
+  content: var(--icon-content-gitlab, "\E816"); }
+
+.next-icon-compass-o::before {
+  content: "\E815";
+  content: var(--icon-content-compass-o, "\E815"); }
+
+.next-icon-compass-fill::before {
+  content: "\E817";
+  content: var(--icon-content-compass-fill, "\E817"); }
