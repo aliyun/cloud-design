@@ -9,7 +9,7 @@ $color-text1-2: var(--color-text1-2);
   }
   &:not([disabled]) {
     #{$tag-prefix}-body {
-      cursor: var(--tag-cursor, default);
+      cursor: var(--tag-cursor, pointer);
     }
     &#{$tag-prefix}#{$tag-prefix}:focus {
       color: var(--tag-focus-color);
