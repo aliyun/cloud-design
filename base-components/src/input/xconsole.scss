@@ -22,7 +22,7 @@ $input-prefix: '.' + $css-prefix + 'input';
       width: var(--input-hint-icon-inner-size, 12px);
       font-size: var(--input-hint-icon-inner-size, 12px);
       line-height: var(--input-hint-icon-inner-size, 12px);
-      transform: scale(0.59);
+      transform: var(--input-clear-icon-transform, scale(0.59));
     }
   }
   #{$hint}#{$hint}#{$hint} {
