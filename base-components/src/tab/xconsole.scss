@@ -1,3 +1,20 @@
+$tab-prefix: '.' + $css-prefix + 'tabs';
+
+#{$tab-prefix} {
+  // 避免hover的时候，背景颜色将boder-bottom覆盖掉
+  &#{$tab-prefix}-pure {
+    #{$tab-prefix}-tab {
+      border-bottom: var(--line-solid, solid)
+        var(--tab-pure-divider-line-width, 1px)
+        var(--tab-pure-divider-border-color, #e3e4e6);
+      &.active::before {
+        bottom: -1px;
+      }
+    }
+  }
+}
+
+
 // $tab-capsule-tab-border-line-color-active: var(
 //   --tab-capsule-tab-border-line-color-active
 // );
