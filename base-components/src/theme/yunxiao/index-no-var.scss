@@ -1,13 +1,5 @@
 // 云效主题样式入口，不带css-var定义，用于本地开发调试
 
-// 云组件公共变量
-@import '../../common-var.scss';
-
 // 主题包样式
 @import '../../../fusion-theme/yunxiao/next.var';
-
-// 云组件公共样式覆盖样式
-@import '../../common.scss';
-
-// 云效主题独有样式覆盖
-@import './overwrite.scss';
+@import './index-common.scss';
