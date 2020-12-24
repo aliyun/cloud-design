@@ -1,0 +1,51 @@
+#{$css-var-scope} {
+  /* 全局 */
+  --active-shadow: var(--shadow-1-down);
+  --active-transition: 0.3s;
+
+  /* button */
+  --btn-primary-hover-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.18);
+  --btn-primary-active-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+  --btn-normal-hover-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.06);
+  --btn-normal-active-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --btn-medium-cn-width: 80px;
+
+  /* menu */
+  --select-menu-select-icon-ml: -20px;
+  --menu-padding: 8px;
+  --menu-padding-horizontal: 8px;
+  // 对于可选择的menu，增加padding以便容纳勾选图标
+  --menu-padding-horizontal-selectable: 24px;
+
+  /* number-picker */
+  --number-picker-height-small: 28px;
+  --number-picker-height-medium: 32px;
+  --number-picker-height-large: 36px;
+
+  /* cascader */
+  --cascader-menu-width: 175px;
+
+  /* message */
+  --message-close-icon-size: 16px;
+  --message-success-border-color: var(--color-success-7);
+  --message-warning-border-color: var(--color-warning-7);
+  --message-error-border-color: var(--color-error-7);
+  --message-notice-border-color: var(--color-brand1-4);
+  --message-help-border-color: var(--color-line1-3);
+
+  /* checkbox */
+  --checkbox-icon-scale: 0.7;
+
+  /* dialog */
+  --dialog-corner: 4px;
+  /* transfer */
+  --transfer-panel-padding-mb: 8px;
+  --transfer-panel-margin-mb: 0px;
+
+  /* pagination */
+  --pagination-item-hover-bg: var(--color-fill1-3);
+  --pagination-item-disabled-bg: var(--color-fill1-3);
+
+  /* datepicker */
+  --calendar-panel-header-margin-bottom: 6px;
+}

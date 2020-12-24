@@ -8,6 +8,7 @@ import './theme-vars/wind.scss'
 import './theme-vars/hybridcloud.scss'
 import './theme-vars/hybridcloud-dark.scss'
 import './theme-vars/yunxiao.scss'
+import './theme-vars/yunxiao-dark.scss'
 import './theme-vars/aone.scss'
 import './theme-vars/teamix.scss'
 import './theme-vars/b-design.scss'
@@ -17,7 +18,8 @@ const dataSource = [
   { label: '公有云主题(经典)', value: 'theme-wind' },
   { label: '混合云亮色主题', value: 'theme-hybridcloud' },
   { label: '混合云暗色主题', value: 'theme-hybridcloud-dark' },
-  { label: '云效主题', value: 'theme-yunxiao' },
+  { label: '云效亮色主题', value: 'theme-yunxiao' },
+  { label: '云效暗色主题', value: 'theme-yunxiao-dark' },
   { label: 'Aone主题', value: 'theme-aone' },
   { label: 'Teamix主题', value: 'theme-teamix' },
   { label: 'B-design主题', value: 'theme-b-design' }
@@ -34,6 +36,8 @@ const mapThemeToImport = {
     import('../src/theme/hybridcloud-dark/index-no-var.scss?pureCSS'),
   'theme-yunxiao': () =>
     import('../src/theme/yunxiao/index-no-var.scss?pureCSS'),
+  'theme-yunxiao-dark': () =>
+    import('../src/theme/yunxiao-dark/index-no-var.scss?pureCSS'),
   'theme-aone': () => import('../src/theme/aone/index-no-var.scss?pureCSS'),
   'theme-teamix': () => import('../src/theme/teamix/index-no-var.scss?pureCSS'),
   'theme-b-design': () =>
@@ -83,7 +87,7 @@ function loadTheme(val: string) {
 
     window['__recheck_css_var'] = window['__recheck_css_var'] ?? []
     window['__recheck_css_var'].forEach(
-      (check) => typeof check === 'function' && check()
+      check => typeof check === 'function' && check()
     )
   })
 }

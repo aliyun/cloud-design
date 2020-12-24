@@ -24,6 +24,10 @@ module.exports = [
     themeName: 'yunxiao',
   },
   {
+    packageName: '@alife/theme-yunxiao-v2-dark',
+    themeName: 'yunxiao-dark',
+  },
+  {
     packageName: '@alife/theme-yunxiao-v1',
     themeName: 'aone',
     ignore: true,
