@@ -5,10 +5,6 @@ $number-picker: '.' + $css-prefix + 'number-picker';
 #{$number-picker} {
   // type=normal
   > #{$input-prefix} {
-    border: var(--number-picker-normal-border, 1px solid #dedede);
-    &:hover {
-      border: var(--number-picker-normal-border-hover, 1px solid #737373);
-    }
     #{$number-picker}-handler {
       .#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn {
         min-width: unset;

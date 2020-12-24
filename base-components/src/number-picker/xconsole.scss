@@ -1,4 +1,6 @@
 $number-picker: '.' + $css-prefix + 'number-picker';
+$input-prefix: '.' + $css-prefix + 'input';
+$input-group: '.' + $css-prefix + 'input-group';
 
 #{$number-picker}#{$wind-cls} {
   &#{$number-picker}-inline {
@@ -37,6 +39,16 @@ $number-picker: '.' + $css-prefix + 'number-picker';
           margin: 0;
         }
       }
+    }
+  }
+}
+
+
+#{$number-picker} {
+  > #{$input-prefix} {
+    border: var(--number-picker-normal-border, 1px solid #dedede);
+    &:hover {
+      border: var(--number-picker-normal-border-hover, 1px solid #737373);
     }
   }
 }
