@@ -15,8 +15,8 @@ const Button: typeof NextButton = React.forwardRef(
   if (typeof children === 'string' && isTwoToFourCNChar(children)) {
     return (
       <NextButton
-        className={cls('isTwoToFourCNCharBtn', className)}
         {...props}
+        className={cls('isTwoToFourCNCharBtn', className)}
         ref={ref as any}
       >
         {children}
@@ -29,12 +29,12 @@ const Button: typeof NextButton = React.forwardRef(
     (children as any)?.type?.displayName === 'Config(Icon)'
   ) {
     return (
-      <NextButton className={cls('isOnlyIcon', className)} {...props} ref={ref as any}>
+      <NextButton {...props} className={cls('isOnlyIcon', className)} ref={ref as any}>
         {children}
       </NextButton>
     )
   }
-  return <NextButton className={className} {...props} ref={ref as any}>{children}</NextButton>
+  return <NextButton {...props} className={className} ref={ref as any}>{children}</NextButton>
   }
 )as any
 
