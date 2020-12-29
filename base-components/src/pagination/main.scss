@@ -1,4 +1,7 @@
 $pagination-prefix: '.' + $css-prefix + 'pagination';
+$pagination-select-popup-prefix: '.' + $css-prefix +
+  'pagination-size-selector-popup';
+
 $pagination-item: $pagination-prefix + '-item';
 
 #{$pagination-prefix} {
@@ -23,5 +26,13 @@ $pagination-item: $pagination-prefix + '-item';
         border-color: var(--pagination-item-border-color, transparent);
       }
     }
+  }
+}
+
+#{$pagination-select-popup-prefix} {
+  $menu-item-prefix: '.' + $css-prefix + 'select-menu-item';
+  #{$menu-item-prefix} {
+    // 过去padding太多，没有宽度留给实际内容，减少一些padding
+    padding-right: 0;
   }
 }

@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.0.48
+- 修复Pagination的样式问题
+
 ## 1.0.46
 - 新增云效暗色主题
 - yunxiao、aone、teamix 主题新增 no-reset 样式

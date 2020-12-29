@@ -33,7 +33,7 @@ $menu-prefix: '.' + $css-prefix + 'menu';
 }
 
 .#{$css-prefix}selected {
-  &#{&}#{&}#{&}#{&}#{$menu-prefix}-item {
+  &#{&}#{&}#{&}#{&}#{$menu-prefix}-item:not(:hover) {
     background-color: var(--menu-background-selected);
   }
 }
