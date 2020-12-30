@@ -16,8 +16,8 @@ const menu = ['Undo', 'Redo', 'Cut', 'Copy', 'Paste'].map((item) => (
 export default function DemoComponent() {
   const content = (
     <div>
-      <SplitButton label="Edit Document">{menu}</SplitButton> &nbsp; &nbsp;
-      <SplitButton label="Edit Document" type="primary">
+      <SplitButton label="Edit Document" disabled>{menu}</SplitButton> &nbsp; &nbsp;
+      <SplitButton label="Edit Document" disabled type="primary">
         {menu}
       </SplitButton>
       &nbsp;&nbsp;
