@@ -9,14 +9,14 @@ $number-picker: '.' + $css-prefix + 'number-picker';
       .#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn {
         min-width: unset;
         border: var(--number-picker-handler-btn-border, none);
-        &:hover {
+        &:not(.disabled):hover {
           border: var(--number-picker-handler-btn-border-hover, none);
         }
-        &:first-child {
+        &.#{$css-prefix}btn:first-child {
           border-right: none;
           border-top: none;
         }
-        &:last-child {
+        &.#{$css-prefix}btn:last-child {
           border-right: none;
           border-bottom: none;
         }
@@ -33,7 +33,7 @@ $number-picker: '.' + $css-prefix + 'number-picker';
       #{$input-group}-addon {
         .#{$css-prefix}btn {
           border: var(--number-picker-inline-group-btn-border, none);
-          &:hover {
+          &:not(.disabled):hover {
             border: var(--number-picker-inline-group-btn-border-hover, none);
           }
           border-radius: var(--number-picker-border-radius, 2px);
