@@ -83,8 +83,6 @@ export default createTheme({
 function loadTheme(val: string) {
   document.documentElement.className = val
   mapThemeToImport[val]().then(({ default: cssText }) => {
-    styleEl.innerHTML = cssText
-
     window['__recheck_css_var'] = window['__recheck_css_var'] ?? []
     window['__recheck_css_var'].forEach(
       check => typeof check === 'function' && check()

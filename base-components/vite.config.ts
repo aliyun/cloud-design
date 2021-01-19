@@ -1,22 +1,28 @@
-import type { UserConfig } from 'vite'
-import * as vpr from 'vite-plugin-react'
-import pages from 'vite-plugin-react-pages'
+import type { UserConfig, Plugin } from 'vite'
+import reactRefresh from '@vitejs/plugin-react-refresh'
 import mdx from 'vite-plugin-mdx'
+import pages from 'vite-plugin-react-pages'
 import * as path from 'path'
 import * as fs from 'fs-extra'
-import { compileCss } from 'vite/dist/node/utils/cssUtils'
 
 const pagesDir = path.join(__dirname, 'pages')
 
 module.exports = {
   root: __dirname,
   jsx: 'react',
-  plugins: [vpr, mdx(), pages({ pagesDir, findPages, useHashRouter: true })],
+  plugins: [
+    reactRefresh(),
+    mdx(),
+    pages({ pagesDir, findPages, useHashRouter: true }),
+    cssSwitchPlugin()
+  ],
   alias: {
     '@alicloudfe/components': '/src'
   },
   optimizeDeps: {
     include: [
+      'react',
+      'react-dom',
       'prop-types',
       'solarlunar',
       'react-cropper',
@@ -31,70 +37,26 @@ module.exports = {
       'react-dnd'
     ]
   },
-  minify: false,
-  outDir: 'docs-dist',
-  cssPreprocessOptions: {
-    includePaths: ['node_modules', '../node_modules']
+  build: {
+    outDir: 'docs-dist'
   },
-  configureServer: ({ app }) => {
-    app.use(async (ctx, next) => {
-      if ('pureCSS' in ctx.query) {
-        ctx.query.import = ''
-        await next()
-        if (ctx.body) {
-          // 不要直接将样式挂载，而是返回样式字符串，由应用自己挂载
-          ctx.body = ctx.body.replace(/^updateStyle.*/m, '')
-        }
-      } else {
-        return next()
-      }
-    })
-  },
-  rollupInputOptions: {
-    plugins: [
-      {
-        name: 'build-pure-css',
-        async resolveDynamicImport(importee, importer) {
-          if (typeof importee === 'string' && importee.includes('?pureCSS')) {
-            const resolved = await this.resolve(importee, importer, {
-              skipSelf: true
-            })
-            const result = resolved.id.replace('.scss?pureCSS', '?pureCSS')
-            return result
-          }
-        },
-        load(id) {
-          if (id.includes('?pureCSS')) {
-            return fs.readFile(id.replace('?pureCSS', '.scss'), 'utf-8')
-          }
-        },
-        async transform(css: string, id: string) {
-          if (id.includes('?pureCSS')) {
-            let res = await compileCss(
-              __dirname,
-              id,
-              {
-                id: '',
-                source: css,
-                filename: id,
-                scoped: false,
-                modules: false,
-                preprocessLang: 'scss',
-                preprocessOptions: {
-                  includePaths: ['node_modules', '../node_modules']
-                }
-              },
-              true
-            )
-            if (typeof res !== 'string') res = res.code
-            return `export default ${JSON.stringify(res)}`
-          }
-          return undefined
-        }
-      }
-    ]
+  css: {
+    preprocessorOptions: {
+      includePaths: ['node_modules', '../node_modules']
+    }
   }
 } as UserConfig
+
+function cssSwitchPlugin(): Plugin {
+  return {
+    name: 'cssSwitchPlugin',
+    load(id) {
+      if (id.includes('?pureCSS')) {
+        return fs.readFile(id.replace('?pureCSS', ''), 'utf-8')
+      }
+    }
+  }
+}
 
 // 修改css选择器的postcss插件
 function changePrefix(transform) {
