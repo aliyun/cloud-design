@@ -1,0 +1,8 @@
+$menu-prefix: '.' + $css-prefix + 'menu';
+
+#{$menu-prefix} {
+  padding: var(--menu-padding);
+  &#{&}#{&}#{&}#{&} #{&}-symbol-icon-selected {
+    color: var(--menu-icon-selected-color);
+  }
+}
