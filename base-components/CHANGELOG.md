@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.0.55
+- 修复Wind主题的样式问题
+
 ## 1.0.48
 - 修复Pagination的样式问题
 
