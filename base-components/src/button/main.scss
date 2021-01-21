@@ -48,7 +48,7 @@ $text-btn: $btn-prefix + '-text';
       width: var(--btn-small-cn-width, 64px);
       padding: 0;
     }
-    &.isOnlyIcon {
+    &:not(#{$wind-cls}).isOnlyIcon {
       width: 24px;
       padding: 0;
     }
@@ -62,7 +62,7 @@ $text-btn: $btn-prefix + '-text';
       width: var(--btn-medium-cn-width, 72px);
       padding: 0;
     }
-    &.isOnlyIcon {
+    &:not(#{$wind-cls}).isOnlyIcon {
       width: 32px;
       padding: 0;
     }
@@ -76,7 +76,7 @@ $text-btn: $btn-prefix + '-text';
       width: var(--btn-large-cn-width, 80px);
       padding: 0;
     }
-    &.isOnlyIcon {
+    &:not(#{$wind-cls}).isOnlyIcon {
       width: 36px;
       padding: 0;
     }
