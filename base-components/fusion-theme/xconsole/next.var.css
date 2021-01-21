@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-xconsole-v4@0.5.8 (https://fusion.design)
+ * @alife/theme-xconsole-v4@0.6.0 (https://fusion.design)
  * @alifd/next@1.21.16 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -1848,8 +1848,8 @@ small {
 
 @font-face {
   font-family: NextIcon;
-  src: url("//at.alicdn.com/t/font_1899989_e0hzok75tkg.eot");
-  src: url("//at.alicdn.com/t/font_1899989_e0hzok75tkg.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1899989_e0hzok75tkg.woff2") format("woff2"), url("//at.alicdn.com/t/font_1899989_e0hzok75tkg.woff") format("woff"), url("//at.alicdn.com/t/font_1899989_e0hzok75tkg.ttf") format("truetype"), url("//at.alicdn.com/t/font_1899989_e0hzok75tkg.svg#NextIcon") format("svg"); }
+  src: url("//at.alicdn.com/t/font_1899989_75bhn4poi6q.eot");
+  src: url("//at.alicdn.com/t/font_1899989_75bhn4poi6q.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1899989_75bhn4poi6q.woff2") format("woff2"), url("//at.alicdn.com/t/font_1899989_75bhn4poi6q.woff") format("woff"), url("//at.alicdn.com/t/font_1899989_75bhn4poi6q.ttf") format("truetype"), url("//at.alicdn.com/t/font_1899989_75bhn4poi6q.svg#NextIcon") format("svg"); }
 
 .next-icon {
   display: inline-block;
@@ -1909,11 +1909,11 @@ small {
     content: "\E63D";
     content: var(--icon-content-arrow-down, "\E63D"); }
   .next-icon-arrow-left:before {
-    content: "\E61D";
-    content: var(--icon-content-arrow-left, "\E61D"); }
+    content: "\E780";
+    content: var(--icon-content-arrow_left, "\E780"); }
   .next-icon-arrow-right:before {
-    content: "\E619";
-    content: var(--icon-content-arrow-right, "\E619"); }
+    content: "\E77F";
+    content: var(--icon-content-arrow_right, "\E77F"); }
   .next-icon-arrow-double-left:before {
     content: "\E659";
     content: var(--icon-content-arrow-double-left, "\E659"); }
@@ -7441,8 +7441,8 @@ small {
     min-width: 100px;
     border: 1px solid #E3E4E6;
     border: var(--card-border-width, 1px) var(--card-border-style, solid) var(--card-border-color, #E3E4E6);
-    border-radius: 2px;
-    border-radius: var(--card-corner, 2px);
+    border-radius: 4px;
+    border-radius: var(--card-corner, 4px);
     -webkit-box-shadow: none;
     -webkit-box-shadow: var(--card-shadow, none);
             box-shadow: none;
@@ -27376,3 +27376,83 @@ h6.next-typography-title {
 .next-icon-down::before {
   content: "\E620";
   content: var(--icon-content-down, "\E620"); }
+
+.next-icon-arrow__up::before {
+  content: "\E77E";
+  content: var(--icon-content-arrow__up, "\E77E"); }
+
+.next-icon-arrow_right::before {
+  content: "\E77F";
+  content: var(--icon-content-arrow_right, "\E77F"); }
+
+.next-icon-arrow_left::before {
+  content: "\E780";
+  content: var(--icon-content-arrow_left, "\E780"); }
+
+.next-icon-button_left::before {
+  content: "\E781";
+  content: var(--icon-content-button_left, "\E781"); }
+
+.next-icon-back::before {
+  content: "\E782";
+  content: var(--icon-content-back, "\E782"); }
+
+.next-icon-button_down::before {
+  content: "\E783";
+  content: var(--icon-content-button_down, "\E783"); }
+
+.next-icon-arrow__down::before {
+  content: "\E784";
+  content: var(--icon-content-arrow__down, "\E784"); }
+
+.next-icon-button_up::before {
+  content: "\E785";
+  content: var(--icon-content-button_up, "\E785"); }
+
+.next-icon-button_right::before {
+  content: "\E786";
+  content: var(--icon-content-button_right, "\E786"); }
+
+.next-icon-collapse::before {
+  content: "\E787";
+  content: var(--icon-content-collapse, "\E787"); }
+
+.next-icon-double_down::before {
+  content: "\E788";
+  content: var(--icon-content-double_down, "\E788"); }
+
+.next-icon-double_left::before {
+  content: "\E789";
+  content: var(--icon-content-double_left, "\E789"); }
+
+.next-icon-double_right::before {
+  content: "\E78B";
+  content: var(--icon-content-double_right, "\E78B"); }
+
+.next-icon-double_up::before {
+  content: "\E79B";
+  content: var(--icon-content-double_up, "\E79B"); }
+
+.next-icon-expand::before {
+  content: "\E79C";
+  content: var(--icon-content-expand, "\E79C"); }
+
+.next-icon-down_to_bottom::before {
+  content: "\E871";
+  content: var(--icon-content-down_to_bottom, "\E871"); }
+
+.next-icon-page_first::before {
+  content: "\E872";
+  content: var(--icon-content-page_first, "\E872"); }
+
+.next-icon-page_last::before {
+  content: "\E874";
+  content: var(--icon-content-page_last, "\E874"); }
+
+.next-icon-forward::before {
+  content: "\E875";
+  content: var(--icon-content-forward, "\E875"); }
+
+.next-icon-up_to_top::before {
+  content: "\E876";
+  content: var(--icon-content-up_to_top, "\E876"); }
