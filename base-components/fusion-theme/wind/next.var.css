@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-test1234@0.5.9 (https://fusion.design)
- * @alifd/next@1.21.13 (https://fusion.design)
+ * @alife/theme-test1234@0.5.11 (https://fusion.design)
+ * @alifd/next@1.21.16 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -4526,7 +4526,7 @@ small {
   color: #555555;
   color: var(--tag-closable-primary-fill-text-color, #555555);
   border-color: #F5F5F5;
-  border-color: var(--color-fill1-3, #F5F5F5);
+  border-color: var(--tag-closable-primary-fill-border-color, #F5F5F5);
   background-color: #F5F5F5;
   background-color: var(--tag-closable-primary-fill-bg-color, #F5F5F5); }
   .next-tag-closable.next-tag-level-primary:not(.disabled):not([disabled]):hover, .next-tag-closable.next-tag-level-primary:not(.disabled):not([disabled]).hover, .next-tag-closable.next-tag-level-primary:not(.disabled):not([disabled]):focus {
@@ -4861,8 +4861,8 @@ small {
     vertical-align: middle;
     border-width: 1px;
     border-width: var(--tag-border-width, 1px);
-    border-radius: 0px;
-    border-radius: var(--tag-corner-radius, 0px);
+    border-radius: 500px;
+    border-radius: var(--tag-corner-radius, 500px);
     -webkit-box-shadow: none;
     -webkit-box-shadow: var(--tag-shadow, none);
             box-shadow: none;
@@ -4960,11 +4960,11 @@ small {
         border-color: #FCCC12;
         color: #FCCC12; }
   .next-tag-large {
-    height: 40px;
-    height: var(--tag-size-l-height, 40px);
+    height: 28px;
+    height: var(--tag-size-l-height, 28px);
     padding: 0;
-    line-height: 38px;
-    line-height: calc(var(--tag-size-l-height, 40px) - var(--tag-border-width, 1px)*2);
+    line-height: 26px;
+    line-height: calc(var(--tag-size-l-height, 28px) - var(--tag-border-width, 1px)*2);
     font-size: 0; }
     .next-tag-large > .next-tag-body {
       font-size: 14px;
@@ -5001,32 +5001,32 @@ small {
       padding-left: 16px;
       padding-left: var(--tag-size-l-padding-lr, 16px); }
   .next-tag-medium {
-    height: 28px;
-    height: var(--tag-size-m-height, 28px);
+    height: 24px;
+    height: var(--tag-size-m-height, 24px);
     padding: 0;
-    line-height: 26px;
-    line-height: calc(var(--tag-size-m-height, 28px) - var(--tag-border-width, 1px)*2);
+    line-height: 22px;
+    line-height: calc(var(--tag-size-m-height, 24px) - var(--tag-border-width, 1px)*2);
     font-size: 0; }
     .next-tag-medium > .next-tag-body {
-      font-size: 14px;
-      font-size: var(--tag-size-m-text-size, 14px);
-      padding: 0 12px;
-      padding: 0 var(--tag-size-m-padding-lr, 12px);
+      font-size: 12px;
+      font-size: var(--tag-size-m-text-size, 12px);
+      padding: 0 8px;
+      padding: 0 var(--tag-size-m-padding-lr, 8px);
       min-width: 40px;
       min-width: var(--tag-size-m-content-min-width, 40px); }
     .next-tag-medium.next-tag-closable > .next-tag-body {
-      padding: 0 0 0 12px;
-      padding: 0 0 0 var(--tag-size-m-padding-lr, 12px);
-      max-width: calc(100% - 36px);
-      max-width: calc(100% - var(--tag-size-m-icon-font, 12px) - var(--tag-size-m-icon-font, 12px) - var(--tag-size-m-padding-lr, 12px)); }
+      padding: 0 0 0 8px;
+      padding: 0 0 0 var(--tag-size-m-padding-lr, 8px);
+      max-width: calc(100% - 32px);
+      max-width: calc(100% - var(--tag-size-m-icon-font, 12px) - var(--tag-size-m-icon-font, 12px) - var(--tag-size-m-padding-lr, 8px)); }
     .next-tag-medium[dir=rtl].next-tag-closable > .next-tag-body {
-      padding: 0 12px 0 0;
-      padding: 0 var(--tag-size-m-padding-lr, 12px) 0 0; }
+      padding: 0 8px 0 0;
+      padding: 0 var(--tag-size-m-padding-lr, 8px) 0 0; }
     .next-tag-medium.next-tag-closable > .next-tag-close-btn {
       margin-left: 12px;
       margin-left: var(--tag-size-m-icon-font, 12px);
-      padding-right: 12px;
-      padding-right: var(--tag-size-m-padding-lr, 12px); }
+      padding-right: 8px;
+      padding-right: var(--tag-size-m-padding-lr, 8px); }
       .next-tag-medium.next-tag-closable > .next-tag-close-btn .next-icon:before,
       .next-tag-medium.next-tag-closable > .next-tag-close-btn .next-icon .next-icon-remote {
         width: 12px;
@@ -5039,14 +5039,14 @@ small {
       margin-right: var(--tag-size-m-icon-font, 12px);
       margin-left: 0;
       padding-right: 0;
-      padding-left: 12px;
-      padding-left: var(--tag-size-m-padding-lr, 12px); }
+      padding-left: 8px;
+      padding-left: var(--tag-size-m-padding-lr, 8px); }
   .next-tag-small {
-    height: 24px;
-    height: var(--tag-size-s-height, 24px);
+    height: 20px;
+    height: var(--tag-size-s-height, 20px);
     padding: 0;
-    line-height: 22px;
-    line-height: calc(var(--tag-size-s-height, 24px) - var(--tag-border-width, 1px)*2);
+    line-height: 18px;
+    line-height: calc(var(--tag-size-s-height, 20px) - var(--tag-border-width, 1px)*2);
     font-size: 0; }
     .next-tag-small > .next-tag-body {
       font-size: 12px;
@@ -5095,8 +5095,8 @@ small {
   .next-tag-checkable {
     cursor: pointer;
     position: relative;
-    border-radius: 0px;
-    border-radius: var(--tag-corner-radius, 0px); }
+    border-radius: 500px;
+    border-radius: var(--tag-corner-radius, 500px); }
     .next-tag-checkable.checked:before {
       -webkit-animation: fadeInRightForTag 0.4s cubic-bezier(0.78, 0.14, 0.15, 0.86);
               animation: fadeInRightForTag 0.4s cubic-bezier(0.78, 0.14, 0.15, 0.86); }
@@ -20228,8 +20228,8 @@ small {
     width: var(--switch-size-m-width, 44px);
     height: 22px;
     height: calc(var(--switch-size-m-trigger, 20px) + var(--switch-border-width-container, 1px)*2);
-    border-radius: 16px;
-    border-radius: var(--switch-size-m-radius-container, 16px); }
+    border-radius: 12px;
+    border-radius: var(--switch-size-m-radius-container, 12px); }
     .next-switch-medium:after {
       border: 1px solid transparent;
       border: var(--switch-border-width-trigger, 1px) solid transparent;
@@ -20263,8 +20263,8 @@ small {
     width: var(--switch-size-s-width, 32px);
     height: 18px;
     height: calc(var(--switch-size-s-trigger, 16px) + var(--switch-border-width-container, 1px)*2);
-    border-radius: 16px;
-    border-radius: var(--switch-size-s-radius-container, 16px); }
+    border-radius: 12px;
+    border-radius: var(--switch-size-s-radius-container, 12px); }
     .next-switch-small:after {
       border: 1px solid transparent;
       border: var(--switch-border-width-trigger, 1px) solid transparent;
@@ -21141,6 +21141,8 @@ small {
       word-break: break-all; }
     .next-table th.next-table-prerow .next-table-cell-wrapper {
       padding: 12px 16px; }
+    .next-table th.next-table-fix-left, .next-table th.next-table-fix-right {
+      z-index: 1; }
   .next-table-affix {
     z-index: 1;
     overflow: hidden; }
@@ -21417,7 +21419,7 @@ small {
   display: none; }
 
 .next-table-wrap-empty > .next-table-inner > .next-table-body > table {
-  table-layout: auto; }
+  table-layout: fixed; }
 
 .next-table-lock-left,
 .next-table-lock-right {
@@ -21544,8 +21546,7 @@ small {
 .next-table-fix-left, .next-table-fix-right {
   background: inherit;
   position: -webkit-sticky;
-  position: sticky;
-  z-index: 1; }
+  position: sticky; }
 
 .next-table-ping-left .next-table-fix-left-last {
   border-right-width: 0; }
@@ -21555,7 +21556,7 @@ small {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: -1px;
+    bottom: 0;
     width: 30px;
     content: '';
     pointer-events: none;
@@ -21570,7 +21571,7 @@ small {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: -1px;
+  bottom: 0;
   width: 30px;
   content: '';
   pointer-events: none;
@@ -21585,7 +21586,7 @@ small {
   position: absolute;
   top: 0;
   right: -30px;
-  bottom: -1px;
+  bottom: 0;
   width: 30px;
   content: '';
   pointer-events: none;
