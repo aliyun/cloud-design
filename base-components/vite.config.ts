@@ -34,7 +34,9 @@ module.exports = {
       'react-redux',
       'react-copy-to-clipboard',
       'react-dnd-html5-backend',
-      'react-dnd'
+      'react-dnd',
+      '@alifd/next/lib/locale/en-us',
+      '@alifd/next/lib/locale/zh-cn'
     ]
   },
   build: {

@@ -1,27 +1,35 @@
 import { useLayoutEffect, RefObject, useState } from 'react'
+import { useRootElement } from '../config-provider/ctx'
 
 let nextId = 0
 
-export function useCssVar(cssVarName: string, elRef?: RefObject<HTMLElement>) {
+export function useCssVar(cssVarName: string) {
   const [v, setV] = useState('')
+  const rootElement = useRootElement()
 
   useLayoutEffect(() => {
     check()
 
+    const checkArr = (window['__recheck_css_var'] =
+      window['__recheck_css_var'] ?? [])
+    while (checkArr[nextId]) {
+      // 如果一个页面下有份此组件库（即有多个nextId指针），需要避免冲突
+      nextId++
+    }
     const id = nextId++
-    window['__recheck_css_var'] = window['__recheck_css_var'] ?? []
-    window['__recheck_css_var'][id] = check
+    checkArr[id] = check
 
     return () => {
-      delete window['__recheck_css_var'][id]
+      delete checkArr[id]
     }
 
     function check() {
-      const el = elRef?.current ?? window.document.body
-      const val = window.getComputedStyle(el).getPropertyValue(cssVarName) ?? ''
+      const val =
+        window.getComputedStyle?.(rootElement).getPropertyValue(cssVarName) ??
+        ''
       setV(val)
     }
-  }, [elRef?.current, cssVarName])
+  }, [rootElement, cssVarName])
 
   return v
 }
