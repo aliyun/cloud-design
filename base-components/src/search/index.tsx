@@ -2,10 +2,11 @@ import { Search as NextSearch } from '@alifd/next'
 import React, { useCallback, useState } from 'react'
 import classnames from 'classnames'
 import HOC from '../utils/popupHoc'
+import { withThemeClass } from '../utils/withThemeClass'
 
 type SearchProps = React.ComponentProps<typeof NextSearch>
 
-const Search: React.FC<SearchProps> = (props) => {
+const Search: React.FC<SearchProps> = withThemeClass((props) => {
   const [focus, setFocus] = useState(false)
   const [visible, setVisible] = useState(false)
   const onFocus = useCallback(
@@ -53,6 +54,6 @@ const Search: React.FC<SearchProps> = (props) => {
       )}
     />
   )
-}
+})
 
 export default HOC(Search)
