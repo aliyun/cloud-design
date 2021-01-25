@@ -126,7 +126,7 @@ class BasicDemo extends React.Component {
           >
             Submit
           </Form.Submit>
-          <Form.Reset>Reset</Form.Reset>
+          <Form.Reset>俩字</Form.Reset>
         </FormItem>
       </Form>
     )
