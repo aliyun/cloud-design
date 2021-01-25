@@ -36,7 +36,8 @@ module.exports = {
       'react-dnd-html5-backend',
       'react-dnd',
       '@alifd/next/lib/locale/en-us',
-      '@alifd/next/lib/locale/zh-cn'
+      '@alifd/next/lib/locale/zh-cn',
+      'moment'
     ]
   },
   build: {
