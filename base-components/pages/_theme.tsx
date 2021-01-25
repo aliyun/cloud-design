@@ -1,6 +1,7 @@
 import { createTheme } from 'vite-pages-theme-basic'
-import React from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import { Select, ConfigProvider } from '@alicloudfe/components'
+import { useLocation, useHistory } from 'react-router-dom'
 import './style.scss'
 
 import './theme-vars/xconsole.scss'
@@ -48,16 +49,37 @@ const styleEl = document.createElement('style')
 styleEl.className = 'theme-switcher'
 styleEl.setAttribute('type', 'text/css')
 document.head.appendChild(styleEl)
-loadTheme('theme-xconsole')
 
-const ToggleTheme = () => {
+const ToggleTheme: React.FC = () => {
+  const location = useLocation()
+  const history = useHistory()
+  const query = new URLSearchParams(location.search)
+  const themeFromQuery = query.get('theme') || 'theme-xconsole'
+
+  const [initialTheme] = useState(themeFromQuery)
+
   const onChange = (val: string) => {
-    loadTheme(val)
+    if (val !== themeFromQuery) {
+      query.set('theme', val)
+      history.push({
+        search: query.toString()
+      })
+    }
   }
+
+  useLayoutEffect(() => {
+    if (themeFromQuery === initialTheme) {
+      loadTheme(themeFromQuery)
+    } else {
+      window.location.reload()
+    }
+  }, [themeFromQuery])
+
   return (
     <ConfigProvider prefix="next-">
       <Select
         dataSource={dataSource}
+        value={themeFromQuery}
         onChange={onChange}
         defaultValue="theme-xconsole"
         followTrigger
@@ -85,7 +107,7 @@ function loadTheme(val: string) {
   mapThemeToImport[val]().then(({ default: cssText }) => {
     window['__recheck_css_var'] = window['__recheck_css_var'] ?? []
     window['__recheck_css_var'].forEach(
-      check => typeof check === 'function' && check()
+      (check) => typeof check === 'function' && check()
     )
   })
 }
