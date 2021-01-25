@@ -1,5 +1,6 @@
 
   import { Form as NextForm } from '@alifd/next'
+  import CNCHARHOC from '../utils/cnCharHoc';
   // import React from 'react'
   // import hoistNonReactStatics from 'hoist-non-react-statics'
 
@@ -12,6 +13,9 @@
   // )as any
 
   // hoistNonReactStatics(Form, NextForm)
+
+  NextForm.Submit = CNCHARHOC(NextForm.Submit) as any
+  NextForm.Reset = CNCHARHOC(NextForm.Reset) as any
   
   export default NextForm;
     
