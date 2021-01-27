@@ -77,7 +77,7 @@ const App = () => (
       <Tooltip trigger={topLeft} align="tl">
         text text
       </Tooltip>
-      <Tooltip trigger={top} align="t">
+      <Tooltip trigger={top} align="t" triggerType="click">
         text text
       </Tooltip>
       <Tooltip trigger={topRight} align="tr">
