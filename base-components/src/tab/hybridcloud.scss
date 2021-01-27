@@ -1,0 +1,11 @@
+.next-tabs-capsule > .next-tabs-bar .next-tabs-tab {
+  transition: color 100ms, background-color 100ms, border-color 100ms;
+  &.active {
+    z-index: 3;
+    &:hover {
+      color: var(--tab-capsule-text-color-selected, #0064C8);
+      background-color: var(--tab-capsule-bg-color-selected, #FFFFFF);
+      border-color: var(--tab-capsule-tab-border-line-color-active, #0064C8);
+    }
+  }
+}
