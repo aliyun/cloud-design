@@ -1,7 +1,9 @@
 $menu-prefix: '.' + $css-prefix + 'menu';
 
 #{$menu-prefix} {
-  padding: var(--menu-padding);
+  &#{&} {
+    padding: var(--menu-padding);
+  }
   &#{&}#{&}#{&}#{&} #{&}-symbol-icon-selected {
     // color: var(--menu-icon-selected-color);
     width: var(--menu-icon-selected-size, 16px);
@@ -22,11 +24,12 @@ $menu-prefix: '.' + $css-prefix + 'menu';
       // 对于checkbox 和 radio 选择模式的menu，不需要增加padding容纳勾选图标
       &:not([role='menuitemcheckbox']):not([role='menuitemradio']) {
         --menu-padding-horizontal: var(--menu-padding-horizontal-selectable);
+        padding: 0 var(--menu-padding-horizontal) 0 var(--menu-padding-horizontal);
       }
     }
   }
   &-item-inner {
-    .#{$css-prefix}checkbox {
+    .#{$css-prefix}checkbox, .#{$css-prefix}radio {
       margin-right: var(--menu-checkbox-mr, 8px);
     }
   }

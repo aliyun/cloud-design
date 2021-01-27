@@ -29,6 +29,7 @@ const onBlur = () => {
 export default function DemoComponent() {
   const content = (
     <Select
+      style={{ width: 200 }}
       id="basic-demo"
       onChange={onChange}
       onToggleHighlightItem={onToggleHighlightItem}
