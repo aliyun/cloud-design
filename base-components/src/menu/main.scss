@@ -40,3 +40,7 @@ $menu-prefix: '.' + $css-prefix + 'menu';
     background-color: var(--menu-background-selected);
   }
 }
+
+.next-menu .next-menu-icon-selected {
+  margin-left: var(--select-menu-select-icon-ml, -20px);
+}

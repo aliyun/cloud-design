@@ -1,0 +1,65 @@
+// 云效单独tag样式
+.next-tag-medium.next-tag-medium.next-tag-medium.next-tag-medium {
+  --tag-size-m-icon-font: 16px;
+}
+.next-tag-medium.next-tag-closable.next-tag-medium.next-tag-closable {
+  transition: all 200ms ease;
+  padding-right: 12px;
+  padding-left: 12px;
+  .next-tag-body {
+    max-width: 100%;
+    padding: 0;
+    position: unset;
+  }
+  .next-tag-close-btn {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    transition: opacity 100ms ease;
+    margin-left: 0;
+    z-index: 0;
+    opacity: 0;
+    padding: 0;
+    line-height: 24px;
+  }
+  &:not(.disabled):not([disabled]):hover {
+    padding-left: 5px;
+    padding-right: 19px;
+    .next-tag-close-btn {
+      opacity: 1;
+    }
+  }
+}
+
+.next-tag-small.next-tag-small.next-tag-small.next-tag-small {
+  --tag-size-s-icon-font: 14px;
+}
+
+.next-tag-small.next-tag-closable.next-tag-small.next-tag-closable {
+  transition: all 200ms ease;
+  padding-right: 10px;
+  padding-left: 10px;
+  .next-tag-body {
+    max-width: 100%;
+    padding: 0;
+    position: unset;
+  }
+  .next-tag-close-btn {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    transition: opacity 100ms ease;
+    margin-left: 0;
+    z-index: 0;
+    opacity: 0;
+    padding: 0;
+    line-height: 20px;
+  }
+  &:not(.disabled):not([disabled]):hover {
+    padding-left: 4px;
+    padding-right: 16px;
+    .next-tag-close-btn {
+      opacity: 1;
+    }
+  }
+}

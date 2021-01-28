@@ -62,7 +62,7 @@ class Demo extends React.Component {
         key={name}
         checked={singleValue === name}
         disabled={i > 2}
-        size={i === 2 ? 'small' : undefined}
+        size={i === 2 ? 'large' : undefined}
         onChange={this.handleChangeSingle.bind(this, name)}
         {...props}
       >

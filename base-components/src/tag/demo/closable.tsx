@@ -10,7 +10,7 @@ import { Tag } from '@alicloudfe/components'
 
 const { Group: TagGroup, Closeable: CloseableTag } = Tag
 
-const handler = (from) => {
+const handler = from => {
   console.log(`close from ${from}`)
   return false
 }
@@ -18,7 +18,13 @@ const handler = (from) => {
 class Demo extends React.Component {
   renderTagList(option) {
     return [
+      <CloseableTag key={'tag-1'} type={option.type} size="large">
+        {option.type}
+      </CloseableTag>,
       <CloseableTag key={'tag-1'} type={option.type}>
+        {option.type}
+      </CloseableTag>,
+      <CloseableTag key={'tag-1'} type={option.type} size="small">
         {option.type}
       </CloseableTag>,
       <CloseableTag key={'tag-2'} type={option.type} disabled>

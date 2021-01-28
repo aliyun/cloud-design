@@ -1,134 +1,55 @@
 // 混合云&云效公共覆盖样式
-.next-tag-medium.next-tag-medium.next-tag-medium.next-tag-medium {
-  --tag-size-m-icon-font: 16px;
-}
-.next-tag-medium.next-tag-closable.next-tag-medium.next-tag-closable {
-  transition: all 200ms ease;
-  padding-right: 12px;
-  padding-left: 12px;
-  .next-tag-body {
-    max-width: 100%;
-    padding: 0;
-    position: unset;
-  }
-  .next-tag-close-btn {
-    position: absolute;
-    top: 0;
-    right: 3px;
-    transition: opacity 100ms ease;
-    margin-left: 0;
-    z-index: 0;
-    opacity: 0;
-    padding: 0;
-    line-height: 24px;
-  }
-  &:not(.disabled):not([disabled]):hover {
-    padding-left: 5px;
-    padding-right: 19px;
-    .next-tag-close-btn {
-      opacity: 1;
-    }
-  }
-}
-
-.next-tag-small.next-tag-small.next-tag-small.next-tag-small {
-  --tag-size-s-icon-font: 14px;
-}
-
-.next-tag-small.next-tag-closable.next-tag-small.next-tag-closable {
-  transition: all 200ms ease;
-  padding-right: 10px;
-  padding-left: 10px;
-  .next-tag-body {
-    max-width: 100%;
-    padding: 0;
-    position: unset;
-  }
-  .next-tag-close-btn {
-    position: absolute;
-    top: 0px;
-    right: 2px;
-    transition: opacity 100ms ease;
-    margin-left: 0;
-    z-index: 0;
-    opacity: 0;
-    padding: 0;
-    line-height: 20px;
-  }
-  &:not(.disabled):not([disabled]):hover {
-    padding-left: 4px;
-    padding-right: 16px;
-    .next-tag-close-btn {
-      opacity: 1;
-    }
-  }
-}
-
-// .next-tag-medium.next-tag-closable,
-// .next-tag-small.next-tag-closable {
-//   border-color: transparent;
-//   .next-tag-body {
-//     // 标签最大宽度暂定 180px
-//     max-width: 180px;
-//   }
-//   .next-tag-close-btn {
-//     padding-right: 4px;
-//     margin-left: 4px;
-//   }
-// }
-
 .next-tag-blue-inverse {
   background-color: var(--color-notice-1);
-  border: none;
-  box-shadow: 0 0 0 1px var(--color-notice-2);
+  border: var(--colortag-border-width, 0px) solid var(--color-notice-2);
   color: var(--color-notice-5);
 }
 
 .next-tag-blue {
   background-color: var(--color-notice-5);
-  // border: none;
+  border-color: var(--color-notice-5);
 }
 
 .next-tag-green-inverse {
   background-color: var(--color-success-1);
-  border: none;
+  border: var(--colortag-border-width, 0px) solid var(--color-success-2);
   color: var(--color-success-5);
 }
 
 .next-tag-green {
   background-color: var(--color-success-5);
-  border: none;
+  border-color: var(--color-success-5);
 }
 
 .next-tag-red-inverse {
   background-color: var(--color-error-1);
-  border: none;
+  border: var(--colortag-border-width, 0px) solid var(--color-error-2);
   color: var(--color-error-5);
 }
 
 .next-tag-red {
   background-color: var(--color-error-5);
-  border: none;
+  border-color: var(--color-error-5);
 }
 
 .next-tag-orange-inverse {
   background-color: var(--color-warning-1);
-  border: none;
+  border: var(--colortag-border-width, 0px) solid var(--color-warning-2);
   color: var(--color-warning-5);
 }
 
 .next-tag-orange {
   background-color: var(--color-warning-5);
-  border: none;
+  border-color: var(--color-warning-5);
 }
 
 .next-tag-yellow-inverse {
   background-color: var(--color-help-1);
-  border: none;
+  border: var(--colortag-border-width, 0px) solid var(--color-help-2);
   color: var(--color-help-5);
 }
 
 .next-tag-yellow {
   background-color: var(--color-help-5);
-  border: none;
+  border-color: var(--color-help-5);
 }
