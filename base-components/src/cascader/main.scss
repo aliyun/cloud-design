@@ -6,6 +6,7 @@ $cascader-prefix: '.' + $css-prefix + 'cascader';
     // 多选menu不需要额外的padding来容纳图标
     #{$menu-prefix}-item {
       --menu-padding-horizontal: var(--menu-padding-horizontal-selectable);
+      padding: 0 var(--menu-padding-horizontal) 0 var(--menu-padding-horizontal);
     }
   }
 
