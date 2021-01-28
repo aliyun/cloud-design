@@ -1,5 +1,7 @@
 # Change Log
 
+## 1.1.0
+
 ## 1.0.57
 - 优化js读取cssVar的方式
 
