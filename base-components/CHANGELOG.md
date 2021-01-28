@@ -1,7 +1,21 @@
 # Change Log
 
-## 1.1.0
-
+## 1.1.2
+- 全局
+  • 调整全局 font-family 样式，移除默认会下载的 Roboto 字体
+  • 调整全局 icon 尺寸为正方形，解决之前 loading 图标上下抖动问题和对齐问题
+  • fusion 升级到 1.22.4 版本
+组件
+  • Overlay：修复偶现的边界定位错误问题
+  • Tag：调整混合云主题下普通标签、彩色标签样式、新增 Toggle Button 样式（Selectable Tag）
+  • Form：修复在使用 Form.Submit、Form.Rest 的时候无法判断内容是否是2-4个汉字的样式问题
+  • Step：调整混合云、云效主题样式
+  • Tab：调整混合云主题胶囊样式
+  • Tree：调整混合云、云效主题样式
+  • Switch：调整混合云主题下的尺寸
+  • Dialog：调整混合云主题样式
+  • Select、Menu：调整混合云、云效主题样式
+  • Pagination：调整选择分页弹层样式
 ## 1.0.57
 - 优化js读取cssVar的方式
 
