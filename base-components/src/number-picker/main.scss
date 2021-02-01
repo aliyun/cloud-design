@@ -118,3 +118,10 @@ $number-picker: '.' + $css-prefix + 'number-picker';
 @include number-picker-inline-size(medium);
 @include number-picker-inline-size(small);
 @include number-picker-inline-size(large);
+
+.next-number-picker-normal.next-small.next-small.next-small .next-icon:before,
+.next-number-picker-normal.next-small.next-small.next-small
+  .next-icon
+  .next-icon-remote {
+  line-height: inherit;
+}
