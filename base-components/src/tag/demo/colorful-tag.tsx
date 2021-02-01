@@ -20,8 +20,15 @@ export default function DemoComponent() {
       <h4>presets</h4>
       <TagGroup>
         {presetColors.map((color) => (
+          <Tag key={`p_n_${color}`} size="large" type="normal" color={color}>
+            标签文字
+          </Tag>
+        ))}
+      </TagGroup>
+      <TagGroup>
+        {presetColors.map((color) => (
           <Tag key={`p_n_${color}`} type="normal" color={color}>
-            {color}
+            标签文字
           </Tag>
         ))}
       </TagGroup>
