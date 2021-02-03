@@ -8,11 +8,17 @@ type IProps = React.ComponentProps<typeof NextDialog>
 const Dialog: React.FC<IProps> = ({ ...props }) => {
   const theme = useCssVar('--alicloudfe-components-theme').trim()
   const defaultFooterAlign = (() => {
-    if (theme === 'wind' || theme === 'xconsole') return 'right'
+    if (theme === 'wind' || theme === 'xconsole' || theme === 'yunxiao' || theme === 'yunxiao-dark') return 'right'
     return 'left'
   })()
 
-  return <NextDialog footerAlign={defaultFooterAlign} {...props} />
+  // 云效主题样式主操作在右边
+  const defaultFooterActions = (() => {
+    if (theme === 'yunxiao' || theme === 'yunxiao-dark') return ['cancel', 'ok']
+    return ['ok', 'cancel']
+  })()
+
+  return <NextDialog footerAlign={defaultFooterAlign} footerActions={defaultFooterActions} {...props} />
 }
 
 hoistNonReactStatics(Dialog, NextDialog)

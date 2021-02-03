@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Button } from '@alicloudfe/components'
+import { Table, Button, Tag, Select } from '@alicloudfe/components'
 
 const onRowClick = function (record, index, e) {
     console.log(record, index, e)
@@ -25,7 +25,7 @@ const onRowClick = function (record, index, e) {
     return result
   },
   render = (value, index, record) => {
-    return <a>Remove({record.id})</a>
+    return <Select>Remove({record.id})</Select>
   }
 
 class App extends React.Component {
@@ -89,7 +89,7 @@ class App extends React.Component {
         <p>
           <Button onClick={this.reduceCol}>Reduce Cols</Button>
         </p>
-        <Table
+        <Table.StickyLock
           dataSource={this.state.dataSource}
           onRowClick={onRowClick}
           fixedHeader
@@ -98,12 +98,12 @@ class App extends React.Component {
           <Table.Column
             title="Id-Id-Id-Id-Id-Id-Id-Id-Id-Id-Id-Id"
             dataIndex="id"
-            lock
+            lock="right"
             width={140}
           />
           {this.state.cols}
           <Table.Column cell={render} width={200} />
-        </Table>
+        </Table.StickyLock>
       </div>
     )
   }
