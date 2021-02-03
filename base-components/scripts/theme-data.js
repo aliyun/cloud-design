@@ -8,6 +8,10 @@ module.exports = [
     themeName: 'xconsole',
   },
   {
+    packageName: '@alife/theme-xconsoledarkmode',
+    themeName: 'xconsole-dark',
+  },
+  {
     packageName: '@alife/theme-test1234',
     themeName: 'wind',
   },

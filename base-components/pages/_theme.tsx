@@ -5,6 +5,7 @@ import { useLocation, useHistory } from 'react-router-dom'
 import './style.scss'
 
 import './theme-vars/xconsole.scss'
+import './theme-vars/xconsole-dark.scss'
 import './theme-vars/wind.scss'
 import './theme-vars/hybridcloud.scss'
 import './theme-vars/hybridcloud-dark.scss'
@@ -16,6 +17,7 @@ import './theme-vars/b-design.scss'
 
 const dataSource = [
   { label: '公有云主题', value: 'theme-xconsole' },
+  { label: '公有云主题(暗色)', value: 'theme-xconsole-dark' },
   { label: '公有云主题(经典)', value: 'theme-wind' },
   { label: '混合云亮色主题', value: 'theme-hybridcloud' },
   { label: '混合云暗色主题', value: 'theme-hybridcloud-dark' },
@@ -31,6 +33,9 @@ const mapThemeToImport = {
     import('../src/theme/xconsole/index-no-var.scss?pureCSS'),
   // 经典wind主题也使用xconsole基础样式，确保我们仅通过切换css-var就能升级
   'theme-wind': () => import('../src/theme/xconsole/index-no-var.scss?pureCSS'),
+  // xconsole暗色主题也使用xconsole基础样式，确保我们仅通过切换css-var就能切换
+  'theme-xconsole-dark': () =>
+    import('../src/theme/xconsole/index-no-var.scss?pureCSS'),
   'theme-hybridcloud': () =>
     import('../src/theme/hybridcloud/index-no-var.scss?pureCSS'),
   'theme-hybridcloud-dark': () =>
