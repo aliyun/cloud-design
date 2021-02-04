@@ -10,7 +10,13 @@ const Dialog: React.FC<IProps> = ({ ...props }) => {
 
   // 云效混合云主题样式主操作在右边
   const defaultFooterActions = (() => {
-    if (theme === 'yunxiao' || theme === 'yunxiao-dark' || theme === 'hybridcloud' || theme === 'hybridcloud-dark') return ['cancel', 'ok']
+    if (
+      theme === 'yunxiao' ||
+      theme === 'yunxiao-dark' ||
+      theme === 'hybridcloud' ||
+      theme === 'hybridcloud-dark'
+    )
+      return ['cancel', 'ok']
     return ['ok', 'cancel']
   })()
 
