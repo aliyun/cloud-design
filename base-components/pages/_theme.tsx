@@ -74,7 +74,7 @@ const ToggleTheme: React.FC = () => {
   const history = useHistory()
   const query = new URLSearchParams(location.search)
   const themeFromQuery = query.get('theme') || 'theme-xconsole'
-  const dynamicFusionVar = query.get('themeVer') || undefined
+  const dynamicFusionVar = query.get('dynamicFusionVar') || undefined
 
   const [initialTheme] = useState(themeFromQuery)
 
@@ -108,14 +108,12 @@ const ToggleTheme: React.FC = () => {
   )
 }
 
-// 我们可以创建我们自己的主题，定制页面上的任何区域
-
 export default createTheme({
   topNavs: [
     {
-      text: '走查稿',
+      text: '使用方式',
       href:
-        'https://yuque.antfin-inc.com/docs/share/c343f5a6-0b4e-4653-8739-9038a3adccc7?#'
+        'https://yuque.antfin-inc.com/docs/share/338496db-404d-4d8a-bad1-60f0df1a2cf2?#'
     }
   ],
   logo: 'Cloud Design',
