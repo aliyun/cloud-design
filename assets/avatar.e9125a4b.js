@@ -1,9 +1,0 @@
-import{r as e,N as t}from"./index.e50fb7cb.js";import{q as n}from"./styled-components.browser.esm.4dfc2252.js";import{N as c}from"./index.35c9c455.js";import{N as a}from"./index.3fa7fa76.js";const l=n.div`
-  .next-avatar {
-    margin: 20px 20px 0 0;
-  }
-`;var r=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const t=e.createElement("div",null,e.createElement("div",null,e.createElement(c,{size:64,icon:"account"}),e.createElement(c,{size:"large",icon:"account"}),e.createElement(c,{icon:"account"}),e.createElement(c,{size:"small",icon:"account"})),e.createElement("div",null,e.createElement(c,{shape:"square",size:64,icon:"account"}),e.createElement(c,{shape:"square",size:"large",icon:"account"}),e.createElement(c,{shape:"square",icon:"account"}),e.createElement(c,{shape:"square",size:"small",icon:"account"})));return e.createElement(l,null,t)}});const o=n.div``;var i=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const t=e.createElement("div",null,e.createElement("span",{style:{marginRight:24}},e.createElement(a,{count:1},e.createElement(c,{shape:"square",icon:"account"}))),e.createElement("span",null,e.createElement(a,{dot:!0},e.createElement(c,{shape:"square",icon:"account"}))));return e.createElement(o,null,t)}});const m=n.div`
-  .next-avatar {
-    margin-right: 12px;
-  }
-`;var s=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const n=e.createElement("div",null,e.createElement(c,{icon:"account"}),e.createElement(c,{icon:e.createElement(t,{type:"account"})}),e.createElement(c,null,"U"),e.createElement(c,{src:"https://img.alicdn.com/tfs/TB1QS.4l4z1gK0jSZSgXXavwpXa-1024-1024.png"}),e.createElement(c,{style:{color:"#f56a00",backgroundColor:"#fde3cf"}},"U"),e.createElement(c,{style:{backgroundColor:"#87d068"},icon:"account"}));return e.createElement(m,null,n)}});const u={};u._basic=r,u["_with-badge"]=i,u._type=s;export default u;
