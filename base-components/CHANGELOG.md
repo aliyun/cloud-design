@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.1.6
+同步xconsole-dark
+
 ## 1.1.2
 - 全局
   • 调整全局 font-family 样式，移除默认会下载的 Roboto 字体
