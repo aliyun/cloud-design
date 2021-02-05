@@ -28,6 +28,25 @@ const dataSource = [
   { label: 'B-design主题', value: 'theme-b-design' }
 ]
 
+// 支持动态加载fusionVar的主题的配置
+const supportDynamicFusionVar = {
+  'theme-xconsole': {
+    baseCss: () => import('./dynamic-theme-base/xconsole.scss'),
+    fusionVarURL: (ver) =>
+      `https://unpkg.alipay.com/@alife/theme-xconsole-v4@${ver}/variables.css`
+  },
+  'theme-xconsole-dark': {
+    baseCss: () => import('./dynamic-theme-base/xconsole-dark.scss'),
+    fusionVarURL: (ver) =>
+      `https://unpkg.alipay.com/@alife/theme-xconsoledarkmode@${ver}/variables.css`
+  },
+  'theme-wind': {
+    baseCss: () => import('./dynamic-theme-base/wind.scss'),
+    fusionVarURL: (ver) =>
+      `https://unpkg.alipay.com/@alife/theme-test1234@${ver}/variables.css`
+  }
+}
+
 const mapThemeToImport = {
   'theme-xconsole': () =>
     import('../src/theme/xconsole/index-no-var.scss?pureCSS'),
@@ -50,16 +69,12 @@ const mapThemeToImport = {
     import('../src/theme/b-design/index-no-var.scss?pureCSS')
 }
 
-const styleEl = document.createElement('style')
-styleEl.className = 'theme-switcher'
-styleEl.setAttribute('type', 'text/css')
-document.head.appendChild(styleEl)
-
 const ToggleTheme: React.FC = () => {
   const location = useLocation()
   const history = useHistory()
   const query = new URLSearchParams(location.search)
   const themeFromQuery = query.get('theme') || 'theme-xconsole'
+  const dynamicFusionVar = query.get('themeVer') || undefined
 
   const [initialTheme] = useState(themeFromQuery)
 
@@ -74,11 +89,11 @@ const ToggleTheme: React.FC = () => {
 
   useLayoutEffect(() => {
     if (themeFromQuery === initialTheme) {
-      loadTheme(themeFromQuery)
+      loadTheme(themeFromQuery, dynamicFusionVar)
     } else {
       window.location.reload()
     }
-  }, [themeFromQuery])
+  }, [themeFromQuery, dynamicFusionVar])
 
   return (
     <ConfigProvider prefix="next-">
@@ -107,8 +122,29 @@ export default createTheme({
   topbarOperations: <ToggleTheme />
 })
 
-function loadTheme(val: string) {
+function loadTheme(val: string, dynamicFusionVar?: string) {
+  if (dynamicFusionVar && supportDynamicFusionVar[val]) {
+    const actualClassname = `${val}-dynamic`
+    document.documentElement.className = actualClassname
+    // 导入主题样式中，除了fusionVar以外的部分
+    supportDynamicFusionVar[val].baseCss()
+    const fusionVarURL = supportDynamicFusionVar[val].fusionVarURL(
+      dynamicFusionVar
+    )
+    // 动态加载fusion var
+    fetch(fusionVarURL).then(async (response) => {
+      const cssText = await response.text()
+      const cssTextModified = cssText.replace(/^:root/, `.${actualClassname}`)
+      const styleEl = document.createElement('style')
+      styleEl.className = 'theme-switcher'
+      styleEl.setAttribute('type', 'text/css')
+      styleEl.innerHTML = cssTextModified
+      document.head.appendChild(styleEl)
+    })
+    return
+  }
   document.documentElement.className = val
+
   mapThemeToImport[val]().then(({ default: cssText }) => {
     window['__recheck_css_var'] = window['__recheck_css_var'] ?? []
     window['__recheck_css_var'].forEach(
