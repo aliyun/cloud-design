@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-xconsoledarkmode@0.2.2 (https://fusion.design)
+ * @alife/theme-xconsoledarkmode@0.2.3 (https://fusion.design)
  * @alifd/next@1.21.16 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -4021,8 +4021,8 @@
   color: var(--tag-checkable-primary-text-color, #0064C8);
   border-color: #0064C8;
   border-color: var(--tag-checkable-primary-border-color, #0064C8);
-  background-color: #242425;
-  background-color: var(--tag-checkable-primary-bg-color, #242425); }
+  background-color: #0d0d0d;
+  background-color: var(--tag-checkable-primary-bg-color, #0d0d0d); }
   .next-tag-checkable.next-tag-level-primary.checked:not(.disabled):not([disabled]):hover, .next-tag-checkable.next-tag-level-primary.checked:not(.disabled):not([disabled]).hover, .next-tag-checkable.next-tag-level-primary.checked:not(.disabled):not([disabled]):focus {
     color: #0064C8;
     color: var(--tag-checkable-primary-text-color-hover, #0064C8);
@@ -4114,8 +4114,8 @@
   color: var(--tag-secondary-text-color, #0064C8);
   border-color: #0064C8;
   border-color: var(--tag-secondary-border-color, #0064C8);
-  background-color: #242425;
-  background-color: var(--tag-secondary-bg, #242425); }
+  background-color: #0d0d0d;
+  background-color: var(--tag-secondary-bg, #0d0d0d); }
   .next-tag-checkable.next-tag-level-normal.checked:not(.disabled):not([disabled]):hover, .next-tag-checkable.next-tag-level-normal.checked:not(.disabled):not([disabled]).hover, .next-tag-checkable.next-tag-level-normal.checked:not(.disabled):not([disabled]):focus {
     color: #0064C8;
     color: var(--tag-secondary-text-color-hover, #0064C8);
@@ -4129,8 +4129,8 @@
   color: var(--tag-secondary-text-color, #0064C8);
   border-color: #0064C8;
   border-color: var(--tag-secondary-border-color, #0064C8);
-  background-color: #242425;
-  background-color: var(--tag-secondary-bg, #242425); }
+  background-color: #0d0d0d;
+  background-color: var(--tag-secondary-bg, #0d0d0d); }
   .next-tag-checkable.next-tag-level-secondary.checked:not(.disabled):not([disabled]):hover, .next-tag-checkable.next-tag-level-secondary.checked:not(.disabled):not([disabled]).hover, .next-tag-checkable.next-tag-level-secondary.checked:not(.disabled):not([disabled]):focus {
     color: #0064C8;
     color: var(--tag-secondary-text-color-hover, #0064C8);
@@ -17774,13 +17774,13 @@
   border-color: var(--step-circle-item-node-wait-border-color, #303133); }
 
 .next-step-circle > .next-step-item-wait .next-step-item-title {
-  color: #cccccc;
-  color: var(--step-circle-item-title-wait-color, #cccccc);
+  color: #999999;
+  color: var(--step-circle-item-title-wait-color, #999999);
   word-break: break-word; }
 
 .next-step-circle > .next-step-item-wait .next-step-item-content {
-  color: #cccccc;
-  color: var(--step-circle-item-title-wait-color, #cccccc);
+  color: #999999;
+  color: var(--step-circle-item-title-wait-color, #999999);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
   word-break: break-word; }
@@ -17836,20 +17836,20 @@
   height: var(--step-circle-item-node-process-size, 32px); }
 
 .next-step-circle > .next-step-item-process > .next-step-item-container .next-step-item-node {
-  color: #0064C8;
-  color: var(--step-circle-item-node-process-color, #0064C8); }
+  color: #FFFFFF;
+  color: var(--step-circle-item-node-process-color, #FFFFFF); }
 
 .next-step-circle > .next-step-item-process > .next-step-item-container .next-step-item-node-circle {
-  background: #0d0d0d;
-  background: var(--step-circle-item-node-process-background, #0d0d0d);
-  border-color: #0064C8;
-  border-color: var(--step-circle-item-node-process-border-color, #0064C8); }
+  background: #0064C8;
+  background: var(--step-circle-item-node-process-background, #0064C8);
+  border-color: transparent;
+  border-color: var(--step-circle-item-node-process-border-color, transparent); }
 
 .next-step-circle > .next-step-item-process > .next-step-item-container .next-step-item-node-dot {
-  background: #0d0d0d;
-  background: var(--step-circle-item-node-process-background, #0d0d0d);
-  border-color: #0064C8;
-  border-color: var(--step-circle-item-node-process-border-color, #0064C8); }
+  background: #0064C8;
+  background: var(--step-circle-item-node-process-background, #0064C8);
+  border-color: transparent;
+  border-color: var(--step-circle-item-node-process-border-color, transparent); }
 
 .next-step-circle > .next-step-item-process .next-step-item-title {
   color: #e6e6e6;
