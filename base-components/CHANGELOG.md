@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.1.9
+支持旧版wind的ColoredTag
+
 ## 1.1.6
 同步xconsole-dark
 
