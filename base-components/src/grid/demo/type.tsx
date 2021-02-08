@@ -50,7 +50,7 @@ class Demo extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeListener('resize', this.handleResize)
+    // window.removeListener('resize', this.handleResize)
   }
 
   render() {
