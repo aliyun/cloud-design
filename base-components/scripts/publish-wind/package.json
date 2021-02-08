@@ -1,0 +1,44 @@
+{
+  "name": "@ali/wind",
+  "version": "3.4.0-alpha.22",
+  "description": "Aliyun web components",
+  "main": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist esm lib types",
+    "prepare": "npm run clean && node ./scripts/prepare.js",
+    "publish:alpha": "tnpm publish --tag alpha"
+  },
+  "sideEffects": [
+    "dist/*",
+    "esm/index.js",
+    "lib/index.js",
+    "*.scss",
+    "*.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aliyun/alibabacloud-console-components"
+  },
+  "keywords": [
+    "react",
+    "wind",
+    "components",
+    "fusion",
+    "design"
+  ],
+  "author": "csr632 <632882184@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@alicloud/console-components": "1.4.0-alpha.22"
+  },
+  "peerDependencies": {
+    "moment": "^2.21.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  }
+}
