@@ -1,16 +1,22 @@
 import React from 'react'
 import { Card as NextCard, Dropdown, Menu, Icon } from '@alifd/next'
+import {
+  CardHeaderProps,
+  CardContentProps,
+  CardMediaProps,
+  CardActionsProps,
+  CardDividerProps,
+  CardProps
+} from '@alifd/next/types/card'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import ConfigProvider from '../config-provider'
 
-interface IProps extends React.ComponentProps<typeof NextCard> {}
-
-const Card: React.FC<IProps> & {
-  Header: React.ComponentType<React.ComponentProps<typeof NextCard['Header']>>
-  Content: React.ComponentType<React.ComponentProps<typeof NextCard['Content']>>
-  Media: React.ComponentType<React.ComponentProps<typeof NextCard['Media']>>
-  Actions: React.ComponentType<React.ComponentProps<typeof NextCard['Actions']>>
-  Divider: React.ComponentType<React.ComponentProps<typeof NextCard['Divider']>>
+const Card: React.FC<CardProps> & {
+  Header: React.ComponentType<CardHeaderProps>
+  Content: React.ComponentType<CardContentProps>
+  Media: React.ComponentType<CardMediaProps>
+  Actions: React.ComponentType<CardActionsProps>
+  Divider: React.ComponentType<CardDividerProps>
   DropDownActions: React.FC<{
     actions: { label: React.ReactNode; onClick: () => void }[]
   }>
@@ -83,6 +89,5 @@ const CollapsableHead: React.FC<ICollapsableProps & { prefix: string }> = ({
 }
 
 Card.CollapsableHead = ConfigProvider.config(CollapsableHead)
-
 
 export default Card
