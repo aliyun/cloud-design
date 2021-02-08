@@ -138,15 +138,21 @@ function loadTheme(val: string, dynamicFusionVar?: string) {
       styleEl.setAttribute('type', 'text/css')
       styleEl.innerHTML = cssTextModified
       document.head.appendChild(styleEl)
+      setTimeout(() => {
+        recheckCssVar()
+      }, 0)
     })
     return
   }
   document.documentElement.className = val
 
-  mapThemeToImport[val]().then(({ default: cssText }) => {
+  mapThemeToImport[val]().then(recheckCssVar)
+
+  /** 通知cssVar的订阅者，cssVar有更新 */
+  function recheckCssVar() {
     window['__recheck_css_var'] = window['__recheck_css_var'] ?? []
     window['__recheck_css_var'].forEach(
       (check) => typeof check === 'function' && check()
     )
-  })
+  }
 }
