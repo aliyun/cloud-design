@@ -1,13 +1,13 @@
 {
   "name": "@ali/wind",
-  "version": "3.4.0-alpha.22",
+  "version": "3.4.0-alpha.23",
   "description": "Aliyun web components",
   "main": "esm/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "clean": "rm -rf dist esm lib types",
     "prepare": "npm run clean && node ./scripts/prepare.js",
-    "publish:alpha": "tnpm publish --tag alpha"
+    "publish:alpha": "npm version prerelease --preid=alpha && tnpm publish --tag alpha"
   },
   "sideEffects": [
     "dist/*",
@@ -30,7 +30,7 @@
   "author": "csr632 <632882184@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "@alicloud/console-components": "1.4.0-alpha.22"
+    "@alicloud/console-components": "1.4.0-alpha.23"
   },
   "peerDependencies": {
     "moment": "^2.21.0",

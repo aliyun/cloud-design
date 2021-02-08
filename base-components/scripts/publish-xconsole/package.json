@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-components",
-  "version": "1.4.0-alpha.22",
+  "version": "1.4.0-alpha.23",
   "description": "Alibaba Cloud React Components",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rm -rf dist esm lib types",
     "prepare": "npm run clean && node ./scripts/prepare.js",
-    "publish:alpha": "npm publish --tag alpha"
+    "publish:alpha": "npm version prerelease --preid=alpha && npm publish --tag alpha"
   },
   "keywords": [
     "react",
