@@ -5239,105 +5239,6 @@
     --tag-closable-primary-fill-bg-color-disabled: var(--color-white, #FFFFFF);
     
     
-    /* ------------------------ menu ------------------------ */
-    
-    
-    --menu-padding-vertical: var(--s-2, 8px);
-    
-    
-    --menu-padding-horizontal: var(--s-4, 16px);
-    
-    
-    --menu-line-height: var(--s-8, 32px);
-    
-    
-    --menu-font-size: var(--font-size-body-1, 12px);
-    
-    
-    --menu-submenu-title-size: var(--font-size-body-1, 12px);
-    
-    
-    --menu-padding-title-horizontal: var(--s-3, 12px);
-    
-    
-    --menu-divider-width: var(--line-1, 1px);
-    
-    
-    --menu-divider-margin-ver: var(--s-2, 8px);
-    
-    
-    --menu-divider-margin-hoz: var(--s-3, 12px);
-    
-    
-    --menu-icon-selected-size: var(--icon-s, 16px);
-    
-    
-    --menu-icon-selected-right: var(--s-1, 4px);
-    
-    
-    --menu-icon-size: var(--icon-xs, 12px);
-    
-    
-    --menu-hoz-icon-size: var(--icon-xs, 12px);
-    
-    
-    --menu-icon-margin: var(--s-1, 4px);
-    
-    
-    --menu-shadow: var(--shadow-1-down, 0px 2px 4px 0px rgba(0, 0, 0, 0.16));
-    
-    
-    --menu-color: var(--color-text1-9, #333333);
-    
-    
-    --menu-divider-style: var(--line-solid, solid);
-    
-    
-    --menu-divider-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    --menu-background: var(--color-white, #FFFFFF);
-    
-    
-    --menu-arrow-color: var(--color-text1-9, #333333);
-    
-    
-    --menu-background-selected: var(--color-transparent, transparent);
-    
-    
-    --menu-color-selected: var(--color-text1-4, #111111);
-    
-    
-    --menu-icon-selected-color: var(--color-text1-9, #333333);
-    
-    
-    --menu-background-hover: var(--color-fill1-2, #F7F9FA);
-    
-    
-    --menu-color-hover: var(--color-text1-9, #333333);
-    
-    
-    --menu-arrow-color-hover: var(--color-text1-9, #333333);
-    
-    
-    --menu-icon-selected-hover-color: var(--color-text1-9, #333333);
-    
-    
-    --menu-color-disabled: var(--color-text1-3, #555555);
-    
-    
-    --menu-select-icon-content: var(--icon-content-huaban108, "");
-    
-    
-    --menu-fold-icon-content: var(--icon-content-arrow-down, "");
-    
-    
-    --menu-unfold-icon-content: var(--icon-reset);
-    
-    
-    --menu-popupfold-icon-content: var(--icon-content-arrow-right, "");
-    
-    
     /* ------------------------ input ------------------------ */
     
     
@@ -8608,6 +8509,123 @@
     --step-dot-vertical-item-tail-size: var(--line-1, 1px);
     
     
+    /* ------------------------ menu ------------------------ */
+    
+    
+    --menu-padding-ver-padding-lr: var(--s-zero, 0px);
+    
+    
+    --menu-padding-ver-padding-tb: var(--s-2, 8px);
+    
+    
+    --menu-padding-hoz-padding-lr: var(--s-zero, 0px);
+    
+    
+    --menu-padding-hoz-padding-tb: var(--s-2, 8px);
+    
+    
+    --menu-item-padding-ver-padding-l: var(--s-4, 16px);
+    
+    
+    --menu-item-padding-ver-padding-r: var(--s-4, 16px);
+    
+    
+    --menu-item-padding-hoz-padding-lr: var(--s-4, 16px);
+    
+    
+    --menu-line-height: var(--s-8, 32px);
+    
+    
+    --menu-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --menu-submenu-title-size: var(--font-size-body-1, 12px);
+    
+    
+    --menu-padding-title-horizontal: var(--s-3, 12px);
+    
+    
+    --menu-divider-width: var(--line-1, 1px);
+    
+    
+    --menu-divider-margin-ver: var(--s-2, 8px);
+    
+    
+    --menu-divider-margin-hoz: var(--s-3, 12px);
+    
+    
+    --menu-icon-selected-size: var(--icon-s, 16px);
+    
+    
+    --menu-icon-selected-right: var(--s-1, 4px);
+    
+    
+    --menu-icon-size: var(--icon-xs, 12px);
+    
+    
+    --menu-hoz-icon-size: var(--icon-xs, 12px);
+    
+    
+    --menu-icon-margin: var(--s-1, 4px);
+    
+    
+    --menu-shadow: var(--shadow-1-down, 0px 2px 4px 0px rgba(0, 0, 0, 0.16));
+    
+    
+    --menu-color: var(--color-text1-9, #333333);
+    
+    
+    --menu-divider-style: var(--line-solid, solid);
+    
+    
+    --menu-divider-color: var(--color-line1-1, #E3E4E6);
+    
+    
+    --menu-background: var(--color-white, #FFFFFF);
+    
+    
+    --menu-arrow-color: var(--color-text1-9, #333333);
+    
+    
+    --menu-background-selected: var(--color-transparent, transparent);
+    
+    
+    --menu-color-selected: var(--color-text1-4, #111111);
+    
+    
+    --menu-icon-selected-color: var(--color-text1-9, #333333);
+    
+    
+    --menu-background-hover: var(--color-fill1-2, #F7F9FA);
+    
+    
+    --menu-color-hover: var(--color-text1-9, #333333);
+    
+    
+    --menu-arrow-color-hover: var(--color-text1-9, #333333);
+    
+    
+    --menu-icon-selected-hover-color: var(--color-text1-9, #333333);
+    
+    
+    --menu-color-disabled: var(--color-text1-3, #555555);
+    
+    
+    --menu-select-icon-content: var(--icon-content-huaban108, "");
+    
+    
+    --menu-fold-icon-content: var(--icon-content-arrow-down, "");
+    
+    
+    --menu-unfold-icon-content: var(--icon-reset);
+    
+    
+    --menu-popupfold-icon-content: var(--icon-content-arrow-right, "");
+    
+    
+    --menu-padding-horizontal: var(--s-4, 16px);
+    
+    
     /* ------------------------ nav ------------------------ */
     
     
@@ -9667,7 +9685,7 @@
     /* ------------------------ form-element ------------------------ */
     
     
-    --form-element-small-height: var(--s-7, 28px);
+    --form-element-small-height: var(--s-6, 24px);
     
     
     --form-element-medium-height: var(--s-8, 32px);
@@ -9685,19 +9703,28 @@
     --form-element-large-font-size: var(--font-size-body-2, 14px);
     
     
-    --form-element-small-preview-height: var(--s-5, 20px);
+    --form-element-small-preview-height: var(--s-4, 16px);
     
     
-    --form-element-medium-preview-height: var(--s-7, 28px);
+    --form-element-medium-preview-height: var(--s-4, 16px);
     
     
-    --form-element-large-preview-height: var(--s-10, 40px);
+    --form-element-large-preview-height: var(--s-4, 16px);
+    
+    
+    --form-element-small-preview-label-font-size: var(--font-size-caption, 12px);
     
     
     --form-element-small-preview-font-size: var(--font-size-caption, 12px);
     
     
+    --form-element-medium-preview-label-font-size: var(--font-size-body-1, 12px);
+    
+    
     --form-element-medium-preview-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --form-element-large-preview-label-font-size: var(--font-size-subhead, 14px);
     
     
     --form-element-large-preview-font-size: var(--font-size-subhead, 14px);
