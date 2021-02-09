@@ -30,7 +30,7 @@
     "url": "https://github.com/aliyun/cloud-design"
   },
   "scripts": {
-    "clean": "rm -rf dist lib es",
+    "clean": "rm -rf dist lib es types",
     "dev": "vite serve -c ./vite.config.ts",
     "debug": "npx --node-arg=--inspect vite serve -c ./vite.config.ts",
     "debug-build": "npx --node-arg=--inspect vite build -c ./vite.config.ts",
@@ -39,11 +39,11 @@
     "babel": "tsc -p src --outDir ./lib --module commonjs",
     "babel:esm": "tsc -p src --outDir ./es --module es2015",
     "build": "breezr build --engine webpack",
-    "tsc": "tsc -p src --emitDeclarationOnly && node ./scripts/add-fusion-type-export",
+    "types": "tsc -p src --emitDeclarationOnly && node ./scripts/add-fusion-type-export",
     "cpy-comp": "node ./scripts/copy-comp.js",
     "cpy-scss": "cpy \"**/*.scss\" \"../lib\" --cwd=src --parents",
     "build-css": "node ./scripts/build-css.js",
-    "prepare": "npm run clean && concurrently \"npm:babel\" \"npm:cpy-scss\" \"npm:build-css\" \"npm:babel:esm\" \"npm:build\" \"npm:tsc\" && echo \"Prepare package successfully!\"",
+    "prepare": "npm run clean && concurrently \"npm:babel\" \"npm:cpy-scss\" \"npm:build-css\" \"npm:babel:esm\" \"npm:build\" \"npm:types\" && echo \"Prepare package successfully!\"",
     "sync-demo": "node ./scripts/sync-demo.js",
     "gene-def": "node ./scripts/gene-css-def.js",
     "update-theme": "node ./scripts/update-theme.js && npm run gene-def"

@@ -41,6 +41,7 @@ fs.writeFileSync(
   await Promise.all([
     copy(path.join(root, 'es'), esmDir),
     copy(path.join(root, 'lib'), libDir),
+    copy(path.join(root, 'types'), typesDir),
     fs.copy(
       path.join(root, 'dist/xconsole.css'),
       path.join(distDir, 'xconsole.css')

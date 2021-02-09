@@ -31,7 +31,7 @@ fs.writeFileSync(
 // 创建入口文件
 const libIndexJsPath = path.join(pkgPath, 'lib', 'index.js')
 const esmIndexJsPath = path.join(pkgPath, 'esm', 'index.js')
-const libIndexDTSPath = path.join(pkgPath, 'lib', 'index.d.ts')
+const indexDTSPath = path.join(pkgPath, 'types', 'index.d.ts')
 
 const libIndexJsCode = [
   ...getCommonJSReExport('@alicloud/console-components/lib/index.js'),
@@ -42,15 +42,15 @@ const esmIndexJsCode = [
   codeExportLibInfoESM('@ali/wind', pkgVersion)
 ]
 const libIndexDTSCode = [
-  getESMReExport('@alicloud/console-components/lib/index')[0]
+  getESMReExport('@alicloud/console-components/types')[0]
 ]
 
 fs.ensureFileSync(libIndexJsPath)
 fs.writeFileSync(libIndexJsPath, libIndexJsCode.join('\n'))
 fs.ensureFileSync(esmIndexJsPath)
 fs.writeFileSync(esmIndexJsPath, esmIndexJsCode.join('\n'))
-fs.ensureFileSync(libIndexDTSPath)
-fs.writeFileSync(libIndexDTSPath, libIndexDTSCode.join('\n'))
+fs.ensureFileSync(indexDTSPath)
+fs.writeFileSync(indexDTSPath, libIndexDTSCode.join('\n'))
 
 const componentNames = getComponentNames()
 // 为每个组件创建re-export，
@@ -64,12 +64,12 @@ function createReExportForComponent(componentName) {
   fs.ensureFileSync(libIndexJsPath)
   fs.writeFileSync(libIndexJsPath, jsFileContent)
 
-  const libIndexDTSPath = path.join(pkgPath, 'lib', componentName, 'index.d.ts')
+  const DTSPath = path.join(pkgPath, 'types', componentName, 'index.d.ts')
   const dtsFileContent = getESMReExport(
-    `@alicloud/console-components/lib/${componentName}/index`
-  )[1]
-  fs.ensureFileSync(libIndexDTSPath)
-  fs.writeFileSync(libIndexDTSPath, dtsFileContent)
+    `@alicloud/console-components/types/${componentName}`
+  ).join('\n')
+  fs.ensureFileSync(DTSPath)
+  fs.writeFileSync(DTSPath, dtsFileContent)
 
   const esmIndexJsPath = path.join(pkgPath, 'esm', componentName, 'index.js')
   const esmIndexJSContent = getESMReExport(

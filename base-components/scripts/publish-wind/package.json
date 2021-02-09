@@ -1,9 +1,10 @@
 {
   "name": "@ali/wind",
-  "version": "3.4.0-alpha.25",
+  "version": "3.4.0-alpha.27",
   "description": "Aliyun web components",
-  "main": "esm/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "clean": "rm -rf dist esm lib types",
     "prepare": "npm run clean && node ./scripts/prepare.js",
@@ -30,7 +31,7 @@
   "author": "csr632 <632882184@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "@alicloud/console-components": "1.4.0-alpha.25"
+    "@alicloud/console-components": "1.4.0-alpha.27"
   },
   "peerDependencies": {
     "moment": "^2.21.0",
