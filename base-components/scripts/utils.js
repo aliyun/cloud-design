@@ -4,7 +4,7 @@ const _ = require('lodash')
 const ncp = require('ncp').ncp
 
 function getComponentNames() {
-  const excludesComponentNames = ['utils', 'theme']
+  const excludesComponentNames = ['utils', 'theme', 'locale']
   const baseDir = path.resolve(__dirname, '../src')
   const componentNames = fs
     .readdirSync(baseDir)
