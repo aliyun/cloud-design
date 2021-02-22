@@ -8,10 +8,13 @@ $icon-prefix: '.' + $css-prefix + 'icon';
       // icon垂直据中
       position: absolute;
       left: 50%;
-      transform: translateX(-50%) scale(var(--checkbox-icon-scale, 0.8));
+      top: 50%;
+      transform: translate(-50%, -50%) scale(var(--checkbox-icon-scale, 0.8));
       margin: 0;
       &::before {
+        display: inline-block;
         width: var(--checkbox-icon-size, 16px);
+        height: var(--checkbox-icon-size, 16px);
         font-size: var(--checkbox-icon-size, 16px);
         line-height: inherit;
       }
