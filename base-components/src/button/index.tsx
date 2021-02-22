@@ -4,6 +4,7 @@ import hoistNonReactStatics from 'hoist-non-react-statics'
 import cls from 'classnames'
 
 import { withThemeClass } from '../utils/withThemeClass'
+import { useCssVar } from '../utils/useCssVar'
 
 type NextButtonProps = React.ComponentProps<typeof NextButton>
 
@@ -13,8 +14,15 @@ const isTwoToFourCNChar = rxTwoToFourCNChar.test.bind(rxTwoToFourCNChar)
 const Button: typeof NextButton = withThemeClass(
   React.forwardRef((props: NextButtonProps, ref) => {
     const { children, className } = props
+    const theme = useCssVar('--alicloudfe-components-theme').trim()
     // 判断是否是2-4个汉字
-    if (typeof children === 'string' && isTwoToFourCNChar(children)) {
+    if (
+      // xconsole相关主题不需要该功能
+      theme !== 'wind' &&
+      !theme.startsWith('xconsole') &&
+      typeof children === 'string' &&
+      isTwoToFourCNChar(children)
+    ) {
       return (
         <NextButton
           {...props}
