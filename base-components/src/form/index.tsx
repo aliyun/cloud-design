@@ -1,22 +1,22 @@
+import { Form as NextForm } from '@alifd/next'
+import React from 'react'
+import hoistNonReactStatics from 'hoist-non-react-statics'
+import CNCHARHOC from '../utils/cnCharHoc'
+import { useCssVar } from '../utils/useCssVar'
 
-  import { Form as NextForm } from '@alifd/next'
-  import CNCHARHOC from '../utils/cnCharHoc';
-  // import React from 'react'
-  // import hoistNonReactStatics from 'hoist-non-react-statics'
+type NextFormProps = React.ComponentProps<typeof NextForm>
 
-  // type NextFormProps = React.ComponentProps<typeof NextForm>
+const Form: typeof NextForm = React.forwardRef((props: NextFormProps, ref) => {
+  const theme = useCssVar('--alicloudfe-components-theme').trim()
+  if (theme === 'wind' || theme.startsWith('xconsole')) {
+    return <NextForm labelTextAlign="left" {...props} ref={ref as any} />
+  }
+  return <NextForm {...props} ref={ref as any} />
+}) as any
 
-  // const Form: typeof NextForm = React.forwardRef(
-  //   (props: NextFormProps, ref) => {
-  //     return <NextForm labelTextAlign="left" {...props} ref={ref as any} />
-  //   }
-  // )as any
+hoistNonReactStatics(Form, NextForm)
 
-  // hoistNonReactStatics(Form, NextForm)
+Form.Submit = CNCHARHOC(Form.Submit) as any
+Form.Reset = CNCHARHOC(Form.Reset) as any
 
-  NextForm.Submit = CNCHARHOC(NextForm.Submit) as any
-  NextForm.Reset = CNCHARHOC(NextForm.Reset) as any
-  
-  export default NextForm;
-    
-  
+export default Form
