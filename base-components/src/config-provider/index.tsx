@@ -15,6 +15,8 @@ const refElementStyle: React.CSSProperties = {
   height: 0
 }
 
+const NextConfigConsumer = (NextConfigProvider as any).Consumer
+
 const ConfigProvider: typeof NextConfigProvider & {
   useRefElement: typeof useRefElement
 } = ((props) => {
@@ -34,11 +36,18 @@ const ConfigProvider: typeof NextConfigProvider & {
   return (
     <ctx.Provider value={ctxValue}>
       <NextConfigProvider {...props} />
-      <div
-        className="next-css-var-ref-element"
-        style={refElementStyle}
-        ref={ref as any}
-      />
+      <NextConfigConsumer>
+        {(config) => {
+          const prefix = props.prefix ?? config?.prefix ?? 'next-'
+          return (
+            <div
+              className={`${prefix}css-var-ref-element`}
+              style={refElementStyle}
+              ref={ref as any}
+            />
+          )
+        }}
+      </NextConfigConsumer>
     </ctx.Provider>
   )
 }) as any
