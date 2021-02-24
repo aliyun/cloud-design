@@ -2,6 +2,7 @@
 import React from 'react'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import cls from 'classnames'
+import { useCssVar } from './useCssVar'
 
 const rxTwoToFourCNChar = /^[\u4e00-\u9fa5]{2,4}$/
 const isTwoToFourCNChar = rxTwoToFourCNChar.test.bind(rxTwoToFourCNChar)
@@ -11,8 +12,15 @@ const CNCHARHOC = <T extends any>(
 ): React.ComponentType<T> => {
   const Wrapper = React.forwardRef((props: any, ref) => {
     const { children, className } = props
+    const theme = useCssVar('--alicloudfe-components-theme').trim()
     // 判断是否是2-4个汉字
-    if (typeof children === 'string' && isTwoToFourCNChar(children)) {
+    if (
+      // xconsole相关主题不需要该功能
+      theme !== 'wind' &&
+      !theme.startsWith('xconsole') &&
+      typeof children === 'string' &&
+      isTwoToFourCNChar(children)
+    ) {
       return (
         <WrappedComponents
           {...props}
