@@ -1,10 +1,9 @@
 import { createContext, useContext, useLayoutEffect, useState } from 'react'
 
 export interface ICtxType {
-  rootElementGetter?: HTMLElement | (() => HTMLElement)
-  rootElement: HTMLElement
+  refElement: HTMLElement
 }
 
-const ctx = createContext<ICtxType>({ rootElement: document.body })
+const ctx = createContext<ICtxType>({ refElement: document.body })
 
 export default ctx

@@ -5,7 +5,7 @@ let nextId = 0
 
 export function useCssVar(cssVarName: string) {
   const [v, setV] = useState('')
-  const rootElement = ConfigProvider.useRootElement()
+  const refElement = ConfigProvider.useRefElement()
 
   useLayoutEffect(() => {
     check()
@@ -25,11 +25,11 @@ export function useCssVar(cssVarName: string) {
 
     function check() {
       const val =
-        window.getComputedStyle?.(rootElement).getPropertyValue(cssVarName) ??
+        window.getComputedStyle?.(refElement).getPropertyValue(cssVarName) ??
         ''
       setV(val)
     }
-  }, [rootElement, cssVarName])
+  }, [refElement, cssVarName])
 
   return v
 }
