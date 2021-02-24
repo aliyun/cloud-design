@@ -28,14 +28,27 @@ const ConfigProvider: React.FC<IProps> & {
    * 在fusion基础上扩展的api，获取rootElement，微应用的根容器
    */
   useRootElement(): HTMLElement
+  /**
+   * 在fusion基础上扩展的api，获取rootElement的getter
+   */
   useRootElementGetter(): HTMLElement | (() => HTMLElement) | undefined
 } = (({ rootElement, popupContainer, ...rest }) => {
+  // 如果用户传了popupContainer，也可以将它作为rootElement
+  const rootElementGetter = rootElement ?? popupContainer
+  const [resolvedRootElement, setResolvedRootElement] = useState(() =>
+    resolveRootElementGetter(rootElementGetter)
+  )
+  // 在初次渲染的时候，rootElement可能还没渲染，因此需要在effect中再获取一次
+  useLayoutEffect(() => {
+    setResolvedRootElement(resolveRootElementGetter(rootElementGetter))
+  }, [rootElementGetter])
+
   const ctxValue = useMemo(() => {
     return {
-      // 如果用户传了popupContainer，也可以将它作为rootElement
-      rootElementGetter: rootElement ?? popupContainer
+      rootElementGetter,
+      rootElement: resolvedRootElement
     }
-  }, [rootElement, popupContainer])
+  }, [rootElementGetter, resolvedRootElement])
   return (
     <ctx.Provider value={ctxValue}>
       {/* 默认popupContainer为应用根节点 */}
@@ -59,18 +72,7 @@ export default ConfigProvider
  * 获取微应用根元素
  */
 function useRootElement(): HTMLElement {
-  const getter:
-    | HTMLElement
-    | (() => HTMLElement)
-    | undefined = useRootElementGetter()
-  const [rootElement, setRootElement] = useState(() =>
-    resolveRootElementGetter(getter)
-  )
-  // 在初次渲染的时候，rootElement可能还没渲染，因此需要在effect中再获取一次
-  useLayoutEffect(() => {
-    setRootElement(resolveRootElementGetter(getter))
-  }, [getter])
-  return rootElement
+  return useContext(ctx)?.rootElement ?? document.body
 }
 
 function useRootElementGetter(): HTMLElement | (() => HTMLElement) | undefined {
