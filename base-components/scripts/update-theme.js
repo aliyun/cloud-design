@@ -28,3 +28,4 @@ themes.forEach(theme => {
   getThemeSource(packageName, themeName, ignore);
 })
 
+require('./generate-css-var-reset')
