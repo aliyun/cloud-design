@@ -1,11 +1,11 @@
 import { useLayoutEffect, RefObject, useState } from 'react'
-import { useRootElement } from '../config-provider/ctx'
+import ConfigProvider from '../config-provider'
 
 let nextId = 0
 
 export function useCssVar(cssVarName: string) {
   const [v, setV] = useState('')
-  const rootElement = useRootElement()
+  const rootElement = ConfigProvider.useRootElement()
 
   useLayoutEffect(() => {
     check()
