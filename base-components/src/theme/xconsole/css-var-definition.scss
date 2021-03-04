@@ -4549,7 +4549,7 @@
     --btn-pure-secondary-bg-disabled: var(--color-white, #FFFFFF);
     
     
-    --btn-pure-secondary-border-color-disabled: var(--color-transparent, transparent);
+    --btn-pure-secondary-border-color-disabled: var(--color-line1-4, #D1D5D9);
     
     
     --btn-pure-secondary-color: var(--color-text1-9, #333333);
@@ -4570,13 +4570,13 @@
     --btn-pure-secondary-bg-active: var(--color-fill1-3, #EFF3F8);
     
     
-    --btn-pure-secondary-border-color: var(--color-transparent, transparent);
+    --btn-pure-secondary-border-color: var(--color-line1-2, #C0C6CC);
     
     
-    --btn-pure-secondary-border-color-hover: var(--color-transparent, transparent);
+    --btn-pure-secondary-border-color-hover: var(--color-line1-2, #C0C6CC);
     
     
-    --btn-pure-secondary-border-color-active: var(--color-transparent, transparent);
+    --btn-pure-secondary-border-color-active: var(--color-line1-2, #C0C6CC);
     
     
     --btn-pure-secondary-border-style: var(--line-solid, solid);
@@ -4792,7 +4792,7 @@
     --btn-text-secondary-color: var(--color-text1-9, #333333);
     
     
-    --btn-text-secondary-color-hover: var(--color-brand1-6, #0064C8);
+    --btn-text-secondary-color-hover: var(--color-text1-9, #333333);
     
     
     --btn-text-normal-color: var(--color-text1-9, #333333);
@@ -6148,7 +6148,7 @@
     --message-size-m-icon: var(--icon-s, 16px);
     
     
-    --message-close-icon-size: var(--icon-s, 16px);
+    --message-close-icon-size: var(--icon-xs, 12px);
     
     
     --message-size-l-border-radius: var(--corner-1, 2px);
@@ -6430,19 +6430,19 @@
     --message-hover-close-icon-color: var(--color-text1-9, #333333);
     
     
-    --message-success-icon-content: var(--icon-content-success, "");
+    --message-success-icon-content: var(--icon-content-check_fill, "");
     
     
-    --message-warning-icon-content: var(--icon-content-warning, "");
+    --message-warning-icon-content: var(--icon-content-warning_fill, "");
     
     
-    --message-error-icon-content: var(--icon-content-error, "");
+    --message-error-icon-content: var(--icon-content-warning_fill, "");
     
     
-    --message-notice-icon-content: var(--icon-content-prompt, "");
+    --message-notice-icon-content: var(--icon-content-info_fill, "");
     
     
-    --message-help-icon-content: var(--icon-content-help, "");
+    --message-help-icon-content: var(--icon-content-help_fill, "");
     
     
     --message-loading-icon-content: var(--icon-content-loading, "");
@@ -7435,43 +7435,43 @@
     /* ------------------------ collapse ------------------------ */
     
     
-    --collapse-border-width: var(--line-zero, 0px);
+    --collapse-border-width: var(--line-1, 1px);
     
     
     --collapse-border-corner: var(--corner-1, 2px);
     
     
-    --collapse-border-color: var(--color-white, #FFFFFF);
+    --collapse-border-color: var(--color-line1-1, #E3E4E6);
     
     
-    --collapse-panel-border-color: var(--color-white, #FFFFFF);
+    --collapse-panel-border-color: var(--color-line1-1, #E3E4E6);
     
     
-    --collapse-disabled-border-color: var(--color-white, #FFFFFF);
+    --collapse-disabled-border-color: var(--color-line1-1, #E3E4E6);
     
     
-    --collapse-title-border-width: var(--line-2, 2px);
+    --collapse-title-border-width: var(--line-1, 1px);
     
     
     --collapse-title-height: var(--s-6, 24px);
     
     
-    --collapse-title-bg-color: var(--color-fill1-2, #F7F9FA);
+    --collapse-title-bg-color: var(--color-white, #FFFFFF);
     
     
-    --collapse-title-hover-bg-color: var(--color-fill1-4, #004080);
+    --collapse-title-hover-bg-color: var(--color-white, #FFFFFF);
     
     
     --collapse-title-disabled-bg-color: var(--color-fill1-2, #F7F9FA);
     
     
-    --collapse-title-font-color: var(--color-text1-5, #CCCCCC);
+    --collapse-title-font-color: var(--color-text1-9, #333333);
     
     
-    --collapse-title-font-disabled-color: var(--color-text1-1, #C1C1C1);
+    --collapse-title-font-disabled-color: var(--color-text1-5, #CCCCCC);
     
     
-    --collapse-title-hover-font-color: var(--color-text1-5, #CCCCCC);
+    --collapse-title-hover-font-color: var(--color-fill1-5, #0064C8);
     
     
     --collapse-title-font-size: var(--font-size-body-1, 12px);
@@ -7483,16 +7483,16 @@
     --collapse-title-hover-font-weight: var(--font-weight-2, normal);
     
     
-    --collapse-title-padding-tb: var(--s-2, 8px);
+    --collapse-title-padding-tb: var(--s-3, 12px);
     
     
     --collapse-icon-size: var(--icon-xs, 12px);
     
     
-    --collapse-icon-color: var(--color-text1-2, #888888);
+    --collapse-icon-color: var(--color-text1-9, #333333);
     
     
-    --collapse-icon-hover-color: var(--color-text1-2, #888888);
+    --collapse-icon-hover-color: var(--color-fill1-5, #0064C8);
     
     
     --collapse-icon-margin-r: var(--s-2, 8px);
@@ -7513,7 +7513,7 @@
     --collapse-content-font-size: var(--font-size-body-1, 12px);
     
     
-    --collapse-content-color: var(--color-text1-5, #CCCCCC);
+    --collapse-content-color: var(--color-text1-9, #333333);
     
     
     --collapse-fold-icon-content: var(--icon-content-arrow-right, "");
