@@ -2,7 +2,7 @@ $collapse-prefix: '.' + $css-prefix + 'collapse';
 
 #{$collapse-prefix} {
   &-panel-expanded {
-    #{$collapse-prefix}-panel-content {
+    > #{$collapse-prefix}-panel-content {
       padding-bottom: 8px;
     }
   }
