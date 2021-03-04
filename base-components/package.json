@@ -1,6 +1,6 @@
 {
   "name": "@alicloudfe/components",
-  "version": "1.1.26",
+  "version": "1.1.27",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "types/index.d.ts",
@@ -47,7 +47,8 @@
     "prepare": "npm run clean && concurrently \"npm:babel\" \"npm:cpy-scss\" \"npm:build-css\" \"npm:babel:esm\" \"npm:build\" \"npm:types\" && echo \"Prepare package successfully!\"",
     "sync-demo": "node ./scripts/sync-demo.js",
     "gene-def": "node ./scripts/gene-css-def.js",
-    "update-theme": "node ./scripts/update-theme.js && npm run gene-def"
+    "update-theme": "node ./scripts/update-theme.js && npm run gene-def",
+    "publish-xconsole": "npm publish && cd ./scripts/publish-xconsole && npm run publish:alpha && tnpm sync && cd ../publish-wind && npm run publish:alpha"
   },
   "dependencies": {
     "@alifd/next": "1.22.10",
