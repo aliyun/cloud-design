@@ -33,10 +33,13 @@ $text-btn: $btn-prefix + '-text';
     }
   }
 
-  &#{$btn-prefix}-secondary:not([disabled]):hover {
-    &:hover,
+  // secondary与normal样式改为一致，过去的secondary button没有border，可访问性差
+  &-secondary {
+    &:hover {
+      box-shadow: var(--btn-normal-hover-shadow);
+    }
     &:active {
-      box-shadow: none;
+      box-shadow: var(--btn-normal-active-shadow);
     }
   }
 

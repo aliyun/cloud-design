@@ -1,0 +1,32 @@
+$btn-prefix: '.' + $css-prefix + 'btn';
+$text-btn: $btn-prefix + '-text';
+
+#{$btn-prefix} {
+  &-secondary#{$text-btn}#{$text-btn} {
+    &:hover {
+      background-color: var(--btn-text-secondary-bg-hover);
+    }
+    &:active {
+      background-color: var(--btn-text-secondary-bg-active);
+    }
+    &[disabled] {
+      background-color: initial;
+    }
+
+    &.#{$css-prefix}small {
+      border-radius: var(--btn-size-s-corner, 2px);
+      padding: 0 var(--btn-size-s-padding, 8px);
+      height: var(--btn-size-s-height, 24px);
+      font-size: var(--btn-size-s-font, 12px);
+      border-width: var(--btn-size-s-border-width, 1px);
+    }
+
+    &.#{$css-prefix}medium {
+      border-radius: var(--btn-size-m-corner, 2px);
+      padding: 0 var(--btn-size-m-padding, 16px);
+      height: var(--btn-size-m-height, 32px);
+      font-size: var(--btn-size-m-font, 12px);
+      border-width: var(--btn-size-m-border-width, 1px);
+    }
+  }
+}
