@@ -1,6 +1,15 @@
 $input-prefix: '.' + $css-prefix + 'input';
 
 #{$input-prefix} {
+  $disabled: '.' + $css-prefix + 'disabled';
+
+  &#{$disabled} {
+    cursor: not-allowed;
+    > input, > textarea {
+      cursor: not-allowed;
+    }
+  }
+
   &:hover,
   &.#{$css-prefix}focus {
     box-shadow: var(--active-shadow);
@@ -13,6 +22,9 @@ $input-prefix: '.' + $css-prefix + 'input';
     transition: box-shadow var(--active-transition);
     &:hover {
       box-shadow: var(--active-shadow);
+    }
+    &#{$disabled} {
+      box-shadow: none;
     }
     #{$input-prefix} {
       box-shadow: none;
