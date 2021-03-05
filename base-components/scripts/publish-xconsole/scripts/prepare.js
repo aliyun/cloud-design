@@ -75,7 +75,7 @@ fs.writeFileSync(
       path.join(root, 'dist/wind-var.css'),
       path.join(distDir, 'wind-var.css')
     ),
-    fs.copy(path.join(root, 'dist/index.js'), path.join(distDir, 'wind.js')),
+    fs.copy(path.join(root, 'dist/xconsole.js'), path.join(distDir, 'wind.js')),
     fs.copy(
       path.join(root, 'dist/index.js'),
       path.join(distDir, 'wind.min.js')
