@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.9.1 (https://fusion.design)
- * @alifd/next@1.22.10 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.9.3 (https://fusion.design)
+ * @alifd/next@1.22.11 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -13805,11 +13805,11 @@
     content: "";
     content: var(--menu-btn-unfold-icon-content, ""); }
   .next-menu-btn.next-btn-normal .next-menu-btn-arrow {
-    color: #007be9;
-    color: var(--menu-btn-pure-text-normal-icon-color, #007be9); }
+    color: #EAEAEA;
+    color: var(--menu-btn-pure-text-normal-icon-color, #EAEAEA); }
   .next-menu-btn.next-btn-secondary .next-menu-btn-arrow {
-    color: #CCCCCC;
-    color: var(--menu-btn-pure-text-secondary-icon-color, #CCCCCC); }
+    color: #007be9;
+    color: var(--menu-btn-pure-text-secondary-icon-color, #007be9); }
   .next-menu-btn.next-btn-primary .next-menu-btn-arrow {
     color: #FFFFFF;
     color: var(--menu-btn-pure-text-primary-icon-color, #FFFFFF); }
@@ -22785,8 +22785,8 @@
       display: inline-block;
       border-left: 1px solid #383838;
       border-left: var(--tree-line-width, 1px) var(--tree-line-style, solid) var(--tree-line-color, #383838);
-      height: 32px;
-      height: calc(var(--tree-node-padding, 8px) + var(--line-2, 2px)*2 + 20px);
+      height: 28px;
+      height: calc(var(--tree-node-padding, 4px) + var(--line-2, 2px)*2 + 20px);
       left: 7.5px;
       left: calc(var(--tree-switch-size, 16px)/2 - var(--tree-line-width, 1px)/2); }
   .next-tree-switcher {
@@ -22983,8 +22983,8 @@
     display: block;
     width: 16.5px;
     width: calc(24px - var(--tree-switch-size, 16px)/2 + var(--tree-line-width, 1px)/2);
-    height: 26px;
-    height: calc(20px + var(--tree-node-padding, 8px) - var(--tree-line-width, 1px)*2);
+    height: 22px;
+    height: calc(20px + var(--tree-node-padding, 4px) - var(--tree-line-width, 1px)*2);
     border-left: 1px solid #383838;
     border-left: var(--tree-line-width, 1px) var(--tree-line-style, solid) var(--tree-line-color, #383838);
     border-bottom: 1px solid #383838;
@@ -23004,10 +23004,10 @@
   .next-tree.next-node-indent .next-tree-node .next-tree-node {
     margin-left: 24px; }
   .next-tree.next-node-indent .next-tree-node-inner {
-    padding-top: 4px;
-    padding-top: calc(var(--tree-node-padding, 8px)/2);
-    padding-bottom: 4px;
-    padding-bottom: calc(var(--tree-node-padding, 8px)/2); }
+    padding-top: 2px;
+    padding-top: calc(var(--tree-node-padding, 4px)/2);
+    padding-bottom: 2px;
+    padding-bottom: calc(var(--tree-node-padding, 4px)/2); }
     .next-tree.next-node-indent .next-tree-node-inner:focus .next-tree-node-label {
       color: #CCCCCC;
       color: var(--tree-node-hover-color, #CCCCCC);
@@ -23057,10 +23057,10 @@
     border-bottom-color: #007be9;
     border-bottom-color: var(--color-brand1-6, #007be9); }
   .next-tree.next-node-block .next-tree-node-inner {
-    padding-top: 8px;
-    padding-top: var(--tree-node-padding, 8px);
-    padding-bottom: 8px;
-    padding-bottom: var(--tree-node-padding, 8px);
+    padding-top: 4px;
+    padding-top: var(--tree-node-padding, 4px);
+    padding-bottom: 4px;
+    padding-bottom: var(--tree-node-padding, 4px);
     -webkit-transition: color 100ms linear, background-color 100ms linear;
     transition: color 100ms linear, background-color 100ms linear;
     cursor: pointer;
