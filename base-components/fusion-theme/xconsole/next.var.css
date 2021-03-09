@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-xconsole-v4@0.8.9 (https://fusion.design)
- * @alifd/next@1.22.10 (https://fusion.design)
+ * @alife/theme-xconsole-v4@0.8.10 (https://fusion.design)
+ * @alifd/next@1.22.11 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -7885,8 +7885,8 @@ small {
       cursor: default; }
 
 .next-collapse[dir=rtl] .next-collapse-panel-title {
-  padding: 12px 36px 12px 0;
-  padding: var(--collapse-title-padding-tb, 12px) 36px var(--collapse-title-padding-tb, 12px) 0; }
+  padding: 16px 36px 16px 0;
+  padding: var(--collapse-title-padding-tb, 16px) 36px var(--collapse-title-padding-tb, 16px) 0; }
 
 .next-collapse[dir=rtl] .next-collapse-panel-icon {
   left: inherit;
@@ -7940,10 +7940,10 @@ small {
       line-height: inherit; }
   .next-collapse-panel-title {
     position: relative;
-    line-height: 16px;
-    line-height: var(--collapse-title-height, 16px);
-    background: #FFFFFF;
-    background: var(--collapse-title-bg-color, #FFFFFF);
+    line-height: 20px;
+    line-height: var(--collapse-title-height, 20px);
+    background: #F7F9FA;
+    background: var(--collapse-title-bg-color, #F7F9FA);
     font-size: 12px;
     font-size: var(--collapse-title-font-size, 12px);
     font-weight: normal;
@@ -7951,20 +7951,20 @@ small {
     color: #333333;
     color: var(--collapse-title-font-color, #333333);
     cursor: pointer;
-    padding: 12px 0 12px 36px;
-    padding: var(--collapse-title-padding-tb, 12px) 0 var(--collapse-title-padding-tb, 12px) 36px;
+    padding: 16px 0 16px 36px;
+    padding: var(--collapse-title-padding-tb, 16px) 0 var(--collapse-title-padding-tb, 16px) 36px;
     -webkit-transition: background 100ms linear;
     transition: background 100ms linear; }
     .next-collapse-panel-title:hover {
-      background: #FFFFFF;
-      background: var(--collapse-title-hover-bg-color, #FFFFFF);
-      color: #0064C8;
-      color: var(--collapse-title-hover-font-color, #0064C8);
+      background: #EFF3F8;
+      background: var(--collapse-title-hover-bg-color, #EFF3F8);
+      color: #333333;
+      color: var(--collapse-title-hover-font-color, #333333);
       font-weight: normal;
       font-weight: var(--collapse-title-hover-font-weight, normal); }
       .next-collapse-panel-title:hover .next-collapse-panel-icon {
-        color: #0064C8;
-        color: var(--collapse-icon-hover-color, #0064C8); }
+        color: #333333;
+        color: var(--collapse-icon-hover-color, #333333); }
   .next-collapse-panel-content {
     height: 0;
     padding: 0 16px;
@@ -7980,8 +7980,8 @@ small {
     opacity: 0; }
   .next-collapse-panel-expanded > .next-collapse-panel-content {
     display: block;
-    padding: 0px 16px;
-    padding: var(--collapse-content-padding-y, 0px) var(--collapse-content-padding-x, 16px);
+    padding: 16px 16px;
+    padding: var(--collapse-content-padding-y, 16px) var(--collapse-content-padding-x, 16px);
     height: auto;
     opacity: 1; }
   .next-collapse .next-collapse-unfold-icon::before {
