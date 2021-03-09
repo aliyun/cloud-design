@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.9.6 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.9.7 (https://fusion.design)
  * @alifd/next@1.22.11 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -22864,8 +22864,8 @@
     .next-tree-switcher.next-noline.next-disabled {
       cursor: not-allowed; }
       .next-tree-switcher.next-noline.next-disabled .next-tree-switcher-icon {
-        color: #CCCCCC;
-        color: var(--tree-node-disabled-color, #CCCCCC); }
+        color: #6B6B6B;
+        color: var(--tree-node-disabled-color, #6B6B6B); }
   .next-tree-switcher.next-noop-noline {
     width: 8px;
     width: var(--tree-switch-arrow-size, 8px);
@@ -22920,8 +22920,8 @@
       background-color: #FFFFFF;
       cursor: not-allowed; }
       .next-tree-switcher.next-line.next-disabled .next-tree-switcher-icon {
-        color: #CCCCCC;
-        color: var(--tree-node-disabled-color, #CCCCCC); }
+        color: #6B6B6B;
+        color: var(--tree-node-disabled-color, #6B6B6B); }
   .next-tree-switcher.next-noop-line {
     width: 16px;
     width: var(--tree-switch-size, 16px);
@@ -23011,8 +23011,8 @@
     .next-tree.next-node-indent .next-tree-node-inner:focus .next-tree-node-label {
       color: #CCCCCC;
       color: var(--tree-node-hover-color, #CCCCCC);
-      background-color: #303030;
-      background-color: var(--tree-node-hover-bg-color, #303030); }
+      background-color: #383838;
+      background-color: var(--tree-node-hover-bg-color, #383838); }
   .next-tree.next-node-indent .next-tree-node-label-wrapper {
     border-top: 2px solid transparent;
     border-top: var(--line-2, 2px) solid transparent;
@@ -23031,19 +23031,19 @@
   .next-tree.next-node-indent .next-tree-node-label:hover {
     color: #CCCCCC;
     color: var(--tree-node-hover-color, #CCCCCC);
-    background-color: #303030;
-    background-color: var(--tree-node-hover-bg-color, #303030); }
+    background-color: #383838;
+    background-color: var(--tree-node-hover-bg-color, #383838); }
   .next-tree.next-node-indent .next-tree-node-inner.next-selected .next-tree-node-label {
     color: #CCCCCC;
     color: var(--tree-node-selected-color, #CCCCCC);
-    background-color: #383838;
-    background-color: var(--tree-node-selected-background, #383838); }
+    background-color: #4D4D4D;
+    background-color: var(--tree-node-selected-background, #4D4D4D); }
   .next-tree.next-node-indent .next-tree-node-inner.next-disabled .next-tree-node-label,
   .next-tree.next-node-indent .next-tree-node-inner.next-disabled .next-tree-node-label:hover {
-    color: #CCCCCC;
-    color: var(--tree-node-disabled-color, #CCCCCC);
-    background-color: #4D4D4D;
-    background-color: var(--tree-node-disabled-background, #4D4D4D);
+    color: #6B6B6B;
+    color: var(--tree-node-disabled-color, #6B6B6B);
+    background-color: transparent;
+    background-color: var(--tree-node-disabled-background, transparent);
     cursor: not-allowed; }
   .next-tree.next-node-indent .next-tree-node-inner.next-drag-over .next-tree-node-label {
     background-color: #007be9;
@@ -23071,18 +23071,18 @@
     .next-tree.next-node-block .next-tree-node-inner:hover, .next-tree.next-node-block .next-tree-node-inner:focus {
       color: #CCCCCC;
       color: var(--tree-node-hover-color, #CCCCCC);
-      background-color: #303030;
-      background-color: var(--tree-node-hover-bg-color, #303030); }
+      background-color: #383838;
+      background-color: var(--tree-node-hover-bg-color, #383838); }
     .next-tree.next-node-block .next-tree-node-inner.next-selected {
       color: #CCCCCC;
       color: var(--tree-node-selected-color, #CCCCCC);
-      background-color: #383838;
-      background-color: var(--tree-node-selected-background, #383838); }
-    .next-tree.next-node-block .next-tree-node-inner.next-disabled, .next-tree.next-node-block .next-tree-node-inner.next-disabled:hover {
-      color: #CCCCCC;
-      color: var(--tree-node-disabled-color, #CCCCCC);
       background-color: #4D4D4D;
-      background-color: var(--tree-node-disabled-background, #4D4D4D);
+      background-color: var(--tree-node-selected-background, #4D4D4D); }
+    .next-tree.next-node-block .next-tree-node-inner.next-disabled, .next-tree.next-node-block .next-tree-node-inner.next-disabled:hover {
+      color: #6B6B6B;
+      color: var(--tree-node-disabled-color, #6B6B6B);
+      background-color: transparent;
+      background-color: var(--tree-node-disabled-background, transparent);
       cursor: not-allowed; }
   .next-tree.next-show-line .next-tree-node .next-tree-node:not(:last-child) {
     margin-left: 7.5px;
