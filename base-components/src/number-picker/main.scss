@@ -36,7 +36,7 @@ $number-picker: '.' + $css-prefix + 'number-picker';
           &:not(.disabled):hover {
             border: var(--number-picker-inline-group-btn-border-hover, none);
           }
-          border-radius: var(--number-picker-border-radius, 2px);
+          border-radius: var(--number-picker-border-radius, 2px) !important;
           min-width: unset;
         }
       }
