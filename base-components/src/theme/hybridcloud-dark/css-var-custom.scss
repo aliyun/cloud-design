@@ -1,6 +1,10 @@
 #{$css-var-scope} {
   --alicloudfe-components-theme: hybridcloud-dark;
   --dropdown-bg-color: var(--color-fill1-2);
+  --scrollbar-width: 6px;
+  --scrollbar-track-bg: transparent;
+  --scrollbar-track-border-radius: 0px;
+  --scrollbar-thumb-bg: #6B6B6B;
   /* button */
   // --btn-font-weight: 500;
 
@@ -14,7 +18,7 @@
   /* badge */
   --badge-border-color: #1f1f1f;
   /* checkbox */
-  --checkbox-icon-scale: 0.8;
+  --checkbox-icon-scale: 1.0;
   /* message */
   --message-title-weight: 400;
   --message-close-icon-size: 16px;
@@ -26,6 +30,10 @@
   /* transfer */
   --transfer-panel-padding-mb: 8px;
   --transfer-panel-margin-mb: 0px;
+  /* tree */
+  --tree-switcher-icon-selected-color: #cccccc;
+  /* tree-select */
+    --tree-select-background: var(--color-fill1-4);
   /* datepicker */
   --calendar-panel-header-margin-bottom: 4px;
 
@@ -39,4 +47,7 @@
 
   /* cascader */
   --cascader-menu-height: 176px;
+
+  /* pagination */
+  --pagination-item-disabled-bg: #383838;
 }

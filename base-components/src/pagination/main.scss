@@ -5,6 +5,8 @@ $pagination-select-popup-prefix: '.' + $css-prefix +
 $pagination-item: $pagination-prefix + '-item';
 
 #{$pagination-prefix} {
+  // 每页显示局中
+  font-size: inherit;
   #{$pagination-item} {
     &.#{$css-prefix}current.#{$css-prefix}current.#{$css-prefix}current {
       // 避免border被其他盖住
