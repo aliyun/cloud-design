@@ -5,4 +5,7 @@ $menu-prefix: '.' + $css-prefix + 'menu';
   &#{&}#{&}#{&}#{&} #{&}-symbol-icon-selected {
     color: var(--menu-icon-selected-color);
   }
+  &-item:focus-visible {
+    background-color: var(--menu-background-hover, #f7f9fa);
+  }
 }
