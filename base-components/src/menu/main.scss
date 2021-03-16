@@ -37,13 +37,13 @@ $nav-item-cls: '.' + $css-prefix + 'nav-item';
 }
 
 // 避免这段样式影响nav
-.#{$css-prefix}selected:not(#{$nav-item-cls}) {
-  &#{&}#{&}#{&}#{&}#{$menu-prefix}-item:not(:hover) {
-    // 对于被选中的项，固定它的背景，避免被focus状态的样式影响
-    background-color: var(--menu-background-selected);
-    color: var(--menu-color-selected);
-  }
-}
+// .#{$css-prefix}selected:not(#{$nav-item-cls}) {
+//   &#{&}#{&}#{&}#{&}#{$menu-prefix}-item:not(:hover) {
+//     // 对于被选中的项，固定它的背景，避免被focus状态的样式影响
+//     background-color: var(--menu-background-selected);
+//     color: var(--menu-color-selected);
+//   }
+// }
 
 .next-menu .next-menu-icon-selected.next-icon {
   margin-left: var(--select-menu-select-icon-ml, -20px);
