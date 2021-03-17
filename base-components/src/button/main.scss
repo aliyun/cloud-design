@@ -10,7 +10,8 @@ $text-btn: $btn-prefix + '-text';
     box-shadow: none;
   }
   &-primary {
-    &:hover {
+    &:hover,
+    &:focus-visible {
       box-shadow: var(--btn-primary-hover-shadow);
     }
     &:active {
@@ -19,13 +20,15 @@ $text-btn: $btn-prefix + '-text';
   }
   &#{$btn-prefix}-text {
     &:hover,
+    &:focus-visible,
     &:active {
       box-shadow: none;
     }
   }
 
   &-normal {
-    &:hover {
+    &:hover,
+    &:focus-visible {
       box-shadow: var(--btn-normal-hover-shadow);
     }
     &:active {
@@ -35,7 +38,8 @@ $text-btn: $btn-prefix + '-text';
 
   // secondary与normal样式改为一致，过去的secondary button没有border，可访问性差
   &-secondary {
-    &:hover {
+    &:hover,
+    &:focus-visible {
       box-shadow: var(--btn-normal-hover-shadow);
     }
     &:active {

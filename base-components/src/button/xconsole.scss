@@ -3,7 +3,8 @@ $text-btn: $btn-prefix + '-text';
 
 #{$btn-prefix} {
   &-secondary#{$text-btn}#{$text-btn} {
-    &:hover {
+    &:hover,
+    &:focus-visible {
       background-color: var(--btn-text-secondary-bg-hover);
     }
     &:active {
