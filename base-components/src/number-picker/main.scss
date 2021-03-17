@@ -6,6 +6,9 @@ $number-picker: '.' + $css-prefix + 'number-picker';
   // type=normal
   > #{$input-prefix} {
     #{$number-picker}-handler {
+      &:focus-within {
+        opacity: 1;
+      }
       .#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn.#{$css-prefix}btn {
         min-width: unset;
         border: var(--number-picker-handler-btn-border, none);
