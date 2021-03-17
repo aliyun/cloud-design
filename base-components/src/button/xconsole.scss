@@ -29,5 +29,13 @@ $text-btn: $btn-prefix + '-text';
       font-size: var(--btn-size-m-font, 12px);
       border-width: var(--btn-size-m-border-width, 1px);
     }
+
+    &.#{$css-prefix}large {
+      border-radius: var(--btn-size-l-corner, 2px);
+      padding: 0 var(--btn-size-l-padding, 16px);
+      height: var(--btn-size-l-height, 36px);
+      font-size: var(--btn-size-l-font, 14px);
+      border-width: var(--btn-size-l-border-width, 1px);
+    }
   }
 }
