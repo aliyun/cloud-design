@@ -23,7 +23,7 @@ $nav-item-cls: '.' + $css-prefix + 'nav-item';
     // 可选择的menu，增加padding以便容纳勾选图标
     #{$menu-prefix}-item {
       // 对于checkbox 和 radio 选择模式的menu，不需要增加padding容纳勾选图标
-      &:not([role='menuitemcheckbox']):not([role='menuitemradio']) {
+      &:not([role='menuitemcheckbox']):not([role='menuitemradio']):not(#{$nav-item-cls}) {
         --menu-padding-horizontal: var(--menu-padding-horizontal-selectable);
         padding: 0 var(--menu-padding-horizontal) 0 var(--menu-padding-horizontal);
       }
