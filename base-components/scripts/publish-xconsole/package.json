@@ -9,6 +9,7 @@
   "scripts": {
     "clean": "rm -rf dist esm lib types",
     "prepare": "npm run clean && node ./scripts/prepare.js",
+    "publish": "npm version patch && npm publish",
     "publish:alpha": "npm version prerelease --preid=alpha && npm publish --tag alpha"
   },
   "keywords": [
