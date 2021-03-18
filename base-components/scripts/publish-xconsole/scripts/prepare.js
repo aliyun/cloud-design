@@ -5,7 +5,8 @@ const {
   codeExportLibInfoESM,
   codeExportLibInfoCJS,
   copy,
-  appendFile
+  appendFile,
+  updateFile
 } = require('../../utils')
 const _ = require('lodash')
 
@@ -67,6 +68,18 @@ fs.writeFileSync(
       path.join(distDir, 'xconsole-dark-var.css')
     ),
     fs.copy(path.join(root, 'dist/wind.css'), path.join(distDir, 'wind.css')),
+    // 产生 wind-without-icon-font ，用于私有部署用户
+    fs
+      .copy(
+        path.join(root, 'dist/wind.css'),
+        path.join(distDir, 'wind-without-icon-font.css')
+      )
+      .then(() =>
+        updateFile(
+          path.join(distDir, 'wind-without-icon-font.css'),
+          withoutIconFont
+        )
+      ),
     fs.copy(
       path.join(root, 'dist/wind-no-reset.css'),
       path.join(distDir, 'wind-noreset.css')
@@ -101,3 +114,24 @@ fs.writeFileSync(
     )
   ])
 })()
+
+function withoutIconFont(originalText) {
+  /*
+  匹配css中的以下声明：
+  @font-face {
+    font-family: NextIcon
+    src: url("//at.alicdn.com/t/font_1435786_mueafw9pwd.eot");
+    src: url("//at.alicdn.com/t/font_1435786_mueafw9pwd.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.woff2") format("woff2"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.woff") format("woff"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.ttf") format("truetype"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.svg#NextIcon") format("svg"); }
+  */
+  const reg = /@font-face\s*{\s*font-family:\s*NextIcon;[\s\S]*?format\("svg"\);\s*}/g
+
+  const match = originalText.match(reg)
+
+  if (match.length !== 1) {
+    throw new Error(`没有找到声明NextIcon的@font-face规则`)
+  }
+
+  const result = originalText.replace(reg, '')
+
+  return result
+}

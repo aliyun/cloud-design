@@ -28,6 +28,12 @@ async function appendFile(filePath, append) {
   await fs.writeFile(filePath, result)
 }
 
+async function updateFile(filePath, updater) {
+  const source = await fs.readFile(filePath, 'utf-8')
+  const result = await updater(source)
+  await fs.writeFile(filePath, result)
+}
+
 function codeExportLibInfoESM(name, version) {
   return `export var __LIB_INFO = {
   'type': '__LIB_INFO',
@@ -71,6 +77,7 @@ module.exports = {
   getComponentNames,
   copy,
   appendFile,
+  updateFile,
   codeExportLibInfoESM,
   codeExportLibInfoCJS,
   getCommonJSReExport,
