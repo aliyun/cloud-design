@@ -28,9 +28,8 @@ $table-empty: '#{$css-prefix}table-empty';
   }
 
   &#{$wind-cls} {
-    // 表头icon的样式
-    th,
-    thead {
+    // 表头icon的样式，不影响选择checkbox
+    th:not(.#{$css-prefix}table-selection) {
       .#{$css-prefix}icon {
         color: #888;
         &:hover {

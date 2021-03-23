@@ -15,14 +15,19 @@ const sourcePkgJson = fs.readJsonSync(
   path.join(xconsoleRoot, 'package.json'),
   'utf-8'
 )
+const consoleComponentsVersion = sourcePkgJson.version
 const pkgJson = fs.readJsonSync(path.join(pkgPath, 'package.json'), 'utf-8')
+if (!consoleComponentsVersion.match(/^1\./)) {
+  throw new Error(`assertion fail: consoleComponentsVersion should be 1.x`)
+}
+pkgJson.version = consoleComponentsVersion.replace(/^1\./, '3.')
 const pkgVersion = pkgJson.version
 const pkgName = pkgJson.name
 
 console.log(`正在生成${pkgName}@${pkgVersion}`)
 
 // 同步 @alicloud/console-components 版本
-pkgJson.dependencies['@alicloud/console-components'] = sourcePkgJson.version
+pkgJson.dependencies['@alicloud/console-components'] = consoleComponentsVersion
 fs.writeFileSync(
   path.join(pkgPath, 'package.json'),
   JSON.stringify(pkgJson, null, 2) + '\n'
