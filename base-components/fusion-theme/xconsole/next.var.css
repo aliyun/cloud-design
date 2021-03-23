@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-xconsole-v4@0.8.11 (https://fusion.design)
- * @alifd/next@1.22.11 (https://fusion.design)
+ * @alife/theme-xconsole-v4@0.8.12 (https://fusion.design)
+ * @alifd/next@1.22.13 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -3781,6 +3781,13 @@ small {
       visibility: visible;
       -webkit-animation: loadingCircle 2s infinite linear;
               animation: loadingCircle 2s infinite linear; }
+    .next-btn-loading:after {
+      content: '';
+      display: inline-block;
+      position: static;
+      height: 100%;
+      width: 0;
+      vertical-align: middle; }
   .next-btn-custom-loading {
     pointer-events: none; }
   .next-btn-ghost {
@@ -5287,6 +5294,8 @@ small {
       position: absolute;
       top: 0;
       opacity: 0;
+      line-height: 16px;
+      line-height: var(--checkbox-size, 16px);
       -webkit-transition: all 100ms linear;
       transition: all 100ms linear;
       color: #FFFFFF;
@@ -5314,6 +5323,7 @@ small {
             width: 16px;
             font-size: 16px; } }
     .next-checkbox-wrapper .next-checkbox-inner > .next-icon::before {
+      vertical-align: top;
       margin-top: 0; }
     .next-checkbox-wrapper .next-checkbox-inner > .next-checkbox-select-icon::before {
       content: "\E632";
@@ -5554,6 +5564,9 @@ small {
   .next-menu-embeddable .next-menu-item.next-disabled .next-menu-item-text > a {
     background: transparent;
     border: none; }
+  .next-menu-embeddable {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .next-menu-embeddable .next-menu-item-inner {
     height: 100%; }
   .next-menu-content {
@@ -6151,6 +6164,8 @@ small {
       background-color: #F7F9FA;
       background-color: var(--input-disabled-bg-color, #F7F9FA); }
     .next-input.next-disabled input, .next-input.next-disabled textarea {
+      -webkit-text-fill-color: #CCCCCC;
+      -webkit-text-fill-color: var(--input-disabled-color, #CCCCCC);
       color: #CCCCCC;
       color: var(--input-disabled-color, #CCCCCC); }
       .next-input.next-disabled input::-moz-placeholder, .next-input.next-disabled textarea::-moz-placeholder {
@@ -15875,6 +15890,12 @@ small {
             align-items: center; }
   .next-pagination-list {
     display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     vertical-align: top; }
   .next-pagination .next-pagination-item:not([disabled]) {
     display: inline-block;
@@ -17108,7 +17129,9 @@ small {
             box-sizing: border-box; }
   .next-search .next-input,
   .next-search .next-select {
-    border: none; }
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .next-search .next-select .next-input {
     height: auto; }
     .next-search .next-select .next-input .next-input-text-field {
@@ -21776,7 +21799,8 @@ small {
 
 .next-table-fix-left, .next-table-fix-right {
   background: inherit;
-  position: sticky; }
+  position: sticky;
+  z-index: 1; }
 
 .next-table-ping-left .next-table-fix-left-last {
   border-right-width: 0; }
