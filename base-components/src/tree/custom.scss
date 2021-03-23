@@ -1,7 +1,8 @@
 // 混合云、云效tree样式覆盖
 .next-tree.next-node-block .next-tree-node-inner.next-selected:not(.next-disabled) {
+  font-weight: var(--tree-selected-font-weight, 500);
   .next-tree-switcher.next-noline .next-tree-switcher-icon {
-    color: var(--tree-switcher-icon-selected-color,#0064C8);
+    color: var(--tree-switcher-icon-selected-color, var(--color-brand1-6));
   }
 }
 
