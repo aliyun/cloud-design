@@ -29,5 +29,21 @@ $input-prefix: '.' + $css-prefix + 'input';
     #{$input-prefix} {
       box-shadow: none;
     }
+    &>.next-number-picker:first-child  .next-input {
+      &.next-focus {
+        position: relative;
+        z-index: 1;
+      }
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    &>.next-number-picker:last-child  .next-input {
+      &.next-focus {
+        position: relative;
+        z-index: 1;
+      }
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
   }
 }
