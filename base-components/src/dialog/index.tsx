@@ -40,8 +40,8 @@ const show: typeof NextDialog.show = config => {
 }
 
 const confirm: typeof NextDialog.confirm = config => {
-  const node = <Dialog />;
   // 为了调用useCssVar而执行，无其他用途
+  const node = <Dialog />;
   return NextDialog.confirm({
     footerActions: showDefaultFooterActions,
     ...config
