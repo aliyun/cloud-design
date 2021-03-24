@@ -40,7 +40,6 @@ const showDefaultFooterActions = () => {
 
 // 快捷调用的操作按钮顺序
 const show: typeof NextDialog.show = config => {
-  // 为了调用useCssVar而执行，无其他用途
   return NextDialog.show({
     footerActions: showDefaultFooterActions(),
     ...config
@@ -48,7 +47,6 @@ const show: typeof NextDialog.show = config => {
 }
 
 const confirm: typeof NextDialog.confirm = config => {
-  // 为了调用useCssVar而执行，无其他用途
   return NextDialog.confirm({
     footerActions: showDefaultFooterActions(),
     ...config
