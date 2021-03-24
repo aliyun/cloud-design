@@ -4,7 +4,6 @@ import React from 'react'
 import { useCssVar } from '../utils/useCssVar'
 
 type IProps = React.ComponentProps<typeof NextDialog>
-let showDefaultFooterActions = [];
 
 const Dialog: React.FC<IProps> & {
   show: typeof NextDialog.show,
@@ -24,26 +23,34 @@ const Dialog: React.FC<IProps> & {
     return ['ok', 'cancel']
   })()
 
-  showDefaultFooterActions = defaultFooterActions;
-
   return <NextDialog footerActions={defaultFooterActions} {...props} />
 }
+
+const showDefaultFooterActions = () => {
+  const theme = window.getComputedStyle?.(window.document.body).getPropertyValue('--alicloudfe-components-theme').trim();
+  if (
+    theme === 'yunxiao' ||
+    theme === 'yunxiao-dark' ||
+    theme === 'hybridcloud' ||
+    theme === 'hybridcloud-dark'
+  )
+    return ['cancel', 'ok']
+  return ['ok', 'cancel']
+};
 
 // 快捷调用的操作按钮顺序
 const show: typeof NextDialog.show = config => {
   // 为了调用useCssVar而执行，无其他用途
-  const node = <Dialog />;
   return NextDialog.show({
-    footerActions: showDefaultFooterActions,
+    footerActions: showDefaultFooterActions(),
     ...config
   })
 }
 
 const confirm: typeof NextDialog.confirm = config => {
   // 为了调用useCssVar而执行，无其他用途
-  const node = <Dialog />;
   return NextDialog.confirm({
-    footerActions: showDefaultFooterActions,
+    footerActions: showDefaultFooterActions(),
     ...config
   })
 }
