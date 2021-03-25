@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-xconsole-v4@0.8.12 (https://fusion.design)
- * @alifd/next@1.22.13 (https://fusion.design)
+ * @alife/theme-xconsole-v4@0.8.13 (https://fusion.design)
+ * @alifd/next@1.22.14 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -1849,8 +1849,8 @@ small {
 
 @font-face {
   font-family: NextIcon;
-  src: url("//at.alicdn.com/t/font_1899989_82eb16avvpq.eot");
-  src: url("//at.alicdn.com/t/font_1899989_82eb16avvpq.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1899989_82eb16avvpq.woff2") format("woff2"), url("//at.alicdn.com/t/font_1899989_82eb16avvpq.woff") format("woff"), url("//at.alicdn.com/t/font_1899989_82eb16avvpq.ttf") format("truetype"), url("//at.alicdn.com/t/font_1899989_82eb16avvpq.svg#NextIcon") format("svg"); }
+  src: url("//at.alicdn.com/t/font_1899989_d0f4v52x62a.eot");
+  src: url("//at.alicdn.com/t/font_1899989_d0f4v52x62a.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1899989_d0f4v52x62a.woff2") format("woff2"), url("//at.alicdn.com/t/font_1899989_d0f4v52x62a.woff") format("woff"), url("//at.alicdn.com/t/font_1899989_d0f4v52x62a.ttf") format("truetype"), url("//at.alicdn.com/t/font_1899989_d0f4v52x62a.svg#NextIcon") format("svg"); }
 
 .next-icon {
   display: inline-block;
@@ -21390,7 +21390,7 @@ small {
     .next-table th.next-table-fix-left, .next-table th.next-table-fix-right {
       z-index: 1; }
   .next-table-affix {
-    z-index: 1;
+    z-index: 10;
     overflow: hidden; }
   .next-table-header-resizable {
     position: relative; }
@@ -21802,8 +21802,13 @@ small {
   position: sticky;
   z-index: 1; }
 
+.next-table-ping-left .next-table-expanded-area .next-table-fix-left-last::after {
+  content: none; }
+
+.next-table-ping-left .next-table-expanded-area .next-table-ping-left .next-table-fix-left-last,
 .next-table-ping-left .next-table-fix-left-last {
   border-right-width: 0; }
+  .next-table-ping-left .next-table-expanded-area .next-table-ping-left .next-table-fix-left-last::after,
   .next-table-ping-left .next-table-fix-left-last::after {
     -webkit-box-shadow: inset 10px 0 8px -8px rgba(0, 0, 0, 0.15);
             box-shadow: inset 10px 0 8px -8px rgba(0, 0, 0, 0.15);
@@ -21819,6 +21824,10 @@ small {
         -ms-transform: translateX(100%);
             transform: translateX(100%); }
 
+.next-table-ping-right .next-table-expanded-area .next-table-fix-right-first::after {
+  content: none; }
+
+.next-table-ping-right .next-table-expanded-area .next-table-ping-right .next-table-fix-right-first:after,
 .next-table-ping-right .next-table-fix-right-first:after {
   -webkit-box-shadow: inset -10px 0 8px -8px rgba(0, 0, 0, 0.15);
           box-shadow: inset -10px 0 8px -8px rgba(0, 0, 0, 0.15);
