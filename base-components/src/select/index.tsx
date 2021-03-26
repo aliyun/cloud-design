@@ -18,14 +18,7 @@ let Select: typeof NextSelect = React.forwardRef(
         ...props.menuProps
       }
     })()
-    return (
-      <NextSelect
-        autoWidth={false}
-        {...props}
-        menuProps={menuProps}
-        ref={ref as any}
-      />
-    )
+    return <NextSelect {...props} menuProps={menuProps} ref={ref as any} />
   }
 ) as any
 
