@@ -58,8 +58,7 @@ const Button: typeof NextButton = withThemeClass(
 
 hoistNonReactStatics(Button, NextButton)
 
+// @ts-ignore
+Button.displayName = NextButton.displayName
+
 export default Button
-
-// const exported: typeof NextButton = Button as any
-
-// export default exported
