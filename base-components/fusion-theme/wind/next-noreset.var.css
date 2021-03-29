@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-test1234@0.6.3 (https://fusion.design)
- * @alifd/next@1.22.13 (https://fusion.design)
+ * @alife/theme-test1234@0.6.5 (https://fusion.design)
+ * @alifd/next@1.22.14 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -20781,7 +20781,7 @@
     .next-table th.next-table-fix-left, .next-table th.next-table-fix-right {
       z-index: 1; }
   .next-table-affix {
-    z-index: 1;
+    z-index: 10;
     overflow: hidden; }
   .next-table-header-resizable {
     position: relative; }
@@ -21193,8 +21193,13 @@
   position: sticky;
   z-index: 1; }
 
+.next-table-ping-left .next-table-expanded-area .next-table-fix-left-last::after {
+  content: none; }
+
+.next-table-ping-left .next-table-expanded-area .next-table-ping-left .next-table-fix-left-last,
 .next-table-ping-left .next-table-fix-left-last {
   border-right-width: 0; }
+  .next-table-ping-left .next-table-expanded-area .next-table-ping-left .next-table-fix-left-last::after,
   .next-table-ping-left .next-table-fix-left-last::after {
     -webkit-box-shadow: inset 10px 0 8px -8px rgba(0, 0, 0, 0.15);
             box-shadow: inset 10px 0 8px -8px rgba(0, 0, 0, 0.15);
@@ -21210,6 +21215,10 @@
         -ms-transform: translateX(100%);
             transform: translateX(100%); }
 
+.next-table-ping-right .next-table-expanded-area .next-table-fix-right-first::after {
+  content: none; }
+
+.next-table-ping-right .next-table-expanded-area .next-table-ping-right .next-table-fix-right-first:after,
 .next-table-ping-right .next-table-fix-right-first:after {
   -webkit-box-shadow: inset -10px 0 8px -8px rgba(0, 0, 0, 0.15);
           box-shadow: inset -10px 0 8px -8px rgba(0, 0, 0, 0.15);
