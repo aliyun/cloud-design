@@ -18,7 +18,17 @@ let Select: typeof NextSelect = React.forwardRef(
         ...props.menuProps
       }
     })()
-    return <NextSelect {...props} menuProps={menuProps} ref={ref as any} />
+    // xconsole以及其他大部分主题，select下拉menu的padding较大，
+    // 不能autoWidth，否则内容区域太短
+    const defaultAutoWidth = isWind ? true : false
+    return (
+      <NextSelect
+        {...props}
+        autoWidth={props.autoWidth ?? defaultAutoWidth}
+        menuProps={menuProps}
+        ref={ref as any}
+      />
+    )
   }
 ) as any
 
