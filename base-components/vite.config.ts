@@ -37,7 +37,8 @@ module.exports = {
       'react-dnd',
       '@alifd/next/lib/locale/en-us',
       '@alifd/next/lib/locale/zh-cn',
-      'moment'
+      'moment',
+      'dayjs',
     ]
   },
   build: {
