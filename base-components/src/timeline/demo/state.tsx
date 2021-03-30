@@ -1,5 +1,5 @@
 /**
- * @title 状态
+ * @title 节点状态
  * @description 设置每个节点不同的状态。
  */
 

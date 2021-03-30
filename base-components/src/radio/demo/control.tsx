@@ -1,6 +1,6 @@
 /**
- * @title 受限组件
- * @description 使用 `RadioGroup` 渲染的组，通过设置 `value` 属性可以让组件变成[受限组件](https://facebook.github.io/react/docs/forms.html#controlled-components)。
+ * @title 受控组件
+ * @description 使用 `RadioGroup` 渲染的组，通过设置 `value` 属性可以让组件变成[受控组件](https://facebook.github.io/react/docs/forms.html#controlled-components)。
  */
 
 import * as React from 'react'

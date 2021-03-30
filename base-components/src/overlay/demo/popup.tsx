@@ -1,24 +1,29 @@
 /**
- * @title 触发的弹层
- * @description 使用 Popup 弹出一个弹层。
+ * @title Popup弹层
+ * @description `Popup` 是对 `Overlay` 的封装，它接收某个节点作为触发节点，弹出一个浮层，这个浮层默认情况下使用这个节点作为定位的参照对象。
  */
 
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Overlay } from '@alicloudfe/components'
+import { Overlay, Button, Input } from '@alicloudfe/components'
 
 const { Popup } = Overlay
+
+function App(props) {
+  return <input {...props} />
+}
 
 export default function DemoComponent() {
   const content = (
     <div>
-      <Popup trigger={<button>Open</button>} triggerType="click">
+      <Popup trigger={<Button>Open</Button>} triggerType="click">
         <span className="overlay-demo">Hello World From Popup!</span>
       </Popup>
       <br />
+      <br />
       <Popup
-        trigger={<button>Use Down Arrow to open</button>}
+        trigger={<Input placeholder="Use Down Arrow to open" />}
         triggerType="click"
         triggerClickKeycode={40}
       >

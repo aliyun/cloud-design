@@ -1,5 +1,5 @@
 /**
- * @title 菜单组
+ * @title 复杂菜单
  * @description 支持菜单组和菜单分割线，使用方法同 `Menu.Group`, `Menu.Item`, `Menu.Divider`。
  */
 

@@ -1,6 +1,6 @@
 /**
- * @title 尺寸
- * @description 组件尺寸，可以通过`size`属性设置，提供`medium`(默认)和`small`两种尺寸，
+ * @title 小号尺寸
+ * @description 可以通过 `size=small` 设置小号尺寸，一般用于弹出框等较狭窄的容器内。
  */
 
 import * as React from 'react'
@@ -43,9 +43,9 @@ export default function DemoComponent() {
       <br />
       <Tab size="small" shape="capsule">
         {tabs.map((item) => (
-          <Tab.TabPane key={item.key} title={item.tab}>
+          <Tab.Item key={item.key} title={item.tab}>
             {item.content}
-          </Tab.TabPane>
+          </Tab.Item>
         ))}
       </Tab>
     </div>

@@ -12,7 +12,7 @@ import moment from 'moment'
 export default function DemoComponent() {
   const content = (
     <div>
-      <Calendar shape="panel" value={moment().add(1, 'days')} />
+      <Calendar shape="panel" defaultValue={moment().add(1, 'days')} />
     </div>
   )
   return <Style>{content}</Style>

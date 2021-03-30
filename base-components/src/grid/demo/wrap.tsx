@@ -13,14 +13,14 @@ const { Row, Col } = Grid
 export default function DemoComponent() {
   const content = (
     <div className="wrap-demo">
-      <div className="demo-title">No wrap</div>
+      <div className="grid-fixed-demo-title">No wrap</div>
       <Row>
         <Col span="6">col-6</Col>
         <Col span="6">col-6</Col>
         <Col span="6">col-6</Col>
         <Col span="8">col-8</Col>
       </Row>
-      <div className="demo-title">Wrap</div>
+      <div className="grid-fixed-demo-title">Wrap</div>
       <Row wrap>
         <Col span="6">col-6</Col>
         <Col span="6">col-6</Col>
@@ -32,7 +32,7 @@ export default function DemoComponent() {
   return <Style>{content}</Style>
 }
 const Style = styled.div`
-  .wrap-demo .demo-title {
+  .wrap-demo .grid-fixed-demo-title {
     margin-left: 20px;
   }
 

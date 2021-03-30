@@ -1,6 +1,6 @@
 /**
  * @title 最大长度
- * @description 最大长度 hasLimitHint 会展现限制数字; cutString 可控制是否要切割字符串, 用于只展示最大长度
+ * @description 最大长度 showLimitHint 会展现限制数字; cutString 可控制是否要切割字符串, 用于只展示最大长度
  */
 
 import * as React from 'react'
@@ -36,7 +36,7 @@ class App extends React.Component {
           size="large"
           placeholder="Large"
           value={this.state.control}
-          hasLimitHint
+          showLimitHint
           aria-label="input max length 10"
           onChange={this.onChange.bind(this)}
           onKeyDown={this.onKeyDown.bind(this)}
@@ -47,7 +47,7 @@ class App extends React.Component {
         <Input
           maxLength={20}
           placeholder="medium"
-          hasLimitHint
+          showLimitHint
           cutString={false}
           aria-label="input max length 20"
           onChange={(v) => {
@@ -62,7 +62,7 @@ class App extends React.Component {
         <br />
 
         <Input
-          hasLimitHint
+          showLimitHint
           size="small"
           placeholder="small"
           maxLength={100}
@@ -75,7 +75,7 @@ class App extends React.Component {
           placeholder="TextArea"
           maxLength={100}
           rows={4}
-          hasLimitHint
+          showLimitHint
           aria-label="input max length 100"
         />
         <br />

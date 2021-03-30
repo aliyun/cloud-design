@@ -1,6 +1,6 @@
 /**
  * @title 更新通知内容
- * @description 可以通过唯一的 key 来更新内容。
+ * @description 可以通过唯一的 `key` 来更新内容。
  */
 
 import * as React from 'react'

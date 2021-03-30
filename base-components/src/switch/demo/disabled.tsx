@@ -6,49 +6,28 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Icon, Switch } from '@alicloudfe/components'
+import { Button, Switch } from '@alicloudfe/components'
 
-class Test extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      disabled: true
-    }
+const Demo = () => {
+  const [disabled, setDisabled] = React.useState(true)
+
+  const toggle = () => {
+    setDisabled(!disabled)
   }
 
-  toggle() {
-    this.setState(
-      Object.assign({}, this.state, {
-        disabled: !this.state.disabled
-      })
-    )
-  }
-
-  render() {
-    return (
-      <div>
-        <Switch
-          checkedChildren={<Icon type="select" size="small" />}
-          unCheckedChildren={<Icon type="close" size="small" />}
-          disabled={this.state.disabled}
-        />
-        <Switch
-          checkedChildren="on"
-          unCheckedChildren="off"
-          disabled={this.state.disabled}
-        />
-        <br />
-        <br />
-        <Button type="primary" onClick={this.toggle.bind(this)}>
-          Toggle disabled
-        </Button>
-      </div>
-    )
-  }
+  return (
+    <div>
+      <Switch disabled={disabled} defaultChecked />
+      <br />
+      <Button type="primary" onClick={toggle}>
+        Toggle disabled
+      </Button>
+    </div>
+  )
 }
 
 export default function DemoComponent() {
-  const content = <Test />
+  const content = <Demo />
   return <Style>{content}</Style>
 }
 const Style = styled.div``

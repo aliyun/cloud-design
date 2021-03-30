@@ -6,17 +6,15 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { TimePicker } from '@alicloudfe/components'
+import { TimePicker, Box } from '@alicloudfe/components'
 
 export default function DemoComponent() {
   const content = (
-    <div>
+    <Box direction="row" spacing={20}>
       <TimePicker size="large" />
-      &nbsp;&nbsp;
       <TimePicker />
-      &nbsp;&nbsp;
       <TimePicker size="small" />
-    </div>
+    </Box>
   )
   return <Style>{content}</Style>
 }

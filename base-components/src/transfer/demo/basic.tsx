@@ -1,5 +1,5 @@
 /**
- * @title 基本
+ * @title 基本用法
  * @description 最简单的用法。
  */
 
@@ -33,6 +33,12 @@ class Demo extends React.Component {
     console.log(value, data, extra)
   }
 
+  handleSelect(sourceSelectedValue, targetSelectedValue, trigger) {
+    console.log('in panel: ', trigger)
+    console.log('sourceSelectedValue are: ', sourceSelectedValue)
+    console.log('targetSelectedValue are: ', targetSelectedValue)
+  }
+
   render() {
     return (
       <Transfer
@@ -41,6 +47,7 @@ class Demo extends React.Component {
         defaultLeftChecked={['1']}
         onChange={this.handleChange}
         titles={['Title', 'Title']}
+        onSelect={this.handleSelect}
       />
     )
   }

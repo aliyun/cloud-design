@@ -1,6 +1,6 @@
 /**
- * @title 自定义Loading动画
- * @description 你可以自定义动画，把自己的动画元素传进去, 需要自己写动画样式
+ * @title 自定义动画指示符
+ * @description 通过`indicator`自定义动画指示符，传入动画元素。
  */
 
 import * as React from 'react'
@@ -22,7 +22,7 @@ const indicator7 = (
 export default function DemoComponent() {
   const content = (
     <div>
-      <Loading tip="default animation">
+      <Loading tip="default">
         <div className="demo">test</div>
       </Loading>
       <Loading indicator={indicator1}>
@@ -37,8 +37,7 @@ export default function DemoComponent() {
 }
 const Style = styled.div`
   .demo {
-    width: 500px;
-    background-color: #f2f3f7;
+    width: 200px;
     text-align: center;
     padding: 50px;
   }

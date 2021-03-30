@@ -1,6 +1,6 @@
 /**
- * @title 可选中标签
- * @description `Tag.Selectable` 可以用于一些轻量的需要选中状态的场景，可作为 checkbox 使用。
+ * @title 可选中
+ * @description 待选中状态的标签， 通过点击来切换
  */
 
 import * as React from 'react'
@@ -9,18 +9,12 @@ import styled from 'styled-components'
 import { Tag } from '@alicloudfe/components'
 
 const { Group: TagGroup, Selectable: SelectableTag } = Tag
-const dataSource = [
-  'selectable tag',
-  'I like orange',
-  'small tag',
-  'disabled',
-  'disabled & checked'
-]
+const dataSource = ['tag 1', 'tag 2', 'tag 3', 'disabled', 'disabled & checked']
 
 class Demo extends React.Component {
   state = {
-    value: ['I like orange', 'disabled & checked'],
-    singleValue: 'selectable tag'
+    value: ['tag 1', 'disabled & checked'],
+    singleValue: 'tag 2'
   }
 
   handleChange(name, checked) {
@@ -45,7 +39,6 @@ class Demo extends React.Component {
         key={name}
         checked={value.indexOf(name) > -1}
         disabled={i > 2}
-        size={i === 2 ? 'small' : undefined}
         onChange={this.handleChange.bind(this, name)}
         {...props}
       >
@@ -62,9 +55,7 @@ class Demo extends React.Component {
         key={name}
         checked={singleValue === name}
         disabled={i > 2}
-        size={i === 2 ? 'large' : undefined}
         onChange={this.handleChangeSingle.bind(this, name)}
-        {...props}
       >
         {name}
       </SelectableTag>
@@ -74,12 +65,11 @@ class Demo extends React.Component {
   render() {
     return (
       <div className="tag-list">
-        <h4>type: 'default'</h4>
+        <h4>多选</h4>
         <TagGroup>{this.renderTagList({ type: 'normal' })}</TagGroup>
-        <h4>type: 'primary'</h4>
         <TagGroup>{this.renderTagList({ type: 'primary' })}</TagGroup>
-        <h4>Controlled Tags: Only one selected at a time</h4>
-        <TagGroup>{this.renderTagListSingle({ type: 'normal' })}</TagGroup>
+        <h4>受控&单选</h4>
+        <TagGroup>{this.renderTagListSingle()}</TagGroup>
       </div>
     )
   }

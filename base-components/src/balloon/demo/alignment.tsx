@@ -71,14 +71,14 @@ const leftBottom = (
 
 const Content = () => (
   <div>
-    <h4 style={{ marginTop: 0 }}>标题</h4>
-    {/* <hr /> */}
+    <h4 style={{ marginTop: 0 }}>balloon title</h4>
+    <hr />
     <p>balloon content</p>
   </div>
 )
 
 const App = () => (
-  <div style={{ paddingLeft: 320, paddingTop: 100 }}>
+  <div style={{ paddingLeft: 320 }}>
     <div style={{ marginLeft: 75 }}>
       <Balloon
         trigger={topLeft}

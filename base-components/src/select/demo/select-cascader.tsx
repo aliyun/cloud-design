@@ -42,12 +42,13 @@ class Demo extends React.Component {
     const { data, disabled, province, city } = this.state
 
     return (
-      <div className="demo-container">
+      <div>
         <Select
           placeholder="Select Province"
           dataSource={provinceData}
           value={province}
           onChange={this.handleProvinceChange}
+          style={{ marginRight: 8 }}
         />
         <Select
           placeholder="Select City"
@@ -65,13 +66,4 @@ export default function DemoComponent() {
   const content = <Demo />
   return <Style>{content}</Style>
 }
-const Style = styled.div`
-  .next-select {
-    margin-right: 10px;
-  }
-
-  .demo-container {
-    background-color: #f8f8f8;
-    padding: 16px;
-  }
-`
+const Style = styled.div``

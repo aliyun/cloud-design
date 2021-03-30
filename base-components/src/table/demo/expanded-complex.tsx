@@ -147,8 +147,8 @@ class App extends React.Component {
           <Button onClick={this.disabledExpandedCol.bind(this)}>
             {' '}
             disable fourth row{' '}
-          </Button>{' '}
-          &nbsp;
+          </Button>
+          <span style={{ marginRight: 20 }} />
           <Button onClick={this.toggleCol.bind(this)}> hide + </Button>
         </p>
         <Table

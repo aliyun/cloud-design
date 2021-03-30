@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Button, Select } from '@alicloudfe/components'
+import { Table, Button, Select, Box } from '@alicloudfe/components'
 
 const Option = Select.Option
 const dataSource = (length) => {
@@ -68,19 +68,17 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <p>
+        <Box direction="row" spacing={20}>
           <Button onClick={this.onSwitch.bind(this, 'sticky')}>
             enable sticky
-          </Button>{' '}
-          &nbsp;
+          </Button>
           <Button onClick={this.onSwitch.bind(this, 'lock')}>
             enable lock
-          </Button>{' '}
-          &nbsp;
+          </Button>
           <Button onClick={this.onSwitch.bind(this, 'dataSource')}>
             toggle dataSource
           </Button>
-        </p>
+        </Box>
         <Table
           dataSource={this.state.dataSource}
           fixedHeader

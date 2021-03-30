@@ -1,6 +1,6 @@
 /**
- * @title 使用数据直接生成
- * @description 使用 dataSource 生成树结构，除设置 key, label, children 属性外，还可传入 TreeNode 的其他属性，包括 selectable，disabled，checkable, checkboxDisabled, isLeaf 等。
+ * @title 数据直接生成
+ * @description 使用 dataSource 生成树结构，除设置 `key`, `label`, `children` 属性外，还可传入 `TreeNode` 的其他属性，详细见[TreeNode API](#Tree.Node)，推荐使用该方式生成 Tree 组件。
  */
 
 import * as React from 'react'
@@ -8,12 +8,12 @@ import styled from 'styled-components'
 
 import { Tree } from '@alicloudfe/components'
 
-const data = Object.freeze([
+const data = [
   {
     label: 'Component',
     key: '1',
     children: [
-      Object.freeze({
+      {
         label: 'Form',
         key: '2',
         selectable: false,
@@ -28,7 +28,7 @@ const data = Object.freeze([
             disabled: true
           }
         ]
-      }),
+      },
       {
         label: 'Display',
         key: '3',
@@ -41,7 +41,7 @@ const data = Object.freeze([
       }
     ]
   }
-])
+]
 
 class Demo extends React.Component {
   onSelect(keys, info) {

@@ -1,5 +1,5 @@
 /**
- * @title 自动完成
+ * @title 输入框辅助完成
  * @description `AutoComplete` 继承了 `Input` 的能力，并在其基础上增加了 autoComplete 的功能。
  */
 
@@ -39,6 +39,7 @@ const onChange = (v) => {
 export default function DemoComponent() {
   const content = (
     <Select.AutoComplete
+      autoHighlightFirstItem={false}
       style={{ width: 300 }}
       onChange={onChange}
       dataSource={dataSource}

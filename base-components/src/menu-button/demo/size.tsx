@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { MenuButton } from '@alicloudfe/components'
+import { MenuButton, Box } from '@alicloudfe/components'
 
 const { Item } = MenuButton
 const menu = ['Undo', 'Redo', 'Cut', 'Copy', 'Paste'].map((item) => (
@@ -15,19 +15,17 @@ const menu = ['Undo', 'Redo', 'Cut', 'Copy', 'Paste'].map((item) => (
 
 export default function DemoComponent() {
   const content = (
-    <div>
-      <MenuButton label="Edit Document" size="small">
-        {menu}
-      </MenuButton>{' '}
-      &nbsp; &nbsp;
-      <MenuButton label="Edit Document" size="medium">
-        {menu}
-      </MenuButton>{' '}
-      &nbsp; &nbsp;
-      <MenuButton label="Edit Document" size="large">
+    <Box direction="row" spacing={20}>
+      <MenuButton label="Edit Document" size="small" type="secondary">
         {menu}
       </MenuButton>
-    </div>
+      <MenuButton label="Edit Document" size="medium" type="secondary">
+        {menu}
+      </MenuButton>
+      <MenuButton label="Edit Document" size="large" type="secondary">
+        {menu}
+      </MenuButton>
+    </Box>
   )
   return <Style>{content}</Style>
 }

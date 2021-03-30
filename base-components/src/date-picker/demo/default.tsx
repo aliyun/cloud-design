@@ -1,6 +1,6 @@
 /**
  * @title 提供默认值
- * @description 可以通过 `defaultValue` 属性为日期选择器提供初值，所提供的初值必须为 moment 对象。
+ * @description 可以通过 `defaultValue` 属性为日期选择器提供初值，所提供的初值必须为 `moment` 对象。
  */
 
 import * as React from 'react'

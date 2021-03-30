@@ -1,6 +1,6 @@
 /**
- * @title 菜单选择模式
- * @description 通过 selectMode 控制菜单的选择模式。
+ * @title 多选菜单
+ * @description 通过 `selectMode` 控制菜单的选择模式。
  */
 
 import * as React from 'react'
@@ -17,9 +17,19 @@ export default function DemoComponent() {
   const content = (
     <div>
       <MenuButton
-        label="Document Edit"
+        label="Single"
         selectMode="single"
         onSelect={(keys) => console.log(keys)}
+        type="secondary"
+        style={{ marginRight: 20 }}
+      >
+        {menu}
+      </MenuButton>
+      <MenuButton
+        label="Multiple"
+        selectMode="multiple"
+        onSelect={(keys) => console.log(keys)}
+        type="secondary"
       >
         {menu}
       </MenuButton>

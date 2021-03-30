@@ -31,7 +31,9 @@ function createDataSource(level = 3, count = 5) {
     key: '0-0'
   })
   drill(dataSource, level, count)
+
   console.log('node num:', num + 1)
+
   return dataSource
 }
 
@@ -43,6 +45,11 @@ class Demo extends React.Component {
       dataSource: []
     }
   }
+  componentDidMount() {
+    this.setState({
+      dataSource: createDataSource()
+    })
+  }
 
   onSelect(keys, info) {
     console.log('onSelect', keys, info)
@@ -52,43 +59,22 @@ class Demo extends React.Component {
     console.log('onCheck', keys, info)
   }
 
-  onEditFinish(key, label, node) {
-    console.log('onEditFinish', key, label, node)
-  }
-
-  onRightClick(info) {
-    console.log('onRightClick', info)
-  }
-
-  componentDidMount() {
-    this.setState({
-      dataSource: createDataSource()
-    })
-  }
-
   render() {
     const dataSource = this.state.dataSource
 
-    return (
-      dataSource.length && (
-        <Tree
-          checkable
-          editable
-          focusable
-          showLine
-          useVirtual
-          animation
-          style={{ maxHeight: '480px', overflow: 'auto' }}
-          defaultExpandAll
-          defaultCheckedKeys={['0-0-1', '0-0-2']}
-          onSelect={this.onSelect}
-          onCheck={this.onCheck}
-          dataSource={dataSource}
-          onEditFinish={this.onEditFinish}
-          onRightClick={this.onRightClick}
-        />
-      )
-    )
+    return dataSource.length ? (
+      <Tree
+        checkable
+        showLine
+        useVirtual
+        style={{ maxHeight: '300px', overflow: 'auto' }} // 注意设置Tree组件高度&允许滚动
+        defaultExpandAll
+        defaultCheckedKeys={['0-0-1', '0-0-2']}
+        onSelect={this.onSelect}
+        onCheck={this.onCheck}
+        dataSource={dataSource}
+      />
+    ) : null
   }
 }
 

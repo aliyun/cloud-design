@@ -72,12 +72,12 @@ const leftBottom = (
 )
 
 const App = () => (
-  <div style={{ paddingLeft: 220, paddingTop: 100 }}>
+  <div style={{ paddingLeft: 220 }}>
     <div style={{ marginLeft: 75 }}>
       <Tooltip trigger={topLeft} align="tl">
         text text
       </Tooltip>
-      <Tooltip trigger={top} align="t" triggerType="click">
+      <Tooltip trigger={top} align="t">
         text text
       </Tooltip>
       <Tooltip trigger={topRight} align="tr">

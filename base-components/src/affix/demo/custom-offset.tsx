@@ -10,16 +10,10 @@ import { Affix, Button } from '@alicloudfe/components'
 
 export default function DemoComponent() {
   const content = (
-    <div className="custom-affix-wrapper">
-      <Affix offsetBottom={0}>
-        <Button type="secondary">Affixed Button</Button>
-      </Affix>
-    </div>
+    <Affix offsetBottom={0}>
+      <Button type="secondary">Custom Offset Affixed</Button>
+    </Affix>
   )
   return <Style>{content}</Style>
 }
-const Style = styled.div`
-  .custom-affix-wrapper {
-    padding: 40px 0;
-  }
-`
+const Style = styled.div``

@@ -8,30 +8,39 @@ import styled from 'styled-components'
 
 import { Pagination } from '@alicloudfe/components'
 
-const handlePageSizeChange = (size) => console.log(size)
+class Demo extends React.Component {
+  state = {
+    pageSize: 20
+  }
+
+  handleChange = (pageSize) => {
+    this.setState({ pageSize })
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>Set page size</h3>
+        <Pagination pageSize={20} />
+        <h3>Hide page size selector</h3>
+        <Pagination pageSizeSelector={false} />
+        <h3>Set page size selector to 'dropdown'，and show it in the end</h3>
+        <Pagination pageSizeSelector="dropdown" pageSizePosition="end" />
+        <h3>Use pageSizeList to specify the number of records per page.</h3>
+        <Pagination
+          pageSize={this.state.pageSize}
+          total={100}
+          pageSizeSelector="filter"
+          pageSizeList={[5, 10, 20]}
+          onPageSizeChange={this.handleChange}
+        />
+      </div>
+    )
+  }
+}
 
 export default function DemoComponent() {
-  const content = (
-    <div>
-      <h3>To hidden per page size selector</h3>
-      <Pagination pageSizeSelector={false} />
-      <h3>
-        Type per page size selector of is dropdown，and as for the tail of the
-        entire component
-      </h3>
-      <Pagination
-        pageSizeSelector="dropdown"
-        pageSizePosition="end"
-        onPageSizeChange={handlePageSizeChange}
-      />
-      <h3>Filter type per page size selector, and use floating layout</h3>
-      <Pagination
-        pageSizeSelector="filter"
-        onPageSizeChange={handlePageSizeChange}
-        useFloatLayout
-      />
-    </div>
-  )
+  const content = <Demo />
   return <Style>{content}</Style>
 }
 const Style = styled.div``

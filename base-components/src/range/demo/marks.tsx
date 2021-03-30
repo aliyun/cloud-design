@@ -25,7 +25,7 @@ export default function DemoComponent() {
         style={style}
       />
       <Range defaultValue={30} style={style} />
-      <p>Below</p>
+      <p>Marks below</p>
       <Range
         defaultValue={0}
         marks={[0, 100]}

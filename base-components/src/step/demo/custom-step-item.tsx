@@ -1,5 +1,5 @@
 /**
- * @title Step.Item 自定义渲染
+ * @title 步骤项自定义渲染
  * @description `Step.Item` 默认有三种状态，分别是 `wait`, `process`, `finish`。
  */
 

@@ -1,5 +1,5 @@
 /**
- * @title 分组
+ * @title Checkbox组
  * @description 使用 `<Checkbox.Group>` 渲染 `<Checkbox>` 分组。
  */
 
@@ -8,29 +8,53 @@ import styled from 'styled-components'
 
 import { Checkbox } from '@alicloudfe/components'
 
-const CheckboxGroup = () => (
-  <div>
-    <h4>Horizonal direction</h4>
-    <p>
-      <Checkbox.Group itemDirection="hoz">
-        <Checkbox value="react">React</Checkbox>
-        <Checkbox value="vue">Vue</Checkbox>
-        <Checkbox value="angular">Angular</Checkbox>
-      </Checkbox.Group>
-    </p>
-    <h4>Vertical direction</h4>
-    <p>
-      <Checkbox.Group itemDirection="ver">
-        <Checkbox value="react">React</Checkbox>
-        <Checkbox value="vue">Vue</Checkbox>
-        <Checkbox value="angular">Angular</Checkbox>
-      </Checkbox.Group>
-    </p>
-  </div>
-)
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      value: 'orange'
+    }
+
+    this.onChange = this.onChange.bind(this)
+  }
+
+  onChange(value) {
+    this.setState({
+      value: value
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <span style={{ fontSize: 14 }}>
+          <label id="groupId">Choose fruit: </label>
+        </span>
+        <br />
+        <br />
+        <Checkbox.Group
+          value={this.state.value}
+          onChange={this.onChange}
+          aria-labelledby="groupId"
+        >
+          <Checkbox id="apple" value="apple">
+            Apple
+          </Checkbox>
+          <Checkbox id="watermelon" value="watermelon">
+            Watermelon
+          </Checkbox>
+          <Checkbox id="orange" value="orange">
+            Orange
+          </Checkbox>
+        </Checkbox.Group>
+      </div>
+    )
+  }
+}
 
 export default function DemoComponent() {
-  const content = <CheckboxGroup />
+  const content = <App />
   return <Style>{content}</Style>
 }
 const Style = styled.div``

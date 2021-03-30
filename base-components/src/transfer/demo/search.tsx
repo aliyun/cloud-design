@@ -1,6 +1,6 @@
 /**
- * @title 搜索
- * @description 展示搜索的用法。
+ * @title 带搜索框
+ * @description 带搜索框的穿梭框，可以自定义搜索函数。
  */
 
 import * as React from 'react'

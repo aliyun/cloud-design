@@ -18,7 +18,8 @@ export default function DemoComponent() {
   const content = (
     <div>
       <DatePicker footerRender={footerRender} />
-      &nbsp;&nbsp;
+      <br />
+      <br />
       <RangePicker footerRender={footerRender} />
     </div>
   )

@@ -1,6 +1,6 @@
 /**
- * @title 可关闭组件
- * @description 通过增加`closeable`属性可以控制提示框是否可关闭。
+ * @title 可关闭提示
+ * @description 通过`closeable`设置用户手动关闭提示框。
  */
 
 import * as React from 'react'

@@ -27,6 +27,7 @@ export default function DemoComponent() {
         <Row gutter="4">
           <Col>
             <FormItem
+              style={{ margin: 0 }}
               label="Nest"
               labelAlign="inset"
               {...insetLayout}
@@ -39,6 +40,7 @@ export default function DemoComponent() {
           </Col>
           <Col>
             <FormItem
+              style={{ margin: 0 }}
               label="Nest"
               labelAlign="inset"
               {...insetLayout}
@@ -75,7 +77,9 @@ export default function DemoComponent() {
         </Row>
       </FormItem>
       <FormItem label=" ">
-        <Form.Submit onClick={(v) => console.log(v)}>Submit</Form.Submit>
+        <Form.Submit validate onClick={(v) => console.log(v)}>
+          Submit
+        </Form.Submit>
       </FormItem>
     </Form>
   )

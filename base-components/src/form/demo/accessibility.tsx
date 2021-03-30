@@ -1,5 +1,5 @@
 /**
- * @title 无障碍
+ * @title 无障碍支持
  * @description 对于必填项，在组件中要设置`aria-required`属性，并通过视觉设计上的高亮提示用户。
  */
 
@@ -45,7 +45,6 @@ class Demo extends React.Component {
           {...formItemLayout}
           size={this.state.size}
           style={{ maxWidth: '800px' }}
-          labelTextAlign="left"
         >
           <FormItem required label="username:">
             <Input
@@ -142,11 +141,11 @@ class Demo extends React.Component {
               validate
               type="primary"
               onClick={this.submitHandle}
-              style={{ marginRight: 7 }}
+              style={{ marginRight: 10 }}
             >
               Submit
             </Form.Submit>
-            <Form.Reset >Reset</Form.Reset>
+            <Form.Reset>Reset</Form.Reset>
           </FormItem>
         </Form>
       </div>

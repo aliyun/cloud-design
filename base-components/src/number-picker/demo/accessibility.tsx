@@ -1,5 +1,5 @@
 /**
- * @title 无障碍
+ * @title 无障碍支持
  * @description 组件内置了部分支持无障碍, 但是额外需要开发者手动设置才能完整支持无障碍: 设置upBtnprops以及downBtnprops，使得读屏软件可以正确表达按键的具体功能。设置`aria-live`目的是`NumberPicker`组件值发生改变时，读屏软件会进行读取。
  */
 

@@ -1,12 +1,12 @@
 /**
- * @title 触发的弹层受控显示隐藏
- * @description 展示了 Popup 受控显示隐藏的用法。
+ * @title 受控显示隐藏
+ * @description 展示了 `Popup` 受控显示隐藏的用法。
  */
 
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Overlay } from '@alicloudfe/components'
+import { Overlay, Button } from '@alicloudfe/components'
 
 const { Popup } = Overlay
 
@@ -36,7 +36,7 @@ class Demo extends React.Component {
       <div>
         <div>
           <Popup
-            trigger={<button>Open</button>}
+            trigger={<Button>Open</Button>}
             triggerType="click"
             visible={this.state.visible}
             onVisibleChange={this.onVisibleChange}
@@ -48,14 +48,14 @@ class Demo extends React.Component {
         <div>
           <Popup
             trigger={
-              <button
-                style={{ 'margin-right': '50px' }}
+              <Button
+                style={{ marginRight: '50px' }}
                 ref={(ref) => {
                   this.btn1 = ref
                 }}
               >
                 Paired Popup 1
-              </button>
+              </Button>
             }
             triggerType="click"
             visible={this.state.groupVisible}
@@ -73,13 +73,13 @@ class Demo extends React.Component {
           </Popup>
           <Popup
             trigger={
-              <button
+              <Button
                 ref={(ref) => {
                   this.btn2 = ref
                 }}
               >
                 Paired Popup 2
-              </button>
+              </Button>
             }
             triggerType="click"
             visible={this.state.groupVisible}
@@ -110,7 +110,7 @@ const Style = styled.div`
     width: 300px;
     height: 100px;
     padding: 10px;
-    border: 1px solid #999999;
+    border: 1px solid #eee;
     background: #ffffff;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
   }

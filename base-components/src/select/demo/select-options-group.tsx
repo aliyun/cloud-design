@@ -1,6 +1,6 @@
 /**
  * @title 分组
- * @description 使用 OptionGroup 针对选项进行分组，也可以使用原生的 html 标签 optgroup
+ * @description 使用 OptionGroup 针对选项进行分组
  */
 
 import * as React from 'react'
@@ -33,8 +33,8 @@ const dataSource = [
 
 export default function DemoComponent() {
   const content = (
-    <div className="demo-container">
-      <Select placeholder="OptionGroup">
+    <div>
+      <Select placeholder="OptionGroup" style={{ marginRight: 8 }}>
         <OptionGroup label="group1">
           <Option value="small">Small</Option>
           <Option value="medium">Medium</Option>
@@ -46,30 +46,9 @@ export default function DemoComponent() {
           <Option value="large2">Large2</Option>
         </OptionGroup>
       </Select>
-      <Select placeholder="optgroup">
-        <option value="apple">Apple</option>
-        <option value="orange">Orange</option>
-        <option value="banana">Banana</option>
-        <optgroup label="Pets Group">
-          <option value="cat">Cat</option>
-          <option value="rabbit">Rabbit</option>
-          <option value="dog" disabled>
-            Dog
-          </option>
-        </optgroup>
-      </Select>
-      <Select placeholder="item.children" dataSource={dataSource} />
+      <Select placeholder="use dataSource" dataSource={dataSource} />
     </div>
   )
   return <Style>{content}</Style>
 }
-const Style = styled.div`
-  .next-select {
-    margin-right: 10px;
-  }
-
-  .demo-container {
-    background-color: #f8f8f8;
-    padding: 16px;
-  }
-`
+const Style = styled.div``

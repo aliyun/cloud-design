@@ -11,11 +11,11 @@ import { Button, Icon } from '@alicloudfe/components'
 export default function DemoComponent() {
   const content = (
     <div>
-      <Button.Group>
+      <Button.Group style={{ marginRight: 20 }}>
         <Button type="primary">OK</Button>
         <Button type="secondary">Cancel</Button>
       </Button.Group>
-      &nbsp;&nbsp;
+
       <Button.Group>
         <Button disabled>Left</Button>
         <Button disabled>Middle</Button>
@@ -23,7 +23,8 @@ export default function DemoComponent() {
       </Button.Group>
       <br />
       <br />
-      <Button.Group>
+
+      <Button.Group style={{ marginRight: 20 }}>
         <Button type="primary">
           <Icon type="arrow-left" /> Backward
         </Button>
@@ -31,7 +32,7 @@ export default function DemoComponent() {
           Forward <Icon type="arrow-right" />
         </Button>
       </Button.Group>
-      &nbsp;&nbsp;
+
       <Button.Group>
         <Button type="primary">
           <Icon type="prompt" />

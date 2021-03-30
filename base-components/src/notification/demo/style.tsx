@@ -1,6 +1,6 @@
 /**
  * @title 自定义样式
- * @description 使用 style 和 className 来定义样式。
+ * @description 使用 `style` 和 `className` 来定义样式。
  */
 
 import * as React from 'react'

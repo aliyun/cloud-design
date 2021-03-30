@@ -1,5 +1,5 @@
 /**
- * @title 搜索框
+ * @title 远程搜索
  * @description 使用 `showSearch` 显示搜索框，如果需要动态更新 dataSource，需要关闭 filterLocal
  */
 
@@ -39,16 +39,14 @@ class Demo extends React.Component {
 
   render() {
     return (
-      <div className="demo-container">
-        <Select
-          showSearch
-          placeholder="select search"
-          filterLocal={false}
-          dataSource={this.state.dataSource}
-          onSearch={this.handleSearch}
-          style={{ width: 200 }}
-        />
-      </div>
+      <Select
+        showSearch
+        placeholder="input to search"
+        filterLocal={false}
+        dataSource={this.state.dataSource}
+        onSearch={this.handleSearch}
+        style={{ width: 200 }}
+      />
     )
   }
 }

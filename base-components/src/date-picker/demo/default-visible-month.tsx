@@ -31,8 +31,8 @@ export default function DemoComponent() {
       />
       <br />
       <br />
-      <p>Setting 2017 as default visible year</p>
-      <MonthPicker defaultVisibleYear={() => moment('2017', 'YYYY')} />
+      <p>Setting 2019 as default visible year</p>
+      <MonthPicker defaultVisibleYear={() => moment('2019', 'YYYY')} />
     </div>
   )
   return <Style>{content}</Style>

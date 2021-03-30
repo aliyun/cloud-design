@@ -1,6 +1,6 @@
 /**
- * @title 无障碍
- * @description 按下Enter键调用`onSearch`事件去处理,请参考`ARIA and KeyBoard`。
+ * @title 无障碍支持
+ * @description 按下Enter键调用`onSearch`事件去处理,请参考[无障碍键盘操作指南](#无障碍键盘操作指南)。
  */
 
 import * as React from 'react'

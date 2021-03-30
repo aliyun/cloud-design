@@ -52,7 +52,7 @@ const dataSource = [
 
 export default function DemoComponent() {
   const content = (
-    <Table
+    <Table.StickyLock
       type="primary"
       dataSource={dataSource}
       cellProps={(rowIndex, colIndex) => {
@@ -73,7 +73,7 @@ export default function DemoComponent() {
       {columns.map((col, i) => {
         return <Table.Column key={i} {...col} />
       })}
-    </Table>
+    </Table.StickyLock>
   )
   return <Style>{content}</Style>
 }

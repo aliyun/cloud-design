@@ -1,6 +1,6 @@
 /**
  * @title 单选与多选
- * @description 展示单选与多选的用法。
+ * @description 通过设置`multiple`为`true`，支持节点多选。
  */
 
 import * as React from 'react'
@@ -10,40 +10,32 @@ import { Checkbox, Tree } from '@alicloudfe/components'
 
 const data = [
   {
-    key: '0-0',
-    label: '0-0',
+    label: 'Component',
+    key: '1',
     children: [
       {
-        key: '0-0-0',
-        label: '0-0-0',
+        label: 'Form',
+        key: '2',
+        selectable: false,
         children: [
           {
-            key: '0-0-0-0',
-            label: '0-0-0-0',
-            children: [
-              {
-                key: '0-0-0-0-0',
-                label: '0-0-0-0-0'
-              }
-            ]
+            label: 'Input',
+            key: '4'
           },
           {
-            key: '0-0-0-1',
-            label: '0-0-0-1'
+            label: 'Select',
+            key: '5',
+            disabled: true
           }
         ]
       },
       {
-        key: '0-0-1',
-        label: '0-0-1',
+        label: 'Display',
+        key: '3',
         children: [
           {
-            key: '0-0-1-0',
-            label: '0-0-1-0'
-          },
-          {
-            key: '0-0-1-1',
-            label: '0-0-1-1'
+            label: 'Table',
+            key: '6'
           }
         ]
       }
@@ -85,7 +77,7 @@ class Demo extends React.Component {
       <div className="control-select-demo">
         <label className="multiple-check">
           <Checkbox checked={multiple} onChange={this.handleCheck} />
-          <span className="multiple-text">Enable multiple</span>
+          <span className="multiple-text">多选</span>
         </label>
         <Tree
           defaultExpandAll

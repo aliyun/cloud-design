@@ -16,21 +16,19 @@ export default function DemoComponent() {
     <div>
       <DatePicker onChange={onChange} /> <br />
       <br />
-      <DatePicker showTime onChange={onChange} /> <br />
+      <WeekPicker onChange={onChange} /> <br />
       <br />
       <MonthPicker onChange={onChange} /> <br />
       <br />
       <YearPicker onChange={onChange} /> <br />
       <br />
-      <WeekPicker onChange={onChange} /> <br />
-      <br />
-      <RangePicker type="year" onChange={onChange} />
+      <RangePicker onChange={onChange} />
       <br />
       <br />
       <RangePicker type="month" onChange={onChange} />
       <br />
       <br />
-      <RangePicker onChange={onChange} />
+      <RangePicker type="year" onChange={onChange} />
     </div>
   )
   return <Style>{content}</Style>

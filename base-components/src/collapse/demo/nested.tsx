@@ -1,6 +1,6 @@
 /**
- * @title 基本
- * @description
+ * @title 面板嵌套
+ * @description 嵌套折叠面板。
  */
 
 import * as React from 'react'

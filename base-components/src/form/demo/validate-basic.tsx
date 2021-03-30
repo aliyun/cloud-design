@@ -98,7 +98,7 @@ class BasicDemo extends React.Component {
         >
           <Input.TextArea
             maxLength={20}
-            hasLimitHint
+            showLimitHint
             placeholder="Everything is ok!"
             name="valTextarea"
           />

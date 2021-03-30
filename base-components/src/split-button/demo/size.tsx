@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { SplitButton } from '@alicloudfe/components'
+import { SplitButton, Box } from '@alicloudfe/components'
 
 const { Item } = SplitButton
 const menu = ['Undo', 'Redo', 'Cut', 'Copy', 'Paste'].map((item) => (
@@ -15,19 +15,17 @@ const menu = ['Undo', 'Redo', 'Cut', 'Copy', 'Paste'].map((item) => (
 
 export default function DemoComponent() {
   const content = (
-    <div>
-      <SplitButton label="Edit Document" size="small">
-        {menu}
-      </SplitButton>{' '}
-      &nbsp; &nbsp;
-      <SplitButton label="Edit Document" size="medium">
-        {menu}
-      </SplitButton>{' '}
-      &nbsp; &nbsp;
-      <SplitButton label="Edit Document" size="large">
+    <Box direction="row" spacing={20}>
+      <SplitButton label="Edit Document" size="small" type="secondary">
         {menu}
       </SplitButton>
-    </div>
+      <SplitButton label="Edit Document" size="medium" type="secondary">
+        {menu}
+      </SplitButton>
+      <SplitButton label="Edit Document" size="large" type="secondary">
+        {menu}
+      </SplitButton>
+    </Box>
   )
   return <Style>{content}</Style>
 }

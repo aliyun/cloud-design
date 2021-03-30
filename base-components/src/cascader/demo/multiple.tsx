@@ -1,6 +1,6 @@
 /**
  * @title 多选
- * @description 展示基本的多选用法。
+ * @description 设置`multiple`为`true`，开启多选，此时节点可勾选。
  */
 
 import * as React from 'react'
@@ -25,11 +25,6 @@ class Demo extends React.Component {
     fetch('https://os.alipayobjects.com/rmsportal/ODDwqcDFTLAguOvWEolX.json')
       .then((response) => response.json())
       .then((data) => {
-        data[1].disabled = true
-        data[2].checkboxDisabled = true
-        data[0].children[2].checkboxDisabled = true
-        data[0].children[1].disabled = true
-
         this.setState({ data })
       })
       .catch((e) => console.log(e))

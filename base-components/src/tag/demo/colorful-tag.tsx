@@ -1,6 +1,6 @@
 /**
  * @title 彩色标签
- * @description 在非 `closeable` 和 `selectable` 类型下，可以通过增加 `color` 属性来为 tag 设置自定义颜色。
+ * @description 带颜色的标签，如果颜色不能满足，可以自定义颜色(只能是实心标签)
  */
 
 import * as React from 'react'
@@ -12,23 +12,16 @@ const { Group: TagGroup } = Tag
 
 const presetColors = ['blue', 'green', 'orange', 'red', 'turquoise', 'yellow']
 // set custom color with hex value, do not use color keywords
-const customColos = ['#f50', '#2db7f5', '#87d068', '#108ee9']
+const customColors = ['#f50', '#2db7f5', '#87d068', '#108ee9']
 
 export default function DemoComponent() {
   const content = (
     <div className="tag-list">
-      <h4>presets</h4>
-      <TagGroup>
-        {presetColors.map((color) => (
-          <Tag key={`p_n_${color}`} size="large" type="normal" color={color}>
-            标签文字
-          </Tag>
-        ))}
-      </TagGroup>
+      <h4>preset colors</h4>
       <TagGroup>
         {presetColors.map((color) => (
           <Tag key={`p_n_${color}`} type="normal" color={color}>
-            标签文字
+            {color}
           </Tag>
         ))}
       </TagGroup>
@@ -44,7 +37,7 @@ export default function DemoComponent() {
       <h4>custom colors</h4>
 
       <TagGroup>
-        {customColos.map((color) => (
+        {customColors.map((color) => (
           <Tag key={`c_${color}`} color={color}>
             {color}
           </Tag>

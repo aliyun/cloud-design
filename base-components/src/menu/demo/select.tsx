@@ -1,5 +1,5 @@
 /**
- * @title 菜单项选择
+ * @title 选择与选中
  * @description 展示菜单项选择用法。
  */
 

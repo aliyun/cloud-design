@@ -1,6 +1,6 @@
 /**
- * @title 无障碍
- * @description 通过`aria-labelledby`对组件进行描述。关于键盘操作请参考`ARIA and KeyBoard`。
+ * @title 无障碍支持
+ * @description 通过`aria-labelledby`对组件进行描述。关于键盘操作请参考[#无障碍键盘操作指南](#无障碍键盘操作指南)。
  */
 
 import * as React from 'react'
@@ -8,7 +8,39 @@ import styled from 'styled-components'
 
 import { TreeSelect } from '@alicloudfe/components'
 
-const TreeNode = TreeSelect.Node
+const data = [
+  {
+    label: 'Component',
+    value: '1',
+    children: [
+      {
+        label: 'Form',
+        value: '2',
+        children: [
+          {
+            label: 'Input',
+            value: '4'
+          },
+          {
+            label: 'Select',
+            value: '5',
+            disabled: true
+          }
+        ]
+      },
+      {
+        label: 'Display',
+        value: '3',
+        children: [
+          {
+            label: 'Table',
+            value: '6'
+          }
+        ]
+      }
+    ]
+  }
+]
 
 class Demo extends React.Component {
   constructor(props) {
@@ -24,23 +56,13 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <span id="a11y-tree-select">TreeSelect: </span>
         <TreeSelect
           treeDefaultExpandAll
           aria-labelledby="a11y-tree-select"
           onChange={this.handleChange}
           style={{ width: 200 }}
-        >
-          <TreeNode key="1" value="1" label="Component">
-            <TreeNode key="2" value="2" label="Form">
-              <TreeNode key="4" value="4" label="Input" />
-              <TreeNode key="5" value="5" label="Select" disabled />
-            </TreeNode>
-            <TreeNode key="3" value="3" label="Display">
-              <TreeNode key="6" value="6" label="Table" />
-            </TreeNode>
-          </TreeNode>
-        </TreeSelect>
+          dataSource={data}
+        />
       </div>
     )
   }

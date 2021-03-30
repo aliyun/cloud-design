@@ -1,6 +1,6 @@
 /**
- * @title 关闭加载
- * @description 可切换加载状态。
+ * @title 受控关闭加载
+ * @description 通过`visible`受控显示或关闭加载动画。
  */
 
 import * as React from 'react'
@@ -32,33 +32,41 @@ class App extends React.Component {
       visible
     })
   }
+
   render() {
+    const CustomForm = () => (
+      <Form style={{ width: 500 }}>
+        <FormItem label="Username" {...layout}>
+          <Input />
+        </FormItem>
+        <FormItem label="Password" {...layout}>
+          <Input htmlType="password" placeholder="please input" />
+        </FormItem>
+        <FormItem label="Detail" {...layout}>
+          <Input multiple />
+        </FormItem>
+      </Form>
+    )
+    const ControlButton = () => (
+      <div style={{ paddingLeft: 80 }}>
+        <Button onClick={this.setVisible.bind(this, true)} type="primary">
+          Submit
+        </Button>
+        <Button
+          onClick={this.setVisible.bind(this, false)}
+          style={{ marginLeft: 5 }}
+        >
+          Cancel
+        </Button>
+      </div>
+    )
+
     return (
       <div>
         <Loading visible={this.state.visible} shape="fusion-reactor">
-          <Form style={{ width: 500 }}>
-            <FormItem label="Username" {...layout}>
-              <Input />
-            </FormItem>
-            <FormItem label="Password" {...layout}>
-              <Input htmlType="password" placeholder="please input" />
-            </FormItem>
-            <FormItem label="Detail" {...layout}>
-              <Input multiple />
-            </FormItem>
-          </Form>
+          <CustomForm />
         </Loading>
-        <div style={{ paddingLeft: 80 }}>
-          <Button onClick={this.setVisible.bind(this, true)} type="primary">
-            Submit
-          </Button>
-          <Button
-            onClick={this.setVisible.bind(this, false)}
-            style={{ marginLeft: 5 }}
-          >
-            Cancel
-          </Button>
-        </div>
+        <ControlButton />
       </div>
     )
   }

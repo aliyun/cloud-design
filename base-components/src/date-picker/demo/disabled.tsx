@@ -1,5 +1,5 @@
 /**
- * @title 禁用日期选择
+ * @title 禁用状态
  * @description 当开启 `disabled` 属性时，选择框处于完全禁用状态。
  */
 
@@ -14,7 +14,8 @@ export default function DemoComponent() {
   const content = (
     <div>
       <DatePicker disabled />
-      &nbsp;&nbsp;
+      <br />
+      <br />
       <RangePicker disabled />
     </div>
   )

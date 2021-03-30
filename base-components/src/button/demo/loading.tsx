@@ -1,12 +1,12 @@
 /**
- * @title 加载中
+ * @title 加载状态
  * @description 通过设置 `loading` 属性即可以让按钮处于加载状态。
  */
 
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Icon } from '@alicloudfe/components'
+import { Button, Icon, Box } from '@alicloudfe/components'
 
 class Demo extends React.Component {
   constructor(props, context) {
@@ -23,11 +23,10 @@ class Demo extends React.Component {
 
   render() {
     return (
-      <div>
+      <Box direction="row" spacing={20}>
         <Button type="secondary" loading>
           Loading
         </Button>
-        &nbsp;&nbsp;
         <Button
           type="primary"
           loading={this.state.loading}
@@ -35,7 +34,7 @@ class Demo extends React.Component {
         >
           Click to loading
         </Button>
-      </div>
+      </Box>
     )
   }
 }

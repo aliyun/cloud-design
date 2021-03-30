@@ -6,31 +6,30 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Icon } from '@alicloudfe/components'
+import { Button, Icon, Box } from '@alicloudfe/components'
 
 export default function DemoComponent() {
   const content = (
     <div>
-      <Button type="primary" size="large">
-        <Icon type="atm" />
-        Large
-      </Button>
-      &nbsp;&nbsp;
-      <Button type="primary">
-        <Icon type="atm" />
-        Medium
-      </Button>
-      &nbsp;&nbsp;
-      <Button type="primary" size="small">
-        <Icon type="atm" />
-        Small
-      </Button>
-      <br />
+      <Box direction="row" spacing={20}>
+        <Button type="primary" size="large">
+          <Icon type="atm" />
+          Large
+        </Button>
+        <Button type="primary">
+          <Icon type="atm" />
+          Medium
+        </Button>
+        <Button type="primary" size="small">
+          <Icon type="atm" />
+          Small
+        </Button>
+      </Box>
       <br />
       <Button.Group size="large">
-        <Button>Button</Button>
-        <Button>Button</Button>
-        <Button>Button</Button>
+        <Button className="basic-button">Button</Button>
+        <Button className="basic-button">Button</Button>
+        <Button className="basic-button">Button</Button>
       </Button.Group>
     </div>
   )

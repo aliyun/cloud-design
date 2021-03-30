@@ -1,6 +1,6 @@
 /**
  * @title 拖拽上传
- * @description 提醒: `https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload`接口:
+ * @description
  */
 
 import * as React from 'react'

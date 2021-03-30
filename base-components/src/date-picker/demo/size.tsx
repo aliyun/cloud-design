@@ -6,15 +6,15 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { DatePicker } from '@alicloudfe/components'
+import { DatePicker, Box } from '@alicloudfe/components'
 
 export default function DemoComponent() {
   const content = (
-    <div>
-      <DatePicker size="large" /> &nbsp;&nbsp;
-      <DatePicker /> &nbsp;&nbsp;
+    <Box direction="row" spacing={20}>
+      <DatePicker size="large" />
+      <DatePicker />
       <DatePicker size="small" />
-    </div>
+    </Box>
   )
   return <Style>{content}</Style>
 }

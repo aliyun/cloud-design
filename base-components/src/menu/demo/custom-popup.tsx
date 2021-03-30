@@ -1,6 +1,6 @@
 /**
  * @title 自定义弹出内容
- * @description 自定义菜单弹出内容。
+ * @description 高级用法，可以通过 `Menu.PopupItem` 自定义菜单弹出内容。
  */
 
 import * as React from 'react'

@@ -1,6 +1,6 @@
 /**
- * @title Loading动画尺寸
- * @description 设置Loading动画的尺寸,只对原生的indicator管用
+ * @title 动画尺寸
+ * @description 通过`size`设置Loading动画的尺寸，只对原生的动画指示符`indicator`有效。
  */
 
 import * as React from 'react'
@@ -11,23 +11,22 @@ import { Loading } from '@alicloudfe/components'
 export default function DemoComponent() {
   const content = (
     <div>
-      <Loading tip="normal(size default large)">
-        <div className="demo">test</div>
+      <Loading tip={<span>default = large</span>}>
+        <div className="demo-size">test</div>
       </Loading>
       <Loading tip="large" size="large">
-        <div className="demo">test</div>
+        <div className="demo-size">test</div>
       </Loading>
       <Loading tip="medium" size="medium">
-        <div className="demo">test</div>
+        <div className="demo-size">test</div>
       </Loading>
     </div>
   )
   return <Style>{content}</Style>
 }
 const Style = styled.div`
-  .demo {
-    width: 500px;
-    background-color: #f2f3f7;
+  .demo-size {
+    width: 200px;
     text-align: center;
     padding: 50px;
   }

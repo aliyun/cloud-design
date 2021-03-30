@@ -1,6 +1,6 @@
 /**
  * @title 基本
- * @description 简单的栅格布局展示，Fusion Next推荐以PC为主要开发场景，自适配平板、手机端。默认使用12栅格布局，
+ * @description 简单的栅格布局展示，Fusion Next推荐以PC为主要开发场景，自适配平板、手机端。默认使用12栅格布局。
  */
 
 import * as React from 'react'
@@ -82,7 +82,6 @@ const Style = styled.div`
   }
   .list-item {
     position: relative;
-    background: #ddd;
     border: 1px solid #eee;
     margin-bottom: 20px;
   }
@@ -104,15 +103,15 @@ const Style = styled.div`
     line-height: 40px;
   }
   .grid-12 {
-    background: red;
+    background: rgba(59, 154, 255, 0.25);
   }
   .grid-6 {
-    background: purple;
+    background: rgba(59, 154, 255, 1);
   }
   .grid-4 {
-    background: orange;
+    background: rgba(59, 154, 255, 0.25);
   }
   .grid-3 {
-    background: green;
+    background: rgba(59, 154, 255, 1);
   }
 `

@@ -1,5 +1,5 @@
 /**
- * @title 按钮样式组件
+ * @title 按钮样式与大小
  * @description 使用 `RadioGroup` 渲染的组，通过设置 `shape="button"` 可以让组件以按钮形式展示，同时可以通过 `size` 来控制组件大小。
  */
 
@@ -63,7 +63,7 @@ class ControlApp extends React.Component {
   render() {
     return (
       <div>
-        <h4>Small size</h4>
+        <p style={{ fontSize: 14 }}>Small size</p>
         <RadioGroup
           dataSource={list}
           shape="button"
@@ -73,7 +73,7 @@ class ControlApp extends React.Component {
         />
         <br />
         <br />
-        <h4>Medium size (default)</h4>
+        <p style={{ fontSize: 14 }}>Medium size (default)</p>
         <RadioGroup
           dataSource={list}
           shape="button"
@@ -83,7 +83,7 @@ class ControlApp extends React.Component {
         />
         <br />
         <br />
-        <h4>Large size</h4>
+        <p style={{ fontSize: 14 }}>Large size</p>
         <RadioGroup
           shape="button"
           size="large"
@@ -102,7 +102,7 @@ class ControlApp extends React.Component {
         </RadioGroup>
         <br />
         <br />
-        <h4>Disabled and Selected-Disabled status</h4>
+        <p style={{ fontSize: 14 }}>Disabled and Selected-Disabled status</p>
         <RadioGroup shape="button" value="banana" onChange={this.onNestChange}>
           <Radio id="peach" disabled value="peach">
             Peach

@@ -6,13 +6,22 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Form, Input, Select } from '@alicloudfe/components'
+import {
+  Form,
+  Input,
+  Select,
+  Radio,
+  NumberPicker,
+  DatePicker,
+  Switch,
+  Button
+} from '@alicloudfe/components'
 
 const FormItem = Form.Item
 const Option = Select.Option
 const formItemLayout = {
-  labelCol: { span: 4 },
-  wrapperCol: { span: 20 }
+  labelCol: { span: 8 },
+  wrapperCol: { span: 16 }
 }
 
 class Demo extends React.Component {
@@ -35,78 +44,32 @@ class Demo extends React.Component {
           style={{ maxWidth: '500px' }}
         >
           <FormItem label="Size:">
-            <Select
-              value={this.state.size}
-              onChange={this.handleChange}
-              style={{ width: '100%' }}
-            >
-              <Option value="small">small</Option>
-              <Option value="medium">medium</Option>
-              <Option value="large">large</Option>
-            </Select>
-          </FormItem>
-          <FormItem label="Account:">
-            <Input
-              placeholder="Please enter your user name"
-              id="userName"
-              name="userName"
-            />
-          </FormItem>
-          <FormItem required label="Password:">
-            <Input
-              htmlType="password"
-              placeholder="Please enter your password"
-              id="password"
-              name="password"
-            />
-          </FormItem>
-          <FormItem label="Password:" validateState="error">
-            <Input
-              htmlType="password"
-              placeholder="Check your password"
-              id="rePass"
-              name="rePass"
-            />
-          </FormItem>
-        </Form>
-
-        <br />
-        <br />
-
-        <Form size={this.state.size} inline>
-          <FormItem label="Size:">
-            <Select
-              style={{ width: '100%' }}
+            <Radio.Group
+              shape="button"
               value={this.state.size}
               onChange={this.handleChange}
             >
-              <Option value="small">small</Option>
-              <Option value="medium">medium</Option>
-              <Option value="large">large</Option>
+              <Radio value="small">small</Radio>
+              <Radio value="medium">medium</Radio>
+              <Radio value="large">large</Radio>
+            </Radio.Group>
+          </FormItem>
+          <FormItem label="Input:">
+            <Input placeholder="Please enter your user name" id="userName" />
+          </FormItem>
+          <FormItem label="Select:">
+            <Select>
+              <Select.Option value="test">test</Select.Option>
             </Select>
           </FormItem>
-          <FormItem label="Account:">
-            <Input
-              placeholder="Please enter your user name"
-              id="userName2"
-              name="userName2"
-            />
+          <FormItem label="NumberPicker:">
+            <NumberPicker />
           </FormItem>
-          <FormItem label="Password:">
-            <Input
-              htmlType="password"
-              placeholder="Please enter your password"
-              id="password2"
-              name="password2"
-            />
+          <FormItem label="DatePicker:">
+            <DatePicker />
           </FormItem>
-          <FormItem label="Password:" validateState="error">
-            <Input
-              htmlType="password"
-              placeholder="Check your password"
-              id="rePass2"
-              name="rePass2"
-            />
+          <FormItem label="Switch:">
+            <Switch />
           </FormItem>
         </Form>
       </div>

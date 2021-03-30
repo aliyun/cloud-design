@@ -65,7 +65,7 @@ export default function DemoComponent() {
   return <Style>{content}</Style>
 }
 const Style = styled.div`
-  .gutter-demo .demo-title {
+  .gutter-demo .grid-fixed-demo-title {
     margin-left: 20px;
   }
 

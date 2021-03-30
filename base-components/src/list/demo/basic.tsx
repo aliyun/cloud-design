@@ -1,6 +1,6 @@
 /**
- * @title 基本
- * @description 简单的列表展示。
+ * @title 基础列表
+ * @description 最简单的用法。
  */
 
 import * as React from 'react'

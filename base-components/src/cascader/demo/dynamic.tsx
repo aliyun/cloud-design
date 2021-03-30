@@ -1,6 +1,6 @@
 /**
  * @title 异步加载数据
- * @description 展示动态获取数据的用法。
+ * @description 通过`loadData`动态获取数据，`isLeaf`属性用于标志是否是叶子节点。
  */
 
 import * as React from 'react'

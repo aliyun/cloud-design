@@ -1,6 +1,6 @@
 /**
- * @title 自定义提示语位置
- * @description 你可以选择提示语的位置,目前支持两个值 right/bottom(默认值)
+ * @title 自定义提示语及其位置
+ * @description 通过`tip`自定义加载提示语，通过`tipAlign`设置提示语的位置，目前支持 `right` / `bottom (default)`。
  */
 
 import * as React from 'react'
@@ -11,23 +11,22 @@ import { Loading } from '@alicloudfe/components'
 export default function DemoComponent() {
   const content = (
     <div>
-      <Loading tip="default">
-        <div className="demo">test</div>
+      <Loading tip={<span>default=bottom</span>}>
+        <div className="demo-tip">default</div>
       </Loading>
       <Loading tip="right" tipAlign="right">
-        <div className="demo">test</div>
+        <div className="demo-tip">right</div>
       </Loading>
       <Loading tip="bottom" tipAlign="bottom">
-        <div className="demo">test</div>
+        <div className="demo-tip">bottom</div>
       </Loading>
     </div>
   )
   return <Style>{content}</Style>
 }
 const Style = styled.div`
-  .demo {
-    width: 500px;
-    background-color: #f2f3f7;
+  .demo-tip {
+    width: 200px;
     text-align: center;
     padding: 50px;
   }

@@ -6,16 +6,16 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Overlay } from '@alicloudfe/components'
+import { Overlay, Button } from '@alicloudfe/components'
 
 const { Popup } = Overlay
 
 export default function DemoComponent() {
   const content = (
-    <Popup trigger={<button>Open first overlay</button>} triggerType="click">
+    <Popup trigger={<Button>Open first overlay</Button>} triggerType="click">
       <div className="overlay-demo">
         <Popup
-          trigger={<button>Open second overlay</button>}
+          trigger={<Button>Open second overlay</Button>}
           triggerType="click"
           container={(trigger) => trigger.parentNode}
         >
@@ -34,7 +34,7 @@ const Style = styled.div`
     width: 300px;
     height: 100px;
     padding: 10px;
-    border: 1px solid #999999;
+    border: 1px solid #eee;
     background: #ffffff;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
   }

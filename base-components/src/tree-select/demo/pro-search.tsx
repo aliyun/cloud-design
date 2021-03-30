@@ -1,6 +1,6 @@
 /**
- * @title 搜索高级
- * @description 展示树选择的高级搜索用法。
+ * @title 异步搜索
+ * @description 展示树选择异步搜索的用法。
  */
 
 import * as React from 'react'

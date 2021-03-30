@@ -1,6 +1,6 @@
 /**
- * @title 受限组件
- * @description 使用 `CheckboxGroup` 渲染的组，通过设置 `value` 属性可以让组件变成[受限组件](https://facebook.github.io/react/docs/forms.html#controlled-components)。
+ * @title 受控组件
+ * @description 使用 `Checkbox.Group` 渲染的组，通过设置 `value` 属性可以让组件变成[受控组件](https://facebook.github.io/react/docs/forms.html#controlled-components)。
  */
 
 import * as React from 'react'
@@ -8,11 +8,10 @@ import styled from 'styled-components'
 
 import { Checkbox } from '@alicloudfe/components'
 
-const { Group: CheckboxGroup } = Checkbox
 const list = [
   {
-    value: 'apple',
-    label: 'Apple'
+    value: 'appale',
+    label: 'Appale'
   },
   {
     value: 'pear',
@@ -29,25 +28,39 @@ class ControlApp extends React.Component {
     super(props)
 
     this.state = {
-      value: ['orange']
+      value: 'orange'
     }
 
     this.onChange = this.onChange.bind(this)
   }
 
-  onChange(selectedItems) {
-    console.log('onChange callback', selectedItems)
+  onChange(value) {
     this.setState({
-      value: selectedItems
+      value: value
     })
+    console.log('onChange', value)
+  }
+
+  onClick(e) {
+    console.log('onClick', e)
   }
 
   render() {
     return (
-      <div style={{ padding: '20px' }}>
-        <CheckboxGroup
-          value={this.state.value}
+      <div>
+        normal:{' '}
+        <Checkbox.Group
           dataSource={list}
+          value={this.state.value}
+          onChange={this.onChange}
+        />
+        <br />
+        <br />
+        disabled:{' '}
+        <Checkbox.Group
+          disabled
+          dataSource={list}
+          value={this.state.value}
           onChange={this.onChange}
         />
       </div>

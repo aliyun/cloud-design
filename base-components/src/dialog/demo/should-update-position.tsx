@@ -1,6 +1,6 @@
 /**
  * @title 更新位置
- * @description 通过设置 shouldUpdatePosition 为 true 来及时更新对话框的位置，一般用于对话框内容发生变化但是仍然要保证原来对齐方式的情况
+ * @description 通过设置 `shouldUpdatePosition` 为 `true` 来及时更新对话框的位置，一般用于对话框内容发生变化但是仍然要保证原来对齐方式的情况
  */
 
 import * as React from 'react'
@@ -56,10 +56,10 @@ class App extends React.Component {
     return (
       <div>
         <div style={{ display: 'block', marginBottom: '10px' }}>
-          Whether to update the dialog position when the dialog height changes:
+          Whether to update the dialog position when the dialog height changes
         </div>
         <Switch
-          style={{ display: 'block', marginBottom: '10px' }}
+          style={{ display: 'block', marginBottom: '10px', width: '60px' }}
           checked={shouldUpdatePosition}
           onChange={this.toggleShouldUpdatePosition}
         />

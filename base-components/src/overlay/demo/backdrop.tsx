@@ -1,12 +1,12 @@
 /**
- * @title 遮罩
+ * @title 遮罩层
  * @description 带有遮罩的弹层。
  */
 
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Overlay } from '@alicloudfe/components'
+import { Overlay, Button } from '@alicloudfe/components'
 
 class Demo extends React.Component {
   constructor(props) {
@@ -32,14 +32,14 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <button
+        <Button
           onClick={this.onClick}
           ref={(ref) => {
             this.btn = ref
           }}
         >
           Open
-        </button>
+        </Button>
         <Overlay
           visible={this.state.visible}
           safeNode={() => this.btn}
@@ -64,7 +64,7 @@ const Style = styled.div`
     width: 300px;
     height: 100px;
     padding: 10px;
-    border: 1px solid #999999;
+    border: 1px solid #efefef;
     background: #ffffff;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
   }

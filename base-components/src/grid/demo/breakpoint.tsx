@@ -13,7 +13,7 @@ const { Row, Col } = Grid
 export default function DemoComponent() {
   const content = (
     <div className="breakpoint-demo">
-      <div className="demo-title">
+      <div className="grid-fixed-demo-title">
         Resize browser to see how each column changes
       </div>
       <Row>
@@ -32,7 +32,7 @@ export default function DemoComponent() {
   return <Style>{content}</Style>
 }
 const Style = styled.div`
-  .breakpoint-demo .demo-title {
+  .breakpoint-demo .grid-fixed-demo-title {
     margin-left: 20px;
   }
 

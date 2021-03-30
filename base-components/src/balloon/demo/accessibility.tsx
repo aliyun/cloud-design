@@ -1,5 +1,5 @@
 /**
- * @title 无障碍
+ * @title 无障碍支持
  * @description 弹层id, 传入值才会支持无障碍。
  */
 
@@ -29,10 +29,12 @@ const App = () => (
         label="Age :"
         id="balloon-input-1"
       />
-      {/* <br />
-      <br /> */}
+      <br />
+      <br />
     </Balloon>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <span style={{ marginRight: 20 }} />
+
     <Balloon
       id="a11y-balloon"
       type="primary"
@@ -54,8 +56,8 @@ const App = () => (
           label="Age :"
           id="balloon-input-2"
         />
-        {/* <br />
-        <br /> */}
+        <br />
+        <br />
       </Balloon>
       <br />
       please input your name:
@@ -65,10 +67,12 @@ const App = () => (
         label="Name :"
         id="balloon-input-3"
       />
-      {/* <br />
-      <br /> */}
+      <br />
+      <br />
     </Balloon>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <span style={{ marginRight: 20 }} />
+
     <Tooltip trigger={triggerTooltip} id="aria-tooltip">
       <p>This is content for tooltip.</p>
     </Tooltip>
@@ -81,7 +85,6 @@ export default function DemoComponent() {
 }
 const Style = styled.div`
   .container.nested {
-    margin-left: 100px;
-    margin-bottom: 50px;
+    margin-left: 30px;
   }
 `

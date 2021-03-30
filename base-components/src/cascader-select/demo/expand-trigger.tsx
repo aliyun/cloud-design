@@ -1,6 +1,6 @@
 /**
  * @title 展开触发行为
- * @description 展示可通过 expandTriggerType 来设置不同的展开触发行为，支持 click 和 hover，默认值为 click。
+ * @description 展示可通过 `expandTriggerType` 来设置不同的展开触发行为，支持 `click` 和 `hover`，默认值为`click`。
  */
 
 import * as React from 'react'
@@ -45,16 +45,14 @@ class Demo extends React.Component {
     return (
       <div>
         <div className="trigger-check">
-          Expand trigger type:
           <RadioGroup
             dataSource={['click', 'hover']}
+            shape="button"
             value={this.state.triggerType}
             onChange={this.handleTriggerTypeChange}
           />
         </div>
-
         <CascaderSelect
-          style={{ width: '302px' }}
           expandTriggerType={this.state.triggerType}
           dataSource={this.state.data}
           onChange={this.handleChange}
@@ -68,14 +66,4 @@ export default function DemoComponent() {
   const content = <Demo />
   return <Style>{content}</Style>
 }
-const Style = styled.div`
-  .trigger-check {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #666;
-  }
-
-  .trigger-check .next-radio-group {
-    margin-left: 10px;
-  }
-`
+const Style = styled.div``

@@ -1,6 +1,6 @@
 /**
  * @title 复合使用
- * @description 复合使用菜单，监听菜单行为。
+ * @description 复合使用菜单，监听菜单行为展示左侧操作。
  */
 
 import * as React from 'react'
@@ -40,6 +40,7 @@ class CompositeSplitButton extends React.Component {
         visible={visible}
         onVisibleChange={this.changeVisible}
         onItemClick={this.onSelect}
+        type="secondary"
       >
         {menu}
       </SplitButton>

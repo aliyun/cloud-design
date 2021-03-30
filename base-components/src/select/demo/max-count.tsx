@@ -1,6 +1,6 @@
 /**
  * @title 最大数量
- * @description 多选模式
+ * @description 多选模式下通过 `maxTagCount` 控制选择的个数，通过 `maxTagPlaceholder` 控制选择的 hover 样式
  */
 
 import * as React from 'react'
@@ -36,34 +36,29 @@ const maxTagPlaceholder = (selectedValues, totalValues) => {
   return <Tooltip trigger={trigger}>{labels.join(', ')}</Tooltip>
 }
 
+const style = { width: 200, marginRight: 8 }
+
 export default function DemoComponent() {
   const content = (
-    <div>
-      hasSelectAll:
-      <br />
+    <div style={{ display: 'flex', alignItems: 'flex-start' }}>
       <Select
+        placeholder="select all"
         hasSelectAll
         mode="multiple"
         onChange={handleChange}
         dataSource={dataSource}
-        style={{ width: 200 }}
+        style={style}
       />
-      <br />
-      <br />
-      maxTagCount=2
-      <br />
+
       <Select
         maxTagCount={2}
         defaultValue={['10001', '10002', '-1']}
         mode="multiple"
         onChange={handleChange}
         dataSource={dataSource}
-        style={{ width: 200 }}
-      />{' '}
-      <br />
-      <br />
-      maxTagPlaceholder
-      <br />
+        style={style}
+      />
+
       <Select
         maxTagCount={2}
         maxTagPlaceholder={maxTagPlaceholder}
@@ -71,11 +66,9 @@ export default function DemoComponent() {
         mode="multiple"
         onChange={handleChange}
         dataSource={dataSource}
-        style={{ width: 200 }}
+        style={style}
       />
-      <br />
-      <br />
-      tagInline <br />
+
       <Select
         maxTagCount={2}
         tagInline
@@ -83,21 +76,7 @@ export default function DemoComponent() {
         defaultValue={['10001', '10002', '-1']}
         onChange={handleChange}
         dataSource={dataSource}
-        style={{ width: 200 }}
-      />
-      <br />
-      <br />
-      maxTagPlaceholder
-      <br />
-      <Select
-        maxTagCount={2}
-        tagInline
-        maxTagPlaceholder={maxTagPlaceholder}
-        defaultValue={['10001', '10002', '-1']}
-        mode="multiple"
-        onChange={handleChange}
-        dataSource={dataSource}
-        style={{ width: 200 }}
+        style={style}
       />
       <br />
       <br />

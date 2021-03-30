@@ -40,7 +40,7 @@ export default function DemoComponent() {
   return <Style>{content}</Style>
 }
 const Style = styled.div`
-  .nest-demo .demo-title {
+  .nest-demo .grid-fixed-demo-title {
     margin-left: 20px;
   }
 

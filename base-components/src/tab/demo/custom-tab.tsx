@@ -8,18 +8,31 @@ import styled from 'styled-components'
 
 import { Tab } from '@alicloudfe/components'
 
-function CustomTabItem({ title, desc }) {
+function CustomTabItem({ title, desc, img }) {
   return (
     <div className="custom-tab-item">
-      <div className="tab-title">{title}</div>
+      <div className="tab-title">
+        <img className="tab-img" src={img} />
+        {title}
+      </div>
       <div className="tab-desc">{desc}</div>
     </div>
   )
 }
 
 const panes = [
-  { key: 'e-checking', title: 'Alipay', desc: 'The fee to be paid is $15' },
-  { key: 'brand-card', title: 'Bank Card', desc: 'The fee to be paid is $17' }
+  {
+    key: 'e-checking',
+    title: 'Alipay',
+    desc: 'The fee to be paid is $15',
+    img: 'https://img.alicdn.com/tfs/TB1wra0otTfau8jSZFwXXX1mVXa-80-80.png'
+  },
+  {
+    key: 'brand-card',
+    title: 'Bank Card',
+    desc: 'The fee to be paid is $17',
+    img: 'https://img.alicdn.com/tfs/TB1nKE5s79l0K4jSZFKXXXFjpXa-67-65.png'
+  }
 ]
 
 export default function DemoComponent() {
@@ -43,7 +56,12 @@ const Style = styled.div`
   }
 
   .tab-title {
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .tab-img {
+    margin-right: 8px;
+    width: 20px;
   }
   .tab-desc {
     margin: 10px 0 0 0;

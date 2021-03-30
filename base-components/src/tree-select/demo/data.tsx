@@ -1,6 +1,6 @@
 /**
- * @title 使用数据直接生成
- * @description 使用 `dataSource` 生成树结构，除设置 label, value, key, children 属性外，还可传入 TreeNode 的其他属性，包括 selectable, disabled, checkboxDisabled, isLeaf，推荐使用 `dataSource` 而不是手动生成 `TreeNode` 的方式生成树，这样使用更简单，性能更好。
+ * @title 数据直接生成
+ * @description 使用 dataSource 生成树结构，除设置 `key`, `label`, `children` 属性外，还可传入 `TreeNode` 的其他属性，详细见[TreeNode API](../tree#Tree.Node)，推荐使用该方式生成 Tree 组件。
  */
 
 import * as React from 'react'

@@ -1,5 +1,5 @@
 /**
- * @title 自定义徽标内容
+ * @title 自定义图标、颜色等
  * @description 通过 `content` 属性可以自定义徽标的内容，自定义内容不包含任何色彩样式，完全由使用者自己定义。
  */
 
@@ -13,13 +13,13 @@ export default function DemoComponent() {
     <div>
       <Badge
         content="hot"
-        style={{ backgroundColor: '#C82727', color: '#FFFFFF' }}
+        style={{ backgroundColor: '#FC0E3D', color: '#FFFFFF' }}
       >
         <a href="#" className="head-example"></a>
       </Badge>
       <Badge
         content={<Icon type="error" />}
-        style={{ backgroundColor: 'transparent', color: '#C82727', padding: 0 }}
+        style={{ backgroundColor: 'transparent', color: 'red', padding: 0 }}
       >
         <a href="#" className="head-example"></a>
       </Badge>

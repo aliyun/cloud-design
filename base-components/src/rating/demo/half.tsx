@@ -9,7 +9,7 @@ import styled from 'styled-components'
 import { Rating } from '@alicloudfe/components'
 
 export default function DemoComponent() {
-  const content = <Rating defaultValue={3.2} allowHalf />
+  const content = <Rating defaultValue={3.5} allowHalf />
   return <Style>{content}</Style>
 }
 const Style = styled.div``

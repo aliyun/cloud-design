@@ -1,5 +1,5 @@
 /**
- * @title 基本
+ * @title 基本用法
  * @description 最简单的用法。
  */
 

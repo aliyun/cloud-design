@@ -1,6 +1,6 @@
 /**
  * @title 自定义渲染更多
- * @description 展示渲染更多 `renderMore` 用法
+ * @description 复杂导航的例子，通过 `renderMore` 来展示更多
  */
 
 import * as React from 'react'

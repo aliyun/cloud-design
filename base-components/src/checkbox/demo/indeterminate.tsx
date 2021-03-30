@@ -1,5 +1,5 @@
 /**
- * @title 中间状态组件
+ * @title 中间状态
  * @description 通过使用 `indeterminate` 来渲染[中间状态](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)的组件。
  */
 
@@ -19,66 +19,28 @@ class IndeterminateApp extends React.Component {
     }
   }
 
+  toggle = () => {
+    if (this.state.indeterminate) {
+      this.setState({ indeterminate: false })
+    } else {
+      this.setState({ checked: false, indeterminate: true })
+    }
+  }
+
   render() {
     return (
       <div>
         <Checkbox
-          checked={this.state.checked}
           indeterminate={this.state.indeterminate}
-          disabled={this.state.disabled}
+          checked={this.state.checked}
           onChange={(checked) => {
             this.setState({ checked: checked, indeterminate: false })
           }}
         />
         <br />
         <br />
-        <Button
-          type="primary"
-          onClick={() => {
-            this.setState({ checked: true, indeterminate: false })
-          }}
-        >
-          checked = true
-        </Button>
-        <br />
-        <br />
-        <Button
-          type="primary"
-          onClick={() => {
-            this.setState({ checked: false })
-          }}
-        >
-          checked = false
-        </Button>
-        <br />
-        <br />
-        <Button
-          type="primary"
-          onClick={() => {
-            this.setState({ checked: false, indeterminate: true })
-          }}
-        >
-          indeterminate = true
-        </Button>
-        <br />
-        <br />
-        <Button
-          type="primary"
-          onClick={() => {
-            this.setState({ indeterminate: false })
-          }}
-        >
-          indeterminate = false
-        </Button>
-        <br />
-        <br />
-        <Button
-          type="primary"
-          onClick={() => {
-            this.setState({ disabled: !this.state.disabled })
-          }}
-        >
-          toggle disabled
+        <Button type="primary" onClick={this.toggle}>
+          toggle indeterminate
         </Button>
       </div>
     )

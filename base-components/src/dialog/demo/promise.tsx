@@ -1,6 +1,6 @@
 /**
  * @title 延迟关闭
- * @description 在使用 Dialog.alert，Dialog.confirm 以及 Dialog.show 时，如果 onOk 返回 Promise，对话框会在 Promise resolve 时关闭，除非调用 `resolve(false)`。
+ * @description 在使用 `Dialog.alert`，`Dialog.confirm` 以及 `Dialog.show` 时，如果 `onOk` 返回 `Promise`，对话框会在 `Promise` resolve 时关闭，除非调用 `resolve(false)`。
  */
 
 import * as React from 'react'
@@ -83,6 +83,7 @@ export default function DemoComponent() {
   const content = (
     <div>
       <Demo />
+      <br />
       <Button type="primary" warning onClick={popupConfirm}>
         Quick Confirm Promise
       </Button>

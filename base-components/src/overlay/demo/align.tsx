@@ -1,46 +1,45 @@
 /**
  * @title 对齐
- * @description 可以自定义对齐方式
+ * @description 通过 `align` 可以自定义对齐方式。
  */
 
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Overlay } from '@alicloudfe/components'
+import { Overlay, Button } from '@alicloudfe/components'
 
 const { Popup } = Overlay
 
 export default function DemoComponent() {
   const content = (
-    <div>
-      <div id="container1" className="overlay-container">
-        normal example
-        <Overlay target="container1" visible align="tr tr">
-          <span>123</span>
-        </Overlay>
-        <Overlay target="container1" visible align="cc cr">
-          <span>123</span>
-        </Overlay>
-        <Overlay target="container1" visible align="bc bc">
-          <span>123</span>
-        </Overlay>
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div id="container2" className="overlay-container" dir="rtl">
-        dir=rtl example
-        <Overlay target="container2" rtl visible align="tr tr">
-          <span>123</span>
-        </Overlay>
-        <Overlay target="container2" rtl visible align="cc cr">
-          <span>123</span>
-        </Overlay>
-        <Overlay target="container2" rtl visible align="bc bc">
-          <span>123</span>
-        </Overlay>
-      </div>
+    <div id="containerId" className="overlay-container">
+      <Overlay target="containerId" visible align="br tl">
+        <Button>br tl</Button>
+      </Overlay>
+      <Overlay target="containerId" visible align="tc tc">
+        <Button>tc tc</Button>
+      </Overlay>
+      <Overlay target="containerId" visible align="bl tr">
+        <Button>bl tr</Button>
+      </Overlay>
+      <Overlay target="containerId" visible align="cr cr">
+        <Button>cr cr</Button>
+      </Overlay>
+      <Overlay target="containerId" visible align="br br">
+        <Button>br br</Button>
+      </Overlay>
+      <Overlay target="containerId" visible align="tc bc">
+        <Button>tc bc</Button>
+      </Overlay>
+      <Overlay target="containerId" visible align="bl bl">
+        <Button>bl bl</Button>
+      </Overlay>
+      <Overlay target="containerId" visible align="cl cl">
+        <Button>cl cl</Button>
+      </Overlay>
+      <Overlay target="containerId" visible align="cc cc">
+        <Button>cc cc</Button>
+      </Overlay>
     </div>
   )
   return <Style>{content}</Style>
@@ -50,9 +49,8 @@ const Style = styled.div`
     position: relative;
     height: 150px;
     margin: 50px;
-    border: 1px solid #999;
+    border: 1px solid #eee;
     overflow: auto;
     text-align: center;
-    color: red;
   }
 `

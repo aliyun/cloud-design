@@ -1,6 +1,6 @@
 /**
- * @title 无障碍
- * @description 当聚焦在组件上时，通过`aria-labelledby`对组件进行描述。关于键盘操作请参考`ARIA and KeyBoard`。
+ * @title 无障碍支持
+ * @description 当聚焦在组件上时，通过`aria-labelledby`对组件进行描述。关于键盘操作请参考[#无障碍键盘操作指南](#无障碍键盘操作指南)。
  */
 
 import * as React from 'react'
@@ -57,7 +57,6 @@ class Demo extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      label: '',
       data: []
     }
     this.handleChange = this.handleChange.bind(this)
@@ -67,22 +66,15 @@ class Demo extends React.Component {
   }
   handleChange(value, data, extra) {
     console.log(value, data, extra)
-
-    this.setState({
-      label: extra.selectedPath.map((d) => d.label).join(' / ')
-    })
   }
   render() {
     return (
-      <div>
-        <div id="a11y-cascader-select">CascaderSelect: </div>
-        <CascaderSelect
-          dataSource={this.state.data}
-          onChange={this.handleChange}
-          // listStyle={{ width: '200px', height: '256px' }}
-          aria-labelledby="a11y-cascader-select"
-        />
-      </div>
+      <CascaderSelect
+        dataSource={this.state.data}
+        onChange={this.handleChange}
+        listStyle={{ width: '200px', height: '256px' }}
+        aria-labelledby="a11y-cascader-select"
+      />
     )
   }
 }

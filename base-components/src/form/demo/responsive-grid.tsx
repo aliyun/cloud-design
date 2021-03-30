@@ -1,6 +1,6 @@
 /**
  * @title 自适应布局
- * @description 可通过设置 `device` `responsive` 实现响应式, 1.19.0+ 添加，仅支持ie10+
+ * @description
  */
 
 import * as React from 'react'

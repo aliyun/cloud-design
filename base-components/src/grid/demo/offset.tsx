@@ -13,7 +13,9 @@ const { Row, Col } = Grid
 export default function DemoComponent() {
   const content = (
     <div className="offset-demo">
-      <div className="demo-title">Normal offset, set offset from 1 to 24</div>
+      <div className="grid-fixed-demo-title">
+        Normal offset, set offset from 1 to 24
+      </div>
       <Row>
         <Col offset="0">offset-0</Col>
       </Row>
@@ -27,7 +29,7 @@ export default function DemoComponent() {
         <Col offset="12">offset-12</Col>
       </Row>
 
-      <div className="demo-title">Adaptive offset</div>
+      <div className="grid-fixed-demo-title">Adaptive offset</div>
       <Row>
         <Col>col</Col>
         <Col offset="12">offset-12</Col>
@@ -37,7 +39,7 @@ export default function DemoComponent() {
   return <Style>{content}</Style>
 }
 const Style = styled.div`
-  .offset-demo .demo-title {
+  .offset-demo .grid-fixed-demo-title {
     margin-left: 20px;
   }
 

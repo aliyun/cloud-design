@@ -12,7 +12,7 @@ export default function DemoComponent() {
   const content = (
     <div>
       <Input
-        hasLimitHint
+        showLimitHint
         addonTextBefore="http://"
         addonTextAfter=".com"
         size="large"

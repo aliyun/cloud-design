@@ -1,6 +1,6 @@
 /**
- * @title 多种类型
- * @description 支持三种类型：图片、Icon 以及字符，其中 Icon 和字符型可以自定义图标颜色及背景色。
+ * @title 类型
+ * @description 支持多种展示类型：内置图标、Icon、字符、图片，并可自定义样式
  */
 
 import * as React from 'react'
@@ -10,9 +10,9 @@ import { Avatar, Icon } from '@alicloudfe/components'
 
 export default function DemoComponent() {
   const content = (
-    <div>
+    <div className="avatar-demo">
       <Avatar icon="account" />
-      <Avatar icon={<Icon type="account" />} />
+      <Avatar icon={<Icon type="smile" />} />
       <Avatar>U</Avatar>
       <Avatar src="https://img.alicdn.com/tfs/TB1QS.4l4z1gK0jSZSgXXavwpXa-1024-1024.png" />
       <Avatar style={{ color: '#f56a00', backgroundColor: '#fde3cf' }}>
@@ -24,7 +24,7 @@ export default function DemoComponent() {
   return <Style>{content}</Style>
 }
 const Style = styled.div`
-  .next-avatar {
+  .avatar-demo .next-avatar {
     margin-right: 12px;
   }
 `

@@ -1,5 +1,5 @@
 /**
- * @title 基本
+ * @title 基本用法
  * @description 在最简单的情况下，Step 有三种类型，可以通过 `shape` 属性进行切换。
  */
 
@@ -30,18 +30,24 @@ export default function DemoComponent() {
       </Step>
 
       <h3>Circle</h3>
-      <Step current={1} shape="circle">
+      <Step current={1} stretch shape="circle">
         {steps}
       </Step>
 
       <h3>Circle(Horizontal content)</h3>
-      <Step current={1} shape="circle" labelPlacement="hoz">
+      <Step current={1} stretch shape="circle" labelPlacement="hoz">
         {steps}
       </Step>
 
       <h3>Dot</h3>
-      <Step current={1} shape="dot">
+      <Step current={1} stretch shape="dot">
         {steps}
+      </Step>
+      <h3>Stretch</h3>
+      <Step current={1} stretch shape="dot" labelPlacement="ver">
+        <Step.Item title="步骤1" />
+        <Step.Item title="步骤2" />
+        <Step.Item title="步骤3" />
       </Step>
     </div>
   )

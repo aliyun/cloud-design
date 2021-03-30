@@ -1,6 +1,6 @@
 /**
  * @title withContext
- * @description 通过 `Message.withContext(({ contextMessage }) => {} )`方法，封装 使用到函数式调用弹窗 的组件（例如业务组件或者当前App等），可以将 被封装组件 代码所在上下文的context注入到`contextMessage`中。
+ * @description 此功能1.21.6版本添加。
  */
 
 import * as React from 'react'

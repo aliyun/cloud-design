@@ -1,6 +1,6 @@
 /**
- * @title 无障碍
- * @description 组件已支持无障碍。关于键盘操作请参考`ARIA and KeyBoard`。
+ * @title 无障碍支持
+ * @description 组件已支持无障碍。关于键盘操作请参考 [#无障碍键盘操作指南](#无障碍键盘操作指南)
  */
 
 import * as React from 'react'

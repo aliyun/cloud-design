@@ -1,6 +1,6 @@
 /**
- * @title 非受限组件
- * @description 使用 `CheckboxGroup` 渲染的组，通过设置 `defaultValue` 属性可以让组件变成[非受限组件](https://facebook.github.io/react/docs/forms.html#uncontrolled-components)。
+ * @title 非受控组件
+ * @description 使用 `CheckboxGroup` 渲染的组，通过设置 `defaultValue` 属性可以让组件变成[非受控组件](https://facebook.github.io/react/docs/forms.html#uncontrolled-components)。
  */
 
 import * as React from 'react'

@@ -1,12 +1,14 @@
 /**
  * @title 文件上传
- * @description 提醒: `https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload`接口:
+ * @description 上传按钮根据自己传入的内容而定
  */
 
 import * as React from 'react'
 import styled from 'styled-components'
 
 import { Upload, Button, Icon } from '@alicloudfe/components'
+
+const style = { display: 'inline-block', marginRight: 10 }
 
 function beforeUpload(info) {
   console.log('beforeUpload : ', info)
@@ -21,7 +23,7 @@ function onSuccess(info) {
 }
 export default function DemoComponent() {
   const content = (
-    <div>
+    <div style={{ display: 'flex' }}>
       <Upload
         action="https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload"
         beforeUpload={beforeUpload}
@@ -41,16 +43,18 @@ export default function DemoComponent() {
               'https://img.alicdn.com/tps/TB19O79MVXXXXcZXVXXXXXXXXXX-1024-1024.jpg'
           }
         ]}
+        style={style}
       >
         <Button type="primary" style={{ margin: '0 0 10px' }}>
           Upload File
         </Button>
       </Upload>
-      <br />
-      <Upload shape="card" style={{ display: 'inline-block' }}>
+
+      <Upload shape="card" style={style}>
         Upload File
       </Upload>
-      <Upload style={{ display: 'inline-block', marginLeft: '5px' }}>
+
+      <Upload style={style}>
         <div className="next-upload-card">
           <Icon type="attachment" size="large" />
           <div className="next-upload-text">Attachment</div>

@@ -1,6 +1,6 @@
 /**
  * @title 搜索
- * @description 通过设置 showSearch 为 true，可以开启组件的搜索功能。
+ * @description 通过设置`showSearch`为`true`，可以开启组件的搜索功能, 通过`filter`属性自定义搜索逻辑。
  */
 
 import * as React from 'react'
@@ -14,13 +14,8 @@ class Demo extends React.Component {
     super(props)
 
     this.state = {
-      value: [],
-      data: [],
-      multiple: false
+      data: []
     }
-
-    this.handleCheck = this.handleCheck.bind(this)
-    this.handleChange = this.handleChange.bind(this)
   }
 
   componentDidMount() {
@@ -30,35 +25,40 @@ class Demo extends React.Component {
       .catch((e) => console.log(e))
   }
 
-  handleCheck() {
-    this.setState({
-      multiple: !this.state.multiple,
-      value: []
-    })
+  handleChange = (value, data, extra) => {
+    console.log(value, data, extra)
   }
 
-  handleChange(value, data, extra) {
-    console.log(value, data, extra)
-
-    this.setState({
-      value
-    })
+  filter(searchValue, path) {
+    return (
+      searchValue === '' ||
+      path
+        .map(({ value, label }) => `${value}${label}`)
+        .join('')
+        .match(searchValue)
+    )
   }
 
   render() {
     return (
       <div className="search-demo">
-        <label className="multiple-check">
-          <Checkbox value={this.state.multiple} onChange={this.handleCheck} />
-          <span className="multiple-text">Multiple select</span>
-        </label>
         <CascaderSelect
-          style={{ width: '302px' }}
           showSearch
+          style={{ width: '240px' }}
+          dataSource={this.state.data}
+          placeholder="搜索名字"
+          onChange={this.handleChange}
+        />
+        <br />
+        <br />
+        <CascaderSelect
+          showSearch
+          filter={this.filter}
+          style={{ width: '240px' }}
           multiple={this.state.multiple}
-          value={this.state.value}
           dataSource={this.state.data}
           onChange={this.handleChange}
+          placeholder="搜索名字或id值"
         />
       </div>
     )

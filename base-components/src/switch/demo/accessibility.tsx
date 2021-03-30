@@ -1,5 +1,5 @@
 /**
- * @title 无障碍
+ * @title 无障碍支持
  * @description 组件内部已支持无障碍，设置`aria-label`对组件进行描述。
  */
 

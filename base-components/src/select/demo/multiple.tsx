@@ -9,8 +9,8 @@ import styled from 'styled-components'
 import { Select } from '@alicloudfe/components'
 
 const dataSource = [
-  { value: '10001', label: '速度速度速度速度' },
-  { value: 10002, label: '速度速度速度速度' },
+  { value: '10001', label: 'Lucy King' },
+  { value: 10002, label: 'Lily King' },
   { value: 10003, label: 'Tom Cat', disabled: true },
   {
     label: 'Special Group',
@@ -31,11 +31,10 @@ export default function DemoComponent() {
       <Select
         mode="multiple"
         showSearch
-        size="large"
         defaultValue={['10001']}
         onChange={handleChange}
         dataSource={dataSource}
-        style={{ width: 300 }}
+        style={{ width: 300, marginRight: 8 }}
       />
     </div>
   )

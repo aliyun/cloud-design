@@ -1,6 +1,6 @@
 /**
- * @title 无障碍
- * @description 通过设置`locale`去修改对无障碍支持，默认已经设置，请参考`ARIA and KeyBoard`。
+ * @title 无障碍支持
+ * @description 通过设置`locale`去修改对无障碍支持，默认已经设置，请参考[#无障碍键盘操作指南](#无障碍键盘操作指南)。
  */
 
 import * as React from 'react'

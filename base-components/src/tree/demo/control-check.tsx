@@ -1,6 +1,6 @@
 /**
- * @title 父子节点选中是否关联
- * @description 展示父子节点选中是否关联的用法。
+ * @title 勾选
+ * @description 通过设置`checkable`为`true`，开启节点勾选，默认情况下，节点的勾选状态受上下级节点的关联，可以通过`checkStrictly`为`false`关闭该关联逻辑。
  */
 
 import * as React from 'react'
@@ -10,47 +10,38 @@ import { Checkbox, Tree } from '@alicloudfe/components'
 
 const data = [
   {
-    key: '0-0',
-    label: '0-0',
+    label: 'Component',
+    key: '1',
     children: [
       {
-        key: '0-0-0',
-        label: '0-0-0',
+        label: 'Form',
+        key: '2',
+        selectable: false,
         children: [
           {
-            key: '0-0-0-0',
-            label: '0-0-0-0',
-            children: [
-              {
-                key: '0-0-0-0-0',
-                label: '0-0-0-0-0'
-              }
-            ]
+            label: 'Input',
+            key: '4'
           },
           {
-            key: '0-0-0-1',
-            label: '0-0-0-1'
+            label: 'Select',
+            key: '5',
+            disabled: true
           }
         ]
       },
       {
-        key: '0-0-1',
-        label: '0-0-1',
+        label: 'Display',
+        key: '3',
         children: [
           {
-            key: '0-0-1-0',
-            label: '0-0-1-0'
-          },
-          {
-            key: '0-0-1-1',
-            label: '0-0-1-1'
+            label: 'Table',
+            key: '6'
           }
         ]
       }
     ]
   }
 ]
-
 class Demo extends React.Component {
   constructor(props) {
     super(props)
@@ -88,7 +79,7 @@ class Demo extends React.Component {
             checked={checkStrictly}
             onChange={this.handleCheckStrictly}
           />
-          <span className="strictly-text">Enable checkStrictly</span>
+          <span className="strictly-text">取消选中关联</span>
         </label>
         <Tree
           defaultExpandAll

@@ -1,6 +1,6 @@
 /**
- * @title 信息类型
- * @description 通过设置`type`调整信息类型
+ * @title 常用提示类型
+ * @description 通过设置`type`调整信息类型，包括成功、警告、错误、通知、帮助、加载。
  */
 
 import * as React from 'react'
@@ -35,6 +35,7 @@ export default function DemoComponent() {
 }
 const Style = styled.div`
   .message-type-demo .next-message {
-    margin-bottom: 10px;
+    display: inline-block;
+    margin: 10px;
   }
 `

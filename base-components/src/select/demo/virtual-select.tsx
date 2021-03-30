@@ -46,7 +46,8 @@ export default function DemoComponent() {
         onChange={onChange}
         defaultValue="option0"
       />
-      &nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+      <br />
       <Select useVirtual onChange={onChange} defaultValue="option50">
         {generateData(100, true)}
       </Select>

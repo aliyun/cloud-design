@@ -6,52 +6,39 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tab, Select } from '@alicloudfe/components'
+import { Tab, Radio } from '@alicloudfe/components'
 
-class Demo extends React.Component {
-  state = {
-    position: 'top'
-  }
+const Demo = () => {
+  const [tabPosition, setTabPosition] = React.useState('top')
 
-  changePosition = (val) => {
-    this.setState({
-      position: val
-    })
-  }
-
-  render() {
-    return (
-      <div>
-        <Select
-          onChange={this.changePosition}
-          placeholder="Choose Positon of Tab"
-        >
-          {['top', 'bottom', 'left', 'right'].map((item) => (
-            <Select.Option value={item} key={item}>
-              {item}
-            </Select.Option>
-          ))}
-        </Select>
-        <br />
-        <br />
-        <Tab
-          tabPosition={this.state.position}
-          shape="wrapped"
-          contentClassName="custom-tab-content"
-        >
-          <Tab.Item title="Tab 1" key="1">
-            Tab 1 Content
-          </Tab.Item>
-          <Tab.Item title="Tab 2" key="2">
-            Tab 2 Content
-          </Tab.Item>
-          <Tab.Item title="Tab 3" key="3">
-            Tab 3 Content
-          </Tab.Item>
-        </Tab>
-      </div>
-    )
-  }
+  return (
+    <div>
+      Position:{' '}
+      <Radio.Group shape="button" value={tabPosition} onChange={setTabPosition}>
+        <Radio value="top">top</Radio>
+        <Radio value="bottom">bottom</Radio>
+        <Radio value="left">left</Radio>
+        <Radio value="right">right</Radio>
+      </Radio.Group>
+      <br />
+      <br />
+      <Tab
+        tabPosition={tabPosition}
+        shape="wrapped"
+        contentClassName="custom-tab-content"
+      >
+        <Tab.Item title="Tab 1" key="1">
+          Tab 1 Content
+        </Tab.Item>
+        <Tab.Item title="Tab 2" key="2">
+          Tab 2 Content
+        </Tab.Item>
+        <Tab.Item title="Tab 3" key="3">
+          Tab 3 Content
+        </Tab.Item>
+      </Tab>
+    </div>
+  )
 }
 
 export default function DemoComponent() {

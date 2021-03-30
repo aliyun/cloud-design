@@ -33,7 +33,7 @@ const AppHeader = (props, context) => {
           <a onClick={() => onChange(true)} href="javascript:;">
             Select all
           </a>
-          &nbsp;
+          <span style={{ marginRight: 20 }} />
           <a onClick={() => onChange(false)} href="javascript:;">
             Unselect all
           </a>

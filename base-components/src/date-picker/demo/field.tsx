@@ -111,5 +111,6 @@ const Style = styled.div`
   .error-msg {
     color: #e72b00;
     font-size: 12px;
+    margin-left: 10px;
   }
 `

@@ -1,5 +1,5 @@
 /**
- * @title 只读模式
+ * @title 不可点击
  * @description 只读模式，不可触发回调。
  */
 

@@ -1,6 +1,6 @@
 /**
- * @title 自定义上传参数
- * @description 通过 data 控制自定义参数
+ * @title 添加上传参数
+ * @description 通过 data 控制自定义参数, 可以是一个 对象 或者 函数
  */
 
 import * as React from 'react'

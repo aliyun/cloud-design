@@ -40,12 +40,6 @@ export default function DemoComponent() {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </p>
-
-      <a href="#">Add</a>
-      <Divider direction="ver" />
-      <a href="#">Edit</a>
-      <Divider direction="ver" />
-      <a href="#">Delete</a>
     </div>
   )
   return <Style>{content}</Style>

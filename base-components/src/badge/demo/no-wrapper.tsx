@@ -20,11 +20,11 @@ export default function DemoComponent() {
           border: '1px solid #d9d9d9'
         }}
       />
-      <Badge count={109} style={{ backgroundColor: '#29A64E' }} />
+      <Badge count={109} style={{ backgroundColor: '#87d068' }} />
       <Badge dot />
       <Badge
         content="hot"
-        style={{ backgroundColor: '#C82727', color: '#FFFFFF' }}
+        style={{ backgroundColor: '#FC0E3D', color: '#FFFFFF' }}
       />
     </div>
   )

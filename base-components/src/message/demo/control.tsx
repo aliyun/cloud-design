@@ -1,6 +1,6 @@
 /**
- * @title 受控显示隐藏
- * @description
+ * @title 受控显示
+ * @description 通过`visible`设置受控显示或隐藏。
  */
 
 import * as React from 'react'
@@ -30,7 +30,9 @@ class App extends React.Component {
 
     return (
       <div className="control-demo">
-        <Button onClick={this.handleChange}>Toggle Visible</Button>
+        <Button type="primary" onClick={this.handleChange}>
+          Toggle Visible
+        </Button>
         <Message
           type="warning"
           visible={visible}

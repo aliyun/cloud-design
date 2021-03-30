@@ -1,12 +1,19 @@
 /**
- * @title 自定义 loading 样式
+ * @title 自定义 loading
  * @description 自定义 `loading` 样式。
  */
 
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { List, Avatar, Button, Loading, Icon } from '@alicloudfe/components'
+import {
+  List,
+  Avatar,
+  Button,
+  Loading,
+  Icon,
+  Switch
+} from '@alicloudfe/components'
 import { useState } from 'react'
 
 const data = [
@@ -45,7 +52,14 @@ const App = () => {
 
   return (
     <div style={{ width: 288 }}>
-      <Button onClick={() => setLoading(!loading)}>Toggle loading</Button>
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
+        loading:{' '}
+        <Switch
+          style={{ marginLeft: 8 }}
+          checked={loading}
+          onChange={setLoading}
+        />
+      </div>
       <List
         size="small"
         loading={loading}

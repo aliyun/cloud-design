@@ -50,6 +50,7 @@ export default function DemoComponent() {
       />
       <br />
       <br />
+
       <RangePicker
         disabledDate={disabledDate}
         onChange={(val) => console.log(val)}

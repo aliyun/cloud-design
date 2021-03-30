@@ -68,7 +68,7 @@ export default function DemoComponent() {
         })}
       </Tab>
 
-      <div className="demo-item-title">Tabs with equal width</div>
+      <div className="demo-item-title">Tabs with same width</div>
       <Tab shape="capsule">
         {panes.map((pane) => (
           <Tab.Item

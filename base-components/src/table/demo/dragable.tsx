@@ -1,6 +1,6 @@
 /**
  * @title 拖拽排序
- * @description 可拖拽的表格。拖拽功能的实现依赖react-dnd@7.x 及react-dnd-html5-backend@7.x， 它要求react react-dom 版本高于16.3.x。在线Demo可以参考 https://codesandbox.io/s/draggable-table-drt4m
+ * @description 可拖拽的表格。拖拽功能的实现依赖 react-dnd@7.x 及 react-dnd-html5-backend@7.x， 它要求 react react-dom 版本高于 16.3.x。在线 Demo 可以参考 https://codesandbox.io/s/draggable-table-drt4m
  */
 
 import * as React from 'react'

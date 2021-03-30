@@ -1,5 +1,5 @@
 /**
- * @title 带徽标
+ * @title 徽标
  * @description 通常用于消息提示。
  */
 

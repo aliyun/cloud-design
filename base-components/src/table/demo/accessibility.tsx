@@ -1,5 +1,5 @@
 /**
- * @title 无障碍
+ * @title 无障碍支持
  * @description 通过键盘方向键浏览表格。
  */
 
@@ -58,7 +58,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <Table dataSource={this.state.dataSource} hasBorder={false}>
+        <Table dataSource={this.state.dataSource}>
           <Table.Column title="Id" dataIndex="id" />
           <Table.Column title="Title" dataIndex="title.name" />
           <Table.Column title="Time" dataIndex="time" />

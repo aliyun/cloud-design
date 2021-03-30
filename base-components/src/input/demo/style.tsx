@@ -33,7 +33,7 @@ export default function DemoComponent() {
       <Input
         placeholder="medium"
         maxLength={10}
-        hasLimitHint
+        showLimitHint
         style={{ width: 400 }}
         aria-label="style width 400"
       />
@@ -44,7 +44,7 @@ export default function DemoComponent() {
         placeholder="medium"
         hasClear
         maxLength={10}
-        hasLimitHint
+        showLimitHint
         style={{ width: 400 }}
         className="my-input-class"
         state="success"

@@ -20,10 +20,18 @@ const openNotification = (placement) => {
 export default function DemoComponent() {
   const content = (
     <div className="button-row">
-      <Button onClick={() => openNotification('tl')}>Top Left</Button>
-      <Button onClick={() => openNotification('tr')}>Top Right</Button>
-      <Button onClick={() => openNotification('bl')}>Bottom Left</Button>
-      <Button onClick={() => openNotification('br')}>Bottom Right</Button>
+      <Button type="primary" onClick={() => openNotification('tl')}>
+        Top Left
+      </Button>
+      <Button type="primary" onClick={() => openNotification('tr')}>
+        Top Right
+      </Button>
+      <Button type="primary" onClick={() => openNotification('bl')}>
+        Bottom Left
+      </Button>
+      <Button type="primary" onClick={() => openNotification('br')}>
+        Bottom Right
+      </Button>
     </div>
   )
   return <Style>{content}</Style>

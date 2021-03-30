@@ -1,6 +1,6 @@
 /**
- * @title 横向菜单条
- * @description 展示横向导航菜单条的用法。
+ * @title 超长折叠
+ * @description 在横向导航模式下，可通过设置 `hozInLine` 折叠超长内容。
  */
 
 import * as React from 'react'

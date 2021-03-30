@@ -1,5 +1,5 @@
 /**
- * @title 折叠
+ * @title 折叠用法
  * @description 自定义折叠区域。
  */
 

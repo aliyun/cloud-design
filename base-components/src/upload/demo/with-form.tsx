@@ -1,12 +1,12 @@
 /**
  * @title 内容回填
- * @description 提醒: `https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload`接口:
+ * @description
  */
 
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Upload, Button, Field, Form } from '@alicloudfe/components'
+import { Upload, Button, Field, Form, Box } from '@alicloudfe/components'
 
 const FormItem = Form.Item
 
@@ -52,7 +52,7 @@ class App extends React.Component {
             <Button>Upload</Button>
           </Upload>
         </FormItem>
-        <div>
+        <Box direction="row" spacing={20}>
           <Button
             onClick={this.setValues}
             type="primary"
@@ -60,7 +60,6 @@ class App extends React.Component {
           >
             Set Data
           </Button>
-          &nbsp;&nbsp;
           <Button
             onClick={this.getValues}
             type="primary"
@@ -68,7 +67,6 @@ class App extends React.Component {
           >
             Get Data
           </Button>
-          &nbsp;&nbsp;
           <Button
             onClick={() => this.field.reset()}
             type="primary"
@@ -76,7 +74,6 @@ class App extends React.Component {
           >
             Reset
           </Button>
-          &nbsp;&nbsp;
           <Button
             onClick={() => this.field.validate()}
             type="primary"
@@ -84,7 +81,7 @@ class App extends React.Component {
           >
             Validate
           </Button>
-        </div>
+        </Box>
       </Form>
     )
   }

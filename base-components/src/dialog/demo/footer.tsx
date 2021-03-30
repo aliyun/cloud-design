@@ -1,6 +1,6 @@
 /**
  * @title 定制底部按钮
- * @description 通过 footerActions 来调整确定按钮和取消按钮是否出现以及相互间的位置，通过 footerAlign 来调整底部按钮的对齐方式。
+ * @description 通过 `footerActions` 来调整确定按钮和取消按钮是否出现以及相互间的位置，通过 `footerAlign` 来调整底部按钮的对齐方式。
  */
 
 import * as React from 'react'

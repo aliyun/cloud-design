@@ -1,6 +1,6 @@
 /**
  * @title 自定义样式
- * @description 可以通过`listStyle`，`listClassName`来定制组件宽高。
+ * @description 可以通过`listStyle`，`listClassName`来定制组件宽高，通过`itemRender`自定字节。
  */
 
 import * as React from 'react'
@@ -47,13 +47,18 @@ const dataSource = [
   }
 ]
 
+function itemRender(itemData) {
+  return `${itemData.label}(${itemData.value})`
+}
+
 export default function DemoComponent() {
   const content = (
     <Cascader
       defaultValue="3439"
       defaultExpandedValue={['3371', '3430']}
-      listStyle={{ width: '200px', height: '256px' }}
+      listStyle={{ width: '180px', height: '256px' }}
       dataSource={dataSource}
+      itemRender={itemRender}
     />
   )
   return <Style>{content}</Style>

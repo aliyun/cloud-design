@@ -1,5 +1,5 @@
 /**
- * @title 复杂菜单
+ * @title 复杂菜单展示
  * @description 支持菜单组和菜单分割线，使用方法同 `Menu.Group`, `Menu.Item`, `Menu.Divider`。
  */
 
@@ -12,7 +12,11 @@ const { Item, Group, Divider } = SplitButton
 
 export default function DemoComponent() {
   const content = (
-    <SplitButton label="Edit Document" onItemClick={(key) => console.log(key)}>
+    <SplitButton
+      type="primary"
+      label="Edit Document"
+      onItemClick={(key) => console.log(key)}
+    >
       <Item>Undo</Item>
       <Item>Redo</Item>
       <Divider />

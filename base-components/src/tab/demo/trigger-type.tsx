@@ -33,7 +33,7 @@ function onMouseLeave(key, e) {
 export default function DemoComponent() {
   const content = (
     <div className="fusion-demo">
-      <div className="demo-item-title">Click to trigger change</div>
+      <div className="demo-item-title">Click to change</div>
       <Tab triggerType="click" onChange={onChange}>
         {tabs.map((item) => (
           <Tab.Item key={item.key} title={item.tab} onClick={handleClick}>
@@ -41,7 +41,7 @@ export default function DemoComponent() {
           </Tab.Item>
         ))}
       </Tab>
-      <div className="demo-item-title">Hover to trigger change</div>
+      <div className="demo-item-title">Hover to change</div>
       <Tab triggerType="hover" onChange={onChange}>
         {tabs.map((item) => (
           <Tab.Item

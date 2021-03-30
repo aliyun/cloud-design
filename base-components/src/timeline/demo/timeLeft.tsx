@@ -1,5 +1,5 @@
 /**
- * @title 时间在左
+ * @title 左侧展示时间
  * @description 设置时间轴左边的内容。
  */
 

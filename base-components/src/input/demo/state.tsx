@@ -22,7 +22,7 @@ export default function DemoComponent() {
       <br />
       <Input
         state="error"
-        hasLimitHint
+        showLimitHint
         maxLength={100}
         placeholder="error"
         size="medium"
@@ -54,7 +54,7 @@ export default function DemoComponent() {
       <Input
         state="success"
         maxLength={100}
-        hasLimitHint
+        showLimitHint
         placeholder="success"
         size="medium"
         aria-live="assertive"

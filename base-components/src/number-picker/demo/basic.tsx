@@ -15,10 +15,10 @@ function onChange(value, e) {
 export default function DemoComponent() {
   const content = (
     <div>
-      <NumberPicker max={3} onChange={onChange} />
+      <NumberPicker onChange={onChange} />
       <br />
       <br />
-      <NumberPicker defaultValue={0} max={3} type="inline" onChange={onChange} />
+      <NumberPicker defaultValue={0} type="inline" onChange={onChange} />
     </div>
   )
   return <Style>{content}</Style>

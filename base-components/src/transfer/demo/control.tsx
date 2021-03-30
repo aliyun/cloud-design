@@ -1,6 +1,6 @@
 /**
  * @title 受控
- * @description 展示受控的用法。
+ * @description — debug: true
  */
 
 import * as React from 'react'

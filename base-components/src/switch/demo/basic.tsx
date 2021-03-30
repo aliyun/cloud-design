@@ -1,6 +1,6 @@
 /**
  * @title 简单
- * @description 最简单的用法,size可设置大小。
+ * @description 最简单的用法
  */
 
 import * as React from 'react'
@@ -15,20 +15,7 @@ function onChange(checked) {
 export default function DemoComponent() {
   const content = (
     <div>
-      <Switch
-        checkedChildren="on"
-        onChange={onChange}
-        unCheckedChildren="off"
-      />
-      <br />
-      <Switch defaultChecked={false} onChange={onChange} size="small" />
-      <br />
-      <Switch
-        className="large-width"
-        checkedChildren="on"
-        onChange={onChange}
-        unCheckedChildren="off please"
-      />
+      <Switch defaultChecked={false} onChange={onChange} />
     </div>
   )
   return <Style>{content}</Style>

@@ -22,7 +22,7 @@ export default function DemoComponent() {
         Blouses & Shirts
       </Breadcrumb.Item>
       <Breadcrumb.Item>
-        T-shirts&nbsp; <b>78,999</b> Results
+        T-shirts <b>78,999</b> Results
       </Breadcrumb.Item>
     </Breadcrumb>
   )

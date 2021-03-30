@@ -15,7 +15,7 @@ const innerButton = <Button className="btrigger">Show Inner Balloon</Button>
 const dateValue = moment('2018-01-01', 'YYYY-MM-DD', true)
 
 const App = () => (
-  <div className="container nested">
+  <div>
     <Balloon
       type="primary"
       autoFocus
@@ -25,7 +25,7 @@ const App = () => (
     >
       <Select dataSource={['apple', 'banana', 'orange']} followTrigger />
     </Balloon>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span style={{ marginRight: 20 }} />
     <Balloon
       type="primary"
       autoFocus
@@ -35,7 +35,7 @@ const App = () => (
     >
       <DatePicker defaultValue={dateValue} followTrigger />
     </Balloon>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span style={{ marginRight: 20 }} />
     <Balloon
       type="primary"
       autoFocus
@@ -58,8 +58,4 @@ export default function DemoComponent() {
   const content = <App />
   return <Style>{content}</Style>
 }
-const Style = styled.div`
-  .container.nested {
-    margin-bottom: 50px;
-  }
-`
+const Style = styled.div``

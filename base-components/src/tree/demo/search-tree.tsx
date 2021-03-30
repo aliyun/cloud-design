@@ -1,6 +1,6 @@
 /**
- * @title 可搜索的树
- * @description 展示可搜索的树。
+ * @title 实现搜索
+ * @description 组合 `Search` 组件，实现 `Tree` 组件的搜索。
  */
 
 import * as React from 'react'
@@ -49,7 +49,9 @@ class Demo extends React.Component {
       expandedKeys: ['2'],
       autoExpandParent: true
     }
+
     this.matchedKeys = []
+
     this.handleSearch = this.handleSearch.bind(this)
     this.handleExpand = this.handleExpand.bind(this)
   }

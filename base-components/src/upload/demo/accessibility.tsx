@@ -1,6 +1,6 @@
 /**
- * @title 无障碍
- * @description 提醒: `https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload`接口:
+ * @title 无障碍支持
+ * @description 请参考[#无障碍键盘操作指南](#无障碍键盘操作指南)。
  */
 
 import * as React from 'react'

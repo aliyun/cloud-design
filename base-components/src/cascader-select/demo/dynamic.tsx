@@ -1,6 +1,6 @@
 /**
  * @title 异步加载数据
- * @description 展示动态获取数据的用法。
+ * @description 通过`loadData`动态获取数据，`isLeaf`属性用于标志是否是叶子节点。
  */
 
 import * as React from 'react'
@@ -68,7 +68,6 @@ class Demo extends React.Component {
   render() {
     return (
       <CascaderSelect
-        style={{ width: '302px' }}
         dataSource={this.state.dataSource}
         loadData={this.onLoadData}
       />
@@ -80,4 +79,10 @@ export default function DemoComponent() {
   const content = <Demo />
   return <Style>{content}</Style>
 }
-const Style = styled.div``
+const Style = styled.div`
+  .cascader-value {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+`

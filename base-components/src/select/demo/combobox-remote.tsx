@@ -1,5 +1,5 @@
 /**
- * @title 动态数据
+ * @title 辅助输入获取远程数据
  * @description 使用动态数据填充 AutoComplete, 设置 `filterLocal` 为 false
  */
 

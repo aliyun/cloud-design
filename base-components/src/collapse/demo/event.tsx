@@ -1,6 +1,6 @@
 /**
- * @title 事件
- * @description 1. 所有的Panel不传入Key,自动分配key为index
+ * @title 展开事件
+ * @description 1. 所有的Panel不传入 Key ,自动分配 key 为index
  */
 
 import * as React from 'react'
@@ -34,37 +34,19 @@ class Demo extends React.Component {
         expandedKeys={this.state.expandedKeys}
       >
         <Panel title="simple tile" onClick={this.onClick}>
-          <ul>
-            <li>Promotions are marketing campaigns ran by Marketplace</li>
-            <li>
-              Participate to sale your products during that promotion and make a
-              profit
-            </li>
-          </ul>
+          Promotions are marketing campaigns ran by Marketplace. Participate to
+          sale your products during that promotion and make a profit
         </Panel>
         <Panel title="What are Promotion Products?">
-          <ul>
-            <li>
-              Promotion Products is a service that helps you to promote products
-              you list on Marketplace during a certain time range
-            </li>
-            <li>
-              You can choose which products should be available for the
-              promotion
-            </li>
-            <li>
-              Not all Products of you will be available, because Promotions will
-              only attract certain Product areas
-            </li>
-          </ul>
+          Promotion Products is a service that helps you to promote products you
+          list on Marketplace during a certain time range. You can choose which
+          products should be available for the promotion. Not all Products of
+          you will be available, because Promotions will only attract certain
+          Product areas.
         </Panel>
         <Panel title="Why can i not submit a higher price?">
-          <ul>
-            <li>
-              The Promotion requires a certain price to make sure that our
-              customers are attracted
-            </li>
-          </ul>
+          The Promotion requires a certain price to make sure that our customers
+          are attracted.
         </Panel>
         <Panel title="What is Promo Stock?">
           Promo Stock is the criteria needed to be followed to be able to join

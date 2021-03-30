@@ -11,13 +11,13 @@ import { Rating } from '@alicloudfe/components'
 export default function DemoComponent() {
   const content = (
     <div>
-      <Rating defaultValue={3.2} size="small" />
+      <Rating defaultValue={3.5} size="small" />
       <br />
       <br />
-      <Rating defaultValue={3.2} />
+      <Rating defaultValue={3.5} />
       <br />
       <br />
-      <Rating defaultValue={3.2} size="large" />
+      <Rating defaultValue={3.5} size="large" />
     </div>
   )
   return <Style>{content}</Style>

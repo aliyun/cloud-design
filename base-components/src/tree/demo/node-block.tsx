@@ -1,6 +1,6 @@
 /**
  * @title 树节点占满一行
- * @description 可以通过设置 isNodeBlock 为 true，来让树节点占满一行，isNodeBlock 也可传入一个对象，支持设置 defaultPaddingLeft（默认的左内边距）和 indent （缩进距离），另外注意 showLine 在开启 isNodeBlock 时失效。
+ * @description 可以通过设置 `isNodeBlock` 为 `true`，来让树节点占满一行，`isNodeBlock` 也可传入一个对象，支持设置 `defaultPaddingLeft`（默认的左内边距）和 `indent` （缩进距离），另外注意 `showLine`  在开启 `isNodeBlock` 时失效。
  */
 
 import * as React from 'react'

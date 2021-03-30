@@ -1,6 +1,6 @@
 /**
- * @title 自定义样式
- * @description 可以通过 displayRender 来定制单选时展示的结果，可以通过 listStyle，listClassName 来定制组件宽高。
+ * @title 自定义Item样式
+ * @description 可以通过 `displayRender` 来定制单选时展示的结果，可以通过 `listStyle`，`listClassName` 来定制组件宽高。
  */
 
 import * as React from 'react'
@@ -58,10 +58,7 @@ const itemRender = (item) => {
 export default function DemoComponent() {
   const content = (
     <CascaderSelect
-      // style={{ width: '452px' }}
-      // listStyle={{ width: '150px', height: '160px' }}
-      style={{ width: '302px' }}
-      listStyle={{ width: '302px', height: '160px' }}
+      listStyle={{ width: '120px', height: '160px' }}
       displayRender={(labels) => labels[labels.length - 1]}
       defaultValue="3431"
       dataSource={dataSource}

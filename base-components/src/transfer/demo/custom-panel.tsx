@@ -1,6 +1,6 @@
 /**
- * @title 自定义面板
- * @description 展示自定义面板的用法。
+ * @title 树穿梭框
+ * @description 自定义树形 transfer 面板。
  */
 
 import * as React from 'react'

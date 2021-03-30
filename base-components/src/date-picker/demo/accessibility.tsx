@@ -1,6 +1,6 @@
 /**
- * @title 无障碍
- * @description 支持手动输入或键盘操作，请参考`ARIA and KeyBoard`。
+ * @title 无障碍支持
+ * @description 支持手动输入或键盘操作，请参考[#无障碍键盘操作指南](#无障碍键盘操作指南)。
  */
 
 import * as React from 'react'
@@ -18,7 +18,7 @@ export default function DemoComponent() {
         dateInputAriaLabel="date input"
         inputProps={{ 'aria-label': 'date picker main' }}
         onChange={onChange}
-      />{' '}
+      />
       <br />
       <br />
       <RangePicker

@@ -1,6 +1,6 @@
 /**
  * @title hover 打开子菜单
- * @description 可以设置 triggerType 为 'hover'，来 hover 打开子菜单，默认点击打开子菜单。
+ * @description 可以设置 triggerType 为 `hover`，来 hover 打开子菜单，默认点击打开子菜单。
  */
 
 import * as React from 'react'

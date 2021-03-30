@@ -1,6 +1,6 @@
 /**
  * @title 全屏
- * @description 全屏展示
+ * @description 通过`fullScreen`强制全屏显示加载态，通过`safeNode`指定安全节点。
  */
 
 import * as React from 'react'
@@ -32,7 +32,6 @@ class App extends React.Component {
         <Loading
           visible={this.state.visible}
           fullScreen
-          shape="fusion-reactor"
           safeNode={this.btn}
           onVisibleChange={this.onClose.bind(this)}
         >

@@ -1,6 +1,6 @@
 /**
  * @title 基本
- * @description 简单的弹性布局展示，可以通过 `spacing` 控制子元素的间距
+ * @description 简单的弹性布局展示，可以通过 `spacing` 控制子元素的间距。
  */
 
 import * as React from 'react'

@@ -1,6 +1,6 @@
 /**
- * @title 无障碍
- * @description 请参考`ARIA and KeyBoard`。
+ * @title 无障碍支持
+ * @description 通过`aria-labelledby`给Group设置辅助技术可及的文本，按键请参考后文[#无障碍键盘操作指南](#无障碍键盘操作指南)。
  */
 
 import * as React from 'react'

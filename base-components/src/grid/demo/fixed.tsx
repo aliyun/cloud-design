@@ -13,7 +13,7 @@ const { Row, Col } = Grid
 export default function DemoComponent() {
   const content = (
     <div className="mixin-demo">
-      <div className="demo-title">
+      <div className="grid-fixed-demo-title">
         Two-column layout, left column fixed, right column adaptive
       </div>
       <Row>
@@ -21,7 +21,7 @@ export default function DemoComponent() {
         <Col>col</Col>
       </Row>
 
-      <div className="demo-title">
+      <div className="grid-fixed-demo-title">
         Two-column layout, right column fixed, left column adaptive
       </div>
       <Row>
@@ -29,7 +29,7 @@ export default function DemoComponent() {
         <Col fixedSpan="16">col-fixed-16</Col>
       </Row>
 
-      <div className="demo-title">
+      <div className="grid-fixed-demo-title">
         Three-column layout, left column and right column fixed, middle column
         adaptive
       </div>
@@ -43,7 +43,7 @@ export default function DemoComponent() {
   return <Style>{content}</Style>
 }
 const Style = styled.div`
-  .mixin-demo .demo-title {
+  .mixin-demo .grid-fixed-demo-title {
     margin-left: 20px;
   }
 

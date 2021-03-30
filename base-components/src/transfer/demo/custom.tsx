@@ -1,6 +1,6 @@
 /**
- * @title 自定义
- * @description 展示自定义样式的用法。
+ * @title 自定义穿梭按钮
+ * @description 展示自定义穿梭按钮的用法。
  */
 
 import * as React from 'react'

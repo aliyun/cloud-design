@@ -36,7 +36,7 @@ export default function DemoComponent() {
         aria-label="disabled"
         placeholder="medium"
         maxLength={10}
-        hasLimitHint
+        showLimitHint
       />
       <br />
       <br />
@@ -46,7 +46,7 @@ export default function DemoComponent() {
         aria-label="disabled"
         placeholder="medium"
         maxLength={10}
-        hasLimitHint
+        showLimitHint
       />
     </div>
   )

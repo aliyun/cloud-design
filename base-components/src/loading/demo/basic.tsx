@@ -1,6 +1,6 @@
 /**
- * @title 基本用法
- * @description 最简单的用法。
+ * @title 基本
+ * @description 简单的 Loading 状态，包裹需要显示加载态的组件。
  */
 
 import * as React from 'react'
@@ -11,26 +11,20 @@ import { Loading } from '@alicloudfe/components'
 export default function DemoComponent() {
   const content = (
     <div>
-      <div>
-        LTR
-        <Loading tip="加载中...">
-          <div className="demo">test</div>
-        </Loading>
-      </div>
-      <div>
-        RTL
-        <Loading tip="加载中..." rtl>
-          <div className="demo">test</div>
-        </Loading>
-      </div>
+      <Loading tip="加载中...">
+        <div className="demo-basic">basic usage</div>
+      </Loading>
     </div>
   )
   return <Style>{content}</Style>
 }
 const Style = styled.div`
-  .demo {
-    width: 500px;
-    background-color: #f2f3f7;
+  .demo-title-basic {
+    margin: 0 60px 0 60px;
+  }
+
+  .demo-basic {
+    width: 120px;
     text-align: center;
     padding: 50px;
   }

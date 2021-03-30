@@ -1,6 +1,6 @@
 /**
  * @title 折行
- * @description 默认不折行，可以通过设置 `wrap` 控制折行。 受浏览器限制，本功能支持到IE11+
+ * @description 默认不折行，可以通过设置 `wrap` 控制折行。 受浏览器限制，本功能支持到IE11+。
  */
 
 import * as React from 'react'

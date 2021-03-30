@@ -1,6 +1,6 @@
 /**
  * @title 排布方向
- * @description 默认子元素的排布方向为 `column` ， 可以通过 `direction` 参数修改为 `row`
+ * @description 默认子元素的排布方向为 `column` ， 可以通过 `direction` 参数修改为 `row`。
  */
 
 import * as React from 'react'

@@ -21,7 +21,7 @@ class Demo extends React.Component {
       >
         <div className="affix-wrapper">
           <Affix container={() => this.container} offsetTop={0}>
-            <Button type="secondary">Affixed Button</Button>
+            <Button type="secondary">Custom Container Affixed</Button>
           </Affix>
         </div>
       </div>

@@ -1,6 +1,6 @@
 /**
  * @title 卡片
- * @description 提醒: `https://www.easy-mock.com/mock/5b713974309d0d7d107a74a3/alifd/upload`接口:
+ * @description
  */
 
 import * as React from 'react'
@@ -50,22 +50,22 @@ export default function DemoComponent() {
           name: 'IMG.png',
           state: 'done',
           url:
-            'https://gw.alicdn.com/tfs/TB1Y4ucuAL0gK0jSZFtXXXQCXXa-1020-510.jpg',
+            'https://img.alicdn.com/tfs/TB1x4QlgxYaK1RjSZFnXXa80pXa-1400-742.png',
           downloadURL:
-            'https://gw.alicdn.com/tfs/TB1Y4ucuAL0gK0jSZFtXXXQCXXa-1020-510.jpg',
+            'https://img.alicdn.com/tfs/TB1x4QlgxYaK1RjSZFnXXa80pXa-1400-742.png',
           imgURL:
-            'https://gw.alicdn.com/tfs/TB1Y4ucuAL0gK0jSZFtXXXQCXXa-1020-510.jpg'
+            'https://img.alicdn.com/tfs/TB1x4QlgxYaK1RjSZFnXXa80pXa-1400-742.png'
         },
         {
           uid: '2',
           name: 'IMG.png',
           state: 'done',
           url:
-            'https://img.alicdn.com/tfs/TB1Y8vPtKbviK0jSZFNXXaApXXa-216-460.png',
+            'https://img.alicdn.com/tfs/TB1dcWosRjTBKNjSZFwXXcG4XXa-684-1000.png',
           downloadURL:
-            'https://img.alicdn.com/tfs/TB1Y8vPtKbviK0jSZFNXXaApXXa-216-460.png',
+            'https://img.alicdn.com/tfs/TB1dcWosRjTBKNjSZFwXXcG4XXa-684-1000.png',
           imgURL:
-            'https://img.alicdn.com/tfs/TB1Y8vPtKbviK0jSZFNXXaApXXa-216-460.png'
+            'https://img.alicdn.com/tfs/TB1dcWosRjTBKNjSZFwXXcG4XXa-684-1000.png'
         },
         {
           uid: '3',

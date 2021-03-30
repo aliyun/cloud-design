@@ -1,6 +1,6 @@
 /**
- * @title 无障碍
- * @description 通过`aria-label`对`Checkbox`组件进行描述。关于键盘操作请参考`ARIA and KeyBoard`。
+ * @title 无障碍支持
+ * @description 通过`aria-label`对`Checkbox`组件进行描述。关于键盘操作请参考[#无障碍键盘操作指南](#无障碍键盘操作指南)。
  */
 
 import * as React from 'react'
@@ -10,7 +10,7 @@ import { Checkbox } from '@alicloudfe/components'
 
 const CheckboxGroup = () => (
   <div>
-    <h4>Programming language：</h4>
+    <p>Programming language：</p>
     <Checkbox.Group aria-label="Please select a programming language">
       <Checkbox value="python">python</Checkbox>
       <Checkbox value="java">java</Checkbox>

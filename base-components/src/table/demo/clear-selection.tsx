@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Button } from '@alicloudfe/components'
+import { Table, Button, Box } from '@alicloudfe/components'
 
 const dataSource = (i, j) => {
     const result = []
@@ -78,18 +78,17 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <p>
-          <Button onClick={this.clear.bind(this)}>Clear Selection</Button>&nbsp;
+        <Box direction="row" spacing={20}>
+          <Button onClick={this.clear.bind(this)}>Clear Selection</Button>
           <Button onClick={this.changeMode.bind(this)}>Change mode</Button>
-          &nbsp;
           <Button onClick={this.toggleLoading.bind(this)}>
             Toggle loading
           </Button>
-          &nbsp;
           <Button onClick={this.modifyDataSource.bind(this)}>
             Modify dataSource
           </Button>
-        </p>
+        </Box>
+        <br />
         <Table
           dataSource={this.state.dataSource}
           loading={this.state.loading}

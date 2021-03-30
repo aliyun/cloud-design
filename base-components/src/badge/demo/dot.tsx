@@ -1,6 +1,6 @@
 /**
  * @title 讨嫌的小红点
- * @description 没有具体的数字。
+ * @description 没有具体的数字，仅展示小红点。
  */
 
 import * as React from 'react'
@@ -12,6 +12,9 @@ export default function DemoComponent() {
   const content = (
     <div>
       <Badge dot>
+        <Icon type="email" />
+      </Badge>
+      <Badge count={0} dot>
         <Icon type="email" />
       </Badge>
       <Badge dot>

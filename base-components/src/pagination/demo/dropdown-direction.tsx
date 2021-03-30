@@ -1,5 +1,5 @@
 /**
- * @title 每页显示
+ * @title 下拉框位置
  * @description 使用`popupProps` prop中的`align`属性设置下拉位置。
  */
 

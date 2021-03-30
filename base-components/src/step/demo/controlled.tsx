@@ -1,6 +1,6 @@
 /**
- * @title 受控模式
- * @description 默认情况下，Step 定义为展示型组件，上层组件可以通过修改传入的 current 属性值来修改当前的步骤，同时可以设置每个节点的 click 事件，来自定义回调。
+ * @title 步骤切换
+ * @description 通常配合内容及按钮使用，表示一个流程的处理进度。
  */
 
 import * as React from 'react'
@@ -42,7 +42,7 @@ class Component extends React.Component {
     super(props)
 
     this.state = {
-      currentStep: 3,
+      currentStep: 1,
       stepType: 'circle',
       stepAnimation: true,
       labelPlacement: 'ver'
@@ -184,6 +184,7 @@ class Component extends React.Component {
             content="Description"
           />
         </Step>
+        <div className="steps-content">{contents[currentStep]}</div>
         <br />
         <br />
         <ButtonGroup>
@@ -197,7 +198,7 @@ class Component extends React.Component {
           <Button
             onClick={this.next.bind(this)}
             type="primary"
-            disabled={currentStep === 6}
+            disabled={currentStep === 5}
           >
             Forward
           </Button>
@@ -261,5 +262,14 @@ const Style = styled.div`
     left: 0;
     width: 100%;
     text-align: center;
+  }
+  .steps-content {
+    margin-top: 16px;
+    border: 1px dashed #e9e9e9;
+    border-radius: 2px;
+    background-color: #fafafa;
+    min-height: 200px;
+    text-align: center;
+    padding-top: 80px;
   }
 `

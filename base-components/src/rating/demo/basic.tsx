@@ -12,7 +12,7 @@ export default function DemoComponent() {
   const content = (
     <div>
       <Rating
-        defaultValue={3.2}
+        defaultValue={3.5}
         onChange={(val) => console.log('change:', val)}
         onHoverChange={(val) => console.log('hover:', val)}
       />

@@ -13,7 +13,7 @@ const { Row, Col } = Grid
 export default function DemoComponent() {
   const content = (
     <div className="hidden-demo">
-      <div className="demo-title">
+      <div className="grid-fixed-demo-title">
         Hide columns under all breakpoints, resize browser to see if the second
         column is hidden or shown
       </div>
@@ -24,7 +24,7 @@ export default function DemoComponent() {
         </Col>
       </Row>
 
-      <div className="demo-title">
+      <div className="grid-fixed-demo-title">
         Hide columns under a breakpoint such as xs, resize browser to see if the
         second column is hidden or shown
       </div>
@@ -35,7 +35,7 @@ export default function DemoComponent() {
         </Col>
       </Row>
 
-      <div className="demo-title">
+      <div className="grid-fixed-demo-title">
         Hide columns under some breakpoints such as xs and s, resize browser to
         see if the second column is hidden or shown
       </div>
@@ -50,7 +50,7 @@ export default function DemoComponent() {
   return <Style>{content}</Style>
 }
 const Style = styled.div`
-  .hidden-demo .demo-title {
+  .hidden-demo .grid-fixed-demo-title {
     margin-left: 20px;
   }
 

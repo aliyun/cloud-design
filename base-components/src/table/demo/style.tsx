@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Table, Button } from '@alicloudfe/components'
+import { Table, Button, Box } from '@alicloudfe/components'
 
 const dataSource = () => {
     const result = []
@@ -55,25 +55,18 @@ class App extends React.Component {
   render() {
     return (
       <span>
-        <p>
-          <Button onClick={this.toggleZebra.bind(this)}> Toggle zebra </Button>{' '}
-          &nbsp;
-          <Button onClick={this.toggleBorder.bind(this)}>
-            {' '}
-            Toggle border
-          </Button>{' '}
-          &nbsp;
+        <Box direction="row" spacing={20}>
+          <Button onClick={this.toggleZebra.bind(this)}> Toggle zebra </Button>
+          <Button onClick={this.toggleBorder.bind(this)}> Toggle border</Button>
           <Button onClick={this.makeBeauty.bind(this)}>
             {' '}
             Make second column beauty{' '}
-          </Button>{' '}
-          &nbsp;
+          </Button>
           <Button onClick={this.makeAlign.bind(this)}>
             {' '}
             Make first column align right{' '}
-          </Button>{' '}
-          &nbsp;
-        </p>
+          </Button>
+        </Box>
         <Table
           dataSource={this.state.dataSource}
           isZebra={this.state.isZebra}

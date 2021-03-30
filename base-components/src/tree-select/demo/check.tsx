@@ -1,6 +1,6 @@
 /**
- * @title 复选框多选
- * @description 展示复选框多选的功能。
+ * @title 勾选
+ * @description 通过设置 `treeCheckable`，开启 `Tree` 组件的勾选功能，注意，此时组件处于可多选状态，`multiple` 属性无效。
  */
 
 import * as React from 'react'

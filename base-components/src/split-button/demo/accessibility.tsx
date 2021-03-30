@@ -1,6 +1,6 @@
 /**
- * @title 无障碍
- * @description 为了使得屏幕阅读器能传达右侧按钮的含义，我们可以通过`triggerProps`传递对右侧按钮的`aria-label`描述，键盘操作请参考`ARIA and KeyBoard`。
+ * @title 无障碍支持
+ * @description 为了使得屏幕阅读器能传达右侧按钮的含义，我们可以通过`triggerProps`传递对右侧按钮的`aria-label`描述。
  */
 
 import * as React from 'react'

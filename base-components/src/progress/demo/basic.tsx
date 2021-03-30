@@ -13,9 +13,7 @@ export default function DemoComponent() {
     <div>
       <Progress percent={30} textRender={() => ''} />
       <Progress percent={50} />
-      <Progress percent={90} />
-      <Progress percent={40} />
-      <Progress percent={40} hasBorder size="large" />
+      <Progress percent={50} hasBorder size="large" />
     </div>
   )
   return <Style>{content}</Style>

@@ -1,6 +1,6 @@
 /**
  * @title 带文案的分割线
- * @description 通过 `orientation` 来设置分割线上文案的位置
+ * @description 通过 `orientation` 来设置分割线上文案的位置。
  */
 
 import * as React from 'react'

@@ -1,6 +1,6 @@
 /**
- * @title 大列表
- * @description 页面级列表展示
+ * @title 图文列表
+ * @description 图文列表展示。
  */
 
 import * as React from 'react'

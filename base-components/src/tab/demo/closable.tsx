@@ -60,7 +60,7 @@ class CloseableTab extends React.Component {
     const state = this.state
     return (
       <div>
-        <Button onClick={this.addTabpane} size="large" type="primary">
+        <Button onClick={this.addTabpane} type="primary">
           <Icon type="add" /> New Tab
         </Button>
 
