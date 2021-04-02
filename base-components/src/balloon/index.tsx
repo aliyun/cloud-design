@@ -4,14 +4,22 @@ import { TooltipProps as NextTooltipProps } from '@alifd/next/types/balloon'
 
 const { Tooltip: NextTooltip } = NextBalloon;
 
+type NextBalloonProps = React.ComponentProps<typeof NextBalloon>
+
 const Tooltip: typeof NextTooltip = React.forwardRef(
   (props: NextTooltipProps, ref) => {
-    return <NextTooltip delay={200} {...props} ref={ref as any} />
+    return <NextTooltip delay={150} popupProps={{ animation: { in: 'fadeIn', out: 'fadeOut' } }} {...props} ref={ref as any} />
   }
 )as any
 
-NextBalloon.Tooltip = Tooltip;
+const Balloon: typeof NextBalloon = React.forwardRef(
+  (props: NextBalloonProps, ref) => (
+    <NextBalloon animation={{in: 'fadeIn', out: 'fadeOut' }} {...props} ref={ref as any} />
+  )
+)as any
 
-export default NextBalloon;
+Balloon.Tooltip = Tooltip;
+
+export default Balloon;
     
   
