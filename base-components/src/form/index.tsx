@@ -8,7 +8,7 @@ type NextFormProps = React.ComponentProps<typeof NextForm>
 
 const Form: typeof NextForm = React.forwardRef((props: NextFormProps, ref) => {
   const theme = useCssVar('--alicloudfe-components-theme').trim()
-  if (theme === 'wind' || theme.startsWith('xconsole')) {
+  if (theme === 'wind' || theme.startsWith('xconsole') || theme.startsWith('hybridcloud')) {
     return <NextForm labelTextAlign="left" {...props} ref={ref as any} />
   }
   return <NextForm {...props} ref={ref as any} />
