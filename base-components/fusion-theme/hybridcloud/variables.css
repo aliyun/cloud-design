@@ -124,7 +124,7 @@
     --color-other-3: #1A1A1A;
     
     
-    --color-line1-1: #E6E6E6;
+    --color-line1-1: rgba(234,234,234,1);
     
     
     --color-line1-2: #D9D9D9;
@@ -139,10 +139,10 @@
     --color-fill1-1: #FFFFFF;
     
     
-    --color-fill1-2: #F7F7F7;
+    --color-fill1-2: rgba(250,250,250,1);
     
     
-    --color-fill1-3: #E6E6E6;
+    --color-fill1-3: rgba(234,234,234,1);
     
     
     --color-fill1-4: #D9D9D9;
@@ -151,10 +151,10 @@
     --color-text1-1: #CCCCCC;
     
     
-    --color-text1-2: #333333;
+    --color-text1-2: rgba(90,90,90,1);
     
     
-    --color-text1-3: #262626;
+    --color-text1-3: rgba(51,51,51,1);
     
     
     --color-text1-4: #1A1A1A;
@@ -202,7 +202,7 @@
     --color-fill1-6: #666666;
     
     
-    --color-fill1-5: rgba(102,102,102,1);
+    --color-fill1-5: rgba(132,132,132,1);
     
     
     --color-fill1-7: #595959;
@@ -220,10 +220,10 @@
     --color-help-5: #FAD414;
     
     
-    --color-text1-5: #222222;
+    --color-text1-5: rgba(41,41,41,1);
     
     
-    --color-line1-5: rgba(156,156,156,1);
+    --color-line1-5: rgba(168,168,168,1);
     
     
     --color-success-7: rgba(103,207,152,1);
@@ -241,10 +241,10 @@
     --color-notice-7: rgba(88,154,219,1);
     
     
-    --color-text1-6: rgba(102,102,102,1);
+    --color-text1-6: rgba(90,90,90,1);
     
     
-    --color-text1-7: rgba(156,156,156,1);
+    --color-text1-7: rgba(90,90,90,1);
     
     
     /* ------------------------ corner ------------------------ */
@@ -4525,7 +4525,7 @@
     --checkbox-checked-circle-color: var(--color-white, #FFFFFF);
     
     
-    --checkbox-label-color: var(--color-text1-3, #262626);
+    --checkbox-label-color: var(--color-text1-3, #333333);
     
     
     --checkbox-disabled-label-color: var(--color-text1-1, #CCCCCC);
@@ -4630,16 +4630,16 @@
     --timeline-item-folder-margin-bottom: var(--s-1, 4px);
     
     
-    --timeline-item-title-color: var(--color-text1-4, #1A1A1A);
+    --timeline-item-title-color: var(--color-text1-3, #333333);
     
     
-    --timeline-item-body-color: var(--color-text1-3, #262626);
+    --timeline-item-body-color: var(--color-text1-3, #333333);
     
     
-    --timeline-item-left-body-color: var(--color-text1-2, #333333);
+    --timeline-item-left-body-color: var(--color-text1-2, #5a5a5a);
     
     
-    --timeline-item-time-color: var(--color-text1-1, #CCCCCC);
+    --timeline-item-time-color: var(--color-text1-2, #5a5a5a);
     
     
     --timeline-item-tail-color: var(--color-line1-2, #D9D9D9);
@@ -4648,7 +4648,7 @@
     --timeline-item-done-dot-size: var(--s-2, 8px);
     
     
-    --timeline-item-done-background: var(--color-fill1-3, #E6E6E6);
+    --timeline-item-done-background: var(--color-fill1-3, #eaeaea);
     
     
     --timeline-item-done-color: var(--color-white, #FFFFFF);
@@ -4696,13 +4696,13 @@
     --cascader-menu-icon-expand-size: var(--icon-s, 16px);
     
     
-    --cascader-menu-border-color: var(--color-line1-1, #E6E6E6);
+    --cascader-menu-border-color: var(--color-line1-1, #eaeaea);
     
     
     --cascader-menu-border-radius: var(--corner-1, 2px);
     
     
-    --cascader-menu-icon-expand-color: var(--color-text1-3, #262626);
+    --cascader-menu-icon-expand-color: var(--color-fill1-5, #848484);
     
     
     --cascader-menu-icon-hover-expand-color: var(--color-text1-4, #1A1A1A);
@@ -4711,7 +4711,7 @@
     --cascader-menu-item-expanded-color: var(--color-text1-4, #1A1A1A);
     
     
-    --cascader-menu-item-expanded-background-color: var(--color-fill1-2, #F7F7F7);
+    --cascader-menu-item-expanded-background-color: var(--color-fill1-2, #fafafa);
     
     
     /* ------------------------ menu-button ------------------------ */
@@ -4726,7 +4726,7 @@
     --menu-btn-ghost-dark-disabled-icon-color: var(--btn-ghost-dark-color-disabled, rgba(255, 255, 255, 0.4));
     
     
-    --menu-btn-pure-text-normal-icon-color: var(--color-fill1-5, #666666);
+    --menu-btn-pure-text-normal-icon-color: var(--color-fill1-5, #848484);
     
     
     --menu-btn-pure-text-primary-icon-color: var(--color-white, #FFFFFF);
@@ -4735,7 +4735,7 @@
     --menu-btn-pure-text-secondary-icon-color: var(--color-brand1-6, #0064C8);
     
     
-    --menu-btn-text-text-normal-icon-color: var(--color-text1-2, #333333);
+    --menu-btn-text-text-normal-icon-color: var(--color-text1-2, #5a5a5a);
     
     
     --menu-btn-text-text-primary-icon-color: var(--color-link-1, #0064c8);
@@ -4795,7 +4795,7 @@
     --range-size-m-slider-shadow-moving: var(--shadow-2, 0px 3px 8px 0px rgba(0, 0, 0, 0.18));
     
     
-    --range-normal-unselected-color: var(--color-line1-1, #E6E6E6);
+    --range-normal-unselected-color: var(--color-line1-1, #eaeaea);
     
     
     --range-normal-selected-color: var(--color-brand1-4, #589ADB);
@@ -4810,7 +4810,7 @@
     --range-normal-mark-selected-color: var(--color-text1-1, #CCCCCC);
     
     
-    --range-normal-unselected-color-hover: var(--color-line1-1, #E6E6E6);
+    --range-normal-unselected-color-hover: var(--color-line1-1, #eaeaea);
     
     
     --range-normal-selected-color-hover: var(--color-notice-3, #90c0ef);
@@ -4834,7 +4834,7 @@
     --range-normal-slider-border-color-hover: var(--color-transparent, transparent);
     
     
-    --range-normal-unselected-color-disabled: var(--color-line1-1, #E6E6E6);
+    --range-normal-unselected-color-disabled: var(--color-line1-1, #eaeaea);
     
     
     --range-normal-selected-color-disabled: var(--color-line1-2, #D9D9D9);
@@ -4894,10 +4894,10 @@
     --rating-normal-overlay-hover-color: var(--color-brand1-6, #0064C8);
     
     
-    --rating-grade-low-overlay-color: var(--color-fill1-5, #666666);
+    --rating-grade-low-overlay-color: var(--color-fill1-5, #848484);
     
     
-    --rating-grade-low-overlay-hover-color: var(--color-text1-2, #333333);
+    --rating-grade-low-overlay-hover-color: var(--color-text1-2, #5a5a5a);
     
     
     --rating-grade-high-overlay-color: var(--color-brand1-6, #0064C8);
@@ -4921,7 +4921,7 @@
     --search-normal-primary-hover-color: var(--color-brand1-6, #0064C8);
     
     
-    --search-normal-primary-split-color: var(--color-line1-1, #E6E6E6);
+    --search-normal-primary-split-color: var(--color-line1-1, #eaeaea);
     
     
     --search-normal-primary-shadow: var(--shadow-zero, none);
@@ -4963,7 +4963,7 @@
     --search-normal-secondary-color: var(--color-line1-3, #CCCCCC);
     
     
-    --search-normal-secondary-split-color: var(--color-line1-1, #E6E6E6);
+    --search-normal-secondary-split-color: var(--color-line1-1, #eaeaea);
     
     
     --search-normal-secondary-hover-color: var(--color-brand1-6, #0064C8);
@@ -5011,7 +5011,7 @@
     --search-normal-normal-color: var(--color-line1-3, #CCCCCC);
     
     
-    --search-normal-normal-split-color: var(--color-line1-1, #E6E6E6);
+    --search-normal-normal-split-color: var(--color-line1-1, #eaeaea);
     
     
     --search-normal-normal-hover-color: var(--color-line1-2, #D9D9D9);
@@ -5023,13 +5023,13 @@
     --search-normal-normal-btn-bg-color: var(--color-white, #FFFFFF);
     
     
-    --search-normal-normal-btn-text-color: var(--color-fill1-5, #666666);
+    --search-normal-normal-btn-text-color: var(--color-text1-2, #5a5a5a);
     
     
-    --search-normal-normal-btn-hover-bg-color: var(--color-fill1-2, #F7F7F7);
+    --search-normal-normal-btn-hover-bg-color: var(--color-fill1-2, #fafafa);
     
     
-    --search-normal-normal-btn-hover-text-color: var(--color-fill1-5, #666666);
+    --search-normal-normal-btn-hover-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --search-normal-normal-border-width: var(--line-1, 1px);
@@ -5128,10 +5128,10 @@
     --search-simple-normal-shadow: var(--shadow-zero, none);
     
     
-    --search-simple-normal-icon-text-color: var(--color-text1-2, #333333);
+    --search-simple-normal-icon-text-color: var(--color-text1-2, #5a5a5a);
     
     
-    --search-simple-normal-icon-hover-text-color: var(--color-text1-3, #262626);
+    --search-simple-normal-icon-hover-text-color: var(--color-text1-3, #333333);
     
     
     --search-simple-normal-border-width: var(--line-1, 1px);
@@ -5164,10 +5164,10 @@
     --search-simple-dark-shadow: var(--shadow-zero, none);
     
     
-    --search-simple-dark-icon-text-color: var(--color-text1-2, #333333);
+    --search-simple-dark-icon-text-color: var(--color-text1-2, #5a5a5a);
     
     
-    --search-simple-dark-icon-hover-text-color: var(--color-text1-3, #262626);
+    --search-simple-dark-icon-hover-text-color: var(--color-text1-3, #333333);
     
     
     --search-simple-dark-btn-text-padding-left: var(--s-zero, 0px);
@@ -5191,7 +5191,7 @@
     /* ------------------------ split-button ------------------------ */
     
     
-    --split-btn-trigger-normal-icon-color: var(--color-fill1-5, #666666);
+    --split-btn-trigger-normal-icon-color: var(--color-fill1-5, #848484);
     
     
     --split-btn-fold-icon-content: var(--icon-content-arrow-down, "");
@@ -5233,7 +5233,7 @@
     --tree-line-width: var(--line-1, 1px);
     
     
-    --tree-node-normal-color: var(--color-text1-2, #333333);
+    --tree-node-normal-color: var(--color-text1-3, #333333);
     
     
     --tree-node-normal-background: var(--color-white, #FFFFFF);
@@ -5242,10 +5242,10 @@
     --tree-node-title-border-radius: var(--corner-1, 2px);
     
     
-    --tree-switch-arrow-color: var(--color-text1-2, #333333);
+    --tree-switch-arrow-color: var(--color-text1-3, #333333);
     
     
-    --tree-switch-icon-color: var(--color-text1-3, #262626);
+    --tree-switch-icon-color: var(--color-text1-3, #333333);
     
     
     --tree-switch-bg-color: var(--color-white, #FFFFFF);
@@ -5263,19 +5263,19 @@
     --tree-line-style: var(--line-solid, solid);
     
     
-    --tree-node-hover-color: var(--color-text1-2, #333333);
+    --tree-node-hover-color: var(--color-text1-3, #333333);
     
     
-    --tree-node-hover-bg-color: var(--color-fill1-2, #F7F7F7);
+    --tree-node-hover-bg-color: var(--color-fill1-2, #fafafa);
     
     
-    --tree-switch-hover-arrow-color: var(--color-text1-2, #333333);
+    --tree-switch-hover-arrow-color: var(--color-text1-3, #333333);
     
     
     --tree-switch-hover-icon-color: var(--color-text1-4, #1A1A1A);
     
     
-    --tree-switch-hover-bg-color: var(--color-fill1-2, #F7F7F7);
+    --tree-switch-hover-bg-color: var(--color-fill1-2, #fafafa);
     
     
     --tree-switch-hover-border-color: var(--color-line1-2, #D9D9D9);
@@ -5380,7 +5380,7 @@
     --card-border-style: var(--line-solid, solid);
     
     
-    --card-border-color: var(--color-line1-1, #E6E6E6);
+    --card-border-color: var(--color-line1-1, #eaeaea);
     
     
     --card-background: var(--color-white, #FFFFFF);
@@ -5392,7 +5392,7 @@
     --card-title-color: var(--color-text1-4, #1A1A1A);
     
     
-    --card-sub-title-color: var(--color-text1-6, #666666);
+    --card-sub-title-color: var(--color-text1-6, #5a5a5a);
     
     
     --card-title-extra-color: var(--color-link-1, #0064c8);
@@ -5401,10 +5401,10 @@
     --card-title-bullet-color: var(--color-brand1-6, #0064C8);
     
     
-    --card-content-color: var(--color-text1-2, #333333);
+    --card-content-color: var(--color-text1-2, #5a5a5a);
     
     
-    --card-head-bottom-border-color: var(--color-line1-1, #E6E6E6);
+    --card-head-bottom-border-color: var(--color-line1-1, #eaeaea);
     
     
     --card-more-btn-color: var(--color-link-1, #0064c8);
@@ -5515,7 +5515,7 @@
     --switch-hover-off-bg-color: var(--color-fill1-4, #D9D9D9);
     
     
-    --switch-disabled-off-bg-color: var(--color-fill1-3, #E6E6E6);
+    --switch-disabled-off-bg-color: var(--color-fill1-3, #eaeaea);
     
     
     --switch-normal-off-trigger-bg-color: var(--color-white, #FFFFFF);
@@ -5527,10 +5527,10 @@
     --switch-disabled-off-trigger-bg-color: var(--color-white, #FFFFFF);
     
     
-    --switch-handle-disabled-border-color: var(--color-line1-1, #E6E6E6);
+    --switch-handle-disabled-border-color: var(--color-line1-1, #eaeaea);
     
     
-    --switch-normal-off-color-font: var(--color-text1-2, #333333);
+    --switch-normal-off-color-font: var(--color-text1-2, #5a5a5a);
     
     
     --switch-disabled-off-color-font: var(--color-line1-3, #CCCCCC);
@@ -5554,7 +5554,7 @@
     /* ------------------------ typography ------------------------ */
     
     
-    --typography-text-color: var(--color-text1-2, #333333);
+    --typography-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --typography-text-strong-font-weight: var(--font-weight-semi-bold, 600);
@@ -5572,10 +5572,10 @@
     --typography-text-code-color: var(--color-text1-4, #1A1A1A);
     
     
-    --typography-text-code-background: var(--color-fill1-2, #F7F7F7);
+    --typography-text-code-background: var(--color-fill1-2, #fafafa);
     
     
-    --typography-text-code-border-color: var(--color-line1-1, #E6E6E6);
+    --typography-text-code-border-color: var(--color-line1-1, #eaeaea);
     
     
     --typography-paragraph-font-size: var(--font-size-body-2, 14px);
@@ -5611,7 +5611,7 @@
     --btn-shadow: var(--shadow-zero, none);
     
     
-    --btn-shadow-hover: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
+    --btn-shadow-hover: var(--shadow-zero, none);
     
     
     --btn-size-s-height: var(--s-6, 24px);
@@ -5689,10 +5689,10 @@
     --btn-pure-color-disabled: var(--color-white, #FFFFFF);
     
     
-    --btn-pure-bg-disabled: var(--color-fill1-3, #E6E6E6);
+    --btn-pure-bg-disabled: var(--color-fill1-3, #eaeaea);
     
     
-    --btn-pure-border-color-disabled: var(--color-line1-1, #E6E6E6);
+    --btn-pure-border-color-disabled: var(--color-line1-1, #eaeaea);
     
     
     --btn-pure-normal-color-disabled: var(--color-text1-1, #CCCCCC);
@@ -5701,31 +5701,31 @@
     --btn-pure-normal-bg-disabled: var(--color-fill1-1, #FFFFFF);
     
     
-    --btn-pure-normal-border-color-disabled: var(--color-line1-1, #E6E6E6);
+    --btn-pure-normal-border-color-disabled: var(--color-line1-1, #eaeaea);
     
     
-    --btn-pure-normal-color: var(--color-text1-6, #666666);
+    --btn-pure-normal-color: var(--color-text1-6, #5a5a5a);
     
     
-    --btn-pure-normal-color-hover: var(--color-text1-6, #666666);
+    --btn-pure-normal-color-hover: var(--color-text1-6, #5a5a5a);
     
     
-    --btn-pure-normal-color-active: var(--color-text1-6, #666666);
+    --btn-pure-normal-color-active: var(--color-text1-6, #5a5a5a);
     
     
     --btn-pure-normal-bg: var(--color-white, #FFFFFF);
     
     
-    --btn-pure-normal-bg-hover: var(--color-fill1-2, #F7F7F7);
+    --btn-pure-normal-bg-hover: var(--color-fill1-2, #fafafa);
     
     
-    --btn-pure-normal-bg-active: var(--color-fill1-3, #E6E6E6);
+    --btn-pure-normal-bg-active: var(--color-fill1-3, #eaeaea);
     
     
-    --btn-pure-normal-border-color: var(--color-line1-1, #E6E6E6);
+    --btn-pure-normal-border-color: var(--color-line1-2, #D9D9D9);
     
     
-    --btn-pure-normal-border-color-hover: var(--color-line1-1, #E6E6E6);
+    --btn-pure-normal-border-color-hover: var(--color-line1-2, #D9D9D9);
     
     
     --btn-pure-normal-border-color-active: var(--color-line1-2, #D9D9D9);
@@ -5866,7 +5866,7 @@
     --btn-ghost-light-bg-opacity: 0;
     
     
-    --btn-ghost-light-color-hover: var(--color-text1-2, #333333);
+    --btn-ghost-light-color-hover: var(--color-text1-2, #5a5a5a);
     
     
     --btn-ghost-light-border-color-hover: var(--color-text1-4, #1A1A1A);
@@ -5962,7 +5962,7 @@
     --btn-warning-normal-color-disabled: var(--color-text1-1, #CCCCCC);
     
     
-    --btn-warning-normal-border-color-disabled: var(--color-line1-1, #E6E6E6);
+    --btn-warning-normal-border-color-disabled: var(--color-line1-1, #eaeaea);
     
     
     --btn-warning-normal-bg-disabled: var(--color-transparent, transparent);
@@ -5974,7 +5974,7 @@
     --btn-text-primary-color-hover: var(--color-brand1-5, #2A7DD1);
     
     
-    --btn-text-disabled-color: var(--color-fill1-3, #E6E6E6);
+    --btn-text-disabled-color: var(--color-fill1-3, #eaeaea);
     
     
     --btn-text-loading-color: var(--color-text1-4, #1A1A1A);
@@ -5986,7 +5986,7 @@
     --btn-text-secondary-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --btn-text-normal-color: var(--color-text1-6, #666666);
+    --btn-text-normal-color: var(--color-text1-6, #5a5a5a);
     
     
     --btn-text-normal-color-hover: var(--color-brand1-6, #0064C8);
@@ -6115,43 +6115,43 @@
     --tag-closable-normal-icon-color: var(--color-white, #FFFFFF);
     
     
-    --tag-closable-normal-icon-color-hover: var(--color-text1-6, #666666);
+    --tag-closable-normal-icon-color-hover: var(--color-text1-6, #5a5a5a);
     
     
-    --tag-closable-normal-icon-color-disabled: var(--color-fill1-3, #E6E6E6);
+    --tag-closable-normal-icon-color-disabled: var(--color-fill1-3, #eaeaea);
     
     
-    --tag-closable-normal-bg: var(--color-line1-1, #E6E6E6);
+    --tag-closable-normal-bg: var(--color-line1-1, #eaeaea);
     
     
-    --tag-closable-normal-bg-hover: var(--color-line1-1, #E6E6E6);
+    --tag-closable-normal-bg-hover: var(--color-line1-1, #eaeaea);
     
     
-    --tag-closable-normal-bg-disabled: var(--color-line1-1, #E6E6E6);
+    --tag-closable-normal-bg-disabled: var(--color-line1-1, #eaeaea);
     
     
-    --tag-closable-bordered-text-color: var(--color-text1-6, #666666);
+    --tag-closable-bordered-text-color: var(--color-text1-6, #5a5a5a);
     
     
-    --tag-closable-bordered-border-color: var(--color-line1-1, #E6E6E6);
+    --tag-closable-bordered-border-color: var(--color-line1-1, #eaeaea);
     
     
-    --tag-closable-bordered-bg: var(--color-fill1-2, #F7F7F7);
+    --tag-closable-bordered-bg: var(--color-fill1-2, #fafafa);
     
     
-    --tag-closable-bordered-text-color-hover: var(--color-text1-6, #666666);
+    --tag-closable-bordered-text-color-hover: var(--color-text1-6, #5a5a5a);
     
     
-    --tag-closable-bordered-border-color-hover: var(--color-line1-1, #E6E6E6);
+    --tag-closable-bordered-border-color-hover: var(--color-line1-1, #eaeaea);
     
     
-    --tag-closable-bordered-bg-hover: var(--color-fill1-2, #F7F7F7);
+    --tag-closable-bordered-bg-hover: var(--color-fill1-2, #fafafa);
     
     
-    --tag-closable-bordered-tail-color: var(--color-text1-6, #666666);
+    --tag-closable-bordered-tail-color: var(--color-text1-6, #5a5a5a);
     
     
-    --tag-closable-bordered-tail-color-hover: var(--color-text1-6, #666666);
+    --tag-closable-bordered-tail-color-hover: var(--color-text1-6, #5a5a5a);
     
     
     --tag-closable-bordered-tail-color-disabled: var(--color-text1-1, #CCCCCC);
@@ -6163,7 +6163,7 @@
     --tag-closable-bordered-text-color-disabled: var(--color-text1-1, #CCCCCC);
     
     
-    --tag-closable-bordered-bg-disabled: var(--color-fill1-2, #F7F7F7);
+    --tag-closable-bordered-bg-disabled: var(--color-fill1-2, #fafafa);
     
     
     --tag-fill-tail-color: var(--color-brand1-6, #0064C8);
@@ -6181,16 +6181,16 @@
     --tag-fill-border-color-disabled: var(--color-line1-2, #D9D9D9);
     
     
-    --tag-fill-bg-color-disabled: var(--color-fill1-2, #F7F7F7);
+    --tag-fill-bg-color-disabled: var(--color-fill1-2, #fafafa);
     
     
     --tag-fill-tail-color-disabled: var(--color-text1-1, #CCCCCC);
     
     
-    --tag-bordered-text-color: var(--color-text1-6, #666666);
+    --tag-bordered-text-color: var(--color-text1-6, #5a5a5a);
     
     
-    --tag-bordered-tail-color: var(--color-text1-3, #262626);
+    --tag-bordered-tail-color: var(--color-text1-3, #333333);
     
     
     --tag-secondary-text-color: var(--color-brand1-6, #0064C8);
@@ -6205,7 +6205,7 @@
     --tag-fill-tail-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --tag-bordered-text-color-hover: var(--color-text1-6, #666666);
+    --tag-bordered-text-color-hover: var(--color-text1-6, #5a5a5a);
     
     
     --tag-bordered-tail-color-hover: var(--color-text1-4, #1A1A1A);
@@ -6220,13 +6220,13 @@
     --tag-bordered-border-color-disabled: var(--color-line1-2, #D9D9D9);
     
     
-    --tag-bordered-bg-disabled: var(--color-fill1-2, #F7F7F7);
+    --tag-bordered-bg-disabled: var(--color-fill1-2, #fafafa);
     
     
     --tag-secondary-text-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --tag-bordered-border-color: var(--color-line1-1, #E6E6E6);
+    --tag-bordered-border-color: var(--color-line1-1, #eaeaea);
     
     
     --tag-secondary-border-color: var(--color-brand1-6, #0064C8);
@@ -6238,7 +6238,7 @@
     --tag-checkable-secondary-bg-selected: var(--color-brand1-6, #0064C8);
     
     
-    --tag-bordered-border-color-hover: var(--color-line1-1, #E6E6E6);
+    --tag-bordered-border-color-hover: var(--color-line1-1, #eaeaea);
     
     
     --tag-secondary-border-color-hover: var(--color-brand1-6, #0064C8);
@@ -6256,7 +6256,7 @@
     --tag-primary-background-color: var(--color-brand1-6, #0064C8);
     
     
-    --tag-bordered-bg: var(--color-fill1-2, #F7F7F7);
+    --tag-bordered-bg: var(--color-fill1-2, #fafafa);
     
     
     --tag-secondary-bg: var(--color-transparent, transparent);
@@ -6265,7 +6265,7 @@
     --tag-fill-bg-color-hover: var(--color-brand1-1, #F0F7FF);
     
     
-    --tag-bordered-bg-hover: var(--color-fill1-2, #F7F7F7);
+    --tag-bordered-bg-hover: var(--color-fill1-2, #fafafa);
     
     
     --tag-secondary-bg-hover: var(--color-brand1-1, #F0F7FF);
@@ -6274,16 +6274,16 @@
     --tag-text-color-disabled: var(--color-text1-1, #CCCCCC);
     
     
-    --tag-border-color-disabled: var(--color-line1-1, #E6E6E6);
+    --tag-border-color-disabled: var(--color-line1-1, #eaeaea);
     
     
-    --tag-checkable-fill-text-color: var(--color-text1-3, #262626);
+    --tag-checkable-fill-text-color: var(--color-text1-3, #333333);
     
     
-    --tag-checkable-fill-bg-color: var(--color-fill1-3, #E6E6E6);
+    --tag-checkable-fill-bg-color: var(--color-fill1-3, #eaeaea);
     
     
-    --tag-checkable-fill-border-color: var(--color-fill1-3, #E6E6E6);
+    --tag-checkable-fill-border-color: var(--color-fill1-3, #eaeaea);
     
     
     --tag-checkable-fill-text-color-hover: var(--color-text1-4, #1A1A1A);
@@ -6295,7 +6295,7 @@
     --tag-checkable-fill-border-color-hover: var(--color-fill1-4, #D9D9D9);
     
     
-    --tag-checkable-fill-tail-color: var(--color-text1-3, #262626);
+    --tag-checkable-fill-tail-color: var(--color-text1-3, #333333);
     
     
     --tag-checkable-fill-tail-color-hover: var(--color-text1-4, #1A1A1A);
@@ -6313,7 +6313,7 @@
     --tag-checkable-fill-bg-color-disabled: var(--color-fill1-1, #FFFFFF);
     
     
-    --tag-checkable-normal-text-color: var(--color-text1-6, #666666);
+    --tag-checkable-normal-text-color: var(--color-text1-6, #5a5a5a);
     
     
     --tag-checkable-normal-border-color: var(--color-line1-2, #D9D9D9);
@@ -6322,13 +6322,13 @@
     --tag-checkable-normal-bg: var(--color-white, #FFFFFF);
     
     
-    --tag-checkable-normal-text-color-hover: var(--color-text1-6, #666666);
+    --tag-checkable-normal-text-color-hover: var(--color-text1-6, #5a5a5a);
     
     
     --tag-checkable-normal-border-color-hover: var(--color-fill1-4, #D9D9D9);
     
     
-    --tag-checkable-normal-bg-hover: var(--color-fill1-2, #F7F7F7);
+    --tag-checkable-normal-bg-hover: var(--color-fill1-2, #fafafa);
     
     
     --tag-checkable-normal-text-selected-disabled: var(--color-text1-1, #CCCCCC);
@@ -6337,10 +6337,10 @@
     --tag-checkable-normal-border-selected-disabled: var(--color-line1-2, #D9D9D9);
     
     
-    --tag-checkable-normal-bg-selected-disabled: var(--color-fill1-2, #F7F7F7);
+    --tag-checkable-normal-bg-selected-disabled: var(--color-fill1-2, #fafafa);
     
     
-    --tag-checkable-normal-tick-bg-selected-disabled: var(--color-fill1-2, #F7F7F7);
+    --tag-checkable-normal-tick-bg-selected-disabled: var(--color-fill1-2, #fafafa);
     
     
     --tag-checkable-primary-text-color: var(--color-white, #FFFFFF);
@@ -6376,7 +6376,7 @@
     --tag-checkable-primary-tail-color-hover: var(--color-white, #FFFFFF);
     
     
-    --tag-checkable-secondary-bg-selected-disabled: var(--color-line1-1, #E6E6E6);
+    --tag-checkable-secondary-bg-selected-disabled: var(--color-line1-1, #eaeaea);
     
     
     --tag-checkable-normal-icon-color-selected: var(--color-transparent, transparent);
@@ -6418,7 +6418,7 @@
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #CCCCCC);
     
     
-    --tag-closable-primary-fill-border-color-disabled: var(--color-line1-1, #E6E6E6);
+    --tag-closable-primary-fill-border-color-disabled: var(--color-line1-1, #eaeaea);
     
     
     --tag-closable-primary-fill-bg-color-disabled: var(--color-white, #FFFFFF);
@@ -6427,13 +6427,13 @@
     /* ------------------------ input ------------------------ */
     
     
-    --input-text-color: var(--color-text1-2, #333333);
+    --input-text-color: var(--color-text1-3, #333333);
     
     
     --input-border-color: var(--color-line1-2, #D9D9D9);
     
     
-    --input-label-color: var(--color-line1-5, #9c9c9c);
+    --input-label-color: var(--color-line1-5, #a8a8a8);
     
     
     --input-hover-border-color: var(--color-line1-3, #CCCCCC);
@@ -6442,7 +6442,7 @@
     --input-hover-bg-color: var(--color-white, #FFFFFF);
     
     
-    --input-focus-border-color: var(--color-line1-5, #9c9c9c);
+    --input-focus-border-color: var(--color-line1-5, #a8a8a8);
     
     
     --input-focus-bg-color: var(--color-transparent, transparent);
@@ -6463,10 +6463,10 @@
     --input-disabled-color: var(--color-text1-1, #CCCCCC);
     
     
-    --input-disabled-border-color: var(--color-line1-1, #E6E6E6);
+    --input-disabled-border-color: var(--color-line1-1, #eaeaea);
     
     
-    --input-disabled-bg-color: var(--color-fill1-2, #F7F7F7);
+    --input-disabled-bg-color: var(--color-fill1-2, #fafafa);
     
     
     --input-multiple-padding-lr: var(--s-2, 8px);
@@ -6484,7 +6484,7 @@
     --input-addon-bg-color: var(--color-white, #FFFFFF);
     
     
-    --input-addon-text-color: var(--color-text1-2, #333333);
+    --input-addon-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --input-addon-padding: var(--s-2, 8px);
@@ -6535,7 +6535,7 @@
     --input-feedback-success-icon: var(--icon-content-success-filling, "");
     
     
-    --input-feedback-loading-color: var(--color-fill1-5, #666666);
+    --input-feedback-loading-color: var(--color-fill1-5, #848484);
     
     
     --input-feedback-loading-icon: var(--icon-content-loading, "");
@@ -6559,10 +6559,10 @@
     --input-maxlen-font-size: var(--font-size-caption, 12px);
     
     
-    --input-hint-color: var(--color-fill1-5, #666666);
+    --input-hint-color: var(--color-fill1-5, #848484);
     
     
-    --input-hint-hover-color: var(--color-fill1-5, #666666);
+    --input-hint-hover-color: var(--color-fill1-5, #848484);
     
     
     --input-feedback-clear-icon: var(--icon-content-delete-filling, "");
@@ -6598,7 +6598,7 @@
     --form-help-font-size: var(--font-size-caption, 12px);
     
     
-    --form-help-color: var(--color-text1-7, #9c9c9c);
+    --form-help-color: var(--color-text1-7, #5a5a5a);
     
     
     --form-error-color: var(--color-error-4, #ED675A);
@@ -6610,7 +6610,7 @@
     --form-top-label-margin-b: 2px;
     
     
-    --form-label-color: var(--color-text1-6, #666666);
+    --form-label-color: var(--color-text1-6, #5a5a5a);
     
     
     /* ------------------------ loading ------------------------ */
@@ -6694,31 +6694,31 @@
     --table-group-split: var(--s-2, 8px);
     
     
-    --table-normal-border-color: var(--color-line1-1, #E6E6E6);
+    --table-normal-border-color: var(--color-line1-1, #eaeaea);
     
     
     --table-normal-border-style: var(--line-solid, solid);
     
     
-    --table-th-bg: var(--color-fill1-2, #F7F7F7);
+    --table-th-bg: var(--color-fill1-2, #fafafa);
     
     
-    --table-th-color: var(--color-text1-6, #666666);
+    --table-th-color: var(--color-text1-6, #5a5a5a);
     
     
     --table-sort-color: var(--color-text1-4, #1A1A1A);
     
     
-    --table-group-th-bg: var(--color-fill1-2, #F7F7F7);
+    --table-group-th-bg: var(--color-fill1-2, #fafafa);
     
     
-    --table-group-th-color: var(--color-text1-6, #666666);
+    --table-group-th-color: var(--color-text1-6, #5a5a5a);
     
     
     --table-row-bg: var(--color-fill1-1, #FFFFFF);
     
     
-    --table-row-color: var(--color-text1-2, #333333);
+    --table-row-color: var(--color-text1-2, #5a5a5a);
     
     
     --table-td-gray: var(--color-fill1-1, #FFFFFF);
@@ -6730,16 +6730,16 @@
     --table-empty-color: var(--color-text1-1, #CCCCCC);
     
     
-    --table-group-footer-bg: var(--color-fill1-2, #F7F7F7);
+    --table-group-footer-bg: var(--color-fill1-2, #fafafa);
     
     
-    --table-group-footer-color: var(--color-text1-2, #333333);
+    --table-group-footer-color: var(--color-text1-2, #5a5a5a);
     
     
-    --table-row-hover-bg: var(--color-fill1-2, #F7F7F7);
+    --table-row-hover-bg: var(--color-fill1-2, #fafafa);
     
     
-    --table-row-hover-color: var(--color-text1-2, #333333);
+    --table-row-hover-color: var(--color-text1-2, #5a5a5a);
     
     
     --table-row-selected-bg: var(--color-brand1-1, #F0F7FF);
@@ -6751,7 +6751,7 @@
     --table-sort-color-current: var(--color-brand1-6, #0064C8);
     
     
-    --table-expanded-ctrl-disabled-color: var(--color-text1-2, #333333);
+    --table-expanded-ctrl-disabled-color: var(--color-text1-2, #5a5a5a);
     
     
     --table-tree-fold-icon-content: var(--icon-content-arrow-right, "");
@@ -6772,7 +6772,7 @@
     --upload-disable-text-color: var(--color-text1-1, #CCCCCC);
     
     
-    --upload-disable-border-color: var(--color-line1-1, #E6E6E6);
+    --upload-disable-border-color: var(--color-line1-1, #eaeaea);
     
     
     --upload-text-list-height: var(--s-10, 40px);
@@ -6796,7 +6796,7 @@
     --upload-text-list-bg-color: var(--color-transparent, transparent);
     
     
-    --upload-text-list-bg-color-hover: var(--color-fill1-2, #F7F7F7);
+    --upload-text-list-bg-color-hover: var(--color-fill1-2, #fafafa);
     
     
     --upload-text-list-bg-color-error: var(--color-error-1, #FFF1F0);
@@ -6805,19 +6805,19 @@
     --upload-text-list-error-text-color: var(--color-error-5, #E84738);
     
     
-    --upload-text-list-close-icon-color: var(--color-text1-2, #333333);
+    --upload-text-list-close-icon-color: var(--color-fill1-5, #848484);
     
     
-    --upload-text-list-close-icon-color-hover: var(--color-text1-3, #262626);
+    --upload-text-list-close-icon-color-hover: var(--color-text1-5, #292929);
     
     
-    --upload-text-list-name-font-color: var(--color-text1-4, #1A1A1A);
+    --upload-text-list-name-font-color: var(--color-text1-3, #333333);
     
     
     --upload-text-list-name-font-color-hover: var(--color-brand1-6, #0064C8);
     
     
-    --upload-text-list-size-font-color: var(--color-text1-2, #333333);
+    --upload-text-list-size-font-color: var(--color-text1-2, #5a5a5a);
     
     
     --upload-text-list-size-font-color-hover: var(--color-brand1-6, #0064C8);
@@ -6865,10 +6865,10 @@
     --upload-image-list-item-error-bg-color: var(--color-white, #FFFFFF);
     
     
-    --upload-image-list-close-icon-color: var(--color-text1-2, #333333);
+    --upload-image-list-close-icon-color: var(--color-text1-2, #5a5a5a);
     
     
-    --upload-image-list-close-icon-color-hover: var(--color-text1-3, #262626);
+    --upload-image-list-close-icon-color-hover: var(--color-text1-3, #333333);
     
     
     --upload-image-list-item-border-color: var(--color-line1-2, #D9D9D9);
@@ -6883,7 +6883,7 @@
     --upload-image-list-item-picture-border-color: var(--color-transparent, transparent);
     
     
-    --upload-image-list-item-picture-background-color: var(--color-fill1-2, #F7F7F7);
+    --upload-image-list-item-picture-background-color: var(--color-fill1-2, #fafafa);
     
     
     --upload-image-list-progressbar-height: 4px;
@@ -6904,16 +6904,16 @@
     --upload-card-add-text-margin-top: var(--s-2, 8px);
     
     
-    --upload-card-bg-color: var(--color-fill1-2, #F7F7F7);
+    --upload-card-bg-color: var(--color-fill1-2, #fafafa);
     
     
     --upload-card-border-style: var(--line-dashed, dashed);
     
     
-    --upload-card-border-color: var(--color-fill1-2, #F7F7F7);
+    --upload-card-border-color: var(--color-fill1-2, #fafafa);
     
     
-    --upload-card-hover-border-color: var(--color-line1-1, #E6E6E6);
+    --upload-card-hover-border-color: var(--color-line1-1, #eaeaea);
     
     
     --upload-card-font-color: var(--color-line1-3, #CCCCCC);
@@ -6922,7 +6922,7 @@
     --upload-card-icon-color: var(--color-line1-3, #CCCCCC);
     
     
-    --upload-card-hover-font-color: var(--color-line1-5, #9c9c9c);
+    --upload-card-hover-font-color: var(--color-line1-5, #a8a8a8);
     
     
     --upload-card-add-icon: var(--icon-content-add, "");
@@ -6967,7 +6967,7 @@
     --upload-card-list-name-font-size: var(--font-size-caption, 12px);
     
     
-    --upload-card-list-name-font-color: var(--color-text1-3, #262626);
+    --upload-card-list-name-font-color: var(--color-text1-3, #333333);
     
     
     --upload-card-list-progressbar-height: var(--s-1, 4px);
@@ -7006,10 +7006,10 @@
     --upload-drag-zone-upload-icon-color: var(--color-brand1-6, #0064C8);
     
     
-    --upload-drag-zone-upload-normal-title-color: var(--color-text1-3, #262626);
+    --upload-drag-zone-upload-normal-title-color: var(--color-text1-3, #333333);
     
     
-    --upload-drag-zone-upload-normal-hint-color: var(--color-text1-2, #333333);
+    --upload-drag-zone-upload-normal-hint-color: var(--color-text1-2, #5a5a5a);
     
     
     /* ------------------------ badge ------------------------ */
@@ -7120,7 +7120,7 @@
     --balloon-normal-color-bg: var(--color-white, #FFFFFF);
     
     
-    --balloon-normal-color-border: var(--color-line1-1, #E6E6E6);
+    --balloon-normal-color-border: var(--color-line1-1, #eaeaea);
     
     
     --balloon-normal-shadow: var(--shadow-3, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
@@ -7129,13 +7129,13 @@
     --balloon-normal-color: var(--color-text1-4, #1A1A1A);
     
     
-    --balloon-normal-color-close: var(--color-text1-2, #333333);
+    --balloon-normal-color-close: var(--color-text1-2, #5a5a5a);
     
     
-    --balloon-normal-color-close-hover: var(--color-text1-3, #262626);
+    --balloon-normal-color-close-hover: var(--color-text1-3, #333333);
     
     
-    --balloon-primary-color-bg: var(--color-text1-2, #333333);
+    --balloon-primary-color-bg: var(--color-text1-2, #5a5a5a);
     
     
     --balloon-primary-color-border: var(--color-transparent, transparent);
@@ -7153,7 +7153,7 @@
     --balloon-primary-color-close-hover: var(--color-text1-1, #CCCCCC);
     
     
-    --balloon-tooltip-color-bg: var(--color-text1-2, #333333);
+    --balloon-tooltip-color-bg: var(--color-text1-2, #5a5a5a);
     
     
     --balloon-tooltip-shadow: var(--shadow-zero, none);
@@ -7171,10 +7171,10 @@
     /* ------------------------ select ------------------------ */
     
     
-    --select-color: var(--color-text1-4, #1A1A1A);
+    --select-color: var(--color-text1-3, #333333);
     
     
-    --select-hint-color: var(--color-text1-2, #333333);
+    --select-hint-color: var(--color-text1-2, #5a5a5a);
     
     
     --select-highlight-color: var(--color-brand1-6, #0064C8);
@@ -7261,13 +7261,13 @@
     --drawer-title-bg-color: var(--color-white, #FFFFFF);
     
     
-    --drawer-title-border-color: var(--color-line1-1, #E6E6E6);
+    --drawer-title-border-color: var(--color-line1-1, #eaeaea);
     
     
-    --drawer-content-color: var(--color-text1-3, #262626);
+    --drawer-content-color: var(--color-text1-3, #333333);
     
     
-    --drawer-close-color: var(--color-text1-2, #333333);
+    --drawer-close-color: var(--color-text1-2, #5a5a5a);
     
     
     --drawer-close-color-hovered: var(--color-text1-4, #1A1A1A);
@@ -7375,10 +7375,10 @@
     --message-success-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-success-color-border-toast: var(--color-line1-1, #E6E6E6);
+    --message-success-color-border-toast: var(--color-line1-1, #eaeaea);
     
     
-    --message-success-color-title-inline: var(--color-text1-2, #333333);
+    --message-success-color-title-inline: var(--color-text1-2, #5a5a5a);
     
     
     --message-success-color-title-addon: var(--color-text1-4, #1A1A1A);
@@ -7387,13 +7387,13 @@
     --message-success-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-success-color-content-inline: var(--color-text1-6, #666666);
+    --message-success-color-content-inline: var(--color-text1-6, #5a5a5a);
     
     
-    --message-success-color-content-addon: var(--color-text1-2, #333333);
+    --message-success-color-content-addon: var(--color-text1-2, #5a5a5a);
     
     
-    --message-success-color-content-toast: var(--color-text1-6, #666666);
+    --message-success-color-content-toast: var(--color-text1-6, #5a5a5a);
     
     
     --message-success-color-icon-inline: var(--color-success-5, #23B066);
@@ -7417,7 +7417,7 @@
     --message-error-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-error-color-border-toast: var(--color-line1-1, #E6E6E6);
+    --message-error-color-border-toast: var(--color-line1-1, #eaeaea);
     
     
     --message-error-color-title-inline: var(--color-text1-4, #1A1A1A);
@@ -7429,13 +7429,13 @@
     --message-error-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-error-color-content-inline: var(--color-text1-6, #666666);
+    --message-error-color-content-inline: var(--color-text1-6, #5a5a5a);
     
     
-    --message-error-color-content-addon: var(--color-text1-2, #333333);
+    --message-error-color-content-addon: var(--color-text1-2, #5a5a5a);
     
     
-    --message-error-color-content-toast: var(--color-text1-6, #666666);
+    --message-error-color-content-toast: var(--color-text1-6, #5a5a5a);
     
     
     --message-error-color-icon-inline: var(--color-error-5, #E84738);
@@ -7459,7 +7459,7 @@
     --message-warning-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-warning-color-border-toast: var(--color-line1-1, #E6E6E6);
+    --message-warning-color-border-toast: var(--color-line1-1, #eaeaea);
     
     
     --message-warning-color-title-inline: var(--color-text1-4, #1A1A1A);
@@ -7471,13 +7471,13 @@
     --message-warning-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-warning-color-content-inline: var(--color-text1-6, #666666);
+    --message-warning-color-content-inline: var(--color-text1-6, #5a5a5a);
     
     
-    --message-warning-color-content-addon: var(--color-text1-2, #333333);
+    --message-warning-color-content-addon: var(--color-text1-2, #5a5a5a);
     
     
-    --message-warning-color-content-toast: var(--color-text1-6, #666666);
+    --message-warning-color-content-toast: var(--color-text1-6, #5a5a5a);
     
     
     --message-warning-color-icon-inline: var(--color-warning-5, #F98E1B);
@@ -7501,7 +7501,7 @@
     --message-notice-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-notice-color-border-toast: var(--color-line1-1, #E6E6E6);
+    --message-notice-color-border-toast: var(--color-line1-1, #eaeaea);
     
     
     --message-notice-color-title-inline: var(--color-text1-4, #1A1A1A);
@@ -7513,13 +7513,13 @@
     --message-notice-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-notice-color-content-inline: var(--color-text1-6, #666666);
+    --message-notice-color-content-inline: var(--color-text1-6, #5a5a5a);
     
     
-    --message-notice-color-content-addon: var(--color-text1-2, #333333);
+    --message-notice-color-content-addon: var(--color-text1-2, #5a5a5a);
     
     
-    --message-notice-color-content-toast: var(--color-text1-6, #666666);
+    --message-notice-color-content-toast: var(--color-text1-6, #5a5a5a);
     
     
     --message-notice-color-icon-inline: var(--color-brand1-6, #0064C8);
@@ -7543,7 +7543,7 @@
     --message-help-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-help-color-border-toast: var(--color-line1-1, #E6E6E6);
+    --message-help-color-border-toast: var(--color-line1-1, #eaeaea);
     
     
     --message-help-color-title-inline: var(--color-text1-4, #1A1A1A);
@@ -7555,13 +7555,13 @@
     --message-help-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-help-color-content-inline: var(--color-text1-6, #666666);
+    --message-help-color-content-inline: var(--color-text1-6, #5a5a5a);
     
     
-    --message-help-color-content-addon: var(--color-text1-3, #262626);
+    --message-help-color-content-addon: var(--color-text1-3, #333333);
     
     
-    --message-help-color-content-toast: var(--color-text1-6, #666666);
+    --message-help-color-content-toast: var(--color-text1-6, #5a5a5a);
     
     
     --message-help-color-icon-inline: var(--color-brand1-6, #0064C8);
@@ -7585,7 +7585,7 @@
     --message-loading-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-loading-color-border-toast: var(--color-line1-1, #E6E6E6);
+    --message-loading-color-border-toast: var(--color-line1-1, #eaeaea);
     
     
     --message-loading-color-title-inline: var(--color-text1-4, #1A1A1A);
@@ -7597,13 +7597,13 @@
     --message-loading-color-title-toast: var(--color-text1-4, #1A1A1A);
     
     
-    --message-loading-color-content-inline: var(--color-text1-6, #666666);
+    --message-loading-color-content-inline: var(--color-text1-6, #5a5a5a);
     
     
-    --message-loading-color-content-addon: var(--color-text1-3, #262626);
+    --message-loading-color-content-addon: var(--color-text1-3, #333333);
     
     
-    --message-loading-color-content-toast: var(--color-text1-6, #666666);
+    --message-loading-color-content-toast: var(--color-text1-6, #5a5a5a);
     
     
     --message-loading-color-icon-inline: var(--color-brand1-6, #0064C8);
@@ -7615,10 +7615,10 @@
     --message-loading-color-icon-toast: var(--color-brand1-6, #0064C8);
     
     
-    --message-close-icon-color: var(--color-text1-2, #333333);
+    --message-close-icon-color: var(--color-text1-2, #5a5a5a);
     
     
-    --message-hover-close-icon-color: var(--color-text1-2, #333333);
+    --message-hover-close-icon-color: var(--color-text1-2, #5a5a5a);
     
     
     --message-success-icon-content: var(--icon-content-success-filling, "");
@@ -7732,7 +7732,7 @@
     --dialog-title-border-color: var(--color-transparent, transparent);
     
     
-    --dialog-content-color: var(--color-text1-6, #666666);
+    --dialog-content-color: var(--color-text1-6, #5a5a5a);
     
     
     --dialog-footer-bg-color: var(--color-transparent, transparent);
@@ -7741,10 +7741,10 @@
     --dialog-footer-border-color: var(--color-transparent, transparent);
     
     
-    --dialog-close-color: var(--color-fill1-5, #666666);
+    --dialog-close-color: var(--color-fill1-5, #848484);
     
     
-    --dialog-close-color-hovered: var(--color-fill1-5, #666666);
+    --dialog-close-color-hovered: var(--color-fill1-5, #848484);
     
     
     --dialog-close-bg-hovered: var(--color-transparent, transparent);
@@ -7846,7 +7846,7 @@
     --progress-line-font-s: var(--font-size-caption, 12px);
     
     
-    --progress-line-underlay-color: var(--color-fill1-3, #E6E6E6);
+    --progress-line-underlay-color: var(--color-fill1-3, #eaeaea);
     
     
     --progress-line-underlay-border-color: var(--color-line1-2, #D9D9D9);
@@ -7906,10 +7906,10 @@
     --progress-circle-font-s: var(--font-size-body-2, 14px);
     
     
-    --progress-circle-underlay-color: var(--color-fill1-3, #E6E6E6);
+    --progress-circle-underlay-color: var(--color-fill1-3, #eaeaea);
     
     
-    --progress-circle-text-color: var(--color-fill1-5, #666666);
+    --progress-circle-text-color: var(--color-fill1-5, #848484);
     
     
     --progress-circle-corner: round;
@@ -7954,7 +7954,7 @@
     --shell-light-header-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-header-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-light-header-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-light-header-paddingLeft: var(--s-4, 16px);
@@ -7975,7 +7975,7 @@
     --shell-light-multitask-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-multitask-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-light-multitask-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-light-multitask-paddingLeft: var(--s-zero, 0px);
@@ -8008,7 +8008,7 @@
     --shell-light-navigation-ver-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-navigation-ver-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-light-navigation-ver-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-light-local-navigation-width: var(--s-42, 168px);
@@ -8032,7 +8032,7 @@
     --shell-light-local-navigation-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-local-navigation-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-light-local-navigation-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-light-appbar-background: var(--color-white, #FFFFFF);
@@ -8053,10 +8053,10 @@
     --shell-light-appbar-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-appbar-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-light-appbar-divider-color: var(--color-line1-1, #eaeaea);
     
     
-    --shell-light-content-background: var(--color-fill1-3, #E6E6E6);
+    --shell-light-content-background: var(--color-fill1-3, #eaeaea);
     
     
     --shell-light-content-paddingLeft: var(--s-5, 20px);
@@ -8098,7 +8098,7 @@
     --shell-light-ancillary-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-ancillary-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-light-ancillary-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-light-tooldock-height: var(--s-13, 52px);
@@ -8125,13 +8125,13 @@
     --shell-light-tooldock-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-tooldock-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-light-tooldock-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-light-tooldock-item-paddingTop: var(--s-2, 8px);
     
     
-    --shell-light-tooldock-item-color: var(--color-text1-3, #262626);
+    --shell-light-tooldock-item-color: var(--color-text1-3, #333333);
     
     
     --shell-light-tooldock-item-color-hover: var(--color-text1-4, #1A1A1A);
@@ -8143,10 +8143,10 @@
     --shell-light-tooldock-item-background: var(--color-transparent, transparent);
     
     
-    --shell-light-tooldock-item-background-hover: var(--color-fill1-3, #E6E6E6);
+    --shell-light-tooldock-item-background-hover: var(--color-fill1-3, #eaeaea);
     
     
-    --shell-light-tooldock-item-background-active: var(--color-fill1-3, #E6E6E6);
+    --shell-light-tooldock-item-background-active: var(--color-fill1-3, #eaeaea);
     
     
     --shell-dark-header-color: var(--color-white, #FFFFFF);
@@ -8188,7 +8188,7 @@
     --shell-dark-multitask-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-multitask-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-dark-multitask-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-dark-multitask-paddingLeft: var(--s-zero, 0px);
@@ -8221,7 +8221,7 @@
     --shell-dark-navigation-ver-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-navigation-ver-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-dark-navigation-ver-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-dark-local-navigation-width: var(--s-42, 168px);
@@ -8245,7 +8245,7 @@
     --shell-dark-local-navigation-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-local-navigation-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-dark-local-navigation-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-dark-appbar-background: var(--color-white, #FFFFFF);
@@ -8266,10 +8266,10 @@
     --shell-dark-appbar-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-appbar-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-dark-appbar-divider-color: var(--color-line1-1, #eaeaea);
     
     
-    --shell-dark-content-background: var(--color-fill1-3, #E6E6E6);
+    --shell-dark-content-background: var(--color-fill1-3, #eaeaea);
     
     
     --shell-dark-content-paddingLeft: var(--s-5, 20px);
@@ -8311,7 +8311,7 @@
     --shell-dark-ancillary-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-ancillary-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-dark-ancillary-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-dark-tooldock-height: var(--s-13, 52px);
@@ -8338,13 +8338,13 @@
     --shell-dark-tooldock-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-tooldock-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-dark-tooldock-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-dark-tooldock-item-paddingTop: var(--s-2, 8px);
     
     
-    --shell-dark-tooldock-item-color: var(--color-text1-3, #262626);
+    --shell-dark-tooldock-item-color: var(--color-text1-3, #333333);
     
     
     --shell-dark-tooldock-item-color-hover: var(--color-text1-4, #1A1A1A);
@@ -8356,10 +8356,10 @@
     --shell-dark-tooldock-item-background: var(--color-transparent, transparent);
     
     
-    --shell-dark-tooldock-item-background-hover: var(--color-fill1-3, #E6E6E6);
+    --shell-dark-tooldock-item-background-hover: var(--color-fill1-3, #eaeaea);
     
     
-    --shell-dark-tooldock-item-background-active: var(--color-fill1-3, #E6E6E6);
+    --shell-dark-tooldock-item-background-active: var(--color-fill1-3, #eaeaea);
     
     
     --shell-brand-header-color: var(--color-white, #FFFFFF);
@@ -8380,7 +8380,7 @@
     --shell-brand-header-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-header-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-brand-header-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-brand-header-paddingLeft: var(--s-4, 16px);
@@ -8401,7 +8401,7 @@
     --shell-brand-multitask-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-multitask-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-brand-multitask-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-brand-multitask-paddingLeft: var(--s-zero, 0px);
@@ -8434,7 +8434,7 @@
     --shell-brand-navigation-ver-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-navigation-ver-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-brand-navigation-ver-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-brand-local-navigation-width: var(--s-42, 168px);
@@ -8458,7 +8458,7 @@
     --shell-brand-local-navigation-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-local-navigation-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-brand-local-navigation-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-brand-appbar-background: var(--color-white, #FFFFFF);
@@ -8479,10 +8479,10 @@
     --shell-brand-appbar-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-appbar-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-brand-appbar-divider-color: var(--color-line1-1, #eaeaea);
     
     
-    --shell-brand-content-background: var(--color-fill1-3, #E6E6E6);
+    --shell-brand-content-background: var(--color-fill1-3, #eaeaea);
     
     
     --shell-brand-content-paddingLeft: var(--s-5, 20px);
@@ -8524,7 +8524,7 @@
     --shell-brand-ancillary-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-ancillary-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-brand-ancillary-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-brand-tooldock-height: var(--s-13, 52px);
@@ -8551,13 +8551,13 @@
     --shell-brand-tooldock-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-tooldock-divider-color: var(--color-line1-1, #E6E6E6);
+    --shell-brand-tooldock-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --shell-brand-tooldock-item-paddingTop: var(--s-2, 8px);
     
     
-    --shell-brand-tooldock-item-color: var(--color-text1-3, #262626);
+    --shell-brand-tooldock-item-color: var(--color-text1-3, #333333);
     
     
     --shell-brand-tooldock-item-color-hover: var(--color-text1-4, #1A1A1A);
@@ -8569,10 +8569,10 @@
     --shell-brand-tooldock-item-background: var(--color-transparent, transparent);
     
     
-    --shell-brand-tooldock-item-background-hover: var(--color-fill1-3, #E6E6E6);
+    --shell-brand-tooldock-item-background-hover: var(--color-fill1-3, #eaeaea);
     
     
-    --shell-brand-tooldock-item-background-active: var(--color-fill1-3, #E6E6E6);
+    --shell-brand-tooldock-item-background-active: var(--color-fill1-3, #eaeaea);
     
     
     /* ------------------------ divider ------------------------ */
@@ -8581,7 +8581,7 @@
     --divider-hoz-size: var(--line-1, 1px);
     
     
-    --divider-hoz-color: var(--color-line1-1, #E6E6E6);
+    --divider-hoz-color: var(--color-line1-1, #eaeaea);
     
     
     --divider-hoz-text-center-paddingLeft: var(--s-4, 16px);
@@ -8608,7 +8608,7 @@
     --divider-ver-size: var(--line-1, 1px);
     
     
-    --divider-ver-color: var(--color-line1-1, #E6E6E6);
+    --divider-ver-color: var(--color-line1-1, #eaeaea);
     
     
     --divider-ver-marginLeft: var(--s-2, 8px);
@@ -8626,10 +8626,10 @@
     --collapse-border-color: var(--color-transparent, transparent);
     
     
-    --collapse-panel-border-color: var(--color-line1-1, #E6E6E6);
+    --collapse-panel-border-color: var(--color-line1-1, #eaeaea);
     
     
-    --collapse-disabled-border-color: var(--color-line1-1, #E6E6E6);
+    --collapse-disabled-border-color: var(--color-line1-1, #eaeaea);
     
     
     --collapse-title-border-width: var(--line-zero, 0px);
@@ -8638,22 +8638,22 @@
     --collapse-title-height: 18px;
     
     
-    --collapse-title-bg-color: var(--color-fill1-2, #F7F7F7);
+    --collapse-title-bg-color: var(--color-fill1-2, #fafafa);
     
     
-    --collapse-title-hover-bg-color: var(--color-fill1-3, #E6E6E6);
+    --collapse-title-hover-bg-color: var(--color-fill1-3, #eaeaea);
     
     
-    --collapse-title-disabled-bg-color: var(--color-fill1-2, #F7F7F7);
+    --collapse-title-disabled-bg-color: var(--color-fill1-2, #fafafa);
     
     
-    --collapse-title-font-color: var(--color-text1-3, #262626);
+    --collapse-title-font-color: var(--color-text1-3, #333333);
     
     
     --collapse-title-font-disabled-color: var(--color-text1-1, #CCCCCC);
     
     
-    --collapse-title-hover-font-color: var(--color-text1-2, #333333);
+    --collapse-title-hover-font-color: var(--color-text1-2, #5a5a5a);
     
     
     --collapse-title-font-size: var(--font-size-body-1, 12px);
@@ -8671,10 +8671,10 @@
     --collapse-icon-size: var(--icon-s, 16px);
     
     
-    --collapse-icon-color: var(--color-text1-2, #333333);
+    --collapse-icon-color: var(--color-text1-2, #5a5a5a);
     
     
-    --collapse-icon-hover-color: var(--color-text1-2, #333333);
+    --collapse-icon-hover-color: var(--color-text1-2, #5a5a5a);
     
     
     --collapse-icon-margin-r: var(--s-2, 8px);
@@ -8695,7 +8695,7 @@
     --collapse-content-font-size: var(--font-size-body-1, 12px);
     
     
-    --collapse-content-color: var(--color-text1-2, #333333);
+    --collapse-content-color: var(--color-text1-2, #5a5a5a);
     
     
     --collapse-fold-icon-content: var(--icon-content-triangle-right-s, "");
@@ -8800,22 +8800,22 @@
     --pagination-small-size-selector-number-padding: var(--s-2, 8px);
     
     
-    --pagination-ellipsis-color: var(--color-text1-2, #333333);
+    --pagination-ellipsis-color: var(--color-text1-2, #5a5a5a);
     
     
-    --pagination-current-color: var(--color-text1-2, #333333);
+    --pagination-current-color: var(--color-text1-2, #5a5a5a);
     
     
-    --pagination-total-color: var(--color-text1-2, #333333);
+    --pagination-total-color: var(--color-text1-2, #5a5a5a);
     
     
-    --pagination-jump-color: var(--color-text1-2, #333333);
+    --pagination-jump-color: var(--color-text1-2, #5a5a5a);
     
     
-    --pagination-size-selector-title-color: var(--color-text1-2, #333333);
+    --pagination-size-selector-title-color: var(--color-text1-2, #5a5a5a);
     
     
-    --pagination-size-selector-filter-color: var(--color-text1-3, #262626);
+    --pagination-size-selector-filter-color: var(--color-text1-3, #333333);
     
     
     --pagination-size-selector-filter-current-color: var(--color-brand1-6, #0064C8);
@@ -8827,7 +8827,7 @@
     --pagination-item-shadow: var(--shadow-zero, none);
     
     
-    --pagination-item-color: var(--color-text1-2, #333333);
+    --pagination-item-color: var(--color-text1-2, #5a5a5a);
     
     
     --pagination-item-bg: var(--color-white, #FFFFFF);
@@ -8854,10 +8854,10 @@
     --pagination-item-hover-color: var(--color-text1-4, #1A1A1A);
     
     
-    --pagination-item-hover-bg: var(--color-fill1-2, #F7F7F7);
+    --pagination-item-hover-bg: var(--color-fill1-2, #fafafa);
     
     
-    --pagination-arrow-color: var(--color-fill1-5, #666666);
+    --pagination-arrow-color: var(--color-fill1-5, #848484);
     
     
     --pagination-icon-prev-content: var(--icon-content-arrow-left, "");
@@ -8947,13 +8947,13 @@
     --transfer-panel-background-color: var(--color-white, #FFFFFF);
     
     
-    --transfer-panel-header-text-color: var(--color-text1-2, #333333);
+    --transfer-panel-header-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --transfer-panel-header-background-color: var(--color-fill1-1, #FFFFFF);
     
     
-    --transfer-panel-search-icon-color: var(--color-text1-2, #333333);
+    --transfer-panel-search-icon-color: var(--color-text1-2, #5a5a5a);
     
     
     --transfer-panel-footer-text-color: var(--color-text1-4, #1A1A1A);
@@ -8965,7 +8965,7 @@
     --transfer-simple-panel-footer-text-color: var(--color-brand1-6, #0064C8);
     
     
-    --transfer-simple-panel-item-hover-text-color: var(--color-text1-2, #333333);
+    --transfer-simple-panel-item-hover-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --transfer-panel-footer-shadow: var(--shadow-zero, none);
@@ -9016,16 +9016,16 @@
     --radio-checked-bg-color: var(--color-white, #FFFFFF);
     
     
-    --radio-disabled-bg-color: var(--color-fill1-2, #F7F7F7);
+    --radio-disabled-bg-color: var(--color-fill1-2, #fafafa);
     
     
     --radio-checked-hovered-bg-color: var(--color-brand1-2, #CAE3FD);
     
     
-    --radio-checked-disabled-bg-color: var(--color-fill1-2, #F7F7F7);
+    --radio-checked-disabled-bg-color: var(--color-fill1-2, #fafafa);
     
     
-    --radio-border-color: var(--color-line1-1, #E6E6E6);
+    --radio-border-color: var(--color-line1-1, #eaeaea);
     
     
     --radio-hovered-border-color: var(--color-brand1-6, #0064C8);
@@ -9034,10 +9034,10 @@
     --radio-checked-border-color: var(--color-brand1-6, #0064C8);
     
     
-    --radio-disabled-border-color: var(--color-line1-1, #E6E6E6);
+    --radio-disabled-border-color: var(--color-line1-1, #eaeaea);
     
     
-    --radio-checked-disabled-border-color: var(--color-fill1-3, #E6E6E6);
+    --radio-checked-disabled-border-color: var(--color-fill1-3, #eaeaea);
     
     
     --radio-checked-hovered-border-color: var(--color-brand1-7, #0057AD);
@@ -9100,7 +9100,7 @@
     --radio-button-bg-color: var(--color-white, #FFFFFF);
     
     
-    --radio-button-bg-color-hovered: var(--color-fill1-2, #F7F7F7);
+    --radio-button-bg-color-hovered: var(--color-fill1-2, #fafafa);
     
     
     --radio-button-bg-color-checked: var(--color-white, #FFFFFF);
@@ -9109,7 +9109,7 @@
     --radio-button-bg-color-disabled: var(--color-fill1-1, #FFFFFF);
     
     
-    --radio-button-bg-color-checked-disabled: var(--color-fill1-2, #F7F7F7);
+    --radio-button-bg-color-checked-disabled: var(--color-fill1-2, #fafafa);
     
     
     --radio-button-border-color: var(--color-line1-3, #CCCCCC);
@@ -9121,16 +9121,16 @@
     --radio-button-border-color-checked: var(--color-brand1-6, #0064C8);
     
     
-    --radio-button-border-color-disabled: var(--color-line1-1, #E6E6E6);
+    --radio-button-border-color-disabled: var(--color-line1-1, #eaeaea);
     
     
-    --radio-button-border-color-checked-disabled: var(--color-line1-1, #E6E6E6);
+    --radio-button-border-color-checked-disabled: var(--color-line1-1, #eaeaea);
     
     
-    --radio-button-font-color: var(--color-text1-6, #666666);
+    --radio-button-font-color: var(--color-text1-6, #5a5a5a);
     
     
-    --radio-button-font-color-hovered: var(--color-text1-6, #666666);
+    --radio-button-font-color-hovered: var(--color-text1-6, #5a5a5a);
     
     
     --radio-button-font-color-checked: var(--color-brand1-6, #0064C8);
@@ -9166,10 +9166,10 @@
     --time-picker-menu-item-height: var(--s-7, 28px);
     
     
-    --time-picker-menu-border-color: var(--color-line1-1, #E6E6E6);
+    --time-picker-menu-border-color: var(--color-line1-1, #eaeaea);
     
     
-    --time-picker-menu-title-color: var(--color-line1-5, #9c9c9c);
+    --time-picker-menu-title-color: var(--color-line1-5, #a8a8a8);
     
     
     --time-picker-menu-title-background: var(--color-white, #FFFFFF);
@@ -9178,22 +9178,22 @@
     --time-pikcer-menu-title-font-weight: var(--font-weight-2, normal);
     
     
-    --time-picker-menu-item-color: var(--color-text1-3, #262626);
+    --time-picker-menu-item-color: var(--color-text1-3, #333333);
     
     
     --time-picker-menu-item-color-hover: var(--color-text1-4, #1A1A1A);
     
     
-    --time-picker-menu-item-color-selected: var(--color-text1-3, #262626);
+    --time-picker-menu-item-color-selected: var(--color-text1-3, #333333);
     
     
-    --time-picker-menu-item-color-disabled: var(--color-line1-1, #E6E6E6);
+    --time-picker-menu-item-color-disabled: var(--color-line1-1, #eaeaea);
     
     
     --time-picker-menu-item-background: var(--color-white, #FFFFFF);
     
     
-    --time-picker-menu-item-background-hover: var(--color-fill1-2, #F7F7F7);
+    --time-picker-menu-item-background-hover: var(--color-fill1-2, #fafafa);
     
     
     --time-picker-menu-item-background-selected: var(--color-brand1-1, #F0F7FF);
@@ -9322,7 +9322,7 @@
     --slick-arrow-icon-color-normal: var(--color-white, #FFFFFF);
     
     
-    --slick-arrow-icon-color-normal-outer: var(--color-text1-3, #262626);
+    --slick-arrow-icon-color-normal-outer: var(--color-text1-3, #333333);
     
     
     --slick-arrow-icon-color-hover: var(--color-white, #FFFFFF);
@@ -9388,10 +9388,10 @@
     --step-arrow-item-title-weight: var(--font-weight-2, normal);
     
     
-    --step-arrow-item-wait-background: var(--color-fill1-3, #E6E6E6);
+    --step-arrow-item-wait-background: var(--color-fill1-3, #eaeaea);
     
     
-    --step-arrow-item-title-wait-color: var(--color-text1-2, #333333);
+    --step-arrow-item-title-wait-color: var(--color-text1-2, #5a5a5a);
     
     
     --step-arrow-item-process-background: var(--color-brand1-6, #0064C8);
@@ -9460,16 +9460,16 @@
     --step-circle-item-node-disabled-size: var(--s-8, 32px);
     
     
-    --step-circle-item-tail-wait-color: var(--color-line1-1, #E6E6E6);
+    --step-circle-item-tail-wait-color: var(--color-line1-1, #eaeaea);
     
     
-    --step-circle-item-tail-process-color: var(--color-line1-1, #E6E6E6);
+    --step-circle-item-tail-process-color: var(--color-line1-1, #eaeaea);
     
     
     --step-circle-item-tail-finish-color: var(--color-brand1-6, #0064C8);
     
     
-    --step-circle-item-tail-disabled-color: var(--color-line1-1, #E6E6E6);
+    --step-circle-item-tail-disabled-color: var(--color-line1-1, #eaeaea);
     
     
     --step-circle-item-node-wait-font-weight: var(--font-weight-2, normal);
@@ -9484,13 +9484,13 @@
     --step-circle-item-node-finish-font-weight: var(--font-weight-2, normal);
     
     
-    --step-circle-item-title-wait-color: var(--color-text1-3, #262626);
+    --step-circle-item-title-wait-color: var(--color-text1-3, #333333);
     
     
-    --step-circle-item-title-process-color: var(--color-text1-3, #262626);
+    --step-circle-item-title-process-color: var(--color-text1-3, #333333);
     
     
-    --step-circle-item-title-finish-color: var(--color-text1-2, #333333);
+    --step-circle-item-title-finish-color: var(--color-text1-2, #5a5a5a);
     
     
     --step-circle-item-title-disabled-color: var(--color-text1-1, #CCCCCC);
@@ -9502,7 +9502,7 @@
     --step-circle-item-node-wait-background: var(--color-line1-3, #CCCCCC);
     
     
-    --step-circle-item-node-wait-color: var(--color-text1-2, #333333);
+    --step-circle-item-node-wait-color: var(--color-text1-2, #5a5a5a);
     
     
     --step-circle-item-node-process-border-color: var(--color-brand1-6, #0064C8);
@@ -9529,7 +9529,7 @@
     --step-circle-item-node-finish-color: var(--color-brand1-6, #0064C8);
     
     
-    --step-circle-item-node-disabled-border-color: var(--color-line1-1, #E6E6E6);
+    --step-circle-item-node-disabled-border-color: var(--color-line1-1, #eaeaea);
     
     
     --step-circle-item-node-disabled-background: var(--color-white, #FFFFFF);
@@ -9550,10 +9550,10 @@
     --step-circle-vertical-item-content-margin-top: var(--s-1, 4px);
     
     
-    --step-circle-item-content-color: var(--color-text1-3, #262626);
+    --step-circle-item-content-color: var(--color-text1-3, #333333);
     
     
-    --step-circle-item-tail-bg-color: var(--color-line1-1, #E6E6E6);
+    --step-circle-item-tail-bg-color: var(--color-line1-1, #eaeaea);
     
     
     --step-circle-vertical-item-tail-size: var(--line-2, 2px);
@@ -9601,37 +9601,37 @@
     --step-dot-item-dot-disabled-size: var(--s-3, 12px);
     
     
-    --step-dot-item-tail-wait-color: var(--color-line1-1, #E6E6E6);
+    --step-dot-item-tail-wait-color: var(--color-line1-1, #eaeaea);
     
     
-    --step-dot-item-tail-process-color: var(--color-line1-1, #E6E6E6);
+    --step-dot-item-tail-process-color: var(--color-line1-1, #eaeaea);
     
     
     --step-dot-item-tail-finish-color: var(--color-brand1-6, #0064C8);
     
     
-    --step-dot-item-tail-disabled-color: var(--color-line1-1, #E6E6E6);
+    --step-dot-item-tail-disabled-color: var(--color-line1-1, #eaeaea);
     
     
-    --step-dot-item-title-wait-color: var(--color-text1-3, #262626);
+    --step-dot-item-title-wait-color: var(--color-text1-3, #333333);
     
     
     --step-dot-item-title-process-color: var(--color-text1-4, #1A1A1A);
     
     
-    --step-dot-item-title-finish-color: var(--color-text1-3, #262626);
+    --step-dot-item-title-finish-color: var(--color-text1-3, #333333);
     
     
     --step-dot-item-title-disabled-color: var(--color-text1-1, #CCCCCC);
     
     
-    --step-dot-item-node-wait-border-color: var(--color-line1-1, #E6E6E6);
+    --step-dot-item-node-wait-border-color: var(--color-line1-1, #eaeaea);
     
     
     --step-dot-item-node-wait-background: var(--color-white, #FFFFFF);
     
     
-    --step-dot-item-node-wait-color: var(--color-text1-2, #333333);
+    --step-dot-item-node-wait-color: var(--color-text1-2, #5a5a5a);
     
     
     --step-dot-item-node-process-border-color: var(--color-brand1-6, #0064C8);
@@ -9658,7 +9658,7 @@
     --step-dot-item-node-disabled-background: var(--color-white, #FFFFFF);
     
     
-    --step-dot-item-node-disabled-color: var(--color-line1-1, #E6E6E6);
+    --step-dot-item-node-disabled-color: var(--color-line1-1, #eaeaea);
     
     
     --step-dot-vertical-item-node-padding: var(--s-2, 8px);
@@ -9676,10 +9676,10 @@
     --step-dot-item-content-font-size: var(--font-size-caption, 12px);
     
     
-    --step-dot-item-content-color: var(--color-text1-3, #262626);
+    --step-dot-item-content-color: var(--color-text1-3, #333333);
     
     
-    --step-dot-item-tail-bg-color: var(--color-line1-1, #E6E6E6);
+    --step-dot-item-tail-bg-color: var(--color-line1-1, #eaeaea);
     
     
     --step-dot-vertical-item-tail-size: var(--line-2, 2px);
@@ -9748,34 +9748,34 @@
     --menu-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
     
     
-    --menu-color: var(--color-text1-4, #1A1A1A);
+    --menu-color: var(--color-text1-3, #333333);
     
     
     --menu-divider-style: var(--line-solid, solid);
     
     
-    --menu-divider-color: var(--color-line1-1, #E6E6E6);
+    --menu-divider-color: var(--color-line1-1, #eaeaea);
     
     
     --menu-background: var(--color-white, #FFFFFF);
     
     
-    --menu-arrow-color: var(--color-text1-3, #262626);
+    --menu-arrow-color: var(--color-fill1-5, #848484);
     
     
     --menu-background-selected: var(--color-brand1-1, #F0F7FF);
     
     
-    --menu-color-selected: var(--color-text1-4, #1A1A1A);
+    --menu-color-selected: var(--color-text1-3, #333333);
     
     
     --menu-icon-selected-color: var(--color-brand1-6, #0064C8);
     
     
-    --menu-background-hover: var(--color-fill1-2, #F7F7F7);
+    --menu-background-hover: var(--color-fill1-2, #fafafa);
     
     
-    --menu-color-hover: var(--color-text1-4, #1A1A1A);
+    --menu-color-hover: var(--color-text1-3, #333333);
     
     
     --menu-arrow-color-hover: var(--color-text1-4, #1A1A1A);
@@ -9904,7 +9904,7 @@
     --nav-primary-sub-nav-text-style: var(--font-weight-2, normal);
     
     
-    --nav-primary-group-text-color: var(--color-text1-2, #333333);
+    --nav-primary-group-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --nav-primary-group-text-style: var(--font-weight-2, normal);
@@ -10039,7 +10039,7 @@
     --nav-normal-border-color: var(--color-line1-2, #D9D9D9);
     
     
-    --nav-normal-text-color: var(--color-text1-2, #333333);
+    --nav-normal-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --nav-normal-text-style: var(--font-weight-2, normal);
@@ -10054,22 +10054,22 @@
     --nav-normal-sub-nav-bg-color: var(--color-white, #FFFFFF);
     
     
-    --nav-normal-sub-nav-text-color: var(--color-text1-2, #333333);
+    --nav-normal-sub-nav-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --nav-normal-sub-nav-text-style: var(--font-weight-2, normal);
     
     
-    --nav-normal-group-text-color: var(--color-text1-2, #333333);
+    --nav-normal-group-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --nav-normal-group-text-style: var(--font-weight-2, normal);
     
     
-    --nav-normal-item-hover-bg-color: var(--color-fill1-2, #F7F7F7);
+    --nav-normal-item-hover-bg-color: var(--color-fill1-2, #fafafa);
     
     
-    --nav-normal-item-hover-text-color: var(--color-text1-2, #333333);
+    --nav-normal-item-hover-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --nav-normal-item-hover-text-style: var(--font-weight-2, normal);
@@ -10108,7 +10108,7 @@
     --nav-normal-item-opened-bg-color: var(--color-white, #FFFFFF);
     
     
-    --nav-normal-item-opened-text-color: var(--color-text1-2, #333333);
+    --nav-normal-item-opened-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --nav-line-bg-color: var(--color-transparent, transparent);
@@ -10180,7 +10180,7 @@
     --nav-line-item-opened-text-color: var(--color-brand1-6, #0064C8);
     
     
-    --nav-line-group-text-color: var(--color-text1-2, #333333);
+    --nav-line-group-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --nav-line-group-text-style: var(--font-weight-2, normal);
@@ -10255,10 +10255,10 @@
     --list-title-color: var(--color-text1-4, #1A1A1A);
     
     
-    --list-content-color: var(--color-text1-2, #333333);
+    --list-content-color: var(--color-text1-2, #5a5a5a);
     
     
-    --list-extra-color: var(--color-text1-2, #333333);
+    --list-extra-color: var(--color-text1-2, #5a5a5a);
     
     
     /* ------------------------ avatar ------------------------ */
@@ -10345,7 +10345,7 @@
     --tab-item-font-weight-selected: var(--font-weight-medium, 500);
     
     
-    --tab-nav-arrow-color-normal: var(--color-text1-3, #262626);
+    --tab-nav-arrow-color-normal: var(--color-text1-3, #333333);
     
     
     --tab-nav-arrow-color-hover: var(--color-text1-4, #1A1A1A);
@@ -10360,7 +10360,7 @@
     --tab-pure-ink-bar-width: var(--line-2, 2px);
     
     
-    --tab-pure-text-color-normal: var(--color-text1-2, #333333);
+    --tab-pure-text-color-normal: var(--color-text1-2, #5a5a5a);
     
     
     --tab-pure-bg-color: var(--color-transparent, transparent);
@@ -10414,7 +10414,7 @@
     --tab-wrapped-nav-item-border-color-active: var(--color-brand1-6, #0064C8);
     
     
-    --tab-wrapped-border-line-color: var(--color-line1-1, #E6E6E6);
+    --tab-wrapped-border-line-color: var(--color-line1-1, #eaeaea);
     
     
     --tab-wrapped-content-border-line-width: var(--line-zero, 0px);
@@ -10426,7 +10426,7 @@
     --tab-wrapped-content-border-line-color: var(--color-line1-2, #D9D9D9);
     
     
-    --tab-wrapped-text-color: var(--color-text1-3, #262626);
+    --tab-wrapped-text-color: var(--color-text1-3, #333333);
     
     
     --tab-wrapped-text-color-hover: var(--color-text1-4, #1A1A1A);
@@ -10456,7 +10456,7 @@
     --tab-capsule-text-color: var(--color-text1-4, #1A1A1A);
     
     
-    --tab-capsule-text-color-hover: var(--color-text1-3, #262626);
+    --tab-capsule-text-color-hover: var(--color-text1-3, #333333);
     
     
     --tab-capsule-text-color-selected: var(--color-brand1-6, #0064C8);
@@ -10468,7 +10468,7 @@
     --tab-capsule-bg-color: var(--color-white, #FFFFFF);
     
     
-    --tab-capsule-bg-color-hover: var(--color-fill1-2, #F7F7F7);
+    --tab-capsule-bg-color-hover: var(--color-fill1-2, #fafafa);
     
     
     --tab-capsule-bg-color-selected: var(--color-white, #FFFFFF);
@@ -10477,16 +10477,16 @@
     --tab-capsule-bg-color-disabled: var(--color-fill1-1, #FFFFFF);
     
     
-    --tab-capsule-tab-border-line-color: var(--color-line1-1, #E6E6E6);
+    --tab-capsule-tab-border-line-color: var(--color-line1-1, #eaeaea);
     
     
-    --tab-capsule-tab-border-line-color-hover: var(--color-line1-1, #E6E6E6);
+    --tab-capsule-tab-border-line-color-hover: var(--color-line1-1, #eaeaea);
     
     
     --tab-capsule-tab-border-line-color-active: var(--color-brand1-6, #0064C8);
     
     
-    --tab-capsule-tab-border-line-color-disabled: var(--color-line1-1, #E6E6E6);
+    --tab-capsule-tab-border-line-color-disabled: var(--color-line1-1, #eaeaea);
     
     
     --tab-capsule-corner-radius: var(--corner-1, 2px);
@@ -10507,7 +10507,7 @@
     --tab-text-item-sep-color: var(--color-line1-2, #D9D9D9);
     
     
-    --tab-text-text-color-normal: var(--color-text1-3, #262626);
+    --tab-text-text-color-normal: var(--color-text1-3, #333333);
     
     
     --tab-text-text-color-hover: var(--color-text1-4, #1A1A1A);
@@ -10573,16 +10573,16 @@
     --calendar-fullscreen-table-cell-normal-background: var(--color-white, #FFFFFF);
     
     
-    --calendar-fullscreen-table-cell-normal-color: var(--color-text1-2, #333333);
+    --calendar-fullscreen-table-cell-normal-color: var(--color-text1-2, #5a5a5a);
     
     
     --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-2, #D9D9D9);
     
     
-    --calendar-fullscreen-table-cell-hover-background: var(--color-fill1-2, #F7F7F7);
+    --calendar-fullscreen-table-cell-hover-background: var(--color-fill1-2, #fafafa);
     
     
-    --calendar-fullscreen-table-cell-hover-color: var(--color-text1-2, #333333);
+    --calendar-fullscreen-table-cell-hover-color: var(--color-text1-2, #5a5a5a);
     
     
     --calendar-fullscreen-table-cell-hover-border-color: var(--color-brand1-6, #0064C8);
@@ -10612,13 +10612,13 @@
     --calendar-fullscreen-table-cell-current-font-weight: var(--font-weight-3, bold);
     
     
-    --calendar-fullscreen-table-cell-other-background: var(--color-fill1-2, #F7F7F7);
+    --calendar-fullscreen-table-cell-other-background: var(--color-fill1-2, #fafafa);
     
     
     --calendar-fullscreen-table-cell-other-color: var(--color-text1-1, #CCCCCC);
     
     
-    --calendar-fullscreen-table-cell-other-border-color: var(--color-line1-1, #E6E6E6);
+    --calendar-fullscreen-table-cell-other-border-color: var(--color-line1-1, #eaeaea);
     
     
     --calendar-fullscreen-table-cell-disabled-background: var(--color-fill1-1, #FFFFFF);
@@ -10627,7 +10627,7 @@
     --calendar-fullscreen-table-cell-disabled-color: var(--color-text1-1, #CCCCCC);
     
     
-    --calendar-fullscreen-table-cell-disabled-border-color: var(--color-line1-1, #E6E6E6);
+    --calendar-fullscreen-table-cell-disabled-border-color: var(--color-line1-1, #eaeaea);
     
     
     --calendar-card-header-margin-bottom: var(--s-2, 8px);
@@ -10669,7 +10669,7 @@
     --calendar-card-table-cell-year-height: var(--s-8, 32px);
     
     
-    --calendar-card-table-head-color: var(--color-line1-5, #9c9c9c);
+    --calendar-card-table-head-color: var(--color-line1-5, #a8a8a8);
     
     
     --calendar-card-table-cell-corner: var(--corner-zero, 0);
@@ -10678,16 +10678,16 @@
     --calendar-card-table-cell-normal-background: var(--color-white, #FFFFFF);
     
     
-    --calendar-card-table-cell-normal-color: var(--color-text1-3, #262626);
+    --calendar-card-table-cell-normal-color: var(--color-text1-3, #333333);
     
     
     --calendar-card-table-cell-normal-border-color: var(--color-white, #FFFFFF);
     
     
-    --calendar-card-table-cell-hover-background: var(--color-fill1-2, #F7F7F7);
+    --calendar-card-table-cell-hover-background: var(--color-fill1-2, #fafafa);
     
     
-    --calendar-card-table-cell-hover-color: var(--color-text1-2, #333333);
+    --calendar-card-table-cell-hover-color: var(--color-text1-2, #5a5a5a);
     
     
     --calendar-card-table-cell-hover-border-color: var(--color-transparent, transparent);
@@ -10774,13 +10774,13 @@
     --calendar-btn-arrow-size: var(--icon-s, 16px);
     
     
-    --calendar-btn-arrow-color: var(--color-fill1-5, #666666);
+    --calendar-btn-arrow-color: var(--color-fill1-5, #848484);
     
     
-    --calendar-btn-arrow-color-hover: var(--color-fill1-5, #666666);
+    --calendar-btn-arrow-color-hover: var(--color-fill1-5, #848484);
     
     
-    --calendar-btn-date-color: var(--color-text1-2, #333333);
+    --calendar-btn-date-color: var(--color-text1-2, #5a5a5a);
     
     
     --calendar-btn-date-color-hover: var(--color-brand1-6, #0064C8);
@@ -10813,7 +10813,7 @@
     --breadcrumb-size-m-icon-margin: var(--s-1, 4px);
     
     
-    --breadcrumb-text-color: var(--color-text1-2, #333333);
+    --breadcrumb-text-color: var(--color-text1-2, #5a5a5a);
     
     
     --breadcrumb-text-current-color: var(--color-line1-3, #CCCCCC);
@@ -10822,13 +10822,13 @@
     --breadcrumb-text-current-weight: var(--font-weight-2, normal);
     
     
-    --breadcrumb-text-ellipsis-color: var(--color-text1-3, #262626);
+    --breadcrumb-text-ellipsis-color: var(--color-text1-3, #333333);
     
     
     --breadcrumb-text-keyword-color: var(--color-brand1-6, #0064C8);
     
     
-    --breadcrumb-icon-color: var(--color-line1-1, #E6E6E6);
+    --breadcrumb-icon-color: var(--color-line1-1, #eaeaea);
     
     
     --breadcrumb-icon-sep-content: var(--icon-content-xiegang, "");
@@ -10945,7 +10945,7 @@
     --popup-local-border-style: var(--line-solid, solid);
     
     
-    --popup-local-border-color: var(--color-line1-1, #E6E6E6);
+    --popup-local-border-color: var(--color-line1-1, #eaeaea);
     
     
     --popup-local-corner: var(--corner-1, 2px);

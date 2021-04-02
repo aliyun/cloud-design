@@ -36,17 +36,6 @@ $text-btn: $btn-prefix + '-text';
     }
   }
 
-  // secondary与normal样式改为一致，过去的secondary button没有border，可访问性差
-  &-secondary {
-    &:hover,
-    &:focus-visible {
-      box-shadow: var(--btn-normal-hover-shadow);
-    }
-    &:active {
-      box-shadow: var(--btn-normal-active-shadow);
-    }
-  }
-
   &.#{$css-prefix}small {
     &:not(.isOnlyIcon):not(#{$text-btn}) {
       min-width: var(--btn-large-min-width, 60px);

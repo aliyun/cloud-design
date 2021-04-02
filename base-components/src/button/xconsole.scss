@@ -2,6 +2,16 @@ $btn-prefix: '.' + $css-prefix + 'btn';
 $text-btn: $btn-prefix + '-text';
 
 #{$btn-prefix} {
+  // secondary与normal样式改为一致，过去的secondary button没有border，可访问性差
+  &-secondary {
+    &:hover,
+    &:focus-visible {
+      box-shadow: var(--btn-normal-hover-shadow);
+    }
+    &:active {
+      box-shadow: var(--btn-normal-active-shadow);
+    }
+  }
   &-secondary#{$text-btn} {
     &:hover,
     &:focus-visible {
