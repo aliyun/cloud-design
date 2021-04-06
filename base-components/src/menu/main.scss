@@ -19,18 +19,24 @@ $nav-item-cls: '.' + $css-prefix + 'nav-item';
   &-item {
     border-radius: var(--corner-1);
   }
-  &-selectable-multiple, &-selectable-single {
+  &-selectable-multiple,
+  &-selectable-single {
     // 可选择的menu，增加padding以便容纳勾选图标
     #{$menu-prefix}-item {
       // 对于checkbox 和 radio 选择模式的menu，不需要增加padding容纳勾选图标
       &:not([role='menuitemcheckbox']):not([role='menuitemradio']):not(#{$nav-item-cls}) {
-        --menu-padding-horizontal: var(--menu-padding-horizontal-selectable);
-        padding: 0 var(--menu-padding-horizontal) 0 var(--menu-padding-horizontal);
+        // 左边使用稍大一些的变量 --menu-padding-horizontal-selectable
+        padding: 0 var(--menu-padding-horizontal) 0
+          var(
+            --menu-padding-horizontal-selectable,
+            var(--menu-padding-horizontal)
+          );
       }
     }
   }
   &-item-inner {
-    .#{$css-prefix}checkbox, .#{$css-prefix}radio {
+    .#{$css-prefix}checkbox,
+    .#{$css-prefix}radio {
       margin-right: var(--menu-checkbox-mr, 8px);
     }
   }
