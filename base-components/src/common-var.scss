@@ -10,17 +10,18 @@ $wind-cls: '.is-wind';
 @mixin alicloud-scrollbar {
   &::-webkit-scrollbar {
     width: var(--scrollbar-width, 4px);
+    height: var(--scrollbar-height, 4px);
   }
 
   &::-webkit-scrollbar-track {
     opacity: 0.5;
-    background: var(--scrollbar-track-bg,#eaedf0);
+    background: var(--scrollbar-track-bg, #eaedf0);
     border-radius: var(--scrollbar-track-border-radius, 3px);
   }
 
   &::-webkit-scrollbar-thumb {
     opacity: 0.5;
-    background: var(--scrollbar-thumb-bg,#abb6c0);
+    background: var(--scrollbar-thumb-bg, #abb6c0);
     border-radius: var(--scrollbar-thumb-border-radius, 3px);
   }
 }
