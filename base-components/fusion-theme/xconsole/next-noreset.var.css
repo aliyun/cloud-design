@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-xconsole-v4@0.8.14 (https://fusion.design)
- * @alifd/next@1.22.14 (https://fusion.design)
+ * @alife/theme-xconsole-v4@0.8.16 (https://fusion.design)
+ * @alifd/next@1.22.16 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -4938,16 +4938,16 @@
 
 .next-menu[dir="rtl"] .next-menu-icon-selected.next-icon {
   margin-left: 0;
-  margin-right: -16px;
-  margin-right: calc(-8px - var(--menu-padding-horizontal, 16px)/2); }
+  margin-right: -14px;
+  margin-right: calc(-6px - var(--menu-padding-horizontal, 16px)/2); }
   .next-menu[dir="rtl"] .next-menu-icon-selected.next-icon:before,
   .next-menu[dir="rtl"] .next-menu-icon-selected.next-icon .next-icon-remote {
-    width: 16px;
-    font-size: 16px;
+    width: 12px;
+    font-size: 12px;
     line-height: inherit; }
   .next-menu[dir="rtl"] .next-menu-icon-selected.next-icon.next-menu-icon-right {
     right: auto;
-    left: 4px; }
+    left: 8px; }
 
 .next-menu[dir="rtl"] .next-menu-icon-arrow.next-icon {
   left: 10px;
@@ -4990,8 +4990,8 @@
   .next-menu *:focus {
     outline: 0; }
   .next-menu.next-ver {
-    padding: 8px 0px;
-    padding: var(--menu-padding-ver-padding-tb, 8px) var(--menu-padding-ver-padding-lr, 0px); }
+    padding: 4px 4px;
+    padding: var(--menu-padding-ver-padding-tb, 4px) var(--menu-padding-ver-padding-lr, 4px); }
     .next-menu.next-ver .next-menu-item {
       padding: 0 16px 0 16px;
       padding: 0 var(--menu-item-padding-ver-padding-r, 16px) 0 var(--menu-item-padding-ver-padding-l, 16px); }
@@ -5048,10 +5048,10 @@
     .next-menu-item .next-radio {
       margin-right: 4px; }
     .next-menu-item.next-selected {
-      color: #111111;
-      color: var(--menu-color-selected, #111111);
-      background-color: transparent;
-      background-color: var(--menu-background-selected, transparent); }
+      color: #333333;
+      color: var(--menu-color-selected, #333333);
+      background-color: #FFFFFF;
+      background-color: var(--menu-background-selected, #FFFFFF); }
       .next-menu-item.next-selected .next-menu-icon-arrow {
         color: #333333;
         color: var(--menu-arrow-color, #333333); }
@@ -5137,18 +5137,18 @@
   .next-menu .next-menu-icon-selected.next-icon {
     position: absolute;
     top: 0;
-    margin-left: -12px;
-    margin-left: calc(4px - var(--menu-item-padding-ver-padding-l, 16px)); }
+    margin-left: -8px;
+    margin-left: calc(8px - var(--menu-item-padding-ver-padding-l, 16px)); }
     .next-menu .next-menu-icon-selected.next-icon:before,
     .next-menu .next-menu-icon-selected.next-icon .next-icon-remote {
-      width: 16px;
-      font-size: 16px;
+      width: 12px;
+      font-size: 12px;
       line-height: inherit; }
     .next-menu .next-menu-icon-selected.next-icon.next-menu-icon-right {
-      right: 4px; }
+      right: 8px; }
   .next-menu .next-menu-symbol-icon-selected.next-menu-icon-selected::before {
-    content: "\E68F";
-    content: var(--menu-select-icon-content, "\E68F"); }
+    content: "\E8C0";
+    content: var(--menu-select-icon-content, "\E8C0"); }
   .next-menu .next-menu-icon-arrow.next-icon {
     position: absolute;
     top: 0;
@@ -8444,8 +8444,8 @@
     margin-right: 4px;
     margin-left: 0; }
   .next-dialog[dir=rtl] .next-dialog-close {
-    left: 24px;
-    left: var(--dialog-close-right, 24px);
+    left: 16px;
+    left: var(--dialog-close-right, 16px);
     right: auto; }
 
 .next-dialog {
@@ -8481,10 +8481,10 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
   .next-dialog-header {
-    padding: 24px 24px 12px 24px;
-    padding: var(--dialog-title-padding-top, 24px) var(--dialog-title-padding-left-right, 24px) var(--dialog-title-padding-bottom, 12px) var(--dialog-title-padding-left-right, 24px);
-    border-bottom: 0px solid #FFFFFF;
-    border-bottom: var(--dialog-title-border-width, 0px) var(--line-solid, solid) var(--dialog-title-border-color, #FFFFFF);
+    padding: 16px 16px 8px 16px;
+    padding: var(--dialog-title-padding-top, 16px) var(--dialog-title-padding-left-right, 16px) var(--dialog-title-padding-bottom, 8px) var(--dialog-title-padding-left-right, 16px);
+    border-bottom: 0px solid #C0C6CC;
+    border-bottom: var(--dialog-title-border-width, 0px) var(--line-solid, solid) var(--dialog-title-border-color, #C0C6CC);
     font-size: 14px;
     font-size: var(--dialog-title-font-size, 14px);
     background: #FFFFFF;
@@ -8492,17 +8492,17 @@
     color: #333333;
     color: var(--dialog-title-color, #333333); }
   .next-dialog-body {
-    padding: 12px 24px 24px 24px;
-    padding: var(--dialog-content-padding-top, 12px) var(--dialog-content-padding-left-right, 24px) var(--dialog-content-padding-bottom, 24px) var(--dialog-content-padding-left-right, 24px);
+    padding: 0px 16px 8px 16px;
+    padding: var(--dialog-content-padding-top, 0px) var(--dialog-content-padding-left-right, 16px) var(--dialog-content-padding-bottom, 8px) var(--dialog-content-padding-left-right, 16px);
     font-size: 12px;
     font-size: var(--dialog-content-font-size, 12px);
     color: #333333;
     color: var(--dialog-content-color, #333333); }
   .next-dialog-footer {
-    padding: 24px 24px 24px 24px;
-    padding: var(--dialog-footer-padding-top, 24px) var(--dialog-footer-padding-left-right, 24px) var(--dialog-footer-padding-bottom, 24px) var(--dialog-footer-padding-left-right, 24px);
-    border-top: 0px solid #FFFFFF;
-    border-top: var(--dialog-footer-border-width, 0px) var(--line-solid, solid) var(--dialog-footer-border-color, #FFFFFF);
+    padding: 16px 16px 16px 16px;
+    padding: var(--dialog-footer-padding-top, 16px) var(--dialog-footer-padding-left-right, 16px) var(--dialog-footer-padding-bottom, 16px) var(--dialog-footer-padding-left-right, 16px);
+    border-top: 0px solid #C0C6CC;
+    border-top: var(--dialog-footer-border-width, 0px) var(--line-solid, solid) var(--dialog-footer-border-color, #C0C6CC);
     background: #FFFFFF;
     background: var(--dialog-footer-bg-color, #FFFFFF); }
     .next-dialog-footer.next-align-left {
@@ -8516,26 +8516,26 @@
     width: 100%;
     bottom: 0; }
   .next-dialog-btn + .next-dialog-btn {
-    margin-left: 4px;
-    margin-left: var(--dialog-footer-button-spacing, 4px); }
+    margin-left: 8px;
+    margin-left: var(--dialog-footer-button-spacing, 8px); }
   .next-dialog-close {
     position: absolute;
-    top: 24px;
-    top: var(--dialog-close-top, 24px);
-    right: 24px;
-    right: var(--dialog-close-right, 24px);
+    top: 16px;
+    top: var(--dialog-close-top, 16px);
+    right: 16px;
+    right: var(--dialog-close-right, 16px);
     width: 16px;
     width: var(--dialog-close-width, 16px);
     height: 16px;
     height: var(--dialog-close-width, 16px);
-    color: #333333;
-    color: var(--dialog-close-color, #333333);
+    color: #666666;
+    color: var(--dialog-close-color, #666666);
     cursor: pointer; }
     .next-dialog-close:link, .next-dialog-close:visited {
       height: 16px;
       height: var(--dialog-close-width, 16px);
-      color: #333333;
-      color: var(--dialog-close-color, #333333); }
+      color: #666666;
+      color: var(--dialog-close-color, #666666); }
     .next-dialog-close:hover {
       background: #FFFFFF;
       background: var(--dialog-close-bg-hovered, #FFFFFF);
@@ -8545,22 +8545,22 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      margin-top: -6px;
-      margin-top: calc(0px - var(--dialog-close-size, 12px)/2);
-      margin-left: -6px;
-      margin-left: calc(0px - var(--dialog-close-size, 12px)/2);
-      width: 12px;
-      width: var(--dialog-close-size, 12px);
-      height: 12px;
-      height: var(--dialog-close-size, 12px);
+      margin-top: -8px;
+      margin-top: calc(0px - var(--dialog-close-size, 16px)/2);
+      margin-left: -8px;
+      margin-left: calc(0px - var(--dialog-close-size, 16px)/2);
+      width: 16px;
+      width: var(--dialog-close-size, 16px);
+      height: 16px;
+      height: var(--dialog-close-size, 16px);
       line-height: 1em; }
       .next-dialog-close .next-dialog-close-icon.next-icon:before {
-        width: 12px;
-        width: var(--dialog-close-size, 12px);
-        height: 12px;
-        height: var(--dialog-close-size, 12px);
-        font-size: 12px;
-        font-size: var(--dialog-close-size, 12px);
+        width: 16px;
+        width: var(--dialog-close-size, 16px);
+        height: 16px;
+        height: var(--dialog-close-size, 16px);
+        font-size: 16px;
+        font-size: var(--dialog-close-size, 16px);
         line-height: 1em; }
   .next-dialog-container {
     position: fixed;
@@ -8585,8 +8585,8 @@
       position: relative;
       vertical-align: middle; }
   .next-dialog-quick .next-dialog-body {
-    padding: 24px 24px 12px 24px;
-    padding: var(--dialog-message-content-padding-top, 24px) var(--dialog-message-content-padding-left-right, 24px) var(--dialog-message-content-padding-bottom, 12px) var(--dialog-message-content-padding-left-right, 24px); }
+    padding: 16px 16px 8px 16px;
+    padding: var(--dialog-message-content-padding-top, 16px) var(--dialog-message-content-padding-left-right, 16px) var(--dialog-message-content-padding-bottom, 8px) var(--dialog-message-content-padding-left-right, 16px); }
   .next-dialog .next-dialog-message.next-message {
     min-width: 300px;
     padding: 0; }
@@ -8627,10 +8627,10 @@
   .next-drawer-bottom {
     width: 100%; }
   .next-drawer-header {
-    padding: 24px 24px 16px 24px;
-    padding: var(--drawer-title-padding-top, 24px) var(--drawer-title-padding-left-right, 24px) var(--drawer-title-padding-bottom, 16px) var(--drawer-title-padding-left-right, 24px);
-    border-bottom: 1px solid transparent;
-    border-bottom: var(--drawer-title-border-width, 1px) var(--line-solid, solid) var(--drawer-title-border-color, transparent);
+    padding: 16px 16px 16px 16px;
+    padding: var(--drawer-title-padding-top, 16px) var(--drawer-title-padding-left-right, 16px) var(--drawer-title-padding-bottom, 16px) var(--drawer-title-padding-left-right, 16px);
+    border-bottom: 0px solid transparent;
+    border-bottom: var(--drawer-title-border-width, 0px) var(--line-solid, solid) var(--drawer-title-border-color, transparent);
     font-size: 14px;
     font-size: var(--drawer-title-font-size, 14px);
     background: #FFFFFF;
@@ -8641,27 +8641,27 @@
     padding: 0;
     border-bottom: 0; }
   .next-drawer-body {
-    padding: 16px 24px 16px 24px;
-    padding: var(--drawer-content-padding-top, 16px) var(--drawer-content-padding-left-right, 24px) var(--drawer-content-padding-bottom, 16px) var(--drawer-content-padding-left-right, 24px);
+    padding: 0px 16px 8px 16px;
+    padding: var(--drawer-content-padding-top, 0px) var(--drawer-content-padding-left-right, 16px) var(--drawer-content-padding-bottom, 8px) var(--drawer-content-padding-left-right, 16px);
     font-size: 12px;
     font-size: var(--drawer-content-font-size, 12px);
     color: #333333;
     color: var(--drawer-content-color, #333333); }
   .next-drawer-close {
     position: absolute;
-    top: 24px;
-    top: var(--drawer-close-top, 24px);
-    right: 24px;
-    right: var(--drawer-close-right, 24px);
+    top: 16px;
+    top: var(--drawer-close-top, 16px);
+    right: 16px;
+    right: var(--drawer-close-right, 16px);
     width: 16px;
     height: 16px;
-    color: #333333;
-    color: var(--drawer-close-color, #333333);
+    color: #666666;
+    color: var(--drawer-close-color, #666666);
     cursor: pointer; }
     .next-drawer-close:link, .next-drawer-close:visited {
       height: 16px;
-      color: #333333;
-      color: var(--drawer-close-color, #333333); }
+      color: #666666;
+      color: var(--drawer-close-color, #666666); }
     .next-drawer-close:hover {
       background: transparent;
       background: var(--drawer-close-bg-hovered, transparent);
@@ -8671,22 +8671,22 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      margin-top: -6px;
-      margin-top: calc(0px - var(--drawer-close-size, 12px)/2);
-      margin-left: -6px;
-      margin-left: calc(0px - var(--drawer-close-size, 12px)/2);
-      width: 12px;
-      width: var(--drawer-close-size, 12px);
-      height: 12px;
-      height: var(--drawer-close-size, 12px);
+      margin-top: -8px;
+      margin-top: calc(0px - var(--drawer-close-size, 16px)/2);
+      margin-left: -8px;
+      margin-left: calc(0px - var(--drawer-close-size, 16px)/2);
+      width: 16px;
+      width: var(--drawer-close-size, 16px);
+      height: 16px;
+      height: var(--drawer-close-size, 16px);
       line-height: 1em; }
       .next-drawer-close .next-drawer-close-icon.next-icon:before {
-        width: 12px;
-        width: var(--drawer-close-size, 12px);
-        height: 12px;
-        height: var(--drawer-close-size, 12px);
-        font-size: 12px;
-        font-size: var(--drawer-close-size, 12px);
+        width: 16px;
+        width: var(--drawer-close-size, 16px);
+        height: 16px;
+        height: var(--drawer-close-size, 16px);
+        font-size: 16px;
+        font-size: var(--drawer-close-size, 16px);
         line-height: 1em; }
 
 /* stylelint-disable-next-line */
@@ -20832,8 +20832,10 @@
     .next-table th.next-table-fix-left, .next-table th.next-table-fix-right {
       z-index: 1; }
   .next-table-affix {
-    z-index: 10;
+    z-index: 1;
     overflow: hidden; }
+  .next-table-stickylock .next-table-affix {
+    z-index: 10; }
   .next-table-header-resizable {
     position: relative; }
     .next-table-header-resizable .next-table-resize-handler {
