@@ -15,6 +15,12 @@ import './theme-vars/aone.scss'
 import './theme-vars/teamix.scss'
 import './theme-vars/b-design.scss'
 
+// 引入moment中文文案
+import moment from 'moment'
+import './moment-locale'
+moment.locale('zh-cn')
+// moment.locale('en-us')
+
 const dataSource = [
   { label: '公有云主题', value: 'theme-xconsole' },
   { label: '公有云主题(暗色)', value: 'theme-xconsole-dark' },
