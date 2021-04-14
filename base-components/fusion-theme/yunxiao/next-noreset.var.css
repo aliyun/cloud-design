@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-yunxiao-v1@0.9.13 (https://fusion.design)
- * @alifd/next@1.22.16 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.9.14 (https://fusion.design)
+ * @alifd/next@1.22.18 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -2410,8 +2410,8 @@
     color: var(--breadcrumb-text-ellipsis-color, #575757);
     cursor: default; }
   .next-breadcrumb .next-breadcrumb-separator {
-    color: #E8E8E8;
-    color: var(--breadcrumb-icon-color, #E8E8E8); }
+    color: #B3B3B3;
+    color: var(--breadcrumb-icon-color, #B3B3B3); }
   .next-breadcrumb .next-breadcrumb-text:not(.next-breadcrumb-text-ellipsis):hover > a {
     color: #1B9AEE;
     color: var(--breadcrumb-text-color-hover, #1B9AEE); }
@@ -20744,7 +20744,7 @@
     z-index: 1;
     overflow: hidden; }
   .next-table-stickylock .next-table-affix {
-    z-index: 10; }
+    z-index: 9; }
   .next-table-header-resizable {
     position: relative; }
     .next-table-header-resizable .next-table-resize-handler {
@@ -21153,7 +21153,8 @@
 .next-table-fix-left, .next-table-fix-right {
   background: inherit;
   position: sticky;
-  z-index: 1; }
+  z-index: 1;
+  background-clip: padding-box; }
 
 .next-table-ping-left .next-table-expanded-area .next-table-fix-left-last::after {
   content: none; }

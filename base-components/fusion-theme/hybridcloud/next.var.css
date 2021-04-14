@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.14.22 (https://fusion.design)
- * @alifd/next@1.22.16 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.14.25 (https://fusion.design)
+ * @alifd/next@1.22.17 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -3214,19 +3214,19 @@ small {
     border-color: #D9D9D9;
     border-color: var(--btn-pure-normal-border-color, #D9D9D9); }
     .next-btn.next-btn-normal, .next-btn.next-btn-normal:link, .next-btn.next-btn-normal:visited, .next-btn.next-btn-normal.visited {
-      color: #5a5a5a;
-      color: var(--btn-pure-normal-color, #5a5a5a); }
+      color: #333333;
+      color: var(--btn-pure-normal-color, #333333); }
     .next-btn.next-btn-normal:focus, .next-btn.next-btn-normal:hover, .next-btn.next-btn-normal.hover {
-      color: #5a5a5a;
-      color: var(--btn-pure-normal-color-hover, #5a5a5a);
+      color: #333333;
+      color: var(--btn-pure-normal-color-hover, #333333);
       background-color: #fafafa;
       background-color: var(--btn-pure-normal-bg-hover, #fafafa);
       border-color: #D9D9D9;
       border-color: var(--btn-pure-normal-border-color-hover, #D9D9D9);
       text-decoration: none; }
     .next-btn.next-btn-normal:active, .next-btn.next-btn-normal.active {
-      color: #5a5a5a;
-      color: var(--btn-pure-normal-color-active, #5a5a5a);
+      color: #333333;
+      color: var(--btn-pure-normal-color-active, #333333);
       background-color: #eaeaea;
       background-color: var(--btn-pure-normal-bg-active, #eaeaea);
       border-color: #D9D9D9;
@@ -3544,8 +3544,8 @@ small {
       background-color: transparent;
       border-color: transparent; }
       .next-btn-text.next-btn-normal, .next-btn-text.next-btn-normal:link, .next-btn-text.next-btn-normal:visited, .next-btn-text.next-btn-normal.visited {
-        color: #5a5a5a;
-        color: var(--btn-text-normal-color, #5a5a5a); }
+        color: #333333;
+        color: var(--btn-text-normal-color, #333333); }
       .next-btn-text.next-btn-normal:focus, .next-btn-text.next-btn-normal:hover, .next-btn-text.next-btn-normal.hover {
         color: #0064C8;
         color: var(--btn-text-normal-color-hover, #0064C8);
@@ -4685,22 +4685,22 @@ small {
     color: var(--tag-bordered-tail-color, #333333); }
 
 .next-tag-closable.next-tag-level-normal {
-  color: #5a5a5a;
-  color: var(--tag-closable-bordered-text-color, #5a5a5a);
+  color: #333333;
+  color: var(--tag-closable-bordered-text-color, #333333);
   border-color: #eaeaea;
   border-color: var(--tag-closable-bordered-border-color, #eaeaea);
   background-color: #fafafa;
   background-color: var(--tag-closable-bordered-bg, #fafafa); }
   .next-tag-closable.next-tag-level-normal:not(.disabled):not([disabled]):hover, .next-tag-closable.next-tag-level-normal:not(.disabled):not([disabled]).hover, .next-tag-closable.next-tag-level-normal:not(.disabled):not([disabled]):focus {
-    color: #5a5a5a;
-    color: var(--tag-closable-bordered-text-color-hover, #5a5a5a);
+    color: #333333;
+    color: var(--tag-closable-bordered-text-color-hover, #333333);
     border-color: #eaeaea;
     border-color: var(--tag-closable-bordered-border-color-hover, #eaeaea);
     background-color: #fafafa;
     background-color: var(--tag-closable-bordered-bg-hover, #fafafa); }
     .next-tag-closable.next-tag-level-normal:not(.disabled):not([disabled]):hover > .next-tag-close-btn, .next-tag-closable.next-tag-level-normal:not(.disabled):not([disabled]).hover > .next-tag-close-btn, .next-tag-closable.next-tag-level-normal:not(.disabled):not([disabled]):focus > .next-tag-close-btn {
-      color: #5a5a5a;
-      color: var(--tag-closable-bordered-tail-color-hover, #5a5a5a); }
+      color: #292929;
+      color: var(--tag-closable-bordered-tail-color-hover, #292929); }
   .next-tag-closable.next-tag-level-normal[disabled], .disabled.next-tag-closable.next-tag-level-normal {
     color: #CCCCCC;
     color: var(--tag-closable-bordered-text-color-disabled, #CCCCCC);
@@ -4712,8 +4712,8 @@ small {
       color: #CCCCCC;
       color: var(--tag-closable-bordered-tail-color-disabled, #CCCCCC); }
   .next-tag-closable.next-tag-level-normal > .next-tag-close-btn {
-    color: #5a5a5a;
-    color: var(--tag-closable-bordered-tail-color, #5a5a5a); }
+    color: #848484;
+    color: var(--tag-closable-bordered-tail-color, #848484); }
 
 .next-tag-checkable.next-tag-level-normal.checked {
   color: #0064C8;
@@ -4784,15 +4784,15 @@ small {
   color: var(--tag-checkable-secondary-icon-color-selected-disabled, #FFFFFF); }
 
 .next-tag-checkable.next-tag-level-normal {
-  color: #5a5a5a;
-  color: var(--tag-checkable-normal-text-color, #5a5a5a);
+  color: #333333;
+  color: var(--tag-checkable-normal-text-color, #333333);
   border-color: #D9D9D9;
   border-color: var(--tag-checkable-normal-border-color, #D9D9D9);
   background-color: #FFFFFF;
   background-color: var(--tag-checkable-normal-bg, #FFFFFF); }
   .next-tag-checkable.next-tag-level-normal:not(.disabled):not([disabled]):hover, .next-tag-checkable.next-tag-level-normal:not(.disabled):not([disabled]).hover, .next-tag-checkable.next-tag-level-normal:not(.disabled):not([disabled]):focus {
-    color: #5a5a5a;
-    color: var(--tag-checkable-normal-text-color-hover, #5a5a5a);
+    color: #333333;
+    color: var(--tag-checkable-normal-text-color-hover, #333333);
     border-color: #D9D9D9;
     border-color: var(--tag-checkable-normal-border-color-hover, #D9D9D9);
     background-color: #fafafa;
@@ -4870,8 +4870,8 @@ small {
   background-color: var(--tag-closable-normal-bg-hover, #eaeaea); }
 
 .next-tag-closable.next-tag-level-normal:not(.disabled):not([disabled]):hover:after, .next-tag-closable.next-tag-level-normal:not(.disabled):not([disabled]).hover:after, .next-tag-closable.next-tag-level-normal:not(.disabled):not([disabled]):focus:after {
-  color: #5a5a5a;
-  color: var(--tag-closable-normal-icon-color-hover, #5a5a5a); }
+  color: #848484;
+  color: var(--tag-closable-normal-icon-color-hover, #848484); }
 
 .next-tag-closable.next-tag-level-normal[disabled]:before, .next-tag-closable.next-tag-level-normal:disabled:before {
   background-color: #eaeaea;
@@ -18312,8 +18312,8 @@ small {
     font-size: 12px;
     font-size: var(--step-circle-item-node-process-percent-size, 12px); }
   .next-step-circle .next-step-item-container .next-step-item-progress .next-progress-circle-underlay {
-    stroke: #CCCCCC;
-    stroke: var(--step-circle-item-node-wait-border-color, #CCCCCC);
+    stroke: #eaeaea;
+    stroke: var(--step-circle-item-node-wait-border-color, #eaeaea);
     stroke-width: 3px;
     stroke-width: calc(var(--step-circle-item-node-border-width, 1px)*3); }
   .next-step-circle .next-step-item-container .next-step-item-progress .next-progress-circle-overlay-normal {
@@ -18343,16 +18343,16 @@ small {
   color: var(--step-circle-item-node-wait-color, #5a5a5a); }
 
 .next-step-circle > .next-step-item-wait > .next-step-item-container .next-step-item-node-circle {
-  background: #CCCCCC;
-  background: var(--step-circle-item-node-wait-background, #CCCCCC);
-  border-color: #CCCCCC;
-  border-color: var(--step-circle-item-node-wait-border-color, #CCCCCC); }
+  background: #eaeaea;
+  background: var(--step-circle-item-node-wait-background, #eaeaea);
+  border-color: #eaeaea;
+  border-color: var(--step-circle-item-node-wait-border-color, #eaeaea); }
 
 .next-step-circle > .next-step-item-wait > .next-step-item-container .next-step-item-node-dot {
-  background: #CCCCCC;
-  background: var(--step-circle-item-node-wait-background, #CCCCCC);
-  border-color: #CCCCCC;
-  border-color: var(--step-circle-item-node-wait-border-color, #CCCCCC); }
+  background: #eaeaea;
+  background: var(--step-circle-item-node-wait-background, #eaeaea);
+  border-color: #eaeaea;
+  border-color: var(--step-circle-item-node-wait-border-color, #eaeaea); }
 
 .next-step-circle > .next-step-item-wait .next-step-item-title {
   color: #333333;
@@ -21273,7 +21273,7 @@ small {
     z-index: 1;
     overflow: hidden; }
   .next-table-stickylock .next-table-affix {
-    z-index: 10; }
+    z-index: 9; }
   .next-table-header-resizable {
     position: relative; }
     .next-table-header-resizable .next-table-resize-handler {
@@ -21682,7 +21682,8 @@ small {
 .next-table-fix-left, .next-table-fix-right {
   background: inherit;
   position: sticky;
-  z-index: 1; }
+  z-index: 1;
+  background-clip: padding-box; }
 
 .next-table-ping-left .next-table-expanded-area .next-table-fix-left-last::after {
   content: none; }
