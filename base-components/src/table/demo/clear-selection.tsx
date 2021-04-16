@@ -93,6 +93,7 @@ class App extends React.Component {
           dataSource={this.state.dataSource}
           loading={this.state.loading}
           rowSelection={this.state.rowSelection}
+          // size="small"
         >
           <Table.Column title="Id" dataIndex="id" />
           <Table.Column title="Title" dataIndex="title.name" />
