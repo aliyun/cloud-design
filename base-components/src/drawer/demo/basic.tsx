@@ -36,6 +36,7 @@ class Demo extends React.Component {
         <Drawer
           title="标题"
           placement="right"
+          width={400}
           visible={this.state.visible}
           onClose={this.onClose}
         >

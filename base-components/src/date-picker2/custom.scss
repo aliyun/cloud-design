@@ -1,0 +1,29 @@
+// 混合云云效样式覆盖
+.next-calendar2-card
+  .next-calendar2-cell-current.next-calendar2-cell-selected:not(.next-calendar2-cell-disabled)
+  .next-calendar2-cell-inner,
+.next-calendar2-panel
+  .next-calendar2-cell-current.next-calendar2-cell-selected:not(.next-calendar2-cell-disabled)
+  .next-calendar2-cell-inner {
+  --color-brand1-9: var(--color-brand1-6);
+}
+
+.#{$css-prefix}date-picker2 {
+  & &-input-range {
+    .#{$css-prefix}input {
+      box-shadow: none;
+    }
+  }
+}
+
+.next-calendar2-header {
+  @media (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    .next-icon.next-xxs {
+      transform: scale(1.0);
+    }
+  }
+}
+
+.next-date-picker2-input.next-date-picker2-input-focus {
+  box-shadow: none;
+}
