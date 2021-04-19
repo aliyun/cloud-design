@@ -53,3 +53,10 @@
   background-color: var(--color-help-5);
   border-color: var(--color-help-5);
 }
+
+.next-tag.next-tag-checkable:not([disabled]) {
+  cursor: pointer;
+  &> .next-tag-body {
+    cursor: pointer;
+  }
+}
