@@ -1,6 +1,4 @@
+import { Tab as NextTab } from '@alifd/next'
+import { withThemeClass } from '../utils/withThemeClass'
 
-  import { Tab as NextTab } from '@alifd/next'
-
-  export default NextTab;
-    
-  
+export default withThemeClass(NextTab)
