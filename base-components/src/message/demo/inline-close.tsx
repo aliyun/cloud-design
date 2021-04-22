@@ -18,6 +18,7 @@ export default function DemoComponent() {
         title="title"
         closeable
         onClose={onClose}
+        size="large"
         afterClose={afterClose}
       >
         Content Content Content Content
