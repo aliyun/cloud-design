@@ -9,6 +9,7 @@ import { ConfigProvider as NextConfigProvider } from '@alifd/next'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 
 import ctx from './ctx'
+import { getInitialRefElement } from './utils'
 
 const refElementStyle: React.CSSProperties = {
   width: 0,
@@ -20,7 +21,7 @@ const NextConfigConsumer = (NextConfigProvider as any).Consumer
 const ConfigProvider: typeof NextConfigProvider & {
   useRefElement: typeof useRefElement
 } = ((props) => {
-  const ref = useRef(document.body as HTMLElement)
+  const ref = useRef(getInitialRefElement())
   const [refElement, setRefElement] = useState(ref.current)
   // 在初次渲染的时候，refElement还没渲染，因此需要在effect中再获取一次
   useLayoutEffect(() => {
@@ -63,5 +64,5 @@ export default ConfigProvider
  * 获取微应用根元素
  */
 function useRefElement(): HTMLElement {
-  return useContext(ctx)?.refElement ?? document.body
+  return useContext(ctx)?.refElement ?? getInitialRefElement()
 }
