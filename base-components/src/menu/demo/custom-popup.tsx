@@ -20,7 +20,7 @@ class Demo extends React.Component {
 
     return (
       <Menu className="my-custom-menu" popupProps={popupProps}>
-        <PopupItem key="0" label="Popup item 1">
+        <PopupItem key="0" label="Popup item 1" triggerType="click">
           <div className="my-custom-content">Custom content 1</div>
         </PopupItem>
         <PopupItem key="1" label="Popup item 2">
