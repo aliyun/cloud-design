@@ -1,0 +1,43 @@
+var e=Object.assign;import{r as t,n,B as r,b as a}from"./index.db891132.js";import{q as l}from"./styled-components.browser.esm.2d3384e1.js";const o={component:"a",href:"http://www.alibaba.com",target:"_blank"};const c=l.div``;var i=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const a=t.createElement(n,{direction:"row",spacing:20},t.createElement(r,e(e({},o),{type:"primary"}),"alibaba.com"),t.createElement(r,e(e({},o),{type:"secondary"}),"alibaba.com"),t.createElement(r,e(e({},o),{type:"normal"}),"alibaba.com"),t.createElement(r,e(e({},o),{loading:!0}),"alibaba.com loading"));return t.createElement(c,null,a)}});const m=l.div``;var d=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const e=t.createElement("div",null,t.createElement(r.Group,null,t.createElement(r,{type:"primary","aria-label":"prompt button"},t.createElement(a,{type:"prompt"})),t.createElement(r,{type:"primary","aria-label":"clock button"},t.createElement(a,{type:"clock"})),t.createElement(r,{type:"primary","aria-label":"set button"},t.createElement(a,{type:"set"}))));return t.createElement(m,null,e)}});const s=l.div`
+  .ghost-light-background {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    width: 50%;
+    background: #ebecf0;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .ghost-dark-background {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    width: 50%;
+    background: #333;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+`;var p=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const e=t.createElement("div",null,t.createElement(n,{wrap:!0,direction:"column",spacing:20},t.createElement(n,{direction:"row",spacing:20},t.createElement(r,{type:"primary"},"Primary"),t.createElement(r,{component:"a",type:"primary",disabled:!0},"Primary")),t.createElement(n,{direction:"row",spacing:20},t.createElement(r,{type:"secondary"},"Secondary"),t.createElement(r,{type:"secondary",disabled:!0},"Secondary")),t.createElement(n,{direction:"row",spacing:20},t.createElement(r,{type:"normal"},"Normal"),t.createElement(r,{type:"normal",disabled:!0},"Normal"))),t.createElement("br",null),t.createElement("div",null,t.createElement("div",{className:"ghost-light-background"},t.createElement(r,{ghost:"light",disabled:!0},"Ghost Light")),t.createElement("div",{className:"ghost-dark-background"},t.createElement(r,{ghost:"dark",disabled:!0},"Ghost Dark"))));return t.createElement(s,null,e)}});const g=l.div`
+  .ghost-light-background {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    width: 50%;
+    background: #ebecf0;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .ghost-dark-background {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    width: 50%;
+    background: #333;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+`;var u=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const e=t.createElement("div",{style:{clear:"both"}},t.createElement("div",{className:"ghost-light-background"},t.createElement(r,{ghost:"light"},"Ghost light")),t.createElement("div",{className:"ghost-dark-background"},t.createElement(r,{ghost:"dark"},"Ghost dark")));return t.createElement(g,null,e)}});class E extends t.Component{constructor(e,t){super(e,t),this.setLoading=()=>{this.setState({loading:!0})},this.state={loading:!1}}render(){return t.createElement(n,{direction:"row",spacing:20},t.createElement(r,{type:"secondary",loading:!0},"Loading"),t.createElement(r,{type:"primary",loading:this.state.loading,onClick:this.setLoading},"Click to loading"))}}const y=l.div``;var b=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const e=t.createElement(E,null);return t.createElement(y,null,e)}});const h=l.div``;var _=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const e=t.createElement("div",null,t.createElement(r.Group,{style:{marginRight:20}},t.createElement(r,{type:"primary"},"OK"),t.createElement(r,{type:"secondary"},"Cancel")),t.createElement(r.Group,null,t.createElement(r,{disabled:!0},"Left"),t.createElement(r,{disabled:!0},"Middle"),t.createElement(r,{disabled:!0},"Right")),t.createElement("br",null),t.createElement("br",null),t.createElement(r.Group,{style:{marginRight:20}},t.createElement(r,{type:"primary"},t.createElement(a,{type:"arrow-left"})," Backward"),t.createElement(r,{type:"primary"},"Forward ",t.createElement(a,{type:"arrow-right"}))),t.createElement(r.Group,null,t.createElement(r,{type:"primary"},t.createElement(a,{type:"prompt"})),t.createElement(r,{type:"primary"},t.createElement(a,{type:"clock"})),t.createElement(r,{type:"primary"},t.createElement(a,{type:"set"}))));return t.createElement(h,null,e)}});const f=l.div``;var v=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const e=t.createElement("div",null,t.createElement(n,{direction:"row",spacing:20},t.createElement(r,{type:"primary",size:"large"},t.createElement(a,{type:"atm"}),"Large"),t.createElement(r,{type:"primary"},t.createElement(a,{type:"atm"}),"Medium"),t.createElement(r,{type:"primary",size:"small"},t.createElement(a,{type:"atm"}),"Small")),t.createElement("br",null),t.createElement(r.Group,{size:"large"},t.createElement(r,{className:"basic-button"},"Button"),t.createElement(r,{className:"basic-button"},"Button"),t.createElement(r,{className:"basic-button"},"Button")));return t.createElement(f,null,e)}});class x extends t.Component{constructor(e,t){super(e,t),this.setLoading=()=>{this.setState({loading:!0})},this.state={loading:!1}}render(){return t.createElement(n,{direction:"row",spacing:20},t.createElement(r,{type:"secondary",iconSize:"xs",loading:!0,icons:{loading:t.createElement(a,{type:"loading",style:{color:"orange"}})}},"Custom loading icon"),t.createElement(r,{type:"primary",loading:this.state.loading,onClick:this.setLoading,icons:{loading:t.createElement(a,{type:"loading",style:{color:"orange"}})}},"Click to loading and show loading icon"))}}const k=l.div``;var S=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const e=t.createElement("div",null,t.createElement(n,{direction:"row",spacing:20},t.createElement(r,null,t.createElement(a,{type:"atm"})," ATM"),t.createElement(r,{text:!0},t.createElement(a,{type:"atm"})," ATM"),t.createElement(r,{warning:!0},t.createElement(a,{type:"atm"})," ATM"),t.createElement(r,{iconSize:"xxs"},t.createElement(a,{type:"arrow-left"})," ARROW")),t.createElement("br",null),t.createElement(x,null));return t.createElement(k,null,e)}});class w extends t.Component{constructor(e,t){super(e,t),this.setLoading=()=>{this.setState({loading:!0})},this.state={loading:!1}}render(){return t.createElement("div",null,t.createElement(r,{type:"secondary",iconSize:"xs",loading:!0,icons:{loading:t.createElement(a,{type:"loading",style:{color:"#1b58f4"}})}},"Custom loading icon"),"  ",t.createElement(r,{type:"primary",loading:this.state.loading,onClick:this.setLoading,icons:{loading:t.createElement(a,{type:"loading",style:{color:"#1b58f4"}})}},"Click to loading and show loading icon"))}}const z=l.div``;var M=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const e=t.createElement(w,null);return t.createElement(z,null,e)}});const j=l.div``;var O=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const e=t.createElement("div",null,t.createElement(n,{direction:"row",spacing:20},t.createElement(r,{type:"normal"},"Normal"),t.createElement(r,{type:"primary"},"Prirmary"),t.createElement(r,{type:"secondary"},"Secondary")),t.createElement("br",null),t.createElement(n,{direction:"row",spacing:20},t.createElement(r,{type:"normal",text:!0},"Normal"),t.createElement(r,{type:"primary",text:!0},"Primary"),t.createElement(r,{type:"secondary",text:!0},"Secondary")),t.createElement("br",null),t.createElement(n,{direction:"row",spacing:20},t.createElement(r,{type:"normal",warning:!0},"Normal"),t.createElement(r,{type:"primary",warning:!0},"Primary")));return t.createElement(j,null,e)}});const T=l.div``;var C=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:function(){const e=t.createElement("div",null,t.createElement(r,{warning:!0},t.createElement(a,{type:"atm"})));return t.createElement(T,null,e)}});const N={};N._component=i,N._accessibility=d,N._disabled=p,N._ghost=u,N._loading=b,N._group=_,N._size=v,N._icon=S,N["_custom-icons"]=M,N._type=O,N["_only-icon"]=C;export default N;
