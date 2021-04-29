@@ -13,7 +13,8 @@ import { getInitialRefElement } from './utils'
 
 const refElementStyle: React.CSSProperties = {
   width: 0,
-  height: 0
+  height: 0,
+  display: 'none'
 }
 
 const NextConfigConsumer = (NextConfigProvider as any).Consumer
