@@ -43,7 +43,7 @@ const OverlayHOC = <T extends any>(
 
 export { OverlayHOC }
 
-function useDefaultOffsetY() {
+export function useDefaultOffsetY() {
   const varStr = useCssVar('--overlay-offset')
   const num = parseInt(varStr.trim())
   if (Number.isFinite(num)) {
