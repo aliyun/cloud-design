@@ -5128,6 +5128,15 @@
     --switch-size-m-radius-trigger: var(--corner-circle, 50%);
     
     
+    --switch-size-m-inner-icon: var(--s-4, 16px);
+    
+    
+    --switch-size-m-trigger-padding-l: var(--s-2, 8px);
+    
+    
+    --switch-size-m-trigger-padding-r: var(--s-2, 8px);
+    
+    
     --switch-size-s-width: var(--s-7, 28px);
     
     
@@ -5140,19 +5149,16 @@
     --switch-size-s-radius-trigger: var(--corner-3, 50px);
     
     
+    --switch-size-s-inner-icon: var(--s-3, 12px);
+    
+    
+    --switch-size-s-trigger-padding-l: var(--s-2, 8px);
+    
+    
+    --switch-size-s-trigger-padding-r: var(--s-2, 8px);
+    
+    
     --switch-border-width-container: var(--line-2, 2px);
-    
-    
-    --switch-text-on-left: var(--s-2, 8px);
-    
-    
-    --switch-size-s-text-on-left: var(--s-1, 4px);
-    
-    
-    --switch-text-off-right: var(--s-2, 8px);
-    
-    
-    --switch-size-s-text-off-right: var(--s-4, 16px);
     
     
     --switch-border-width-trigger: var(--line-zero, 0px);
@@ -5209,7 +5215,7 @@
     --switch-disabled-off-trigger-bg-color: var(--color-white, #FFFFFF);
     
     
-    --switch-handle-disabled-border-color: var(--color-line1-1, #eaeaea);
+    --switch-handle-disabled-border-color: transparent;
     
     
     --switch-normal-off-color-font: var(--color-text1-2, #5a5a5a);
@@ -5231,6 +5237,15 @@
     
     
     --switch-rtl-on-shadow: var(--shadow-1-left, 0px 0px 8px 0px rgba(0, 0, 0, 0.06));
+    
+    
+    --switch-text-off-right: var(--s-2, 8px);
+    
+    
+    --switch-size-s-text-off-right: var(--s-4, 16px);
+    
+    
+    --switch-text-on-left: var(--s-2, 8px);
     
     
     /* ------------------------ typography ------------------------ */
@@ -6736,13 +6751,22 @@
     --balloon-size-max-width: 300px;
     
     
-    --balloon-size-padding-top: 10px;
-    
-    
     --balloon-size-padding-right: var(--s-3, 12px);
     
     
     --balloon-size-padding-closable-right: var(--s-10, 40px);
+    
+    
+    --balloon-size-padding-top: 10px;
+    
+    
+    --balloon-size-header-margin-bottom: var(--s-2, 8px);
+    
+    
+    --balloon-title-font-size: var(--font-size-subhead, 16px);
+    
+    
+    --balloon-title-font-weight: var(--font-weight-3, bold);
     
     
     --balloon-content-font-size: var(--font-size-body-1, 12px);
@@ -8392,6 +8416,9 @@
     --pagination-item-split: var(--s-2, 8px);
     
     
+    --pagination-item-padding: 10px;
+    
+    
     --pagination-item-border-style: var(--line-solid, solid);
     
     
@@ -8431,6 +8458,9 @@
     --pagination-large-item-split: var(--s-2, 8px);
     
     
+    --pagination-large-item-padding: 15px;
+    
+    
     --pagination-large-item-border-width: var(--line-1, 1px);
     
     
@@ -8456,6 +8486,9 @@
     
     
     --pagination-small-item-split: var(--s-1, 4px);
+    
+    
+    --pagination-small-item-padding: 6px;
     
     
     --pagination-small-item-border-width: var(--line-1, 1px);
@@ -9547,7 +9580,7 @@
     --nav-group-height: var(--s-10, 40px);
     
     
-    --nav-group-font-size: var(--font-size-subhead, 16px);
+    --nav-group-font-size: var(--font-size-body-1, 12px);
     
     
     --nav-icon-self-size: var(--icon-xs, 12px);
@@ -9617,6 +9650,15 @@
     
     
     --nav-primary-item-selected-text-style: var(--font-weight-3, bold);
+    
+    
+    --nav-primary-item-childselected-bg-color: var(--color-transparent, transparent);
+    
+    
+    --nav-primary-item-childselected-text-color: var(--color-white, #FFFFFF);
+    
+    
+    --nav-primary-item-childselected-text-style: var(--font-weight-3, bold);
     
     
     --nav-primary-item-selected-active-color: var(--color-other-2, #FFFFFF);
@@ -9697,6 +9739,15 @@
     --nav-secondary-item-selected-text-style: var(--font-weight-2, normal);
     
     
+    --nav-secondary-item-childselected-bg-color: var(--color-transparent, transparent);
+    
+    
+    --nav-secondary-item-childselected-text-color: var(--color-white, #FFFFFF);
+    
+    
+    --nav-secondary-item-childselected-text-style: var(--font-weight-3, bold);
+    
+    
     --nav-secondary-item-selected-active-color: var(--color-brand1-9, #003263);
     
     
@@ -9709,7 +9760,7 @@
     --nav-secondary-sub-nav-active-color: var(--color-brand1-6, #0064C8);
     
     
-    --nav-secondary-item-opened-bg-color: var(--color-brand1-9, #003263);
+    --nav-secondary-item-opened-bg-color: var(--color-transparent, transparent);
     
     
     --nav-secondary-item-opened-text-color: var(--color-white, #FFFFFF);
@@ -9773,6 +9824,15 @@
     
     
     --nav-normal-item-selected-text-style: var(--font-weight-2, normal);
+    
+    
+    --nav-normal-item-childselected-bg-color: var(--color-transparent, transparent);
+    
+    
+    --nav-normal-item-childselected-text-color: var(--color-brand1-6, #0064C8);
+    
+    
+    --nav-normal-item-childselected-text-style: var(--font-weight-2, normal);
     
     
     --nav-normal-item-selected-active-color: var(--color-brand1-6, #0064C8);
@@ -9842,6 +9902,15 @@
     
     
     --nav-line-item-selected-text-style: var(--font-weight-2, normal);
+    
+    
+    --nav-line-item-childselected-bg-color: var(--color-transparent, transparent);
+    
+    
+    --nav-line-item-childselected-text-color: var(--color-brand1-6, #0064C8);
+    
+    
+    --nav-line-item-childselected-text-style: var(--font-weight-2, normal);
     
     
     --nav-line-item-selected-active-color: var(--color-brand1-6, #0064C8);
@@ -10619,6 +10688,12 @@
     
     
     /* ------------------------ popup ------------------------ */
+    
+    
+    --popup-spacing-lr: var(--s-zero, 0px);
+    
+    
+    --popup-spacing-tb: var(--s-zero, 0px);
     
     
     --popup-local-border-width: var(--line-zero, 0px);
