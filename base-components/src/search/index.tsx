@@ -1,7 +1,7 @@
 import { Search as NextSearch } from '@alifd/next'
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useMemo, useState } from 'react'
 import classnames from 'classnames'
-import HOC from '../utils/popupHoc'
+import HOC, { useDefaultOffsetY } from '../utils/popupHoc'
 import { withThemeClass } from '../utils/withThemeClass'
 
 type SearchProps = React.ComponentProps<typeof NextSearch>
@@ -39,6 +39,21 @@ const Search: React.FC<SearchProps> = withThemeClass(
       [props.onVisibleChange]
     )
 
+    // Search filter也是个选择器，要设置它的弹层offset
+    const defaultOffsetY = useDefaultOffsetY()
+    const filterProps = useMemo(() => {
+      const popupProps = {
+        align: 'tl bl',
+        offset: [0, defaultOffsetY],
+        ...props.filterProps?.popupProps
+      }
+      const filterProps = {
+        ...props.filterProps,
+        popupProps
+      }
+      return filterProps
+    }, [defaultOffsetY, props.filterProps])
+
     return (
       <NextSearch
         {...props}
@@ -54,6 +69,7 @@ const Search: React.FC<SearchProps> = withThemeClass(
           visible ? 'visible' : false,
           props.disabled ? 'disabled' : false
         )}
+        filterProps={filterProps}
       />
     )
   })
