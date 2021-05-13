@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.9.12 (https://fusion.design)
- * @alifd/next@1.22.19 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.9.13 (https://fusion.design)
+ * @alifd/next@1.22.25 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -465,41 +465,11 @@ a {
     color: #358fe9;
     color: var(--color-link-3, #358fe9); }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-thin.eot");
-  src: url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-thin.eot?#iefix") format("embedded-opentype"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-thin.woff2") format("woff2"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-thin.woff") format("woff"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-thin.ttf") format("truetype");
-  font-weight: 200; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-light.eot");
-  src: url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-light.eot?#iefix") format("embedded-opentype"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-light.woff2") format("woff2"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-light.woff") format("woff"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-light.ttf") format("truetype");
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-regular.eot");
-  src: url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-regular.eot?#iefix") format("embedded-opentype"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-regular.woff2") format("woff2"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-regular.woff") format("woff"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-regular.ttf") format("truetype");
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-medium.eot");
-  src: url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-medium.eot?#iefix") format("embedded-opentype"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-medium.woff2") format("woff2"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-medium.woff") format("woff"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-medium.ttf") format("truetype");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-bold.eot");
-  src: url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-bold.eot?#iefix") format("embedded-opentype"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-bold.woff2") format("woff2"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-bold.woff") format("woff"), url("//i.alicdn.com/artascope-font/20160419204543/font/roboto-bold.ttf") format("truetype");
-  font-weight: 700; }
-
 html {
   font-size: 100%; }
 
 body {
-  font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
   font-size: 12px;
   font-size: var(--font-size-body-1, 12px);
   line-height: 1.28571;
@@ -14379,24 +14349,48 @@ small {
   .next-menu-btn.next-btn-normal .next-menu-btn-arrow {
     color: #EAEAEA;
     color: var(--menu-btn-pure-text-normal-icon-color, #EAEAEA); }
+  .next-menu-btn.next-btn-normal:hover .next-menu-btn-arrow {
+    color: #EAEAEA;
+    color: var(--btn-pure-normal-color-hover, #EAEAEA); }
   .next-menu-btn.next-btn-secondary .next-menu-btn-arrow {
     color: #007be9;
     color: var(--menu-btn-pure-text-secondary-icon-color, #007be9); }
+  .next-menu-btn.next-btn-secondary:hover .next-menu-btn-arrow {
+    color: #007be9;
+    color: var(--btn-pure-secondary-color-hover, #007be9); }
+  .next-menu-btn.next-btn-secondary.next-btn-text:hover .next-menu-btn-arrow {
+    color: #007be9;
+    color: var(--btn-text-secondary-color-hover, #007be9); }
   .next-menu-btn.next-btn-primary .next-menu-btn-arrow {
     color: #FFFFFF;
     color: var(--menu-btn-pure-text-primary-icon-color, #FFFFFF); }
+  .next-menu-btn.next-btn-primary:hover .next-menu-btn-arrow {
+    color: #FFFFFF;
+    color: var(--btn-pure-primary-color-hover, #FFFFFF); }
   .next-menu-btn.next-btn-text.next-btn-normal .next-menu-btn-arrow {
     color: #8A8A8A;
     color: var(--menu-btn-text-text-normal-icon-color, #8A8A8A); }
+  .next-menu-btn.next-btn-text.next-btn-normal:hover .next-menu-btn-arrow {
+    color: #007be9;
+    color: var(--btn-text-normal-color-hover, #007be9); }
   .next-menu-btn.next-btn-text.next-btn-primary .next-menu-btn-arrow {
     color: #0D7BE9;
     color: var(--menu-btn-text-text-primary-icon-color, #0D7BE9); }
+  .next-menu-btn.next-btn-text.next-btn-primary:hover .next-menu-btn-arrow {
+    color: #358FE9;
+    color: var(--btn-text-primary-color-hover, #358FE9); }
   .next-menu-btn.next-btn-ghost.next-btn-light .next-menu-btn-arrow {
     color: #EAEAEA;
     color: var(--menu-btn-ghost-light-icon-color, #EAEAEA); }
+  .next-menu-btn.next-btn-ghost.next-btn-light:hover .next-menu-btn-arrow {
+    color: #8A8A8A;
+    color: var(--btn-ghost-light-color-hover, #8A8A8A); }
   .next-menu-btn.next-btn-ghost.next-btn-dark .next-menu-btn-arrow {
     color: #FFFFFF;
     color: var(--menu-btn-ghost-dark-icon-color, #FFFFFF); }
+  .next-menu-btn.next-btn-ghost.next-btn-dark:hover .next-menu-btn-arrow {
+    color: #FFFFFF;
+    color: var(--btn-ghost-dark-color-hover, #FFFFFF); }
   .next-menu-btn.disabled .next-menu-btn-arrow,
   .next-menu-btn[disabled] .next-menu-btn-arrow {
     color: #6B6B6B;
@@ -14406,11 +14400,11 @@ small {
     color: #6B6B6B;
     color: var(--menu-btn-disabled-icon-color, #6B6B6B); }
   .next-menu-btn[disabled].next-btn-ghost.next-btn-dark .next-menu-btn-arrow {
-    color: rgba(#FFFFFF, 0.4);
-    color: rgba(var(--btn-ghost-dark-color-disabled-rgb, #FFFFFF), var(--btn-ghost-dark-color-disabled-opacity, 0.4)); }
+    color: rgba(255, 255, 255, 0.4);
+    color: var(--menu-btn-ghost-dark-disabled-icon-color, rgba(255, 255, 255, 0.4)); }
   .next-menu-btn[disabled].next-btn-ghost.next-btn-light .next-menu-btn-arrow {
-    color: rgba(#000000, 0.1);
-    color: rgba(var(--btn-ghost-light-color-disabled-rgb, #000000), var(--btn-ghost-light-color-disabled-opacity, 0.1)); }
+    color: rgba(0, 0, 0, 0.1);
+    color: var(--menu-btn-ghost-light-disabled-icon-color, rgba(0, 0, 0, 0.1)); }
 
 .next-nav {
   -webkit-box-sizing: border-box;
@@ -14967,6 +14961,8 @@ small {
         background-color: var(--nav-line-sub-nav-selected-bg-color, transparent);
         color: #007be9;
         color: var(--nav-line-sub-nav-selected-text-color, #007be9); }
+  .next-nav.next-icon-only.next-custom-icon-only-width {
+    text-align: center; }
   .next-nav.next-icon-only .next-menu-item-inner {
     text-overflow: clip; }
   .next-nav.next-icon-only.next-normal .next-nav-icon.next-icon {
@@ -15040,9 +15036,9 @@ small {
       line-height: inherit; }
   .next-nav.next-icon-only .next-nav-icon-only-arrow.next-icon {
     margin-left: 1px;
-    margin-left: calc(9px - var(--nav-icon-only-font-size, 16px)/2);
+    margin-left: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
     margin-right: 1px;
-    margin-right: calc(9px - var(--nav-icon-only-font-size, 16px)/2);
+    margin-right: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
     -webkit-transition: all 100ms linear;
     transition: all 100ms linear;
     -webkit-transform-origin: center 50%;
@@ -15060,9 +15056,9 @@ small {
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
     margin-left: 1px;
-    margin-left: calc(9px - var(--nav-icon-only-font-size, 16px)/2);
+    margin-left: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px));
     margin-right: 1px;
-    margin-right: calc(9px - var(--nav-icon-only-font-size, 16px)/2); }
+    margin-right: calc(29px - var(--nav-icon-only-font-size, 16px)/2 - var(--nav-ver-item-padding-lr, 20px)); }
     .next-nav.next-icon-only .next-nav-item.next-opened .next-nav-icon-only-arrow.next-icon-arrow-down:before,
     .next-nav.next-icon-only .next-nav-item.next-opened .next-nav-icon-only-arrow.next-icon-arrow-down .next-icon-remote {
       width: 16px;
@@ -15802,22 +15798,9 @@ small {
     font-size: var(--font-size-body-2, 14px);
     margin-right: 16px; }
   .next-pagination-pages {
-    display: inline-block;
-    /* for ie9 */
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    display: inline-block; }
   .next-pagination-list {
     display: inline-block;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     vertical-align: top; }
   .next-pagination .next-pagination-item:not([disabled]) {
     display: inline-block;
@@ -15835,8 +15818,7 @@ small {
             box-shadow: var(--pagination-item-shadow, none); }
   .next-pagination .next-pagination-item {
     -webkit-transition: none;
-    transition: none;
-    margin-left: 4px; }
+    transition: none; }
     .next-pagination .next-pagination-item.next-current {
       border-color: transparent;
       border-color: var(--pagination-item-current-border-color, transparent);
@@ -15863,8 +15845,7 @@ small {
     display: inline-block;
     color: #8A8A8A;
     color: var(--pagination-ellipsis-color, #8A8A8A);
-    vertical-align: top;
-    margin-right: 4px; }
+    vertical-align: top; }
   .next-pagination-display {
     display: inline-block;
     margin: 0 16px;
@@ -16202,10 +16183,6 @@ small {
   .next-pagination.next-large.next-mini .next-pagination-item.next-prev {
     margin-right: 8px; }
   .next-pagination.next-large.next-mini .next-pagination-item.next-next {
-    margin-left: 8px; }
-  .next-pagination.next-large .next-pagination-ellipsis {
-    margin-right: 8px; }
-  .next-pagination.next-large .next-pagination-item {
     margin-left: 8px; }
   .next-pagination-icon-prev::before {
     content: "\E61D";
@@ -19008,7 +18985,7 @@ small {
       text-align: left;
       font-weight: bold;
       font-weight: var(--step-circle-item-title-weight, bold);
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -19051,7 +19028,7 @@ small {
       text-align: left;
       font-weight: bold;
       font-weight: var(--step-circle-item-title-weight, bold);
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -19094,7 +19071,7 @@ small {
       text-align: left;
       font-weight: bold;
       font-weight: var(--step-circle-item-title-weight, bold);
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -19137,7 +19114,7 @@ small {
       text-align: left;
       font-weight: bold;
       font-weight: var(--step-circle-item-title-weight, bold);
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -19801,7 +19778,7 @@ small {
       font-weight: bold;
       font-weight: var(--step-dot-item-title-weight, bold);
       text-align: left;
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -19844,7 +19821,7 @@ small {
       font-weight: bold;
       font-weight: var(--step-dot-item-title-weight, bold);
       text-align: left;
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -19887,7 +19864,7 @@ small {
       font-weight: bold;
       font-weight: var(--step-dot-item-title-weight, bold);
       text-align: left;
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -19930,7 +19907,7 @@ small {
       font-weight: bold;
       font-weight: var(--step-dot-item-title-weight, bold);
       text-align: left;
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -20137,7 +20114,7 @@ small {
   margin-left: 0; }
   .next-step-circle[dir="rtl"].next-step-vertical > .next-step-item-wait > .next-step-item-body > .next-step-item-title {
     text-align: right;
-    font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
     font-size: 12px;
     font-size: var(--font-size-body-1, 12px);
     line-height: 1.28571; }
@@ -20153,7 +20130,7 @@ small {
   margin-left: 0; }
   .next-step-circle[dir="rtl"].next-step-vertical > .next-step-item-process > .next-step-item-body > .next-step-item-title {
     text-align: right;
-    font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
     font-size: 12px;
     font-size: var(--font-size-body-1, 12px);
     line-height: 1.28571; }
@@ -20169,7 +20146,7 @@ small {
   margin-left: 0; }
   .next-step-circle[dir="rtl"].next-step-vertical > .next-step-item-finish > .next-step-item-body > .next-step-item-title {
     text-align: right;
-    font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
     font-size: 12px;
     font-size: var(--font-size-body-1, 12px);
     line-height: 1.28571; }
@@ -20185,7 +20162,7 @@ small {
   margin-left: 0; }
   .next-step-circle[dir="rtl"].next-step-vertical > .next-step-item-disabled > .next-step-item-body > .next-step-item-title {
     text-align: right;
-    font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
     font-size: 12px;
     font-size: var(--font-size-body-1, 12px);
     line-height: 1.28571; }
@@ -20239,7 +20216,7 @@ small {
     margin-left: 0; }
     .next-step-dot[dir="rtl"].next-step-vertical > .next-step-item-wait > .next-step-item-body > .next-step-item-title {
       text-align: right;
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -20254,7 +20231,7 @@ small {
     margin-left: 0; }
     .next-step-dot[dir="rtl"].next-step-vertical > .next-step-item-process > .next-step-item-body > .next-step-item-title {
       text-align: right;
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -20269,7 +20246,7 @@ small {
     margin-left: 0; }
     .next-step-dot[dir="rtl"].next-step-vertical > .next-step-item-finish > .next-step-item-body > .next-step-item-title {
       text-align: right;
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -20284,7 +20261,7 @@ small {
     margin-left: 0; }
     .next-step-dot[dir="rtl"].next-step-vertical > .next-step-item-disabled > .next-step-item-body > .next-step-item-title {
       text-align: right;
-      font-family: Roboto, "Helvetica Neue", "PingFang SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+      font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial;
       font-size: 12px;
       font-size: var(--font-size-body-1, 12px);
       line-height: 1.28571; }
@@ -20359,7 +20336,11 @@ small {
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   overflow: hidden;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   .next-switch *,
   .next-switch *:before,
   .next-switch *:after {
@@ -25816,7 +25797,6 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
       width: 100%; }
   .next-date-picker2-overlay {
     vertical-align: top;
-    border-radius: 2px;
     padding: 4px 0px; }
   .next-date-picker2-overlay-range {
     padding: 12px 0px; }
@@ -25828,6 +25808,9 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
     border: 1px solid var(--color-line1-1, #383838);
     border-radius: 2px;
     border-radius: var(--corner-1, 2px); }
+    .next-date-picker2-wrapper .next-calendar2-panel {
+      border-radius: 2px;
+      border-radius: var(--corner-1, 2px); }
     .next-date-picker2-wrapper .next-calendar2-body {
       width: 272px; }
     .next-date-picker2-wrapper .next-calendar2-cell::before {
@@ -26063,7 +26046,9 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
   .next-date-picker2-input-separator {
     color: #383838;
     color: var(--input-border-color, #383838);
-    min-width: 12px;
+    font-size: 12px;
+    display: inline-block;
+    min-width: 16px;
     text-align: center; }
 
 .next-range-picker2-panel, .next-date-picker2-panel {
@@ -26077,39 +26062,30 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
 
 .next-range-picker2-arrow {
   display: block;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: translate(0, -50%) rotate(-45deg);
+      -ms-transform: translate(0, -50%) rotate(-45deg);
+          transform: translate(0, -50%) rotate(-45deg);
   position: absolute;
   z-index: 1;
   width: 10px;
   height: 10px;
   margin-left: 16.5px;
-  -webkit-box-shadow: 2px -2px 6px rgba(0, 0, 0, 0.06);
-          box-shadow: 2px -2px 6px rgba(0, 0, 0, 0.06);
+  border-color: #383838 #383838 transparent transparent;
+  border-color: var(--color-line1-1, #383838) var(--color-line1-1, #383838) transparent transparent;
+  border-style: solid;
+  border-width: 1px;
   -webkit-transition: left .3s ease-out;
-  transition: left .3s ease-out; }
-  .next-range-picker2-arrow:after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 11px;
-    height: 11px;
-    border-color: #383838 #383838 transparent transparent;
-    border-color: var(--color-line1-1, #383838) var(--color-line1-1, #383838) transparent transparent;
-    border-style: solid;
-    border-width: 1px;
-    background-color: #FFFFFF; }
+  transition: left .3s ease-out;
+  background: #FFFFFF; }
 
 .next-date-picker2-tl-bl .next-range-picker2-arrow {
-  top: 6px; }
+  top: 12.5px; }
 
 .next-date-picker2-bl-tl .next-range-picker2-arrow {
-  bottom: 6px;
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg); }
+  bottom: 13px;
+  -webkit-transform: translate(0, 50%) rotate(135deg);
+      -ms-transform: translate(0, 50%) rotate(135deg);
+          transform: translate(0, 50%) rotate(135deg); }
 
 .next-date-time-picker-wrapper {
   border-left: 1px solid #383838;
