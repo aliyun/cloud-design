@@ -1888,6 +1888,9 @@
     --size-base: 4px;
     
     
+    --s-auto: auto;
+    
+    
     --s-zero: 0px;
     
     
@@ -2245,7 +2248,10 @@
     --cascader-menu-border-width: var(--line-1, 1px);
     
     
-    --cascader-menu-width: var(--s-25, 100px);
+    --cascader-menu-width: var(--s-auto, auto);
+    
+    
+    --cascader-menu-min-width: var(--s-25, 100px);
     
     
     --cascader-menu-height: var(--s-48, 192px);
@@ -2797,7 +2803,7 @@
     --tree-node-normal-background: var(--color-transparent, transparent);
     
     
-    --tree-node-title-border-radius: var(--corner-2, 2px);
+    --tree-node-title-border-radius: var(--corner-1, 4px);
     
     
     --tree-switch-arrow-color: var(--color-text1-2, #555e6b);
@@ -4219,10 +4225,10 @@
     --table-th-font-weight: var(--font-weight-2, normal);
     
     
-    --table-sort-icon-size: var(--icon-xs, 12px);
+    --table-sort-icon-size: var(--icon-s, 16px);
     
     
-    --table-filter-icon-size: var(--icon-xs, 12px);
+    --table-filter-icon-size: var(--icon-s, 16px);
     
     
     --table-body-font-size: var(--font-size-body-1, 14px);
@@ -8428,13 +8434,13 @@
     /* ------------------------ breadcrumb ------------------------ */
     
     
-    --breadcrumb-size-m-font-size: var(--font-size-caption, 12px);
+    --breadcrumb-size-m-font-size: var(--font-size-body-1, 14px);
     
     
     --breadcrumb-size-ellipsis-font-size: var(--font-size-caption, 12px);
     
     
-    --breadcrumb-size-m-icon-size: var(--icon-s, 16px);
+    --breadcrumb-size-m-icon-size: var(--icon-m, 20px);
     
     
     --breadcrumb-size-m-icon-margin: var(--s-2, 8px);
@@ -8455,7 +8461,7 @@
     --breadcrumb-text-keyword-color: var(--color-brand1-6, #298ed1);
     
     
-    --breadcrumb-icon-color: var(--color-line1-1, #2c3139);
+    --breadcrumb-icon-color: var(--color-text1-1, #363d48);
     
     
     --breadcrumb-icon-sep-content: var(--icon-content-arrow-right, "");

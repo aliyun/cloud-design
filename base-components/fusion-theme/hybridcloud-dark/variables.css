@@ -3613,6 +3613,9 @@
     --size-base: 4px;
     
     
+    --s-auto: auto;
+    
+    
     --s-zero: 0px;
     
     
@@ -3970,7 +3973,10 @@
     --cascader-menu-border-width: var(--line-1, 1px);
     
     
-    --cascader-menu-width: var(--s-25, 100px);
+    --cascader-menu-width: var(--s-auto, auto);
+    
+    
+    --cascader-menu-min-width: var(--s-25, 100px);
     
     
     --cascader-menu-height: var(--s-48, 192px);
@@ -10156,7 +10162,7 @@
     --breadcrumb-size-m-font-size: var(--font-size-caption, 12px);
     
     
-    --breadcrumb-size-ellipsis-font-size: var(--font-size-caption, 12px);
+    --breadcrumb-size-ellipsis-font-size: var(--font-size-body-2, 14px);
     
     
     --breadcrumb-size-m-icon-size: var(--icon-s, 16px);
