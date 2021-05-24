@@ -25,5 +25,15 @@
 }
 
 .next-date-picker2-input.next-date-picker2-input-focus {
-  box-shadow: none;
+  box-shadow: var(--active-shadow);
+}
+
+.next-date-picker2:not(disabled):hover, .next-date-picker2:not(disabled).active {
+  .next-date-picker2-input-range {
+    box-shadow: var(--active-shadow);
+  }
+}
+
+.next-date-picker2-input-separator {
+  color: var(--color-input-separator, var(--color-fill1-5));
 }
