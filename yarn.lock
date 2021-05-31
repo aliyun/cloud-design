@@ -639,6 +639,11 @@
   resolved "https://registry.npm.alibaba-inc.com/@alifd/validate/download/@alifd/validate-1.2.3.tgz#3b7f880a1a955470b303fddce5afa42a9f2d9ff2"
   integrity sha1-O3+IChqVVHCzA/3c5a+kKp8tn/I=
 
+"@alloc/quick-lru@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.npm.alibaba-inc.com/@alloc/quick-lru/download/@alloc/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
+  integrity sha1-e/aLIMCjUPk2kV/K4G9Y4yAHzjA=
+
 "@ant-design/colors@^6.0.0":
   version "6.0.0"
   resolved "https://registry.npm.alibaba-inc.com/@ant-design/colors/download/@ant-design/colors-6.0.0.tgz#9b9366257cffcc47db42b9d0203bb592c13c0298"
@@ -1224,7 +1229,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/plugin-syntax-import-meta@^7.10.4", "@babel/plugin-syntax-import-meta@^7.2.0":
+"@babel/plugin-syntax-import-meta@^7.2.0":
   version "7.10.4"
   resolved "https://registry.npm.alibaba-inc.com/@babel/plugin-syntax-import-meta/download/@babel/plugin-syntax-import-meta-7.10.4.tgz#ee601348c370fa334d2207be158777496521fd51"
   integrity sha1-7mATSMNw+jNNIge+FYd3SWUh/VE=
@@ -1843,7 +1848,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/preset-react@^7.0.0", "@babel/preset-react@^7.12.10", "@babel/preset-react@^7.12.7":
+"@babel/preset-react@^7.0.0", "@babel/preset-react@^7.12.13", "@babel/preset-react@^7.12.7":
   version "7.13.13"
   resolved "https://registry.npm.alibaba-inc.com/@babel/preset-react/download/@babel/preset-react-7.13.13.tgz#fa6895a96c50763fe693f9148568458d5a839761"
   integrity sha1-+miVqWxQdj/mk/kUhWhFjVqDl2E=
@@ -1855,7 +1860,7 @@
     "@babel/plugin-transform-react-jsx-development" "^7.12.17"
     "@babel/plugin-transform-react-pure-annotations" "^7.12.1"
 
-"@babel/preset-typescript@^7.1.0", "@babel/preset-typescript@^7.12.7":
+"@babel/preset-typescript@^7.1.0", "@babel/preset-typescript@^7.12.7", "@babel/preset-typescript@^7.13.0":
   version "7.13.0"
   resolved "https://registry.npm.alibaba-inc.com/@babel/preset-typescript/download/@babel/preset-typescript-7.13.0.tgz#ab107e5f050609d806fbb039bec553b33462c60a"
   integrity sha1-qxB+XwUGCdgG+7A5vsVTszRixgo=
@@ -3195,7 +3200,7 @@
   resolved "https://registry.npm.alibaba-inc.com/@researchgate/react-intersection-observer/download/@researchgate/react-intersection-observer-1.3.5.tgz#0321d2dd609aaacdb9bace8004d99c72824fb142"
   integrity sha1-AyHS3WCaqs25us6ABNmccoJPsUI=
 
-"@rollup/plugin-babel@^5.0.3", "@rollup/plugin-babel@^5.2.1", "@rollup/plugin-babel@^5.2.2":
+"@rollup/plugin-babel@^5.0.3", "@rollup/plugin-babel@^5.2.1", "@rollup/plugin-babel@^5.3.0":
   version "5.3.0"
   resolved "https://registry.npm.alibaba-inc.com/@rollup/plugin-babel/download/@rollup/plugin-babel-5.3.0.tgz#9cb1c5146ddd6a4968ad96f209c50c62f92f9879"
   integrity sha1-nLHFFG3daklorZbyCcUMYvkvmHk=
@@ -4391,7 +4396,7 @@
   dependencies:
     "@umijs/deps" "3.4.23"
 
-"@vitejs/plugin-react-refresh@^1.1.1":
+"@vitejs/plugin-react-refresh@^1.3.1":
   version "1.3.3"
   resolved "https://registry.npm.alibaba-inc.com/@vitejs/plugin-react-refresh/download/@vitejs/plugin-react-refresh-1.3.3.tgz#d5afb3e0463f368a8afadfdd7305fe5c5fe78a6a"
   integrity sha1-1a+z4EY/NoqK+t/dcwX+XF/nimo=
@@ -6713,7 +6718,7 @@ cheerio@^1.0.0-rc.3:
     parse5-htmlparser2-tree-adapter "^6.0.1"
     tslib "^2.2.0"
 
-chokidar@3.5.1, "chokidar@>=3.0.0 <4.0.0", chokidar@^3.0.2, chokidar@^3.1.0, chokidar@^3.3.0, chokidar@^3.4.1, chokidar@^3.4.2:
+chokidar@3.5.1, "chokidar@>=3.0.0 <4.0.0", chokidar@^3.0.2, chokidar@^3.1.0, chokidar@^3.3.0, chokidar@^3.4.1, chokidar@^3.4.2, chokidar@^3.5.1:
   version "3.5.1"
   resolved "https://registry.npm.alibaba-inc.com/chokidar/download/chokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
   integrity sha1-7pznu+vSt59J8wR5nVRo4x4U5oo=
@@ -8261,6 +8266,11 @@ deprecation@^2.0.0, deprecation@^2.3.1:
   resolved "https://registry.npm.alibaba-inc.com/deprecation/download/deprecation-2.3.1.tgz#6368cbdb40abf3373b525ac87e4a260c3a700919"
   integrity sha1-Y2jL20Cr8zc7UlrIfkomDDpwCRk=
 
+dequal@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npm.alibaba-inc.com/dequal/download/dequal-2.0.2.tgz#85ca22025e3a87e65ef75a7a437b35284a7e319d"
+  integrity sha1-hcoiAl46h+Ze91p6Q3s1KEp+MZ0=
+
 des.js@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npm.alibaba-inc.com/des.js/download/des.js-1.0.1.tgz#5382142e1bdc53f85d86d53e5f4aa7deb91e0843"
@@ -8768,7 +8778,7 @@ enhanced-resolve@^4.0.0, enhanced-resolve@^4.5.0:
     memory-fs "^0.5.0"
     tapable "^1.0.0"
 
-enhanced-resolve@^5.3.2, enhanced-resolve@^5.4.1:
+enhanced-resolve@^5.3.2, enhanced-resolve@^5.7.0:
   version "5.8.2"
   resolved "https://registry.npm.alibaba-inc.com/enhanced-resolve/download/enhanced-resolve-5.8.2.tgz#15ddc779345cbb73e97c611cd00c01c1e7bf4d8b"
   integrity sha1-Fd3HeTRcu3PpfGEc0AwBwee/TYs=
@@ -9036,7 +9046,7 @@ esbuild@^0.11.23:
   resolved "https://registry.npm.alibaba-inc.com/esbuild/download/esbuild-0.11.23.tgz#c42534f632e165120671d64db67883634333b4b8"
   integrity sha1-xCU09jLhZRIGcdZNtniDY0MztLg=
 
-esbuild@^0.8.12:
+esbuild@^0.8.12, esbuild@^0.8.31:
   version "0.8.57"
   resolved "https://registry.npm.alibaba-inc.com/esbuild/download/esbuild-0.8.57.tgz#a42d02bc2b57c70bcd0ef897fe244766bb6dd926"
   integrity sha1-pC0CvCtXxwvNDviX/iRHZrtt2SY=
@@ -9412,7 +9422,7 @@ fast-deep-equal@^2.0.1:
   resolved "https://registry.npm.alibaba-inc.com/fast-deep-equal/download/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
   integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
 
-fast-deep-equal@^3.1.1:
+fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npm.alibaba-inc.com/fast-deep-equal/download/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha1-On1WtVnWy8PrUSMlJE5hmmXGxSU=
@@ -10418,7 +10428,7 @@ globby@8.0.2, globby@^8.0.1:
     pify "^3.0.0"
     slash "^1.0.0"
 
-globby@^11.0.0, globby@^11.0.1, globby@^11.0.2:
+globby@^11.0.0, globby@^11.0.1:
   version "11.0.3"
   resolved "https://registry.npm.alibaba-inc.com/globby/download/globby-11.0.3.tgz#9b1f0cb523e171dd1ad8c7b2a9fb4b644b9593cb"
   integrity sha1-mx8MtSPhcd0a2MeyqftLZEuVk8s=
@@ -12755,6 +12765,11 @@ jest-worker@^26.2.1:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
+jotai@^0.15.3:
+  version "0.15.5"
+  resolved "https://registry.npm.alibaba-inc.com/jotai/download/jotai-0.15.5.tgz#f9e2f56ebdafa2cffb6d942db0ad57aa57d8b252"
+  integrity sha1-+eL1br2vos/7bZQtsK1XqlfYslI=
+
 js-base64@^2.1.8, js-base64@^2.1.9, js-base64@^2.5.2:
   version "2.6.4"
   resolved "https://registry.npm.alibaba-inc.com/js-base64/download/js-base64-2.6.4.tgz#f4e686c5de1ea1f867dbcad3d46d969428df98c4"
@@ -14374,6 +14389,11 @@ mini-css-extract-plugin@^0.8.0:
     normalize-url "1.9.1"
     schema-utils "^1.0.0"
     webpack-sources "^1.1.0"
+
+mini-debounce@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npm.alibaba-inc.com/mini-debounce/download/mini-debounce-1.0.8.tgz#8936a7c8892c71078936930e1a025e5a5392a45c"
+  integrity sha1-iTanyIkscQeJNpMOGgJeWlOSpFw=
 
 minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"
@@ -18470,7 +18490,7 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.17.1, rollup@^2.32.1, rollup@^2.33.3, rollup@^2.36.1, rollup@^2.38.5:
+rollup@^2.17.1, rollup@^2.32.1, rollup@^2.33.3, rollup@^2.38.5, rollup@^2.41.2:
   version "2.50.5"
   resolved "https://registry.npm.alibaba-inc.com/rollup/download/rollup-2.50.5.tgz#bbee9d6411af3f5fa5c6e7e2c69f7a65b753e568"
   integrity sha1-u+6dZBGvP1+lxufixp96ZbdT5Wg=
@@ -20558,7 +20578,7 @@ unified@9.2.0:
     trough "^1.0.0"
     vfile "^4.0.0"
 
-unified@^9.2.0:
+unified@^9.2.0, unified@^9.2.1:
   version "9.2.1"
   resolved "https://registry.npm.alibaba-inc.com/unified/download/unified-9.2.1.tgz#ae18d5674c114021bfdbdf73865ca60f410215a3"
   integrity sha1-rhjVZ0wRQCG/299zhlymD0ECFaM=
@@ -21085,24 +21105,22 @@ vinyl@^2.0.1, vinyl@^2.2.0, vinyl@^2.2.1:
     remove-trailing-separator "^1.0.1"
     replace-ext "^1.0.0"
 
-vite-pages-theme-basic@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.npm.alibaba-inc.com/vite-pages-theme-basic/download/vite-pages-theme-basic-2.0.4.tgz#36d63a5589216b9e7b10c1f7988f32a25ab48221"
-  integrity sha1-NtY6VYkha557EMH3mI8yolq0giE=
+vite-pages-theme-basic@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.npm.alibaba-inc.com/vite-pages-theme-basic/download/vite-pages-theme-basic-3.0.1.tgz#a126ddf0ea3dc2aec9b6b82184a25e147ec4d365"
+  integrity sha1-oSbd8Oo9wq7JtrghhKJeFH7E02U=
   dependencies:
     github-markdown-css "^4.0.0"
 
-vite-plugin-mdx@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.npm.alibaba-inc.com/vite-plugin-mdx/download/vite-plugin-mdx-2.0.1.tgz#69f4f9991b1bf4bce83d7d511bc30af2095e2fbf"
-  integrity sha1-afT5mRsb9LzoPX1RG8MK8gleL78=
+vite-plugin-mdx@^3.3.1:
+  version "3.5.6"
+  resolved "https://registry.npm.alibaba-inc.com/vite-plugin-mdx/download/vite-plugin-mdx-3.5.6.tgz#3366ec761c7881ffab3168bc0f7c8692e1f1e05e"
+  integrity sha1-M2bsdhx4gf+rMWi8D3yGkuHx4F4=
   dependencies:
-    "@babel/core" "^7.12.10"
-    "@babel/plugin-syntax-import-meta" "^7.10.4"
-    "@mdx-js/mdx" "^1.6.22"
-    "@mdx-js/react" "^1.6.22"
-    react-refresh "^0.9.0"
-    remark-frontmatter "^2.0.0"
+    "@alloc/quick-lru" "^5.2.0"
+    esbuild "^0.8.31"
+    resolve "^1.20.0"
+    unified "^9.2.1"
 
 vite-plugin-react-pages@^0.8.2:
   version "0.8.3"
@@ -21126,27 +21144,28 @@ vite-plugin-react-pages@^0.8.2:
     rollup-plugin-postcss "^3.1.8"
     tiny-invariant "^1.1.0"
 
-vite-plugin-react-pages@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.npm.alibaba-inc.com/vite-plugin-react-pages/download/vite-plugin-react-pages-2.1.0.tgz#ef60e6e12cc7e0b338bb033bac9bc290c0f8b329"
-  integrity sha1-72Dm4SzH4LM4uwM7rJvCkMD4syk=
+vite-plugin-react-pages@^3.0.0:
+  version "3.0.8"
+  resolved "https://registry.npm.alibaba-inc.com/vite-plugin-react-pages/download/vite-plugin-react-pages-3.0.8.tgz#c249dcb38c04259f1dadd5bdabd41312c5d09d05"
+  integrity sha1-wkncs4wEJZ8drdW9q9QTEsXQnQU=
   dependencies:
-    "@babel/preset-react" "^7.12.10"
-    "@babel/preset-typescript" "^7.12.7"
-    "@rollup/plugin-babel" "^5.2.2"
+    "@babel/preset-react" "^7.12.13"
+    "@babel/preset-typescript" "^7.13.0"
+    "@rollup/plugin-babel" "^5.3.0"
     chalk "^4.1.0"
-    enhanced-resolve "^5.4.1"
-    find-up "^5.0.0"
-    fs-extra "^9.0.1"
-    glob "^7.1.6"
-    globby "^11.0.2"
+    chokidar "^3.5.1"
+    dequal "^2.0.2"
+    enhanced-resolve "^5.7.0"
+    fast-deep-equal "^3.1.3"
+    fs-extra "^9.1.0"
     gray-matter "^4.0.2"
     jest-docblock "^26.0.0"
+    jotai "^0.15.3"
+    mini-debounce "^1.0.8"
     minimist "^1.2.5"
-    ora "^5.1.0"
-    query-string "^6.13.8"
     read-pkg-up "^7.0.1"
-    rollup "^2.36.1"
+    remark-frontmatter "^2.0.0"
+    rollup "^2.41.2"
     rollup-plugin-postcss "^4.0.0"
     slash "^3.0.0"
     tiny-invariant "^1.1.0"
@@ -21212,7 +21231,7 @@ vite@^1.0.0-rc.4:
     vue "^3.0.3"
     ws "^7.3.1"
 
-vite@^2.0.0-beta.12:
+vite@^2.0.5:
   version "2.3.3"
   resolved "https://registry.npm.alibaba-inc.com/vite/download/vite-2.3.3.tgz#7e88a71abd03985c647789938d784cce0ee3b0fd"
   integrity sha1-foinGr0DmFxkd4mTjXhMzg7jsP0=

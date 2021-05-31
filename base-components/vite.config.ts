@@ -1,7 +1,11 @@
 import type { UserConfig, Plugin } from 'vite'
 import reactRefresh from '@vitejs/plugin-react-refresh'
 import mdx from 'vite-plugin-mdx'
-import pages from 'vite-plugin-react-pages'
+import pages, {
+  DefaultPageStrategy,
+  FileHandler,
+  extractStaticData
+} from 'vite-plugin-react-pages'
 import * as path from 'path'
 import * as fs from 'fs-extra'
 
@@ -13,11 +17,25 @@ module.exports = {
   plugins: [
     reactRefresh(),
     mdx(),
-    pages({ pagesDir, findPages, useHashRouter: true }),
+    pages({
+      pagesDir,
+      useHashRouter: true,
+      pageStrategy: new DefaultPageStrategy({
+        extraFindPages: function findPages(pagesDir, helpers) {
+          helpers.watchFiles(
+            path.join(__dirname, 'src'),
+            '*/demo/**/*.{[tj]s?(x),md?(x)}',
+            fileHandler
+          )
+        }
+      })
+    }),
     cssSwitchPlugin()
   ],
-  alias: {
-    '@alicloudfe/components': '/src'
+  resolve: {
+    alias: {
+      '@alicloudfe/components': '/src'
+    }
   },
   optimizeDeps: {
     include: [
@@ -38,7 +56,7 @@ module.exports = {
       '@alifd/next/lib/locale/en-us',
       '@alifd/next/lib/locale/zh-cn',
       'moment',
-      'dayjs',
+      'dayjs'
     ]
   },
   build: {
@@ -76,45 +94,17 @@ function changePrefix(transform) {
   }
 }
 
-async function findPages(helpers) {
-  const demo = path.join(__dirname, 'src')
-  const pagesByComponent: { [componentName: string]: any } = {}
-
-  let demoPaths = await helpers.globFind(demo, '*/demo/**/*.{[tj]s?(x),md?(x)}')
-
-  await Promise.all(
-    demoPaths.map(async ({ relative, absolute }) => {
-      const match = relative.match(/(.*)\/demo\/(.*)\.([tj]sx?|mdx?)$/)
-      if (!match) throw new Error('unexpected file: ' + absolute)
-      const [_, componentName, demoPath] = match
-      const publicPath = `/${componentName}`
-      // register the demo module as page daga
-      helpers.addPageData({
-        pageId: publicPath,
-        key: `_${demoPath}`,
-        dataPath: absolute,
-        staticData: await helpers.extractStaticData(absolute)
-      })
-      if (!pagesByComponent[componentName]) {
-        pagesByComponent[componentName] = {
-          publicPath
-        }
-      }
-    })
-  )
-
-  // add static data(title) for each component page
-  Object.entries(pagesByComponent).forEach(
-    ([componentName, { publicPath }]) => {
-      helpers.addPageData({
-        pageId: publicPath,
-        key: 'title',
-        staticData: componentName
-      })
-    }
-  )
-
-  // we also want to collect pages from `/pages` with basic filesystem routing convention
-  const defaultPages = await helpers.defaultFindPages(pagesDir)
-  defaultPages.forEach(helpers.addPageData)
+const fileHandler: FileHandler = async (file, api) => {
+  const { relative, path: absolute } = file
+  const match = relative.match(/(.*)\/demo\/(.*)\.([tj]sx?|mdx?)$/)
+  if (!match) throw new Error('unexpected file: ' + absolute)
+  const [_, componentName, demoPath] = match
+  // 有的demoPath就是title，会与staticData.title重复。。。
+  const key = `_${demoPath}`
+  const pageId = `/${componentName}`
+  const runtimeDataPaths = api.getRuntimeData(pageId)
+  runtimeDataPaths[key] = absolute
+  const staticData = api.getStaticData(pageId)
+  staticData[key] = await extractStaticData(file)
+  if (!staticData.title) staticData.title = componentName
 }
