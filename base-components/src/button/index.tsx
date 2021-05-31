@@ -8,25 +8,46 @@ import { useCssVar } from '../utils/useCssVar'
 
 type NextButtonProps = React.ComponentProps<typeof NextButton>
 
-const rxTwoToFourCNChar = /^[\u4e00-\u9fa5]{2,4}$/
-const isTwoToFourCNChar = rxTwoToFourCNChar.test.bind(rxTwoToFourCNChar)
+const rxTwoToThreeCNChar = /^[\u4e00-\u9fa5]{2,3}$/
+const rxFourCNChar = /^[\u4e00-\u9fa5]{4}$/
+
+const isTwoToThreeCNChar = rxTwoToThreeCNChar.test.bind(rxTwoToThreeCNChar)
+const isFourCNChar = rxFourCNChar.test.bind(rxFourCNChar)
 
 const Button: typeof NextButton = withThemeClass(
   React.forwardRef((props: NextButtonProps, ref) => {
     const { children, className } = props
     const theme = useCssVar('--alicloudfe-components-theme').trim()
-    // 判断是否是2-4个汉字
+    // 判断是否是2-3个汉字
     if (
       // xconsole相关主题不需要该功能
       theme !== 'wind' &&
       !theme.startsWith('xconsole') &&
       typeof children === 'string' &&
-      isTwoToFourCNChar(children)
+      isTwoToThreeCNChar(children)
     ) {
       return (
         <NextButton
           {...props}
-          className={cls('isTwoToFourCNCharBtn', className)}
+          className={cls('isTwoToThreeCNCharBtn', className)}
+          ref={ref as any}
+        >
+          {children}
+        </NextButton>
+      )
+    }
+    // 判断是否是4个汉字
+    if (
+      // xconsole相关主题不需要该功能
+      theme !== 'wind' &&
+      !theme.startsWith('xconsole') &&
+      typeof children === 'string' &&
+      isFourCNChar(children)
+    ) {
+      return (
+        <NextButton
+          {...props}
+          className={cls('isFourCNCharBtn', className)}
           ref={ref as any}
         >
           {children}
