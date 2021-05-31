@@ -4,8 +4,11 @@ import hoistNonReactStatics from 'hoist-non-react-statics'
 import cls from 'classnames'
 import { useCssVar } from './useCssVar'
 
-const rxTwoToFourCNChar = /^[\u4e00-\u9fa5]{2,4}$/
-const isTwoToFourCNChar = rxTwoToFourCNChar.test.bind(rxTwoToFourCNChar)
+const rxTwoToThreeCNChar = /^[\u4e00-\u9fa5]{2,3}$/
+const rxFourCNChar = /^[\u4e00-\u9fa5]{4}$/
+
+const isTwoToThreeCNChar = rxTwoToThreeCNChar.test.bind(rxTwoToThreeCNChar)
+const isFourCNChar = rxFourCNChar.test.bind(rxFourCNChar)
 
 const CNCHARHOC = <T extends any>(
   WrappedComponents: React.ComponentType<T>
@@ -13,18 +16,36 @@ const CNCHARHOC = <T extends any>(
   const Wrapper = React.forwardRef((props: any, ref) => {
     const { children, className } = props
     const theme = useCssVar('--alicloudfe-components-theme').trim()
-    // 判断是否是2-4个汉字
+    // 判断是否是2-3个汉字
     if (
       // xconsole相关主题不需要该功能
       theme !== 'wind' &&
       !theme.startsWith('xconsole') &&
       typeof children === 'string' &&
-      isTwoToFourCNChar(children)
+      isTwoToThreeCNChar(children)
+    )  {
+      return (
+        <WrappedComponents
+          {...props}
+          className={cls('isTwoToThreeCNCharBtn', className)}
+          ref={ref as any}
+        >
+          {children}
+        </WrappedComponents>
+      )
+    }
+    // 判断是否是4个汉字
+    if (
+      // xconsole相关主题不需要该功能
+      theme !== 'wind' &&
+      !theme.startsWith('xconsole') &&
+      typeof children === 'string' &&
+      isFourCNChar(children)
     ) {
       return (
         <WrappedComponents
           {...props}
-          className={cls('isTwoToFourCNCharBtn', className)}
+          className={cls('isFourCNCharBtn', className)}
           ref={ref as any}
         >
           {children}
