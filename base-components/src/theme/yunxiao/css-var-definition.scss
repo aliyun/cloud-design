@@ -1711,7 +1711,7 @@
     --shadow-distance-sd3y: 6;
     
     
-    --shadow-opacity-sd1: 0.06;
+    --shadow-opacity-sd1: 0.04;
     
     
     --shadow-opacity-sd2: 0.18;
@@ -1750,19 +1750,19 @@
     --shadow-zero: none;
     
     
-    --shadow-1: 0px 3px 8px 0px rgba(0, 0, 0, 0.06);
+    --shadow-1: 0px 3px 8px 0px rgba(0, 0, 0, 0.04);
     
     
-    --shadow-1-up: 0px -3px 8px 0px rgba(0, 0, 0, 0.06);
+    --shadow-1-up: 0px -3px 8px 0px rgba(0, 0, 0, 0.04);
     
     
-    --shadow-1-right: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+    --shadow-1-right: 0px 0px 8px 0px rgba(0, 0, 0, 0.04);
     
     
-    --shadow-1-down: 0px 3px 8px 0px rgba(0, 0, 0, 0.06);
+    --shadow-1-down: 0px 3px 8px 0px rgba(0, 0, 0, 0.04);
     
     
-    --shadow-1-left: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+    --shadow-1-left: 0px 0px 8px 0px rgba(0, 0, 0, 0.04);
     
     
     --shadow-2: 0px 3px 8px 0px rgba(0, 0, 0, 0.18);
@@ -2296,10 +2296,10 @@
     --range-normal-slider-bg-color-hover: var(--color-white, #FFFFFF);
     
     
-    --range-size-m-slider-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
+    --range-size-m-slider-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
     
     
-    --range-size-m-slider-shadow-hover: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
+    --range-size-m-slider-shadow-hover: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
     
     
     --range-normal-mark-color-hover: var(--color-text1-1, #CECECE);
@@ -2779,7 +2779,7 @@
     /* ------------------------ card ------------------------ */
     
     
-    --card-corner: var(--corner-1, 4px);
+    --card-corner: var(--corner-2, 8px);
     
     
     --card-padding-lr: var(--s-5, 20px);
@@ -2851,7 +2851,7 @@
     --card-more-btn-font-size: var(--font-size-body-1, 14px);
     
     
-    --card-shadow: var(--shadow-zero, none);
+    --card-shadow: var(--shadow-1, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
     
     
     --card-border-style: var(--line-solid, solid);
@@ -3028,10 +3028,10 @@
     --switch-hover-off-border-color: var(--color-transparent, transparent);
     
     
-    --switch-off-shadow: var(--shadow-1, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
+    --switch-off-shadow: var(--shadow-1, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
     
     
-    --switch-rtl-on-shadow: var(--shadow-1-left, 0px 0px 8px 0px rgba(0, 0, 0, 0.06));
+    --switch-rtl-on-shadow: var(--shadow-1-left, 0px 0px 8px 0px rgba(0, 0, 0, 0.04));
     
     
     --switch-text-off-right: var(--s-2, 8px);
@@ -4642,7 +4642,7 @@
     --balloon-primary-color-border: var(--color-transparent, transparent);
     
     
-    --balloon-primary-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
+    --balloon-primary-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
     
     
     --balloon-primary-color: var(--color-white, #FFFFFF);
@@ -5218,7 +5218,7 @@
     --dialog-border-style: var(--line-solid, solid);
     
     
-    --dialog-corner: var(--corner-1, 4px);
+    --dialog-corner: var(--corner-2, 8px);
     
     
     --dialog-shadow: var(--shadow-3-down, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
@@ -5659,7 +5659,7 @@
     --shell-dark-header-background: var(--color-black, #000000);
     
     
-    --shell-dark-header-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
+    --shell-dark-header-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
     
     
     --shell-dark-header-divider-size: var(--line-1, 1px);
@@ -5872,7 +5872,7 @@
     --shell-brand-header-background: var(--color-brand1-6, #1B9AEE);
     
     
-    --shell-brand-header-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
+    --shell-brand-header-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
     
     
     --shell-brand-header-divider-size: var(--line-1, 1px);
@@ -7255,7 +7255,7 @@
     --menu-icon-margin: var(--s-1, 4px);
     
     
-    --menu-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
+    --menu-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
     
     
     --menu-color: var(--color-text1-2, #6E6E6E);
