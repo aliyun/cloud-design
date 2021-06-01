@@ -28,14 +28,14 @@ class Demo extends React.Component {
     return (
       <Form style={{ width: '60%' }} {...formItemLayout} colon>
         <FormItem
-          label="深刻的就是看到节省空间的是跨境电商看见的款式经典时刻"
+          label="Username:"
           required
           requiredMessage="Please input your username!"
         >
           <Input name="baseUser" />
         </FormItem>
         <FormItem
-          label="胜利的抗衰老的开始了看电视看电视里看到"
+          label="Password:"
           required
           requiredMessage="Please input your password!"
         >
