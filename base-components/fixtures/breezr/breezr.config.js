@@ -5,5 +5,5 @@ const config = {
 }
 
 module.exports = {
-  presets: [['@ali/breezr-preset-wind', config]]
+  presets: [['@alicloud/console-toolkit-preset-official', config]]
 }
