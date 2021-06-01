@@ -45,6 +45,18 @@ $next-normal: '.' + $css-prefix + 'normal';
           padding: 0 12px;
         }
       }
+      // clear按钮放在右边
+      #{$input-prefix}-control {
+        width: auto;
+        order: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #{$input-prefix}-hint-wrap {
+          padding-right: 0;
+          width: auto;
+        }
+      }
     }
   }
   &#{$next-normal} {

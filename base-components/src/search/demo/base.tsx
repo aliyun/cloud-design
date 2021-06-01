@@ -16,6 +16,7 @@ const App = () => [
   <Search
     key="2"
     shape="simple"
+    hasClear
     onSearch={onSearch}
     style={{ width: '400px' }}
   />,
