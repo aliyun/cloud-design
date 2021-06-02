@@ -10,6 +10,7 @@ import {
 } from '@alifd/next/types/card'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import ConfigProvider from '../config-provider'
+import { useCssVar } from '../utils/useCssVar'
 
 const Card: React.FC<CardProps> & {
   Header: React.ComponentType<CardHeaderProps>
@@ -22,18 +23,46 @@ const Card: React.FC<CardProps> & {
   }>
   CollapsableTail: React.FC<ICollapsableProps>
   CollapsableHead: React.FC<ICollapsableProps>
-} = ((props) => {
+} = (props => {
   return <NextCard {...props} />
 }) as any
 
 hoistNonReactStatics(Card, NextCard)
 
 Card.DropDownActions = ({ actions }) => {
+  const theme = useCssVar('--alicloudfe-components-theme').trim()
+  const actionIcon = (() => {
+    if (theme.startsWith('hybridcloud')) {
+      return (
+        <Icon
+          className="hybridcloud-card-dropdown-actions-icon"
+          type="ellipsis"
+          size="large"
+          style={{
+            color: 'var(--color-fill1-6, #848484)',
+            cursor: 'pointer',
+            marginTop: '-1px'
+          }}
+        />
+      )
+    } else if (theme.startsWith('yunxiao')) {
+      return (
+        <Icon
+          className="yunxiao-card-dropdown-actions-icon"
+          type="ellipsis"
+          style={{
+            color: 'var(--color-fill1-6, #848484)',
+            cursor: 'pointer',
+            marginTop: 2
+          }}
+        />
+      )
+    } else {
+      return <Icon type="ellipsis-vertical" size="small" />
+    }
+  })()
   return (
-    <Dropdown
-      trigger={<Icon type="ellipsis-vertical" size="small" />}
-      triggerType="click"
-    >
+    <Dropdown trigger={actionIcon} triggerType="click">
       <Menu>
         {actions.map(({ label, onClick }, idx) => {
           return (

@@ -6,8 +6,8 @@ $ellipsis-icon: '.' + $css-prefix + 'icon-ellipsis-vertical';
   transition: box-shadow var(--active-transition);
   &:hover {
     box-shadow: var(
-      --active-shadow,
-      var(--card-shadow, 1px 1px 4px 0px rgba(0, 0, 0, 0.13))
+      --card-hover-shadow,
+      1px 1px 4px 0px rgba(0, 0, 0, 0.13)
     );
   }
   & &-header-extra {

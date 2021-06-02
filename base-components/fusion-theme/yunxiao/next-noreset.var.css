@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-yunxiao-v1@0.9.29 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.9.30 (https://fusion.design)
  * @alifd/next@1.23.3 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -7170,10 +7170,10 @@
   .next-card-head {
     background: transparent;
     background: var(--card-header-background, transparent);
-    padding-left: 20px;
-    padding-left: var(--card-padding-lr, 20px);
-    padding-right: 20px;
-    padding-right: var(--card-padding-lr, 20px); }
+    padding-left: 32px;
+    padding-left: var(--card-padding-lr, 32px);
+    padding-right: 32px;
+    padding-right: var(--card-padding-lr, 32px); }
     .next-card-head-show-bullet .next-card-title {
       padding-left: 8px;
       padding-left: var(--card-title-padding-left, 8px); }
@@ -7209,13 +7209,13 @@
     height: 100%;
     color: #292929;
     color: var(--card-title-color, #292929);
-    font-size: 16px;
-    font-size: var(--card-title-font-size, 16px);
-    font-weight: normal;
-    font-weight: var(--card-title-font-weight, normal); }
+    font-size: 18px;
+    font-size: var(--card-title-font-size, 18px);
+    font-weight: 600;
+    font-weight: var(--card-title-font-weight, 600); }
   .next-card-subtitle {
-    font-size: 12px;
-    font-size: var(--card-sub-title-font-size, 12px);
+    font-size: 14px;
+    font-size: var(--card-sub-title-font-size, 14px);
     color: #575757;
     color: var(--card-sub-title-color, #575757);
     padding-left: 8px;
@@ -7230,18 +7230,18 @@
     color: #127FC7;
     color: var(--card-title-extra-color, #127FC7); }
   .next-card-body {
-    padding-bottom: 12px;
-    padding-bottom: var(--card-body-padding-bottom, 12px);
-    padding-left: 20px;
-    padding-left: var(--card-padding-lr, 20px);
-    padding-right: 20px;
-    padding-right: var(--card-padding-lr, 20px); }
+    padding-bottom: 24px;
+    padding-bottom: var(--card-body-padding-bottom, 24px);
+    padding-left: 32px;
+    padding-left: var(--card-padding-lr, 32px);
+    padding-right: 32px;
+    padding-right: var(--card-padding-lr, 32px); }
   .next-card-show-divider .next-card-head-main {
     border-bottom: 1px solid #E8E8E8;
     border-bottom: var(--card-head-bottom-border-width, 1px) var(--card-border-style, solid) var(--card-head-bottom-border-color, #E8E8E8); }
   .next-card-show-divider .next-card-body {
-    padding-top: 12px;
-    padding-top: var(--card-body-show-divider-padding-top, 12px); }
+    padding-top: 24px;
+    padding-top: var(--card-body-show-divider-padding-top, 24px); }
   .next-card-hide-divider .next-card-body {
     padding-top: 0px;
     padding-top: var(--card-body-hide-divider-padding-top, 0px); }
@@ -7265,12 +7265,12 @@
   .next-card-header {
     background: transparent;
     background: var(--card-header-background, transparent);
-    padding: 0 20px;
-    padding: 0 var(--card-padding-lr, 20px);
-    margin-bottom: 12px;
-    margin-bottom: var(--card-body-show-divider-padding-top, 12px);
-    margin-top: 12px;
-    margin-top: var(--card-body-padding-bottom, 12px); }
+    padding: 0 32px;
+    padding: 0 var(--card-padding-lr, 32px);
+    margin-bottom: 24px;
+    margin-bottom: var(--card-body-show-divider-padding-top, 24px);
+    margin-top: 24px;
+    margin-top: var(--card-body-padding-bottom, 24px); }
   .next-card-media,
   .next-card-media > * {
     display: block;
@@ -7291,26 +7291,26 @@
   .next-card-header-title {
     color: #292929;
     color: var(--card-title-color, #292929);
-    font-size: 16px;
-    font-size: var(--card-title-font-size, 16px);
-    font-weight: normal;
-    font-weight: var(--card-title-font-weight, normal);
+    font-size: 18px;
+    font-size: var(--card-title-font-size, 18px);
+    font-weight: 600;
+    font-weight: var(--card-title-font-weight, 600);
     line-height: 1.5; }
   .next-card-header-subtitle {
-    font-size: 12px;
-    font-size: var(--card-sub-title-font-size, 12px);
+    font-size: 14px;
+    font-size: var(--card-sub-title-font-size, 14px);
     color: #575757;
     color: var(--card-sub-title-color, #575757); }
   .next-card-actions {
     display: block;
-    padding-left: 20px;
-    padding-left: var(--card-padding-lr, 20px);
-    padding-right: 20px;
-    padding-right: var(--card-padding-lr, 20px);
-    padding-top: 12px;
-    padding-top: var(--card-body-show-divider-padding-top, 12px);
-    padding-bottom: 12px;
-    padding-bottom: var(--card-body-padding-bottom, 12px); }
+    padding-left: 32px;
+    padding-left: var(--card-padding-lr, 32px);
+    padding-right: 32px;
+    padding-right: var(--card-padding-lr, 32px);
+    padding-top: 24px;
+    padding-top: var(--card-body-show-divider-padding-top, 24px);
+    padding-bottom: 24px;
+    padding-bottom: var(--card-body-padding-bottom, 24px); }
     .next-card-actions .next-btn:not(:last-child) {
       margin-right: 12px;
       vertical-align: middle; }
@@ -7325,19 +7325,19 @@
       border-bottom: 1px solid #E8E8E8;
       border-bottom: var(--card-head-bottom-border-width, 1px) var(--card-border-style, solid) var(--card-head-bottom-border-color, #E8E8E8); }
   .next-card-divider--inset {
-    padding: 0 20px;
-    padding: 0 var(--card-padding-lr, 20px); }
+    padding: 0 32px;
+    padding: 0 var(--card-padding-lr, 32px); }
   .next-card-content-container {
-    margin-top: 12px;
-    margin-top: var(--card-body-show-divider-padding-top, 12px);
-    padding-bottom: 12px;
-    padding-bottom: var(--card-body-padding-bottom, 12px);
-    padding-left: 20px;
-    padding-left: var(--card-padding-lr, 20px);
-    padding-right: 20px;
-    padding-right: var(--card-padding-lr, 20px);
-    font-size: 12px;
-    font-size: var(--card-content-font-size, 12px);
+    margin-top: 24px;
+    margin-top: var(--card-body-show-divider-padding-top, 24px);
+    padding-bottom: 24px;
+    padding-bottom: var(--card-body-padding-bottom, 24px);
+    padding-left: 32px;
+    padding-left: var(--card-padding-lr, 32px);
+    padding-right: 32px;
+    padding-right: var(--card-padding-lr, 32px);
+    font-size: 14px;
+    font-size: var(--card-content-font-size, 14px);
     line-height: 1.5;
     line-height: var(--card-content-line-height, 1.5);
     color: #6E6E6E;
