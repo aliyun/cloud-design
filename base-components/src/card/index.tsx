@@ -38,11 +38,6 @@ Card.DropDownActions = ({ actions }) => {
           className="hybridcloud-card-dropdown-actions-icon"
           type="ellipsis"
           size="large"
-          style={{
-            color: 'var(--color-fill1-6, #848484)',
-            cursor: 'pointer',
-            marginTop: '-1px'
-          }}
         />
       )
     } else if (theme.startsWith('yunxiao')) {
@@ -50,11 +45,6 @@ Card.DropDownActions = ({ actions }) => {
         <Icon
           className="yunxiao-card-dropdown-actions-icon"
           type="ellipsis"
-          style={{
-            color: 'var(--color-fill1-6, #848484)',
-            cursor: 'pointer',
-            marginTop: 2
-          }}
         />
       )
     } else {
