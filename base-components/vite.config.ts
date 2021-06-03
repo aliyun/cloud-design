@@ -56,9 +56,36 @@ module.exports = {
       '@alifd/next/lib/locale/en-us',
       '@alifd/next/lib/locale/zh-cn',
       'moment',
-      'dayjs'
-    ]
+      'dayjs',
+      '@alifd/next',
+      'hoist-non-react-statics',
+      'react-loading-skeleton',
+      'vite-pages-theme-basic'
+    ],
+    esbuildOptions: {
+      plugins: [
+        {
+          name: 'custom-resolve',
+          setup(build) {
+            build.onLoad(
+              { filter: /config-provider\/index/ },
+              async ({ path }) => {
+                const content = await fs.readFile(path, 'utf8')
+                return {
+                  // 替换掉fusion内部的 require('moment')
+                  contents: content.replace(
+                    `require('moment')`,
+                    `require('moment').default`
+                  )
+                }
+              }
+            )
+          }
+        }
+      ]
+    }
   },
+
   build: {
     outDir: 'docs-dist'
   },
