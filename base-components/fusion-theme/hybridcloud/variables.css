@@ -124,6 +124,18 @@
     --color-other-3: #1A1A1A;
     
     
+    --color-gradient-1: linear-gradient(270deg, rgb(121, 232, 199) 0%, rgb(8, 194, 158) 100%);
+    
+    
+    --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
+    
+    
+    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
+    
+    
+    --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
+    
+    
     --color-line1-1: rgba(234,234,234,1);
     
     
@@ -139,7 +151,7 @@
     --color-fill1-1: #FFFFFF;
     
     
-    --color-fill1-2: rgba(250,250,250,1);
+    --color-fill1-2: rgba(247,247,247,1);
     
     
     --color-fill1-3: rgba(234,234,234,1);
@@ -4399,7 +4411,7 @@
     --cascader-menu-item-expanded-color: var(--color-text1-4, #1A1A1A);
     
     
-    --cascader-menu-item-expanded-background-color: var(--color-fill1-2, #fafafa);
+    --cascader-menu-item-expanded-background-color: var(--color-fill1-2, #f7f7f7);
     
     
     /* ------------------------ menu-button ------------------------ */
@@ -4714,7 +4726,7 @@
     --search-normal-normal-btn-text-color: var(--color-text1-2, #5a5a5a);
     
     
-    --search-normal-normal-btn-hover-bg-color: var(--color-fill1-2, #fafafa);
+    --search-normal-normal-btn-hover-bg-color: var(--color-fill1-2, #f7f7f7);
     
     
     --search-normal-normal-btn-hover-text-color: var(--color-text1-2, #5a5a5a);
@@ -4954,7 +4966,7 @@
     --tree-node-hover-color: var(--color-text1-3, #333333);
     
     
-    --tree-node-hover-bg-color: var(--color-fill1-2, #fafafa);
+    --tree-node-hover-bg-color: var(--color-fill1-2, #f7f7f7);
     
     
     --tree-switch-hover-arrow-color: var(--color-text1-3, #333333);
@@ -4963,7 +4975,7 @@
     --tree-switch-hover-icon-color: var(--color-fill1-5, #848484);
     
     
-    --tree-switch-hover-bg-color: var(--color-fill1-2, #fafafa);
+    --tree-switch-hover-bg-color: var(--color-fill1-2, #f7f7f7);
     
     
     --tree-switch-hover-border-color: var(--color-fill1-5, #848484);
@@ -5275,7 +5287,7 @@
     --typography-text-code-color: var(--color-text1-4, #1A1A1A);
     
     
-    --typography-text-code-background: var(--color-fill1-2, #fafafa);
+    --typography-text-code-background: var(--color-fill1-2, #f7f7f7);
     
     
     --typography-text-code-border-color: var(--color-line1-1, #eaeaea);
@@ -5419,7 +5431,7 @@
     --btn-pure-normal-bg: var(--color-white, #FFFFFF);
     
     
-    --btn-pure-normal-bg-hover: var(--color-fill1-2, #fafafa);
+    --btn-pure-normal-bg-hover: var(--color-fill1-2, #f7f7f7);
     
     
     --btn-pure-normal-bg-active: var(--color-fill1-3, #eaeaea);
@@ -5839,7 +5851,7 @@
     --tag-closable-bordered-border-color: var(--color-line1-1, #eaeaea);
     
     
-    --tag-closable-bordered-bg: var(--color-fill1-2, #fafafa);
+    --tag-closable-bordered-bg: var(--color-fill1-2, #f7f7f7);
     
     
     --tag-closable-bordered-text-color-hover: var(--color-text1-3, #333333);
@@ -5848,7 +5860,7 @@
     --tag-closable-bordered-border-color-hover: var(--color-line1-1, #eaeaea);
     
     
-    --tag-closable-bordered-bg-hover: var(--color-fill1-2, #fafafa);
+    --tag-closable-bordered-bg-hover: var(--color-fill1-2, #f7f7f7);
     
     
     --tag-closable-bordered-tail-color: var(--color-fill1-5, #848484);
@@ -5866,7 +5878,7 @@
     --tag-closable-bordered-text-color-disabled: var(--color-text1-1, #CCCCCC);
     
     
-    --tag-closable-bordered-bg-disabled: var(--color-fill1-2, #fafafa);
+    --tag-closable-bordered-bg-disabled: var(--color-fill1-2, #f7f7f7);
     
     
     --tag-fill-tail-color: var(--color-brand1-6, #0064C8);
@@ -5884,7 +5896,7 @@
     --tag-fill-border-color-disabled: var(--color-line1-2, #D9D9D9);
     
     
-    --tag-fill-bg-color-disabled: var(--color-fill1-2, #fafafa);
+    --tag-fill-bg-color-disabled: var(--color-fill1-2, #f7f7f7);
     
     
     --tag-fill-tail-color-disabled: var(--color-text1-1, #CCCCCC);
@@ -5923,7 +5935,7 @@
     --tag-bordered-border-color-disabled: var(--color-line1-2, #D9D9D9);
     
     
-    --tag-bordered-bg-disabled: var(--color-fill1-2, #fafafa);
+    --tag-bordered-bg-disabled: var(--color-fill1-2, #f7f7f7);
     
     
     --tag-secondary-text-color-hover: var(--color-brand1-6, #0064C8);
@@ -5959,7 +5971,7 @@
     --tag-primary-background-color: var(--color-brand1-6, #0064C8);
     
     
-    --tag-bordered-bg: var(--color-fill1-2, #fafafa);
+    --tag-bordered-bg: var(--color-fill1-2, #f7f7f7);
     
     
     --tag-secondary-bg: var(--color-transparent, transparent);
@@ -5968,7 +5980,7 @@
     --tag-fill-bg-color-hover: var(--color-brand1-1, #F0F7FF);
     
     
-    --tag-bordered-bg-hover: var(--color-fill1-2, #fafafa);
+    --tag-bordered-bg-hover: var(--color-fill1-2, #f7f7f7);
     
     
     --tag-secondary-bg-hover: var(--color-brand1-1, #F0F7FF);
@@ -6031,7 +6043,7 @@
     --tag-checkable-normal-border-color-hover: var(--color-fill1-4, #D9D9D9);
     
     
-    --tag-checkable-normal-bg-hover: var(--color-fill1-2, #fafafa);
+    --tag-checkable-normal-bg-hover: var(--color-fill1-2, #f7f7f7);
     
     
     --tag-checkable-normal-text-selected-disabled: var(--color-text1-1, #CCCCCC);
@@ -6040,10 +6052,10 @@
     --tag-checkable-normal-border-selected-disabled: var(--color-line1-2, #D9D9D9);
     
     
-    --tag-checkable-normal-bg-selected-disabled: var(--color-fill1-2, #fafafa);
+    --tag-checkable-normal-bg-selected-disabled: var(--color-fill1-2, #f7f7f7);
     
     
-    --tag-checkable-normal-tick-bg-selected-disabled: var(--color-fill1-2, #fafafa);
+    --tag-checkable-normal-tick-bg-selected-disabled: var(--color-fill1-2, #f7f7f7);
     
     
     --tag-checkable-primary-text-color: var(--color-white, #FFFFFF);
@@ -6169,7 +6181,7 @@
     --input-disabled-border-color: var(--color-line1-1, #eaeaea);
     
     
-    --input-disabled-bg-color: var(--color-fill1-2, #fafafa);
+    --input-disabled-bg-color: var(--color-fill1-2, #f7f7f7);
     
     
     --input-multiple-padding-lr: var(--s-2, 8px);
@@ -6403,7 +6415,7 @@
     --table-normal-border-style: var(--line-solid, solid);
     
     
-    --table-th-bg: var(--color-fill1-2, #fafafa);
+    --table-th-bg: var(--color-fill1-2, #f7f7f7);
     
     
     --table-th-color: var(--color-text1-6, #5a5a5a);
@@ -6412,7 +6424,7 @@
     --table-sort-color: var(--color-text1-4, #1A1A1A);
     
     
-    --table-group-th-bg: var(--color-fill1-2, #fafafa);
+    --table-group-th-bg: var(--color-fill1-2, #f7f7f7);
     
     
     --table-group-th-color: var(--color-text1-6, #5a5a5a);
@@ -6433,13 +6445,13 @@
     --table-empty-color: var(--color-text1-1, #CCCCCC);
     
     
-    --table-group-footer-bg: var(--color-fill1-2, #fafafa);
+    --table-group-footer-bg: var(--color-fill1-2, #f7f7f7);
     
     
     --table-group-footer-color: var(--color-text1-2, #5a5a5a);
     
     
-    --table-row-hover-bg: var(--color-fill1-2, #fafafa);
+    --table-row-hover-bg: var(--color-fill1-2, #f7f7f7);
     
     
     --table-row-hover-color: var(--color-text1-2, #5a5a5a);
@@ -6499,7 +6511,7 @@
     --upload-text-list-bg-color: var(--color-transparent, transparent);
     
     
-    --upload-text-list-bg-color-hover: var(--color-fill1-2, #fafafa);
+    --upload-text-list-bg-color-hover: var(--color-fill1-2, #f7f7f7);
     
     
     --upload-text-list-bg-color-error: var(--color-error-1, #FFF1F0);
@@ -6586,7 +6598,7 @@
     --upload-image-list-item-picture-border-color: var(--color-transparent, transparent);
     
     
-    --upload-image-list-item-picture-background-color: var(--color-fill1-2, #fafafa);
+    --upload-image-list-item-picture-background-color: var(--color-fill1-2, #f7f7f7);
     
     
     --upload-image-list-progressbar-height: 4px;
@@ -6607,13 +6619,13 @@
     --upload-card-add-text-margin-top: var(--s-2, 8px);
     
     
-    --upload-card-bg-color: var(--color-fill1-2, #fafafa);
+    --upload-card-bg-color: var(--color-fill1-2, #f7f7f7);
     
     
     --upload-card-border-style: var(--line-dashed, dashed);
     
     
-    --upload-card-border-color: var(--color-fill1-2, #fafafa);
+    --upload-card-border-color: var(--color-fill1-2, #f7f7f7);
     
     
     --upload-card-hover-border-color: var(--color-line1-1, #eaeaea);
@@ -8350,13 +8362,13 @@
     --collapse-title-height: 18px;
     
     
-    --collapse-title-bg-color: var(--color-fill1-2, #fafafa);
+    --collapse-title-bg-color: var(--color-fill1-2, #f7f7f7);
     
     
     --collapse-title-hover-bg-color: var(--color-fill1-3, #eaeaea);
     
     
-    --collapse-title-disabled-bg-color: var(--color-fill1-2, #fafafa);
+    --collapse-title-disabled-bg-color: var(--color-fill1-2, #f7f7f7);
     
     
     --collapse-title-font-color: var(--color-text1-3, #333333);
@@ -8575,7 +8587,7 @@
     --pagination-item-hover-color: var(--color-text1-4, #1A1A1A);
     
     
-    --pagination-item-hover-bg: var(--color-fill1-2, #fafafa);
+    --pagination-item-hover-bg: var(--color-fill1-2, #f7f7f7);
     
     
     --pagination-arrow-color: var(--color-fill1-5, #848484);
@@ -8737,13 +8749,13 @@
     --radio-checked-bg-color: var(--color-white, #FFFFFF);
     
     
-    --radio-disabled-bg-color: var(--color-fill1-2, #fafafa);
+    --radio-disabled-bg-color: var(--color-fill1-2, #f7f7f7);
     
     
     --radio-checked-hovered-bg-color: var(--color-brand1-2, #CAE3FD);
     
     
-    --radio-checked-disabled-bg-color: var(--color-fill1-2, #fafafa);
+    --radio-checked-disabled-bg-color: var(--color-fill1-2, #f7f7f7);
     
     
     --radio-border-color: var(--color-line1-1, #eaeaea);
@@ -8821,7 +8833,7 @@
     --radio-button-bg-color: var(--color-white, #FFFFFF);
     
     
-    --radio-button-bg-color-hovered: var(--color-fill1-2, #fafafa);
+    --radio-button-bg-color-hovered: var(--color-fill1-2, #f7f7f7);
     
     
     --radio-button-bg-color-checked: var(--color-white, #FFFFFF);
@@ -8830,7 +8842,7 @@
     --radio-button-bg-color-disabled: var(--color-fill1-1, #FFFFFF);
     
     
-    --radio-button-bg-color-checked-disabled: var(--color-fill1-2, #fafafa);
+    --radio-button-bg-color-checked-disabled: var(--color-fill1-2, #f7f7f7);
     
     
     --radio-button-border-color: var(--color-line1-3, #CCCCCC);
@@ -8914,7 +8926,7 @@
     --time-picker-menu-item-background: var(--color-white, #FFFFFF);
     
     
-    --time-picker-menu-item-background-hover: var(--color-fill1-2, #fafafa);
+    --time-picker-menu-item-background-hover: var(--color-fill1-2, #f7f7f7);
     
     
     --time-picker-menu-item-background-selected: var(--color-brand1-1, #F0F7FF);
@@ -9493,7 +9505,7 @@
     --menu-icon-selected-color: var(--color-brand1-6, #0064C8);
     
     
-    --menu-background-hover: var(--color-fill1-2, #fafafa);
+    --menu-background-hover: var(--color-fill1-2, #f7f7f7);
     
     
     --menu-color-hover: var(--color-text1-3, #333333);
@@ -9805,7 +9817,7 @@
     --nav-normal-group-text-style: var(--font-weight-2, normal);
     
     
-    --nav-normal-item-hover-bg-color: var(--color-fill1-2, #fafafa);
+    --nav-normal-item-hover-bg-color: var(--color-fill1-2, #f7f7f7);
     
     
     --nav-normal-item-hover-text-color: var(--color-text1-2, #5a5a5a);
@@ -10225,7 +10237,7 @@
     --tab-capsule-bg-color: var(--color-white, #FFFFFF);
     
     
-    --tab-capsule-bg-color-hover: var(--color-fill1-2, #fafafa);
+    --tab-capsule-bg-color-hover: var(--color-fill1-2, #f7f7f7);
     
     
     --tab-capsule-bg-color-selected: var(--color-white, #FFFFFF);
@@ -10336,7 +10348,7 @@
     --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-2, #D9D9D9);
     
     
-    --calendar-fullscreen-table-cell-hover-background: var(--color-fill1-2, #fafafa);
+    --calendar-fullscreen-table-cell-hover-background: var(--color-fill1-2, #f7f7f7);
     
     
     --calendar-fullscreen-table-cell-hover-color: var(--color-text1-2, #5a5a5a);
@@ -10369,7 +10381,7 @@
     --calendar-fullscreen-table-cell-current-font-weight: var(--font-weight-3, bold);
     
     
-    --calendar-fullscreen-table-cell-other-background: var(--color-fill1-2, #fafafa);
+    --calendar-fullscreen-table-cell-other-background: var(--color-fill1-2, #f7f7f7);
     
     
     --calendar-fullscreen-table-cell-other-color: var(--color-text1-1, #CCCCCC);
@@ -10441,7 +10453,7 @@
     --calendar-card-table-cell-normal-border-color: var(--color-white, #FFFFFF);
     
     
-    --calendar-card-table-cell-hover-background: var(--color-fill1-2, #fafafa);
+    --calendar-card-table-cell-hover-background: var(--color-fill1-2, #f7f7f7);
     
     
     --calendar-card-table-cell-hover-color: var(--color-text1-2, #5a5a5a);
