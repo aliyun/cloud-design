@@ -1,6 +1,6 @@
 {
   "name": "@alicloudfe/components",
-  "version": "1.1.81",
+  "version": "1.1.82",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "types/index.d.ts",
@@ -31,21 +31,27 @@
     "email": "1398772969@qq.com",
     "url": "https://github.com/zuoqi705"
   },
-  "maintainers": [{
-    "name": "zuoqi",
-    "email": "1398772969@qq.com"
-  },{
-    "name": "csr632",
-    "url": "https://github.com/csr632"
-  }],
-  "contributors": [{
-    "name": "zuoqi",
-    "email": "1398772969@qq.com",
-    "url": "https://github.com/zuoqi705"
-  },{
-    "name": "csr632",
-    "url": "https://github.com/csr632"
-  }],
+  "maintainers": [
+    {
+      "name": "zuoqi",
+      "email": "1398772969@qq.com"
+    },
+    {
+      "name": "csr632",
+      "url": "https://github.com/csr632"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "zuoqi",
+      "email": "1398772969@qq.com",
+      "url": "https://github.com/zuoqi705"
+    },
+    {
+      "name": "csr632",
+      "url": "https://github.com/csr632"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/aliyun/cloud-design"
@@ -72,7 +78,7 @@
     "publish-xconsole": "npm version patch && npm publish && cd ./scripts/publish-xconsole && npm run pub && tnpm sync && cd ../publish-wind && npm run pub"
   },
   "dependencies": {
-    "@alifd/next": "~1.23.6",
+    "@alifd/next": "~1.23.7",
     "@teamix/typography": "^1.0.4",
     "classnames": "^2.2.6",
     "hoist-non-react-statics": "^3.3.2",
