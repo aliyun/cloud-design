@@ -103,6 +103,23 @@ fs.writeFileSync(
       path.join(distDir, 'wind-noreset.min.css')
     )
   ])
+
+  // 将业务组件的cssVar加入组件库css中
+  // 从而用户无需自己引入
+  const appendXconsoleCssVar = [
+    '',
+    fs.readFileSync(
+      require.resolve(
+        '@alicloud/console-components-app-layout/dist/vars/xconsole.css'
+      )
+    ),
+    fs.readFileSync(
+      require.resolve(
+        '@alicloud/console-components-console-menu/dist/vars/xconsole.css'
+      )
+    )
+  ].join('\n')
+
   await Promise.all([
     appendFile(
       path.join(esmDir, 'index.js'),
@@ -111,7 +128,9 @@ fs.writeFileSync(
     appendFile(
       path.join(libDir, 'index.js'),
       codeExportLibInfoCJS('@alicloud/console-components', pkgVersion)
-    )
+    ),
+    appendFile(path.join(distDir, 'xconsole-var.css'), appendXconsoleCssVar),
+    appendFile(path.join(distDir, 'xconsole.css'), appendXconsoleCssVar)
   ])
 })()
 
@@ -123,7 +142,8 @@ function withoutIconFont(originalText) {
     src: url("//at.alicdn.com/t/font_1435786_mueafw9pwd.eot");
     src: url("//at.alicdn.com/t/font_1435786_mueafw9pwd.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.woff2") format("woff2"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.woff") format("woff"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.ttf") format("truetype"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.svg#NextIcon") format("svg"); }
   */
-  const reg = /@font-face\s*{\s*font-family:\s*NextIcon;[\s\S]*?format\("svg"\);\s*}/g
+  const reg =
+    /@font-face\s*{\s*font-family:\s*NextIcon;[\s\S]*?format\("svg"\);\s*}/g
 
   const match = originalText.match(reg)
 
