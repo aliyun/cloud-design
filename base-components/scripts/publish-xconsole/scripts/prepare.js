@@ -10,6 +10,8 @@ const {
 } = require('../../utils')
 const _ = require('lodash')
 
+const cssVarSelectorReg = /:root {/g
+
 const root = path.join(__dirname, '../../../')
 const pkgPath = path.join(__dirname, '../')
 
@@ -131,6 +133,16 @@ fs.writeFileSync(
     ),
     appendFile(path.join(distDir, 'xconsole-var.css'), appendXconsoleCssVar),
     appendFile(path.join(distDir, 'xconsole.css'), appendXconsoleCssVar)
+  ])
+
+  // 规范样式变量的作用范围
+  await Promise.all([
+    updateFile(path.join(distDir, 'xconsole-var.css'), (css) => {
+      return css.replace(cssVarSelectorReg, `.theme-xconsole {`)
+    }),
+    updateFile(path.join(distDir, 'xconsole.css'), (css) => {
+      return css.replace(cssVarSelectorReg, `.theme-xconsole :root {`)
+    })
   ])
 })()
 
