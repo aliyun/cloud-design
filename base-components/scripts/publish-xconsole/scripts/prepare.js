@@ -141,7 +141,7 @@ fs.writeFileSync(
       return css.replace(cssVarSelectorReg, `.theme-xconsole {`)
     }),
     updateFile(path.join(distDir, 'xconsole.css'), (css) => {
-      return css.replace(cssVarSelectorReg, `.theme-xconsole :root {`)
+      return css.replace(cssVarSelectorReg, `.theme-xconsole, :root {`)
     })
   ])
 })()
