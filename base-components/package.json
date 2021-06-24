@@ -75,7 +75,7 @@
     "sync-demo": "node ./scripts/sync-demo.js",
     "gene-def": "node ./scripts/gene-css-def.js",
     "update-theme": "node ./scripts/update-theme.js && npm run gene-def",
-    "publish-xconsole": "npm version patch && npm publish && cd ./scripts/publish-xconsole && npm run pub && tnpm sync && cd ../publish-wind && npm run pub"
+    "publish-xconsole": "npm run prepare && cd ./scripts/publish-xconsole && npm run pub && tnpm sync && cd ../publish-wind && npm run pub"
   },
   "dependencies": {
     "@alifd/next": "~1.23.9",
