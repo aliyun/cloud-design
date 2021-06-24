@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.16.1 (https://fusion.design)
- * @alifd/next@1.23.8 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.16.2 (https://fusion.design)
+ * @alifd/next@1.23.9 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -15955,8 +15955,8 @@
       position: relative;
       overflow: hidden;
       width: 100%;
-      background-color: #eaeaea;
-      background-color: var(--progress-line-underlay-color, #eaeaea); }
+      background: #eaeaea;
+      background: var(--progress-line-underlay-color, #eaeaea); }
     .next-progress-line-overlay {
       position: absolute;
       left: 0;
@@ -15964,23 +15964,23 @@
       -webkit-transition: all 300ms ease;
       transition: all 300ms ease; }
       .next-progress-line-overlay-normal {
-        background-color: #0064C8;
-        background-color: var(--progress-line-normal-color, #0064C8); }
+        background: #0064C8;
+        background: var(--progress-line-normal-color, #0064C8); }
       .next-progress-line-overlay-success {
-        background-color: #23B066;
-        background-color: var(--progress-line-success-color, #23B066); }
+        background: #23B066;
+        background: var(--progress-line-success-color, #23B066); }
       .next-progress-line-overlay-error {
-        background-color: #E84738;
-        background-color: var(--progress-line-error-color, #E84738); }
+        background: #E84738;
+        background: var(--progress-line-error-color, #E84738); }
       .next-progress-line-overlay-started {
-        background-color: #E84738;
-        background-color: var(--progress-line-started-color, #E84738); }
+        background: #E84738;
+        background: var(--progress-line-started-color, #E84738); }
       .next-progress-line-overlay-middle {
-        background-color: #F98E1B;
-        background-color: var(--progress-line-middle-color, #F98E1B); }
+        background: #F98E1B;
+        background: var(--progress-line-middle-color, #F98E1B); }
       .next-progress-line-overlay-finishing {
-        background-color: #23B066;
-        background-color: var(--progress-line-finishing-color, #23B066); }
+        background: #23B066;
+        background: var(--progress-line-finishing-color, #23B066); }
   .next-progress-line.next-small .next-progress-line-underlay {
     border-radius: 50px;
     border-radius: var(--progress-line-radius-s, 50px);
@@ -16301,11 +16301,11 @@
     .next-range.disabled .next-range-mark {
       cursor: auto; }
   .next-range .next-range-track {
-    background-color: #eaeaea;
-    background-color: var(--range-normal-unselected-color, #eaeaea); }
+    background: #eaeaea;
+    background: var(--range-normal-unselected-color, #eaeaea); }
     .next-range .next-range-track:hover {
-      background-color: #eaeaea;
-      background-color: var(--range-normal-unselected-color-hover, #eaeaea); }
+      background: #eaeaea;
+      background: var(--range-normal-unselected-color-hover, #eaeaea); }
   .next-range .next-range-selected {
     background: #589ADB;
     background: var(--range-normal-selected-color, #589ADB); }
@@ -16315,27 +16315,27 @@
   .next-range .next-range-scale .next-range-scale-item {
     border-color: #eaeaea;
     border-color: var(--range-normal-unselected-color, #eaeaea);
-    background-color: #eaeaea;
-    background-color: var(--range-normal-unselected-color, #eaeaea); }
+    background: #eaeaea;
+    background: var(--range-normal-unselected-color, #eaeaea); }
     .next-range .next-range-scale .next-range-scale-item:hover {
       border-color: #eaeaea;
       border-color: var(--range-normal-unselected-color-hover, #eaeaea); }
     .next-range .next-range-scale .next-range-scale-item.activated {
       border-color: #589ADB;
       border-color: var(--range-normal-selected-color, #589ADB);
-      background-color: #589ADB;
-      background-color: var(--range-normal-selected-color, #589ADB); }
+      background: #589ADB;
+      background: var(--range-normal-selected-color, #589ADB); }
       .next-range .next-range-scale .next-range-scale-item.activated:hover {
         border-color: #90c0ef;
         border-color: var(--range-normal-selected-color-hover, #90c0ef); }
   .next-range .next-range-slider-inner {
-    background-color: #FFFFFF;
-    background-color: var(--range-normal-slider-bg-color, #FFFFFF);
+    background: #FFFFFF;
+    background: var(--range-normal-slider-bg-color, #FFFFFF);
     border-color: #0064C8;
     border-color: var(--range-normal-slider-border-color, #0064C8); }
     .next-range .next-range-slider-inner:hover {
-      background-color: #FFFFFF;
-      background-color: var(--range-normal-slider-bg-color-hover, #FFFFFF);
+      background: #FFFFFF;
+      background: var(--range-normal-slider-bg-color-hover, #FFFFFF);
       -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.06);
               box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.06);
       -webkit-transform: scale(1.2);
@@ -16354,11 +16354,11 @@
         color: #CCCCCC;
         color: var(--range-normal-mark-selected-color-hover, #CCCCCC); }
   .next-range.disabled .next-range-track {
-    background-color: #eaeaea;
-    background-color: var(--range-normal-unselected-color-disabled, #eaeaea); }
+    background: #eaeaea;
+    background: var(--range-normal-unselected-color-disabled, #eaeaea); }
   .next-range.disabled .next-range-selected {
-    background-color: #D9D9D9;
-    background-color: var(--range-normal-selected-color-disabled, #D9D9D9); }
+    background: #D9D9D9;
+    background: var(--range-normal-selected-color-disabled, #D9D9D9); }
   .next-range.disabled .next-range-scale-item {
     border-color: #eaeaea;
     border-color: var(--range-normal-unselected-color-disabled, #eaeaea); }
@@ -16366,8 +16366,8 @@
       border-color: #D9D9D9;
       border-color: var(--range-normal-selected-color-disabled, #D9D9D9); }
   .next-range.disabled .next-range-slider-inner {
-    background-color: #FFFFFF;
-    background-color: var(--range-normal-slider-bg-color-disabled, #FFFFFF);
+    background: #FFFFFF;
+    background: var(--range-normal-slider-bg-color-disabled, #FFFFFF);
     border-color: #CCCCCC;
     border-color: var(--range-normal-slider-border-color-disabled, #CCCCCC);
     -webkit-transform: none;
@@ -16397,27 +16397,27 @@
     height: 6px;
     height: var(--range-size-m-track-height, 6px); }
   .next-range .next-range-slider {
-    height: 20px;
-    height: var(--range-size-m-slider-hw, 20px);
-    width: 20px;
-    width: var(--range-size-m-slider-hw, 20px);
-    margin-top: -10px;
-    margin-top: calc(0px - var(--range-size-m-slider-hw, 20px)/2);
-    margin-left: -10px;
-    margin-left: calc(0px - var(--range-size-m-slider-hw, 20px)/2);
+    height: 16px;
+    height: var(--range-size-m-slider-hw, 16px);
+    width: 16px;
+    width: var(--range-size-m-slider-hw, 16px);
+    margin-top: -8px;
+    margin-top: calc(0px - var(--range-size-m-slider-hw, 16px)/2);
+    margin-left: -8px;
+    margin-left: calc(0px - var(--range-size-m-slider-hw, 16px)/2);
     -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.06);
     -webkit-box-shadow: var(--range-size-m-slider-shadow, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
             box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.06);
             box-shadow: var(--range-size-m-slider-shadow, 0px 3px 8px 0px rgba(0, 0, 0, 0.06)); }
   .next-range .next-range-slider-inner {
-    height: 20px;
-    height: var(--range-size-m-slider-hw, 20px);
-    width: 20px;
-    width: var(--range-size-m-slider-hw, 20px);
-    margin-top: -10px;
-    margin-top: calc(0px - var(--range-size-m-slider-hw, 20px)/2);
-    margin-left: -10px;
-    margin-left: calc(0px - var(--range-size-m-slider-hw, 20px)/2); }
+    height: 16px;
+    height: var(--range-size-m-slider-hw, 16px);
+    width: 16px;
+    width: var(--range-size-m-slider-hw, 16px);
+    margin-top: -8px;
+    margin-top: calc(0px - var(--range-size-m-slider-hw, 16px)/2);
+    margin-left: -8px;
+    margin-left: calc(0px - var(--range-size-m-slider-hw, 16px)/2); }
   .next-range .next-range-mark {
     display: block; }
     .next-range .next-range-mark .next-range-mark-text {
@@ -16452,8 +16452,8 @@
     background: #90c0ef;
     background: var(--range-normal-selected-color-hover, #90c0ef); }
   .next-range.simulation-hover .next-range-track {
-    background-color: #eaeaea;
-    background-color: var(--range-normal-unselected-color-hover, #eaeaea); }
+    background: #eaeaea;
+    background: var(--range-normal-unselected-color-hover, #eaeaea); }
   .next-range.simulation-hover .next-range-scale-item {
     border-color: #eaeaea;
     border-color: var(--range-normal-unselected-color-hover, #eaeaea); }
