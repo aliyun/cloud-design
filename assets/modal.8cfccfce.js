@@ -1,0 +1,13 @@
+import{r as e,B as t,al as r,d as s}from"./index.6a707a19.js";import{q as o}from"./styled-components.browser.esm.a87ca0b6.js";const n=o.div`
+  .custom-content {
+    height: 2000px;
+  }
+`;var a=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:()=>{const[o,a]=e.exports.useState(!1);return e.exports.createElement(n,null,e.exports.createElement("div",null,e.exports.createElement(t,{onClick:()=>{a(!0)}},"打开Modal"),e.exports.createElement(r,{title:"标题",description:"描述区域",visible:o,onClose:()=>{a(!1)},operations:e.exports.createElement(e.exports.Fragment,null,e.exports.createElement(t,{type:"secondary"},e.exports.createElement(s,{type:"edit"}),"编辑"),e.exports.createElement(t,{type:"secondary"},e.exports.createElement(s,{type:"success"}),"保存"))},e.exports.createElement("div",{className:"custom-content"}))))}});const l=o.div`
+  .custom-content {
+    height: 2000px;
+  }
+`;var c=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:()=>{const[o,n]=e.exports.useState(!1),[a,c]=e.exports.useState(!0);return e.exports.createElement(l,null,e.exports.createElement("div",null,e.exports.createElement(t,{onClick:()=>{n(!0)}},"打开Modal"),e.exports.createElement(r,{title:"标题",description:"描述区域",visible:o,onClose:()=>{n(!1)},sideDrawerLabel:"侧栏",sideDrawer:e.exports.createElement("div",{className:"custom-content"}),sideDrawerVisible:a,onSideDrawerVisibleChange:c,operations:e.exports.createElement(e.exports.Fragment,null,e.exports.createElement(t,{type:"secondary"},e.exports.createElement(s,{type:"edit"}),"编辑"),e.exports.createElement(t,{type:"secondary"},e.exports.createElement(s,{type:"success"}),"保存"))},e.exports.createElement("div",{className:"custom-content"}))))}});const p=o.div`
+  .custom-content {
+    height: 2000px;
+  }
+`;var i=Object.freeze({__proto__:null,[Symbol.toStringTag]:"Module",default:()=>{const[o,n]=e.exports.useState(!1),[a,l]=e.exports.useState(!0),[c,i]=e.exports.useState("标题");return e.exports.createElement(p,null,e.exports.createElement("div",null,e.exports.createElement(t,{onClick:()=>{n(!0)}},"打开Modal"),e.exports.createElement(r,{title:c,titleEditable:!0,onEditTitleChange:i,visible:o,onClose:()=>{n(!1)},sideDrawerLabel:"侧栏",sideDrawer:e.exports.createElement("div",{className:"custom-content"}),sideDrawerVisible:a,onSideDrawerVisibleChange:l,operations:e.exports.createElement(e.exports.Fragment,null,e.exports.createElement(t,{type:"secondary"},e.exports.createElement(s,{type:"edit"}),"编辑"),e.exports.createElement(t,{type:"secondary"},e.exports.createElement(s,{type:"success"}),"保存"))},e.exports.createElement("div",{className:"custom-content"}))))}});const m={};m._basic=a,m["_side-drawer"]=c,m["_title-editable"]=i;export default m;
