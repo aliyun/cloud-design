@@ -55,6 +55,9 @@ const Button: typeof NextButton = withThemeClass(
       )
     }
     // 判断是否只有图标
+    // if (React.Children.count(children) === 1) {
+    //   console.log('eeee', children?.type?.name);
+    // }
     if (
       React.Children.count(children) === 1 &&
       (children as any)?.type?.displayName === 'Config(Icon)'

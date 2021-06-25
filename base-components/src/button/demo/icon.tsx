@@ -7,6 +7,8 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 import { Button, Icon, Box } from '@alicloudfe/components'
+// import TeamixIcon from '@teamix/icon';
+// TeamixIcon.setConfig(TeamixIcon.HYBRIDCLOUD);
 
 class LoadingIcon extends React.Component {
   constructor(props, context) {
@@ -53,9 +55,9 @@ export default function DemoComponent() {
   const content = (
     <div>
       <Box direction="row" spacing={20}>
-        <Button>
-          <Icon type="atm" /> ATM
-        </Button>
+        {/* <Button>
+          <TeamixIcon type="up-circle-line" />sdsdsds
+        </Button> */}
         <Button text>
           <Icon type="atm" /> ATM
         </Button>
