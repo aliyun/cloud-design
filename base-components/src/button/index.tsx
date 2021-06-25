@@ -14,9 +14,17 @@ const rxFourCNChar = /^[\u4e00-\u9fa5]{4}$/
 const isTwoToThreeCNChar = rxTwoToThreeCNChar.test.bind(rxTwoToThreeCNChar)
 const isFourCNChar = rxFourCNChar.test.bind(rxFourCNChar)
 
+const mapTeamixIconSize = (size: string) => {
+  return {
+    large: 'medium',
+    medium: 'small',
+    small: 'xs'
+  }[size]
+}
+
 const Button: typeof NextButton = withThemeClass(
   React.forwardRef((props: NextButtonProps, ref) => {
-    const { children, className } = props
+    const { children, className, iconSize, size='medium' } = props
     const count = Children.count(children);
     const theme = useCssVar('--alicloudfe-components-theme').trim()
     // 判断是否是2-3个汉字
@@ -78,10 +86,10 @@ const Button: typeof NextButton = withThemeClass(
           'teamix-icon-last': count > 1 && index === count - 1,
           [child.props.className]: !!child.props.className,
         })
+        console.log(size, mapTeamixIconSize(size), iconSize || mapTeamixIconSize(size))
         return React.cloneElement(child, {
           className: iconCls,
-          size: 'small',
-          ...child.props
+          size: iconSize || mapTeamixIconSize(size)
         })
       }
       return child;
