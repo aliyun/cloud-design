@@ -132,6 +132,7 @@ class Modal extends React.Component<
       this.setState({
         visible: false
       })
+      this.onClose();
     }
   }
 
