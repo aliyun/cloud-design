@@ -71,6 +71,7 @@ const Button: typeof NextButton = withThemeClass(
       )
     }
     const clonedChildren = Children.map(children, (child: any, index) => {
+      // 针对 teamix-icon 进行处理
       if (child && ['function', 'object'].indexOf(typeof child.type) > -1 && child.type?.displayName === 'TeamixIcon') {
         const iconCls = cls({
           'teamix-icon-first': count > 1 && index === 0,
