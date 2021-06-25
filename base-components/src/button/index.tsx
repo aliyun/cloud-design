@@ -1,5 +1,5 @@
 import { Button as NextButton } from '@alifd/next'
-import React from 'react'
+import React, { Children } from 'react'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import cls from 'classnames'
 
@@ -17,6 +17,7 @@ const isFourCNChar = rxFourCNChar.test.bind(rxFourCNChar)
 const Button: typeof NextButton = withThemeClass(
   React.forwardRef((props: NextButtonProps, ref) => {
     const { children, className } = props
+    const count = Children.count(children);
     const theme = useCssVar('--alicloudfe-components-theme').trim()
     // 判断是否是2-3个汉字
     if (
@@ -54,13 +55,10 @@ const Button: typeof NextButton = withThemeClass(
         </NextButton>
       )
     }
-    // 判断是否只有图标
-    // if (React.Children.count(children) === 1) {
-    //   console.log('eeee', children?.type?.name);
-    // }
     if (
-      React.Children.count(children) === 1 &&
-      (children as any)?.type?.displayName === 'Config(Icon)'
+      (count === 1 &&
+        (children as any)?.type?.displayName === 'Config(Icon)') ||
+      (children as any)?.type?.displayName === 'TeamixIcon'
     ) {
       return (
         <NextButton
@@ -72,9 +70,24 @@ const Button: typeof NextButton = withThemeClass(
         </NextButton>
       )
     }
+    const clonedChildren = Children.map(children, (child: any, index) => {
+      if (child && ['function', 'object'].indexOf(typeof child.type) > -1 && child.type?.displayName === 'TeamixIcon') {
+        const iconCls = cls({
+          'teamix-icon-first': count > 1 && index === 0,
+          'teamix-icon-last': count > 1 && index === count - 1,
+          [child.props.className]: !!child.props.className,
+        })
+        return React.cloneElement(child, {
+          className: iconCls,
+          size: 'small',
+          ...child.props
+        })
+      }
+      return child;
+    })
     return (
       <NextButton {...props} className={className} ref={ref as any}>
-        {children}
+        {clonedChildren}
       </NextButton>
     )
   })
