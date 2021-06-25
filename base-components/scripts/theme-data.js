@@ -8,7 +8,7 @@ module.exports = [
     themeName: 'xconsole',
   },
   {
-    packageName: '@alife/theme-xconsoledarkmode',
+    packageName: '@alife/theme-23651',
     themeName: 'xconsole-dark',
   },
   {
