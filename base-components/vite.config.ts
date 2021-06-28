@@ -97,11 +97,26 @@ module.exports = {
 } as UserConfig
 
 function cssSwitchPlugin(): Plugin {
+  const reg = /\?pureCSS$/
+
+  // vite 暂时不支持直接对css进行dynamic import
+  // https://github.com/vitejs/vite/issues/3307
+  // 我们构造一个虚拟js模块，然后dynamic import它
   return {
     name: 'cssSwitchPlugin',
+    enforce: 'pre',
+    async resolveId(importee, importer) {
+      if (importee.match(reg)) {
+        const bare = importee.replace(reg, '')
+        const result = await this.resolve(bare, importer)
+        const pathWithoutExt = result.id.replace(/\.scss$/, '')
+        return `/@pureCSS${pathWithoutExt}`
+      }
+    },
     load(id) {
-      if (id.includes('?pureCSS')) {
-        return fs.readFile(id.replace('?pureCSS', ''), 'utf-8')
+      if (id.startsWith('/@pureCSS')) {
+        const cssPath = id.replace('/@pureCSS', '')
+        return `import "${cssPath}.scss";`
       }
     }
   }
