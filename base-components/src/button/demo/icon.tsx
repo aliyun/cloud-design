@@ -56,7 +56,13 @@ export default function DemoComponent() {
     <div>
       <Box direction="row" spacing={20}>
         {/* <Button>
-          <TeamixIcon type="up-circle-line" />sdsdsds
+          <TeamixIcon type="up-circle-line" />是深刻的就是快点叫
+        </Button>
+        <Button size="small" >
+          <TeamixIcon type="up-circle-line" />是深刻的就是快点叫
+        </Button>
+        <Button size="large">
+          <TeamixIcon type="up-circle-line" />是深刻的就是快点叫
         </Button> */}
         <Button text>
           <Icon type="atm" /> ATM
@@ -64,7 +70,7 @@ export default function DemoComponent() {
         <Button warning>
           <Icon type="atm" /> ATM
         </Button>
-        <Button iconSize="xxs">
+        <Button iconSize="xs">
           <Icon type="arrow-left" /> ARROW
         </Button>
       </Box>

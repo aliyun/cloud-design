@@ -1,10 +1,13 @@
-.theme-hybridcloud, .theme-hybridcloud-dark {
+.theme-hybridcloud.theme-hybridcloud,
+.theme-hybridcloud-dark.theme-hybridcloud-dark {
+  --dialog-footer-border-color: transparent;
+  --dialog-close-top: 16px;
   .next-dialog-message.next-message.next-addon .next-message-content {
     color: var(--color-text1-6, #666666);
     line-height: 1.5;
     margin-top: 16px;
   }
-  
+
   .next-dialog-header {
     font-weight: 500;
   }

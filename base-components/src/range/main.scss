@@ -12,3 +12,15 @@
   //   }
   // }
 }
+.next-range {
+  .next-range-slider-inner {
+    &:hover {
+      transform: scale(1.38);
+    }
+  }
+  .next-range-slider-moving {
+    .next-range-slider-inner.next-range-slider-inner.next-range-slider-inner {
+      transform: scale(1.38);
+    } 
+  }
+}
