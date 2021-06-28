@@ -1,7 +1,6 @@
+$dialog-prefix: '.' + $css-prefix + 'dialog';
 .theme-hybridcloud.theme-hybridcloud,
 .theme-hybridcloud-dark.theme-hybridcloud-dark {
-  --dialog-footer-border-color: transparent;
-  --dialog-close-top: 16px;
   .next-dialog-message.next-message.next-addon .next-message-content {
     color: var(--color-text1-6, #666666);
     line-height: 1.5;
@@ -21,4 +20,41 @@
 
 .next-dialog-header {
   font-weight: 500;
+}
+
+// for teamix
+.theme-hybridcloud,
+.theme-hybridcloud-dark,
+:not(.theme-yunxiao),
+:not(.theme-yunxiao-dark){
+  #{$dialog-prefix} {
+    min-width: 400px;
+    &:not(#{$dialog-prefix}-quick) {
+      --dialog-close-top: 16px;
+      #{$dialog-prefix}-header {
+        --dialog-title-padding-bottom: 12px;
+        --dialog-title-padding-top: 12px;
+        --dialog-title-border-color: var(--color-line1-1);
+      }
+      #{$dialog-prefix}-body {
+        --dialog-content-padding-top: 16px;
+      }
+      #{$dialog-prefix}-footer {
+        --dialog-footer-border-color: transparent;
+      }
+    }
+  }
+}
+
+// for teamix
+.theme-hybridcloud,
+.theme-hybridcloud-dark,
+:not(.theme-yunxiao),
+:not(.theme-yunxiao-dark) {
+  .next-dialog-message.next-message.next-addon .next-message-content {
+    line-height: 1.5;
+  }
+  .next-dialog-header {
+    font-weight: 500;
+  }
 }
