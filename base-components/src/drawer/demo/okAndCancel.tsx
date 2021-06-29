@@ -20,14 +20,13 @@ const Demo: React.FC = () => {
       <Button type="primary" onClick={() => { setVisible(true) }}>打开具有确定和关闭操作的Drawer</Button>
       <Drawer
         visible={visible}
-        width={400}
+        size="small"
         title="具有确定和关闭操作的Drawer"
         onClose={closeHandle}
         onOk={closeHandle}
         onCancel={closeHandle}
         cancelText="取消"
         footerLine
-        footerAlign="right"
       >
         <div>具有确定和关闭操作的Drawer</div>
       </Drawer>

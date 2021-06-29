@@ -49,6 +49,10 @@ interface IDrawer {
    * 给footer增加className
    */
   footerClass?: string;
+  /**
+   * 抽屉大小，也可以直接传入width自定义
+   */
+  size?: 'mini' | 'small' | 'medium' | 'large';
 }
 
 export type DrawerProps = NextDrawerProps & IDrawer
@@ -56,7 +60,8 @@ export type DrawerProps = NextDrawerProps & IDrawer
 const Drawer: React.FC<DrawerProps> = withThemeClass(
   React.forwardRef((props: DrawerProps, ref) => {
 
-    const { 
+    const {
+      visible = false,
       onOk,
       onCancel,
       renderFooter,
@@ -68,14 +73,19 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
       cancelBtnProps = {},
       okBtnProps = {},
       footerClass,
+      size = 'mini',
+      width,
       ...filterProps
     } = props;
-    const { visible } = filterProps;
-    const [customVisible, setCustomVisible] = useState<boolean>(false);
+    const [customVisible, setCustomVisible] = useState<boolean>(visible);
 
     useEffect(() => {
       setCustomVisible(visible);
     }, [visible])
+
+    const drawerCustomClassName = cls({
+      'next-drawer-has-footer': onOk || onCancel || renderFooter
+    })
     
     const drawerFooterClassName = cls({
       'next-drawer-footer': true,
@@ -86,11 +96,33 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
       [footerClass]: true
     })
 
+    const getCustomWidth = (): string | number => {
+      if (width) {
+        return width;
+      }
+      if (size) {
+        switch(size) {
+          case 'mini': 
+            return 400;
+          case 'small':
+            return 600;
+          case 'medium':
+            return 800;
+          case 'large':
+            return 1200;
+          default: 
+            return 400;
+        }
+      }
+    }
+
     return (
       <NextDrawer
         {...filterProps}
         ref={ref as any}
         visible={customVisible}
+        width={getCustomWidth()}
+        className={drawerCustomClassName}
       >
         { children }
         {
@@ -98,19 +130,25 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
             <div
               className={drawerFooterClassName}
             >
+              { (onOk && !renderFooter) && (
+                  <Button 
+                    type="primary"
+                    onClick={onOk}
+                    style={{ marginRight: 8 }}
+                    {...okBtnProps}
+                  >
+                    {okText}
+                  </Button>
+                )
+              }
               { (onCancel && !renderFooter) && (
                 <Button
-                  style={{ marginRight: 8 }}
                   onClick={onCancel}
                   {...cancelBtnProps}
                 >
                   {cancelText}
                 </Button>
               )}
-              { (onOk && !renderFooter) && (
-                  <Button type="primary" onClick={onOk} {...okBtnProps}>{okText}</Button>
-                )
-              }
               { renderFooter && renderFooter}
             </div>
           )
