@@ -6,11 +6,8 @@ $next-normal: '.' + $css-prefix + 'normal';
   &#{$next-normal} {
     .#{$css-prefix}after {
       .#{$css-prefix}btn-normal {
-        .#{$css-prefix}icon-search {
-          margin-right: 4px;
-        }
+        --btn-medium-min-width: 32px;
       }
     }
   }
- 
 }
