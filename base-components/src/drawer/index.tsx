@@ -7,7 +7,6 @@ import cls from 'classnames'
 import { ButtonProps } from '@alifd/next/types/button';
 
 type NextDrawerProps = React.ComponentProps<typeof NextDrawer>
-
 interface IDrawer {
   /**
    * 点击确认按钮时的回调。有此参数就默认显示确认按钮
