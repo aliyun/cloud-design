@@ -86,7 +86,6 @@ const Button: typeof NextButton = withThemeClass(
           'teamix-icon-last': count > 1 && index === count - 1,
           [child.props.className]: !!child.props.className,
         })
-        console.log(size, mapTeamixIconSize(size), iconSize || mapTeamixIconSize(size))
         return React.cloneElement(child, {
           className: iconCls,
           size: iconSize || mapTeamixIconSize(size)
