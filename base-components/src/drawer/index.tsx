@@ -93,7 +93,7 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
       'next-drawer-footer-right': footerAlign === 'right',
       'next-drawer-footer-left': footerAlign === 'left',
       'next-drawer-footer-center': footerAlign === 'center',
-      [footerClass]: true
+      [footerClass]: !!footerClass 
     })
 
     const getCustomWidth = (): string | number => {

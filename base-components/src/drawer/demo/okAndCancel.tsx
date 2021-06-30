@@ -25,8 +25,6 @@ const Demo: React.FC = () => {
         onClose={closeHandle}
         onOk={closeHandle}
         onCancel={closeHandle}
-        cancelText="取消"
-        hasFooterLine
       >
         <div>具有确定和关闭操作的Drawer</div>
       </Drawer>
