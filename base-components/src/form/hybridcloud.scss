@@ -4,7 +4,10 @@
 }
 
 // form间距
-.next-form-item.next-top .next-form-item-label {
-  line-height: 18px;
-  margin-bottom: 4px;
+.next-form-item.next-top {
+  margin-bottom: var(--s-5, 20px);
+  .next-form-item-label {
+    line-height: 1.5;
+    margin-bottom: var(--s-1, 4px);
+  }
 }
