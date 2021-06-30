@@ -28,6 +28,18 @@
 | visible     | 是否显示                                                                                                                                                                                                                             | Boolean             | -                                          |
 | hasMask     | 是否显示遮罩                                                                                                                                                                                                                           | Boolean             | true                                       |
 | animation   | 显示隐藏时动画的播放方式，支持 { in: 'enter-class', out: 'leave-class' } 的对象参数，如果设置为 false，则不播放动画。 请参考 Animate 组件的文档获取可用的动画名                                                                                                                    | Object/Boolean      | { in: 'expandInDown', out: 'expandOutUp' } |
+| onOk | 点击footer确认按钮时的回调。如果有此参数，那么将默认在footer底部增加确认按钮 | Function | - | 
+| onCancel | 点击footer取消按钮时的回调。如果有此参数，那么将默认在footer底部增加取消按钮 | Function | - | 
+| renderFooter | 自定义渲染footer | ReactNode | - | 
+| hasFooterLine | 是否显示footer上部的分割线 | Boolean | false | 
+| footerAlign | footer底部按钮的布局 | left \| center \| right | left | 
+| okText | 确认按钮文字 | ReactNode | 确认 | 
+| cancelText | 取消按钮文字 | ReactNode | 取消 |
+| cancelBtnProps | 透传给取消按钮的Props | ButtonProps | - |
+| okBtnProps | 透传给确认按钮的Props | ButtonProps | - |
+| footerClass | 给footer添加className以自定义样式 | String | - |
+| size |快速定制抽屉大小。在size和width同时存在时游侠使用width定制大小 | mini \| small \| medium \| large | mini |
+
 
 ## ARIA and Keyboard
 
