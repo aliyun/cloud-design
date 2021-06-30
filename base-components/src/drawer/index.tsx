@@ -24,7 +24,7 @@ interface IDrawer {
   /**
    * 是否有底部分割线
    */
-  footerLine?: boolean;
+  hasFooterLine?: boolean;
   /**
    * 底部按钮位置
    */
@@ -65,11 +65,11 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
       onOk,
       onCancel,
       renderFooter,
-      footerLine,
+      hasFooterLine,
       footerAlign,
       children,
-      okText = 'Ok',
-      cancelText = 'Cancel',
+      okText = '确认',
+      cancelText = '取消',
       cancelBtnProps = {},
       okBtnProps = {},
       footerClass,
@@ -89,7 +89,7 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
     
     const drawerFooterClassName = cls({
       'next-drawer-footer': true,
-      'next-drawer-footer-line': footerLine,
+      'next-drawer-footer-line': hasFooterLine,
       'next-drawer-footer-right': footerAlign === 'right',
       'next-drawer-footer-left': footerAlign === 'left',
       'next-drawer-footer-center': footerAlign === 'center',

@@ -31,10 +31,10 @@
 | onOk | 点击footer确认按钮时的回调。如果有此参数，那么将默认在footer底部增加确认按钮 | Function | - | 
 | onCancel | 点击footer取消按钮时的回调。如果有此参数，那么将默认在footer底部增加取消按钮 | Function | - | 
 | renderFooter | 自定义渲染footer | ReactNode | - | 
-| footerLine | 是否显示footer上部的分割线 | Boolean | false | 
+| hasFooterLine | 是否显示footer上部的分割线 | Boolean | false | 
 | footerAlign | footer底部按钮的布局 | left \| center \| right | left | 
-| okText | 确认按钮文字 | ReactNode | Ok | 
-| cancelText | 取消按钮文字 | ReactNode | Cancel |
+| okText | 确认按钮文字 | ReactNode | 确认 | 
+| cancelText | 取消按钮文字 | ReactNode | 取消 |
 | cancelBtnProps | 透传给取消按钮的Props | ButtonProps | - |
 | okBtnProps | 透传给确认按钮的Props | ButtonProps | - |
 | footerClass | 给footer添加className以自定义样式 | String | - |

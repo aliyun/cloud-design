@@ -23,7 +23,7 @@
          width={400}
          title="完全自定义footer的Drawer"
          onClose={closeHandle}
-         footerLine
+         hasFooterLine
          footerAlign="right"
          renderFooter={
           <>
