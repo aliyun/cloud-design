@@ -28,8 +28,8 @@
 | visible     | 是否显示                                                                                                                                                                                                                             | Boolean             | -                                          |
 | hasMask     | 是否显示遮罩                                                                                                                                                                                                                           | Boolean             | true                                       |
 | animation   | 显示隐藏时动画的播放方式，支持 { in: 'enter-class', out: 'leave-class' } 的对象参数，如果设置为 false，则不播放动画。 请参考 Animate 组件的文档获取可用的动画名                                                                                                                    | Object/Boolean      | { in: 'expandInDown', out: 'expandOutUp' } |
-| onOk | 点击footer确认按钮时的回调。如果有此参数，那么将默认在footer底部增加确认按钮 | Function | - | 
-| onCancel | 点击footer取消按钮时的回调。如果有此参数，那么将默认在footer底部增加取消按钮 | Function | - | 
+| onOk | 点击footer确认按钮时的回调。如果有此参数，那么将默认在footer底部增加确认按钮<br/><br/>**签名**:<br/>Function(event: Object) => void<br/>**参数**:<br/>_event_: {Object} 点击事件对象 | Function | - | 
+| onCancel | 点击footer取消按钮时的回调。如果有此参数，那么将默认在footer底部增加取消按钮<br/><br/>**签名**:<br/>Function(event: Object) => void<br/>**参数**:<br/>_event_: {Object} 点击事件对象 | Function | - | 
 | renderFooter | 自定义渲染footer | ReactNode | - | 
 | hasFooterLine | 是否显示footer上部的分割线 | Boolean | false | 
 | footerAlign | footer底部按钮的布局 | left \| center \| right | left | 

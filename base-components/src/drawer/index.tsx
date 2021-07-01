@@ -12,11 +12,11 @@ interface IDrawer {
   /**
    * 点击确认按钮时的回调。有此参数就默认显示确认按钮
    */
-  onOk?: () => void;
+  onOk?: (event: React.MouseEvent) => void;
   /**
    * 点击取消按钮时的回调。有此参数就默认显示取消按钮
    */
-  onCancel?: () => void;
+  onCancel?: (event: React.MouseEvent) => void;
   /**
    * 完全自定义底部操作栏
    */
