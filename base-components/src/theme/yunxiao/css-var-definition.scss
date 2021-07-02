@@ -1723,7 +1723,7 @@
     --shadow-distance-sd3y: 6;
     
     
-    --shadow-opacity-sd1: 0.04;
+    --shadow-opacity-sd1: 0.03;
     
     
     --shadow-opacity-sd2: 0.18;
@@ -1762,19 +1762,19 @@
     --shadow-zero: none;
     
     
-    --shadow-1: 0px 3px 8px 0px rgba(0, 0, 0, 0.04);
+    --shadow-1: 0px 3px 8px 0px rgba(0, 0, 0, 0.03);
     
     
-    --shadow-1-up: 0px -3px 8px 0px rgba(0, 0, 0, 0.04);
+    --shadow-1-up: 0px -3px 8px 0px rgba(0, 0, 0, 0.03);
     
     
-    --shadow-1-right: 0px 0px 8px 0px rgba(0, 0, 0, 0.04);
+    --shadow-1-right: 0px 0px 8px 0px rgba(0, 0, 0, 0.03);
     
     
-    --shadow-1-down: 0px 3px 8px 0px rgba(0, 0, 0, 0.04);
+    --shadow-1-down: 0px 3px 8px 0px rgba(0, 0, 0, 0.03);
     
     
-    --shadow-1-left: 0px 0px 8px 0px rgba(0, 0, 0, 0.04);
+    --shadow-1-left: 0px 0px 8px 0px rgba(0, 0, 0, 0.03);
     
     
     --shadow-2: 0px 3px 8px 0px rgba(0, 0, 0, 0.18);
@@ -2308,10 +2308,10 @@
     --range-normal-slider-bg-color-hover: var(--color-white, #FFFFFF);
     
     
-    --range-size-m-slider-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
+    --range-size-m-slider-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.03));
     
     
-    --range-size-m-slider-shadow-hover: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
+    --range-size-m-slider-shadow-hover: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.03));
     
     
     --range-normal-mark-color-hover: var(--color-text1-1, #CECECE);
@@ -2863,7 +2863,7 @@
     --card-more-btn-font-size: var(--font-size-body-1, 14px);
     
     
-    --card-shadow: var(--shadow-1, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
+    --card-shadow: var(--shadow-1, 0px 3px 8px 0px rgba(0, 0, 0, 0.03));
     
     
     --card-border-style: var(--line-solid, solid);
@@ -3040,10 +3040,10 @@
     --switch-hover-off-border-color: var(--color-transparent, transparent);
     
     
-    --switch-off-shadow: var(--shadow-1, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
+    --switch-off-shadow: var(--shadow-1, 0px 3px 8px 0px rgba(0, 0, 0, 0.03));
     
     
-    --switch-rtl-on-shadow: var(--shadow-1-left, 0px 0px 8px 0px rgba(0, 0, 0, 0.04));
+    --switch-rtl-on-shadow: var(--shadow-1-left, 0px 0px 8px 0px rgba(0, 0, 0, 0.03));
     
     
     --switch-text-off-right: var(--s-2, 8px);
@@ -4192,6 +4192,12 @@
     --table-header-icon-margin-left: var(--s-2, 8px);
     
     
+    --table-header-corner-top: var(--corner-zero, 0);
+    
+    
+    --table-header-corner-bottom: var(--corner-zero, 0);
+    
+    
     --table-size-s-cell-padding-top: var(--s-2, 8px);
     
     
@@ -4205,6 +4211,18 @@
     
     
     --table-group-split: var(--s-2, 8px);
+    
+    
+    --table-group-header-corner-top: var(--corner-zero, 0);
+    
+    
+    --table-group-header-corner-bottom: var(--corner-zero, 0);
+    
+    
+    --table-group-footer-corner-top: var(--corner-zero, 0);
+    
+    
+    --table-group-footer-corner-bottom: var(--corner-zero, 0);
     
     
     --table-normal-border-color: var(--color-fill1-3, #E8E8E8);
@@ -4663,7 +4681,7 @@
     --balloon-primary-color-border: var(--color-transparent, transparent);
     
     
-    --balloon-primary-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
+    --balloon-primary-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.03));
     
     
     --balloon-primary-color: var(--color-white, #FFFFFF);
@@ -5680,7 +5698,7 @@
     --shell-dark-header-background: var(--color-black, #000000);
     
     
-    --shell-dark-header-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
+    --shell-dark-header-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.03));
     
     
     --shell-dark-header-divider-size: var(--line-1, 1px);
@@ -5893,7 +5911,7 @@
     --shell-brand-header-background: var(--color-brand1-6, #1B9AEE);
     
     
-    --shell-brand-header-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
+    --shell-brand-header-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.03));
     
     
     --shell-brand-header-divider-size: var(--line-1, 1px);
@@ -7276,7 +7294,7 @@
     --menu-icon-margin: var(--s-1, 4px);
     
     
-    --menu-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.04));
+    --menu-shadow: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.03));
     
     
     --menu-color: var(--color-text1-2, #6E6E6E);

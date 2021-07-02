@@ -6406,6 +6406,12 @@
     --table-header-icon-margin-left: var(--s-2, 8px);
     
     
+    --table-header-corner-top: var(--corner-zero, 0);
+    
+    
+    --table-header-corner-bottom: var(--corner-zero, 0);
+    
+    
     --table-size-s-cell-padding-top: var(--s-2, 8px);
     
     
@@ -6421,6 +6427,18 @@
     --table-group-split: var(--s-2, 8px);
     
     
+    --table-group-header-corner-top: var(--corner-zero, 0);
+    
+    
+    --table-group-header-corner-bottom: var(--corner-zero, 0);
+    
+    
+    --table-group-footer-corner-top: var(--corner-zero, 0);
+    
+    
+    --table-group-footer-corner-bottom: var(--corner-zero, 0);
+    
+    
     --table-normal-border-color: var(--color-line1-1, #eaeaea);
     
     
@@ -6430,7 +6448,7 @@
     --table-th-bg: var(--color-fill1-2, #f7f7f7);
     
     
-    --table-th-color: var(--color-text1-6, #5a5a5a);
+    --table-th-color: var(--color-text1-3, #333333);
     
     
     --table-sort-color: var(--color-text1-4, #1A1A1A);
@@ -7384,13 +7402,13 @@
     --dialog-title-font-size: var(--font-size-body-2, 14px);
     
     
-    --dialog-title-padding-top: var(--s-4, 16px);
+    --dialog-title-padding-top: var(--s-5, 20px);
     
     
     --dialog-title-padding-bottom: var(--s-1, 4px);
     
     
-    --dialog-title-padding-left-right: var(--s-4, 16px);
+    --dialog-title-padding-left-right: var(--s-5, 20px);
     
     
     --dialog-title-border-width: var(--line-1, 1px);
@@ -7402,7 +7420,7 @@
     --dialog-message-content-padding-bottom: var(--s-4, 16px);
     
     
-    --dialog-message-content-padding-left-right: var(--s-4, 16px);
+    --dialog-message-content-padding-left-right: var(--s-5, 20px);
     
     
     --dialog-content-font-size: var(--font-size-body-1, 12px);
@@ -7411,10 +7429,10 @@
     --dialog-content-padding-top: var(--s-4, 16px);
     
     
-    --dialog-content-padding-bottom: var(--s-4, 16px);
+    --dialog-content-padding-bottom: var(--s-5, 20px);
     
     
-    --dialog-content-padding-left-right: var(--s-4, 16px);
+    --dialog-content-padding-left-right: var(--s-5, 20px);
     
     
     --dialog-footer-border-width: var(--line-1, 1px);
@@ -7423,10 +7441,10 @@
     --dialog-footer-padding-top: var(--s-4, 16px);
     
     
-    --dialog-footer-padding-bottom: var(--s-4, 16px);
+    --dialog-footer-padding-bottom: var(--s-5, 20px);
     
     
-    --dialog-footer-padding-left-right: var(--s-4, 16px);
+    --dialog-footer-padding-left-right: var(--s-5, 20px);
     
     
     --dialog-footer-button-spacing: var(--s-2, 8px);
@@ -7435,7 +7453,7 @@
     --dialog-close-top: var(--s-4, 16px);
     
     
-    --dialog-close-right: var(--s-4, 16px);
+    --dialog-close-right: var(--s-5, 20px);
     
     
     --dialog-close-width: var(--s-4, 16px);
