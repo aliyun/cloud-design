@@ -4,7 +4,7 @@
     /* ------------------------ color ------------------------ */
     
     
-    --color-brand1-1: rgba(255,255,255,0.02);
+    --color-brand1-1: rgba(255,255,255,0.04);
     
     
     --color-brand1-6: rgba(122,169,215,1);
@@ -124,13 +124,13 @@
     --color-other-3: #FFFFFF;
     
     
-    --color-line1-1: rgba(255,255,255,0.16);
+    --color-line1-1: rgba(255,255,255,0.08);
     
     
-    --color-line1-2: rgba(255,255,255,0.24);
+    --color-line1-2: rgba(255,255,255,0.16);
     
     
-    --color-line1-3: #577899;
+    --color-line1-3: rgba(255,255,255,0.12);
     
     
     --color-line1-4: #D1D5D9;
@@ -160,7 +160,7 @@
     --color-text1-4: rgba(77,77,77,1);
     
     
-    --color-brand1-3: rgba(255,255,255,0.04);
+    --color-brand1-3: rgba(255,255,255,0.08);
     
     
     --color-brand1-4: rgba(46,48,49,1);
@@ -217,7 +217,7 @@
     --color-brand2-6: rgba(58,80,102,1);
     
     
-    --color-brand1-2: rgba(255,255,255,0.08);
+    --color-brand1-2: rgba(255,255,255,0.12);
     
     
     --color-text1-6: #808080;
@@ -3013,10 +3013,10 @@
     --shadow-distance-sd3: 0;
     
     
-    --shadow-distance-sd1y: 2;
+    --shadow-distance-sd1y: 1;
     
     
-    --shadow-distance-sd2y: 4;
+    --shadow-distance-sd2y: 2;
     
     
     --shadow-distance-sd3y: 8;
@@ -3040,10 +3040,10 @@
     --shadow-color-sd3: var(--color-black, #000000);
     
     
-    --shadow-blur-sd1: 4;
+    --shadow-blur-sd1: 2;
     
     
-    --shadow-blur-sd2: 8;
+    --shadow-blur-sd2: 4;
     
     
     --shadow-blur-sd3: 16;
@@ -3061,34 +3061,34 @@
     --shadow-zero: none;
     
     
-    --shadow-1: 0px 2px 4px 0px rgba(0, 0, 0, 0.92);
+    --shadow-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.92);
     
     
-    --shadow-1-up: 0px -2px 4px 0px rgba(0, 0, 0, 0.92);
+    --shadow-1-up: 0px -1px 2px 0px rgba(0, 0, 0, 0.92);
     
     
-    --shadow-1-right: 0px 0px 4px 0px rgba(0, 0, 0, 0.92);
+    --shadow-1-right: 0px 0px 2px 0px rgba(0, 0, 0, 0.92);
     
     
-    --shadow-1-down: 0px 2px 4px 0px rgba(0, 0, 0, 0.92);
+    --shadow-1-down: 0px 1px 2px 0px rgba(0, 0, 0, 0.92);
     
     
-    --shadow-1-left: 0px 0px 4px 0px rgba(0, 0, 0, 0.92);
+    --shadow-1-left: 0px 0px 2px 0px rgba(0, 0, 0, 0.92);
     
     
-    --shadow-2: 0px 4px 8px 0px rgba(0, 0, 0, 0.84);
+    --shadow-2: 0px 2px 4px 0px rgba(0, 0, 0, 0.84);
     
     
-    --shadow-2-up: 0px -4px 8px 0px rgba(0, 0, 0, 0.84);
+    --shadow-2-up: 0px -2px 4px 0px rgba(0, 0, 0, 0.84);
     
     
-    --shadow-2-right: 0px 0px 8px 0px rgba(0, 0, 0, 0.84);
+    --shadow-2-right: 0px 0px 4px 0px rgba(0, 0, 0, 0.84);
     
     
-    --shadow-2-down: 0px 4px 8px 0px rgba(0, 0, 0, 0.84);
+    --shadow-2-down: 0px 2px 4px 0px rgba(0, 0, 0, 0.84);
     
     
-    --shadow-2-left: 0px 0px 8px 0px rgba(0, 0, 0, 0.84);
+    --shadow-2-left: 0px 0px 4px 0px rgba(0, 0, 0, 0.84);
     
     
     --shadow-3: 0px 8px 16px 0px rgba(0, 0, 0, 0.84);
@@ -3289,19 +3289,19 @@
     --checkbox-shadow: var(--shadow-zero, none);
     
     
-    --checkbox-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --checkbox-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --checkbox-hovered-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --checkbox-hovered-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --checkbox-checked-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --checkbox-checked-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --checkbox-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --checkbox-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --checkbox-checked-hovered-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --checkbox-checked-hovered-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --checkbox-checked-circle-color: var(--color-white, #FFFFFF);
@@ -3319,13 +3319,13 @@
     --checkbox-checked-hovered-circle-color: var(--color-white, #FFFFFF);
     
     
-    --checkbox-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --checkbox-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --checkbox-checked-bg-color: var(--color-fill1-5, #0064C8);
     
     
-    --checkbox-hovered-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --checkbox-hovered-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --checkbox-checked-hovered-bg-color: var(--color-brand1-7, #0080ff);
@@ -3424,7 +3424,7 @@
     --timeline-item-time-color: var(--color-text1-7, #999999);
     
     
-    --timeline-item-tail-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --timeline-item-tail-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --timeline-item-done-dot-size: var(--s-2, 8px);
@@ -3478,7 +3478,7 @@
     --cascader-menu-icon-expand-size: var(--icon-xxs, 8px);
     
     
-    --cascader-menu-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --cascader-menu-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --cascader-menu-border-radius: var(--corner-1, 2px);
@@ -3493,7 +3493,7 @@
     --cascader-menu-item-expanded-color: var(--color-text1-9, #cccccc);
     
     
-    --cascader-menu-item-expanded-background-color: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --cascader-menu-item-expanded-background-color: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     /* ------------------------ menu-button ------------------------ */
@@ -3574,7 +3574,7 @@
     --range-size-m-scale-radius: var(--corner-zero, 0);
     
     
-    --range-size-m-slider-shadow-moving: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.84));
+    --range-size-m-slider-shadow-moving: var(--shadow-2, 0px 2px 4px 0px rgba(0, 0, 0, 0.84));
     
     
     --range-normal-unselected-color: var(--color-text1-5, #666666);
@@ -3601,10 +3601,10 @@
     --range-normal-slider-bg-color-hover: var(--color-white, #FFFFFF);
     
     
-    --range-size-m-slider-shadow: var(--shadow-1, 0px 2px 4px 0px rgba(0, 0, 0, 0.92));
+    --range-size-m-slider-shadow: var(--shadow-1, 0px 1px 2px 0px rgba(0, 0, 0, 0.92));
     
     
-    --range-size-m-slider-shadow-hover: var(--shadow-1, 0px 2px 4px 0px rgba(0, 0, 0, 0.92));
+    --range-size-m-slider-shadow-hover: var(--shadow-1, 0px 1px 2px 0px rgba(0, 0, 0, 0.92));
     
     
     --range-normal-mark-color-hover: var(--color-text1-5, #666666);
@@ -3628,7 +3628,7 @@
     --range-normal-slider-border-color: var(--color-fill1-5, #0064C8);
     
     
-    --range-normal-slider-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --range-normal-slider-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --range-normal-mark-color-disabled: var(--color-text1-5, #666666);
@@ -3667,13 +3667,13 @@
     --rating-large-font-size: var(--font-size-subhead, 14px);
     
     
-    --rating-normal-underlay-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --rating-normal-underlay-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --rating-normal-overlay-color: var(--color-brand1-6, #7aa9d7);
     
     
-    --rating-normal-overlay-hover-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --rating-normal-overlay-hover-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --rating-grade-low-overlay-color: var(--color-warning-6, #FAC800);
@@ -3697,13 +3697,13 @@
     --search-normal-corner: var(--corner-1, 2px);
     
     
-    --search-normal-primary-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-primary-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --search-normal-primary-hover-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-primary-hover-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --search-normal-primary-split-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-primary-split-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --search-normal-primary-shadow: var(--shadow-zero, none);
@@ -3742,25 +3742,25 @@
     --search-normal-primary-m-btn-text-size: var(--font-size-body-1, 12px);
     
     
-    --search-normal-secondary-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-secondary-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --search-normal-secondary-split-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-secondary-split-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --search-normal-secondary-hover-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-secondary-hover-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --search-normal-secondary-shadow: var(--shadow-zero, none);
     
     
-    --search-normal-secondary-btn-bg-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-secondary-btn-bg-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --search-normal-secondary-btn-text-color: var(--color-text1-9, #cccccc);
     
     
-    --search-normal-secondary-btn-hover-bg-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-secondary-btn-hover-bg-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --search-normal-secondary-btn-hover-text-color: var(--color-text1-9, #cccccc);
@@ -3790,13 +3790,13 @@
     --search-normal-secondary-m-btn-text-size: var(--font-size-body-1, 12px);
     
     
-    --search-normal-normal-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-normal-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --search-normal-normal-split-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-normal-split-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --search-normal-normal-hover-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-normal-hover-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --search-normal-normal-shadow: var(--shadow-zero, none);
@@ -3838,10 +3838,10 @@
     --search-normal-normal-m-btn-text-size: var(--font-size-subhead, 14px);
     
     
-    --search-normal-dark-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-dark-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --search-normal-dark-hover-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-normal-dark-hover-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --search-normal-dark-text-color: var(--color-text1-9, #cccccc);
@@ -3898,13 +3898,13 @@
     --search-simple-m-icon-margin-right: var(--s-2, 8px);
     
     
-    --search-simple-normal-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-simple-normal-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --search-simple-normal-hover-color: var(--color-text1-9, #cccccc);
     
     
-    --search-simple-normal-split-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --search-simple-normal-split-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --search-simple-normal-shadow: var(--shadow-zero, none);
@@ -3928,10 +3928,10 @@
     --search-simple-normal-btn-text-padding-left: var(--s-zero, 0px);
     
     
-    --search-simple-dark-color: var(--color-line1-3, #577899);
+    --search-simple-dark-color: var(--color-line1-3, rgba(255, 255, 255, 0.12));
     
     
-    --search-simple-dark-hover-color: var(--color-line1-3, #577899);
+    --search-simple-dark-hover-color: var(--color-line1-3, rgba(255, 255, 255, 0.12));
     
     
     --search-simple-dark-bg-color: var(--color-white, #FFFFFF);
@@ -3955,7 +3955,7 @@
     --search-simple-dark-btn-text-padding-left: var(--s-zero, 0px);
     
     
-    --search-simple-dark-split-color: var(--color-line1-3, #577899);
+    --search-simple-dark-split-color: var(--color-line1-3, rgba(255, 255, 255, 0.12));
     
     
     --search-simple-dark-border-width: var(--line-1, 1px);
@@ -4018,7 +4018,7 @@
     --tree-node-normal-color: var(--color-text1-9, #cccccc);
     
     
-    --tree-node-normal-background: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --tree-node-normal-background: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --tree-node-title-border-radius: var(--corner-1, 2px);
@@ -4033,13 +4033,13 @@
     --tree-switch-bg-color: var(--color-fill1-1, #0d0d0d);
     
     
-    --tree-switch-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tree-switch-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tree-switch-corner: var(--corner-1, 2px);
     
     
-    --tree-line-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tree-line-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tree-line-style: var(--line-solid, solid);
@@ -4048,7 +4048,7 @@
     --tree-node-hover-color: var(--color-text1-10, #e6e6e6);
     
     
-    --tree-node-hover-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --tree-node-hover-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --tree-switch-hover-arrow-color: var(--color-text1-10, #e6e6e6);
@@ -4060,19 +4060,19 @@
     --tree-switch-hover-bg-color: var(--color-fill1-1, #0d0d0d);
     
     
-    --tree-switch-hover-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tree-switch-hover-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tree-node-selected-color: var(--color-brand1-7, #0080ff);
     
     
-    --tree-node-selected-background: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --tree-node-selected-background: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     --tree-node-disabled-color: var(--color-text1-5, #666666);
     
     
-    --tree-node-disabled-background: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --tree-node-disabled-background: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --tree-fold-icon-content: var(--icon-content-angle-down, "");
@@ -4162,7 +4162,7 @@
     --card-border-style: var(--line-solid, solid);
     
     
-    --card-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --card-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --card-background: var(--color-fill1-1, #0d0d0d);
@@ -4282,7 +4282,7 @@
     --switch-disabled-on-color-font: var(--color-text1-5, #666666);
     
     
-    --switch-disabled-on-border-color: var(--color-line1-3, #577899);
+    --switch-disabled-on-border-color: var(--color-line1-3, rgba(255, 255, 255, 0.12));
     
     
     --switch-handle-on-border-color: var(--color-transparent, transparent);
@@ -4330,7 +4330,7 @@
     --switch-off-shadow: var(--shadow-zero, none);
     
     
-    --switch-rtl-on-shadow: var(--shadow-1-left, 0px 0px 4px 0px rgba(0, 0, 0, 0.92));
+    --switch-rtl-on-shadow: var(--shadow-1-left, 0px 0px 2px 0px rgba(0, 0, 0, 0.92));
     
     
     /* ------------------------ typography ------------------------ */
@@ -4357,7 +4357,7 @@
     --typography-text-code-background: var(--color-fill1-3, #242425);
     
     
-    --typography-text-code-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --typography-text-code-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --typography-paragraph-font-size: var(--font-size-body-1, 12px);
@@ -4393,7 +4393,7 @@
     --btn-shadow: var(--shadow-zero, none);
     
     
-    --btn-shadow-hover: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.84));
+    --btn-shadow-hover: var(--shadow-2, 0px 2px 4px 0px rgba(0, 0, 0, 0.84));
     
     
     --btn-size-s-height: var(--s-6, 24px);
@@ -4474,7 +4474,7 @@
     --btn-pure-bg-disabled: var(--color-white, #FFFFFF);
     
     
-    --btn-pure-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --btn-pure-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --btn-pure-normal-color-disabled: var(--color-text1-5, #666666);
@@ -4483,7 +4483,7 @@
     --btn-pure-normal-bg-disabled: var(--color-fill1-4, #252626);
     
     
-    --btn-pure-normal-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --btn-pure-normal-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --btn-pure-normal-color: var(--color-text1-9, #cccccc);
@@ -4495,22 +4495,22 @@
     --btn-pure-normal-color-active: var(--color-text1-9, #cccccc);
     
     
-    --btn-pure-normal-bg: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --btn-pure-normal-bg: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --btn-pure-normal-bg-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --btn-pure-normal-bg-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
-    --btn-pure-normal-bg-active: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --btn-pure-normal-bg-active: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
-    --btn-pure-normal-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --btn-pure-normal-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --btn-pure-normal-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --btn-pure-normal-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --btn-pure-normal-border-color-active: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --btn-pure-normal-border-color-active: var(--color-line1-3, rgba(255, 255, 255, 0.12));
     
     
     --btn-pure-normal-border-style: var(--line-solid, solid);
@@ -4519,7 +4519,7 @@
     --btn-pure-secondary-color-disabled: var(--color-text1-5, #666666);
     
     
-    --btn-pure-secondary-bg-disabled: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --btn-pure-secondary-bg-disabled: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --btn-pure-secondary-border-color-disabled: var(--color-transparent, transparent);
@@ -4534,13 +4534,13 @@
     --btn-pure-secondary-color-active: var(--color-text1-9, #cccccc);
     
     
-    --btn-pure-secondary-bg: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --btn-pure-secondary-bg: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --btn-pure-secondary-bg-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --btn-pure-secondary-bg-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
-    --btn-pure-secondary-bg-active: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --btn-pure-secondary-bg-active: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     --btn-pure-secondary-border-color: var(--color-transparent, transparent);
@@ -4708,7 +4708,7 @@
     --btn-warning-primary-color-disabled: var(--color-text1-5, #666666);
     
     
-    --btn-warning-primary-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --btn-warning-primary-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --btn-warning-primary-bg-disabled: var(--color-fill1-4, #252626);
@@ -4732,19 +4732,19 @@
     --btn-warning-normal-border-color-active: var(--color-error-7, #C80000);
     
     
-    --btn-warning-normal-bg: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --btn-warning-normal-bg: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --btn-warning-normal-bg-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --btn-warning-normal-bg-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
-    --btn-warning-normal-bg-active: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --btn-warning-normal-bg-active: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     --btn-warning-normal-color-disabled: var(--color-error-7, #C80000);
     
     
-    --btn-warning-normal-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --btn-warning-normal-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --btn-warning-normal-bg-disabled: var(--color-fill1-4, #252626);
@@ -4909,13 +4909,13 @@
     --tag-closable-normal-bg-hover: var(--color-fill1-3, #242425);
     
     
-    --tag-closable-normal-bg-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --tag-closable-normal-bg-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --tag-closable-bordered-text-color: var(--color-text1-9, #cccccc);
     
     
-    --tag-closable-bordered-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-closable-bordered-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-closable-bordered-bg: var(--color-fill1-1, #0d0d0d);
@@ -4924,7 +4924,7 @@
     --tag-closable-bordered-text-color-hover: var(--color-fill1-5, #0064C8);
     
     
-    --tag-closable-bordered-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-closable-bordered-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-closable-bordered-bg-hover: var(--color-fill1-3, #242425);
@@ -4939,7 +4939,7 @@
     --tag-closable-bordered-tail-color-disabled: var(--color-text1-5, #666666);
     
     
-    --tag-closable-bordered-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-closable-bordered-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-closable-bordered-text-color-disabled: var(--color-text1-5, #666666);
@@ -4951,16 +4951,16 @@
     --tag-fill-tail-color: var(--color-text1-9, #cccccc);
     
     
-    --tag-fill-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-fill-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --tag-fill-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-fill-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-fill-text-color-disabled: var(--color-text1-5, #666666);
     
     
-    --tag-fill-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-fill-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-fill-bg-color-disabled: var(--color-fill1-3, #242425);
@@ -4999,7 +4999,7 @@
     --tag-bordered-text-color-disabled: var(--color-text1-5, #666666);
     
     
-    --tag-bordered-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-bordered-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-bordered-bg-disabled: var(--color-fill1-2, #181919);
@@ -5008,7 +5008,7 @@
     --tag-secondary-text-color-hover: var(--color-fill1-5, #0064C8);
     
     
-    --tag-bordered-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --tag-bordered-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --tag-secondary-border-color: var(--color-fill1-5, #0064C8);
@@ -5020,10 +5020,10 @@
     --tag-checkable-secondary-bg-selected: var(--color-brand1-6, #7aa9d7);
     
     
-    --tag-bordered-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-bordered-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --tag-secondary-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-secondary-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-checkable-normal-bg-selected-hover: var(--color-fill1-5, #0064C8);
@@ -5032,22 +5032,22 @@
     --tag-checkable-secondary-bg-selected-hover: var(--color-brand1-9, #004b96);
     
     
-    --tag-fill-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --tag-fill-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --tag-primary-background-color: var(--color-brand1-6, #7aa9d7);
     
     
-    --tag-bordered-bg: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --tag-bordered-bg: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --tag-secondary-bg: var(--color-fill1-1, #0d0d0d);
     
     
-    --tag-fill-bg-color-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --tag-fill-bg-color-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
-    --tag-bordered-bg-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --tag-bordered-bg-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --tag-secondary-bg-hover: var(--color-fill1-3, #242425);
@@ -5056,25 +5056,25 @@
     --tag-text-color-disabled: var(--color-text1-1, #191919);
     
     
-    --tag-border-color-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --tag-border-color-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --tag-checkable-fill-text-color: var(--color-text1-9, #cccccc);
     
     
-    --tag-checkable-fill-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --tag-checkable-fill-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --tag-checkable-fill-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --tag-checkable-fill-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --tag-checkable-fill-text-color-hover: var(--color-text1-10, #e6e6e6);
     
     
-    --tag-checkable-fill-bg-color-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --tag-checkable-fill-bg-color-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
-    --tag-checkable-fill-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-checkable-fill-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-checkable-fill-tail-color: var(--color-text1-3, #666666);
@@ -5089,7 +5089,7 @@
     --tag-checkable-fill-text-color-disabled: var(--color-text1-5, #666666);
     
     
-    --tag-checkable-fill-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-checkable-fill-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-checkable-fill-bg-color-disabled: var(--color-fill1-3, #242425);
@@ -5098,7 +5098,7 @@
     --tag-checkable-normal-text-color: var(--color-text1-9, #cccccc);
     
     
-    --tag-checkable-normal-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-checkable-normal-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-checkable-normal-bg: var(--color-fill1-1, #0d0d0d);
@@ -5116,22 +5116,22 @@
     --tag-checkable-normal-text-selected-disabled: var(--color-text1-5, #666666);
     
     
-    --tag-checkable-normal-border-selected-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-checkable-normal-border-selected-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-checkable-normal-bg-selected-disabled: var(--color-fill1-3, #242425);
     
     
-    --tag-checkable-normal-tick-bg-selected-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --tag-checkable-normal-tick-bg-selected-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --tag-checkable-primary-text-color: var(--color-brand1-10, #0064c8);
     
     
-    --tag-checkable-primary-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --tag-checkable-primary-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --tag-checkable-primary-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --tag-checkable-primary-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --tag-checkable-primary-text-color-disabled: var(--color-text1-5, #666666);
@@ -5140,13 +5140,13 @@
     --tag-checkable-primary-text-color-hover: var(--color-brand1-7, #0080ff);
     
     
-    --tag-checkable-primary-bg-color-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --tag-checkable-primary-bg-color-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
-    --tag-checkable-primary-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-checkable-primary-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --tag-checkable-primary-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-checkable-primary-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-checkable-primary-bg-color-disabled: var(--color-fill1-3, #242425);
@@ -5158,7 +5158,7 @@
     --tag-checkable-primary-tail-color-hover: var(--color-white, #FFFFFF);
     
     
-    --tag-checkable-secondary-bg-selected-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --tag-checkable-secondary-bg-selected-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --tag-checkable-normal-icon-color-selected: var(--color-white, #FFFFFF);
@@ -5182,25 +5182,25 @@
     --tag-closable-primary-fill-text-color: var(--color-text1-9, #cccccc);
     
     
-    --tag-closable-primary-fill-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --tag-closable-primary-fill-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --tag-closable-primary-fill-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --tag-closable-primary-fill-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --tag-closable-primary-fill-text-color-hover: var(--color-text1-10, #e6e6e6);
     
     
-    --tag-closable-primary-fill-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-closable-primary-fill-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --tag-closable-primary-fill-bg-color-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --tag-closable-primary-fill-bg-color-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-5, #666666);
     
     
-    --tag-closable-primary-fill-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tag-closable-primary-fill-border-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tag-closable-primary-fill-bg-color-disabled: var(--color-fill1-3, #242425);
@@ -5212,22 +5212,22 @@
     --input-text-color: var(--color-text1-9, #cccccc);
     
     
-    --input-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --input-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --input-label-color: var(--color-text1-7, #999999);
     
     
-    --input-hover-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --input-hover-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --input-hover-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --input-hover-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --input-focus-border-color: var(--color-brand1-10, #0064c8);
     
     
-    --input-focus-bg-color: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --input-focus-bg-color: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     --input-focus-shadow-spread: var(--line-zero, 0px);
@@ -5236,7 +5236,7 @@
     --input-border-width: var(--line-1, 1px);
     
     
-    --input-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --input-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --input-placeholder-color: var(--color-text1-7, #999999);
@@ -5245,7 +5245,7 @@
     --input-disabled-color: var(--color-text1-5, #666666);
     
     
-    --input-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --input-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --input-disabled-bg-color: var(--color-fill1-3, #242425);
@@ -5476,13 +5476,13 @@
     --table-group-split: var(--s-2, 8px);
     
     
-    --table-normal-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --table-normal-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --table-normal-border-style: var(--line-solid, solid);
     
     
-    --table-th-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --table-th-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     --table-th-color: var(--color-text1-10, #e6e6e6);
@@ -5491,7 +5491,7 @@
     --table-sort-color: var(--color-text1-10, #e6e6e6);
     
     
-    --table-group-th-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --table-group-th-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     --table-group-th-color: var(--color-text1-10, #e6e6e6);
@@ -5512,13 +5512,13 @@
     --table-empty-color: var(--color-text1-5, #666666);
     
     
-    --table-group-footer-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --table-group-footer-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     --table-group-footer-color: var(--color-text1-7, #999999);
     
     
-    --table-row-hover-bg: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --table-row-hover-bg: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --table-row-hover-color: var(--color-text1-10, #e6e6e6);
@@ -5554,7 +5554,7 @@
     --upload-disable-text-color: var(--color-text1-5, #666666);
     
     
-    --upload-disable-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --upload-disable-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --upload-text-list-height: var(--s-11, 44px);
@@ -5653,16 +5653,16 @@
     --upload-image-list-close-icon-color-hover: var(--color-text1-9, #cccccc);
     
     
-    --upload-image-list-item-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --upload-image-list-item-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --upload-image-list-item-border-color-error: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --upload-image-list-item-border-color-error: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --upload-image-list-item-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --upload-image-list-item-border-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --upload-image-list-item-picture-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --upload-image-list-item-picture-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --upload-image-list-item-picture-background-color: var(--color-fill1-1, #0d0d0d);
@@ -5692,7 +5692,7 @@
     --upload-card-border-style: var(--line-dashed, dashed);
     
     
-    --upload-card-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --upload-card-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --upload-card-hover-border-color: var(--color-fill1-5, #0064C8);
@@ -5728,7 +5728,7 @@
     --upload-card-list-corner: var(--corner-zero, 0);
     
     
-    --upload-card-list-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --upload-card-list-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --upload-card-list-border-color-error: var(--color-error-7, #C80000);
@@ -5761,7 +5761,7 @@
     --upload-select-card-tool-bg-opacity: .7;
     
     
-    --upload-drag-zone-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --upload-drag-zone-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --upload-drag-zone-over-border-color: var(--color-fill1-5, #0064C8);
@@ -5899,13 +5899,13 @@
     --balloon-corner: var(--corner-1, 2px);
     
     
-    --balloon-normal-color-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --balloon-normal-color-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
-    --balloon-normal-color-border: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --balloon-normal-color-border: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --balloon-normal-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.84));
+    --balloon-normal-shadow: var(--shadow-2, 0px 2px 4px 0px rgba(0, 0, 0, 0.84));
     
     
     --balloon-normal-color: var(--color-text1-9, #cccccc);
@@ -5917,13 +5917,13 @@
     --balloon-normal-color-close-hover: var(--color-text1-9, #cccccc);
     
     
-    --balloon-primary-color-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --balloon-primary-color-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
-    --balloon-primary-color-border: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --balloon-primary-color-border: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --balloon-primary-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.84));
+    --balloon-primary-shadow: var(--shadow-2, 0px 2px 4px 0px rgba(0, 0, 0, 0.84));
     
     
     --balloon-primary-color: var(--color-text1-9, #cccccc);
@@ -5935,13 +5935,13 @@
     --balloon-primary-color-close-hover: var(--color-text1-9, #cccccc);
     
     
-    --balloon-tooltip-color-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --balloon-tooltip-color-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     --balloon-tooltip-shadow: var(--shadow-3, 0px 8px 16px 0px rgba(0, 0, 0, 0.84));
     
     
-    --balloon-tooltip-color-border: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --balloon-tooltip-color-border: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --balloon-tooltip-border-style: var(--line-solid, solid);
@@ -6019,13 +6019,13 @@
     --drawer-close-size: var(--icon-xs, 12px);
     
     
-    --drawer-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --drawer-bg: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     --drawer-border-width: var(--line-1, 1px);
     
     
-    --drawer-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --drawer-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --drawer-border-style: var(--line-solid, solid);
@@ -6040,10 +6040,10 @@
     --drawer-title-color: var(--color-text1-9, #cccccc);
     
     
-    --drawer-title-bg-color: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --drawer-title-bg-color: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
-    --drawer-title-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --drawer-title-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --drawer-content-color: var(--color-text1-9, #cccccc);
@@ -6055,7 +6055,7 @@
     --drawer-close-color-hovered: var(--color-text1-9, #cccccc);
     
     
-    --drawer-close-bg-hovered: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --drawer-close-bg-hovered: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     /* ------------------------ message ------------------------ */
@@ -6151,13 +6151,13 @@
     --message-success-color-bg-addon: var(--color-transparent, transparent);
     
     
-    --message-success-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --message-success-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --message-success-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-success-color-border-toast: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --message-success-color-border-toast: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --message-success-color-title-inline: var(--color-text1-10, #e6e6e6);
@@ -6193,13 +6193,13 @@
     --message-error-color-bg-addon: var(--color-transparent, transparent);
     
     
-    --message-error-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --message-error-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --message-error-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-error-color-border-toast: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --message-error-color-border-toast: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --message-error-color-title-inline: var(--color-text1-10, #e6e6e6);
@@ -6235,13 +6235,13 @@
     --message-warning-color-bg-addon: var(--color-transparent, transparent);
     
     
-    --message-warning-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --message-warning-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --message-warning-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-warning-color-border-toast: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --message-warning-color-border-toast: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --message-warning-color-title-inline: var(--color-text1-10, #e6e6e6);
@@ -6277,13 +6277,13 @@
     --message-notice-color-bg-addon: var(--color-transparent, transparent);
     
     
-    --message-notice-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --message-notice-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --message-notice-color-border-inline: var(--color-transparent, transparent);
     
     
-    --message-notice-color-border-toast: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --message-notice-color-border-toast: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --message-notice-color-title-inline: var(--color-text1-10, #e6e6e6);
@@ -6313,19 +6313,19 @@
     --message-notice-color-icon-toast: var(--color-notice-3, #0070CC);
     
     
-    --message-help-color-bg-inline: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --message-help-color-bg-inline: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --message-help-color-bg-addon: var(--color-transparent, transparent);
     
     
-    --message-help-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --message-help-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --message-help-color-border-inline: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --message-help-color-border-inline: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --message-help-color-border-toast: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --message-help-color-border-toast: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --message-help-color-title-inline: var(--color-text1-10, #e6e6e6);
@@ -6355,19 +6355,19 @@
     --message-help-color-icon-toast: var(--color-text1-10, #e6e6e6);
     
     
-    --message-loading-color-bg-inline: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --message-loading-color-bg-inline: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --message-loading-color-bg-addon: var(--color-transparent, transparent);
     
     
-    --message-loading-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --message-loading-color-bg-toast: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --message-loading-color-border-inline: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --message-loading-color-border-inline: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --message-loading-color-border-toast: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --message-loading-color-border-toast: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --message-loading-color-title-inline: var(--color-text1-10, #e6e6e6);
@@ -6493,7 +6493,7 @@
     --dialog-bg: var(--color-fill1-1, #0d0d0d);
     
     
-    --dialog-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --dialog-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --dialog-border-style: var(--line-solid, solid);
@@ -6511,7 +6511,7 @@
     --dialog-title-bg-color: var(--color-transparent, transparent);
     
     
-    --dialog-title-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --dialog-title-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --dialog-content-color: var(--color-text1-9, #cccccc);
@@ -6640,7 +6640,7 @@
     --progress-line-underlay-color: var(--color-fill1-3, #242425);
     
     
-    --progress-line-underlay-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --progress-line-underlay-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --progress-line-radius-l: var(--corner-1, 2px);
@@ -6697,7 +6697,7 @@
     --progress-circle-font-s: var(--font-size-body-2, 14px);
     
     
-    --progress-circle-underlay-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --progress-circle-underlay-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --progress-circle-text-color: var(--color-text1-9, #cccccc);
@@ -6736,7 +6736,7 @@
     --shell-light-header-background: var(--color-transparent, transparent);
     
     
-    --shell-light-header-shadow: var(--shadow-1, 0px 2px 4px 0px rgba(0, 0, 0, 0.92));
+    --shell-light-header-shadow: var(--shadow-1, 0px 1px 2px 0px rgba(0, 0, 0, 0.92));
     
     
     --shell-light-header-divider-size: var(--line-1, 1px);
@@ -6745,7 +6745,7 @@
     --shell-light-header-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-header-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-light-header-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-light-header-paddingLeft: var(--s-4, 16px);
@@ -6766,7 +6766,7 @@
     --shell-light-multitask-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-multitask-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-light-multitask-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-light-multitask-paddingLeft: var(--s-zero, 0px);
@@ -6778,7 +6778,7 @@
     --shell-light-navigation-ver-width: var(--s-42, 168px);
     
     
-    --shell-light-navigation-ver-shadow: var(--shadow-1-right, 0px 0px 4px 0px rgba(0, 0, 0, 0.92));
+    --shell-light-navigation-ver-shadow: var(--shadow-1-right, 0px 0px 2px 0px rgba(0, 0, 0, 0.92));
     
     
     --shell-light-navigation-ver-paddingTop: var(--s-2, 8px);
@@ -6790,7 +6790,7 @@
     --shell-light-navigation-ver-width-mini: var(--s-15, 60px);
     
     
-    --shell-light-navigation-ver-background: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --shell-light-navigation-ver-background: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --shell-light-navigation-ver-divider-size: var(--line-1, 1px);
@@ -6799,13 +6799,13 @@
     --shell-light-navigation-ver-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-navigation-ver-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-light-navigation-ver-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-light-local-navigation-width: var(--s-42, 168px);
     
     
-    --shell-light-local-navigation-background: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --shell-light-local-navigation-background: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --shell-light-local-navigation-paddingTop: var(--s-2, 8px);
@@ -6814,7 +6814,7 @@
     --shell-light-local-navigation-paddingBottom: var(--s-2, 8px);
     
     
-    --shell-light-local-navigation-shadow: var(--shadow-1-right, 0px 0px 4px 0px rgba(0, 0, 0, 0.92));
+    --shell-light-local-navigation-shadow: var(--shadow-1-right, 0px 0px 2px 0px rgba(0, 0, 0, 0.92));
     
     
     --shell-light-local-navigation-divider-size: var(--line-1, 1px);
@@ -6823,7 +6823,7 @@
     --shell-light-local-navigation-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-local-navigation-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-light-local-navigation-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-light-appbar-background: var(--color-transparent, transparent);
@@ -6844,7 +6844,7 @@
     --shell-light-appbar-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-appbar-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-light-appbar-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-light-content-background: var(--color-transparent, transparent);
@@ -6889,7 +6889,7 @@
     --shell-light-ancillary-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-ancillary-divider-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --shell-light-ancillary-divider-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --shell-light-tooldock-height: var(--s-13, 52px);
@@ -6916,7 +6916,7 @@
     --shell-light-tooldock-divider-style: var(--line-solid, solid);
     
     
-    --shell-light-tooldock-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-light-tooldock-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-light-tooldock-item-paddingTop: var(--s-2, 8px);
@@ -6949,7 +6949,7 @@
     --shell-dark-header-background: var(--color-black, #000000);
     
     
-    --shell-dark-header-shadow: var(--shadow-1-down, 0px 2px 4px 0px rgba(0, 0, 0, 0.92));
+    --shell-dark-header-shadow: var(--shadow-1-down, 0px 1px 2px 0px rgba(0, 0, 0, 0.92));
     
     
     --shell-dark-header-divider-size: var(--line-1, 1px);
@@ -6979,7 +6979,7 @@
     --shell-dark-multitask-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-multitask-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-dark-multitask-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-dark-multitask-paddingLeft: var(--s-zero, 0px);
@@ -7012,7 +7012,7 @@
     --shell-dark-navigation-ver-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-navigation-ver-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-dark-navigation-ver-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-dark-local-navigation-width: var(--s-42, 168px);
@@ -7036,7 +7036,7 @@
     --shell-dark-local-navigation-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-local-navigation-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-dark-local-navigation-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-dark-appbar-background: var(--color-white, #FFFFFF);
@@ -7057,7 +7057,7 @@
     --shell-dark-appbar-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-appbar-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-dark-appbar-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-dark-content-background: var(--color-fill1-3, #242425);
@@ -7102,7 +7102,7 @@
     --shell-dark-ancillary-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-ancillary-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-dark-ancillary-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-dark-tooldock-height: var(--s-13, 52px);
@@ -7129,7 +7129,7 @@
     --shell-dark-tooldock-divider-style: var(--line-solid, solid);
     
     
-    --shell-dark-tooldock-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-dark-tooldock-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-dark-tooldock-item-paddingTop: var(--s-2, 8px);
@@ -7162,7 +7162,7 @@
     --shell-brand-header-background: var(--color-fill1-1, #0d0d0d);
     
     
-    --shell-brand-header-shadow: var(--shadow-1-down, 0px 2px 4px 0px rgba(0, 0, 0, 0.92));
+    --shell-brand-header-shadow: var(--shadow-1-down, 0px 1px 2px 0px rgba(0, 0, 0, 0.92));
     
     
     --shell-brand-header-divider-size: var(--line-1, 1px);
@@ -7171,7 +7171,7 @@
     --shell-brand-header-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-header-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-brand-header-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-brand-header-paddingLeft: var(--s-4, 16px);
@@ -7192,7 +7192,7 @@
     --shell-brand-multitask-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-multitask-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-brand-multitask-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-brand-multitask-paddingLeft: var(--s-zero, 0px);
@@ -7225,7 +7225,7 @@
     --shell-brand-navigation-ver-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-navigation-ver-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-brand-navigation-ver-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-brand-local-navigation-width: var(--s-42, 168px);
@@ -7249,7 +7249,7 @@
     --shell-brand-local-navigation-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-local-navigation-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-brand-local-navigation-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-brand-appbar-background: var(--color-white, #FFFFFF);
@@ -7270,7 +7270,7 @@
     --shell-brand-appbar-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-appbar-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-brand-appbar-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-brand-content-background: var(--color-fill1-3, #242425);
@@ -7315,7 +7315,7 @@
     --shell-brand-ancillary-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-ancillary-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-brand-ancillary-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-brand-tooldock-height: var(--s-13, 52px);
@@ -7342,7 +7342,7 @@
     --shell-brand-tooldock-divider-style: var(--line-solid, solid);
     
     
-    --shell-brand-tooldock-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --shell-brand-tooldock-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --shell-brand-tooldock-item-paddingTop: var(--s-2, 8px);
@@ -7372,7 +7372,7 @@
     --divider-hoz-size: var(--line-1, 1px);
     
     
-    --divider-hoz-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --divider-hoz-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --divider-hoz-text-center-paddingLeft: var(--s-4, 16px);
@@ -7399,7 +7399,7 @@
     --divider-ver-size: var(--line-1, 1px);
     
     
-    --divider-ver-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --divider-ver-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --divider-ver-marginLeft: var(--s-2, 8px);
@@ -7414,13 +7414,13 @@
     --collapse-border-corner: var(--corner-1, 2px);
     
     
-    --collapse-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --collapse-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --collapse-panel-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --collapse-panel-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --collapse-disabled-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --collapse-disabled-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --collapse-title-border-width: var(--line-2, 2px);
@@ -7429,13 +7429,13 @@
     --collapse-title-height: var(--s-6, 24px);
     
     
-    --collapse-title-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --collapse-title-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --collapse-title-hover-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --collapse-title-hover-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
-    --collapse-title-disabled-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --collapse-title-disabled-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --collapse-title-font-color: var(--color-text1-9, #cccccc);
@@ -7474,7 +7474,7 @@
     --collapse-icon-margin-l: var(--s-4, 16px);
     
     
-    --collapse-content-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --collapse-content-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --collapse-content-padding-x: var(--s-4, 16px);
@@ -7729,13 +7729,13 @@
     --transfer-simple-move-icon-color: var(--color-text1-9, #cccccc);
     
     
-    --transfer-panel-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --transfer-panel-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --transfer-panel-border-corner: var(--corner-1, 2px);
     
     
-    --transfer-panel-background-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --transfer-panel-background-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --transfer-panel-header-text-color: var(--color-text1-10, #e6e6e6);
@@ -7798,40 +7798,40 @@
     --radio-radius-size: var(--corner-circle, 50%);
     
     
-    --radio-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --radio-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --radio-hovered-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --radio-hovered-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
-    --radio-checked-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --radio-checked-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --radio-disabled-bg-color: var(--color-fill1-3, #242425);
     
     
-    --radio-checked-hovered-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --radio-checked-hovered-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --radio-checked-disabled-bg-color: var(--color-fill1-3, #242425);
     
     
-    --radio-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --radio-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --radio-hovered-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --radio-hovered-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --radio-checked-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --radio-checked-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --radio-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --radio-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --radio-checked-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --radio-checked-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --radio-checked-hovered-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --radio-checked-hovered-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --radio-checked-circle-color: var(--color-fill1-5, #0064C8);
@@ -7888,34 +7888,34 @@
     --radio-button-font-size-small: var(--font-size-caption, 12px);
     
     
-    --radio-button-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --radio-button-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --radio-button-bg-color-hovered: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --radio-button-bg-color-hovered: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
-    --radio-button-bg-color-checked: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --radio-button-bg-color-checked: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
-    --radio-button-bg-color-disabled: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --radio-button-bg-color-disabled: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --radio-button-bg-color-checked-disabled: var(--color-fill1-4, #252626);
     
     
-    --radio-button-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --radio-button-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --radio-button-border-color-hovered: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --radio-button-border-color-hovered: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --radio-button-border-color-checked: var(--color-brand1-7, #0080ff);
     
     
-    --radio-button-border-color-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --radio-button-border-color-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
-    --radio-button-border-color-checked-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --radio-button-border-color-checked-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --radio-button-font-color: var(--color-text1-9, #cccccc);
@@ -7957,13 +7957,13 @@
     --time-picker-menu-item-height: var(--s-8, 32px);
     
     
-    --time-picker-menu-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --time-picker-menu-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --time-picker-menu-title-color: var(--color-text1-9, #cccccc);
     
     
-    --time-picker-menu-title-background: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --time-picker-menu-title-background: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --time-pikcer-menu-title-font-weight: var(--font-weight-2, normal);
@@ -7981,10 +7981,10 @@
     --time-picker-menu-item-color-disabled: var(--color-text1-5, #666666);
     
     
-    --time-picker-menu-item-background: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --time-picker-menu-item-background: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --time-picker-menu-item-background-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --time-picker-menu-item-background-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --time-picker-menu-item-background-selected: var(--color-fill1-5, #0064C8);
@@ -8251,10 +8251,10 @@
     --step-circle-item-node-disabled-size: var(--s-8, 32px);
     
     
-    --step-circle-item-tail-wait-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --step-circle-item-tail-wait-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --step-circle-item-tail-process-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --step-circle-item-tail-process-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --step-circle-item-tail-finish-color: var(--color-fill1-5, #0064C8);
@@ -8287,10 +8287,10 @@
     --step-circle-item-title-disabled-color: var(--color-text1-5, #666666);
     
     
-    --step-circle-item-node-wait-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --step-circle-item-node-wait-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --step-circle-item-node-wait-background: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --step-circle-item-node-wait-background: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --step-circle-item-node-wait-color: var(--color-text1-10, #e6e6e6);
@@ -8314,13 +8314,13 @@
     --step-circle-item-node-finish-border-color: var(--color-brand1-10, #0064c8);
     
     
-    --step-circle-item-node-finish-background: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --step-circle-item-node-finish-background: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
     --step-circle-item-node-finish-color: var(--color-fill1-5, #0064C8);
     
     
-    --step-circle-item-node-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --step-circle-item-node-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --step-circle-item-node-disabled-background: var(--color-fill1-3, #242425);
@@ -8392,16 +8392,16 @@
     --step-dot-item-dot-disabled-size: var(--s-3, 12px);
     
     
-    --step-dot-item-tail-wait-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --step-dot-item-tail-wait-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --step-dot-item-tail-process-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --step-dot-item-tail-process-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --step-dot-item-tail-finish-color: var(--color-fill1-5, #0064C8);
     
     
-    --step-dot-item-tail-disabled-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --step-dot-item-tail-disabled-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --step-dot-item-title-wait-color: var(--color-text1-9, #cccccc);
@@ -8416,7 +8416,7 @@
     --step-dot-item-title-disabled-color: var(--color-text1-5, #666666);
     
     
-    --step-dot-item-node-wait-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --step-dot-item-node-wait-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --step-dot-item-node-wait-background: var(--color-fill1-4, #252626);
@@ -8443,7 +8443,7 @@
     --step-dot-item-node-finish-color: var(--color-fill1-5, #0064C8);
     
     
-    --step-dot-item-node-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --step-dot-item-node-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --step-dot-item-node-disabled-background: var(--color-fill1-3, #242425);
@@ -8536,7 +8536,7 @@
     --menu-icon-margin: var(--s-1, 4px);
     
     
-    --menu-shadow: var(--shadow-1-down, 0px 2px 4px 0px rgba(0, 0, 0, 0.92));
+    --menu-shadow: var(--shadow-1-down, 0px 1px 2px 0px rgba(0, 0, 0, 0.92));
     
     
     --menu-color: var(--color-text1-9, #cccccc);
@@ -8545,7 +8545,7 @@
     --menu-divider-style: var(--line-solid, solid);
     
     
-    --menu-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --menu-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --menu-background: var(--color-brand2-1, #161616);
@@ -8554,7 +8554,7 @@
     --menu-arrow-color: var(--color-text1-9, #cccccc);
     
     
-    --menu-background-selected: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --menu-background-selected: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     --menu-color-selected: var(--color-text1-9, #cccccc);
@@ -8563,7 +8563,7 @@
     --menu-icon-selected-color: var(--color-text1-9, #cccccc);
     
     
-    --menu-background-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --menu-background-hover: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --menu-color-hover: var(--color-text1-9, #cccccc);
@@ -8671,7 +8671,7 @@
     --nav-primary-border-width: var(--line-zero, 0px);
     
     
-    --nav-primary-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --nav-primary-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --nav-primary-text-color: var(--color-text1-9, #cccccc);
@@ -8680,7 +8680,7 @@
     --nav-primary-text-style: var(--font-weight-2, normal);
     
     
-    --nav-primary-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.84));
+    --nav-primary-shadow: var(--shadow-2, 0px 2px 4px 0px rgba(0, 0, 0, 0.84));
     
     
     --nav-primary-sub-nav-bg-color: var(--color-fill1-1, #0d0d0d);
@@ -8749,7 +8749,7 @@
     --nav-secondary-border-width: var(--line-zero, 0px);
     
     
-    --nav-secondary-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --nav-secondary-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --nav-secondary-text-color: var(--color-text1-9, #cccccc);
@@ -8758,7 +8758,7 @@
     --nav-secondary-text-style: var(--font-weight-2, normal);
     
     
-    --nav-secondary-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.84));
+    --nav-secondary-shadow: var(--shadow-2, 0px 2px 4px 0px rgba(0, 0, 0, 0.84));
     
     
     --nav-secondary-sub-nav-bg-color: var(--color-fill1-1, #0d0d0d);
@@ -8821,10 +8821,10 @@
     --nav-secondary-item-opened-text-color: var(--color-white, #FFFFFF);
     
     
-    --nav-normal-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.02));
+    --nav-normal-bg-color: var(--color-brand1-1, rgba(255, 255, 255, 0.04));
     
     
-    --nav-normal-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --nav-normal-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --nav-normal-text-color: var(--color-text1-9, #cccccc);
@@ -8836,7 +8836,7 @@
     --nav-normal-border-line: var(--line-1, 1px);
     
     
-    --nav-normal-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.84));
+    --nav-normal-shadow: var(--shadow-2, 0px 2px 4px 0px rgba(0, 0, 0, 0.84));
     
     
     --nav-normal-sub-nav-bg-color: var(--color-fill1-1, #0d0d0d);
@@ -8854,7 +8854,7 @@
     --nav-normal-group-text-style: var(--font-weight-2, normal);
     
     
-    --nav-normal-item-hover-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --nav-normal-item-hover-bg-color: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --nav-normal-item-hover-text-color: var(--color-text1-10, #e6e6e6);
@@ -8872,7 +8872,7 @@
     --nav-normal-sub-nav-hover-text-color: var(--color-fill1-5, #0064C8);
     
     
-    --nav-normal-item-selected-bg-color: var(--color-brand1-3, rgba(255, 255, 255, 0.04));
+    --nav-normal-item-selected-bg-color: var(--color-brand1-3, rgba(255, 255, 255, 0.08));
     
     
     --nav-normal-item-selected-text-color: var(--color-brand1-7, #0080ff);
@@ -8902,7 +8902,7 @@
     --nav-line-bg-color: var(--color-transparent, transparent);
     
     
-    --nav-line-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --nav-line-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --nav-line-text-color: var(--color-text1-9, #cccccc);
@@ -9037,7 +9037,7 @@
     --list-size-m-item-title-font-weight: var(--font-weight-2, normal);
     
     
-    --list-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --list-divider-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --list-title-color: var(--color-text1-10, #e6e6e6);
@@ -9127,7 +9127,7 @@
     --tab-close-icon-color-selected: var(--color-brand1-6, #7aa9d7);
     
     
-    --tab-close-icon-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tab-close-icon-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tab-item-font-weight-selected: var(--font-weight-semi-bold, 600);
@@ -9160,13 +9160,13 @@
     --tab-pure-text-color-selected: var(--color-fill1-5, #0064C8);
     
     
-    --tab-pure-text-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tab-pure-text-color-disabled: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tab-pure-ink-bar-color: var(--color-fill1-5, #0064C8);
     
     
-    --tab-pure-divider-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tab-pure-divider-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tab-pure-divider-shadow: var(--shadow-zero, none);
@@ -9202,7 +9202,7 @@
     --tab-wrapped-nav-item-border-color-active: var(--color-brand1-6, #7aa9d7);
     
     
-    --tab-wrapped-border-line-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tab-wrapped-border-line-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tab-wrapped-content-border-line-width: var(--line-1, 1px);
@@ -9211,7 +9211,7 @@
     --tab-wrapped-content-border-line-style: var(--line-solid, solid);
     
     
-    --tab-wrapped-content-border-line-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tab-wrapped-content-border-line-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tab-wrapped-text-color: var(--color-text1-9, #cccccc);
@@ -9226,7 +9226,7 @@
     --tab-wrapped-bg-color-hover: var(--color-fill1-3, #242425);
     
     
-    --tab-wrapped-border-line-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tab-wrapped-border-line-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tab-wrapped-text-color-selected: var(--color-fill1-5, #0064C8);
@@ -9265,16 +9265,16 @@
     --tab-capsule-bg-color-disabled: var(--color-fill1-1, #0d0d0d);
     
     
-    --tab-capsule-tab-border-line-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tab-capsule-tab-border-line-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --tab-capsule-tab-border-line-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tab-capsule-tab-border-line-color-hover: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --tab-capsule-tab-border-line-color-active: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tab-capsule-tab-border-line-color-active: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
-    --tab-capsule-tab-border-line-color-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --tab-capsule-tab-border-line-color-disabled: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --tab-capsule-corner-radius: var(--corner-1, 2px);
@@ -9292,7 +9292,7 @@
     --tab-text-item-sep-height: var(--s-3, 12px);
     
     
-    --tab-text-item-sep-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --tab-text-item-sep-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --tab-text-text-color-normal: var(--color-text1-9, #cccccc);
@@ -9364,7 +9364,7 @@
     --calendar-fullscreen-table-cell-normal-color: var(--color-text1-9, #cccccc);
     
     
-    --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --calendar-fullscreen-table-cell-hover-background: var(--color-fill1-1, #0d0d0d);
@@ -9373,7 +9373,7 @@
     --calendar-fullscreen-table-cell-hover-color: var(--color-text1-9, #cccccc);
     
     
-    --calendar-fullscreen-table-cell-hover-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --calendar-fullscreen-table-cell-hover-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --calendar-fullscreen-table-cell-select-background: var(--color-fill1-1, #0d0d0d);
@@ -9382,7 +9382,7 @@
     --calendar-fullscreen-table-cell-select-color: var(--color-text1-9, #cccccc);
     
     
-    --calendar-fullscreen-table-cell-select-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --calendar-fullscreen-table-cell-select-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --calendar-fullscreen-table-cell-select-font-weight: var(--font-weight-semi-bold, 600);
@@ -9406,7 +9406,7 @@
     --calendar-fullscreen-table-cell-other-color: var(--color-text1-9, #cccccc);
     
     
-    --calendar-fullscreen-table-cell-other-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --calendar-fullscreen-table-cell-other-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --calendar-fullscreen-table-cell-disabled-background: var(--color-fill1-3, #242425);
@@ -9415,7 +9415,7 @@
     --calendar-fullscreen-table-cell-disabled-color: var(--color-text1-5, #666666);
     
     
-    --calendar-fullscreen-table-cell-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --calendar-fullscreen-table-cell-disabled-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --calendar-card-header-margin-bottom: var(--s-2, 8px);
@@ -9472,7 +9472,7 @@
     --calendar-card-table-cell-normal-border-color: var(--color-transparent, transparent);
     
     
-    --calendar-card-table-cell-hover-background: var(--color-brand1-2, rgba(255, 255, 255, 0.08));
+    --calendar-card-table-cell-hover-background: var(--color-brand1-2, rgba(255, 255, 255, 0.12));
     
     
     --calendar-card-table-cell-hover-color: var(--color-text1-10, #e6e6e6);
@@ -9508,7 +9508,7 @@
     --calendar-card-table-cell-disabled-color: var(--color-text1-5, #666666);
     
     
-    --calendar-card-table-cell-disabled-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.16));
+    --calendar-card-table-cell-disabled-border-color: var(--color-line1-1, rgba(255, 255, 255, 0.08));
     
     
     --calendar-card-table-cell-current-background: var(--color-transparent, transparent);
@@ -9643,7 +9643,7 @@
     --date-picker-panel-background: var(--color-brand2-1, #161616);
     
     
-    --date-picker-panel-time-panel-separator-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --date-picker-panel-time-panel-separator-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --date-picker-calendar-icon: var(--icon-content-expand, "");
@@ -9739,7 +9739,7 @@
     --popup-local-corner: var(--corner-1, 2px);
     
     
-    --popup-local-shadow: var(--shadow-1, 0px 2px 4px 0px rgba(0, 0, 0, 0.92));
+    --popup-local-shadow: var(--shadow-1, 0px 1px 2px 0px rgba(0, 0, 0, 0.92));
     
     
     --popup-global-border-width: var(--line-zero, 0px);
@@ -9748,13 +9748,13 @@
     --popup-global-border-style: var(--line-solid, solid);
     
     
-    --popup-global-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.24));
+    --popup-global-border-color: var(--color-line1-2, rgba(255, 255, 255, 0.16));
     
     
     --popup-global-corner: var(--corner-1, 2px);
     
     
-    --popup-global-shadow: var(--shadow-2-down, 0px 4px 8px 0px rgba(0, 0, 0, 0.84));
+    --popup-global-shadow: var(--shadow-2-down, 0px 2px 4px 0px rgba(0, 0, 0, 0.84));
     
     
     /* ------------------------ line ------------------------ */
