@@ -6,6 +6,28 @@ const themes = require('./theme-data')
 const log = console.log
 const chalk = require('chalk')
 
+const convertCharStr2CSS = ch => {
+  let code = ch.charCodeAt(0).toString(16);
+  while (code.length < 4) {
+    code = `0${code}`;
+  }
+  return `\\${code}`.toUpperCase();
+};
+
+const transferUniCodeCss = (source, theme) => {
+  if (theme !== 'wind' &&
+    !theme.startsWith('xconsole')) {
+    return source.replace(/content:\s*(?:'|")([\u0080-\uffff])(?:'|")/g, (str, $1) => {
+      return `content: "${convertCharStr2CSS($1)}"`;
+    })
+      .replace(/content:\s*var\((--[\w-]+\,\s*)(?:'|")([\u0080-\uffff])(?:'|")\)/g, (str, $1, $2) => {
+        return `content: var(${$1}"${convertCharStr2CSS($2)}")`;
+      });
+  } else {
+    return source
+  }
+}
+
 log(chalk.green('empty files...'))
 fs.emptyDirSync(path.join(__dirname, '../dist'))
 
@@ -17,7 +39,7 @@ themes.forEach(async (theme) => {
     file: path.join(__dirname, `../src/theme/${themeName}/index.scss`)
   })
   fs.ensureDirSync(path.join(__dirname, '../dist'))
-  fs.writeFileSync(path.join(__dirname, `../dist/${themeName}.css`), result.css)
+  fs.writeFileSync(path.join(__dirname, `../dist/${themeName}.css`), transferUniCodeCss(result.css.toString(), themeName))
 
   // 生成不带css var定义的css
   log(`generate ${themeName}-no-var.css...`)
@@ -36,7 +58,7 @@ themes.forEach(async (theme) => {
     })
     fs.writeFileSync(
       path.join(__dirname, `../dist/${themeName}-no-reset.css`),
-      noVarResult.css
+      transferUniCodeCss(noVarResult.css.toString(), themeName)
     )
   }
 
@@ -47,7 +69,7 @@ themes.forEach(async (theme) => {
   fs.ensureDirSync(path.join(__dirname, '../dist'))
   fs.writeFileSync(
     path.join(__dirname, `../dist/${themeName}-no-var.css`),
-    noVarCss
+    transferUniCodeCss(noVarCss.toString(), themeName)
   )
 
   // 生成压缩过的 css
@@ -86,7 +108,7 @@ themes.forEach(async (theme) => {
     .toString()
     .replace(/\/\*[.\t\n\r\S\s]*?\*\//g, '')
   log(`generate ${themeName}-var.css...`)
-  fs.writeFileSync(path.join(__dirname, `../dist/${themeName}-var.css`), varCss)
+  fs.writeFileSync(path.join(__dirname, `../dist/${themeName}-var.css`), transferUniCodeCss(varCss, themeName))
 })
 
 // 修改css选择器的postcss插件
