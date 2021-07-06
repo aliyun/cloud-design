@@ -21,6 +21,7 @@
 @import '../../table/custom.scss';
 @import '../../calendar2/main.scss';
 @import '../../card/yunxiao.scss';
+@import '../../table/yunxiao.scss';
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -29,18 +30,4 @@ body {
   background: var(--color-fill1-1);
   font-variant: tabular-nums;
   font-feature-settings: "tnum","tnum";
-}
-
-.next-table-fix-left{
-  background: var(--color-fill1-1);
-  .next-table-cell-wrapper {
-    background: var(--color-fill1-1);
-  }
-}
-
-.next-table-fix-right{
-  background: var(--color-fill1-1);
-  .next-table-cell-wrapper {
-    background: var(--color-fill1-1);
-  }
 }
