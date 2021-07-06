@@ -38,7 +38,7 @@
 | cancelBtnProps | 透传给取消按钮的Props | ButtonProps | - |
 | okBtnProps | 透传给确认按钮的Props | ButtonProps | - |
 | footerClass | 给footer添加className以自定义样式 | String | - |
-| size |快速定制抽屉大小。在size和width同时存在时游侠使用width定制大小 | mini \| small \| medium \| large | mini |
+| size |快速定制抽屉大小。在size和width同时存在时优先使用width定制大小 | mini \| small \| medium \| large | mini |
 
 
 ## ARIA and Keyboard
