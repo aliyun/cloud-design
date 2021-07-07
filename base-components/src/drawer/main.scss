@@ -1,0 +1,32 @@
+// 确认、取消按钮 默认样式
+.next-drawer-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: var(--drawer-footer-padding-top, 10px) var(--drawer-footer-padding-right, 16px) var(--drawer-footer-padding-bottom, 10px) var(--drawer-footer-padding-left, 16px);
+  left: 0;
+  background: var(--drawer-footer-bg-color, var(--drawer-bg));
+  border-radius: 0 0 4px 4px;
+
+  &-line {
+    border-top: var(--drawer-footer-border-width, 1px) var(--line-solid, solid) var(--drawer-footer-border-color, var(--color-line1-1));
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-left {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+}
+
+.next-drawer-has-footer {
+  .next-drawer-body {
+    margin-bottom: var(--drawer-has-footer-margin-bottom, 40px);
+  }
+}
