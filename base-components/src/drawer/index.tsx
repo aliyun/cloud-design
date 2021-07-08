@@ -5,6 +5,7 @@ import { withThemeClass } from '../utils/withThemeClass';
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import { default as Button } from '../button'
 import cls from 'classnames'
+import { useCssVar } from '../utils/useCssVar'
 import { ButtonProps } from '@alifd/next/types/button';
 
 type NextDrawerProps = React.ComponentProps<typeof NextDrawer>
@@ -80,11 +81,19 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
     } = props;
     const [customVisible, setCustomVisible] = useState<boolean>(visible);
     const customRef = useRef(null);
+    const theme = useCssVar('--alicloudfe-components-theme').trim();
 
     const setFooterShadow = (iRef: any) => {
-      if (iRef?.current) {
+      if (iRef?.current && theme !== 'wind' && !theme.startsWith('xconsole')) {
         const drawerDom = ReactDOM.findDOMNode(iRef.current);
+        const drawerFirstDom = drawerDom?.getElementsByClassName('next-drawer')?.[0]?.firstChild;
+        if (drawerFirstDom) {
+          drawerFirstDom.style.overflow = 'hidden';
+        }
         const drawerBodyDom = drawerDom?.getElementsByClassName('next-drawer-body')?.[0];
+        if (drawerBodyDom) {
+          drawerBodyDom.style.overflow = 'auto';
+        }
         const drawerFooterDom = drawerDom?.getElementsByClassName('next-drawer-footer')?.[0];
         if (drawerFooterDom) {
           if (drawerBodyDom?.clientHeight < drawerBodyDom?.scrollHeight) {
