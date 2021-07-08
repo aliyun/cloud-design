@@ -15,14 +15,16 @@ const Dialog: React.FC<IProps> & {
   const customRef = useRef(null);
 
   const setFooterShadow = () => {
-    const dialogDom = ReactDOM.findDOMNode(customRef.current);
-    const dialogBodyDom = dialogDom?.getElementsByClassName('next-dialog-body')?.[0];
-    const dialogFooterDom = dialogDom?.getElementsByClassName('next-dialog-footer')?.[0];
-    if (dialogFooterDom) {
-      if (dialogBodyDom?.clientHeight < dialogBodyDom?.scrollHeight) {
-        dialogFooterDom.style.boxShadow = 'var(--shadow-1-up)';
-      }else {
-        dialogFooterDom.style.boxShadow = 'none';
+    if (theme !== 'wind' && !theme.startsWith('xconsole')) {
+      const dialogDom = ReactDOM.findDOMNode(customRef.current);
+      const dialogBodyDom = dialogDom?.getElementsByClassName('next-dialog-body')?.[0];
+      const dialogFooterDom = dialogDom?.getElementsByClassName('next-dialog-footer')?.[0];
+      if (dialogFooterDom) {
+        if (dialogBodyDom?.clientHeight < dialogBodyDom?.scrollHeight) {
+          dialogFooterDom.style.boxShadow = 'var(--shadow-1-up)';
+        }else {
+          dialogFooterDom.style.boxShadow = 'none';
+        }
       }
     }
   }
