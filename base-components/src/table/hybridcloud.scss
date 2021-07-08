@@ -1,13 +1,15 @@
 .next-table-row{
-    position: relative;
-.next-checkbox-wrapper.checked {
-    &::before{
-        content: '';
-        position: absolute;
-        height: calc(100% + 0.994px);
-        top: 0;
-        left: 0px;
-        border-left: 2px solid var(--color-table-selected-border);
-    } 
-}
+    .next-table-cell {
+        position: relative;
+        .next-checkbox-wrapper.checked {
+            &::before{
+                content: '';
+                position: absolute;
+                height: calc(100% + 0.994px);
+                top: 0;
+                left: 0px;
+                border-left: 2px solid var(--color-table-selected-border);
+            } 
+        }
+    }
 }
