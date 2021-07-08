@@ -23,7 +23,6 @@
          width={400}
          title="完全自定义footer的Drawer"
          onClose={closeHandle}
-         hasFooterLine
          footerAlign="right"
          renderFooter={
           <>
@@ -33,7 +32,71 @@
           </>
          }
        >
-         <div>完全自定义footer的Drawer</div>
+         <div>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           完全自定义footer的Drawer<br/>
+           1111111111111<br/>
+          </div>
        </Drawer>
      </>
    )
