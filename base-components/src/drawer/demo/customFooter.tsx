@@ -33,7 +33,9 @@
           </>
          }
        >
-         <div>完全自定义footer的Drawer</div>
+         <div>
+           完全自定义footer的Drawer<br/>
+          </div>
        </Drawer>
      </>
    )

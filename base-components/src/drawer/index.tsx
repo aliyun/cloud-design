@@ -1,9 +1,11 @@
-import React, { ReactNode, useEffect, useState } from 'react';
+import React, { ReactNode, useEffect, useState, useRef } from 'react';
+import ReactDOM from 'react-dom';
 import { Drawer as NextDrawer } from '@alifd/next'
 import { withThemeClass } from '../utils/withThemeClass';
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import { default as Button } from '../button'
 import cls from 'classnames'
+import { useCssVar } from '../utils/useCssVar'
 import { ButtonProps } from '@alifd/next/types/button';
 
 type NextDrawerProps = React.ComponentProps<typeof NextDrawer>
@@ -58,7 +60,7 @@ interface IDrawer {
 export type DrawerProps = NextDrawerProps & IDrawer
 
 const Drawer: React.FC<DrawerProps> = withThemeClass(
-  React.forwardRef((props: DrawerProps, ref) => {
+  React.forwardRef((props: DrawerProps, ref: any) => {
 
     const {
       visible = false,
@@ -78,6 +80,38 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
       ...filterProps
     } = props;
     const [customVisible, setCustomVisible] = useState<boolean>(visible);
+    const customRef = useRef(null);
+    const theme = useCssVar('--alicloudfe-components-theme').trim();
+
+    const setFooterShadow = (iRef: any) => {
+      if (iRef?.current && theme !== 'wind' && !theme.startsWith('xconsole')) {
+        const drawerDom = ReactDOM.findDOMNode(iRef.current);
+        const drawerFirstDom = drawerDom?.getElementsByClassName('next-drawer')?.[0]?.firstChild;
+        if (drawerFirstDom) {
+          drawerFirstDom.style.overflow = 'hidden';
+        }
+        const drawerBodyDom = drawerDom?.getElementsByClassName('next-drawer-body')?.[0];
+        if (drawerBodyDom) {
+          drawerBodyDom.style.overflow = 'auto';
+        }
+        const drawerFooterDom = drawerDom?.getElementsByClassName('next-drawer-footer')?.[0];
+        if (drawerFooterDom) {
+          if (drawerBodyDom?.clientHeight < drawerBodyDom?.scrollHeight) {
+            drawerFooterDom.style.boxShadow = 'var(--shadow-1-up)';
+          }else {
+            drawerFooterDom.style.boxShadow = 'none';
+          }
+        }
+      }
+    }
+
+    useEffect(() => {
+      setFooterShadow(ref ? ref : customRef);
+    })
+
+    useEffect(() => {
+      setFooterShadow(ref ? ref : customRef);
+    }, [ReactDOM.findDOMNode(ref?.current)?.getElementsByClassName('next-drawer')?.[0]?.clientHeight])
 
     useEffect(() => {
       setCustomVisible(visible);
@@ -119,7 +153,7 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
     return (
       <NextDrawer
         {...filterProps}
-        ref={ref as any}
+        ref={ref ? ref : customRef}
         visible={customVisible}
         width={getCustomWidth()}
         className={drawerCustomClassName}
