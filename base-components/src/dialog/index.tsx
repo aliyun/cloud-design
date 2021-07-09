@@ -1,6 +1,7 @@
 import { Dialog as NextDialog } from '@alifd/next'
+import ReactDOM from 'react-dom';
 import hoistNonReactStatics from 'hoist-non-react-statics'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useCssVar } from '../utils/useCssVar'
 
 type IProps = React.ComponentProps<typeof NextDialog>
@@ -8,8 +9,35 @@ type IProps = React.ComponentProps<typeof NextDialog>
 const Dialog: React.FC<IProps> & {
   show: typeof NextDialog.show
   confirm: typeof NextDialog.confirm
-} = ({ ...props }) => {
+} = ({...props }) => {
   const theme = useCssVar('--alicloudfe-components-theme').trim()
+
+  const customRef = useRef(null);
+
+  const setFooterShadow = () => {
+    if (theme !== 'wind' && !theme.startsWith('xconsole')) {
+      const dialogDom = ReactDOM.findDOMNode(customRef.current);
+      const dialogBodyDom = dialogDom?.getElementsByClassName('next-dialog-body')?.[0];
+      const dialogFooterDom = dialogDom?.getElementsByClassName('next-dialog-footer')?.[0];
+      if (dialogFooterDom) {
+        if (dialogBodyDom?.clientHeight < dialogBodyDom?.scrollHeight) {
+          dialogFooterDom.style.boxShadow = 'var(--shadow-1-up)';
+        }else {
+          dialogFooterDom.style.boxShadow = 'none';
+        }
+      }
+    }
+  }
+
+  useEffect(() => {
+    if (customRef) {
+      setFooterShadow();
+    }
+  })
+
+  useEffect(() => {
+    setFooterShadow();
+  }, [ReactDOM.findDOMNode(customRef.current)?.getElementsByClassName('next-dialog')?.[0]?.clientHeight])
 
   // 云效混合云主题样式主操作在右边
   const defaultFooterActions = (() => {
@@ -23,7 +51,7 @@ const Dialog: React.FC<IProps> & {
     return ['ok', 'cancel']
   })()
 
-  return <NextDialog footerActions={defaultFooterActions} {...props} />
+  return <NextDialog footerActions={defaultFooterActions} {...props} ref={customRef} />
 }
 
 const showDefaultFooterActions = () => {

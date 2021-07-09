@@ -24,9 +24,16 @@
     text-align: center;
   }
 }
+.next-drawer {
+  overflow: hidden;
+  .next-drawer-body {
+    height: calc(100% - var(--drawer-has-footer-margin-bottom, 40px));
+  }
+}
 
 .next-drawer-has-footer {
   .next-drawer-body {
     margin-bottom: var(--drawer-has-footer-margin-bottom, 40px);
+    padding-bottom: calc(var(--drawer-content-padding-bottom, 20px) + var(--drawer-has-footer-margin-bottom, 40px) +  var(--drawer-footer-padding-bottom, 10px));
   }
 }
