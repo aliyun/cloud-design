@@ -12,7 +12,7 @@ type NextDrawerProps = React.ComponentProps<typeof NextDrawer>
 
 interface IDrawer {
   /**
-   * 点击确认按钮时的回调。有此参数就默认显示确认按钮
+   * 点击确定按钮时的回调。有此参数就默认显示确定按钮
    */
   onOk?: (event: React.MouseEvent) => void;
   /**
@@ -36,7 +36,7 @@ interface IDrawer {
    */
   cancelText?: React.ReactNode;
   /**
-   * 确认按钮的文字
+   * 确定按钮的文字
    */
   okText?: React.ReactNode;
   /**
@@ -44,7 +44,7 @@ interface IDrawer {
    */
   cancelBtnProps?: ButtonProps;
   /**
-   * 透传给确认按钮的Props
+   * 透传给确定按钮的Props
    */
   okBtnProps?: ButtonProps;
   /**
@@ -70,7 +70,7 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
       hasFooterLine,
       footerAlign,
       children,
-      okText = '确认',
+      okText = '确定',
       cancelText = '取消',
       cancelBtnProps = {},
       okBtnProps = {},

@@ -9,6 +9,14 @@ $ellipsis-icon: '.' + $css-prefix + 'icon-ellipsis-vertical';
       --card-hover-shadow,
       1px 1px 4px 0px rgba(0, 0, 0, 0.13)
     );
+    background-color: var(
+      --card-hover-background,
+      var(--card-background)
+    );
+    border-color: var(
+      --card-hover-border-color,
+      var(--card-border-color)
+    );
   }
   & &-header-extra {
     #{$ellipsis-icon} {
