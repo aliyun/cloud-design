@@ -47,6 +47,12 @@ export default function DemoComponent() {
         <Button type="primary" warning>
           Primary
         </Button>
+        <Button text warning>
+          文字按钮
+        </Button>
+        <Button text warning type="primary">
+          文字按钮
+        </Button>
       </Box>
     </div>
   )
