@@ -1,13 +1,4 @@
 // 混合云云效样式覆盖
-.next-calendar2-card
-  .next-calendar2-cell-current.next-calendar2-cell-selected:not(.next-calendar2-cell-disabled)
-  .next-calendar2-cell-inner,
-.next-calendar2-panel
-  .next-calendar2-cell-current.next-calendar2-cell-selected:not(.next-calendar2-cell-disabled)
-  .next-calendar2-cell-inner {
-  --color-brand1-9: var(--color-brand1-6);
-}
-
 .#{$css-prefix}date-picker2 {
   & &-input-range {
     .#{$css-prefix}input {
