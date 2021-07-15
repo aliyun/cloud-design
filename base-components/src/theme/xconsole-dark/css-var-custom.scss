@@ -1,12 +1,9 @@
-$shadow-color-1: rgba(0,0,0,0.84);
-$shadow-color-2: rgba(0,0,0,0.92);
-
 #{$css-var-scope} {
   --alicloudfe-components-theme: xconsole-dark;
 
   // common
   --active-transition: 0.3s;
-  --active-shadow: 0 4px 8px 0 $shadow-color-1, 0 2px 4px 0 $shadow-color-2;
+  --active-shadow: 0 4px 8px 0 rgba(0,0,0,0.84), 0 2px 4px 0 rgba(0,0,0,0.92);
 
   --menu-padding: 4px;
   // 对于可选择的menu，增加padding以便容纳勾选图标
@@ -27,11 +24,11 @@ $shadow-color-2: rgba(0,0,0,0.92);
   --btn-pure-primary-bg-disabled: #d1d5d9;
   --btn-pure-primary-color-disabled: #ffffff;
   --btn-pure-primary-border-style: none;
-  --btn-normal-hover-shadow: 0 4px 8px 0 $shadow-color-1, 0 2px 4px 0 $shadow-color-2;
-  --btn-primary-hover-shadow: 0 4px 8px 0 $shadow-color-1, 0 2px 4px 0 $shadow-color-2;
-  --btn-normal-hover-shadow: 0 4px 8px 0 $shadow-color-1, 0 2px 4px 0 $shadow-color-2;
-  --btn-primary-active-shadow: 0px 1px 2px 0px $shadow-color-2;
-  --btn-normal-active-shadow: 0px 1px 2px 0px $shadow-color-2;
+  --btn-normal-hover-shadow: 0 4px 8px 0 rgba(0,0,0,0.84), 0 2px 4px 0 rgba(0,0,0,0.92);
+  --btn-primary-hover-shadow: 0 4px 8px 0 rgba(0,0,0,0.84), 0 2px 4px 0 rgba(0,0,0,0.92);
+  --btn-normal-hover-shadow: 0 4px 8px 0 rgba(0,0,0,0.84), 0 2px 4px 0 rgba(0,0,0,0.92);
+  --btn-primary-active-shadow: 0px 1px 2px 0px rgba(0,0,0,0.92);
+  --btn-normal-active-shadow: 0px 1px 2px 0px rgba(0,0,0,0.92);
   --btn-text-secondary-bg-hover: #F7F9FA;
   --btn-text-secondary-bg-active: #EFF3F8;
   --btn-small-min-width: 68px;
@@ -46,7 +43,7 @@ $shadow-color-2: rgba(0,0,0,0.92);
   --select-hint-color: #666666;
 
   --tag-hover-bg: rgba(255, 255, 255, 0.16);
-  --tag-hover-color: #e6e6e6
+  --tag-hover-color: #e6e6e6;
 
   --number-picker-height-small: 28px;
   --number-picker-height-medium: 32px;
