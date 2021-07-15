@@ -7,11 +7,7 @@
     height: 18px;
     border-radius: 50%;
     &:hover {
-      background-color: #f7f9fa;
-    }
-    .#{$css-prefix}icon-close {
-      position: relative;
-      top: -1px;
+      background-color: var(--balloon-hover-bg, #f7f9fa);
     }
   }
 }

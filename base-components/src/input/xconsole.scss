@@ -6,7 +6,7 @@ $input-prefix: '.' + $css-prefix + 'input';
 
   #{$clear}#{$clear}#{$clear},
   #{$hint}#{$hint}#{$hint} {
-    color: #333333;
+    color: var(--input-hint-icon-color, #333333);
     border-radius: 50%;
     width: var(--input-hint-icon-outer-size, 16px);
     height: var(--input-hint-icon-outer-size, 16px);
@@ -16,7 +16,7 @@ $input-prefix: '.' + $css-prefix + 'input';
   }
   #{$clear}#{$clear}#{$clear} {
     &:hover {
-      background-color: #f7f9fa;
+      background-color: var(--input-hint-icon-hover-color, #f7f9fa);
     }
     &::before {
       width: var(--input-hint-icon-inner-size, 12px);

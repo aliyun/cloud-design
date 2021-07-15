@@ -8,4 +8,7 @@ $menu-prefix: '.' + $css-prefix + 'menu';
   &-item:focus-visible {
     background-color: var(--menu-background-hover, #f7f9fa);
   }
+  #{$menu-prefix}-group-label {
+    color: var(--menu-group-label-color, #888888);
+  }
 }
