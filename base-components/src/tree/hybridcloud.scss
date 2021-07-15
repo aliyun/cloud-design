@@ -5,4 +5,16 @@
 .next-tree-node-label {
   height: 24px;
   line-height: 24px;
+
+  .next-icon {
+    color: #848484;
+  }
+}
+
+.next-selected {
+  .next-tree-node-label-selectable {
+    .next-icon {
+      color: var(--tree-node-selected-color, #0064C8);
+    }
+  }
 }
