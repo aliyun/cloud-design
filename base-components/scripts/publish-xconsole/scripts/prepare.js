@@ -131,8 +131,13 @@ fs.writeFileSync(
       path.join(libDir, 'index.js'),
       codeExportLibInfoCJS('@alicloud/console-components', pkgVersion)
     ),
-    appendFile(path.join(distDir, 'xconsole-var.css'), appendXconsoleCssVar),
-    appendFile(path.join(distDir, 'xconsole.css'), appendXconsoleCssVar)
+    // appendFile(path.join(distDir, 'xconsole-var.css'), appendXconsoleCssVar),
+    // appendFile(path.join(distDir, 'xconsole.css'), appendXconsoleCssVar),
+    // 有的控制台暂时不升侧边栏样式，因此将业务组件的var单独提供，业务方按需引入
+    fs.writeFile(
+      path.join(distDir, 'xconsole-var-rc.css'),
+      appendXconsoleCssVar
+    )
   ])
 
   // 规范样式变量的作用范围

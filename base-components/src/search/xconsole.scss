@@ -3,7 +3,7 @@ $input-prefix: '.' + $css-prefix + 'input';
 $next-normal: '.' + $css-prefix + 'normal';
 
 #{$search-prefix} {
-  &#{$next-normal} {
+  &#{$next-normal},&#{$search-prefix}-normal {
     .#{$css-prefix}after {
       .#{$css-prefix}btn-normal {
         --btn-medium-min-width: 32px;

@@ -59,7 +59,7 @@ $next-normal: '.' + $css-prefix + 'normal';
       }
     }
   }
-  &#{$next-normal} {
+  &#{$next-normal},&#{$search-prefix}-normal {
     &.disabled {
       #{$input-prefix}-group {
         border-color: var(--search-simple-normal-color, #dedede);

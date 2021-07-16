@@ -113,4 +113,21 @@ $text-btn: $btn-prefix + '-text';
     margin-left: 4px;
     margin-right: 0;
   }
+  &.next-btn-normal.next-btn-text.next-btn-warning {
+    &:hover {
+      color: var(--color-error-5);
+    }
+    &:active {
+      color: var(--color-error-6);
+    }
+  }
+  &.next-btn-primary.next-btn-text.next-btn-warning {
+    color: var(--color-error-5);
+    &:hover {
+      color: var(--color-error-4);
+    }
+    &:active {
+      color: var(--color-error-6);
+    }
+  }
 }
