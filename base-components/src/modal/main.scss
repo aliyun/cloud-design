@@ -100,3 +100,18 @@ body#{$modal-prefix}-open {
     }
   }
 }
+
+.next-modal-header {
+  .next-modal-title-box {
+    display: flex;
+    align-items: center;
+
+    .next-modal-title-icon {
+      color: var(--color-fill1-6, #8b8b8b);
+      font-size: var(--font-size-body-2, 12px);
+      margin-right: var(--modal-title-icon-margin-right, 12px);
+      cursor: pointer;
+      transform: translateY(var(--modal-title-icon-transform-top, 2px));
+    }
+  }
+}

@@ -28,9 +28,17 @@ export interface IModalProps {
    */
   onClose?: () => void
   /**
+   * 点击返回按钮回调
+   */
+  onBack?: () => void
+  /**
+   * 是否显示标题前的返回
+   */
+  hasArrow?: boolean
+  /**
    * Modal标题
    */
-  title?: string
+  title?: React.ReactNode
   /**
    * Modal标题是否可编辑
    */
@@ -90,6 +98,7 @@ class Modal extends React.Component<
     sideDrawerWidth: 400,
     titleEditTooltip: '点击即可编辑',
     onClose: () => {},
+    onBack: () => {},
     onSideDrawerVisibleChange: () => {},
     onEditTitleChange: () => {},
     canCloseByEsc: true
@@ -200,7 +209,8 @@ class Modal extends React.Component<
       title,
       titleEditable,
       titleEditTooltip,
-      titleInputWidth
+      titleInputWidth,
+      hasArrow = false
     } = this.props
     const { isEditing } = this.state
     const editTitle = isEditing ? (
@@ -225,7 +235,7 @@ class Modal extends React.Component<
               text
             >
               {/* <Icon type="pencil" /> */}
-              <Icon type="edit" />
+              <Icon type="edit"/>
             </Button>
           }
           align="r"
@@ -235,8 +245,16 @@ class Modal extends React.Component<
       </span>
     )
     return (
-      <div className={`${prefix}modal-title`}>
-        {titleEditable ? editTitle : title}
+      <div className={`${prefix}modal-title-box`}>
+        {this.props.hasArrow && (
+          <Icon type="arrow-left" className={`${prefix}modal-title-icon`} onClick={() => {
+            const { onBack } = this.props;
+            onBack?.();
+          }}/>
+        )}
+        <div className={`${prefix}modal-title`}>
+          {titleEditable ? editTitle : title}
+        </div>
       </div>
     )
   }
@@ -274,7 +292,6 @@ class Modal extends React.Component<
           <Button
             className={`${prefix}modal-close`}
             onClick={this.onClose}
-            size="small"
             text
           >
             {/* <Icon type="remove" /> */}
