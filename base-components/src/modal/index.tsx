@@ -38,7 +38,7 @@ export interface IModalProps {
   /**
    * Modal标题
    */
-  title?: React.ReactNode
+  title?: string
   /**
    * Modal标题是否可编辑
    */
