@@ -1,5 +1,5 @@
 .next-modal-header {
-  height: 48px;
+  height: var(--modal-header-height, 48px);
   padding: var(--s-2) var(--s-8);
 
   .next-modal-title.next-modal-title {
@@ -29,4 +29,7 @@
 }
 .next-modal-body .next-modal-children {
   background: var(--color-fill1-1, #fff);
+}
+.next-modal-body {
+  height: calc(100% - var(--modal-header-height, 48px));
 }
