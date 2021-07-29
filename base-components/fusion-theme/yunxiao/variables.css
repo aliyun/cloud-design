@@ -2443,9 +2443,6 @@
     --card-border-color: var(--color-line1-1, #E8E8E8);
     
     
-    --card-content-color: var(--color-text1-2, #6E6E6E);
-    
-    
     --card-corner: var(--corner-2, 8px);
     
     
@@ -2471,6 +2468,12 @@
     
     
     --card-body-padding-bottom: var(--s-6, 24px);
+    
+    
+    --card-sub-title-color: var(--color-text1-1, #CECECE);
+    
+    
+    --card-content-color: var(--color-text1-2, #6E6E6E);
     
     
     --card-head-padding-bottom: var(--s-3, 12px);
@@ -2519,9 +2522,6 @@
     
     
     --card-title-color: var(--color-text1-4, #292929);
-    
-    
-    --card-sub-title-color: var(--color-text1-3, #575757);
     
     
     --card-title-extra-color: var(--color-link-1, #127FC7);
@@ -3418,25 +3418,13 @@
     --nav-normal-border-color: var(--color-line1-2, #DBDBDB);
     
     
-    --nav-normal-text-color: var(--color-text1-2, #6E6E6E);
-    
-    
     --nav-normal-shadow: var(--shadow-zero, none);
-    
-    
-    --nav-normal-sub-nav-text-color: var(--color-text1-2, #6E6E6E);
     
     
     --nav-normal-item-hover-bg-color: var(--color-fill1-2, #F7F7F7);
     
     
-    --nav-normal-item-hover-text-color: var(--color-text1-2, #6E6E6E);
-    
-    
     --nav-normal-sub-nav-hover-bg-color: var(--color-brand1-1, #F0F9FF);
-    
-    
-    --nav-normal-sub-nav-hover-text-color: var(--color-text1-4, #292929);
     
     
     --nav-normal-item-selected-bg-color: var(--color-brand1-1, #F0F9FF);
@@ -3454,9 +3442,6 @@
     --nav-normal-item-opened-bg-color: var(--color-white, #FFFFFF);
     
     
-    --nav-normal-item-opened-text-color: var(--color-text1-2, #6E6E6E);
-    
-    
     --nav-line-item-selected-text-style: var(--font-weight-2, normal);
     
     
@@ -3464,15 +3449,6 @@
     
     
     --nav-secondary-item-hover-active-color: var(--color-brand1-5, #41AAF0);
-    
-    
-    --nav-ver-sub-nav-font-size: var(--font-size-body-2, 14px);
-    
-    
-    --nav-ver-height: var(--s-10, 40px);
-    
-    
-    --nav-ver-item-margin-tb: var(--s-1, 4px);
     
     
     --nav-ver-item-padding-lr: var(--s-3, 12px);
@@ -3491,9 +3467,6 @@
     
     
     --nav-normal-item-selected-text-color: var(--color-text1-4, #292929);
-    
-    
-    --nav-normal-item-selected-text-style: var(--font-weight-medium, 500);
     
     
     --nav-hoz-height: var(--s-11, 44px);
@@ -3521,9 +3494,6 @@
     
     
     --nav-ver-item-hover-active-line: var(--line-zero, 0px);
-    
-    
-    --nav-group-height: var(--s-10, 40px);
     
     
     --nav-group-font-size: var(--font-size-body-1, 14px);
@@ -3685,12 +3655,6 @@
     --nav-normal-sub-nav-text-style: var(--font-weight-2, normal);
     
     
-    --nav-normal-group-text-color: var(--color-text1-2, #6E6E6E);
-    
-    
-    --nav-normal-group-text-style: var(--font-weight-2, normal);
-    
-    
     --nav-normal-item-hover-text-style: var(--font-weight-2, normal);
     
     
@@ -3788,6 +3752,42 @@
     
     
     --nav-line-group-text-style: var(--font-weight-2, normal);
+    
+    
+    --nav-ver-height: var(--s-9, 36px);
+    
+    
+    --nav-ver-item-margin-tb: 0px;
+    
+    
+    --nav-ver-sub-nav-font-size: var(--font-size-subhead, 16px);
+    
+    
+    --nav-normal-text-color: var(--color-text1-3, #575757);
+    
+    
+    --nav-normal-sub-nav-text-color: var(--color-text1-3, #575757);
+    
+    
+    --nav-normal-group-text-color: var(--color-text1-4, #292929);
+    
+    
+    --nav-normal-item-hover-text-color: var(--color-text1-3, #575757);
+    
+    
+    --nav-normal-sub-nav-hover-text-color: var(--color-text1-3, #575757);
+    
+    
+    --nav-normal-item-opened-text-color: var(--color-text1-4, #292929);
+    
+    
+    --nav-group-height: var(--s-10, 40px);
+    
+    
+    --nav-normal-group-text-style: var(--font-weight-semi-bold, 600);
+    
+    
+    --nav-normal-item-selected-text-style: var(--font-weight-medium, 500);
     
     
     /* ------------------------ calendar ------------------------ */
@@ -4310,6 +4310,12 @@
     
     
     --tree-switch-arrow-color: var(--color-text1-2, #6E6E6E);
+    
+    
+    --tree-switcher-fold-icon-content: var(--icon-content-minus, "");
+    
+    
+    --tree-switcher-unfold-icon-content: var(--icon-content-add, "");
     
     
     --tree-switch-icon-color: var(--color-text1-3, #575757);
@@ -7537,9 +7543,6 @@
     --table-th-bg: var(--color-transparent, transparent);
     
     
-    --table-th-color: var(--color-text1-1, #CECECE);
-    
-    
     --table-group-th-bg: var(--color-transparent, transparent);
     
     
@@ -7586,6 +7589,12 @@
     
     
     --table-filter-icon-size: var(--icon-s, 16px);
+    
+    
+    --table-empty-color: var(--color-text1-1, #CECECE);
+    
+    
+    --table-th-color: var(--color-text1-1, #CECECE);
     
     
     --table-normal-border-width: var(--line-1, 1px);
@@ -7658,9 +7667,6 @@
     
     
     --table-td-normal: var(--color-white, #FFFFFF);
-    
-    
-    --table-empty-color: var(--color-line1-4, #FFFFFF);
     
     
     --table-row-selected-color: var(--color-text1-4, #292929);
