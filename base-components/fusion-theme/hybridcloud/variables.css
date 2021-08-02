@@ -4600,7 +4600,7 @@
     --search-simple-dark-l-icon-size: var(--icon-m, 20px);
     
     
-    --search-search-icon-content: var(--icon-content-search1, "");
+    --search-search-icon-content: var(--icon-content-search, "");
     
     
     /* ------------------------ card ------------------------ */
@@ -5200,6 +5200,9 @@
     --balloon-tooltip-size-padding-bottom: 6px;
     
     
+    --balloon-size-padding-top: 10px;
+    
+    
     --balloon-size-close-margin-top: 7px;
     
     
@@ -5264,9 +5267,6 @@
     
     
     --balloon-tooltip-border-style: var(--line-solid, solid);
-    
-    
-    --balloon-size-padding-top: 6px;
     
     
     /* ------------------------ nav ------------------------ */
@@ -6253,12 +6253,6 @@
     --tree-node-normal-background: var(--color-white, #FFFFFF);
     
     
-    --tree-switcher-fold-icon-content: var(--icon-content-add, "");
-    
-    
-    --tree-switcher-unfold-icon-content: var(--icon-content-minus, "");
-    
-    
     --tree-switch-bg-color: var(--color-white, #FFFFFF);
     
     
@@ -6466,12 +6460,6 @@
     --table-row-color: var(--color-text1-3, #333333);
     
     
-    --table-th-color: var(--color-text1-8, #848484);
-    
-    
-    --table-th-font-weight: var(--font-weight-medium, 500);
-    
-    
     --table-th-font-size: var(--font-size-body-1, 12px);
     
     
@@ -6560,6 +6548,12 @@
     
     
     --table-expand-unfold-icon-content: var(--icon-content-minus, "");
+    
+    
+    --table-th-color: var(--color-text1-8, #848484);
+    
+    
+    --table-th-font-weight: var(--font-weight-medium, 500);
     
     
     /* ------------------------ badge ------------------------ */
@@ -7042,13 +7036,13 @@
     --dialog-footer-padding-left-right: var(--s-5, 20px);
     
     
-    --dialog-message-content-padding-left-right: var(--s-5, 20px);
-    
-    
-    --dialog-close-top: 14px;
+    --dialog-close-top: var(--s-4, 16px);
     
     
     --dialog-close-right: var(--s-5, 20px);
+    
+    
+    --dialog-message-content-padding-left-right: var(--s-5, 20px);
     
     
     --dialog-close-width: var(--s-4, 16px);
@@ -7225,6 +7219,9 @@
     --pagination-item-color: var(--color-text1-2, #5a5a5a);
     
     
+    --pagination-item-current-border-color: var(--color-transparent, transparent);
+    
+    
     --pagination-item-current-shadow: var(--shadow-zero, none);
     
     
@@ -7243,31 +7240,25 @@
     --pagination-total-font-size: var(--font-size-body-1, 12px);
     
     
+    --pagination-item-current-color: var(--color-white, #FFFFFF);
+    
+    
+    --pagination-item-current-bg: var(--color-brand1-6, #0064C8);
+    
+    
     --pagination-icon-ellipsis-content: var(--icon-content-more, "");
+    
+    
+    --pagination-item-current-hover-color: var(--color-white, #FFFFFF);
+    
+    
+    --pagination-item-current-hover-bg: var(--color-brand1-6, #0064C8);
     
     
     --pagination-arrow-hover-color: var(--color-fill1-7, #595959);
     
     
     --pagination-arrow-color: var(--color-fill1-5, #848484);
-    
-    
-    --pagination-item-current-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    --pagination-item-current-color: var(--color-brand1-6, #0064C8);
-    
-    
-    --pagination-item-current-bg: var(--color-transparent, transparent);
-    
-    
-    --pagination-item-current-hover-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    --pagination-item-current-hover-color: var(--color-brand1-6, #0064C8);
-    
-    
-    --pagination-item-current-hover-bg: var(--color-transparent, transparent);
     
     
     --pagination-item-padding: 10px;
@@ -7370,6 +7361,9 @@
     
     
     --pagination-icon-next-content: var(--icon-content-arrow-right, "");
+    
+    
+    --pagination-item-current-hover-border-color: var(--color-transparent, transparent);
     
     
     --pagination-arrow-hover-color-noboder: var(--color-brand1-6, #0064C8);
@@ -8056,13 +8050,13 @@
     --tab-capsule-tab-border-line-color-active: var(--color-brand1-6, #0064C8);
     
     
+    --tab-item-padding-tb-size-m: 9px;
+    
+    
+    --tab-item-padding-lr-size-m: 18px;
+    
+    
     --tab-item-padding-lr-size-s: 16px;
-    
-    
-    --tab-item-padding-tb-size-m: var(--s-2, 8px);
-    
-    
-    --tab-item-padding-lr-size-m: var(--s-4, 16px);
     
     
     --tab-nav-scroll-padding-right-m: var(--s-15, 60px);
@@ -8548,6 +8542,9 @@
     --tag-closable-normal-icon-color-disabled: var(--color-fill1-3, #eaeaea);
     
     
+    --tag-closable-bordered-border-color: var(--color-line1-1, #eaeaea);
+    
+    
     --tag-closable-bordered-bg-disabled: var(--color-fill1-2, #f7f7f7);
     
     
@@ -8566,6 +8563,9 @@
     --tag-closable-normal-bg-hover: var(--color-line1-1, #eaeaea);
     
     
+    --tag-closable-bordered-border-color-hover: var(--color-line1-1, #eaeaea);
+    
+    
     --tag-closable-bordered-bg-hover: var(--color-fill1-2, #f7f7f7);
     
     
@@ -8578,6 +8578,21 @@
     --tag-bordered-text-color-hover: var(--color-text1-6, #5a5a5a);
     
     
+    --tag-fill-bg-color-hover: var(--color-brand1-1, #F0F7FF);
+    
+    
+    --tag-bordered-bg-hover: var(--color-fill1-2, #f7f7f7);
+    
+    
+    --tag-closable-bordered-border-color-disabled: var(--color-line1-2, #D9D9D9);
+    
+    
+    --tag-fill-border-color-disabled: var(--color-line1-2, #D9D9D9);
+    
+    
+    --tag-bordered-border-color-disabled: var(--color-line1-2, #D9D9D9);
+    
+    
     --tag-checkable-normal-border-selected-disabled: var(--color-line1-2, #D9D9D9);
     
     
@@ -8585,6 +8600,12 @@
     
     
     --tag-checkable-normal-tick-bg-selected-disabled: var(--color-fill1-2, #f7f7f7);
+    
+    
+    --tag-closable-primary-fill-border-color: var(--color-brand1-2, #CAE3FD);
+    
+    
+    --tag-closable-primary-fill-border-color-hover: var(--color-brand1-2, #CAE3FD);
     
     
     --tag-closable-primary-fill-bg-color-hover: var(--color-brand1-1, #F0F7FF);
@@ -8596,7 +8617,22 @@
     --tag-closable-normal-icon-color-hover: var(--color-fill1-5, #848484);
     
     
+    --tag-closable-bordered-text-color: var(--color-text1-3, #333333);
+    
+    
+    --tag-closable-bordered-text-color-hover: var(--color-text1-3, #333333);
+    
+    
     --tag-closable-bordered-tail-color: var(--color-fill1-5, #848484);
+    
+    
+    --tag-closable-bordered-tail-color-hover: var(--color-text1-5, #292929);
+    
+    
+    --tag-checkable-normal-text-color: var(--color-text1-3, #333333);
+    
+    
+    --tag-checkable-normal-text-color-hover: var(--color-text1-3, #333333);
     
     
     --tag-fill-border-color: var(--color-transparent, transparent);
@@ -8609,27 +8645,6 @@
     
     
     --tag-bordered-border-color-hover: var(--color-transparent, transparent);
-    
-    
-    --tag-fill-border-color-disabled: var(--color-fill1-2, #f7f7f7);
-    
-    
-    --tag-bordered-border-color-disabled: var(--color-fill1-2, #f7f7f7);
-    
-    
-    --tag-closable-bordered-border-color: var(--color-fill1-2, #f7f7f7);
-    
-    
-    --tag-closable-bordered-border-color-hover: var(--color-fill1-2, #f7f7f7);
-    
-    
-    --tag-closable-bordered-border-color-disabled: var(--color-fill1-2, #f7f7f7);
-    
-    
-    --tag-closable-primary-fill-border-color: var(--color-brand1-1, #F0F7FF);
-    
-    
-    --tag-closable-primary-fill-border-color-hover: var(--color-brand1-1, #F0F7FF);
     
     
     --tag-size-l-spacing: var(--s-4, 16px);
@@ -8804,27 +8819,6 @@
     
     
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #CCCCCC);
-    
-    
-    --tag-closable-bordered-text-color: var(--color-text1-6, #5a5a5a);
-    
-    
-    --tag-closable-bordered-text-color-hover: var(--color-text1-6, #5a5a5a);
-    
-    
-    --tag-closable-bordered-tail-color-hover: var(--color-text1-6, #5a5a5a);
-    
-    
-    --tag-fill-bg-color-hover: var(--color-brand1-2, #CAE3FD);
-    
-    
-    --tag-bordered-bg-hover: var(--color-line1-1, #eaeaea);
-    
-    
-    --tag-checkable-normal-text-color: var(--color-text1-7, #5a5a5a);
-    
-    
-    --tag-checkable-normal-text-color-hover: var(--color-text1-6, #5a5a5a);
     
     
     /* ------------------------ input ------------------------ */
