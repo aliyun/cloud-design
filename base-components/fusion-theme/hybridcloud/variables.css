@@ -4600,7 +4600,7 @@
     --search-simple-dark-l-icon-size: var(--icon-m, 20px);
     
     
-    --search-search-icon-content: var(--icon-content-search, "");
+    --search-search-icon-content: var(--icon-content-search1, "");
     
     
     /* ------------------------ card ------------------------ */
@@ -7045,6 +7045,15 @@
     --dialog-message-content-padding-left-right: var(--s-5, 20px);
     
     
+    --dialog-close-top: 14px;
+    
+    
+    --dialog-close-right: var(--s-5, 20px);
+    
+    
+    --dialog-close-width: var(--s-4, 16px);
+    
+    
     --dialog-bg: var(--color-white, #FFFFFF);
     
     
@@ -7061,15 +7070,6 @@
     
     
     --dialog-close-bg-hovered: var(--color-transparent, transparent);
-    
-    
-    --dialog-close-top: 14px;
-    
-    
-    --dialog-close-right: var(--s-5, 20px);
-    
-    
-    --dialog-close-width: var(--s-4, 16px);
     
     
     /* ------------------------ progress ------------------------ */
@@ -8059,6 +8059,12 @@
     --tab-item-padding-lr-size-s: 16px;
     
     
+    --tab-item-padding-tb-size-m: var(--s-2, 8px);
+    
+    
+    --tab-item-padding-lr-size-m: var(--s-4, 16px);
+    
+    
     --tab-nav-scroll-padding-right-m: var(--s-15, 60px);
     
     
@@ -8207,12 +8213,6 @@
     
     
     --tab-icon-next-content: var(--icon-content-arrow-right, "");
-    
-    
-    --tab-item-padding-tb-size-m: var(--s-2, 8px);
-    
-    
-    --tab-item-padding-lr-size-m: var(--s-4, 16px);
     
     
     /* ------------------------ timeline ------------------------ */
@@ -8632,6 +8632,27 @@
     --tag-bordered-border-color-hover: var(--color-transparent, transparent);
     
     
+    --tag-fill-border-color-disabled: var(--color-fill1-2, #f7f7f7);
+    
+    
+    --tag-bordered-border-color-disabled: var(--color-fill1-2, #f7f7f7);
+    
+    
+    --tag-closable-bordered-border-color: var(--color-fill1-2, #f7f7f7);
+    
+    
+    --tag-closable-bordered-border-color-hover: var(--color-fill1-2, #f7f7f7);
+    
+    
+    --tag-closable-bordered-border-color-disabled: var(--color-fill1-2, #f7f7f7);
+    
+    
+    --tag-closable-primary-fill-border-color: var(--color-brand1-1, #F0F7FF);
+    
+    
+    --tag-closable-primary-fill-border-color-hover: var(--color-brand1-1, #F0F7FF);
+    
+    
     --tag-size-l-spacing: var(--s-4, 16px);
     
     
@@ -8804,27 +8825,6 @@
     
     
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #CCCCCC);
-    
-    
-    --tag-fill-border-color-disabled: var(--color-fill1-2, #f7f7f7);
-    
-    
-    --tag-bordered-border-color-disabled: var(--color-fill1-2, #f7f7f7);
-    
-    
-    --tag-closable-bordered-border-color: var(--color-fill1-2, #f7f7f7);
-    
-    
-    --tag-closable-bordered-border-color-hover: var(--color-fill1-2, #f7f7f7);
-    
-    
-    --tag-closable-bordered-border-color-disabled: var(--color-fill1-2, #f7f7f7);
-    
-    
-    --tag-closable-primary-fill-border-color: var(--color-brand1-1, #F0F7FF);
-    
-    
-    --tag-closable-primary-fill-border-color-hover: var(--color-brand1-1, #F0F7FF);
     
     
     /* ------------------------ input ------------------------ */
