@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.10.5 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.10.6 (https://fusion.design)
  * @alifd/next@1.23.20 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -2296,12 +2296,12 @@ small {
       padding: 0 var(--balloon-size-padding-closable-right, 40px) 0 0; }
       .next-balloon-title.next-balloon-closable .next-balloon-close {
         top: -1px;
-        -webkit-transform: translateY(10px);
-        -webkit-transform: translateY(calc(var(--balloon-size-padding-top, 10px) + var(--balloon-title-font-size, 16px)/2 - var(--balloon-size-close, 16px)/2));
-            -ms-transform: translateY(10px);
-            -ms-transform: translateY(calc(var(--balloon-size-padding-top, 10px) + var(--balloon-title-font-size, 16px)/2 - var(--balloon-size-close, 16px)/2));
-                transform: translateY(10px);
-                transform: translateY(calc(var(--balloon-size-padding-top, 10px) + var(--balloon-title-font-size, 16px)/2 - var(--balloon-size-close, 16px)/2));
+        -webkit-transform: translateY(6px);
+        -webkit-transform: translateY(calc(var(--balloon-size-padding-top, 6px) + var(--balloon-title-font-size, 16px)/2 - var(--balloon-size-close, 16px)/2));
+            -ms-transform: translateY(6px);
+            -ms-transform: translateY(calc(var(--balloon-size-padding-top, 6px) + var(--balloon-title-font-size, 16px)/2 - var(--balloon-size-close, 16px)/2));
+                transform: translateY(6px);
+                transform: translateY(calc(var(--balloon-size-padding-top, 6px) + var(--balloon-title-font-size, 16px)/2 - var(--balloon-size-close, 16px)/2));
         right: 12px;
         right: var(--balloon-size-padding-right, 12px); }
   .next-balloon-primary {
@@ -2320,12 +2320,12 @@ small {
     .next-balloon-primary .next-balloon-close {
       position: absolute;
       top: -1px;
-      -webkit-transform: translateY(8px);
-      -webkit-transform: translateY(calc(var(--balloon-size-padding-top, 10px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
-          -ms-transform: translateY(8px);
-          -ms-transform: translateY(calc(var(--balloon-size-padding-top, 10px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
-              transform: translateY(8px);
-              transform: translateY(calc(var(--balloon-size-padding-top, 10px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
+      -webkit-transform: translateY(4px);
+      -webkit-transform: translateY(calc(var(--balloon-size-padding-top, 6px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
+          -ms-transform: translateY(4px);
+          -ms-transform: translateY(calc(var(--balloon-size-padding-top, 6px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
+              transform: translateY(4px);
+              transform: translateY(calc(var(--balloon-size-padding-top, 6px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
       right: 12px;
       right: var(--balloon-size-close-margin-right, 12px);
       font-size: 16px;
@@ -2467,12 +2467,12 @@ small {
     .next-balloon-normal .next-balloon-close {
       position: absolute;
       top: -1px;
-      -webkit-transform: translateY(8px);
-      -webkit-transform: translateY(calc(var(--balloon-size-padding-top, 10px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
-          -ms-transform: translateY(8px);
-          -ms-transform: translateY(calc(var(--balloon-size-padding-top, 10px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
-              transform: translateY(8px);
-              transform: translateY(calc(var(--balloon-size-padding-top, 10px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
+      -webkit-transform: translateY(4px);
+      -webkit-transform: translateY(calc(var(--balloon-size-padding-top, 6px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
+          -ms-transform: translateY(4px);
+          -ms-transform: translateY(calc(var(--balloon-size-padding-top, 6px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
+              transform: translateY(4px);
+              transform: translateY(calc(var(--balloon-size-padding-top, 6px) + var(--balloon-content-font-size, 12px)/2 - var(--balloon-size-close, 16px)/2));
       right: 12px;
       right: var(--balloon-size-close-margin-right, 12px);
       font-size: 16px;
@@ -2603,11 +2603,11 @@ small {
   .next-balloon.hidden {
     display: none; }
   .next-balloon-medium {
-    padding: 10px 12px 10px 12px;
-    padding: var(--balloon-size-padding-top, 10px) var(--balloon-size-padding-right, 12px) var(--balloon-size-padding-top, 10px) var(--balloon-size-padding-right, 12px); }
+    padding: 6px 12px 6px 12px;
+    padding: var(--balloon-size-padding-top, 6px) var(--balloon-size-padding-right, 12px) var(--balloon-size-padding-top, 6px) var(--balloon-size-padding-right, 12px); }
   .next-balloon-closable {
-    padding: 10px 40px 10px 12px;
-    padding: var(--balloon-size-padding-top, 10px) var(--balloon-size-padding-closable-right, 40px) var(--balloon-size-padding-top, 10px) var(--balloon-size-padding-right, 12px); }
+    padding: 6px 40px 6px 12px;
+    padding: var(--balloon-size-padding-top, 6px) var(--balloon-size-padding-closable-right, 40px) var(--balloon-size-padding-top, 6px) var(--balloon-size-padding-right, 12px); }
 
 .next-balloon-tooltip {
   -webkit-box-sizing: border-box;
@@ -2965,8 +2965,8 @@ small {
     left: var(--balloon-size-arrow-margin, 12px);
     right: auto; }
   .next-balloon[dir="rtl"].next-balloon-closable {
-    padding: 10px 12px 10px 40px;
-    padding: var(--balloon-size-padding-top, 10px) var(--balloon-size-padding-right, 12px) var(--balloon-size-padding-top, 10px) var(--balloon-size-padding-closable-right, 40px); }
+    padding: 6px 12px 6px 40px;
+    padding: var(--balloon-size-padding-top, 6px) var(--balloon-size-padding-right, 12px) var(--balloon-size-padding-top, 6px) var(--balloon-size-padding-closable-right, 40px); }
 
 .next-balloon-tooltip[dir="rtl"] {
   /* size */ }
