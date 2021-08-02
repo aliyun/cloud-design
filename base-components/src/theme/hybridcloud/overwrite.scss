@@ -30,6 +30,11 @@
 @import '../../loading/hybridcloud.scss';
 @import '../../tree/hybridcloud.scss';
 @import '../../balloon/custom.scss';
+@import '../../drawer/hybridcloud.scss';
+@import '../../modal/hybridcloud.scss';
+@import '../../search/hybridcloud.scss';
+@import '../../date-picker2/hybridcloud.scss';
+@import '../../time-picker2/hybridcloud.scss';
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -37,4 +42,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-variant: tabular-nums;
   font-feature-settings: "tnum","tnum";
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+  margin: 0;
+  color: var(--color-text1-4, #1a1a1a);
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
 }

@@ -67,7 +67,8 @@ const Search: React.FC<SearchProps> = withThemeClass(
           props.searchText ? 'custom-search-text' : null,
           focus ? 'focusing' : false,
           visible ? 'visible' : false,
-          props.disabled ? 'disabled' : false
+          props.disabled ? 'disabled' : false,
+          props.searchText ? null : 'next-search-no-custom-search-text'
         )}
         filterProps={filterProps}
       />
