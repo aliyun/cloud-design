@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-yunxiao-v1@0.9.43 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.9.46 (https://fusion.design)
  * @alifd/next@1.23.20 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -21107,8 +21107,8 @@
     border-collapse: separate;
     border-spacing: 0;
     width: 100%;
-    background: #FFFFFF;
-    background: var(--table-row-bg, #FFFFFF); }
+    background: transparent;
+    background: var(--table-row-bg, transparent); }
     .next-table table tr:first-child td {
       border-top-width: 0; }
   .next-table th {
@@ -21125,8 +21125,8 @@
     border-bottom: 1px solid #CECECE;
     border-bottom: var(--table-normal-border-width, 1px) var(--table-normal-border-style, solid) var(--table-normal-border-color, #CECECE); }
     .next-table th .next-table-cell-wrapper {
-      padding: 8px 16px;
-      padding: var(--table-header-padding-top, 8px) var(--table-header-padding-left, 16px);
+      padding: 8px 8px;
+      padding: var(--table-header-padding-top, 8px) var(--table-header-padding-left, 8px);
       overflow: hidden;
       text-overflow: ellipsis;
       word-break: break-all; }
@@ -21158,8 +21158,8 @@
     border-bottom: 1px solid #CECECE;
     border-bottom: var(--table-normal-border-width, 1px) var(--table-normal-border-style, solid) var(--table-normal-border-color, #CECECE); }
     .next-table td .next-table-cell-wrapper {
-      padding: 8px 16px;
-      padding: var(--table-cell-padding-top, 8px) var(--table-cell-padding-left, 16px);
+      padding: 8px 8px;
+      padding: var(--table-cell-padding-top, 8px) var(--table-cell-padding-left, 8px);
       overflow: hidden;
       text-overflow: ellipsis;
       word-break: break-all; }
@@ -21270,8 +21270,8 @@
   .next-table-row {
     -webkit-transition: all 100ms linear;
     transition: all 100ms linear;
-    background: #FFFFFF;
-    background: var(--table-row-bg, #FFFFFF);
+    background: transparent;
+    background: var(--table-row-bg, transparent);
     color: #575757;
     color: var(--table-row-color, #575757); }
     .next-table-row.hidden {
@@ -21432,8 +21432,8 @@
       border-bottom-right-radius: var(--table-group-footer-corner-bottom, 0); }
   .next-table-group .next-table-row.hovered,
   .next-table-group .next-table-row.selected {
-    background: #FFFFFF;
-    background: var(--table-row-bg, #FFFFFF);
+    background: transparent;
+    background: var(--table-row-bg, transparent);
     color: #575757;
     color: var(--table-row-color, #575757); }
 
