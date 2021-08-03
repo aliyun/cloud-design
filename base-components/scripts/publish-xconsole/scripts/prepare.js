@@ -113,13 +113,31 @@ fs.writeFileSync(
     fs.readFileSync(
       require.resolve(
         '@alicloud/console-components-app-layout/dist/vars/xconsole.css'
-      )
-    ),
+      ),
+      'utf-8'
+    ).replace(':root,', ''),,
     fs.readFileSync(
       require.resolve(
         '@alicloud/console-components-console-menu/dist/vars/xconsole.css'
-      )
-    )
+      ),
+      'utf-8'
+    ).replace(':root,', ''),
+  ].join('\n')
+
+  const appendXconsoleDarkCssVar = [
+    '',
+    fs.readFileSync(
+      require.resolve(
+        '@alicloud/console-components-app-layout/dist/vars/xconsole-dark.css'
+      ),
+      'utf-8'
+    ).replace(':root,', ''),
+    fs.readFileSync(
+      require.resolve(
+        '@alicloud/console-components-console-menu/dist/vars/xconsole-dark.css'
+      ),
+      'utf-8'
+    ).replace(':root,', ''),
   ].join('\n')
 
   await Promise.all([
@@ -137,6 +155,10 @@ fs.writeFileSync(
     fs.writeFile(
       path.join(distDir, 'xconsole-var-rc.css'),
       appendXconsoleCssVar
+    ),
+    fs.writeFile(
+      path.join(distDir, 'xconsole-dark-var-rc.css'),
+      appendXconsoleDarkCssVar
     )
   ])
 
