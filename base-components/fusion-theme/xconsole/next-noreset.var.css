@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-xconsole-v4@0.8.18 (https://fusion.design)
+ * @alife/theme-xconsole-v4@0.8.19 (https://fusion.design)
  * @alifd/next@1.22.26 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -5059,19 +5059,19 @@
         color: #333333; }
     .next-menu-item.next-disabled,
     .next-menu-item.next-disabled .next-menu-item-text > a {
-      color: #555555;
-      color: var(--menu-color-disabled, #555555);
+      color: #CCCCCC;
+      color: var(--menu-color-disabled, #CCCCCC);
       background-color: #FFFFFF;
       background-color: var(--menu-background, #FFFFFF);
       cursor: not-allowed; }
       .next-menu-item.next-disabled .next-menu-icon-arrow,
       .next-menu-item.next-disabled .next-menu-item-text > a .next-menu-icon-arrow {
-        color: #555555;
-        color: var(--menu-color-disabled, #555555); }
+        color: #CCCCCC;
+        color: var(--menu-color-disabled, #CCCCCC); }
       .next-menu-item.next-disabled .next-menu-icon-selected,
       .next-menu-item.next-disabled .next-menu-item-text > a .next-menu-icon-selected {
-        color: #555555;
-        color: var(--menu-color-disabled, #555555); }
+        color: #CCCCCC;
+        color: var(--menu-color-disabled, #CCCCCC); }
     .next-menu-item:not(.next-disabled):hover, .next-menu-item:not(.next-disabled).next-selected:hover, .next-menu-item:not(.next-disabled).next-selected.next-focused:hover, .next-menu-item:not(.next-disabled).next-selected:focus:hover, .next-menu-item:not(.next-disabled).next-focused, .next-menu-item:not(.next-disabled).next-selected.next-focused, .next-menu-item:not(.next-disabled).next-selected:focus {
       color: #333333;
       color: var(--menu-color-hover, #333333);
@@ -8485,8 +8485,8 @@
     padding: var(--dialog-title-padding-top, 24px) var(--dialog-title-padding-left-right, 24px) var(--dialog-title-padding-bottom, 16px) var(--dialog-title-padding-left-right, 24px);
     border-bottom: 0px solid #C0C6CC;
     border-bottom: var(--dialog-title-border-width, 0px) var(--line-solid, solid) var(--dialog-title-border-color, #C0C6CC);
-    font-size: 14px;
-    font-size: var(--dialog-title-font-size, 14px);
+    font-size: 16px;
+    font-size: var(--dialog-title-font-size, 16px);
     background: #FFFFFF;
     background: var(--dialog-title-bg-color, #FFFFFF);
     color: #333333;
@@ -20833,8 +20833,8 @@
     border-bottom: 1px solid #E3E4E6;
     border-bottom: var(--table-normal-border-width, 1px) var(--table-normal-border-style, solid) var(--table-normal-border-color, #E3E4E6); }
     .next-table th .next-table-cell-wrapper {
-      padding: 12px 8px;
-      padding: var(--table-header-padding-top, 12px) var(--table-header-padding-left, 8px);
+      padding: 8px 16px;
+      padding: var(--table-header-padding-top, 8px) var(--table-header-padding-left, 16px);
       overflow: hidden;
       text-overflow: ellipsis;
       word-break: break-all; }
@@ -20864,8 +20864,8 @@
     border-bottom: 1px solid #E3E4E6;
     border-bottom: var(--table-normal-border-width, 1px) var(--table-normal-border-style, solid) var(--table-normal-border-color, #E3E4E6); }
     .next-table td .next-table-cell-wrapper {
-      padding: 8px 8px;
-      padding: var(--table-cell-padding-top, 8px) var(--table-cell-padding-left, 8px);
+      padding: 8px 16px;
+      padding: var(--table-cell-padding-top, 8px) var(--table-cell-padding-left, 16px);
       overflow: hidden;
       text-overflow: ellipsis;
       word-break: break-all; }
