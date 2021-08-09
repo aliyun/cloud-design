@@ -3994,6 +3994,9 @@
     --font-lineheight-2: 1.5;
     
     
+    --font-size-display-3: 36px;
+    
+    
     --font-name-bold: "";
     
     
@@ -4031,9 +4034,6 @@
     
     
     --font-size-display-2: 28px;
-    
-    
-    --font-size-display-3: 32px;
     
     
     --font-lineheight-3: 1.5;
@@ -4429,6 +4429,9 @@
     --search-normal-normal-btn-hover-text-color: var(--color-text1-2, #5a5a5a);
     
     
+    --search-search-icon-content: var(--icon-content-search1, "");
+    
+    
     --search-normal-primary-color: var(--color-brand1-6, #0064C8);
     
     
@@ -4598,9 +4601,6 @@
     
     
     --search-simple-dark-l-icon-size: var(--icon-m, 20px);
-    
-    
-    --search-search-icon-content: var(--icon-content-search1, "");
     
     
     /* ------------------------ card ------------------------ */
@@ -5212,6 +5212,9 @@
     --balloon-title-font-size: var(--font-size-subhead, 16px);
     
     
+    --balloon-size-padding-top: 6px;
+    
+    
     --balloon-size-max-width: 300px;
     
     
@@ -5264,9 +5267,6 @@
     
     
     --balloon-tooltip-border-style: var(--line-solid, solid);
-    
-    
-    --balloon-size-padding-top: 6px;
     
     
     /* ------------------------ nav ------------------------ */
@@ -8632,6 +8632,27 @@
     --tag-closable-primary-fill-border-color-hover: var(--color-brand1-1, #F0F7FF);
     
     
+    --tag-closable-bordered-text-color: var(--color-text1-6, #5a5a5a);
+    
+    
+    --tag-closable-bordered-text-color-hover: var(--color-text1-6, #5a5a5a);
+    
+    
+    --tag-closable-bordered-tail-color-hover: var(--color-text1-6, #5a5a5a);
+    
+    
+    --tag-fill-bg-color-hover: var(--color-brand1-2, #CAE3FD);
+    
+    
+    --tag-bordered-bg-hover: var(--color-line1-1, #eaeaea);
+    
+    
+    --tag-checkable-normal-text-color: var(--color-text1-7, #5a5a5a);
+    
+    
+    --tag-checkable-normal-text-color-hover: var(--color-text1-6, #5a5a5a);
+    
+    
     --tag-size-l-spacing: var(--s-4, 16px);
     
     
@@ -8804,27 +8825,6 @@
     
     
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #CCCCCC);
-    
-    
-    --tag-closable-bordered-text-color: var(--color-text1-6, #5a5a5a);
-    
-    
-    --tag-closable-bordered-text-color-hover: var(--color-text1-6, #5a5a5a);
-    
-    
-    --tag-closable-bordered-tail-color-hover: var(--color-text1-6, #5a5a5a);
-    
-    
-    --tag-fill-bg-color-hover: var(--color-brand1-2, #CAE3FD);
-    
-    
-    --tag-bordered-bg-hover: var(--color-line1-1, #eaeaea);
-    
-    
-    --tag-checkable-normal-text-color: var(--color-text1-7, #5a5a5a);
-    
-    
-    --tag-checkable-normal-text-color-hover: var(--color-text1-6, #5a5a5a);
     
     
     /* ------------------------ input ------------------------ */
@@ -9073,18 +9073,6 @@
     --upload-card-border-color: var(--color-fill1-2, #f7f7f7);
     
     
-    --upload-card-hover-border-color: var(--color-line1-1, #eaeaea);
-    
-    
-    --upload-card-font-color: var(--color-line1-3, #CCCCCC);
-    
-    
-    --upload-card-hover-font-color: var(--color-line1-5, #ababab);
-    
-    
-    --upload-card-icon-color: var(--color-line1-3, #CCCCCC);
-    
-    
     --upload-text-list-close-icon-color: var(--color-fill1-5, #848484);
     
     
@@ -9260,6 +9248,18 @@
     
     
     --upload-drag-zone-upload-normal-hint-color: var(--color-text1-2, #5a5a5a);
+    
+    
+    --upload-card-hover-border-color: var(--color-line1-3, #CCCCCC);
+    
+    
+    --upload-card-font-color: var(--color-text1-3, #333333);
+    
+    
+    --upload-card-icon-color: var(--color-fill1-5, #848484);
+    
+    
+    --upload-card-hover-font-color: var(--color-text1-3, #333333);
     
     
     /* ------------------------ select ------------------------ */

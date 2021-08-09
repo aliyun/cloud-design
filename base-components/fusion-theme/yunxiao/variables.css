@@ -3037,6 +3037,9 @@
     --balloon-tooltip-color-bg: var(--color-fill1-7, #595959);
     
     
+    --balloon-size-padding-top: 6px;
+    
+    
     --balloon-size-header-margin-bottom: var(--s-2, 8px);
     
     
@@ -3086,9 +3089,6 @@
     
     
     --balloon-tooltip-border-style: var(--line-solid, solid);
-    
-    
-    --balloon-size-padding-top: 6px;
     
     
     /* ------------------------ collapse ------------------------ */
@@ -3502,6 +3502,9 @@
     --nav-normal-item-selected-text-style: var(--font-weight-medium, 500);
     
     
+    --nav-ver-sub-nav-font-size: var(--font-size-body-2, 14px);
+    
+    
     --nav-hoz-height: var(--s-11, 44px);
     
     
@@ -3785,9 +3788,6 @@
     
     
     --nav-line-group-text-style: var(--font-weight-2, normal);
-    
-    
-    --nav-ver-sub-nav-font-size: var(--font-size-body-2, 14px);
     
     
     /* ------------------------ calendar ------------------------ */
@@ -7537,9 +7537,6 @@
     /* ------------------------ table ------------------------ */
     
     
-    --table-th-bg: var(--color-transparent, transparent);
-    
-    
     --table-group-th-bg: var(--color-transparent, transparent);
     
     
@@ -7583,6 +7580,27 @@
     
     
     --table-empty-color: var(--color-text1-1, #CECECE);
+    
+    
+    --table-th-color: var(--color-fill1-6, #8B8B8B);
+    
+    
+    --table-cell-padding-left: var(--s-2, 8px);
+    
+    
+    --table-header-padding-left: var(--s-2, 8px);
+    
+    
+    --table-group-split: var(--s-2, 8px);
+    
+    
+    --table-header-padding-top: var(--s-2, 8px);
+    
+    
+    --table-row-color: var(--color-text1-3, #575757);
+    
+    
+    --table-normal-border-color: var(--color-line1-1, #E8E8E8);
     
     
     --table-normal-border-width: var(--line-1, 1px);
@@ -7660,28 +7678,10 @@
     --table-expand-unfold-icon-content: var(--icon-content-minus, "");
     
     
-    --table-normal-border-color: var(--color-text1-1, #CECECE);
+    --table-th-bg: var(--color-fill1-1, #FFFFFF);
     
     
-    --table-th-color: var(--color-fill1-6, #8B8B8B);
-    
-    
-    --table-cell-padding-left: var(--s-2, 8px);
-    
-    
-    --table-header-padding-left: var(--s-2, 8px);
-    
-    
-    --table-group-split: var(--s-2, 8px);
-    
-    
-    --table-header-padding-top: var(--s-2, 8px);
-    
-    
-    --table-row-bg: var(--color-transparent, transparent);
-    
-    
-    --table-row-color: var(--color-text1-3, #575757);
+    --table-row-bg: var(--color-fill1-1, #FFFFFF);
     
     
     /* ------------------------ breadcrumb ------------------------ */
