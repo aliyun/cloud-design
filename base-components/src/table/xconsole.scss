@@ -9,9 +9,9 @@ $table-empty: '#{$css-prefix}table-empty';
   }
   th,
   td {
-    // .#{$table-cell-wrapper-cls-name} {
-    //   word-break: normal;
-    // }
+    .#{$table-cell-wrapper-cls-name} {
+      word-break: normal;
+    }
 
     &.#{$table-cls-name}-selection {
       .#{$table-cell-wrapper-cls-name} {
