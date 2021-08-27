@@ -13,10 +13,8 @@ type NextTabProps = React.ComponentProps<typeof NextTab>
 const Tab: typeof NextTab = withThemeClass(
   React.forwardRef((props: NextTabProps, ref) => {
     const { children } = props;
-    console.log(props);
     
     const theme = useCssVar('--alicloudfe-components-theme').trim()
-    console.log(theme);
     
     if (theme === 'hybridcloud' || theme === "hybridcloud-dark") {
       return (

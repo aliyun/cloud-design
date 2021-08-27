@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-yunxiao-v1@0.9.49 (https://fusion.design)
- * @alifd/next@1.23.22 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.9.50 (https://fusion.design)
+ * @alifd/next@1.23.24 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -20163,21 +20163,21 @@
     display: inline-block;
     border: 2px solid transparent;
     border: var(--switch-border-width-container, 2px) solid transparent;
-    width: 44px;
-    width: var(--switch-size-m-width, 44px);
-    height: 24px;
-    height: calc(var(--switch-size-m-trigger, 20px) + var(--switch-border-width-container, 2px)*2);
+    width: 36px;
+    width: var(--switch-size-m-width, 36px);
+    height: 20px;
+    height: calc(var(--switch-size-m-trigger, 16px) + var(--switch-border-width-container, 2px)*2);
     border-radius: 50px;
     border-radius: var(--switch-size-m-radius-container, 50px); }
     .next-switch-medium:not([disabled]):active .next-switch-btn {
-      width: 26px;
-      width: calc(var(--switch-size-m-trigger, 20px)*1.3); }
+      width: 20.8px;
+      width: calc(var(--switch-size-m-trigger, 16px)*1.3); }
     .next-switch-medium.next-switch-on:not([disabled]):active .next-switch-btn {
-      left: calc(100% - 26px);
-      left: calc(100% - var(--switch-size-m-trigger, 20px)*1.3); }
+      left: calc(100% - 20.8px);
+      left: calc(100% - var(--switch-size-m-trigger, 16px)*1.3); }
     .next-switch-medium.next-switch-auto-width {
-      min-width: 44px;
-      min-width: var(--switch-size-m-width, 44px);
+      min-width: 36px;
+      min-width: var(--switch-size-m-width, 36px);
       width: auto;
       overflow: initial; }
     .next-switch-medium:after {
@@ -20186,12 +20186,12 @@
       border: 0px solid transparent;
       border: var(--switch-border-width-trigger, 0px) solid transparent;
       position: absolute;
-      left: calc(100% - 20px);
-      left: calc(100% - var(--switch-size-m-trigger, 20px));
-      width: 20px;
-      width: var(--switch-size-m-trigger, 20px);
-      height: 20px;
-      height: var(--switch-size-m-trigger, 20px);
+      left: calc(100% - 16px);
+      left: calc(100% - var(--switch-size-m-trigger, 16px));
+      width: 16px;
+      width: var(--switch-size-m-trigger, 16px);
+      height: 16px;
+      height: var(--switch-size-m-trigger, 16px);
       border-radius: 500px;
       border-radius: var(--switch-size-m-radius-trigger, 500px);
       -webkit-box-sizing: border-box;
@@ -20199,23 +20199,23 @@
     .next-switch-medium > .next-switch-children {
       font-size: 14px;
       font-size: var(--font-size-body-1, 14px);
-      height: 20px;
-      height: var(--switch-size-m-trigger, 20px);
-      line-height: 20px;
-      line-height: var(--switch-size-m-trigger, 20px); }
+      height: 16px;
+      height: var(--switch-size-m-trigger, 16px);
+      line-height: 16px;
+      line-height: var(--switch-size-m-trigger, 16px); }
     .next-switch-medium.next-switch.next-switch-on > .next-switch-children {
-      margin: 0 28px 0 8px;
-      margin: 0 calc(var(--switch-size-m-trigger, 20px) + var(--switch-size-m-trigger-padding-r, 8px)) 0 var(--switch-size-m-trigger-padding-l, 8px); }
+      margin: 0 24px 0 8px;
+      margin: 0 calc(var(--switch-size-m-trigger, 16px) + var(--switch-size-m-trigger-padding-r, 8px)) 0 var(--switch-size-m-trigger-padding-l, 8px); }
     .next-switch-medium.next-switch.next-switch-off > .next-switch-children {
-      margin: 0 8px 0 28px;
-      margin: 0 var(--switch-size-m-trigger-padding-r, 8px) 0 calc(var(--switch-size-m-trigger, 20px) + var(--switch-size-m-trigger-padding-l, 8px)); }
+      margin: 0 8px 0 24px;
+      margin: 0 var(--switch-size-m-trigger-padding-r, 8px) 0 calc(var(--switch-size-m-trigger, 16px) + var(--switch-size-m-trigger-padding-l, 8px)); }
     .next-switch-medium.next-switch-loading .next-icon-loading {
-      line-height: 20px;
-      line-height: var(--switch-size-m-trigger, 20px);
-      height: 20px;
-      height: var(--switch-size-m-trigger, 20px);
-      width: 20px;
-      width: var(--switch-size-m-trigger, 20px); }
+      line-height: 16px;
+      line-height: var(--switch-size-m-trigger, 16px);
+      height: 16px;
+      height: var(--switch-size-m-trigger, 16px);
+      width: 16px;
+      width: var(--switch-size-m-trigger, 16px); }
       .next-switch-medium.next-switch-loading .next-icon-loading:before,
       .next-switch-medium.next-switch-loading .next-icon-loading .next-icon-remote {
         width: 16px;

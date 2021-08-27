@@ -5209,6 +5209,12 @@
     --balloon-size-padding-top: 6px;
     
     
+    --balloon-primary-color-bg: var(--color-text1-5, #292929);
+    
+    
+    --balloon-tooltip-color-bg: var(--color-text1-5, #292929);
+    
+    
     --balloon-size-max-width: 300px;
     
     
@@ -5261,12 +5267,6 @@
     
     
     --balloon-tooltip-border-style: var(--line-solid, solid);
-    
-    
-    --balloon-primary-color-bg: var(--color-text1-5, #292929);
-    
-    
-    --balloon-tooltip-color-bg: var(--color-text1-5, #292929);
     
     
     /* ------------------------ nav ------------------------ */
@@ -8425,9 +8425,6 @@
     /* ------------------------ tag ------------------------ */
     
     
-    --tag-size-s-height: var(--s-5, 20px);
-    
-    
     --tag-size-s-icon-font: var(--icon-xs, 12px);
     
     
@@ -8479,9 +8476,6 @@
     --tag-closable-primary-fill-bg-color-disabled: var(--color-white, #FFFFFF);
     
     
-    --tag-size-m-padding-lr: var(--s-2, 8px);
-    
-    
     --tag-checkable-normal-bg-selected: var(--color-transparent, transparent);
     
     
@@ -8492,9 +8486,6 @@
     
     
     --tag-checkable-normal-icon-color-selected-hover: var(--color-transparent, transparent);
-    
-    
-    --tag-size-s-padding-lr: 8px;
     
     
     --tag-size-s-content-min-width: var(--s-1, 4px);
@@ -8557,19 +8548,10 @@
     --tag-bordered-bg-disabled: var(--color-fill1-2, #f7f7f7);
     
     
-    --tag-size-l-height: var(--s-6, 24px);
-    
-    
-    --tag-size-m-height: var(--s-5, 20px);
-    
-    
     --tag-closable-normal-bg-hover: var(--color-line1-1, #eaeaea);
     
     
     --tag-closable-bordered-bg-hover: var(--color-fill1-2, #f7f7f7);
-    
-    
-    --tag-size-l-padding-lr: var(--s-2, 8px);
     
     
     --tag-fill-bg-color-disabled: var(--color-fill1-2, #f7f7f7);
@@ -8825,6 +8807,24 @@
     
     
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #CCCCCC);
+    
+    
+    --tag-size-l-height: var(--s-7, 28px);
+    
+    
+    --tag-size-m-height: var(--s-6, 24px);
+    
+    
+    --tag-size-s-height: var(--s-5, 20px);
+    
+    
+    --tag-size-l-padding-lr: var(--s-3, 12px);
+    
+    
+    --tag-size-m-padding-lr: var(--s-2, 8px);
+    
+    
+    --tag-size-s-padding-lr: var(--s-2, 8px);
     
     
     /* ------------------------ input ------------------------ */

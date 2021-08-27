@@ -40,6 +40,10 @@ export interface IModalProps {
    */
   title?: string
   /**
+   * Modal标题位置
+   */
+  titleAlign?: 'left' | 'center'
+  /**
    * Modal标题是否可编辑
    */
   titleEditable?: boolean
@@ -118,6 +122,7 @@ class Modal extends React.Component<
     this.container = document.createElement('div')
   }
 
+
   componentDidMount() {
     document.body.appendChild(this.container)
     if (this.state.visible) {
@@ -141,7 +146,7 @@ class Modal extends React.Component<
       this.setState({
         visible: false
       })
-      this.onClose();
+      this.onClose()
     }
   }
 
@@ -210,8 +215,13 @@ class Modal extends React.Component<
       titleEditable,
       titleEditTooltip,
       titleInputWidth,
-      hasArrow = false
+      hasArrow = false,
+      titleAlign = 'left'
     } = this.props
+    // const refElement = ConfigProvider.useRefElement()
+    // const theme = window.getComputedStyle?.(refElement).getPropertyValue('--alicloudfe-components-theme') ?? ''
+    // console.log(theme);
+    
     const { isEditing } = this.state
     const editTitle = isEditing ? (
       <Input
@@ -235,7 +245,7 @@ class Modal extends React.Component<
               text
             >
               {/* <Icon type="pencil" /> */}
-              <Icon type="edit"/>
+              <Icon type="edit" />
             </Button>
           }
           align="r"
@@ -245,17 +255,30 @@ class Modal extends React.Component<
       </span>
     )
     return (
-      <div className={`${prefix}modal-title-box`}>
-        {this.props.hasArrow && (
-          <Icon type="arrow-left" className={`${prefix}modal-title-icon`} onClick={() => {
-            const { onBack } = this.props;
-            onBack?.();
-          }}/>
-        )}
-        <div className={`${prefix}modal-title`}>
-          {titleEditable ? editTitle : title}
+      <>
+        <div className={`${prefix}modal-title-box`}>
+          {this.props.hasArrow && (
+            <Icon
+              type="arrow-left"
+              className={`${prefix}modal-title-icon`}
+              onClick={() => {
+                const { onBack } = this.props
+                onBack?.()
+              }}
+            />
+          )}{' '}
+          {titleAlign === 'left'  && (
+            <div className={`${prefix}modal-title`}>
+              {titleEditable ? editTitle : title}
+            </div>
+          )}
         </div>
-      </div>
+        {titleAlign === 'center' && (
+          <div className={`${prefix}modal-title ${prefix}modal-title-center`}>
+            {titleEditable ? editTitle : title}
+          </div>
+        )}
+      </>
     )
   }
 
@@ -303,13 +326,8 @@ class Modal extends React.Component<
   }
 
   renderBody = () => {
-    const {
-      prefix,
-      sideDrawer,
-      sideDrawerVisible,
-      sideDrawerWidth,
-      children
-    } = this.props
+    const { prefix, sideDrawer, sideDrawerVisible, sideDrawerWidth, children } =
+      this.props
     return (
       <div className={`${prefix}modal-body`}>
         <div className={`${prefix}modal-children`}>{children}</div>

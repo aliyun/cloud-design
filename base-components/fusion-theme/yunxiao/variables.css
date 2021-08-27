@@ -4357,13 +4357,7 @@
     /* ------------------------ switch ------------------------ */
     
     
-    --switch-size-m-width: var(--s-11, 44px);
-    
-    
     --switch-size-m-radius-container: var(--corner-3, 50px);
-    
-    
-    --switch-size-m-trigger: var(--s-5, 20px);
     
     
     --switch-border-width-trigger: var(--line-zero, 0px);
@@ -4438,9 +4432,6 @@
     --switch-size-s-radius-trigger: var(--corner-semicircle, 500px);
     
     
-    --switch-size-m-inner-icon: var(--s-4, 16px);
-    
-    
     --switch-size-m-trigger-padding-l: var(--s-2, 8px);
     
     
@@ -4487,6 +4478,15 @@
     
     
     --switch-rtl-on-shadow: var(--shadow-1-left, 0px 0px 8px 0px rgba(0, 0, 0, 0.03));
+    
+    
+    --switch-size-m-width: var(--s-9, 36px);
+    
+    
+    --switch-size-m-trigger: var(--s-4, 16px);
+    
+    
+    --switch-size-m-inner-icon: var(--s-4, 16px);
     
     
     /* ------------------------ badge ------------------------ */
@@ -6730,6 +6730,9 @@
     --form-item-l-margin-b: var(--s-5, 20px);
     
     
+    --form-top-label-margin-b: 8px;
+    
+    
     --form-item-s-margin-b: var(--s-3, 12px);
     
     
@@ -6746,9 +6749,6 @@
     
     
     --form-label-color: var(--color-text1-3, #575757);
-    
-    
-    --form-top-label-margin-b: 8px;
     
     
     /* ------------------------ upload ------------------------ */
@@ -7603,6 +7603,12 @@
     --table-normal-border-color: var(--color-line1-1, #E8E8E8);
     
     
+    --table-th-bg: var(--color-fill1-1, #FFFFFF);
+    
+    
+    --table-row-bg: var(--color-fill1-1, #FFFFFF);
+    
+    
     --table-normal-border-width: var(--line-1, 1px);
     
     
@@ -7676,12 +7682,6 @@
     
     
     --table-expand-unfold-icon-content: var(--icon-content-minus, "");
-    
-    
-    --table-th-bg: var(--color-fill1-1, #FFFFFF);
-    
-    
-    --table-row-bg: var(--color-fill1-1, #FFFFFF);
     
     
     /* ------------------------ breadcrumb ------------------------ */
