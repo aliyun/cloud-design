@@ -4948,6 +4948,9 @@
     --balloon-tooltip-size-padding-left: var(--s-3, 12px);
     
     
+    --balloon-size-padding-top: 6px;
+    
+    
     --balloon-size-max-width: 300px;
     
     
@@ -4997,9 +5000,6 @@
     
     
     --balloon-tooltip-border-style: var(--line-solid, solid);
-    
-    
-    --balloon-size-padding-top: 6px;
     
     
     /* ------------------------ pagination ------------------------ */
@@ -8005,9 +8005,6 @@
     --tag-closable-primary-fill-bg-color-disabled: var(--color-white, #FFFFFF);
     
     
-    --tag-size-l-padding-lr: 10px;
-    
-    
     --tag-size-m-padding-lr: var(--s-2, 8px);
     
     
@@ -8117,6 +8114,12 @@
     
     
     --tag-bordered-bg-hover: var(--color-fill1-1, #151515);
+    
+    
+    --tag-fill-border-color: var(--color-notice-1, #001a33);
+    
+    
+    --tag-fill-border-color-hover: var(--color-notice-1, #001a33);
     
     
     --tag-size-l-spacing: var(--s-4, 16px);
@@ -8341,10 +8344,7 @@
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    --tag-fill-border-color: var(--color-notice-1, #001a33);
-    
-    
-    --tag-fill-border-color-hover: var(--color-notice-1, #001a33);
+    --tag-size-l-padding-lr: var(--s-3, 12px);
     
     
     /* ------------------------ input ------------------------ */
@@ -8890,45 +8890,6 @@
     --drawer-close-bg-hovered: var(--color-transparent, transparent);
     
     
-    /* ------------------------ divider ------------------------ */
-    
-    
-    --divider-ver-color: var(--color-line1-1, #383838);
-    
-    
-    --divider-hoz-color: var(--color-line1-2, #4D4D4D);
-    
-    
-    --divider-hoz-size: var(--line-1, 1px);
-    
-    
-    --divider-hoz-text-center-paddingLeft: var(--s-4, 16px);
-    
-    
-    --divider-hoz-text-left-paddingLeft: var(--s-4, 16px);
-    
-    
-    --divider-hoz-text-marginTop: var(--s-4, 16px);
-    
-    
-    --divider-hoz-marginTop: var(--s-4, 16px);
-    
-    
-    --divider-hoz-text-size: var(--font-size-subhead, 16px);
-    
-    
-    --divider-hoz-text-weight: var(--font-weight-2, normal);
-    
-    
-    --divider-hoz-text-color: var(--color-text1-4, #EAEAEA);
-    
-    
-    --divider-ver-size: var(--line-1, 1px);
-    
-    
-    --divider-ver-marginLeft: var(--s-2, 8px);
-    
-    
     /* ------------------------ transfer ------------------------ */
     
     
@@ -9313,9 +9274,6 @@
     /* ------------------------ table ------------------------ */
     
     
-    --table-row-bg: var(--color-transparent, transparent);
-    
-    
     --table-empty-color: var(--color-text1-1, #6B6B6B);
     
     
@@ -9460,6 +9418,9 @@
     --table-expand-unfold-icon-content: var(--icon-content-minus, "");
     
     
+    --table-row-bg: var(--color-fill1-1, #151515);
+    
+    
     /* ------------------------ collapse ------------------------ */
     
     
@@ -9602,6 +9563,45 @@
     
     
     --typography-title-font-weight: var(--font-weight-semi-bold, 600);
+    
+    
+    /* ------------------------ divider ------------------------ */
+    
+    
+    --divider-hoz-color: var(--color-line1-2, #4D4D4D);
+    
+    
+    --divider-hoz-size: var(--line-1, 1px);
+    
+    
+    --divider-hoz-text-center-paddingLeft: var(--s-4, 16px);
+    
+    
+    --divider-hoz-text-left-paddingLeft: var(--s-4, 16px);
+    
+    
+    --divider-hoz-text-marginTop: var(--s-4, 16px);
+    
+    
+    --divider-hoz-marginTop: var(--s-4, 16px);
+    
+    
+    --divider-hoz-text-size: var(--font-size-subhead, 16px);
+    
+    
+    --divider-hoz-text-weight: var(--font-weight-2, normal);
+    
+    
+    --divider-hoz-text-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    --divider-ver-size: var(--line-1, 1px);
+    
+    
+    --divider-ver-color: var(--color-line1-2, #4D4D4D);
+    
+    
+    --divider-ver-marginLeft: var(--s-3, 12px);
     
     
     /* ------------------------ split-button ------------------------ */
