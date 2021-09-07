@@ -15,6 +15,7 @@ $icon-prefix: '.' + $css-prefix + 'icon';
       top: 50%;
       transform: translate(-50%, -50%) scale(var(--checkbox-icon-scale, 0.8));
       margin: 0;
+      animation: none;
       &::before {
         display: inline-block;
         width: var(--checkbox-icon-size, 16px);
