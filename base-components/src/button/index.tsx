@@ -5,6 +5,7 @@ import cls from 'classnames'
 
 import { withThemeClass } from '../utils/withThemeClass'
 import { useCssVar } from '../utils/useCssVar'
+import isReactFragment from '../utils/isReactFragment'
 
 type NextButtonProps = React.ComponentProps<typeof NextButton>
 
@@ -24,8 +25,12 @@ const mapTeamixIconSize = (size: string) => {
 
 const Button: typeof NextButton = withThemeClass(
   React.forwardRef((props: NextButtonProps, ref) => {
-    const { children, className, iconSize, size='medium' } = props
-    const count = Children.count(children);
+    const { className, iconSize, size = 'medium' } = props
+    let { children } = props
+    const count = Children.count(children)
+    if (isReactFragment(children)) {
+      children = <span className={'next-btn-helper'}>{children}</span>
+    }
     const theme = useCssVar('--alicloudfe-components-theme').trim()
     // 判断是否是2-3个汉字
     if (
@@ -80,18 +85,22 @@ const Button: typeof NextButton = withThemeClass(
     }
     const clonedChildren = Children.map(children, (child: any, index) => {
       // 针对 teamix-icon 进行处理
-      if (child && ['function', 'object'].indexOf(typeof child.type) > -1 && child.type?.displayName === 'TeamixIcon') {
+      if (
+        child &&
+        ['function', 'object'].indexOf(typeof child.type) > -1 &&
+        child.type?.displayName === 'TeamixIcon'
+      ) {
         const iconCls = cls({
           'teamix-icon-first': count > 1 && index === 0,
           'teamix-icon-last': count > 1 && index === count - 1,
-          [child.props.className]: !!child.props.className,
+          [child.props.className]: !!child.props.className
         })
         return React.cloneElement(child, {
           className: iconCls,
           size: iconSize || mapTeamixIconSize(size)
         })
       }
-      return child;
+      return child
     })
     return (
       <NextButton {...props} className={className} ref={ref as any}>

@@ -14,18 +14,32 @@ export default function DemoComponent() {
       <Box direction="row" spacing={20}>
         <Button type="normal">Normal</Button>
 
-        <Button type="primary" size="small">思考</Button>
-        <Button type="primary" size="small">思考的</Button>
-        <Button type="primary" size="small">思考的到</Button>
+        <Button type="primary" size="small">
+          思考
+        </Button>
+        <Button type="primary" size="small">
+          <>思考的</>
+        </Button>
+        <Button type="primary" size="small">
+          思考的到
+        </Button>
 
         <Button type="primary">思考</Button>
         <Button type="primary">思考的</Button>
         <Button type="primary">思考的到</Button>
 
-        <Button type="primary" size="large">思考</Button>
-        <Button type="primary" size="large">思考的</Button>
-        <Button type="primary" size="large">思考的到</Button>
-        <Button type="secondary" size="large">Secondary</Button>
+        <Button type="primary" size="large">
+          思考
+        </Button>
+        <Button type="primary" size="large">
+          思考的
+        </Button>
+        <Button type="primary" size="large">
+          思考的到
+        </Button>
+        <Button type="secondary" size="large">
+          Secondary
+        </Button>
       </Box>
       <br />
       <Box direction="row" spacing={20}>
