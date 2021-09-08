@@ -55,6 +55,8 @@ interface IDrawer {
    * 抽屉大小，也可以直接传入width自定义
    */
   size?: 'mini' | 'small' | 'medium' | 'large';
+
+  className?: string;
 }
 
 export type DrawerProps = NextDrawerProps & IDrawer
@@ -77,6 +79,7 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
       footerClass,
       size = 'mini',
       width,
+      className,
       ...filterProps
     } = props;
     const [customVisible, setCustomVisible] = useState<boolean>(visible);
@@ -118,7 +121,8 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
     }, [visible])
 
     const drawerCustomClassName = cls({
-      'next-drawer-has-footer': onOk || onCancel || renderFooter
+      'next-drawer-has-footer': onOk || onCancel || renderFooter,
+      [className]: !!className
     })
     
     const drawerFooterClassName = cls({
