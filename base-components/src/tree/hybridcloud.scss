@@ -1,8 +1,7 @@
 // 混合云Tree样式覆盖
 .next-tree-node-label-wrapper.next-tree-node-label-wrapper.next-tree-node-label-wrapper {
   box-sizing: border-box;
-  height: 24px;
-  line-height: 24px;
+  margin: -2px 0;
 }
 .next-tree-node-label {
   height: 24px;
@@ -18,19 +17,5 @@
     .next-icon {
       color: var(--tree-node-selected-color, #0064C8);
     }
-  }
-}
-
-.next-drag-over-gap-top {
-  .next-tree-node-label-wrapper.next-tree-node-label-wrapper.next-tree-node-label-wrapper {
-    border-top: var(--line-2, 2px) solid transparent;
-    border-top-color: var(--color-brand1-6, #0064C8);
-  }
-}
-
-.next-drag-over-gap-bottom {
-  .next-tree-node-label-wrapper.next-tree-node-label-wrapper.next-tree-node-label-wrapper {
-    border-bottom: var(--line-2, 2px) solid transparent;
-    border-bottom-color: var(--color-brand1-6, #0064C8);
   }
 }
