@@ -29,7 +29,7 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
 :not(.theme-yunxiao-dark){
   #{$dialog-prefix} {
     min-width: 400px;
-    &:not(#{$dialog-prefix}-quick) {
+    &:not(#{$dialog-prefix}-quick:not(.quick-show)) {
       --dialog-close-top: 14px;
       #{$dialog-prefix}-header {
         --dialog-title-padding-bottom: 12px;

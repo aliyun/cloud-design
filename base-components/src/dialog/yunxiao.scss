@@ -25,7 +25,7 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
 :not(.theme-hybridcloud-dark){
   #{$dialog-prefix} {
     min-width: 440px;
-    &:not(#{$dialog-prefix}-quick) {
+    &:not(#{$dialog-prefix}-quick:not(.quick-show)) {
       #{$dialog-prefix}-header {
         --dialog-title-padding-bottom: 12px;
         --dialog-title-padding-top: 12px;
