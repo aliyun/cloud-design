@@ -1,12 +1,12 @@
-import React, { ReactNode, useEffect, useState, useRef } from 'react';
-import ReactDOM from 'react-dom';
-import { Drawer as NextDrawer } from '@alifd/next'
-import { withThemeClass } from '../utils/withThemeClass';
+import React, { ReactNode, useEffect, useState, useRef } from 'react'
+import ReactDOM from 'react-dom'
+import { ConfigProvider, Drawer as NextDrawer } from '@alifd/next'
+import { withThemeClass } from '../utils/withThemeClass'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import { default as Button } from '../button'
 import cls from 'classnames'
 import { useCssVar } from '../utils/useCssVar'
-import { ButtonProps } from '@alifd/next/types/button';
+import { ButtonProps } from '@alifd/next/types/button'
 
 type NextDrawerProps = React.ComponentProps<typeof NextDrawer>
 
@@ -14,56 +14,83 @@ interface IDrawer {
   /**
    * 点击确定按钮时的回调。有此参数就默认显示确定按钮
    */
-  onOk?: (event: React.MouseEvent) => void;
+  onOk?: (event: React.MouseEvent) => void
   /**
    * 点击取消按钮时的回调。有此参数就默认显示取消按钮
    */
-  onCancel?: (event: React.MouseEvent) => void;
+  onCancel?: (event: React.MouseEvent) => void
   /**
    * 完全自定义底部操作栏
    */
-  renderFooter?: React.ReactNode;
+  renderFooter?: React.ReactNode
   /**
    * 是否有底部分割线
    */
-  hasFooterLine?: boolean;
+  hasFooterLine?: boolean
   /**
    * 底部按钮位置
    */
-  footerAlign?: 'left' | 'center' | 'right';
+  footerAlign?: 'left' | 'center' | 'right'
   /**
    * 取消按钮的文字
    */
-  cancelText?: React.ReactNode;
+  cancelText?: React.ReactNode
   /**
    * 确定按钮的文字
    */
-  okText?: React.ReactNode;
+  okText?: React.ReactNode
   /**
    * 透传给取消按钮的Props
    */
-  cancelBtnProps?: ButtonProps;
+  cancelBtnProps?: ButtonProps
   /**
    * 透传给确定按钮的Props
    */
-  okBtnProps?: ButtonProps;
+  okBtnProps?: ButtonProps
   /**
    * 给footer增加className
    */
-  footerClass?: string;
+  footerClass?: string
   /**
    * 抽屉大小，也可以直接传入width自定义
    */
-  size?: 'mini' | 'small' | 'medium' | 'large';
+  size?: 'mini' | 'small' | 'medium' | 'large',
+  /**
+   * 引用方法
+   */
+  actionRef?: (show: () => void, close: ()=> void) => void;
 
-  className?: string;
+  className?: string
 }
+
 
 export type DrawerProps = NextDrawerProps & IDrawer
 
-const Drawer: React.FC<DrawerProps> = withThemeClass(
-  React.forwardRef((props: DrawerProps, ref: any) => {
+export type quickShowDrawerProps = Omit<DrawerProps, 'onOk' | 'onCancel'> & {
+  /**
+   * 点击确定按钮时的回调。有此参数就默认显示确定按钮
+   */
+  onOk?: (event: React.MouseEvent) => boolean
+  /**
+   * 点击取消按钮时的回调。有此参数就默认显示取消按钮
+   */
+  onCancel?: (event: React.MouseEvent) => boolean,
+  /**
+   * 抽屉内容
+   */
+  content?: React.ReactNode;
+}
 
+export type QuickShowDrawerRet = {
+  hide: () => void;
+  show: () => void;
+}
+
+
+const Drawer: React.FC<DrawerProps> & {
+  show: (config: quickShowDrawerProps) => QuickShowDrawerRet
+} = withThemeClass(
+  React.forwardRef((props: DrawerProps, ref: any) => {
     const {
       visible = false,
       onOk,
@@ -80,76 +107,94 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
       size = 'mini',
       width,
       className,
+      actionRef,
       ...filterProps
-    } = props;
-    const [customVisible, setCustomVisible] = useState<boolean>(visible);
-    const customRef = useRef(null);
+    } = props
+    const [customVisible, setCustomVisible] = useState<boolean>(visible)
+    const customRef = useRef(null)
     const theme = useCssVar('--alicloudfe-components-theme').trim();
 
+    // 传递指定显示/隐藏方法
+    const close = () => {
+      setCustomVisible(false);
+    }
+    const show = () => {
+      setCustomVisible(true);
+    }
+    actionRef?.(show, close);
+
+    // 超出一屏 设置 footer 阴影
     const setFooterShadow = (iRef: any) => {
       if (iRef?.current && theme !== 'wind' && !theme.startsWith('xconsole')) {
-        const drawerDom = ReactDOM.findDOMNode(iRef.current);
-        const drawerFirstDom = drawerDom?.getElementsByClassName('next-drawer')?.[0]?.firstChild;
+        const drawerDom = ReactDOM.findDOMNode(iRef.current)
+        const drawerFirstDom =
+          drawerDom?.getElementsByClassName('next-drawer')?.[0]?.firstChild
         if (drawerFirstDom) {
-          drawerFirstDom.style.overflow = 'hidden';
+          drawerFirstDom.style.overflow = 'hidden'
         }
-        const drawerBodyDom = drawerDom?.getElementsByClassName('next-drawer-body')?.[0];
+        const drawerBodyDom =
+          drawerDom?.getElementsByClassName('next-drawer-body')?.[0]
         if (drawerBodyDom) {
-          drawerBodyDom.style.overflow = 'auto';
+          drawerBodyDom.style.overflow = 'auto'
         }
-        const drawerFooterDom = drawerDom?.getElementsByClassName('next-drawer-footer')?.[0];
+        const drawerFooterDom =
+          drawerDom?.getElementsByClassName('next-drawer-footer')?.[0]
         if (drawerFooterDom) {
           if (drawerBodyDom?.clientHeight < drawerBodyDom?.scrollHeight) {
-            drawerFooterDom.style.boxShadow = 'var(--shadow-1-up)';
-          }else {
-            drawerFooterDom.style.boxShadow = 'none';
+            drawerFooterDom.style.boxShadow = 'var(--shadow-1-up)'
+          } else {
+            drawerFooterDom.style.boxShadow = 'none'
           }
         }
       }
     }
 
     useEffect(() => {
-      setFooterShadow(ref ? ref : customRef);
+      setFooterShadow(ref ? ref : customRef)
     })
 
     useEffect(() => {
-      setFooterShadow(ref ? ref : customRef);
-    }, [ReactDOM.findDOMNode(ref?.current)?.getElementsByClassName('next-drawer')?.[0]?.clientHeight])
+      setFooterShadow(ref ? ref : customRef)
+    }, [
+      ReactDOM.findDOMNode(ref?.current)?.getElementsByClassName(
+        'next-drawer'
+      )?.[0]?.clientHeight
+    ])
 
     useEffect(() => {
-      setCustomVisible(visible);
+      setCustomVisible(visible)
     }, [visible])
 
     const drawerCustomClassName = cls({
       'next-drawer-has-footer': onOk || onCancel || renderFooter,
       [className]: !!className
     })
-    
+
     const drawerFooterClassName = cls({
       'next-drawer-footer': true,
       'next-drawer-footer-line': hasFooterLine,
       'next-drawer-footer-right': footerAlign === 'right',
       'next-drawer-footer-left': footerAlign === 'left',
       'next-drawer-footer-center': footerAlign === 'center',
-      [footerClass]: !!footerClass 
+      [footerClass]: !!footerClass
     })
 
     const getCustomWidth = (): string | number => {
       if (width) {
-        return width;
+        return width
       }
       if (size) {
-        switch(size) {
-          case 'mini': 
-            return 400;
+        switch (size) {
+          case 'mini':
+            return 400
           case 'small':
-            return 600;
+            return 600
           case 'medium':
-            return 800;
+            return 800
           case 'large':
-            return 1200;
-          default: 
-            return 400;
+            return 1200
+          default:
+            return 400
         }
       }
     }
@@ -162,46 +207,105 @@ const Drawer: React.FC<DrawerProps> = withThemeClass(
         width={getCustomWidth()}
         className={drawerCustomClassName}
       >
-        { children }
-        {
-          (onOk || onCancel || renderFooter) && (
-            <div
-              className={drawerFooterClassName}
-            >
-              { (onOk && !renderFooter) && (
-                  <Button 
-                    type="primary"
-                    onClick={onOk}
-                    style={{ marginRight: 8 }}
-                    {...okBtnProps}
-                  >
-                    {okText}
-                  </Button>
-                )
-              }
-              { (onCancel && !renderFooter) && (
-                <Button
-                  onClick={onCancel}
-                  {...cancelBtnProps}
-                >
-                  {cancelText}
-                </Button>
-              )}
-              { renderFooter && renderFooter}
-            </div>
-          )
-        }
-        
+        {children}
+        {(onOk || onCancel || renderFooter) && (
+          <div className={drawerFooterClassName}>
+            {onOk && !renderFooter && (
+              <Button
+                type="primary"
+                onClick={onOk}
+                style={{ marginRight: 8 }}
+                {...okBtnProps}
+              >
+                {okText}
+              </Button>
+            )}
+            {onCancel && !renderFooter && (
+              <Button onClick={onCancel} {...cancelBtnProps}>
+                {cancelText}
+              </Button>
+            )}
+            {renderFooter && renderFooter}
+          </div>
+        )}
       </NextDrawer>
     )
   })
 ) as any
+
+// 快捷调用
+const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
+  const { onOk, onCancel, onClose, content, ...others } = props
+  let customOnOK: DrawerProps['onOk']
+  let customOnCancel: DrawerProps['onCancel']
+
+  let actionRef: any;
+
+  // 合并 customOnOK。 如果返回值为 true 自动关闭 Drawer
+  customOnOK = (event: React.MouseEvent) => {
+    if (onOk) {
+      const result = onOk?.(event)
+      if (result) {
+        actionRef?.close?.();
+        return
+      }
+    } else {
+      actionRef?.close?.();
+    }
+  }
+
+  customOnCancel = (event: React.MouseEvent) => {
+    if (onCancel) {
+      const result = onCancel?.(event)
+      if (result) {
+        actionRef?.close?.();
+        return
+      }
+    } else {
+      actionRef?.close?.();
+    }
+  }
+
+  const ConfigModal = ConfigProvider.config(Drawer, { componentName: 'Drawer' });
+ 
+  const container = document.createElement('div');
+  container.setAttribute("id", "next-quick-drawer");
+  document.body.appendChild(container)
+
+  // @ts-ignore
+  const newContext = ConfigProvider.getContext()
+  ReactDOM.render(
+    <ConfigProvider {...newContext}>
+      <ConfigModal
+        {...others}
+        visible={true}
+        actionRef={(show, close) => {
+          actionRef = {
+            show, close
+          }
+        }}
+        onOk={customOnOK}
+        onCancel={customOnCancel}
+        onClose={onClose ?? (() => {actionRef?.close?.()})}
+      >{content}</ConfigModal>
+    </ConfigProvider>,
+    container
+  )
+  return {
+    hide: () => {
+      actionRef?.close?.();
+    },
+    show: () => {
+      actionRef?.show?.();
+    }
+  }
+}
 
 hoistNonReactStatics(Drawer, NextDrawer)
 
 // @ts-ignore
 Drawer.displayName = NextDrawer.displayName
 
-export default Drawer;
-    
-  
+Drawer.show = show
+
+export default Drawer
