@@ -3,17 +3,49 @@ import ReactDOM from 'react-dom';
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import React, { useEffect, useRef } from 'react'
 import { useCssVar } from '../utils/useCssVar'
+import { DialogProps, QuickShowConfig, QuickShowRet } from '@alifd/next/types/dialog';
 
-type IProps = React.ComponentProps<typeof NextDialog>
+type CustomDialogProps = DialogProps & {
+  /**
+   * 抽屉大小
+   */
+     size?: 'mini' | 'small' | 'medium' | 'large';
+}
 
-const Dialog: React.FC<IProps> & {
-  show: typeof NextDialog.show
-  confirm: typeof NextDialog.confirm
-} = ({...props }) => {
+type CustomQuickShowConfig = QuickShowConfig & {
+   /**
+   * 抽屉大小
+   */
+    size?: 'mini' | 'small' | 'medium' | 'large';
+}
+
+// 获取 size 大小
+const getCustomWidth = (size: CustomDialogProps['size']): string | number => {
+    switch(size) {
+      case 'mini': 
+        return 400;
+      case 'small':
+        return 600;
+      case 'medium':
+        return 800;
+      case 'large':
+        return 1200;
+      default: 
+        return 400;
+    }
+  }
+
+const Dialog: React.FC<CustomDialogProps> & {
+  show: (config: CustomQuickShowConfig) => QuickShowRet;
+  confirm: (config: CustomQuickShowConfig) => QuickShowRet;
+  alert: (config: CustomQuickShowConfig) => QuickShowRet;
+} = (props) => {
+  const { size, ...others } = props;
   const theme = useCssVar('--alicloudfe-components-theme').trim()
 
   const customRef = useRef(null);
-
+  
+  // 有滚动条时底部显示阴影
   const setFooterShadow = () => {
     if (theme !== 'wind' && !theme.startsWith('xconsole')) {
       const dialogDom = ReactDOM.findDOMNode(customRef.current);
@@ -51,7 +83,7 @@ const Dialog: React.FC<IProps> & {
     return ['ok', 'cancel']
   })()
 
-  return <NextDialog footerActions={defaultFooterActions} {...props} ref={customRef} />
+  return <NextDialog style={{width: getCustomWidth(size) + 'px'}} footerActions={defaultFooterActions} {...others} ref={customRef} />
 }
 
 const showDefaultFooterActions = () => {
@@ -70,27 +102,42 @@ const showDefaultFooterActions = () => {
 }
 
 // 快捷调用的操作按钮顺序
-const show: typeof NextDialog.show = (config) => {
+const show: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
+  const {size, ...others} = config;
+
   return NextDialog.show({
+    style: {width: getCustomWidth(size) + 'px'},
     footerActions: showDefaultFooterActions(),
-    ...config,
+    ...others,
     // 将Dialog.show与其他quick弹窗区分出来，单独做样式覆盖，
     // 因为它的body是不包含Message的
     className: ['quick-show', config.className].filter(Boolean).join(' ')
   })
 }
 
-const confirm: typeof NextDialog.confirm = (config) => {
+const confirm: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
+  const {size, ...others} = config;
   return NextDialog.confirm({
+    style: {width: getCustomWidth(size) + 'px'},
     footerActions: showDefaultFooterActions(),
-    ...config
+    ...others
   })
 }
+
+const alert: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
+  const {size, ...others} = config;
+  return NextDialog.alert({
+    style: {width: getCustomWidth(size) + 'px'},
+    footerActions: showDefaultFooterActions(),
+    ...others
+  })
+}
+
 
 hoistNonReactStatics(Dialog, NextDialog, { show: true, confirm: true })
 Dialog.show = show
 Dialog.confirm = confirm
+Dialog.alert = alert
 
-const exported: typeof NextDialog = Dialog as any
 
-export default exported
+export default Dialog
