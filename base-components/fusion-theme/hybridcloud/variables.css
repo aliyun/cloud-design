@@ -1,6 +1,78 @@
 :root {
     
     
+    /* ------------------------ form-element ------------------------ */
+    
+    
+    --form-element-preview-label-color: var(--color-text1-3, #333333);
+    
+    
+    --form-element-preview-text-color: var(--color-text1-4, #1A1A1A);
+    
+    
+    --form-element-large-icon-size: var(--icon-s, 16px);
+    
+    
+    --form-element-small-icon-size: var(--icon-xs, 12px);
+    
+    
+    --form-element-large-preview-font-size: var(--font-size-subhead, 16px);
+    
+    
+    --form-element-large-preview-label-font-size: var(--font-size-subhead, 16px);
+    
+    
+    --form-element-small-preview-font-size: var(--font-size-caption, 12px);
+    
+    
+    --form-element-small-preview-label-font-size: var(--font-size-caption, 12px);
+    
+    
+    --form-element-large-preview-height: var(--s-10, 40px);
+    
+    
+    --form-element-medium-preview-height: var(--s-7, 28px);
+    
+    
+    --form-element-small-preview-height: var(--s-5, 20px);
+    
+    
+    --form-element-medium-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --form-element-small-font-size: var(--font-size-caption, 12px);
+    
+    
+    --form-element-medium-preview-label-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --form-element-large-corner: var(--corner-1, 2px);
+    
+    
+    --form-element-medium-icon-size: var(--icon-s, 16px);
+    
+    
+    --form-element-large-height: var(--s-9, 36px);
+    
+    
+    --form-element-medium-height: var(--s-8, 32px);
+    
+    
+    --form-element-medium-preview-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --form-element-small-height: var(--s-6, 24px);
+    
+    
+    --form-element-medium-corner: var(--corner-1, 2px);
+    
+    
+    --form-element-small-corner: var(--corner-1, 2px);
+    
+    
+    --form-element-large-font-size: var(--font-size-body-2, 14px);
+    
+    
     /* ------------------------ line ------------------------ */
     
     
@@ -71,72 +143,6 @@
     
     
     --mask-opacity: 0.2;
-    
-    
-    /* ------------------------ form-element ------------------------ */
-    
-    
-    --form-element-large-icon-size: var(--icon-s, 16px);
-    
-    
-    --form-element-small-icon-size: var(--icon-xs, 12px);
-    
-    
-    --form-element-large-preview-font-size: var(--font-size-subhead, 16px);
-    
-    
-    --form-element-large-preview-label-font-size: var(--font-size-subhead, 16px);
-    
-    
-    --form-element-small-preview-font-size: var(--font-size-caption, 12px);
-    
-    
-    --form-element-small-preview-label-font-size: var(--font-size-caption, 12px);
-    
-    
-    --form-element-large-preview-height: var(--s-10, 40px);
-    
-    
-    --form-element-medium-preview-height: var(--s-7, 28px);
-    
-    
-    --form-element-small-preview-height: var(--s-5, 20px);
-    
-    
-    --form-element-medium-font-size: var(--font-size-body-1, 12px);
-    
-    
-    --form-element-small-font-size: var(--font-size-caption, 12px);
-    
-    
-    --form-element-medium-preview-label-font-size: var(--font-size-body-1, 12px);
-    
-    
-    --form-element-large-corner: var(--corner-1, 2px);
-    
-    
-    --form-element-medium-icon-size: var(--icon-s, 16px);
-    
-    
-    --form-element-large-height: var(--s-9, 36px);
-    
-    
-    --form-element-medium-height: var(--s-8, 32px);
-    
-    
-    --form-element-medium-preview-font-size: var(--font-size-body-1, 12px);
-    
-    
-    --form-element-small-height: var(--s-6, 24px);
-    
-    
-    --form-element-medium-corner: var(--corner-1, 2px);
-    
-    
-    --form-element-small-corner: var(--corner-1, 2px);
-    
-    
-    --form-element-large-font-size: var(--font-size-body-2, 14px);
     
     
     /* ------------------------ size ------------------------ */
@@ -7054,6 +7060,9 @@
     --dialog-close-width: var(--s-4, 16px);
     
     
+    --dialog-title-font-weight: var(--font-weight-2, normal);
+    
+    
     --dialog-bg: var(--color-white, #FFFFFF);
     
     
@@ -7609,6 +7618,9 @@
     --step-circle-item-node-wait-color: var(--color-text1-2, #5a5a5a);
     
     
+    --step-circle-item-title-wait-color: var(--color-text1-2, #5a5a5a);
+    
+    
     --step-arrow-item-height: var(--s-8, 32px);
     
     
@@ -7838,9 +7850,6 @@
     
     
     --step-dot-item-tail-bg-color: var(--color-line1-1, #eaeaea);
-    
-    
-    --step-circle-item-title-wait-color: var(--color-text1-2, #5a5a5a);
     
     
     /* ------------------------ menu ------------------------ */
@@ -8635,6 +8644,24 @@
     --tag-checkable-normal-text-color-hover: var(--color-text1-6, #5a5a5a);
     
     
+    --tag-size-l-height: var(--s-7, 28px);
+    
+    
+    --tag-size-m-height: var(--s-6, 24px);
+    
+    
+    --tag-size-s-height: var(--s-5, 20px);
+    
+    
+    --tag-size-l-padding-lr: var(--s-3, 12px);
+    
+    
+    --tag-size-m-padding-lr: var(--s-2, 8px);
+    
+    
+    --tag-size-s-padding-lr: var(--s-2, 8px);
+    
+    
     --tag-size-l-spacing: var(--s-4, 16px);
     
     
@@ -8809,24 +8836,6 @@
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #CCCCCC);
     
     
-    --tag-size-l-height: var(--s-7, 28px);
-    
-    
-    --tag-size-m-height: var(--s-6, 24px);
-    
-    
-    --tag-size-s-height: var(--s-5, 20px);
-    
-    
-    --tag-size-l-padding-lr: var(--s-3, 12px);
-    
-    
-    --tag-size-m-padding-lr: var(--s-2, 8px);
-    
-    
-    --tag-size-s-padding-lr: var(--s-2, 8px);
-    
-    
     /* ------------------------ input ------------------------ */
     
     
@@ -8960,6 +8969,9 @@
     
     
     --input-feedback-loading-icon: var(--icon-content-loading, "");
+    
+    
+    --input-feedback-error-color: var(--input-text-color, #333333);
     
     
     --input-maxlen-warning-color: var(--color-warning-3, #FFCD96);
@@ -9652,6 +9664,12 @@
     --divider-hoz-color: var(--color-line1-1, #eaeaea);
     
     
+    --divider-ver-color: var(--color-line1-2, #D9D9D9);
+    
+    
+    --divider-ver-marginLeft: var(--s-3, 12px);
+    
+    
     --divider-hoz-size: var(--line-1, 1px);
     
     
@@ -9677,12 +9695,6 @@
     
     
     --divider-ver-size: var(--line-1, 1px);
-    
-    
-    --divider-ver-color: var(--color-line1-2, #D9D9D9);
-    
-    
-    --divider-ver-marginLeft: var(--s-3, 12px);
     
     
     /* ------------------------ collapse ------------------------ */

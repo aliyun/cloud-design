@@ -1,418 +1,703 @@
 #{$css-var-scope} {
     
     
-    /* ------------------------ line ------------------------ */
-    
-    
-    --line-dotted: dotted;
-    
-    
-    --line-dashed: dashed;
-    
-    
-    --line-solid: solid;
-    
-    
-    --line-zero: 0px;
-    
-    
-    --line-3: 3px;
-    
-    
-    --line-2: 2px;
-    
-    
-    --line-1: 1px;
-    
-    
-    /* ------------------------ popup ------------------------ */
-    
-    
-    --popup-global-shadow: var(--shadow-2-down, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
-    
-    
-    --popup-global-corner: var(--corner-1, 2px);
-    
-    
-    --popup-global-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    --popup-global-border-style: var(--line-solid, solid);
-    
-    
-    --popup-global-border-width: var(--line-zero, 0px);
-    
-    
-    --popup-local-corner: var(--corner-1, 2px);
-    
-    
-    --popup-local-border-style: var(--line-solid, solid);
-    
-    
-    --popup-local-border-width: var(--line-1, 1px);
-    
-    
-    --popup-local-shadow: var(--shadow-1, 0px 2px 4px 0px rgba(0, 0, 0, 0.16));
-    
-    
-    --popup-local-border-color: var(--color-brand2-4, #C0C6CC);
-    
-    
-    /* ------------------------ mask ------------------------ */
-    
-    
-    --mask-background: var(--color-black, #000000);
-    
-    
-    --mask-opacity: 0.45;
-    
-    
-    /* ------------------------ form-element ------------------------ */
-    
-    
-    --form-element-large-corner: var(--corner-1, 2px);
-    
-    
-    --form-element-medium-corner: var(--corner-1, 2px);
-    
-    
-    --form-element-small-corner: var(--corner-1, 2px);
-    
-    
-    --form-element-large-icon-size: var(--icon-s, 16px);
-    
-    
-    --form-element-medium-icon-size: var(--icon-xs, 12px);
-    
-    
-    --form-element-small-icon-size: var(--icon-xs, 12px);
-    
-    
-    --form-element-large-preview-font-size: var(--font-size-subhead, 14px);
-    
-    
-    --form-element-large-preview-label-font-size: var(--font-size-subhead, 14px);
-    
-    
-    --form-element-medium-preview-font-size: var(--font-size-body-1, 12px);
-    
-    
-    --form-element-medium-preview-label-font-size: var(--font-size-body-1, 12px);
-    
-    
-    --form-element-small-preview-font-size: var(--font-size-caption, 12px);
-    
-    
-    --form-element-small-preview-label-font-size: var(--font-size-caption, 12px);
-    
-    
-    --form-element-small-height: var(--s-6, 24px);
-    
-    
-    --form-element-large-preview-height: var(--s-4, 16px);
-    
-    
-    --form-element-medium-preview-height: var(--s-4, 16px);
-    
-    
-    --form-element-small-preview-height: var(--s-4, 16px);
-    
-    
-    --form-element-medium-font-size: var(--font-size-body-1, 12px);
-    
-    
-    --form-element-small-font-size: var(--font-size-body-1, 12px);
-    
-    
-    --form-element-medium-height: var(--s-8, 32px);
-    
-    
-    --form-element-large-height: var(--s-9, 36px);
-    
-    
-    --form-element-large-font-size: var(--font-size-body-2, 14px);
-    
-    
-    /* ------------------------ size ------------------------ */
-    
-    
-    --s-50: 200px;
-    
-    
-    --s-49: 196px;
-    
-    
-    --s-48: 192px;
-    
-    
-    --s-47: 188px;
-    
-    
-    --s-46: 184px;
-    
-    
-    --s-45: 180px;
-    
-    
-    --s-44: 176px;
-    
-    
-    --s-43: 172px;
-    
-    
-    --s-42: 168px;
-    
-    
-    --s-41: 164px;
-    
-    
-    --s-40: 160px;
-    
-    
-    --s-39: 156px;
-    
-    
-    --s-38: 152px;
-    
-    
-    --s-37: 148px;
-    
-    
-    --s-36: 144px;
-    
-    
-    --s-35: 140px;
-    
-    
-    --s-34: 136px;
-    
-    
-    --s-33: 132px;
-    
-    
-    --s-32: 128px;
-    
-    
-    --s-31: 124px;
-    
-    
-    --s-30: 120px;
-    
-    
-    --s-29: 116px;
-    
-    
-    --s-28: 112px;
-    
-    
-    --s-27: 108px;
-    
-    
-    --s-26: 104px;
-    
-    
-    --s-25: 100px;
-    
-    
-    --s-24: 96px;
-    
-    
-    --s-23: 92px;
-    
-    
-    --s-22: 88px;
-    
-    
-    --s-21: 84px;
-    
-    
-    --s-20: 80px;
-    
-    
-    --s-19: 76px;
-    
-    
-    --s-18: 72px;
-    
-    
-    --s-17: 68px;
-    
-    
-    --s-16: 64px;
-    
-    
-    --s-15: 60px;
-    
-    
-    --s-14: 56px;
-    
-    
-    --s-13: 52px;
-    
-    
-    --s-12: 48px;
-    
-    
-    --s-11: 44px;
-    
-    
-    --s-10: 40px;
-    
-    
-    --s-9: 36px;
-    
-    
-    --s-8: 32px;
-    
-    
-    --s-7: 28px;
-    
-    
-    --s-6: 24px;
-    
-    
-    --s-5: 20px;
-    
-    
-    --s-4: 16px;
-    
-    
-    --s-3: 12px;
-    
-    
-    --s-2: 8px;
-    
-    
-    --s-1: 4px;
-    
-    
-    --s-zero: 0px;
-    
-    
-    --size-base: 4px;
-    
-    
-    /* ------------------------ shadow ------------------------ */
-    
-    
-    --shadow-3-left: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
-    
-    
-    --shadow-3-down: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    
-    
-    --shadow-3-right: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
-    
-    
-    --shadow-3-up: 0px -8px 16px 0px rgba(0, 0, 0, 0.2);
-    
-    
-    --shadow-3: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    
-    
-    --shadow-2-left: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    --shadow-2-down: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    --shadow-2-right: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    --shadow-2-up: 0px -4px 8px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    --shadow-2: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    --shadow-1-left: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    --shadow-1-down: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    --shadow-1-right: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    --shadow-1-up: 0px -2px 4px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    --shadow-1: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    --shadow-zero: none;
-    
-    
-    --shadow-opacity-sd1: 0.16;
-    
-    
-    --shadow-opacity-sd3: 0.2;
-    
-    
-    --shadow-opacity-sd2: 0.16;
-    
-    
-    --shadow-distance-sd3y: 8;
-    
-    
-    --shadow-distance-sd2y: 4;
-    
-    
-    --shadow-distance-sd3: 0;
-    
-    
-    --shadow-distance-sd2: 0;
-    
-    
-    --shadow-distance-sd1y: 2;
-    
-    
-    --shadow-distance-sd1: 0;
-    
-    
-    --shadow-spread-sd3: 0;
-    
-    
-    --shadow-spread-sd2: 0;
-    
-    
-    --shadow-spread-sd1: 0;
-    
-    
-    --shadow-sides-left: "left";
-    
-    
-    --shadow-sides-down: "down";
-    
-    
-    --shadow-sides-right: "right";
-    
-    
-    --shadow-sides-up: "up";
-    
-    
-    --shadow-sides-base: "base";
-    
-    
-    --shadow-blur-sd3: 16;
-    
-    
-    --shadow-blur-sd2: 8;
-    
-    
-    --shadow-blur-sd1: 4;
-    
-    
-    --shadow-color-sd3: var(--color-black, #000000);
-    
-    
-    --shadow-color-sd2: var(--color-black, #000000);
-    
-    
-    --shadow-color-sd1: var(--color-black, #000000);
-    
-    
     /* ------------------------ icon ------------------------ */
+    
+    
+    --icon-content-t-up-for-component: "\ea2f";
+    
+    
+    --icon-content-time-for-component: "\ea2e";
+    
+    
+    --icon-content-help-for-component: "\ea2d";
+    
+    
+    --icon-content-left-for-component: "\ea2c";
+    
+    
+    --icon-content-d-left-for-component: "\ea2b";
+    
+    
+    --icon-content-info-for-component: "\ea2a";
+    
+    
+    --icon-content-right-for-component: "\ea29";
+    
+    
+    --icon-content-d-right-for-component: "\ea28";
+    
+    
+    --icon-font-path: "//at.alicdn.com/t/font_1899989_qlzlxfxbd4n";
+    
+    
+    --icon-content-plus-for-component: "\ea27";
+    
+    
+    --icon-content-loading-line-for-component: "\ea26";
+    
+    
+    --icon-content-upload-for-component: "\ea25";
+    
+    
+    --icon-content-more-line-for-component: "\ea24";
+    
+    
+    --icon-content-check-for-component: "\ea23";
+    
+    
+    --icon-content-closemark-for-component: "\ea22";
+    
+    
+    --icon-content-warning-for-component: "\ea21";
+    
+    
+    --icon-content-search-for-component: "\ea20";
+    
+    
+    --icon-content-expand-down-for-component: "\ea1f";
+    
+    
+    --icon-content-minus-for-component: "\e8ae";
+    
+    
+    --icon-content-chek-for-component: "\ea1e";
+    
+    
+    --icon-content-chart_bar: "\e924";
+    
+    
+    --icon-content-align-vertical-top-line: "\e9ad";
+    
+    
+    --icon-content-screen-arrow-left-line: "\e9ac";
+    
+    
+    --icon-content-googleplus-fill: "\e9ab";
+    
+    
+    --icon-content-document-task-line: "\e9aa";
+    
+    
+    --icon-content-twitter-fill: "\e9a9";
+    
+    
+    --icon-content-copy-line: "\e9a8";
+    
+    
+    --icon-content-folders-line: "\e9a7";
+    
+    
+    --icon-content-check-line: "\e9a6";
+    
+    
+    --icon-content-chevron-sort-line: "\e9a5";
+    
+    
+    --icon-content-user-certification-line: "\e9a4";
+    
+    
+    --icon-content-arrow-up-line: "\e9a3";
+    
+    
+    --icon-content-info-line: "\e9a2";
+    
+    
+    --icon-content-refresh-line: "\e9a1";
+    
+    
+    --icon-content-checkmark-line: "\e9a0";
+    
+    
+    --icon-content-list-line: "\e99f";
+    
+    
+    --icon-content-calculator-line: "\e99e";
+    
+    
+    --icon-content-forbidden-line: "\e99d";
+    
+    
+    --icon-content-warning-line: "\e99c";
+    
+    
+    --icon-content-caution-line: "\e99b";
+    
+    
+    --icon-content-a-1688-fill: "\e99a";
+    
+    
+    --icon-content-like-line: "\e999";
+    
+    
+    --icon-content-closemark-line: "\e998";
+    
+    
+    --icon-content-help-line: "\e997";
+    
+    
+    --icon-content-ascending-line: "\e996";
+    
+    
+    --icon-content-double-down-line: "\e995";
+    
+    
+    --icon-content-arrow-down-line: "\e994";
+    
+    
+    --icon-content-arrow-left-line: "\e993";
+    
+    
+    --icon-content-double-left-line: "\e992";
+    
+    
+    --icon-content-button-sort-fill: "\e991";
+    
+    
+    --icon-content-down-to-bottom-line: "\e990";
+    
+    
+    --icon-content-star-line: "\e98f";
+    
+    
+    --icon-content-forward-line: "\e98e";
+    
+    
+    --icon-content-sort-line: "\e98d";
+    
+    
+    --icon-content-double-right-line: "\e98c";
+    
+    
+    --icon-content-GitHub-fill: "\e98b";
+    
+    
+    --icon-content-expand-line: "\e98a";
+    
+    
+    --icon-content-switch-line: "\e989";
+    
+    
+    --icon-content-descending-line: "\e988";
+    
+    
+    --icon-content-back-line: "\e987";
+    
+    
+    --icon-content-stop-outline-line: "\e986";
+    
+    
+    --icon-content-pause-outline-line: "\e985";
+    
+    
+    --icon-content-unlock-line: "\e984";
+    
+    
+    --icon-content-discount-line: "\e983";
+    
+    
+    --icon-content-sub-account-line: "\e982";
+    
+    
+    --icon-content-navigation-line: "\e981";
+    
+    
+    --icon-content-plus-circle-line: "\e980";
+    
+    
+    --icon-content-close-line: "\e97f";
+    
+    
+    --icon-content-notification-line: "\e97e";
+    
+    
+    --icon-content-taobao-fill: "\e97d";
+    
+    
+    --icon-content-flow-line: "\e97c";
+    
+    
+    --icon-content-download-line: "\e97b";
+    
+    
+    --icon-content-international-line: "\e97a";
+    
+    
+    --icon-content-document-add-line: "\e979";
+    
+    
+    --icon-content-notification-off-line: "\e978";
+    
+    
+    --icon-content-lock-line: "\e977";
+    
+    
+    --icon-content-user-avatar-line: "\e976";
+    
+    
+    --icon-content-partner-line: "\e975";
+    
+    
+    --icon-content-et-line: "\e973";
+    
+    
+    --icon-content-customer-sercive-line: "\e972";
+    
+    
+    --icon-content-user-follow-line: "\e971";
+    
+    
+    --icon-content-screen-arrow-right-line: "\e970";
+    
+    
+    --icon-content-more-line: "\e624";
+    
+    
+    --icon-content-minus-circle-line: "\e96f";
+    
+    
+    --icon-content-facebook-fill: "\e62d";
+    
+    
+    --icon-content-user-admin-line: "\e629";
+    
+    
+    --icon-content-collapse-line: "\e96e";
+    
+    
+    --icon-content-bug-report-line: "\e622";
+    
+    
+    --icon-content-credits-line: "\e96d";
+    
+    
+    --icon-content-upload-line: "\e96c";
+    
+    
+    --icon-content-setting-line: "\e96b";
+    
+    
+    --icon-content-message-line: "\e96a";
+    
+    
+    --icon-content-edit-line: "\e969";
+    
+    
+    --icon-content-message-unread-line: "\e967";
+    
+    
+    --icon-content-view-off-line: "\e966";
+    
+    
+    --icon-content-phonecall-line: "\e965";
+    
+    
+    --icon-content-document-download-line: "\e964";
+    
+    
+    --icon-content-order-unread-line: "\e963";
+    
+    
+    --icon-content-view-line: "\e962";
+    
+    
+    --icon-content-document-line: "\e961";
+    
+    
+    --icon-content-chart-pie-line: "\e960";
+    
+    
+    --icon-content-folder-line: "\e95f";
+    
+    
+    --icon-content-renew-line: "\e95e";
+    
+    
+    --icon-content-order-line: "\e95d";
+    
+    
+    --icon-content-cart-empty-line: "\e95c";
+    
+    
+    --icon-content-zoom-out-line: "\e95b";
+    
+    
+    --icon-content-play-outline-line: "\e95a";
+    
+    
+    --icon-content-share-fill: "\e959";
+    
+    
+    --icon-content-time-line: "\e958";
+    
+    
+    --icon-content-arrow-right-line: "\e957";
+    
+    
+    --icon-content-button-left-fill: "\e956";
+    
+    
+    --icon-content-cart-with-line: "\e955";
+    
+    
+    --icon-content-user-profile-line: "\e954";
+    
+    
+    --icon-content-zoom-in-line: "\e780";
+    
+    
+    --icon-content-search-line: "\e77f";
+    
+    
+    --icon-content-phonecall-off-line: "\e62f";
+    
+    
+    --icon-content-location-line: "\e62e";
+    
+    
+    --icon-content-user-avatar-fill: "\e62c";
+    
+    
+    --icon-content-compress-line: "\e62b";
+    
+    
+    --icon-content-share-line: "\e62a";
+    
+    
+    --icon-content-questionnaire-line: "\ea1d";
+    
+    
+    --icon-content-trainin-line: "\ea1c";
+    
+    
+    --icon-content-recharge-line: "\ea1b";
+    
+    
+    --icon-content-scroll-mode-line: "\ea1a";
+    
+    
+    --icon-content-sort-circle-line: "\ea19";
+    
+    
+    --icon-content-drag-line: "\ea18";
+    
+    
+    --icon-content-arrow-circular-line: "\ea17";
+    
+    
+    --icon-content-calendar-line: "\ea16";
+    
+    
+    --icon-content-external-link-line: "\ea15";
+    
+    
+    --icon-content-remote-control-line: "\ea14";
+    
+    
+    --icon-content-compass-line: "\ea13";
+    
+    
+    --icon-content-diagnose-line: "\ea12";
+    
+    
+    --icon-content-management-line: "\ea11";
+    
+    
+    --icon-content-display-arrow-left-line: "\ea10";
+    
+    
+    --icon-content-resource-setting-fill: "\ea0f";
+    
+    
+    --icon-content-plus-line: "\ea0e";
+    
+    
+    --icon-content-minus-line: "\ea0d";
+    
+    
+    --icon-content-backspace-line: "\ea0c";
+    
+    
+    --icon-content-terminal-line: "\ea0b";
+    
+    
+    --icon-content-home-line: "\ea0a";
+    
+    
+    --icon-content-structured-data-line: "\ea09";
+    
+    
+    --icon-content-step-mode-line: "\ea08";
+    
+    
+    --icon-content-connection-line: "\ea07";
+    
+    
+    --icon-content-new-fill: "\ea06";
+    
+    
+    --icon-content-hourglass-line: "\ea05";
+    
+    
+    --icon-content-alert-fill: "\ea04";
+    
+    
+    --icon-content-rank-line: "\ea03";
+    
+    
+    --icon-content-new-releases-fill: "\ea02";
+    
+    
+    --icon-content-news-line: "\ea01";
+    
+    
+    --icon-content-accesskey-line: "\ea00";
+    
+    
+    --icon-content-database-line: "\e9ff";
+    
+    
+    --icon-content-transanction-line: "\e9fe";
+    
+    
+    --icon-content-inbox-line: "\e9fd";
+    
+    
+    --icon-content-align-horizontal-center-line: "\e9fc";
+    
+    
+    --icon-content-comment-line: "\e9fb";
+    
+    
+    --icon-content-pin-fill: "\e9fa";
+    
+    
+    --icon-content-gift-line: "\e9f9";
+    
+    
+    --icon-content-filter-line: "\e9f8";
+    
+    
+    --icon-content-flag-line: "\e9f7";
+    
+    
+    --icon-content-package-line: "\e9f6";
+    
+    
+    --icon-content-power-off-line: "\e9f5";
+    
+    
+    --icon-content-screen-check-line: "\e9f4";
+    
+    
+    --icon-content-cloud-download-line: "\e9f3";
+    
+    
+    --icon-content-wifi-line: "\e9f2";
+    
+    
+    --icon-content-screen-error-line: "\e9f1";
+    
+    
+    --icon-content-save-line: "\e9f0";
+    
+    
+    --icon-content-mobile-line: "\e9ef";
+    
+    
+    --icon-content-charging-pile-line: "\e9ee";
+    
+    
+    --icon-content-application-group-fill: "\e9ed";
+    
+    
+    --icon-content-outdent-line: "\e9ec";
+    
+    
+    --icon-content-screen-line: "\e9eb";
+    
+    
+    --icon-content-pin-fixed-fill: "\e9ea";
+    
+    
+    --icon-content-cloud-upload-line: "\e9e9";
+    
+    
+    --icon-content-screen-monitoring-line: "\e9e8";
+    
+    
+    --icon-content-tag-line: "\e9e7";
+    
+    
+    --icon-content-qrcode-line: "\e9e6";
+    
+    
+    --icon-content-mobile-error-line: "\e9e5";
+    
+    
+    --icon-content-paperclip-line: "\e9e4";
+    
+    
+    --icon-content-delete-line: "\e9e3";
+    
+    
+    --icon-content-indent-line: "\e9e2";
+    
+    
+    --icon-content-application-line: "\e9e1";
+    
+    
+    --icon-content-email-line: "\e9e0";
+    
+    
+    --icon-content-sql-line: "\e9df";
+    
+    
+    --icon-content-dingtalk-fill: "\e9de";
+    
+    
+    --icon-content-folder-add-line: "\e9dd";
+    
+    
+    --icon-content-align-horizontal-right-line: "\e9dc";
+    
+    
+    --icon-content-align-vertical-bottom-line: "\e9db";
+    
+    
+    --icon-content-chart-relation-fill: "\e9da";
+    
+    
+    --icon-content-screen-code-line: "\e9d9";
+    
+    
+    --icon-content-map-line: "\e9d8";
+    
+    
+    --icon-content-display-arrow-right-line: "\e9d7";
+    
+    
+    --icon-content-database-plus-line: "\e9d6";
+    
+    
+    --icon-content-wangwang-line: "\e9d5";
+    
+    
+    --icon-content-alipay-fill: "\e9d4";
+    
+    
+    --icon-content-image-line: "\e9d3";
+    
+    
+    --icon-content-key-line: "\e9d2";
+    
+    
+    --icon-content-hatch-line: "\e9d1";
+    
+    
+    --icon-content-scan-line: "\e9d0";
+    
+    
+    --icon-content-balance-line: "\e9cf";
+    
+    
+    --icon-content-align-horizontal-left-line: "\e9ce";
+    
+    
+    --icon-content-chart-bar-line: "\e9cd";
+    
+    
+    --icon-content-pic-center-line: "\e9cc";
+    
+    
+    --icon-content-cloud-machine-line: "\e9cb";
+    
+    
+    --icon-content-chart-scatter-plot-line: "\e9ca";
+    
+    
+    --icon-content-all-line: "\e9c9";
+    
+    
+    --icon-content-border-verticle-line: "\e9c8";
+    
+    
+    --icon-content-cut-line: "\e9c7";
+    
+    
+    --icon-content-layer-line: "\e9c6";
+    
+    
+    --icon-content-box-line: "\e9c5";
+    
+    
+    --icon-content-chart-area-fill: "\e9c4";
+    
+    
+    --icon-content-mobile-check-line: "\e9c3";
+    
+    
+    --icon-content-pic-side-line: "\e9c2";
+    
+    
+    --icon-content-up-to-top-line: "\e9c1";
+    
+    
+    --icon-content-enlarge-line: "\e9c0";
+    
+    
+    --icon-content-double-up-line: "\e9bf";
+    
+    
+    --icon-content-page-first-line: "\e9be";
+    
+    
+    --icon-content-naver-fill: "\e9bd";
+    
+    
+    --icon-content-sina-fill: "\e9bc";
+    
+    
+    --icon-content-stackoverflow-fill: "\e9bb";
+    
+    
+    --icon-content-youtube-fill: "\e9ba";
+    
+    
+    --icon-content-WeChat-fill: "\e9b9";
+    
+    
+    --icon-content-button-right-fill: "\e9b8";
+    
+    
+    --icon-content-page-last-line: "\e9b7";
+    
+    
+    --icon-content-authentication-line: "\e9b6";
+    
+    
+    --icon-content-dollar-line: "\e9b5";
+    
+    
+    --icon-content-applets-fill: "\e9b4";
+    
+    
+    --icon-content-hot-fill: "\e9b3";
+    
+    
+    --icon-content-server-fault-fill: "\e9b2";
+    
+    
+    --icon-content-gallery-view-line: "\e9b1";
+    
+    
+    --icon-content-linkedin-fill: "\e9b0";
+    
+    
+    --icon-content-button-down-fill: "\e9af";
+    
+    
+    --icon-content-button-up-fill: "\e9ae";
     
     
     --icon-reset: "";
@@ -443,9 +728,6 @@
     
     
     --icon-font-name: "icon";
-    
-    
-    --icon-font-path: "//at.alicdn.com/t/font_1899989_d0f4v52x62a";
     
     
     --icon-content-compress: "\e8ce";
@@ -542,9 +824,6 @@
     
     
     --icon-content-WeChat: "\e8af";
-    
-    
-    --icon-content-sina: "\e8ae";
     
     
     --icon-content-GitHub: "\e8ad";
@@ -2965,109 +3244,10 @@
     --icon-content-smile: "\e65f";
     
     
-    /* ------------------------ font ------------------------ */
-    
-    
-    --font-weight-ultra-bold: 900;
-    
-    
-    --font-weight-extra-bold: 800;
-    
-    
-    --font-weight-semi-bold: 600;
-    
-    
-    --font-weight-medium: 500;
-    
-    
-    --font-weight-light: 300;
-    
-    
-    --font-weight-thin: 200;
-    
-    
-    --font-size-headline: 20px;
-    
-    
-    --font-size-display-2: 36px;
-    
-    
-    --font-size-display-3: 48px;
-    
-    
-    --font-lineheight-5: 2;
-    
-    
-    --font-lineheight-4: 1.8;
-    
-    
-    --font-weight-3: bold;
-    
-    
-    --font-weight-2: normal;
-    
-    
-    --font-weight-1: lighter;
-    
-    
-    --font-size-caption: 12px;
-    
-    
-    --font-size-body-1: 12px;
-    
-    
-    --font-size-body-2: 14px;
-    
-    
-    --font-size-subhead: 14px;
-    
-    
-    --font-size-title: 16px;
-    
-    
-    --font-size-display-1: 24px;
-    
-    
-    --font-lineheight-3: 1.6;
-    
-    
-    --font-lineheight-2: 1.5;
-    
-    
-    --font-lineheight-1: 1;
-    
-    
-    --font-family-base: -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
-    
-    
-    /* ------------------------ corner ------------------------ */
-    
-    
-    --corner-zero: 0;
-    
-    
-    --corner-semicircle: 500px;
-    
-    
-    --corner-circle: 50%;
-    
-    
-    --corner-4: 14px;
-    
-    
-    --corner-3: 12px;
-    
-    
-    --corner-2: 4px;
-    
-    
-    --corner-1: 2px;
-    
-    
-    --corner-0: 0px;
-    
-    
     /* ------------------------ color ------------------------ */
+    
+    
+    --color-text1-5: rgba(179,179,179,1);
     
     
     --color-data1-8: rgba(0,100,200,1);
@@ -3131,9 +3311,6 @@
     
     
     --color-brand1-3: #FBFCFD;
-    
-    
-    --color-text1-5: #CCCCCC;
     
     
     --color-text1-4: #111111;
@@ -3421,6 +3598,519 @@
     --color-line1-5: #EBEBEB;
     
     
+    /* ------------------------ line ------------------------ */
+    
+    
+    --line-dotted: dotted;
+    
+    
+    --line-dashed: dashed;
+    
+    
+    --line-solid: solid;
+    
+    
+    --line-zero: 0px;
+    
+    
+    --line-3: 3px;
+    
+    
+    --line-2: 2px;
+    
+    
+    --line-1: 1px;
+    
+    
+    /* ------------------------ popup ------------------------ */
+    
+    
+    --popup-global-shadow: var(--shadow-2-down, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
+    
+    
+    --popup-global-corner: var(--corner-1, 2px);
+    
+    
+    --popup-global-border-color: var(--color-line1-2, #C0C6CC);
+    
+    
+    --popup-global-border-style: var(--line-solid, solid);
+    
+    
+    --popup-global-border-width: var(--line-zero, 0px);
+    
+    
+    --popup-local-corner: var(--corner-1, 2px);
+    
+    
+    --popup-local-border-style: var(--line-solid, solid);
+    
+    
+    --popup-local-border-width: var(--line-1, 1px);
+    
+    
+    --popup-local-shadow: var(--shadow-1, 0px 2px 4px 0px rgba(0, 0, 0, 0.16));
+    
+    
+    --popup-local-border-color: var(--color-brand2-4, #C0C6CC);
+    
+    
+    /* ------------------------ mask ------------------------ */
+    
+    
+    --mask-background: var(--color-black, #000000);
+    
+    
+    --mask-opacity: 0.45;
+    
+    
+    /* ------------------------ form-element ------------------------ */
+    
+    
+    --form-element-large-corner: var(--corner-1, 2px);
+    
+    
+    --form-element-medium-corner: var(--corner-1, 2px);
+    
+    
+    --form-element-small-corner: var(--corner-1, 2px);
+    
+    
+    --form-element-large-icon-size: var(--icon-s, 16px);
+    
+    
+    --form-element-medium-icon-size: var(--icon-xs, 12px);
+    
+    
+    --form-element-small-icon-size: var(--icon-xs, 12px);
+    
+    
+    --form-element-large-preview-font-size: var(--font-size-subhead, 14px);
+    
+    
+    --form-element-large-preview-label-font-size: var(--font-size-subhead, 14px);
+    
+    
+    --form-element-medium-preview-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --form-element-medium-preview-label-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --form-element-small-preview-font-size: var(--font-size-caption, 12px);
+    
+    
+    --form-element-small-preview-label-font-size: var(--font-size-caption, 12px);
+    
+    
+    --form-element-small-height: var(--s-6, 24px);
+    
+    
+    --form-element-large-preview-height: var(--s-4, 16px);
+    
+    
+    --form-element-medium-preview-height: var(--s-4, 16px);
+    
+    
+    --form-element-small-preview-height: var(--s-4, 16px);
+    
+    
+    --form-element-medium-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --form-element-small-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --form-element-medium-height: var(--s-8, 32px);
+    
+    
+    --form-element-large-height: var(--s-9, 36px);
+    
+    
+    --form-element-large-font-size: var(--font-size-body-2, 14px);
+    
+    
+    /* ------------------------ size ------------------------ */
+    
+    
+    --s-50: 200px;
+    
+    
+    --s-49: 196px;
+    
+    
+    --s-48: 192px;
+    
+    
+    --s-47: 188px;
+    
+    
+    --s-46: 184px;
+    
+    
+    --s-45: 180px;
+    
+    
+    --s-44: 176px;
+    
+    
+    --s-43: 172px;
+    
+    
+    --s-42: 168px;
+    
+    
+    --s-41: 164px;
+    
+    
+    --s-40: 160px;
+    
+    
+    --s-39: 156px;
+    
+    
+    --s-38: 152px;
+    
+    
+    --s-37: 148px;
+    
+    
+    --s-36: 144px;
+    
+    
+    --s-35: 140px;
+    
+    
+    --s-34: 136px;
+    
+    
+    --s-33: 132px;
+    
+    
+    --s-32: 128px;
+    
+    
+    --s-31: 124px;
+    
+    
+    --s-30: 120px;
+    
+    
+    --s-29: 116px;
+    
+    
+    --s-28: 112px;
+    
+    
+    --s-27: 108px;
+    
+    
+    --s-26: 104px;
+    
+    
+    --s-25: 100px;
+    
+    
+    --s-24: 96px;
+    
+    
+    --s-23: 92px;
+    
+    
+    --s-22: 88px;
+    
+    
+    --s-21: 84px;
+    
+    
+    --s-20: 80px;
+    
+    
+    --s-19: 76px;
+    
+    
+    --s-18: 72px;
+    
+    
+    --s-17: 68px;
+    
+    
+    --s-16: 64px;
+    
+    
+    --s-15: 60px;
+    
+    
+    --s-14: 56px;
+    
+    
+    --s-13: 52px;
+    
+    
+    --s-12: 48px;
+    
+    
+    --s-11: 44px;
+    
+    
+    --s-10: 40px;
+    
+    
+    --s-9: 36px;
+    
+    
+    --s-8: 32px;
+    
+    
+    --s-7: 28px;
+    
+    
+    --s-6: 24px;
+    
+    
+    --s-5: 20px;
+    
+    
+    --s-4: 16px;
+    
+    
+    --s-3: 12px;
+    
+    
+    --s-2: 8px;
+    
+    
+    --s-1: 4px;
+    
+    
+    --s-zero: 0px;
+    
+    
+    --size-base: 4px;
+    
+    
+    /* ------------------------ shadow ------------------------ */
+    
+    
+    --shadow-3-left: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    
+    --shadow-3-down: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    
+    --shadow-3-right: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    
+    --shadow-3-up: 0px -8px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    
+    --shadow-3: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    
+    --shadow-2-left: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    --shadow-2-down: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    --shadow-2-right: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    --shadow-2-up: 0px -4px 8px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    --shadow-2: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    --shadow-1-left: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    --shadow-1-down: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    --shadow-1-right: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    --shadow-1-up: 0px -2px 4px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    --shadow-1: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    --shadow-zero: none;
+    
+    
+    --shadow-opacity-sd1: 0.16;
+    
+    
+    --shadow-opacity-sd3: 0.2;
+    
+    
+    --shadow-opacity-sd2: 0.16;
+    
+    
+    --shadow-distance-sd3y: 8;
+    
+    
+    --shadow-distance-sd2y: 4;
+    
+    
+    --shadow-distance-sd3: 0;
+    
+    
+    --shadow-distance-sd2: 0;
+    
+    
+    --shadow-distance-sd1y: 2;
+    
+    
+    --shadow-distance-sd1: 0;
+    
+    
+    --shadow-spread-sd3: 0;
+    
+    
+    --shadow-spread-sd2: 0;
+    
+    
+    --shadow-spread-sd1: 0;
+    
+    
+    --shadow-sides-left: "left";
+    
+    
+    --shadow-sides-down: "down";
+    
+    
+    --shadow-sides-right: "right";
+    
+    
+    --shadow-sides-up: "up";
+    
+    
+    --shadow-sides-base: "base";
+    
+    
+    --shadow-blur-sd3: 16;
+    
+    
+    --shadow-blur-sd2: 8;
+    
+    
+    --shadow-blur-sd1: 4;
+    
+    
+    --shadow-color-sd3: var(--color-black, #000000);
+    
+    
+    --shadow-color-sd2: var(--color-black, #000000);
+    
+    
+    --shadow-color-sd1: var(--color-black, #000000);
+    
+    
+    /* ------------------------ font ------------------------ */
+    
+    
+    --font-weight-ultra-bold: 900;
+    
+    
+    --font-weight-extra-bold: 800;
+    
+    
+    --font-weight-semi-bold: 600;
+    
+    
+    --font-weight-medium: 500;
+    
+    
+    --font-weight-light: 300;
+    
+    
+    --font-weight-thin: 200;
+    
+    
+    --font-size-headline: 20px;
+    
+    
+    --font-size-display-2: 36px;
+    
+    
+    --font-size-display-3: 48px;
+    
+    
+    --font-lineheight-5: 2;
+    
+    
+    --font-lineheight-4: 1.8;
+    
+    
+    --font-weight-3: bold;
+    
+    
+    --font-weight-2: normal;
+    
+    
+    --font-weight-1: lighter;
+    
+    
+    --font-size-caption: 12px;
+    
+    
+    --font-size-body-1: 12px;
+    
+    
+    --font-size-body-2: 14px;
+    
+    
+    --font-size-subhead: 14px;
+    
+    
+    --font-size-title: 16px;
+    
+    
+    --font-size-display-1: 24px;
+    
+    
+    --font-lineheight-3: 1.6;
+    
+    
+    --font-lineheight-2: 1.5;
+    
+    
+    --font-lineheight-1: 1;
+    
+    
+    --font-family-base: -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+    
+    /* ------------------------ corner ------------------------ */
+    
+    
+    --corner-zero: 0;
+    
+    
+    --corner-semicircle: 500px;
+    
+    
+    --corner-circle: 50%;
+    
+    
+    --corner-4: 14px;
+    
+    
+    --corner-3: 12px;
+    
+    
+    --corner-2: 4px;
+    
+    
+    --corner-1: 2px;
+    
+    
+    --corner-0: 0px;
+    
+    
     /* ------------------------ checkbox ------------------------ */
     
     
@@ -3428,9 +4118,6 @@
     
     
     --checkbox-size: var(--s-4, 16px);
-    
-    
-    --checkbox-circle-size: var(--icon-xxs, 8px);
     
     
     --checkbox-border-color: var(--color-line1-3, #577899);
@@ -3466,7 +4153,7 @@
     --checkbox-margin-left: var(--s-2, 8px);
     
     
-    --checkbox-disabled-label-color: var(--color-text1-5, #CCCCCC);
+    --checkbox-disabled-label-color: var(--color-text1-5, #b3b3b3);
     
     
     --checkbox-border-radius: var(--corner-1, 2px);
@@ -3490,10 +4177,13 @@
     --checkbox-font-size: var(--font-size-body-1, 12px);
     
     
-    --checkbox-semi-select-icon-content: var(--icon-content-semi-select, "");
+    --checkbox-circle-size: var(--icon-xs, 12px);
     
     
-    --checkbox-select-icon-content: var(--icon-content-select, "");
+    --checkbox-semi-select-icon-content: var(--icon-content-minus-for-component, "");
+    
+    
+    --checkbox-select-icon-content: var(--icon-content-chek-for-component, "");
     
     
     /* ------------------------ cascader ------------------------ */
@@ -3598,9 +4288,6 @@
     --search-simple-normal-l-icon-size: var(--icon-s, 16px);
     
     
-    --search-simple-normal-m-icon-size: var(--icon-s, 16px);
-    
-    
     --search-simple-dark-l-icon-size: var(--icon-s, 16px);
     
     
@@ -3626,9 +4313,6 @@
     
     
     --search-normal-primary-btn-hover-text-color: var(--color-text1-9, #333333);
-    
-    
-    --search-normal-primary-m-icon-size: var(--icon-xs, 12px);
     
     
     --search-normal-primary-m-btn-text-size: var(--font-size-body-1, 12px);
@@ -3685,9 +4369,6 @@
     --search-normal-secondary-l-btn-text-size: var(--font-size-subhead, 14px);
     
     
-    --search-normal-secondary-m-icon-size: var(--icon-s, 16px);
-    
-    
     --search-normal-normal-split-color: var(--color-line1-1, #E3E4E6);
     
     
@@ -3707,9 +4388,6 @@
     
     
     --search-normal-normal-l-btn-text-size: var(--font-size-subhead, 14px);
-    
-    
-    --search-normal-normal-m-icon-size: var(--icon-s, 16px);
     
     
     --search-normal-normal-m-btn-text-size: var(--font-size-subhead, 14px);
@@ -3805,7 +4483,19 @@
     --search-simple-dark-border-width: var(--line-1, 1px);
     
     
-    --search-search-icon-content: var(--icon-content-search, "");
+    --search-normal-secondary-m-icon-size: var(--icon-s, 16px);
+    
+    
+    --search-normal-normal-m-icon-size: var(--icon-s, 16px);
+    
+    
+    --search-normal-primary-m-icon-size: var(--icon-xs, 12px);
+    
+    
+    --search-simple-normal-m-icon-size: var(--icon-xs, 12px);
+    
+    
+    --search-search-icon-content: var(--icon-content-search-for-component, "");
     
     
     /* ------------------------ card ------------------------ */
@@ -3985,7 +4675,7 @@
     --switch-size-s-trigger: var(--s-4, 16px);
     
     
-    --switch-disabled-on-color-font: var(--color-text1-5, #CCCCCC);
+    --switch-disabled-on-color-font: var(--color-text1-5, #b3b3b3);
     
     
     --switch-size-m-width: var(--s-12, 48px);
@@ -4213,19 +4903,19 @@
     --btn-warning-normal-bg-disabled: var(--color-white, #FFFFFF);
     
     
-    --btn-pure-color-disabled: var(--color-text1-5, #CCCCCC);
+    --btn-pure-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
-    --btn-warning-normal-color-disabled: var(--color-text1-5, #CCCCCC);
+    --btn-warning-normal-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
-    --btn-text-disabled-color: var(--color-text1-5, #CCCCCC);
+    --btn-text-disabled-color: var(--color-text1-5, #b3b3b3);
     
     
     --btn-size-s-height: var(--s-6, 24px);
     
     
-    --btn-pure-normal-color-disabled: var(--color-text1-5, #CCCCCC);
+    --btn-pure-normal-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
     --btn-pure-normal-bg-disabled: var(--color-white, #FFFFFF);
@@ -4237,7 +4927,7 @@
     --btn-pure-normal-border-color-active: var(--color-line1-2, #C0C6CC);
     
     
-    --btn-pure-secondary-color-disabled: var(--color-text1-5, #CCCCCC);
+    --btn-pure-secondary-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
     --btn-pure-secondary-bg-disabled: var(--color-white, #FFFFFF);
@@ -4486,9 +5176,6 @@
     --balloon-size-padding-right: var(--s-3, 12px);
     
     
-    --balloon-size-padding-closable-right: var(--s-8, 32px);
-    
-    
     --balloon-size-close-margin-top: var(--s-3, 12px);
     
     
@@ -4585,6 +5272,9 @@
     --balloon-tooltip-border-style: var(--line-solid, solid);
     
     
+    --balloon-size-padding-closable-right: var(--s-6, 24px);
+    
+    
     /* ------------------------ message ------------------------ */
     
     
@@ -4592,9 +5282,6 @@
     
     
     --message-size-l-title-content-padding-right: var(--s-4, 16px);
-    
-    
-    --message-size-m-icon: var(--icon-s, 16px);
     
     
     --message-help-color-icon-toast: var(--color-help-3, #888888);
@@ -4679,9 +5366,6 @@
     
     
     --message-size-l-close-top: var(--s-4, 16px);
-    
-    
-    --message-size-m-title-content-padding-left: var(--s-2, 8px);
     
     
     --message-close-icon-color: var(--color-text1-9, #333333);
@@ -4807,34 +5491,13 @@
     --message-loading-color-icon-addon: var(--color-fill1-9, #1C1C1C);
     
     
-    --message-size-m-padding: var(--s-2, 8px);
-    
-    
-    --message-size-m-title-content-padding-right: var(--s-5, 20px);
-    
-    
     --message-size-m-close-top: var(--s-3, 12px);
     
     
     --message-size-m-close-right: var(--s-3, 12px);
     
     
-    --message-success-icon-content: var(--icon-content-check_fill, "");
-    
-    
-    --message-warning-icon-content: var(--icon-content-warning_fill, "");
-    
-    
-    --message-notice-icon-content: var(--icon-content-info_fill, "");
-    
-    
-    --message-help-icon-content: var(--icon-content-help_fill, "");
-    
-    
     --message-close-icon-size: var(--icon-xs, 12px);
-    
-    
-    --message-error-icon-content: var(--icon-content-warning_fill, "");
     
     
     --message-size-l-content-margin-top: var(--s-2, 8px);
@@ -4945,7 +5608,34 @@
     --message-loading-color-content-toast: var(--color-text1-3, #555555);
     
     
-    --message-loading-icon-content: var(--icon-content-loading, "");
+    --message-size-m-padding: var(--s-3, 12px);
+    
+    
+    --message-size-m-title-content-padding-left: var(--s-1, 4px);
+    
+    
+    --message-size-m-title-content-padding-right: var(--s-1, 4px);
+    
+    
+    --message-size-m-icon: var(--icon-xs, 12px);
+    
+    
+    --message-warning-icon-content: var(--icon-content-warning-for-component, "");
+    
+    
+    --message-error-icon-content: var(--icon-content-warning-for-component, "");
+    
+    
+    --message-success-icon-content: var(--icon-content-check-for-component, "");
+    
+    
+    --message-loading-icon-content: var(--icon-content-loading-line-for-component, "");
+    
+    
+    --message-notice-icon-content: var(--icon-content-info-for-component, "");
+    
+    
+    --message-help-icon-content: var(--icon-content-help-for-component, "");
     
     
     /* ------------------------ progress ------------------------ */
@@ -5098,7 +5788,7 @@
     --collapse-title-disabled-bg-color: var(--color-fill1-2, #F7F9FA);
     
     
-    --collapse-title-font-disabled-color: var(--color-text1-5, #CCCCCC);
+    --collapse-title-font-disabled-color: var(--color-text1-5, #b3b3b3);
     
     
     --collapse-content-padding-x: var(--s-4, 16px);
@@ -5143,10 +5833,10 @@
     --collapse-content-font-size: var(--font-size-body-1, 12px);
     
     
-    --collapse-fold-icon-content: var(--icon-content-arrow-right, "");
-    
-    
     --collapse-unfold-icon-content: var(--icon-reset);
+    
+    
+    --collapse-fold-icon-content: var(--icon-content-forward-line, "");
     
     
     /* ------------------------ radio ------------------------ */
@@ -5230,10 +5920,10 @@
     --radio-checked-circle-color: var(--color-fill1-5, #0064C8);
     
     
-    --radio-disabled-circle-color: var(--color-text1-5, #CCCCCC);
+    --radio-disabled-circle-color: var(--color-text1-5, #b3b3b3);
     
     
-    --radio-normal-font-color-disabled: var(--color-text1-5, #CCCCCC);
+    --radio-normal-font-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
     --radio-hovered-border-color: var(--color-fill1-4, #004080);
@@ -5242,7 +5932,7 @@
     --radio-checked-disabled-bg-color: var(--color-fill1-2, #F7F9FA);
     
     
-    --radio-checked-disabled-circle-color: var(--color-text1-5, #CCCCCC);
+    --radio-checked-disabled-circle-color: var(--color-text1-5, #b3b3b3);
     
     
     --radio-circle-border-width: var(--line-1, 1px);
@@ -5551,13 +6241,13 @@
     --tab-text-text-color-disabled: var(--color-text1-1, #C1C1C1);
     
     
-    --tab-icon-dropdown-content: var(--icon-content-arrow-down, "");
+    --tab-icon-dropdown-content: var(--icon-content-expand-down-for-component, "");
     
     
-    --tab-icon-prev-content: var(--icon-content-arrow-left, "");
+    --tab-icon-prev-content: var(--icon-content-left-for-component, "");
     
     
-    --tab-icon-next-content: var(--icon-content-arrow-right, "");
+    --tab-icon-next-content: var(--icon-content-right-for-component, "");
     
     
     /* ------------------------ calendar ------------------------ */
@@ -5575,7 +6265,7 @@
     --calendar-fullscreen-table-head-color: var(--color-text1-2, #888888);
     
     
-    --calendar-fullscreen-table-cell-normal-color: var(--color-text1-5, #CCCCCC);
+    --calendar-fullscreen-table-cell-normal-color: var(--color-text1-5, #b3b3b3);
     
     
     --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-1, #E3E4E6);
@@ -5815,19 +6505,19 @@
     --calendar-card-table-cell-current-background: var(--color-white, #FFFFFF);
     
     
-    --calendar-btn-arrow-content-prev: var(--icon-content-arrow-left, "");
+    --calendar-card-table-cell-disabled-color: var(--color-text1-5, #b3b3b3);
     
     
-    --calendar-btn-arrow-content-next: var(--icon-content-arrow-right, "");
+    --calendar-btn-arrow-content-prev: var(--icon-content-left-for-component, "");
     
     
-    --calendar-btn-arrow-content-prev-super: var(--icon-content-arrow-double-left, "");
+    --calendar-btn-arrow-content-next: var(--icon-content-right-for-component, "");
     
     
-    --calendar-btn-arrow-content-next-super: var(--icon-content-arrow-double-right, "");
+    --calendar-btn-arrow-content-prev-super: var(--icon-content-d-left-for-component, "");
     
     
-    --calendar-card-table-cell-disabled-color: var(--color-text1-5, #CCCCCC);
+    --calendar-btn-arrow-content-next-super: var(--icon-content-d-right-for-component, "");
     
     
     /* ------------------------ breadcrumb ------------------------ */
@@ -5848,13 +6538,13 @@
     --breadcrumb-text-color-hover: var(--color-text1-9, #333333);
     
     
-    --breadcrumb-text-current-color-hover: var(--color-text1-5, #CCCCCC);
+    --breadcrumb-text-current-color-hover: var(--color-text1-5, #b3b3b3);
     
     
     --breadcrumb-size-m-icon-size: var(--icon-xs, 12px);
     
     
-    --breadcrumb-text-current-color: var(--color-text1-5, #CCCCCC);
+    --breadcrumb-text-current-color: var(--color-text1-5, #b3b3b3);
     
     
     --breadcrumb-icon-sep-content: var(--icon-content-xiexian, "");
@@ -5878,9 +6568,6 @@
     /* ------------------------ menu-button ------------------------ */
     
     
-    --menu-btn-pure-text-secondary-icon-color: var(--color-brand1-6, #0064C8);
-    
-    
     --menu-btn-ghost-light-icon-color: var(--color-brand1-6, #0064C8);
     
     
@@ -5891,9 +6578,6 @@
     
     
     --menu-btn-ghost-dark-disabled-icon-color: var(--btn-ghost-dark-color-disabled, rgba(255, 255, 255, 0.25));
-    
-    
-    --menu-btn-pure-text-normal-icon-color: var(--color-text1-2, #888888);
     
     
     --menu-btn-pure-text-primary-icon-color: var(--color-white, #FFFFFF);
@@ -5908,10 +6592,16 @@
     --menu-btn-ghost-dark-icon-color: var(--color-white, #FFFFFF);
     
     
-    --menu-btn-fold-icon-content: var(--icon-content-arrow-down, "");
-    
-    
     --menu-btn-unfold-icon-content: var(--icon-reset);
+    
+    
+    --menu-btn-fold-icon-content: var(--icon-content-expand-down-for-component, "");
+    
+    
+    --menu-btn-pure-text-normal-icon-color: var(--color-text1-7, #666666);
+    
+    
+    --menu-btn-pure-text-secondary-icon-color: var(--color-text1-7, #666666);
     
     
     /* ------------------------ tree ------------------------ */
@@ -6007,10 +6697,10 @@
     --tree-line-style: var(--line-solid, solid);
     
     
-    --tree-fold-icon-content: var(--icon-content-arrow-down, "");
-    
-    
     --tree-unfold-icon-content: var(--icon-reset);
+    
+    
+    --tree-fold-icon-content: var(--icon-content-button_down, "");
     
     
     /* ------------------------ tag ------------------------ */
@@ -6133,16 +6823,16 @@
     --tag-size-s-height: var(--s-5, 20px);
     
     
-    --tag-fill-tail-color-disabled: var(--color-text1-5, #CCCCCC);
+    --tag-fill-tail-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
-    --tag-bordered-text-color-disabled: var(--color-text1-5, #CCCCCC);
+    --tag-bordered-text-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
-    --tag-checkable-normal-text-selected-disabled: var(--color-text1-5, #CCCCCC);
+    --tag-checkable-normal-text-selected-disabled: var(--color-text1-5, #b3b3b3);
     
     
-    --tag-closable-primary-fill-text-color-disabled: var(--color-text1-5, #CCCCCC);
+    --tag-closable-primary-fill-text-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
     --tag-checkable-normal-bg-selected: var(--color-white, #FFFFFF);
@@ -6199,7 +6889,7 @@
     --tag-checkable-primary-bg-color-hover: var(--color-fill1-2, #F7F9FA);
     
     
-    --tag-checkable-fill-text-color-disabled: var(--color-text1-5, #CCCCCC);
+    --tag-checkable-fill-text-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
     --tag-checkable-fill-border-color-disabled: var(--color-line1-4, #D1D5D9);
@@ -6208,7 +6898,7 @@
     --tag-checkable-fill-bg-color-disabled: var(--color-white, #FFFFFF);
     
     
-    --tag-checkable-primary-text-color-disabled: var(--color-text1-5, #CCCCCC);
+    --tag-checkable-primary-text-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
     --tag-checkable-primary-border-color-disabled: var(--color-line1-4, #D1D5D9);
@@ -6223,7 +6913,7 @@
     --tag-closable-bordered-border-color-disabled: var(--color-line1-4, #D1D5D9);
     
     
-    --tag-closable-bordered-text-color-disabled: var(--color-text1-5, #CCCCCC);
+    --tag-closable-bordered-text-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
     --tag-fill-border-color: var(--color-line1-2, #C0C6CC);
@@ -6232,7 +6922,7 @@
     --tag-fill-border-color-hover: var(--color-line1-2, #C0C6CC);
     
     
-    --tag-fill-text-color-disabled: var(--color-text1-5, #CCCCCC);
+    --tag-fill-text-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
     --tag-fill-border-color-disabled: var(--color-line1-4, #D1D5D9);
@@ -6454,10 +7144,7 @@
     --input-focus-shadow-spread: var(--line-zero, 0px);
     
     
-    --input-disabled-color: var(--color-text1-5, #CCCCCC);
-    
-    
-    --input-feedback-clear-icon: var(--icon-content-close1, "");
+    --input-disabled-color: var(--color-text1-5, #b3b3b3);
     
     
     --input-disabled-border-color: var(--color-line1-2, #C0C6CC);
@@ -6511,22 +7198,7 @@
     --input-s-icon-padding-right: var(--s-1, 4px);
     
     
-    --input-feedback-warning-border-color: var(--color-warning-3, #FFF3B4);
-    
-    
     --input-feedback-warning-bg-color: var(--color-white, #FFFFFF);
-    
-    
-    --input-feedback-warning-color: var(--color-warning-3, #FFF3B4);
-    
-    
-    --input-feedback-warning-icon: var(--icon-content-warning, "");
-    
-    
-    --input-feedback-success-color: var(--color-success-3, #C1F0C2);
-    
-    
-    --input-feedback-success-icon: var(--icon-content-success-filling, "");
     
     
     --input-feedback-loading-icon: var(--icon-content-loading, "");
@@ -6551,6 +7223,24 @@
     
     
     --input-hint-hover-color: var(--color-text1-3, #555555);
+    
+    
+    --input-feedback-warning-border-color: var(--color-warning-6, #FAC800);
+    
+    
+    --input-feedback-warning-color: var(--color-warning-6, #FAC800);
+    
+    
+    --input-feedback-success-color: var(--color-success-7, #00A700);
+    
+    
+    --input-feedback-warning-icon: var(--icon-content-warning-for-component, "");
+    
+    
+    --input-feedback-success-icon: var(--icon-content-check-for-component, "");
+    
+    
+    --input-feedback-clear-icon: var(--icon-content-closemark-for-component, "");
     
     
     /* ------------------------ form ------------------------ */
@@ -6625,7 +7315,7 @@
     --table-group-th-bg: var(--color-fill1-2, #F7F9FA);
     
     
-    --table-empty-color: var(--color-text1-5, #CCCCCC);
+    --table-empty-color: var(--color-text1-5, #b3b3b3);
     
     
     --table-group-footer-bg: var(--color-fill1-2, #F7F9FA);
@@ -6994,7 +7684,7 @@
     --upload-drag-zone-corner: var(--corner-1, 2px);
     
     
-    --upload-drag-zone-upload-icon: var(--icon-content-upload, "");
+    --upload-drag-zone-upload-icon: var(--icon-content-upload-for-component, "");
     
     
     /* ------------------------ dialog ------------------------ */
@@ -7060,12 +7750,6 @@
     --dialog-footer-button-spacing: var(--s-2, 8px);
     
     
-    --dialog-close-top: var(--s-4, 16px);
-    
-    
-    --dialog-close-right: var(--s-4, 16px);
-    
-    
     --dialog-title-border-color: var(--color-line1-2, #C0C6CC);
     
     
@@ -7084,25 +7768,13 @@
     --dialog-border-style: var(--line-solid, solid);
     
     
-    --dialog-title-padding-top: var(--s-6, 24px);
-    
-    
     --dialog-title-padding-bottom: var(--s-4, 16px);
-    
-    
-    --dialog-title-padding-left-right: var(--s-6, 24px);
     
     
     --dialog-content-padding-bottom: var(--s-4, 16px);
     
     
     --dialog-content-padding-left-right: var(--s-6, 24px);
-    
-    
-    --dialog-footer-padding-bottom: var(--s-6, 24px);
-    
-    
-    --dialog-footer-padding-left-right: var(--s-6, 24px);
     
     
     --dialog-message-content-padding-bottom: var(--s-4, 16px);
@@ -7115,6 +7787,24 @@
     
     
     --dialog-title-font-size: var(--font-size-title, 16px);
+    
+    
+    --dialog-title-padding-left-right: var(--s-6, 24px);
+    
+    
+    --dialog-footer-padding-left-right: var(--s-6, 24px);
+    
+    
+    --dialog-close-right: var(--s-6, 24px);
+    
+    
+    --dialog-title-padding-top: var(--s-6, 24px);
+    
+    
+    --dialog-footer-padding-bottom: var(--s-6, 24px);
+    
+    
+    --dialog-close-top: var(--s-6, 24px);
     
     
     /* ------------------------ pagination ------------------------ */
@@ -7141,7 +7831,7 @@
     --pagination-item-hover-border-color: var(--color-line1-4, #D1D5D9);
     
     
-    --pagination-item-hover-color: var(--color-text1-5, #CCCCCC);
+    --pagination-item-hover-color: var(--color-text1-5, #b3b3b3);
     
     
     --pagination-item-hover-bg: var(--color-white, #FFFFFF);
@@ -7285,19 +7975,19 @@
     --pagination-item-hover-shadow: var(--shadow-zero, none);
     
     
-    --pagination-icon-prev-content: var(--icon-content-arrow-left, "");
-    
-    
-    --pagination-icon-next-content: var(--icon-content-arrow-right, "");
-    
-    
-    --pagination-icon-ellipsis-content: var(--icon-content-ellipsis, "");
-    
-    
     --pagination-item-current-hover-shadow: var(--shadow-zero, none);
     
     
     --pagination-arrow-hover-color-noboder: var(--color-brand1-6, #0064C8);
+    
+    
+    --pagination-icon-ellipsis-content: var(--icon-content-more-line-for-component, "");
+    
+    
+    --pagination-icon-prev-content: var(--icon-content-left-for-component, "");
+    
+    
+    --pagination-icon-next-content: var(--icon-content-right-for-component, "");
     
     
     /* ------------------------ transfer ------------------------ */
@@ -7366,9 +8056,6 @@
     --transfer-panel-footer-padding-top-bottom: var(--s-2, 8px);
     
     
-    --transfer-simple-move-icon: var(--icon-content-switch, "");
-    
-    
     --transfer-panel-border-corner: var(--corner-1, 2px);
     
     
@@ -7382,6 +8069,9 @@
     
     
     --transfer-panel-footer-shadow: var(--shadow-zero, none);
+    
+    
+    --transfer-simple-move-icon: var(--icon-content-switch-line, "");
     
     
     /* ------------------------ step ------------------------ */
@@ -7450,10 +8140,10 @@
     --step-dot-item-title-wait-color: var(--color-text1-2, #888888);
     
     
-    --step-dot-item-title-process-color: var(--color-text1-5, #CCCCCC);
+    --step-dot-item-title-process-color: var(--color-text1-5, #b3b3b3);
     
     
-    --step-dot-item-title-finish-color: var(--color-text1-5, #CCCCCC);
+    --step-dot-item-title-finish-color: var(--color-text1-5, #b3b3b3);
     
     
     --step-dot-item-node-wait-border-color: var(--color-line1-1, #E3E4E6);
@@ -7510,10 +8200,10 @@
     --step-circle-item-node-process-size: var(--s-7, 28px);
     
     
-    --step-circle-item-title-disabled-color: var(--color-text1-5, #CCCCCC);
+    --step-circle-item-title-disabled-color: var(--color-text1-5, #b3b3b3);
     
     
-    --step-circle-item-node-disabled-color: var(--color-text1-5, #CCCCCC);
+    --step-circle-item-node-disabled-color: var(--color-text1-5, #b3b3b3);
     
     
     --step-arrow-item-height: var(--s-8, 32px);
@@ -7744,9 +8434,6 @@
     --menu-color-selected: var(--color-text1-9, #333333);
     
     
-    --menu-select-icon-content: var(--icon-content-checkmark, "");
-    
-    
     --menu-padding-ver-padding-lr: var(--s-1, 4px);
     
     
@@ -7798,16 +8485,19 @@
     --menu-divider-color: var(--color-line1-1, #E3E4E6);
     
     
-    --menu-fold-icon-content: var(--icon-content-arrow-down, "");
-    
-    
     --menu-unfold-icon-content: var(--icon-reset);
     
     
-    --menu-popupfold-icon-content: var(--icon-content-arrow-right, "");
+    --menu-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
-    --menu-color-disabled: var(--color-text1-5, #CCCCCC);
+    --menu-select-icon-content: var(--icon-content-checkmark-line, "");
+    
+    
+    --menu-popupfold-icon-content: var(--icon-content-forward-line, "");
+    
+    
+    --menu-fold-icon-content: var(--icon-content-expand-down-for-component, "");
     
     
     /* ------------------------ timeline ------------------------ */
@@ -7972,13 +8662,13 @@
     --range-normal-slider-border-color-disabled: var(--color-line1-2, #C0C6CC);
     
     
-    --range-normal-selected-color-disabled: var(--color-text1-5, #CCCCCC);
+    --range-normal-selected-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
-    --range-normal-mark-color-disabled: var(--color-text1-5, #CCCCCC);
+    --range-normal-mark-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
-    --range-normal-mark-selected-color-disabled: var(--color-text1-5, #CCCCCC);
+    --range-normal-mark-selected-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
     --range-size-m-scale-height: var(--s-3, 12px);
@@ -8206,13 +8896,13 @@
     --date-picker-panel-footer-padding-tb: var(--s-2, 8px);
     
     
-    --date-picker-calendar-icon: var(--icon-content-3213, "");
-    
-    
     --date-picker-panel-background: var(--color-white, #FFFFFF);
     
     
     --date-picker-panel-time-panel-separator-color: var(--color-line1-2, #C0C6CC);
+    
+    
+    --date-picker-calendar-icon: var(--icon-content-expand-down-for-component, "");
     
     
     /* ------------------------ time-picker ------------------------ */
@@ -8278,7 +8968,7 @@
     --time-picker-menu-item-background-disabled: var(--color-white, #FFFFFF);
     
     
-    --time-picker-clock-icon: var(--icon-content-clock, "");
+    --time-picker-clock-icon: var(--icon-content-time-for-component, "");
     
     
     /* ------------------------ number-picker ------------------------ */
@@ -8287,28 +8977,10 @@
     --number-picker-inline-m-button-margin: var(--s-zero, 0px);
     
     
-    --number-picker-normal-up-icon: var(--icon-content-sort-up, "");
-    
-    
-    --number-picker-normal-down-icon: var(--icon-content-sort-down, "");
-    
-    
     --number-picker-normal-m-button-width: var(--s-10, 40px);
     
     
     --number-picker-normal-m-input-width: var(--s-35, 140px);
-    
-    
-    --number-picker-normal-m-button-icon-size: var(--icon-xs, 12px);
-    
-    
-    --number-picker-inline-add-icon: var(--icon-content-jia1, "");
-    
-    
-    --number-picker-inline-minus-icon: var(--icon-content-jian, "");
-    
-    
-    --number-picker-inline-m-button-icon-size: var(--icon-xl, 32px);
     
     
     --number-picker-inline-m-input-width: var(--s-35, 140px);
@@ -8351,6 +9023,24 @@
     
     
     --number-picker-inline-l-input-width: var(--s-32, 128px);
+    
+    
+    --number-picker-normal-up-icon: var(--icon-content-button-up-fill, "");
+    
+    
+    --number-picker-normal-m-button-icon-size: var(--icon-s, 16px);
+    
+    
+    --number-picker-inline-m-button-icon-size: var(--icon-s, 16px);
+    
+    
+    --number-picker-normal-down-icon: var(--icon-content-sort-down, "");
+    
+    
+    --number-picker-inline-add-icon: var(--icon-content-plus-for-component, "");
+    
+    
+    --number-picker-inline-minus-icon: var(--icon-content-minus-for-component, "");
     
     
     /* ------------------------ badge ------------------------ */
@@ -8413,12 +9103,6 @@
     --drawer-close-color-hovered: var(--color-text1-9, #333333);
     
     
-    --drawer-title-padding-top: var(--s-4, 16px);
-    
-    
-    --drawer-title-padding-left-right: var(--s-4, 16px);
-    
-    
     --drawer-title-border-width: var(--line-zero, 0px);
     
     
@@ -8428,22 +9112,10 @@
     --drawer-content-padding-bottom: var(--s-2, 8px);
     
     
-    --drawer-content-padding-left-right: var(--s-4, 16px);
-    
-    
-    --drawer-close-top: var(--s-4, 16px);
-    
-    
-    --drawer-close-right: var(--s-4, 16px);
-    
-    
     --drawer-close-size: var(--icon-s, 16px);
     
     
     --drawer-close-color: var(--color-text1-7, #666666);
-    
-    
-    --drawer-title-font-size: var(--font-size-subhead, 14px);
     
     
     --drawer-content-font-size: var(--font-size-body-1, 12px);
@@ -8465,6 +9137,24 @@
     
     
     --drawer-close-bg-hovered: var(--color-transparent, transparent);
+    
+    
+    --drawer-title-font-size: var(--font-size-title, 16px);
+    
+    
+    --drawer-title-padding-left-right: var(--s-6, 24px);
+    
+    
+    --drawer-content-padding-left-right: var(--s-6, 24px);
+    
+    
+    --drawer-close-right: var(--s-6, 24px);
+    
+    
+    --drawer-title-padding-top: var(--s-6, 24px);
+    
+    
+    --drawer-close-top: var(--s-6, 24px);
     
     
     /* ------------------------ select ------------------------ */
@@ -8491,10 +9181,10 @@
     --select-highlight-font: var(--font-size-body-1, 12px);
     
     
-    --select-fold-icon-content: var(--icon-content-arrow-down, "");
-    
-    
     --select-unfold-icon-content: var(--icon-reset);
+    
+    
+    --select-fold-icon-content: var(--icon-content-expand-down-for-component, "");
     
     
     /* ------------------------ typography ------------------------ */
@@ -8617,10 +9307,10 @@
     --split-btn-trigger-normal-icon-color: var(--color-text1-2, #888888);
     
     
-    --split-btn-fold-icon-content: var(--icon-content-arrow-down, "");
-    
-    
     --split-btn-unfold-icon-content: var(--icon-reset);
+    
+    
+    --split-btn-fold-icon-content: var(--icon-content-expand-down-for-component, "");
     
     
     /* ------------------------ paragraph ------------------------ */
@@ -9289,9 +9979,6 @@
     --divider-hoz-size: var(--line-1, 1px);
     
     
-    --divider-hoz-color: var(--color-line1-2, #C0C6CC);
-    
-    
     --divider-hoz-text-center-paddingLeft: var(--s-4, 16px);
     
     
@@ -9310,9 +9997,6 @@
     --divider-hoz-text-weight: var(--font-weight-2, normal);
     
     
-    --divider-hoz-text-color: var(--color-text1-4, #111111);
-    
-    
     --divider-ver-size: var(--line-1, 1px);
     
     
@@ -9320,6 +10004,12 @@
     
     
     --divider-ver-marginLeft: var(--s-2, 8px);
+    
+    
+    --divider-hoz-color: var(--color-line1-1, #E3E4E6);
+    
+    
+    --divider-hoz-text-color: var(--color-text1-7, #666666);
     
     
     /* ------------------------ tree-select ------------------------ */
