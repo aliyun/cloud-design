@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Drawer, ConfigProvider, Box } from '@alicloudfe/components'
+import { Button, Drawer, ConfigProvider, Box, Message } from '@alicloudfe/components'
 import { quickShowDrawerProps } from '../../../types/drawer'
 
 let onHideA = null
@@ -16,8 +16,11 @@ const DrawerAProps: quickShowDrawerProps = {
   title: 'AlertA',
   size: 'small',
   onOk: () => {
-    alert('click ok')
-    return true
+    return new Promise(resolve => {
+      setTimeout(resolve, 2000);
+    }).then(() => {
+      Message.success('successfully!');
+    });
   },
   onCancel: () => {
     alert('click cancel')
@@ -51,7 +54,6 @@ const DrawerBProps: quickShowDrawerProps = {
   title: 'AlertB',
   size: 'mini',
   onOk: () => {
-    alert('click ok')
     return true
   },
   onCancel: () => {

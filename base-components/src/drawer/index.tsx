@@ -54,15 +54,19 @@ interface IDrawer {
   /**
    * 抽屉大小，也可以直接传入width自定义
    */
-  size?: 'mini' | 'small' | 'medium' | 'large',
+  size?: 'mini' | 'small' | 'medium' | 'large'
   /**
    * 引用方法
    */
-  actionRef?: (show: () => void, close: ()=> void) => void;
+  actionRef?: (
+    show: () => void,
+    close: () => void,
+    setOKLoading: (loading: boolean) => void,
+    setCancelLoading: (loading: boolean) => void
+  ) => void
 
   className?: string
 }
-
 
 export type DrawerProps = NextDrawerProps & IDrawer
 
@@ -70,22 +74,21 @@ export type quickShowDrawerProps = Omit<DrawerProps, 'onOk' | 'onCancel'> & {
   /**
    * 点击确定按钮时的回调。有此参数就默认显示确定按钮
    */
-  onOk?: (event: React.MouseEvent) => boolean
+  onOk?: (event: React.MouseEvent) => boolean | Promise<any>
   /**
    * 点击取消按钮时的回调。有此参数就默认显示取消按钮
    */
-  onCancel?: (event: React.MouseEvent) => boolean,
+  onCancel?: (event: React.MouseEvent) => boolean | Promise<any>
   /**
    * 抽屉内容
    */
-  content?: React.ReactNode;
+  content?: React.ReactNode
 }
 
 export type QuickShowDrawerRet = {
-  hide: () => void;
-  show: () => void;
+  hide: () => void
+  show: () => void
 }
-
 
 const Drawer: React.FC<DrawerProps> & {
   show: (config: quickShowDrawerProps) => QuickShowDrawerRet
@@ -111,17 +114,26 @@ const Drawer: React.FC<DrawerProps> & {
       ...filterProps
     } = props
     const [customVisible, setCustomVisible] = useState<boolean>(visible)
+
+    const [okLoadingState, setOkLoadingState] = useState<boolean>(false)
+    const [cancelLoadingState, setCancelLoadingState] = useState<boolean>(false)
     const customRef = useRef(null)
-    const theme = useCssVar('--alicloudfe-components-theme').trim();
+    const theme = useCssVar('--alicloudfe-components-theme').trim()
 
     // 传递指定显示/隐藏方法
     const close = () => {
-      setCustomVisible(false);
+      setCustomVisible(false)
     }
     const show = () => {
-      setCustomVisible(true);
+      setCustomVisible(true)
     }
-    actionRef?.(show, close);
+    const setOKLoading = (loading: boolean) => {
+      setOkLoadingState(loading)
+    }
+    const setCancelLoading = (loading: boolean) => {
+      setCancelLoading(loading)
+    }
+    actionRef?.(show, close, setOKLoading, setCancelLoading)
 
     // 超出一屏 设置 footer 阴影
     const setFooterShadow = (iRef: any) => {
@@ -215,13 +227,18 @@ const Drawer: React.FC<DrawerProps> & {
                 type="primary"
                 onClick={onOk}
                 style={{ marginRight: 8 }}
+                loading={okLoadingState}
                 {...okBtnProps}
               >
                 {okText}
               </Button>
             )}
             {onCancel && !renderFooter && (
-              <Button onClick={onCancel} {...cancelBtnProps}>
+              <Button
+                onClick={onCancel}
+                loading={cancelLoadingState}
+                {...cancelBtnProps}
+              >
                 {cancelText}
               </Button>
             )}
@@ -239,37 +256,57 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
   let customOnOK: DrawerProps['onOk']
   let customOnCancel: DrawerProps['onCancel']
 
-  let actionRef: any;
+  let actionRef: any
 
   // 合并 customOnOK。 如果返回值为 true 自动关闭 Drawer
   customOnOK = (event: React.MouseEvent) => {
     if (onOk) {
       const result = onOk?.(event)
-      if (result) {
-        actionRef?.close?.();
+      if (result instanceof Promise) {
+        actionRef?.setOKLoading?.(true)
+        result
+          .then(() => {
+            actionRef?.setOKLoading?.(false)
+            actionRef?.close?.()
+            return
+          })
+          .catch(() => {})
+      }
+      if (typeof result === 'boolean' && result) {
+        actionRef?.close?.()
         return
       }
     } else {
-      actionRef?.close?.();
+      actionRef?.close?.()
     }
   }
 
   customOnCancel = (event: React.MouseEvent) => {
     if (onCancel) {
       const result = onCancel?.(event)
-      if (result) {
-        actionRef?.close?.();
+      if (result instanceof Promise) {
+        actionRef?.setCancelLoading?.(true)
+        result
+          .then(() => {
+            actionRef?.setCancelLoading?.(false)
+            actionRef?.close?.()
+            return
+          })
+          .catch(() => {})
+      }
+      if (typeof result === 'boolean' && result) {
+        actionRef?.close?.()
         return
       }
     } else {
-      actionRef?.close?.();
+      actionRef?.close?.()
     }
   }
 
-  const ConfigModal = ConfigProvider.config(Drawer, { componentName: 'Drawer' });
- 
-  const container = document.createElement('div');
-  container.setAttribute("id", "next-quick-drawer");
+  const ConfigModal = ConfigProvider.config(Drawer, { componentName: 'Drawer' })
+
+  const container = document.createElement('div')
+  container.setAttribute('id', 'next-quick-drawer')
   document.body.appendChild(container)
 
   // @ts-ignore
@@ -279,24 +316,34 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
       <ConfigModal
         {...others}
         visible={true}
-        actionRef={(show, close) => {
+        actionRef={(show, close, setOKLoading, setCancelLoading) => {
           actionRef = {
-            show, close
+            show,
+            close,
+            setOKLoading,
+            setCancelLoading
           }
         }}
         onOk={customOnOK}
         onCancel={customOnCancel}
-        onClose={onClose ?? (() => {actionRef?.close?.()})}
-      >{content}</ConfigModal>
+        onClose={
+          onClose ??
+          (() => {
+            actionRef?.close?.()
+          })
+        }
+      >
+        {content}
+      </ConfigModal>
     </ConfigProvider>,
     container
   )
   return {
     hide: () => {
-      actionRef?.close?.();
+      actionRef?.close?.()
     },
     show: () => {
-      actionRef?.show?.();
+      actionRef?.show?.()
     }
   }
 }
