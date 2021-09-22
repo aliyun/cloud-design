@@ -15,7 +15,13 @@ const notice = () => {
 export default function DemoComponent() {
   const content = (
     <div>
-      <Message type="notice">This is an Inline Message Notice</Message>
+      <Message type="notice" closeable title="Display Toast Message Notice"></Message>
+      <br />
+      <Message type="notice" closeable>Display Toast Message Notice</Message>
+      <br />
+      <Message type="notice" size="large" closeable title="Display Toast Message Notice"></Message>
+      <br />
+      <Message type="notice" size="large" closeable>Display Toast Message Notice</Message>
       <br />
       <Button type="primary" onClick={notice}>
         Display Toast Message Notice
