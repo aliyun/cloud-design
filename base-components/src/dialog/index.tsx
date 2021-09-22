@@ -19,20 +19,24 @@ type CustomQuickShowConfig = QuickShowConfig & {
     size?: 'mini' | 'small' | 'medium' | 'large';
 }
 
+const sizeMap = {
+  'mini': 400,
+  'small': 600,
+  'medium': 800,
+  'large': 1200,
+}
+
 // 获取 size 大小
-const getCustomWidth = (size: CustomDialogProps['size']): string | number => {
-    switch(size) {
-      case 'mini': 
-        return 400;
-      case 'small':
-        return 600;
-      case 'medium':
-        return 800;
-      case 'large':
-        return 1200;
-      default: 
-        return 400;
+const getCustomWidth = (size: CustomDialogProps['size']) => {
+    const sizeWidth = sizeMap[size];
+    if (sizeWidth) {
+      return {
+        style: {
+          width: `${sizeWidth}px`
+        }
+      }
     }
+    return {}
   }
 
 const Dialog: React.FC<CustomDialogProps> & {
@@ -83,7 +87,7 @@ const Dialog: React.FC<CustomDialogProps> & {
     return ['ok', 'cancel']
   })()
 
-  return <NextDialog style={{width: getCustomWidth(size) + 'px'}} footerActions={defaultFooterActions} {...others} ref={customRef} />
+  return <NextDialog {...getCustomWidth(size)} footerActions={defaultFooterActions} {...others} ref={customRef} />
 }
 
 const showDefaultFooterActions = () => {
@@ -106,7 +110,7 @@ const show: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
   const {size, ...others} = config;
 
   return NextDialog.show({
-    style: {width: getCustomWidth(size) + 'px'},
+    ...getCustomWidth(size),
     footerActions: showDefaultFooterActions(),
     ...others,
     // 将Dialog.show与其他quick弹窗区分出来，单独做样式覆盖，
@@ -118,7 +122,7 @@ const show: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
 const confirm: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
   const {size, ...others} = config;
   return NextDialog.confirm({
-    style: {width: getCustomWidth(size) + 'px'},
+    ...getCustomWidth(size),
     footerActions: showDefaultFooterActions(),
     ...others
   })
@@ -127,7 +131,7 @@ const confirm: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
 const alert: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
   const {size, ...others} = config;
   return NextDialog.alert({
-    style: {width: getCustomWidth(size) + 'px'},
+    ...getCustomWidth(size),
     footerActions: showDefaultFooterActions(),
     ...others
   })
