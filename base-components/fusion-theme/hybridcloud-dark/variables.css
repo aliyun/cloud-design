@@ -76,6 +76,12 @@
     /* ------------------------ form-element ------------------------ */
     
     
+    --form-element-preview-text-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    --form-element-preview-label-color: var(--color-text1-3, #CCCCCC);
+    
+    
     --form-element-large-icon-size: var(--icon-s, 16px);
     
     
@@ -5461,6 +5467,15 @@
     --step-dot-item-tail-bg-color: var(--color-transparent, transparent);
     
     
+    --step-circle-item-title-wait-color: var(--color-text1-2, #8A8A8A);
+    
+    
+    --step-circle-item-title-finish-color: var(--color-text1-3, #CCCCCC);
+    
+    
+    --step-circle-item-node-wait-color: var(--color-text1-3, #CCCCCC);
+    
+    
     --step-arrow-item-height: var(--s-8, 32px);
     
     
@@ -5651,15 +5666,6 @@
     
     
     --step-dot-vertical-item-tail-size: var(--line-1, 1px);
-    
-    
-    --step-circle-item-title-wait-color: var(--color-text1-2, #8A8A8A);
-    
-    
-    --step-circle-item-title-finish-color: var(--color-text1-3, #CCCCCC);
-    
-    
-    --step-circle-item-node-wait-color: var(--color-text1-3, #CCCCCC);
     
     
     /* ------------------------ nav ------------------------ */
@@ -7414,6 +7420,9 @@
     --dialog-content-color: var(--color-text1-5, #a8a8a8);
     
     
+    --dialog-title-font-weight: var(--font-weight-2, normal);
+    
+    
     --dialog-close-width: var(--s-4, 16px);
     
     
@@ -8122,6 +8131,9 @@
     --tag-fill-border-color-hover: var(--color-notice-1, #001a33);
     
     
+    --tag-size-l-padding-lr: var(--s-3, 12px);
+    
+    
     --tag-size-l-spacing: var(--s-4, 16px);
     
     
@@ -8344,9 +8356,6 @@
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    --tag-size-l-padding-lr: var(--s-3, 12px);
-    
-    
     /* ------------------------ input ------------------------ */
     
     
@@ -8474,6 +8483,9 @@
     
     
     --input-feedback-loading-icon: var(--icon-content-loading, "");
+    
+    
+    --input-feedback-error-color: var(--input-text-color, #EAEAEA);
     
     
     --input-maxlen-warning-color: var(--color-warning-3, #995106);
@@ -9304,6 +9316,9 @@
     --table-row-selected-bg: var(--color-fill1-2, #383838);
     
     
+    --table-row-bg: var(--color-fill1-1, #151515);
+    
+    
     --table-normal-border-width: var(--line-1, 1px);
     
     
@@ -9416,9 +9431,6 @@
     
     
     --table-expand-unfold-icon-content: var(--icon-content-minus, "");
-    
-    
-    --table-row-bg: var(--color-fill1-1, #151515);
     
     
     /* ------------------------ collapse ------------------------ */
@@ -9571,6 +9583,15 @@
     --divider-hoz-color: var(--color-line1-2, #4D4D4D);
     
     
+    --divider-ver-size: var(--line-1, 1px);
+    
+    
+    --divider-ver-color: var(--color-line1-2, #4D4D4D);
+    
+    
+    --divider-ver-marginLeft: var(--s-3, 12px);
+    
+    
     --divider-hoz-size: var(--line-1, 1px);
     
     
@@ -9593,15 +9614,6 @@
     
     
     --divider-hoz-text-color: var(--color-text1-4, #EAEAEA);
-    
-    
-    --divider-ver-size: var(--line-1, 1px);
-    
-    
-    --divider-ver-color: var(--color-line1-2, #4D4D4D);
-    
-    
-    --divider-ver-marginLeft: var(--s-3, 12px);
     
     
     /* ------------------------ split-button ------------------------ */

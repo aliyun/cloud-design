@@ -76,6 +76,12 @@
     /* ------------------------ form-element ------------------------ */
     
     
+    --form-element-preview-text-color: var(--color-text1-4, #dadee9);
+    
+    
+    --form-element-preview-label-color: var(--color-text1-3, #939aa8);
+    
+    
     --form-element-large-preview-font-size: var(--font-size-subhead, 16px);
     
     
@@ -3364,6 +3370,12 @@
     --table-filter-icon-size: var(--icon-s, 16px);
     
     
+    --table-th-bg: var(--color-fill1-1, #131415);
+    
+    
+    --table-row-bg: var(--color-fill1-1, #131415);
+    
+    
     --table-normal-border-width: var(--line-1, 1px);
     
     
@@ -3455,12 +3467,6 @@
     
     
     --table-expand-unfold-icon-content: var(--icon-content-minus, "");
-    
-    
-    --table-th-bg: var(--color-fill1-1, #131415);
-    
-    
-    --table-row-bg: var(--color-fill1-1, #131415);
     
     
     /* ------------------------ badge ------------------------ */
@@ -4079,6 +4085,9 @@
     
     
     --dialog-title-font-size: var(--font-size-subhead, 16px);
+    
+    
+    --dialog-title-font-weight: var(--font-weight-2, normal);
     
     
     --dialog-content-padding-left-right: var(--s-5, 20px);
@@ -6301,6 +6310,9 @@
     --input-s-icon-padding-right: var(--s-1, 4px);
     
     
+    --input-feedback-error-color: var(--input-text-color, #939aa8);
+    
+    
     --input-maxlen-warning-color: var(--color-warning-3, #85521c);
     
     
@@ -7168,6 +7180,9 @@
     --form-error-color: var(--color-error-4, #e66c60);
     
     
+    --form-top-label-margin-b: 8px;
+    
+    
     --form-label-padding-r: var(--s-3, 12px);
     
     
@@ -7187,9 +7202,6 @@
     
     
     --form-label-color: var(--color-text1-3, #939aa8);
-    
-    
-    --form-top-label-margin-b: 8px;
     
     
     /* ------------------------ upload ------------------------ */
