@@ -10,6 +10,9 @@ import { Tag, Icon } from '@alicloudfe/components'
 
 const { Group: TagGroup } = Tag
 
+const hybridcloud = ['error', 'success', 'prompt', 'warning', 'help'];
+const yunxiao = ['wealthyGold', 'coffeeBrown', 'mintGreen', 'absolutelyPurple', 'cloisonne', 'cyanGray', 'grassGreen'];
+
 const presetColors = ['blue', 'green', 'orange', 'red', 'turquoise', 'yellow']
 // set custom color with hex value, do not use color keywords
 const customColors = ['#f50', '#2db7f5', '#87d068', '#108ee9']
@@ -17,6 +20,25 @@ const customColors = ['#f50', '#2db7f5', '#87d068', '#108ee9']
 export default function DemoComponent() {
   const content = (
     <div className="tag-list">
+      <h4>hybridcloud colors</h4>
+      <TagGroup>
+        {hybridcloud.map((color) => (
+          <Tag key={`p_n_${color}`} color={color}>
+            {color}
+          </Tag>
+        ))}
+      </TagGroup>
+
+      <h4>yunxiao colors</h4>
+      <TagGroup>
+        {yunxiao.map((color) => (
+          <Tag key={`p_n_${color}`} color={color}>
+            {color}
+          </Tag>
+        ))}
+      </TagGroup>
+
+
       <h4>preset colors</h4>
       <TagGroup>
         {presetColors.map((color) => (
