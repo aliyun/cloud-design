@@ -74,11 +74,11 @@ export type quickShowDrawerProps = Omit<DrawerProps, 'onOk' | 'onCancel'> & {
   /**
    * 点击确定按钮时的回调。有此参数就默认显示确定按钮
    */
-  onOk?: (event: React.MouseEvent) => boolean | Promise<any>
+  onOk?: (event: React.MouseEvent) => (boolean | Promise<any>)
   /**
    * 点击取消按钮时的回调。有此参数就默认显示取消按钮
    */
-  onCancel?: (event: React.MouseEvent) => boolean | Promise<any>
+  onCancel?: (event: React.MouseEvent) => (boolean | Promise<any>)
   /**
    * 抽屉内容
    */
@@ -264,11 +264,13 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
       const result = onOk?.(event)
       if (result instanceof Promise) {
         actionRef?.setOKLoading?.(true)
-        result
-          .then(() => {
+        result.then((state) => {
+            if (state !== false) {
+              actionRef?.setOKLoading?.(false)
+              actionRef?.close?.()
+              return
+            }
             actionRef?.setOKLoading?.(false)
-            actionRef?.close?.()
-            return
           })
           .catch(() => {})
       }
@@ -287,9 +289,11 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
       if (result instanceof Promise) {
         actionRef?.setCancelLoading?.(true)
         result
-          .then(() => {
-            actionRef?.setCancelLoading?.(false)
-            actionRef?.close?.()
+          .then((state) => {
+            if (state !== false) {
+              actionRef?.setCancelLoading?.(false)
+              actionRef?.close?.()
+            }
             return
           })
           .catch(() => {})

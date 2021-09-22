@@ -17,10 +17,10 @@ const DrawerAProps: quickShowDrawerProps = {
   size: 'small',
   onOk: () => {
     return new Promise(resolve => {
-      setTimeout(resolve, 2000);
-    }).then(() => {
-      Message.success('successfully!');
-    });
+      setTimeout(() => {
+        resolve(true);
+      }, 2000);
+    })
   },
   onCancel: () => {
     alert('click cancel')
