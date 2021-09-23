@@ -43,6 +43,23 @@ const getCustomWidth = (size: CustomDialogProps['size']) => {
   return {}
 }
 
+// 设置阴影
+const setFooterShadow = (dom) => {
+  const dialogBodyDom = dom?.getElementsByClassName(
+    'next-dialog-body'
+  )?.[0]
+  const dialogFooterDom = dom?.getElementsByClassName(
+    'next-dialog-footer'
+  )?.[0]
+  if (dialogFooterDom) {
+    if (dialogBodyDom?.clientHeight < dialogBodyDom?.scrollHeight) {
+      dialogFooterDom.classList.add('next-dialog-footer-has-shadow')
+    } else {
+      dialogFooterDom.classList.remove('next-dialog-footer-has-shadow')
+    }
+  }
+}
+
 const Dialog: React.FC<CustomDialogProps> & {
   show: (config: CustomQuickShowConfig) => QuickShowRet
   confirm: (config: CustomQuickShowConfig) => QuickShowRet
@@ -54,33 +71,21 @@ const Dialog: React.FC<CustomDialogProps> & {
   const customRef = useRef(null)
 
   // 有滚动条时底部显示阴影
-  const setFooterShadow = () => {
+  const setFooterShadowOfRef = () => {
     if (theme !== 'wind' && !theme.startsWith('xconsole')) {
       const dialogDom = ReactDOM.findDOMNode(customRef.current)
-      const dialogBodyDom = dialogDom?.getElementsByClassName(
-        'next-dialog-body'
-      )?.[0]
-      const dialogFooterDom = dialogDom?.getElementsByClassName(
-        'next-dialog-footer'
-      )?.[0]
-      if (dialogFooterDom) {
-        if (dialogBodyDom?.clientHeight < dialogBodyDom?.scrollHeight) {
-          dialogFooterDom.classList.add('next-dialog-footer-has-shadow')
-        } else {
-          dialogFooterDom.classList.remove('next-dialog-footer-has-shadow')
-        }
-      }
+      setFooterShadow(dialogDom);
     }
   }
 
   useEffect(() => {
     if (customRef) {
-      setFooterShadow()
+      setFooterShadowOfRef()
     }
   })
 
   useEffect(() => {
-    setFooterShadow()
+    setFooterShadowOfRef()
   }, [
     ReactDOM.findDOMNode(customRef.current)?.getElementsByClassName(
       'next-dialog'
@@ -126,7 +131,14 @@ const showDefaultFooterActions = () => {
 
 // 快捷调用的操作按钮顺序
 const show: (config: CustomQuickShowConfig) => QuickShowRet = config => {
-  const { size, ...others } = config
+  const { size, ...others } = config;
+  
+  setTimeout(() => {
+    const doms = document.getElementsByClassName("quick-show");
+    for (let item of doms as any) {
+      setFooterShadow(item)
+    }
+  })
 
   return NextDialog.show({
     ...getCustomWidth(size),
