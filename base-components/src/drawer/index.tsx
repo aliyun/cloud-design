@@ -157,6 +157,8 @@ const Drawer: React.FC<DrawerProps> & {
         if (drawerFooterDom) {
           if (drawerBodyDom?.clientHeight < drawerBodyDom?.scrollHeight) {
             drawerFooterDom.classList.add('next-drawer-footer-has-shadow')
+          } else {
+            drawerFooterDom.classList.remove('next-drawer-footer-has-shadow')
           }
         }
       }
