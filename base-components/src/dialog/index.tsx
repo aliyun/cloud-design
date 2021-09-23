@@ -143,6 +143,7 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = config => {
   return NextDialog.confirm({
     ...getCustomWidth(size),
     footerActions: showDefaultFooterActions(),
+    messageProps: { type: 'notice' },
     ...others
   })
 }
@@ -152,6 +153,7 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = config => {
   return NextDialog.alert({
     ...getCustomWidth(size),
     footerActions: showDefaultFooterActions(),
+    messageProps: { type: 'warning' },
     ...others
   })
 }
