@@ -16,7 +16,7 @@ const Tag: typeof NextTag = wrap(withThemeClass(
     
     if (theme === 'hybridcloud' || theme === "hybridcloud-dark" || theme === 'yunxiao' || theme === 'yunxiao-dark') {
       return (
-        <NextTag {...props} ref={ref as any} className={cls(`next-tag-custom-${color}`)}>
+        <NextTag {...props} ref={ref as any} className={cls(`tag-custom-${color}`)}>
           {children}
         </NextTag>
       )
