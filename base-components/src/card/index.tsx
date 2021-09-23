@@ -42,10 +42,7 @@ Card.DropDownActions = ({ actions }) => {
       )
     } else if (theme.startsWith('yunxiao')) {
       return (
-        <Icon
-          className="yunxiao-card-dropdown-actions-icon"
-          type="ellipsis"
-        />
+        <Icon className="yunxiao-card-dropdown-actions-icon" type="ellipsis" />
       )
     } else {
       return <Icon type="ellipsis-vertical" size="small" />

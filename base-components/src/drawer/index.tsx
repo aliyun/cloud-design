@@ -74,11 +74,11 @@ export type quickShowDrawerProps = Omit<DrawerProps, 'onOk' | 'onCancel'> & {
   /**
    * 点击确定按钮时的回调。有此参数就默认显示确定按钮
    */
-  onOk?: (event: React.MouseEvent) => (boolean | Promise<any>)
+  onOk?: (event: React.MouseEvent) => boolean | Promise<any>
   /**
    * 点击取消按钮时的回调。有此参数就默认显示取消按钮
    */
-  onCancel?: (event: React.MouseEvent) => (boolean | Promise<any>)
+  onCancel?: (event: React.MouseEvent) => boolean | Promise<any>
   /**
    * 抽屉内容
    */
@@ -139,23 +139,24 @@ const Drawer: React.FC<DrawerProps> & {
     const setFooterShadow = (iRef: any) => {
       if (iRef?.current && theme !== 'wind' && !theme.startsWith('xconsole')) {
         const drawerDom = ReactDOM.findDOMNode(iRef.current)
-        const drawerFirstDom =
-          drawerDom?.getElementsByClassName('next-drawer')?.[0]?.firstChild
+        const drawerFirstDom = drawerDom?.getElementsByClassName(
+          'next-drawer'
+        )?.[0]?.firstChild
         if (drawerFirstDom) {
           drawerFirstDom.style.overflow = 'hidden'
         }
-        const drawerBodyDom =
-          drawerDom?.getElementsByClassName('next-drawer-body')?.[0]
+        const drawerBodyDom = drawerDom?.getElementsByClassName(
+          'next-drawer-body'
+        )?.[0]
         if (drawerBodyDom) {
           drawerBodyDom.style.overflow = 'auto'
         }
-        const drawerFooterDom =
-          drawerDom?.getElementsByClassName('next-drawer-footer')?.[0]
+        const drawerFooterDom = drawerDom?.getElementsByClassName(
+          'next-drawer-footer'
+        )?.[0]
         if (drawerFooterDom) {
           if (drawerBodyDom?.clientHeight < drawerBodyDom?.scrollHeight) {
-            drawerFooterDom.style.boxShadow = 'var(--shadow-1-up)'
-          } else {
-            drawerFooterDom.style.boxShadow = 'none'
+            drawerFooterDom.classList.add('next-drawer-footer-has-shadow')
           }
         }
       }
@@ -264,7 +265,8 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
       const result = onOk?.(event)
       if (result instanceof Promise) {
         actionRef?.setOKLoading?.(true)
-        result.then((state) => {
+        result
+          .then(state => {
             if (state !== false) {
               actionRef?.setOKLoading?.(false)
               actionRef?.close?.()
@@ -289,7 +291,7 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
       if (result instanceof Promise) {
         actionRef?.setCancelLoading?.(true)
         result
-          .then((state) => {
+          .then(state => {
             if (state !== false) {
               actionRef?.setCancelLoading?.(false)
               actionRef?.close?.()
