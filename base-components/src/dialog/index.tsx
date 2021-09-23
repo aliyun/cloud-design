@@ -1,65 +1,73 @@
 import { Dialog as NextDialog } from '@alifd/next'
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import React, { useEffect, useRef } from 'react'
 import { useCssVar } from '../utils/useCssVar'
-import { DialogProps, QuickShowConfig, QuickShowRet } from '@alifd/next/types/dialog';
+import {
+  DialogProps,
+  QuickShowConfig,
+  QuickShowRet
+} from '@alifd/next/types/dialog'
 
 type CustomDialogProps = DialogProps & {
   /**
    * 抽屉大小
    */
-     size?: 'mini' | 'small' | 'medium' | 'large';
+  size?: 'mini' | 'small' | 'medium' | 'large'
 }
 
 type CustomQuickShowConfig = QuickShowConfig & {
-   /**
+  /**
    * 抽屉大小
    */
-    size?: 'mini' | 'small' | 'medium' | 'large';
+  size?: 'mini' | 'small' | 'medium' | 'large'
 }
 
 const sizeMap = {
-  'mini': 400,
-  'small': 600,
-  'medium': 800,
-  'large': 1200,
+  mini: 400,
+  small: 600,
+  medium: 800,
+  large: 1200
 }
 
 // 获取 size 大小
 const getCustomWidth = (size: CustomDialogProps['size']) => {
-    const sizeWidth = sizeMap[size];
-    if (sizeWidth) {
-      return {
-        style: {
-          width: `${sizeWidth}px`
-        }
+  const sizeWidth = sizeMap[size]
+  if (sizeWidth) {
+    return {
+      style: {
+        width: `${sizeWidth}px`
       }
     }
-    return {}
   }
+  return {}
+}
 
 const Dialog: React.FC<CustomDialogProps> & {
-  show: (config: CustomQuickShowConfig) => QuickShowRet;
-  confirm: (config: CustomQuickShowConfig) => QuickShowRet;
-  alert: (config: CustomQuickShowConfig) => QuickShowRet;
-} = (props) => {
-  const { size, ...others } = props;
+  show: (config: CustomQuickShowConfig) => QuickShowRet
+  confirm: (config: CustomQuickShowConfig) => QuickShowRet
+  alert: (config: CustomQuickShowConfig) => QuickShowRet
+} = props => {
+  const { size, ...others } = props
   const theme = useCssVar('--alicloudfe-components-theme').trim()
 
-  const customRef = useRef(null);
-  
+  const customRef = useRef(null)
+
   // 有滚动条时底部显示阴影
   const setFooterShadow = () => {
     if (theme !== 'wind' && !theme.startsWith('xconsole')) {
-      const dialogDom = ReactDOM.findDOMNode(customRef.current);
-      const dialogBodyDom = dialogDom?.getElementsByClassName('next-dialog-body')?.[0];
-      const dialogFooterDom = dialogDom?.getElementsByClassName('next-dialog-footer')?.[0];
+      const dialogDom = ReactDOM.findDOMNode(customRef.current)
+      const dialogBodyDom = dialogDom?.getElementsByClassName(
+        'next-dialog-body'
+      )?.[0]
+      const dialogFooterDom = dialogDom?.getElementsByClassName(
+        'next-dialog-footer'
+      )?.[0]
       if (dialogFooterDom) {
         if (dialogBodyDom?.clientHeight < dialogBodyDom?.scrollHeight) {
-          dialogFooterDom.style.boxShadow = 'var(--shadow-1-up)';
-        }else {
-          dialogFooterDom.style.boxShadow = 'none';
+          dialogFooterDom.classList.add('next-dialog-footer-has-shadow')
+        } else {
+          dialogFooterDom.classList.remove('next-dialog-footer-has-shadow')
         }
       }
     }
@@ -67,13 +75,17 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   useEffect(() => {
     if (customRef) {
-      setFooterShadow();
+      setFooterShadow()
     }
   })
 
   useEffect(() => {
-    setFooterShadow();
-  }, [ReactDOM.findDOMNode(customRef.current)?.getElementsByClassName('next-dialog')?.[0]?.clientHeight])
+    setFooterShadow()
+  }, [
+    ReactDOM.findDOMNode(customRef.current)?.getElementsByClassName(
+      'next-dialog'
+    )?.[0]?.clientHeight
+  ])
 
   // 云效混合云主题样式主操作在右边
   const defaultFooterActions = (() => {
@@ -87,7 +99,14 @@ const Dialog: React.FC<CustomDialogProps> & {
     return ['ok', 'cancel']
   })()
 
-  return <NextDialog {...getCustomWidth(size)} footerActions={defaultFooterActions} {...others} ref={customRef} />
+  return (
+    <NextDialog
+      {...getCustomWidth(size)}
+      footerActions={defaultFooterActions}
+      {...others}
+      ref={customRef}
+    />
+  )
 }
 
 const showDefaultFooterActions = () => {
@@ -106,8 +125,8 @@ const showDefaultFooterActions = () => {
 }
 
 // 快捷调用的操作按钮顺序
-const show: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
-  const {size, ...others} = config;
+const show: (config: CustomQuickShowConfig) => QuickShowRet = config => {
+  const { size, ...others } = config
 
   return NextDialog.show({
     ...getCustomWidth(size),
@@ -119,8 +138,8 @@ const show: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
   })
 }
 
-const confirm: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
-  const {size, ...others} = config;
+const confirm: (config: CustomQuickShowConfig) => QuickShowRet = config => {
+  const { size, ...others } = config
   return NextDialog.confirm({
     ...getCustomWidth(size),
     footerActions: showDefaultFooterActions(),
@@ -128,8 +147,8 @@ const confirm: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
   })
 }
 
-const alert: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
-  const {size, ...others} = config;
+const alert: (config: CustomQuickShowConfig) => QuickShowRet = config => {
+  const { size, ...others } = config
   return NextDialog.alert({
     ...getCustomWidth(size),
     footerActions: showDefaultFooterActions(),
@@ -137,11 +156,9 @@ const alert: ((config: CustomQuickShowConfig) => QuickShowRet) = (config) => {
   })
 }
 
-
 hoistNonReactStatics(Dialog, NextDialog, { show: true, confirm: true })
 Dialog.show = show
 Dialog.confirm = confirm
 Dialog.alert = alert
-
 
 export default Dialog
