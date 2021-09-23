@@ -3493,9 +3493,6 @@
     --nav-normal-item-selected-text-style: var(--font-weight-medium, 500);
     
     
-    --nav-ver-item-margin-tb: 8px;
-    
-    
     --nav-ver-height: 36px;
     
     
@@ -3506,12 +3503,6 @@
     
     
     --nav-group-height: 40px;
-    
-    
-    --nav-ver-item-margin-lr: 20px;
-    
-    
-    --nav-ver-item-padding-lr: 20px;
     
     
     --nav-icon-self-margin: 16px;
@@ -3806,6 +3797,15 @@
     
     
     --nav-line-group-text-style: var(--font-weight-2, normal);
+    
+    
+    --nav-ver-item-margin-lr: undefinedpx;
+    
+    
+    --nav-ver-item-margin-tb: 8px;
+    
+    
+    --nav-ver-item-padding-lr: 12px;
     
     
     /* ------------------------ calendar ------------------------ */
@@ -4630,9 +4630,6 @@
     --message-success-color-content-inline: var(--color-text1-2, #6E6E6E);
     
     
-    --message-size-l-padding: var(--s-4, 16px);
-    
-    
     --message-success-color-icon-inline: var(--color-success-5, #23B066);
     
     
@@ -4652,9 +4649,6 @@
     
     
     --message-size-l-content-margin-top: var(--s-3, 12px);
-    
-    
-    --message-size-m-content-margin-top: var(--s-2, 8px);
     
     
     --message-success-color-icon-addon: var(--color-success-5, #23B066);
@@ -4720,9 +4714,6 @@
     --message-size-m-icon: var(--icon-m, 20px);
     
     
-    --message-size-l-title-content-padding-right: var(--s-5, 20px);
-    
-    
     --message-success-color-border-toast: var(--color-line1-1, #E8E8E8);
     
     
@@ -4739,6 +4730,33 @@
     
     
     --message-loading-color-border-toast: var(--color-line1-1, #E8E8E8);
+    
+    
+    --message-size-l-close-top: var(--s-3, 12px);
+    
+    
+    --message-size-m-title-content-padding-right: var(--s-5, 20px);
+    
+    
+    --message-size-m-close-right: 12px;
+    
+    
+    --message-size-l-padding: var(--s-3, 12px);
+    
+    
+    --message-size-l-title-content-padding-left: 8px;
+    
+    
+    --message-size-l-title-content-padding-right: 20px;
+    
+    
+    --message-size-m-padding: var(--s-3, 12px);
+    
+    
+    --message-size-m-content-margin-top: 8px;
+    
+    
+    --message-size-m-close-top: var(--s-3, 12px);
     
     
     --message-size-m-border-width: var(--line-1, 1px);
@@ -4886,24 +4904,6 @@
     
     
     --message-loading-icon-content: var(--icon-content-loading, "");
-    
-    
-    --message-size-l-close-top: var(--s-3, 12px);
-    
-    
-    --message-size-l-title-content-padding-left: var(--s-2, 8px);
-    
-    
-    --message-size-m-padding: var(--s-4, 16px);
-    
-    
-    --message-size-m-title-content-padding-right: var(--s-5, 20px);
-    
-    
-    --message-size-m-close-top: var(--s-5, 20px);
-    
-    
-    --message-size-m-close-right: 12px;
     
     
     /* ------------------------ dialog ------------------------ */
@@ -7633,6 +7633,15 @@
     --table-row-bg: var(--color-fill1-1, #FFFFFF);
     
     
+    --table-expanded-icon-size: var(--icon-s, 16px);
+    
+    
+    --table-expand-fold-icon-content: var(--icon-content-triangle-right-s, "");
+    
+    
+    --table-expand-unfold-icon-content: var(--icon-content-triangle-down-s, "");
+    
+    
     --table-normal-border-width: var(--line-1, 1px);
     
     
@@ -7697,15 +7706,6 @@
     
     
     --table-expanded-ctrl-disabled-color: var(--color-text1-2, #6E6E6E);
-    
-    
-    --table-expanded-icon-size: var(--icon-s, 16px);
-    
-    
-    --table-expand-fold-icon-content: var(--icon-content-triangle-right-s, "");
-    
-    
-    --table-expand-unfold-icon-content: var(--icon-content-triangle-down-s, "");
     
     
     /* ------------------------ breadcrumb ------------------------ */
