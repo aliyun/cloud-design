@@ -44,18 +44,18 @@ const getCustomWidth = (size: CustomDialogProps['size']) => {
 }
 
 // 设置阴影
-const setFooterShadow = (dom) => {
+const setFooterShadow = (dom, prefix) => {
   const dialogBodyDom = dom?.getElementsByClassName(
-    'next-dialog-body'
+    `${prefix}dialog-body`
   )?.[0]
   const dialogFooterDom = dom?.getElementsByClassName(
-    'next-dialog-footer'
+    `${prefix}dialog-footer`
   )?.[0]
   if (dialogFooterDom) {
     if (dialogBodyDom?.clientHeight < dialogBodyDom?.scrollHeight) {
-      dialogFooterDom.classList.add('next-dialog-footer-has-shadow')
+      dialogFooterDom.classList.add(`${prefix}dialog-footer-has-shadow`)
     } else {
-      dialogFooterDom.classList.remove('next-dialog-footer-has-shadow')
+      dialogFooterDom.classList.remove(`${prefix}dialog-footer-has-shadow`)
     }
   }
 }
@@ -66,6 +66,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   alert: (config: CustomQuickShowConfig) => QuickShowRet
 } = props => {
   const { size, ...others } = props
+  const { prefix = 'next-' } = props;
   const theme = useCssVar('--alicloudfe-components-theme').trim()
 
   const customRef = useRef(null)
@@ -74,7 +75,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   const setFooterShadowOfRef = () => {
     if (theme !== 'wind' && !theme.startsWith('xconsole')) {
       const dialogDom = ReactDOM.findDOMNode(customRef.current)
-      setFooterShadow(dialogDom);
+      setFooterShadow(dialogDom, prefix);
     }
   }
 
@@ -132,11 +133,12 @@ const showDefaultFooterActions = () => {
 // 快捷调用的操作按钮顺序
 const show: (config: CustomQuickShowConfig) => QuickShowRet = config => {
   const { size, ...others } = config;
+  const { prefix = 'next-' } = config;
   
   setTimeout(() => {
     const doms = document.getElementsByClassName("quick-show");
     for (let item of doms as any) {
-      setFooterShadow(item)
+      setFooterShadow(item, prefix)
     }
   })
 
