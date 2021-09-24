@@ -33,7 +33,7 @@ export { default as Cascader } from './cascader'
 export { default as CascaderSelect } from './cascader-select'
 export { default as Checkbox } from './checkbox'
 export { default as Collapse } from './collapse'
-export { ConfigProvider }
+export { default as ConfigProvider } from './config-provider'
 export { default as DatePicker } from './date-picker'
 export { default as DatePicker2 } from './date-picker2'
 export { default as Dialog } from './dialog'
