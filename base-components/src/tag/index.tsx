@@ -10,13 +10,18 @@ type NextTagProps = React.ComponentProps<typeof NextTag>
 
 const Tag: typeof NextTag = wrap(withThemeClass(
   React.forwardRef((props: NextTagProps, ref) => {
-    const { children, color } = props;
+    const { children, color, prefix = 'next-' } = props;
+    const { className, ...others } = props;
     
     const theme = useCssVar('--alicloudfe-components-theme').trim()
     
     if (theme === 'hybridcloud' || theme === "hybridcloud-dark" || theme === 'yunxiao' || theme === 'yunxiao-dark') {
       return (
-        <NextTag {...props} ref={ref as any} className={cls(`tag-custom-${color}`)}>
+        <NextTag 
+          ref={ref as any} 
+          className={cls({[`${prefix}tag-custom-${color}`]: true}, className)} 
+          {...others}
+        >
           {children}
         </NextTag>
       )
