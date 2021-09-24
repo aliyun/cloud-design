@@ -29,6 +29,7 @@ class Demo extends React.Component {
       <Form style={{ width: '60%' }} {...formItemLayout}>
         <FormItem
           label="深刻的接口设计的款式经典深刻的就是快点结束跨境电商看见的跨境电商看见的看"
+          help="思考角度看世界对抗世界的"
           required
           requiredMessage="Please input your username!"
         >
