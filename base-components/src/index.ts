@@ -1,3 +1,25 @@
+import ConfigProvider from './config-provider'
+import zhcn from './locale/zh-cn'
+import zhhk from './locale/zh-hk'
+import zhtw from './locale/zh-tw'
+import enus from './locale/en-us'
+
+const lang = ConfigProvider.getLanguage()
+switch (lang) {
+  case 'zh-cn':
+    ConfigProvider.setLocale(zhcn)
+    break
+  case 'zh-hk':
+    ConfigProvider.setLocale(zhhk)
+    break
+  case 'zh-tw':
+    ConfigProvider.setLocale(zhtw)
+    break
+  case 'en-us':
+    ConfigProvider.setLocale(enus)
+    break
+}
+
 export { default as Affix } from './affix'
 export { default as Animate } from './animate'
 export { default as Badge } from './badge'

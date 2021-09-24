@@ -45,9 +45,7 @@ const getCustomWidth = (size: CustomDialogProps['size']) => {
 
 // 设置阴影
 const setFooterShadow = (dom, prefix) => {
-  const dialogBodyDom = dom?.getElementsByClassName(
-    `${prefix}dialog-body`
-  )?.[0]
+  const dialogBodyDom = dom?.getElementsByClassName(`${prefix}dialog-body`)?.[0]
   const dialogFooterDom = dom?.getElementsByClassName(
     `${prefix}dialog-footer`
   )?.[0]
@@ -66,7 +64,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   alert: (config: CustomQuickShowConfig) => QuickShowRet
 } = props => {
   const { size, ...others } = props
-  const { prefix = 'next-' } = props;
+  const { prefix = 'next-' } = props
   const theme = useCssVar('--alicloudfe-components-theme').trim()
 
   const customRef = useRef(null)
@@ -75,7 +73,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   const setFooterShadowOfRef = () => {
     if (theme !== 'wind' && !theme.startsWith('xconsole')) {
       const dialogDom = ReactDOM.findDOMNode(customRef.current)
-      setFooterShadow(dialogDom, prefix);
+      setFooterShadow(dialogDom, prefix)
     }
   }
 
@@ -132,11 +130,11 @@ const showDefaultFooterActions = () => {
 
 // 快捷调用的操作按钮顺序
 const show: (config: CustomQuickShowConfig) => QuickShowRet = config => {
-  const { size, ...others } = config;
-  const { prefix = 'next-' } = config;
-  
+  const { size, ...others } = config
+  const { prefix = 'next-' } = config
+
   setTimeout(() => {
-    const doms = document.getElementsByClassName("quick-show");
+    const doms = document.getElementsByClassName('quick-show')
     for (let item of doms as any) {
       setFooterShadow(item, prefix)
     }
