@@ -2833,6 +2833,9 @@
     --btn-warning-normal-bg-active: var(--color-error-2, #FCCECA);
     
     
+    --btn-text-disabled-color: var(--color-line1-5, #adadad);
+    
+    
     --btn-size-s-border-width: var(--line-1, 1px);
     
     
@@ -2975,9 +2978,6 @@
     
     
     --btn-text-icon-l-margin: var(--s-1, 4px);
-    
-    
-    --btn-text-disabled-color: var(--color-line1-5, #adadad);
     
     
     /* ------------------------ balloon ------------------------ */
@@ -3517,6 +3517,15 @@
     --nav-group-font-size: var(--font-size-display-2, 16px);
     
     
+    --nav-ver-item-margin-lr: undefinedpx;
+    
+    
+    --nav-ver-item-margin-tb: 8px;
+    
+    
+    --nav-ver-item-padding-lr: 12px;
+    
+    
     --nav-hoz-height: var(--s-11, 44px);
     
     
@@ -3604,6 +3613,9 @@
     --nav-primary-sub-nav-active-color: var(--color-brand1-6, #1B9AEE);
     
     
+    --nav-primary-item-disabled-text-color: var(--color-text1-1, #adadad);
+    
+    
     --nav-primary-item-opened-text-color: var(--color-white, #FFFFFF);
     
     
@@ -3679,6 +3691,9 @@
     --nav-secondary-sub-nav-active-color: var(--color-brand1-6, #1B9AEE);
     
     
+    --nav-secondary-item-disabled-text-color: var(--color-brand1-1, #F0F9FF);
+    
+    
     --nav-secondary-item-opened-bg-color: var(--color-transparent, transparent);
     
     
@@ -3716,6 +3731,9 @@
     
     
     --nav-normal-sub-nav-active-color: var(--color-brand1-6, #1B9AEE);
+    
+    
+    --nav-normal-item-disabled-text-color: var(--color-text1-2, #6E6E6E);
     
     
     --nav-line-bg-color: var(--color-transparent, transparent);
@@ -3787,6 +3805,9 @@
     --nav-line-sub-nav-active-color: var(--color-brand1-6, #1B9AEE);
     
     
+    --nav-line-item-disabled-text-color: var(--color-text1-2, #6E6E6E);
+    
+    
     --nav-line-item-opened-bg-color: var(--color-transparent, transparent);
     
     
@@ -3797,15 +3818,6 @@
     
     
     --nav-line-group-text-style: var(--font-weight-2, normal);
-    
-    
-    --nav-ver-item-margin-lr: undefinedpx;
-    
-    
-    --nav-ver-item-margin-tb: 8px;
-    
-    
-    --nav-ver-item-padding-lr: 12px;
     
     
     /* ------------------------ calendar ------------------------ */
@@ -4723,6 +4735,42 @@
     --message-size-m-close-top: var(--s-3, 12px);
     
     
+    --message-size-m-padding: var(--s-2, 8px);
+    
+    
+    --message-size-m-content-margin-top: var(--s-1, 4px);
+    
+    
+    --message-size-l-title-content-padding-left: var(--s-2, 8px);
+    
+    
+    --message-size-m-title-content-padding-left: var(--s-2, 8px);
+    
+    
+    --message-size-l-padding: var(--s-3, 12px);
+    
+    
+    --message-size-l-title-content-padding-right: var(--s-2, 8px);
+    
+    
+    --message-size-l-title-font: var(--font-size-body-2, 14px);
+    
+    
+    --message-size-l-content-margin-top: var(--s-1, 4px);
+    
+    
+    --message-size-l-content-font: var(--font-size-body-2, 14px);
+    
+    
+    --message-size-m-title-content-padding-right: var(--s-2, 8px);
+    
+    
+    --message-size-m-title-font: var(--font-size-body-2, 14px);
+    
+    
+    --message-success-color-content-inline: var(--color-text1-2, #6E6E6E);
+    
+    
     --message-size-m-border-width: var(--line-1, 1px);
     
     
@@ -4868,42 +4916,6 @@
     
     
     --message-loading-icon-content: var(--icon-content-loading, "");
-    
-    
-    --message-size-m-padding: var(--s-2, 8px);
-    
-    
-    --message-size-m-content-margin-top: var(--s-1, 4px);
-    
-    
-    --message-size-l-title-content-padding-left: var(--s-2, 8px);
-    
-    
-    --message-size-m-title-content-padding-left: var(--s-2, 8px);
-    
-    
-    --message-size-l-padding: var(--s-3, 12px);
-    
-    
-    --message-size-l-title-content-padding-right: var(--s-2, 8px);
-    
-    
-    --message-size-l-title-font: var(--font-size-body-2, 14px);
-    
-    
-    --message-size-l-content-margin-top: var(--s-1, 4px);
-    
-    
-    --message-size-l-content-font: var(--font-size-body-2, 14px);
-    
-    
-    --message-size-m-title-content-padding-right: var(--s-2, 8px);
-    
-    
-    --message-size-m-title-font: var(--font-size-body-2, 14px);
-    
-    
-    --message-success-color-content-inline: var(--color-text1-2, #6E6E6E);
     
     
     /* ------------------------ dialog ------------------------ */
