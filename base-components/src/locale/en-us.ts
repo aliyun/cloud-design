@@ -50,7 +50,9 @@ export default {
     cancel: 'Cancel'
   },
   Drawer: {
-    close: 'Close'
+    close: 'Close',
+    ok: 'OK',
+    cancel: 'Cancel'
   },
   Message: {
     closeAriaLabel: 'Close'

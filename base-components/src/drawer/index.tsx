@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import ReactDOM from 'react-dom'
 import { ConfigProvider, Drawer as NextDrawer } from '@alifd/next'
 import { withThemeClass } from '../utils/withThemeClass'
@@ -7,6 +7,7 @@ import { default as Button } from '../button'
 import cls from 'classnames'
 import { useCssVar } from '../utils/useCssVar'
 import { ButtonProps } from '@alifd/next/types/button'
+import zhCN from '../locale/zh-cn'
 
 type NextDrawerProps = React.ComponentProps<typeof NextDrawer>
 
@@ -102,8 +103,9 @@ const Drawer: React.FC<DrawerProps> & {
       hasFooterLine,
       footerAlign,
       children,
-      okText = '确定',
-      cancelText = '取消',
+      locale = zhCN.Drawer,
+      okText = locale.ok,
+      cancelText = locale.cancel,
       cancelBtnProps = {},
       okBtnProps = {},
       footerClass,
@@ -113,6 +115,7 @@ const Drawer: React.FC<DrawerProps> & {
       actionRef,
       ...filterProps
     } = props
+    // console.log('locale', locale)
     const [customVisible, setCustomVisible] = useState<boolean>(visible)
 
     const [okLoadingState, setOkLoadingState] = useState<boolean>(false)
