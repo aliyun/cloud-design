@@ -28,10 +28,14 @@ const Button: typeof NextButton = withThemeClass(
     const { className, iconSize, size = 'medium' } = props
     let { children } = props
     const count = Children.count(children)
-    if (isReactFragment(children)) {
+    const theme = useCssVar('--alicloudfe-components-theme').trim()
+    if (
+      isReactFragment(children) &&
+      theme !== 'wind' &&
+      !theme.startsWith('xconsole')
+    ) {
       children = <span className={'next-btn-helper'}>{children}</span>
     }
-    const theme = useCssVar('--alicloudfe-components-theme').trim()
     // 判断是否是2-3个汉字
     if (
       // xconsole相关主题不需要该功能
