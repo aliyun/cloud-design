@@ -21,7 +21,7 @@ const NextConfigConsumer = (NextConfigProvider as any).Consumer
 
 const ConfigProvider: typeof NextConfigProvider & {
   useRefElement: typeof useRefElement
-} = ((props) => {
+} = (props => {
   const ref = useRef(getInitialRefElement())
   const [refElement, setRefElement] = useState(ref.current)
   // 在初次渲染的时候，refElement还没渲染，因此需要在effect中再获取一次
@@ -39,7 +39,7 @@ const ConfigProvider: typeof NextConfigProvider & {
     <ctx.Provider value={ctxValue}>
       <NextConfigProvider {...props} />
       <NextConfigConsumer>
-        {(config) => {
+        {config => {
           const prefix = props.prefix ?? config?.prefix ?? 'next-'
           return (
             <div
@@ -53,7 +53,6 @@ const ConfigProvider: typeof NextConfigProvider & {
     </ctx.Provider>
   )
 }) as any
-
 ;(ConfigProvider as any).displayName = 'ExtendedConfigProvider'
 ConfigProvider.useRefElement = useRefElement
 
