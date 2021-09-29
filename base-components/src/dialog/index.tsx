@@ -175,4 +175,5 @@ Dialog.show = show
 Dialog.confirm = confirm
 Dialog.alert = alert
 
+export type { DialogProps } from '@alifd/next/lib/dialog';
 export default Dialog
