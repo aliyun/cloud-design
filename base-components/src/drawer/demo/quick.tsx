@@ -6,49 +6,17 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Drawer, ConfigProvider, Box, Message } from '@alicloudfe/components'
+import {
+  Button,
+  Drawer,
+  ConfigProvider,
+  Box,
+  Message
+} from '@alicloudfe/components'
 import { quickShowDrawerProps } from '../../../types/drawer'
 
 let onHideA = null
 let onHideB = null
-
-const DrawerAProps: quickShowDrawerProps = {
-  title: 'AlertA',
-  size: 'small',
-  onOk: () => {
-    return new Promise(resolve => {
-      setTimeout(() => {
-        resolve(true);
-      }, 2000);
-    })
-  },
-  onCancel: () => {
-    alert('click cancel')
-    return true
-  },
-  content: (
-    <>
-      <Button
-        onClick={() => {
-          onHideA?.()
-        }}
-      >
-        Hide
-      </Button>
-      <br />
-      <br />
-      <Button
-        type="primary"
-        onClick={() => {
-          const { hide } = Drawer.show(DrawerBProps)
-          onHideB = hide
-        }}
-      >
-        Open Drawer B
-      </Button>
-    </>
-  )
-}
 
 const DrawerBProps: quickShowDrawerProps = {
   title: 'AlertB',
@@ -71,12 +39,164 @@ const DrawerBProps: quickShowDrawerProps = {
   )
 }
 
-const popupShow = () => {
-  const { hide, show } = Drawer.show(DrawerAProps)
-  onHideA = hide
-}
-
 export default function DemoComponent() {
+  const [c, setC] = React.useState(<div>信息超过一屏的Drawer</div>)
+  const DrawerAProps: quickShowDrawerProps = {
+    title: 'AlertA',
+    size: 'small',
+    onOk: () => {
+      setTimeout(() => {
+        setC(
+          <div>
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            信息超过一屏的Drawer
+            <br />
+            Drawer的底部
+            <br />
+          </div>
+        )
+      }, 2000)
+      return false
+    },
+    onCancel: () => {
+      // alert('click cancel')
+      return true
+    },
+    content: c
+  }
+  const popupShow = () => {
+    const { hide, show } = Drawer.show(DrawerAProps)
+    onHideA = hide
+  }
   const content = (
     <ConfigProvider locale={{ Dialog: { ok: 'OK', cancel: 'Cancel' } }}>
       <Box direction="row" spacing={20}>
