@@ -142,21 +142,19 @@ const Drawer: React.FC<DrawerProps> & {
     const setFooterShadow = (iRef: any) => {
       if (iRef?.current && theme !== 'wind' && !theme.startsWith('xconsole')) {
         const drawerDom = ReactDOM.findDOMNode(iRef.current)
-        const drawerFirstDom = drawerDom?.getElementsByClassName(
-          'next-drawer'
-        )?.[0]?.firstChild
+        const drawerFirstDom =
+          drawerDom?.getElementsByClassName('next-drawer')?.[0]?.firstChild
         if (drawerFirstDom) {
           drawerFirstDom.style.overflow = 'hidden'
         }
-        const drawerBodyDom = drawerDom?.getElementsByClassName(
-          'next-drawer-body'
-        )?.[0]
+        const drawerBodyDom =
+          drawerDom?.getElementsByClassName('next-drawer-body')?.[0]
+
         if (drawerBodyDom) {
           drawerBodyDom.style.overflow = 'auto'
         }
-        const drawerFooterDom = drawerDom?.getElementsByClassName(
-          'next-drawer-footer'
-        )?.[0]
+        const drawerFooterDom =
+          drawerDom?.getElementsByClassName('next-drawer-footer')?.[0]
         if (drawerFooterDom) {
           if (drawerBodyDom?.clientHeight < drawerBodyDom?.scrollHeight) {
             drawerFooterDom.classList.add('next-drawer-footer-has-shadow')
@@ -167,17 +165,34 @@ const Drawer: React.FC<DrawerProps> & {
       }
     }
 
+    let observer = null;
+    // 绑定监听器
     useEffect(() => {
-      setFooterShadow(ref ? ref : customRef)
+      setFooterShadow(ref ?? customRef);
+      const drawerDom = ReactDOM.findDOMNode((ref ?? customRef).current)
+      const drawerBodyDom =
+        drawerDom?.getElementsByClassName('next-drawer-body')?.[0]
+      if (drawerBodyDom && !observer) {
+        observer = new MutationObserver(() => {
+          setFooterShadow(ref ?? customRef);
+        })
+        observer.observe(drawerBodyDom, {
+          attributes: true,
+          attributeFilter: ['style'],
+          attributeOldValue: true,
+          childList: true,
+          subtree: true
+        })
+      }
+      // 销毁
+      return () => {
+        if (observer) {
+          observer.disconnect()
+          observer.takeRecords()
+          observer = null
+        }
+      }
     })
-
-    useEffect(() => {
-      setFooterShadow(ref ? ref : customRef)
-    }, [
-      ReactDOM.findDOMNode(ref?.current)?.getElementsByClassName(
-        'next-drawer'
-      )?.[0]?.clientHeight
-    ])
 
     useEffect(() => {
       setCustomVisible(visible)
@@ -271,7 +286,7 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
       if (result instanceof Promise) {
         actionRef?.setOKLoading?.(true)
         result
-          .then(state => {
+          .then((state) => {
             if (state !== false) {
               actionRef?.setOKLoading?.(false)
               actionRef?.close?.()
@@ -296,7 +311,7 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
       if (result instanceof Promise) {
         actionRef?.setCancelLoading?.(true)
         result
-          .then(state => {
+          .then((state) => {
             if (state !== false) {
               actionRef?.setCancelLoading?.(false)
               actionRef?.close?.()

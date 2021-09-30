@@ -45,15 +45,19 @@ const getCustomWidth = (size: CustomDialogProps['size']) => {
 
 // 设置阴影
 const setFooterShadow = (dom, prefix) => {
-  const dialogBodyDom = dom?.getElementsByClassName(`${prefix}dialog-body`)?.[0]
-  const dialogFooterDom = dom?.getElementsByClassName(
-    `${prefix}dialog-footer`
-  )?.[0]
-  if (dialogFooterDom) {
-    if (dialogBodyDom?.clientHeight < dialogBodyDom?.scrollHeight) {
-      dialogFooterDom.classList.add(`${prefix}dialog-footer-has-shadow`)
-    } else {
-      dialogFooterDom.classList.remove(`${prefix}dialog-footer-has-shadow`)
+  if (dom) {
+    const dialogBodyDom = dom?.getElementsByClassName(
+      `${prefix}dialog-body`
+    )?.[0]
+    const dialogFooterDom = dom?.getElementsByClassName(
+      `${prefix}dialog-footer`
+    )?.[0]
+    if (dialogFooterDom) {
+      if (dialogBodyDom?.clientHeight < dialogBodyDom?.scrollHeight) {
+        dialogFooterDom.classList.add(`${prefix}dialog-footer-has-shadow`)
+      } else {
+        dialogFooterDom.classList.remove(`${prefix}dialog-footer-has-shadow`)
+      }
     }
   }
 }
@@ -62,7 +66,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   show: (config: CustomQuickShowConfig) => QuickShowRet
   confirm: (config: CustomQuickShowConfig) => QuickShowRet
   alert: (config: CustomQuickShowConfig) => QuickShowRet
-} = props => {
+} = (props) => {
   const { size, ...others } = props
   const { prefix = 'next-' } = props
   const theme = useCssVar('--alicloudfe-components-theme').trim()
@@ -77,19 +81,35 @@ const Dialog: React.FC<CustomDialogProps> & {
     }
   }
 
-  useEffect(() => {
-    if (customRef) {
-      setFooterShadowOfRef()
-    }
-  })
-
+  let observer = null
+  // 绑定监听器
   useEffect(() => {
     setFooterShadowOfRef()
-  }, [
-    ReactDOM.findDOMNode(customRef.current)?.getElementsByClassName(
-      'next-dialog'
-    )?.[0]?.clientHeight
-  ])
+    const drawerDom = ReactDOM.findDOMNode(customRef.current)
+    const drawerBodyDom = drawerDom?.getElementsByClassName(
+      `${prefix}dialog-body`
+    )?.[0]
+    if (drawerBodyDom && !observer) {
+      observer = new MutationObserver(() => {
+        setFooterShadowOfRef()
+      })
+      observer.observe(drawerBodyDom, {
+        attributes: true,
+        attributeFilter: ['style'],
+        attributeOldValue: true,
+        childList: true,
+        subtree: true
+      })
+    }
+    // 销毁
+    return () => {
+      if (observer) {
+        observer.disconnect()
+        observer.takeRecords()
+        observer = null
+      }
+    }
+  })
 
   // 云效混合云主题样式主操作在右边
   const defaultFooterActions = (() => {
@@ -129,14 +149,50 @@ const showDefaultFooterActions = () => {
 }
 
 // 快捷调用的操作按钮顺序
-const show: (config: CustomQuickShowConfig) => QuickShowRet = config => {
+const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   const { size, ...others } = config
   const { prefix = 'next-' } = config
 
   setTimeout(() => {
-    const doms = document.getElementsByClassName('quick-show')
-    for (let item of doms as any) {
+    const doms = (document.getElementsByClassName('quick-show') ?? []) as any
+    for (let item of doms) {
+      // 初始化判断是否有阴影
       setFooterShadow(item, prefix)
+      // 绑定body监听器。监听高度变化
+      const dialogBodyDom = item?.getElementsByClassName(
+        `${prefix}dialog-body`
+      )?.[0]
+
+      let observer = new MutationObserver(() => {
+        setFooterShadow(item, prefix)
+      })
+      observer.observe(dialogBodyDom, {
+        attributes: true,
+        attributeFilter: ['style'],
+        attributeOldValue: true,
+        childList: true,
+        subtree: true
+      })
+
+      // 绑定dialog监听器，用于监听dialog被销毁时销毁所有监听器
+      let domObserver = new MutationObserver(() => {
+        if (item?.parentNode?.parentNode?.tagName !== 'BODY') {
+          observer.disconnect()
+          observer.takeRecords()
+          observer = null
+          domObserver.disconnect()
+          domObserver.takeRecords()
+          domObserver = null
+        }
+      })
+
+      domObserver.observe(document.body, {
+        attributes: true,
+        attributeFilter: ['style'],
+        attributeOldValue: true,
+        childList: true,
+        subtree: true
+      })
     }
   })
 
@@ -150,7 +206,7 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = config => {
   })
 }
 
-const confirm: (config: CustomQuickShowConfig) => QuickShowRet = config => {
+const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   const { size, ...others } = config
   return NextDialog.confirm({
     ...getCustomWidth(size),
@@ -160,7 +216,7 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = config => {
   })
 }
 
-const alert: (config: CustomQuickShowConfig) => QuickShowRet = config => {
+const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   const { size, ...others } = config
   return NextDialog.alert({
     ...getCustomWidth(size),
