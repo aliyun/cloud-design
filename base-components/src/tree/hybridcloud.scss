@@ -48,3 +48,9 @@
     }
   }
 }
+.next-tree-right-angle {
+  height: calc(20px + var(--tree-node-padding, 4px) - var(--tree-line-width, 1px)*2 - 0.5px);
+}
+.next-tree-switcher.next-line {
+  margin-right: calc(var(--tree-switch-margint-right,4px) / 2);
+}
