@@ -91,3 +91,21 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
     color: var(--color-fill1-6, #848484);
   }
 }
+
+.next-dialog.next-closeable:not(.next-dialog-quick) {
+  .next-dialog-close {
+    --dialog-close-top: 13px;
+  }
+}
+
+.next-dialog.next-closeable.next-dialog-quick:not(.quick-show) {
+  .next-dialog-close {
+    --dialog-close-top: 16px;
+  }
+}
+
+.next-dialog.next-closeable.next-dialog-quick.quick-show {
+  .next-dialog-close {
+    --dialog-close-top: 13px;
+  }
+}
