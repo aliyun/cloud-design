@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-yunxiao-v1@0.10.14 (https://fusion.design)
- * @alifd/next@1.24.6 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.10.15 (https://fusion.design)
+ * @alifd/next@1.24.8 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -13199,6 +13199,8 @@ small {
   .next-form-item-fullwidth .next-form-item-control > .next-range-picker,
   .next-form-item-fullwidth .next-form-item-control > .next-time-picker {
     width: 100%; }
+  .next-form-item-fullwidth .next-form-item-control > .next-date-picker2 .next-date-picker2-input input {
+    width: inherit; }
   .next-form-item-label {
     display: inline-block;
     vertical-align: top;
@@ -20449,8 +20451,8 @@ small {
     background: transparent;
     border-color: transparent; }
     .next-tabs-btn-down, .next-tabs-btn-down:link, .next-tabs-btn-down:visited, .next-tabs-btn-down.visited, .next-tabs-btn-prev, .next-tabs-btn-prev:link, .next-tabs-btn-prev:visited, .next-tabs-btn-prev.visited, .next-tabs-btn-next, .next-tabs-btn-next:link, .next-tabs-btn-next:visited, .next-tabs-btn-next.visited {
-      color: #575757;
-      color: var(--tab-nav-arrow-color-normal, #575757); }
+      color: #8B8B8B;
+      color: var(--tab-nav-arrow-color-normal, #8B8B8B); }
     .next-tabs-btn-down:focus, .next-tabs-btn-down:hover, .next-tabs-btn-down.hover, .next-tabs-btn-prev:focus, .next-tabs-btn-prev:hover, .next-tabs-btn-prev.hover, .next-tabs-btn-next:focus, .next-tabs-btn-next:hover, .next-tabs-btn-next.hover {
       color: #292929;
       color: var(--tab-nav-arrow-color-hover, #292929);
@@ -20477,14 +20479,14 @@ small {
     right: 8px;
     right: var(--tab-nav-arrow-down-positon-right, 8px); }
   .next-tabs .next-tab-icon-dropdown::before {
-    content: "\E63D";
-    content: var(--tab-icon-dropdown-content, "\E63D"); }
+    content: "\E700";
+    content: var(--tab-icon-dropdown-content, "\E700"); }
   .next-tabs .next-tab-icon-prev::before {
-    content: "\E61D";
-    content: var(--tab-icon-prev-content, "\E61D"); }
+    content: "\E6CF";
+    content: var(--tab-icon-prev-content, "\E6CF"); }
   .next-tabs .next-tab-icon-next::before {
-    content: "\E619";
-    content: var(--tab-icon-next-content, "\E619"); }
+    content: "\E6CD";
+    content: var(--tab-icon-next-content, "\E6CD"); }
   .next-tabs-content {
     overflow: hidden; }
   .next-tabs-vertical > .next-tabs-bar .next-tabs-nav {

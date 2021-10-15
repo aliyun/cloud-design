@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.18.3 (https://fusion.design)
- * @alifd/next@1.24.6 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.18.4 (https://fusion.design)
+ * @alifd/next@1.24.8 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -13191,6 +13191,8 @@ small {
   .next-form-item-fullwidth .next-form-item-control > .next-range-picker,
   .next-form-item-fullwidth .next-form-item-control > .next-time-picker {
     width: 100%; }
+  .next-form-item-fullwidth .next-form-item-control > .next-date-picker2 .next-date-picker2-input input {
+    width: inherit; }
   .next-form-item-label {
     display: inline-block;
     vertical-align: top;
@@ -20488,8 +20490,8 @@ small {
   .next-tabs.next-medium .next-tabs-tab-inner {
     font-size: 14px;
     font-size: var(--tab-item-text-size-m, 14px);
-    padding: 8px 16px;
-    padding: var(--tab-item-padding-tb-size-m, 8px) var(--tab-item-padding-lr-size-m, 16px); }
+    padding: 9px 16px;
+    padding: var(--tab-item-padding-tb-size-m, 9px) var(--tab-item-padding-lr-size-m, 16px); }
     .next-tabs.next-medium .next-tabs-tab-inner .next-icon {
       line-height: 1; }
       .next-tabs.next-medium .next-tabs-tab-inner .next-icon:before,
@@ -20520,8 +20522,8 @@ small {
   .next-tabs.next-small .next-tabs-tab-inner {
     font-size: 12px;
     font-size: var(--tab-item-text-size-s, 12px);
-    padding: 8px 16px;
-    padding: var(--tab-item-padding-tb-size-s, 8px) var(--tab-item-padding-lr-size-s, 16px); }
+    padding: 9px 16px;
+    padding: var(--tab-item-padding-tb-size-s, 9px) var(--tab-item-padding-lr-size-s, 16px); }
     .next-tabs.next-small .next-tabs-tab-inner .next-icon {
       line-height: 1; }
       .next-tabs.next-small .next-tabs-tab-inner .next-icon:before,

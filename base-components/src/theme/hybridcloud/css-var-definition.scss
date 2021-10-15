@@ -4636,9 +4636,6 @@
     --card-title-color: var(--color-text1-4, #1A1A1A);
     
     
-    --card-corner: var(--corner-1, 2px);
-    
-    
     --card-padding-lr: 20px;
     
     
@@ -4721,6 +4718,9 @@
     
     
     --card-more-btn-background: var(--color-white, #FFFFFF);
+    
+    
+    --card-corner: var(--corner-1, 2px);
     
     
     /* ------------------------ button ------------------------ */
@@ -7030,9 +7030,6 @@
     --dialog-content-color: var(--color-text1-6, #5a5a5a);
     
     
-    --dialog-message-content-padding-top: var(--s-4, 16px);
-    
-    
     --dialog-footer-button-spacing: var(--s-2, 8px);
     
     
@@ -7091,6 +7088,9 @@
     
     
     --dialog-close-bg-hovered: var(--color-transparent, transparent);
+    
+    
+    --dialog-message-content-padding-top: var(--s-4, 16px);
     
     
     /* ------------------------ progress ------------------------ */
@@ -8080,9 +8080,6 @@
     --tab-item-padding-lr-size-s: 16px;
     
     
-    --tab-item-padding-tb-size-m: var(--s-2, 8px);
-    
-    
     --tab-item-padding-lr-size-m: var(--s-4, 16px);
     
     
@@ -8111,9 +8108,6 @@
     
     
     --tab-nav-arrow-down-positon-right: var(--s-2, 8px);
-    
-    
-    --tab-item-padding-tb-size-s: var(--s-2, 8px);
     
     
     --tab-item-text-size-s: var(--font-size-caption, 12px);
@@ -8234,6 +8228,12 @@
     
     
     --tab-icon-next-content: var(--icon-content-arrow-right, "");
+    
+    
+    --tab-item-padding-tb-size-m: 9px;
+    
+    
+    --tab-item-padding-tb-size-s: 9px;
     
     
     /* ------------------------ timeline ------------------------ */
@@ -8917,6 +8917,12 @@
     --input-text-color: var(--color-text1-3, #333333);
     
     
+    --input-hover-bg-color: var(--color-fill1-1, #FFFFFF);
+    
+    
+    --input-focus-bg-color: var(--color-fill1-1, #FFFFFF);
+    
+    
     --input-border-width: var(--line-1, 1px);
     
     
@@ -8987,12 +8993,6 @@
     
     
     --input-feedback-clear-icon: var(--icon-content-delete-filling, "");
-    
-    
-    --input-hover-bg-color: var(--color-fill1-1, #FFFFFF);
-    
-    
-    --input-focus-bg-color: var(--color-fill1-1, #FFFFFF);
     
     
     /* ------------------------ form ------------------------ */
