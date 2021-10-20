@@ -71,3 +71,19 @@ h5 {
 h6 {
   font-size: 12px;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0.5;
+  background: var(--scrollbar-track-bg, transparent);
+  border-radius: var(--scrollbar-track-border-radius, 3px);
+}
+
+::-webkit-scrollbar-thumb {
+  opacity: 0.5;
+  background: var(--scrollbar-thumb-bg, #ccc);
+  border-radius: var(--scrollbar-thumb-border-radius, 3px);
+}
