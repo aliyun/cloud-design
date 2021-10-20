@@ -34,7 +34,7 @@
     --popup-global-corner: var(--corner-1, 2px);
     
     
-    --popup-global-border-color: var(--color-line1-2, #4D4D4D);
+    --popup-global-border-color: var(--color-line1-2, #383838);
     
     
     --popup-global-border-style: var(--line-solid, solid);
@@ -52,16 +52,16 @@
     --popup-local-border-width: var(--line-1, 1px);
     
     
-    --popup-spacing-tb: var(--s-zero, 0px);
+    --popup-local-shadow: var(--shadow-3, 0px 12px 48px 0px rgba(0, 0, 0, 0.8));
     
     
-    --popup-spacing-lr: var(--s-zero, 0px);
+    --popup-spacing-tb: var(--s-1, 4px);
     
     
-    --popup-local-shadow: var(--shadow-1-down, 0 0 0 #FFFFFF);
+    --popup-spacing-lr: var(--s-1, 4px);
     
     
-    --popup-local-border-color: var(--color-line1-1, #383838);
+    --popup-local-border-color: var(--color-fill1-4, #262626);
     
     
     /* ------------------------ mask ------------------------ */
@@ -77,9 +77,6 @@
     
     
     --form-element-preview-text-color: var(--color-text1-4, #EAEAEA);
-    
-    
-    --form-element-preview-label-color: var(--color-text1-3, #CCCCCC);
     
     
     --form-element-large-icon-size: var(--icon-s, 16px);
@@ -116,6 +113,9 @@
     
     
     --form-element-small-font-size: var(--font-size-caption, 12px);
+    
+    
+    --form-element-preview-label-color: var(--color-text1-5, #a8a8a8);
     
     
     --form-element-medium-preview-label-font-size: var(--font-size-body-1, 12px);
@@ -310,19 +310,19 @@
     /* ------------------------ shadow ------------------------ */
     
     
-    --shadow-3-left: 0px 0px 24px 0px rgba(0, 0, 0, 0.8);
+    --shadow-3-left: 0px 0px 48px 0px rgba(0, 0, 0, 0.8);
     
     
-    --shadow-3-down: 0px 12px 24px 0px rgba(0, 0, 0, 0.8);
+    --shadow-3-down: 0px 12px 48px 0px rgba(0, 0, 0, 0.8);
     
     
-    --shadow-3-right: 0px 0px 24px 0px rgba(0, 0, 0, 0.8);
+    --shadow-3-right: 0px 0px 48px 0px rgba(0, 0, 0, 0.8);
     
     
-    --shadow-3-up: 0px -12px 24px 0px rgba(0, 0, 0, 0.8);
+    --shadow-3-up: 0px -12px 48px 0px rgba(0, 0, 0, 0.8);
     
     
-    --shadow-3: 0px 12px 24px 0px rgba(0, 0, 0, 0.8);
+    --shadow-3: 0px 12px 48px 0px rgba(0, 0, 0, 0.8);
     
     
     --shadow-2-left: 0px 0px 24px 0px rgba(0, 0, 0, 0.64);
@@ -388,7 +388,7 @@
     --shadow-sides-base: "base";
     
     
-    --shadow-blur-sd3: 24;
+    --shadow-blur-sd3: 48;
     
     
     --shadow-blur-sd2: 24;
@@ -3694,16 +3694,7 @@
     /* ------------------------ color ------------------------ */
     
     
-    --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
-    
-    
     --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
-    
-    
-    --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
-    
-    
-    --color-gradient-1: linear-gradient(270deg, rgb(121, 232, 199) 0%, rgb(8, 194, 158) 100%);
     
     
     --color-transparent: transparent;
@@ -3715,49 +3706,142 @@
     --color-white: #FFFFFF;
     
     
+    --color-text1-3: #CCCCCC;
+    
+    
+    --color-gradient-4: linear-gradient(270deg, rgba(225, 81, 86, 0.5) 0%,rgb(225, 81, 86) 100%);
+    
+    
+    --color-gradient-2: linear-gradient(270deg, rgba(0, 123, 233, 0.5) 0%,rgb(0, 123, 233) 100%);
+    
+    
+    --color-gradient-1: linear-gradient(270deg, rgba(49, 163, 104, 0.5) 0%,rgb(49, 163, 104) 100%);
+    
+    
+    --color-data1-3: rgba(114,132,165,1);
+    
+    
+    --color-data1-1: rgba(73,191,158,1);
+    
+    
+    --color-success-6: rgba(0,122,64,1);
+    
+    
+    --color-success-4: rgba(66,180,121,1);
+    
+    
+    --color-data1-8: rgba(150,132,234,1);
+    
+    
+    --color-text1-5: rgba(168,168,168,1);
+    
+    
+    --color-fill1-5: #4D4D4D;
+    
+    
+    --color-fill1-6: #6B6B6B;
+    
+    
+    --color-notice-5: rgba(0,123,233,1);
+    
+    
+    --color-warning-6: rgba(204,110,12,1);
+    
+    
+    --color-error-5: rgba(225,81,86,1);
+    
+    
+    --color-error-6: #B81E18;
+    
+    
+    --color-success-5: rgba(49,163,104,1);
+    
+    
+    --color-brand1-5: rgba(53,143,233,1);
+    
+    
+    --color-text1-4: #EAEAEA;
+    
+    
+    --color-text1-2: #8A8A8A;
+    
+    
+    --color-fill1-4: rgba(38,38,38,1);
+    
+    
+    --color-fill1-3: #1F1F1F;
+    
+    
+    --color-fill1-2: #383838;
+    
+    
+    --color-fill1-1: #151515;
+    
+    
+    --color-line1-3: rgba(77,77,77,1);
+    
+    
+    --color-line1-2: rgba(56,56,56,1);
+    
+    
+    --color-line1-1: rgba(38,38,38,1);
+    
+    
+    --color-other-3: rgba(21,21,21,1);
+    
+    
+    --color-other-1: rgba(0,0,0,1);
+    
+    
+    --color-link-3: rgba(0,123,233,1);
+    
+    
+    --color-link-1: rgba(53,143,233,1);
+    
+    
+    --color-error-4: rgba(255,114,119,1);
+    
+    
+    --color-error-1: rgba(54,19,18,1);
+    
+    
+    --color-notice-4: rgba(53,143,233,1);
+    
+    
+    --color-success-3: #006334;
+    
+    
+    --color-success-2: #004A27;
+    
+    
+    --color-data1-7: rgba(49,163,104,1);
+    
+    
+    --color-data1-6: rgba(224,190,18,1);
+    
+    
+    --color-data1-5: #FF6A00;
+    
+    
+    --color-data1-4: rgba(225,81,86,1);
+    
+    
+    --color-data1-2: rgba(0,123,233,1);
+    
+    
+    --color-brand1-6: rgba(0,123,233,1);
+    
+    
     --color-fill1-8: #8A8A8A;
     
     
     --color-fill1-7: #A8A8A8;
     
     
-    --color-fill1-6: #6B6B6B;
-    
-    
-    --color-fill1-4: rgba(38,38,38,1);
-    
-    
-    --color-notice-5: rgba(60,148,236,1);
-    
-    
-    --color-notice-4: rgba(88,168,248,1);
-    
-    
-    --color-brand1-5: rgba(88,168,248,1);
-    
-    
-    --color-brand1-6: rgba(60,148,236,1);
-    
-    
-    --color-warning-6: rgba(207,116,19,1);
-    
-    
-    --color-fill1-1: #151515;
-    
-    
-    --color-link-3: rgba(53,143,233,1);
-    
-    
     --color-warning-4: rgba(255,163,66,1);
     
     
     --color-brand1-9: rgba(2,48,94,1);
-    
-    
-    --color-success-5: rgba(32,163,95,1);
-    
-    
-    --color-success-6: rgba(0,122,64,1);
     
     
     --color-notice-3: rgba(0,72,143,1);
@@ -3769,25 +3853,7 @@
     --color-notice-1: rgba(0,26,51,1);
     
     
-    --color-success-4: rgba(58,183,118,1);
-    
-    
-    --color-text1-5: rgba(168,168,168,1);
-    
-    
-    --color-error-5: #EC2525;
-    
-    
-    --color-fill1-5: #4D4D4D;
-    
-    
-    --color-fill1-2: #383838;
-    
-    
     --color-error-2: #560E0B;
-    
-    
-    --color-error-1: #330200;
     
     
     --color-help-5: #E0BE12;
@@ -3805,34 +3871,13 @@
     --color-help-4: #FADD46;
     
     
-    --color-error-6: #B81E18;
-    
-    
-    --color-error-4: #FF5252;
-    
-    
-    --color-text1-3: #CCCCCC;
-    
-    
     --color-brand1-2: #02305E;
     
     
     --color-text1-1: #6B6B6B;
     
     
-    --color-line1-1: #383838;
-    
-    
-    --color-line1-3: #6B6B6B;
-    
-    
-    --color-line1-2: #4D4D4D;
-    
-    
     --color-link-2: #0066CC;
-    
-    
-    --color-link-1: #0D7BE9;
     
     
     --color-help-3: #8A7406;
@@ -3871,22 +3916,7 @@
     --color-brand1-10: #001A33;
     
     
-    --color-text1-4: #EAEAEA;
-    
-    
-    --color-text1-2: #8A8A8A;
-    
-    
-    --color-fill1-3: #1F1F1F;
-    
-    
     --color-line1-4: #151515;
-    
-    
-    --color-success-3: #006334;
-    
-    
-    --color-success-2: #004A27;
     
     
     --color-success-1: #00331B;
@@ -3895,37 +3925,7 @@
     --color-brand1-1: #001A33;
     
     
-    --color-data1-8: #5C60E6;
-    
-    
-    --color-data1-7: #4AD051;
-    
-    
-    --color-data1-6: #FAB34F;
-    
-    
-    --color-data1-4: #FF656B;
-    
-    
-    --color-other-3: #131415;
-    
-    
     --color-other-2: #FFFFFF;
-    
-    
-    --color-other-1: #3A3C4B;
-    
-    
-    --color-data1-5: #FF6A00;
-    
-    
-    --color-data1-3: #9979F2;
-    
-    
-    --color-data1-2: #006CD9;
-    
-    
-    --color-data1-1: #5CCDBB;
     
     
     /* ------------------------ search ------------------------ */
@@ -3955,49 +3955,19 @@
     --search-simple-m-icon-margin-right: var(--s-2, 8px);
     
     
-    --search-simple-normal-hover-color: var(--color-text1-1, #6B6B6B);
-    
-    
-    --search-simple-normal-icon-hover-text-color: var(--color-text1-3, #CCCCCC);
-    
-    
     --search-simple-normal-m-icon-size: var(--icon-s, 16px);
     
     
     --search-simple-dark-m-icon-size: var(--icon-m, 20px);
     
     
-    --search-simple-normal-color: var(--color-line1-1, #383838);
-    
-    
     --search-simple-normal-shadow: var(--shadow-zero, none);
-    
-    
-    --search-normal-primary-hover-color: var(--color-fill1-5, #4D4D4D);
-    
-    
-    --search-normal-secondary-color: var(--color-fill1-2, #383838);
-    
-    
-    --search-normal-secondary-hover-color: var(--color-fill1-5, #4D4D4D);
-    
-    
-    --search-normal-normal-color: var(--color-fill1-2, #383838);
-    
-    
-    --search-normal-normal-hover-color: var(--color-fill1-5, #4D4D4D);
     
     
     --search-normal-primary-btn-hover-bg-color: var(--color-fill1-2, #383838);
     
     
     --search-normal-primary-btn-hover-text-color: var(--color-text1-2, #8A8A8A);
-    
-    
-    --search-normal-primary-color: var(--color-line1-1, #383838);
-    
-    
-    --search-normal-primary-split-color: var(--color-line1-1, #383838);
     
     
     --search-normal-primary-btn-text-color: var(--color-text1-3, #CCCCCC);
@@ -4045,6 +4015,54 @@
     --search-simple-corner: var(--corner-1, 2px);
     
     
+    --search-normal-primary-color: var(--color-line1-3, #4d4d4d);
+    
+    
+    --search-normal-primary-hover-color: var(--color-fill1-6, #6B6B6B);
+    
+    
+    --search-normal-primary-split-color: var(--color-line1-3, #4d4d4d);
+    
+    
+    --search-normal-secondary-color: var(--color-fill1-5, #4D4D4D);
+    
+    
+    --search-normal-secondary-split-color: var(--color-line1-3, #4d4d4d);
+    
+    
+    --search-normal-secondary-hover-color: var(--color-fill1-6, #6B6B6B);
+    
+    
+    --search-normal-normal-color: var(--color-line1-3, #4d4d4d);
+    
+    
+    --search-normal-normal-split-color: var(--color-line1-3, #4d4d4d);
+    
+    
+    --search-normal-normal-hover-color: var(--color-fill1-6, #6B6B6B);
+    
+    
+    --search-simple-normal-color: var(--color-line1-3, #4d4d4d);
+    
+    
+    --search-simple-normal-hover-color: var(--color-fill1-6, #6B6B6B);
+    
+    
+    --search-simple-normal-split-color: var(--color-fill1-5, #4D4D4D);
+    
+    
+    --search-simple-normal-icon-text-color: var(--color-fill1-7, #A8A8A8);
+    
+    
+    --search-simple-normal-icon-hover-text-color: var(--color-fill1-7, #A8A8A8);
+    
+    
+    --search-simple-dark-bg-opacity: 0;
+    
+    
+    --search-search-icon-content: var(--icon-content-search1, "");
+    
+    
     --search-normal-primary-shadow: var(--shadow-zero, none);
     
     
@@ -4054,13 +4072,10 @@
     --search-normal-primary-m-icon-size: var(--icon-s, 16px);
     
     
-    --search-normal-secondary-split-color: var(--color-line1-1, #383838);
-    
-    
     --search-normal-secondary-shadow: var(--shadow-zero, none);
     
     
-    --search-normal-secondary-btn-bg-color: var(--color-brand1-6, #3c94ec);
+    --search-normal-secondary-btn-bg-color: var(--color-brand1-6, #007be9);
     
     
     --search-normal-secondary-btn-text-color: var(--color-white, #FFFFFF);
@@ -4082,9 +4097,6 @@
     
     
     --search-normal-secondary-m-icon-size: var(--icon-s, 16px);
-    
-    
-    --search-normal-normal-split-color: var(--color-line1-1, #383838);
     
     
     --search-normal-normal-shadow: var(--shadow-zero, none);
@@ -4114,10 +4126,10 @@
     --search-normal-normal-m-icon-size: var(--icon-s, 16px);
     
     
-    --search-normal-dark-color: var(--color-brand1-6, #3c94ec);
+    --search-normal-dark-color: var(--color-brand1-6, #007be9);
     
     
-    --search-normal-dark-hover-color: var(--color-brand1-6, #3c94ec);
+    --search-normal-dark-hover-color: var(--color-brand1-6, #007be9);
     
     
     --search-normal-dark-text-color: var(--color-white, #FFFFFF);
@@ -4153,12 +4165,6 @@
     --search-normal-dark-m-icon-size: var(--icon-s, 16px);
     
     
-    --search-simple-normal-split-color: var(--color-line1-3, #6B6B6B);
-    
-    
-    --search-simple-normal-icon-text-color: var(--color-text1-2, #8A8A8A);
-    
-    
     --search-simple-normal-border-width: var(--line-1, 1px);
     
     
@@ -4168,16 +4174,13 @@
     --search-simple-normal-btn-text-padding-left: var(--s-zero, 0px);
     
     
-    --search-simple-dark-color: var(--color-line1-3, #6B6B6B);
+    --search-simple-dark-color: var(--color-line1-3, #4d4d4d);
     
     
-    --search-simple-dark-hover-color: var(--color-line1-3, #6B6B6B);
+    --search-simple-dark-hover-color: var(--color-line1-3, #4d4d4d);
     
     
     --search-simple-dark-bg-color: var(--color-white, #FFFFFF);
-    
-    
-    --search-simple-dark-bg-opacity: 0;
     
     
     --search-simple-dark-text-color: var(--color-white, #FFFFFF);
@@ -4195,16 +4198,13 @@
     --search-simple-dark-btn-text-padding-left: var(--s-zero, 0px);
     
     
-    --search-simple-dark-split-color: var(--color-line1-3, #6B6B6B);
+    --search-simple-dark-split-color: var(--color-line1-3, #4d4d4d);
     
     
     --search-simple-dark-border-width: var(--line-1, 1px);
     
     
     --search-simple-dark-l-icon-size: var(--icon-m, 20px);
-    
-    
-    --search-search-icon-content: var(--icon-content-search, "");
     
     
     /* ------------------------ card ------------------------ */
@@ -4228,10 +4228,10 @@
     --card-border-color: var(--color-transparent, transparent);
     
     
-    --card-background: var(--color-fill1-3, #1F1F1F);
-    
-    
     --card-content-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    --card-background: var(--color-fill1-3, #1F1F1F);
     
     
     --card-corner: var(--corner-1, 2px);
@@ -4306,16 +4306,16 @@
     --card-sub-title-color: var(--color-text1-3, #CCCCCC);
     
     
-    --card-title-extra-color: var(--color-link-1, #0D7BE9);
+    --card-title-extra-color: var(--color-link-1, #358fe9);
     
     
-    --card-title-bullet-color: var(--color-brand1-6, #3c94ec);
+    --card-title-bullet-color: var(--color-brand1-6, #007be9);
     
     
-    --card-head-bottom-border-color: var(--color-line1-1, #383838);
+    --card-head-bottom-border-color: var(--color-line1-1, #262626);
     
     
-    --card-more-btn-color: var(--color-link-1, #0D7BE9);
+    --card-more-btn-color: var(--color-link-1, #358fe9);
     
     
     --card-more-btn-background: var(--color-white, #FFFFFF);
@@ -4348,9 +4348,6 @@
     --switch-on-shadow: var(--shadow-zero, none);
     
     
-    --switch-normal-off-border-color: var(--color-transparent, transparent);
-    
-    
     --switch-hover-off-border-color: var(--color-transparent, transparent);
     
     
@@ -4366,22 +4363,16 @@
     --switch-text-on-left: var(--s-2, 8px);
     
     
-    --switch-normal-on-bg-color: var(--color-success-5, #20a35f);
+    --switch-normal-on-bg-color: var(--color-success-5, #31a368);
     
     
-    --switch-hover-on-bg-color: var(--color-success-4, #3ab776);
+    --switch-hover-on-bg-color: var(--color-success-4, #42b479);
     
     
     --switch-disabled-on-trigger-bg-color: var(--color-fill1-7, #A8A8A8);
     
     
     --switch-disabled-off-trigger-bg-color: var(--color-fill1-7, #A8A8A8);
-    
-    
-    --switch-normal-off-bg-color: var(--color-fill1-6, #6B6B6B);
-    
-    
-    --switch-hover-off-bg-color: var(--color-fill1-8, #8A8A8A);
     
     
     --switch-disabled-off-bg-color: var(--color-fill1-5, #4D4D4D);
@@ -4391,6 +4382,15 @@
     
     
     --switch-size-s-radius-trigger: var(--corner-semicircle, 500px);
+    
+    
+    --switch-normal-off-bg-color: var(--color-fill1-2, #383838);
+    
+    
+    --switch-hover-off-bg-color: var(--color-fill1-5, #4D4D4D);
+    
+    
+    --switch-normal-off-border-color: var(--color-fill1-5, #4D4D4D);
     
     
     --switch-size-m-inner-icon: var(--s-4, 16px);
@@ -4426,7 +4426,7 @@
     --switch-disabled-on-color-font: var(--color-text1-1, #6B6B6B);
     
     
-    --switch-disabled-on-border-color: var(--color-line1-3, #6B6B6B);
+    --switch-disabled-on-border-color: var(--color-line1-3, #4d4d4d);
     
     
     --switch-handle-on-border-color: var(--color-transparent, transparent);
@@ -4444,7 +4444,7 @@
     --switch-normal-off-color-font: var(--color-text1-2, #8A8A8A);
     
     
-    --switch-disabled-off-color-font: var(--color-line1-3, #6B6B6B);
+    --switch-disabled-off-color-font: var(--color-line1-3, #4d4d4d);
     
     
     --switch-handle-off-border-color: var(--color-transparent, transparent);
@@ -4483,10 +4483,10 @@
     --btn-warning-primary-border-color-hover: var(--color-transparent, transparent);
     
     
-    --btn-warning-primary-bg: var(--color-error-5, #EC2525);
+    --btn-warning-primary-bg: var(--color-error-5, #e15156);
     
     
-    --btn-warning-primary-bg-hover: var(--color-error-4, #FF5252);
+    --btn-warning-primary-bg-hover: var(--color-error-4, #ff7277);
     
     
     --btn-size-s-height: var(--s-6, 24px);
@@ -4525,7 +4525,7 @@
     --btn-ghost-dark-color: var(--color-text1-4, #EAEAEA);
     
     
-    --btn-ghost-dark-border-color: var(--color-line1-3, #6B6B6B);
+    --btn-ghost-dark-border-color: var(--color-line1-3, #4d4d4d);
     
     
     --btn-ghost-dark-bg-hover-rgb: var(--color-fill1-1, #151515);
@@ -4534,13 +4534,13 @@
     --btn-ghost-light-color: var(--color-brand1-3, #00488F);
     
     
-    --btn-text-primary-color: var(--color-brand1-6, #3c94ec);
+    --btn-text-primary-color: var(--color-brand1-6, #007be9);
     
     
-    --btn-text-secondary-color: var(--color-brand1-6, #3c94ec);
+    --btn-text-secondary-color: var(--color-brand1-6, #007be9);
     
     
-    --btn-text-normal-color-hover: var(--color-brand1-6, #3c94ec);
+    --btn-text-normal-color-hover: var(--color-brand1-6, #007be9);
     
     
     --btn-text-size-s-height: var(--s-5, 20px);
@@ -4558,7 +4558,7 @@
     --btn-pure-primary-border-color: var(--color-transparent, transparent);
     
     
-    --btn-warning-normal-color-hover: var(--color-error-5, #EC2525);
+    --btn-warning-normal-color-hover: var(--color-error-5, #e15156);
     
     
     --btn-pure-normal-bg: var(--color-transparent, transparent);
@@ -4570,13 +4570,13 @@
     --btn-pure-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    --btn-pure-border-color-disabled: var(--color-line1-2, #4D4D4D);
+    --btn-pure-border-color-disabled: var(--color-line1-2, #383838);
     
     
-    --btn-pure-primary-bg: var(--color-brand1-6, #3c94ec);
+    --btn-pure-primary-bg: var(--color-brand1-6, #007be9);
     
     
-    --btn-pure-primary-bg-hover: var(--color-brand1-5, #58a8f8);
+    --btn-pure-primary-bg-hover: var(--color-brand1-5, #358fe9);
     
     
     --btn-warning-normal-border-color: var(--color-error-6, #B81E18);
@@ -4591,13 +4591,13 @@
     --btn-warning-primary-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    --btn-warning-primary-border-color-disabled: var(--color-line1-2, #4D4D4D);
+    --btn-warning-primary-border-color-disabled: var(--color-line1-2, #383838);
     
     
-    --btn-warning-primary-bg-disabled: var(--color-line1-1, #383838);
+    --btn-warning-primary-bg-disabled: var(--color-line1-1, #262626);
     
     
-    --btn-warning-normal-color: var(--color-error-5, #EC2525);
+    --btn-warning-normal-color: var(--color-error-5, #e15156);
     
     
     --btn-warning-normal-border-color-hover: var(--color-error-6, #B81E18);
@@ -4606,13 +4606,13 @@
     --btn-warning-normal-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    --btn-warning-normal-border-color-disabled: var(--color-line1-2, #4D4D4D);
+    --btn-warning-normal-border-color-disabled: var(--color-line1-2, #383838);
     
     
     --btn-warning-normal-bg-hover: var(--color-error-2, #560E0B);
     
     
-    --btn-ghost-light-border-color: var(--color-line1-3, #6B6B6B);
+    --btn-ghost-light-border-color: var(--color-line1-3, #4d4d4d);
     
     
     --btn-pure-bg-disabled: var(--color-fill1-2, #383838);
@@ -4627,7 +4627,7 @@
     --btn-pure-normal-bg-disabled: var(--color-fill1-2, #383838);
     
     
-    --btn-pure-normal-border-color-disabled: var(--color-line1-2, #4D4D4D);
+    --btn-pure-normal-border-color-disabled: var(--color-line1-2, #383838);
     
     
     --btn-pure-secondary-color-disabled: var(--color-text1-1, #6B6B6B);
@@ -4639,13 +4639,13 @@
     --btn-pure-primary-bg-disabled: var(--color-fill1-2, #383838);
     
     
-    --btn-pure-primary-border-color-disabled: var(--color-line1-2, #4D4D4D);
+    --btn-pure-primary-border-color-disabled: var(--color-line1-2, #383838);
     
     
     --btn-warning-primary-border-color-active: var(--color-transparent, transparent);
     
     
-    --btn-warning-normal-color-active: var(--color-error-5, #EC2525);
+    --btn-warning-normal-color-active: var(--color-error-5, #e15156);
     
     
     --btn-warning-normal-border-color-active: var(--color-error-6, #B81E18);
@@ -4657,19 +4657,19 @@
     --btn-pure-normal-bg-active: var(--color-fill1-5, #4D4D4D);
     
     
-    --btn-pure-normal-border-color: var(--color-line1-2, #4D4D4D);
+    --btn-pure-normal-border-color: var(--color-line1-2, #383838);
     
     
-    --btn-pure-normal-border-color-hover: var(--color-line1-3, #6B6B6B);
+    --btn-pure-normal-border-color-hover: var(--color-line1-3, #4d4d4d);
     
     
-    --btn-pure-normal-border-color-active: var(--color-line1-3, #6B6B6B);
+    --btn-pure-normal-border-color-active: var(--color-line1-3, #4d4d4d);
     
     
-    --btn-pure-secondary-color: var(--color-brand1-6, #3c94ec);
+    --btn-pure-secondary-color: var(--color-brand1-6, #007be9);
     
     
-    --btn-pure-secondary-color-hover: var(--color-brand1-6, #3c94ec);
+    --btn-pure-secondary-color-hover: var(--color-brand1-6, #007be9);
     
     
     --btn-pure-secondary-border-color: var(--color-transparent, transparent);
@@ -4702,7 +4702,7 @@
     --btn-pure-secondary-border-color-disabled: var(--color-transparent, transparent);
     
     
-    --btn-pure-secondary-color-active: var(--color-brand1-5, #58a8f8);
+    --btn-pure-secondary-color-active: var(--color-brand1-5, #358fe9);
     
     
     --btn-pure-secondary-bg-hover: var(--color-brand1-2, #02305E);
@@ -4711,7 +4711,7 @@
     --btn-pure-secondary-bg-active: var(--color-brand1-3, #00488F);
     
     
-    --btn-text-primary-color-hover: var(--color-brand1-5, #58a8f8);
+    --btn-text-primary-color-hover: var(--color-brand1-5, #358fe9);
     
     
     --btn-text-size-m-font: var(--font-size-body-1, 12px);
@@ -4855,7 +4855,7 @@
     --btn-text-loading-color: var(--color-text1-4, #EAEAEA);
     
     
-    --btn-text-secondary-color-hover: var(--color-brand1-6, #3c94ec);
+    --btn-text-secondary-color-hover: var(--color-brand1-6, #007be9);
     
     
     --btn-text-icon-size-s: var(--icon-s, 16px);
@@ -4888,19 +4888,10 @@
     --balloon-size-close: var(--icon-s, 16px);
     
     
-    --balloon-normal-shadow: var(--shadow-3-down, 0px 12px 24px 0px rgba(0, 0, 0, 0.8));
-    
-    
-    --balloon-primary-color-bg: var(--color-text1-2, #8A8A8A);
+    --balloon-normal-shadow: var(--shadow-3-down, 0px 12px 48px 0px rgba(0, 0, 0, 0.8));
     
     
     --balloon-primary-color-border: var(--color-transparent, transparent);
-    
-    
-    --balloon-primary-color: var(--color-white, #FFFFFF);
-    
-    
-    --balloon-primary-color-close: var(--color-white, #FFFFFF);
     
     
     --balloon-primary-color-close-hover: var(--color-text1-1, #6B6B6B);
@@ -4927,9 +4918,6 @@
     --balloon-border-style: var(--line-solid, solid);
     
     
-    --balloon-normal-color-close: var(--color-fill1-7, #A8A8A8);
-    
-    
     --balloon-normal-color-close-hover: var(--color-fill1-7, #A8A8A8);
     
     
@@ -4954,16 +4942,28 @@
     --balloon-tooltip-size-padding-left: var(--s-3, 12px);
     
     
-    --balloon-size-padding-top: 6px;
+    --balloon-size-padding-top: 12px;
+    
+    
+    --balloon-title-font-size: var(--font-size-body-2, 14px);
+    
+    
+    --balloon-normal-color-close: var(--color-text1-4, #EAEAEA);
+    
+    
+    --balloon-primary-color-bg: var(--color-fill1-6, #6B6B6B);
+    
+    
+    --balloon-primary-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    --balloon-primary-color-close: var(--color-text1-4, #EAEAEA);
     
     
     --balloon-size-max-width: 300px;
     
     
     --balloon-size-header-margin-bottom: var(--s-2, 8px);
-    
-    
-    --balloon-title-font-size: var(--font-size-subhead, 16px);
     
     
     --balloon-title-font-weight: var(--font-weight-3, bold);
@@ -5056,31 +5056,10 @@
     --pagination-item-border-color: var(--color-transparent, transparent);
     
     
-    --pagination-item-bg: var(--color-transparent, transparent);
-    
-    
     --pagination-total-font-size: var(--font-size-body-1, 12px);
     
     
-    --pagination-arrow-hover-color: var(--color-text1-3, #CCCCCC);
-    
-    
-    --pagination-item-current-border-color: var(--color-brand1-6, #3c94ec);
-    
-    
-    --pagination-item-current-color: var(--color-brand1-6, #3c94ec);
-    
-    
-    --pagination-item-current-bg: var(--color-transparent, transparent);
-    
-    
-    --pagination-item-current-hover-border-color: var(--color-brand1-6, #3c94ec);
-    
-    
-    --pagination-item-current-hover-color: var(--color-brand1-6, #3c94ec);
-    
-    
-    --pagination-item-current-hover-bg: var(--color-transparent, transparent);
+    --pagination-total-color: var(--color-text1-5, #a8a8a8);
     
     
     --pagination-ellipsis-color: var(--color-text1-5, #a8a8a8);
@@ -5089,13 +5068,37 @@
     --pagination-current-color: var(--color-text1-5, #a8a8a8);
     
     
-    --pagination-total-color: var(--color-text1-5, #a8a8a8);
+    --pagination-jump-color: var(--color-text1-5, #a8a8a8);
     
     
-    --pagination-item-color: var(--color-text1-5, #a8a8a8);
+    --pagination-item-color: var(--color-fill1-7, #A8A8A8);
     
     
-    --pagination-arrow-color: var(--color-text1-5, #a8a8a8);
+    --pagination-item-bg: var(--color-transparent, transparent);
+    
+    
+    --pagination-item-current-border-color: var(--color-notice-5, #007be9);
+    
+    
+    --pagination-item-current-color: var(--color-notice-5, #007be9);
+    
+    
+    --pagination-item-current-bg: var(--color-transparent, transparent);
+    
+    
+    --pagination-arrow-color: var(--color-text1-2, #8A8A8A);
+    
+    
+    --pagination-item-current-hover-border-color: var(--color-notice-5, #007be9);
+    
+    
+    --pagination-item-current-hover-color: var(--color-notice-5, #007be9);
+    
+    
+    --pagination-item-current-hover-bg: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --pagination-arrow-hover-color: var(--color-text1-5, #a8a8a8);
     
     
     --pagination-item-padding: 10px;
@@ -5167,16 +5170,13 @@
     --pagination-small-size-selector-number-padding: var(--s-2, 8px);
     
     
-    --pagination-jump-color: var(--color-text1-2, #8A8A8A);
-    
-    
     --pagination-size-selector-title-color: var(--color-text1-2, #8A8A8A);
     
     
     --pagination-size-selector-filter-color: var(--color-text1-3, #CCCCCC);
     
     
-    --pagination-size-selector-filter-current-color: var(--color-brand1-6, #3c94ec);
+    --pagination-size-selector-filter-current-color: var(--color-brand1-6, #007be9);
     
     
     --pagination-item-hover-border-color: var(--color-line1-4, #151515);
@@ -5197,7 +5197,7 @@
     --pagination-icon-ellipsis-content: var(--icon-content-ellipsis, "");
     
     
-    --pagination-arrow-hover-color-noboder: var(--color-brand1-6, #3c94ec);
+    --pagination-arrow-hover-color-noboder: var(--color-brand1-6, #007be9);
     
     
     /* ------------------------ radio ------------------------ */
@@ -5227,7 +5227,7 @@
     --radio-bg-color: var(--color-fill1-1, #151515);
     
     
-    --radio-border-color: var(--color-line1-2, #4D4D4D);
+    --radio-border-color: var(--color-line1-2, #383838);
     
     
     --radio-hovered-bg-color: var(--color-fill1-1, #151515);
@@ -5239,25 +5239,25 @@
     --radio-checked-hovered-bg-color: var(--color-brand1-9, #02305e);
     
     
-    --radio-checked-border-color: var(--color-brand1-6, #3c94ec);
+    --radio-checked-border-color: var(--color-brand1-6, #007be9);
     
     
-    --radio-disabled-border-color: var(--color-line1-2, #4D4D4D);
+    --radio-disabled-border-color: var(--color-line1-2, #383838);
     
     
-    --radio-checked-hovered-border-color: var(--color-brand1-5, #58a8f8);
+    --radio-checked-hovered-border-color: var(--color-brand1-5, #358fe9);
     
     
-    --radio-checked-circle-color: var(--color-brand1-6, #3c94ec);
+    --radio-checked-circle-color: var(--color-brand1-6, #007be9);
     
     
-    --radio-checked-hovered-circle-color: var(--color-brand1-5, #58a8f8);
+    --radio-checked-hovered-circle-color: var(--color-brand1-5, #358fe9);
     
     
-    --radio-checked-disabled-bg-color: var(--color-line1-1, #383838);
+    --radio-checked-disabled-bg-color: var(--color-line1-1, #262626);
     
     
-    --radio-checked-disabled-border-color: var(--color-line1-2, #4D4D4D);
+    --radio-checked-disabled-border-color: var(--color-line1-2, #383838);
     
     
     --radio-disabled-bg-color: var(--color-fill1-2, #383838);
@@ -5272,13 +5272,13 @@
     --radio-button-bg-color-checked: var(--color-fill1-5, #4D4D4D);
     
     
-    --radio-button-border-color: var(--color-line1-3, #6B6B6B);
+    --radio-button-border-color: var(--color-line1-3, #4d4d4d);
     
     
-    --radio-button-border-color-hovered: var(--color-line1-3, #6B6B6B);
+    --radio-button-border-color-hovered: var(--color-line1-3, #4d4d4d);
     
     
-    --radio-button-border-color-checked: var(--color-line1-3, #6B6B6B);
+    --radio-button-border-color-checked: var(--color-line1-3, #4d4d4d);
     
     
     --radio-button-font-color: var(--color-text1-3, #CCCCCC);
@@ -5305,7 +5305,7 @@
     --radio-radius-size: var(--corner-circle, 50%);
     
     
-    --radio-hovered-border-color: var(--color-brand1-6, #3c94ec);
+    --radio-hovered-border-color: var(--color-brand1-6, #007be9);
     
     
     --radio-disabled-circle-color: var(--color-text1-1, #6B6B6B);
@@ -5344,10 +5344,10 @@
     --radio-button-bg-color-checked-disabled: var(--color-fill1-2, #383838);
     
     
-    --radio-button-border-color-disabled: var(--color-line1-1, #383838);
+    --radio-button-border-color-disabled: var(--color-line1-1, #262626);
     
     
-    --radio-button-border-color-checked-disabled: var(--color-line1-1, #383838);
+    --radio-button-border-color-checked-disabled: var(--color-line1-1, #262626);
     
     
     --radio-button-font-color-hovered: var(--color-text1-4, #EAEAEA);
@@ -5377,19 +5377,19 @@
     --step-circle-item-node-process-size: var(--s-7, 28px);
     
     
-    --step-dot-item-node-wait-border-color: var(--color-line1-1, #383838);
+    --step-dot-item-node-wait-border-color: var(--color-line1-1, #262626);
     
     
-    --step-circle-item-node-wait-border-color: var(--color-line1-2, #4D4D4D);
+    --step-circle-item-node-wait-border-color: var(--color-line1-2, #383838);
     
     
-    --step-circle-item-node-disabled-border-color: var(--color-line1-2, #4D4D4D);
+    --step-circle-item-node-disabled-border-color: var(--color-line1-2, #383838);
     
     
     --step-dot-item-node-finish-border-color: var(--color-transparent, transparent);
     
     
-    --step-dot-item-node-finish-background: var(--color-brand1-6, #3c94ec);
+    --step-dot-item-node-finish-background: var(--color-brand1-6, #007be9);
     
     
     --step-dot-item-node-disabled-border-color: var(--color-transparent, transparent);
@@ -5407,10 +5407,7 @@
     --step-dot-vertical-item-content-margin-top: var(--s-1, 4px);
     
     
-    --step-circle-item-node-finish-background: var(--color-brand1-3, #00488F);
-    
-    
-    --step-circle-item-node-finish-color: var(--color-brand1-5, #58a8f8);
+    --step-circle-item-node-finish-color: var(--color-brand1-5, #358fe9);
     
     
     --step-circle-item-node-border-width: var(--line-zero, 0px);
@@ -5419,25 +5416,19 @@
     --step-circle-item-tail-size: var(--line-2, 2px);
     
     
-    --step-circle-item-tail-wait-color: var(--color-line1-1, #383838);
+    --step-circle-item-tail-wait-color: var(--color-line1-1, #262626);
     
     
-    --step-circle-item-tail-process-color: var(--color-line1-1, #383838);
-    
-    
-    --step-circle-item-tail-finish-color: var(--color-brand1-5, #58a8f8);
-    
-    
-    --step-circle-item-title-process-color: var(--color-text1-3, #CCCCCC);
+    --step-circle-item-tail-finish-color: var(--color-brand1-5, #358fe9);
     
     
     --step-circle-item-node-wait-background: var(--color-fill1-4, #262626);
     
     
-    --step-circle-item-node-process-percent-color: var(--color-brand1-6, #3c94ec);
+    --step-circle-item-node-process-percent-color: var(--color-brand1-6, #007be9);
     
     
-    --step-circle-item-node-finish-border-color: var(--color-data1-4, #FF656B);
+    --step-circle-item-node-finish-border-color: var(--color-data1-4, #e15156);
     
     
     --step-circle-item-node-disabled-background: var(--color-fill1-5, #4D4D4D);
@@ -5446,7 +5437,7 @@
     --step-circle-vertical-item-content-margin-top: var(--s-1, 4px);
     
     
-    --step-circle-item-tail-bg-color: var(--color-data1-4, #FF656B);
+    --step-circle-item-tail-bg-color: var(--color-data1-4, #e15156);
     
     
     --step-circle-vertical-item-tail-size: var(--line-2, 2px);
@@ -5467,13 +5458,25 @@
     --step-dot-item-tail-bg-color: var(--color-transparent, transparent);
     
     
+    --step-circle-item-node-wait-color: var(--color-text1-3, #CCCCCC);
+    
+    
+    --step-circle-item-tail-process-color: var(--color-notice-5, #007be9);
+    
+    
     --step-circle-item-title-wait-color: var(--color-text1-2, #8A8A8A);
     
     
-    --step-circle-item-title-finish-color: var(--color-text1-3, #CCCCCC);
+    --step-circle-item-title-process-color: var(--color-text1-4, #EAEAEA);
     
     
-    --step-circle-item-node-wait-color: var(--color-text1-3, #CCCCCC);
+    --step-circle-item-title-finish-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    --step-circle-item-node-process-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    --step-circle-item-node-finish-background: var(--color-notice-2, #02305e);
     
     
     --step-arrow-item-height: var(--s-8, 32px);
@@ -5488,7 +5491,7 @@
     --step-arrow-item-title-wait-color: var(--color-text1-2, #8A8A8A);
     
     
-    --step-arrow-item-process-background: var(--color-brand1-6, #3c94ec);
+    --step-arrow-item-process-background: var(--color-brand1-6, #007be9);
     
     
     --step-arrow-item-title-process-color: var(--color-white, #FFFFFF);
@@ -5497,7 +5500,7 @@
     --step-arrow-item-finish-background: var(--color-brand1-1, #001A33);
     
     
-    --step-arrow-item-title-finish-color: var(--color-brand1-6, #3c94ec);
+    --step-arrow-item-title-finish-color: var(--color-brand1-6, #007be9);
     
     
     --step-arrow-item-disabled-background: var(--color-fill1-1, #151515);
@@ -5536,7 +5539,7 @@
     --step-circle-item-node-disabled-size: var(--s-8, 32px);
     
     
-    --step-circle-item-tail-disabled-color: var(--color-line1-1, #383838);
+    --step-circle-item-tail-disabled-color: var(--color-line1-1, #262626);
     
     
     --step-circle-item-node-wait-font-weight: var(--font-weight-2, normal);
@@ -5554,13 +5557,10 @@
     --step-circle-item-title-disabled-color: var(--color-text1-1, #6B6B6B);
     
     
-    --step-circle-item-node-process-border-color: var(--color-brand1-6, #3c94ec);
+    --step-circle-item-node-process-border-color: var(--color-brand1-6, #007be9);
     
     
-    --step-circle-item-node-process-background: var(--color-brand1-6, #3c94ec);
-    
-    
-    --step-circle-item-node-process-color: var(--color-white, #FFFFFF);
+    --step-circle-item-node-process-background: var(--color-brand1-6, #007be9);
     
     
     --step-circle-item-node-process-percent-size: var(--font-size-body-1, 12px);
@@ -5614,16 +5614,16 @@
     --step-dot-item-dot-disabled-size: var(--s-3, 12px);
     
     
-    --step-dot-item-tail-wait-color: var(--color-line1-3, #6B6B6B);
+    --step-dot-item-tail-wait-color: var(--color-line1-3, #4d4d4d);
     
     
-    --step-dot-item-tail-process-color: var(--color-line1-3, #6B6B6B);
+    --step-dot-item-tail-process-color: var(--color-line1-3, #4d4d4d);
     
     
-    --step-dot-item-tail-finish-color: var(--color-brand1-6, #3c94ec);
+    --step-dot-item-tail-finish-color: var(--color-brand1-6, #007be9);
     
     
-    --step-dot-item-tail-disabled-color: var(--color-line1-1, #383838);
+    --step-dot-item-tail-disabled-color: var(--color-line1-1, #262626);
     
     
     --step-dot-item-title-wait-color: var(--color-text1-3, #CCCCCC);
@@ -5635,19 +5635,19 @@
     --step-dot-item-node-wait-color: var(--color-text1-2, #8A8A8A);
     
     
-    --step-dot-item-node-process-border-color: var(--color-brand1-6, #3c94ec);
+    --step-dot-item-node-process-border-color: var(--color-brand1-6, #007be9);
     
     
-    --step-dot-item-node-process-background: var(--color-brand1-6, #3c94ec);
+    --step-dot-item-node-process-background: var(--color-brand1-6, #007be9);
     
     
-    --step-dot-item-node-process-color: var(--color-brand1-6, #3c94ec);
+    --step-dot-item-node-process-color: var(--color-brand1-6, #007be9);
     
     
-    --step-dot-item-node-finish-color: var(--color-brand1-6, #3c94ec);
+    --step-dot-item-node-finish-color: var(--color-brand1-6, #007be9);
     
     
-    --step-dot-item-node-disabled-color: var(--color-line1-1, #383838);
+    --step-dot-item-node-disabled-color: var(--color-line1-1, #262626);
     
     
     --step-dot-vertical-item-node-padding: var(--s-2, 8px);
@@ -5674,31 +5674,31 @@
     --nav-hoz-item-selected-active-line: var(--line-2, 2px);
     
     
-    --nav-primary-bg-color: var(--color-other-1, #3A3C4B);
+    --nav-primary-bg-color: var(--color-other-1, black);
     
     
-    --nav-primary-sub-nav-bg-color: var(--color-other-1, #3A3C4B);
+    --nav-primary-sub-nav-bg-color: var(--color-other-1, black);
     
     
     --nav-primary-item-hover-bg-color: var(--color-other-2, #FFFFFF);
     
     
-    --nav-primary-item-hover-text-color: var(--color-brand1-6, #3c94ec);
+    --nav-primary-item-hover-text-color: var(--color-brand1-6, #007be9);
     
     
-    --nav-primary-sub-nav-hover-bg-color: var(--color-other-1, #3A3C4B);
+    --nav-primary-sub-nav-hover-bg-color: var(--color-other-1, black);
     
     
     --nav-primary-item-selected-bg-color: var(--color-other-2, #FFFFFF);
     
     
-    --nav-primary-item-selected-text-color: var(--color-brand1-6, #3c94ec);
+    --nav-primary-item-selected-text-color: var(--color-brand1-6, #007be9);
     
     
     --nav-primary-item-selected-active-color: var(--color-other-2, #FFFFFF);
     
     
-    --nav-primary-item-opened-bg-color: var(--color-other-1, #3A3C4B);
+    --nav-primary-item-opened-bg-color: var(--color-other-1, black);
     
     
     --nav-normal-shadow: var(--shadow-zero, none);
@@ -5719,64 +5719,85 @@
     --nav-secondary-item-selected-text-style: var(--font-weight-2, normal);
     
     
-    --nav-normal-sub-nav-hover-text-color: var(--color-text1-4, #EAEAEA);
+    --nav-secondary-item-hover-bg-color: var(--color-brand1-5, #358fe9);
     
     
-    --nav-normal-item-selected-text-style: var(--font-weight-2, normal);
-    
-    
-    --nav-normal-item-selected-active-color: var(--color-brand1-6, #3c94ec);
-    
-    
-    --nav-normal-sub-nav-selected-text-color: var(--color-text1-4, #EAEAEA);
-    
-    
-    --nav-line-item-selected-text-style: var(--font-weight-2, normal);
-    
-    
-    --nav-secondary-item-hover-bg-color: var(--color-brand1-5, #58a8f8);
-    
-    
-    --nav-secondary-item-hover-active-color: var(--color-brand1-5, #58a8f8);
-    
-    
-    --nav-normal-bg-color: var(--color-transparent, transparent);
+    --nav-secondary-item-hover-active-color: var(--color-brand1-5, #358fe9);
     
     
     --nav-normal-border-color: var(--color-transparent, transparent);
     
     
-    --nav-normal-text-color: var(--color-text1-3, #CCCCCC);
-    
-    
-    --nav-normal-sub-nav-bg-color: var(--color-fill1-1, #151515);
-    
-    
     --nav-normal-sub-nav-text-color: var(--color-text1-3, #CCCCCC);
     
     
-    --nav-normal-item-hover-text-color: var(--color-text1-3, #CCCCCC);
+    --nav-normal-text-color: var(--color-fill1-8, #8A8A8A);
     
     
-    --nav-normal-sub-nav-hover-bg-color: var(--color-fill1-4, #262626);
+    --nav-normal-item-hover-bg-color: var(--color-fill1-4, #262626);
     
     
-    --nav-normal-item-selected-text-color: var(--color-brand1-5, #58a8f8);
+    --nav-normal-item-hover-text-color: var(--color-text1-2, #8A8A8A);
     
     
-    --nav-normal-item-opened-text-color: var(--color-text1-3, #CCCCCC);
+    --nav-normal-item-hover-active-color: var(--color-transparent, transparent);
     
     
-    --nav-normal-item-hover-bg-color: var(--color-fill1-2, #383838);
+    --nav-normal-sub-nav-hover-bg-color: var(--color-fill1-3, #1F1F1F);
     
     
-    --nav-normal-item-selected-bg-color: var(--color-fill1-2, #383838);
+    --nav-normal-sub-nav-hover-text-color: var(--color-text1-5, #a8a8a8);
     
     
-    --nav-normal-sub-nav-selected-bg-color: var(--color-fill1-2, #383838);
+    --nav-normal-item-selected-bg-color: var(--color-fill1-4, #262626);
     
     
-    --nav-normal-item-opened-bg-color: var(--color-fill1-2, #383838);
+    --nav-normal-item-selected-text-color: var(--color-notice-5, #007be9);
+    
+    
+    --nav-normal-item-selected-text-style: var(--font-weight-medium, 500);
+    
+    
+    --nav-normal-item-selected-active-color: var(--color-notice-5, #007be9);
+    
+    
+    --nav-normal-sub-nav-selected-text-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    --nav-normal-item-opened-text-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    --nav-line-text-color: var(--color-fill1-8, #8A8A8A);
+    
+    
+    --nav-line-item-hover-bg-color: var(--color-fill1-4, #262626);
+    
+    
+    --nav-line-item-hover-text-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    --nav-line-item-selected-bg-color: var(--color-fill1-4, #262626);
+    
+    
+    --nav-line-item-selected-text-color: var(--color-notice-5, #007be9);
+    
+    
+    --nav-line-item-selected-text-style: var(--font-weight-medium, 500);
+    
+    
+    --nav-line-item-opened-text-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    --nav-normal-bg-color: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --nav-normal-sub-nav-bg-color: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --nav-normal-sub-nav-selected-bg-color: var(--color-fill1-4, #262626);
+    
+    
+    --nav-normal-item-opened-bg-color: var(--color-fill1-3, #1F1F1F);
     
     
     --nav-hoz-height: var(--s-11, 44px);
@@ -5863,7 +5884,7 @@
     --nav-primary-item-hover-text-style: var(--font-weight-2, normal);
     
     
-    --nav-primary-item-hover-active-color: var(--color-brand1-6, #3c94ec);
+    --nav-primary-item-hover-active-color: var(--color-brand1-6, #007be9);
     
     
     --nav-primary-sub-nav-hover-text-color: var(--color-white, #FFFFFF);
@@ -5887,7 +5908,7 @@
     --nav-primary-sub-nav-selected-text-color: var(--color-white, #FFFFFF);
     
     
-    --nav-primary-sub-nav-active-color: var(--color-brand1-6, #3c94ec);
+    --nav-primary-sub-nav-active-color: var(--color-brand1-6, #007be9);
     
     
     --nav-primary-item-disabled-text-color: var(--color-text1-1, #6B6B6B);
@@ -5896,13 +5917,13 @@
     --nav-primary-item-opened-text-color: var(--color-white, #FFFFFF);
     
     
-    --nav-secondary-bg-color: var(--color-brand1-6, #3c94ec);
+    --nav-secondary-bg-color: var(--color-brand1-6, #007be9);
     
     
     --nav-secondary-border-width: var(--line-zero, 0px);
     
     
-    --nav-secondary-border-color: var(--color-brand1-6, #3c94ec);
+    --nav-secondary-border-color: var(--color-brand1-6, #007be9);
     
     
     --nav-secondary-text-color: var(--color-white, #FFFFFF);
@@ -5914,7 +5935,7 @@
     --nav-secondary-shadow: var(--shadow-2, 0px 6px 24px 0px rgba(0, 0, 0, 0.64));
     
     
-    --nav-secondary-sub-nav-bg-color: var(--color-brand1-6, #3c94ec);
+    --nav-secondary-sub-nav-bg-color: var(--color-brand1-6, #007be9);
     
     
     --nav-secondary-sub-nav-text-color: var(--color-white, #FFFFFF);
@@ -5965,7 +5986,7 @@
     --nav-secondary-sub-nav-selected-text-color: var(--color-white, #FFFFFF);
     
     
-    --nav-secondary-sub-nav-active-color: var(--color-brand1-6, #3c94ec);
+    --nav-secondary-sub-nav-active-color: var(--color-brand1-6, #007be9);
     
     
     --nav-secondary-item-disabled-text-color: var(--color-brand1-1, #001A33);
@@ -5995,19 +6016,16 @@
     --nav-normal-item-hover-text-style: var(--font-weight-2, normal);
     
     
-    --nav-normal-item-hover-active-color: var(--color-brand1-6, #3c94ec);
-    
-    
     --nav-normal-item-childselected-bg-color: var(--color-transparent, transparent);
     
     
-    --nav-normal-item-childselected-text-color: var(--color-brand1-6, #3c94ec);
+    --nav-normal-item-childselected-text-color: var(--color-brand1-6, #007be9);
     
     
     --nav-normal-item-childselected-text-style: var(--font-weight-2, normal);
     
     
-    --nav-normal-sub-nav-active-color: var(--color-brand1-6, #3c94ec);
+    --nav-normal-sub-nav-active-color: var(--color-brand1-6, #007be9);
     
     
     --nav-normal-item-disabled-text-color: var(--color-text1-2, #8A8A8A);
@@ -6016,10 +6034,7 @@
     --nav-line-bg-color: var(--color-transparent, transparent);
     
     
-    --nav-line-border-color: var(--color-line1-2, #4D4D4D);
-    
-    
-    --nav-line-text-color: var(--color-text1-4, #EAEAEA);
+    --nav-line-border-color: var(--color-line1-2, #383838);
     
     
     --nav-line-text-style: var(--font-weight-2, normal);
@@ -6037,58 +6052,43 @@
     --nav-line-sub-nav-text-style: var(--font-weight-2, normal);
     
     
-    --nav-line-item-hover-bg-color: var(--color-transparent, transparent);
-    
-    
-    --nav-line-item-hover-text-color: var(--color-brand1-6, #3c94ec);
-    
-    
     --nav-line-item-hover-text-style: var(--font-weight-2, normal);
     
     
-    --nav-line-item-hover-active-color: var(--color-brand1-6, #3c94ec);
+    --nav-line-item-hover-active-color: var(--color-brand1-6, #007be9);
     
     
     --nav-line-sub-nav-hover-bg-color: var(--color-transparent, transparent);
     
     
-    --nav-line-sub-nav-hover-text-color: var(--color-brand1-6, #3c94ec);
-    
-    
-    --nav-line-item-selected-bg-color: var(--color-transparent, transparent);
-    
-    
-    --nav-line-item-selected-text-color: var(--color-brand1-6, #3c94ec);
+    --nav-line-sub-nav-hover-text-color: var(--color-brand1-6, #007be9);
     
     
     --nav-line-item-childselected-bg-color: var(--color-transparent, transparent);
     
     
-    --nav-line-item-childselected-text-color: var(--color-brand1-6, #3c94ec);
+    --nav-line-item-childselected-text-color: var(--color-brand1-6, #007be9);
     
     
     --nav-line-item-childselected-text-style: var(--font-weight-2, normal);
     
     
-    --nav-line-item-selected-active-color: var(--color-brand1-6, #3c94ec);
+    --nav-line-item-selected-active-color: var(--color-brand1-6, #007be9);
     
     
     --nav-line-sub-nav-selected-bg-color: var(--color-transparent, transparent);
     
     
-    --nav-line-sub-nav-selected-text-color: var(--color-brand1-6, #3c94ec);
+    --nav-line-sub-nav-selected-text-color: var(--color-brand1-6, #007be9);
     
     
-    --nav-line-sub-nav-active-color: var(--color-brand1-6, #3c94ec);
+    --nav-line-sub-nav-active-color: var(--color-brand1-6, #007be9);
     
     
     --nav-line-item-disabled-text-color: var(--color-text1-2, #8A8A8A);
     
     
     --nav-line-item-opened-bg-color: var(--color-transparent, transparent);
-    
-    
-    --nav-line-item-opened-text-color: var(--color-brand1-6, #3c94ec);
     
     
     --nav-line-group-text-color: var(--color-text1-2, #8A8A8A);
@@ -6127,10 +6127,10 @@
     --tab-pure-text-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    --tab-pure-text-color-hover: var(--color-brand1-6, #3c94ec);
+    --tab-pure-text-color-hover: var(--color-brand1-6, #007be9);
     
     
-    --tab-pure-ink-bar-color: var(--color-brand1-6, #3c94ec);
+    --tab-pure-ink-bar-color: var(--color-brand1-6, #007be9);
     
     
     --tab-wrapped-bg-color: var(--color-transparent, transparent);
@@ -6139,7 +6139,7 @@
     --tab-wrapped-bg-color-selected: var(--color-transparent, transparent);
     
     
-    --tab-text-text-color-hover: var(--color-brand1-6, #3c94ec);
+    --tab-text-text-color-hover: var(--color-brand1-6, #007be9);
     
     
     --tab-wrapped-border-line-color: var(--color-transparent, transparent);
@@ -6148,7 +6148,7 @@
     --tab-wrapped-text-color: var(--color-text1-2, #8A8A8A);
     
     
-    --tab-wrapped-text-color-hover: var(--color-brand1-6, #3c94ec);
+    --tab-wrapped-text-color-hover: var(--color-brand1-6, #007be9);
     
     
     --tab-wrapped-bg-color-hover: var(--color-transparent, transparent);
@@ -6166,22 +6166,22 @@
     --tab-capsule-text-color-hover: var(--color-text1-2, #8A8A8A);
     
     
-    --tab-capsule-text-color-selected: var(--color-brand1-6, #3c94ec);
+    --tab-capsule-text-color-selected: var(--color-brand1-6, #007be9);
     
     
     --tab-capsule-bg-color: var(--color-transparent, transparent);
     
     
-    --tab-capsule-bg-color-hover: var(--color-line1-1, #383838);
+    --tab-capsule-bg-color-hover: var(--color-line1-1, #262626);
     
     
     --tab-capsule-bg-color-selected: var(--color-transparent, transparent);
     
     
-    --tab-capsule-tab-border-line-color: var(--color-line1-2, #4D4D4D);
+    --tab-capsule-tab-border-line-color: var(--color-line1-2, #383838);
     
     
-    --tab-capsule-tab-border-line-color-hover: var(--color-line1-2, #4D4D4D);
+    --tab-capsule-tab-border-line-color-hover: var(--color-line1-2, #383838);
     
     
     --tab-text-text-color-normal: var(--color-text1-2, #8A8A8A);
@@ -6199,13 +6199,22 @@
     --tab-pure-text-color-selected: var(--color-text1-4, #EAEAEA);
     
     
-    --tab-pure-divider-border-color: var(--color-line1-1, #383838);
+    --tab-pure-divider-border-color: var(--color-line1-1, #262626);
     
     
-    --tab-capsule-tab-border-line-color-active: var(--color-brand1-6, #3c94ec);
+    --tab-capsule-tab-border-line-color-active: var(--color-brand1-6, #007be9);
     
     
     --tab-item-padding-lr-size-m: var(--s-4, 16px);
+    
+    
+    --tab-item-padding-tb-size-m: 9px;
+    
+    
+    --tab-item-padding-tb-size-s: 9px;
+    
+    
+    --tab-item-padding-lr-size-s: var(--s-4, 16px);
     
     
     --tab-nav-scroll-padding-right-m: var(--s-15, 60px);
@@ -6247,7 +6256,7 @@
     --tab-nav-arrow-color-hover: var(--color-text1-4, #EAEAEA);
     
     
-    --tab-nav-arrow-color-disabled: var(--color-line1-2, #4D4D4D);
+    --tab-nav-arrow-color-disabled: var(--color-line1-2, #383838);
     
     
     --tab-pure-ink-bar-width: var(--line-2, 2px);
@@ -6280,10 +6289,10 @@
     --tab-wrapped-bar-bg-color: var(--color-transparent, transparent);
     
     
-    --tab-wrapped-ink-bar-color: var(--color-brand1-6, #3c94ec);
+    --tab-wrapped-ink-bar-color: var(--color-brand1-6, #007be9);
     
     
-    --tab-wrapped-nav-item-border-color-active: var(--color-brand1-6, #3c94ec);
+    --tab-wrapped-nav-item-border-color-active: var(--color-brand1-6, #007be9);
     
     
     --tab-wrapped-content-border-line-width: var(--line-1, 1px);
@@ -6292,7 +6301,7 @@
     --tab-wrapped-content-border-line-style: var(--line-solid, solid);
     
     
-    --tab-wrapped-content-border-line-color: var(--color-line1-2, #4D4D4D);
+    --tab-wrapped-content-border-line-color: var(--color-line1-2, #383838);
     
     
     --tab-wrapped-text-color-disabled: var(--color-text1-1, #6B6B6B);
@@ -6307,7 +6316,7 @@
     --tab-capsule-bg-color-disabled: var(--color-fill1-1, #151515);
     
     
-    --tab-capsule-tab-border-line-color-disabled: var(--color-line1-1, #383838);
+    --tab-capsule-tab-border-line-color-disabled: var(--color-line1-1, #262626);
     
     
     --tab-capsule-corner-radius: var(--corner-1, 2px);
@@ -6325,7 +6334,7 @@
     --tab-text-item-sep-height: var(--s-2, 8px);
     
     
-    --tab-text-item-sep-color: var(--color-line1-2, #4D4D4D);
+    --tab-text-item-sep-color: var(--color-line1-2, #383838);
     
     
     --tab-text-text-color-disabled: var(--color-text1-1, #6B6B6B);
@@ -6338,15 +6347,6 @@
     
     
     --tab-icon-next-content: var(--icon-content-arrow-right, "");
-    
-    
-    --tab-item-padding-tb-size-m: 9px;
-    
-    
-    --tab-item-padding-tb-size-s: 9px;
-    
-    
-    --tab-item-padding-lr-size-s: var(--s-4, 16px);
     
     
     /* ------------------------ calendar ------------------------ */
@@ -6370,13 +6370,13 @@
     --calendar-fullscreen-table-cell-hover-color: var(--color-text1-2, #8A8A8A);
     
     
-    --calendar-fullscreen-table-cell-select-border-color: var(--color-brand1-6, #3c94ec);
+    --calendar-fullscreen-table-cell-select-border-color: var(--color-brand1-6, #007be9);
     
     
     --calendar-fullscreen-table-cell-other-background: var(--color-fill1-2, #383838);
     
     
-    --calendar-fullscreen-table-cell-other-border-color: var(--color-line1-1, #383838);
+    --calendar-fullscreen-table-cell-other-border-color: var(--color-line1-1, #262626);
     
     
     --calendar-card-table-cell-date-width: var(--s-8, 32px);
@@ -6427,7 +6427,7 @@
     --calendar-btn-date-color: var(--color-text1-2, #8A8A8A);
     
     
-    --calendar-fullscreen-table-cell-current-background: var(--color-line1-2, #4D4D4D);
+    --calendar-fullscreen-table-cell-current-background: var(--color-line1-2, #383838);
     
     
     --calendar-card-table-cell-normal-border-color: var(--color-transparent, transparent);
@@ -6451,7 +6451,7 @@
     --calendar-card-table-cell-select-border-color: var(--color-transparent, transparent);
     
     
-    --calendar-card-table-cell-inrange-background: var(--color-line1-2, #4D4D4D);
+    --calendar-card-table-cell-inrange-background: var(--color-line1-2, #383838);
     
     
     --calendar-card-table-cell-inrange-color: var(--color-text1-3, #CCCCCC);
@@ -6472,7 +6472,7 @@
     --calendar-card-table-cell-current-background: var(--color-fill1-2, #383838);
     
     
-    --calendar-card-table-cell-select-background: var(--color-brand1-6, #3c94ec);
+    --calendar-card-table-cell-select-background: var(--color-brand1-6, #007be9);
     
     
     --calendar-card-table-cell-normal-background: var(--color-transparent, transparent);
@@ -6490,7 +6490,7 @@
     --calendar-btn-arrow-single-offset-lr: var(--s-8, 32px);
     
     
-    --calendar-btn-date-color-hover: var(--color-brand1-6, #3c94ec);
+    --calendar-btn-date-color-hover: var(--color-brand1-6, #007be9);
     
     
     --calendar-card-table-head-color: var(--color-text1-1, #6B6B6B);
@@ -6535,25 +6535,25 @@
     --calendar-fullscreen-table-head-color: var(--color-text1-4, #EAEAEA);
     
     
-    --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-2, #4D4D4D);
+    --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-2, #383838);
     
     
-    --calendar-fullscreen-table-cell-hover-border-color: var(--color-brand1-6, #3c94ec);
+    --calendar-fullscreen-table-cell-hover-border-color: var(--color-brand1-6, #007be9);
     
     
     --calendar-fullscreen-table-cell-select-background: var(--color-brand1-1, #001A33);
     
     
-    --calendar-fullscreen-table-cell-select-color: var(--color-brand1-6, #3c94ec);
+    --calendar-fullscreen-table-cell-select-color: var(--color-brand1-6, #007be9);
     
     
     --calendar-fullscreen-table-cell-select-font-weight: var(--font-weight-3, bold);
     
     
-    --calendar-fullscreen-table-cell-current-color: var(--color-brand1-6, #3c94ec);
+    --calendar-fullscreen-table-cell-current-color: var(--color-brand1-6, #007be9);
     
     
-    --calendar-fullscreen-table-cell-current-border-color: var(--color-brand1-6, #3c94ec);
+    --calendar-fullscreen-table-cell-current-border-color: var(--color-brand1-6, #007be9);
     
     
     --calendar-fullscreen-table-cell-current-font-weight: var(--font-weight-3, bold);
@@ -6568,7 +6568,7 @@
     --calendar-fullscreen-table-cell-disabled-color: var(--color-text1-1, #6B6B6B);
     
     
-    --calendar-fullscreen-table-cell-disabled-border-color: var(--color-line1-1, #383838);
+    --calendar-fullscreen-table-cell-disabled-border-color: var(--color-line1-1, #262626);
     
     
     --calendar-card-header-margin-bottom: var(--s-2, 8px);
@@ -6592,7 +6592,7 @@
     --calendar-card-table-cell-other-color: var(--color-text1-1, #6B6B6B);
     
     
-    --calendar-card-table-cell-current-color: var(--color-brand1-6, #3c94ec);
+    --calendar-card-table-cell-current-color: var(--color-brand1-6, #007be9);
     
     
     --calendar-card-table-cell-current-border-color: var(--color-transparent, transparent);
@@ -6637,7 +6637,7 @@
     --checkbox-checked-hovered-bg-color: var(--color-brand1-7, #0066CC);
     
     
-    --checkbox-hovered-border-color: var(--color-brand1-5, #58a8f8);
+    --checkbox-hovered-border-color: var(--color-brand1-5, #358fe9);
     
     
     --checkbox-disabled-border-color: var(--color-transparent, transparent);
@@ -6646,7 +6646,7 @@
     --checkbox-disabled-bg-color: var(--color-fill1-2, #383838);
     
     
-    --checkbox-border-color: var(--color-line1-2, #4D4D4D);
+    --checkbox-border-color: var(--color-line1-2, #383838);
     
     
     --checkbox-bg-color: var(--color-fill1-1, #151515);
@@ -6688,7 +6688,7 @@
     --checkbox-checked-hovered-circle-color: var(--color-white, #FFFFFF);
     
     
-    --checkbox-checked-bg-color: var(--color-brand1-6, #3c94ec);
+    --checkbox-checked-bg-color: var(--color-brand1-6, #007be9);
     
     
     --checkbox-font-size: var(--font-size-body-1, 12px);
@@ -6706,7 +6706,7 @@
     --menu-btn-pure-text-normal-icon-color: var(--color-text1-4, #EAEAEA);
     
     
-    --menu-btn-pure-text-secondary-icon-color: var(--color-brand1-6, #3c94ec);
+    --menu-btn-pure-text-secondary-icon-color: var(--color-brand1-6, #007be9);
     
     
     --menu-btn-unfold-icon-content: var(--icon-content-arrow-up, "");
@@ -6721,7 +6721,7 @@
     --menu-btn-pure-text-primary-icon-color: var(--color-white, #FFFFFF);
     
     
-    --menu-btn-text-text-primary-icon-color: var(--color-link-1, #0D7BE9);
+    --menu-btn-text-text-primary-icon-color: var(--color-link-1, #358fe9);
     
     
     --menu-btn-ghost-light-icon-color: var(--color-text1-4, #EAEAEA);
@@ -6760,7 +6760,7 @@
     --range-normal-mark-selected-color-hover: var(--color-text1-1, #6B6B6B);
     
     
-    --range-normal-unselected-color-disabled: var(--color-line1-1, #383838);
+    --range-normal-unselected-color-disabled: var(--color-line1-1, #262626);
     
     
     --range-size-m-track-height: 6px;
@@ -6769,13 +6769,13 @@
     --range-normal-slider-bg-color: var(--color-fill1-4, #262626);
     
     
-    --range-normal-selected-color: var(--color-brand1-6, #3c94ec);
+    --range-normal-selected-color: var(--color-brand1-6, #007be9);
     
     
-    --range-normal-selected-color-hover: var(--color-brand1-5, #58a8f8);
+    --range-normal-selected-color-hover: var(--color-brand1-5, #358fe9);
     
     
-    --range-normal-slider-border-color: var(--color-brand1-6, #3c94ec);
+    --range-normal-slider-border-color: var(--color-brand1-6, #007be9);
     
     
     --range-normal-slider-bg-color-hover: var(--color-fill1-2, #383838);
@@ -6793,7 +6793,7 @@
     --range-normal-slider-bg-color-disabled: var(--color-fill1-4, #262626);
     
     
-    --range-normal-slider-border-color-disabled: var(--color-line1-1, #383838);
+    --range-normal-slider-border-color-disabled: var(--color-line1-1, #262626);
     
     
     --range-size-m-scale-height: 12px;
@@ -6856,16 +6856,16 @@
     --tree-switch-bg-color: var(--color-transparent, transparent);
     
     
-    --tree-switch-hover-icon-color: var(--color-brand1-6, #3c94ec);
+    --tree-switch-hover-icon-color: var(--color-brand1-6, #007be9);
     
     
     --tree-switch-hover-bg-color: var(--color-transparent, transparent);
     
     
-    --tree-switch-hover-border-color: var(--color-brand1-6, #3c94ec);
+    --tree-switch-hover-border-color: var(--color-brand1-6, #007be9);
     
     
-    --tree-line-color: var(--color-line1-1, #383838);
+    --tree-line-color: var(--color-line1-1, #262626);
     
     
     --tree-node-title-border-radius: var(--corner-1, 2px);
@@ -6886,9 +6886,6 @@
     --tree-node-disabled-color: var(--color-text1-1, #6B6B6B);
     
     
-    --tree-node-disabled-background: var(--color-transparent, transparent);
-    
-    
     --tree-node-normal-color: var(--color-text1-5, #a8a8a8);
     
     
@@ -6896,6 +6893,9 @@
     
     
     --tree-node-selected-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    --tree-node-disabled-background: var(--color-transparent, transparent);
     
     
     --tree-node-title-margin: var(--s-1, 4px);
@@ -6928,7 +6928,7 @@
     --tree-switch-icon-color: var(--color-text1-3, #CCCCCC);
     
     
-    --tree-switch-border-color: var(--color-line1-3, #6B6B6B);
+    --tree-switch-border-color: var(--color-line1-3, #4d4d4d);
     
     
     --tree-switch-corner: var(--corner-1, 2px);
@@ -6946,13 +6946,13 @@
     --badge-size-count-font: var(--font-size-body-1, 12px);
     
     
-    --badge-color-bg: var(--color-error-4, #FF5252);
+    --badge-color-bg: var(--color-error-4, #ff7277);
     
     
     --badge-size-count-border-radius: var(--s-2, 8px);
     
     
-    --badge-dot-color-bg: var(--color-error-4, #FF5252);
+    --badge-dot-color-bg: var(--color-error-4, #ff7277);
     
     
     --badge-size-dot-width: var(--s-2, 8px);
@@ -6994,16 +6994,16 @@
     --message-size-m-border-radius-toast: var(--corner-1, 2px);
     
     
-    --message-shadow-toast: var(--shadow-3-down, 0px 12px 24px 0px rgba(0, 0, 0, 0.8));
+    --message-shadow-toast: var(--shadow-3-down, 0px 12px 48px 0px rgba(0, 0, 0, 0.8));
     
     
-    --message-notice-color-icon-inline: var(--color-brand1-6, #3c94ec);
+    --message-notice-color-icon-inline: var(--color-brand1-6, #007be9);
     
     
-    --message-notice-color-icon-addon: var(--color-brand1-6, #3c94ec);
+    --message-notice-color-icon-addon: var(--color-brand1-6, #007be9);
     
     
-    --message-notice-color-icon-toast: var(--color-brand1-6, #3c94ec);
+    --message-notice-color-icon-toast: var(--color-brand1-6, #007be9);
     
     
     --message-size-l-border-width: var(--line-1, 1px);
@@ -7024,40 +7024,40 @@
     --message-size-l-content-margin-top: var(--s-2, 8px);
     
     
-    --message-success-color-bg-toast: var(--color-line1-1, #383838);
+    --message-success-color-bg-toast: var(--color-line1-1, #262626);
     
     
     --message-success-color-border-toast: var(--color-transparent, transparent);
     
     
-    --message-success-color-icon-inline: var(--color-success-5, #20a35f);
+    --message-success-color-icon-inline: var(--color-success-5, #31a368);
     
     
-    --message-error-color-bg-toast: var(--color-line1-1, #383838);
+    --message-error-color-bg-toast: var(--color-line1-1, #262626);
     
     
     --message-error-color-border-toast: var(--color-transparent, transparent);
     
     
-    --message-warning-color-bg-toast: var(--color-line1-1, #383838);
+    --message-warning-color-bg-toast: var(--color-line1-1, #262626);
     
     
     --message-warning-color-border-toast: var(--color-transparent, transparent);
     
     
-    --message-notice-color-bg-toast: var(--color-line1-1, #383838);
+    --message-notice-color-bg-toast: var(--color-line1-1, #262626);
     
     
     --message-notice-color-border-toast: var(--color-transparent, transparent);
     
     
-    --message-help-color-bg-toast: var(--color-line1-1, #383838);
+    --message-help-color-bg-toast: var(--color-line1-1, #262626);
     
     
     --message-help-color-border-toast: var(--color-transparent, transparent);
     
     
-    --message-loading-color-bg-toast: var(--color-line1-1, #383838);
+    --message-loading-color-bg-toast: var(--color-line1-1, #262626);
     
     
     --message-loading-color-border-inline: var(--color-transparent, transparent);
@@ -7084,43 +7084,43 @@
     --message-close-icon-color: var(--color-fill1-7, #A8A8A8);
     
     
-    --message-help-color-icon-inline: var(--color-brand1-6, #3c94ec);
+    --message-help-color-icon-inline: var(--color-brand1-6, #007be9);
     
     
-    --message-success-color-bg-inline: var(--color-line1-1, #383838);
+    --message-success-color-bg-inline: var(--color-line1-1, #262626);
     
     
-    --message-error-color-bg-inline: var(--color-line1-1, #383838);
+    --message-error-color-bg-inline: var(--color-line1-1, #262626);
     
     
-    --message-warning-color-bg-inline: var(--color-line1-1, #383838);
+    --message-warning-color-bg-inline: var(--color-line1-1, #262626);
     
     
-    --message-notice-color-bg-inline: var(--color-line1-1, #383838);
+    --message-notice-color-bg-inline: var(--color-line1-1, #262626);
     
     
-    --message-help-color-bg-inline: var(--color-line1-1, #383838);
+    --message-help-color-bg-inline: var(--color-line1-1, #262626);
     
     
-    --message-loading-color-bg-inline: var(--color-line1-1, #383838);
+    --message-loading-color-bg-inline: var(--color-line1-1, #262626);
     
     
-    --message-error-color-icon-inline: var(--color-error-5, #EC2525);
+    --message-error-color-icon-inline: var(--color-error-5, #e15156);
     
     
     --message-warning-color-icon-inline: var(--color-warning-5, #FF8D16);
     
     
-    --message-success-color-icon-addon: var(--color-success-5, #20a35f);
+    --message-success-color-icon-addon: var(--color-success-5, #31a368);
     
     
-    --message-success-color-icon-toast: var(--color-success-5, #20a35f);
+    --message-success-color-icon-toast: var(--color-success-5, #31a368);
     
     
-    --message-error-color-icon-addon: var(--color-error-5, #EC2525);
+    --message-error-color-icon-addon: var(--color-error-5, #e15156);
     
     
-    --message-error-color-icon-toast: var(--color-error-5, #EC2525);
+    --message-error-color-icon-toast: var(--color-error-5, #e15156);
     
     
     --message-warning-color-icon-addon: var(--color-warning-5, #FF8D16);
@@ -7154,9 +7154,6 @@
     
     
     --message-success-icon-content: var(--icon-content-tick-o-fill, "");
-    
-    
-    --message-warning-icon-content: var(--icon-content-info-o-fill, "");
     
     
     --message-error-icon-content: var(--icon-content-remove-o-fill, "");
@@ -7228,10 +7225,16 @@
     --message-loading-color-content-toast: var(--color-text1-2, #8A8A8A);
     
     
-    --message-help-color-icon-addon: var(--color-brand1-6, #3c94ec);
+    --message-help-color-icon-addon: var(--color-brand1-6, #007be9);
     
     
-    --message-help-color-icon-toast: var(--color-brand1-6, #3c94ec);
+    --message-help-color-icon-toast: var(--color-brand1-6, #007be9);
+    
+    
+    --message-border-style-toast: var(--line-dotted, dotted);
+    
+    
+    --message-warning-icon-content: var(--icon-content-warning-o-fill, "");
     
     
     --message-size-m-border-width: var(--line-1, 1px);
@@ -7250,9 +7253,6 @@
     
     
     --message-border-style: var(--line-solid, solid);
-    
-    
-    --message-border-style-toast: var(--line-solid, solid);
     
     
     --message-success-color-bg-addon: var(--color-transparent, transparent);
@@ -7327,13 +7327,13 @@
     --message-loading-color-title-toast: var(--color-text1-4, #EAEAEA);
     
     
-    --message-loading-color-icon-inline: var(--color-brand1-6, #3c94ec);
+    --message-loading-color-icon-inline: var(--color-brand1-6, #007be9);
     
     
-    --message-loading-color-icon-addon: var(--color-brand1-6, #3c94ec);
+    --message-loading-color-icon-addon: var(--color-brand1-6, #007be9);
     
     
-    --message-loading-color-icon-toast: var(--color-brand1-6, #3c94ec);
+    --message-loading-color-icon-toast: var(--color-brand1-6, #007be9);
     
     
     --message-loading-icon-content: var(--icon-content-loading, "");
@@ -7360,7 +7360,7 @@
     --dialog-border-color: var(--color-transparent, transparent);
     
     
-    --dialog-shadow: var(--shadow-3-down, 0px 12px 24px 0px rgba(0, 0, 0, 0.8));
+    --dialog-shadow: var(--shadow-3-down, 0px 12px 48px 0px rgba(0, 0, 0, 0.8));
     
     
     --dialog-title-border-color: var(--color-transparent, transparent);
@@ -7414,9 +7414,6 @@
     --dialog-content-padding-left-right: var(--s-5, 20px);
     
     
-    --dialog-footer-padding-top: var(--s-4, 16px);
-    
-    
     --dialog-footer-padding-left-right: var(--s-5, 20px);
     
     
@@ -7426,10 +7423,13 @@
     --dialog-close-right: var(--s-5, 20px);
     
     
-    --dialog-bg: var(--color-fill1-4, #262626);
-    
-    
     --dialog-content-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    --dialog-bg: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --dialog-footer-padding-top: var(--s-4, 16px);
     
     
     --dialog-title-font-weight: var(--font-weight-2, normal);
@@ -7537,7 +7537,7 @@
     --progress-line-radius-m: var(--corner-2, 4px);
     
     
-    --progress-line-normal-color: var(--color-notice-4, #58a8f8);
+    --progress-line-normal-color: var(--color-notice-4, #358fe9);
     
     
     --progress-circle-size-l: 96px;
@@ -7564,43 +7564,43 @@
     --progress-circle-font-s: var(--font-size-body-2, 14px);
     
     
-    --progress-circle-normal-color: var(--color-brand1-6, #3c94ec);
+    --progress-circle-normal-color: var(--color-brand1-6, #007be9);
     
     
-    --progress-line-error-color: var(--color-error-4, #FF5252);
+    --progress-line-error-color: var(--color-error-4, #ff7277);
     
     
-    --progress-line-success-color: var(--color-success-4, #3ab776);
+    --progress-line-success-color: var(--color-success-4, #42b479);
     
     
-    --progress-line-started-color: var(--color-error-4, #FF5252);
+    --progress-line-started-color: var(--color-error-4, #ff7277);
     
     
     --progress-line-middle-color: var(--color-warning-4, #ffa342);
     
     
-    --progress-line-finishing-color: var(--color-success-4, #3ab776);
+    --progress-line-finishing-color: var(--color-success-4, #42b479);
     
     
-    --progress-circle-error-color: var(--color-error-4, #FF5252);
+    --progress-circle-error-color: var(--color-error-4, #ff7277);
     
     
-    --progress-circle-success-color: var(--color-success-4, #3ab776);
+    --progress-circle-success-color: var(--color-success-4, #42b479);
     
     
-    --progress-circle-started-color: var(--color-error-4, #FF5252);
+    --progress-circle-started-color: var(--color-error-4, #ff7277);
     
     
     --progress-circle-middle-color: var(--color-warning-4, #ffa342);
     
     
-    --progress-circle-finishing-color: var(--color-success-4, #3ab776);
+    --progress-circle-finishing-color: var(--color-success-4, #42b479);
     
     
     --progress-circle-underlay-color: var(--color-fill1-5, #4D4D4D);
     
     
-    --progress-line-underlay-color: var(--color-line1-1, #383838);
+    --progress-line-underlay-color: var(--color-line1-1, #262626);
     
     
     --progress-circle-text-color: var(--color-text1-5, #a8a8a8);
@@ -7621,7 +7621,7 @@
     --progress-line-font-s: var(--font-size-caption, 12px);
     
     
-    --progress-line-underlay-border-color: var(--color-line1-2, #4D4D4D);
+    --progress-line-underlay-border-color: var(--color-line1-2, #383838);
     
     
     --progress-line-radius-l: var(--corner-3, 50px);
@@ -7726,7 +7726,7 @@
     --menu-divider-style: var(--line-solid, solid);
     
     
-    --menu-divider-color: var(--color-line1-1, #383838);
+    --menu-divider-color: var(--color-line1-1, #262626);
     
     
     --menu-arrow-color: var(--color-text1-3, #CCCCCC);
@@ -7765,16 +7765,16 @@
     --timeline-item-time-margin-bottom: var(--s-5, 20px);
     
     
-    --timeline-item-success-background: var(--color-success-4, #3ab776);
+    --timeline-item-success-background: var(--color-success-4, #42b479);
     
     
-    --timeline-item-error-background: var(--color-error-4, #FF5252);
+    --timeline-item-error-background: var(--color-error-4, #ff7277);
     
     
     --timeline-item-title-color: var(--color-text1-4, #EAEAEA);
     
     
-    --timeline-item-tail-color: var(--color-line1-2, #4D4D4D);
+    --timeline-item-tail-color: var(--color-line1-2, #383838);
     
     
     --timeline-item-done-dot-size: var(--s-3, 12px);
@@ -7861,7 +7861,7 @@
     --timeline-item-done-color: var(--color-white, #FFFFFF);
     
     
-    --timeline-item-process-background: var(--color-brand1-6, #3c94ec);
+    --timeline-item-process-background: var(--color-brand1-6, #007be9);
     
     
     --timeline-item-process-color: var(--color-white, #FFFFFF);
@@ -7945,19 +7945,19 @@
     --rating-large-font-size: var(--font-size-subhead, 16px);
     
     
-    --rating-normal-overlay-color: var(--color-brand1-6, #3c94ec);
+    --rating-normal-overlay-color: var(--color-brand1-6, #007be9);
     
     
-    --rating-normal-overlay-hover-color: var(--color-brand1-6, #3c94ec);
+    --rating-normal-overlay-hover-color: var(--color-brand1-6, #007be9);
     
     
     --rating-grade-low-overlay-hover-color: var(--color-text1-2, #8A8A8A);
     
     
-    --rating-grade-high-overlay-color: var(--color-brand1-6, #3c94ec);
+    --rating-grade-high-overlay-color: var(--color-brand1-6, #007be9);
     
     
-    --rating-grade-high-overlay-hover-color: var(--color-brand1-6, #3c94ec);
+    --rating-grade-high-overlay-hover-color: var(--color-brand1-6, #007be9);
     
     
     --rating-grade-icon-content: var(--icon-content-favorites-filling, "");
@@ -7987,70 +7987,10 @@
     --tag-size-s-tick-icon-bg-size: var(--s-5, 20px);
     
     
-    --tag-fill-tail-color: var(--color-brand1-6, #3c94ec);
-    
-    
-    --tag-fill-border-color-disabled: var(--color-line1-1, #383838);
-    
-    
-    --tag-fill-tail-color-hover: var(--color-brand1-6, #3c94ec);
-    
-    
-    --tag-secondary-text-color-hover: var(--color-brand1-6, #3c94ec);
-    
-    
-    --tag-secondary-border-color-hover: var(--color-brand1-6, #3c94ec);
-    
-    
-    --tag-checkable-normal-bg-selected-hover: var(--color-brand1-6, #3c94ec);
-    
-    
-    --tag-secondary-bg-hover: var(--color-brand1-1, #001A33);
-    
-    
-    --tag-checkable-normal-border-color: var(--color-line1-1, #383838);
-    
-    
-    --tag-checkable-normal-bg: var(--color-white, #FFFFFF);
-    
-    
-    --tag-checkable-normal-border-color-hover: var(--color-line1-1, #383838);
-    
-    
-    --tag-checkable-normal-bg-hover: var(--color-fill1-2, #383838);
-    
-    
-    --tag-closable-primary-fill-border-color-disabled: var(--color-line1-1, #383838);
-    
-    
-    --tag-closable-primary-fill-bg-color-disabled: var(--color-white, #FFFFFF);
+    --tag-fill-border-color-disabled: var(--color-line1-1, #262626);
     
     
     --tag-size-m-padding-lr: var(--s-2, 8px);
-    
-    
-    --tag-fill-text-color: var(--color-brand1-5, #58a8f8);
-    
-    
-    --tag-fill-text-color-hover: var(--color-brand1-5, #58a8f8);
-    
-    
-    --tag-closable-primary-fill-text-color: var(--color-brand1-5, #58a8f8);
-    
-    
-    --tag-closable-primary-fill-border-color: var(--color-transparent, transparent);
-    
-    
-    --tag-closable-primary-fill-bg-color: var(--color-brand1-2, #02305E);
-    
-    
-    --tag-closable-primary-fill-text-color-hover: var(--color-brand1-5, #58a8f8);
-    
-    
-    --tag-closable-primary-fill-border-color-hover: var(--color-brand1-4, #0066CC);
-    
-    
-    --tag-closable-primary-fill-bg-color-hover: var(--color-brand1-2, #02305E);
     
     
     --tag-closable-normal-icon-color-hover: var(--color-transparent, transparent);
@@ -8063,9 +8003,6 @@
     
     
     --tag-closable-bordered-bg-disabled: var(--color-fill1-2, #383838);
-    
-    
-    --tag-bordered-text-color: var(--color-text1-2, #8A8A8A);
     
     
     --tag-bordered-bg-disabled: var(--color-fill1-2, #383838);
@@ -8116,37 +8053,145 @@
     --tag-fill-bg-color-disabled: var(--color-fill1-2, #383838);
     
     
-    --tag-bordered-text-color-hover: var(--color-text1-2, #8A8A8A);
+    --tag-size-l-padding-lr: var(--s-3, 12px);
     
     
-    --tag-bordered-border-color: var(--color-fill1-5, #4D4D4D);
+    --tag-size-l-text-size: var(--font-size-body-1, 12px);
     
     
-    --tag-bordered-border-color-hover: var(--color-fill1-5, #4D4D4D);
+    --tag-closable-primary-fill-bg-color: var(--color-fill1-3, #1F1F1F);
     
     
-    --tag-fill-bg-color: var(--color-notice-1, #001a33);
+    --tag-bordered-text-color-hover: var(--color-text1-5, #a8a8a8);
+    
+    
+    --tag-fill-text-color: var(--color-brand1-5, #358fe9);
+    
+    
+    --tag-fill-border-color: var(--color-notice-3, #00488f);
+    
+    
+    --tag-fill-border-color-hover: var(--color-notice-6, #0066CC);
+    
+    
+    --tag-bordered-text-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    --tag-secondary-text-color: var(--color-notice-5, #007be9);
+    
+    
+    --tag-fill-text-color-hover: var(--color-brand1-5, #358fe9);
+    
+    
+    --tag-secondary-text-color-hover: var(--color-notice-4, #358fe9);
+    
+    
+    --tag-bordered-border-color: var(--color-fill1-2, #383838);
+    
+    
+    --tag-secondary-border-color: var(--color-notice-5, #007be9);
+    
+    
+    --tag-checkable-normal-bg-selected: var(--color-transparent, transparent);
+    
+    
+    --tag-bordered-border-color-hover: var(--color-line1-2, #383838);
+    
+    
+    --tag-secondary-border-color-hover: var(--color-notice-2, #02305e);
+    
+    
+    --tag-checkable-normal-bg-selected-hover: var(--color-transparent, transparent);
+    
+    
+    --tag-fill-bg-color: var(--color-brand1-1, #001A33);
     
     
     --tag-bordered-bg: var(--color-fill1-1, #151515);
     
     
-    --tag-fill-bg-color-hover: var(--color-notice-1, #001a33);
+    --tag-secondary-bg: var(--color-transparent, transparent);
     
     
-    --tag-bordered-bg-hover: var(--color-fill1-1, #151515);
+    --tag-fill-bg-color-hover: var(--color-notice-2, #02305e);
     
     
-    --tag-fill-border-color: var(--color-notice-1, #001a33);
+    --tag-bordered-bg-hover: var(--color-fill1-3, #1F1F1F);
     
     
-    --tag-fill-border-color-hover: var(--color-notice-1, #001a33);
+    --tag-secondary-bg-hover: var(--color-notice-2, #02305e);
     
     
-    --tag-size-l-padding-lr: var(--s-3, 12px);
+    --tag-checkable-fill-text-color: var(--color-text1-4, #EAEAEA);
     
     
-    --tag-size-l-text-size: var(--font-size-body-1, 12px);
+    --tag-checkable-fill-bg-color: var(--color-notice-5, #007be9);
+    
+    
+    --tag-checkable-normal-text-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    --tag-checkable-normal-border-color: var(--color-line1-3, #4d4d4d);
+    
+    
+    --tag-checkable-normal-bg: var(--color-transparent, transparent);
+    
+    
+    --tag-checkable-normal-text-color-hover: var(--color-text1-4, #EAEAEA);
+    
+    
+    --tag-checkable-normal-border-color-hover: var(--color-fill1-5, #4D4D4D);
+    
+    
+    --tag-checkable-normal-bg-hover: var(--color-fill1-5, #4D4D4D);
+    
+    
+    --tag-checkable-normal-border-selected-disabled: var(--color-fill1-5, #4D4D4D);
+    
+    
+    --tag-checkable-normal-bg-selected-disabled: var(--color-fill1-2, #383838);
+    
+    
+    --tag-checkable-normal-tick-bg-selected-disabled: var(--color-transparent, transparent);
+    
+    
+    --tag-checkable-normal-icon-color-selected: var(--color-transparent, transparent);
+    
+    
+    --tag-checkable-normal-icon-color-selected-hover: var(--color-transparent, transparent);
+    
+    
+    --tag-checkable-normal-icon-color-selected-disabled: var(--color-transparent, transparent);
+    
+    
+    --tag-closable-primary-fill-text-color: var(--color-fill1-7, #A8A8A8);
+    
+    
+    --tag-closable-primary-fill-border-color: var(--color-fill1-2, #383838);
+    
+    
+    --tag-fill-tail-color: var(--color-fill1-7, #A8A8A8);
+    
+    
+    --tag-fill-tail-color-hover: var(--color-text1-4, #EAEAEA);
+    
+    
+    --tag-closable-primary-fill-text-color-hover: var(--color-text1-4, #EAEAEA);
+    
+    
+    --tag-closable-primary-fill-border-color-hover: var(--color-fill1-5, #4D4D4D);
+    
+    
+    --tag-closable-primary-fill-bg-color-hover: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --tag-fill-tail-color-disabled: var(--color-text1-1, #6B6B6B);
+    
+    
+    --tag-closable-primary-fill-border-color-disabled: var(--color-fill1-5, #4D4D4D);
+    
+    
+    --tag-closable-primary-fill-bg-color-disabled: var(--color-fill1-2, #383838);
     
     
     --tag-size-l-spacing: var(--s-4, 16px);
@@ -8200,7 +8245,7 @@
     --tag-closable-normal-icon-color-disabled: var(--color-white, #FFFFFF);
     
     
-    --tag-closable-normal-bg-disabled: var(--color-line1-1, #383838);
+    --tag-closable-normal-bg-disabled: var(--color-line1-1, #262626);
     
     
     --tag-closable-bordered-tail-color: var(--color-text1-3, #CCCCCC);
@@ -8212,16 +8257,10 @@
     --tag-closable-bordered-text-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    --tag-fill-tail-color-disabled: var(--color-text1-1, #6B6B6B);
-    
-    
     --tag-bordered-tail-color: var(--color-text1-3, #CCCCCC);
     
     
-    --tag-secondary-text-color: var(--color-brand1-6, #3c94ec);
-    
-    
-    --tag-normal-text-color-hover: var(--color-brand1-6, #3c94ec);
+    --tag-normal-text-color-hover: var(--color-brand1-6, #007be9);
     
     
     --tag-bordered-tail-color-hover: var(--color-text1-4, #EAEAEA);
@@ -8233,34 +8272,19 @@
     --tag-bordered-text-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    --tag-secondary-border-color: var(--color-brand1-6, #3c94ec);
-    
-    
-    --tag-checkable-normal-bg-selected: var(--color-brand1-6, #3c94ec);
-    
-    
-    --tag-checkable-secondary-bg-selected: var(--color-brand1-6, #3c94ec);
+    --tag-checkable-secondary-bg-selected: var(--color-brand1-6, #007be9);
     
     
     --tag-checkable-secondary-bg-selected-hover: var(--color-brand1-9, #02305e);
     
     
-    --tag-primary-background-color: var(--color-brand1-6, #3c94ec);
-    
-    
-    --tag-secondary-bg: var(--color-transparent, transparent);
+    --tag-primary-background-color: var(--color-brand1-6, #007be9);
     
     
     --tag-text-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    --tag-border-color-disabled: var(--color-line1-1, #383838);
-    
-    
-    --tag-checkable-fill-text-color: var(--color-text1-3, #CCCCCC);
-    
-    
-    --tag-checkable-fill-bg-color: var(--color-fill1-3, #1F1F1F);
+    --tag-border-color-disabled: var(--color-line1-1, #262626);
     
     
     --tag-checkable-fill-border-color: var(--color-fill1-3, #1F1F1F);
@@ -8293,31 +8317,16 @@
     --tag-checkable-fill-bg-color-disabled: var(--color-fill1-1, #151515);
     
     
-    --tag-checkable-normal-text-color: var(--color-text1-3, #CCCCCC);
-    
-    
-    --tag-checkable-normal-text-color-hover: var(--color-text1-4, #EAEAEA);
-    
-    
     --tag-checkable-normal-text-selected-disabled: var(--color-text1-1, #6B6B6B);
-    
-    
-    --tag-checkable-normal-border-selected-disabled: var(--color-line1-1, #383838);
-    
-    
-    --tag-checkable-normal-bg-selected-disabled: var(--color-fill1-1, #151515);
-    
-    
-    --tag-checkable-normal-tick-bg-selected-disabled: var(--color-line1-1, #383838);
     
     
     --tag-checkable-primary-text-color: var(--color-white, #FFFFFF);
     
     
-    --tag-checkable-primary-bg-color: var(--color-brand1-6, #3c94ec);
+    --tag-checkable-primary-bg-color: var(--color-brand1-6, #007be9);
     
     
-    --tag-checkable-primary-border-color: var(--color-brand1-6, #3c94ec);
+    --tag-checkable-primary-border-color: var(--color-brand1-6, #007be9);
     
     
     --tag-checkable-primary-text-color-disabled: var(--color-text1-1, #6B6B6B);
@@ -8344,16 +8353,7 @@
     --tag-checkable-primary-tail-color-hover: var(--color-white, #FFFFFF);
     
     
-    --tag-checkable-secondary-bg-selected-disabled: var(--color-line1-1, #383838);
-    
-    
-    --tag-checkable-normal-icon-color-selected: var(--color-white, #FFFFFF);
-    
-    
-    --tag-checkable-normal-icon-color-selected-hover: var(--color-white, #FFFFFF);
-    
-    
-    --tag-checkable-normal-icon-color-selected-disabled: var(--color-white, #FFFFFF);
+    --tag-checkable-secondary-bg-selected-disabled: var(--color-line1-1, #262626);
     
     
     --tag-checkable-secondary-icon-color-selected: var(--color-white, #FFFFFF);
@@ -8380,13 +8380,13 @@
     --input-feedback-warning-color: var(--color-warning-5, #FF8D16);
     
     
-    --input-feedback-success-color: var(--color-success-4, #3ab776);
+    --input-feedback-success-color: var(--color-success-4, #42b479);
     
     
-    --input-feedback-error-border-color: var(--color-error-4, #FF5252);
+    --input-feedback-error-border-color: var(--color-error-4, #ff7277);
     
     
-    --input-maxlen-error-color: var(--color-error-5, #EC2525);
+    --input-maxlen-error-color: var(--color-error-5, #e15156);
     
     
     --input-maxlen-color: var(--color-text1-1, #6B6B6B);
@@ -8395,31 +8395,16 @@
     --input-hover-bg-color: var(--color-fill1-1, #151515);
     
     
-    --input-bg-color: var(--color-fill1-1, #151515);
-    
-    
     --input-feedback-warning-bg-color: var(--color-fill1-1, #151515);
     
     
     --input-feedback-error-bg-color: var(--color-fill1-1, #151515);
     
     
-    --input-placeholder-color: var(--color-text1-2, #8A8A8A);
-    
-    
-    --input-text-color: var(--color-text1-4, #EAEAEA);
-    
-    
     --input-focus-bg-color: var(--color-fill1-1, #151515);
     
     
     --input-feedback-loading-color: var(--color-fill1-5, #4D4D4D);
-    
-    
-    --input-focus-border-color: var(--color-line1-3, #6B6B6B);
-    
-    
-    --input-hover-border-color: var(--color-line1-2, #4D4D4D);
     
     
     --input-focus-shadow-spread: var(--line-1, 1px);
@@ -8431,12 +8416,6 @@
     --input-disabled-bg-color: var(--color-fill1-2, #383838);
     
     
-    --input-border-color: var(--color-line1-1, #383838);
-    
-    
-    --input-label-color: var(--color-fill1-5, #4D4D4D);
-    
-    
     --input-addon-bg-color: var(--color-fill1-1, #151515);
     
     
@@ -8444,6 +8423,30 @@
     
     
     --input-l-padding: var(--s-3, 12px);
+    
+    
+    --input-border-color: var(--color-fill1-5, #4D4D4D);
+    
+    
+    --input-bg-color: var(--color-fill1-1, #151515);
+    
+    
+    --input-placeholder-color: var(--color-text1-1, #6B6B6B);
+    
+    
+    --input-label-color: var(--color-text1-2, #8A8A8A);
+    
+    
+    --input-hover-border-color: var(--color-fill1-6, #6B6B6B);
+    
+    
+    --input-feedback-warning-icon: var(--icon-content-prompt-o, "");
+    
+    
+    --input-text-color: var(--color-text1-3, #CCCCCC);
+    
+    
+    --input-focus-border-color: var(--color-text1-1, #6B6B6B);
     
     
     --input-border-width: var(--line-1, 1px);
@@ -8488,16 +8491,13 @@
     --input-s-icon-padding-right: var(--s-1, 4px);
     
     
-    --input-feedback-warning-icon: var(--icon-content-warning, "");
-    
-    
     --input-feedback-success-icon: var(--icon-content-success-filling, "");
     
     
     --input-feedback-loading-icon: var(--icon-content-loading, "");
     
     
-    --input-feedback-error-color: var(--input-text-color, #EAEAEA);
+    --input-feedback-error-color: var(--input-text-color, #CCCCCC);
     
     
     --input-maxlen-warning-color: var(--color-warning-3, #995106);
@@ -8530,10 +8530,13 @@
     --form-help-margin-top: var(--s-1, 4px);
     
     
-    --form-help-color: var(--color-text1-1, #6B6B6B);
+    --form-error-color: var(--color-error-4, #ff7277);
     
     
-    --form-error-color: var(--color-error-4, #FF5252);
+    --form-help-color: var(--color-text1-2, #8A8A8A);
+    
+    
+    --form-label-color: var(--color-text1-5, #a8a8a8);
     
     
     --form-label-padding-r: var(--s-3, 12px);
@@ -8557,16 +8560,13 @@
     --form-top-label-margin-b: 2px;
     
     
-    --form-label-color: var(--color-text1-3, #CCCCCC);
-    
-    
     /* ------------------------ upload ------------------------ */
     
     
     --upload-text-list-close-icon-size: var(--icon-s, 16px);
     
     
-    --upload-text-list-error-text-color: var(--color-error-5, #EC2525);
+    --upload-text-list-error-text-color: var(--color-error-5, #e15156);
     
     
     --upload-image-list-item-uploading-bg-color: var(--color-transparent, transparent);
@@ -8587,7 +8587,7 @@
     --upload-card-border-color: var(--color-transparent, transparent);
     
     
-    --upload-card-hover-border-color: var(--color-line1-3, #6B6B6B);
+    --upload-card-hover-border-color: var(--color-line1-3, #4d4d4d);
     
     
     --upload-card-font-color: var(--color-text1-5, #a8a8a8);
@@ -8602,7 +8602,7 @@
     --upload-disable-text-color: var(--color-text1-1, #6B6B6B);
     
     
-    --upload-disable-border-color: var(--color-line1-1, #383838);
+    --upload-disable-border-color: var(--color-line1-1, #262626);
     
     
     --upload-text-list-height: var(--s-10, 40px);
@@ -8626,7 +8626,7 @@
     --upload-text-list-bg-color-hover: var(--color-fill1-2, #383838);
     
     
-    --upload-text-list-bg-color-error: var(--color-error-1, #330200);
+    --upload-text-list-bg-color-error: var(--color-error-1, #361312);
     
     
     --upload-text-list-close-icon-color: var(--color-text1-2, #8A8A8A);
@@ -8638,13 +8638,13 @@
     --upload-text-list-name-font-color: var(--color-text1-4, #EAEAEA);
     
     
-    --upload-text-list-name-font-color-hover: var(--color-brand1-6, #3c94ec);
+    --upload-text-list-name-font-color-hover: var(--color-brand1-6, #007be9);
     
     
     --upload-text-list-size-font-color: var(--color-text1-2, #8A8A8A);
     
     
-    --upload-text-list-size-font-color-hover: var(--color-brand1-6, #3c94ec);
+    --upload-text-list-size-font-color-hover: var(--color-brand1-6, #007be9);
     
     
     --upload-text-list-progressbar-height: var(--s-2, 8px);
@@ -8686,16 +8686,16 @@
     --upload-image-list-close-icon-color-hover: var(--color-text1-3, #CCCCCC);
     
     
-    --upload-image-list-item-border-color: var(--color-line1-2, #4D4D4D);
+    --upload-image-list-item-border-color: var(--color-line1-2, #383838);
     
     
     --upload-image-list-item-border-color-error: var(--color-error-3, #8C100B);
     
     
-    --upload-image-list-item-border-color-hover: var(--color-brand1-6, #3c94ec);
+    --upload-image-list-item-border-color-hover: var(--color-brand1-6, #007be9);
     
     
-    --upload-image-list-item-picture-border-color: var(--color-line1-2, #4D4D4D);
+    --upload-image-list-item-picture-border-color: var(--color-line1-2, #383838);
     
     
     --upload-image-list-item-picture-background-color: var(--color-fill1-2, #383838);
@@ -8740,7 +8740,7 @@
     --upload-card-list-corner: var(--corner-zero, 0);
     
     
-    --upload-card-list-border-color: var(--color-line1-3, #6B6B6B);
+    --upload-card-list-border-color: var(--color-line1-3, #4d4d4d);
     
     
     --upload-card-list-border-color-error: var(--color-error-3, #8C100B);
@@ -8773,10 +8773,10 @@
     --upload-select-card-tool-bg-opacity: .7;
     
     
-    --upload-drag-zone-border-color: var(--color-line1-3, #6B6B6B);
+    --upload-drag-zone-border-color: var(--color-line1-3, #4d4d4d);
     
     
-    --upload-drag-zone-over-border-color: var(--color-brand1-6, #3c94ec);
+    --upload-drag-zone-over-border-color: var(--color-brand1-6, #007be9);
     
     
     --upload-drag-zone-corner: var(--corner-1, 2px);
@@ -8812,13 +8812,13 @@
     --select-s-lineheight: 14px;
     
     
-    --select-color: var(--color-text1-5, #a8a8a8);
+    --select-color: var(--color-text1-1, #6B6B6B);
     
     
     --select-hint-color: var(--color-text1-2, #8A8A8A);
     
     
-    --select-highlight-color: var(--color-brand1-6, #3c94ec);
+    --select-highlight-color: var(--color-brand1-6, #007be9);
     
     
     --select-highlight-font: var(--font-size-body-1, 12px);
@@ -8842,16 +8842,10 @@
     --drawer-close-size: var(--icon-s, 16px);
     
     
-    --drawer-shadow: var(--shadow-3-left, 0px 0px 24px 0px rgba(0, 0, 0, 0.8));
+    --drawer-shadow: var(--shadow-3-left, 0px 0px 48px 0px rgba(0, 0, 0, 0.8));
     
     
     --drawer-border-color: var(--color-transparent, transparent);
-    
-    
-    --drawer-close-color: var(--color-fill1-6, #6B6B6B);
-    
-    
-    --drawer-close-color-hovered: var(--color-fill1-7, #A8A8A8);
     
     
     --drawer-title-font-size: var(--font-size-body-2, 14px);
@@ -8869,16 +8863,25 @@
     --drawer-close-right: var(--s-3, 12px);
     
     
-    --drawer-bg: var(--color-fill1-4, #262626);
-    
-    
     --drawer-title-bg-color: var(--color-fill1-4, #262626);
     
     
     --drawer-title-border-color: var(--color-fill1-2, #383838);
     
     
+    --drawer-title-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    --drawer-close-color: var(--color-fill1-6, #6B6B6B);
+    
+    
+    --drawer-bg: var(--color-fill1-3, #1F1F1F);
+    
+    
     --drawer-content-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    --drawer-close-color-hovered: var(--color-fill1-6, #6B6B6B);
     
     
     --drawer-title-padding-top: var(--s-3, 12px);
@@ -8906,9 +8909,6 @@
     
     
     --drawer-corner: var(--corner-1, 2px);
-    
-    
-    --drawer-title-color: var(--color-text1-4, #EAEAEA);
     
     
     --drawer-close-bg-hovered: var(--color-transparent, transparent);
@@ -8977,10 +8977,10 @@
     --transfer-simple-move-icon: var(--icon-content-switch, "");
     
     
-    --transfer-simple-move-icon-color: var(--color-line1-3, #6B6B6B);
+    --transfer-simple-move-icon-color: var(--color-line1-3, #4d4d4d);
     
     
-    --transfer-panel-border-color: var(--color-line1-2, #4D4D4D);
+    --transfer-panel-border-color: var(--color-line1-2, #383838);
     
     
     --transfer-panel-border-corner: var(--corner-1, 2px);
@@ -8992,7 +8992,7 @@
     --transfer-panel-footer-text-color: var(--color-text1-4, #EAEAEA);
     
     
-    --transfer-simple-panel-footer-text-color: var(--color-brand1-6, #3c94ec);
+    --transfer-simple-panel-footer-text-color: var(--color-brand1-6, #007be9);
     
     
     --transfer-panel-footer-shadow: var(--shadow-zero, none);
@@ -9010,7 +9010,7 @@
     --time-picker-menu-item-font-weight-selected: var(--font-weight-2, normal);
     
     
-    --time-picker-menu-border-color: var(--color-line1-2, #4D4D4D);
+    --time-picker-menu-border-color: var(--color-line1-2, #383838);
     
     
     --time-picker-menu-title-color: var(--color-text1-1, #6B6B6B);
@@ -9073,7 +9073,7 @@
     --slick-dots-background-opacity-hover: 0.2;
     
     
-    --slick-dots-border-color-normal: var(--color-other-3, #131415);
+    --slick-dots-border-color-normal: var(--color-other-3, #151515);
     
     
     --slick-dots-border-opacity-normal: 0;
@@ -9154,7 +9154,7 @@
     --slick-dots-background-color-hover: var(--color-black, #000000);
     
     
-    --slick-dots-background-color-selected: var(--color-brand1-6, #3c94ec);
+    --slick-dots-background-color-selected: var(--color-brand1-6, #007be9);
     
     
     --slick-dots-background-opacity-selected: 1;
@@ -9238,12 +9238,6 @@
     --breadcrumb-size-m-icon-size: var(--icon-s, 16px);
     
     
-    --breadcrumb-text-color: var(--color-fill1-7, #A8A8A8);
-    
-    
-    --breadcrumb-text-current-color: var(--color-text1-4, #EAEAEA);
-    
-    
     --breadcrumb-icon-color: var(--color-text1-1, #6B6B6B);
     
     
@@ -9256,6 +9250,12 @@
     --breadcrumb-icon-sep-content: var(--icon-content-slash-line, "");
     
     
+    --breadcrumb-text-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    --breadcrumb-text-current-color: var(--color-text1-1, #6B6B6B);
+    
+    
     --breadcrumb-size-m-font-size: var(--font-size-caption, 12px);
     
     
@@ -9265,16 +9265,16 @@
     --breadcrumb-text-ellipsis-color: var(--color-text1-3, #CCCCCC);
     
     
-    --breadcrumb-text-keyword-color: var(--color-brand1-6, #3c94ec);
+    --breadcrumb-text-keyword-color: var(--color-brand1-6, #007be9);
     
     
-    --breadcrumb-text-color-hover: var(--color-brand1-6, #3c94ec);
+    --breadcrumb-text-color-hover: var(--color-brand1-6, #007be9);
     
     
-    --breadcrumb-text-current-color-hover: var(--color-brand1-6, #3c94ec);
+    --breadcrumb-text-current-color-hover: var(--color-brand1-6, #007be9);
     
     
-    --breadcrumb-text-keyword-color-hover: var(--color-brand1-6, #3c94ec);
+    --breadcrumb-text-keyword-color-hover: var(--color-brand1-6, #007be9);
     
     
     /* ------------------------ date-picker ------------------------ */
@@ -9289,7 +9289,7 @@
     --date-picker-panel-background: var(--color-fill1-4, #262626);
     
     
-    --date-picker-panel-time-panel-separator-color: var(--color-line1-2, #4D4D4D);
+    --date-picker-panel-time-panel-separator-color: var(--color-line1-2, #383838);
     
     
     --date-picker-calendar-icon: var(--icon-content-calendar, "");
@@ -9304,19 +9304,10 @@
     --table-cell-padding-top: var(--s-2, 8px);
     
     
-    --table-normal-border-color: var(--color-fill1-4, #262626);
-    
-    
     --table-th-bg: var(--color-fill1-4, #262626);
     
     
-    --table-th-color: var(--color-text1-2, #8A8A8A);
-    
-    
     --table-group-th-bg: var(--color-fill1-4, #262626);
-    
-    
-    --table-row-color: var(--color-text1-5, #a8a8a8);
     
     
     --table-group-footer-bg: var(--color-fill1-2, #383838);
@@ -9331,13 +9322,22 @@
     --table-row-bg: var(--color-fill1-1, #151515);
     
     
+    --table-th-font-weight: var(--font-weight-medium, 500);
+    
+    
+    --table-normal-border-color: var(--color-fill1-4, #262626);
+    
+    
+    --table-th-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    --table-row-color: var(--color-text1-5, #a8a8a8);
+    
+    
     --table-normal-border-width: var(--line-1, 1px);
     
     
     --table-th-font-size: var(--font-size-body-1, 12px);
-    
-    
-    --table-th-font-weight: var(--font-weight-2, normal);
     
     
     --table-sort-icon-size: var(--icon-xs, 12px);
@@ -9427,7 +9427,7 @@
     --table-row-selected-color: var(--color-text1-4, #EAEAEA);
     
     
-    --table-sort-color-current: var(--color-brand1-6, #3c94ec);
+    --table-sort-color-current: var(--color-brand1-6, #007be9);
     
     
     --table-expanded-ctrl-disabled-color: var(--color-text1-2, #8A8A8A);
@@ -9514,7 +9514,7 @@
     --collapse-border-corner: var(--corner-1, 2px);
     
     
-    --collapse-disabled-border-color: var(--color-line1-1, #383838);
+    --collapse-disabled-border-color: var(--color-line1-1, #262626);
     
     
     --collapse-title-border-width: var(--line-1, 1px);
@@ -9559,7 +9559,7 @@
     --typography-text-code-background: var(--color-fill1-2, #383838);
     
     
-    --typography-text-code-border-color: var(--color-line1-1, #383838);
+    --typography-text-code-border-color: var(--color-line1-1, #262626);
     
     
     --typography-paragraph-font-size: var(--font-size-body-2, 14px);
@@ -9589,19 +9589,34 @@
     --typography-title-font-weight: var(--font-weight-semi-bold, 600);
     
     
+    /* ------------------------ split-button ------------------------ */
+    
+    
+    --split-btn-trigger-normal-icon-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    --split-btn-fold-icon-content: var(--icon-content-arrow-down, "");
+    
+    
+    --split-btn-unfold-icon-content: var(--icon-reset);
+    
+    
     /* ------------------------ divider ------------------------ */
-    
-    
-    --divider-hoz-color: var(--color-line1-2, #4D4D4D);
     
     
     --divider-ver-size: var(--line-1, 1px);
     
     
-    --divider-ver-color: var(--color-line1-2, #4D4D4D);
+    --divider-ver-color: var(--color-line1-2, #383838);
     
     
     --divider-ver-marginLeft: var(--s-3, 12px);
+    
+    
+    --divider-hoz-color: var(--color-line1-2, #383838);
+    
+    
+    --divider-hoz-text-color: var(--color-text1-5, #a8a8a8);
     
     
     --divider-hoz-size: var(--line-1, 1px);
@@ -9625,709 +9640,10 @@
     --divider-hoz-text-weight: var(--font-weight-2, normal);
     
     
-    --divider-hoz-text-color: var(--color-text1-4, #EAEAEA);
-    
-    
-    /* ------------------------ split-button ------------------------ */
-    
-    
-    --split-btn-trigger-normal-icon-color: var(--color-text1-4, #EAEAEA);
-    
-    
-    --split-btn-fold-icon-content: var(--icon-content-arrow-down, "");
-    
-    
-    --split-btn-unfold-icon-content: var(--icon-reset);
-    
-    
-    /* ------------------------ cascader-select ------------------------ */
-    
-    
-    --cascader-select: "cascader-select";
-    
-    
-    /* ------------------------ paragraph ------------------------ */
-    
-    
-    --paragraph-text-color: var(--color-text1-4, #EAEAEA);
-    
-    
-    --paragraph-s-font-size: var(--font-size-body-1, 12px);
-    
-    
-    --paragraph-m-font-size: var(--font-size-body-2, 14px);
-    
-    
-    --paragraph-s-line-height: var(--font-lineheight-2, 1.5);
-    
-    
-    --paragraph-l-line-height: var(--font-lineheight-3, 1.5);
-    
-    
-    /* ------------------------ loading ------------------------ */
-    
-    
-    --loading-icon-size: var(--icon-xl, 32px);
-    
-    
-    --loading-dot-color: var(--color-brand1-6, #3c94ec);
-    
-    
-    --loading-large-size: var(--s-12, 48px);
-    
-    
-    --loading-large-dot-size: var(--icon-xs, 12px);
-    
-    
-    --loading-medium-size: var(--s-8, 32px);
-    
-    
-    --loading-medium-dot-size: var(--icon-xxs, 8px);
-    
-    
-    /* ------------------------ shell ------------------------ */
-    
-    
-    --shell-light-header-color: var(--color-black, #000000);
-    
-    
-    --shell-light-header-height: var(--s-13, 52px);
-    
-    
-    --shell-light-header-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-light-header-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-light-header-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-light-header-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-light-header-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-light-header-paddingLeft: var(--s-4, 16px);
-    
-    
-    --shell-light-multitask-min-height: var(--s-10, 40px);
-    
-    
-    --shell-light-multitask-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-light-multitask-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-light-multitask-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-light-multitask-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-light-multitask-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-light-multitask-paddingLeft: var(--s-zero, 0px);
-    
-    
-    --shell-light-navigation-hoz-marginLeft: var(--s-12, 48px);
-    
-    
-    --shell-light-navigation-ver-width: var(--s-42, 168px);
-    
-    
-    --shell-light-navigation-ver-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-light-navigation-ver-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-light-navigation-ver-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-light-navigation-ver-width-mini: var(--s-15, 60px);
-    
-    
-    --shell-light-navigation-ver-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-light-navigation-ver-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-light-navigation-ver-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-light-navigation-ver-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-light-local-navigation-width: var(--s-42, 168px);
-    
-    
-    --shell-light-local-navigation-background: var(--color-fill1-4, #262626);
-    
-    
-    --shell-light-local-navigation-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-light-local-navigation-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-light-local-navigation-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-light-local-navigation-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-light-local-navigation-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-light-local-navigation-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-light-appbar-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-light-appbar-min-height: var(--s-12, 48px);
-    
-    
-    --shell-light-appbar-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-light-appbar-paddingLeft: var(--s-6, 24px);
-    
-    
-    --shell-light-appbar-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-light-appbar-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-light-appbar-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-light-content-background: var(--color-fill1-3, #1F1F1F);
-    
-    
-    --shell-light-content-paddingLeft: var(--s-5, 20px);
-    
-    
-    --shell-light-content-paddingTop: var(--s-5, 20px);
-    
-    
-    --shell-light-footer-min-height: var(--s-14, 56px);
-    
-    
-    --shell-light-footer-background: var(--color-transparent, transparent);
-    
-    
-    --shell-light-footer-color: var(--color-text1-1, #6B6B6B);
-    
-    
-    --shell-light-footer-font-size: var(--font-size-body-2, 14px);
-    
-    
-    --shell-light-ancillary-width: var(--s-42, 168px);
-    
-    
-    --shell-light-ancillary-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-light-ancillary-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-light-ancillary-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-light-ancillary-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-light-ancillary-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-light-ancillary-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-light-ancillary-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-light-tooldock-height: var(--s-13, 52px);
-    
-    
-    --shell-light-tooldock-width: var(--s-13, 52px);
-    
-    
-    --shell-light-tooldock-background: var(--color-fill1-4, #262626);
-    
-    
-    --shell-light-tooldock-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-light-tooldock-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-light-tooldock-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-light-tooldock-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-light-tooldock-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-light-tooldock-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-light-tooldock-item-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-light-tooldock-item-color: var(--color-text1-3, #CCCCCC);
-    
-    
-    --shell-light-tooldock-item-color-hover: var(--color-text1-4, #EAEAEA);
-    
-    
-    --shell-light-tooldock-item-color-active: var(--color-text1-4, #EAEAEA);
-    
-    
-    --shell-light-tooldock-item-background: var(--color-transparent, transparent);
-    
-    
-    --shell-light-tooldock-item-background-hover: var(--color-fill1-3, #1F1F1F);
-    
-    
-    --shell-light-tooldock-item-background-active: var(--color-fill1-3, #1F1F1F);
-    
-    
-    --shell-dark-header-color: var(--color-white, #FFFFFF);
-    
-    
-    --shell-dark-header-height: var(--s-13, 52px);
-    
-    
-    --shell-dark-header-background: var(--color-black, #000000);
-    
-    
-    --shell-dark-header-shadow: var(--shadow-1-down, 0 0 0 #FFFFFF);
-    
-    
-    --shell-dark-header-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-dark-header-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-dark-header-divider-color: #1F1F1F;
-    
-    
-    --shell-dark-header-paddingLeft: var(--s-4, 16px);
-    
-    
-    --shell-dark-multitask-min-height: var(--s-10, 40px);
-    
-    
-    --shell-dark-multitask-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-dark-multitask-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-dark-multitask-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-dark-multitask-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-dark-multitask-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-dark-multitask-paddingLeft: var(--s-zero, 0px);
-    
-    
-    --shell-dark-navigation-hoz-marginLeft: var(--s-12, 48px);
-    
-    
-    --shell-dark-navigation-ver-width: var(--s-42, 168px);
-    
-    
-    --shell-dark-navigation-ver-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-dark-navigation-ver-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-dark-navigation-ver-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-dark-navigation-ver-width-mini: var(--s-15, 60px);
-    
-    
-    --shell-dark-navigation-ver-background: var(--color-text1-4, #EAEAEA);
-    
-    
-    --shell-dark-navigation-ver-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-dark-navigation-ver-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-dark-navigation-ver-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-dark-local-navigation-width: var(--s-42, 168px);
-    
-    
-    --shell-dark-local-navigation-background: var(--color-fill1-4, #262626);
-    
-    
-    --shell-dark-local-navigation-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-dark-local-navigation-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-dark-local-navigation-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-dark-local-navigation-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-dark-local-navigation-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-dark-local-navigation-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-dark-appbar-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-dark-appbar-min-height: var(--s-12, 48px);
-    
-    
-    --shell-dark-appbar-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-dark-appbar-paddingLeft: var(--s-6, 24px);
-    
-    
-    --shell-dark-appbar-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-dark-appbar-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-dark-appbar-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-dark-content-background: var(--color-fill1-3, #1F1F1F);
-    
-    
-    --shell-dark-content-paddingLeft: var(--s-5, 20px);
-    
-    
-    --shell-dark-content-paddingTop: var(--s-5, 20px);
-    
-    
-    --shell-dark-footer-min-height: var(--s-14, 56px);
-    
-    
-    --shell-dark-footer-background: var(--color-transparent, transparent);
-    
-    
-    --shell-dark-footer-color: var(--color-text1-1, #6B6B6B);
-    
-    
-    --shell-dark-footer-font-size: var(--font-size-body-2, 14px);
-    
-    
-    --shell-dark-ancillary-width: var(--s-42, 168px);
-    
-    
-    --shell-dark-ancillary-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-dark-ancillary-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-dark-ancillary-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-dark-ancillary-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-dark-ancillary-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-dark-ancillary-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-dark-ancillary-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-dark-tooldock-height: var(--s-13, 52px);
-    
-    
-    --shell-dark-tooldock-width: var(--s-13, 52px);
-    
-    
-    --shell-dark-tooldock-background: var(--color-fill1-4, #262626);
-    
-    
-    --shell-dark-tooldock-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-dark-tooldock-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-dark-tooldock-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-dark-tooldock-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-dark-tooldock-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-dark-tooldock-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-dark-tooldock-item-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-dark-tooldock-item-color: var(--color-text1-3, #CCCCCC);
-    
-    
-    --shell-dark-tooldock-item-color-hover: var(--color-text1-4, #EAEAEA);
-    
-    
-    --shell-dark-tooldock-item-color-active: var(--color-text1-4, #EAEAEA);
-    
-    
-    --shell-dark-tooldock-item-background: var(--color-transparent, transparent);
-    
-    
-    --shell-dark-tooldock-item-background-hover: var(--color-fill1-3, #1F1F1F);
-    
-    
-    --shell-dark-tooldock-item-background-active: var(--color-fill1-3, #1F1F1F);
-    
-    
-    --shell-brand-header-color: var(--color-white, #FFFFFF);
-    
-    
-    --shell-brand-header-height: var(--s-13, 52px);
-    
-    
-    --shell-brand-header-background: var(--color-brand1-6, #3c94ec);
-    
-    
-    --shell-brand-header-shadow: var(--shadow-1-down, 0 0 0 #FFFFFF);
-    
-    
-    --shell-brand-header-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-brand-header-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-brand-header-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-brand-header-paddingLeft: var(--s-4, 16px);
-    
-    
-    --shell-brand-multitask-min-height: var(--s-10, 40px);
-    
-    
-    --shell-brand-multitask-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-brand-multitask-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-brand-multitask-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-brand-multitask-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-brand-multitask-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-brand-multitask-paddingLeft: var(--s-zero, 0px);
-    
-    
-    --shell-brand-navigation-hoz-marginLeft: var(--s-12, 48px);
-    
-    
-    --shell-brand-navigation-ver-width: var(--s-42, 168px);
-    
-    
-    --shell-brand-navigation-ver-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-brand-navigation-ver-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-brand-navigation-ver-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-brand-navigation-ver-width-mini: var(--s-15, 60px);
-    
-    
-    --shell-brand-navigation-ver-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-brand-navigation-ver-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-brand-navigation-ver-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-brand-navigation-ver-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-brand-local-navigation-width: var(--s-42, 168px);
-    
-    
-    --shell-brand-local-navigation-background: var(--color-fill1-4, #262626);
-    
-    
-    --shell-brand-local-navigation-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-brand-local-navigation-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-brand-local-navigation-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-brand-local-navigation-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-brand-local-navigation-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-brand-local-navigation-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-brand-appbar-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-brand-appbar-min-height: var(--s-12, 48px);
-    
-    
-    --shell-brand-appbar-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-brand-appbar-paddingLeft: var(--s-6, 24px);
-    
-    
-    --shell-brand-appbar-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-brand-appbar-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-brand-appbar-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-brand-content-background: var(--color-fill1-3, #1F1F1F);
-    
-    
-    --shell-brand-content-paddingLeft: var(--s-5, 20px);
-    
-    
-    --shell-brand-content-paddingTop: var(--s-5, 20px);
-    
-    
-    --shell-brand-footer-min-height: var(--s-14, 56px);
-    
-    
-    --shell-brand-footer-background: var(--color-transparent, transparent);
-    
-    
-    --shell-brand-footer-color: var(--color-text1-1, #6B6B6B);
-    
-    
-    --shell-brand-footer-font-size: var(--font-size-body-2, 14px);
-    
-    
-    --shell-brand-ancillary-width: var(--s-42, 168px);
-    
-    
-    --shell-brand-ancillary-background: var(--color-white, #FFFFFF);
-    
-    
-    --shell-brand-ancillary-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-brand-ancillary-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-brand-ancillary-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-brand-ancillary-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-brand-ancillary-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-brand-ancillary-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-brand-tooldock-height: var(--s-13, 52px);
-    
-    
-    --shell-brand-tooldock-width: var(--s-13, 52px);
-    
-    
-    --shell-brand-tooldock-background: var(--color-fill1-4, #262626);
-    
-    
-    --shell-brand-tooldock-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-brand-tooldock-paddingBottom: var(--s-2, 8px);
-    
-    
-    --shell-brand-tooldock-shadow: var(--shadow-zero, none);
-    
-    
-    --shell-brand-tooldock-divider-size: var(--line-1, 1px);
-    
-    
-    --shell-brand-tooldock-divider-style: var(--line-solid, solid);
-    
-    
-    --shell-brand-tooldock-divider-color: var(--color-line1-1, #383838);
-    
-    
-    --shell-brand-tooldock-item-paddingTop: var(--s-2, 8px);
-    
-    
-    --shell-brand-tooldock-item-color: var(--color-text1-3, #CCCCCC);
-    
-    
-    --shell-brand-tooldock-item-color-hover: var(--color-text1-4, #EAEAEA);
-    
-    
-    --shell-brand-tooldock-item-color-active: var(--color-text1-4, #EAEAEA);
-    
-    
-    --shell-brand-tooldock-item-background: var(--color-transparent, transparent);
-    
-    
-    --shell-brand-tooldock-item-background-hover: var(--color-fill1-3, #1F1F1F);
-    
-    
-    --shell-brand-tooldock-item-background-active: var(--color-fill1-3, #1F1F1F);
-    
-    
     /* ------------------------ tree-select ------------------------ */
+    
+    
+    --tree-select-background: var(--color-fill1-4, #262626);
     
     
     --tree-select-padding-vertical: var(--s-2, 8px);
@@ -10336,10 +9652,10 @@
     --tree-select-padding-horizontal: var(--s-5, 20px);
     
     
-    --tree-select-background: var(--color-white, #FFFFFF);
-    
-    
     /* ------------------------ list ------------------------ */
+    
+    
+    --list-content-color: var(--color-text1-5, #a8a8a8);
     
     
     --list-size-s-title-font-size: var(--font-size-subhead, 16px);
@@ -10402,16 +9718,700 @@
     --list-size-m-item-title-font-weight: var(--font-weight-2, normal);
     
     
-    --list-divider-color: var(--color-line1-2, #4D4D4D);
+    --list-divider-color: var(--color-line1-2, #383838);
     
     
     --list-title-color: var(--color-text1-4, #EAEAEA);
     
     
-    --list-content-color: var(--color-text1-3, #CCCCCC);
-    
-    
     --list-extra-color: var(--color-text1-2, #8A8A8A);
+    
+    
+    /* ------------------------ cascader-select ------------------------ */
+    
+    
+    --cascader-select: "cascader-select";
+    
+    
+    /* ------------------------ paragraph ------------------------ */
+    
+    
+    --paragraph-text-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    --paragraph-s-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --paragraph-m-font-size: var(--font-size-body-2, 14px);
+    
+    
+    --paragraph-s-line-height: var(--font-lineheight-2, 1.5);
+    
+    
+    --paragraph-l-line-height: var(--font-lineheight-3, 1.5);
+    
+    
+    /* ------------------------ loading ------------------------ */
+    
+    
+    --loading-icon-size: var(--icon-xl, 32px);
+    
+    
+    --loading-dot-color: var(--color-brand1-6, #007be9);
+    
+    
+    --loading-large-size: var(--s-12, 48px);
+    
+    
+    --loading-large-dot-size: var(--icon-xs, 12px);
+    
+    
+    --loading-medium-size: var(--s-8, 32px);
+    
+    
+    --loading-medium-dot-size: var(--icon-xxs, 8px);
+    
+    
+    /* ------------------------ shell ------------------------ */
+    
+    
+    --shell-light-header-color: var(--color-black, #000000);
+    
+    
+    --shell-light-header-height: var(--s-13, 52px);
+    
+    
+    --shell-light-header-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-light-header-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-light-header-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-light-header-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-light-header-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-light-header-paddingLeft: var(--s-4, 16px);
+    
+    
+    --shell-light-multitask-min-height: var(--s-10, 40px);
+    
+    
+    --shell-light-multitask-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-light-multitask-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-light-multitask-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-light-multitask-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-light-multitask-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-light-multitask-paddingLeft: var(--s-zero, 0px);
+    
+    
+    --shell-light-navigation-hoz-marginLeft: var(--s-12, 48px);
+    
+    
+    --shell-light-navigation-ver-width: var(--s-42, 168px);
+    
+    
+    --shell-light-navigation-ver-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-light-navigation-ver-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-light-navigation-ver-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-light-navigation-ver-width-mini: var(--s-15, 60px);
+    
+    
+    --shell-light-navigation-ver-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-light-navigation-ver-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-light-navigation-ver-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-light-navigation-ver-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-light-local-navigation-width: var(--s-42, 168px);
+    
+    
+    --shell-light-local-navigation-background: var(--color-fill1-4, #262626);
+    
+    
+    --shell-light-local-navigation-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-light-local-navigation-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-light-local-navigation-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-light-local-navigation-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-light-local-navigation-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-light-local-navigation-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-light-appbar-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-light-appbar-min-height: var(--s-12, 48px);
+    
+    
+    --shell-light-appbar-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-light-appbar-paddingLeft: var(--s-6, 24px);
+    
+    
+    --shell-light-appbar-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-light-appbar-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-light-appbar-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-light-content-background: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --shell-light-content-paddingLeft: var(--s-5, 20px);
+    
+    
+    --shell-light-content-paddingTop: var(--s-5, 20px);
+    
+    
+    --shell-light-footer-min-height: var(--s-14, 56px);
+    
+    
+    --shell-light-footer-background: var(--color-transparent, transparent);
+    
+    
+    --shell-light-footer-color: var(--color-text1-1, #6B6B6B);
+    
+    
+    --shell-light-footer-font-size: var(--font-size-body-2, 14px);
+    
+    
+    --shell-light-ancillary-width: var(--s-42, 168px);
+    
+    
+    --shell-light-ancillary-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-light-ancillary-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-light-ancillary-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-light-ancillary-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-light-ancillary-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-light-ancillary-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-light-ancillary-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-light-tooldock-height: var(--s-13, 52px);
+    
+    
+    --shell-light-tooldock-width: var(--s-13, 52px);
+    
+    
+    --shell-light-tooldock-background: var(--color-fill1-4, #262626);
+    
+    
+    --shell-light-tooldock-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-light-tooldock-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-light-tooldock-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-light-tooldock-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-light-tooldock-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-light-tooldock-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-light-tooldock-item-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-light-tooldock-item-color: var(--color-text1-3, #CCCCCC);
+    
+    
+    --shell-light-tooldock-item-color-hover: var(--color-text1-4, #EAEAEA);
+    
+    
+    --shell-light-tooldock-item-color-active: var(--color-text1-4, #EAEAEA);
+    
+    
+    --shell-light-tooldock-item-background: var(--color-transparent, transparent);
+    
+    
+    --shell-light-tooldock-item-background-hover: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --shell-light-tooldock-item-background-active: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --shell-dark-header-color: var(--color-white, #FFFFFF);
+    
+    
+    --shell-dark-header-height: var(--s-13, 52px);
+    
+    
+    --shell-dark-header-background: var(--color-black, #000000);
+    
+    
+    --shell-dark-header-shadow: var(--shadow-1-down, 0 0 0 #FFFFFF);
+    
+    
+    --shell-dark-header-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-dark-header-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-dark-header-divider-color: #1F1F1F;
+    
+    
+    --shell-dark-header-paddingLeft: var(--s-4, 16px);
+    
+    
+    --shell-dark-multitask-min-height: var(--s-10, 40px);
+    
+    
+    --shell-dark-multitask-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-dark-multitask-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-dark-multitask-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-dark-multitask-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-dark-multitask-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-dark-multitask-paddingLeft: var(--s-zero, 0px);
+    
+    
+    --shell-dark-navigation-hoz-marginLeft: var(--s-12, 48px);
+    
+    
+    --shell-dark-navigation-ver-width: var(--s-42, 168px);
+    
+    
+    --shell-dark-navigation-ver-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-dark-navigation-ver-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-dark-navigation-ver-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-dark-navigation-ver-width-mini: var(--s-15, 60px);
+    
+    
+    --shell-dark-navigation-ver-background: var(--color-text1-4, #EAEAEA);
+    
+    
+    --shell-dark-navigation-ver-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-dark-navigation-ver-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-dark-navigation-ver-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-dark-local-navigation-width: var(--s-42, 168px);
+    
+    
+    --shell-dark-local-navigation-background: var(--color-fill1-4, #262626);
+    
+    
+    --shell-dark-local-navigation-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-dark-local-navigation-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-dark-local-navigation-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-dark-local-navigation-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-dark-local-navigation-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-dark-local-navigation-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-dark-appbar-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-dark-appbar-min-height: var(--s-12, 48px);
+    
+    
+    --shell-dark-appbar-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-dark-appbar-paddingLeft: var(--s-6, 24px);
+    
+    
+    --shell-dark-appbar-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-dark-appbar-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-dark-appbar-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-dark-content-background: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --shell-dark-content-paddingLeft: var(--s-5, 20px);
+    
+    
+    --shell-dark-content-paddingTop: var(--s-5, 20px);
+    
+    
+    --shell-dark-footer-min-height: var(--s-14, 56px);
+    
+    
+    --shell-dark-footer-background: var(--color-transparent, transparent);
+    
+    
+    --shell-dark-footer-color: var(--color-text1-1, #6B6B6B);
+    
+    
+    --shell-dark-footer-font-size: var(--font-size-body-2, 14px);
+    
+    
+    --shell-dark-ancillary-width: var(--s-42, 168px);
+    
+    
+    --shell-dark-ancillary-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-dark-ancillary-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-dark-ancillary-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-dark-ancillary-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-dark-ancillary-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-dark-ancillary-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-dark-ancillary-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-dark-tooldock-height: var(--s-13, 52px);
+    
+    
+    --shell-dark-tooldock-width: var(--s-13, 52px);
+    
+    
+    --shell-dark-tooldock-background: var(--color-fill1-4, #262626);
+    
+    
+    --shell-dark-tooldock-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-dark-tooldock-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-dark-tooldock-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-dark-tooldock-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-dark-tooldock-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-dark-tooldock-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-dark-tooldock-item-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-dark-tooldock-item-color: var(--color-text1-3, #CCCCCC);
+    
+    
+    --shell-dark-tooldock-item-color-hover: var(--color-text1-4, #EAEAEA);
+    
+    
+    --shell-dark-tooldock-item-color-active: var(--color-text1-4, #EAEAEA);
+    
+    
+    --shell-dark-tooldock-item-background: var(--color-transparent, transparent);
+    
+    
+    --shell-dark-tooldock-item-background-hover: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --shell-dark-tooldock-item-background-active: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --shell-brand-header-color: var(--color-white, #FFFFFF);
+    
+    
+    --shell-brand-header-height: var(--s-13, 52px);
+    
+    
+    --shell-brand-header-background: var(--color-brand1-6, #007be9);
+    
+    
+    --shell-brand-header-shadow: var(--shadow-1-down, 0 0 0 #FFFFFF);
+    
+    
+    --shell-brand-header-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-brand-header-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-brand-header-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-brand-header-paddingLeft: var(--s-4, 16px);
+    
+    
+    --shell-brand-multitask-min-height: var(--s-10, 40px);
+    
+    
+    --shell-brand-multitask-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-brand-multitask-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-brand-multitask-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-brand-multitask-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-brand-multitask-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-brand-multitask-paddingLeft: var(--s-zero, 0px);
+    
+    
+    --shell-brand-navigation-hoz-marginLeft: var(--s-12, 48px);
+    
+    
+    --shell-brand-navigation-ver-width: var(--s-42, 168px);
+    
+    
+    --shell-brand-navigation-ver-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-brand-navigation-ver-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-brand-navigation-ver-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-brand-navigation-ver-width-mini: var(--s-15, 60px);
+    
+    
+    --shell-brand-navigation-ver-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-brand-navigation-ver-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-brand-navigation-ver-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-brand-navigation-ver-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-brand-local-navigation-width: var(--s-42, 168px);
+    
+    
+    --shell-brand-local-navigation-background: var(--color-fill1-4, #262626);
+    
+    
+    --shell-brand-local-navigation-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-brand-local-navigation-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-brand-local-navigation-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-brand-local-navigation-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-brand-local-navigation-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-brand-local-navigation-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-brand-appbar-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-brand-appbar-min-height: var(--s-12, 48px);
+    
+    
+    --shell-brand-appbar-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-brand-appbar-paddingLeft: var(--s-6, 24px);
+    
+    
+    --shell-brand-appbar-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-brand-appbar-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-brand-appbar-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-brand-content-background: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --shell-brand-content-paddingLeft: var(--s-5, 20px);
+    
+    
+    --shell-brand-content-paddingTop: var(--s-5, 20px);
+    
+    
+    --shell-brand-footer-min-height: var(--s-14, 56px);
+    
+    
+    --shell-brand-footer-background: var(--color-transparent, transparent);
+    
+    
+    --shell-brand-footer-color: var(--color-text1-1, #6B6B6B);
+    
+    
+    --shell-brand-footer-font-size: var(--font-size-body-2, 14px);
+    
+    
+    --shell-brand-ancillary-width: var(--s-42, 168px);
+    
+    
+    --shell-brand-ancillary-background: var(--color-white, #FFFFFF);
+    
+    
+    --shell-brand-ancillary-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-brand-ancillary-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-brand-ancillary-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-brand-ancillary-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-brand-ancillary-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-brand-ancillary-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-brand-tooldock-height: var(--s-13, 52px);
+    
+    
+    --shell-brand-tooldock-width: var(--s-13, 52px);
+    
+    
+    --shell-brand-tooldock-background: var(--color-fill1-4, #262626);
+    
+    
+    --shell-brand-tooldock-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-brand-tooldock-paddingBottom: var(--s-2, 8px);
+    
+    
+    --shell-brand-tooldock-shadow: var(--shadow-zero, none);
+    
+    
+    --shell-brand-tooldock-divider-size: var(--line-1, 1px);
+    
+    
+    --shell-brand-tooldock-divider-style: var(--line-solid, solid);
+    
+    
+    --shell-brand-tooldock-divider-color: var(--color-line1-1, #262626);
+    
+    
+    --shell-brand-tooldock-item-paddingTop: var(--s-2, 8px);
+    
+    
+    --shell-brand-tooldock-item-color: var(--color-text1-3, #CCCCCC);
+    
+    
+    --shell-brand-tooldock-item-color-hover: var(--color-text1-4, #EAEAEA);
+    
+    
+    --shell-brand-tooldock-item-color-active: var(--color-text1-4, #EAEAEA);
+    
+    
+    --shell-brand-tooldock-item-background: var(--color-transparent, transparent);
+    
+    
+    --shell-brand-tooldock-item-background-hover: var(--color-fill1-3, #1F1F1F);
+    
+    
+    --shell-brand-tooldock-item-background-active: var(--color-fill1-3, #1F1F1F);
     
     
     /* ------------------------ avatar ------------------------ */
