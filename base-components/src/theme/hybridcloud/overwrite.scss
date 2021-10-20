@@ -73,8 +73,8 @@ h6 {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: var(--global-scrollbar-width, 6px);
+  height: var(--global-scrollbar-height, 6px);
 }
 
 ::-webkit-scrollbar-track {
