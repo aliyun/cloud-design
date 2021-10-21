@@ -123,10 +123,31 @@ const Dialog: React.FC<CustomDialogProps> & {
     return ['ok', 'cancel']
   })()
 
+  // 云效主题align在上方
+  const defaultAlign = (() => {
+    if (
+      theme === 'yunxiao' ||
+      theme === 'yunxiao-dark'
+    )
+      return 'tc tc'
+    return 'cc cc'
+  })()
+
+  const defaultMinMargin = (() => {
+    if (
+      theme === 'yunxiao' ||
+      theme === 'yunxiao-dark'
+    )
+      return 100
+    return 40
+  })()
+
   return (
     <NextDialog
       {...getCustomWidth(size)}
       footerActions={defaultFooterActions}
+      align={defaultAlign}
+      minMargin={defaultMinMargin}
       {...others}
       ref={customRef}
     />
@@ -146,6 +167,32 @@ const showDefaultFooterActions = () => {
   )
     return ['cancel', 'ok']
   return ['ok', 'cancel']
+}
+
+const showDefaultAlign = () => {
+  const theme = window
+  .getComputedStyle?.(window.document.body)
+  .getPropertyValue('--alicloudfe-components-theme')
+  .trim()
+  if (
+    theme === 'yunxiao' ||
+    theme === 'yunxiao-dark'
+  )
+    return 'tc tc'
+  return 'cc cc'
+}
+
+const showDefaultMinMargin = () => {
+  const theme = window
+  .getComputedStyle?.(window.document.body)
+  .getPropertyValue('--alicloudfe-components-theme')
+  .trim()
+  if (
+    theme === 'yunxiao' ||
+    theme === 'yunxiao-dark'
+  )
+    return 100
+  return 40
 }
 
 // 快捷调用的操作按钮顺序
@@ -199,6 +246,8 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   return NextDialog.show({
     ...getCustomWidth(size),
     footerActions: showDefaultFooterActions(),
+    align: showDefaultAlign(),
+    minMargin: showDefaultMinMargin(),
     ...others,
     // 将Dialog.show与其他quick弹窗区分出来，单独做样式覆盖，
     // 因为它的body是不包含Message的
@@ -211,6 +260,8 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   return NextDialog.confirm({
     ...getCustomWidth(size),
     footerActions: showDefaultFooterActions(),
+    align: showDefaultAlign(),
+    minMargin: showDefaultMinMargin(),
     messageProps: { type: 'notice' },
     ...others
   })
@@ -221,6 +272,8 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   return NextDialog.alert({
     ...getCustomWidth(size),
     footerActions: showDefaultFooterActions(),
+    align: showDefaultAlign(),
+    minMargin: showDefaultMinMargin(),
     messageProps: { type: 'warning' },
     ...others
   })
