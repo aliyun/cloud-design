@@ -27,7 +27,7 @@ const customColors = ['#f50', '#2db7f5', '#87d068', '#108ee9']
 
 export default function DemoComponent() {
   const content = (
-    <ConfigProvider prefix="custom-">
+    <ConfigProvider>
       <div className="tag-list">
         <h4>hybridcloud colors</h4>
         <TagGroup>
