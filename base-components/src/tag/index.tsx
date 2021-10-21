@@ -12,7 +12,7 @@ const Tag: typeof NextTag = wrap(
   withThemeClass(
     React.forwardRef((props: NextTagProps, ref) => {
       const { children, color, prefix = 'next-' } = props
-      const { className, ...others } = props
+      const { className, ...others } = props;
 
       const theme = useCssVar('--alicloudfe-components-theme').trim()
 

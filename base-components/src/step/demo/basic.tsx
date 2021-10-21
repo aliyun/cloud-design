@@ -9,9 +9,9 @@ import styled from 'styled-components'
 import { Step } from '@alicloudfe/components'
 
 const steps = [
-  ['Step 1', 'Open the refrigerator door'],
-  ['Step 2', 'Put the elephant in the refrigerator'],
-  ['Step 3', 'Close the refrigerator door']
+  ['中文1', 'Open the refrigerator door'],
+  ['中文2', 'Put the elephant in the refrigerator'],
+  ['中文3', 'Close the refrigerator door']
 ].map((item, index) => (
   <Step.Item
     aria-current={index === 1 ? 'step' : null}
