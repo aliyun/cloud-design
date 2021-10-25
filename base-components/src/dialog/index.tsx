@@ -155,6 +155,7 @@ const Dialog: React.FC<CustomDialogProps> & {
       footerActions={defaultFooterActions}
       align={defaultAlign}
       minMargin={defaultMinMargin}
+      shouldUpdatePosition
       {...others}
       ref={customRef}
     />
@@ -248,6 +249,7 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     footerActions: showDefaultFooterActions(theme),
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
+    shouldUpdatePosition: true,
     ...others,
     // 将Dialog.show与其他quick弹窗区分出来，单独做样式覆盖，
     // 因为它的body是不包含Message的
@@ -267,6 +269,7 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'notice' },
+    shouldUpdatePosition: true,
     ...others
   })
 }
@@ -283,6 +286,7 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'warning' },
+    shouldUpdatePosition: true,
     ...others
   })
 }
