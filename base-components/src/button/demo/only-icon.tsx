@@ -11,7 +11,10 @@ import { Button, Icon } from '@alicloudfe/components'
 export default function DemoComponent() {
   const content = (
     <div>
-      <Button warning>
+      <Button>
+        <Icon type="atm" />
+      </Button>
+      <Button text>
         <Icon type="atm" />
       </Button>
     </div>
