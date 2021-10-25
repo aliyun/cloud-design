@@ -30,9 +30,16 @@ const sizeMap = {
   large: 1200
 }
 
+const yunxiaoSizeMap = {
+  mini: 440,
+  small: 600,
+  medium: 800,
+  large: 1200
+}
+
 // 获取 size 大小
-const getCustomWidth = (size: CustomDialogProps['size']) => {
-  const sizeWidth = sizeMap[size]
+const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
+  const sizeWidth = theme.startsWith('yunxiao') ? yunxiaoSizeMap[size] : sizeMap[size]
   if (sizeWidth) {
     return {
       style: {
@@ -144,7 +151,7 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   return (
     <NextDialog
-      {...getCustomWidth(size)}
+      {...getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
       align={defaultAlign}
       minMargin={defaultMinMargin}
@@ -154,11 +161,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   )
 }
 
-const showDefaultFooterActions = () => {
-  const theme = window
-    .getComputedStyle?.(window.document.body)
-    .getPropertyValue('--alicloudfe-components-theme')
-    .trim()
+const showDefaultFooterActions = (theme: string) => {
   if (
     theme === 'yunxiao' ||
     theme === 'yunxiao-dark' ||
@@ -169,11 +172,7 @@ const showDefaultFooterActions = () => {
   return ['ok', 'cancel']
 }
 
-const showDefaultAlign = () => {
-  const theme = window
-  .getComputedStyle?.(window.document.body)
-  .getPropertyValue('--alicloudfe-components-theme')
-  .trim()
+const showDefaultAlign = (theme: string) => {
   if (
     theme === 'yunxiao' ||
     theme === 'yunxiao-dark'
@@ -182,11 +181,7 @@ const showDefaultAlign = () => {
   return 'cc cc'
 }
 
-const showDefaultMinMargin = () => {
-  const theme = window
-  .getComputedStyle?.(window.document.body)
-  .getPropertyValue('--alicloudfe-components-theme')
-  .trim()
+const showDefaultMinMargin = (theme: string) => {
   if (
     theme === 'yunxiao' ||
     theme === 'yunxiao-dark'
@@ -199,6 +194,11 @@ const showDefaultMinMargin = () => {
 const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   const { size, ...others } = config
   const { prefix = 'next-' } = config
+
+  const theme = window
+  .getComputedStyle?.(window.document.body)
+  .getPropertyValue('--alicloudfe-components-theme')
+  .trim()
 
   setTimeout(() => {
     const doms = (document.getElementsByClassName('quick-show') ?? []) as any
@@ -244,10 +244,10 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   })
 
   return NextDialog.show({
-    ...getCustomWidth(size),
-    footerActions: showDefaultFooterActions(),
-    align: showDefaultAlign(),
-    minMargin: showDefaultMinMargin(),
+    ...getCustomWidth(size, theme),
+    footerActions: showDefaultFooterActions(theme),
+    align: showDefaultAlign(theme),
+    minMargin: showDefaultMinMargin(theme),
     ...others,
     // 将Dialog.show与其他quick弹窗区分出来，单独做样式覆盖，
     // 因为它的body是不包含Message的
@@ -256,24 +256,32 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
 }
 
 const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
+  const theme = window
+  .getComputedStyle?.(window.document.body)
+  .getPropertyValue('--alicloudfe-components-theme')
+  .trim()
   const { size, ...others } = config
   return NextDialog.confirm({
-    ...getCustomWidth(size),
-    footerActions: showDefaultFooterActions(),
-    align: showDefaultAlign(),
-    minMargin: showDefaultMinMargin(),
+    ...getCustomWidth(size, theme),
+    footerActions: showDefaultFooterActions(theme),
+    align: showDefaultAlign(theme),
+    minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'notice' },
     ...others
   })
 }
 
 const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
+  const theme = window
+  .getComputedStyle?.(window.document.body)
+  .getPropertyValue('--alicloudfe-components-theme')
+  .trim()
   const { size, ...others } = config
   return NextDialog.alert({
-    ...getCustomWidth(size),
-    footerActions: showDefaultFooterActions(),
-    align: showDefaultAlign(),
-    minMargin: showDefaultMinMargin(),
+    ...getCustomWidth(size, theme),
+    footerActions: showDefaultFooterActions(theme),
+    align: showDefaultAlign(theme),
+    minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'warning' },
     ...others
   })
