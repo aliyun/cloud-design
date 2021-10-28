@@ -5837,6 +5837,14 @@
     
     
     
+    --switch-size-m-width: var(--s-9, 36px);
+    
+    
+    
+    --switch-size-m-trigger: var(--s-4, 16px);
+    
+    
+    
     --switch-size-m-inner-icon: var(--s-4, 16px);
     
     
@@ -5918,14 +5926,6 @@
     
     
     --switch-rtl-on-shadow: var(--shadow-1-left, 0 0 0 #FFFFFF);
-    
-    
-    
-    --switch-size-m-width: var(--s-9, 36px);
-    
-    
-    
-    --switch-size-m-trigger: var(--s-4, 16px);
     
     
     /* ------------------------ button ------------------------ */
@@ -6065,10 +6065,6 @@
     
     
     --btn-warning-normal-color-hover: var(--color-error-5, #e15156);
-    
-    
-    
-    --btn-pure-normal-bg: var(--color-transparent, transparent);
     
     
     
@@ -6489,6 +6485,10 @@
     
     
     --btn-text-icon-l-margin: var(--s-1, 4px);
+    
+    
+    
+    --btn-pure-normal-bg: var(--color-fill1-1, #151515);
     
     
     /* ------------------------ balloon ------------------------ */
@@ -9519,14 +9519,6 @@
     
     
     
-    --message-notice-icon-content: var(--icon-content-warning-o-fill, "");
-    
-    
-    
-    --message-help-icon-content: var(--icon-content-quetion-o, "");
-    
-    
-    
     --message-size-m-icon: var(--icon-m, 20px);
     
     
@@ -9756,6 +9748,14 @@
     
     
     --message-loading-icon-content: var(--icon-content-loading, "");
+    
+    
+    
+    --message-notice-icon-content: var(--icon-content-warning, "");
+    
+    
+    
+    --message-help-icon-content: var(--icon-content-help-o, "");
     
     
     /* ------------------------ dialog ------------------------ */
@@ -10863,6 +10863,74 @@
     
     
     
+    --tag-fill-tail-color: var(--color-text1-2, #8A8A8A);
+    
+    
+    
+    --tag-fill-tail-color-hover: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --tag-checkable-fill-text-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --tag-checkable-fill-bg-color: var(--color-fill1-2, #383838);
+    
+    
+    
+    --tag-checkable-fill-border-color: var(--color-transparent, transparent);
+    
+    
+    
+    --tag-checkable-fill-text-color-hover: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --tag-checkable-fill-bg-color-hover: var(--color-fill1-5, #4D4D4D);
+    
+    
+    
+    --tag-checkable-fill-border-color-hover: var(--color-transparent, transparent);
+    
+    
+    
+    --tag-checkable-primary-text-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    
+    --tag-checkable-primary-bg-color: var(--color-notice-5, #007be9);
+    
+    
+    
+    --tag-checkable-primary-border-color: var(--color-transparent, transparent);
+    
+    
+    
+    --tag-checkable-primary-text-color-hover: var(--color-text1-4, #EAEAEA);
+    
+    
+    
+    --tag-checkable-primary-bg-color-hover: var(--color-notice-6, #0066CC);
+    
+    
+    
+    --tag-checkable-primary-border-color-hover: var(--color-transparent, transparent);
+    
+    
+    
+    --tag-closable-primary-fill-text-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --tag-closable-primary-fill-bg-color: var(--color-fill1-1, #151515);
+    
+    
+    
+    --tag-closable-primary-fill-text-color-hover: var(--color-text1-5, #a8a8a8);
+    
+    
+    
     --tag-size-l-spacing: var(--s-4, 16px);
     
     
@@ -11054,74 +11122,6 @@
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    
-    --tag-fill-tail-color: var(--color-text1-2, #8A8A8A);
-    
-    
-    
-    --tag-fill-tail-color-hover: var(--color-text1-5, #a8a8a8);
-    
-    
-    
-    --tag-checkable-fill-text-color: var(--color-text1-5, #a8a8a8);
-    
-    
-    
-    --tag-checkable-fill-bg-color: var(--color-fill1-2, #383838);
-    
-    
-    
-    --tag-checkable-fill-border-color: var(--color-transparent, transparent);
-    
-    
-    
-    --tag-checkable-fill-text-color-hover: var(--color-text1-5, #a8a8a8);
-    
-    
-    
-    --tag-checkable-fill-bg-color-hover: var(--color-fill1-5, #4D4D4D);
-    
-    
-    
-    --tag-checkable-fill-border-color-hover: var(--color-transparent, transparent);
-    
-    
-    
-    --tag-checkable-primary-text-color: var(--color-text1-4, #EAEAEA);
-    
-    
-    
-    --tag-checkable-primary-bg-color: var(--color-notice-5, #007be9);
-    
-    
-    
-    --tag-checkable-primary-border-color: var(--color-transparent, transparent);
-    
-    
-    
-    --tag-checkable-primary-text-color-hover: var(--color-text1-4, #EAEAEA);
-    
-    
-    
-    --tag-checkable-primary-bg-color-hover: var(--color-notice-6, #0066CC);
-    
-    
-    
-    --tag-checkable-primary-border-color-hover: var(--color-transparent, transparent);
-    
-    
-    
-    --tag-closable-primary-fill-text-color: var(--color-text1-5, #a8a8a8);
-    
-    
-    
-    --tag-closable-primary-fill-bg-color: var(--color-fill1-1, #151515);
-    
-    
-    
-    --tag-closable-primary-fill-text-color-hover: var(--color-text1-5, #a8a8a8);
-    
-    
     /* ------------------------ input ------------------------ */
     
     
@@ -11222,6 +11222,14 @@
     
     
     
+    --input-feedback-warning-color: var(--color-transparent, transparent);
+    
+    
+    
+    --input-feedback-warning-icon: var(--icon-content-warning-o-fill, "");
+    
+    
+    
     --input-border-width: var(--line-1, 1px);
     
     
@@ -11307,14 +11315,6 @@
     
     
     --input-feedback-clear-icon: var(--icon-content-delete-filling, "");
-    
-    
-    
-    --input-feedback-warning-color: var(--color-transparent, transparent);
-    
-    
-    
-    --input-feedback-warning-icon: var(--icon-content-warning-o-fill, "");
     
     
     /* ------------------------ form ------------------------ */
