@@ -32,6 +32,7 @@ const OverlayHOC = <T extends any>(
       <WrappedComponents
         ref={ref as any}
         align="tl bl"
+        shouldUpdatePosition
         offset={[0, defaultOffsetY]}
         {...props}
       />
