@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.10.22 (https://fusion.design)
- * @alifd/next@1.24.11 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.10.24 (https://fusion.design)
+ * @alifd/next@1.24.12 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -24532,8 +24532,8 @@ small {
       transition: all 0.2s ease; }
   .next-shell-light .next-shell-header .dock-trigger,
   .next-shell-light .next-shell-header .nav-trigger {
-    background: #FFFFFF;
-    background: var(--shell-light-header-background, #FFFFFF); }
+    background: #1F1F1F;
+    background: var(--shell-light-header-background, #1F1F1F); }
   .next-shell-light .next-shell-aside .local-nav-trigger {
     background: #262626;
     background: var(--shell-light-local-navigation-background, #262626); }
@@ -24541,18 +24541,18 @@ small {
     background: #FFFFFF;
     background: var(--shell-light-ancillary-background, #FFFFFF); }
   .next-shell-light .next-shell-header {
-    color: #000000;
-    color: var(--shell-light-header-color, #000000);
+    color: #EAEAEA;
+    color: var(--shell-light-header-color, #EAEAEA);
     height: 52px;
     height: var(--shell-light-header-height, 52px);
-    background: #FFFFFF;
-    background: var(--shell-light-header-background, #FFFFFF);
+    background: #1F1F1F;
+    background: var(--shell-light-header-background, #1F1F1F);
     border-bottom: 1px solid #262626;
     border-bottom: var(--shell-light-header-divider-size, 1px) var(--shell-light-header-divider-style, solid) var(--shell-light-header-divider-color, #262626);
-    -webkit-box-shadow: none;
-    -webkit-box-shadow: var(--shell-light-header-shadow, none);
-            box-shadow: none;
-            box-shadow: var(--shell-light-header-shadow, none);
+    -webkit-box-shadow: 0 0 0 #FFFFFF;
+    -webkit-box-shadow: var(--shell-light-header-shadow, 0 0 0 #FFFFFF);
+            box-shadow: 0 0 0 #FFFFFF;
+            box-shadow: var(--shell-light-header-shadow, 0 0 0 #FFFFFF);
     padding: 0 16px;
     padding: 0 var(--shell-light-header-paddingLeft, 16px); }
     .next-shell-light .next-shell-header .next-shell-navigation {
@@ -24581,8 +24581,8 @@ small {
     padding: 0 var(--shell-light-multitask-paddingLeft, 0px);
     overflow: auto; }
   .next-shell-light .next-shell-main {
-    background: #1F1F1F;
-    background: var(--shell-light-content-background, #1F1F1F); }
+    background: #151515;
+    background: var(--shell-light-content-background, #151515); }
     .next-shell-light .next-shell-main .next-shell-appbar {
       min-height: 48px;
       min-height: var(--shell-light-appbar-min-height, 48px);
@@ -24611,10 +24611,10 @@ small {
   .next-shell-light .next-shell-aside.next-shell-navigation {
     width: 168px;
     width: var(--shell-light-navigation-ver-width, 168px);
-    background: #FFFFFF;
-    background: var(--shell-light-navigation-ver-background, #FFFFFF);
-    border-right: 1px solid #262626;
-    border-right: var(--shell-light-navigation-ver-divider-size, 1px) var(--shell-light-navigation-ver-divider-style, solid) var(--shell-light-navigation-ver-divider-color, #262626);
+    background: #1F1F1F;
+    background: var(--shell-light-navigation-ver-background, #1F1F1F);
+    border-right: 0px solid #1F1F1F;
+    border-right: var(--shell-light-navigation-ver-divider-size, 0px) var(--shell-light-navigation-ver-divider-style, solid) var(--shell-light-navigation-ver-divider-color, #1F1F1F);
     -webkit-box-shadow: none;
     -webkit-box-shadow: var(--shell-light-navigation-ver-shadow, none);
             box-shadow: none;
@@ -24762,8 +24762,8 @@ small {
   .next-shell-dark .next-shell-aside.next-shell-navigation {
     width: 168px;
     width: var(--shell-dark-navigation-ver-width, 168px);
-    background: #EAEAEA;
-    background: var(--shell-dark-navigation-ver-background, #EAEAEA);
+    background: #1F1F1F;
+    background: var(--shell-dark-navigation-ver-background, #1F1F1F);
     border-right: 1px solid #262626;
     border-right: var(--shell-dark-navigation-ver-divider-size, 1px) var(--shell-dark-navigation-ver-divider-style, solid) var(--shell-dark-navigation-ver-divider-color, #262626);
     -webkit-box-shadow: none;
@@ -24913,8 +24913,8 @@ small {
   .next-shell-brand .next-shell-aside.next-shell-navigation {
     width: 168px;
     width: var(--shell-brand-navigation-ver-width, 168px);
-    background: #FFFFFF;
-    background: var(--shell-brand-navigation-ver-background, #FFFFFF);
+    background: #1F1F1F;
+    background: var(--shell-brand-navigation-ver-background, #1F1F1F);
     border-right: 1px solid #262626;
     border-right: var(--shell-brand-navigation-ver-divider-size, 1px) var(--shell-brand-navigation-ver-divider-style, solid) var(--shell-brand-navigation-ver-divider-color, #262626);
     -webkit-box-shadow: none;
@@ -25361,8 +25361,8 @@ h6.next-typography-title {
       border-top-width: 0; }
   .next-table th {
     padding: 0;
-    background: #262626;
-    background: var(--table-th-bg, #262626);
+    background: #1F1F1F;
+    background: var(--table-th-bg, #1F1F1F);
     color: #a8a8a8;
     color: var(--table-th-color, #a8a8a8);
     text-align: left;
@@ -25610,8 +25610,8 @@ h6.next-typography-title {
   .next-table-fixed table {
     table-layout: fixed; }
   .next-table-fixed .next-table-header {
-    background: #262626;
-    background: var(--table-th-bg, #262626); }
+    background: #1F1F1F;
+    background: var(--table-th-bg, #1F1F1F); }
   .next-table-fixed table tr td:first-child,
   .next-table-fixed table tr th:first-child {
     border-left-width: 0; }
@@ -25738,8 +25738,8 @@ h6.next-typography-title {
   border-bottom-right-radius: 0;
   border-bottom-right-radius: var(--table-header-corner-bottom, 0);
   width: 15px;
-  background: #262626;
-  background: var(--table-th-bg, #262626);
+  background: #1F1F1F;
+  background: var(--table-th-bg, #1F1F1F);
   position: absolute;
   right: 0;
   height: 100%;

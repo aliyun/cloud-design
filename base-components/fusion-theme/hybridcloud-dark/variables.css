@@ -6292,6 +6292,10 @@
     
     
     
+    --btn-pure-normal-bg: var(--color-fill1-1, #151515);
+    
+    
+    
     --btn-size-s-border-width: var(--line-1, 1px);
     
     
@@ -6485,10 +6489,6 @@
     
     
     --btn-text-icon-l-margin: var(--s-1, 4px);
-    
-    
-    
-    --btn-pure-normal-bg: var(--color-fill1-1, #151515);
     
     
     /* ------------------------ balloon ------------------------ */
@@ -9615,6 +9615,14 @@
     
     
     
+    --message-notice-icon-content: var(--icon-content-warning, "");
+    
+    
+    
+    --message-help-icon-content: var(--icon-content-help-o, "");
+    
+    
+    
     --message-size-m-border-width: var(--line-1, 1px);
     
     
@@ -9748,14 +9756,6 @@
     
     
     --message-loading-icon-content: var(--icon-content-loading, "");
-    
-    
-    
-    --message-notice-icon-content: var(--icon-content-warning, "");
-    
-    
-    
-    --message-help-icon-content: var(--icon-content-help-o, "");
     
     
     /* ------------------------ dialog ------------------------ */
@@ -12360,10 +12360,6 @@
     
     
     
-    --table-th-bg: var(--color-fill1-4, #262626);
-    
-    
-    
     --table-group-th-bg: var(--color-fill1-4, #262626);
     
     
@@ -12545,6 +12541,10 @@
     
     
     --table-expand-unfold-icon-content: var(--icon-content-minus, "");
+    
+    
+    
+    --table-th-bg: var(--color-fill1-3, #1F1F1F);
     
     
     /* ------------------------ collapse ------------------------ */
@@ -12978,19 +12978,7 @@
     
     
     
-    --shell-light-header-color: var(--color-black, #000000);
-    
-    
-    
     --shell-light-header-height: var(--s-13, 52px);
-    
-    
-    
-    --shell-light-header-background: var(--color-white, #FFFFFF);
-    
-    
-    
-    --shell-light-header-shadow: var(--shadow-zero, none);
     
     
     
@@ -13050,31 +13038,11 @@
     
     
     
-    --shell-light-navigation-ver-paddingTop: var(--s-2, 8px);
-    
-    
-    
     --shell-light-navigation-ver-paddingBottom: var(--s-2, 8px);
     
     
     
     --shell-light-navigation-ver-width-mini: var(--s-15, 60px);
-    
-    
-    
-    --shell-light-navigation-ver-background: var(--color-white, #FFFFFF);
-    
-    
-    
-    --shell-light-navigation-ver-divider-size: var(--line-1, 1px);
-    
-    
-    
-    --shell-light-navigation-ver-divider-style: var(--line-solid, solid);
-    
-    
-    
-    --shell-light-navigation-ver-divider-color: var(--color-line1-1, #262626);
     
     
     
@@ -13135,14 +13103,6 @@
     
     
     --shell-light-appbar-divider-color: var(--color-line1-1, #262626);
-    
-    
-    
-    --shell-light-content-background: var(--color-fill1-3, #1F1F1F);
-    
-    
-    
-    --shell-light-content-paddingLeft: var(--s-5, 20px);
     
     
     
@@ -13343,10 +13303,6 @@
     
     
     --shell-dark-navigation-ver-width-mini: var(--s-15, 60px);
-    
-    
-    
-    --shell-dark-navigation-ver-background: var(--color-text1-4, #EAEAEA);
     
     
     
@@ -13630,10 +13586,6 @@
     
     
     
-    --shell-brand-navigation-ver-background: var(--color-white, #FFFFFF);
-    
-    
-    
     --shell-brand-navigation-ver-divider-size: var(--line-1, 1px);
     
     
@@ -13827,6 +13779,54 @@
     
     
     --shell-brand-tooldock-item-background-active: var(--color-fill1-3, #1F1F1F);
+    
+    
+    
+    --shell-light-header-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    
+    --shell-light-header-background: var(--color-fill1-3, #1F1F1F);
+    
+    
+    
+    --shell-light-header-shadow: var(--shadow-1-down, 0 0 0 #FFFFFF);
+    
+    
+    
+    --shell-light-navigation-ver-paddingTop: var(--s-2, 8px);
+    
+    
+    
+    --shell-light-navigation-ver-background: var(--color-fill1-3, #1F1F1F);
+    
+    
+    
+    --shell-light-navigation-ver-divider-size: var(--line-zero, 0px);
+    
+    
+    
+    --shell-light-navigation-ver-divider-style: var(--line-solid, solid);
+    
+    
+    
+    --shell-light-navigation-ver-divider-color: var(--color-fill1-3, #1F1F1F);
+    
+    
+    
+    --shell-light-content-background: var(--color-fill1-1, #151515);
+    
+    
+    
+    --shell-light-content-paddingLeft: var(--s-5, 20px);
+    
+    
+    
+    --shell-dark-navigation-ver-background: var(--color-fill1-3, #1F1F1F);
+    
+    
+    
+    --shell-brand-navigation-ver-background: var(--color-fill1-3, #1F1F1F);
     
     
     /* ------------------------ avatar ------------------------ */
