@@ -17,7 +17,7 @@ export default function DemoComponent() {
       <Item key="2">Option 2</Item>
       <Item key="3">Option 3</Item>
       <Divider key="divider" />
-      <SubMenu key="sub-1" label="Popup menu 1">
+      <SubMenu key="sub-1" label="Popup menu 1 Popup menu 1 Popup menu 1 Popup menu 1 Popup menu 1 Popup menu 1">
         <Item key="popup-1-1">Popup option 1</Item>
         <Item key="popup-1-2">Popup option 2</Item>
       </SubMenu>
