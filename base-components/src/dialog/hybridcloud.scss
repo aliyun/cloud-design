@@ -2,7 +2,7 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
 .theme-hybridcloud.theme-hybridcloud,
 .theme-hybridcloud-dark.theme-hybridcloud-dark {
   .next-dialog-message.next-message.next-addon .next-message-content {
-    color: var(--color-text1-6, #666666);
+    color: var(--color-dialog-content);
     line-height: 1.5;
     margin-top: 16px;
   }
@@ -13,7 +13,7 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
 }
 
 .next-dialog-message.next-message.next-addon .next-message-content {
-  color: var(--color-text1-6, #666666);
+  color: var(--color-dialog-content);
   line-height: 1.5;
   margin-top: 16px;
 }
