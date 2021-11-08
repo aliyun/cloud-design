@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.10.27 (https://fusion.design)
- * @alifd/next@1.24.13 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.10.28 (https://fusion.design)
+ * @alifd/next@1.24.14 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -5715,6 +5715,9 @@ small {
     .next-input.next-small .next-input-control {
       padding-right: 4px;
       padding-right: var(--input-s-icon-padding-right, 4px); }
+    .next-input.next-small .next-input-inner-text {
+      padding-right: 4px;
+      padding-right: var(--input-s-icon-padding-right, 4px); }
     .next-input.next-small input {
       height: calc(24px - 1px*2);
       height: calc(var(--form-element-small-height, 24px) - var(--input-border-width, 1px)*2);
@@ -5769,6 +5772,9 @@ small {
     .next-input.next-medium .next-input-control {
       padding-right: 8px;
       padding-right: var(--input-m-icon-padding-right, 8px); }
+    .next-input.next-medium .next-input-inner-text {
+      padding-right: 8px;
+      padding-right: var(--input-m-icon-padding-right, 8px); }
     .next-input.next-medium input {
       height: calc(32px - 1px*2);
       height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2);
@@ -5821,6 +5827,9 @@ small {
       font-size: 14px;
       font-size: var(--form-element-large-font-size, 14px); }
     .next-input.next-large .next-input-control {
+      padding-right: 8px;
+      padding-right: var(--input-l-icon-padding-right, 8px); }
+    .next-input.next-large .next-input-inner-text {
       padding-right: 8px;
       padding-right: var(--input-l-icon-padding-right, 8px); }
     .next-input.next-large input {
@@ -5906,6 +5915,8 @@ small {
     cursor: pointer;
     color: #CCCCCC;
     color: var(--input-hint-hover-color, #CCCCCC); }
+  .next-input .next-input-hover-show {
+    opacity: 0; }
   .next-input:hover, .next-input.next-focus {
     border-color: #4D4D4D;
     border-color: var(--input-hover-border-color, #4D4D4D);
@@ -5915,6 +5926,8 @@ small {
       opacity: 1; }
       .next-input:hover .next-input-clear + .next-input-hint, .next-input.next-focus .next-input-clear + .next-input-hint {
         opacity: 0; }
+    .next-input:hover .next-input-hover-show, .next-input.next-focus .next-input-hover-show {
+      opacity: 1; }
   .next-input .next-input-clear:focus {
     opacity: 1; }
     .next-input .next-input-clear:focus + .next-input-hint {
@@ -8855,8 +8868,8 @@ small {
       position: relative;
       vertical-align: middle; }
   .next-dialog-quick .next-dialog-body {
-    padding: 16px 20px 16px 20px;
-    padding: var(--dialog-message-content-padding-top, 16px) var(--dialog-message-content-padding-left-right, 20px) var(--dialog-message-content-padding-bottom, 16px) var(--dialog-message-content-padding-left-right, 20px); }
+    padding: 20px 20px 0px 20px;
+    padding: var(--dialog-message-content-padding-top, 20px) var(--dialog-message-content-padding-left-right, 20px) var(--dialog-message-content-padding-bottom, 0px) var(--dialog-message-content-padding-left-right, 20px); }
   .next-dialog .next-dialog-message.next-message {
     min-width: 300px;
     padding: 0; }
@@ -26625,6 +26638,9 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
       .next-date-picker2-input.next-date-picker2-input-small .next-input-control {
         padding-right: 4px;
         padding-right: var(--input-s-icon-padding-right, 4px); }
+      .next-date-picker2-input.next-date-picker2-input-small .next-input-inner-text {
+        padding-right: 4px;
+        padding-right: var(--input-s-icon-padding-right, 4px); }
       .next-date-picker2-input.next-date-picker2-input-small input {
         height: calc(24px - 1px*2);
         height: calc(var(--form-element-small-height, 24px) - var(--input-border-width, 1px)*2);
@@ -26679,6 +26695,9 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
       .next-date-picker2-input.next-date-picker2-input-medium .next-input-control {
         padding-right: 8px;
         padding-right: var(--input-m-icon-padding-right, 8px); }
+      .next-date-picker2-input.next-date-picker2-input-medium .next-input-inner-text {
+        padding-right: 8px;
+        padding-right: var(--input-m-icon-padding-right, 8px); }
       .next-date-picker2-input.next-date-picker2-input-medium input {
         height: calc(32px - 1px*2);
         height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2);
@@ -26731,6 +26750,9 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
         font-size: 14px;
         font-size: var(--form-element-large-font-size, 14px); }
       .next-date-picker2-input.next-date-picker2-input-large .next-input-control {
+        padding-right: 8px;
+        padding-right: var(--input-l-icon-padding-right, 8px); }
+      .next-date-picker2-input.next-date-picker2-input-large .next-input-inner-text {
         padding-right: 8px;
         padding-right: var(--input-l-icon-padding-right, 8px); }
       .next-date-picker2-input.next-date-picker2-input-large input {

@@ -6292,6 +6292,10 @@
     
     
     
+    --btn-pure-normal-bg: var(--color-transparent, transparent);
+    
+    
+    
     --btn-size-s-border-width: var(--line-1, 1px);
     
     
@@ -6487,10 +6491,6 @@
     --btn-text-icon-l-margin: var(--s-1, 4px);
     
     
-    
-    --btn-pure-normal-bg: var(--color-transparent, transparent);
-    
-    
     /* ------------------------ balloon ------------------------ */
     
     
@@ -6591,6 +6591,14 @@
     
     
     
+    --balloon-normal-color-bg: var(--color-fill1-4, #262626);
+    
+    
+    
+    --balloon-tooltip-color-bg: var(--color-fill1-4, #262626);
+    
+    
+    
     --balloon-size-max-width: 300px;
     
     
@@ -6652,14 +6660,6 @@
     
     
     --balloon-tooltip-border-style: var(--line-solid, solid);
-    
-    
-    
-    --balloon-normal-color-bg: var(--color-fill1-4, #262626);
-    
-    
-    
-    --balloon-tooltip-color-bg: var(--color-fill1-4, #262626);
     
     
     /* ------------------------ pagination ------------------------ */
@@ -6779,6 +6779,10 @@
     
     
     --pagination-arrow-hover-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --pagination-item-current-hover-bg: var(--color-fill1-1, #151515);
     
     
     
@@ -6911,10 +6915,6 @@
     
     
     --pagination-arrow-hover-color-noboder: var(--color-brand1-6, #007be9);
-    
-    
-    
-    --pagination-item-current-hover-bg: var(--color-fill1-1, #151515);
     
     
     /* ------------------------ radio ------------------------ */
@@ -9802,14 +9802,6 @@
     
     
     
-    --dialog-message-content-padding-top: var(--s-4, 16px);
-    
-    
-    
-    --dialog-message-content-padding-bottom: var(--s-4, 16px);
-    
-    
-    
     --dialog-content-padding-top: var(--s-1, 4px);
     
     
@@ -9907,6 +9899,14 @@
     
     
     --dialog-close-bg-hovered: var(--color-transparent, transparent);
+    
+    
+    
+    --dialog-message-content-padding-top: var(--s-5, 20px);
+    
+    
+    
+    --dialog-message-content-padding-bottom: var(--s-zero, 0px);
     
     
     /* ------------------------ number-picker ------------------------ */
@@ -10915,6 +10915,22 @@
     
     
     
+    --tag-bordered-border-color: var(--color-line1-2, #383838);
+    
+    
+    
+    --tag-bordered-border-color-hover: var(--color-line1-3, #4d4d4d);
+    
+    
+    
+    --tag-bordered-bg: var(--color-fill1-3, #1F1F1F);
+    
+    
+    
+    --tag-bordered-bg-hover: var(--color-fill1-4, #262626);
+    
+    
+    
     --tag-size-l-spacing: var(--s-4, 16px);
     
     
@@ -11106,22 +11122,6 @@
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #6B6B6B);
     
     
-    
-    --tag-bordered-border-color: var(--color-line1-2, #383838);
-    
-    
-    
-    --tag-bordered-border-color-hover: var(--color-line1-3, #4d4d4d);
-    
-    
-    
-    --tag-bordered-bg: var(--color-fill1-3, #1F1F1F);
-    
-    
-    
-    --tag-bordered-bg-hover: var(--color-fill1-4, #262626);
-    
-    
     /* ------------------------ input ------------------------ */
     
     
@@ -11214,6 +11214,22 @@
     
     
     
+    --input-border-color: var(--color-fill1-2, #383838);
+    
+    
+    
+    --input-bg-color: var(--color-fill1-1, #151515);
+    
+    
+    
+    --input-hover-border-color: var(--color-fill1-5, #4D4D4D);
+    
+    
+    
+    --input-focus-border-color: var(--color-fill1-5, #4D4D4D);
+    
+    
+    
     --input-border-width: var(--line-1, 1px);
     
     
@@ -11299,22 +11315,6 @@
     
     
     --input-feedback-clear-icon: var(--icon-content-delete-filling, "");
-    
-    
-    
-    --input-border-color: var(--color-fill1-2, #383838);
-    
-    
-    
-    --input-bg-color: var(--color-fill1-1, #151515);
-    
-    
-    
-    --input-hover-border-color: var(--color-fill1-5, #4D4D4D);
-    
-    
-    
-    --input-focus-border-color: var(--color-fill1-5, #4D4D4D);
     
     
     /* ------------------------ form ------------------------ */
@@ -12380,6 +12380,30 @@
     
     
     
+    --table-row-bg: var(--color-transparent, transparent);
+    
+    
+    
+    --table-row-hover-bg: var(--color-fill1-4, #262626);
+    
+    
+    
+    --table-row-selected-bg: var(--color-fill1-2, #383838);
+    
+    
+    
+    --table-th-bg: var(--color-fill1-3, #1F1F1F);
+    
+    
+    
+    --table-normal-border-color: var(--color-fill1-3, #1F1F1F);
+    
+    
+    
+    --table-normal-border-style: var(--line-solid, solid);
+    
+    
+    
     --table-normal-border-width: var(--line-1, 1px);
     
     
@@ -12472,10 +12496,6 @@
     
     
     
-    --table-normal-border-style: var(--line-solid, solid);
-    
-    
-    
     --table-sort-color: var(--color-text1-4, #EAEAEA);
     
     
@@ -12525,26 +12545,6 @@
     
     
     --table-expand-unfold-icon-content: var(--icon-content-minus, "");
-    
-    
-    
-    --table-row-bg: var(--color-transparent, transparent);
-    
-    
-    
-    --table-row-hover-bg: var(--color-fill1-4, #262626);
-    
-    
-    
-    --table-row-selected-bg: var(--color-fill1-2, #383838);
-    
-    
-    
-    --table-th-bg: var(--color-fill1-3, #1F1F1F);
-    
-    
-    
-    --table-normal-border-color: var(--color-fill1-3, #1F1F1F);
     
     
     /* ------------------------ collapse ------------------------ */

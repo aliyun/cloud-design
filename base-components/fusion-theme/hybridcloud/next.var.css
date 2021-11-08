@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.18.6 (https://fusion.design)
- * @alifd/next@1.24.10 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.18.8 (https://fusion.design)
+ * @alifd/next@1.24.14 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -5715,6 +5715,9 @@ small {
     .next-input.next-small .next-input-control {
       padding-right: 4px;
       padding-right: var(--input-s-icon-padding-right, 4px); }
+    .next-input.next-small .next-input-inner-text {
+      padding-right: 4px;
+      padding-right: var(--input-s-icon-padding-right, 4px); }
     .next-input.next-small input {
       height: calc(24px - 1px*2);
       height: calc(var(--form-element-small-height, 24px) - var(--input-border-width, 1px)*2);
@@ -5769,6 +5772,9 @@ small {
     .next-input.next-medium .next-input-control {
       padding-right: 8px;
       padding-right: var(--input-m-icon-padding-right, 8px); }
+    .next-input.next-medium .next-input-inner-text {
+      padding-right: 8px;
+      padding-right: var(--input-m-icon-padding-right, 8px); }
     .next-input.next-medium input {
       height: calc(32px - 1px*2);
       height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2);
@@ -5821,6 +5827,9 @@ small {
       font-size: 14px;
       font-size: var(--form-element-large-font-size, 14px); }
     .next-input.next-large .next-input-control {
+      padding-right: 8px;
+      padding-right: var(--input-l-icon-padding-right, 8px); }
+    .next-input.next-large .next-input-inner-text {
       padding-right: 8px;
       padding-right: var(--input-l-icon-padding-right, 8px); }
     .next-input.next-large input {
@@ -5906,6 +5915,8 @@ small {
     cursor: pointer;
     color: #848484;
     color: var(--input-hint-hover-color, #848484); }
+  .next-input .next-input-hover-show {
+    opacity: 0; }
   .next-input:hover, .next-input.next-focus {
     border-color: #CCCCCC;
     border-color: var(--input-hover-border-color, #CCCCCC);
@@ -5915,6 +5926,8 @@ small {
       opacity: 1; }
       .next-input:hover .next-input-clear + .next-input-hint, .next-input.next-focus .next-input-clear + .next-input-hint {
         opacity: 0; }
+    .next-input:hover .next-input-hover-show, .next-input.next-focus .next-input-hover-show {
+      opacity: 1; }
   .next-input .next-input-clear:focus {
     opacity: 1; }
     .next-input .next-input-clear:focus + .next-input-hint {
@@ -8855,8 +8868,8 @@ small {
       position: relative;
       vertical-align: middle; }
   .next-dialog-quick .next-dialog-body {
-    padding: 16px 20px 16px 20px;
-    padding: var(--dialog-message-content-padding-top, 16px) var(--dialog-message-content-padding-left-right, 20px) var(--dialog-message-content-padding-bottom, 16px) var(--dialog-message-content-padding-left-right, 20px); }
+    padding: 20px 20px 0px 20px;
+    padding: var(--dialog-message-content-padding-top, 20px) var(--dialog-message-content-padding-left-right, 20px) var(--dialog-message-content-padding-bottom, 0px) var(--dialog-message-content-padding-left-right, 20px); }
   .next-dialog .next-dialog-message.next-message {
     min-width: 300px;
     padding: 0; }
@@ -13552,7 +13565,7 @@ small {
       .next-select-multiple.next-small .next-tag-body, .next-select-tag.next-small .next-tag-body {
         line-height: 14px;
         line-height: var(--select-s-lineheight, 14px); }
-    .next-select-multiple.next-small .next-input-label, .next-select-multiple.next-small .next-input-control, .next-select-multiple.next-small .next-select-tag-compact, .next-select-tag.next-small .next-input-label, .next-select-tag.next-small .next-input-control, .next-select-tag.next-small .next-select-tag-compact {
+    .next-select-multiple.next-small .next-input-label, .next-select-multiple.next-small .next-input-inner, .next-select-multiple.next-small .next-input-control, .next-select-multiple.next-small .next-select-tag-compact, .next-select-tag.next-small .next-input-label, .next-select-tag.next-small .next-input-inner, .next-select-tag.next-small .next-input-control, .next-select-tag.next-small .next-select-tag-compact {
       line-height: calc(24px - 2px);
       line-height: calc(var(--form-element-small-height, 24px) - 2px); }
     .next-select-multiple.next-medium .next-select-values, .next-select-tag.next-medium .next-select-values {
@@ -13577,7 +13590,7 @@ small {
       .next-select-multiple.next-medium .next-tag .next-tag-body, .next-select-multiple.next-medium .next-tag .next-tag-close-btn, .next-select-tag.next-medium .next-tag .next-tag-body, .next-select-tag.next-medium .next-tag .next-tag-close-btn {
         line-height: calc(20px - 20px/2*2 + 18px);
         line-height: calc(var(--select-m-lineheight, 20px) - var(--select-m-lineheight, 20px)/2*2 + 18px); }
-    .next-select-multiple.next-medium .next-input-label, .next-select-multiple.next-medium .next-input-control, .next-select-multiple.next-medium .next-select-tag-compact, .next-select-tag.next-medium .next-input-label, .next-select-tag.next-medium .next-input-control, .next-select-tag.next-medium .next-select-tag-compact {
+    .next-select-multiple.next-medium .next-input-label, .next-select-multiple.next-medium .next-input-inner, .next-select-multiple.next-medium .next-input-control, .next-select-multiple.next-medium .next-select-tag-compact, .next-select-tag.next-medium .next-input-label, .next-select-tag.next-medium .next-input-inner, .next-select-tag.next-medium .next-input-control, .next-select-tag.next-medium .next-select-tag-compact {
       line-height: calc(32px - 2px);
       line-height: calc(var(--form-element-medium-height, 32px) - 2px); }
     .next-select-multiple.next-large .next-select-values, .next-select-tag.next-large .next-select-values {
@@ -13602,7 +13615,7 @@ small {
       .next-select-multiple.next-large .next-tag .next-tag-body, .next-select-multiple.next-large .next-tag .next-tag-close-btn, .next-select-tag.next-large .next-tag .next-tag-body, .next-select-tag.next-large .next-tag .next-tag-close-btn {
         line-height: calc(24px - 24px/2*2 + 18px);
         line-height: calc(var(--select-l-lineheight, 24px) - var(--select-l-lineheight, 24px)/2*2 + 18px); }
-    .next-select-multiple.next-large .next-input-label, .next-select-multiple.next-large .next-input-control, .next-select-multiple.next-large .next-select-tag-compact, .next-select-tag.next-large .next-input-label, .next-select-tag.next-large .next-input-control, .next-select-tag.next-large .next-select-tag-compact {
+    .next-select-multiple.next-large .next-input-label, .next-select-multiple.next-large .next-input-inner, .next-select-multiple.next-large .next-input-control, .next-select-multiple.next-large .next-select-tag-compact, .next-select-tag.next-large .next-input-label, .next-select-tag.next-large .next-input-inner, .next-select-tag.next-large .next-input-control, .next-select-tag.next-large .next-select-tag-compact {
       line-height: calc(36px - 2px);
       line-height: calc(var(--form-element-large-height, 36px) - 2px); }
   .next-select-auto-complete {
@@ -26603,7 +26616,8 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
     background-color: var(--input-bg-color, #FFFFFF); }
     .next-date-picker2-input .next-input {
       border: none;
-      width: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
       height: 100%; }
       .next-date-picker2-input .next-input input {
         height: 100%;
@@ -26622,6 +26636,9 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
         font-size: 12px;
         font-size: var(--form-element-small-font-size, 12px); }
       .next-date-picker2-input.next-date-picker2-input-small .next-input-control {
+        padding-right: 4px;
+        padding-right: var(--input-s-icon-padding-right, 4px); }
+      .next-date-picker2-input.next-date-picker2-input-small .next-input-inner-text {
         padding-right: 4px;
         padding-right: var(--input-s-icon-padding-right, 4px); }
       .next-date-picker2-input.next-date-picker2-input-small input {
@@ -26678,6 +26695,9 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
       .next-date-picker2-input.next-date-picker2-input-medium .next-input-control {
         padding-right: 8px;
         padding-right: var(--input-m-icon-padding-right, 8px); }
+      .next-date-picker2-input.next-date-picker2-input-medium .next-input-inner-text {
+        padding-right: 8px;
+        padding-right: var(--input-m-icon-padding-right, 8px); }
       .next-date-picker2-input.next-date-picker2-input-medium input {
         height: calc(32px - 1px*2);
         height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2);
@@ -26730,6 +26750,9 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
         font-size: 14px;
         font-size: var(--form-element-large-font-size, 14px); }
       .next-date-picker2-input.next-date-picker2-input-large .next-input-control {
+        padding-right: 8px;
+        padding-right: var(--input-l-icon-padding-right, 8px); }
+      .next-date-picker2-input.next-date-picker2-input-large .next-input-inner-text {
         padding-right: 8px;
         padding-right: var(--input-l-icon-padding-right, 8px); }
       .next-date-picker2-input.next-date-picker2-input-large input {
