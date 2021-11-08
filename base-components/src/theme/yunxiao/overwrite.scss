@@ -38,3 +38,18 @@ body {
   font-variant: tabular-nums;
   font-feature-settings: "tnum","tnum";
 }
+
+// 谷歌浏览器
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #cecece;
+}
+* {
+  // 火狐浏览器
+  scrollbar-color: light;
+  scrollbar-width: thin;
+}

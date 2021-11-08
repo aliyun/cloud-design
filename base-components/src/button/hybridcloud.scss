@@ -9,5 +9,19 @@
       color: var(--color-fill1-6, #848484);
     }
   }
+  &:hover {
+    &.next-btn-text {
+      i {
+        color: var(--color-brand1-5);
+      }
+    }
+  }
+  &:focus {
+    &.next-btn-text {
+      i {
+        color: var(--color-brand1-7);
+      }
+    }
+  }
 }
 
