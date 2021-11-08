@@ -111,16 +111,5 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
 }
 
 .next-dialog-body {
-  &::-webkit-scrollbar {
-    width: var(--scrollbar-width, 4px);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-thumb-bg, #6b6b6b);
-    border-radius: var(--scrollbar-track-border-radius, 3px);
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: var(--scrollbar-track-bg, #303030);
-  }
+  @include hybridcloud-scrollbar
 }

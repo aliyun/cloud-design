@@ -1,5 +1,4 @@
 // 混合云亮色主题独有样式覆盖
-
 @import '../../button/hybridcloud.scss';
 @import '../../checkbox/hybridcloud.scss';
 @import '../../menu/custom.scss';
@@ -74,19 +73,27 @@ h6 {
   font-size: 12px;
 }
 
+$overlay-prefix: '.' + $css-prefix + 'overlay';
+#{$overlay-prefix}-wrapper #{$overlay-prefix}-inner {
+  @include hybridcloud-scrollbar;
+}
+
 ::-webkit-scrollbar {
-  width: var(--global-scrollbar-width, 6px);
-  height: var(--global-scrollbar-height, 6px);
+  width: 14px;
+  height: 14px;
 }
-
-::-webkit-scrollbar-track {
-  opacity: 0.5;
-  background: var(--scrollbar-track-bg, transparent);
-  border-radius: var(--scrollbar-track-border-radius, 3px);
-}
-
 ::-webkit-scrollbar-thumb {
-  opacity: 0.5;
-  background: var(--scrollbar-thumb-bg, #ccc);
-  border-radius: var(--scrollbar-thumb-border-radius, 3px);
+  border-color: transparent;
+  border-style: solid;
+  border-width: 4px;
+  background-clip: content-box;
+  border-radius: 7px;
+  background-color: var(--scrollbar-thumb-bg);
+  &:hover {
+    border-width: 3px;
+    background-color: var(--scrollbar-thumb-hover-bg); 
+  }
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
