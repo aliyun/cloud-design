@@ -105,3 +105,8 @@ $overlay-prefix: '.' + $css-prefix + 'overlay';
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
+.isWindows.isWindows {
+  // 针对 windows 字重做特殊处理
+  --font-weight-medium: 600;
+}

@@ -51,6 +51,6 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
     line-height: 1.5;
   }
   .next-dialog-header {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium, 500);
   }
 }

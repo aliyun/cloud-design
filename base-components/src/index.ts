@@ -3,6 +3,7 @@ import zhcn from './locale/zh-cn'
 import zhhk from './locale/zh-hk'
 import zhtw from './locale/zh-tw'
 import enus from './locale/en-us'
+import './judge-os'
 
 const lang = ConfigProvider.getLanguage()
 switch (lang) {
