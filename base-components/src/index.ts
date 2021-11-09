@@ -3,7 +3,9 @@ import zhcn from './locale/zh-cn'
 import zhhk from './locale/zh-hk'
 import zhtw from './locale/zh-tw'
 import enus from './locale/en-us'
-import './judge-os'
+import judgeOs from './judge-os'
+
+judgeOs()
 
 const lang = ConfigProvider.getLanguage()
 switch (lang) {
@@ -84,4 +86,4 @@ export { default as Avatar } from './avatar'
 export { default as ResponsiveGrid } from './responsive-grid'
 export { default as Box } from './box'
 export { default as List } from './list'
-export const version = '1.2.13'
+export const version = '1.2.14'

@@ -1,5 +1,5 @@
 // 判断操作系统，如果是 windows 的话在 body 上加一个类名用来区分
-export default (() => {
+const judgeOs = () => {
   if (window && window.navigator) {
     const agent = navigator?.userAgent?.toLowerCase()
     if (
@@ -14,7 +14,6 @@ export default (() => {
         }
       }
     } else if (/macintosh|mac os x/i.test(navigator?.userAgent)) {
-      console.log('isMac')
       if (window.document && window.document.body) {
         if (!document.body?.classList?.contains('isMac')) {
           document.body.classList.add('isMac')
@@ -22,4 +21,6 @@ export default (() => {
       }
     }
   }
-})()
+}
+
+export default judgeOs
