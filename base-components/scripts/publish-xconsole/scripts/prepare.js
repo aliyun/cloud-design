@@ -106,6 +106,27 @@ fs.writeFileSync(
     )
   ])
 
+  await Promise.all([
+    fs.copy(
+      path.join(esmDir, 'index-console-components.js'),
+      path.join(esmDir, 'index.js'),
+      {
+        overwrite: true,
+      }
+    ),
+    fs.copy(
+      path.join(libDir, 'index-console-components.js'),
+      path.join(libDir, 'index.js'),
+      {
+        overwrite: true,
+      }
+    )]
+  )
+
+  rimraf.sync(path.join(libDir, 'index-console-components.js'))
+  rimraf.sync(path.join(libDir, 'index-console-components.d.ts'))
+  rimraf.sync(path.join(esmDir, 'index-console-components.js'))
+  rimraf.sync(path.join(esmDir, 'index-console-components.d.ts'))
   // 将业务组件的cssVar加入组件库css中
   // 从而用户无需自己引入
   const appendXconsoleCssVar = [
