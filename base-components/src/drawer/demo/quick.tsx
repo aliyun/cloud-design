@@ -13,12 +13,11 @@ import {
   Box,
   Message
 } from '@alicloudfe/components'
-import { quickShowDrawerProps } from '../../../types/drawer'
 
 let onHideA = null
 let onHideB = null
 
-const DrawerBProps: quickShowDrawerProps = {
+const DrawerBProps = {
   title: 'AlertB',
   size: 'mini',
   onOk: () => {
@@ -41,7 +40,7 @@ const DrawerBProps: quickShowDrawerProps = {
 
 export default function DemoComponent() {
   const [c, setC] = React.useState(<div>信息超过一屏的Drawer</div>)
-  const DrawerAProps: quickShowDrawerProps = {
+  const DrawerAProps = {
     title: 'AlertA',
     size: 'small',
     onOk: () => {

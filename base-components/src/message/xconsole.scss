@@ -37,7 +37,6 @@ $message-cls-name: '#{$css-prefix}message';
 
     .#{$message-cls-name}-symbol {
       line-height: var(--message-line-height, 21px);
-      margin-right: 4px;
       &:before {
         font-size: 14px;
         width: 14px;
@@ -53,13 +52,13 @@ $message-cls-name: '#{$css-prefix}message';
     }
 
     .#{$message-cls-name}-content {
-      line-height: 20px;
+      line-height: var(--message-line-height, 20px);
       margin-top: 0;
     }
 
     &.#{$css-prefix}only-content {
       .#{$message-cls-name}-symbol {
-        line-height: 19px;
+        line-height: var(--message-line-height, 19px);
 
         &:before {
           font-size: 14px;
@@ -69,7 +68,7 @@ $message-cls-name: '#{$css-prefix}message';
       }
 
       .#{$message-cls-name}-content {
-        line-height: 20px;
+        line-height: var(--message-line-height, 20px);
       }
     }
   }
