@@ -38,6 +38,16 @@ const popupShow = () => {
   })
 }
 
+const popupCustom = () => {
+  const dialog = Dialog.show({
+    title: 'Custom',
+    content: 'custom content custom content...',
+    type: 'confirm',
+    onOk: () => console.log('ok'),
+    onCancel: () => console.log('cancel')
+  })
+}
+
 const popupCustomIcon = () => {
   Dialog.confirm({
     title: 'Confirm',
@@ -58,6 +68,7 @@ export default function DemoComponent() {
         <Button onClick={popupConfirm}>Confirm</Button>
         <Button onClick={popupShow}>Show</Button>
         <Button onClick={popupCustomIcon}>Custom Icon</Button>
+        <Button onClick={popupCustom}>show error</Button>
       </Box>
     </ConfigProvider>
   )

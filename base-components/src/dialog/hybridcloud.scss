@@ -26,10 +26,10 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
 .theme-hybridcloud,
 .theme-hybridcloud-dark,
 :not(.theme-yunxiao),
-:not(.theme-yunxiao-dark){
+:not(.theme-yunxiao-dark) {
   #{$dialog-prefix} {
     min-width: 400px;
-    &:not(#{$dialog-prefix}-quick:not(.quick-show)) {
+    &:not(#{$dialog-prefix}-quick:not(.quick-show)):not(.quick-show-confirm-or-alert) {
       --dialog-close-top: 14px;
       #{$dialog-prefix}-header {
         --dialog-title-padding-bottom: 12px;
@@ -110,6 +110,19 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
   }
 }
 
+// 使用.show调用的confirm和alert
+.next-dialog.next-closeable.next-dialog-quick.quick-show-confirm-or-alert {
+  .next-dialog-close {
+    --dialog-close-top: 21px;
+  }
+}
+// 使用.show调用的confirm和alert
+.next-dialog-quick.quick-show.quick-show-confirm-or-alert .next-dialog-body {
+  padding: var(--dialog-message-content-padding-top, 20px)
+    var(--dialog-message-content-padding-left-right, 20px)
+    var(--dialog-message-content-padding-bottom, 0px)
+    var(--dialog-message-content-padding-left-right, 20px);
+}
 .next-dialog-body {
-  @include hybridcloud-scrollbar
+  @include hybridcloud-scrollbar;
 }
