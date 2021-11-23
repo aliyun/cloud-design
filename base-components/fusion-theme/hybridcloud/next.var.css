@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.18.9 (https://fusion.design)
- * @alifd/next@1.24.15 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.18.10 (https://fusion.design)
+ * @alifd/next@1.25.0 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -8873,6 +8873,54 @@ small {
   .next-dialog .next-dialog-message.next-message {
     min-width: 300px;
     padding: 0; }
+
+.next-dialog-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto; }
+
+.next-dialog-inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 100px;
+  pointer-events: none;
+  padding-bottom: 24px; }
+
+.next-dialog-v2 {
+  pointer-events: auto;
+  margin: 0 auto; }
+  .next-dialog-v2 .next-dialog-header {
+    word-break: break-word;
+    padding-right: calc(20px*2 + 16px);
+    padding-right: calc(var(--dialog-close-right, 20px)*2 + var(--dialog-close-width, 16px)); }
+  .next-dialog-v2 .next-dialog-body {
+    padding-right: calc(20px*2 + 16px);
+    padding-right: calc(var(--dialog-close-right, 20px)*2 + var(--dialog-close-width, 16px)); }
+  .next-dialog-v2 .next-dialog-header + .next-dialog-body {
+    padding: 16px 20px 20px 20px;
+    padding: var(--dialog-content-padding-top, 16px) var(--dialog-content-padding-left-right, 20px) var(--dialog-content-padding-bottom, 20px) var(--dialog-content-padding-left-right, 20px); }
+
+.next-dialog.next-dialog-v2 {
+  position: relative; }
+
+.next-dialog-centered {
+  text-align: center; }
+  .next-dialog-centered::before {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    content: ''; }
+  .next-dialog-centered .next-dialog-v2 {
+    margin: 40px 0;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle; }
 
 .next-drawer {
   -webkit-box-sizing: border-box;
@@ -26338,6 +26386,8 @@ div[dir="rtl"].next-calendar2-fullscreen .next-calendar2-table th {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
+  .next-time-picker2-panel-range .next-time-picker2-panel-list:last-of-type {
+    margin-left: 20px; }
 
 .next-time-picker2-footer {
   width: -webkit-min-content;
@@ -26382,6 +26432,7 @@ div[dir="rtl"].next-calendar2-fullscreen .next-calendar2-table th {
   .next-time-picker2-wrapper {
     padding: 4px 0; }
   .next-time-picker2-body {
+    display: block;
     overflow: hidden;
     border: 0px solid #eaeaea;
     border: var(--popup-local-border-width, 0px) var(--popup-local-border-style, solid) var(--popup-local-border-color, #eaeaea);
@@ -26395,6 +26446,233 @@ div[dir="rtl"].next-calendar2-fullscreen .next-calendar2-table th {
   .next-time-picker2-symbol-clock-icon::before {
     content: "\E621";
     content: var(--icon-content-clock, "\E621"); }
+  .next-time-picker2-input {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    outline: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #D9D9D9;
+    border: var(--input-border-width, 1px) solid var(--input-border-color, #D9D9D9);
+    vertical-align: middle;
+    width: inherit; }
+    .next-time-picker2-input .next-input {
+      border: none;
+      width: 100%;
+      height: 100%; }
+      .next-time-picker2-input .next-input input {
+        height: 100%; }
+    .next-time-picker2-input.next-time-picker2-input-small {
+      height: 24px;
+      height: var(--form-element-small-height, 24px);
+      border-radius: 2px;
+      border-radius: var(--form-element-small-corner, 2px); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-label {
+        padding-left: 8px;
+        padding-left: var(--input-s-label-padding-left, 8px);
+        font-size: 12px;
+        font-size: var(--form-element-small-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-inner {
+        font-size: 12px;
+        font-size: var(--form-element-small-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-control {
+        padding-right: 4px;
+        padding-right: var(--input-s-icon-padding-right, 4px); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-inner-text {
+        padding-right: 4px;
+        padding-right: var(--input-s-icon-padding-right, 4px); }
+      .next-time-picker2-input.next-time-picker2-input-small input {
+        height: calc(24px - 1px*2);
+        height: calc(var(--form-element-small-height, 24px) - var(--input-border-width, 1px)*2);
+        line-height: calc(24px - 1px*2) \0;
+        line-height: calc(var(--form-element-small-height, 24px) - var(--input-border-width, 1px)*2) \0;
+        padding: 0 4px;
+        padding: 0 var(--input-s-padding, 4px);
+        font-size: 12px;
+        font-size: var(--form-element-small-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-small input::-webkit-input-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-small-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-small input::-moz-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-small-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-small input::-ms-input-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-small-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-small input::placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-small-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-text-field {
+        padding: 0 4px;
+        padding: 0 var(--input-s-padding, 4px);
+        font-size: 12px;
+        font-size: var(--form-element-small-font-size, 12px);
+        height: calc(24px - 1px*2);
+        height: calc(var(--form-element-small-height, 24px) - var(--input-border-width, 1px)*2);
+        line-height: calc(24px - 1px*2);
+        line-height: calc(var(--form-element-small-height, 24px) - var(--input-border-width, 1px)*2); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-icon:before,
+      .next-time-picker2-input.next-time-picker2-input-small .next-icon .next-icon-remote {
+        width: 12px;
+        font-size: 12px;
+        line-height: inherit; }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-control {
+        border-radius: 0 2px 2px 0;
+        border-radius: 0 var(--form-element-small-corner, 2px) var(--form-element-small-corner, 2px) 0; }
+    .next-time-picker2-input.next-time-picker2-input-medium {
+      height: 32px;
+      height: var(--form-element-medium-height, 32px);
+      border-radius: 2px;
+      border-radius: var(--form-element-medium-corner, 2px); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-label {
+        padding-left: 8px;
+        padding-left: var(--input-m-label-padding-left, 8px);
+        font-size: 12px;
+        font-size: var(--form-element-medium-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-inner {
+        font-size: 12px;
+        font-size: var(--form-element-medium-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-control {
+        padding-right: 8px;
+        padding-right: var(--input-m-icon-padding-right, 8px); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-inner-text {
+        padding-right: 8px;
+        padding-right: var(--input-m-icon-padding-right, 8px); }
+      .next-time-picker2-input.next-time-picker2-input-medium input {
+        height: calc(32px - 1px*2);
+        height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2);
+        line-height: calc(32px - 1px*2) \0;
+        line-height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2) \0;
+        padding: 0 8px;
+        padding: 0 var(--input-m-padding, 8px);
+        font-size: 12px;
+        font-size: var(--form-element-medium-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-medium input::-webkit-input-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-medium-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-medium input::-moz-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-medium-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-medium input::-ms-input-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-medium-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-medium input::placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-medium-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-text-field {
+        padding: 0 8px;
+        padding: 0 var(--input-m-padding, 8px);
+        font-size: 12px;
+        font-size: var(--form-element-medium-font-size, 12px);
+        height: calc(32px - 1px*2);
+        height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2);
+        line-height: calc(32px - 1px*2);
+        line-height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-icon:before,
+      .next-time-picker2-input.next-time-picker2-input-medium .next-icon .next-icon-remote {
+        width: 16px;
+        font-size: 16px;
+        line-height: inherit; }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-control {
+        border-radius: 0 2px 2px 0;
+        border-radius: 0 var(--form-element-medium-corner, 2px) var(--form-element-medium-corner, 2px) 0; }
+    .next-time-picker2-input.next-time-picker2-input-large {
+      height: 36px;
+      height: var(--form-element-large-height, 36px);
+      border-radius: 2px;
+      border-radius: var(--form-element-large-corner, 2px); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-label {
+        padding-left: 12px;
+        padding-left: var(--input-l-label-padding-left, 12px);
+        font-size: 14px;
+        font-size: var(--form-element-large-font-size, 14px); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-inner {
+        font-size: 14px;
+        font-size: var(--form-element-large-font-size, 14px); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-control {
+        padding-right: 8px;
+        padding-right: var(--input-l-icon-padding-right, 8px); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-inner-text {
+        padding-right: 8px;
+        padding-right: var(--input-l-icon-padding-right, 8px); }
+      .next-time-picker2-input.next-time-picker2-input-large input {
+        height: calc(36px - 1px*2);
+        height: calc(var(--form-element-large-height, 36px) - var(--input-border-width, 1px)*2);
+        line-height: calc(36px - 1px*2) \0;
+        line-height: calc(var(--form-element-large-height, 36px) - var(--input-border-width, 1px)*2) \0;
+        padding: 0 12px;
+        padding: 0 var(--input-l-padding, 12px);
+        font-size: 14px;
+        font-size: var(--form-element-large-font-size, 14px); }
+        .next-time-picker2-input.next-time-picker2-input-large input::-webkit-input-placeholder {
+          font-size: 14px;
+          font-size: var(--form-element-large-font-size, 14px); }
+        .next-time-picker2-input.next-time-picker2-input-large input::-moz-placeholder {
+          font-size: 14px;
+          font-size: var(--form-element-large-font-size, 14px); }
+        .next-time-picker2-input.next-time-picker2-input-large input::-ms-input-placeholder {
+          font-size: 14px;
+          font-size: var(--form-element-large-font-size, 14px); }
+        .next-time-picker2-input.next-time-picker2-input-large input::placeholder {
+          font-size: 14px;
+          font-size: var(--form-element-large-font-size, 14px); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-text-field {
+        padding: 0 12px;
+        padding: 0 var(--input-l-padding, 12px);
+        font-size: 14px;
+        font-size: var(--form-element-large-font-size, 14px);
+        height: calc(36px - 1px*2);
+        height: calc(var(--form-element-large-height, 36px) - var(--input-border-width, 1px)*2);
+        line-height: calc(36px - 1px*2);
+        line-height: calc(var(--form-element-large-height, 36px) - var(--input-border-width, 1px)*2); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-icon:before,
+      .next-time-picker2-input.next-time-picker2-input-large .next-icon .next-icon-remote {
+        width: 16px;
+        font-size: 16px;
+        line-height: inherit; }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-control {
+        border-radius: 0 2px 2px 0;
+        border-radius: 0 var(--form-element-large-corner, 2px) var(--form-element-large-corner, 2px) 0; }
+    .next-time-picker2-input:hover {
+      border-color: #CCCCCC;
+      border-color: var(--input-hover-border-color, #CCCCCC);
+      background-color: #FFFFFF;
+      background-color: var(--input-hover-bg-color, #FFFFFF); }
+    .next-time-picker2-input.next-time-picker2-input-focus {
+      border-color: #ababab;
+      border-color: var(--input-focus-border-color, #ababab);
+      background-color: #FFFFFF;
+      background-color: var(--input-focus-bg-color, #FFFFFF);
+      -webkit-box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2);
+              box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2); }
+    .next-time-picker2-input.next-time-picker2-input-noborder {
+      border-color: transparent !important;
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important; }
+    .next-time-picker2-input.next-time-picker2-input-disabled {
+      color: #CCCCCC;
+      color: var(--input-disabled-color, #CCCCCC);
+      border-color: #eaeaea;
+      border-color: var(--input-disabled-border-color, #eaeaea);
+      background-color: #f7f7f7;
+      background-color: var(--input-disabled-bg-color, #f7f7f7);
+      cursor: not-allowed; }
+      .next-time-picker2-input.next-time-picker2-input-disabled:hover {
+        border-color: #eaeaea;
+        border-color: var(--input-disabled-border-color, #eaeaea);
+        background-color: #f7f7f7;
+        background-color: var(--input-disabled-bg-color, #f7f7f7); }
+  .next-time-picker2-input-separator {
+    color: #D9D9D9;
+    color: var(--input-border-color, #D9D9D9);
+    font-size: 12px;
+    display: inline-block;
+    min-width: 16px;
+    text-align: center; }
 
 div[dir="rtl"] .next-date-picker2-footer-preset > .next-btn {
   margin-left: 8px;
@@ -26618,7 +26896,8 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
       border: none;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
       .next-date-picker2-input .next-input input {
         height: 100%;
         width: auto; }

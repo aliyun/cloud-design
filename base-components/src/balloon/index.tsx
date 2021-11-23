@@ -13,7 +13,7 @@ const Tooltip: typeof NextTooltip = React.forwardRef(
         delay={150}
         {...props}
         popupProps={{
-          animation: { in: 'fadeIn', out: 'fadeOut' },
+          // animation: { in: 'fadeIn', out: 'fadeOut' },
           ...props.popupProps
         }}
         ref={ref as any}
@@ -25,7 +25,7 @@ const Tooltip: typeof NextTooltip = React.forwardRef(
 const Balloon: typeof NextBalloon = React.forwardRef(
   (props: NextBalloonProps, ref) => (
     <NextBalloon
-      animation={{ in: 'fadeIn', out: 'fadeOut' }}
+      // animation={{ in: 'fadeIn', out: 'fadeOut' }}
       {...props}
       ref={ref as any}
     />
