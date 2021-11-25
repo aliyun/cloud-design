@@ -201,9 +201,9 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   const { prefix = 'next-' } = config
 
   const theme = window
-  .getComputedStyle?.(window.document.body)
-  .getPropertyValue('--alicloudfe-components-theme')
-  .trim()
+    .getComputedStyle?.(window.document.body)
+    .getPropertyValue('--alicloudfe-components-theme')
+    .trim()
 
   setTimeout(() => {
     const doms = (document.getElementsByClassName('quick-show') ?? []) as any
@@ -254,6 +254,8 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
     v2: true,
+    // @ts-ignore
+    centered: true,
     bottom: 80,
     shouldUpdatePosition: true,
     ...others,
@@ -265,9 +267,9 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
 
 const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   const theme = window
-  .getComputedStyle?.(window.document.body)
-  .getPropertyValue('--alicloudfe-components-theme')
-  .trim()
+    .getComputedStyle?.(window.document.body)
+    .getPropertyValue('--alicloudfe-components-theme')
+    .trim()
   const { size, ...others } = config
   return NextDialog.confirm({
     ...getCustomWidth(size, theme),
@@ -275,6 +277,8 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'notice' },
+    // @ts-ignore
+    centered: true,
     v2: true,
     bottom: 80,
     shouldUpdatePosition: true,
@@ -284,9 +288,9 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
 
 const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   const theme = window
-  .getComputedStyle?.(window.document.body)
-  .getPropertyValue('--alicloudfe-components-theme')
-  .trim()
+    .getComputedStyle?.(window.document.body)
+    .getPropertyValue('--alicloudfe-components-theme')
+    .trim()
   const { size, ...others } = config
   return NextDialog.alert({
     ...getCustomWidth(size, theme),
@@ -295,6 +299,8 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'warning' },
     shouldUpdatePosition: true,
+    // @ts-ignore
+    centered: true,
     v2: true,
     bottom: 80,
     ...others
