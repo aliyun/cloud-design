@@ -1,0 +1,72 @@
+// 云效胶囊 radio 独有样式覆盖
+.next-radio-group.next-radio-button.next-radio-button-large {
+  height: var(--radio-button-height-large, 36px);
+  padding: 0 2px;
+  background-color: var(--tab-capsule-bg-color, #f7f7f7);
+  border-radius: 4px;
+  .next-radio-wrapper.checked {
+    background-color: var(--tab-capsule-active-bg-color, #fff);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    height: calc(var(--radio-button-height-large, 36px) - 4px);
+    .next-radio-label {
+      margin-top: -2px;
+    }
+  }
+  .next-radio-wrapper {
+    background-color: transparent;
+    height: var(--radio-button-height-large, 36px);
+    border: 0;
+    .next-radio-label {
+      height: calc(var(--radio-button-height-large, 36px) - 4px);
+    }
+  }
+}
+
+.next-radio-group.next-radio-button.next-radio-button-medium {
+  height: var(--radio-button-height-medium, 32px);
+  padding: 0 2px;
+  background-color: var(--tab-capsule-bg-color, #f7f7f7);
+  border-radius: 4px;
+  .next-radio-wrapper.checked {
+    background-color: var(--tab-capsule-active-bg-color, #fff);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    height: calc(var(--radio-button-height-medium, 32px) - 4px);
+    .next-radio-label {
+      margin-top: -2px;
+    }
+  }
+  .next-radio-wrapper {
+    background-color: transparent;
+    height: var(--radio-button-height-medium, 32px);
+    border: 0;
+    .next-radio-label {
+      height: calc(var(--radio-button-height-medium, 32px) - 4px);
+    }
+  }
+}
+
+.next-radio-group.next-radio-button.next-radio-button-small {
+  height: var(--radio-button-height-small, 24px);
+  padding: 0 2px;
+  background-color: var(--tab-capsule-bg-color, #f7f7f7);
+  border-radius: 4px;
+  .next-radio-wrapper.checked {
+    background-color: var(--tab-capsule-active-bg-color, #fff);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    height: calc(var(--radio-button-height-small, 24px) - 4px);
+    .next-radio-label {
+      margin-top: -2px;
+    }
+  }
+  .next-radio-wrapper {
+    background-color: transparent;
+    height: var(--radio-button-height-small, 24px);
+    border: 0;
+    .next-radio-label {
+      height: calc(var(--radio-button-height-small, 24px) - 4px);
+    }
+  }
+}

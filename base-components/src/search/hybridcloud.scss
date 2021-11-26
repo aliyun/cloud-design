@@ -22,6 +22,23 @@
       font-size: var(--search-before-title-icon-font-size, 20px);
     }
   }
+  .next-size-large,.next-size-medium {
+    .next-input-hint-wrap {
+      i.next-icon-delete-filling {
+        width: 16px;
+        height: 16px;
+        &::before {
+          font-size: 16px;
+          width: 16px;
+        }
+      }
+    }
+  }
+  .next-input-hint-wrap {
+    i.next-icon-delete-filling {
+      color: var(--input-hint-color, #848484);
+    }
+  }
 }
 
 .next-search.focusing.next-search.focusing {
@@ -58,7 +75,6 @@
       min-width: calc(var(--search-normal-normal-l-height, 36px));
       padding: 0 6px;
     }
-
   }
 }
 .next-search-no-custom-search-text.next-medium {
@@ -70,7 +86,6 @@
         margin-left: -4px;
       }
     }
-
   }
 }
 

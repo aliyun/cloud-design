@@ -39,7 +39,9 @@ const yunxiaoSizeMap = {
 
 // 获取 size 大小
 const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
-  const sizeWidth = theme.startsWith('yunxiao') ? yunxiaoSizeMap[size] : sizeMap[size]
+  const sizeWidth = theme.startsWith('yunxiao')
+    ? yunxiaoSizeMap[size]
+    : sizeMap[size]
   if (sizeWidth) {
     return {
       style: {
@@ -132,20 +134,12 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   // 云效主题align在上方
   const defaultAlign = (() => {
-    if (
-      theme === 'yunxiao' ||
-      theme === 'yunxiao-dark'
-    )
-      return 'tc tc'
+    if (theme === 'yunxiao' || theme === 'yunxiao-dark') return 'tc tc'
     return 'cc cc'
   })()
 
   const defaultMinMargin = (() => {
-    if (
-      theme === 'yunxiao' ||
-      theme === 'yunxiao-dark'
-    )
-      return 100
+    if (theme === 'yunxiao' || theme === 'yunxiao-dark') return 100
     return 40
   })()
 
@@ -178,32 +172,29 @@ const showDefaultFooterActions = (theme: string) => {
 }
 
 const showDefaultAlign = (theme: string) => {
-  if (
-    theme === 'yunxiao' ||
-    theme === 'yunxiao-dark'
-  )
-    return 'tc tc'
+  if (theme === 'yunxiao' || theme === 'yunxiao-dark') return 'tc tc'
   return 'cc cc'
 }
 
 const showDefaultMinMargin = (theme: string) => {
-  if (
-    theme === 'yunxiao' ||
-    theme === 'yunxiao-dark'
-  )
-    return 100
+  if (theme === 'yunxiao' || theme === 'yunxiao-dark') return 100
   return 40
 }
 
 // 快捷调用的操作按钮顺序
 const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
-  const { size, ...others } = config
+  const { size, type, ...others } = config
   const { prefix = 'next-' } = config
 
   const theme = window
     .getComputedStyle?.(window.document.body)
     .getPropertyValue('--alicloudfe-components-theme')
     .trim()
+
+  const confirmClassName =
+    (theme === 'hybridcloud' || theme === 'hybridcloud-dark') && type
+      ? 'quick-show-confirm-or-alert'
+      : ''
 
   setTimeout(() => {
     const doms = (document.getElementsByClassName('quick-show') ?? []) as any
@@ -258,10 +249,14 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: true,
     bottom: 80,
     shouldUpdatePosition: true,
+    type,
     ...others,
     // 将Dialog.show与其他quick弹窗区分出来，单独做样式覆盖，
     // 因为它的body是不包含Message的
-    className: ['quick-show', config.className].filter(Boolean).join(' ')
+    // 也有可能使用show方法调用confirm和alert。。。。
+    className: ['quick-show', config.className, confirmClassName]
+      .filter(Boolean)
+      .join(' ')
   })
 }
 
@@ -312,5 +307,5 @@ Dialog.show = show
 Dialog.confirm = confirm
 Dialog.alert = alert
 
-export type { DialogProps } from '@alifd/next/lib/dialog';
+export type { DialogProps } from '@alifd/next/lib/dialog'
 export default Dialog

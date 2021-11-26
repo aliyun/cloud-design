@@ -2,6 +2,7 @@ import { Search as NextSearch } from '@alifd/next'
 import React, { useCallback, useMemo, useState } from 'react'
 import classnames from 'classnames'
 import HOC, { useDefaultOffsetY } from '../utils/popupHoc'
+import { useCssVar } from '../utils/useCssVar'
 // import { withThemeClass } from '../utils/withThemeClass'
 
 type SearchProps = React.ComponentProps<typeof NextSearch>
@@ -9,8 +10,11 @@ type SearchProps = React.ComponentProps<typeof NextSearch>
 const Search: React.FC<SearchProps> = React.forwardRef((props, ref) => {
   const [focus, setFocus] = useState(false)
   const [visible, setVisible] = useState(false)
+
+  const theme = useCssVar('--alicloudfe-components-theme').trim()
+
   const onFocus = useCallback(
-    e => {
+    (e) => {
       setFocus(true)
       if (typeof props.onFocus === 'function') {
         props.onFocus(e)
@@ -19,7 +23,7 @@ const Search: React.FC<SearchProps> = React.forwardRef((props, ref) => {
     [props.onFocus]
   )
   const onBlur = useCallback(
-    e => {
+    (e) => {
       setFocus(false)
       if (typeof props.onBlur === 'function') {
         props.onBlur(e)
@@ -52,6 +56,30 @@ const Search: React.FC<SearchProps> = React.forwardRef((props, ref) => {
     }
     return filterProps
   }, [defaultOffsetY, props.filterProps])
+
+  // 云效主题默认带上hasClear
+  if (theme === 'yunxiao' || theme === 'yunxiao-dark') {
+    return (
+      <NextSearch
+        hasClear
+        {...props}
+        ref={ref as any}
+        onFocus={onFocus}
+        onBlur={onBlur}
+        onVisibleChange={onVisibleChange}
+        className={classnames(
+          props.className,
+          // 根据当前状态增加类名，用来做样式覆盖
+          props.searchText ? 'custom-search-text' : null,
+          focus ? 'focusing' : false,
+          visible ? 'visible' : false,
+          props.disabled ? 'disabled' : false,
+          props.searchText ? null : 'next-search-no-custom-search-text'
+        )}
+        filterProps={filterProps}
+      />
+    )
+  }
 
   return (
     <NextSearch

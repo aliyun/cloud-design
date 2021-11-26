@@ -22,3 +22,16 @@
 .next-form-item .next-form-item-label {
   font-weight: var(--font-weight-medium, 500);
 }
+
+.next-form-item-label label[required]:before {
+  display: none;
+}
+.next-form-item-label label[required]:after {
+  margin-right: 4px;
+  margin-left: 4px;
+  content: '*';
+  color: #ed675a;
+  color: var(--form-error-color, #ed675a);
+  position: relative;
+  top: 2px;
+}
