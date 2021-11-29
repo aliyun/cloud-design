@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.18.11 (https://fusion.design)
- * @alifd/next@1.25.0 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.18.13 (https://fusion.design)
+ * @alifd/next@1.25.2 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -2258,10 +2258,10 @@ small {
     margin-left: 1em; }
   .next-loading-fusion-reactor {
     display: inline-block;
-    width: 48px;
-    width: var(--loading-large-size, 48px);
-    height: 48px;
-    height: var(--loading-large-size, 48px);
+    width: 32px;
+    width: var(--loading-large-size, 32px);
+    height: 32px;
+    height: var(--loading-large-size, 32px);
     position: relative;
     margin: 0;
     -webkit-animation-duration: 5.6s;
@@ -2275,10 +2275,10 @@ small {
     .next-loading-fusion-reactor .next-loading-dot {
       position: absolute;
       margin: auto;
-      width: 12px;
-      width: var(--loading-large-dot-size, 12px);
-      height: 12px;
-      height: var(--loading-large-dot-size, 12px);
+      width: 8px;
+      width: var(--loading-large-dot-size, 8px);
+      height: 8px;
+      height: var(--loading-large-dot-size, 8px);
       border-radius: 50%;
       background: #0064C8;
       background: var(--loading-dot-color, #0064C8);
@@ -2420,144 +2420,144 @@ small {
     bottom: 0; }
   45%,
   50% {
-    bottom: calc(48px/2 - 12px*1.2/2);
-    bottom: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    bottom: calc(32px/2 - 8px*1.2/2);
+    bottom: calc(var(--loading-large-size, 32px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     bottom: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @keyframes nextVectorDotsYR {
   25% {
     bottom: 0; }
   45%,
   50% {
-    bottom: calc(48px/2 - 12px*1.2/2);
-    bottom: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    bottom: calc(32px/2 - 8px*1.2/2);
+    bottom: calc(var(--loading-large-size, 32px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     bottom: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @-webkit-keyframes nextVectorDotsY {
   25% {
     top: 0; }
   45%,
   50% {
-    top: calc(48px/2 - 12px*1.2/2);
-    top: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    top: calc(32px/2 - 8px*1.2/2);
+    top: calc(var(--loading-large-size, 32px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     top: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @keyframes nextVectorDotsY {
   25% {
     top: 0; }
   45%,
   50% {
-    top: calc(48px/2 - 12px*1.2/2);
-    top: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    top: calc(32px/2 - 8px*1.2/2);
+    top: calc(var(--loading-large-size, 32px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     top: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @-webkit-keyframes nextVectorDotsX {
   25% {
     left: 0; }
   45%,
   50% {
-    left: calc(48px/2 - 12px*1.2/2);
-    left: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    left: calc(32px/2 - 8px*1.2/2);
+    left: calc(var(--loading-large-size, 32px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     left: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @keyframes nextVectorDotsX {
   25% {
     left: 0; }
   45%,
   50% {
-    left: calc(48px/2 - 12px*1.2/2);
-    left: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    left: calc(32px/2 - 8px*1.2/2);
+    left: calc(var(--loading-large-size, 32px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     left: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @-webkit-keyframes nextVectorDotsXR {
   25% {
     right: 0; }
   45%,
   50% {
-    right: calc(48px/2 - 12px*1.2/2);
-    right: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    right: calc(32px/2 - 8px*1.2/2);
+    right: calc(var(--loading-large-size, 32px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     right: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @keyframes nextVectorDotsXR {
   25% {
     right: 0; }
   45%,
   50% {
-    right: calc(48px/2 - 12px*1.2/2);
-    right: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    right: calc(32px/2 - 8px*1.2/2);
+    right: calc(var(--loading-large-size, 32px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     right: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @-webkit-keyframes nextVectorDotsYR-medium {
   25% {
@@ -5937,8 +5937,8 @@ small {
     border-color: var(--input-focus-border-color, #ababab);
     background-color: #FFFFFF;
     background-color: var(--input-focus-bg-color, #FFFFFF);
-    -webkit-box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2);
-            box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2); }
+    -webkit-box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2);
+            box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2); }
   .next-input.next-warning {
     border-color: #FFA545;
     border-color: var(--input-feedback-warning-border-color, #FFA545);
@@ -5948,8 +5948,8 @@ small {
       border-color: #FFA545;
       border-color: var(--input-feedback-warning-border-color, #FFA545); }
     .next-input.next-warning.next-focus {
-      -webkit-box-shadow: 0 0 0 2px rgba(255, 165, 69, 0.2);
-              box-shadow: 0 0 0 2px rgba(255, 165, 69, 0.2); }
+      -webkit-box-shadow: 0 0 0 0px rgba(255, 165, 69, 0.2);
+              box-shadow: 0 0 0 0px rgba(255, 165, 69, 0.2); }
   .next-input.next-error {
     border-color: #ED675A;
     border-color: var(--input-feedback-error-border-color, #ED675A);
@@ -5962,8 +5962,8 @@ small {
       border-color: #ED675A;
       border-color: var(--input-feedback-error-border-color, #ED675A); }
     .next-input.next-error.next-focus {
-      -webkit-box-shadow: 0 0 0 2px rgba(237, 103, 90, 0.2);
-              box-shadow: 0 0 0 2px rgba(237, 103, 90, 0.2); }
+      -webkit-box-shadow: 0 0 0 0px rgba(237, 103, 90, 0.2);
+              box-shadow: 0 0 0 0px rgba(237, 103, 90, 0.2); }
   .next-input.next-hidden {
     display: none; }
   .next-input.next-noborder {
@@ -26647,8 +26647,8 @@ div[dir="rtl"].next-calendar2-fullscreen .next-calendar2-table th {
       border-color: var(--input-focus-border-color, #ababab);
       background-color: #FFFFFF;
       background-color: var(--input-focus-bg-color, #FFFFFF);
-      -webkit-box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2);
-              box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2); }
+      -webkit-box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2);
+              box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2); }
     .next-time-picker2-input.next-time-picker2-input-noborder {
       border-color: transparent !important;
       -webkit-box-shadow: none !important;
@@ -27082,8 +27082,8 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
       border-color: var(--input-focus-border-color, #ababab);
       background-color: #FFFFFF;
       background-color: var(--input-focus-bg-color, #FFFFFF);
-      -webkit-box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2);
-              box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2); }
+      -webkit-box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2);
+              box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2); }
     .next-date-picker2-input.next-date-picker2-input-noborder {
       border-color: transparent !important;
       -webkit-box-shadow: none !important;
