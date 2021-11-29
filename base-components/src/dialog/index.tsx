@@ -37,8 +37,19 @@ const yunxiaoSizeMap = {
   large: 1200
 }
 
-// 获取 size 大小
+// 获取常规Dialog size 大小
 const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
+  const sizeWidth = theme.startsWith('yunxiao')
+    ? yunxiaoSizeMap[size]
+    : sizeMap[size]
+  if (sizeWidth) {
+    return sizeWidth;
+  }
+  return 600
+}
+
+// 获取快捷调用 size 大小
+const getQuickCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   const sizeWidth = theme.startsWith('yunxiao')
     ? yunxiaoSizeMap[size]
     : sizeMap[size]
@@ -235,7 +246,7 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   })
 
   return NextDialog.show({
-    width: getCustomWidth(size, theme),
+    width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
@@ -261,7 +272,7 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .trim()
   const { size, ...others } = config
   return NextDialog.confirm({
-    width: getCustomWidth(size, theme),
+    width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
@@ -281,7 +292,7 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .trim()
   const { size, ...others } = config
   return NextDialog.alert({
-    width: getCustomWidth(size, theme),
+    width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
