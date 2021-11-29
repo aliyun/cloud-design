@@ -27,7 +27,6 @@ const Balloon: typeof NextBalloon = React.forwardRef(
   (props: NextBalloonProps, ref) => (
     <NextBalloon
       // animation={{ in: 'fadeIn', out: 'fadeOut' }}
-      //@ts-ignore
       v2
       {...props}
       ref={ref as any}

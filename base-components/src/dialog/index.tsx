@@ -151,7 +151,6 @@ const Dialog: React.FC<CustomDialogProps> & {
       // minMargin={defaultMinMargin}
       shouldUpdatePosition
       v2
-      // @ts-ignore
       centered
       bottom={80}
       {...others}
@@ -245,7 +244,6 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
     v2: true,
-    // @ts-ignore
     centered: true,
     bottom: 80,
     shouldUpdatePosition: true,
@@ -272,7 +270,6 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'notice' },
-    // @ts-ignore
     centered: true,
     v2: true,
     bottom: 80,
@@ -294,7 +291,6 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'warning' },
     shouldUpdatePosition: true,
-    // @ts-ignore
     centered: true,
     v2: true,
     bottom: 80,
