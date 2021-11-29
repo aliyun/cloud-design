@@ -39,6 +39,7 @@ class Demo extends React.Component {
           onOk={this.onClose.bind(this, 'okClick')}
           onCancel={this.onClose.bind(this, 'cancelClick')}
           onClose={this.onClose}
+          size="small"
         >
           Start your business here by searching a popular product
         </Dialog>

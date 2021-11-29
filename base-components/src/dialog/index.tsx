@@ -43,13 +43,9 @@ const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
     ? yunxiaoSizeMap[size]
     : sizeMap[size]
   if (sizeWidth) {
-    return {
-      style: {
-        width: `${sizeWidth}px`
-      }
-    }
+    return sizeWidth;
   }
-  return {}
+  return 'auto'
 }
 
 // 设置阴影
@@ -145,7 +141,7 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   return (
     <NextDialog
-      {...getCustomWidth(size, theme)}
+      width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
       align={defaultAlign}
       // minMargin={defaultMinMargin}
@@ -239,7 +235,7 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   })
 
   return NextDialog.show({
-    ...getCustomWidth(size, theme),
+    width: getCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
@@ -265,7 +261,7 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .trim()
   const { size, ...others } = config
   return NextDialog.confirm({
-    ...getCustomWidth(size, theme),
+    width: getCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
@@ -285,7 +281,7 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .trim()
   const { size, ...others } = config
   return NextDialog.alert({
-    ...getCustomWidth(size, theme),
+    width: getCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
