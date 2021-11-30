@@ -18,11 +18,23 @@ let Select: typeof NextSelect = React.forwardRef(
         ...props.menuProps
       }
     })()
+    const defaultAutoHighlightFirstItem = (theme: string) => {
+      if (
+        theme === 'yunxiao' ||
+        theme === 'yunxiao-dark' ||
+        theme === 'hybridcloud' ||
+        theme === 'hybridcloud-dark'
+      ) {
+        return false
+      }
+      return true
+    }
     // xconsole以及其他大部分主题，select下拉menu的padding较大，
     // 不能autoWidth，否则内容区域太短
     const defaultAutoWidth = isWind ? true : false
     return (
       <NextSelect
+        autoHighlightFirstItem={defaultAutoHighlightFirstItem(theme.trim())}
         {...props}
         autoWidth={props.autoWidth ?? defaultAutoWidth}
         menuProps={menuProps}
