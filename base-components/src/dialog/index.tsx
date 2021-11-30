@@ -40,13 +40,14 @@ const yunxiaoSizeMap = {
 
 // 获取常规Dialog size 大小
 const getCustomWidth = (size: CustomDialogProps['size'], theme: string, style: CSSProperties) => {
+  if (style?.width) {
+    return style.width
+  }
   const sizeWidth = theme.startsWith('yunxiao')
     ? yunxiaoSizeMap[size]
     : sizeMap[size]
   if (sizeWidth) {
     return sizeWidth;
-  } else if (style?.width) {
-    return style.width
   } else {
     return 600
   }
@@ -54,13 +55,14 @@ const getCustomWidth = (size: CustomDialogProps['size'], theme: string, style: C
 
 // 获取快捷调用 size 大小
 const getQuickCustomWidth = (size: CustomDialogProps['size'], theme: string, style: CSSProperties) => {
+  if (style?.width) {
+    return style.width
+  }
   const sizeWidth = theme.startsWith('yunxiao')
     ? yunxiaoSizeMap[size]
     : sizeMap[size]
   if (sizeWidth) {
     return sizeWidth;
-  } else if (style?.width) {
-    return style.width
   } else {
     return 400
   }
