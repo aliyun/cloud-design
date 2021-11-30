@@ -6,12 +6,12 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Dialog, ConfigProvider, Box } from '@alicloudfe/components'
+import { Button, Dialog, ConfigProvider, Box, Message } from '@alicloudfe/components'
 
 const popupAlert = () => {
   Dialog.alert({
     title: 'Alert',
-    content: 'alert content alert content...',
+    content: <Message type="notice">alert content alert content...</Message>,
     okProps: { children: 'Custom OK' },
     onOk: () => console.log('ok')
   })
