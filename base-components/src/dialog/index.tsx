@@ -56,7 +56,7 @@ const getQuickCustomWidth = (size: CustomDialogProps['size'], theme: string) => 
   if (sizeWidth) {
     return sizeWidth;
   }
-  return 'auto'
+  return 400
 }
 
 // 设置阴影
@@ -246,7 +246,7 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   })
 
   return NextDialog.show({
-    width: getQuickCustomWidth(size, theme),
+    width: getCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
     align: showDefaultAlign(theme),
     minMargin: showDefaultMinMargin(theme),
