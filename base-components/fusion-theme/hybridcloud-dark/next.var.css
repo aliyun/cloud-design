@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.10.35 (https://fusion.design)
- * @alifd/next@1.25.2 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.10.36 (https://fusion.design)
+ * @alifd/next@1.25.3 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -6020,7 +6020,7 @@ small {
   .next-input-control .next-input-clear-icon::before {
     content: "\E623";
     content: var(--input-feedback-clear-icon, "\E623"); }
-  .next-input-label {
+  .next-input-label, .next-input-inner-text {
     color: #8A8A8A;
     color: var(--input-label-color, #8A8A8A); }
   .next-input input::-moz-placeholder,
@@ -6064,7 +6064,7 @@ small {
       .next-input.next-disabled input::-webkit-input-placeholder, .next-input.next-disabled textarea::-webkit-input-placeholder {
         color: #6B6B6B;
         color: var(--input-disabled-color, #6B6B6B); }
-    .next-input.next-disabled .next-input-label {
+    .next-input.next-disabled .next-input-label, .next-input.next-disabled .next-input-inner-text {
       color: #6B6B6B;
       color: var(--input-disabled-color, #6B6B6B); }
     .next-input.next-disabled .next-input-len {
@@ -7079,8 +7079,8 @@ small {
     height: 100%;
     color: #EAEAEA;
     color: var(--card-title-color, #EAEAEA);
-    font-size: 16px;
-    font-size: var(--card-title-font-size, 16px);
+    font-size: 14px;
+    font-size: var(--card-title-font-size, 14px);
     font-weight: normal;
     font-weight: var(--card-title-font-weight, normal); }
   .next-card-subtitle {
@@ -7161,8 +7161,8 @@ small {
   .next-card-header-title {
     color: #EAEAEA;
     color: var(--card-title-color, #EAEAEA);
-    font-size: 16px;
-    font-size: var(--card-title-font-size, 16px);
+    font-size: 14px;
+    font-size: var(--card-title-font-size, 14px);
     font-weight: normal;
     font-weight: var(--card-title-font-weight, normal);
     line-height: 1.5; }
@@ -25562,8 +25562,8 @@ h6.next-typography-title {
   .next-table-empty {
     color: #6B6B6B;
     color: var(--table-empty-color, #6B6B6B);
-    padding: 32px 0;
-    padding: var(--table-empty-padding, 32px) 0;
+    padding: 48px 0;
+    padding: var(--table-empty-padding, 48px) 0;
     text-align: center; }
   .next-table-expanded-row > td {
     border-width: 0 0 1px 0;
