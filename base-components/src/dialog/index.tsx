@@ -39,33 +39,25 @@ const yunxiaoSizeMap = {
 }
 
 // 获取常规Dialog size 大小
-const getCustomWidth = (size: CustomDialogProps['size'], theme: string, style: CSSProperties) => {
-  if (style?.width) {
-    return style.width
-  }
+const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   const sizeWidth = theme.startsWith('yunxiao')
     ? yunxiaoSizeMap[size]
     : sizeMap[size]
   if (sizeWidth) {
-    return sizeWidth;
-  } else {
-    return 600
+    return sizeWidth
   }
+  return
 }
 
 // 获取快捷调用 size 大小
-const getQuickCustomWidth = (size: CustomDialogProps['size'], theme: string, style: CSSProperties) => {
-  if (style?.width) {
-    return style.width
-  }
+const getQuickCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   const sizeWidth = theme.startsWith('yunxiao')
     ? yunxiaoSizeMap[size]
     : sizeMap[size]
   if (sizeWidth) {
     return sizeWidth;
-  } else {
-    return 400
   }
+  return
 }
 
 // 设置阴影
@@ -161,11 +153,11 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   return (
     <NextDialog
-      width={getCustomWidth(size, theme, style)}
+      width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
-      align={defaultAlign}
+      // align={defaultAlign}
       // minMargin={defaultMinMargin}
-      shouldUpdatePosition
+      // shouldUpdatePosition
       v2
       centered
       bottom={80}
@@ -255,14 +247,14 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   })
 
   return NextDialog.show({
-    width: getCustomWidth(size, theme, style),
+    width: getCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
-    align: showDefaultAlign(theme),
-    minMargin: showDefaultMinMargin(theme),
+    // align: showDefaultAlign(theme),
+    // minMargin: showDefaultMinMargin(theme),
     v2: true,
     centered: true,
     bottom: 80,
-    shouldUpdatePosition: true,
+    // shouldUpdatePosition: true,
     type,
     ...others,
     // 将Dialog.show与其他quick弹窗区分出来，单独做样式覆盖，
@@ -281,15 +273,15 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .trim()
   const { size, style, ...others } = config
   return NextDialog.confirm({
-    width: getQuickCustomWidth(size, theme, style),
+    width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
-    align: showDefaultAlign(theme),
-    minMargin: showDefaultMinMargin(theme),
+    // align: showDefaultAlign(theme),
+    // minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'notice' },
     centered: true,
     v2: true,
     bottom: 80,
-    shouldUpdatePosition: true,
+    // shouldUpdatePosition: true,
     ...others
   })
 }
@@ -301,12 +293,12 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .trim()
   const { size, style, ...others } = config
   return NextDialog.alert({
-    width: getQuickCustomWidth(size, theme, style),
+    width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
-    align: showDefaultAlign(theme),
-    minMargin: showDefaultMinMargin(theme),
+    // align: showDefaultAlign(theme),
+    // minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'warning' },
-    shouldUpdatePosition: true,
+    // shouldUpdatePosition: true,
     centered: true,
     v2: true,
     bottom: 80,
