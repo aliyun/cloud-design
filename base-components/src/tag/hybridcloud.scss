@@ -191,6 +191,17 @@
     background-color: var(--color-warning-2, #ffe0bf);
   }
 }
+.next-tag-custom-mention {
+  background-color: var(--color-purple-0, #f0f0ff);
+  border: var(--colortag-border-width, 0px) solid var(--color-purple-0, #f0f0ff);
+  .next-tag-body {
+    color: var(--color-purple-50, #666ce0);
+  }
+  &:hover {
+    border: var(--colortag-border-width, 0px) solid var(--color-purple-10, #c9cbf5);
+    background-color: var(--color-purple-10, #c9cbf5);
+  }
+}
 .next-tag-custom-help {
   background-color: var(--color-help-1, #fffcf0);
   border: var(--colortag-border-width, 0px) solid var(--color-help-1, #fffcf0);
