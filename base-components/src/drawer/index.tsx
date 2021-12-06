@@ -308,6 +308,10 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
   customOnCancel = (event: React.MouseEvent) => {
     if (onCancel && typeof onCancel === 'function') {
       const result = onCancel?.(event)
+      if (!result) {
+        actionRef?.close?.();
+        return
+      }
       if (result instanceof Promise) {
         actionRef?.setCancelLoading?.(true)
         result

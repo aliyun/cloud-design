@@ -8,6 +8,7 @@ import {
   QuickShowConfig,
   QuickShowRet
 } from '@alifd/next/types/dialog'
+import { CSSProperties } from 'react-color/node_modules/@types/react'
 
 type CustomDialogProps = DialogProps & {
   /**
@@ -37,19 +38,26 @@ const yunxiaoSizeMap = {
   large: 1200
 }
 
-// 获取 size 大小
+// 获取常规Dialog size 大小
 const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   const sizeWidth = theme.startsWith('yunxiao')
     ? yunxiaoSizeMap[size]
     : sizeMap[size]
   if (sizeWidth) {
-    return {
-      style: {
-        width: `${sizeWidth}px`
-      }
-    }
+    return sizeWidth
   }
-  return {}
+  return
+}
+
+// 获取快捷调用 size 大小
+const getQuickCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
+  const sizeWidth = theme.startsWith('yunxiao')
+    ? yunxiaoSizeMap[size]
+    : sizeMap[size]
+  if (sizeWidth) {
+    return sizeWidth;
+  }
+  return
 }
 
 // 设置阴影
@@ -76,7 +84,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   confirm: (config: CustomQuickShowConfig) => QuickShowRet
   alert: (config: CustomQuickShowConfig) => QuickShowRet
 } = (props) => {
-  const { size, ...others } = props
+  const { size, style, ...others } = props
   const { prefix = 'next-' } = props
   const theme = useCssVar('--alicloudfe-components-theme').trim()
 
@@ -145,11 +153,14 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   return (
     <NextDialog
-      {...getCustomWidth(size, theme)}
+      width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
-      align={defaultAlign}
-      minMargin={defaultMinMargin}
-      shouldUpdatePosition
+      // align={defaultAlign}
+      // minMargin={defaultMinMargin}
+      // shouldUpdatePosition
+      v2
+      centered
+      bottom={80}
       {...others}
       ref={customRef}
     />
@@ -179,7 +190,7 @@ const showDefaultMinMargin = (theme: string) => {
 
 // 快捷调用的操作按钮顺序
 const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
-  const { size, type, ...others } = config
+  const { size, type, style, ...others } = config
   const { prefix = 'next-' } = config
 
   const theme = window
@@ -236,11 +247,14 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   })
 
   return NextDialog.show({
-    ...getCustomWidth(size, theme),
+    width: getCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
-    align: showDefaultAlign(theme),
-    minMargin: showDefaultMinMargin(theme),
-    shouldUpdatePosition: true,
+    // align: showDefaultAlign(theme),
+    // minMargin: showDefaultMinMargin(theme),
+    v2: true,
+    centered: true,
+    bottom: 80,
+    // shouldUpdatePosition: true,
     type,
     ...others,
     // 将Dialog.show与其他quick弹窗区分出来，单独做样式覆盖，
@@ -257,14 +271,17 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .getComputedStyle?.(window.document.body)
     .getPropertyValue('--alicloudfe-components-theme')
     .trim()
-  const { size, ...others } = config
+  const { size, style, ...others } = config
   return NextDialog.confirm({
-    ...getCustomWidth(size, theme),
+    width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
-    align: showDefaultAlign(theme),
-    minMargin: showDefaultMinMargin(theme),
+    // align: showDefaultAlign(theme),
+    // minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'notice' },
-    shouldUpdatePosition: true,
+    centered: true,
+    v2: true,
+    bottom: 80,
+    // shouldUpdatePosition: true,
     ...others
   })
 }
@@ -274,14 +291,17 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .getComputedStyle?.(window.document.body)
     .getPropertyValue('--alicloudfe-components-theme')
     .trim()
-  const { size, ...others } = config
+  const { size, style, ...others } = config
   return NextDialog.alert({
-    ...getCustomWidth(size, theme),
+    width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
-    align: showDefaultAlign(theme),
-    minMargin: showDefaultMinMargin(theme),
+    // align: showDefaultAlign(theme),
+    // minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'warning' },
-    shouldUpdatePosition: true,
+    // shouldUpdatePosition: true,
+    centered: true,
+    v2: true,
+    bottom: 80,
     ...others
   })
 }

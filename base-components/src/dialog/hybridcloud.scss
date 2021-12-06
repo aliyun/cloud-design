@@ -5,6 +5,9 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
     color: var(--color-dialog-content);
     line-height: 1.5;
     margin-top: 16px;
+    .next-message .next-message-content {
+      margin-top: 0;
+    }
   }
 
   .next-dialog-header {
@@ -16,6 +19,9 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
   color: var(--color-dialog-content);
   line-height: 1.5;
   margin-top: 16px;
+  .next-message .next-message-content {
+    margin-top: 0;
+  }
 }
 
 .next-dialog-header {

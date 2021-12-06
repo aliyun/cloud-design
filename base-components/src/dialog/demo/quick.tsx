@@ -6,13 +6,14 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Dialog, ConfigProvider, Box } from '@alicloudfe/components'
+import { Button, Dialog, ConfigProvider, Box, Message } from '@alicloudfe/components'
 
 const popupAlert = () => {
   Dialog.alert({
     title: 'Alert',
-    content: 'alert content alert content...',
+    content: <Message type="notice">alert content alert content...</Message>,
     okProps: { children: 'Custom OK' },
+    style: { width: 1000 },
     onOk: () => console.log('ok')
   })
 }
@@ -21,6 +22,7 @@ const popupConfirm = () => {
   Dialog.confirm({
     title: 'Confirm',
     content: 'confirm content confirm content...',
+    style: { width: 1000 },
     onOk: () => console.log('ok'),
     onCancel: () => console.log('cancel')
   })
@@ -43,6 +45,7 @@ const popupCustom = () => {
     title: 'Custom',
     content: 'custom content custom content...',
     type: 'confirm',
+    style: { width: 1000 },
     onOk: () => console.log('ok'),
     onCancel: () => console.log('cancel')
   })
