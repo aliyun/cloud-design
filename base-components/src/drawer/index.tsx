@@ -15,11 +15,11 @@ interface IDrawer {
   /**
    * 点击确定按钮时的回调。有此参数就默认显示确定按钮
    */
-  onOk?: (event: React.MouseEvent) => void
+  onOk?: (event: React.MouseEvent) => void | boolean
   /**
    * 点击取消按钮时的回调。有此参数就默认显示取消按钮
    */
-  onCancel?: (event: React.MouseEvent) => void
+  onCancel?: (event: React.MouseEvent) => void | boolean
   /**
    * 完全自定义底部操作栏
    */
@@ -75,11 +75,11 @@ export type quickShowDrawerProps = Omit<DrawerProps, 'onOk' | 'onCancel'> & {
   /**
    * 点击确定按钮时的回调。有此参数就默认显示确定按钮
    */
-  onOk?: (event: React.MouseEvent) => boolean | Promise<any>
+  onOk?: ((event: React.MouseEvent) => boolean | Promise<any>) | boolean
   /**
    * 点击取消按钮时的回调。有此参数就默认显示取消按钮
    */
-  onCancel?: (event: React.MouseEvent) => boolean | Promise<any>
+  onCancel?: ((event: React.MouseEvent) => boolean | Promise<any>) | boolean
   /**
    * 抽屉内容
    */
@@ -165,16 +165,16 @@ const Drawer: React.FC<DrawerProps> & {
       }
     }
 
-    let observer = null;
+    let observer = null
     // 绑定监听器
     useEffect(() => {
-      setFooterShadow(ref ?? customRef);
+      setFooterShadow(ref ?? customRef)
       const drawerDom = ReactDOM.findDOMNode((ref ?? customRef).current)
       const drawerBodyDom =
         drawerDom?.getElementsByClassName('next-drawer-body')?.[0]
       if (drawerBodyDom && !observer) {
         observer = new MutationObserver(() => {
-          setFooterShadow(ref ?? customRef);
+          setFooterShadow(ref ?? customRef)
         })
         observer.observe(drawerBodyDom, {
           attributes: true,
@@ -246,7 +246,7 @@ const Drawer: React.FC<DrawerProps> & {
             {onOk && !renderFooter && (
               <Button
                 type="primary"
-                onClick={onOk}
+                onClick={typeof onOk === 'function' ? onOk : undefined}
                 style={{ marginRight: 8 }}
                 loading={okLoadingState}
                 {...okBtnProps}
@@ -256,7 +256,7 @@ const Drawer: React.FC<DrawerProps> & {
             )}
             {onCancel && !renderFooter && (
               <Button
-                onClick={onCancel}
+                onClick={typeof onCancel === 'function' ? onCancel : undefined}
                 loading={cancelLoadingState}
                 {...cancelBtnProps}
               >
@@ -281,7 +281,7 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
 
   // 合并 customOnOK。 如果返回值为 true 自动关闭 Drawer
   customOnOK = (event: React.MouseEvent) => {
-    if (onOk) {
+    if (onOk && typeof onOk === 'function') {
       const result = onOk?.(event)
       if (result instanceof Promise) {
         actionRef?.setOKLoading?.(true)
@@ -306,7 +306,7 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
   }
 
   customOnCancel = (event: React.MouseEvent) => {
-    if (onCancel) {
+    if (onCancel && typeof onCancel === 'function') {
       const result = onCancel?.(event)
       if (result instanceof Promise) {
         actionRef?.setCancelLoading?.(true)
@@ -350,8 +350,9 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
             setCancelLoading
           }
         }}
-        onOk={customOnOK}
-        onCancel={customOnCancel}
+        // 原先快捷调用默认不传也有
+        onOk={onOk !== false ? customOnOK : undefined}
+        onCancel={onCancel !== false ? customOnCancel : undefined}
         onClose={
           onClose ??
           (() => {
