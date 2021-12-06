@@ -10,7 +10,7 @@ import { Tag, Icon, ConfigProvider } from '@alicloudfe/components'
 
 const { Group: TagGroup } = Tag
 
-const hybridcloud = ['error', 'success', 'prompt', 'warning', 'help']
+const hybridcloud = ['error', 'success', 'prompt', 'warning', 'help', 'mention']
 const yunxiao = [
   'wealthyGold',
   'coffeeBrown',
