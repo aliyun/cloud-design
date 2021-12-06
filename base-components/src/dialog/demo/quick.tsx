@@ -18,6 +18,23 @@ const popupAlert = () => {
   })
 }
 
+const popupError = () => {
+  Dialog.error({
+    title: 'Error',
+    content: 'errpr content alert content...',
+    onOk: () => console.log('ok')
+  })
+}
+
+const popupSuccess = () => {
+  Dialog.success({
+    title: 'Success',
+    content: 'Success content alert content...',
+    onOk: () => console.log('ok')
+  })
+}
+
+
 const popupConfirm = () => {
   Dialog.confirm({
     title: 'Confirm',
@@ -68,6 +85,8 @@ export default function DemoComponent() {
     <ConfigProvider locale={{ Dialog: { ok: 'OK', cancel: 'Cancel' } }}>
       <Box direction="row" spacing={20}>
         <Button onClick={popupAlert}>Alert</Button>
+        <Button onClick={popupError}>Error</Button>
+        <Button onClick={popupSuccess}>Success</Button>
         <Button onClick={popupConfirm}>Confirm</Button>
         <Button onClick={popupShow}>Show</Button>
         <Button onClick={popupCustomIcon}>Custom Icon</Button>

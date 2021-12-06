@@ -82,6 +82,8 @@ const Dialog: React.FC<CustomDialogProps> & {
   show: (config: CustomQuickShowConfig) => QuickShowRet
   confirm: (config: CustomQuickShowConfig) => QuickShowRet
   alert: (config: CustomQuickShowConfig) => QuickShowRet
+  error: (config: CustomQuickShowConfig) => QuickShowRet
+  success: (config: CustomQuickShowConfig) => QuickShowRet
 } = (props) => {
   const { size, style, ...others } = props
   const { prefix = 'next-' } = props
@@ -154,9 +156,6 @@ const Dialog: React.FC<CustomDialogProps> & {
     <NextDialog
       width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
-      // align={defaultAlign}
-      // minMargin={defaultMinMargin}
-      // shouldUpdatePosition
       v2
       centered
       bottom={80}
@@ -302,6 +301,23 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     v2: true,
     bottom: 80,
     ...others,
+  })
+}
+
+const error: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
+  const theme = window
+    .getComputedStyle?.(window.document.body)
+    .getPropertyValue('--alicloudfe-components-theme')
+    .trim()
+  const { size, style, ...others } = config
+  return NextDialog.alert({
+    width: getQuickCustomWidth(size, theme),
+    footerActions: showDefaultFooterActions(theme),
+    messageProps: { type: 'error' },
+    centered: true,
+    v2: true,
+    bottom: 80,
+    ...others,
     okProps: {
       warning: true,
       ...others.okProps,
@@ -309,10 +325,29 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   })
 }
 
+const success: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
+  const theme = window
+    .getComputedStyle?.(window.document.body)
+    .getPropertyValue('--alicloudfe-components-theme')
+    .trim()
+  const { size, style, ...others } = config
+  return NextDialog.alert({
+    width: getQuickCustomWidth(size, theme),
+    footerActions: showDefaultFooterActions(theme),
+    messageProps: { type: 'success' },
+    centered: true,
+    v2: true,
+    bottom: 80,
+    ...others,
+  })
+}
+
 hoistNonReactStatics(Dialog, NextDialog, { show: true, confirm: true })
 Dialog.show = show
 Dialog.confirm = confirm
 Dialog.alert = alert
+Dialog.error = error
+Dialog.success = success
 
 export type { DialogProps } from '@alifd/next/lib/dialog'
 export default Dialog
