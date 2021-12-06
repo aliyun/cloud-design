@@ -8,7 +8,6 @@ import {
   QuickShowConfig,
   QuickShowRet
 } from '@alifd/next/types/dialog'
-import { CSSProperties } from 'react-color/node_modules/@types/react'
 
 type CustomDialogProps = DialogProps & {
   /**
@@ -46,7 +45,7 @@ const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   if (sizeWidth) {
     return sizeWidth
   }
-  return
+  return 'auto'
 }
 
 // 获取快捷调用 size 大小
@@ -57,7 +56,7 @@ const getQuickCustomWidth = (size: CustomDialogProps['size'], theme: string) => 
   if (sizeWidth) {
     return sizeWidth;
   }
-  return
+  return 'auto'
 }
 
 // 设置阴影
@@ -302,7 +301,11 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: true,
     v2: true,
     bottom: 80,
-    ...others
+    ...others,
+    okProps: {
+      warning: true,
+      ...others.okProps,
+    },
   })
 }
 
