@@ -1,4 +1,15 @@
 .next-pagination.next-medium .next-pagination-total {
   font-size: var(--pagination-total-font-size, 12px);
   color: var(--color-text1-3, #333333);
+
+}
+.next-pagination-list {
+  .next-pagination-item {
+    box-sizing: border-box;
+  }
+  .next-pagination-item:not(.next-current) {
+    &:hover {
+      border-color: var(--pagination-item-hover-bg, #fff);
+    }
+  }
 }
