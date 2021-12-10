@@ -31,6 +31,6 @@ export default function DemoComponent() {
 }
 const Style = styled.div`
   .my-menu {
-    width: 200px;
+    width: '200px';
   }
 `
