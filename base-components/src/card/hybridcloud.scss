@@ -9,3 +9,12 @@
     width: 24px;
   }
 }
+.next-card {
+  .next-card-header-title {
+    line-height: 22px;
+  }
+  .next-card-content-container + :not(.next-card-divider).next-card-actions {
+    padding-top: 0;
+  }
+}
+

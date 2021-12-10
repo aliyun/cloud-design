@@ -107,7 +107,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   let observer = null
   // 绑定监听器
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setFooterShadowOfRef()
       const drawerDom = ReactDOM.findDOMNode(customRef.current)
       const drawerBodyDom = drawerDom?.getElementsByClassName(
@@ -132,6 +132,9 @@ const Dialog: React.FC<CustomDialogProps> & {
         observer.disconnect()
         observer.takeRecords()
         observer = null
+      }
+      if (timeout) {
+        clearTimeout(timeout)
       }
     }
   }, [others.visible])
