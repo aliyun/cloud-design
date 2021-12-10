@@ -1,3 +1,9 @@
 .next-input.next-input-textarea textarea {
   @include hybridcloud-scrollbar;
 }
+
+.next-input {
+  input:-internal-autofill-selected {
+    color: var(--input-placeholder-color, #6B6B6B) !important;
+  }
+}

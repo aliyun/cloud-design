@@ -2,8 +2,12 @@
 .next-menu.next-menu {
   @include hybridcloud-scrollbar;
 }
-.next-menu-item[aria-haspopup][aria-expanded] {
-  // .next-menu-item-inner {
-  //   width: calc(100% - 20px);
-  // }
+.next-menu-item.next-menu-item[aria-haspopup="true"][aria-expanded] {
+  padding-right: 16px;
+  .next-menu-item-inner {
+    width: 100%;
+  }
+  .next-menu-icon-arrow.next-icon {
+    right: 0;
+  }
 }
