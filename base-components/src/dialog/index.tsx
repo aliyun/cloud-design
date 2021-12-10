@@ -49,12 +49,15 @@ const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
 }
 
 // 获取快捷调用 size 大小
-const getQuickCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
+const getQuickCustomWidth = (
+  size: CustomDialogProps['size'],
+  theme: string
+) => {
   const sizeWidth = theme.startsWith('yunxiao')
     ? yunxiaoSizeMap[size]
     : sizeMap[size]
   if (sizeWidth) {
-    return sizeWidth;
+    return sizeWidth
   }
   return 'auto'
 }
@@ -94,31 +97,35 @@ const Dialog: React.FC<CustomDialogProps> & {
   // 有滚动条时底部显示阴影
   const setFooterShadowOfRef = () => {
     if (theme !== 'wind' && !theme.startsWith('xconsole')) {
-      const dialogDom = ReactDOM.findDOMNode(customRef.current)
-      setFooterShadow(dialogDom, prefix)
+      setTimeout(() => {
+        const dialogDom = ReactDOM.findDOMNode(customRef.current)
+        setFooterShadow(dialogDom, prefix)
+      })
     }
   }
 
   let observer = null
   // 绑定监听器
   useEffect(() => {
-    setFooterShadowOfRef()
-    const drawerDom = ReactDOM.findDOMNode(customRef.current)
-    const drawerBodyDom = drawerDom?.getElementsByClassName(
-      `${prefix}dialog-body`
-    )?.[0]
-    if (drawerBodyDom && !observer) {
-      observer = new MutationObserver(() => {
-        setFooterShadowOfRef()
-      })
-      observer.observe(drawerBodyDom, {
-        attributes: true,
-        attributeFilter: ['style'],
-        attributeOldValue: true,
-        childList: true,
-        subtree: true
-      })
-    }
+    setTimeout(() => {
+      setFooterShadowOfRef()
+      const drawerDom = ReactDOM.findDOMNode(customRef.current)
+      const drawerBodyDom = drawerDom?.getElementsByClassName(
+        `${prefix}dialog-body`
+      )?.[0]
+      if (drawerBodyDom && !observer) {
+        observer = new MutationObserver(() => {
+          setFooterShadowOfRef()
+        })
+        observer.observe(drawerBodyDom, {
+          attributes: true,
+          attributeFilter: ['style'],
+          attributeOldValue: true,
+          childList: true,
+          subtree: true
+        })
+      }
+    })
     // 销毁
     return () => {
       if (observer) {
@@ -127,7 +134,7 @@ const Dialog: React.FC<CustomDialogProps> & {
         observer = null
       }
     }
-  })
+  }, [others.visible])
 
   // 云效混合云主题样式主操作在右边
   const defaultFooterActions = (() => {
@@ -300,7 +307,7 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: true,
     v2: true,
     bottom: 80,
-    ...others,
+    ...others
   })
 }
 
@@ -320,8 +327,8 @@ const error: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     ...others,
     okProps: {
       warning: true,
-      ...others.okProps,
-    },
+      ...others.okProps
+    }
   })
 }
 
@@ -338,7 +345,7 @@ const success: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: true,
     v2: true,
     bottom: 80,
-    ...others,
+    ...others
   })
 }
 
