@@ -2,8 +2,6 @@
   @include hybridcloud-scrollbar;
 }
 
-.next-input {
-  input:-internal-autofill-selected {
-    color: var(--input-placeholder-color, #6B6B6B) !important;
-  }
+#password:-webkit-autofill, #username:-webkit-autofill {
+    -webkit-text-fill-color: var(--input-text-color) !important;
 }
