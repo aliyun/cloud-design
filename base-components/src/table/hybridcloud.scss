@@ -37,3 +37,7 @@
 .next-table-ping-left .next-table-fix-left-last::after {
   box-shadow: var(--table-ping-left-shadow);
 }
+
+.next-table {
+  @include hybridcloud-global-scrollbar;
+}

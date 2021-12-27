@@ -47,3 +47,26 @@ $wind-cls: '.is-wind';
     background-color: transparent;
   }
 }
+
+// 混合云全局滚动条
+@mixin hybridcloud-global-scrollbar {
+  ::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 4px;
+    background-clip: content-box;
+    border-radius: 7px;
+    background-color: var(--scrollbar-thumb-bg);
+    &:hover {
+      border-width: 3px;
+      background-color: var(--scrollbar-thumb-hover-bg); 
+    }
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
