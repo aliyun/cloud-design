@@ -2,3 +2,9 @@
 .next-virtual-tree-container.next-virtual-tree-container {
   @include hybridcloud-scrollbar;
 }
+.#{$css-prefix}tree-select {
+  &-no-data {
+    color: var(--color-fill1-6, #848484);
+    font-size: var(--font-size-body-1, 12px);
+  }
+}

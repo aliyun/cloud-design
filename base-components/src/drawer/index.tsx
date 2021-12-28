@@ -115,6 +115,8 @@ const Drawer: React.FC<DrawerProps> & {
       actionRef,
       ...filterProps
     } = props
+
+    const { prefix = 'next-' } = props
     // console.log('locale', locale)
     const [customVisible, setCustomVisible] = useState<boolean>(visible)
 
@@ -142,24 +144,29 @@ const Drawer: React.FC<DrawerProps> & {
     const setFooterShadow = (iRef: any) => {
       if (iRef?.current && theme !== 'wind' && !theme.startsWith('xconsole')) {
         const drawerDom = ReactDOM.findDOMNode(iRef.current)
-        const drawerFirstDom =
-          drawerDom?.getElementsByClassName('next-drawer')?.[0]?.firstChild
+        const drawerFirstDom = drawerDom?.getElementsByClassName(
+          `${prefix}drawer`
+        )?.[0]?.firstChild
         if (drawerFirstDom) {
           drawerFirstDom.style.overflow = 'hidden'
         }
-        const drawerBodyDom =
-          drawerDom?.getElementsByClassName('next-drawer-body')?.[0]
+        const drawerBodyDom = drawerDom?.getElementsByClassName(
+          `${prefix}drawer-body`
+        )?.[0]
 
         if (drawerBodyDom) {
           drawerBodyDom.style.overflow = 'auto'
         }
-        const drawerFooterDom =
-          drawerDom?.getElementsByClassName('next-drawer-footer')?.[0]
+        const drawerFooterDom = drawerDom?.getElementsByClassName(
+          `${prefix}drawer-footer`
+        )?.[0]
         if (drawerFooterDom) {
           if (drawerBodyDom?.clientHeight < drawerBodyDom?.scrollHeight) {
-            drawerFooterDom.classList.add('next-drawer-footer-has-shadow')
+            drawerFooterDom.classList.add(`${prefix}drawer-footer-has-shadow`)
           } else {
-            drawerFooterDom.classList.remove('next-drawer-footer-has-shadow')
+            drawerFooterDom.classList.remove(
+              `${prefix}drawer-footer-has-shadow`
+            )
           }
         }
       }
@@ -170,8 +177,9 @@ const Drawer: React.FC<DrawerProps> & {
     useEffect(() => {
       setFooterShadow(ref ?? customRef)
       const drawerDom = ReactDOM.findDOMNode((ref ?? customRef).current)
-      const drawerBodyDom =
-        drawerDom?.getElementsByClassName('next-drawer-body')?.[0]
+      const drawerBodyDom = drawerDom?.getElementsByClassName(
+        `${prefix}drawer-body`
+      )?.[0]
       if (drawerBodyDom && !observer) {
         observer = new MutationObserver(() => {
           setFooterShadow(ref ?? customRef)
@@ -199,16 +207,16 @@ const Drawer: React.FC<DrawerProps> & {
     }, [visible])
 
     const drawerCustomClassName = cls({
-      'next-drawer-has-footer': onOk || onCancel || renderFooter,
+      [`${prefix}drawer-has-footer`]: onOk || onCancel || renderFooter,
       [className]: !!className
     })
 
     const drawerFooterClassName = cls({
-      'next-drawer-footer': true,
-      'next-drawer-footer-line': hasFooterLine,
-      'next-drawer-footer-right': footerAlign === 'right',
-      'next-drawer-footer-left': footerAlign === 'left',
-      'next-drawer-footer-center': footerAlign === 'center',
+      [`${prefix}drawer-footer`]: true,
+      [`${prefix}drawer-footer-line`]: hasFooterLine,
+      [`${prefix}drawer-footer-right`]: footerAlign === 'right',
+      [`${prefix}drawer-footer-left`]: footerAlign === 'left',
+      [`${prefix}drawer-footer-center`]: footerAlign === 'center',
       [footerClass]: !!footerClass
     })
 
@@ -274,6 +282,7 @@ const Drawer: React.FC<DrawerProps> & {
 // 快捷调用
 const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
   const { onOk, onCancel, onClose, content, ...others } = props
+  const { prefix = 'next-' } = props
   let customOnOK: DrawerProps['onOk']
   let customOnCancel: DrawerProps['onCancel']
 
@@ -309,7 +318,7 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
     if (onCancel && typeof onCancel === 'function') {
       const result = onCancel?.(event)
       if (!result) {
-        actionRef?.close?.();
+        actionRef?.close?.()
         return
       }
       if (result instanceof Promise) {
@@ -336,7 +345,7 @@ const show = (props: quickShowDrawerProps): QuickShowDrawerRet => {
   const ConfigModal = ConfigProvider.config(Drawer, { componentName: 'Drawer' })
 
   const container = document.createElement('div')
-  container.setAttribute('id', 'next-quick-drawer')
+  container.setAttribute('id', `${prefix}quick-drawer`)
   document.body.appendChild(container)
 
   // @ts-ignore
