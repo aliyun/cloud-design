@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-yunxiao-v1@0.10.18 (https://fusion.design)
- * @alifd/next@1.25.5 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.10.19 (https://fusion.design)
+ * @alifd/next@1.25.11 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -4817,28 +4817,28 @@ small {
         border-color: var(--btn-pure-normal-border-color-disabled, #E8E8E8);
         text-decoration: none; }
     .next-btn.disabled.next-btn-primary, .next-btn[disabled].next-btn-primary {
-      background: #E8E8E8;
-      background: var(--btn-pure-primary-bg-disabled, #E8E8E8);
-      border-color: #E8E8E8;
-      border-color: var(--btn-pure-primary-border-color-disabled, #E8E8E8); }
+      background: #CECECE;
+      background: var(--btn-pure-primary-bg-disabled, #CECECE);
+      border-color: #CECECE;
+      border-color: var(--btn-pure-primary-border-color-disabled, #CECECE); }
       .next-btn.disabled.next-btn-primary, .next-btn.disabled.next-btn-primary:link, .next-btn.disabled.next-btn-primary:visited, .next-btn.disabled.next-btn-primary.visited, .next-btn[disabled].next-btn-primary, .next-btn[disabled].next-btn-primary:link, .next-btn[disabled].next-btn-primary:visited, .next-btn[disabled].next-btn-primary.visited {
         color: #FFFFFF;
         color: var(--btn-pure-primary-color-disabled, #FFFFFF); }
       .next-btn.disabled.next-btn-primary:focus, .next-btn.disabled.next-btn-primary:hover, .next-btn.disabled.next-btn-primary.hover, .next-btn[disabled].next-btn-primary:focus, .next-btn[disabled].next-btn-primary:hover, .next-btn[disabled].next-btn-primary.hover {
         color: #FFFFFF;
         color: var(--btn-pure-primary-color-disabled, #FFFFFF);
-        background: #E8E8E8;
-        background: var(--btn-pure-primary-bg-disabled, #E8E8E8);
-        border-color: #E8E8E8;
-        border-color: var(--btn-pure-primary-border-color-disabled, #E8E8E8);
+        background: #CECECE;
+        background: var(--btn-pure-primary-bg-disabled, #CECECE);
+        border-color: #CECECE;
+        border-color: var(--btn-pure-primary-border-color-disabled, #CECECE);
         text-decoration: none; }
       .next-btn.disabled.next-btn-primary:active, .next-btn.disabled.next-btn-primary.active, .next-btn[disabled].next-btn-primary:active, .next-btn[disabled].next-btn-primary.active {
         color: #FFFFFF;
         color: var(--btn-pure-primary-color-disabled, #FFFFFF);
-        background: #E8E8E8;
-        background: var(--btn-pure-primary-bg-disabled, #E8E8E8);
-        border-color: #E8E8E8;
-        border-color: var(--btn-pure-primary-border-color-disabled, #E8E8E8);
+        background: #CECECE;
+        background: var(--btn-pure-primary-bg-disabled, #CECECE);
+        border-color: #CECECE;
+        border-color: var(--btn-pure-primary-border-color-disabled, #CECECE);
         text-decoration: none; }
     .next-btn.disabled.next-btn-secondary, .next-btn[disabled].next-btn-secondary {
       background: transparent;
@@ -7602,8 +7602,8 @@ small {
       line-height: inherit; }
   .next-collapse-panel-title {
     position: relative;
-    line-height: 24px;
-    line-height: var(--collapse-title-height, 24px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     background: #FFFFFF;
     background: var(--collapse-title-bg-color, #FFFFFF);
     font-size: 14px;
@@ -7629,6 +7629,8 @@ small {
         color: var(--collapse-icon-hover-color, #292929); }
   .next-collapse-panel-content {
     height: 0;
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     padding: 0 36px;
     padding: 0 var(--collapse-content-padding-x, 36px);
     background: #FFFFFF;
@@ -8542,8 +8544,8 @@ small {
       padding: 0 var(--message-size-m-title-content-padding-right, 8px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px));
       font-size: 14px;
       font-size: var(--message-size-m-content-font, 14px);
-      line-height: 14px;
-      line-height: var(--message-size-m-content-font, 14px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
     .next-message.next-medium .next-message-symbol + .next-message-content {
       margin-top: 0; }
     .next-message.next-medium.next-title-content .next-message-title {
@@ -8567,8 +8569,7 @@ small {
     border-width: 1px;
     border-width: var(--message-size-l-border-width, 1px);
     padding: 12px;
-    padding: var(--message-size-l-padding, 12px);
-    line-height: 18px; }
+    padding: var(--message-size-l-padding, 12px); }
     .next-message.next-large .next-message-symbol {
       float: left;
       line-height: 20px;
@@ -8594,8 +8595,8 @@ small {
       padding: 0 var(--message-size-l-title-content-padding-right, 8px) 0 calc(var(--message-size-l-title-content-padding-left, 8px) + var(--message-size-l-icon, 20px));
       font-size: 14px;
       font-size: var(--message-size-l-content-font, 14px);
-      line-height: 14px;
-      line-height: var(--message-size-l-content-font, 14px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
     .next-message.next-large .next-message-symbol + .next-message-content {
       margin-top: 0; }
     .next-message.next-large.next-title-content .next-message-title {
@@ -8755,6 +8756,8 @@ small {
     padding: var(--dialog-content-padding-top, 12px) var(--dialog-content-padding-left-right, 20px) var(--dialog-content-padding-bottom, 16px) var(--dialog-content-padding-left-right, 20px);
     font-size: 14px;
     font-size: var(--dialog-content-font-size, 14px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     color: #6E6E6E;
     color: var(--dialog-content-color, #6E6E6E); }
   .next-dialog-footer {
@@ -8952,6 +8955,8 @@ small {
     padding: var(--drawer-content-padding-top, 20px) var(--drawer-content-padding-left-right, 20px) var(--drawer-content-padding-bottom, 20px) var(--drawer-content-padding-left-right, 20px);
     font-size: 14px;
     font-size: var(--drawer-content-font-size, 14px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     color: #575757;
     color: var(--drawer-content-color, #575757); }
   .next-drawer-close {
@@ -17812,6 +17817,8 @@ small {
       color: var(--step-arrow-item-title-wait-color, #6E6E6E);
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       word-break: break-word; }
     .next-step-arrow > .next-step-item-wait .next-step-item-node-placeholder {
       width: 32px;
@@ -17884,6 +17891,8 @@ small {
       color: var(--step-arrow-item-title-process-color, #FFFFFF);
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       word-break: break-word; }
     .next-step-arrow > .next-step-item-process .next-step-item-node-placeholder {
       width: 32px;
@@ -17956,6 +17965,8 @@ small {
       color: var(--step-arrow-item-title-finish-color, #1B9AEE);
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       word-break: break-word; }
     .next-step-arrow > .next-step-item-finish .next-step-item-node-placeholder {
       width: 32px;
@@ -18029,6 +18040,8 @@ small {
       color: var(--step-arrow-item-title-disabled-color, #adadad);
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       word-break: break-word; }
     .next-step-arrow .next-step-item-disabled .next-step-item-node-placeholder {
       width: 32px;
@@ -18152,6 +18165,8 @@ small {
   color: var(--step-circle-item-title-wait-color, #adadad);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-circle > .next-step-item-wait .next-step-item-node-placeholder {
@@ -18234,6 +18249,8 @@ small {
   color: var(--step-circle-item-title-process-color, #575757);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-circle > .next-step-item-process .next-step-item-node-placeholder {
@@ -18316,6 +18333,8 @@ small {
   color: var(--step-circle-item-title-finish-color, #575757);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-circle > .next-step-item-finish .next-step-item-node-placeholder {
@@ -18398,6 +18417,8 @@ small {
   color: var(--step-circle-item-title-disabled-color, #adadad);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-circle .next-step-item-disabled .next-step-item-node-placeholder {
@@ -18777,8 +18798,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-circle-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-circle.next-step-vertical > .next-step-item-process .next-step-item-tail {
     width: 1px;
     width: var(--step-circle-vertical-item-tail-size, 1px);
@@ -18820,8 +18841,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-circle-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-circle.next-step-vertical > .next-step-item-finish .next-step-item-tail {
     width: 1px;
     width: var(--step-circle-vertical-item-tail-size, 1px);
@@ -18863,8 +18884,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-circle-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-circle.next-step-vertical > .next-step-item-disabled .next-step-item-tail {
     width: 1px;
     width: var(--step-circle-vertical-item-tail-size, 1px);
@@ -18906,8 +18927,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-circle-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
 
 .next-step-dot .next-step-item-container {
   display: inline-block;
@@ -18970,6 +18991,8 @@ small {
   color: var(--step-dot-item-title-wait-color, #575757);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-dot > .next-step-item-wait .next-step-item-node-placeholder {
@@ -19074,6 +19097,8 @@ small {
   color: var(--step-dot-item-title-process-color, #292929);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-dot > .next-step-item-process .next-step-item-node-placeholder {
@@ -19178,6 +19203,8 @@ small {
   color: var(--step-dot-item-title-finish-color, #575757);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-dot > .next-step-item-finish .next-step-item-node-placeholder {
@@ -19282,6 +19309,8 @@ small {
   color: var(--step-dot-item-title-disabled-color, #adadad);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-dot .next-step-item-disabled .next-step-item-node-placeholder {
@@ -19570,8 +19599,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-dot-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-dot-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-dot.next-step-vertical > .next-step-item-process .next-step-item-tail {
     width: 1px;
     width: var(--step-dot-vertical-item-tail-size, 1px);
@@ -19613,8 +19642,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-dot-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-dot-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-dot.next-step-vertical > .next-step-item-finish .next-step-item-tail {
     width: 1px;
     width: var(--step-dot-vertical-item-tail-size, 1px);
@@ -19656,8 +19685,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-dot-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-dot-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-dot.next-step-vertical > .next-step-item-disabled .next-step-item-tail {
     width: 1px;
     width: var(--step-dot-vertical-item-tail-size, 1px);
@@ -19699,8 +19728,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-dot-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-dot-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
 
 .next-step-horizontal[dir="rtl"] > .next-step-item {
   text-align: right; }
@@ -21878,8 +21907,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 14px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 2px;
       margin-top: var(--timeline-item-title-margin-top, 2px);
       overflow: hidden;
@@ -21894,8 +21923,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 14px;
       font-size: var(--timeline-item-body-font-size, 14px);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #8B8B8B;
       color: var(--timeline-item-body-color, #8B8B8B);
       text-align: right; }
@@ -21919,8 +21948,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #adadad;
     color: var(--timeline-item-left-body-color, #adadad);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 2px;
     margin-top: var(--timeline-item-title-margin-top, 2px);
     text-align: left;
@@ -22037,8 +22066,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 14px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 2px;
       margin-top: var(--timeline-item-title-margin-top, 2px);
       overflow: hidden;
@@ -22053,8 +22082,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 14px;
       font-size: var(--timeline-item-body-font-size, 14px);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #8B8B8B;
       color: var(--timeline-item-body-color, #8B8B8B);
       text-align: right; }
@@ -22078,8 +22107,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #adadad;
     color: var(--timeline-item-left-body-color, #adadad);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 2px;
     margin-top: var(--timeline-item-title-margin-top, 2px);
     text-align: left;
@@ -22196,8 +22225,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 14px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 2px;
       margin-top: var(--timeline-item-title-margin-top, 2px);
       overflow: hidden;
@@ -22212,8 +22241,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 14px;
       font-size: var(--timeline-item-body-font-size, 14px);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #8B8B8B;
       color: var(--timeline-item-body-color, #8B8B8B);
       text-align: right; }
@@ -22237,8 +22266,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #adadad;
     color: var(--timeline-item-left-body-color, #adadad);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 2px;
     margin-top: var(--timeline-item-title-margin-top, 2px);
     text-align: left;
@@ -22355,8 +22384,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 14px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 2px;
       margin-top: var(--timeline-item-title-margin-top, 2px);
       overflow: hidden;
@@ -22371,8 +22400,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 14px;
       font-size: var(--timeline-item-body-font-size, 14px);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #8B8B8B;
       color: var(--timeline-item-body-color, #8B8B8B);
       text-align: right; }
@@ -22396,8 +22425,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #adadad;
     color: var(--timeline-item-left-body-color, #adadad);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 2px;
     margin-top: var(--timeline-item-title-margin-top, 2px);
     text-align: left;
@@ -22441,8 +22470,8 @@ small {
     padding-bottom: var(--timeline-item-folder-margin-bottom, 4px);
     font-size: 12px;
     font-size: var(--timeline-item-folder-font-size, 12px);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-folder-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     position: relative;
     /* min-height: auto !important; */ }
   .next-timeline-item-dot-tail {
@@ -22549,8 +22578,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 14px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 2px;
       margin-top: var(--timeline-item-title-margin-top, 2px);
       overflow: hidden;
@@ -22565,8 +22594,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 14px;
       font-size: var(--timeline-item-body-font-size, 14px);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #8B8B8B;
       color: var(--timeline-item-body-color, #8B8B8B);
       text-align: left; }
@@ -22590,8 +22619,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #adadad;
     color: var(--timeline-item-left-body-color, #adadad);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 2px;
     margin-top: var(--timeline-item-title-margin-top, 2px);
     text-align: right;
@@ -22701,8 +22730,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 14px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 2px;
       margin-top: var(--timeline-item-title-margin-top, 2px);
       overflow: hidden;
@@ -22717,8 +22746,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 14px;
       font-size: var(--timeline-item-body-font-size, 14px);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #8B8B8B;
       color: var(--timeline-item-body-color, #8B8B8B);
       text-align: left; }
@@ -22742,8 +22771,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #adadad;
     color: var(--timeline-item-left-body-color, #adadad);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 2px;
     margin-top: var(--timeline-item-title-margin-top, 2px);
     text-align: right;
@@ -22853,8 +22882,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 14px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 2px;
       margin-top: var(--timeline-item-title-margin-top, 2px);
       overflow: hidden;
@@ -22869,8 +22898,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 14px;
       font-size: var(--timeline-item-body-font-size, 14px);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #8B8B8B;
       color: var(--timeline-item-body-color, #8B8B8B);
       text-align: left; }
@@ -22894,8 +22923,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #adadad;
     color: var(--timeline-item-left-body-color, #adadad);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 2px;
     margin-top: var(--timeline-item-title-margin-top, 2px);
     text-align: right;
@@ -23005,8 +23034,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 14px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 2px;
       margin-top: var(--timeline-item-title-margin-top, 2px);
       overflow: hidden;
@@ -23021,8 +23050,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 14px;
       font-size: var(--timeline-item-body-font-size, 14px);
-      line-height: calc(14px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 14px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #8B8B8B;
       color: var(--timeline-item-body-color, #8B8B8B);
       text-align: left; }
@@ -23046,8 +23075,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #adadad;
     color: var(--timeline-item-left-body-color, #adadad);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 2px;
     margin-top: var(--timeline-item-title-margin-top, 2px);
     text-align: right;
@@ -23092,8 +23121,8 @@ small {
   font-size: var(--timeline-item-title-font-size, 14px);
   font-weight: bold;
   font-weight: var(--timeline-item-title-font-weight, bold);
-  line-height: calc(14px + 4px);
-  line-height: calc(var(--timeline-item-title-font-size, 14px) + 4px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -23103,11 +23132,11 @@ small {
 
 .next-timeline.next-alternate .next-timeline-item-right .next-timeline-item-body {
   margin: 0;
-  margin-top: 8px;
+  margin-top: 4px;
   font-size: 14px;
   font-size: var(--timeline-item-body-font-size, 14px);
-  line-height: calc(14px + 4px);
-  line-height: calc(var(--timeline-item-body-font-size, 14px) + 4px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   color: #8B8B8B;
   color: var(--timeline-item-body-color, #8B8B8B);
   text-align: right; }
@@ -23161,8 +23190,8 @@ small {
   font-size: var(--timeline-item-title-font-size, 14px);
   font-weight: bold;
   font-weight: var(--timeline-item-title-font-weight, bold);
-  line-height: calc(14px + 4px);
-  line-height: calc(var(--timeline-item-title-font-size, 14px) + 4px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -23174,8 +23203,8 @@ small {
   margin: 0;
   font-size: 14px;
   font-size: var(--timeline-item-body-font-size, 14px);
-  line-height: calc(14px + 4px);
-  line-height: calc(var(--timeline-item-body-font-size, 14px) + 4px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   color: #8B8B8B;
   color: var(--timeline-item-body-color, #8B8B8B);
   text-align: left; }
@@ -25654,6 +25683,9 @@ h6.next-typography-title {
     border-bottom-width: 0; }
   .next-table-fixed .next-table-body tr td:last-child {
     border-right-width: 0; }
+  .next-table-fixed.only-bottom-border .next-table-body tr:last-child td {
+    border-bottom-width: 1px;
+    border-bottom-width: var(--table-normal-border-width, 1px); }
   .next-table-fixed.next-table-group table tr td:first-child,
   .next-table-fixed.next-table-group table tr th:first-child {
     border-left-width: 1px;
@@ -25693,7 +25725,6 @@ h6.next-typography-title {
   .next-table-group.only-bottom-border .next-table-body table,
   .next-table-group.only-bottom-border .next-table-body table.next-table-row {
     border-top: 0; }
-  .next-table-group.only-bottom-border .next-table-body table > tbody > tr:nth-last-child(2) td,
   .next-table-group.only-bottom-border .next-table-body .next-table-group-footer td {
     border-bottom: 0; }
   .next-table-group .next-table-body {
@@ -25767,8 +25798,7 @@ h6.next-typography-title {
   border-bottom-right-radius: 0;
   border-bottom-right-radius: var(--table-header-corner-bottom, 0);
   width: 15px;
-  background: #FFFFFF;
-  background: var(--table-th-bg, #FFFFFF);
+  background: inherit;
   position: absolute;
   right: 0;
   height: 100%;
