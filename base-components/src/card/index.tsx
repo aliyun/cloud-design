@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> & {
   CollapsableTail: React.FC<ICollapsableProps>
   CollapsableHead: React.FC<ICollapsableProps>
 } = (props => {
-  return <NextCard {...props} />
+  return <NextCard showTitleBullet={false} {...props} />
 }) as any
 
 hoistNonReactStatics(Card, NextCard)

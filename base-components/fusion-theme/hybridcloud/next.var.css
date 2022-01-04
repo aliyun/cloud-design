@@ -1,25 +1,10 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.18.9 (https://fusion.design)
- * @alifd/next@1.24.15 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.18.16 (https://fusion.design)
+ * @alifd/next@1.25.10 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
 @charset "UTF-8";
-/**
- * 尺寸 基础尺寸
- * 命名能在语义的前提下简单就尽量简单, 这里可以是 size-2x, space-2x, size-base ...
- * 不过可以在语义的前提下做的更精简一些, 于是用了s2, s1等
- * 可用变量: `$s1 - $s8`
- * @example scss - 使用
- *   .element {
- *     padding: $s1 !default;
- *   }
- *
- * @example css - CSS 输出
- *   .element {
- *     padding: 4px !default;
- *   }
- */
 .next-sr-only {
   position: absolute;
   width: 1px;
@@ -1814,7 +1799,8 @@ small {
 @font-face {
   font-family: NextIcon;
   src: url("//at.alicdn.com/t/font_1984231_ech11fjv25g.eot");
-  src: url("//at.alicdn.com/t/font_1984231_ech11fjv25g.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1984231_ech11fjv25g.woff2") format("woff2"), url("//at.alicdn.com/t/font_1984231_ech11fjv25g.woff") format("woff"), url("//at.alicdn.com/t/font_1984231_ech11fjv25g.ttf") format("truetype"), url("//at.alicdn.com/t/font_1984231_ech11fjv25g.svg#NextIcon") format("svg"); }
+  src: url("//at.alicdn.com/t/font_1984231_ech11fjv25g.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1984231_ech11fjv25g.woff2") format("woff2"), url("//at.alicdn.com/t/font_1984231_ech11fjv25g.woff") format("woff"), url("//at.alicdn.com/t/font_1984231_ech11fjv25g.ttf") format("truetype"), url("//at.alicdn.com/t/font_1984231_ech11fjv25g.svg#NextIcon") format("svg");
+  font-display: swap; }
 
 .next-icon {
   display: inline-block;
@@ -2258,10 +2244,10 @@ small {
     margin-left: 1em; }
   .next-loading-fusion-reactor {
     display: inline-block;
-    width: 48px;
-    width: var(--loading-large-size, 48px);
-    height: 48px;
-    height: var(--loading-large-size, 48px);
+    width: 28px;
+    width: var(--loading-large-size, 28px);
+    height: 28px;
+    height: var(--loading-large-size, 28px);
     position: relative;
     margin: 0;
     -webkit-animation-duration: 5.6s;
@@ -2275,10 +2261,10 @@ small {
     .next-loading-fusion-reactor .next-loading-dot {
       position: absolute;
       margin: auto;
-      width: 12px;
-      width: var(--loading-large-dot-size, 12px);
-      height: 12px;
-      height: var(--loading-large-dot-size, 12px);
+      width: 8px;
+      width: var(--loading-large-dot-size, 8px);
+      height: 8px;
+      height: var(--loading-large-dot-size, 8px);
       border-radius: 50%;
       background: #0064C8;
       background: var(--loading-dot-color, #0064C8);
@@ -2316,10 +2302,10 @@ small {
         -webkit-animation-name: nextVectorDotsYR;
         animation-name: nextVectorDotsYR; }
   .next-loading-medium-fusion-reactor {
-    width: 32px;
-    width: var(--loading-medium-size, 32px);
-    height: 32px;
-    height: var(--loading-medium-size, 32px); }
+    width: 28px;
+    width: var(--loading-medium-size, 28px);
+    height: 28px;
+    height: var(--loading-medium-size, 28px); }
     .next-loading-medium-fusion-reactor .next-loading-dot {
       width: 8px;
       width: var(--loading-medium-dot-size, 8px);
@@ -2420,152 +2406,152 @@ small {
     bottom: 0; }
   45%,
   50% {
-    bottom: calc(48px/2 - 12px*1.2/2);
-    bottom: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    bottom: calc(28px/2 - 8px*1.2/2);
+    bottom: calc(var(--loading-large-size, 28px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     bottom: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @keyframes nextVectorDotsYR {
   25% {
     bottom: 0; }
   45%,
   50% {
-    bottom: calc(48px/2 - 12px*1.2/2);
-    bottom: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    bottom: calc(28px/2 - 8px*1.2/2);
+    bottom: calc(var(--loading-large-size, 28px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     bottom: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @-webkit-keyframes nextVectorDotsY {
   25% {
     top: 0; }
   45%,
   50% {
-    top: calc(48px/2 - 12px*1.2/2);
-    top: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    top: calc(28px/2 - 8px*1.2/2);
+    top: calc(var(--loading-large-size, 28px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     top: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @keyframes nextVectorDotsY {
   25% {
     top: 0; }
   45%,
   50% {
-    top: calc(48px/2 - 12px*1.2/2);
-    top: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    top: calc(28px/2 - 8px*1.2/2);
+    top: calc(var(--loading-large-size, 28px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     top: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @-webkit-keyframes nextVectorDotsX {
   25% {
     left: 0; }
   45%,
   50% {
-    left: calc(48px/2 - 12px*1.2/2);
-    left: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    left: calc(28px/2 - 8px*1.2/2);
+    left: calc(var(--loading-large-size, 28px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     left: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @keyframes nextVectorDotsX {
   25% {
     left: 0; }
   45%,
   50% {
-    left: calc(48px/2 - 12px*1.2/2);
-    left: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    left: calc(28px/2 - 8px*1.2/2);
+    left: calc(var(--loading-large-size, 28px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     left: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @-webkit-keyframes nextVectorDotsXR {
   25% {
     right: 0; }
   45%,
   50% {
-    right: calc(48px/2 - 12px*1.2/2);
-    right: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    right: calc(28px/2 - 8px*1.2/2);
+    right: calc(var(--loading-large-size, 28px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     right: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @keyframes nextVectorDotsXR {
   25% {
     right: 0; }
   45%,
   50% {
-    right: calc(48px/2 - 12px*1.2/2);
-    right: calc(var(--loading-large-size, 48px)/2 - var(--loading-large-dot-size, 12px)*1.2/2);
-    width: calc(12px*1.2);
-    width: calc(var(--loading-large-dot-size, 12px)*1.2);
-    height: calc(12px*1.2);
-    height: calc(var(--loading-large-dot-size, 12px)*1.2); }
+    right: calc(28px/2 - 8px*1.2/2);
+    right: calc(var(--loading-large-size, 28px)/2 - var(--loading-large-dot-size, 8px)*1.2/2);
+    width: calc(8px*1.2);
+    width: calc(var(--loading-large-dot-size, 8px)*1.2);
+    height: calc(8px*1.2);
+    height: calc(var(--loading-large-dot-size, 8px)*1.2); }
   90% {
     right: 0;
-    height: 12px;
-    height: var(--loading-large-dot-size, 12px);
-    width: 12px;
-    width: var(--loading-large-dot-size, 12px); } }
+    height: 8px;
+    height: var(--loading-large-dot-size, 8px);
+    width: 8px;
+    width: var(--loading-large-dot-size, 8px); } }
 
 @-webkit-keyframes nextVectorDotsYR-medium {
   25% {
     bottom: 0; }
   45%,
   50% {
-    bottom: calc(32px/2 - 8px*1.2/2);
-    bottom: calc(var(--loading-medium-size, 32px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
+    bottom: calc(28px/2 - 8px*1.2/2);
+    bottom: calc(var(--loading-medium-size, 28px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
     height: calc(8px*1.2);
     height: calc(var(--loading-medium-dot-size, 8px)*1.2);
     width: calc(8px*1.2);
@@ -2582,8 +2568,8 @@ small {
     bottom: 0; }
   45%,
   50% {
-    bottom: calc(32px/2 - 8px*1.2/2);
-    bottom: calc(var(--loading-medium-size, 32px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
+    bottom: calc(28px/2 - 8px*1.2/2);
+    bottom: calc(var(--loading-medium-size, 28px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
     height: calc(8px*1.2);
     height: calc(var(--loading-medium-dot-size, 8px)*1.2);
     width: calc(8px*1.2);
@@ -2600,8 +2586,8 @@ small {
     top: 0; }
   45%,
   50% {
-    top: calc(32px/2 - 8px*1.2/2);
-    top: calc(var(--loading-medium-size, 32px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
+    top: calc(28px/2 - 8px*1.2/2);
+    top: calc(var(--loading-medium-size, 28px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
     height: calc(8px*1.2);
     height: calc(var(--loading-medium-dot-size, 8px)*1.2);
     width: calc(8px*1.2);
@@ -2618,8 +2604,8 @@ small {
     top: 0; }
   45%,
   50% {
-    top: calc(32px/2 - 8px*1.2/2);
-    top: calc(var(--loading-medium-size, 32px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
+    top: calc(28px/2 - 8px*1.2/2);
+    top: calc(var(--loading-medium-size, 28px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
     height: calc(8px*1.2);
     height: calc(var(--loading-medium-dot-size, 8px)*1.2);
     width: calc(8px*1.2);
@@ -2636,8 +2622,8 @@ small {
     left: 0; }
   45%,
   50% {
-    left: calc(32px/2 - 8px*1.2/2);
-    left: calc(var(--loading-medium-size, 32px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
+    left: calc(28px/2 - 8px*1.2/2);
+    left: calc(var(--loading-medium-size, 28px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
     width: calc(8px*1.2);
     width: calc(var(--loading-medium-dot-size, 8px)*1.2);
     height: calc(8px*1.2);
@@ -2654,8 +2640,8 @@ small {
     left: 0; }
   45%,
   50% {
-    left: calc(32px/2 - 8px*1.2/2);
-    left: calc(var(--loading-medium-size, 32px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
+    left: calc(28px/2 - 8px*1.2/2);
+    left: calc(var(--loading-medium-size, 28px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
     width: calc(8px*1.2);
     width: calc(var(--loading-medium-dot-size, 8px)*1.2);
     height: calc(8px*1.2);
@@ -2672,8 +2658,8 @@ small {
     right: 0; }
   45%,
   50% {
-    right: calc(32px/2 - 8px*1.2/2);
-    right: calc(var(--loading-medium-size, 32px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
+    right: calc(28px/2 - 8px*1.2/2);
+    right: calc(var(--loading-medium-size, 28px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
     width: calc(8px*1.2);
     width: calc(var(--loading-medium-dot-size, 8px)*1.2);
     height: calc(8px*1.2);
@@ -2690,8 +2676,8 @@ small {
     right: 0; }
   45%,
   50% {
-    right: calc(32px/2 - 8px*1.2/2);
-    right: calc(var(--loading-medium-size, 32px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
+    right: calc(28px/2 - 8px*1.2/2);
+    right: calc(var(--loading-medium-size, 28px)/2 - var(--loading-medium-dot-size, 8px)*1.2/2);
     width: calc(8px*1.2);
     width: calc(var(--loading-medium-dot-size, 8px)*1.2);
     height: calc(8px*1.2);
@@ -5316,8 +5302,7 @@ small {
     border-style: solid;
     border-style: var(--btn-ghost-border-style, solid); }
     .next-btn-ghost.next-btn-dark {
-      background: rgba(transparent, 0);
-      background: rgba(var(--btn-ghost-dark-bg, transparent), 0);
+      background: rgba(0, 0, 0, 0);
       border-color: #CCCCCC;
       border-color: var(--btn-ghost-dark-border-color, #CCCCCC); }
       .next-btn-ghost.next-btn-dark, .next-btn-ghost.next-btn-dark:link, .next-btn-ghost.next-btn-dark:visited, .next-btn-ghost.next-btn-dark.visited {
@@ -5326,46 +5311,37 @@ small {
       .next-btn-ghost.next-btn-dark:focus, .next-btn-ghost.next-btn-dark:hover, .next-btn-ghost.next-btn-dark.hover {
         color: #FFFFFF;
         color: var(--btn-ghost-dark-color-hover, #FFFFFF);
-        background: rgba(#FFFFFF, 0.8);
-        background: rgba(var(--btn-ghost-dark-bg-hover-rgb, #FFFFFF), var(--btn-ghost-dark-bg-hover-opacity, 0.8));
+        background: rgba(255, 255, 255, 0.8);
         border-color: #FFFFFF;
         border-color: var(--btn-ghost-dark-border-color-hover, #FFFFFF);
         text-decoration: none; }
       .next-btn-ghost.next-btn-dark:active, .next-btn-ghost.next-btn-dark.active {
         color: #FFFFFF;
         color: var(--btn-ghost-dark-color-hover, #FFFFFF);
-        background: rgba(#FFFFFF, 0.8);
-        background: rgba(var(--btn-ghost-dark-bg-hover-rgb, #FFFFFF), var(--btn-ghost-dark-bg-hover-opacity, 0.8));
+        background: rgba(255, 255, 255, 0.8);
         border-color: #FFFFFF;
         border-color: var(--btn-ghost-dark-border-color-hover, #FFFFFF);
         text-decoration: none; }
       .next-btn-ghost.next-btn-dark.disabled, .next-btn-ghost.next-btn-dark[disabled] {
         background: transparent;
         background: var(--btn-ghost-dark-bg-disabled, transparent);
-        border-color: rgba(#FFFFFF, 0.4);
-        border-color: rgba(var(--btn-ghost-dark-border-color-disabled-rgb, #FFFFFF), var(--btn-ghost-dark-border-color-disabled-opacity, 0.4)); }
+        border-color: rgba(255, 255, 255, 0.4); }
         .next-btn-ghost.next-btn-dark.disabled, .next-btn-ghost.next-btn-dark.disabled:link, .next-btn-ghost.next-btn-dark.disabled:visited, .next-btn-ghost.next-btn-dark.disabled.visited, .next-btn-ghost.next-btn-dark[disabled], .next-btn-ghost.next-btn-dark[disabled]:link, .next-btn-ghost.next-btn-dark[disabled]:visited, .next-btn-ghost.next-btn-dark[disabled].visited {
-          color: rgba(#FFFFFF, 0.4);
-          color: rgba(var(--btn-ghost-dark-color-disabled-rgb, #FFFFFF), var(--btn-ghost-dark-color-disabled-opacity, 0.4)); }
+          color: rgba(255, 255, 255, 0.4); }
         .next-btn-ghost.next-btn-dark.disabled:focus, .next-btn-ghost.next-btn-dark.disabled:hover, .next-btn-ghost.next-btn-dark.disabled.hover, .next-btn-ghost.next-btn-dark[disabled]:focus, .next-btn-ghost.next-btn-dark[disabled]:hover, .next-btn-ghost.next-btn-dark[disabled].hover {
-          color: rgba(#FFFFFF, 0.4);
-          color: rgba(var(--btn-ghost-dark-color-disabled-rgb, #FFFFFF), var(--btn-ghost-dark-color-disabled-opacity, 0.4));
+          color: rgba(255, 255, 255, 0.4);
           background: transparent;
           background: var(--btn-ghost-dark-bg-disabled, transparent);
-          border-color: rgba(#FFFFFF, 0.4);
-          border-color: rgba(var(--btn-ghost-dark-border-color-disabled-rgb, #FFFFFF), var(--btn-ghost-dark-border-color-disabled-opacity, 0.4));
+          border-color: rgba(255, 255, 255, 0.4);
           text-decoration: none; }
         .next-btn-ghost.next-btn-dark.disabled:active, .next-btn-ghost.next-btn-dark.disabled.active, .next-btn-ghost.next-btn-dark[disabled]:active, .next-btn-ghost.next-btn-dark[disabled].active {
-          color: rgba(#FFFFFF, 0.4);
-          color: rgba(var(--btn-ghost-dark-color-disabled-rgb, #FFFFFF), var(--btn-ghost-dark-color-disabled-opacity, 0.4));
+          color: rgba(255, 255, 255, 0.4);
           background: transparent;
           background: var(--btn-ghost-dark-bg-disabled, transparent);
-          border-color: rgba(#FFFFFF, 0.4);
-          border-color: rgba(var(--btn-ghost-dark-border-color-disabled-rgb, #FFFFFF), var(--btn-ghost-dark-border-color-disabled-opacity, 0.4));
+          border-color: rgba(255, 255, 255, 0.4);
           text-decoration: none; }
     .next-btn-ghost.next-btn-light {
-      background: rgba(transparent, 0);
-      background: rgba(var(--btn-ghost-light-bg, transparent), var(--btn-ghost-light-bg-opacity, 0));
+      background: rgba(0, 0, 0, 0);
       border-color: #589ADB;
       border-color: var(--btn-ghost-light-border-color, #589ADB); }
       .next-btn-ghost.next-btn-light, .next-btn-ghost.next-btn-light:link, .next-btn-ghost.next-btn-light:visited, .next-btn-ghost.next-btn-light.visited {
@@ -5374,42 +5350,34 @@ small {
       .next-btn-ghost.next-btn-light:focus, .next-btn-ghost.next-btn-light:hover, .next-btn-ghost.next-btn-light.hover {
         color: #5a5a5a;
         color: var(--btn-ghost-light-color-hover, #5a5a5a);
-        background: rgba(#000000, 0.92);
-        background: rgba(var(--btn-ghost-light-bg-hover-rgb, #000000), var(--btn-ghost-light-bg-hover-opacity, 0.92));
+        background: rgba(0, 0, 0, 0.92);
         border-color: #1A1A1A;
         border-color: var(--btn-ghost-light-border-color-hover, #1A1A1A);
         text-decoration: none; }
       .next-btn-ghost.next-btn-light:active, .next-btn-ghost.next-btn-light.active {
         color: #5a5a5a;
         color: var(--btn-ghost-light-color-hover, #5a5a5a);
-        background: rgba(#000000, 0.92);
-        background: rgba(var(--btn-ghost-light-bg-hover-rgb, #000000), var(--btn-ghost-light-bg-hover-opacity, 0.92));
+        background: rgba(0, 0, 0, 0.92);
         border-color: #1A1A1A;
         border-color: var(--btn-ghost-light-border-color-hover, #1A1A1A);
         text-decoration: none; }
       .next-btn-ghost.next-btn-light.disabled, .next-btn-ghost.next-btn-light[disabled] {
         background: transparent;
         background: var(--btn-ghost-light-bg-disabled, transparent);
-        border-color: rgba(#000000, 0.1);
-        border-color: rgba(var(--btn-ghost-light-border-color-disabled-rgb, #000000), var(--btn-ghost-light-border-color-disabled-opacity, 0.1)); }
+        border-color: rgba(0, 0, 0, 0.1); }
         .next-btn-ghost.next-btn-light.disabled, .next-btn-ghost.next-btn-light.disabled:link, .next-btn-ghost.next-btn-light.disabled:visited, .next-btn-ghost.next-btn-light.disabled.visited, .next-btn-ghost.next-btn-light[disabled], .next-btn-ghost.next-btn-light[disabled]:link, .next-btn-ghost.next-btn-light[disabled]:visited, .next-btn-ghost.next-btn-light[disabled].visited {
-          color: rgba(#000000, 0.1);
-          color: rgba(var(--btn-ghost-light-color-disabled-rgb, #000000), var(--btn-ghost-light-color-disabled-opacity, 0.1)); }
+          color: rgba(0, 0, 0, 0.1); }
         .next-btn-ghost.next-btn-light.disabled:focus, .next-btn-ghost.next-btn-light.disabled:hover, .next-btn-ghost.next-btn-light.disabled.hover, .next-btn-ghost.next-btn-light[disabled]:focus, .next-btn-ghost.next-btn-light[disabled]:hover, .next-btn-ghost.next-btn-light[disabled].hover {
-          color: rgba(#000000, 0.1);
-          color: rgba(var(--btn-ghost-light-color-disabled-rgb, #000000), var(--btn-ghost-light-color-disabled-opacity, 0.1));
+          color: rgba(0, 0, 0, 0.1);
           background: transparent;
           background: var(--btn-ghost-light-bg-disabled, transparent);
-          border-color: rgba(#000000, 0.1);
-          border-color: rgba(var(--btn-ghost-light-border-color-disabled-rgb, #000000), var(--btn-ghost-light-border-color-disabled-opacity, 0.1));
+          border-color: rgba(0, 0, 0, 0.1);
           text-decoration: none; }
         .next-btn-ghost.next-btn-light.disabled:active, .next-btn-ghost.next-btn-light.disabled.active, .next-btn-ghost.next-btn-light[disabled]:active, .next-btn-ghost.next-btn-light[disabled].active {
-          color: rgba(#000000, 0.1);
-          color: rgba(var(--btn-ghost-light-color-disabled-rgb, #000000), var(--btn-ghost-light-color-disabled-opacity, 0.1));
+          color: rgba(0, 0, 0, 0.1);
           background: transparent;
           background: var(--btn-ghost-light-bg-disabled, transparent);
-          border-color: rgba(#000000, 0.1);
-          border-color: rgba(var(--btn-ghost-light-border-color-disabled-rgb, #000000), var(--btn-ghost-light-border-color-disabled-opacity, 0.1));
+          border-color: rgba(0, 0, 0, 0.1);
           text-decoration: none; }
   .next-btn-group {
     position: relative;
@@ -5913,8 +5881,8 @@ small {
       opacity: 1; }
   .next-input .next-input-clear-icon:hover, .next-input .next-icon-eye:hover, .next-input .next-icon-eye-close:hover {
     cursor: pointer;
-    color: #848484;
-    color: var(--input-hint-hover-color, #848484); }
+    color: #5a5a5a;
+    color: var(--input-hint-hover-color, #5a5a5a); }
   .next-input .next-input-hover-show {
     opacity: 0; }
   .next-input:hover, .next-input.next-focus {
@@ -5937,8 +5905,8 @@ small {
     border-color: var(--input-focus-border-color, #ababab);
     background-color: #FFFFFF;
     background-color: var(--input-focus-bg-color, #FFFFFF);
-    -webkit-box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2);
-            box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2); }
+    -webkit-box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2);
+            box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2); }
   .next-input.next-warning {
     border-color: #FFA545;
     border-color: var(--input-feedback-warning-border-color, #FFA545);
@@ -5948,8 +5916,8 @@ small {
       border-color: #FFA545;
       border-color: var(--input-feedback-warning-border-color, #FFA545); }
     .next-input.next-warning.next-focus {
-      -webkit-box-shadow: 0 0 0 2px rgba(255, 165, 69, 0.2);
-              box-shadow: 0 0 0 2px rgba(255, 165, 69, 0.2); }
+      -webkit-box-shadow: 0 0 0 0px rgba(255, 165, 69, 0.2);
+              box-shadow: 0 0 0 0px rgba(255, 165, 69, 0.2); }
   .next-input.next-error {
     border-color: #ED675A;
     border-color: var(--input-feedback-error-border-color, #ED675A);
@@ -5962,8 +5930,8 @@ small {
       border-color: #ED675A;
       border-color: var(--input-feedback-error-border-color, #ED675A); }
     .next-input.next-error.next-focus {
-      -webkit-box-shadow: 0 0 0 2px rgba(237, 103, 90, 0.2);
-              box-shadow: 0 0 0 2px rgba(237, 103, 90, 0.2); }
+      -webkit-box-shadow: 0 0 0 0px rgba(237, 103, 90, 0.2);
+              box-shadow: 0 0 0 0px rgba(237, 103, 90, 0.2); }
   .next-input.next-hidden {
     display: none; }
   .next-input.next-noborder {
@@ -6020,7 +5988,7 @@ small {
   .next-input-control .next-input-clear-icon::before {
     content: "\E623";
     content: var(--input-feedback-clear-icon, "\E623"); }
-  .next-input-label {
+  .next-input-label, .next-input-inner-text {
     color: #ababab;
     color: var(--input-label-color, #ababab); }
   .next-input input::-moz-placeholder,
@@ -6064,7 +6032,7 @@ small {
       .next-input.next-disabled input::-webkit-input-placeholder, .next-input.next-disabled textarea::-webkit-input-placeholder {
         color: #CCCCCC;
         color: var(--input-disabled-color, #CCCCCC); }
-    .next-input.next-disabled .next-input-label {
+    .next-input.next-disabled .next-input-label, .next-input.next-disabled .next-input-inner-text {
       color: #CCCCCC;
       color: var(--input-disabled-color, #CCCCCC); }
     .next-input.next-disabled .next-input-len {
@@ -7634,8 +7602,8 @@ small {
       line-height: inherit; }
   .next-collapse-panel-title {
     position: relative;
-    line-height: 18px;
-    line-height: var(--collapse-title-height, 18px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     background: #f7f7f7;
     background: var(--collapse-title-bg-color, #f7f7f7);
     font-size: 12px;
@@ -7661,6 +7629,8 @@ small {
         color: var(--collapse-icon-hover-color, #5a5a5a); }
   .next-collapse-panel-content {
     height: 0;
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     padding: 0 36px;
     padding: 0 var(--collapse-content-padding-x, 36px);
     background: #FFFFFF;
@@ -8566,8 +8536,8 @@ small {
       padding: 0 var(--message-size-m-title-content-padding-right, 16px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px));
       font-size: 12px;
       font-size: var(--message-size-m-content-font, 12px);
-      line-height: 12px;
-      line-height: var(--message-size-m-content-font, 12px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
     .next-message.next-medium .next-message-symbol + .next-message-content {
       margin-top: 0; }
     .next-message.next-medium.next-title-content .next-message-title {
@@ -8591,8 +8561,7 @@ small {
     border-width: 1px;
     border-width: var(--message-size-l-border-width, 1px);
     padding: 12px;
-    padding: var(--message-size-l-padding, 12px);
-    line-height: 18px; }
+    padding: var(--message-size-l-padding, 12px); }
     .next-message.next-large .next-message-symbol {
       float: left;
       line-height: 20px;
@@ -8618,8 +8587,8 @@ small {
       padding: 0 var(--message-size-l-title-content-padding-right, 8px) 0 calc(var(--message-size-l-title-content-padding-left, 8px) + var(--message-size-l-icon, 20px));
       font-size: 12px;
       font-size: var(--message-size-l-content-font, 12px);
-      line-height: 12px;
-      line-height: var(--message-size-l-content-font, 12px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
     .next-message.next-large .next-message-symbol + .next-message-content {
       margin-top: 0; }
     .next-message.next-large.next-title-content .next-message-title {
@@ -8779,6 +8748,8 @@ small {
     padding: var(--dialog-content-padding-top, 16px) var(--dialog-content-padding-left-right, 20px) var(--dialog-content-padding-bottom, 20px) var(--dialog-content-padding-left-right, 20px);
     font-size: 12px;
     font-size: var(--dialog-content-font-size, 12px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     color: #5a5a5a;
     color: var(--dialog-content-color, #5a5a5a); }
   .next-dialog-footer {
@@ -8874,6 +8845,54 @@ small {
     min-width: 300px;
     padding: 0; }
 
+.next-dialog-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto; }
+
+.next-dialog-inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 100px;
+  pointer-events: none;
+  padding-bottom: 24px; }
+
+.next-dialog-v2 {
+  pointer-events: auto;
+  margin: 0 auto; }
+  .next-dialog-v2 .next-dialog-header {
+    word-break: break-word;
+    padding-right: calc(20px*2 + 16px);
+    padding-right: calc(var(--dialog-close-right, 20px)*2 + var(--dialog-close-width, 16px)); }
+  .next-dialog-v2 .next-dialog-body {
+    padding-right: calc(20px*2 + 16px);
+    padding-right: calc(var(--dialog-close-right, 20px)*2 + var(--dialog-close-width, 16px)); }
+  .next-dialog-v2 .next-dialog-header + .next-dialog-body {
+    padding: 16px 20px 20px 20px;
+    padding: var(--dialog-content-padding-top, 16px) var(--dialog-content-padding-left-right, 20px) var(--dialog-content-padding-bottom, 20px) var(--dialog-content-padding-left-right, 20px); }
+
+.next-dialog.next-dialog-v2 {
+  position: relative; }
+
+.next-dialog-centered {
+  text-align: center; }
+  .next-dialog-centered::before {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    content: ''; }
+  .next-dialog-centered .next-dialog-v2 {
+    margin: 40px 0;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle; }
+
 .next-drawer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -8928,6 +8947,8 @@ small {
     padding: var(--drawer-content-padding-top, 20px) var(--drawer-content-padding-left-right, 20px) var(--drawer-content-padding-bottom, 20px) var(--drawer-content-padding-left-right, 20px);
     font-size: 12px;
     font-size: var(--drawer-content-font-size, 12px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     color: #333333;
     color: var(--drawer-content-color, #333333); }
   .next-drawer-close {
@@ -15598,8 +15619,8 @@ small {
     color: #5a5a5a;
     color: var(--pagination-jump-color, #5a5a5a); }
   .next-pagination-jump-input {
-    margin: 0 4px;
-    margin: 0 var(--pagination-input-margin, 4px);
+    margin: 0 8px;
+    margin: 0 var(--pagination-input-margin, 8px);
     vertical-align: top; }
   .next-pagination-jump-go {
     margin-left: 4px;
@@ -17787,6 +17808,8 @@ small {
       color: var(--step-arrow-item-title-wait-color, #5a5a5a);
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       word-break: break-word; }
     .next-step-arrow > .next-step-item-wait .next-step-item-node-placeholder {
       width: 32px;
@@ -17859,6 +17882,8 @@ small {
       color: var(--step-arrow-item-title-process-color, #FFFFFF);
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       word-break: break-word; }
     .next-step-arrow > .next-step-item-process .next-step-item-node-placeholder {
       width: 32px;
@@ -17931,6 +17956,8 @@ small {
       color: var(--step-arrow-item-title-finish-color, #0064C8);
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       word-break: break-word; }
     .next-step-arrow > .next-step-item-finish .next-step-item-node-placeholder {
       width: 32px;
@@ -18004,6 +18031,8 @@ small {
       color: var(--step-arrow-item-title-disabled-color, #CCCCCC);
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       word-break: break-word; }
     .next-step-arrow .next-step-item-disabled .next-step-item-node-placeholder {
       width: 32px;
@@ -18127,6 +18156,8 @@ small {
   color: var(--step-circle-item-title-wait-color, #5a5a5a);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-circle > .next-step-item-wait .next-step-item-node-placeholder {
@@ -18209,6 +18240,8 @@ small {
   color: var(--step-circle-item-title-process-color, #333333);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-circle > .next-step-item-process .next-step-item-node-placeholder {
@@ -18291,6 +18324,8 @@ small {
   color: var(--step-circle-item-title-finish-color, #5a5a5a);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-circle > .next-step-item-finish .next-step-item-node-placeholder {
@@ -18373,6 +18408,8 @@ small {
   color: var(--step-circle-item-title-disabled-color, #CCCCCC);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-circle .next-step-item-disabled .next-step-item-node-placeholder {
@@ -18752,8 +18789,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-circle-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-circle.next-step-vertical > .next-step-item-process .next-step-item-tail {
     width: 2px;
     width: var(--step-circle-vertical-item-tail-size, 2px);
@@ -18795,8 +18832,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-circle-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-circle.next-step-vertical > .next-step-item-finish .next-step-item-tail {
     width: 2px;
     width: var(--step-circle-vertical-item-tail-size, 2px);
@@ -18838,8 +18875,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-circle-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-circle.next-step-vertical > .next-step-item-disabled .next-step-item-tail {
     width: 2px;
     width: var(--step-circle-vertical-item-tail-size, 2px);
@@ -18881,8 +18918,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-circle-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-circle-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
 
 .next-step-dot .next-step-item-container {
   display: inline-block;
@@ -18945,6 +18982,8 @@ small {
   color: var(--step-dot-item-title-wait-color, #333333);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-dot > .next-step-item-wait .next-step-item-node-placeholder {
@@ -19049,6 +19088,8 @@ small {
   color: var(--step-dot-item-title-process-color, #1A1A1A);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-dot > .next-step-item-process .next-step-item-node-placeholder {
@@ -19153,6 +19194,8 @@ small {
   color: var(--step-dot-item-title-finish-color, #333333);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-dot > .next-step-item-finish .next-step-item-node-placeholder {
@@ -19257,6 +19300,8 @@ small {
   color: var(--step-dot-item-title-disabled-color, #CCCCCC);
   font-size: 12px;
   font-size: var(--step-circle-item-content-font-size, 12px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   word-break: break-word; }
 
 .next-step-dot .next-step-item-disabled .next-step-item-node-placeholder {
@@ -19545,8 +19590,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-dot-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-dot-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-dot.next-step-vertical > .next-step-item-process .next-step-item-tail {
     width: 2px;
     width: var(--step-dot-vertical-item-tail-size, 2px);
@@ -19588,8 +19633,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-dot-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-dot-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-dot.next-step-vertical > .next-step-item-finish .next-step-item-tail {
     width: 2px;
     width: var(--step-dot-vertical-item-tail-size, 2px);
@@ -19631,8 +19676,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-dot-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-dot-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
   .next-step-dot.next-step-vertical > .next-step-item-disabled .next-step-item-tail {
     width: 2px;
     width: var(--step-dot-vertical-item-tail-size, 2px);
@@ -19674,8 +19719,8 @@ small {
       text-align: left;
       font-size: 12px;
       font-size: var(--step-dot-item-content-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--step-dot-item-content-font-size, 12px) + 4px); }
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5); }
 
 .next-step-horizontal[dir="rtl"] > .next-step-item {
   text-align: right; }
@@ -21863,8 +21908,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 12px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 8px;
       margin-top: var(--timeline-item-title-margin-top, 8px);
       overflow: hidden;
@@ -21879,8 +21924,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 12px;
       font-size: var(--timeline-item-body-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #333333;
       color: var(--timeline-item-body-color, #333333);
       text-align: right; }
@@ -21904,8 +21949,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #5a5a5a;
     color: var(--timeline-item-left-body-color, #5a5a5a);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 8px;
     margin-top: var(--timeline-item-title-margin-top, 8px);
     text-align: left;
@@ -22022,8 +22067,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 12px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 8px;
       margin-top: var(--timeline-item-title-margin-top, 8px);
       overflow: hidden;
@@ -22038,8 +22083,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 12px;
       font-size: var(--timeline-item-body-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #333333;
       color: var(--timeline-item-body-color, #333333);
       text-align: right; }
@@ -22063,8 +22108,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #5a5a5a;
     color: var(--timeline-item-left-body-color, #5a5a5a);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 8px;
     margin-top: var(--timeline-item-title-margin-top, 8px);
     text-align: left;
@@ -22181,8 +22226,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 12px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 8px;
       margin-top: var(--timeline-item-title-margin-top, 8px);
       overflow: hidden;
@@ -22197,8 +22242,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 12px;
       font-size: var(--timeline-item-body-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #333333;
       color: var(--timeline-item-body-color, #333333);
       text-align: right; }
@@ -22222,8 +22267,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #5a5a5a;
     color: var(--timeline-item-left-body-color, #5a5a5a);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 8px;
     margin-top: var(--timeline-item-title-margin-top, 8px);
     text-align: left;
@@ -22340,8 +22385,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 12px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 8px;
       margin-top: var(--timeline-item-title-margin-top, 8px);
       overflow: hidden;
@@ -22356,8 +22401,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 12px;
       font-size: var(--timeline-item-body-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #333333;
       color: var(--timeline-item-body-color, #333333);
       text-align: right; }
@@ -22381,8 +22426,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #5a5a5a;
     color: var(--timeline-item-left-body-color, #5a5a5a);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 8px;
     margin-top: var(--timeline-item-title-margin-top, 8px);
     text-align: left;
@@ -22426,8 +22471,8 @@ small {
     padding-bottom: var(--timeline-item-folder-margin-bottom, 4px);
     font-size: 12px;
     font-size: var(--timeline-item-folder-font-size, 12px);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-folder-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     position: relative;
     /* min-height: auto !important; */ }
   .next-timeline-item-dot-tail {
@@ -22534,8 +22579,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 12px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 8px;
       margin-top: var(--timeline-item-title-margin-top, 8px);
       overflow: hidden;
@@ -22550,8 +22595,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 12px;
       font-size: var(--timeline-item-body-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #333333;
       color: var(--timeline-item-body-color, #333333);
       text-align: left; }
@@ -22575,8 +22620,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #5a5a5a;
     color: var(--timeline-item-left-body-color, #5a5a5a);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 8px;
     margin-top: var(--timeline-item-title-margin-top, 8px);
     text-align: right;
@@ -22686,8 +22731,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 12px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 8px;
       margin-top: var(--timeline-item-title-margin-top, 8px);
       overflow: hidden;
@@ -22702,8 +22747,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 12px;
       font-size: var(--timeline-item-body-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #333333;
       color: var(--timeline-item-body-color, #333333);
       text-align: left; }
@@ -22727,8 +22772,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #5a5a5a;
     color: var(--timeline-item-left-body-color, #5a5a5a);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 8px;
     margin-top: var(--timeline-item-title-margin-top, 8px);
     text-align: right;
@@ -22838,8 +22883,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 12px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 8px;
       margin-top: var(--timeline-item-title-margin-top, 8px);
       overflow: hidden;
@@ -22854,8 +22899,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 12px;
       font-size: var(--timeline-item-body-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #333333;
       color: var(--timeline-item-body-color, #333333);
       text-align: left; }
@@ -22879,8 +22924,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #5a5a5a;
     color: var(--timeline-item-left-body-color, #5a5a5a);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 8px;
     margin-top: var(--timeline-item-title-margin-top, 8px);
     text-align: right;
@@ -22990,8 +23035,8 @@ small {
       font-size: var(--timeline-item-title-font-size, 12px);
       font-weight: bold;
       font-weight: var(--timeline-item-title-font-weight, bold);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-title-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       margin-top: 8px;
       margin-top: var(--timeline-item-title-margin-top, 8px);
       overflow: hidden;
@@ -23006,8 +23051,8 @@ small {
       margin-top: var(--timeline-item-body-margin-top, 8px);
       font-size: 12px;
       font-size: var(--timeline-item-body-font-size, 12px);
-      line-height: calc(12px + 4px);
-      line-height: calc(var(--timeline-item-body-font-size, 12px) + 4px);
+      line-height: 1.5;
+      line-height: var(--font-lineheight-2, 1.5);
       color: #333333;
       color: var(--timeline-item-body-color, #333333);
       text-align: left; }
@@ -23031,8 +23076,8 @@ small {
     font-size: var(--timeline-item-left-body-font-size, 12px);
     color: #5a5a5a;
     color: var(--timeline-item-left-body-color, #5a5a5a);
-    line-height: calc(12px + 4px);
-    line-height: calc(var(--timeline-item-left-body-font-size, 12px) + 4px);
+    line-height: 1.5;
+    line-height: var(--font-lineheight-2, 1.5);
     margin-top: 8px;
     margin-top: var(--timeline-item-title-margin-top, 8px);
     text-align: right;
@@ -23077,8 +23122,8 @@ small {
   font-size: var(--timeline-item-title-font-size, 12px);
   font-weight: bold;
   font-weight: var(--timeline-item-title-font-weight, bold);
-  line-height: calc(12px + 4px);
-  line-height: calc(var(--timeline-item-title-font-size, 12px) + 4px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -23088,11 +23133,11 @@ small {
 
 .next-timeline.next-alternate .next-timeline-item-right .next-timeline-item-body {
   margin: 0;
-  margin-top: 8px;
+  margin-top: 4px;
   font-size: 12px;
   font-size: var(--timeline-item-body-font-size, 12px);
-  line-height: calc(12px + 4px);
-  line-height: calc(var(--timeline-item-body-font-size, 12px) + 4px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   color: #333333;
   color: var(--timeline-item-body-color, #333333);
   text-align: right; }
@@ -23146,8 +23191,8 @@ small {
   font-size: var(--timeline-item-title-font-size, 12px);
   font-weight: bold;
   font-weight: var(--timeline-item-title-font-weight, bold);
-  line-height: calc(12px + 4px);
-  line-height: calc(var(--timeline-item-title-font-size, 12px) + 4px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -23159,8 +23204,8 @@ small {
   margin: 0;
   font-size: 12px;
   font-size: var(--timeline-item-body-font-size, 12px);
-  line-height: calc(12px + 4px);
-  line-height: calc(var(--timeline-item-body-font-size, 12px) + 4px);
+  line-height: 1.5;
+  line-height: var(--font-lineheight-2, 1.5);
   color: #333333;
   color: var(--timeline-item-body-color, #333333);
   text-align: left; }
@@ -23233,7 +23278,8 @@ small {
     margin-top: var(--transfer-panel-search-margin-top, 4px);
     margin-bottom: 0px;
     margin-bottom: var(--transfer-panel-search-margin-bottom, 0px);
-    width: 100%; }
+    width: 180px;
+    width: var(--transfer-panel-list-width, 180px); }
   .next-transfer .next-transfer-panel-list {
     width: 180px;
     width: var(--transfer-panel-list-width, 180px);
@@ -25514,8 +25560,8 @@ h6.next-typography-title {
   .next-table-empty {
     color: #CCCCCC;
     color: var(--table-empty-color, #CCCCCC);
-    padding: 32px 0;
-    padding: var(--table-empty-padding, 32px) 0;
+    padding: 48px 0;
+    padding: var(--table-empty-padding, 48px) 0;
     text-align: center; }
   .next-table-expanded-row > td {
     border-width: 0 0 1px 0;
@@ -26237,6 +26283,34 @@ div[dir="rtl"].next-calendar2-fullscreen .next-calendar2-table th {
 .next-calendar2-header-select-year-popup {
   min-width: auto; }
 
+.next-date-picker2-footer {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+  border-top: 1px solid var(--color-line1-1, #eaeaea);
+  padding: 4px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative; }
+  .next-date-picker2-footer-preset > .next-btn {
+    margin-right: 8px; }
+  .next-date-picker2-footer-actions {
+    margin-left: auto; }
+  .next-date-picker2-footer-preset-only {
+    width: 100%; }
+
 .next-time-picker2-menu {
   float: left;
   text-align: center;
@@ -26338,6 +26412,8 @@ div[dir="rtl"].next-calendar2-fullscreen .next-calendar2-table th {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
+  .next-time-picker2-panel-range .next-time-picker2-panel-list:last-of-type {
+    margin-left: 20px; }
 
 .next-time-picker2-footer {
   width: -webkit-min-content;
@@ -26382,6 +26458,7 @@ div[dir="rtl"].next-calendar2-fullscreen .next-calendar2-table th {
   .next-time-picker2-wrapper {
     padding: 4px 0; }
   .next-time-picker2-body {
+    display: block;
     overflow: hidden;
     border: 0px solid #eaeaea;
     border: var(--popup-local-border-width, 0px) var(--popup-local-border-style, solid) var(--popup-local-border-color, #eaeaea);
@@ -26395,6 +26472,233 @@ div[dir="rtl"].next-calendar2-fullscreen .next-calendar2-table th {
   .next-time-picker2-symbol-clock-icon::before {
     content: "\E621";
     content: var(--icon-content-clock, "\E621"); }
+  .next-time-picker2-input {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    outline: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #D9D9D9;
+    border: var(--input-border-width, 1px) solid var(--input-border-color, #D9D9D9);
+    vertical-align: middle;
+    width: inherit; }
+    .next-time-picker2-input .next-input {
+      border: none;
+      width: 100%;
+      height: 100%; }
+      .next-time-picker2-input .next-input input {
+        height: 100%; }
+    .next-time-picker2-input.next-time-picker2-input-small {
+      height: 24px;
+      height: var(--form-element-small-height, 24px);
+      border-radius: 2px;
+      border-radius: var(--form-element-small-corner, 2px); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-label {
+        padding-left: 8px;
+        padding-left: var(--input-s-label-padding-left, 8px);
+        font-size: 12px;
+        font-size: var(--form-element-small-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-inner {
+        font-size: 12px;
+        font-size: var(--form-element-small-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-control {
+        padding-right: 4px;
+        padding-right: var(--input-s-icon-padding-right, 4px); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-inner-text {
+        padding-right: 4px;
+        padding-right: var(--input-s-icon-padding-right, 4px); }
+      .next-time-picker2-input.next-time-picker2-input-small input {
+        height: calc(24px - 1px*2);
+        height: calc(var(--form-element-small-height, 24px) - var(--input-border-width, 1px)*2);
+        line-height: calc(24px - 1px*2) \0;
+        line-height: calc(var(--form-element-small-height, 24px) - var(--input-border-width, 1px)*2) \0;
+        padding: 0 4px;
+        padding: 0 var(--input-s-padding, 4px);
+        font-size: 12px;
+        font-size: var(--form-element-small-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-small input::-webkit-input-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-small-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-small input::-moz-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-small-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-small input::-ms-input-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-small-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-small input::placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-small-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-text-field {
+        padding: 0 4px;
+        padding: 0 var(--input-s-padding, 4px);
+        font-size: 12px;
+        font-size: var(--form-element-small-font-size, 12px);
+        height: calc(24px - 1px*2);
+        height: calc(var(--form-element-small-height, 24px) - var(--input-border-width, 1px)*2);
+        line-height: calc(24px - 1px*2);
+        line-height: calc(var(--form-element-small-height, 24px) - var(--input-border-width, 1px)*2); }
+      .next-time-picker2-input.next-time-picker2-input-small .next-icon:before,
+      .next-time-picker2-input.next-time-picker2-input-small .next-icon .next-icon-remote {
+        width: 12px;
+        font-size: 12px;
+        line-height: inherit; }
+      .next-time-picker2-input.next-time-picker2-input-small .next-input-control {
+        border-radius: 0 2px 2px 0;
+        border-radius: 0 var(--form-element-small-corner, 2px) var(--form-element-small-corner, 2px) 0; }
+    .next-time-picker2-input.next-time-picker2-input-medium {
+      height: 32px;
+      height: var(--form-element-medium-height, 32px);
+      border-radius: 2px;
+      border-radius: var(--form-element-medium-corner, 2px); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-label {
+        padding-left: 8px;
+        padding-left: var(--input-m-label-padding-left, 8px);
+        font-size: 12px;
+        font-size: var(--form-element-medium-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-inner {
+        font-size: 12px;
+        font-size: var(--form-element-medium-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-control {
+        padding-right: 8px;
+        padding-right: var(--input-m-icon-padding-right, 8px); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-inner-text {
+        padding-right: 8px;
+        padding-right: var(--input-m-icon-padding-right, 8px); }
+      .next-time-picker2-input.next-time-picker2-input-medium input {
+        height: calc(32px - 1px*2);
+        height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2);
+        line-height: calc(32px - 1px*2) \0;
+        line-height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2) \0;
+        padding: 0 8px;
+        padding: 0 var(--input-m-padding, 8px);
+        font-size: 12px;
+        font-size: var(--form-element-medium-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-medium input::-webkit-input-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-medium-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-medium input::-moz-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-medium-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-medium input::-ms-input-placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-medium-font-size, 12px); }
+        .next-time-picker2-input.next-time-picker2-input-medium input::placeholder {
+          font-size: 12px;
+          font-size: var(--form-element-medium-font-size, 12px); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-text-field {
+        padding: 0 8px;
+        padding: 0 var(--input-m-padding, 8px);
+        font-size: 12px;
+        font-size: var(--form-element-medium-font-size, 12px);
+        height: calc(32px - 1px*2);
+        height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2);
+        line-height: calc(32px - 1px*2);
+        line-height: calc(var(--form-element-medium-height, 32px) - var(--input-border-width, 1px)*2); }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-icon:before,
+      .next-time-picker2-input.next-time-picker2-input-medium .next-icon .next-icon-remote {
+        width: 16px;
+        font-size: 16px;
+        line-height: inherit; }
+      .next-time-picker2-input.next-time-picker2-input-medium .next-input-control {
+        border-radius: 0 2px 2px 0;
+        border-radius: 0 var(--form-element-medium-corner, 2px) var(--form-element-medium-corner, 2px) 0; }
+    .next-time-picker2-input.next-time-picker2-input-large {
+      height: 36px;
+      height: var(--form-element-large-height, 36px);
+      border-radius: 2px;
+      border-radius: var(--form-element-large-corner, 2px); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-label {
+        padding-left: 12px;
+        padding-left: var(--input-l-label-padding-left, 12px);
+        font-size: 14px;
+        font-size: var(--form-element-large-font-size, 14px); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-inner {
+        font-size: 14px;
+        font-size: var(--form-element-large-font-size, 14px); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-control {
+        padding-right: 8px;
+        padding-right: var(--input-l-icon-padding-right, 8px); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-inner-text {
+        padding-right: 8px;
+        padding-right: var(--input-l-icon-padding-right, 8px); }
+      .next-time-picker2-input.next-time-picker2-input-large input {
+        height: calc(36px - 1px*2);
+        height: calc(var(--form-element-large-height, 36px) - var(--input-border-width, 1px)*2);
+        line-height: calc(36px - 1px*2) \0;
+        line-height: calc(var(--form-element-large-height, 36px) - var(--input-border-width, 1px)*2) \0;
+        padding: 0 12px;
+        padding: 0 var(--input-l-padding, 12px);
+        font-size: 14px;
+        font-size: var(--form-element-large-font-size, 14px); }
+        .next-time-picker2-input.next-time-picker2-input-large input::-webkit-input-placeholder {
+          font-size: 14px;
+          font-size: var(--form-element-large-font-size, 14px); }
+        .next-time-picker2-input.next-time-picker2-input-large input::-moz-placeholder {
+          font-size: 14px;
+          font-size: var(--form-element-large-font-size, 14px); }
+        .next-time-picker2-input.next-time-picker2-input-large input::-ms-input-placeholder {
+          font-size: 14px;
+          font-size: var(--form-element-large-font-size, 14px); }
+        .next-time-picker2-input.next-time-picker2-input-large input::placeholder {
+          font-size: 14px;
+          font-size: var(--form-element-large-font-size, 14px); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-text-field {
+        padding: 0 12px;
+        padding: 0 var(--input-l-padding, 12px);
+        font-size: 14px;
+        font-size: var(--form-element-large-font-size, 14px);
+        height: calc(36px - 1px*2);
+        height: calc(var(--form-element-large-height, 36px) - var(--input-border-width, 1px)*2);
+        line-height: calc(36px - 1px*2);
+        line-height: calc(var(--form-element-large-height, 36px) - var(--input-border-width, 1px)*2); }
+      .next-time-picker2-input.next-time-picker2-input-large .next-icon:before,
+      .next-time-picker2-input.next-time-picker2-input-large .next-icon .next-icon-remote {
+        width: 16px;
+        font-size: 16px;
+        line-height: inherit; }
+      .next-time-picker2-input.next-time-picker2-input-large .next-input-control {
+        border-radius: 0 2px 2px 0;
+        border-radius: 0 var(--form-element-large-corner, 2px) var(--form-element-large-corner, 2px) 0; }
+    .next-time-picker2-input:hover {
+      border-color: #CCCCCC;
+      border-color: var(--input-hover-border-color, #CCCCCC);
+      background-color: #FFFFFF;
+      background-color: var(--input-hover-bg-color, #FFFFFF); }
+    .next-time-picker2-input.next-time-picker2-input-focus {
+      border-color: #ababab;
+      border-color: var(--input-focus-border-color, #ababab);
+      background-color: #FFFFFF;
+      background-color: var(--input-focus-bg-color, #FFFFFF);
+      -webkit-box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2);
+              box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2); }
+    .next-time-picker2-input.next-time-picker2-input-noborder {
+      border-color: transparent !important;
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important; }
+    .next-time-picker2-input.next-time-picker2-input-disabled {
+      color: #CCCCCC;
+      color: var(--input-disabled-color, #CCCCCC);
+      border-color: #eaeaea;
+      border-color: var(--input-disabled-border-color, #eaeaea);
+      background-color: #f7f7f7;
+      background-color: var(--input-disabled-bg-color, #f7f7f7);
+      cursor: not-allowed; }
+      .next-time-picker2-input.next-time-picker2-input-disabled:hover {
+        border-color: #eaeaea;
+        border-color: var(--input-disabled-border-color, #eaeaea);
+        background-color: #f7f7f7;
+        background-color: var(--input-disabled-bg-color, #f7f7f7); }
+  .next-time-picker2-input-separator {
+    color: #D9D9D9;
+    color: var(--input-border-color, #D9D9D9);
+    font-size: 12px;
+    display: inline-block;
+    min-width: 16px;
+    text-align: center; }
 
 div[dir="rtl"] .next-date-picker2-footer-preset > .next-btn {
   margin-left: 8px;
@@ -26534,33 +26838,6 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
   display: inline-table;
   position: relative;
   width: inherit; }
-  .next-date-picker2-footer {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    min-width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    text-align: center;
-    border-top: 1px solid #eaeaea;
-    border-top: 1px solid var(--color-line1-1, #eaeaea);
-    padding: 4px 12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 40px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    position: relative; }
-    .next-date-picker2-footer-preset > .next-btn {
-      margin-right: 8px; }
-    .next-date-picker2-footer-actions {
-      margin-left: auto; }
-    .next-date-picker2-footer-preset-only {
-      width: 100%; }
   .next-date-picker2-overlay {
     vertical-align: top;
     padding: 4px 0px; }
@@ -26618,7 +26895,8 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
       border: none;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
       .next-date-picker2-input .next-input input {
         height: 100%;
         width: auto; }
@@ -26803,8 +27081,8 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
       border-color: var(--input-focus-border-color, #ababab);
       background-color: #FFFFFF;
       background-color: var(--input-focus-bg-color, #FFFFFF);
-      -webkit-box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2);
-              box-shadow: 0 0 0 2px rgba(171, 171, 171, 0.2); }
+      -webkit-box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2);
+              box-shadow: 0 0 0 0px rgba(171, 171, 171, 0.2); }
     .next-date-picker2-input.next-date-picker2-input-noborder {
       border-color: transparent !important;
       -webkit-box-shadow: none !important;

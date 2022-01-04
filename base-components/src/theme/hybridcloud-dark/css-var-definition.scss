@@ -5634,6 +5634,10 @@
     
     
     
+    --card-title-font-size: var(--font-size-body-2, 14px);
+    
+    
+    
     --card-corner: var(--corner-1, 2px);
     
     
@@ -5651,10 +5655,6 @@
     
     
     --card-head-main-margin-bottom: var(--s-zero, 0px);
-    
-    
-    
-    --card-title-font-size: var(--font-size-subhead, 16px);
     
     
     
@@ -6288,6 +6288,14 @@
     
     
     
+    --btn-text-size-s-height: 18px;
+    
+    
+    
+    --btn-text-size-m-height: 18px;
+    
+    
+    
     --btn-size-s-border-width: var(--line-1, 1px);
     
     
@@ -6481,14 +6489,6 @@
     
     
     --btn-text-icon-l-margin: var(--s-1, 4px);
-    
-    
-    
-    --btn-text-size-s-height: 18px;
-    
-    
-    
-    --btn-text-size-m-height: 18px;
     
     
     /* ------------------------ balloon ------------------------ */
@@ -10398,7 +10398,7 @@
     
     
     
-    --timeline-item-body-margin-top: var(--s-2, 8px);
+    --timeline-item-body-margin-top: var(--s-1, 4px);
     
     
     
@@ -12356,10 +12356,6 @@
     
     
     
-    --table-cell-padding-top: var(--s-2, 8px);
-    
-    
-    
     --table-group-th-bg: var(--color-fill1-4, #262626);
     
     
@@ -12380,10 +12376,6 @@
     
     
     
-    --table-row-bg: var(--color-transparent, transparent);
-    
-    
-    
     --table-row-hover-bg: var(--color-fill1-4, #262626);
     
     
@@ -12396,11 +12388,19 @@
     
     
     
-    --table-normal-border-color: var(--color-fill1-3, #1F1F1F);
-    
-    
-    
     --table-normal-border-style: var(--line-solid, solid);
+    
+    
+    
+    --table-normal-border-color: var(--color-fill1-2, #383838);
+    
+    
+    
+    --table-row-bg: var(--color-fill1-1, #151515);
+    
+    
+    
+    --table-empty-padding: var(--s-12, 48px);
     
     
     
@@ -12421,10 +12421,6 @@
     
     
     --table-body-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --table-empty-padding: var(--s-8, 32px);
     
     
     
@@ -12545,6 +12541,10 @@
     
     
     --table-expand-unfold-icon-content: var(--icon-content-minus, "");
+    
+    
+    
+    --table-cell-padding-top: var(--s-3, 12px);
     
     
     /* ------------------------ collapse ------------------------ */
@@ -13772,6 +13772,33 @@
     --shell-brand-tooldock-item-background-active: var(--color-fill1-3, #1F1F1F);
     
     
+    /* ------------------------ loading ------------------------ */
+    
+    
+    
+    --loading-large-dot-size: var(--icon-xxs, 8px);
+    
+    
+    
+    --loading-large-size: var(--s-7, 28px);
+    
+    
+    
+    --loading-medium-size: var(--s-7, 28px);
+    
+    
+    
+    --loading-icon-size: var(--icon-xl, 32px);
+    
+    
+    
+    --loading-dot-color: var(--color-brand1-6, #007be9);
+    
+    
+    
+    --loading-medium-dot-size: var(--icon-xxs, 8px);
+    
+    
     /* ------------------------ cascader-select ------------------------ */
     
     
@@ -13800,33 +13827,6 @@
     
     
     --paragraph-l-line-height: var(--font-lineheight-3, 1.5);
-    
-    
-    /* ------------------------ loading ------------------------ */
-    
-    
-    
-    --loading-icon-size: var(--icon-xl, 32px);
-    
-    
-    
-    --loading-dot-color: var(--color-brand1-6, #007be9);
-    
-    
-    
-    --loading-large-size: var(--s-12, 48px);
-    
-    
-    
-    --loading-large-dot-size: var(--icon-xs, 12px);
-    
-    
-    
-    --loading-medium-size: var(--s-8, 32px);
-    
-    
-    
-    --loading-medium-dot-size: var(--icon-xxs, 8px);
     
     
     /* ------------------------ avatar ------------------------ */

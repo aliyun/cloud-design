@@ -7,3 +7,9 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
     padding-right: calc(var(--dialog-title-padding-left-right) + var(--dialog-close-right))
   }
 }
+
+.next-dialog.next-closeable:not(.next-dialog-quick) {
+  .next-dialog-close {
+    --dialog-close-top: 28px;
+  }
+}
