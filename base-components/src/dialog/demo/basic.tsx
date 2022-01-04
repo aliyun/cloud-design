@@ -19,7 +19,7 @@ class Demo extends React.Component {
     })
   }
 
-  onClose = (reason) => {
+  onClose = reason => {
     console.log(reason)
 
     this.setState({

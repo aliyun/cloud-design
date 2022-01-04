@@ -88,7 +88,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   error: (config: CustomQuickShowConfig) => QuickShowRet
   success: (config: CustomQuickShowConfig) => QuickShowRet
 } = (props) => {
-  const { size, style, ...others } = props
+  const { size, ...others } = props
   const { prefix = 'next-' } = props
   const theme = useCssVar('--alicloudfe-components-theme').trim()
 
@@ -198,7 +198,7 @@ const showDefaultMinMargin = (theme: string) => {
 
 // 快捷调用的操作按钮顺序
 const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
-  const { size, type, style, ...others } = config
+  const { size, type, ...others } = config
   const { prefix = 'next-' } = config
 
   const theme = window
@@ -299,7 +299,7 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .getComputedStyle?.(window.document.body)
     .getPropertyValue('--alicloudfe-components-theme')
     .trim()
-  const { size, style, ...others } = config
+  const { size, ...others } = config
   return NextDialog.alert({
     width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
@@ -319,7 +319,7 @@ const error: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .getComputedStyle?.(window.document.body)
     .getPropertyValue('--alicloudfe-components-theme')
     .trim()
-  const { size, style, ...others } = config
+  const { size, ...others } = config
   return NextDialog.alert({
     width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
@@ -340,7 +340,7 @@ const success: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .getComputedStyle?.(window.document.body)
     .getPropertyValue('--alicloudfe-components-theme')
     .trim()
-  const { size, style, ...others } = config
+  const { size, ...others } = config
   return NextDialog.alert({
     width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
