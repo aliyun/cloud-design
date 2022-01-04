@@ -48,6 +48,12 @@ const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   return 'auto'
 }
 
+// 判断是否是云效主题，云效主题的 Dialog 局顶
+const isYunxiaoTheme = (theme: string) => {
+  return theme === 'yunxiao' ||
+  theme === 'yunxiao-dark'
+}
+
 // 获取快捷调用 size 大小
 const getQuickCustomWidth = (
   size: CustomDialogProps['size'],
@@ -167,8 +173,8 @@ const Dialog: React.FC<CustomDialogProps> & {
       width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
       v2
-      centered
-      bottom={80}
+      centered={isYunxiaoTheme(theme) ? false : true}
+      bottom={isYunxiaoTheme(theme) ? 40 : 80}
       {...others}
       ref={customRef}
     />
@@ -260,8 +266,8 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     // align: showDefaultAlign(theme),
     // minMargin: showDefaultMinMargin(theme),
     v2: true,
-    centered: true,
-    bottom: 80,
+    centered: isYunxiaoTheme(theme) ? false : true,
+    bottom: isYunxiaoTheme(theme) ? 40 : 80,
     // shouldUpdatePosition: true,
     type,
     ...others,
@@ -286,9 +292,9 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     // align: showDefaultAlign(theme),
     // minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'notice' },
-    centered: true,
+    centered: isYunxiaoTheme(theme) ? false : true,
+    bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
-    bottom: 80,
     // shouldUpdatePosition: true,
     ...others
   })
@@ -307,9 +313,9 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     // minMargin: showDefaultMinMargin(theme),
     messageProps: { type: 'warning' },
     // shouldUpdatePosition: true,
-    centered: true,
+    centered: isYunxiaoTheme(theme) ? false : true,
+    bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
-    bottom: 80,
     ...others
   })
 }
@@ -324,9 +330,9 @@ const error: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
     messageProps: { type: 'error' },
-    centered: true,
+    centered: isYunxiaoTheme(theme) ? false : true,
+    bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
-    bottom: 80,
     ...others,
     okProps: {
       warning: true,
@@ -345,9 +351,9 @@ const success: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
     messageProps: { type: 'success' },
-    centered: true,
+    centered: isYunxiaoTheme(theme) ? false : true,
+    bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
-    bottom: 80,
     ...others
   })
 }

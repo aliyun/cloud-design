@@ -6,7 +6,13 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Dialog, ConfigProvider, Box, Message } from '@alicloudfe/components'
+import {
+  Button,
+  Dialog,
+  ConfigProvider,
+  Box,
+  Message
+} from '@alicloudfe/components'
 
 const popupAlert = () => {
   Dialog.alert({
@@ -34,12 +40,14 @@ const popupSuccess = () => {
   })
 }
 
-
 const popupConfirm = () => {
   Dialog.confirm({
     title: 'Confirm',
     content: 'confirm content confirm content...',
     style: { width: 1000 },
+    okProps: {
+      loading: true
+    },
     onOk: () => console.log('ok'),
     onCancel: () => console.log('cancel')
   })
