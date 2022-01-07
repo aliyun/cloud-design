@@ -10,6 +10,6 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
 
 .next-dialog.next-closeable:not(.next-dialog-quick) {
   .next-dialog-close {
-    --dialog-close-top: 28px;
+    top: var(--dialog-close-top-normal, var(--dialog-close-top, 24px));
   }
 }
