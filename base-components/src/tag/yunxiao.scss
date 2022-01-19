@@ -1,3 +1,5 @@
+$tag-prefix: '.' + $css-prefix + 'tag';
+
 // 云效单独tag样式
 .next-tag-medium.next-tag-medium.next-tag-medium.next-tag-medium {
   --tag-size-m-icon-font: 16px;
@@ -143,57 +145,92 @@
 }
 
 .next-tag-custom-error {
-  background-color: var(--color-error-1, #fff1f0);
-  border: var(--colortag-border-width, 0px) solid var(--color-error-1, #fff1f0);
+  background-color: rgba($color: #f7aaa3, $alpha: .4);
+  border: var(--colortag-border-width, 0px) solid rgba($color: #f7aaa3, $alpha: .4);
   .next-tag-body {
-    color: var(--color-error-5, #e84738);
+    color: #a11f13;
+    font-weight: var(--font-weight-medium);
   }
   &:hover {
-  border: var(--colortag-border-width, 0px) solid var(--color-error-2, #fcceca);
-    background-color: var(--color-error-2, #fcceca);
+  border: var(--colortag-border-width, 0px) solid rgba($color: #f7aaa3, $alpha: .7);
+    background-color: rgba($color: #f7aaa3, $alpha: .7);
+  }
+  #{$tag-prefix}-icon {
+    color: var(--color-error-5, #e84738)
   }
 }
 .next-tag-custom-success {
-  background-color: var(--color-success-1, #f0fff7);
-  border: var(--colortag-border-width, 0px) solid var(--color-success-1, #f0fff7);
+  background-color: rgba($color: #90deb5, $alpha: .4);
+  border: var(--colortag-border-width, 0px) solid rgba($color: #90deb5, $alpha: .4);
   .next-tag-body {
-    color: var(--color-success-5, #23b066);
+    color: #0a8243;
+    font-weight: var(--font-weight-medium);
   }
   &:hover {
-  border: var(--colortag-border-width, 0px) solid var(--color-success-2, #beedd4);
-    background-color: var(--color-success-2, #beedd4);
+  border: var(--colortag-border-width, 0px) rgba($color: #90deb5, $alpha: .7);
+    background-color: rgba($color: #90deb5, $alpha: .7);
+  }
+  #{$tag-prefix}-icon {
+    color: var(--color-success-5, #23b066);
   }
 }
 .next-tag-custom-prompt {
-  background-color: var(--color-notice-1, #f0f9ff);
-  border: var(--colortag-border-width, 0px) solid var(--color-notice-1, #f0f9ff);
+  background-color: rgba($color: #90cdf5, $alpha: .4);
+  border: var(--colortag-border-width, 0px) solid rgba($color: #90cdf5, $alpha: .4);
   .next-tag-body {
-    color: var(--color-notice-5, #1b9aee);
+    color: #0b65a1;
+    font-weight: var(--font-weight-medium);
   }
   &:hover {
-  border: var(--colortag-border-width, 0px) solid var(--color-notice-2, #c5e8ff);
-    background-color: var(--color-notice-2, #c5e8ff);
+  border: var(--colortag-border-width, 0px) solid rgba($color: #90cdf5, $alpha: .7);
+    background-color: rgba($color: #90cdf5, $alpha: .7);
+  }
+  #{$tag-prefix}-icon {
+    color: var(--color-notice-5, #1b9aee);
   }
 }
 .next-tag-custom-warning {
-  background-color: var(--color-warning-1, #fff8f0);
-  border: var(--colortag-border-width, 0px) solid var(--color-warning-1, #fff8f0);
+  background-color: rgba($color: #ffcd96, $alpha: .4);
+  border: var(--colortag-border-width, 0px) solid rgba($color: #ffcd96, $alpha: .4);
   .next-tag-body {
-    color: var(--color-warning-5, #f98e1a);
+    color:#a35a0b;
+    font-weight: var(--font-weight-medium);
   }
   &:hover {
-  border: var(--colortag-border-width, 0px) solid var(--color-warning-2, #ffe0bf);
-    background-color: var(--color-warning-2, #ffe0bf);
+  border: var(--colortag-border-width, 0px) solid rgba($color: #ffcd96, $alpha: .7);
+    background-color: rgba($color: #ffcd96, $alpha: .7);
+  }
+  #{$tag-prefix}-icon {
+    color: var(--color-warning-5, #f98e1a);
   }
 }
 .next-tag-custom-help {
-  background-color: var(--color-help-1, #fffcf0);
-  border: var(--colortag-border-width, 0px) solid var(--color-help-1, #fffcf0);
+  background-color: rgba($color: #afb2f0, $alpha: .4);
+  border: var(--colortag-border-width, 0px) solid rgba($color: #afb2f0, $alpha: .4);
   .next-tag-body {
-    color: var(--color-help-5, #fad414);
+    color: #212d8f;
+    font-weight: var(--font-weight-medium);
   }
   &:hover {
-  border: var(--colortag-border-width, 0px) solid var(--color-help-2, #fff5c2);
-    background-color: var(--color-help-2, #fff5c2);
+  border: var(--colortag-border-width, 0px) solid rgba($color: #afb2f0, $alpha: .7);
+    background-color: rgba($color: #afb2f0, $alpha: .7);
+  }
+  #{$tag-prefix}-icon {
+    color: #5a66c7;
+  }
+}
+.next-tag-custom-loading {
+  background-color: #cecece;
+  border: var(--colortag-border-width, 0px) solid #cecece;
+  .next-tag-body {
+    color: var(--color-text1-3, #575757);
+    font-weight: var(--font-weight-medium);
+  }
+  &:hover {
+  border: var(--colortag-border-width, 0px) solid rgba($color: #cecece, $alpha: .7);
+    background-color: rgba($color: #cecece, $alpha: .7);
+  }
+  #{$tag-prefix}-icon {
+    color: var(--color-fill1-6, #8b8b8b);
   }
 }
