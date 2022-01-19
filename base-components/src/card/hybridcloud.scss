@@ -10,11 +10,18 @@
   }
 }
 .next-card {
+  .next-card-header {
+    font-size: 0;
+  }
   .next-card-header-title {
     line-height: 22px;
   }
   .next-card-content-container + :not(.next-card-divider).next-card-actions {
     padding-top: 0;
+  }
+  .next-card-header-extra {
+    position: relative;
+    line-height: 22px;
   }
 }
 

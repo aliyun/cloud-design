@@ -9,7 +9,7 @@ import styled from 'styled-components'
 import { Card, Button } from '@alicloudfe/components'
 
 const commonProps = {
-  subTitle: 'SubTitle',
+  // subTitle: 'SubTitle',
   extra: (
     <Button text type="primary">
       Link
