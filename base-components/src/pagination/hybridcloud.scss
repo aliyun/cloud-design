@@ -22,3 +22,12 @@
     margin-left: 20px;
   }
 }
+
+.next-btn.next-btn-normal.next-pagination-item[disabled] {
+  &.next-prev, &.next-next {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
