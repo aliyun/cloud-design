@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.10.38 (https://fusion.design)
- * @alifd/next@1.25.9 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.10.39 (https://fusion.design)
+ * @alifd/next@1.25.13 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -4450,17 +4450,17 @@
       background: transparent;
       border-color: transparent; }
       .next-btn-text.next-btn-primary, .next-btn-text.next-btn-primary:link, .next-btn-text.next-btn-primary:visited, .next-btn-text.next-btn-primary.visited {
-        color: #007be9;
-        color: var(--btn-text-primary-color, #007be9); }
-      .next-btn-text.next-btn-primary:focus, .next-btn-text.next-btn-primary:hover, .next-btn-text.next-btn-primary.hover {
         color: #358fe9;
-        color: var(--btn-text-primary-color-hover, #358fe9);
+        color: var(--btn-text-primary-color, #358fe9); }
+      .next-btn-text.next-btn-primary:focus, .next-btn-text.next-btn-primary:hover, .next-btn-text.next-btn-primary.hover {
+        color: #007be9;
+        color: var(--btn-text-primary-color-hover, #007be9);
         background: transparent;
         border-color: transparent;
         text-decoration: none; }
       .next-btn-text.next-btn-primary:active, .next-btn-text.next-btn-primary.active {
-        color: #358fe9;
-        color: var(--btn-text-primary-color-hover, #358fe9);
+        color: #007be9;
+        color: var(--btn-text-primary-color-hover, #007be9);
         background: transparent;
         border-color: transparent;
         text-decoration: none; }
@@ -13520,8 +13520,8 @@
     color: #358fe9;
     color: var(--menu-btn-text-text-primary-icon-color, #358fe9); }
   .next-menu-btn.next-btn-text.next-btn-primary:hover .next-menu-btn-arrow {
-    color: #358fe9;
-    color: var(--btn-text-primary-color-hover, #358fe9); }
+    color: #007be9;
+    color: var(--btn-text-primary-color-hover, #007be9); }
   .next-menu-btn.next-btn-ghost.next-btn-light .next-menu-btn-arrow {
     color: #EAEAEA;
     color: var(--menu-btn-ghost-light-icon-color, #EAEAEA); }
@@ -25156,6 +25156,9 @@ h6.next-typography-title {
     border-bottom-width: 0; }
   .next-table-fixed .next-table-body tr td:last-child {
     border-right-width: 0; }
+  .next-table-fixed.only-bottom-border .next-table-body tr:last-child td {
+    border-bottom-width: 1px;
+    border-bottom-width: var(--table-normal-border-width, 1px); }
   .next-table-fixed.next-table-group table tr td:first-child,
   .next-table-fixed.next-table-group table tr th:first-child {
     border-left-width: 1px;
@@ -25195,7 +25198,6 @@ h6.next-typography-title {
   .next-table-group.only-bottom-border .next-table-body table,
   .next-table-group.only-bottom-border .next-table-body table.next-table-row {
     border-top: 0; }
-  .next-table-group.only-bottom-border .next-table-body table > tbody > tr:nth-last-child(2) td,
   .next-table-group.only-bottom-border .next-table-body .next-table-group-footer td {
     border-bottom: 0; }
   .next-table-group .next-table-body {
@@ -25269,8 +25271,7 @@ h6.next-typography-title {
   border-bottom-right-radius: 0;
   border-bottom-right-radius: var(--table-header-corner-bottom, 0);
   width: 15px;
-  background: #1F1F1F;
-  background: var(--table-th-bg, #1F1F1F);
+  background: inherit;
   position: absolute;
   right: 0;
   height: 100%;
