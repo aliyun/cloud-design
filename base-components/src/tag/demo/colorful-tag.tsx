@@ -11,6 +11,14 @@ import { Tag, Icon, ConfigProvider } from '@alicloudfe/components'
 const { Group: TagGroup } = Tag
 
 const hybridcloud = ['error', 'success', 'prompt', 'warning', 'help', 'mention']
+const yunxiaoStatus = [
+  'error',
+  'success',
+  'prompt',
+  'warning',
+  'help',
+  'loading'
+]
 const yunxiao = [
   'wealthyGold',
   'coffeeBrown',
@@ -31,8 +39,21 @@ export default function DemoComponent() {
       <div className="tag-list">
         <h4>hybridcloud colors</h4>
         <TagGroup>
-          {hybridcloud.map(color => (
+          {hybridcloud.map((color) => (
             <Tag key={`p_n_${color}`} color={color}>
+              {color}
+            </Tag>
+          ))}
+        </TagGroup>
+
+        <h4>yunxiao status colors</h4>
+        <TagGroup>
+          {yunxiaoStatus.map((color) => (
+            <Tag
+              key={`p_n_${color}`}
+              color={color}
+              icon={<Icon type="warning" />}
+            >
               {color}
             </Tag>
           ))}
@@ -40,7 +61,7 @@ export default function DemoComponent() {
 
         <h4>yunxiao colors</h4>
         <TagGroup>
-          {yunxiao.map(color => (
+          {yunxiao.map((color) => (
             <Tag key={`p_n_${color}`} color={color}>
               {color}
             </Tag>
@@ -49,7 +70,7 @@ export default function DemoComponent() {
 
         <h4>preset colors</h4>
         <TagGroup>
-          {presetColors.map(color => (
+          {presetColors.map((color) => (
             <Tag key={`p_n_${color}`} type="normal" color={color}>
               {color}
             </Tag>
@@ -57,7 +78,7 @@ export default function DemoComponent() {
         </TagGroup>
 
         <TagGroup>
-          {presetColors.map(color => (
+          {presetColors.map((color) => (
             <Tag key={`p_p_${color}`} type="primary" color={color}>
               {color}
             </Tag>
@@ -67,7 +88,7 @@ export default function DemoComponent() {
         <h4>custom colors</h4>
 
         <TagGroup>
-          {customColors.map(color => (
+          {customColors.map((color) => (
             <Tag key={`c_${color}`} color={color}>
               {color}
             </Tag>

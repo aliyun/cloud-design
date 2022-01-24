@@ -8,11 +8,16 @@ import cls from 'classnames'
 
 type NextTagProps = React.ComponentProps<typeof NextTag>
 
+export type TagProps = {
+  /** icon */
+  icon?: React.ReactNode
+} & NextTagProps
+
 const Tag: typeof NextTag = wrap(
   withThemeClass(
-    React.forwardRef((props: NextTagProps, ref) => {
+    React.forwardRef((props: TagProps, ref) => {
       const { children, color, prefix = 'next-' } = props
-      const { className, ...others } = props;
+      const { className, icon, ...others } = props
 
       const theme = useCssVar('--alicloudfe-components-theme').trim()
 
@@ -26,12 +31,17 @@ const Tag: typeof NextTag = wrap(
           <NextTag
             ref={ref as any}
             className={cls(
-              { [`${prefix}tag-custom-${color}`]: true },
+              {
+                [`${prefix}tag-custom-${color}`]: true,
+                [`${prefix}tag-has-icon`]: icon
+              },
               className
             )}
             {...others}
           >
-            {children}
+            {icon && <span className={`${prefix}tag-icon`}>{icon}</span>}
+            {icon && <span className={`${prefix}tag-content`}>{children}</span>}
+            {!icon && children}
           </NextTag>
         )
       }

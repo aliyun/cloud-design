@@ -10,3 +10,18 @@ $icon-prefix: '.' + $css-prefix + 'icon';
 //     }
 //   }
 // }
+
+#{$tag-prefix}-has-icon {
+  #{$tag-prefix}-body {
+    display: inline-flex;
+    align-items: center;
+  }
+  #{$tag-prefix}-icon {
+    margin-right: 4px;
+    .#{$css-prefix}icon {
+      &::before {
+        width: unset;
+      }
+    }
+  }
+}
