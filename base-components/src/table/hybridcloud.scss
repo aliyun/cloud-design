@@ -38,7 +38,7 @@
   box-shadow: var(--table-ping-left-shadow);
 }
 
-.next-table {
+.next-table:not(.next-table-fixed) {
   @include hybridcloud-global-scrollbar;
 }
 
