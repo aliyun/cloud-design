@@ -34,7 +34,7 @@
   .next-table-expanded-area
   .next-table-ping-left
   .next-table-fix-left-last::after,
-.next-table-ping-left .next-table-fix-left-last::after {
+  .next-table-ping-left .next-table-fix-left-last::after {
   box-shadow: var(--table-ping-left-shadow);
 }
 
@@ -44,4 +44,17 @@
 
 .next-table.next-table th .next-table-cell-wrapper {
   word-break: break-word;
+}
+
+/** 
+  在弹窗、抽屉、卡片 中，表格的内容背景色为G10、表头背景色为G20
+*/
+.next-dialog, .next-drawer, .next-card {
+  .next-table th {
+    background: var(--table-th-fill-color,#f7f7f7);
+  }
+
+  .next-table-row{
+    background: var(--table-tr-fill-color, #ffffff);
+  }
 }
