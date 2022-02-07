@@ -24,3 +24,22 @@
 .next-tabs.next-medium .next-tabs-tab-inner {
   line-height: 22px;
 }
+
+
+// 针对基础组件中，用线分割的“胶囊tab”，需要调整下，第一个和最后一个的对齐方式
+.next-tabs-text > .next-tabs-bar .next-tabs-tab {
+  &:first-child {
+    .next-tabs-tab-inner {
+      padding-left: 0px;
+    }
+  }
+  &:last-child {
+    .next-tabs-tab-inner {
+      padding-right: 0px;
+    }
+  }
+  .next-tabs-tab-inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
