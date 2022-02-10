@@ -18,10 +18,19 @@ $icon-prefix: '.' + $css-prefix + 'icon';
   }
   #{$tag-prefix}-icon {
     margin-right: 4px;
+    font-size: 0;
     .#{$css-prefix}icon {
       &::before {
         width: unset;
       }
     }
   }
+}
+
+.next-tag-medium.next-tag-has-icon  > .next-tag-body .next-icon::before {
+  font-size: 12px;
+}
+
+.next-tag-large.next-tag-has-icon  > .next-tag-body .next-icon::before {
+  font-size: 16px;
 }

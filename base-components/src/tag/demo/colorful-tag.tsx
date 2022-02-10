@@ -19,6 +19,14 @@ const yunxiaoStatus = [
   'help',
   'loading'
 ]
+const statusTextMap = {
+  error: '报错',
+  success: '成功',
+  prompt: '默认',
+  warning: '警示',
+  help: '帮助',
+  loading: '等待'
+}
 const yunxiao = [
   'wealthyGold',
   'coffeeBrown',
@@ -39,7 +47,7 @@ export default function DemoComponent() {
       <div className="tag-list">
         <h4>hybridcloud colors</h4>
         <TagGroup>
-          {hybridcloud.map((color) => (
+          {hybridcloud.map(color => (
             <Tag key={`p_n_${color}`} color={color}>
               {color}
             </Tag>
@@ -48,20 +56,32 @@ export default function DemoComponent() {
 
         <h4>yunxiao status colors</h4>
         <TagGroup>
-          {yunxiaoStatus.map((color) => (
+          {yunxiaoStatus.map(color => (
             <Tag
               key={`p_n_${color}`}
               color={color}
               icon={<Icon type="warning" />}
             >
-              {color}
+              {statusTextMap[color]}
+            </Tag>
+          ))}
+        </TagGroup>
+        <TagGroup>
+          {yunxiaoStatus.map(color => (
+            <Tag
+              size="large"
+              key={`p_n_${color}`}
+              color={color}
+              icon={<Icon type="warning" />}
+            >
+              {statusTextMap[color]}
             </Tag>
           ))}
         </TagGroup>
 
         <h4>yunxiao colors</h4>
         <TagGroup>
-          {yunxiao.map((color) => (
+          {yunxiao.map(color => (
             <Tag key={`p_n_${color}`} color={color}>
               {color}
             </Tag>
@@ -70,7 +90,7 @@ export default function DemoComponent() {
 
         <h4>preset colors</h4>
         <TagGroup>
-          {presetColors.map((color) => (
+          {presetColors.map(color => (
             <Tag key={`p_n_${color}`} type="normal" color={color}>
               {color}
             </Tag>
@@ -78,7 +98,7 @@ export default function DemoComponent() {
         </TagGroup>
 
         <TagGroup>
-          {presetColors.map((color) => (
+          {presetColors.map(color => (
             <Tag key={`p_p_${color}`} type="primary" color={color}>
               {color}
             </Tag>
@@ -88,7 +108,7 @@ export default function DemoComponent() {
         <h4>custom colors</h4>
 
         <TagGroup>
-          {customColors.map((color) => (
+          {customColors.map(color => (
             <Tag key={`c_${color}`} color={color}>
               {color}
             </Tag>
