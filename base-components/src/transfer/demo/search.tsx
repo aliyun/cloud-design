@@ -36,7 +36,7 @@ class Demo extends React.Component {
   render() {
     return (
       <Transfer
-        showSearch
+        showSearch={[true, false]}
         defaultValue={['3']}
         dataSource={dataSource}
         defaultLeftChecked={['1']}

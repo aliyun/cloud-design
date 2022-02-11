@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.10.40 (https://fusion.design)
- * @alifd/next@1.25.13 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.10.41 (https://fusion.design)
+ * @alifd/next@1.25.18 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -20197,12 +20197,13 @@ small {
       -webkit-box-sizing: border-box;
               box-sizing: border-box; }
     .next-switch-medium > .next-switch-children {
-      font-size: 12px;
-      font-size: var(--font-size-body-1, 12px);
       height: 16px;
       height: var(--switch-size-m-trigger, 16px);
       line-height: 16px;
       line-height: var(--switch-size-m-trigger, 16px); }
+    .next-switch-medium > .next-switch-children {
+      font-size: 12px;
+      font-size: var(--form-element-medium-font-size, 12px); }
     .next-switch-medium.next-switch.next-switch-on > .next-switch-children {
       margin: 0 calc(16px + 8px) 0 8px;
       margin: 0 calc(var(--switch-size-m-trigger, 16px) + var(--switch-size-m-trigger-padding-r, 8px)) 0 var(--switch-size-m-trigger-padding-l, 8px); }
@@ -20262,12 +20263,13 @@ small {
       -webkit-box-sizing: border-box;
               box-sizing: border-box; }
     .next-switch-small > .next-switch-children {
-      font-size: 12px;
-      font-size: var(--font-size-body-1, 12px);
       height: 12px;
       height: var(--switch-size-s-trigger, 12px);
       line-height: 12px;
       line-height: var(--switch-size-s-trigger, 12px); }
+    .next-switch-small > .next-switch-children {
+      font-size: 12px;
+      font-size: var(--form-element-small-font-size, 12px); }
     .next-switch-small.next-switch.next-switch-on > .next-switch-children {
       margin: 0 calc(12px + 8px) 0 8px;
       margin: 0 calc(var(--switch-size-s-trigger, 12px) + var(--switch-size-s-trigger-padding-r, 8px)) 0 var(--switch-size-s-trigger-padding-l, 8px); }
@@ -23328,8 +23330,8 @@ small {
     border-bottom: var(--line-1, 1px) solid var(--color-brand1-6, #007be9); }
   .next-transfer-panel-footer {
     position: relative;
-    padding: 8px 20px;
-    padding: var(--transfer-panel-footer-padding-top-bottom, 8px) var(--transfer-panel-footer-padding-left-right, 20px);
+    padding: 8px 16px;
+    padding: var(--transfer-panel-footer-padding-top-bottom, 8px) var(--transfer-panel-footer-padding-left-right, 16px);
     border-top: 1px solid #383838;
     border-top: var(--transfer-panel-border-width, 1px) var(--line-solid, solid) var(--transfer-panel-border-color, #383838);
     background-color: transparent;
@@ -27159,33 +27161,33 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
   background: #151515;
   background: var(--color-fill1-1, #151515); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected::before {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected::before {
   color: #CCCCCC;
   color: var(--color-text1-3, #CCCCCC);
   background: #001A33;
   background: var(--color-brand1-1, #001A33); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected .next-calendar2-cell-inner {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected .next-calendar2-cell-inner {
   color: #CCCCCC;
   color: var(--color-text1-3, #CCCCCC);
   background: transparent; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-begin .next-calendar2-cell-inner, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-end .next-calendar2-cell-inner {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-begin .next-calendar2-cell-inner, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-end .next-calendar2-cell-inner {
   z-index: 10;
   color: #FFFFFF;
   background: #007be9;
   background: var(--color-brand1-6, #007be9); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-begin::before {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-begin::before {
   left: 50%; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-end::before {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-end::before {
   right: 50%; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-begin-single::before, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-end-single::before {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-begin-single::before, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-end-single::before {
   display: none; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -27201,43 +27203,43 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
   border-style: dashed;
   border-width: 1px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover.next-calendar2-cell-hover-begin::after, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover:first-child::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover.next-calendar2-cell-hover-begin::after, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover:first-child::after {
   left: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover.next-calendar2-cell-hover-end::after, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover:last-child::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover.next-calendar2-cell-hover-end::after, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover:last-child::after {
   right: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover.next-calendar2-cell-selected.next-calendar2-cell-hover-begin::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover.next-calendar2-cell-selected.next-calendar2-cell-hover-begin::after {
   left: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover.next-calendar2-cell-selected.next-calendar2-cell-hover-end::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover.next-calendar2-cell-selected.next-calendar2-cell-hover-end::after {
   right: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover:first-of-type::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover:first-of-type::after {
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   border-left: 1px dashed #02305e;
   border-left: 1px dashed var(--color-brand1-9, #02305e); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover:last-of-type::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover:last-of-type::after {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   border-right: 1px dashed #02305e;
   border-right: 1px dashed var(--color-brand1-9, #02305e); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-edge-end::before {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-edge-end::before {
   right: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-edge-end::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-edge-end::after {
   right: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-edge-end.next-calendar2-cell-hover::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-edge-end.next-calendar2-cell-hover::after {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   border-right: 1px dashed #02305e;
   border-right: 1px dashed var(--color-brand1-9, #02305e); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover-begin::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover-begin::after {
   border-top: 1px dashed #02305e;
   border-top: 1px dashed var(--color-brand1-9, #02305e);
   border-left: 1px dashed #02305e;
@@ -27245,7 +27247,7 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover-end::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover-end::after {
   border-top: 1px dashed #02305e;
   border-top: 1px dashed var(--color-brand1-9, #02305e);
   border-right: 1px dashed #02305e;
