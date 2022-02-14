@@ -7,6 +7,9 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 import { Tag, Icon, ConfigProvider } from '@alicloudfe/components'
+import TeamixIcon from '@teamix/icon'
+
+TeamixIcon.setConfig(TeamixIcon.YUNXIAO)
 
 const { Group: TagGroup } = Tag
 
@@ -66,6 +69,29 @@ export default function DemoComponent() {
             </Tag>
           ))}
         </TagGroup>
+        {/* <TagGroup>
+          {yunxiaoStatus.map(color => (
+            <Tag
+              key={`p_n_${color}`}
+              color={color}
+              icon={<TeamixIcon type="send-line" />}
+            >
+              {statusTextMap[color]}
+            </Tag>
+          ))}
+        </TagGroup>
+        <TagGroup>
+          {yunxiaoStatus.map(color => (
+            <Tag
+              size="large"
+              key={`p_n_${color}`}
+              color={color}
+              icon={<TeamixIcon type="send-line" />}
+            >
+              {statusTextMap[color]}
+            </Tag>
+          ))}
+        </TagGroup> */}
         <TagGroup>
           {yunxiaoStatus.map(color => (
             <Tag

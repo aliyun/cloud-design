@@ -13,7 +13,11 @@ export type TagProps = {
   icon?: React.ReactNode
 } & NextTagProps
 
-const Tag: typeof NextTag = wrap(
+const Tag: React.FC<TagProps> & {
+  Closeable: typeof NextTag.Closeable
+  Selectable: typeof NextTag.Selectable
+  Group: typeof NextTag.Group
+} = wrap(
   withThemeClass(
     React.forwardRef((props: TagProps, ref) => {
       const { children, color, prefix = 'next-' } = props
