@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.10.38 (https://fusion.design)
- * @alifd/next@1.25.9 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.10.41 (https://fusion.design)
+ * @alifd/next@1.25.18 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -4250,8 +4250,8 @@ small {
   .next-menu-divider {
     margin: 8px 12px;
     margin: var(--menu-divider-margin-ver, 8px) var(--menu-divider-margin-hoz, 12px);
-    border-bottom: 1px solid #262626;
-    border-bottom: var(--menu-divider-width, 1px) var(--menu-divider-style, solid) var(--menu-divider-color, #262626); }
+    border-bottom: 1px solid #383838;
+    border-bottom: var(--menu-divider-width, 1px) var(--menu-divider-style, solid) var(--menu-divider-color, #383838); }
   .next-menu .next-menu-icon-selected.next-icon {
     position: absolute;
     top: 0;
@@ -4978,17 +4978,17 @@ small {
       background: transparent;
       border-color: transparent; }
       .next-btn-text.next-btn-primary, .next-btn-text.next-btn-primary:link, .next-btn-text.next-btn-primary:visited, .next-btn-text.next-btn-primary.visited {
-        color: #007be9;
-        color: var(--btn-text-primary-color, #007be9); }
-      .next-btn-text.next-btn-primary:focus, .next-btn-text.next-btn-primary:hover, .next-btn-text.next-btn-primary.hover {
         color: #358fe9;
-        color: var(--btn-text-primary-color-hover, #358fe9);
+        color: var(--btn-text-primary-color, #358fe9); }
+      .next-btn-text.next-btn-primary:focus, .next-btn-text.next-btn-primary:hover, .next-btn-text.next-btn-primary.hover {
+        color: #007be9;
+        color: var(--btn-text-primary-color-hover, #007be9);
         background: transparent;
         border-color: transparent;
         text-decoration: none; }
       .next-btn-text.next-btn-primary:active, .next-btn-text.next-btn-primary.active {
-        color: #358fe9;
-        color: var(--btn-text-primary-color-hover, #358fe9);
+        color: #007be9;
+        color: var(--btn-text-primary-color-hover, #007be9);
         background: transparent;
         border-color: transparent;
         text-decoration: none; }
@@ -14048,8 +14048,8 @@ small {
     color: #358fe9;
     color: var(--menu-btn-text-text-primary-icon-color, #358fe9); }
   .next-menu-btn.next-btn-text.next-btn-primary:hover .next-menu-btn-arrow {
-    color: #358fe9;
-    color: var(--btn-text-primary-color-hover, #358fe9); }
+    color: #007be9;
+    color: var(--btn-text-primary-color-hover, #007be9); }
   .next-menu-btn.next-btn-ghost.next-btn-light .next-menu-btn-arrow {
     color: #EAEAEA;
     color: var(--menu-btn-ghost-light-icon-color, #EAEAEA); }
@@ -20197,12 +20197,13 @@ small {
       -webkit-box-sizing: border-box;
               box-sizing: border-box; }
     .next-switch-medium > .next-switch-children {
-      font-size: 12px;
-      font-size: var(--font-size-body-1, 12px);
       height: 16px;
       height: var(--switch-size-m-trigger, 16px);
       line-height: 16px;
       line-height: var(--switch-size-m-trigger, 16px); }
+    .next-switch-medium > .next-switch-children {
+      font-size: 12px;
+      font-size: var(--form-element-medium-font-size, 12px); }
     .next-switch-medium.next-switch.next-switch-on > .next-switch-children {
       margin: 0 calc(16px + 8px) 0 8px;
       margin: 0 calc(var(--switch-size-m-trigger, 16px) + var(--switch-size-m-trigger-padding-r, 8px)) 0 var(--switch-size-m-trigger-padding-l, 8px); }
@@ -20262,12 +20263,13 @@ small {
       -webkit-box-sizing: border-box;
               box-sizing: border-box; }
     .next-switch-small > .next-switch-children {
-      font-size: 12px;
-      font-size: var(--font-size-body-1, 12px);
       height: 12px;
       height: var(--switch-size-s-trigger, 12px);
       line-height: 12px;
       line-height: var(--switch-size-s-trigger, 12px); }
+    .next-switch-small > .next-switch-children {
+      font-size: 12px;
+      font-size: var(--form-element-small-font-size, 12px); }
     .next-switch-small.next-switch.next-switch-on > .next-switch-children {
       margin: 0 calc(12px + 8px) 0 8px;
       margin: 0 calc(var(--switch-size-s-trigger, 12px) + var(--switch-size-s-trigger-padding-r, 8px)) 0 var(--switch-size-s-trigger-padding-l, 8px); }
@@ -23328,8 +23330,8 @@ small {
     border-bottom: var(--line-1, 1px) solid var(--color-brand1-6, #007be9); }
   .next-transfer-panel-footer {
     position: relative;
-    padding: 8px 20px;
-    padding: var(--transfer-panel-footer-padding-top-bottom, 8px) var(--transfer-panel-footer-padding-left-right, 20px);
+    padding: 8px 16px;
+    padding: var(--transfer-panel-footer-padding-top-bottom, 8px) var(--transfer-panel-footer-padding-left-right, 16px);
     border-top: 1px solid #383838;
     border-top: var(--transfer-panel-border-width, 1px) var(--line-solid, solid) var(--transfer-panel-border-color, #383838);
     background-color: transparent;
@@ -25684,6 +25686,9 @@ h6.next-typography-title {
     border-bottom-width: 0; }
   .next-table-fixed .next-table-body tr td:last-child {
     border-right-width: 0; }
+  .next-table-fixed.only-bottom-border .next-table-body tr:last-child td {
+    border-bottom-width: 1px;
+    border-bottom-width: var(--table-normal-border-width, 1px); }
   .next-table-fixed.next-table-group table tr td:first-child,
   .next-table-fixed.next-table-group table tr th:first-child {
     border-left-width: 1px;
@@ -25723,7 +25728,6 @@ h6.next-typography-title {
   .next-table-group.only-bottom-border .next-table-body table,
   .next-table-group.only-bottom-border .next-table-body table.next-table-row {
     border-top: 0; }
-  .next-table-group.only-bottom-border .next-table-body table > tbody > tr:nth-last-child(2) td,
   .next-table-group.only-bottom-border .next-table-body .next-table-group-footer td {
     border-bottom: 0; }
   .next-table-group .next-table-body {
@@ -25797,8 +25801,7 @@ h6.next-typography-title {
   border-bottom-right-radius: 0;
   border-bottom-right-radius: var(--table-header-corner-bottom, 0);
   width: 15px;
-  background: #1F1F1F;
-  background: var(--table-th-bg, #1F1F1F);
+  background: inherit;
   position: absolute;
   right: 0;
   height: 100%;
@@ -27158,33 +27161,33 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
   background: #151515;
   background: var(--color-fill1-1, #151515); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected::before {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected::before {
   color: #CCCCCC;
   color: var(--color-text1-3, #CCCCCC);
   background: #001A33;
   background: var(--color-brand1-1, #001A33); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected .next-calendar2-cell-inner {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected .next-calendar2-cell-inner {
   color: #CCCCCC;
   color: var(--color-text1-3, #CCCCCC);
   background: transparent; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-begin .next-calendar2-cell-inner, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-end .next-calendar2-cell-inner {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-begin .next-calendar2-cell-inner, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-end .next-calendar2-cell-inner {
   z-index: 10;
   color: #FFFFFF;
   background: #007be9;
   background: var(--color-brand1-6, #007be9); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-begin::before {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-begin::before {
   left: 50%; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-end::before {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-end::before {
   right: 50%; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-begin-single::before, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-selected.next-calendar2-cell-range-end-single::before {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-begin-single::before, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-selected.next-calendar2-cell-range-end-single::before {
   display: none; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -27200,43 +27203,43 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
   border-style: dashed;
   border-width: 1px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover.next-calendar2-cell-hover-begin::after, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover:first-child::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover.next-calendar2-cell-hover-begin::after, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover:first-child::after {
   left: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover.next-calendar2-cell-hover-end::after, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover:last-child::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover.next-calendar2-cell-hover-end::after, .next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover:last-child::after {
   right: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover.next-calendar2-cell-selected.next-calendar2-cell-hover-begin::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover.next-calendar2-cell-selected.next-calendar2-cell-hover-begin::after {
   left: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover.next-calendar2-cell-selected.next-calendar2-cell-hover-end::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover.next-calendar2-cell-selected.next-calendar2-cell-hover-end::after {
   right: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover:first-of-type::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover:first-of-type::after {
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   border-left: 1px dashed #02305e;
   border-left: 1px dashed var(--color-brand1-9, #02305e); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover:last-of-type::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover:last-of-type::after {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   border-right: 1px dashed #02305e;
   border-right: 1px dashed var(--color-brand1-9, #02305e); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-edge-end::before {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-edge-end::before {
   right: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-edge-end::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-edge-end::after {
   right: 8px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-edge-end.next-calendar2-cell-hover::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-edge-end.next-calendar2-cell-hover::after {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   border-right: 1px dashed #02305e;
   border-right: 1px dashed var(--color-brand1-9, #02305e); }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover-begin::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover-begin::after {
   border-top: 1px dashed #02305e;
   border-top: 1px dashed var(--color-brand1-9, #02305e);
   border-left: 1px dashed #02305e;
@@ -27244,7 +27247,7 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px; }
 
-.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current:not(.next-calendar2-cell-disabled).next-calendar2-cell-hover-end::after {
+.next-range-picker2-panel:not(.next-range-picker2-panel-single) .next-calendar2-cell-current.next-calendar2-cell-hover-end::after {
   border-top: 1px dashed #02305e;
   border-top: 1px dashed var(--color-brand1-9, #02305e);
   border-right: 1px dashed #02305e;
