@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-xconsole-v4@0.10.1 (https://fusion.design)
+ * @alife/theme-xconsole-v4@0.11.0 (https://fusion.design)
  * @alifd/next@1.22.26 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -1849,8 +1849,8 @@ small {
 
 @font-face {
   font-family: NextIcon;
-  src: url("//at.alicdn.com/t/font_1899989_lyqxvgtyp5.eot");
-  src: url("//at.alicdn.com/t/font_1899989_lyqxvgtyp5.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1899989_lyqxvgtyp5.woff2") format("woff2"), url("//at.alicdn.com/t/font_1899989_lyqxvgtyp5.woff") format("woff"), url("//at.alicdn.com/t/font_1899989_lyqxvgtyp5.ttf") format("truetype"), url("//at.alicdn.com/t/font_1899989_lyqxvgtyp5.svg#NextIcon") format("svg"); }
+  src: url("//at.alicdn.com/t/font_1899989_lqawitevtzp.eot");
+  src: url("//at.alicdn.com/t/font_1899989_lqawitevtzp.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1899989_lqawitevtzp.woff2") format("woff2"), url("//at.alicdn.com/t/font_1899989_lqawitevtzp.woff") format("woff"), url("//at.alicdn.com/t/font_1899989_lqawitevtzp.ttf") format("truetype"), url("//at.alicdn.com/t/font_1899989_lqawitevtzp.svg#NextIcon") format("svg"); }
 
 .next-icon {
   display: inline-block;
@@ -15313,11 +15313,11 @@ small {
   .next-number-picker-normal .next-input.next-disabled .next-number-picker-handler {
     opacity: 0; }
   .next-number-picker-normal .next-number-picker-up-icon::before {
-    content: "\E9AE";
-    content: var(--number-picker-normal-up-icon, "\E9AE"); }
+    content: "\EA2F";
+    content: var(--number-picker-normal-up-icon, "\EA2F"); }
   .next-number-picker-normal .next-number-picker-down-icon::before {
-    content: "\E843";
-    content: var(--number-picker-normal-down-icon, "\E843"); }
+    content: "\EA37";
+    content: var(--number-picker-normal-down-icon, "\EA37"); }
   .next-number-picker-normal.next-small {
     width: 68px; }
     .next-number-picker-normal.next-small .next-btn {
@@ -26281,6 +26281,30 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
   color: #FFFFFF;
   background: #002850;
   background: var(--color-brand1-9, #002850); }
+
+.next-icon-d-up-for-component::before {
+  content: "\EA37";
+  content: var(--icon-content-d-up-for-component, "\EA37"); }
+
+.next-icon-zoom-in-line1::before {
+  content: "\EA36";
+  content: var(--icon-content-zoom-in-line1, "\EA36"); }
+
+.next-icon-zoom-out-line1::before {
+  content: "\EA35";
+  content: var(--icon-content-zoom-out-line1, "\EA35"); }
+
+.next-icon-a-rank-line2::before {
+  content: "\EA34";
+  content: var(--icon-content-a-rank-line2, "\EA34"); }
+
+.next-icon-a-drag-line2::before {
+  content: "\EA33";
+  content: var(--icon-content-a-drag-line2, "\EA33"); }
+
+.next-icon-a-filter-line2::before {
+  content: "\EA32";
+  content: var(--icon-content-a-filter-line2, "\EA32"); }
 
 .next-icon-undo-fill::before {
   content: "\EA31";
