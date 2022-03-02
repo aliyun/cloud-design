@@ -55,3 +55,11 @@ $table-empty: '#{$css-prefix}table-empty';
     }
   }
 }
+
+.#{$table-cls-name}-expanded-ctrl .#{$table-cls-name}-expand-fold:before,
+.#{$table-cls-name}-expanded-ctrl .#{$table-cls-name}-expand-fold .#{$css-prefix}-icon-remote,
+.#{$table-cls-name}-expanded-ctrl .#{$table-cls-name}-expand-unfold:before,
+.#{$table-cls-name}-expanded-ctrl .#{$table-cls-name}-expand-unfold .#{$css-prefix}-icon-remote {
+  width: var(--table-expand-icon-size, 16px);
+  font-size: var(--table-expand-icon-size, 16px);
+}
