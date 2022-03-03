@@ -24,7 +24,7 @@ module.exports = [
     themeName: 'hybridcloud-dark'
   },
   {
-    packageName: '@alife/theme-yunxiao-v1@0.10.20',
+    packageName: '@alife/theme-yunxiao-v1',
     themeName: 'yunxiao'
   },
   {
@@ -32,12 +32,12 @@ module.exports = [
     themeName: 'yunxiao-dark'
   },
   {
-    packageName: '@alife/theme-yunxiao-v1@0.10.20',
+    packageName: '@alife/theme-yunxiao-v1',
     themeName: 'aone',
     ignore: true
   },
   {
-    packageName: '@alife/theme-yunxiao-v1@0.10.20',
+    packageName: '@alife/theme-yunxiao-v1',
     themeName: 'teamix',
     ignore: true
   }
