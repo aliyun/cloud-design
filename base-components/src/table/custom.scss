@@ -1,7 +1,17 @@
 .next-table.with-row-select {
-  tr td:nth-child(2), tr th:nth-child(2) {
+  tr td:nth-child(2),
+  tr th:nth-child(2) {
     .next-table-cell-wrapper {
       padding-left: 0;
     }
+  }
+}
+
+.next-table-fixed .next-table-body {
+  tr td:last-child {
+    border-right-width: 1px;
+  }
+  tr td.last {
+    border-right-width: 0px;
   }
 }
