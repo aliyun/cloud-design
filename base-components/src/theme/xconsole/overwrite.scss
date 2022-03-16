@@ -4,6 +4,10 @@ body {
   background: var(--body-bg, var(--color-fill1-1));
 }
 
+body.lang-ja {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica",Arial,sans-serif;
+}
+
 // xconsole 独有的样式覆盖
 @import '../../checkbox/xconsole.scss';
 @import '../../input/xconsole.scss';
