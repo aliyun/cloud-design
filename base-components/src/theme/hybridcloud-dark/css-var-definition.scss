@@ -8465,31 +8465,7 @@
     
     
     
-    --calendar-fullscreen-table-cell-normal-background: var(--color-white, #FFFFFF);
-    
-    
-    
-    --calendar-fullscreen-table-cell-normal-color: var(--color-text1-2, #8A8A8A);
-    
-    
-    
-    --calendar-fullscreen-table-cell-hover-background: var(--color-fill1-2, #383838);
-    
-    
-    
-    --calendar-fullscreen-table-cell-hover-color: var(--color-text1-2, #8A8A8A);
-    
-    
-    
     --calendar-fullscreen-table-cell-select-border-color: var(--color-brand1-6, #007be9);
-    
-    
-    
-    --calendar-fullscreen-table-cell-other-background: var(--color-fill1-2, #383838);
-    
-    
-    
-    --calendar-fullscreen-table-cell-other-border-color: var(--color-line1-1, #262626);
     
     
     
@@ -8554,10 +8530,6 @@
     
     
     --calendar-btn-date-color: var(--color-text1-2, #8A8A8A);
-    
-    
-    
-    --calendar-fullscreen-table-cell-current-background: var(--color-line1-2, #383838);
     
     
     
@@ -8649,6 +8621,54 @@
     
     
     
+    --calendar-fullscreen-table-cell-normal-background: var(--color-fill1-1, #151515);
+    
+    
+    
+    --calendar-fullscreen-table-cell-normal-color: var(--color-text1-2, #8A8A8A);
+    
+    
+    
+    --calendar-fullscreen-table-cell-normal-border-color: var(--color-fill1-2, #383838);
+    
+    
+    
+    --calendar-fullscreen-table-cell-hover-background: var(--color-fill1-4, #262626);
+    
+    
+    
+    --calendar-fullscreen-table-cell-hover-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --calendar-fullscreen-table-cell-select-background: var(--color-brand1-1, #001A33);
+    
+    
+    
+    --calendar-fullscreen-table-cell-current-background: var(--color-fill1-2, #383838);
+    
+    
+    
+    --calendar-fullscreen-table-cell-other-background: var(--color-fill1-4, #262626);
+    
+    
+    
+    --calendar-fullscreen-table-cell-other-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --calendar-fullscreen-table-cell-other-border-color: var(--color-fill1-2, #383838);
+    
+    
+    
+    --calendar-fullscreen-table-cell-disabled-background: var(--color-fill1-3, #1F1F1F);
+    
+    
+    
+    --calendar-fullscreen-table-cell-disabled-color: var(--color-fill1-5, #4D4D4D);
+    
+    
+    
     --calendar-fullscreen-header-margin-bottom: var(--s-2, 8px);
     
     
@@ -8701,15 +8721,7 @@
     
     
     
-    --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-2, #383838);
-    
-    
-    
     --calendar-fullscreen-table-cell-hover-border-color: var(--color-brand1-6, #007be9);
-    
-    
-    
-    --calendar-fullscreen-table-cell-select-background: var(--color-brand1-1, #001A33);
     
     
     
@@ -8730,18 +8742,6 @@
     
     
     --calendar-fullscreen-table-cell-current-font-weight: var(--font-weight-3, bold);
-    
-    
-    
-    --calendar-fullscreen-table-cell-other-color: var(--color-text1-1, #6B6B6B);
-    
-    
-    
-    --calendar-fullscreen-table-cell-disabled-background: var(--color-fill1-1, #151515);
-    
-    
-    
-    --calendar-fullscreen-table-cell-disabled-color: var(--color-text1-1, #6B6B6B);
     
     
     
@@ -9347,10 +9347,6 @@
     
     
     
-    --message-success-color-bg-toast: var(--color-line1-1, #262626);
-    
-    
-    
     --message-success-color-border-toast: var(--color-transparent, transparent);
     
     
@@ -9359,23 +9355,11 @@
     
     
     
-    --message-error-color-bg-toast: var(--color-line1-1, #262626);
-    
-    
-    
     --message-error-color-border-toast: var(--color-transparent, transparent);
     
     
     
-    --message-warning-color-bg-toast: var(--color-line1-1, #262626);
-    
-    
-    
     --message-warning-color-border-toast: var(--color-transparent, transparent);
-    
-    
-    
-    --message-notice-color-bg-toast: var(--color-line1-1, #262626);
     
     
     
@@ -9619,11 +9603,27 @@
     
     
     
-    --message-notice-icon-content: var(--icon-content-warning, "");
-    
-    
-    
     --message-help-icon-content: var(--icon-content-help-o, "");
+    
+    
+    
+    --message-success-color-content-inline: var(--color-fill1-8, #8A8A8A);
+    
+    
+    
+    --message-success-color-bg-toast: var(--color-success-1, #00331B);
+    
+    
+    
+    --message-error-color-bg-toast: var(--color-error-1, #361312);
+    
+    
+    
+    --message-warning-color-bg-toast: var(--color-warning-1, #331A00);
+    
+    
+    
+    --message-notice-color-bg-toast: var(--color-notice-1, #001a33);
     
     
     
@@ -9763,7 +9763,7 @@
     
     
     
-    --message-success-color-content-inline: var(--color-fill1-8, #8A8A8A);
+    --message-notice-icon-content: var(--icon-content-info-o-fill, "");
     
     
     /* ------------------------ dialog ------------------------ */
@@ -9891,6 +9891,10 @@
     
     
     --dialog-title-font-weight: var(--font-weight-2, normal);
+    
+    
+    
+    --dialog-content-margin-bottom-no-footer: var(--s-0, 0px);
     
     
     

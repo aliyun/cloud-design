@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-yunxiao-v1@0.13.2 (https://fusion.design)
- * @alifd/next@1.25.22 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.13.3 (https://fusion.design)
+ * @alifd/next@1.25.28 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -8123,13 +8123,13 @@ small {
     position: absolute;
     cursor: pointer; }
     .next-message .next-message-close .next-icon-close {
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
       line-height: 1em; }
       .next-message .next-message-close .next-icon-close:before {
-        width: 16px;
-        height: 16px;
-        font-size: 16px;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
         line-height: 1em; }
     .next-message .next-message-close:hover {
       color: #8B8B8B;
@@ -8752,6 +8752,9 @@ small {
     line-height: var(--font-lineheight-2, 1.5);
     color: #6E6E6E;
     color: var(--dialog-content-color, #6E6E6E); }
+  .next-dialog-body-no-footer {
+    margin-bottom: 0px;
+    margin-bottom: var(--dialog-content-margin-bottom-no-footer, 0px); }
   .next-dialog-footer {
     padding: 16px 20px 16px 20px;
     padding: var(--dialog-footer-padding-top, 16px) var(--dialog-footer-padding-left-right, 20px) var(--dialog-footer-padding-bottom, 16px) var(--dialog-footer-padding-left-right, 20px);
@@ -8875,6 +8878,9 @@ small {
   .next-dialog-v2 .next-dialog-header + .next-dialog-body {
     padding: 12px 20px 16px 20px;
     padding: var(--dialog-content-padding-top, 12px) var(--dialog-content-padding-left-right, 20px) var(--dialog-content-padding-bottom, 16px) var(--dialog-content-padding-left-right, 20px); }
+  .next-dialog-v2 .next-dialog-header + .next-dialog-body-no-footer {
+    margin-bottom: 0px;
+    margin-bottom: var(--dialog-content-margin-bottom-no-footer, 0px); }
 
 .next-dialog.next-dialog-v2 {
   position: relative; }
