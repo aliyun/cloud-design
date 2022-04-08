@@ -45,7 +45,10 @@ const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   if (sizeWidth) {
     return sizeWidth
   }
-  return 'auto'
+  // 只针对混合云主题做默认 auto 处理
+  if (theme.startsWith('hybridcloud')) {
+    return 'auto'
+  }
 }
 
 // 判断是否是云效主题，云效主题的 Dialog 局顶

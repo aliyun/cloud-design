@@ -9,7 +9,10 @@ import styled from 'styled-components'
 import { Message, Button } from '@alicloudfe/components'
 
 const notice = () => {
-  Message.notice('This is a Toast Message Notice')
+  Message.notice({
+    content: 'This is a Toast Message Notice',
+    duration: 0
+  })
 }
 
 export default function DemoComponent() {
@@ -17,11 +20,20 @@ export default function DemoComponent() {
     <div>
       <Message type="notice" closeable title="中文提示"></Message>
       <br />
-      <Message type="notice" closeable>中文提示</Message>
+      <Message type="notice" closeable>
+        中文提示
+      </Message>
       <br />
-      <Message type="notice" size="large" closeable title="Display Toast Message Notice"></Message>
+      <Message
+        type="notice"
+        size="large"
+        closeable
+        title="Display Toast Message Notice"
+      ></Message>
       <br />
-      <Message type="notice" size="large" closeable>Display Toast Message Notice</Message>
+      <Message type="notice" size="large" closeable>
+        Display Toast Message Notice
+      </Message>
       <br />
       <Button type="primary" onClick={notice}>
         Display Toast Message Notice
