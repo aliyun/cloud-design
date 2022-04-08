@@ -13,6 +13,9 @@
   .next-card-header {
     font-size: 0;
   }
+  .next-card-content-container {
+    @include hybridcloud-scrollbar;
+  }
   .next-card-header-title {
     line-height: 22px;
     font-weight: var(--font-weight-medium);
