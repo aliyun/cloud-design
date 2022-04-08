@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.18.17 (https://fusion.design)
- * @alifd/next@1.25.18 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.18.18 (https://fusion.design)
+ * @alifd/next@1.25.29 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -8530,8 +8530,8 @@ small {
       line-height: 14px;
       line-height: var(--message-size-m-title-font, 14px); }
     .next-message.next-medium .next-message-content {
-      margin-top: 8px;
-      margin-top: var(--message-size-m-content-margin-top, 8px);
+      margin-top: 4px;
+      margin-top: var(--message-size-m-content-margin-top, 4px);
       padding: 0 16px 0 calc(8px + 20px);
       padding: 0 var(--message-size-m-title-content-padding-right, 16px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px));
       font-size: 12px;
@@ -8752,6 +8752,9 @@ small {
     line-height: var(--font-lineheight-2, 1.5);
     color: #5a5a5a;
     color: var(--dialog-content-color, #5a5a5a); }
+  .next-dialog-body-no-footer {
+    margin-bottom: 0px;
+    margin-bottom: var(--dialog-content-margin-bottom-no-footer, 0px); }
   .next-dialog-footer {
     padding: 16px 20px 20px 20px;
     padding: var(--dialog-footer-padding-top, 16px) var(--dialog-footer-padding-left-right, 20px) var(--dialog-footer-padding-bottom, 20px) var(--dialog-footer-padding-left-right, 20px);
@@ -8875,6 +8878,9 @@ small {
   .next-dialog-v2 .next-dialog-header + .next-dialog-body {
     padding: 16px 20px 20px 20px;
     padding: var(--dialog-content-padding-top, 16px) var(--dialog-content-padding-left-right, 20px) var(--dialog-content-padding-bottom, 20px) var(--dialog-content-padding-left-right, 20px); }
+  .next-dialog-v2 .next-dialog-header + .next-dialog-body-no-footer {
+    margin-bottom: 0px;
+    margin-bottom: var(--dialog-content-margin-bottom-no-footer, 0px); }
 
 .next-dialog.next-dialog-v2 {
   position: relative; }
@@ -20660,8 +20666,10 @@ small {
           left: 50%;
           bottom: 0%; }
         .next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab.active:before {
-          width: 100%;
-          left: 0%; }
+          width: calc(100% - 0px*2);
+          width: calc(100% - var(--tab-pure-ink-bar-padding-l, 0px)*2);
+          left: calc(0px);
+          left: calc(var(--tab-pure-ink-bar-padding-l, 0px)); }
   .next-tabs-wrapped > .next-tabs-bar {
     background: transparent;
     background: var(--tab-wrapped-bar-bg-color, transparent); }
@@ -20744,9 +20752,10 @@ small {
         top: calc(0px - 0px);
         top: calc(0px - var(--tab-wrapped-border-line-width, 0px)); }
       .next-tabs-wrapped.next-tabs-top > .next-tabs-bar .next-tabs-tab.active:before {
-        width: 100%;
-        left: 0;
-        left: var(--tab-wrapped-tab-corner-radius, 0); }
+        width: calc(100% - 0px*2);
+        width: calc(100% - var(--tab-wrapped-ink-bar-padding-l, 0px)*2);
+        left: calc(0px);
+        left: calc(var(--tab-wrapped-ink-bar-padding-l, 0px)); }
       .next-tabs-wrapped.next-tabs-top > .next-tabs-bar .next-tabs-tab.active {
         border-width: 0px 0px 0px 0px;
         border-width: var(--tab-wrapped-border-line-width, 0px) var(--tab-wrapped-border-line-width, 0px) var(--tab-wrapped-border-line-width, 0px) var(--tab-wrapped-border-line-width, 0px); }
@@ -20797,9 +20806,10 @@ small {
         bottom: calc(0px - 0px);
         bottom: calc(0px - var(--tab-wrapped-border-line-width, 0px)); }
       .next-tabs-wrapped.next-tabs-bottom > .next-tabs-bar .next-tabs-tab.active:before {
-        width: 100%;
-        left: 0;
-        left: var(--tab-wrapped-tab-corner-radius, 0); }
+        width: calc(100% - 0px*2);
+        width: calc(100% - var(--tab-wrapped-ink-bar-padding-l, 0px)*2);
+        left: calc(0px);
+        left: calc(var(--tab-wrapped-ink-bar-padding-l, 0px)); }
   .next-tabs-wrapped.next-tabs-bottom > .next-tabs-content {
     top: 0px;
     top: var(--tab-wrapped-border-line-width, 0px);
