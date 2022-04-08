@@ -68,7 +68,10 @@ const getQuickCustomWidth = (
   if (sizeWidth) {
     return sizeWidth
   }
-  return 'auto'
+   // 只针对混合云主题做默认 auto 处理
+   if (theme.startsWith('hybridcloud')) {
+    return 'auto'
+  }
 }
 
 // 设置阴影
