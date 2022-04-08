@@ -49,9 +49,7 @@ body#{$modal-prefix}-open {
     .right-part {
       display: flex;
       justify-content: flex-end;
-      #{$modal-prefix}-operations {
-        line-height: var(--s-9);
-      }
+      align-items: center;
       #{$modal-prefix}-side-drawer-switch {
         box-sizing: border-box;
         height: var(--s-8);

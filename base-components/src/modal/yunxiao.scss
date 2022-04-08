@@ -2,6 +2,12 @@
   height: var(--modal-header-height, 48px);
   padding: var(--s-2) var(--s-8);
 
+  .right-part {
+    .next-btn-text.next-medium > .next-btn-icon.next-icon-alone:before {
+      font-size: 24px;
+      width: 24px;
+    }
+  }
   .next-modal-title.next-modal-title {
     font-size: var(--modal-title-font-size, 18px);
     color: var(--color-text1-4, #292929);
@@ -30,9 +36,7 @@
       }
     }
   }
-  .next-icon-close {
-    font-size: 24px;
-  }
+
 }
 .next-modal-body .next-modal-children {
   background: var(--color-fill1-1, #fff);

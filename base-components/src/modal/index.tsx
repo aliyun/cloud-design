@@ -122,7 +122,6 @@ class Modal extends React.Component<
     this.container = document.createElement('div')
   }
 
-
   componentDidMount() {
     document.body.appendChild(this.container)
     if (this.state.visible) {
@@ -221,7 +220,7 @@ class Modal extends React.Component<
     // const refElement = ConfigProvider.useRefElement()
     // const theme = window.getComputedStyle?.(refElement).getPropertyValue('--alicloudfe-components-theme') ?? ''
     // console.log(theme);
-    
+
     const { isEditing } = this.state
     const editTitle = isEditing ? (
       <Input
@@ -267,7 +266,7 @@ class Modal extends React.Component<
               }}
             />
           )}{' '}
-          {titleAlign === 'left'  && (
+          {titleAlign === 'left' && (
             <div className={`${prefix}modal-title`}>
               {titleEditable ? editTitle : title}
             </div>
@@ -326,8 +325,13 @@ class Modal extends React.Component<
   }
 
   renderBody = () => {
-    const { prefix, sideDrawer, sideDrawerVisible, sideDrawerWidth, children } =
-      this.props
+    const {
+      prefix,
+      sideDrawer,
+      sideDrawerVisible,
+      sideDrawerWidth,
+      children
+    } = this.props
     return (
       <div className={`${prefix}modal-body`}>
         <div className={`${prefix}modal-children`}>{children}</div>
