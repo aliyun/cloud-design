@@ -45,10 +45,13 @@ const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   if (sizeWidth) {
     return sizeWidth
   }
-  // 只针对混合云主题做默认 auto 处理
-  if (theme.startsWith('hybridcloud')) {
-    return 'auto'
+  // 云效主题返回非法值，以可使fusion的width默认值失效，兼容历史通过className设置的宽度的场景
+  if (theme.startsWith('yunxiao')) {
+    return 'null'
   }
+
+  // 如果想内部撑开要设置width=auto，但会时历史通过className设置的宽度失效
+  return 'auto'
 }
 
 // 判断是否是云效主题，云效主题的 Dialog 局顶
@@ -68,10 +71,13 @@ const getQuickCustomWidth = (
   if (sizeWidth) {
     return sizeWidth
   }
-   // 只针对混合云主题做默认 auto 处理
-   if (theme.startsWith('hybridcloud')) {
-    return 'auto'
+  // 云效主题返回非法值，以可使fusion的width默认值失效，兼容历史通过className设置的宽度的场景
+   if (theme.startsWith('yunxiao')) {
+    return 'null'
   }
+
+  // 如果想内部撑开要设置width=auto，但会时历史通过className设置的宽度失效
+  return 'auto'
 }
 
 // 设置阴影

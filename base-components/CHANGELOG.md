@@ -1,5 +1,8 @@
 # Change Log
 
+# 1.3.22 (2022-04-12)
+- fix: Dialog 默认 width 调整。云效主题返回 'null'，以向前兼容。其他主题继续返回 'auto'
+
 ## 1.1.9
 支持旧版wind的ColoredTag
 
