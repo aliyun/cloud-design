@@ -33,4 +33,9 @@ $ npm run dev
 
 
 ## 🤝 参与共建
+
 如果想为自己的业务定制一份新的主题或者任何共建诉求，欢迎联系[佐七](https://github.com/zuoqi705)、[萧雨](https://github.com/csr632)。具体请参考[贡献指南](https://github.com/aliyun/cloud-design/blob/master/base-components/docs/CONTRIBUTING.md)。
+
+[钉钉群](https://www.dingtalk.com/):
+
+<img src="image/dingtalk-group.jpg" width="300" />
