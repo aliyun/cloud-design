@@ -12,9 +12,10 @@ import { events, KEYCODE } from '../utils'
 const { Tooltip } = Balloon
 
 export interface IModalProps {
-  prefix?: string
-  style?: React.CSSProperties
-  className?: string
+  prefix?: string;
+  style?: React.CSSProperties;
+  className?: string;
+  children: React.ReactChild;
   /**
    * 是否默认可见，非受控
    */

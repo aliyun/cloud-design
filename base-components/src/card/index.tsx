@@ -65,7 +65,8 @@ Card.DropDownActions = ({ actions }) => {
 
 interface ICollapsableProps {
   collapsed: boolean
-  onCollapsedChange: (newCollapsed: boolean) => void
+  onCollapsedChange: (newCollapsed: boolean) => void;
+  children: React.ReactChild
 }
 
 const CollapsableTail: React.FC<ICollapsableProps & { prefix: string }> = ({

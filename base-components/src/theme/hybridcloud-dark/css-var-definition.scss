@@ -1,6 +1,165 @@
 #{$css-var-scope} {
     
     
+    /* ------------------------ shadow ------------------------ */
+    
+    
+    
+    --shadow-blur-sd1: 16;
+    
+    
+    
+    --shadow-opacity-sd1: 0.3;
+    
+    
+    
+    --shadow-3-left: 0px 0px 48px 0px rgba(0, 0, 0, 0.8);
+    
+    
+    
+    --shadow-3-down: 0px 12px 48px 0px rgba(0, 0, 0, 0.8);
+    
+    
+    
+    --shadow-3-right: 0px 0px 48px 0px rgba(0, 0, 0, 0.8);
+    
+    
+    
+    --shadow-3-up: 0px -12px 48px 0px rgba(0, 0, 0, 0.8);
+    
+    
+    
+    --shadow-3: 0px 12px 48px 0px rgba(0, 0, 0, 0.8);
+    
+    
+    
+    --shadow-2-left: 0px 0px 24px 0px rgba(0, 0, 0, 0.64);
+    
+    
+    
+    --shadow-2-down: 0px 6px 24px 0px rgba(0, 0, 0, 0.64);
+    
+    
+    
+    --shadow-2-right: 0px 0px 24px 0px rgba(0, 0, 0, 0.64);
+    
+    
+    
+    --shadow-2-up: 0px -6px 24px 0px rgba(0, 0, 0, 0.64);
+    
+    
+    
+    --shadow-2: 0px 6px 24px 0px rgba(0, 0, 0, 0.64);
+    
+    
+    
+    --shadow-1-left: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
+    
+    
+    
+    --shadow-1-down: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
+    
+    
+    
+    --shadow-1-right: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
+    
+    
+    
+    --shadow-1-up: 0px -4px 16px 0px rgba(0, 0, 0, 0.3);
+    
+    
+    
+    --shadow-1: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
+    
+    
+    
+    --shadow-zero: none;
+    
+    
+    
+    --shadow-spread-sd3: 0;
+    
+    
+    
+    --shadow-spread-sd2: 0;
+    
+    
+    
+    --shadow-spread-sd1: 0;
+    
+    
+    
+    --shadow-color-sd3: var(--color-black, #000000);
+    
+    
+    
+    --shadow-sides-left: "left";
+    
+    
+    
+    --shadow-sides-down: "down";
+    
+    
+    
+    --shadow-sides-right: "right";
+    
+    
+    
+    --shadow-sides-up: "up";
+    
+    
+    
+    --shadow-sides-base: "base";
+    
+    
+    
+    --shadow-color-sd1: var(--color-black, #000000);
+    
+    
+    
+    --shadow-distance-sd1y: 4;
+    
+    
+    
+    --shadow-blur-sd3: 48;
+    
+    
+    
+    --shadow-blur-sd2: 24;
+    
+    
+    
+    --shadow-opacity-sd3: 0.8;
+    
+    
+    
+    --shadow-opacity-sd2: 0.64;
+    
+    
+    
+    --shadow-distance-sd3y: 12;
+    
+    
+    
+    --shadow-distance-sd2y: 6;
+    
+    
+    
+    --shadow-distance-sd2: 0;
+    
+    
+    
+    --shadow-distance-sd1: 0;
+    
+    
+    
+    --shadow-color-sd2: var(--color-black, #000000);
+    
+    
+    
+    --shadow-distance-sd3: 0;
+    
+    
     /* ------------------------ line ------------------------ */
     
     
@@ -402,165 +561,6 @@
     
     
     --size-base: 4px;
-    
-    
-    /* ------------------------ shadow ------------------------ */
-    
-    
-    
-    --shadow-3-left: 0px 0px 48px 0px rgba(0, 0, 0, 0.8);
-    
-    
-    
-    --shadow-3-down: 0px 12px 48px 0px rgba(0, 0, 0, 0.8);
-    
-    
-    
-    --shadow-3-right: 0px 0px 48px 0px rgba(0, 0, 0, 0.8);
-    
-    
-    
-    --shadow-3-up: 0px -12px 48px 0px rgba(0, 0, 0, 0.8);
-    
-    
-    
-    --shadow-3: 0px 12px 48px 0px rgba(0, 0, 0, 0.8);
-    
-    
-    
-    --shadow-2-left: 0px 0px 24px 0px rgba(0, 0, 0, 0.64);
-    
-    
-    
-    --shadow-2-down: 0px 6px 24px 0px rgba(0, 0, 0, 0.64);
-    
-    
-    
-    --shadow-2-right: 0px 0px 24px 0px rgba(0, 0, 0, 0.64);
-    
-    
-    
-    --shadow-2-up: 0px -6px 24px 0px rgba(0, 0, 0, 0.64);
-    
-    
-    
-    --shadow-2: 0px 6px 24px 0px rgba(0, 0, 0, 0.64);
-    
-    
-    
-    --shadow-1-left: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
-    
-    
-    
-    --shadow-1-down: 0px 4px 12px 0px rgba(0, 0, 0, 0.5);
-    
-    
-    
-    --shadow-1-right: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
-    
-    
-    
-    --shadow-1-up: 0px -4px 12px 0px rgba(0, 0, 0, 0.5);
-    
-    
-    
-    --shadow-1: 0px 4px 12px 0px rgba(0, 0, 0, 0.5);
-    
-    
-    
-    --shadow-zero: none;
-    
-    
-    
-    --shadow-spread-sd3: 0;
-    
-    
-    
-    --shadow-spread-sd2: 0;
-    
-    
-    
-    --shadow-spread-sd1: 0;
-    
-    
-    
-    --shadow-color-sd3: var(--color-black, #000000);
-    
-    
-    
-    --shadow-sides-left: "left";
-    
-    
-    
-    --shadow-sides-down: "down";
-    
-    
-    
-    --shadow-sides-right: "right";
-    
-    
-    
-    --shadow-sides-up: "up";
-    
-    
-    
-    --shadow-sides-base: "base";
-    
-    
-    
-    --shadow-blur-sd1: 12;
-    
-    
-    
-    --shadow-color-sd1: var(--color-black, #000000);
-    
-    
-    
-    --shadow-opacity-sd1: 0.5;
-    
-    
-    
-    --shadow-distance-sd1y: 4;
-    
-    
-    
-    --shadow-blur-sd3: 48;
-    
-    
-    
-    --shadow-blur-sd2: 24;
-    
-    
-    
-    --shadow-opacity-sd3: 0.8;
-    
-    
-    
-    --shadow-opacity-sd2: 0.64;
-    
-    
-    
-    --shadow-distance-sd3y: 12;
-    
-    
-    
-    --shadow-distance-sd2y: 6;
-    
-    
-    
-    --shadow-distance-sd2: 0;
-    
-    
-    
-    --shadow-distance-sd1: 0;
-    
-    
-    
-    --shadow-color-sd2: var(--color-black, #000000);
-    
-    
-    
-    --shadow-distance-sd3: 0;
     
     
     /* ------------------------ icon ------------------------ */
@@ -5921,11 +5921,11 @@
     
     
     
-    --switch-off-shadow: var(--shadow-1, 0px 4px 12px 0px rgba(0, 0, 0, 0.5));
+    --switch-off-shadow: var(--shadow-1, 0px 4px 16px 0px rgba(0, 0, 0, 0.3));
     
     
     
-    --switch-rtl-on-shadow: var(--shadow-1-left, 0px 0px 12px 0px rgba(0, 0, 0, 0.5));
+    --switch-rtl-on-shadow: var(--shadow-1-left, 0px 0px 16px 0px rgba(0, 0, 0, 0.3));
     
     
     /* ------------------------ button ------------------------ */
@@ -5936,7 +5936,7 @@
     
     
     
-    --btn-shadow-hover: var(--shadow-1-down, 0px 4px 12px 0px rgba(0, 0, 0, 0.5));
+    --btn-shadow-hover: var(--shadow-1-down, 0px 4px 16px 0px rgba(0, 0, 0, 0.3));
     
     
     
@@ -6651,7 +6651,7 @@
     
     
     
-    --balloon-primary-shadow: var(--shadow-1-down, 0px 4px 12px 0px rgba(0, 0, 0, 0.5));
+    --balloon-primary-shadow: var(--shadow-1-down, 0px 4px 16px 0px rgba(0, 0, 0, 0.3));
     
     
     
@@ -8330,6 +8330,10 @@
     
     
     
+    --tab-pure-ink-bar-padding-l: var(--s-zero, 0px);
+    
+    
+    
     --tab-pure-bg-color: var(--color-transparent, transparent);
     
     
@@ -8359,6 +8363,10 @@
     
     
     --tab-wrapped-ink-bar-width: var(--line-2, 2px);
+    
+    
+    
+    --tab-wrapped-ink-bar-padding-l: var(--s-zero, 0px);
     
     
     
@@ -8457,31 +8465,7 @@
     
     
     
-    --calendar-fullscreen-table-cell-normal-background: var(--color-white, #FFFFFF);
-    
-    
-    
-    --calendar-fullscreen-table-cell-normal-color: var(--color-text1-2, #8A8A8A);
-    
-    
-    
-    --calendar-fullscreen-table-cell-hover-background: var(--color-fill1-2, #383838);
-    
-    
-    
-    --calendar-fullscreen-table-cell-hover-color: var(--color-text1-2, #8A8A8A);
-    
-    
-    
     --calendar-fullscreen-table-cell-select-border-color: var(--color-brand1-6, #007be9);
-    
-    
-    
-    --calendar-fullscreen-table-cell-other-background: var(--color-fill1-2, #383838);
-    
-    
-    
-    --calendar-fullscreen-table-cell-other-border-color: var(--color-line1-1, #262626);
     
     
     
@@ -8546,10 +8530,6 @@
     
     
     --calendar-btn-date-color: var(--color-text1-2, #8A8A8A);
-    
-    
-    
-    --calendar-fullscreen-table-cell-current-background: var(--color-line1-2, #383838);
     
     
     
@@ -8641,6 +8621,54 @@
     
     
     
+    --calendar-fullscreen-table-cell-normal-background: var(--color-fill1-1, #151515);
+    
+    
+    
+    --calendar-fullscreen-table-cell-normal-color: var(--color-text1-2, #8A8A8A);
+    
+    
+    
+    --calendar-fullscreen-table-cell-normal-border-color: var(--color-fill1-2, #383838);
+    
+    
+    
+    --calendar-fullscreen-table-cell-hover-background: var(--color-fill1-4, #262626);
+    
+    
+    
+    --calendar-fullscreen-table-cell-hover-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --calendar-fullscreen-table-cell-select-background: var(--color-brand1-1, #001A33);
+    
+    
+    
+    --calendar-fullscreen-table-cell-current-background: var(--color-fill1-2, #383838);
+    
+    
+    
+    --calendar-fullscreen-table-cell-other-background: var(--color-fill1-4, #262626);
+    
+    
+    
+    --calendar-fullscreen-table-cell-other-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --calendar-fullscreen-table-cell-other-border-color: var(--color-fill1-2, #383838);
+    
+    
+    
+    --calendar-fullscreen-table-cell-disabled-background: var(--color-fill1-3, #1F1F1F);
+    
+    
+    
+    --calendar-fullscreen-table-cell-disabled-color: var(--color-fill1-5, #4D4D4D);
+    
+    
+    
     --calendar-fullscreen-header-margin-bottom: var(--s-2, 8px);
     
     
@@ -8693,15 +8721,7 @@
     
     
     
-    --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-2, #383838);
-    
-    
-    
     --calendar-fullscreen-table-cell-hover-border-color: var(--color-brand1-6, #007be9);
-    
-    
-    
-    --calendar-fullscreen-table-cell-select-background: var(--color-brand1-1, #001A33);
     
     
     
@@ -8722,18 +8742,6 @@
     
     
     --calendar-fullscreen-table-cell-current-font-weight: var(--font-weight-3, bold);
-    
-    
-    
-    --calendar-fullscreen-table-cell-other-color: var(--color-text1-1, #6B6B6B);
-    
-    
-    
-    --calendar-fullscreen-table-cell-disabled-background: var(--color-fill1-1, #151515);
-    
-    
-    
-    --calendar-fullscreen-table-cell-disabled-color: var(--color-text1-1, #6B6B6B);
     
     
     
@@ -8974,11 +8982,11 @@
     
     
     
-    --range-size-m-slider-shadow: var(--shadow-1-down, 0px 4px 12px 0px rgba(0, 0, 0, 0.5));
+    --range-size-m-slider-shadow: var(--shadow-1-down, 0px 4px 16px 0px rgba(0, 0, 0, 0.3));
     
     
     
-    --range-size-m-slider-shadow-hover: var(--shadow-1-down, 0px 4px 12px 0px rgba(0, 0, 0, 0.5));
+    --range-size-m-slider-shadow-hover: var(--shadow-1-down, 0px 4px 16px 0px rgba(0, 0, 0, 0.3));
     
     
     
@@ -9335,14 +9343,6 @@
     
     
     
-    --message-size-l-content-margin-top: var(--s-2, 8px);
-    
-    
-    
-    --message-success-color-bg-toast: var(--color-line1-1, #262626);
-    
-    
-    
     --message-success-color-border-toast: var(--color-transparent, transparent);
     
     
@@ -9351,23 +9351,11 @@
     
     
     
-    --message-error-color-bg-toast: var(--color-line1-1, #262626);
-    
-    
-    
     --message-error-color-border-toast: var(--color-transparent, transparent);
     
     
     
-    --message-warning-color-bg-toast: var(--color-line1-1, #262626);
-    
-    
-    
     --message-warning-color-border-toast: var(--color-transparent, transparent);
-    
-    
-    
-    --message-notice-color-bg-toast: var(--color-line1-1, #262626);
     
     
     
@@ -9499,10 +9487,6 @@
     
     
     
-    --message-size-m-padding: var(--s-3, 12px);
-    
-    
-    
     --message-size-m-content-font: var(--font-size-body-1, 12px);
     
     
@@ -9527,10 +9511,6 @@
     
     
     
-    --message-success-color-content-inline: var(--color-text1-2, #8A8A8A);
-    
-    
-    
     --message-success-color-content-addon: var(--color-text1-2, #8A8A8A);
     
     
@@ -9539,19 +9519,7 @@
     
     
     
-    --message-error-color-content-inline: var(--color-text1-2, #8A8A8A);
-    
-    
-    
     --message-error-color-content-addon: var(--color-text1-2, #8A8A8A);
-    
-    
-    
-    --message-error-color-content-toast: var(--color-text1-2, #8A8A8A);
-    
-    
-    
-    --message-warning-color-content-inline: var(--color-text1-2, #8A8A8A);
     
     
     
@@ -9563,10 +9531,6 @@
     
     
     
-    --message-notice-color-content-inline: var(--color-text1-2, #8A8A8A);
-    
-    
-    
     --message-notice-color-content-addon: var(--color-text1-2, #8A8A8A);
     
     
@@ -9575,19 +9539,11 @@
     
     
     
-    --message-help-color-content-inline: var(--color-text1-2, #8A8A8A);
-    
-    
-    
     --message-help-color-content-addon: var(--color-text1-2, #8A8A8A);
     
     
     
     --message-help-color-content-toast: var(--color-text1-2, #8A8A8A);
-    
-    
-    
-    --message-loading-color-content-inline: var(--color-text1-2, #8A8A8A);
     
     
     
@@ -9615,19 +9571,71 @@
     
     
     
-    --message-notice-icon-content: var(--icon-content-warning, "");
+    --message-success-color-bg-toast: var(--color-success-1, #00331B);
     
     
     
-    --message-help-icon-content: var(--icon-content-help-o, "");
+    --message-error-color-bg-toast: var(--color-error-1, #361312);
+    
+    
+    
+    --message-warning-color-bg-toast: var(--color-warning-1, #331A00);
+    
+    
+    
+    --message-notice-color-bg-toast: var(--color-notice-1, #001a33);
+    
+    
+    
+    --message-notice-icon-content: var(--icon-content-info-o-fill, "");
+    
+    
+    
+    --message-error-color-content-toast: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --message-success-color-content-inline: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --message-error-color-content-inline: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --message-warning-color-content-inline: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --message-notice-color-content-inline: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --message-help-color-content-inline: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --message-loading-color-content-inline: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --message-size-l-content-margin-top: var(--s-1, 4px);
+    
+    
+    
+    --message-help-icon-content: var(--icon-content-quetion-o, "");
+    
+    
+    
+    --message-size-m-padding: var(--s-2, 8px);
+    
+    
+    
+    --message-size-m-content-margin-top: var(--s-1, 4px);
     
     
     
     --message-size-m-border-width: var(--line-1, 1px);
-    
-    
-    
-    --message-size-m-content-margin-top: var(--s-2, 8px);
     
     
     
@@ -9883,6 +9891,10 @@
     
     
     --dialog-title-font-weight: var(--font-weight-2, normal);
+    
+    
+    
+    --dialog-content-margin-bottom-no-footer: var(--s-0, 0px);
     
     
     
@@ -10267,7 +10279,7 @@
     
     
     
-    --menu-shadow: var(--shadow-1-down, 0px 4px 12px 0px rgba(0, 0, 0, 0.5));
+    --menu-shadow: var(--shadow-1-down, 0px 4px 16px 0px rgba(0, 0, 0, 0.3));
     
     
     
@@ -11885,6 +11897,10 @@
     
     
     
+    --transfer-panel-footer-padding-left-right: var(--s-4, 16px);
+    
+    
+    
     --transfer-operation-margin-gutter: var(--s-2, 8px);
     
     
@@ -11950,10 +11966,6 @@
     
     
     --transfer-panel-footer-shadow: var(--shadow-zero, none);
-    
-    
-    
-    --transfer-panel-footer-padding-left-right: var(--s-4, 16px);
     
     
     /* ------------------------ time-picker ------------------------ */
@@ -12159,7 +12171,7 @@
     
     
     
-    --slick-dots-background-color-hover: var(--color-black, #000000);
+    --slick-dots-background-color-hover: var(--color-white, #FFFFFF);
     
     
     
@@ -12408,6 +12420,14 @@
     
     
     
+    --table-tree-fold-icon-content: var(--icon-content-triangle-right, "");
+    
+    
+    
+    --table-tree-unfold-icon-content: var(--icon-content-triangle-down, "");
+    
+    
+    
     --table-normal-border-width: var(--line-1, 1px);
     
     
@@ -12529,14 +12549,6 @@
     
     
     --table-expanded-ctrl-disabled-color: var(--color-text1-2, #8A8A8A);
-    
-    
-    
-    --table-tree-fold-icon-content: var(--icon-content-arrow-right, "");
-    
-    
-    
-    --table-tree-unfold-icon-content: var(--icon-content-arrow-down, "");
     
     
     
@@ -12929,7 +12941,7 @@
     
     
     
-    --shell-light-header-shadow: var(--shadow-1-down, 0px 4px 12px 0px rgba(0, 0, 0, 0.5));
+    --shell-light-header-shadow: var(--shadow-1-down, 0px 4px 16px 0px rgba(0, 0, 0, 0.3));
     
     
     
@@ -13225,7 +13237,7 @@
     
     
     
-    --shell-dark-header-shadow: var(--shadow-1-down, 0px 4px 12px 0px rgba(0, 0, 0, 0.5));
+    --shell-dark-header-shadow: var(--shadow-1-down, 0px 4px 16px 0px rgba(0, 0, 0, 0.3));
     
     
     
@@ -13505,7 +13517,7 @@
     
     
     
-    --shell-brand-header-shadow: var(--shadow-1-down, 0px 4px 12px 0px rgba(0, 0, 0, 0.5));
+    --shell-brand-header-shadow: var(--shadow-1-down, 0px 4px 16px 0px rgba(0, 0, 0, 0.3));
     
     
     
