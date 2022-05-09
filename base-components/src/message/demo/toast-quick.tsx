@@ -8,7 +8,11 @@ import styled from 'styled-components'
 
 import { Message, Button } from '@alicloudfe/components'
 
-const showSuccess = () => Message.success('提交成功')
+const showSuccess = () =>
+  Message.success({
+    title: '提交成功',
+    duration: 0
+  })
 const showWarning = () => Message.warning('warning')
 const showError = () => Message.error('error')
 const showNotice = () => Message.notice('notice')

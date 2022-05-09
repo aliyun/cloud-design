@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.18.18 (https://fusion.design)
- * @alifd/next@1.25.29 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.18.20 (https://fusion.design)
+ * @alifd/next@1.25.32 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -4271,6 +4271,7 @@ small {
     position: absolute;
     top: 0;
     right: 10px;
+    right: var(--menu-arrow-right, 10px);
     color: #848484;
     color: var(--menu-arrow-color, #848484);
     -webkit-transition: all 100ms linear;
@@ -8523,8 +8524,8 @@ small {
         font-size: var(--message-size-m-icon, 20px);
         line-height: inherit; }
     .next-message.next-medium .next-message-title {
-      padding: 0 16px 0 calc(8px + 20px);
-      padding: 0 var(--message-size-m-title-content-padding-right, 16px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px));
+      padding: 0 8px 0 calc(8px + 20px);
+      padding: 0 var(--message-size-m-title-content-padding-right, 8px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px));
       font-size: 14px;
       font-size: var(--message-size-m-title-font, 14px);
       line-height: 14px;
@@ -8532,8 +8533,8 @@ small {
     .next-message.next-medium .next-message-content {
       margin-top: 4px;
       margin-top: var(--message-size-m-content-margin-top, 4px);
-      padding: 0 16px 0 calc(8px + 20px);
-      padding: 0 var(--message-size-m-title-content-padding-right, 16px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px));
+      padding: 0 8px 0 calc(8px + 20px);
+      padding: 0 var(--message-size-m-title-content-padding-right, 8px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px));
       font-size: 12px;
       font-size: var(--message-size-m-content-font, 12px);
       line-height: 1.5;
@@ -8613,8 +8614,8 @@ small {
   float: right; }
 
 .next-message[dir="rtl"].next-medium .next-message-title {
-  padding: 0 calc(8px + 20px) 0 16px;
-  padding: 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px)) 0 var(--message-size-m-title-content-padding-right, 16px); }
+  padding: 0 calc(8px + 20px) 0 8px;
+  padding: 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px)) 0 var(--message-size-m-title-content-padding-right, 8px); }
 
 .next-message[dir="rtl"].next-medium .next-message-close {
   left: 12px;
@@ -17488,13 +17489,10 @@ small {
         border-radius: 50%;
         border-radius: var(--slick-dots-border-radius, 50%);
         background: rgba(0, 0, 0, 0.2); }
-        .next-slick-dots-item button:hover {
-          background-color: rgba(0, 0, 0, 0.2);
+        .next-slick-dots-item button:focus, .next-slick-dots-item button:hover {
+          background-color: rgba(255, 255, 255, 0.2);
           /* border-width: $slick-dots-border-width-hover; */
           border-color: white; }
-      .next-slick-dots-item button:focus,
-      .next-slick-dots-item button:hover {
-        background: rgba(255, 255, 255, 0.5); }
       .next-slick-dots-item.active button {
         background: #0064c8;
         /* border-width: $slick-dots-border-width-selected; */
@@ -25512,16 +25510,16 @@ h6.next-typography-title {
         font-size: 12px;
         line-height: inherit; }
       .next-table td .next-table-cell-wrapper .next-icon-arrow-right.next-table-tree-arrow::before {
-        content: "\E619";
-        content: var(--table-tree-fold-icon-content, "\E619"); }
+        content: "\E689";
+        content: var(--table-tree-fold-icon-content, "\E689"); }
       .next-table td .next-table-cell-wrapper .next-icon-arrow-down.next-table-tree-arrow:before,
       .next-table td .next-table-cell-wrapper .next-icon-arrow-down.next-table-tree-arrow .next-icon-remote {
         width: 12px;
         font-size: 12px;
         line-height: inherit; }
       .next-table td .next-table-cell-wrapper .next-icon-arrow-down.next-table-tree-arrow::before {
-        content: "\E63D";
-        content: var(--table-tree-unfold-icon-content, "\E63D"); }
+        content: "\E688";
+        content: var(--table-tree-unfold-icon-content, "\E688"); }
     .next-table td.next-table-prerow .next-table-cell-wrapper {
       padding: 12px 16px; }
     .next-table td.next-table-word-break-word .next-table-cell-wrapper {

@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-yunxiao-v1@0.13.3 (https://fusion.design)
- * @alifd/next@1.25.28 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.13.4 (https://fusion.design)
+ * @alifd/next@1.25.31 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -5373,12 +5373,12 @@
     .next-input .next-input-clear:focus + .next-input-hint {
       opacity: 0; }
   .next-input.next-focus {
-    border-color: #CECECE;
-    border-color: var(--input-focus-border-color, #CECECE);
+    border-color: #1B9AEE;
+    border-color: var(--input-focus-border-color, #1B9AEE);
     background-color: transparent;
     background-color: var(--input-focus-bg-color, transparent);
-    -webkit-box-shadow: 0 0 0 0px rgba(206, 206, 206, 0.2);
-            box-shadow: 0 0 0 0px rgba(206, 206, 206, 0.2); }
+    -webkit-box-shadow: 0 0 0 0px rgba(27, 154, 238, 0.2);
+            box-shadow: 0 0 0 0px rgba(27, 154, 238, 0.2); }
   .next-input.next-warning {
     border-color: #FFA545;
     border-color: var(--input-feedback-warning-border-color, #FFA545);
@@ -16971,13 +16971,10 @@
         border-radius: 50%;
         border-radius: var(--slick-dots-border-radius, 50%);
         background: rgba(0, 0, 0, 0.2); }
-        .next-slick-dots-item button:hover {
-          background-color: rgba(0, 0, 0, 0.2);
+        .next-slick-dots-item button:focus, .next-slick-dots-item button:hover {
+          background-color: rgba(255, 255, 255, 0.2);
           /* border-width: $slick-dots-border-width-hover; */
           border-color: white; }
-      .next-slick-dots-item button:focus,
-      .next-slick-dots-item button:hover {
-        background: rgba(255, 255, 255, 0.5); }
       .next-slick-dots-item.active button {
         background: #1b9aee;
         /* border-width: $slick-dots-border-width-selected; */
@@ -26111,12 +26108,12 @@ div[dir="rtl"].next-calendar2-fullscreen .next-calendar2-table th {
       background-color: #FFFFFF;
       background-color: var(--input-hover-bg-color, #FFFFFF); }
     .next-time-picker2-input.next-time-picker2-input-focus {
-      border-color: #CECECE;
-      border-color: var(--input-focus-border-color, #CECECE);
+      border-color: #1B9AEE;
+      border-color: var(--input-focus-border-color, #1B9AEE);
       background-color: transparent;
       background-color: var(--input-focus-bg-color, transparent);
-      -webkit-box-shadow: 0 0 0 0px rgba(206, 206, 206, 0.2);
-              box-shadow: 0 0 0 0px rgba(206, 206, 206, 0.2); }
+      -webkit-box-shadow: 0 0 0 0px rgba(27, 154, 238, 0.2);
+              box-shadow: 0 0 0 0px rgba(27, 154, 238, 0.2); }
     .next-time-picker2-input.next-time-picker2-input-noborder {
       border-color: transparent !important;
       -webkit-box-shadow: none !important;
@@ -26519,12 +26516,12 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
       background-color: #FFFFFF;
       background-color: var(--input-hover-bg-color, #FFFFFF); }
     .next-date-picker2-input.next-date-picker2-input-focus {
-      border-color: #CECECE;
-      border-color: var(--input-focus-border-color, #CECECE);
+      border-color: #1B9AEE;
+      border-color: var(--input-focus-border-color, #1B9AEE);
       background-color: transparent;
       background-color: var(--input-focus-bg-color, transparent);
-      -webkit-box-shadow: 0 0 0 0px rgba(206, 206, 206, 0.2);
-              box-shadow: 0 0 0 0px rgba(206, 206, 206, 0.2); }
+      -webkit-box-shadow: 0 0 0 0px rgba(27, 154, 238, 0.2);
+              box-shadow: 0 0 0 0px rgba(27, 154, 238, 0.2); }
     .next-date-picker2-input.next-date-picker2-input-noborder {
       border-color: transparent !important;
       -webkit-box-shadow: none !important;
