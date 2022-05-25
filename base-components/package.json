@@ -78,7 +78,7 @@
     "publish-xconsole": "npm run prepare && cd ./scripts/publish-xconsole && npm run pub && tnpm sync && cd ../publish-wind && npm run pub"
   },
   "dependencies": {
-    "@alifd/next": "~1.25.34",
+    "@alifd/next": "~1.25.38",
     "classnames": "^2.2.6",
     "hoist-non-react-statics": "^3.3.2",
     "react-loading-skeleton": "^2.1.1",
@@ -126,7 +126,7 @@
   },
   "peerDependencies": {
     "moment": "^2.27.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": ">=16.13.1",
+    "react-dom": ">=16.13.1"
   }
 }
