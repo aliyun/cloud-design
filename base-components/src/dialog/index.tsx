@@ -242,13 +242,15 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
       let observer = new MutationObserver(() => {
         setFooterShadow(item, prefix)
       })
-      observer.observe(dialogBodyDom, {
-        attributes: true,
-        attributeFilter: ['style'],
-        attributeOldValue: true,
-        childList: true,
-        subtree: true
-      })
+      if (dialogBodyDom) {
+        observer.observe(dialogBodyDom, {
+          attributes: true,
+          attributeFilter: ['style'],
+          attributeOldValue: true,
+          childList: true,
+          subtree: true
+        })
+      }
 
       // 绑定dialog监听器，用于监听dialog被销毁时销毁所有监听器
       let domObserver = new MutationObserver(() => {
