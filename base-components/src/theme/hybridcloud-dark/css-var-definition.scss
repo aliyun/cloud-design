@@ -1,330 +1,38 @@
 #{$css-var-scope} {
     
     
-    /* ------------------------ color ------------------------ */
+    /* ------------------------ line ------------------------ */
     
     
     
-    --color-brand1-7: rgba(78,159,245,1);
+    --line-dotted: dotted;
     
     
     
-    --color-brand1-8: rgba(119,181,247,1);
+    --line-dashed: dashed;
     
     
     
-    --color-brand1-2: rgba(38,60,84,1);
+    --line-solid: solid;
     
     
     
-    --color-brand1-3: rgba(47,85,125,1);
+    --line-2: 2px;
     
     
     
-    --color-brand1-4: rgba(51,105,163,1);
+    --line-1: 1px;
     
     
     
-    --color-brand1-5: rgba(48,122,201,1);
+    --line-zero: 0px;
     
     
     
-    --color-brand1-10: rgba(204,229,255,1);
-    
-    
-    
-    --color-link-3: rgba(78,159,245,1);
-    
-    
-    
-    --color-link-2: rgba(48,122,201,1);
-    
-    
-    
-    --color-link-1: rgba(39,137,242,1);
-    
-    
-    
-    --color-brand1-9: rgba(160,203,250,1);
-    
-    
-    
-    --color-brand1-6: rgba(39,137,242,1);
-    
-    
-    
-    --color-brand1-1: rgba(24,35,46,1);
-    
-    
-    
-    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
-    
-    
-    
-    --color-transparent: transparent;
-    
-    
-    
-    --color-black: #000000;
-    
-    
-    
-    --color-white: #FFFFFF;
-    
-    
-    
-    --color-text1-3: #CCCCCC;
-    
-    
-    
-    --color-gradient-4: linear-gradient(270deg, rgba(225, 81, 86, 0.5) 0%,rgb(225, 81, 86) 100%);
-    
-    
-    
-    --color-gradient-2: linear-gradient(270deg, rgba(0, 123, 233, 0.5) 0%,rgb(0, 123, 233) 100%);
-    
-    
-    
-    --color-gradient-1: linear-gradient(270deg, rgba(49, 163, 104, 0.5) 0%,rgb(49, 163, 104) 100%);
-    
-    
-    
-    --color-data1-3: rgba(114,132,165,1);
-    
-    
-    
-    --color-data1-1: rgba(73,191,158,1);
-    
-    
-    
-    --color-success-6: rgba(0,122,64,1);
-    
-    
-    
-    --color-success-4: rgba(66,180,121,1);
-    
-    
-    
-    --color-data1-8: rgba(150,132,234,1);
-    
-    
-    
-    --color-text1-5: rgba(168,168,168,1);
-    
-    
-    
-    --color-fill1-5: #4D4D4D;
-    
-    
-    
-    --color-fill1-6: #6B6B6B;
-    
-    
-    
-    --color-notice-5: rgba(0,123,233,1);
-    
-    
-    
-    --color-warning-6: rgba(204,110,12,1);
-    
-    
-    
-    --color-error-5: rgba(225,81,86,1);
-    
-    
-    
-    --color-error-6: #B81E18;
-    
-    
-    
-    --color-success-5: rgba(49,163,104,1);
-    
-    
-    
-    --color-text1-4: #EAEAEA;
-    
-    
-    
-    --color-text1-2: #8A8A8A;
-    
-    
-    
-    --color-fill1-4: rgba(38,38,38,1);
-    
-    
-    
-    --color-fill1-3: #1F1F1F;
-    
-    
-    
-    --color-fill1-2: #383838;
-    
-    
-    
-    --color-fill1-1: #151515;
-    
-    
-    
-    --color-line1-3: rgba(77,77,77,1);
-    
-    
-    
-    --color-line1-2: rgba(56,56,56,1);
-    
-    
-    
-    --color-line1-1: rgba(38,38,38,1);
-    
-    
-    
-    --color-other-3: rgba(21,21,21,1);
-    
-    
-    
-    --color-other-1: rgba(0,0,0,1);
-    
-    
-    
-    --color-error-4: rgba(255,114,119,1);
-    
-    
-    
-    --color-error-1: rgba(54,19,18,1);
-    
-    
-    
-    --color-notice-4: rgba(53,143,233,1);
-    
-    
-    
-    --color-success-3: #006334;
-    
-    
-    
-    --color-success-2: #004A27;
-    
-    
-    
-    --color-data1-7: rgba(49,163,104,1);
-    
-    
-    
-    --color-data1-6: rgba(224,190,18,1);
-    
-    
-    
-    --color-data1-5: #FF6A00;
-    
-    
-    
-    --color-data1-4: rgba(225,81,86,1);
-    
-    
-    
-    --color-data1-2: rgba(0,123,233,1);
-    
-    
-    
-    --color-fill1-8: #8A8A8A;
-    
-    
-    
-    --color-fill1-7: #A8A8A8;
-    
-    
-    
-    --color-warning-4: rgba(255,163,66,1);
-    
-    
-    
-    --color-notice-3: rgba(0,72,143,1);
-    
-    
-    
-    --color-notice-2: rgba(2,48,94,1);
-    
-    
-    
-    --color-notice-1: rgba(0,26,51,1);
-    
-    
-    
-    --color-error-2: #560E0B;
-    
-    
-    
-    --color-help-5: #E0BE12;
-    
-    
-    
-    --color-help-6: #B5990B;
-    
-    
-    
-    --color-notice-6: #0066CC;
-    
-    
-    
-    --color-warning-5: #FF8D16;
-    
-    
-    
-    --color-help-4: #FADD46;
-    
-    
-    
-    --color-text1-1: #6B6B6B;
-    
-    
-    
-    --color-help-3: #8A7406;
-    
-    
-    
-    --color-help-2: #5E4F02;
-    
-    
-    
-    --color-help-1: #332B00;
-    
-    
-    
-    --color-error-3: #8C100B;
-    
-    
-    
-    --color-warning-3: #995106;
-    
-    
-    
-    --color-warning-2: #663502;
-    
-    
-    
-    --color-warning-1: #331A00;
-    
-    
-    
-    --color-line1-4: #151515;
-    
-    
-    
-    --color-success-1: #00331B;
-    
-    
-    
-    --color-other-2: #FFFFFF;
+    --line-3: 6px;
     
     
     /* ------------------------ popup ------------------------ */
-    
-    
-    
-    --popup-spacing-tb: var(--s-zero, 0px);
-    
-    
-    
-    --popup-spacing-lr: var(--s-zero, 0px);
     
     
     
@@ -360,42 +68,19 @@
     
     
     
+    --popup-spacing-tb: var(--s-zero, 0px);
+    
+    
+    
+    --popup-spacing-lr: var(--s-zero, 0px);
+    
+    
+    
     --popup-local-shadow: var(--shadow-3, 0px 12px 48px 0px rgba(0, 0, 0, 0.8));
     
     
     
     --popup-local-border-color: var(--color-fill1-4, #262626);
-    
-    
-    /* ------------------------ line ------------------------ */
-    
-    
-    
-    --line-dotted: dotted;
-    
-    
-    
-    --line-dashed: dashed;
-    
-    
-    
-    --line-solid: solid;
-    
-    
-    
-    --line-2: 2px;
-    
-    
-    
-    --line-1: 1px;
-    
-    
-    
-    --line-zero: 0px;
-    
-    
-    
-    --line-3: 6px;
     
     
     /* ------------------------ mask ------------------------ */
@@ -930,23 +615,7 @@
     
     
     
-    --icon-content-xiegang: "\e9f2";
-    
-    
-    
-    --icon-content-helfling1: "\e9f0";
-    
-    
-    
     --icon-content-line-checkbox: "\e9f1";
-    
-    
-    
-    --icon-content-line-checkbox3: "\e9f0";
-    
-    
-    
-    --icon-content-CombinedShape2x: "\e9ef";
     
     
     
@@ -954,15 +623,7 @@
     
     
     
-    --icon-content-ashbin-o: "\e85a";
-    
-    
-    
     --icon-content-compass: "\e959";
-    
-    
-    
-    --icon-content-ashbin1: "\e859";
     
     
     
@@ -970,15 +631,7 @@
     
     
     
-    --icon-content-office-o: "\e858";
-    
-    
-    
     --icon-content-error1: "\e957";
-    
-    
-    
-    --icon-content-office: "\e857";
     
     
     
@@ -986,15 +639,7 @@
     
     
     
-    --icon-content-Approval-o: "\e856";
-    
-    
-    
     --icon-content-prompt1: "\e955";
-    
-    
-    
-    --icon-content-Approval: "\e855";
     
     
     
@@ -1002,19 +647,7 @@
     
     
     
-    --icon-content-Clear-o: "\e854";
-    
-    
-    
     --icon-content-time: "\e953";
-    
-    
-    
-    --icon-content-Clear: "\e853";
-    
-    
-    
-    --icon-content-help-o: "\e952";
     
     
     
@@ -1022,15 +655,7 @@
     
     
     
-    --icon-content-help1: "\e951";
-    
-    
-    
     --icon-content-set1: "\e851";
-    
-    
-    
-    --icon-content-personal-center-o: "\e950";
     
     
     
@@ -1038,15 +663,7 @@
     
     
     
-    --icon-content-personal-center: "\e94f";
-    
-    
-    
     --icon-content-operation: "\e84f";
-    
-    
-    
-    --icon-content-cry-o: "\e94e";
     
     
     
@@ -1054,23 +671,11 @@
     
     
     
-    --icon-content-cry1: "\e94d";
-    
-    
-    
     --icon-content-power: "\e84d";
     
     
     
-    --icon-content-laugh-o: "\e94c";
-    
-    
-    
     --icon-content-pin-o: "\e84c";
-    
-    
-    
-    --icon-content-laugh: "\e94b";
     
     
     
@@ -1082,31 +687,7 @@
     
     
     
-    --icon-content-phone-o: "\e84a";
-    
-    
-    
     --icon-content-smile1: "\e949";
-    
-    
-    
-    --icon-content-phone: "\e849";
-    
-    
-    
-    --icon-content-Accurate-regression-o: "\e948";
-    
-    
-    
-    --icon-content-permissions-o: "\e848";
-    
-    
-    
-    --icon-content-Accurate-regression: "\e947";
-    
-    
-    
-    --icon-content-permissions: "\e847";
     
     
     
@@ -1126,27 +707,7 @@
     
     
     
-    --icon-content-spot-o: "\e944";
-    
-    
-    
-    --icon-content-admittance-o: "\e844";
-    
-    
-    
-    --icon-content-spot: "\e943";
-    
-    
-    
-    --icon-content-admittance: "\e843";
-    
-    
-    
     --icon-content-rightcircular-o: "\e942";
-    
-    
-    
-    --icon-content-impediment-o: "\e842";
     
     
     
@@ -1154,15 +715,7 @@
     
     
     
-    --icon-content-impediment: "\e841";
-    
-    
-    
     --icon-content-leftcircular-o: "\e940";
-    
-    
-    
-    --icon-content-airconditioner-o: "\e840";
     
     
     
@@ -1170,95 +723,7 @@
     
     
     
-    --icon-content-airconditioner: "\e83f";
-    
-    
-    
-    --icon-content-down-o: "\e93e";
-    
-    
-    
-    --icon-content-bags-o: "\e83e";
-    
-    
-    
-    --icon-content-down: "\e93d";
-    
-    
-    
-    --icon-content-bags: "\e83d";
-    
-    
-    
-    --icon-content-up-o: "\e93c";
-    
-    
-    
-    --icon-content-gifts-o: "\e83c";
-    
-    
-    
-    --icon-content-up: "\e93b";
-    
-    
-    
-    --icon-content-gifts: "\e83b";
-    
-    
-    
-    --icon-content-voice-o: "\e93a";
-    
-    
-    
-    --icon-content-cart-o: "\e83a";
-    
-    
-    
-    --icon-content-voice: "\e939";
-    
-    
-    
-    --icon-content-cart: "\e839";
-    
-    
-    
-    --icon-content--o: "\e938";
-    
-    
-    
-    --icon-content-auto-o: "\e838";
-    
-    
-    
-    --icon-content-icon-test: "\e937";
-    
-    
-    
-    --icon-content-auto: "\e837";
-    
-    
-    
-    --icon-content-tips-2-o: "\e936";
-    
-    
-    
-    --icon-content-store-o: "\e836";
-    
-    
-    
-    --icon-content-tips-2: "\e935";
-    
-    
-    
-    --icon-content-store: "\e835";
-    
-    
-    
     --icon-content-doing-o: "\e934";
-    
-    
-    
-    --icon-content-total_inflow-o: "\e834";
     
     
     
@@ -1266,15 +731,7 @@
     
     
     
-    --icon-content-total_inflow: "\e833";
-    
-    
-    
     --icon-content-block-o: "\e932";
-    
-    
-    
-    --icon-content-total_outflow-o: "\e832";
     
     
     
@@ -1282,51 +739,7 @@
     
     
     
-    --icon-content-total_outflow: "\e831";
-    
-    
-    
-    --icon-content-erfangku-o: "\e930";
-    
-    
-    
-    --icon-content-home-o: "\e830";
-    
-    
-    
-    --icon-content-erfangku: "\e92f";
-    
-    
-    
-    --icon-content-home1: "\e82f";
-    
-    
-    
-    --icon-content-sanfangku-o: "\e92e";
-    
-    
-    
-    --icon-content-countdown-o: "\e82e";
-    
-    
-    
-    --icon-content-sanfangku: "\e92d";
-    
-    
-    
-    --icon-content-countdown: "\e82d";
-    
-    
-    
-    --icon-content-sun-1-o: "\e92c";
-    
-    
-    
     --icon-content-shiyanshi-o: "\e82c";
-    
-    
-    
-    --icon-content-sun-1: "\e92b";
     
     
     
@@ -1350,31 +763,7 @@
     
     
     
-    --icon-content-atm-away-o: "\e928";
-    
-    
-    
-    --icon-content-Test-o: "\e828";
-    
-    
-    
-    --icon-content-atm-away: "\e927";
-    
-    
-    
-    --icon-content-Test: "\e827";
-    
-    
-    
-    --icon-content-display-o: "\e926";
-    
-    
-    
     --icon-content-edit-3-o: "\e826";
-    
-    
-    
-    --icon-content-display: "\e925";
     
     
     
@@ -1382,31 +771,7 @@
     
     
     
-    --icon-content-dingding-o: "\e924";
-    
-    
-    
-    --icon-content-usb-o: "\e824";
-    
-    
-    
-    --icon-content-dingding1: "\e923";
-    
-    
-    
-    --icon-content-usb: "\e823";
-    
-    
-    
-    --icon-content-neiwai-o: "\e922";
-    
-    
-    
     --icon-content-pop-o: "\e822";
-    
-    
-    
-    --icon-content-neiwai: "\e921";
     
     
     
@@ -1414,47 +779,7 @@
     
     
     
-    --icon-content-circle-o: "\e920";
-    
-    
-    
-    --icon-content-heat-o: "\e820";
-    
-    
-    
-    --icon-content-circle1: "\e91f";
-    
-    
-    
-    --icon-content-heat: "\e81f";
-    
-    
-    
-    --icon-content-photograph-o: "\e91e";
-    
-    
-    
-    --icon-content-structure-o: "\e81e";
-    
-    
-    
-    --icon-content-photograph: "\e91d";
-    
-    
-    
-    --icon-content-structure: "\e81d";
-    
-    
-    
-    --icon-content-mobile-o: "\e91c";
-    
-    
-    
     --icon-content-product-o: "\e81c";
-    
-    
-    
-    --icon-content-mobile1: "\e91b";
     
     
     
@@ -1462,79 +787,7 @@
     
     
     
-    --icon-content-VPN-o: "\e91a";
-    
-    
-    
-    --icon-content-change-o: "\e81a";
-    
-    
-    
-    --icon-content-VPN: "\e919";
-    
-    
-    
-    --icon-content-change: "\e819";
-    
-    
-    
-    --icon-content-Workbench-o: "\e918";
-    
-    
-    
-    --icon-content-Cumulative_arrival_quantity-o: "\e818";
-    
-    
-    
-    --icon-content-Workbench: "\e917";
-    
-    
-    
-    --icon-content-Cumulative_arrival_quantity: "\e817";
-    
-    
-    
-    --icon-content-zhuanxianjieru-o: "\e916";
-    
-    
-    
-    --icon-content-wallet-o: "\e816";
-    
-    
-    
-    --icon-content-zhuanxianjieru: "\e915";
-    
-    
-    
-    --icon-content-wallet: "\e815";
-    
-    
-    
-    --icon-content-zhuanxiankuozhan-o: "\e914";
-    
-    
-    
-    --icon-content-service-o: "\e814";
-    
-    
-    
-    --icon-content-zhuanxiankuozhan: "\e913";
-    
-    
-    
-    --icon-content-service: "\e813";
-    
-    
-    
-    --icon-content-system-o: "\e912";
-    
-    
-    
     --icon-content-eye-slash-o: "\e812";
-    
-    
-    
-    --icon-content-system: "\e911";
     
     
     
@@ -1542,67 +795,11 @@
     
     
     
-    --icon-content-Deliveries-o: "\e910";
-    
-    
-    
     --icon-content-eye-1-o: "\e810";
     
     
     
-    --icon-content-Deliveries: "\e90f";
-    
-    
-    
     --icon-content-eye-1: "\e80f";
-    
-    
-    
-    --icon-content-create-o: "\e90e";
-    
-    
-    
-    --icon-content-lights-o: "\e80e";
-    
-    
-    
-    --icon-content-create: "\e90d";
-    
-    
-    
-    --icon-content-lights: "\e80d";
-    
-    
-    
-    --icon-content-copyfloder-o: "\e90c";
-    
-    
-    
-    --icon-content-sun-o: "\e80c";
-    
-    
-    
-    --icon-content-copyfloder: "\e90b";
-    
-    
-    
-    --icon-content-sun1: "\e80b";
-    
-    
-    
-    --icon-content-openfloder-o: "\e90a";
-    
-    
-    
-    --icon-content-pouch-o: "\e80a";
-    
-    
-    
-    --icon-content-openfloder: "\e909";
-    
-    
-    
-    --icon-content-pouch: "\e809";
     
     
     
@@ -1622,83 +819,7 @@
     
     
     
-    --icon-content-networkinterface-o: "\e906";
-    
-    
-    
-    --icon-content-battery-o: "\e806";
-    
-    
-    
-    --icon-content-networkinterface: "\e905";
-    
-    
-    
-    --icon-content-battery: "\e805";
-    
-    
-    
-    --icon-content-ram-o: "\e904";
-    
-    
-    
-    --icon-content-it_load-o: "\e804";
-    
-    
-    
     --icon-content-ram: "\e903";
-    
-    
-    
-    --icon-content-it_load: "\e803";
-    
-    
-    
-    --icon-content-ram2-o: "\e902";
-    
-    
-    
-    --icon-content-power_load-o: "\e802";
-    
-    
-    
-    --icon-content-ram2: "\e901";
-    
-    
-    
-    --icon-content-power_load: "\e801";
-    
-    
-    
-    --icon-content-kanban-o: "\e900";
-    
-    
-    
-    --icon-content-Infrastructure_Monitoring-o: "\e800";
-    
-    
-    
-    --icon-content-kanban: "\e8ff";
-    
-    
-    
-    --icon-content-Infrastructure_Monitoring: "\e7ff";
-    
-    
-    
-    --icon-content-zip-o: "\e8fe";
-    
-    
-    
-    --icon-content-click-o: "\e7fe";
-    
-    
-    
-    --icon-content-zip: "\e8fd";
-    
-    
-    
-    --icon-content-click: "\e7fd";
     
     
     
@@ -1706,27 +827,11 @@
     
     
     
-    --icon-content-video-o: "\e7fc";
-    
-    
-    
     --icon-content-tree1: "\e8fb";
     
     
     
-    --icon-content-video1: "\e7f7";
-    
-    
-    
-    --icon-content-task-o: "\e8fa";
-    
-    
-    
     --icon-content-security-o: "\e7f6";
-    
-    
-    
-    --icon-content-task: "\e8f9";
     
     
     
@@ -1738,179 +843,7 @@
     
     
     
-    --icon-content-credit-level-o: "\e7f4";
-    
-    
-    
     --icon-content-database: "\e8f7";
-    
-    
-    
-    --icon-content-credit-level: "\e7f3";
-    
-    
-    
-    --icon-content-Shuttle-o: "\e8f6";
-    
-    
-    
-    --icon-content-internal-o: "\e7f2";
-    
-    
-    
-    --icon-content-Shuttle: "\e8f5";
-    
-    
-    
-    --icon-content-internal: "\e7f1";
-    
-    
-    
-    --icon-content-Template_management-o: "\e8f4";
-    
-    
-    
-    --icon-content-server-2-o: "\e7f0";
-    
-    
-    
-    --icon-content-Template_management: "\e8f3";
-    
-    
-    
-    --icon-content-server-2: "\e7ef";
-    
-    
-    
-    --icon-content-networksystems-o: "\e8f2";
-    
-    
-    
-    --icon-content-cabinet-o: "\e7ed";
-    
-    
-    
-    --icon-content-networksystems: "\e8f1";
-    
-    
-    
-    --icon-content-cabinet: "\e7ec";
-    
-    
-    
-    --icon-content-all-o: "\e8f0";
-    
-    
-    
-    --icon-content-column-o: "\e7eb";
-    
-    
-    
-    --icon-content-all: "\e8ef";
-    
-    
-    
-    --icon-content-column1: "\e7ea";
-    
-    
-    
-    --icon-content-Broadbandaccess-o: "\e9ee";
-    
-    
-    
-    --icon-content-Module-o: "\e8ee";
-    
-    
-    
-    --icon-content-room-o: "\e7e9";
-    
-    
-    
-    --icon-content-Broadbandaccess: "\e9ed";
-    
-    
-    
-    --icon-content-Module: "\e8ed";
-    
-    
-    
-    --icon-content-room: "\e7e8";
-    
-    
-    
-    --icon-content-Broadbandexport-o: "\e9ec";
-    
-    
-    
-    --icon-content-abnormal_outflow_right-o: "\e8ec";
-    
-    
-    
-    --icon-content-storey-o: "\e7e7";
-    
-    
-    
-    --icon-content-Broadbandexport: "\e9eb";
-    
-    
-    
-    --icon-content-abnormal_outflow_right: "\e8eb";
-    
-    
-    
-    --icon-content-storey: "\e7e6";
-    
-    
-    
-    --icon-content-networkequipment-o: "\e9ea";
-    
-    
-    
-    --icon-content-abnormal_outflow_left-o: "\e8ea";
-    
-    
-    
-    --icon-content-floor-o: "\e7e5";
-    
-    
-    
-    --icon-content-networkequipment: "\e9e9";
-    
-    
-    
-    --icon-content-abnormal_outflow_left: "\e8e9";
-    
-    
-    
-    --icon-content-floor: "\e7e4";
-    
-    
-    
-    --icon-content-CPU-o: "\e9e8";
-    
-    
-    
-    --icon-content-Dirll-o: "\e8e8";
-    
-    
-    
-    --icon-content-IDC-o: "\e7e3";
-    
-    
-    
-    --icon-content-CPU: "\e9e7";
-    
-    
-    
-    --icon-content-Dirll: "\e8e7";
-    
-    
-    
-    --icon-content-IDC: "\e7e2";
-    
-    
-    
-    --icon-content-Resourceset-o: "\e9e6";
     
     
     
@@ -1918,23 +851,7 @@
     
     
     
-    --icon-content-house-3-o: "\e7e1";
-    
-    
-    
-    --icon-content-Resourceset: "\e9e5";
-    
-    
-    
     --icon-content-alert: "\e8e5";
-    
-    
-    
-    --icon-content-house-3: "\e7e0";
-    
-    
-    
-    --icon-content-Businessdomain-o: "\e9e4";
     
     
     
@@ -1942,47 +859,7 @@
     
     
     
-    --icon-content-house-2-o: "\e7df";
-    
-    
-    
-    --icon-content-Businessdomain: "\e9e3";
-    
-    
-    
     --icon-content-remind: "\e8e3";
-    
-    
-    
-    --icon-content-house-2: "\e7de";
-    
-    
-    
-    --icon-content-Serviceroleinstance-o: "\e9e2";
-    
-    
-    
-    --icon-content-brandtree-o: "\e8e2";
-    
-    
-    
-    --icon-content-house-1-o: "\e7dd";
-    
-    
-    
-    --icon-content-Serviceroleinstance: "\e9e1";
-    
-    
-    
-    --icon-content-brandtree: "\e8e1";
-    
-    
-    
-    --icon-content-house-1: "\e7dc";
-    
-    
-    
-    --icon-content-ECS-o: "\e9e0";
     
     
     
@@ -1990,55 +867,7 @@
     
     
     
-    --icon-content-house-4-o: "\e7db";
-    
-    
-    
-    --icon-content-ECS: "\e9df";
-    
-    
-    
     --icon-content-process: "\e8df";
-    
-    
-    
-    --icon-content-house-4: "\e7da";
-    
-    
-    
-    --icon-content-site_domain-o: "\e9de";
-    
-    
-    
-    --icon-content-coupling-o: "\e8de";
-    
-    
-    
-    --icon-content-aliyun1: "\e7d9";
-    
-    
-    
-    --icon-content-site_domain: "\e9dd";
-    
-    
-    
-    --icon-content-coupling: "\e8dd";
-    
-    
-    
-    --icon-content-dataoutput: "\e7d8";
-    
-    
-    
-    --icon-content-site_config-o: "\e9dc";
-    
-    
-    
-    --icon-content-mergerequeste-o: "\e8dc";
-    
-    
-    
-    --icon-content-scanning: "\e7d7";
     
     
     
@@ -2046,19 +875,7 @@
     
     
     
-    --icon-content-mergerequeste: "\e8db";
-    
-    
-    
-    --icon-content-On-SiteInspection: "\e7d6";
-    
-    
-    
     --icon-content-site-o: "\e9da";
-    
-    
-    
-    --icon-content-configuration-o: "\e8da";
     
     
     
@@ -2070,51 +887,7 @@
     
     
     
-    --icon-content-configuration: "\e8d9";
-    
-    
-    
-    --icon-content-function: "\e7d4";
-    
-    
-    
-    --icon-content-container-o: "\e9d8";
-    
-    
-    
-    --icon-content-branch-o: "\e8d8";
-    
-    
-    
-    --icon-content-Tips: "\e7d3";
-    
-    
-    
-    --icon-content-container: "\e9d7";
-    
-    
-    
-    --icon-content-branch1: "\e8d7";
-    
-    
-    
-    --icon-content-warning-1: "\e7d2";
-    
-    
-    
-    --icon-content-app-o: "\e9d6";
-    
-    
-    
     --icon-content-data-o: "\e8d6";
-    
-    
-    
-    --icon-content-doubt: "\e7d1";
-    
-    
-    
-    --icon-content-app: "\e9d5";
     
     
     
@@ -2126,23 +899,7 @@
     
     
     
-    --icon-content-appgroup-o: "\e9d4";
-    
-    
-    
-    --icon-content-efficiency-o: "\e8d4";
-    
-    
-    
     --icon-content-nav-more: "\e7cf";
-    
-    
-    
-    --icon-content-appgroup: "\e9d3";
-    
-    
-    
-    --icon-content-efficiency: "\e8d3";
     
     
     
@@ -2150,31 +907,11 @@
     
     
     
-    --icon-content-schedule-o: "\e9d2";
-    
-    
-    
-    --icon-content-shujubiangeng_right-o: "\e8d2";
-    
-    
-    
     --icon-content-loading2: "\e7cd";
     
     
     
-    --icon-content-schedule: "\e9d1";
-    
-    
-    
-    --icon-content-shujubiangeng_right: "\e8d1";
-    
-    
-    
     --icon-content-refresh-2: "\e7cc";
-    
-    
-    
-    --icon-content-to-dolist-o: "\e9d0";
     
     
     
@@ -2186,23 +923,7 @@
     
     
     
-    --icon-content-to-dolist: "\e9cf";
-    
-    
-    
     --icon-content-shujubiangeng_left: "\e8cf";
-    
-    
-    
-    --icon-content-normal_outflow: "\e7ca";
-    
-    
-    
-    --icon-content-text-o: "\e9ce";
-    
-    
-    
-    --icon-content-git_group-o: "\e8ce";
     
     
     
@@ -2210,31 +931,7 @@
     
     
     
-    --icon-content-text: "\e9cd";
-    
-    
-    
-    --icon-content-git_group: "\e8cd";
-    
-    
-    
     --icon-content-link1: "\e7c8";
-    
-    
-    
-    --icon-content-notice-o: "\e9cc";
-    
-    
-    
-    --icon-content-destination-o: "\e8cc";
-    
-    
-    
-    --icon-content-accessories: "\e7c7";
-    
-    
-    
-    --icon-content-destination: "\e8cb";
     
     
     
@@ -2242,23 +939,7 @@
     
     
     
-    --icon-content-copy-o: "\e9ca";
-    
-    
-    
-    --icon-content-course-o: "\e8ca";
-    
-    
-    
     --icon-content-download2: "\e7c5";
-    
-    
-    
-    --icon-content-copy2: "\e9c9";
-    
-    
-    
-    --icon-content-course: "\e8c9";
     
     
     
@@ -2266,31 +947,11 @@
     
     
     
-    --icon-content-demand-o: "\e9c8";
-    
-    
-    
-    --icon-content-origin-o: "\e8c8";
-    
-    
-    
     --icon-content-close1: "\e7c3";
     
     
     
-    --icon-content-demand: "\e9c7";
-    
-    
-    
-    --icon-content-origin: "\e8c7";
-    
-    
-    
     --icon-content-select1: "\e7c2";
-    
-    
-    
-    --icon-content-handle-o: "\e9c6";
     
     
     
@@ -2302,10 +963,6 @@
     
     
     
-    --icon-content-handle: "\e9c5";
-    
-    
-    
     --icon-content-out_of_warehouse: "\e8c5";
     
     
@@ -2314,35 +971,7 @@
     
     
     
-    --icon-content-Work-item-History-o: "\e9c4";
-    
-    
-    
-    --icon-content-enter_warehouse-o: "\e8c4";
-    
-    
-    
-    --icon-content-nav-list: "\e7bf";
-    
-    
-    
-    --icon-content-Work-item-History: "\e9c3";
-    
-    
-    
-    --icon-content-enter_warehouse: "\e8c3";
-    
-    
-    
     --icon-content-menu1: "\e7be";
-    
-    
-    
-    --icon-content-Work-item-o: "\e9c2";
-    
-    
-    
-    --icon-content-rejection-o: "\e8c2";
     
     
     
@@ -2350,19 +979,7 @@
     
     
     
-    --icon-content-Work-item: "\e9c1";
-    
-    
-    
-    --icon-content-rejection: "\e8c1";
-    
-    
-    
     --icon-content-open-list: "\e7bc";
-    
-    
-    
-    --icon-content-survey-o: "\e9c0";
     
     
     
@@ -2374,31 +991,7 @@
     
     
     
-    --icon-content-survey: "\e9bf";
-    
-    
-    
     --icon-content-box: "\e8bf";
-    
-    
-    
-    --icon-content-towardstheright: "\e7ba";
-    
-    
-    
-    --icon-content-form-o: "\e9be";
-    
-    
-    
-    --icon-content-harddisk-o: "\e8be";
-    
-    
-    
-    --icon-content-towardstheleft: "\e7b9";
-    
-    
-    
-    --icon-content-form1: "\e9bd";
     
     
     
@@ -2410,23 +1003,7 @@
     
     
     
-    --icon-content-acceptance-o: "\e9bc";
-    
-    
-    
-    --icon-content-save-o: "\e8bc";
-    
-    
-    
     --icon-content-fullscreen-1: "\e7b7";
-    
-    
-    
-    --icon-content-acceptance: "\e9bb";
-    
-    
-    
-    --icon-content-save1: "\e8bb";
     
     
     
@@ -2434,19 +1011,7 @@
     
     
     
-    --icon-content-exit_list-o: "\e9ba";
-    
-    
-    
     --icon-content-print-o: "\e8ba";
-    
-    
-    
-    --icon-content-Exitfullscreen-2: "\e7b5";
-    
-    
-    
-    --icon-content-exit_list: "\e9b9";
     
     
     
@@ -2458,23 +1023,7 @@
     
     
     
-    --icon-content-Entry_list-o: "\e9b8";
-    
-    
-    
-    --icon-content-similar-product-o: "\e8b8";
-    
-    
-    
     --icon-content-left-arrow: "\e7b3";
-    
-    
-    
-    --icon-content-Entry_list: "\e9b7";
-    
-    
-    
-    --icon-content-similar-product: "\e8b7";
     
     
     
@@ -2482,23 +1031,7 @@
     
     
     
-    --icon-content-file-o: "\e9b6";
-    
-    
-    
-    --icon-content-Infrastructure_operation-o: "\e8b6";
-    
-    
-    
     --icon-content-ascending1: "\e7b1";
-    
-    
-    
-    --icon-content-file1: "\e9b5";
-    
-    
-    
-    --icon-content-Infrastructure_operation: "\e8b5";
     
     
     
@@ -2506,23 +1039,7 @@
     
     
     
-    --icon-content-refresh-o: "\e9b4";
-    
-    
-    
-    --icon-content-Templatefile-o: "\e8b4";
-    
-    
-    
     --icon-content-arrow-up-1: "\e7af";
-    
-    
-    
-    --icon-content-refresh1: "\e9b3";
-    
-    
-    
-    --icon-content-Templatefile: "\e8b3";
     
     
     
@@ -2530,23 +1047,7 @@
     
     
     
-    --icon-content-QRcode-o: "\e9b2";
-    
-    
-    
-    --icon-content-Clusterfile-o: "\e8b2";
-    
-    
-    
     --icon-content-arrow-right2: "\e7ad";
-    
-    
-    
-    --icon-content-QRcode: "\e9b1";
-    
-    
-    
-    --icon-content-Clusterfile: "\e8b1";
     
     
     
@@ -2554,23 +1055,7 @@
     
     
     
-    --icon-content-custom-o: "\e9b0";
-    
-    
-    
-    --icon-content-excel-o: "\e8b0";
-    
-    
-    
     --icon-content-arrow-up-2: "\e7ab";
-    
-    
-    
-    --icon-content-custom: "\e9af";
-    
-    
-    
-    --icon-content-excel: "\e8af";
     
     
     
@@ -2578,39 +1063,7 @@
     
     
     
-    --icon-content-Projectcollection-o: "\e9ae";
-    
-    
-    
-    --icon-content-word-o: "\e8ae";
-    
-    
-    
-    --icon-content-arrow-double-right1: "\e7a9";
-    
-    
-    
-    --icon-content-Projectcollection: "\e9ad";
-    
-    
-    
-    --icon-content-word: "\e8ad";
-    
-    
-    
-    --icon-content-arrow-double-left1: "\e7a8";
-    
-    
-    
     --icon-content-project-o: "\e9ac";
-    
-    
-    
-    --icon-content-ppt-o: "\e8ac";
-    
-    
-    
-    --icon-content-arrow-double-up: "\e7a7";
     
     
     
@@ -2618,35 +1071,7 @@
     
     
     
-    --icon-content-ppt: "\e8ab";
-    
-    
-    
-    --icon-content-arrow-double-down: "\e7a6";
-    
-    
-    
-    --icon-content-Resource-scheduling-o: "\e9aa";
-    
-    
-    
-    --icon-content-pdf-o: "\e8aa";
-    
-    
-    
-    --icon-content-Resource-scheduling: "\e9a9";
-    
-    
-    
-    --icon-content-pdf: "\e8a9";
-    
-    
-    
     --icon-content-calendar-o: "\e9a8";
-    
-    
-    
-    --icon-content-dwg-o: "\e8a8";
     
     
     
@@ -2654,31 +1079,7 @@
     
     
     
-    --icon-content-dwg: "\e8a7";
-    
-    
-    
-    --icon-content-edit-1-o: "\e9a6";
-    
-    
-    
-    --icon-content-switching-Chinese-o: "\e8a6";
-    
-    
-    
-    --icon-content-edit-1: "\e9a5";
-    
-    
-    
-    --icon-content-switching-Chinese: "\e8a5";
-    
-    
-    
     --icon-content-list-o: "\e9a4";
-    
-    
-    
-    --icon-content-switching-English-o: "\e8a4";
     
     
     
@@ -2686,55 +1087,7 @@
     
     
     
-    --icon-content-switching-English: "\e8a3";
-    
-    
-    
-    --icon-content-image-text-o: "\e9a2";
-    
-    
-    
-    --icon-content-RPM-o: "\e8a2";
-    
-    
-    
-    --icon-content-image-text: "\e9a1";
-    
-    
-    
-    --icon-content-RPM: "\e8a1";
-    
-    
-    
-    --icon-content-training-o: "\e9a0";
-    
-    
-    
-    --icon-content-SVN-o: "\e8a0";
-    
-    
-    
-    --icon-content-training: "\e99f";
-    
-    
-    
-    --icon-content-SVN: "\e89f";
-    
-    
-    
-    --icon-content-picture-o: "\e99e";
-    
-    
-    
-    --icon-content-compare-o: "\e89e";
-    
-    
-    
     --icon-content-picture2: "\e99d";
-    
-    
-    
-    --icon-content-compare: "\e89d";
     
     
     
@@ -2742,35 +1095,7 @@
     
     
     
-    --icon-content-Test-examples-o: "\e89c";
-    
-    
-    
     --icon-content-environment: "\e99b";
-    
-    
-    
-    --icon-content-Test-examples: "\e89b";
-    
-    
-    
-    --icon-content-Environmental_management-o: "\e99a";
-    
-    
-    
-    --icon-content-demo-o: "\e89a";
-    
-    
-    
-    --icon-content-Environmental_management: "\e999";
-    
-    
-    
-    --icon-content-demo1: "\e899";
-    
-    
-    
-    --icon-content-code_review-2-o: "\e998";
     
     
     
@@ -2778,15 +1103,7 @@
     
     
     
-    --icon-content-code_review-2: "\e997";
-    
-    
-    
     --icon-content-number: "\e897";
-    
-    
-    
-    --icon-content-code-2-o: "\e996";
     
     
     
@@ -2794,43 +1111,7 @@
     
     
     
-    --icon-content-code-2: "\e995";
-    
-    
-    
     --icon-content-postgresql-01: "\e895";
-    
-    
-    
-    --icon-content-code_review-1-o: "\e994";
-    
-    
-    
-    --icon-content-map-o: "\e894";
-    
-    
-    
-    --icon-content-code_review-1: "\e993";
-    
-    
-    
-    --icon-content-map: "\e893";
-    
-    
-    
-    --icon-content-code-1-o: "\e992";
-    
-    
-    
-    --icon-content-humidity-o: "\e892";
-    
-    
-    
-    --icon-content-code-1: "\e991";
-    
-    
-    
-    --icon-content-humidity: "\e891";
     
     
     
@@ -2838,59 +1119,11 @@
     
     
     
-    --icon-content-heating-o: "\e890";
-    
-    
-    
     --icon-content-move: "\e98f";
     
     
     
-    --icon-content-heating: "\e88f";
-    
-    
-    
-    --icon-content-Project-change-o: "\e98e";
-    
-    
-    
-    --icon-content-cooling-o: "\e88e";
-    
-    
-    
-    --icon-content-Project-change: "\e98d";
-    
-    
-    
-    --icon-content-cooling: "\e88d";
-    
-    
-    
-    --icon-content-shebeishangxian-o: "\e98c";
-    
-    
-    
-    --icon-content-temperature-o: "\e88c";
-    
-    
-    
-    --icon-content-shebeishangxian: "\e98b";
-    
-    
-    
-    --icon-content-temperature: "\e88b";
-    
-    
-    
-    --icon-content-shebeixiaxian-o: "\e98a";
-    
-    
-    
     --icon-content-fa-users-o: "\e88a";
-    
-    
-    
-    --icon-content-shebeixiaxian: "\e989";
     
     
     
@@ -2902,23 +1135,7 @@
     
     
     
-    --icon-content-Personnel_list-o: "\e888";
-    
-    
-    
-    --icon-content-iteration: "\e987";
-    
-    
-    
-    --icon-content-Personnel_list: "\e887";
-    
-    
-    
     --icon-content-fullscreen-1-o: "\e986";
-    
-    
-    
-    --icon-content-addpersonnel-o: "\e886";
     
     
     
@@ -2926,51 +1143,7 @@
     
     
     
-    --icon-content-addpersonnel: "\e885";
-    
-    
-    
-    --icon-content-Exitfullscreen-1-o: "\e984";
-    
-    
-    
-    --icon-content-account-o: "\e884";
-    
-    
-    
-    --icon-content-Exitfullscreen-1: "\e983";
-    
-    
-    
-    --icon-content-account1: "\e883";
-    
-    
-    
-    --icon-content-New_minus_configuration-o: "\e982";
-    
-    
-    
-    --icon-content-Unlock-o: "\e882";
-    
-    
-    
-    --icon-content-New_minus_configuration: "\e981";
-    
-    
-    
-    --icon-content-Unlock: "\e881";
-    
-    
-    
-    --icon-content-New_configuration-o: "\e980";
-    
-    
-    
     --icon-content-lock-o: "\e880";
-    
-    
-    
-    --icon-content-New_configuration: "\e97f";
     
     
     
@@ -2978,15 +1151,7 @@
     
     
     
-    --icon-content-service_utilization-o: "\e97e";
-    
-    
-    
     --icon-content-requestaccess-o: "\e87e";
-    
-    
-    
-    --icon-content-service_utilization: "\e97d";
     
     
     
@@ -2994,31 +1159,7 @@
     
     
     
-    --icon-content-service_circulation-o: "\e97c";
-    
-    
-    
-    --icon-content-xitongyunzhuan-o: "\e87c";
-    
-    
-    
-    --icon-content-service_circulation: "\e97b";
-    
-    
-    
-    --icon-content-xitongyunzhuan: "\e87b";
-    
-    
-    
-    --icon-content-mingpian-o: "\e97a";
-    
-    
-    
     --icon-content-monitor-o: "\e87a";
-    
-    
-    
-    --icon-content-mingpian: "\e979";
     
     
     
@@ -3026,63 +1167,7 @@
     
     
     
-    --icon-content-information-o: "\e978";
-    
-    
-    
-    --icon-content-skip-o: "\e878";
-    
-    
-    
-    --icon-content-information: "\e977";
-    
-    
-    
-    --icon-content-skip: "\e877";
-    
-    
-    
-    --icon-content-email-o: "\e976";
-    
-    
-    
-    --icon-content-Submission_of_history-o: "\e876";
-    
-    
-    
-    --icon-content-email2: "\e975";
-    
-    
-    
-    --icon-content-Submission_of_history: "\e875";
-    
-    
-    
-    --icon-content-view-o: "\e974";
-    
-    
-    
-    --icon-content-Release-o: "\e874";
-    
-    
-    
-    --icon-content-view: "\e973";
-    
-    
-    
-    --icon-content-Release: "\e873";
-    
-    
-    
-    --icon-content-reboot-o: "\e972";
-    
-    
-    
     --icon-content-cut-o: "\e872";
-    
-    
-    
-    --icon-content-reboot: "\e971";
     
     
     
@@ -3090,47 +1175,7 @@
     
     
     
-    --icon-content-warning-3-o: "\e970";
-    
-    
-    
-    --icon-content-Subscribe-o: "\e870";
-    
-    
-    
-    --icon-content-warning-3: "\e96f";
-    
-    
-    
-    --icon-content-Subscribe: "\e86f";
-    
-    
-    
-    --icon-content-warning-2-o: "\e96e";
-    
-    
-    
-    --icon-content-Urge-o: "\e86e";
-    
-    
-    
-    --icon-content-warning-2: "\e96d";
-    
-    
-    
-    --icon-content-Urge: "\e86d";
-    
-    
-    
-    --icon-content-comments-o: "\e96c";
-    
-    
-    
     --icon-content-notice-2-o: "\e86c";
-    
-    
-    
-    --icon-content-comments1: "\e96b";
     
     
     
@@ -3138,27 +1183,7 @@
     
     
     
-    --icon-content-subscript-o: "\e96a";
-    
-    
-    
-    --icon-content-cooperation-o: "\e86a";
-    
-    
-    
-    --icon-content-subscript: "\e969";
-    
-    
-    
-    --icon-content-cooperation: "\e869";
-    
-    
-    
     --icon-content-sorting2-o: "\e968";
-    
-    
-    
-    --icon-content-good-o: "\e868";
     
     
     
@@ -3170,31 +1195,7 @@
     
     
     
-    --icon-content-success-o: "\e966";
-    
-    
-    
-    --icon-content-bad-o: "\e866";
-    
-    
-    
-    --icon-content-success1: "\e965";
-    
-    
-    
-    --icon-content-bad: "\e865";
-    
-    
-    
-    --icon-content-Add-2-o: "\e964";
-    
-    
-    
     --icon-content-cloud-o: "\e864";
-    
-    
-    
-    --icon-content-Add-2: "\e963";
     
     
     
@@ -3206,15 +1207,7 @@
     
     
     
-    --icon-content-task-2-o: "\e862";
-    
-    
-    
     --icon-content-minus1: "\e961";
-    
-    
-    
-    --icon-content-task-2: "\e861";
     
     
     
@@ -3238,51 +1231,7 @@
     
     
     
-    --icon-content-like-o: "\e85e";
-    
-    
-    
     --icon-content-stop: "\e95d";
-    
-    
-    
-    --icon-content-like1: "\e85d";
-    
-    
-    
-    --icon-content-wangluo1-o: "\e95c";
-    
-    
-    
-    --icon-content-recyclebin-o: "\e85c";
-    
-    
-    
-    --icon-content-wangluo1: "\e95b";
-    
-    
-    
-    --icon-content-recyclebin: "\e85b";
-    
-    
-    
-    --icon-content-notice: "\e9cb";
-    
-    
-    
-    --icon-content-zhihu: "\e74d";
-    
-    
-    
-    --icon-content-user: "\e74c";
-    
-    
-    
-    --icon-content-wechat-enterprise: "\e74b";
-    
-    
-    
-    --icon-content-yunzhijia: "\e74a";
     
     
     
@@ -3290,63 +1239,11 @@
     
     
     
-    --icon-content-users: "\e748";
-    
-    
-    
     --icon-content-warning-o-fill: "\e747";
     
     
     
-    --icon-content-wechat: "\e746";
-    
-    
-    
-    --icon-content-grid: "\e745";
-    
-    
-    
     --icon-content-triangle-left-s: "\e744";
-    
-    
-    
-    --icon-content-user-question: "\e743";
-    
-    
-    
-    --icon-content-user-o: "\e742";
-    
-    
-    
-    --icon-content-netease: "\e741";
-    
-    
-    
-    --icon-content-user-externa: "\e740";
-    
-    
-    
-    --icon-content-user-disable: "\e73f";
-    
-    
-    
-    --icon-content-users-s: "\e73e";
-    
-    
-    
-    --icon-content-users-fill: "\e73d";
-    
-    
-    
-    --icon-content-xiaomi: "\e73c";
-    
-    
-    
-    --icon-content-underline: "\e73b";
-    
-    
-    
-    --icon-content-user-switch: "\e73a";
     
     
     
@@ -3358,31 +1255,7 @@
     
     
     
-    --icon-content-teambition: "\e737";
-    
-    
-    
-    --icon-content-user-search: "\e736";
-    
-    
-    
-    --icon-content-twitter: "\e735";
-    
-    
-    
-    --icon-content-timeline-s: "\e734";
-    
-    
-    
-    --icon-content-user-fill: "\e733";
-    
-    
-    
     --icon-content-tick-o-fill: "\e732";
-    
-    
-    
-    --icon-content-user-add: "\e731";
     
     
     
@@ -3390,35 +1263,7 @@
     
     
     
-    --icon-content-tex: "\e72f";
-    
-    
-    
-    --icon-content-switch1: "\e72d";
-    
-    
-    
-    --icon-content-teambition-outline: "\e72b";
-    
-    
-    
-    --icon-content-task-tick: "\e72a";
-    
-    
-    
-    --icon-content-tick: "\e729";
-    
-    
-    
-    --icon-content-timeline: "\e728";
-    
-    
-    
     --icon-content-triangle-right-s: "\e725";
-    
-    
-    
-    --icon-content-scan: "\e724";
     
     
     
@@ -3426,23 +1271,7 @@
     
     
     
-    --icon-content-salesman: "\e721";
-    
-    
-    
-    --icon-content-tick-bold: "\e720";
-    
-    
-    
     --icon-content-sprint: "\e71f";
-    
-    
-    
-    --icon-content-rss: "\e71e";
-    
-    
-    
-    --icon-content-row-after: "\e71d";
     
     
     
@@ -3450,15 +1279,7 @@
     
     
     
-    --icon-content-robot: "\e71b";
-    
-    
-    
     --icon-content-remove: "\e71a";
-    
-    
-    
-    --icon-content-row-before: "\e719";
     
     
     
@@ -3494,27 +1315,7 @@
     
     
     
-    --icon-content-h2: "\e711";
-    
-    
-    
-    --icon-content-invite-fill: "\e7a4";
-    
-    
-    
     --icon-content-pause-o: "\e710";
-    
-    
-    
-    --icon-content-discussion-fill: "\e7a3";
-    
-    
-    
-    --icon-content-office-powerpoint: "\e70f";
-    
-    
-    
-    --icon-content-workhour: "\e7a2";
     
     
     
@@ -3530,43 +1331,7 @@
     
     
     
-    --icon-content-histogram: "\e7a0";
-    
-    
-    
-    --icon-content-office-excel: "\e70c";
-    
-    
-    
-    --icon-content-dingding-o-fill: "\e79f";
-    
-    
-    
-    --icon-content-pinterest: "\e70b";
-    
-    
-    
-    --icon-content-treenode-single: "\e79e";
-    
-    
-    
-    --icon-content-markdown: "\e70a";
-    
-    
-    
     --icon-content-to-do: "\e79d";
-    
-    
-    
-    --icon-content-jinshuju: "\e709";
-    
-    
-    
-    --icon-content-chat-private-stroke: "\e79c";
-    
-    
-    
-    --icon-content-emoji-frown: "\e708";
     
     
     
@@ -3578,23 +1343,7 @@
     
     
     
-    --icon-content-created-fill: "\e79a";
-    
-    
-    
-    --icon-content-office-word: "\e706";
-    
-    
-    
-    --icon-content-building-fill: "\e799";
-    
-    
-    
     --icon-content-plus-box-fill: "\e705";
-    
-    
-    
-    --icon-content-tag-fill: "\e798";
     
     
     
@@ -3602,15 +1351,7 @@
     
     
     
-    --icon-content-comments: "\e797";
-    
-    
-    
     --icon-content-minus-o: "\e703";
-    
-    
-    
-    --icon-content-inbox1: "\e796";
     
     
     
@@ -3618,59 +1359,11 @@
     
     
     
-    --icon-content-multiplechoice: "\e795";
-    
-    
-    
-    --icon-content-linkedin: "\e701";
-    
-    
-    
-    --icon-content-size-grid: "\e794";
-    
-    
-    
-    --icon-content-video: "\e793";
-    
-    
-    
-    --icon-content-dropbox: "\e6ff";
-    
-    
-    
-    --icon-content-import-project: "\e609";
-    
-    
-    
-    --icon-content-github: "\e6fe";
-    
-    
-    
     --icon-content-log-out: "\e792";
     
     
     
-    --icon-content-invistion: "\e6fd";
-    
-    
-    
     --icon-content-shortcut: "\e791";
-    
-    
-    
-    --icon-content-italic: "\e6fc";
-    
-    
-    
-    --icon-content-task-board: "\e790";
-    
-    
-    
-    --icon-content-h3: "\e6fb";
-    
-    
-    
-    --icon-content-created: "\e78f";
     
     
     
@@ -3679,10 +1372,6 @@
     
     
     --icon-content-calendar-tick: "\e78e";
-    
-    
-    
-    --icon-content-google: "\e6f9";
     
     
     
@@ -3698,34 +1387,6 @@
     
     
     
-    --icon-content-intelligent-assistant: "\e78b";
-    
-    
-    
-    --icon-content-collapse: "\e6f6";
-    
-    
-    
-    --icon-content-unfold: "\e78a";
-    
-    
-    
-    --icon-content-h1: "\e6f5";
-    
-    
-    
-    --icon-content-ding: "\e789";
-    
-    
-    
-    --icon-content-horizontal: "\e6f4";
-    
-    
-    
-    --icon-content-chat-private: "\e788";
-    
-    
-    
     --icon-content-info-o-fill: "\e6f3";
     
     
@@ -3734,47 +1395,7 @@
     
     
     
-    --icon-content-heading: "\e6f2";
-    
-    
-    
     --icon-content-progress: "\e786";
-    
-    
-    
-    --icon-content-emoji-smile: "\e6f1";
-    
-    
-    
-    --icon-content-like-fill: "\e785";
-    
-    
-    
-    --icon-content-facebook: "\e6f0";
-    
-    
-    
-    --icon-content-distribute: "\e784";
-    
-    
-    
-    --icon-content-framer: "\e6ef";
-    
-    
-    
-    --icon-content-like: "\e783";
-    
-    
-    
-    --icon-content-fangcloud: "\e6ee";
-    
-    
-    
-    --icon-content-single-chat-bubble: "\e782";
-    
-    
-    
-    --icon-content-dribbble: "\e6ed";
     
     
     
@@ -3782,71 +1403,7 @@
     
     
     
-    --icon-content-circle: "\e6ec";
-    
-    
-    
-    --icon-content-custom-field: "\e780";
-    
-    
-    
-    --icon-content-chevron-up-o-fill: "\e6eb";
-    
-    
-    
-    --icon-content-milestone: "\e77f";
-    
-    
-    
-    --icon-content-evernote: "\e6ea";
-    
-    
-    
-    --icon-content-task-dependency-post: "\e77e";
-    
-    
-    
-    --icon-content-figma: "\e6e9";
-    
-    
-    
-    --icon-content-task-dependency-pre: "\e77d";
-    
-    
-    
-    --icon-content-double-box-plus: "\e6e8";
-    
-    
-    
-    --icon-content-task-dependency: "\e77c";
-    
-    
-    
-    --icon-content-dingding: "\e6e7";
-    
-    
-    
-    --icon-content-arrow-out: "\e77b";
-    
-    
-    
-    --icon-content-double-tick: "\e6e6";
-    
-    
-    
-    --icon-content-arrow-in: "\e77a";
-    
-    
-    
     --icon-content-expand: "\e6e5";
-    
-    
-    
-    --icon-content-enterprise-calendar: "\e779";
-    
-    
-    
-    --icon-content-col-before: "\e6e4";
     
     
     
@@ -3858,59 +1415,7 @@
     
     
     
-    --icon-content-target: "\e777";
-    
-    
-    
-    --icon-content-chevron-left-o-fill: "\e6e2";
-    
-    
-    
-    --icon-content-verified: "\e776";
-    
-    
-    
-    --icon-content-client: "\e6e1";
-    
-    
-    
     --icon-content-risk: "\e66c";
-    
-    
-    
-    --icon-content-checkbox-checked: "\e6e0";
-    
-    
-    
-    --icon-content-bookkeeping-logo: "\e775";
-    
-    
-    
-    --icon-content-degree: "\e6df";
-    
-    
-    
-    --icon-content-newtab: "\e774";
-    
-    
-    
-    --icon-content-douban: "\e6de";
-    
-    
-    
-    --icon-content-wall: "\e773";
-    
-    
-    
-    --icon-content-crop: "\e6dd";
-    
-    
-    
-    --icon-content-org-projects: "\e772";
-    
-    
-    
-    --icon-content-contact: "\e6dc";
     
     
     
@@ -3918,19 +1423,7 @@
     
     
     
-    --icon-content-column: "\e6db";
-    
-    
-    
     --icon-content-multi-number: "\e771";
-    
-    
-    
-    --icon-content-chevron-up-o: "\e6da";
-    
-    
-    
-    --icon-content-normal: "\e770";
     
     
     
@@ -3942,31 +1435,11 @@
     
     
     
-    --icon-content-col-after: "\e6d8";
-    
-    
-    
-    --icon-content-tag: "\e76e";
-    
-    
-    
     --icon-content-chevrons-right: "\e6d7";
     
     
     
-    --icon-content-focus: "\e76d";
-    
-    
-    
     --icon-content-chevron-right-s: "\e6d6";
-    
-    
-    
-    --icon-content-tachometer: "\e6a0";
-    
-    
-    
-    --icon-content-chevrons-expand-horizontal: "\e6d5";
     
     
     
@@ -3975,10 +1448,6 @@
     
     
     --icon-content-chevrons-expand-vertical: "\e6d4";
-    
-    
-    
-    --icon-content-bell-fill: "\e69e";
     
     
     
@@ -4002,15 +1471,7 @@
     
     
     
-    --icon-content-knowledge-base: "\e69a";
-    
-    
-    
     --icon-content-chevron-down-s: "\e6d0";
-    
-    
-    
-    --icon-content-sun: "\e66a";
     
     
     
@@ -4019,14 +1480,6 @@
     
     
     --icon-content-moon: "\e664";
-    
-    
-    
-    --icon-content-chevron-right-o: "\e6ce";
-    
-    
-    
-    --icon-content-folder: "\e663";
     
     
     
@@ -4042,19 +1495,7 @@
     
     
     
-    --icon-content-upload-pic: "\e69b";
-    
-    
-    
-    --icon-content-bold: "\e6cb";
-    
-    
-    
     --icon-content-download-stage: "\e699";
-    
-    
-    
-    --icon-content-chevron-right-o-fill: "\e6ca";
     
     
     
@@ -4062,63 +1503,7 @@
     
     
     
-    --icon-content-chevron-left-o: "\e6c9";
-    
-    
-    
-    --icon-content-share-stage: "\e696";
-    
-    
-    
     --icon-content-chevron-left-s: "\e6c8";
-    
-    
-    
-    --icon-content-download-file: "\e695";
-    
-    
-    
-    --icon-content-checkbox: "\e6c7";
-    
-    
-    
-    --icon-content-dock: "\e694";
-    
-    
-    
-    --icon-content-chevron-down-o: "\e6c6";
-    
-    
-    
-    --icon-content-demo: "\e693";
-    
-    
-    
-    --icon-content-chevron-down-o-fill: "\e6c5";
-    
-    
-    
-    --icon-content-cuvette: "\e692";
-    
-    
-    
-    --icon-content-chevron-down: "\e6c4";
-    
-    
-    
-    --icon-content-Aone: "\e662";
-    
-    
-    
-    --icon-content-box-plus: "\e6c3";
-    
-    
-    
-    --icon-content-approve: "\e661";
-    
-    
-    
-    --icon-content-arrows-full-expand: "\e6c2";
     
     
     
@@ -4126,27 +1511,7 @@
     
     
     
-    --icon-content-checkbox-checked-fill: "\e6c1";
-    
-    
-    
-    --icon-content-add-folder: "\e65b";
-    
-    
-    
-    --icon-content-blockquote: "\e6c0";
-    
-    
-    
-    --icon-content-safety: "\e691";
-    
-    
-    
     --icon-content-arrows-swtich-vertical: "\e6bf";
-    
-    
-    
-    --icon-content-meta: "\e690";
     
     
     
@@ -4155,10 +1520,6 @@
     
     
     --icon-content-panel: "\e68f";
-    
-    
-    
-    --icon-content-arrows-cycle: "\e6bd";
     
     
     
@@ -4174,39 +1535,7 @@
     
     
     
-    --icon-content-arrows-full-collapse: "\e6bb";
-    
-    
-    
-    --icon-content-multi-selection: "\e657";
-    
-    
-    
-    --icon-content-align-left: "\e6ba";
-    
-    
-    
     --icon-content-custom-text: "\e653";
-    
-    
-    
-    --icon-content-arrow-upright-o-fill: "\e6b9";
-    
-    
-    
-    --icon-content-file: "\e652";
-    
-    
-    
-    --icon-content-arrow-upline-o-fill: "\e6b8";
-    
-    
-    
-    --icon-content-code: "\e651";
-    
-    
-    
-    --icon-content-arrow-up-o: "\e6b7";
     
     
     
@@ -4214,27 +1543,7 @@
     
     
     
-    --icon-content-arrow-roundright: "\e6b6";
-    
-    
-    
     --icon-content-undo: "\e76b";
-    
-    
-    
-    --icon-content-arrow-roundleft: "\e6b5";
-    
-    
-    
-    --icon-content-unordered-list: "\e76a";
-    
-    
-    
-    --icon-content-arrow-up-o-fill: "\e6b4";
-    
-    
-    
-    --icon-content-headset: "\e769";
     
     
     
@@ -4246,43 +1555,11 @@
     
     
     
-    --icon-content-arrow-right-o-fill: "\e6b1";
-    
-    
-    
-    --icon-content-unlock1: "\e767";
-    
-    
-    
-    --icon-content-arrow-left-o: "\e6b0";
-    
-    
-    
-    --icon-content-computer: "\e766";
-    
-    
-    
-    --icon-content-arrow-right-o: "\e6af";
-    
-    
-    
-    --icon-content-mobile: "\e765";
-    
-    
-    
     --icon-content-arrow-right1: "\e6ae";
     
     
     
     --icon-content-pin: "\e764";
-    
-    
-    
-    --icon-content-arrow-down-o-fill: "\e6ad";
-    
-    
-    
-    --icon-content-collection: "\e763";
     
     
     
@@ -4294,15 +1571,7 @@
     
     
     
-    --icon-content-arrow-hollow-down: "\e6ab";
-    
-    
-    
     --icon-content-pencil-fill: "\e761";
-    
-    
-    
-    --icon-content-arrow-clock-right: "\e6aa";
     
     
     
@@ -4310,27 +1579,11 @@
     
     
     
-    --icon-content-arrow-hollow-up: "\e6a9";
-    
-    
-    
     --icon-content-favorite-fill: "\e75f";
     
     
     
-    --icon-content-arrow-left-o-fill: "\e6a8";
-    
-    
-    
-    --icon-content-home: "\e75e";
-    
-    
-    
     --icon-content-arrow-left1: "\e6a7";
-    
-    
-    
-    --icon-content-home-fill: "\e75d";
     
     
     
@@ -4342,39 +1595,11 @@
     
     
     
-    --icon-content-arrow-down-o: "\e6a5";
-    
-    
-    
     --icon-content-earth: "\e75b";
     
     
     
-    --icon-content-arrow-clock-left: "\e6a4";
-    
-    
-    
-    --icon-content-table: "\e75a";
-    
-    
-    
-    --icon-content-align-center: "\e6a3";
-    
-    
-    
-    --icon-content-zoom-in: "\e759";
-    
-    
-    
     --icon-content-aliyun: "\e6a2";
-    
-    
-    
-    --icon-content-zoom-out: "\e758";
-    
-    
-    
-    --icon-content-align-right: "\e6a1";
     
     
     
@@ -4390,27 +1615,11 @@
     
     
     
-    --icon-content-import: "\e754";
-    
-    
-    
     --icon-content-download1: "\e72e";
     
     
     
-    --icon-content-upload1: "\e72c";
-    
-    
-    
-    --icon-content-export: "\e727";
-    
-    
-    
     --icon-content-rich-text: "\e726";
-    
-    
-    
-    --icon-content-inbox: "\e722";
     
     
     
@@ -4422,39 +1631,7 @@
     
     
     
-    --icon-content-add-user-set: "\e68d";
-    
-    
-    
-    --icon-content-org-crown: "\e68c";
-    
-    
-    
-    --icon-content-org-medal: "\e68b";
-    
-    
-    
     --icon-content-triangle-left: "\e687";
-    
-    
-    
-    --icon-content-team-building: "\e686";
-    
-    
-    
-    --icon-content-org-book: "\e685";
-    
-    
-    
-    --icon-content-org-apps: "\e684";
-    
-    
-    
-    --icon-content-briefcase-stroke: "\e682";
-    
-    
-    
-    --icon-content-chat-group-stroke: "\e681";
     
     
     
@@ -4466,87 +1643,11 @@
     
     
     
-    --icon-content-normal-text: "\e67e";
-    
-    
-    
     --icon-content-clear: "\e67d";
     
     
     
     --icon-content-tree: "\e67c";
-    
-    
-    
-    --icon-content-team-pen: "\e67b";
-    
-    
-    
-    --icon-content-team-tie: "\e67a";
-    
-    
-    
-    --icon-content-team-terminal: "\e679";
-    
-    
-    
-    --icon-content-team-stamp: "\e678";
-    
-    
-    
-    --icon-content-team-talk: "\e676";
-    
-    
-    
-    --icon-content-team-notebook: "\e675";
-    
-    
-    
-    --icon-content-team-medal: "\e674";
-    
-    
-    
-    --icon-content-team-loudspeaker: "\e672";
-    
-    
-    
-    --icon-content-team-camera: "\e671";
-    
-    
-    
-    --icon-content-team-graph: "\e670";
-    
-    
-    
-    --icon-content-team-flag: "\e66f";
-    
-    
-    
-    --icon-content-team-compass: "\e66e";
-    
-    
-    
-    --icon-content-team-location: "\e66d";
-    
-    
-    
-    --icon-content-team-bulb: "\e669";
-    
-    
-    
-    --icon-content-team-calculator: "\e668";
-    
-    
-    
-    --icon-content-team-bus: "\e667";
-    
-    
-    
-    --icon-content-team-briefcase: "\e666";
-    
-    
-    
-    --icon-content-building: "\e650";
     
     
     
@@ -4558,31 +1659,11 @@
     
     
     
-    --icon-content-region: "\e64d";
-    
-    
-    
-    --icon-content-region-fill: "\e64c";
-    
-    
-    
     --icon-content-link: "\e64b";
     
     
     
-    --icon-content-save: "\e64a";
-    
-    
-    
-    --icon-content-copy1: "\e649";
-    
-    
-    
     --icon-content-menu: "\e648";
-    
-    
-    
-    --icon-content-branch: "\e647";
     
     
     
@@ -4603,14 +1684,6 @@
     
     
     --icon-content-share1: "\e640";
-    
-    
-    
-    --icon-content-intro: "\e620";
-    
-    
-    
-    --icon-content-book: "\e61c";
     
     
     
@@ -4650,14 +1723,6 @@
     
     
     
-    --icon-content-trashbin: "\e636";
-    
-    
-    
-    --icon-content-picture1: "\e630";
-    
-    
-    
     --icon-content-paperclip: "\e62f";
     
     
@@ -4671,10 +1736,6 @@
     
     
     --icon-content-loading1: "\e62c";
-    
-    
-    
-    --icon-content-email1: "\e62b";
     
     
     
@@ -4698,27 +1759,7 @@
     
     
     
-    --icon-content-wps: "\e752";
-    
-    
-    
-    --icon-content-oldman: "\e751";
-    
-    
-    
     --icon-content-qq: "\e750";
-    
-    
-    
-    --icon-content-weibo: "\e74f";
-    
-    
-    
-    --icon-content-zendesk: "\e74e";
-    
-    
-    
-    --icon-content-info: "\e6f7";
     
     
     
@@ -4970,115 +2011,7 @@
     
     
     
-    --icon-content-ziyuan: "\e65c";
-    
-    
-    
     --icon-content-queding: "\e635";
-    
-    
-    
-    --icon-content-circle-plus: "\e666";
-    
-    
-    
-    --icon-content-circle-info: "\e667";
-    
-    
-    
-    --icon-content-circle-remove: "\e668";
-    
-    
-    
-    --icon-content-warning1: "\e669";
-    
-    
-    
-    --icon-content-state-check: "\e66a";
-    
-    
-    
-    --icon-content-add-nav: "\e63e";
-    
-    
-    
-    --icon-content-addGroup: "\e63f";
-    
-    
-    
-    --icon-content-add-user: "\e640";
-    
-    
-    
-    --icon-content-back-arrow: "\e642";
-    
-    
-    
-    --icon-content-group: "\e644";
-    
-    
-    
-    --icon-content-check: "\e645";
-    
-    
-    
-    --icon-content-delete: "\e647";
-    
-    
-    
-    --icon-content-cancel: "\e648";
-    
-    
-    
-    --icon-content-issue: "\e649";
-    
-    
-    
-    --icon-content-mergeRequest: "\e64d";
-    
-    
-    
-    --icon-content-mr-path: "\e64f";
-    
-    
-    
-    --icon-content-member: "\e650";
-    
-    
-    
-    --icon-content-repositories: "\e652";
-    
-    
-    
-    --icon-content-output: "\e657";
-    
-    
-    
-    --icon-content-pass: "\e658";
-    
-    
-    
-    --icon-content-seeMoreRepositories: "\e65a";
-    
-    
-    
-    --icon-content-star: "\e65c";
-    
-    
-    
-    --icon-content-trash: "\e660";
-    
-    
-    
-    --icon-content-settings: "\e664";
-    
-    
-    
-    --icon-content-huabanfuben56: "\e7c8";
-    
-    
-    
-    --icon-content-yincang: "\e652";
     
     
     /* ------------------------ font ------------------------ */
@@ -5225,6 +2158,321 @@
     
     
     --corner-1: 2px;
+    
+    
+    /* ------------------------ color ------------------------ */
+    
+    
+    
+    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
+    
+    
+    
+    --color-transparent: transparent;
+    
+    
+    
+    --color-black: #000000;
+    
+    
+    
+    --color-white: #FFFFFF;
+    
+    
+    
+    --color-brand1-7: rgba(78,159,245,1);
+    
+    
+    
+    --color-brand1-8: rgba(119,181,247,1);
+    
+    
+    
+    --color-brand1-2: rgba(38,60,84,1);
+    
+    
+    
+    --color-brand1-3: rgba(47,85,125,1);
+    
+    
+    
+    --color-brand1-4: rgba(51,105,163,1);
+    
+    
+    
+    --color-brand1-5: rgba(48,122,201,1);
+    
+    
+    
+    --color-brand1-10: rgba(204,229,255,1);
+    
+    
+    
+    --color-link-3: rgba(78,159,245,1);
+    
+    
+    
+    --color-link-2: rgba(48,122,201,1);
+    
+    
+    
+    --color-link-1: rgba(39,137,242,1);
+    
+    
+    
+    --color-brand1-9: rgba(160,203,250,1);
+    
+    
+    
+    --color-brand1-6: rgba(39,137,242,1);
+    
+    
+    
+    --color-brand1-1: rgba(24,35,46,1);
+    
+    
+    
+    --color-text1-3: #CCCCCC;
+    
+    
+    
+    --color-gradient-4: linear-gradient(270deg, rgba(225, 81, 86, 0.5) 0%,rgb(225, 81, 86) 100%);
+    
+    
+    
+    --color-gradient-2: linear-gradient(270deg, rgba(0, 123, 233, 0.5) 0%,rgb(0, 123, 233) 100%);
+    
+    
+    
+    --color-gradient-1: linear-gradient(270deg, rgba(49, 163, 104, 0.5) 0%,rgb(49, 163, 104) 100%);
+    
+    
+    
+    --color-data1-3: rgba(114,132,165,1);
+    
+    
+    
+    --color-data1-1: rgba(73,191,158,1);
+    
+    
+    
+    --color-success-6: rgba(0,122,64,1);
+    
+    
+    
+    --color-success-4: rgba(66,180,121,1);
+    
+    
+    
+    --color-data1-8: rgba(150,132,234,1);
+    
+    
+    
+    --color-text1-5: rgba(168,168,168,1);
+    
+    
+    
+    --color-fill1-5: #4D4D4D;
+    
+    
+    
+    --color-fill1-6: #6B6B6B;
+    
+    
+    
+    --color-notice-5: rgba(0,123,233,1);
+    
+    
+    
+    --color-warning-6: rgba(204,110,12,1);
+    
+    
+    
+    --color-error-5: rgba(225,81,86,1);
+    
+    
+    
+    --color-error-6: #B81E18;
+    
+    
+    
+    --color-success-5: rgba(49,163,104,1);
+    
+    
+    
+    --color-text1-4: #EAEAEA;
+    
+    
+    
+    --color-text1-2: #8A8A8A;
+    
+    
+    
+    --color-fill1-4: rgba(38,38,38,1);
+    
+    
+    
+    --color-fill1-3: #1F1F1F;
+    
+    
+    
+    --color-fill1-2: #383838;
+    
+    
+    
+    --color-fill1-1: #151515;
+    
+    
+    
+    --color-line1-3: rgba(77,77,77,1);
+    
+    
+    
+    --color-line1-2: rgba(56,56,56,1);
+    
+    
+    
+    --color-line1-1: rgba(38,38,38,1);
+    
+    
+    
+    --color-other-3: rgba(21,21,21,1);
+    
+    
+    
+    --color-other-1: rgba(0,0,0,1);
+    
+    
+    
+    --color-error-4: rgba(255,114,119,1);
+    
+    
+    
+    --color-error-1: rgba(54,19,18,1);
+    
+    
+    
+    --color-notice-4: rgba(53,143,233,1);
+    
+    
+    
+    --color-success-3: #006334;
+    
+    
+    
+    --color-success-2: #004A27;
+    
+    
+    
+    --color-data1-7: rgba(49,163,104,1);
+    
+    
+    
+    --color-data1-6: rgba(224,190,18,1);
+    
+    
+    
+    --color-data1-5: #FF6A00;
+    
+    
+    
+    --color-data1-4: rgba(225,81,86,1);
+    
+    
+    
+    --color-data1-2: rgba(0,123,233,1);
+    
+    
+    
+    --color-fill1-8: #8A8A8A;
+    
+    
+    
+    --color-fill1-7: #A8A8A8;
+    
+    
+    
+    --color-warning-4: rgba(255,163,66,1);
+    
+    
+    
+    --color-notice-3: rgba(0,72,143,1);
+    
+    
+    
+    --color-notice-2: rgba(2,48,94,1);
+    
+    
+    
+    --color-notice-1: rgba(0,26,51,1);
+    
+    
+    
+    --color-error-2: #560E0B;
+    
+    
+    
+    --color-help-5: #E0BE12;
+    
+    
+    
+    --color-help-6: #B5990B;
+    
+    
+    
+    --color-notice-6: #0066CC;
+    
+    
+    
+    --color-warning-5: #FF8D16;
+    
+    
+    
+    --color-help-4: #FADD46;
+    
+    
+    
+    --color-text1-1: #6B6B6B;
+    
+    
+    
+    --color-help-3: #8A7406;
+    
+    
+    
+    --color-help-2: #5E4F02;
+    
+    
+    
+    --color-help-1: #332B00;
+    
+    
+    
+    --color-error-3: #8C100B;
+    
+    
+    
+    --color-warning-3: #995106;
+    
+    
+    
+    --color-warning-2: #663502;
+    
+    
+    
+    --color-warning-1: #331A00;
+    
+    
+    
+    --color-line1-4: #151515;
+    
+    
+    
+    --color-success-1: #00331B;
+    
+    
+    
+    --color-other-2: #FFFFFF;
     
     
     /* ------------------------ search ------------------------ */
@@ -6276,6 +3524,26 @@
     
     
     
+    --btn-pure-secondary-color-active: var(--color-brand1-7, #4e9ff5);
+    
+    
+    
+    --btn-pure-primary-bg-hover: var(--color-brand1-7, #4e9ff5);
+    
+    
+    
+    --btn-pure-primary-bg-active: var(--color-brand1-5, #307ac9);
+    
+    
+    
+    --btn-text-primary-color: var(--color-brand1-6, #2789f2);
+    
+    
+    
+    --btn-text-primary-color-hover: var(--color-brand1-7, #4e9ff5);
+    
+    
+    
     --btn-size-s-border-width: var(--line-1, 1px);
     
     
@@ -6469,26 +3737,6 @@
     
     
     --btn-text-icon-l-margin: var(--s-1, 4px);
-    
-    
-    
-    --btn-pure-secondary-color-active: var(--color-brand1-7, #4e9ff5);
-    
-    
-    
-    --btn-pure-primary-bg-hover: var(--color-brand1-7, #4e9ff5);
-    
-    
-    
-    --btn-pure-primary-bg-active: var(--color-brand1-5, #307ac9);
-    
-    
-    
-    --btn-text-primary-color: var(--color-brand1-6, #2789f2);
-    
-    
-    
-    --btn-text-primary-color-hover: var(--color-brand1-7, #4e9ff5);
     
     
     /* ------------------------ balloon ------------------------ */
@@ -7033,6 +4281,18 @@
     
     
     
+    --radio-checked-hovered-bg-color: var(--color-brand1-2, #263c54);
+    
+    
+    
+    --radio-checked-hovered-border-color: var(--color-brand1-7, #4e9ff5);
+    
+    
+    
+    --radio-checked-hovered-circle-color: var(--color-brand1-6, #2789f2);
+    
+    
+    
     --radio-circle-border-width: var(--line-1, 1px);
     
     
@@ -7114,18 +4374,6 @@
     
     
     --radio-button-font-color-checked-disabled: var(--color-text1-1, #6B6B6B);
-    
-    
-    
-    --radio-checked-hovered-bg-color: var(--color-brand1-2, #263c54);
-    
-    
-    
-    --radio-checked-hovered-border-color: var(--color-brand1-7, #4e9ff5);
-    
-    
-    
-    --radio-checked-hovered-circle-color: var(--color-brand1-6, #2789f2);
     
     
     /* ------------------------ step ------------------------ */
@@ -9319,10 +6567,6 @@
     
     
     
-    --message-notice-color-icon-toast: var(--color-brand1-6, #2789f2);
-    
-    
-    
     --message-size-l-border-width: var(--line-1, 1px);
     
     
@@ -9559,10 +6803,6 @@
     
     
     
-    --message-help-color-icon-toast: var(--color-brand1-6, #2789f2);
-    
-    
-    
     --message-border-style-toast: var(--line-dotted, dotted);
     
     
@@ -9628,6 +6868,10 @@
     
     
     --message-size-m-content-margin-top: var(--s-1, 4px);
+    
+    
+    
+    --message-success-color-bg-toast: var(--color-line1-1, #262626);
     
     
     
@@ -9755,15 +6999,19 @@
     
     
     
-    --message-loading-color-icon-toast: var(--color-brand1-6, #2789f2);
-    
-    
-    
     --message-loading-icon-content: var(--icon-content-loading, "");
     
     
     
-    --message-success-color-bg-toast: var(--color-line1-1, #262626);
+    --message-notice-color-icon-toast: var(--color-notice-6, #0066CC);
+    
+    
+    
+    --message-help-color-icon-toast: var(--color-notice-6, #0066CC);
+    
+    
+    
+    --message-loading-color-icon-toast: var(--color-notice-6, #0066CC);
     
     
     /* ------------------------ dialog ------------------------ */
@@ -10615,10 +7863,6 @@
     
     
     
-    --tag-size-s-content-min-width: var(--s-8, 32px);
-    
-    
-    
     --tag-size-s-icon-font: var(--icon-xs, 12px);
     
     
@@ -10735,19 +7979,7 @@
     
     
     
-    --tag-fill-border-color: var(--color-notice-3, #00488f);
-    
-    
-    
-    --tag-fill-border-color-hover: var(--color-notice-6, #0066CC);
-    
-    
-    
     --tag-bordered-text-color: var(--color-text1-5, #a8a8a8);
-    
-    
-    
-    --tag-secondary-text-color: var(--color-notice-5, #007be9);
     
     
     
@@ -10755,19 +7987,7 @@
     
     
     
-    --tag-secondary-text-color-hover: var(--color-notice-4, #358fe9);
-    
-    
-    
-    --tag-secondary-border-color: var(--color-notice-5, #007be9);
-    
-    
-    
     --tag-checkable-normal-bg-selected: var(--color-transparent, transparent);
-    
-    
-    
-    --tag-secondary-border-color-hover: var(--color-notice-2, #02305e);
     
     
     
@@ -10780,14 +8000,6 @@
     
     
     --tag-secondary-bg: var(--color-transparent, transparent);
-    
-    
-    
-    --tag-fill-bg-color-hover: var(--color-notice-2, #02305e);
-    
-    
-    
-    --tag-secondary-bg-hover: var(--color-notice-2, #02305e);
     
     
     
@@ -10899,19 +8111,11 @@
     
     
     
-    --tag-checkable-primary-bg-color: var(--color-notice-5, #007be9);
-    
-    
-    
     --tag-checkable-primary-border-color: var(--color-transparent, transparent);
     
     
     
     --tag-checkable-primary-text-color-hover: var(--color-text1-4, #EAEAEA);
-    
-    
-    
-    --tag-checkable-primary-bg-color-hover: var(--color-notice-6, #0066CC);
     
     
     
@@ -10976,10 +8180,6 @@
     
     
     --tag-size-m-content-min-width: var(--s-10, 40px);
-    
-    
-    
-    --tag-size-l-content-min-width: var(--s-12, 48px);
     
     
     
@@ -11136,6 +8336,54 @@
     
     
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #6B6B6B);
+    
+    
+    
+    --tag-size-s-content-min-width: var(--s-1, 4px);
+    
+    
+    
+    --tag-size-l-content-min-width: var(--s-12, 48px);
+    
+    
+    
+    --tag-fill-border-color: var(--color-brand1-6, #2789f2);
+    
+    
+    
+    --tag-fill-border-color-hover: var(--color-brand1-6, #2789f2);
+    
+    
+    
+    --tag-secondary-text-color: var(--color-brand1-6, #2789f2);
+    
+    
+    
+    --tag-secondary-text-color-hover: var(--color-brand1-6, #2789f2);
+    
+    
+    
+    --tag-secondary-border-color: var(--color-brand1-6, #2789f2);
+    
+    
+    
+    --tag-secondary-border-color-hover: var(--color-brand1-6, #2789f2);
+    
+    
+    
+    --tag-fill-bg-color-hover: var(--color-brand1-2, #263c54);
+    
+    
+    
+    --tag-secondary-bg-hover: var(--color-brand1-2, #263c54);
+    
+    
+    
+    --tag-checkable-primary-bg-color: var(--color-brand1-6, #2789f2);
+    
+    
+    
+    --tag-checkable-primary-bg-color-hover: var(--color-brand1-6, #2789f2);
     
     
     /* ------------------------ input ------------------------ */
@@ -11597,6 +8845,10 @@
     
     
     --upload-card-add-text-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --upload-card-border-radius: var(--corner-zero, 0);
     
     
     
