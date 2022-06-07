@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-yunxiao-v1@0.13.4 (https://fusion.design)
- * @alifd/next@1.25.31 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.13.5 (https://fusion.design)
+ * @alifd/next@1.25.41 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -1798,8 +1798,8 @@ small {
 
 @font-face {
   font-family: NextIcon;
-  src: url("//at.alicdn.com/t/font_1984240_1tel1r5g38zj.eot");
-  src: url("//at.alicdn.com/t/font_1984240_1tel1r5g38zj.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1984240_1tel1r5g38zj.woff2") format("woff2"), url("//at.alicdn.com/t/font_1984240_1tel1r5g38zj.woff") format("woff"), url("//at.alicdn.com/t/font_1984240_1tel1r5g38zj.ttf") format("truetype"), url("//at.alicdn.com/t/font_1984240_1tel1r5g38zj.svg#NextIcon") format("svg");
+  src: url("//at.alicdn.com/t/font_1984240_apwvmhu0y5t.eot");
+  src: url("//at.alicdn.com/t/font_1984240_apwvmhu0y5t.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1984240_apwvmhu0y5t.woff2") format("woff2"), url("//at.alicdn.com/t/font_1984240_apwvmhu0y5t.woff") format("woff"), url("//at.alicdn.com/t/font_1984240_apwvmhu0y5t.ttf") format("truetype"), url("//at.alicdn.com/t/font_1984240_apwvmhu0y5t.svg#NextIcon") format("svg");
   font-display: swap; }
 
 .next-icon {
@@ -4271,6 +4271,7 @@ small {
     position: absolute;
     top: 0;
     right: 10px;
+    right: var(--menu-arrow-right, 10px);
     color: #B3B3B3;
     color: var(--menu-arrow-color, #B3B3B3);
     -webkit-transition: all 100ms linear;
@@ -14161,6 +14162,19 @@ small {
       height: calc(var(--nav-hoz-height, 44px) - var(--popup-local-border-width, 0px)*2);
       font-size: 14px;
       font-size: var(--nav-hoz-font-size, 14px); }
+    .next-nav.next-hoz .next-menu-item.next-nav-item.next-nav-with-title {
+      line-height: 1;
+      padding: 12px 8px; }
+      .next-nav.next-hoz .next-menu-item.next-nav-item.next-nav-with-title .next-menu-item-inner {
+        height: auto;
+        min-height: calc(44px - 0px*2);
+        min-height: calc(var(--nav-hoz-height, 44px) - var(--popup-local-border-width, 0px)*2); }
+      .next-nav.next-hoz .next-menu-item.next-nav-item.next-nav-with-title .next-nav-text {
+        display: block;
+        line-height: 1;
+        margin-top: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis; }
     .next-nav.next-hoz .next-nav-group-label .next-menu-item-inner {
       height: 40px;
       height: var(--nav-group-height, 40px);
@@ -14225,6 +14239,19 @@ small {
       height: var(--nav-ver-height, 36px);
       font-size: 14px;
       font-size: var(--nav-ver-font-size, 14px); }
+    .next-nav.next-ver .next-menu-item.next-nav-item.next-nav-with-title {
+      line-height: 1;
+      padding: 12px 8px; }
+      .next-nav.next-ver .next-menu-item.next-nav-item.next-nav-with-title .next-menu-item-inner {
+        height: auto;
+        min-height: 36px;
+        min-height: var(--nav-ver-height, 36px); }
+      .next-nav.next-ver .next-menu-item.next-nav-item.next-nav-with-title .next-nav-text {
+        display: block;
+        line-height: 1;
+        margin-top: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis; }
     .next-nav.next-ver .next-nav-group-label .next-menu-item-inner {
       height: 40px;
       height: var(--nav-group-height, 40px);
@@ -14725,6 +14752,9 @@ small {
       .next-nav.next-line .next-nav-item.next-menu-item.next-disabled .next-menu-item-text > a .next-menu-icon-selected {
         color: #6E6E6E;
         color: var(--nav-line-item-disabled-text-color, #6E6E6E); }
+  .next-nav.next-icon-only.next-icon-only-text {
+    padding-top: 4px;
+    padding-bottom: 4px; }
   .next-nav.next-icon-only.next-custom-icon-only-width {
     text-align: center; }
   .next-nav.next-icon-only .next-menu-item-inner {
@@ -14830,9 +14860,6 @@ small {
       font-size: 16px;
       font-size: var(--nav-icon-only-font-size, 16px);
       line-height: inherit; }
-  .next-nav.next-icon-only .next-nav-item.next-selected .next-nav-icon.next-icon {
-    -webkit-animation: pulse 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-            animation: pulse 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
   .next-nav.next-icon-only .next-menu-hoz-icon-arrow,
   .next-nav.next-icon-only .next-menu-icon-arrow {
     display: none; }
@@ -24123,7 +24150,10 @@ small {
       padding: 0px;
       padding: var(--upload-card-list-padding, 0px);
       background-color: transparent;
-      background-color: var(--upload-card-list-bg-color, transparent); }
+      background-color: var(--upload-card-list-bg-color, transparent);
+      border-radius: 0;
+      border-radius: var(--upload-card-border-radius, 0);
+      overflow: hidden; }
     .next-upload-list-card .next-upload-list-item-thumbnail {
       text-align: center;
       width: 100%;
@@ -24221,6 +24251,17 @@ small {
           border-right: 1px solid #FFFFFF; }
       .next-upload-list-card .next-upload-list-item .next-upload-tool-reupload {
         display: inline-block; }
+    .next-upload-list-card .next-upload-list-item .next-upload-card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
     .next-upload-list-card .next-upload-list-item-error .next-upload-list-item-wrapper {
       border-color: #F7AAA3;
       border-color: var(--upload-card-list-border-color-error, #F7AAA3); }
@@ -24229,6 +24270,8 @@ small {
     .next-upload-list-card.next-upload-ie9 .next-upload-tool-item {
       display: table-cell;
       width: 1%; }
+  .next-upload-list-card.next-upload-ie9 .next-upload-card {
+    display: table-cell; }
 
 .next-upload-card {
   border: 1px solid transparent;
@@ -24244,7 +24287,9 @@ small {
   -webkit-transition: border-color 100ms linear;
   transition: border-color 100ms linear;
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+  border-radius: 0;
+  border-radius: var(--upload-card-border-radius, 0); }
   .next-upload-card .next-icon {
     color: #6E6E6E;
     color: var(--upload-card-icon-color, #6E6E6E); }
