@@ -100,7 +100,8 @@ export default {
     clear: 'Xóa',
     hour: 'Giờ',
     minute: 'Phút',
-    second: 'Giây'
+    second: 'Giây',
+    ok: 'OK'
   },
   Transfer: {
     items: 'mục',

@@ -99,7 +99,8 @@ export default {
     clear: '清除',
     hour: '時',
     minute: '分',
-    second: '秒'
+    second: '秒',
+    ok: '確定'
   },
   Transfer: {
     items: '項',

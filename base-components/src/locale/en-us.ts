@@ -99,7 +99,8 @@ export default {
     clear: 'Clear',
     hour: 'H',
     minute: 'M',
-    second: 'S'
+    second: 'S',
+    ok: 'OK'
   },
   Transfer: {
     items: 'items',

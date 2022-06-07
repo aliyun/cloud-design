@@ -101,7 +101,8 @@ export default {
     clear: 'Cancella',
     hour: 'H',
     minute: 'M',
-    second: 'S'
+    second: 'S',
+    ok: 'OK'
   },
   Transfer: {
     items: 'articoli',
