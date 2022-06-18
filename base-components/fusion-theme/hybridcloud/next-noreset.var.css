@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.18.22 (https://fusion.design)
- * @alifd/next@1.25.38 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.19.0 (https://fusion.design)
+ * @alifd/next@1.25.43 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -1270,8 +1270,8 @@
 
 @font-face {
   font-family: NextIcon;
-  src: url("//at.alicdn.com/t/font_1984231_yiu36mc10cl.eot");
-  src: url("//at.alicdn.com/t/font_1984231_yiu36mc10cl.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1984231_yiu36mc10cl.woff2") format("woff2"), url("//at.alicdn.com/t/font_1984231_yiu36mc10cl.woff") format("woff"), url("//at.alicdn.com/t/font_1984231_yiu36mc10cl.ttf") format("truetype"), url("//at.alicdn.com/t/font_1984231_yiu36mc10cl.svg#NextIcon") format("svg");
+  src: url("//at.alicdn.com/t/font_1984231_d9bk76ly7rd.eot");
+  src: url("//at.alicdn.com/t/font_1984231_d9bk76ly7rd.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1984231_d9bk76ly7rd.woff2") format("woff2"), url("//at.alicdn.com/t/font_1984231_d9bk76ly7rd.woff") format("woff"), url("//at.alicdn.com/t/font_1984231_d9bk76ly7rd.ttf") format("truetype"), url("//at.alicdn.com/t/font_1984231_d9bk76ly7rd.svg#NextIcon") format("svg");
   font-display: swap; }
 
 .next-icon {
@@ -26830,6 +26830,10 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
   background: #0064C8;
   background: var(--color-brand1-6, #0064C8); }
 
+.next-icon-circle::before {
+  content: "\E6EC";
+  content: var(--icon-content-circle, "\E6EC"); }
+
 .next-icon-environment-o::before {
   content: "\E99C";
   content: var(--icon-content-environment-o, "\E99C"); }
@@ -27641,10 +27645,6 @@ div[dir="rtl"] .next-calendar2-table-week .next-calendar2-week-current .next-cal
 .next-icon-export::before {
   content: "\E727";
   content: var(--icon-content-export, "\E727"); }
-
-.next-icon-qrcode::before {
-  content: "\E68E";
-  content: var(--icon-content-qrcode, "\E68E"); }
 
 .next-icon-permission::before {
   content: "\E680";
