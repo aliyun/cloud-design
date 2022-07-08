@@ -14,6 +14,7 @@ import './theme-vars/yunxiao-dark.scss'
 import './theme-vars/aone.scss'
 import './theme-vars/teamix.scss'
 import './theme-vars/b-design.scss'
+import './theme-vars/atomgit.scss'
 
 // 引入moment中文文案
 import moment from 'moment'
