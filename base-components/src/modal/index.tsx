@@ -291,6 +291,9 @@ class Modal extends React.Component<
       sideDrawerVisible
     } = this.props
     const title = this.renderTitle()
+    // const refElement = ConfigProvider.useRefElement()
+    // const theme = window.getComputedStyle?.(refElement).getPropertyValue('--alicloudfe-components-theme') ?? ''
+
     return (
       <div className={`${prefix}modal-header`}>
         <div className="left-part">
