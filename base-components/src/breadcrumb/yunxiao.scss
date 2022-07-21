@@ -1,4 +1,4 @@
-.#{$css-prefix}breadcrumb-text {
-    line-height: 20px !important;
-    height: 20px !important;
+.#{$css-prefix}breadcrumb .#{$css-prefix}breadcrumb-item .#{$css-prefix}breadcrumb-text {
+    line-height: var(--font-lineheight-2, 1.5);
+    height: var(--s-5, 20px);
 }
