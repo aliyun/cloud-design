@@ -10,11 +10,11 @@ import { Select } from '@alicloudfe/components'
 
 const Option = Select.Option
 
-const onChange = function (value) {
+const onChange = function(value) {
   console.log(value)
 }
 
-const onToggleHighlightItem = function (item, type) {
+const onToggleHighlightItem = function(item, type) {
   console.log(item, type)
 }
 
@@ -40,8 +40,8 @@ export default function DemoComponent() {
         style={{ marginRight: 8 }}
       >
         <Option value="jack">Jack</Option>
-        <Option value="frank">Frank</Option>
-        <Option value="hugo">Hugo</Option>
+        <Option value={true}>Frank</Option>
+        <Option value={false}>Hugo</Option>
       </Select>
 
       <Select defaultValue="clear" hasClear style={{ marginRight: 8 }}>
