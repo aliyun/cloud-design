@@ -7,3 +7,11 @@
     line-height: 1.5;
   }
 }
+
+[class*="next-col-fixed-"] {
+  &.next-form-item-label {
+    label {
+      word-break: break-all;
+    }
+  }
+}

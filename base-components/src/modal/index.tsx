@@ -291,6 +291,7 @@ class Modal extends React.Component<
       sideDrawerVisible
     } = this.props
     const title = this.renderTitle()
+
     return (
       <div className={`${prefix}modal-header`}>
         <div className="left-part">
