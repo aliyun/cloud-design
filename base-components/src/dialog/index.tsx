@@ -105,6 +105,8 @@ const Dialog: React.FC<CustomDialogProps> & {
   alert: (config: CustomQuickShowConfig) => QuickShowRet
   error: (config: CustomQuickShowConfig) => QuickShowRet
   success: (config: CustomQuickShowConfig) => QuickShowRet
+  moderateAlert: (config: CustomQuickShowConfig) => QuickShowRet
+  severeAlert: (config: CustomQuickShowConfig) => QuickShowRet
 } = (props) => {
   const { size, ...others } = props
   const { prefix = 'next-' } = props
@@ -334,6 +336,48 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   })
 }
 
+const moderateAlert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
+  const theme = window
+    .getComputedStyle?.(window.document.body)
+    .getPropertyValue('--alicloudfe-components-theme')
+    .trim()
+  const { size, ...others } = config
+  return NextDialog.alert({
+    width: getQuickCustomWidth(size, theme),
+    footerActions: showDefaultFooterActions(theme),
+    messageProps: { type: 'warning' },
+    centered: isYunxiaoTheme(theme) ? false : true,
+    bottom: isYunxiaoTheme(theme) ? 40 : 80,
+    v2: true,
+    ...others,
+    okProps: {
+      warning: true,
+      ...others.okProps
+    }
+  })
+}
+
+const severeAlert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
+  const theme = window
+    .getComputedStyle?.(window.document.body)
+    .getPropertyValue('--alicloudfe-components-theme')
+    .trim()
+  const { size, ...others } = config
+  return NextDialog.alert({
+    width: getQuickCustomWidth(size, theme),
+    footerActions: showDefaultFooterActions(theme),
+    messageProps: { type: 'warning', className: 'message-severe-alert' },
+    centered: isYunxiaoTheme(theme) ? false : true,
+    bottom: isYunxiaoTheme(theme) ? 40 : 80,
+    v2: true,
+    ...others,
+    okProps: {
+      warning: true,
+      ...others.okProps
+    }
+  })
+}
+
 const error: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   const theme = window
     .getComputedStyle?.(window.document.body)
@@ -378,6 +422,8 @@ Dialog.confirm = confirm
 Dialog.alert = alert
 Dialog.error = error
 Dialog.success = success
+Dialog.moderateAlert = moderateAlert
+Dialog.severeAlert = severeAlert
 
 export type { DialogProps } from '@alifd/next/lib/dialog'
 export default Dialog
