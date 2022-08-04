@@ -40,6 +40,7 @@ class Demo extends React.Component {
           onCancel={this.onClose.bind(this, 'cancelClick')}
           onClose={this.onClose}
           size="small"
+          sidebar={<span>side bar</span>}
         >
           Start your business here by searching a popular product
         </Dialog>

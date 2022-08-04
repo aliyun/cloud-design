@@ -13,7 +13,9 @@ type CustomDialogProps = DialogProps & {
   /**
    * 抽屉大小
    */
-  size?: 'mini' | 'small' | 'medium' | 'large'
+  size?: 'mini' | 'small' | 'medium' | 'large',
+  // 侧边菜单栏
+  sidebar?: React.ReactNode,
 }
 
 type CustomQuickShowConfig = QuickShowConfig & {
@@ -106,7 +108,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   error: (config: CustomQuickShowConfig) => QuickShowRet
   success: (config: CustomQuickShowConfig) => QuickShowRet
 } = (props) => {
-  const { size, ...others } = props
+  const { size, sidebar, children, ...others } = props
   const { prefix = 'next-' } = props
   const theme = useCssVar('--alicloudfe-components-theme').trim()
 
@@ -189,7 +191,14 @@ const Dialog: React.FC<CustomDialogProps> & {
       bottom={isYunxiaoTheme(theme) ? 40 : 80}
       {...others}
       ref={customRef}
-    />
+    >
+      {
+        sidebar && <div className='next-dialog-sidebar'>{sidebar}</div>
+      }
+      {
+        children
+      }
+      </NextDialog>
   )
 }
 
