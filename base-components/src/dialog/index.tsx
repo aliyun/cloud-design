@@ -33,10 +33,10 @@ const sizeMap = {
 }
 
 const yunxiaoSizeMap = {
-  mini: 440,
-  small: 600,
+  mini: 480,
+  small: 640,
   medium: 800,
-  large: 1200
+  large: '70%'
 }
 
 // 获取常规Dialog size 大小
