@@ -227,7 +227,8 @@ const Drawer: React.FC<DrawerProps> & {
 
     const drawerCustomClassName = cls({
       [`${prefix}drawer-has-footer`]: onOk || onCancel || renderFooter,
-      [className]: !!className
+      [className]: !!className,
+      [`${prefix}drawer-large`]: size === 'large'
     })
 
     const drawerFooterClassName = cls({
