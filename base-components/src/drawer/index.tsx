@@ -57,6 +57,10 @@ interface IDrawer {
    */
   size?: 'mini' | 'small' | 'medium' | 'large'
   /**
+   * 侧边栏（yunxiao）
+   */
+     sidebar?: React.ReactNode,
+  /**
    * 引用方法
    */
   actionRef?: (
@@ -91,6 +95,20 @@ export type QuickShowDrawerRet = {
   show: () => void
 }
 
+const sizeMap = {
+  mini: 400,
+  small: 600,
+  medium: 800,
+  large: 1200
+}
+
+const yunxiaoSizeMap = {
+  mini: 480,
+  small: 640,
+  medium: 800,
+  large: '70%'
+}
+
 const Drawer: React.FC<DrawerProps> & {
   show: (config: quickShowDrawerProps) => QuickShowDrawerRet
 } = withThemeClass(
@@ -113,6 +131,7 @@ const Drawer: React.FC<DrawerProps> & {
       width,
       className,
       actionRef,
+      sidebar,
       ...filterProps
     } = props
 
@@ -225,17 +244,10 @@ const Drawer: React.FC<DrawerProps> & {
         return width
       }
       if (size) {
-        switch (size) {
-          case 'mini':
-            return 400
-          case 'small':
-            return 600
-          case 'medium':
-            return 800
-          case 'large':
-            return 1200
-          default:
-            return 400
+        if (theme.startsWith('yunxiao')) {
+          return yunxiaoSizeMap[size] || yunxiaoSizeMap['mini'];
+        } else {
+          return sizeMap[size] || sizeMap['mini'];
         }
       }
     }
@@ -248,6 +260,9 @@ const Drawer: React.FC<DrawerProps> & {
         width={getCustomWidth()}
         className={drawerCustomClassName}
       >
+        {
+          sidebar && <div className='next-drawer-sidebar'>{sidebar}</div>
+        }
         {children}
         {(onOk || onCancel || renderFooter) && (
           <div className={drawerFooterClassName}>
