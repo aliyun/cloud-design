@@ -107,8 +107,7 @@ class Modal extends React.Component<
 > {
   static defaultProps = {
     prefix: 'next-',
-    sideDrawerWidth: window.getComputedStyle?.(window.document.body).getPropertyValue('--alicloudfe-components-theme')
-                            .trim().startsWith('yunxiao') ? 480: 400,
+    sideDrawerWidth: 400,
     titleEditTooltip: '点击即可编辑',
     onClose: () => {},
     onBack: () => {},
