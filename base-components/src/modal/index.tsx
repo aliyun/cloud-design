@@ -64,9 +64,17 @@ export interface IModalProps {
    */
   description?: string
   /**
+   * 分组区
+   */
+  groups?: React.ReactNode
+  /**
    * 操作区
    */
   operations?: React.ReactNode
+  /**
+   * 页头下额外的操作区
+   */
+  extra?: React.ReactNode
   /**
    * 侧边栏内容
    */
@@ -99,7 +107,8 @@ class Modal extends React.Component<
 > {
   static defaultProps = {
     prefix: 'next-',
-    sideDrawerWidth: 400,
+    sideDrawerWidth: window.getComputedStyle?.(window.document.body).getPropertyValue('--alicloudfe-components-theme')
+                            .trim().startsWith('yunxiao') ? 480: 400,
     titleEditTooltip: '点击即可编辑',
     onClose: () => {},
     onBack: () => {},
@@ -285,6 +294,7 @@ class Modal extends React.Component<
     const {
       prefix,
       description,
+      groups,
       operations,
       sideDrawer,
       sideDrawerLabel,
@@ -297,6 +307,11 @@ class Modal extends React.Component<
         <div className="left-part">
           {title}
           <div className={`${prefix}modal-description`}>{description}</div>
+          {
+            groups && (
+              <div className={`${prefix}modal-groups`}>{groups}</div>
+            )
+          }
         </div>
         <div className="right-part">
           <div className={`${prefix}modal-operations`}>{operations}</div>
@@ -353,9 +368,17 @@ class Modal extends React.Component<
     )
   }
 
+  renderExtra = () => {
+    const { prefix, extra } = this.props;
+    return extra && (
+      <div className={`${prefix}modal-header-extra`}>{extra}</div>
+    );
+  }
+
   renderModal = () => {
     const { prefix, className, style } = this.props
     const header = this.renderHeader()
+    const extra = this.renderExtra()
     const body = this.renderBody()
     return (
       <div
@@ -366,6 +389,7 @@ class Modal extends React.Component<
         style={style}
       >
         {header}
+        {extra}
         {body}
       </div>
     )
