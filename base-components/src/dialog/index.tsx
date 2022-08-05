@@ -184,6 +184,7 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   return (
     <NextDialog
+      className={`${size === 'large' ? 'next-dialog-large' : ''}`}
       width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
       v2

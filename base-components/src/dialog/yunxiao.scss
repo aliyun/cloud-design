@@ -24,7 +24,10 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
 :not(.theme-hybridcloud),
 :not(.theme-hybridcloud-dark){
   #{$dialog-prefix} {
-    #{$dialog-prefix}-body {
+    &#{$dialog-prefix}-large {
+      min-width: 800px;
+    }
+    >#{$dialog-prefix}-body {
       display: flex;
       #{$dialog-prefix}-sidebar {
         width: 160px;
