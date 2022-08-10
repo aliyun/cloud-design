@@ -1,0 +1,16 @@
+.next-menu-btn {
+    .next-menu-btn-arrow {
+        opacity: 0.5;
+    }
+    &.next-btn-primary {
+        .next-menu-btn-arrow {
+            color: var(--color-white, #fff);
+        }
+    }
+
+    &.next-btn-text {
+        .next-menu-btn-arrow {
+            color: var(--color-fill1-6, #8b8b8b);
+        }
+    }
+}

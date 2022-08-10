@@ -15,6 +15,7 @@ import './theme-vars/aone.scss'
 import './theme-vars/teamix.scss'
 import './theme-vars/b-design.scss'
 import './theme-vars/atomgit.scss'
+import './theme-vars/yunxiao-v5.scss'
 
 // 引入moment中文文案
 import moment from 'moment'
@@ -33,7 +34,8 @@ const dataSource = [
   { label: 'Aone主题', value: 'theme-aone' },
   { label: 'Teamix主题', value: 'theme-teamix' },
   { label: 'B-design主题', value: 'theme-b-design' },
-  { label: 'atomgit主题', value: 'theme-atomgit' }
+  { label: 'atomgit主题', value: 'theme-atomgit' },
+  { label: 'yunxiao-v5主题', value: 'theme-yunxiao-v5' }
 ]
 
 // 支持动态加载fusionVar的主题的配置
@@ -76,7 +78,9 @@ const mapThemeToImport = {
   'theme-b-design': () =>
     import('../src/theme/b-design/index-no-var.scss?pureCSS'),
   'theme-atomgit': () =>
-    import('../src/theme/atomgit/index-no-var.scss?pureCSS')
+    import('../src/theme/atomgit/index-no-var.scss?pureCSS'),
+  'theme-yunxiao-v5': () =>
+    import('../src/theme/yunxiao-v5/index-no-var.scss?pureCSS')
 }
 
 const ToggleTheme: React.FC = () => {
