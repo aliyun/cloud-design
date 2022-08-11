@@ -1,8 +1,36 @@
 // 混合云、云效公共样式覆盖
 .next-dialog-footer {
   z-index: 3;
+
   &-has-shadow {
     box-shadow: var(--shadow-1-up);
     border-top: var(--drawer-footer-border-width, 1px) var(--line-solid, solid) var(--drawer-footer-border-color, var(--color-line1-1));
+  }
+}
+
+.next-dialog .next-dialog-header,.next-dialog-quick .next-message-title {
+  .next-dialog-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .next-dialog-header-extra {
+    display: flex;
+    align-items: center;
+    margin-right: -8px;
+  }
+
+  .next-dialog-header-line {
+    width: 1px;
+    height: 18px;
+    background-color: var(--color-fill1-4);
+    display: inline-block;
+    margin-left: 12px;
+  }
+
+}
+.next-dialog-quick .next-message-title {
+  .next-dialog-header-extra {
+    margin-right: -16px;
   }
 }
