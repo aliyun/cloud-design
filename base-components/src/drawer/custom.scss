@@ -7,3 +7,24 @@
   margin-left: var(--drawer-close-icon-ml, -16px);
   margin-top: var(--drawer-close-icon-mt, -6px);
 }
+
+.next-drawer .next-drawer-header {
+  .next-drawer-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .next-drawer-header-extra {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+  }
+
+  .next-drawer-header-line {
+    width: 1px;
+    height: 18px;
+    background-color: var(--color-fill1-4);
+    display: inline-block;
+    margin-left: 12px;
+  }
+}

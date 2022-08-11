@@ -67,6 +67,8 @@ interface IDrawer {
   ) => void
 
   className?: string
+  /** extra 区域 **/
+  extra?: React.ReactNode;
 }
 
 export type DrawerProps = NextDrawerProps & IDrawer
@@ -91,6 +93,25 @@ export type QuickShowDrawerRet = {
   show: () => void
 }
 
+// 渲染表头
+const renderTitle = (prefix: string, theme: string, title: React.ReactNode, extra: React.ReactNode) => {
+  if (!(theme.startsWith('hybridcloud') || theme.startsWith('hybridcloud-dark'))) {
+    return title
+  }
+  if (extra) {
+    return (
+      <div className={`${prefix}drawer-header-container`}>
+        <span className={`${prefix}drawer-header-title`}>{title}</span>
+        <span className={`${prefix}drawer-header-extra`}>{extra}
+          <div className={`${prefix}drawer-header-line`}></div>
+          </span>
+      </div>
+    )
+  }
+  return title
+}
+
+
 const Drawer: React.FC<DrawerProps> & {
   show: (config: quickShowDrawerProps) => QuickShowDrawerRet
 } = withThemeClass(
@@ -113,6 +134,8 @@ const Drawer: React.FC<DrawerProps> & {
       width,
       className,
       actionRef,
+      title,
+      extra,
       ...filterProps
     } = props
 
@@ -243,6 +266,7 @@ const Drawer: React.FC<DrawerProps> & {
     return (
       <NextDrawer
         {...filterProps}
+        title={renderTitle(prefix, theme, title, extra)}
         ref={ref ? ref : customRef}
         visible={customVisible}
         width={getCustomWidth()}

@@ -43,6 +43,7 @@ export default function DemoComponent() {
   const DrawerAProps = {
     title: 'AlertA',
     size: 'small',
+    extra: <Button text>如何创建安全组</Button>,
     onOk: () => {
       setTimeout(() => {
         setC(
