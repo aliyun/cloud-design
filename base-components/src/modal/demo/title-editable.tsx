@@ -34,7 +34,6 @@ const Demo = () => {
                 <Tab.Item key="api" title="API"/>
                 <Tab.Item key="repo" title="Repo"/>
               </Tab>
-              <Icon type="ellipsis"/>
             </>
           }
           hasArrow

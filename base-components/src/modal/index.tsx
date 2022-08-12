@@ -289,6 +289,11 @@ class Modal extends React.Component<
     )
   }
 
+  isYunxiaoTheme = () => {
+    const theme = window.getComputedStyle(window.document.body).getPropertyValue('--alicloudfe-components-theme') || ''
+    return theme.trim().startsWith('yunxiao')
+  }
+
   renderHeader = () => {
     const {
       prefix,
@@ -306,12 +311,14 @@ class Modal extends React.Component<
         <div className="left-part">
           {title}
           <div className={`${prefix}modal-description`}>{description}</div>
-          {
-            groups && (
-              <div className={`${prefix}modal-groups`}>{groups}</div>
-            )
-          }
         </div>
+        {
+          this.isYunxiaoTheme() && groups && (
+            <div className="middle-part">
+              <div className={`${prefix}modal-groups`}>{groups}</div>
+            </div>
+          )
+        }
         <div className="right-part">
           <div className={`${prefix}modal-operations`}>{operations}</div>
           {sideDrawer ? (
@@ -388,7 +395,7 @@ class Modal extends React.Component<
         style={style}
       >
         {header}
-        {extra}
+        {this.isYunxiaoTheme() && extra}
         {body}
       </div>
     )

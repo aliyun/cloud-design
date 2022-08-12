@@ -59,7 +59,7 @@ const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
 // 判断是否是云效主题，云效主题的 Dialog 局顶
 const isYunxiaoTheme = (theme: string) => {
   return theme === 'yunxiao' ||
-  theme === 'yunxiao-dark'
+  theme === 'yunxiao-dark' || theme.startsWith('yunxiao')
 }
 
 // 获取快捷调用 size 大小
@@ -194,7 +194,7 @@ const Dialog: React.FC<CustomDialogProps> & {
       ref={customRef}
     >
       {
-        sidebar && <div className='next-dialog-sidebar'>{sidebar}</div>
+        isYunxiaoTheme(theme) && sidebar && <div className='next-dialog-sidebar'>{sidebar}</div>
       }
       {
         children
