@@ -37,9 +37,6 @@ const Demo = () => {
             </>
           }
           hasArrow
-          extra={
-            <span>extra part</span>
-          }
           description="这是一段描述"
           operations={
             <>

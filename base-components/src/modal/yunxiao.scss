@@ -1,10 +1,16 @@
 .next-modal-header {
   height: var(--modal-header-height, 56px);
   padding: var(--s-2) var(--s-8);
+  gap: 64px;
 
   .left-part {
     display: flex;
     align-items: center;
+    & > * {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
   }
 
   .right-part {
@@ -43,7 +49,6 @@
   }
 
   .next-modal-groups {
-    margin-right: 64px;
     display: flex;
     align-items: center;
   }
@@ -62,7 +67,7 @@
 }
 .next-modal-body {
   height: calc(100% - var(--modal-header-height, 56px));
-  padding: 0 32px;
+  padding: 0 20px;
   background: var(--color-fill1-1, #fff);
 }
 .next-modal {
