@@ -96,6 +96,7 @@ export default function DemoComponent() {
           {yunxiaoStatus.map(color => (
             <Tag
               size="large"
+              hoverUnchangable
               key={`p_n_${color}`}
               color={color}
               icon={<Icon type="warning" />}
@@ -108,7 +109,7 @@ export default function DemoComponent() {
         <h4>yunxiao colors</h4>
         <TagGroup>
           {yunxiao.map(color => (
-            <Tag key={`p_n_${color}`} color={color}>
+            <Tag key={`p_n_${color}`} color={color} hoverUnchangable>
               {color}
             </Tag>
           ))}

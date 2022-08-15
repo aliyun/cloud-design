@@ -10,7 +10,8 @@ type NextTagProps = React.ComponentProps<typeof NextTag>
 
 export type TagProps = {
   /** icon */
-  icon?: React.ReactNode
+  icon?: React.ReactNode,
+  hoverUnchangable?: Boolean
 } & NextTagProps
 
 const Tag: React.FC<TagProps> & {
@@ -21,7 +22,7 @@ const Tag: React.FC<TagProps> & {
   withThemeClass(
     React.forwardRef((props: TagProps, ref) => {
       const { children, color, prefix = 'next-' } = props
-      const { className, icon, ...others } = props
+      const { className, icon, hoverUnchangable, ...others } = props
 
       const theme = useCssVar('--alicloudfe-components-theme').trim()
 
@@ -37,7 +38,8 @@ const Tag: React.FC<TagProps> & {
             className={cls(
               {
                 [`${prefix}tag-custom-${color}`]: true,
-                [`${prefix}tag-has-icon`]: icon
+                [`${prefix}tag-has-icon`]: icon,
+                [`${prefix}tag-hover-unchange`]: hoverUnchangable
               },
               className
             )}
