@@ -39,7 +39,7 @@ const Tag: React.FC<TagProps> & {
               {
                 [`${prefix}tag-custom-${color}`]: true,
                 [`${prefix}tag-has-icon`]: icon,
-                [`${prefix}tag-hover-unchange`]: hoverUnchangable
+                [`${prefix}tag-hover-unchange`]: theme.startsWith('yunxiao') && hoverUnchangable
               },
               className
             )}
