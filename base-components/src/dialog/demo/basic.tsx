@@ -35,6 +35,7 @@ class Demo extends React.Component {
         </Button>
         <Dialog
           title="Welcome to Alibaba.com"
+          extra={<Button text>如何创建安全组</Button>}
           visible={this.state.visible}
           onOk={this.onClose.bind(this, 'okClick')}
           onCancel={this.onClose.bind(this, 'cancelClick')}

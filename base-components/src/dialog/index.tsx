@@ -16,13 +16,15 @@ type CustomDialogProps = DialogProps & {
   size?: 'mini' | 'small' | 'medium' | 'large',
   // 侧边菜单栏
   sidebar?: React.ReactNode,
+  /** extra 区域 **/
+  extra?: React.ReactNode;
 }
 
 type CustomQuickShowConfig = QuickShowConfig & {
-  /**
-   * 抽屉大小
-   */
+  /** 抽屉大小 */
   size?: 'mini' | 'small' | 'medium' | 'large'
+  /** extra 区域 **/
+  extra?: React.ReactNode;
 }
 
 const sizeMap = {
@@ -74,7 +76,7 @@ const getQuickCustomWidth = (
     return sizeWidth
   }
   // 云效主题返回非法值，以可使fusion的width默认值失效，兼容历史通过className设置的宽度的场景
-   if (theme.startsWith('yunxiao')) {
+  if (theme.startsWith('yunxiao')) {
     return 'null'
   }
 
@@ -101,6 +103,24 @@ const setFooterShadow = (dom, prefix) => {
   }
 }
 
+// 渲染表头
+const renderTitle = (prefix: string, theme: string, title: React.ReactNode, extra: React.ReactNode) => {
+  if (!(theme.startsWith('hybridcloud') || theme.startsWith('hybridcloud-dark'))) {
+    return title
+  }
+  if (extra) {
+    return (
+      <div className={`${prefix}dialog-header-container`}>
+        <span className={`${prefix}dialog-header-title`}>{title}</span>
+        <span className={`${prefix}dialog-header-extra`}>{extra}
+          <div className={`${prefix}dialog-header-line`}></div>
+          </span>
+      </div>
+    )
+  }
+  return title
+}
+
 const Dialog: React.FC<CustomDialogProps> & {
   show: (config: CustomQuickShowConfig) => QuickShowRet
   confirm: (config: CustomQuickShowConfig) => QuickShowRet
@@ -108,7 +128,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   error: (config: CustomQuickShowConfig) => QuickShowRet
   success: (config: CustomQuickShowConfig) => QuickShowRet
 } = (props) => {
-  const { size, sidebar, children, ...others } = props
+  const { size, sidebar, extra, title, children, ...others } = props
   const { prefix = 'next-' } = props
   const theme = useCssVar('--alicloudfe-components-theme').trim()
 
@@ -185,6 +205,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   return (
     <NextDialog
       className={`${size === 'large' ? 'next-dialog-large' : ''}`}
+      title={renderTitle(prefix, theme , title, extra)}
       width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
       v2
@@ -226,7 +247,7 @@ const showDefaultMinMargin = (theme: string) => {
 
 // 快捷调用的操作按钮顺序
 const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
-  const { size, type, ...others } = config
+  const { size, type, title, extra, ...others } = config
   const { prefix = 'next-' } = config
 
   const theme = window
@@ -294,6 +315,7 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     bottom: isYunxiaoTheme(theme) ? 40 : 80,
     // shouldUpdatePosition: true,
     type,
+    title: renderTitle(prefix, theme , title, extra),
     ...others,
     // 将Dialog.show与其他quick弹窗区分出来，单独做样式覆盖，
     // 因为它的body是不包含Message的
@@ -309,7 +331,8 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .getComputedStyle?.(window.document.body)
     .getPropertyValue('--alicloudfe-components-theme')
     .trim()
-  const { size, style, ...others } = config
+  const { size, style, title, extra, ...others } = config
+  const { prefix = 'next-' } = config
   return NextDialog.confirm({
     width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
@@ -319,6 +342,7 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: isYunxiaoTheme(theme) ? false : true,
     bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
+    title: renderTitle(prefix, theme , title, extra),
     // shouldUpdatePosition: true,
     ...others
   })
@@ -329,7 +353,8 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .getComputedStyle?.(window.document.body)
     .getPropertyValue('--alicloudfe-components-theme')
     .trim()
-  const { size, ...others } = config
+  const { size, title, extra, ...others } = config
+  const { prefix = 'next-' } = config
   return NextDialog.alert({
     width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
@@ -340,6 +365,7 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: isYunxiaoTheme(theme) ? false : true,
     bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
+    title: renderTitle(prefix, theme , title, extra),
     ...others
   })
 }
@@ -349,7 +375,8 @@ const error: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .getComputedStyle?.(window.document.body)
     .getPropertyValue('--alicloudfe-components-theme')
     .trim()
-  const { size, ...others } = config
+  const { size, title, extra, ...others } = config
+  const { prefix = 'next-' } = config
   return NextDialog.alert({
     width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
@@ -357,6 +384,7 @@ const error: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: isYunxiaoTheme(theme) ? false : true,
     bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
+    title: renderTitle(prefix, theme , title, extra),
     ...others,
     okProps: {
       warning: true,
@@ -370,7 +398,8 @@ const success: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     .getComputedStyle?.(window.document.body)
     .getPropertyValue('--alicloudfe-components-theme')
     .trim()
-  const { size, ...others } = config
+  const { size, title, extra, ...others } = config
+  const { prefix = 'next-' } = config
   return NextDialog.alert({
     width: getQuickCustomWidth(size, theme),
     footerActions: showDefaultFooterActions(theme),
@@ -378,6 +407,7 @@ const success: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: isYunxiaoTheme(theme) ? false : true,
     bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
+    title: renderTitle(prefix, theme , title, extra),
     ...others
   })
 }

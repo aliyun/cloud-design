@@ -17,6 +17,7 @@ import {
 const popupAlert = () => {
   Dialog.alert({
     title: 'Alert',
+    extra: (<Button text>如何创建安全组</Button>),
     content: <Message type="notice">alert content alert content...</Message>,
     okProps: { children: 'Custom OK' },
     style: { width: 1000 },
@@ -56,6 +57,7 @@ const popupConfirm = () => {
 const popupShow = () => {
   const dialog = Dialog.show({
     title: 'Custom',
+    extra: (<Button text>如何创建安全组</Button>),
     content: 'custom content custom content...',
     footer: (
       <Button warning type="primary" onClick={() => dialog.hide()}>

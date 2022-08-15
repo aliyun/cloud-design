@@ -35,6 +35,7 @@ class Demo extends React.Component {
         </Button>
         <Drawer
           title="标题"
+          extra={<Button text>如何创建安全组</Button>}
           placement="right"
           width={400}
           visible={this.state.visible}
