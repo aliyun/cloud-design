@@ -13,7 +13,9 @@ type CustomDialogProps = DialogProps & {
   /**
    * 抽屉大小
    */
-  size?: 'mini' | 'small' | 'medium' | 'large'
+  size?: 'mini' | 'small' | 'medium' | 'large',
+  // 侧边菜单栏
+  sidebar?: React.ReactNode,
 }
 
 type CustomQuickShowConfig = QuickShowConfig & {
@@ -31,10 +33,10 @@ const sizeMap = {
 }
 
 const yunxiaoSizeMap = {
-  mini: 440,
-  small: 600,
+  mini: 480,
+  small: 640,
   medium: 800,
-  large: 1200
+  large: '70%'
 }
 
 // 获取常规Dialog size 大小
@@ -57,7 +59,7 @@ const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
 // 判断是否是云效主题，云效主题的 Dialog 局顶
 const isYunxiaoTheme = (theme: string) => {
   return theme === 'yunxiao' ||
-  theme === 'yunxiao-dark'
+  theme === 'yunxiao-dark' || theme.startsWith('yunxiao')
 }
 
 // 获取快捷调用 size 大小
@@ -106,7 +108,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   error: (config: CustomQuickShowConfig) => QuickShowRet
   success: (config: CustomQuickShowConfig) => QuickShowRet
 } = (props) => {
-  const { size, ...others } = props
+  const { size, sidebar, children, ...others } = props
   const { prefix = 'next-' } = props
   const theme = useCssVar('--alicloudfe-components-theme').trim()
 
@@ -182,6 +184,7 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   return (
     <NextDialog
+      className={`${size === 'large' ? 'next-dialog-large' : ''}`}
       width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
       v2
@@ -189,7 +192,14 @@ const Dialog: React.FC<CustomDialogProps> & {
       bottom={isYunxiaoTheme(theme) ? 40 : 80}
       {...others}
       ref={customRef}
-    />
+    >
+      {
+        isYunxiaoTheme(theme) && sidebar && <div className='next-dialog-sidebar'>{sidebar}</div>
+      }
+      {
+        children
+      }
+      </NextDialog>
   )
 }
 

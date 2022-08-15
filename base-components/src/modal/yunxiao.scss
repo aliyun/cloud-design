@@ -1,6 +1,17 @@
 .next-modal-header {
-  height: var(--modal-header-height, 48px);
+  height: var(--modal-header-height, 56px);
   padding: var(--s-2) var(--s-8);
+  gap: 64px;
+
+  .left-part {
+    display: flex;
+    align-items: center;
+    & > * {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
 
   .right-part {
     .next-btn-text.next-medium > .next-btn-icon.next-icon-alone:before {
@@ -37,12 +48,27 @@
     }
   }
 
+  .next-modal-groups {
+    display: flex;
+    align-items: center;
+  }
 }
+
+.next-modal-header-extra {
+  height: 56px;
+  padding: 8px 32px;
+  background: var(--color-fill1-1, #fff);
+  border-top: 1px solid var(--color-line1-1, #e8e8e8);
+  border-bottom: 1px solid var(--color-line1-1, #e8e8e8);
+}
+
 .next-modal-body .next-modal-children {
   background: var(--color-fill1-1, #fff);
 }
 .next-modal-body {
-  height: calc(100% - var(--modal-header-height, 48px));
+  height: calc(100% - var(--modal-header-height, 56px));
+  padding: 0 20px;
+  background: var(--color-fill1-1, #fff);
 }
 .next-modal {
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);

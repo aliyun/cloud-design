@@ -64,9 +64,17 @@ export interface IModalProps {
    */
   description?: string
   /**
+   * 分组区
+   */
+  groups?: React.ReactNode
+  /**
    * 操作区
    */
   operations?: React.ReactNode
+  /**
+   * 页头下额外的操作区
+   */
+  extra?: React.ReactNode
   /**
    * 侧边栏内容
    */
@@ -281,10 +289,16 @@ class Modal extends React.Component<
     )
   }
 
+  isYunxiaoTheme = () => {
+    const theme = window.getComputedStyle(window.document.body)?.getPropertyValue('--alicloudfe-components-theme') || ''
+    return theme.trim().startsWith('yunxiao')
+  }
+
   renderHeader = () => {
     const {
       prefix,
       description,
+      groups,
       operations,
       sideDrawer,
       sideDrawerLabel,
@@ -298,6 +312,13 @@ class Modal extends React.Component<
           {title}
           <div className={`${prefix}modal-description`}>{description}</div>
         </div>
+        {
+          this.isYunxiaoTheme() && groups && (
+            <div className="middle-part">
+              <div className={`${prefix}modal-groups`}>{groups}</div>
+            </div>
+          )
+        }
         <div className="right-part">
           <div className={`${prefix}modal-operations`}>{operations}</div>
           {sideDrawer ? (
@@ -353,9 +374,17 @@ class Modal extends React.Component<
     )
   }
 
+  renderExtra = () => {
+    const { prefix, extra } = this.props;
+    return extra && (
+      <div className={`${prefix}modal-header-extra`}>{extra}</div>
+    );
+  }
+
   renderModal = () => {
     const { prefix, className, style } = this.props
     const header = this.renderHeader()
+    const extra = this.renderExtra()
     const body = this.renderBody()
     return (
       <div
@@ -366,6 +395,7 @@ class Modal extends React.Component<
         style={style}
       >
         {header}
+        {this.isYunxiaoTheme() && extra}
         {body}
       </div>
     )
