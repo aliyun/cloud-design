@@ -54,7 +54,7 @@ const CreateDemo = () => {
   return (
     <div>
       <Radio.Group
-        style={{ padding: 30 }}
+        style={{ marginBottom: 30 }}
         shape="button"
         value={direction}
         onChange={setDirection}

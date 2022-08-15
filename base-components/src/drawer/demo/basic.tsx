@@ -39,6 +39,7 @@ class Demo extends React.Component {
           width={400}
           visible={this.state.visible}
           onClose={this.onClose}
+          sidebar={<>sidebar</>}
         >
           Start your business here by searching a popular product
         </Drawer>
