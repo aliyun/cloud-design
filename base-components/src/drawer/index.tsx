@@ -267,7 +267,7 @@ const Drawer: React.FC<DrawerProps> & {
         return width
       }
       if (size) {
-        if (theme.startsWith('yunxiao')) {
+        if (theme === 'yunxiao-v5') {
           return yunxiaoSizeMap[size] || yunxiaoSizeMap['mini'];
         } else {
           return sizeMap[size] || sizeMap['mini'];
