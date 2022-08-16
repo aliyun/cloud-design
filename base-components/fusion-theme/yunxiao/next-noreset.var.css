@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-yunxiao-v1@0.14.3 (https://fusion.design)
- * @alifd/next@1.25.45 (https://fusion.design)
+ * @alife/theme-yunxiao-v1@0.14.4 (https://fusion.design)
+ * @alifd/next@1.25.47 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -6989,8 +6989,8 @@
       color: var(--checkbox-disabled-circle-color, #adadad);
       opacity: 1; }
   .next-checkbox-wrapper.disabled .next-checkbox-label {
-    color: #adadad;
-    color: var(--checkbox-disabled-label-color, #adadad);
+    color: #8B8B8B;
+    color: var(--checkbox-disabled-label-color, #8B8B8B);
     cursor: not-allowed; }
 
 .next-checkbox-group .next-checkbox-wrapper {
@@ -25100,8 +25100,12 @@ h6.next-typography-title {
     color: #292929;
     color: var(--table-row-hover-color, #292929); }
   .next-table-tree-placeholder {
-    display: inline-block;
-    width: 12px; }
+    visibility: hidden; }
+    .next-table-tree-placeholder:before,
+    .next-table-tree-placeholder .next-icon-remote {
+      width: 16px;
+      font-size: 16px;
+      line-height: inherit; }
 
 .last .next-table-expanded-row td {
   border-bottom-width: 1px; }

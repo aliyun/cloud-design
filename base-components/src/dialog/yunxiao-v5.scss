@@ -19,6 +19,26 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
 //   }
 // }
 
+.theme-yunxiao
+.theme-yunxiao-dark,
+:not(.theme-hybridcloud),
+:not(.theme-hybridcloud-dark){
+  #{$dialog-prefix} {
+    &#{$dialog-prefix}-large {
+      min-width: 800px;
+    }
+    >#{$dialog-prefix}-body {
+      display: flex;
+      #{$dialog-prefix}-sidebar {
+        width: 160px;
+        margin: -16px 20px -16px -20px;
+        padding: 16px 20px;
+        border-right: 1px solid var(--color-line1-1, #e8e8e8);
+      }
+    }
+  }
+}
+
 .theme-yunxiao,
 .theme-yunxiao-dark,
 :not(.theme-hybridcloud),

@@ -25,6 +25,7 @@ const Demo: React.FC = () => {
         onClose={closeHandle}
         hasFooterLine
         footerAlign="left"
+        sidebar={<span>sidebar</span>}
         renderFooter={
           <>
             <Button style={{ marginRight: 8 }} onClick={() => { setVisible(false) }}>取消</Button>
