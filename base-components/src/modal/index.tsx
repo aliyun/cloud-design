@@ -291,7 +291,7 @@ class Modal extends React.Component<
 
   isYunxiaoTheme = () => {
     const theme = window.getComputedStyle(window.document.body)?.getPropertyValue('--alicloudfe-components-theme') || ''
-    return theme.trim().startsWith('yunxiao')
+    return theme.trim().startsWith('yunxiao-v5')
   }
 
   renderHeader = () => {

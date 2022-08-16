@@ -35,6 +35,14 @@ const sizeMap = {
 }
 
 const yunxiaoSizeMap = {
+  mini: 440,
+  small: 600,
+  medium: 800,
+  large: 1200
+}
+
+// yunxiao v5测试主题
+const yunxiaoV5SizeMap = {
   mini: 480,
   small: 640,
   medium: 800,
@@ -44,7 +52,7 @@ const yunxiaoSizeMap = {
 // 获取常规Dialog size 大小
 const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   const sizeWidth = theme.startsWith('yunxiao')
-    ? yunxiaoSizeMap[size]
+    ? (theme === 'yunxiao-v5' ? yunxiaoV5SizeMap : yunxiaoSizeMap[size] )
     : sizeMap[size]
   if (sizeWidth) {
     return sizeWidth
@@ -217,7 +225,7 @@ const Dialog: React.FC<CustomDialogProps> & {
       ref={customRef}
     >
       {
-        isYunxiaoTheme(theme) && sidebar && <div className='next-dialog-sidebar'>{sidebar}</div>
+        theme === 'yunxiao-v5' && sidebar && <div className='next-dialog-sidebar'>{sidebar}</div>
       }
       {
         children

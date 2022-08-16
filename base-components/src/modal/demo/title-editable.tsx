@@ -36,8 +36,6 @@ const Demo = () => {
               </Tab>
             </>
           }
-          hasArrow
-          description="这是一段描述"
           operations={
             <>
               <Button type="secondary">

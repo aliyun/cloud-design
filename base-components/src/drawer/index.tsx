@@ -285,7 +285,7 @@ const Drawer: React.FC<DrawerProps> & {
         className={drawerCustomClassName}
       >
         {
-          theme.startsWith('yunxiao') && sidebar && <div className='next-drawer-sidebar'>{sidebar}</div>
+          theme.startsWith('yunxiao-v5') && sidebar && <div className='next-drawer-sidebar'>{sidebar}</div>
         }
         {children}
         {(onOk || onCancel || renderFooter) && (
