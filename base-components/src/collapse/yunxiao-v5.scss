@@ -1,0 +1,17 @@
+.next-collapse-panel {
+    border-radius: 4px;
+    .next-collapse-panel-title {
+        border-radius: 4px;
+    }
+    &.next-collapse-panel-expanded {
+        .next-collapse-panel-title {
+            background-color: var(--color-fill1-3, #e8e8e8);
+        }
+    }
+}
+
+.next-collapse{
+    .next-collapse-panel:not(:last-child) {
+        margin-bottom: 2px;
+    }
+}

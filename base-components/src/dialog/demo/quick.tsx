@@ -1,6 +1,6 @@
 /**
  * @title 快捷调用
- * @description `Dialog` 提供 `alert` 和 `confirm` 的快掉调用方式，以及更底层的 `show` 方式。
+ * @description `Dialog` 提供 `alert` 和 `confirm` 的快掉调用方式，以及更底层的 `show` 方式。moderateAlert 和 severeAlert 仅在 yunxiao 主题下样式生效。
  */
 
 import * as React from 'react'
@@ -21,6 +21,20 @@ const popupAlert = () => {
     content: <Message type="notice">alert content alert content...</Message>,
     okProps: { children: 'Custom OK' },
     style: { width: 1000 },
+    onOk: () => console.log('ok')
+  })
+}
+
+const popupModerateAlert = () => {
+  Dialog.moderateAlert({
+    title: 'Moderate Alert',
+    onOk: () => console.log('ok')
+  })
+}
+
+const popupSevereAlert = () => {
+  Dialog.severeAlert({
+    title: 'Severe Alert',
     onOk: () => console.log('ok')
   })
 }
@@ -95,6 +109,8 @@ export default function DemoComponent() {
     <ConfigProvider locale={{ Dialog: { ok: 'OK', cancel: 'Cancel' } }}>
       <Box direction="row" spacing={20}>
         <Button onClick={popupAlert}>Alert</Button>
+        <Button onClick={popupModerateAlert}>Moderate Alert</Button>
+        <Button onClick={popupSevereAlert}>Severe Alert</Button>
         <Button onClick={popupError}>Error</Button>
         <Button onClick={popupSuccess}>Success</Button>
         <Button onClick={popupConfirm}>Confirm</Button>

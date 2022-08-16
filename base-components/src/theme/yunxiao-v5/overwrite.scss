@@ -1,0 +1,71 @@
+// 云效主题独有样式覆盖
+
+@import '../../tab/yunxiao-v5.scss';
+@import '../../menu/custom.scss';
+@import '../../dialog/yunxiao-v5.scss';
+@import '../../dialog/custom.scss';
+@import '../../tag/custom.scss';
+@import '../../tag/yunxiao.scss';
+@import '../../input/custom.scss';
+@import '../../input/yunxiao-v5.scss';
+@import '../../menu-button/custom.scss';
+@import '../../notification/custom.scss';
+@import '../../message/custom.scss';
+@import '../../select/custom.scss';
+@import '../../split-button/custom.scss';
+@import '../../icon/custom.scss';
+@import '../../step/custom.scss';
+@import '../../tree/custom.scss';
+@import '../../checkbox/yunxiao.scss';
+@import '../../time-picker/custom.scss';
+@import '../../number-picker/yunxiao-v5.scss';
+@import '../../form/yunxiao.scss';
+@import '../../drawer/custom.scss';
+@import '../../date-picker2/custom.scss';
+@import '../../table/custom.scss';
+@import '../../table/yunxiao.scss';
+@import '../../calendar2/main.scss';
+@import '../../card/yunxiao.scss';
+@import '../../tab/custom.scss';
+@import '../../balloon/custom.scss';
+@import '../../select/yunxiao-v5.scss';
+@import '../../modal/yunxiao-v5.scss';
+@import '../../divider/custom.scss';
+@import '../../radio/yunxiao.scss';
+@import '../../search/yunxiao.scss';
+@import '../../range/custom.scss';
+@import '../../switch/yunxiao.scss';
+@import '../../breadcrumb/yunxiao.scss';
+@import '../../split-button/yunxiao-v5.scss';
+@import '../../menu-button/yunxiao-v5.scss';
+@import '../../button/yunxiao-v5.scss';
+@import '../../transfer/yunxiao-v5.scss';
+@import '../../menu/yunxiao-v5.scss';
+@import '../../collapse/yunxiao-v5.scss';
+@import '../../step/yunxiao-v5.scss';
+@import '../../drawer/yunxiao-v5.scss';
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant: tabular-nums;
+  font-feature-settings: "tnum","tnum";
+}
+
+.isWindows {
+// 谷歌浏览器
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #cecece;
+}
+* {
+  // 火狐浏览器
+  scrollbar-color: light;
+  scrollbar-width: thin;
+}
+}

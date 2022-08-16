@@ -57,6 +57,10 @@ interface IDrawer {
    */
   size?: 'mini' | 'small' | 'medium' | 'large'
   /**
+   * 侧边栏（yunxiao）
+   */
+     sidebar?: React.ReactNode,
+  /**
    * 引用方法
    */
   actionRef?: (
@@ -93,6 +97,19 @@ export type QuickShowDrawerRet = {
   show: () => void
 }
 
+const sizeMap = {
+  mini: 400,
+  small: 600,
+  medium: 800,
+  large: 1200
+}
+
+const yunxiaoSizeMap = {
+  mini: 480,
+  small: 640,
+  medium: 800,
+  large: '70%'
+}
 // 渲染表头
 const renderTitle = (prefix: string, theme: string, title: React.ReactNode, extra: React.ReactNode) => {
   if (!(theme.startsWith('hybridcloud') || theme.startsWith('hybridcloud-dark'))) {
@@ -134,6 +151,7 @@ const Drawer: React.FC<DrawerProps> & {
       width,
       className,
       actionRef,
+      sidebar,
       title,
       extra,
       ...filterProps
@@ -231,7 +249,8 @@ const Drawer: React.FC<DrawerProps> & {
 
     const drawerCustomClassName = cls({
       [`${prefix}drawer-has-footer`]: onOk || onCancel || renderFooter,
-      [className]: !!className
+      [className]: !!className,
+      [`${prefix}drawer-large`]: size === 'large'
     })
 
     const drawerFooterClassName = cls({
@@ -248,17 +267,10 @@ const Drawer: React.FC<DrawerProps> & {
         return width
       }
       if (size) {
-        switch (size) {
-          case 'mini':
-            return 400
-          case 'small':
-            return 600
-          case 'medium':
-            return 800
-          case 'large':
-            return 1200
-          default:
-            return 400
+        if (theme === 'yunxiao-v5') {
+          return yunxiaoSizeMap[size] || yunxiaoSizeMap['mini'];
+        } else {
+          return sizeMap[size] || sizeMap['mini'];
         }
       }
     }
@@ -272,6 +284,9 @@ const Drawer: React.FC<DrawerProps> & {
         width={getCustomWidth()}
         className={drawerCustomClassName}
       >
+        {
+          theme.startsWith('yunxiao-v5') && sidebar && <div className='next-drawer-sidebar'>{sidebar}</div>
+        }
         {children}
         {(onOk || onCancel || renderFooter) && (
           <div className={drawerFooterClassName}>

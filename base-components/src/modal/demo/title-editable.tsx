@@ -1,6 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { Button, Modal, Icon } from '@alicloudfe/components'
+import { Button, Modal, Icon, Tab } from '@alicloudfe/components'
 
 const Demo = () => {
   const [visible, onVisibleChange] = React.useState(false)
@@ -26,6 +26,16 @@ const Demo = () => {
           sideDrawer={<div className="custom-content" />}
           sideDrawerVisible={sideDrawerVisible}
           onSideDrawerVisibleChange={onSideDrawerVisibleChange}
+          groups={
+            <>
+              <Tab shape="capsule" size='small'>
+                <Tab.Item key="home" title="Home"/>
+                <Tab.Item key="document" title="Document"/>
+                <Tab.Item key="api" title="API"/>
+                <Tab.Item key="repo" title="Repo"/>
+              </Tab>
+            </>
+          }
           operations={
             <>
               <Button type="secondary">

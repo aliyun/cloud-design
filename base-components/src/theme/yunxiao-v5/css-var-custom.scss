@@ -1,0 +1,97 @@
+#{$css-var-scope} {
+  /* 全局 */
+  --alicloudfe-components-theme: yunxiao-v5;
+  --active-shadow: var(--shadow-1-down);
+  --active-transition: 0.3s;
+  // 用于容器组件
+  --layout-padding-top-and-bottom: 24px;
+  --layout-padding-left-and-right: 40px;
+  --layout-section-margin-right: 40px;
+  --layout-section-padding-right: 40px;
+  --layout-section-margin-bottom: 24px;
+  --layout-header-height: 40px;
+  --layout-header-margin-bottom: 0px;
+
+  /* button */
+  --btn-primary-hover-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.18);
+  --btn-primary-active-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+  --btn-normal-hover-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.06);
+  --btn-normal-active-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --btn-small-min-width: 70px;
+  --btn-medium-min-width: 70px;
+  --btn-large-min-width: 72px;
+
+  --btn-small-cn2-3-width: 70px;
+  --btn-small-cn4-width: 80px;
+  --btn-medium-cn2-3-width: 70px;
+  --btn-medium-cn4-width: 88px;
+  --btn-large-cn2-3-width: 72px;
+  --btn-large-cn4-width: 96px;
+
+  /* menu */
+  --select-menu-select-icon-ml: -20px;
+  --menu-padding: 6px;
+  --menu-padding-horizontal: 8px;
+  --menu-item-padding-ver-padding-r: 8px;
+  --menu-item-padding-ver-padding-l: 8px;
+  // 对于可选择的menu，增加padding以便容纳勾选图标
+  --menu-padding-horizontal-selectable: 24px;
+
+  /* number-picker */
+  --number-picker-height-small: 28px;
+  --number-picker-height-medium: 32px;
+  --number-picker-height-large: 36px;
+  --number-picker-inline-group-border: 1px solid var(--input-border-color);
+  --number-picker-border-radius: 4px;
+
+  /* cascader */
+  --cascader-menu-width: 175px;
+  --cascader-menu-height: 196px;
+
+  /* message */
+  --message-close-icon-size: 16px;
+  --message-success-border-color: var(--color-success-7);
+  --message-warning-border-color: var(--color-warning-7);
+  --message-error-border-color: var(--color-error-7);
+  --message-notice-border-color: var(--color-brand1-4);
+  --message-help-border-color: var(--color-line1-3);
+
+  /* checkbox */
+  --checkbox-icon-scale: 0.75;
+  --checkbox-border-radius: 2px;
+
+  /* dialog */
+  --dialog-corner: 4px;
+  /* transfer */
+  --transfer-panel-padding-mb: 8px;
+  --transfer-panel-margin-mb: 0px;
+
+  /* pagination */
+  --pagination-item-hover-bg: var(--color-fill1-3);
+  --pagination-total-font-size: 14px;
+  --pagination-item-disabled-bg: var(--color-fill1-3);
+
+  /* datepicker */
+  --calendar-panel-header-margin-bottom: 6px;
+  --color-input-separator: var(--color-fill1-6);
+
+  /* tag */
+  --tag-secondary-bg-hover: var(--color-brand1-1);
+
+  /* card */
+  --card-hover-shadow: var(--shadow-3);
+  /* tab */
+  --tab-item-margin-lr-size-m: calc(var(--tab-item-padding-lr-size-m, 24px) / 2);
+  --tab-item-margin-lr-size-s: calc(var(--tab-item-padding-lr-size-s, 24px) / 2);
+  --tab-item-font-weight-selected: 500;
+
+  /* table */
+  --color-table-selected-border: transparent;
+
+  /* modal */
+  --modal-title-font-size: var(--font-size-title, 18px);
+  --modal-title-icon-font-size: 30px;
+  --modal-title-icon-margin-right: 12px;
+  --modal-title-icon-transform-top: -1px;
+  --modal-header-height: 56px;
+}

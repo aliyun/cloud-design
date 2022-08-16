@@ -44,5 +44,9 @@ module.exports = [
   {
     packageName: '@alife/theme-atomgit',
     themeName: 'atomgit',
+  },
+  {
+    packageName: '@alife/theme-57669',
+    themeName: 'yunxiao-v5',
   }
 ]

@@ -1,0 +1,12 @@
+// 云效主题numberpicker样式覆盖
+.next-number-picker-handler .next-icon.next-icon.next-icon::before {
+    line-height: inherit;
+}
+
+.next-number-picker {
+    .next-input-group {
+        &:hover {
+            border: 1px solid var(--color-brand1-6, #1b9aee);
+        }
+    }
+}

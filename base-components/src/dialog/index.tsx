@@ -10,8 +10,12 @@ import {
 } from '@alifd/next/types/dialog'
 
 type CustomDialogProps = DialogProps & {
-  /** 抽屉大小 */
-  size?: 'mini' | 'small' | 'medium' | 'large'
+  /**
+   * 抽屉大小
+   */
+  size?: 'mini' | 'small' | 'medium' | 'large',
+  // 侧边菜单栏
+  sidebar?: React.ReactNode,
   /** extra 区域 **/
   extra?: React.ReactNode;
 }
@@ -37,10 +41,18 @@ const yunxiaoSizeMap = {
   large: 1200
 }
 
+// yunxiao v5测试主题
+const yunxiaoV5SizeMap = {
+  mini: 480,
+  small: 640,
+  medium: 800,
+  large: '70%'
+}
+
 // 获取常规Dialog size 大小
 const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   const sizeWidth = theme.startsWith('yunxiao')
-    ? yunxiaoSizeMap[size]
+    ? (theme === 'yunxiao-v5' ? yunxiaoV5SizeMap : yunxiaoSizeMap[size] )
     : sizeMap[size]
   if (sizeWidth) {
     return sizeWidth
@@ -57,7 +69,7 @@ const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
 // 判断是否是云效主题，云效主题的 Dialog 局顶
 const isYunxiaoTheme = (theme: string) => {
   return theme === 'yunxiao' ||
-    theme === 'yunxiao-dark'
+  theme === 'yunxiao-dark' || theme.startsWith('yunxiao')
 }
 
 // 获取快捷调用 size 大小
@@ -123,8 +135,10 @@ const Dialog: React.FC<CustomDialogProps> & {
   alert: (config: CustomQuickShowConfig) => QuickShowRet
   error: (config: CustomQuickShowConfig) => QuickShowRet
   success: (config: CustomQuickShowConfig) => QuickShowRet
+  moderateAlert: (config: CustomQuickShowConfig) => QuickShowRet
+  severeAlert: (config: CustomQuickShowConfig) => QuickShowRet
 } = (props) => {
-  const { size, extra, title, ...others } = props
+  const { size, sidebar, extra, title, children, ...others } = props
   const { prefix = 'next-' } = props
   const theme = useCssVar('--alicloudfe-components-theme').trim()
 
@@ -200,6 +214,7 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   return (
     <NextDialog
+      className={`${size === 'large' ? 'next-dialog-large' : ''}`}
       title={renderTitle(prefix, theme , title, extra)}
       width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
@@ -208,7 +223,14 @@ const Dialog: React.FC<CustomDialogProps> & {
       bottom={isYunxiaoTheme(theme) ? 40 : 80}
       {...others}
       ref={customRef}
-    />
+    >
+      {
+        theme === 'yunxiao-v5' && sidebar && <div className='next-dialog-sidebar'>{sidebar}</div>
+      }
+      {
+        children
+      }
+      </NextDialog>
   )
 }
 
@@ -358,6 +380,48 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   })
 }
 
+const moderateAlert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
+  const theme = window
+    .getComputedStyle?.(window.document.body)
+    .getPropertyValue('--alicloudfe-components-theme')
+    .trim()
+  const { size, ...others } = config
+  return NextDialog.alert({
+    width: getQuickCustomWidth(size, theme),
+    footerActions: showDefaultFooterActions(theme),
+    messageProps: { type: 'warning' },
+    centered: isYunxiaoTheme(theme) ? false : true,
+    bottom: isYunxiaoTheme(theme) ? 40 : 80,
+    v2: true,
+    ...others,
+    okProps: {
+      warning: true,
+      ...others.okProps
+    }
+  })
+}
+
+const severeAlert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
+  const theme = window
+    .getComputedStyle?.(window.document.body)
+    .getPropertyValue('--alicloudfe-components-theme')
+    .trim()
+  const { size, ...others } = config
+  return NextDialog.alert({
+    width: getQuickCustomWidth(size, theme),
+    footerActions: showDefaultFooterActions(theme),
+    messageProps: { type: 'warning', className: 'message-severe-alert' },
+    centered: isYunxiaoTheme(theme) ? false : true,
+    bottom: isYunxiaoTheme(theme) ? 40 : 80,
+    v2: true,
+    ...others,
+    okProps: {
+      warning: true,
+      ...others.okProps
+    }
+  })
+}
+
 const error: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   const theme = window
     .getComputedStyle?.(window.document.body)
@@ -406,6 +470,8 @@ Dialog.confirm = confirm
 Dialog.alert = alert
 Dialog.error = error
 Dialog.success = success
+Dialog.moderateAlert = moderateAlert
+Dialog.severeAlert = severeAlert
 
 export type { DialogProps } from '@alifd/next/lib/dialog'
 export default Dialog
