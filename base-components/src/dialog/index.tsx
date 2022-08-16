@@ -52,7 +52,7 @@ const yunxiaoV5SizeMap = {
 // 获取常规Dialog size 大小
 const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   const sizeWidth = theme.startsWith('yunxiao')
-    ? (theme === 'yunxiao-v5' ? yunxiaoV5SizeMap : yunxiaoSizeMap[size] )
+    ? (theme === 'yunxiao-v5' ? yunxiaoV5SizeMap[size] : yunxiaoSizeMap[size] )
     : sizeMap[size]
   if (sizeWidth) {
     return sizeWidth
