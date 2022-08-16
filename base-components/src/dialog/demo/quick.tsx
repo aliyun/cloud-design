@@ -1,6 +1,6 @@
 /**
  * @title 快捷调用
- * @description `Dialog` 提供 `alert` 和 `confirm` 的快掉调用方式，以及更底层的 `show` 方式。
+ * @description `Dialog` 提供 `alert` 和 `confirm` 的快掉调用方式，以及更底层的 `show` 方式。moderateAlert 和 severeAlert 仅在 yunxiao 主题下样式生效。
  */
 
 import * as React from 'react'
