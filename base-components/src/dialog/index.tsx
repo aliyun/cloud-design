@@ -52,7 +52,7 @@ const yunxiaoV5SizeMap = {
 // 获取常规Dialog size 大小
 const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
   const sizeWidth = theme.startsWith('yunxiao')
-    ? (theme === 'yunxiao-v5' ? yunxiaoV5SizeMap[size] : yunxiaoSizeMap[size] )
+    ? (theme === 'yunxiao-v5' ? yunxiaoV5SizeMap[size] : yunxiaoSizeMap[size])
     : sizeMap[size]
   if (sizeWidth) {
     return sizeWidth
@@ -69,7 +69,7 @@ const getCustomWidth = (size: CustomDialogProps['size'], theme: string) => {
 // 判断是否是云效主题，云效主题的 Dialog 局顶
 const isYunxiaoTheme = (theme: string) => {
   return theme === 'yunxiao' ||
-  theme === 'yunxiao-dark' || theme.startsWith('yunxiao')
+    theme === 'yunxiao-dark' || theme.startsWith('yunxiao')
 }
 
 // 获取快捷调用 size 大小
@@ -121,8 +121,8 @@ const renderTitle = (prefix: string, theme: string, title: React.ReactNode, extr
       <div className={`${prefix}dialog-header-container`}>
         <span className={`${prefix}dialog-header-title`}>{title}</span>
         <span className={`${prefix}dialog-header-extra`}>{extra}
-          <div className={`${prefix}dialog-header-line`}></div>
-          </span>
+          {extra && <div className={`${prefix}dialog-header-line`}></div>}
+        </span>
       </div>
     )
   }
@@ -215,7 +215,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   return (
     <NextDialog
       className={`${size === 'large' ? 'next-dialog-large' : ''}`}
-      title={renderTitle(prefix, theme , title, extra)}
+      title={renderTitle(prefix, theme, title, extra)}
       width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
       v2
@@ -230,7 +230,7 @@ const Dialog: React.FC<CustomDialogProps> & {
       {
         children
       }
-      </NextDialog>
+    </NextDialog>
   )
 }
 
@@ -325,7 +325,7 @@ const show: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     bottom: isYunxiaoTheme(theme) ? 40 : 80,
     // shouldUpdatePosition: true,
     type,
-    title: renderTitle(prefix, theme , title, extra),
+    title: renderTitle(prefix, theme, title, extra),
     ...others,
     // 将Dialog.show与其他quick弹窗区分出来，单独做样式覆盖，
     // 因为它的body是不包含Message的
@@ -352,7 +352,7 @@ const confirm: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: isYunxiaoTheme(theme) ? false : true,
     bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
-    title: renderTitle(prefix, theme , title, extra),
+    title: renderTitle(prefix, theme, title, extra),
     // shouldUpdatePosition: true,
     ...others
   })
@@ -375,7 +375,7 @@ const alert: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: isYunxiaoTheme(theme) ? false : true,
     bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
-    title: renderTitle(prefix, theme , title, extra),
+    title: renderTitle(prefix, theme, title, extra),
     ...others
   })
 }
@@ -436,7 +436,7 @@ const error: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: isYunxiaoTheme(theme) ? false : true,
     bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
-    title: renderTitle(prefix, theme , title, extra),
+    title: renderTitle(prefix, theme, title, extra),
     ...others,
     okProps: {
       warning: true,
@@ -459,7 +459,7 @@ const success: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
     centered: isYunxiaoTheme(theme) ? false : true,
     bottom: isYunxiaoTheme(theme) ? 40 : 80,
     v2: true,
-    title: renderTitle(prefix, theme , title, extra),
+    title: renderTitle(prefix, theme, title, extra),
     ...others
   })
 }
