@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1@0.20.0 (https://fusion.design)
- * @alifd/next@1.25.45 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1@0.20.2 (https://fusion.design)
+ * @alifd/next@1.25.49 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -3079,16 +3079,16 @@
   word-wrap: break-all;
   word-wrap: break-word;
   /* stylelint-enable */
-  color: #FFFFFF;
-  color: var(--balloon-tooltip-color, #FFFFFF);
-  border-color: transparent;
-  border-color: var(--balloon-tooltip-color-border, transparent);
-  background-color: #292929;
-  background-color: var(--balloon-tooltip-color-bg, #292929);
-  -webkit-box-shadow: none;
-  -webkit-box-shadow: var(--balloon-tooltip-shadow, none);
-          box-shadow: none;
-          box-shadow: var(--balloon-tooltip-shadow, none);
+  color: #1A1A1A;
+  color: var(--balloon-tooltip-color, #1A1A1A);
+  border-color: #eaeaea;
+  border-color: var(--balloon-tooltip-color-border, #eaeaea);
+  background-color: #FFFFFF;
+  background-color: var(--balloon-tooltip-color-bg, #FFFFFF);
+  -webkit-box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: var(--balloon-tooltip-shadow, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
+          box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: var(--balloon-tooltip-shadow, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
   border-width: 1px;
   border-width: var(--balloon-tooltip-border-width, 1px);
   /* size */ }
@@ -3120,10 +3120,10 @@
       height: 8px;
       height: var(--balloon-size-arrow-size, 8px);
       margin: auto;
-      background-color: #292929;
-      background-color: var(--balloon-tooltip-color-bg, #292929);
-      border: 1px solid transparent;
-      border: var(--balloon-tooltip-border-width, 1px) var(--balloon-tooltip-border-style, solid) var(--balloon-tooltip-color-border, transparent);
+      background-color: #FFFFFF;
+      background-color: var(--balloon-tooltip-color-bg, #FFFFFF);
+      border: 1px solid #eaeaea;
+      border: var(--balloon-tooltip-border-width, 1px) var(--balloon-tooltip-border-style, solid) var(--balloon-tooltip-color-border, #eaeaea);
       pointer-events: auto; }
   .next-balloon-tooltip-top .next-balloon-arrow {
     top: calc(0px - 8px*2);
@@ -3856,14 +3856,14 @@
     font-size: 14px;
     font-size: var(--breadcrumb-size-ellipsis-font-size, 14px); }
   .next-breadcrumb .next-breadcrumb-text {
-    color: #5a5a5a;
-    color: var(--breadcrumb-text-color, #5a5a5a); }
+    color: #333333;
+    color: var(--breadcrumb-text-color, #333333); }
     .next-breadcrumb .next-breadcrumb-text > b {
       color: #0064C8;
       color: var(--breadcrumb-text-keyword-color, #0064C8); }
     .next-breadcrumb .next-breadcrumb-text > a {
-      color: #5a5a5a;
-      color: var(--breadcrumb-text-color, #5a5a5a);
+      color: #333333;
+      color: var(--breadcrumb-text-color, #333333);
       text-decoration: none;
       text-align: center; }
   .next-breadcrumb .next-breadcrumb-text.activated {
@@ -8233,8 +8233,8 @@
     padding: var(--dialog-footer-padding-top, 16px) var(--dialog-footer-padding-left-right, 20px) var(--dialog-footer-padding-bottom, 20px) var(--dialog-footer-padding-left-right, 20px);
     border-top: 1px solid transparent;
     border-top: var(--dialog-footer-border-width, 1px) var(--line-solid, solid) var(--dialog-footer-border-color, transparent);
-    background: transparent;
-    background: var(--dialog-footer-bg-color, transparent); }
+    background: #FFFFFF;
+    background: var(--dialog-footer-bg-color, #FFFFFF); }
     .next-dialog-footer.next-align-left {
       text-align: left; }
     .next-dialog-footer.next-align-center {
@@ -25143,8 +25143,12 @@ h6.next-typography-title {
     color: #5a5a5a;
     color: var(--table-row-hover-color, #5a5a5a); }
   .next-table-tree-placeholder {
-    display: inline-block;
-    width: 12px; }
+    visibility: hidden; }
+    .next-table-tree-placeholder:before,
+    .next-table-tree-placeholder .next-icon-remote {
+      width: 12px;
+      font-size: 12px;
+      line-height: inherit; }
 
 .last .next-table-expanded-row td {
   border-bottom-width: 1px; }

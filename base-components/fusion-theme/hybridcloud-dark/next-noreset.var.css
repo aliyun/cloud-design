@@ -1,6 +1,6 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.11.0 (https://fusion.design)
- * @alifd/next@1.25.43 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.11.1 (https://fusion.design)
+ * @alifd/next@1.25.49 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
  */
@@ -8233,8 +8233,8 @@
     padding: var(--dialog-footer-padding-top, 16px) var(--dialog-footer-padding-left-right, 20px) var(--dialog-footer-padding-bottom, 16px) var(--dialog-footer-padding-left-right, 20px);
     border-top: 1px solid transparent;
     border-top: var(--dialog-footer-border-width, 1px) var(--line-solid, solid) var(--dialog-footer-border-color, transparent);
-    background: transparent;
-    background: var(--dialog-footer-bg-color, transparent); }
+    background: #1F1F1F;
+    background: var(--dialog-footer-bg-color, #1F1F1F); }
     .next-dialog-footer.next-align-left {
       text-align: left; }
     .next-dialog-footer.next-align-center {
@@ -25143,8 +25143,12 @@ h6.next-typography-title {
     color: #EAEAEA;
     color: var(--table-row-hover-color, #EAEAEA); }
   .next-table-tree-placeholder {
-    display: inline-block;
-    width: 12px; }
+    visibility: hidden; }
+    .next-table-tree-placeholder:before,
+    .next-table-tree-placeholder .next-icon-remote {
+      width: 12px;
+      font-size: 12px;
+      line-height: inherit; }
 
 .last .next-table-expanded-row td {
   border-bottom-width: 1px; }

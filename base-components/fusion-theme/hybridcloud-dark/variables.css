@@ -1,15 +1,565 @@
 :root {
     
     
+    /* ------------------------ line ------------------------ */
+    
+    
+    
+    --line-dotted: dotted;
+    
+    
+    
+    --line-dashed: dashed;
+    
+    
+    
+    --line-solid: solid;
+    
+    
+    
+    --line-2: 2px;
+    
+    
+    
+    --line-1: 1px;
+    
+    
+    
+    --line-zero: 0px;
+    
+    
+    
+    --line-3: 6px;
+    
+    
+    /* ------------------------ popup ------------------------ */
+    
+    
+    
+    --popup-global-shadow: var(--shadow-2-down, 0px 6px 24px 0px rgba(0, 0, 0, 0.64));
+    
+    
+    
+    --popup-global-corner: var(--corner-1, 2px);
+    
+    
+    
+    --popup-global-border-color: var(--color-line1-2, #383838);
+    
+    
+    
+    --popup-global-border-style: var(--line-solid, solid);
+    
+    
+    
+    --popup-global-border-width: var(--line-zero, 0px);
+    
+    
+    
+    --popup-local-corner: var(--corner-1, 2px);
+    
+    
+    
+    --popup-local-border-style: var(--line-solid, solid);
+    
+    
+    
+    --popup-local-border-width: var(--line-1, 1px);
+    
+    
+    
+    --popup-spacing-tb: var(--s-zero, 0px);
+    
+    
+    
+    --popup-spacing-lr: var(--s-zero, 0px);
+    
+    
+    
+    --popup-local-shadow: var(--shadow-3, 0px 12px 48px 0px rgba(0, 0, 0, 0.8));
+    
+    
+    
+    --popup-local-border-color: var(--color-fill1-4, #262626);
+    
+    
+    /* ------------------------ mask ------------------------ */
+    
+    
+    
+    --mask-background: var(--color-black, #000000);
+    
+    
+    
+    --mask-opacity: 0.45;
+    
+    
+    /* ------------------------ form-element ------------------------ */
+    
+    
+    
+    --form-element-preview-text-color: var(--color-text1-4, #EAEAEA);
+    
+    
+    
+    --form-element-large-icon-size: var(--icon-s, 16px);
+    
+    
+    
+    --form-element-medium-icon-size: var(--icon-xs, 12px);
+    
+    
+    
+    --form-element-small-icon-size: var(--icon-xs, 12px);
+    
+    
+    
+    --form-element-large-preview-font-size: var(--font-size-subhead, 16px);
+    
+    
+    
+    --form-element-large-preview-label-font-size: var(--font-size-subhead, 16px);
+    
+    
+    
+    --form-element-small-preview-font-size: var(--font-size-caption, 12px);
+    
+    
+    
+    --form-element-small-preview-label-font-size: var(--font-size-caption, 12px);
+    
+    
+    
+    --form-element-large-preview-height: var(--s-10, 40px);
+    
+    
+    
+    --form-element-medium-preview-height: var(--s-7, 28px);
+    
+    
+    
+    --form-element-small-preview-height: var(--s-5, 20px);
+    
+    
+    
+    --form-element-medium-font-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --form-element-small-font-size: var(--font-size-caption, 12px);
+    
+    
+    
+    --form-element-preview-label-color: var(--color-text1-5, #a8a8a8);
+    
+    
+    
+    --form-element-medium-preview-label-font-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --form-element-large-corner: var(--corner-1, 2px);
+    
+    
+    
+    --form-element-large-height: var(--s-9, 36px);
+    
+    
+    
+    --form-element-medium-height: var(--s-8, 32px);
+    
+    
+    
+    --form-element-medium-preview-font-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --form-element-small-height: var(--s-6, 24px);
+    
+    
+    
+    --form-element-medium-corner: var(--corner-1, 2px);
+    
+    
+    
+    --form-element-small-corner: var(--corner-1, 2px);
+    
+    
+    
+    --form-element-large-font-size: var(--font-size-body-2, 14px);
+    
+    
+    /* ------------------------ size ------------------------ */
+    
+    
+    
+    --s-50: 200px;
+    
+    
+    
+    --s-49: 196px;
+    
+    
+    
+    --s-48: 192px;
+    
+    
+    
+    --s-47: 188px;
+    
+    
+    
+    --s-46: 184px;
+    
+    
+    
+    --s-45: 180px;
+    
+    
+    
+    --s-44: 176px;
+    
+    
+    
+    --s-43: 172px;
+    
+    
+    
+    --s-42: 168px;
+    
+    
+    
+    --s-41: 164px;
+    
+    
+    
+    --s-40: 160px;
+    
+    
+    
+    --s-39: 156px;
+    
+    
+    
+    --s-38: 152px;
+    
+    
+    
+    --s-37: 148px;
+    
+    
+    
+    --s-36: 144px;
+    
+    
+    
+    --s-35: 140px;
+    
+    
+    
+    --s-34: 136px;
+    
+    
+    
+    --s-33: 132px;
+    
+    
+    
+    --s-32: 128px;
+    
+    
+    
+    --s-31: 124px;
+    
+    
+    
+    --s-30: 120px;
+    
+    
+    
+    --s-29: 116px;
+    
+    
+    
+    --s-28: 112px;
+    
+    
+    
+    --s-27: 108px;
+    
+    
+    
+    --s-26: 104px;
+    
+    
+    
+    --s-25: 100px;
+    
+    
+    
+    --s-24: 96px;
+    
+    
+    
+    --s-23: 92px;
+    
+    
+    
+    --s-22: 88px;
+    
+    
+    
+    --s-21: 84px;
+    
+    
+    
+    --s-20: 80px;
+    
+    
+    
+    --s-19: 76px;
+    
+    
+    
+    --s-18: 72px;
+    
+    
+    
+    --s-17: 68px;
+    
+    
+    
+    --s-16: 64px;
+    
+    
+    
+    --s-15: 60px;
+    
+    
+    
+    --s-14: 56px;
+    
+    
+    
+    --s-13: 52px;
+    
+    
+    
+    --s-12: 48px;
+    
+    
+    
+    --s-11: 44px;
+    
+    
+    
+    --s-10: 40px;
+    
+    
+    
+    --s-9: 36px;
+    
+    
+    
+    --s-8: 32px;
+    
+    
+    
+    --s-7: 28px;
+    
+    
+    
+    --s-6: 24px;
+    
+    
+    
+    --s-5: 20px;
+    
+    
+    
+    --s-4: 16px;
+    
+    
+    
+    --s-3: 12px;
+    
+    
+    
+    --s-2: 8px;
+    
+    
+    
+    --s-1: 4px;
+    
+    
+    
+    --s-zero: 0px;
+    
+    
+    
+    --size-base: 4px;
+    
+    
+    /* ------------------------ shadow ------------------------ */
+    
+    
+    
+    --shadow-3-left: 0px 0px 48px 0px rgba(0, 0, 0, 0.8);
+    
+    
+    
+    --shadow-3-down: 0px 12px 48px 0px rgba(0, 0, 0, 0.8);
+    
+    
+    
+    --shadow-3-right: 0px 0px 48px 0px rgba(0, 0, 0, 0.8);
+    
+    
+    
+    --shadow-3-up: 0px -12px 48px 0px rgba(0, 0, 0, 0.8);
+    
+    
+    
+    --shadow-3: 0px 12px 48px 0px rgba(0, 0, 0, 0.8);
+    
+    
+    
+    --shadow-2-left: 0px 0px 24px 0px rgba(0, 0, 0, 0.64);
+    
+    
+    
+    --shadow-2-down: 0px 6px 24px 0px rgba(0, 0, 0, 0.64);
+    
+    
+    
+    --shadow-2-right: 0px 0px 24px 0px rgba(0, 0, 0, 0.64);
+    
+    
+    
+    --shadow-2-up: 0px -6px 24px 0px rgba(0, 0, 0, 0.64);
+    
+    
+    
+    --shadow-2: 0px 6px 24px 0px rgba(0, 0, 0, 0.64);
+    
+    
+    
+    --shadow-1-left: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
+    
+    
+    
+    --shadow-1-down: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
+    
+    
+    
+    --shadow-1-right: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
+    
+    
+    
+    --shadow-1-up: 0px -4px 16px 0px rgba(0, 0, 0, 0.3);
+    
+    
+    
+    --shadow-1: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
+    
+    
+    
+    --shadow-zero: none;
+    
+    
+    
+    --shadow-spread-sd3: 0;
+    
+    
+    
+    --shadow-spread-sd2: 0;
+    
+    
+    
+    --shadow-spread-sd1: 0;
+    
+    
+    
+    --shadow-color-sd3: var(--color-black, #000000);
+    
+    
+    
+    --shadow-sides-left: "left";
+    
+    
+    
+    --shadow-sides-down: "down";
+    
+    
+    
+    --shadow-sides-right: "right";
+    
+    
+    
+    --shadow-sides-up: "up";
+    
+    
+    
+    --shadow-sides-base: "base";
+    
+    
+    
+    --shadow-blur-sd1: 16;
+    
+    
+    
+    --shadow-opacity-sd1: 0.3;
+    
+    
+    
+    --shadow-color-sd1: var(--color-black, #000000);
+    
+    
+    
+    --shadow-distance-sd1y: 4;
+    
+    
+    
+    --shadow-blur-sd3: 48;
+    
+    
+    
+    --shadow-blur-sd2: 24;
+    
+    
+    
+    --shadow-opacity-sd3: 0.8;
+    
+    
+    
+    --shadow-opacity-sd2: 0.64;
+    
+    
+    
+    --shadow-distance-sd3y: 12;
+    
+    
+    
+    --shadow-distance-sd2y: 6;
+    
+    
+    
+    --shadow-distance-sd2: 0;
+    
+    
+    
+    --shadow-distance-sd1: 0;
+    
+    
+    
+    --shadow-color-sd2: var(--color-black, #000000);
+    
+    
+    
+    --shadow-distance-sd3: 0;
+    
+    
     /* ------------------------ icon ------------------------ */
-    
-    
-    
-    --icon-content-trashbin: "\e636";
-    
-    
-    
-    --icon-font-path: "//at.alicdn.com/t/font_1984235_k0cji4xgatd";
     
     
     
@@ -50,6 +600,14 @@
     
     
     --icon-font-name: "icon";
+    
+    
+    
+    --icon-content-trashbin: "\e636";
+    
+    
+    
+    --icon-font-path: "//at.alicdn.com/t/font_1984235_k0cji4xgatd";
     
     
     
@@ -1454,564 +2012,6 @@
     
     
     --icon-content-queding: "\e635";
-    
-    
-    /* ------------------------ line ------------------------ */
-    
-    
-    
-    --line-dotted: dotted;
-    
-    
-    
-    --line-dashed: dashed;
-    
-    
-    
-    --line-solid: solid;
-    
-    
-    
-    --line-2: 2px;
-    
-    
-    
-    --line-1: 1px;
-    
-    
-    
-    --line-zero: 0px;
-    
-    
-    
-    --line-3: 6px;
-    
-    
-    /* ------------------------ popup ------------------------ */
-    
-    
-    
-    --popup-global-shadow: var(--shadow-2-down, 0px 6px 24px 0px rgba(0, 0, 0, 0.64));
-    
-    
-    
-    --popup-global-corner: var(--corner-1, 2px);
-    
-    
-    
-    --popup-global-border-color: var(--color-line1-2, #383838);
-    
-    
-    
-    --popup-global-border-style: var(--line-solid, solid);
-    
-    
-    
-    --popup-global-border-width: var(--line-zero, 0px);
-    
-    
-    
-    --popup-local-corner: var(--corner-1, 2px);
-    
-    
-    
-    --popup-local-border-style: var(--line-solid, solid);
-    
-    
-    
-    --popup-local-border-width: var(--line-1, 1px);
-    
-    
-    
-    --popup-spacing-tb: var(--s-zero, 0px);
-    
-    
-    
-    --popup-spacing-lr: var(--s-zero, 0px);
-    
-    
-    
-    --popup-local-shadow: var(--shadow-3, 0px 12px 48px 0px rgba(0, 0, 0, 0.8));
-    
-    
-    
-    --popup-local-border-color: var(--color-fill1-4, #262626);
-    
-    
-    /* ------------------------ mask ------------------------ */
-    
-    
-    
-    --mask-background: var(--color-black, #000000);
-    
-    
-    
-    --mask-opacity: 0.45;
-    
-    
-    /* ------------------------ form-element ------------------------ */
-    
-    
-    
-    --form-element-preview-text-color: var(--color-text1-4, #EAEAEA);
-    
-    
-    
-    --form-element-large-icon-size: var(--icon-s, 16px);
-    
-    
-    
-    --form-element-medium-icon-size: var(--icon-xs, 12px);
-    
-    
-    
-    --form-element-small-icon-size: var(--icon-xs, 12px);
-    
-    
-    
-    --form-element-large-preview-font-size: var(--font-size-subhead, 16px);
-    
-    
-    
-    --form-element-large-preview-label-font-size: var(--font-size-subhead, 16px);
-    
-    
-    
-    --form-element-small-preview-font-size: var(--font-size-caption, 12px);
-    
-    
-    
-    --form-element-small-preview-label-font-size: var(--font-size-caption, 12px);
-    
-    
-    
-    --form-element-large-preview-height: var(--s-10, 40px);
-    
-    
-    
-    --form-element-medium-preview-height: var(--s-7, 28px);
-    
-    
-    
-    --form-element-small-preview-height: var(--s-5, 20px);
-    
-    
-    
-    --form-element-medium-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --form-element-small-font-size: var(--font-size-caption, 12px);
-    
-    
-    
-    --form-element-preview-label-color: var(--color-text1-5, #a8a8a8);
-    
-    
-    
-    --form-element-medium-preview-label-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --form-element-large-corner: var(--corner-1, 2px);
-    
-    
-    
-    --form-element-large-height: var(--s-9, 36px);
-    
-    
-    
-    --form-element-medium-height: var(--s-8, 32px);
-    
-    
-    
-    --form-element-medium-preview-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --form-element-small-height: var(--s-6, 24px);
-    
-    
-    
-    --form-element-medium-corner: var(--corner-1, 2px);
-    
-    
-    
-    --form-element-small-corner: var(--corner-1, 2px);
-    
-    
-    
-    --form-element-large-font-size: var(--font-size-body-2, 14px);
-    
-    
-    /* ------------------------ size ------------------------ */
-    
-    
-    
-    --s-50: 200px;
-    
-    
-    
-    --s-49: 196px;
-    
-    
-    
-    --s-48: 192px;
-    
-    
-    
-    --s-47: 188px;
-    
-    
-    
-    --s-46: 184px;
-    
-    
-    
-    --s-45: 180px;
-    
-    
-    
-    --s-44: 176px;
-    
-    
-    
-    --s-43: 172px;
-    
-    
-    
-    --s-42: 168px;
-    
-    
-    
-    --s-41: 164px;
-    
-    
-    
-    --s-40: 160px;
-    
-    
-    
-    --s-39: 156px;
-    
-    
-    
-    --s-38: 152px;
-    
-    
-    
-    --s-37: 148px;
-    
-    
-    
-    --s-36: 144px;
-    
-    
-    
-    --s-35: 140px;
-    
-    
-    
-    --s-34: 136px;
-    
-    
-    
-    --s-33: 132px;
-    
-    
-    
-    --s-32: 128px;
-    
-    
-    
-    --s-31: 124px;
-    
-    
-    
-    --s-30: 120px;
-    
-    
-    
-    --s-29: 116px;
-    
-    
-    
-    --s-28: 112px;
-    
-    
-    
-    --s-27: 108px;
-    
-    
-    
-    --s-26: 104px;
-    
-    
-    
-    --s-25: 100px;
-    
-    
-    
-    --s-24: 96px;
-    
-    
-    
-    --s-23: 92px;
-    
-    
-    
-    --s-22: 88px;
-    
-    
-    
-    --s-21: 84px;
-    
-    
-    
-    --s-20: 80px;
-    
-    
-    
-    --s-19: 76px;
-    
-    
-    
-    --s-18: 72px;
-    
-    
-    
-    --s-17: 68px;
-    
-    
-    
-    --s-16: 64px;
-    
-    
-    
-    --s-15: 60px;
-    
-    
-    
-    --s-14: 56px;
-    
-    
-    
-    --s-13: 52px;
-    
-    
-    
-    --s-12: 48px;
-    
-    
-    
-    --s-11: 44px;
-    
-    
-    
-    --s-10: 40px;
-    
-    
-    
-    --s-9: 36px;
-    
-    
-    
-    --s-8: 32px;
-    
-    
-    
-    --s-7: 28px;
-    
-    
-    
-    --s-6: 24px;
-    
-    
-    
-    --s-5: 20px;
-    
-    
-    
-    --s-4: 16px;
-    
-    
-    
-    --s-3: 12px;
-    
-    
-    
-    --s-2: 8px;
-    
-    
-    
-    --s-1: 4px;
-    
-    
-    
-    --s-zero: 0px;
-    
-    
-    
-    --size-base: 4px;
-    
-    
-    /* ------------------------ shadow ------------------------ */
-    
-    
-    
-    --shadow-3-left: 0px 0px 48px 0px rgba(0, 0, 0, 0.8);
-    
-    
-    
-    --shadow-3-down: 0px 12px 48px 0px rgba(0, 0, 0, 0.8);
-    
-    
-    
-    --shadow-3-right: 0px 0px 48px 0px rgba(0, 0, 0, 0.8);
-    
-    
-    
-    --shadow-3-up: 0px -12px 48px 0px rgba(0, 0, 0, 0.8);
-    
-    
-    
-    --shadow-3: 0px 12px 48px 0px rgba(0, 0, 0, 0.8);
-    
-    
-    
-    --shadow-2-left: 0px 0px 24px 0px rgba(0, 0, 0, 0.64);
-    
-    
-    
-    --shadow-2-down: 0px 6px 24px 0px rgba(0, 0, 0, 0.64);
-    
-    
-    
-    --shadow-2-right: 0px 0px 24px 0px rgba(0, 0, 0, 0.64);
-    
-    
-    
-    --shadow-2-up: 0px -6px 24px 0px rgba(0, 0, 0, 0.64);
-    
-    
-    
-    --shadow-2: 0px 6px 24px 0px rgba(0, 0, 0, 0.64);
-    
-    
-    
-    --shadow-1-left: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
-    
-    
-    
-    --shadow-1-down: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
-    
-    
-    
-    --shadow-1-right: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
-    
-    
-    
-    --shadow-1-up: 0px -4px 16px 0px rgba(0, 0, 0, 0.3);
-    
-    
-    
-    --shadow-1: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
-    
-    
-    
-    --shadow-zero: none;
-    
-    
-    
-    --shadow-spread-sd3: 0;
-    
-    
-    
-    --shadow-spread-sd2: 0;
-    
-    
-    
-    --shadow-spread-sd1: 0;
-    
-    
-    
-    --shadow-color-sd3: var(--color-black, #000000);
-    
-    
-    
-    --shadow-sides-left: "left";
-    
-    
-    
-    --shadow-sides-down: "down";
-    
-    
-    
-    --shadow-sides-right: "right";
-    
-    
-    
-    --shadow-sides-up: "up";
-    
-    
-    
-    --shadow-sides-base: "base";
-    
-    
-    
-    --shadow-blur-sd1: 16;
-    
-    
-    
-    --shadow-opacity-sd1: 0.3;
-    
-    
-    
-    --shadow-color-sd1: var(--color-black, #000000);
-    
-    
-    
-    --shadow-distance-sd1y: 4;
-    
-    
-    
-    --shadow-blur-sd3: 48;
-    
-    
-    
-    --shadow-blur-sd2: 24;
-    
-    
-    
-    --shadow-opacity-sd3: 0.8;
-    
-    
-    
-    --shadow-opacity-sd2: 0.64;
-    
-    
-    
-    --shadow-distance-sd3y: 12;
-    
-    
-    
-    --shadow-distance-sd2y: 6;
-    
-    
-    
-    --shadow-distance-sd2: 0;
-    
-    
-    
-    --shadow-distance-sd1: 0;
-    
-    
-    
-    --shadow-color-sd2: var(--color-black, #000000);
-    
-    
-    
-    --shadow-distance-sd3: 0;
     
     
     /* ------------------------ font ------------------------ */
@@ -7162,11 +7162,11 @@
     
     
     
-    --dialog-footer-bg-color: var(--color-transparent, transparent);
-    
-    
-    
     --dialog-close-bg-hovered: var(--color-transparent, transparent);
+    
+    
+    
+    --dialog-footer-bg-color: var(--color-fill1-3, #1F1F1F);
     
     
     /* ------------------------ number-picker ------------------------ */
