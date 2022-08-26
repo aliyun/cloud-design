@@ -23,8 +23,8 @@ const Card: React.FC<CardProps> & {
   }>
   CollapsableTail: React.FC<ICollapsableProps>
   CollapsableHead: React.FC<ICollapsableProps>
-} = (props => {
-  return <NextCard {...props} />
+} = React.forwardRef((props, ref) => {
+  return <NextCard {...props} ref={ref as any} />
 }) as any
 
 hoistNonReactStatics(Card, NextCard)
