@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-hybridcloud-v1-dark@0.11.1 (https://fusion.design)
+ * @alife/theme-hybridcloud-v1-dark@0.11.2 (https://fusion.design)
  * @alifd/next@1.25.49 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -2804,8 +2804,8 @@ small {
     width: var(--radio-width, 16px);
     height: 16px;
     height: var(--radio-width, 16px);
-    background: #151515;
-    background: var(--radio-bg-color, #151515);
+    background: #000000;
+    background: var(--radio-bg-color, #000000);
     border-radius: 50%;
     border-radius: var(--radio-radius-size, 50%);
     border: 1px solid #383838;
@@ -2857,8 +2857,8 @@ small {
   .next-radio-wrapper.disabled .next-radio-inner {
     border-color: #383838;
     border-color: var(--radio-disabled-border-color, #383838);
-    background: #383838;
-    background: var(--radio-disabled-bg-color, #383838); }
+    background: #151515;
+    background: var(--radio-disabled-bg-color, #151515); }
     .next-radio-wrapper.disabled .next-radio-inner:after {
       background: #6B6B6B;
       background: var(--radio-disabled-circle-color, #6B6B6B); }
@@ -7380,8 +7380,8 @@ small {
     width: var(--checkbox-size, 16px);
     height: 16px;
     height: var(--checkbox-size, 16px);
-    background: #151515;
-    background: var(--checkbox-bg-color, #151515);
+    background: #000000;
+    background: var(--checkbox-bg-color, #000000);
     border-radius: 2px;
     border-radius: var(--checkbox-border-radius, 2px);
     border: 1px solid #383838;
@@ -7491,27 +7491,27 @@ small {
   .next-checkbox-wrapper.disabled input[type="checkbox"] {
     cursor: not-allowed; }
   .next-checkbox-wrapper.disabled .next-checkbox-inner {
-    border-color: transparent;
-    border-color: var(--checkbox-disabled-border-color, transparent);
-    background: #383838;
-    background: var(--checkbox-disabled-bg-color, #383838); }
+    border-color: #383838;
+    border-color: var(--checkbox-disabled-border-color, #383838);
+    background: #151515;
+    background: var(--checkbox-disabled-bg-color, #151515); }
   .next-checkbox-wrapper.disabled.checked .next-checkbox-inner, .next-checkbox-wrapper.disabled.indeterminate .next-checkbox-inner {
-    border-color: transparent;
-    border-color: var(--checkbox-disabled-border-color, transparent);
-    background: #383838;
-    background: var(--checkbox-disabled-bg-color, #383838); }
+    border-color: #383838;
+    border-color: var(--checkbox-disabled-border-color, #383838);
+    background: #151515;
+    background: var(--checkbox-disabled-bg-color, #151515); }
     .next-checkbox-wrapper.disabled.checked .next-checkbox-inner:hover, .next-checkbox-wrapper.disabled.checked .next-checkbox-inner.hovered, .next-checkbox-wrapper.disabled.indeterminate .next-checkbox-inner:hover, .next-checkbox-wrapper.disabled.indeterminate .next-checkbox-inner.hovered {
-      border-color: transparent;
-      border-color: var(--checkbox-disabled-border-color, transparent); }
+      border-color: #383838;
+      border-color: var(--checkbox-disabled-border-color, #383838); }
     .next-checkbox-wrapper.disabled.checked .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.disabled.indeterminate .next-checkbox-inner > .next-icon {
       color: #6B6B6B;
       color: var(--checkbox-disabled-circle-color, #6B6B6B);
       opacity: 1; }
   .next-checkbox-wrapper.disabled.checked.focused .next-checkbox-inner {
-    border-color: transparent;
-    border-color: var(--checkbox-disabled-border-color, transparent);
-    background: #383838;
-    background: var(--checkbox-disabled-bg-color, #383838); }
+    border-color: #383838;
+    border-color: var(--checkbox-disabled-border-color, #383838);
+    background: #151515;
+    background: var(--checkbox-disabled-bg-color, #151515); }
     .next-checkbox-wrapper.disabled.checked.focused .next-checkbox-inner > .next-icon {
       color: #6B6B6B;
       color: var(--checkbox-disabled-circle-color, #6B6B6B);
