@@ -6,6 +6,30 @@ const themes = require('./theme-data')
 const log = console.log
 const chalk = require('chalk')
 
+
+function withoutIconFont(originalText) {
+  /*
+  匹配css中的以下声明：
+  @font-face {
+    font-family: NextIcon
+    src: url("//at.alicdn.com/t/font_1435786_mueafw9pwd.eot");
+    src: url("//at.alicdn.com/t/font_1435786_mueafw9pwd.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.woff2") format("woff2"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.woff") format("woff"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.ttf") format("truetype"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.svg#NextIcon") format("svg"); }
+  */
+  const reg =
+    /@font-face\s*{\n*\s*font-family:\s*NextIcon(.|\n)*?}/g
+
+  const match = originalText.match(reg)
+
+  if (match.length !== 1) {
+    throw new Error(`没有找到声明NextIcon的@font-face规则`)
+  }
+
+  const result = originalText.replace(reg, '')
+
+  return result
+}
+
+
 const convertCharStr2CSS = ch => {
   let code = ch.charCodeAt(0).toString(16);
   while (code.length < 4) {
@@ -22,7 +46,15 @@ const transferUniCodeCss = (source, theme) => {
     })
       .replace(/content:\s*var\((--[\w-]+\,\s*)(?:'|")([\u0080-\uffff])(?:'|")\)/g, (str, $1, $2) => {
         return `content: var(${$1}"${convertCharStr2CSS($2)}")`;
-      });
+      })
+      .replace(/(?!var\()--icon-content.*:\s*['"](.*?)['"]/g, (str, match) => {
+          if (match) {
+            return str.replace(/(?<=").*?(?=")/g, (char) => {
+              return `${convertCharStr2CSS(char)}`;
+            });
+          }
+          return str
+        });
   } else {
     return source
   }
@@ -38,8 +70,17 @@ themes.forEach(async (theme) => {
   const result = sass.renderSync({
     file: path.join(__dirname, `../src/theme/${themeName}/index.scss`)
   })
+
+  let fileResult = transferUniCodeCss(result.css.toString(), themeName)
+
   fs.ensureDirSync(path.join(__dirname, '../dist'))
-  fs.writeFileSync(path.join(__dirname, `../dist/${themeName}.css`), transferUniCodeCss(result.css.toString(), themeName))
+  fs.writeFileSync(path.join(__dirname, `../dist/${themeName}.css`), fileResult)
+
+  if (themeName.startsWith("hybridcloud")) {
+    fileResult = withoutIconFont(fileResult)
+    fs.ensureDirSync(path.join(__dirname, '../dist'))
+    fs.writeFileSync(path.join(__dirname, `../dist/${themeName}-without-icon-font.css`), fileResult)
+  }
 
   // 生成不带css var定义的css
   log(`generate ${themeName}-no-var.css...`)
