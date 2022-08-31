@@ -10,6 +10,7 @@ import hoistNonReactStatics from 'hoist-non-react-statics'
 
 import ctx from './ctx'
 import { getInitialRefElement } from './utils'
+import dayjs from 'dayjs'
 
 const refElementStyle: React.CSSProperties = {
   width: 0,
@@ -57,6 +58,16 @@ const ConfigProvider: typeof NextConfigProvider & {
 ConfigProvider.useRefElement = useRefElement
 
 hoistNonReactStatics(ConfigProvider, NextConfigProvider)
+
+// setLanguage 中针对 dayjs 国际化做处理
+ConfigProvider.setLanguage = (lang: string) => {
+  if (lang === 'en-us') {
+    dayjs.locale('en')
+  } else {
+    dayjs.locale(lang)
+  }
+  NextConfigProvider.setLanguage(lang)
+}
 
 export default ConfigProvider
 
