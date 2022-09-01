@@ -49,8 +49,12 @@ themes.forEach(async (theme) => {
   const result = sass.renderSync({
     file: path.join(__dirname, `../src/theme/${themeName}/index.scss`)
   })
+  let cssText = transferUniCodeCss(result.css.toString(), themeName)
+  if (themeName.startsWith('hybridcloud')) {
+    cssText = filterCssVar(cssText)
+  }
   fs.ensureDirSync(path.join(__dirname, '../dist'))
-  fs.writeFileSync(path.join(__dirname, `../dist/${themeName}.css`), filterCssVar(transferUniCodeCss(result.css.toString(), themeName)))
+  fs.writeFileSync(path.join(__dirname, `../dist/${themeName}.css`), cssText)
 
   // 生成不带css var定义的css
   log(`generate ${themeName}-no-var.css...`)
@@ -67,9 +71,13 @@ themes.forEach(async (theme) => {
     const noVarResult = sass.renderSync({
       file: indexNoRestPath
     })
+    let cssNoResetText = transferUniCodeCss(noVarResult.css.toString(), themeName)
+    if (themeName.startsWith('hybridcloud')) {
+      cssNoResetText = filterCssVar(cssNoResetText)
+    }
     fs.writeFileSync(
       path.join(__dirname, `../dist/${themeName}-no-reset.css`),
-      filterCssVar(transferUniCodeCss(noVarResult.css.toString(), themeName))
+      cssNoResetText
     )
   }
 
@@ -85,16 +93,24 @@ themes.forEach(async (theme) => {
      .toString()
      .replace(/\/\*[.\t\n\r\S\s]*?\*\//g, '')
     log(`generate ${themeName}-var.css...`)
-    fs.writeFileSync(path.join(__dirname, `../dist/${themeName}-var.css`), filterCssVar(transferUniCodeCss(varCss, themeName)))
+    let cssVarText = transferUniCodeCss(varCss, themeName)
+    if (themeName.startsWith('hybridcloud')) {
+      cssVarText = filterCssVar(cssVarText)
+    }
+    fs.writeFileSync(path.join(__dirname, `../dist/${themeName}-var.css`), cssVarText)
 
   // 去掉注释
   const noVarCss = noVarResult.css
     .toString()
     .replace(/\/\*[.\t\n\r\S\s]*?\*\//g, '')
   fs.ensureDirSync(path.join(__dirname, '../dist'))
+  let cssNoVarText = transferUniCodeCss(noVarCss, themeName)
+  if (themeName.startsWith('hybridcloud')) {
+    cssNoVarText = filterCssVar(cssNoVarText, varCss)
+  }
   fs.writeFileSync(
     path.join(__dirname, `../dist/${themeName}-no-var.css`),
-    filterCssVar(transferUniCodeCss(noVarCss, themeName), varCss)
+    cssNoVarText
   )
 
   // 生成压缩过的 css
