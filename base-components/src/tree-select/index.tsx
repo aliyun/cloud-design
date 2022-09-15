@@ -27,6 +27,10 @@ const TreeSelect: React.FC<NextTreeSelectProps> = withThemeClass(
           ref={ref as any}
           notFoundContent={renderNotFoundContent()}
           {...props}
+          popupProps={{
+            v2: true,
+            ...props.popupProps
+          }}
         />
       )
     }
