@@ -56,12 +56,6 @@ themes.forEach(async (theme) => {
   fs.ensureDirSync(path.join(__dirname, '../dist'))
   fs.writeFileSync(path.join(__dirname, `../dist/${themeName}.css`), cssText)
 
-  if (themeName.startsWith("hybridcloud")) {
-    fileResult = withoutIconFont(fileResult)
-    fs.ensureDirSync(path.join(__dirname, '../dist'))
-    fs.writeFileSync(path.join(__dirname, `../dist/${themeName}-without-icon-font.css`), fileResult)
-  }
-
   // 生成不带css var定义的css
   log(`generate ${themeName}-no-var.css...`)
   const noVarResult = sass.renderSync({
