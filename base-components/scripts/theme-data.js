@@ -16,11 +16,11 @@ module.exports = [
     themeName: 'wind'
   },
   {
-    packageName: '@alife/theme-hybridcloud-v1',
+    packageName: '@alife/theme-hybridcloud-v1@0.21.1',
     themeName: 'hybridcloud'
   },
   {
-    packageName: '@alife/theme-hybridcloud-v1-dark',
+    packageName: '@alife/theme-hybridcloud-v1-dark@0.11.2',
     themeName: 'hybridcloud-dark'
   },
   {
@@ -43,10 +43,10 @@ module.exports = [
   },
   {
     packageName: '@alife/theme-atomgit',
-    themeName: 'atomgit',
+    themeName: 'atomgit'
   },
   {
     packageName: '@alife/theme-57669',
-    themeName: 'yunxiao-v5',
+    themeName: 'yunxiao-v5'
   }
 ]
