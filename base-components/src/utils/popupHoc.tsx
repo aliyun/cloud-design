@@ -4,7 +4,8 @@ import hoistNonReactStatics from 'hoist-non-react-statics'
 import { useCssVar } from './useCssVar'
 
 const HOC = <T extends any>(
-  WrappedComponents: React.ComponentType<T>
+  WrappedComponents: React.ComponentType<T>,
+  v2: boolean = true
 ): React.ComponentType<T> => {
   const Wrapper = React.forwardRef((props, ref) => {
     const defaultOffsetY = useDefaultOffsetY()
@@ -14,7 +15,7 @@ const HOC = <T extends any>(
       offset: [0, defaultOffsetY],
       ...(props as any).popupProps
     }
-    if (theme.startsWith('hybridcloud')) {
+    if (theme.startsWith('hybridcloud') && v2) {
       popupProps.v2 = true
     }
     return (
