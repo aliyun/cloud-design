@@ -9,3 +9,30 @@
     width: 16px;
   }
 }
+
+.next-card {
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.next-card > .next-card-collapsable-head,
+.next-card-header {
+  margin: 12px 20px 8px 20px;
+  padding: 0;
+}
+
+.next-card-divider--inset {
+  padding: 0 20px;
+}
+
+.next-card-content-container {
+  margin: 8px 20px 16px 20px;
+  padding: 0;
+}
+
+.next-card > .next-card-collapsable-tail,
+.next-card-actions {
+  margin: 8px 20px 16px 20px;
+  padding: 0;
+}

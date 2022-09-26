@@ -10,7 +10,7 @@ import { Card, Button, Box } from '@alicloudfe/components'
 
 const commonProps = {
   title: 'Title',
-  style: { width: 300 },
+  // style: { width: 300 },
   subTitle: 'Sub-title',
   extra: (
     <Button text type="primary">
