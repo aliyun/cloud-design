@@ -120,8 +120,8 @@ const renderTitle = (prefix: string, theme: string, title: React.ReactNode, extr
       <div className={`${prefix}drawer-header-container`}>
         <span className={`${prefix}drawer-header-title`}>{title}</span>
         <span className={`${prefix}drawer-header-extra`}>{extra}
-          <div className={`${prefix}drawer-header-line`}></div>
-          </span>
+          {extra && <div className={`${prefix}drawer-header-line`}></div>}
+        </span>
       </div>
     )
   }

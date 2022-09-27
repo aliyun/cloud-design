@@ -1,0 +1,39 @@
+.yunxiao-card-dropdown-actions-icon.yunxiao-card-dropdown-actions-icon,
+.theme-yunxiao .yunxiao-card-dropdown-actions-icon,
+.theme-yunxiao-dark .yunxiao-card-dropdown-actions-icon {
+  color: var(--color-fill1-6, #8B8B8B);
+  cursor: pointer;
+  margin-top: 2px;
+  &::before {
+    font-size: 16px;
+    width: 16px;
+  }
+}
+
+.next-card {
+  box-shadow: none;
+  border-radius: 4px;
+  &:hover {
+    box-shadow: none;
+  }
+  .next-card-collapsable-head,
+  .next-card-header {
+    margin: 12px 0px 8px;
+    padding: 0 20px;
+  }
+  .next-card-content-container {
+    margin: 8px 0px 16px;
+    padding: 0 20px;
+  }
+  .next-card-collapsable-tail {
+    margin: -8px 0px 16px;
+    padding: 0 20px;
+  }
+  .next-card-actions {
+    margin: 8px 0px 16px;
+    padding: 0 20px;
+  }
+  .next-card-divider--inset {
+    padding: 0 20px;
+  }
+}

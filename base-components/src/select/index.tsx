@@ -18,6 +18,17 @@ let Select: typeof NextSelect = React.forwardRef(
         ...props.menuProps
       }
     })()
+    // 处理在存在专有云吊顶情况下弹层不跟随滚动的问题
+    const popupProps = (() => {
+      if (theme.startsWith('hybridcloud')) {
+        return {
+          v2: true,
+          ...props.popupProps
+        }
+      } else {
+        return props.popupProps
+      }
+    })()
     const defaultAutoHighlightFirstItem = (theme: string) => {
       if (
         theme === 'yunxiao' ||
@@ -38,6 +49,7 @@ let Select: typeof NextSelect = React.forwardRef(
         {...props}
         autoWidth={props.autoWidth ?? defaultAutoWidth}
         menuProps={menuProps}
+        popupProps={popupProps}
         ref={ref as any}
       />
     )

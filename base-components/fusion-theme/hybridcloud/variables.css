@@ -5,6 +5,42 @@
     
     
     
+    --space-grey: rgba(26,26,26,1);
+    
+    
+    
+    --color-other-4: rgba(26,26,26,1);
+    
+    
+    
+    --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
+    
+    
+    
+    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
+    
+    
+    
+    --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
+    
+    
+    
+    --color-gradient-1: linear-gradient(270deg, rgb(121, 232, 199) 0%, rgb(8, 194, 158) 100%);
+    
+    
+    
+    --color-transparent: transparent;
+    
+    
+    
+    --color-black: #000000;
+    
+    
+    
+    --color-white: #FFFFFF;
+    
+    
+    
     --color-event-p1: rgba(191,0,48,1);
     
     
@@ -58,34 +94,6 @@
     
     
     --color-data2-7: rgba(0,146,199,1);
-    
-    
-    
-    --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
-    
-    
-    
-    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
-    
-    
-    
-    --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
-    
-    
-    
-    --color-gradient-1: linear-gradient(270deg, rgb(121, 232, 199) 0%, rgb(8, 194, 158) 100%);
-    
-    
-    
-    --color-transparent: transparent;
-    
-    
-    
-    --color-black: #000000;
-    
-    
-    
-    --color-white: #FFFFFF;
     
     
     
@@ -2208,7 +2216,7 @@
     
     
     
-    --corner-zero: 0;
+    --corner-zero: 0px;
     
     
     
@@ -3348,14 +3356,6 @@
     
     
     
-    --balloon-tooltip-color-border: var(--color-transparent, transparent);
-    
-    
-    
-    --balloon-tooltip-color: var(--color-white, #FFFFFF);
-    
-    
-    
     --balloon-border-style: var(--line-solid, solid);
     
     
@@ -3369,10 +3369,6 @@
     
     
     --balloon-corner: var(--corner-1, 2px);
-    
-    
-    
-    --balloon-normal-color-border: var(--color-line1-1, #eaeaea);
     
     
     
@@ -3412,7 +3408,23 @@
     
     
     
-    --balloon-tooltip-color-bg: var(--color-text1-5, #292929);
+    --balloon-tooltip-color-bg: var(--color-fill1-1, #FFFFFF);
+    
+    
+    
+    --balloon-tooltip-shadow: var(--shadow-3, 0px 6px 24px 0px rgba(0, 0, 0, 0.1));
+    
+    
+    
+    --balloon-tooltip-color: var(--color-text1-4, #1A1A1A);
+    
+    
+    
+    --balloon-normal-color-border: var(--color-line1-2, #D9D9D9);
+    
+    
+    
+    --balloon-tooltip-color-border: var(--color-line1-2, #D9D9D9);
     
     
     
@@ -3480,10 +3492,6 @@
     
     
     
-    --balloon-tooltip-shadow: var(--shadow-zero, none);
-    
-    
-    
     --balloon-tooltip-border-style: var(--line-solid, solid);
     
     
@@ -3535,7 +3543,7 @@
     
     
     
-    --nav-ver-item-corner: var(--corner-zero, 0);
+    --nav-ver-item-corner: var(--corner-zero, 0px);
     
     
     
@@ -3647,7 +3655,7 @@
     
     
     
-    --nav-hoz-item-corner: var(--corner-zero, 0);
+    --nav-hoz-item-corner: var(--corner-zero, 0px);
     
     
     
@@ -4326,7 +4334,7 @@
     
     
     
-    --calendar-card-table-cell-corner: var(--corner-zero, 0);
+    --calendar-card-table-cell-corner: var(--corner-zero, 0px);
     
     
     
@@ -4679,7 +4687,7 @@
     
     
     
-    --range-size-m-scale-radius: var(--corner-zero, 0);
+    --range-size-m-scale-radius: var(--corner-zero, 0px);
     
     
     
@@ -5144,11 +5152,11 @@
     
     
     
-    --table-header-corner-top: var(--corner-zero, 0);
+    --table-header-corner-top: var(--corner-zero, 0px);
     
     
     
-    --table-header-corner-bottom: var(--corner-zero, 0);
+    --table-header-corner-bottom: var(--corner-zero, 0px);
     
     
     
@@ -5172,19 +5180,19 @@
     
     
     
-    --table-group-header-corner-top: var(--corner-zero, 0);
+    --table-group-header-corner-top: var(--corner-zero, 0px);
     
     
     
-    --table-group-header-corner-bottom: var(--corner-zero, 0);
+    --table-group-header-corner-bottom: var(--corner-zero, 0px);
     
     
     
-    --table-group-footer-corner-top: var(--corner-zero, 0);
+    --table-group-footer-corner-top: var(--corner-zero, 0px);
     
     
     
-    --table-group-footer-corner-bottom: var(--corner-zero, 0);
+    --table-group-footer-corner-bottom: var(--corner-zero, 0px);
     
     
     
@@ -5873,6 +5881,10 @@
     
     
     
+    --dialog-footer-bg-color: var(--color-fill1-1, #FFFFFF);
+    
+    
+    
     --dialog-title-font-weight: var(--font-weight-2, normal);
     
     
@@ -5894,10 +5906,6 @@
     
     
     --dialog-title-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --dialog-footer-bg-color: var(--color-transparent, transparent);
     
     
     
@@ -7131,7 +7139,7 @@
     
     
     
-    --tab-wrapped-tab-corner-radius: var(--corner-zero, 0);
+    --tab-wrapped-tab-corner-radius: var(--corner-zero, 0px);
     
     
     
@@ -8620,7 +8628,7 @@
     
     
     
-    --upload-text-list-corner: var(--corner-zero, 0);
+    --upload-text-list-corner: var(--corner-zero, 0px);
     
     
     
@@ -8660,7 +8668,7 @@
     
     
     
-    --upload-image-list-item-picture-corner: var(--corner-zero, 0);
+    --upload-image-list-item-picture-corner: var(--corner-zero, 0px);
     
     
     
@@ -8728,7 +8736,7 @@
     
     
     
-    --upload-card-border-radius: var(--corner-zero, 0);
+    --upload-card-border-radius: var(--corner-zero, 0px);
     
     
     
@@ -9746,10 +9754,6 @@
     
     
     
-    --breadcrumb-text-color: var(--color-text1-2, #5a5a5a);
-    
-    
-    
     --breadcrumb-size-ellipsis-font-size: var(--font-size-body-2, 14px);
     
     
@@ -9759,6 +9763,10 @@
     
     
     --breadcrumb-icon-color: var(--color-line1-3, #CCCCCC);
+    
+    
+    
+    --breadcrumb-text-color: var(--color-text1-3, #333333);
     
     
     
@@ -9964,10 +9972,6 @@
     
     
     
-    --paragraph-text-color: var(--color-text1-4, #1A1A1A);
-    
-    
-    
     --paragraph-s-font-size: var(--font-size-body-1, 12px);
     
     
@@ -9981,6 +9985,10 @@
     
     
     --paragraph-l-line-height: var(--font-lineheight-3, 1.5);
+    
+    
+    
+    --paragraph-text-color: var(--space-grey, #1a1a1a);
     
     
     /* ------------------------ shell ------------------------ */
