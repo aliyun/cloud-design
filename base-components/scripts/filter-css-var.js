@@ -693,21 +693,20 @@ const replaceSecondVar = (css, cssVar) => {
     const secondVarName = item
       .match(/(?<=var\(\n*)--.*?(?=\n*(,|\)))/g)[0]
       .replace(/\s*/g, '')
+      .replace(/\s{2,1000}/g, ' ')
     // 二级变量
     let secondVar = (cssVar || css).match(
       new RegExp(`\\s${secondVarName}:.*;`, 'g')
     )
     if (secondVar) {
-      secondVar = secondVar[0].replace(/\s*/g, '')
+      secondVar = secondVar[0].replace(/\n*/g, '')
+      // secondVar = secondVar.replace(/\s{2,1000}/g, ' ')
 
       const secondVarName = secondVar.match(/--.*(?=:)/g)[0]
 
       if (!whiteVarList.includes(secondVarName)) {
         // 一级变量名
         const firstVar = secondVar.match(/(?<=var\(\n*)--.*?(?=\n*(,|\)))/g)
-        if ('--tab-pure-text-color-normal' === secondVarName) {
-          console.log('secondVarName', secondVarName, secondVarName)
-        }
 
         if (firstVar && firstVar.length > 0) {
           // 查看引用的是二级变量还是一级变量
@@ -723,12 +722,10 @@ const replaceSecondVar = (css, cssVar) => {
             if (firstVarValue && !/--icon-content-.*/.test(firstVar[0])) {
               firstVarValue = firstVarValue[0]
                 .replace(/\s*/g, '')
+                // .replace(/\s{2,1000}/g, ' ')
                 .replace(':', ',')
                 .replace(';', ')')
 
-                if ("--message-warning-color-title-addon" === secondVarName) {
-                  console.log("替换二级变量", secondVarName, firstVarValue);
-                }
 
               result = result.replace(
                 new RegExp(item.replace(/\(/, '\\(').replace(/\)/, '\\)'), 'g'),
