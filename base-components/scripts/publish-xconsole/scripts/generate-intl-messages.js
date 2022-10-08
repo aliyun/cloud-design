@@ -1,8 +1,12 @@
 /**
  * 拉取fusion文案，生成 wind-v2 的文案，提交到美杜莎上：
  * https://mds-portal.alibaba-inc.com/applications/detail?appName=wind-v2&appId=705001
- * OneConsole会拉取这个美杜莎的文案，注入到控制台的window.ALIYUN_WIND_MESSAGE
+ * OneConsole会拉取这个美杜莎的文案（找振骅将文案从美杜莎同步到OneConsole），注入到控制台的window.ALIYUN_WIND_MESSAGE
  * 控制台拿到文案以后，会传给wind-intl，后者用ConfigProvider包裹应用并提供文案
+ * 
+ * 之所以需要使用这个脚本，是因为fusion组件库有时候会新增文案（比如新增了一个组件、或者组件某个地方新增了文案坑位），我们需要一种机制来将fusion新增的文案补充到我们的美杜莎项目。
+ * 
+ * 使用方式：执行这个脚本，然后访问 https://mds-portal.alibaba-inc.com/applications/detail?appName=wind-v2&appId=705001 ，点击“导入文案”，将这个脚本生成的 windIntlMessages/xxx.json 导入到美杜莎wind-v2项目中
  */
 
 const download = require('download')
