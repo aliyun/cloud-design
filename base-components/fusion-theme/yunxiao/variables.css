@@ -397,10 +397,6 @@
     
     
     
-    --s-auto: auto;
-    
-    
-    
     --size-base: 4px;
     
     
@@ -607,7 +603,7 @@
     
     
     
-    --icon-font-path: "//at.alicdn.com/t/font_1984240_1tel1r5g38zj";
+    --icon-font-path: "//at.alicdn.com/t/font_1984240_4ig2h6rc829";
     
     
     
@@ -4269,7 +4265,7 @@
     
     
     
-    --corner-zero: 0;
+    --corner-zero: 0px;
     
     
     
@@ -4321,6 +4317,38 @@
     
     
     --color-white: #FFFFFF;
+    
+    
+    
+    --color-brand3-1: rgba(242,245,247,1);
+    
+    
+    
+    --color-brand3-2: rgba(233,237,240,1);
+    
+    
+    
+    --color-brand3-3: rgba(218,224,229,1);
+    
+    
+    
+    --color-brand3-4: rgba(198,205,212,1);
+    
+    
+    
+    --color-brand3-5: rgba(177,184,191,1);
+    
+    
+    
+    --color-brand3-6: rgba(125,131,137,1);
+    
+    
+    
+    --color-brand3-7: rgba(98,101,111,1);
+    
+    
+    
+    --color-brand3-8: rgba(73,78,84,1);
     
     
     
@@ -5520,14 +5548,6 @@
     
     
     
-    --btn-warning-primary-border-color-disabled: var(--color-fill1-3, #E8E8E8);
-    
-    
-    
-    --btn-warning-primary-bg-disabled: var(--color-fill1-3, #E8E8E8);
-    
-    
-    
     --btn-size-m-icon-size: var(--icon-m, 20px);
     
     
@@ -5581,6 +5601,14 @@
     
     
     --btn-pure-primary-border-color-disabled: var(--color-line1-3, #CECECE);
+    
+    
+    
+    --btn-warning-primary-border-color-disabled: var(--color-line1-3, #CECECE);
+    
+    
+    
+    --btn-warning-primary-bg-disabled: var(--color-line1-3, #CECECE);
     
     
     
@@ -6520,7 +6548,7 @@
     
     
     
-    --nav-hoz-item-corner: var(--corner-zero, 0);
+    --nav-hoz-item-corner: var(--corner-zero, 0px);
     
     
     
@@ -7183,7 +7211,7 @@
     
     
     
-    --calendar-card-table-cell-corner: var(--corner-zero, 0);
+    --calendar-card-table-cell-corner: var(--corner-zero, 0px);
     
     
     
@@ -7262,10 +7290,6 @@
     
     
     
-    --checkbox-border-color: var(--color-line1-3, #CECECE);
-    
-    
-    
     --checkbox-hovered-border-color: var(--color-brand1-4, #68BBF2);
     
     
@@ -7310,6 +7334,14 @@
     
     
     
+    --checkbox-border-color: var(--color-line1-3, #CECECE);
+    
+    
+    
+    --checkbox-disabled-label-color: var(--color-fill1-6, #8B8B8B);
+    
+    
+    
     --checkbox-border-width: var(--line-1, 1px);
     
     
@@ -7323,10 +7355,6 @@
     
     
     --checkbox-checked-circle-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --checkbox-disabled-label-color: var(--color-text1-1, #adadad);
     
     
     
@@ -7457,7 +7485,7 @@
     
     
     
-    --range-size-m-scale-radius: var(--corner-zero, 0);
+    --range-size-m-scale-radius: var(--corner-zero, 0px);
     
     
     
@@ -7956,10 +7984,6 @@
     
     
     
-    --message-size-l-close-right: 12px;
-    
-    
-    
     --message-success-color-icon-addon: var(--color-success-5, #23B066);
     
     
@@ -8056,10 +8080,6 @@
     
     
     
-    --message-size-l-close-top: var(--s-3, 12px);
-    
-    
-    
     --message-size-m-close-right: 12px;
     
     
@@ -8148,7 +8168,15 @@
     
     
     
-    --message-close-icon-size: var(--icon-m, 20px);
+    --message-size-l-close-top: var(--s-3, 12px);
+    
+    
+    
+    --message-size-l-close-right: var(--s-3, 12px);
+    
+    
+    
+    --message-close-icon-size: var(--icon-s, 16px);
     
     
     
@@ -8431,10 +8459,6 @@
     
     
     
-    --dialog-close-top: var(--s-4, 16px);
-    
-    
-    
     --dialog-close-color-hovered: var(--color-text1-3, #575757);
     
     
@@ -8452,10 +8476,6 @@
     
     
     --dialog-corner: var(--corner-2, 8px);
-    
-    
-    
-    --dialog-close-size: var(--icon-l, 24px);
     
     
     
@@ -8500,6 +8520,14 @@
     
     
     --dialog-close-bg-hovered: var(--color-transparent, transparent);
+    
+    
+    
+    --dialog-close-top: 16px;
+    
+    
+    
+    --dialog-close-size: var(--icon-m, 20px);
     
     
     /* ------------------------ progress ------------------------ */
@@ -8793,6 +8821,14 @@
     
     
     
+    --radio-normal-font-color: var(--color-text1-3, #575757);
+    
+    
+    
+    --radio-normal-font-color-disabled: var(--color-fill1-6, #8B8B8B);
+    
+    
+    
     --radio-circle-border-width: var(--line-1, 1px);
     
     
@@ -8818,14 +8854,6 @@
     
     
     --radio-disabled-circle-color: var(--color-text1-1, #adadad);
-    
-    
-    
-    --radio-normal-font-color: var(--color-text1-4, #292929);
-    
-    
-    
-    --radio-normal-font-color-disabled: var(--color-text1-1, #adadad);
     
     
     
@@ -9419,6 +9447,10 @@
     
     
     
+    --menu-arrow-right: 10px;
+    
+    
+    
     --menu-color-disabled: var(--color-text1-1, #adadad);
     
     
@@ -9470,7 +9502,7 @@
     
     
     
-    --tab-wrapped-tab-corner-radius: var(--corner-zero, 0);
+    --tab-wrapped-tab-corner-radius: var(--corner-zero, 0px);
     
     
     
@@ -10705,6 +10737,14 @@
     
     
     
+    --input-focus-border-color: var(--color-brand1-6, #1B9AEE);
+    
+    
+    
+    --input-focus-shadow-spread: var(--line-zero, 0px);
+    
+    
+    
     --input-border-width: var(--line-1, 1px);
     
     
@@ -10770,14 +10810,6 @@
     
     
     --input-hint-hover-color: var(--color-text1-3, #575757);
-    
-    
-    
-    --input-focus-border-color: var(--color-brand1-6, #1B9AEE);
-    
-    
-    
-    --input-focus-shadow-spread: var(--line-zero, 0px);
     
     
     /* ------------------------ form ------------------------ */
@@ -11083,6 +11115,10 @@
     
     
     
+    --upload-card-border-radius: var(--corner-zero, 0px);
+    
+    
+    
     --upload-card-add-text-margin-top: var(--s-3, 12px);
     
     
@@ -11229,11 +11265,7 @@
     
     
     
-    --drawer-close-top: var(--s-4, 16px);
-    
-    
-    
-    --drawer-close-size: var(--icon-l, 24px);
+    --drawer-close-right: var(--s-5, 20px);
     
     
     
@@ -11266,10 +11298,6 @@
     
     
     --drawer-content-padding-left-right: var(--s-5, 20px);
-    
-    
-    
-    --drawer-close-right: var(--s-3, 12px);
     
     
     
@@ -11306,6 +11334,14 @@
     
     
     --drawer-close-bg-hovered: var(--color-transparent, transparent);
+    
+    
+    
+    --drawer-close-size: var(--icon-m, 20px);
+    
+    
+    
+    --drawer-close-top: 14px;
     
     
     /* ------------------------ transfer ------------------------ */
@@ -12010,11 +12046,11 @@
     
     
     
-    --table-header-corner-top: var(--corner-zero, 0);
+    --table-header-corner-top: var(--corner-zero, 0px);
     
     
     
-    --table-header-corner-bottom: var(--corner-zero, 0);
+    --table-header-corner-bottom: var(--corner-zero, 0px);
     
     
     
@@ -12034,19 +12070,19 @@
     
     
     
-    --table-group-header-corner-top: var(--corner-zero, 0);
+    --table-group-header-corner-top: var(--corner-zero, 0px);
     
     
     
-    --table-group-header-corner-bottom: var(--corner-zero, 0);
+    --table-group-header-corner-bottom: var(--corner-zero, 0px);
     
     
     
-    --table-group-footer-corner-top: var(--corner-zero, 0);
+    --table-group-footer-corner-top: var(--corner-zero, 0px);
     
     
     
-    --table-group-footer-corner-bottom: var(--corner-zero, 0);
+    --table-group-footer-corner-bottom: var(--corner-zero, 0px);
     
     
     

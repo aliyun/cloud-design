@@ -75,10 +75,12 @@
     "sync-demo": "node ./scripts/sync-demo.js",
     "gene-def": "node ./scripts/gene-css-def.js",
     "update-theme": "node ./scripts/update-theme.js && npm run gene-def",
-    "publish-xconsole": "npm run prepare && cd ./scripts/publish-xconsole && npm run pub && tnpm sync && cd ../publish-wind && npm run pub"
+    "//注释": "发布前请确认是否需要升级主题: npm run update-theme",
+    "publish-xconsole": "npm run prepare && cd ./scripts/publish-xconsole && npm run pub && tnpm sync && cd ../publish-wind && npm run pub",
+    "publish-xconsole:alpha": "npm run prepare && cd ./scripts/publish-xconsole && npm run publish:alpha && tnpm sync && cd ../publish-wind && npm run publish:alpha"
   },
   "dependencies": {
-    "@alifd/next": "~1.24.12",
+    "@alifd/next": "~1.25.51",
     "classnames": "^2.2.6",
     "hoist-non-react-statics": "^3.3.2",
     "react-loading-skeleton": "^2.1.1",
