@@ -82,6 +82,9 @@ const whiteVarListA = [
 
 const whiteVarList = [
   ...whiteVarListA,
+  '--search-before-title-icon-padding',
+  '--pagination-item-disabled-bg',
+  '--nav-ver-height',
   '--active-shadow',
   '--active-transition',
   '--dialog-header-close-bg-width',
