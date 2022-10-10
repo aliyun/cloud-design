@@ -30,7 +30,8 @@ const Tag: React.FC<TagProps> & {
         theme === 'hybridcloud' ||
         theme === 'hybridcloud-dark' ||
         theme === 'yunxiao' ||
-        theme === 'yunxiao-dark'
+        theme === 'yunxiao-dark' ||
+        theme === 'yunxiao-v5'
       ) {
         return (
           <NextTag
