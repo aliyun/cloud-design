@@ -214,7 +214,7 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   return (
     <NextDialog
-      className={`${size === 'large' ? 'next-dialog-large' : ''}`}
+      className={`${size === 'large' ? 'next-dialog-large' : ''}${theme === 'yunxiao-v5' && sidebar ? ' next-dialog-with-sidebar': ''}`}
       title={renderTitle(prefix, theme, title, extra)}
       width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}

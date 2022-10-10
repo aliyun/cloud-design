@@ -27,7 +27,7 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
     &#{$dialog-prefix}-large {
       min-width: 800px;
     }
-    >#{$dialog-prefix}-body {
+    &#{$dialog-prefix}-with-sidebar #{$dialog-prefix}-body {
       display: flex;
       #{$dialog-prefix}-sidebar {
         width: 160px;
