@@ -10,13 +10,12 @@ const HOC = <T extends any>(
   const Wrapper = React.forwardRef((props, ref) => {
     const defaultOffsetY = useDefaultOffsetY()
     const theme = useCssVar('--alicloudfe-components-theme').trim()
+    const openV2 = theme.startsWith('hybridcloud') && v2
     const popupProps = {
       align: 'tl bl',
       offset: [0, defaultOffsetY],
+      v2: openV2,
       ...(props as any).popupProps
-    }
-    if (theme.startsWith('hybridcloud') && v2) {
-      popupProps.v2 = true
     }
     return (
       <WrappedComponents ref={ref as any} {...props} popupProps={popupProps} />
