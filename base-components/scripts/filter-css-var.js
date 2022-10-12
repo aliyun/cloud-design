@@ -337,6 +337,10 @@ const whiteVarList = [
   '--table-row-hover-bg',
   '--table-row-color',
   '--table-th-color',
+  '--table-lock-right-shadow',
+  '--table-lock-left-shadow',
+  '--table-ping-right-shadow',
+  '--table-ping-left-shadow',
   '--tab-wrapped-border-line-color',
   '--tab-wrapped-bg-color',
   '--tab-capsule-bg-color',
@@ -616,11 +620,11 @@ const whiteVarList = [
   '--date-picker2-time-bg'
 ]
 // 递归文件
-const fileDisplay = (filePath) => {
+const fileDisplay = filePath => {
   let filesList = []
   const files = fs.readdirSync(filePath)
   //遍历读取到的文件列表
-  files.forEach((filename) => {
+  files.forEach(filename => {
     const filedir = path.join(filePath, filename)
     const stats = fs.statSync(filedir)
     const isFile = stats.isFile()
@@ -641,9 +645,9 @@ const fileDisplay = (filePath) => {
 const getWhiteVar = () => {
   let whiteCssVar = []
   const filesList = fileDisplay(path.join(__dirname, '../src'))
-  const cssFilesList = filesList.filter((file) => /.+(\.css|\.scss)/.test(file))
+  const cssFilesList = filesList.filter(file => /.+(\.css|\.scss)/.test(file))
 
-  cssFilesList.forEach((cssPath) => {
+  cssFilesList.forEach(cssPath => {
     const cssData = fs.readFileSync(cssPath, 'utf8')
     const reg = new RegExp(
       `(?<=var\\(\\s*)(${deleteVarPrefix.join('|')}).*?(?=(\\s*,|\\s*\\)))`,
@@ -656,7 +660,7 @@ const getWhiteVar = () => {
   })
 
   // 过滤icon
-  whiteCssVar = whiteCssVar.filter((item) => !/--icon-content-.*/.test(item))
+  whiteCssVar = whiteCssVar.filter(item => !/--icon-content-.*/.test(item))
 
   return Array.from(new Set([...(whiteCssVar || []), ...whiteVarList]))
   // return Array.from(new Set([...(whiteVarList || [])]))
@@ -668,14 +672,14 @@ const replaceSecondVar = (css, cssVar) => {
   // 获取所有二级变量
   let secondVars = css
     .match(/(?=var\(\s*--).*?\)+/g)
-    .filter((item) => {
+    .filter(item => {
       const reg = new RegExp(
         `var\\(\s*(${baseVarPrefix.join('|')}).*?\\)+`,
         'g'
       )
       return !reg.test(item)
     })
-    .map((item) => {
+    .map(item => {
       // 处理有时候右括号会取多的情况
       const leftNum = item.match(/\(/g)
       const rightNum = item.match(/\)/g)
@@ -691,7 +695,7 @@ const replaceSecondVar = (css, cssVar) => {
   secondVars = Array.from(new Set(secondVars))
 
   // 获取一级变量
-  secondVars.forEach((item) => {
+  secondVars.forEach(item => {
     // 二级变量名
     const secondVarName = item
       .match(/(?<=var\(\n*)--.*?(?=\n*(,|\)))/g)[0]
@@ -728,7 +732,6 @@ const replaceSecondVar = (css, cssVar) => {
                 // .replace(/\s{2,1000}/g, ' ')
                 .replace(':', ',')
                 .replace(';', ')')
-
 
               result = result.replace(
                 new RegExp(item.replace(/\(/, '\\(').replace(/\)/, '\\)'), 'g'),
@@ -777,10 +780,10 @@ const replaceIcon = (css, cssVar = '') => {
     css.match(/content:\s*"\\[\d\w]{4}";[\n\s]*content:\s*var\(--.*\s*\);/g) ||
     []
   const contentValueVars = contentVars.map(
-    (item) => item.match(/[\n\s]*content:\s*var\(--.*\s*\);/g)[0]
+    item => item.match(/[\n\s]*content:\s*var\(--.*\s*\);/g)[0]
   )
 
-  contentValueVars.forEach((item) => {
+  contentValueVars.forEach(item => {
     result = result.replace(item, '')
   })
 
@@ -788,7 +791,7 @@ const replaceIcon = (css, cssVar = '') => {
   const contentTwo =
     result.match(/content:\s*"\\[\w\s]{4}";[\n\s]+content:\s*".{0,4}";/g) || []
 
-  contentTwo.forEach((item) => {
+  contentTwo.forEach(item => {
     result = result.replace(item, item.match(/content:\s*"\\[\w\s]{4}";/g)[0])
   })
 
@@ -804,7 +807,7 @@ const filterCssVar = (css, cssVar) => {
 
   let deleteVars = []
 
-  deleteVarPrefix.forEach((deletePrefix) => {
+  deleteVarPrefix.forEach(deletePrefix => {
     const varsList = result.match(
       new RegExp(`\\s+(?!var\\()${deletePrefix}.*;`, 'g')
     )
@@ -813,7 +816,7 @@ const filterCssVar = (css, cssVar) => {
     }
   })
 
-  deleteVars.forEach((varItem) => {
+  deleteVars.forEach(varItem => {
     const item = varItem.replace(/(^\n*\s*)|(\s*\n*$)/g, '')
     // console.log(`item.split(":")[0]`, item.split(":")[0]);
     if (!whiteVarPrefix.includes(item.split(':')[0])) {
