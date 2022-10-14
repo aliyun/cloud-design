@@ -573,6 +573,7 @@ const whiteVarList = [
   '--dialog-content-padding-bottom',
   '--dialog-footer-padding-bottom',
   '--dialog-bg',
+  '--dialog-shadow',
   '--dialog-title-border-color',
   '--btn-pure-color-disabled',
   '--btn-pure-bg-disabled',
