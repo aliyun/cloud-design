@@ -195,7 +195,8 @@ const Dialog: React.FC<CustomDialogProps> & {
       theme === 'yunxiao' ||
       theme === 'yunxiao-dark' ||
       theme === 'hybridcloud' ||
-      theme === 'hybridcloud-dark'
+      theme === 'hybridcloud-dark' ||
+      theme.startsWith('yunxiao')
     )
       return ['cancel', 'ok']
     return ['ok', 'cancel']
