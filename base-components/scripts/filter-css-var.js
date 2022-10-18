@@ -77,7 +77,9 @@ const whiteVarListA = [
   'color-other-2',
   'color-other-1',
   '--table-row-bg',
-  '--dialog-footer-bg-color'
+  '--dialog-footer-bg-color',
+  '--dialog-shadow',
+  '--drawer-shadow'
 ]
 
 const whiteVarList = [

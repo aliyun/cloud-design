@@ -1,6 +1,57 @@
 :root {
     
     
+    /* ------------------------ popup ------------------------ */
+    
+    
+    
+    --popup-spacing-tb: var(--s-zero, 0px);
+    
+    
+    
+    --popup-global-shadow: var(--shadow-2-down, 0px 5px 15px 0px rgba(0, 0, 0, 0.15));
+    
+    
+    
+    --popup-global-corner: var(--corner-1, 2px);
+    
+    
+    
+    --popup-global-border-color: var(--color-line1-2, #dae0e5);
+    
+    
+    
+    --popup-global-border-style: var(--line-solid, solid);
+    
+    
+    
+    --popup-global-border-width: var(--line-zero, 0px);
+    
+    
+    
+    --popup-local-border-style: var(--line-solid, solid);
+    
+    
+    
+    --popup-local-shadow: var(--shadow-2-down, 0px 5px 15px 0px rgba(0, 0, 0, 0.15));
+    
+    
+    
+    --popup-local-corner: var(--corner-2, 4px);
+    
+    
+    
+    --popup-local-border-color: var(--color-transparent, transparent);
+    
+    
+    
+    --popup-local-border-width: var(--line-1, 1px);
+    
+    
+    
+    --popup-spacing-lr: var(--s-2, 8px);
+    
+    
     /* ------------------------ font ------------------------ */
     
     
@@ -149,57 +200,6 @@
     
     
     --line-3: 4px;
-    
-    
-    /* ------------------------ popup ------------------------ */
-    
-    
-    
-    --popup-global-shadow: var(--shadow-2-down, 0px 5px 15px 0px rgba(0, 0, 0, 0.15));
-    
-    
-    
-    --popup-global-corner: var(--corner-1, 2px);
-    
-    
-    
-    --popup-global-border-color: var(--color-line1-2, #dae0e5);
-    
-    
-    
-    --popup-global-border-style: var(--line-solid, solid);
-    
-    
-    
-    --popup-global-border-width: var(--line-zero, 0px);
-    
-    
-    
-    --popup-local-border-style: var(--line-solid, solid);
-    
-    
-    
-    --popup-local-shadow: var(--shadow-2-down, 0px 5px 15px 0px rgba(0, 0, 0, 0.15));
-    
-    
-    
-    --popup-local-corner: var(--corner-2, 4px);
-    
-    
-    
-    --popup-local-border-color: var(--color-transparent, transparent);
-    
-    
-    
-    --popup-local-border-width: var(--line-1, 1px);
-    
-    
-    
-    --popup-spacing-tb: var(--s-2, 8px);
-    
-    
-    
-    --popup-spacing-lr: var(--s-2, 8px);
     
     
     /* ------------------------ mask ------------------------ */
@@ -10314,10 +10314,6 @@
     
     
     
-    --collapse-title-disabled-bg-color: var(--color-fill1-2, #f2f5f7);
-    
-    
-    
     --collapse-title-font-disabled-color: var(--color-text1-1, #adadad);
     
     
@@ -10331,6 +10327,10 @@
     
     
     --collapse-content-bg-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --collapse-title-disabled-bg-color: var(--color-fill1-2, #f2f5f7);
     
     
     /* ------------------------ pagination ------------------------ */
@@ -12525,10 +12525,6 @@
     
     
     
-    --tab-item-padding-tb-size-s: 8px;
-    
-    
-    
     --tab-item-text-size-s: var(--font-size-body-1, 14px);
     
     
@@ -12706,6 +12702,10 @@
     
     
     --tab-capsule-text-color-selected: var(--color-text1-4, #292929);
+    
+    
+    
+    --tab-item-padding-tb-size-s: 6px;
     
     
     /* ------------------------ calendar ------------------------ */
