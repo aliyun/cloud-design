@@ -1,58 +1,11 @@
 :root {
     
     
-    /* ------------------------ popup ------------------------ */
-    
-    
-    
-    --popup-spacing-tb: var(--s-zero, 0px);
-    
-    
-    
-    --popup-global-shadow: var(--shadow-2-down, 0px 5px 15px 0px rgba(0, 0, 0, 0.15));
-    
-    
-    
-    --popup-global-corner: var(--corner-1, 2px);
-    
-    
-    
-    --popup-global-border-color: var(--color-line1-2, #dae0e5);
-    
-    
-    
-    --popup-global-border-style: var(--line-solid, solid);
-    
-    
-    
-    --popup-global-border-width: var(--line-zero, 0px);
-    
-    
-    
-    --popup-local-border-style: var(--line-solid, solid);
-    
-    
-    
-    --popup-local-shadow: var(--shadow-2-down, 0px 5px 15px 0px rgba(0, 0, 0, 0.15));
-    
-    
-    
-    --popup-local-corner: var(--corner-2, 4px);
-    
-    
-    
-    --popup-local-border-color: var(--color-transparent, transparent);
-    
-    
-    
-    --popup-local-border-width: var(--line-1, 1px);
-    
-    
-    
-    --popup-spacing-lr: var(--s-2, 8px);
-    
-    
     /* ------------------------ font ------------------------ */
+    
+    
+    
+    --font-size-caption: 12px;
     
     
     
@@ -132,10 +85,6 @@
     
     
     
-    --font-size-caption: 10px;
-    
-    
-    
     --font-size-subhead: 14px;
     
     
@@ -171,49 +120,15 @@
     --font-size-display-2: 32px;
     
     
-    /* ------------------------ line ------------------------ */
-    
-    
-    
-    --line-dotted: dotted;
-    
-    
-    
-    --line-dashed: dashed;
-    
-    
-    
-    --line-solid: solid;
-    
-    
-    
-    --line-2: 2px;
-    
-    
-    
-    --line-1: 1px;
-    
-    
-    
-    --line-zero: 0px;
-    
-    
-    
-    --line-3: 4px;
-    
-    
-    /* ------------------------ mask ------------------------ */
-    
-    
-    
-    --mask-background: var(--color-black, #000000);
-    
-    
-    
-    --mask-opacity: 0.4;
-    
-    
     /* ------------------------ form-element ------------------------ */
+    
+    
+    
+    --form-element-medium-corner: var(--corner-2, 4px);
+    
+    
+    
+    --form-element-small-corner: var(--corner-2, 4px);
     
     
     
@@ -233,11 +148,11 @@
     
     
     
-    --form-element-small-preview-font-size: var(--font-size-caption, 10px);
+    --form-element-small-preview-font-size: var(--font-size-caption, 12px);
     
     
     
-    --form-element-small-preview-label-font-size: var(--font-size-caption, 10px);
+    --form-element-small-preview-label-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -249,19 +164,11 @@
     
     
     
-    --form-element-small-font-size: var(--font-size-caption, 10px);
+    --form-element-small-font-size: var(--font-size-caption, 12px);
     
     
     
     --form-element-large-corner: var(--corner-2, 4px);
-    
-    
-    
-    --form-element-medium-corner: var(--corner-1, 2px);
-    
-    
-    
-    --form-element-small-corner: var(--corner-1, 2px);
     
     
     
@@ -306,6 +213,99 @@
     
     
     --form-element-small-height: var(--s-6, 24px);
+    
+    
+    /* ------------------------ popup ------------------------ */
+    
+    
+    
+    --popup-spacing-tb: var(--s-zero, 0px);
+    
+    
+    
+    --popup-global-shadow: var(--shadow-2-down, 0px 5px 15px 0px rgba(0, 0, 0, 0.15));
+    
+    
+    
+    --popup-global-corner: var(--corner-1, 2px);
+    
+    
+    
+    --popup-global-border-color: var(--color-line1-2, #dae0e5);
+    
+    
+    
+    --popup-global-border-style: var(--line-solid, solid);
+    
+    
+    
+    --popup-global-border-width: var(--line-zero, 0px);
+    
+    
+    
+    --popup-local-border-style: var(--line-solid, solid);
+    
+    
+    
+    --popup-local-shadow: var(--shadow-2-down, 0px 5px 15px 0px rgba(0, 0, 0, 0.15));
+    
+    
+    
+    --popup-local-corner: var(--corner-2, 4px);
+    
+    
+    
+    --popup-local-border-color: var(--color-transparent, transparent);
+    
+    
+    
+    --popup-local-border-width: var(--line-1, 1px);
+    
+    
+    
+    --popup-spacing-lr: var(--s-2, 8px);
+    
+    
+    /* ------------------------ line ------------------------ */
+    
+    
+    
+    --line-dotted: dotted;
+    
+    
+    
+    --line-dashed: dashed;
+    
+    
+    
+    --line-solid: solid;
+    
+    
+    
+    --line-2: 2px;
+    
+    
+    
+    --line-1: 1px;
+    
+    
+    
+    --line-zero: 0px;
+    
+    
+    
+    --line-3: 4px;
+    
+    
+    /* ------------------------ mask ------------------------ */
+    
+    
+    
+    --mask-background: var(--color-black, #000000);
+    
+    
+    
+    --mask-opacity: 0.4;
     
     
     /* ------------------------ size ------------------------ */
@@ -4786,7 +4786,7 @@
     
     
     
-    --timeline-item-left-body-font-size: var(--font-size-caption, 10px);
+    --timeline-item-left-body-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -4850,7 +4850,7 @@
     
     
     
-    --timeline-item-custom-node-font-size: var(--font-size-caption, 10px);
+    --timeline-item-custom-node-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -4874,7 +4874,7 @@
     
     
     
-    --timeline-item-folder-font-size: var(--font-size-caption, 10px);
+    --timeline-item-folder-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -5198,7 +5198,7 @@
     
     
     
-    --rating-small-font-size: var(--font-size-caption, 10px);
+    --rating-small-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -5663,10 +5663,6 @@
     
     
     
-    --tree-node-padding: var(--s-zero, 0px);
-    
-    
-    
     --tree-node-title-margin: var(--s-zero, 0px);
     
     
@@ -5758,6 +5754,10 @@
     --tree-node-disabled-color: var(--color-text1-1, #adadad);
     
     
+    
+    --tree-node-padding: var(--s-1, 4px);
+    
+    
     /* ------------------------ card ------------------------ */
     
     
@@ -5795,10 +5795,6 @@
     
     
     --card-content-color: var(--color-text1-2, #6E6E6E);
-    
-    
-    
-    --card-title-font-size: var(--font-size-subhead, 14px);
     
     
     
@@ -5907,6 +5903,10 @@
     
     
     --card-more-btn-background: var(--color-white, #FFFFFF);
+    
+    
+    
+    --card-title-font-size: var(--font-size-title, 16px);
     
     
     /* ------------------------ paragraph ------------------------ */
@@ -6198,7 +6198,7 @@
     
     
     
-    --btn-size-s-font: var(--font-size-caption, 10px);
+    --btn-size-s-font: var(--font-size-caption, 12px);
     
     
     
@@ -6494,10 +6494,6 @@
     
     
     
-    --btn-text-normal-color: var(--color-text1-4, #292929);
-    
-    
-    
     --btn-text-size-l-height: var(--s-9, 36px);
     
     
@@ -6745,6 +6741,10 @@
     --btn-text-size-m-height: var(--s-5, 20px);
     
     
+    
+    --btn-text-normal-color: var(--color-text1-3, #575757);
+    
+    
     /* ------------------------ tag ------------------------ */
     
     
@@ -6785,7 +6785,7 @@
     
     
     
-    --tag-size-m-text-size: var(--font-size-caption, 10px);
+    --tag-size-m-text-size: var(--font-size-caption, 12px);
     
     
     
@@ -7153,7 +7153,7 @@
     
     
     
-    --tag-size-s-text-size: var(--font-size-caption, 10px);
+    --tag-size-s-text-size: var(--font-size-caption, 12px);
     
     
     
@@ -7400,10 +7400,6 @@
     
     
     
-    --input-hover-border-color: var(--color-brand1-5, #41AAF0);
-    
-    
-    
     --input-l-icon-padding-right: var(--s-3, 12px);
     
     
@@ -7472,11 +7468,15 @@
     
     
     
-    --input-maxlen-font-size: var(--font-size-caption, 10px);
+    --input-maxlen-font-size: var(--font-size-caption, 12px);
     
     
     
     --input-hint-hover-color: var(--color-text1-3, #575757);
+    
+    
+    
+    --input-hover-border-color: var(--color-brand1-4, #68BBF2);
     
     
     /* ------------------------ form ------------------------ */
@@ -7587,10 +7587,6 @@
     
     
     --table-th-bg: var(--color-fill1-1, #FFFFFF);
-    
-    
-    
-    --table-th-color: var(--color-fill1-6, #b1b8bf);
     
     
     
@@ -7737,6 +7733,10 @@
     --table-expanded-ctrl-disabled-color: var(--color-text1-2, #6E6E6E);
     
     
+    
+    --table-th-color: var(--color-text1-1, #adadad);
+    
+    
     /* ------------------------ upload ------------------------ */
     
     
@@ -7753,7 +7753,7 @@
     
     
     
-    --upload-text-list-font-size: var(--font-size-caption, 10px);
+    --upload-text-list-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -7833,7 +7833,7 @@
     
     
     
-    --upload-card-add-text-size: var(--font-size-caption, 10px);
+    --upload-card-add-text-size: var(--font-size-caption, 12px);
     
     
     
@@ -8013,11 +8013,11 @@
     
     
     
-    --upload-card-list-thumbnail-font-size: var(--font-size-caption, 10px);
+    --upload-card-list-thumbnail-font-size: var(--font-size-caption, 12px);
     
     
     
-    --upload-card-list-name-font-size: var(--font-size-caption, 10px);
+    --upload-card-list-name-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -8049,7 +8049,7 @@
     
     
     
-    --upload-drag-zone-hint-font-size: var(--font-size-caption, 10px);
+    --upload-drag-zone-hint-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -8088,7 +8088,7 @@
     
     
     
-    --badge-size-count-font: var(--font-size-caption, 10px);
+    --badge-size-count-font: var(--font-size-caption, 12px);
     
     
     
@@ -8353,14 +8353,6 @@
     
     
     
-    --drawer-title-padding-top: var(--s-4, 16px);
-    
-    
-    
-    --drawer-title-padding-bottom: var(--s-4, 16px);
-    
-    
-    
     --drawer-content-font-size: var(--font-size-body-2, 14px);
     
     
@@ -8426,6 +8418,14 @@
     
     
     --drawer-close-bg-hovered: var(--color-transparent, transparent);
+    
+    
+    
+    --drawer-title-padding-top: var(--s-3, 12px);
+    
+    
+    
+    --drawer-title-padding-bottom: var(--s-3, 12px);
     
     
     /* ------------------------ message ------------------------ */
@@ -8915,10 +8915,6 @@
     
     
     
-    --dialog-border-width: var(--line-zero, 0px);
-    
-    
-    
     --dialog-title-border-width: var(--line-1, 1px);
     
     
@@ -8940,14 +8936,6 @@
     
     
     --dialog-content-padding-bottom: var(--s-4, 16px);
-    
-    
-    
-    --dialog-footer-padding-top: var(--s-4, 16px);
-    
-    
-    
-    --dialog-footer-padding-bottom: var(--s-4, 16px);
     
     
     
@@ -8992,10 +8980,6 @@
     
     
     --dialog-content-padding-top: var(--s-4, 16px);
-    
-    
-    
-    --dialog-footer-border-width: var(--line-zero, 0px);
     
     
     
@@ -9055,15 +9039,31 @@
     
     
     
-    --dialog-footer-bg-color: var(--color-transparent, transparent);
-    
-    
-    
     --dialog-close-color: var(--color-text1-2, #6E6E6E);
     
     
     
     --dialog-close-bg-hovered: var(--color-transparent, transparent);
+    
+    
+    
+    --dialog-border-width: var(--line-1, 1px);
+    
+    
+    
+    --dialog-footer-border-width: var(--line-1, 1px);
+    
+    
+    
+    --dialog-footer-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --dialog-footer-padding-top: var(--s-3, 12px);
+    
+    
+    
+    --dialog-footer-padding-bottom: var(--s-3, 12px);
     
     
     /* ------------------------ number-picker ------------------------ */
@@ -9166,10 +9166,6 @@
     
     
     --progress-line-underlay-color: var(--color-line1-1, #e9edf0);
-    
-    
-    
-    --progress-line-font-color: var(--color-fill1-6, #b1b8bf);
     
     
     
@@ -9297,15 +9293,19 @@
     
     
     
-    --progress-line-font-m: var(--font-size-caption, 10px);
+    --progress-line-font-m: var(--font-size-caption, 12px);
     
     
     
-    --progress-line-font-s: var(--font-size-caption, 10px);
+    --progress-line-font-s: var(--font-size-caption, 12px);
     
     
     
     --progress-line-underlay-border-color: var(--color-line1-2, #dae0e5);
+    
+    
+    
+    --progress-line-font-color: var(--color-text1-1, #adadad);
     
     
     /* ------------------------ shell ------------------------ */
@@ -10529,11 +10529,11 @@
     
     
     
-    --pagination-small-current-font-size: var(--font-size-caption, 10px);
+    --pagination-small-current-font-size: var(--font-size-caption, 12px);
     
     
     
-    --pagination-small-total-font-size: var(--font-size-caption, 10px);
+    --pagination-small-total-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -10541,7 +10541,7 @@
     
     
     
-    --pagination-small-jump-font-size: var(--font-size-caption, 10px);
+    --pagination-small-jump-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -10899,7 +10899,7 @@
     
     
     
-    --radio-button-font-size-small: var(--font-size-caption, 10px);
+    --radio-button-font-size-small: var(--font-size-caption, 12px);
     
     
     
@@ -10966,7 +10966,7 @@
     
     
     
-    --time-picker-menu-title-font-size: var(--font-size-caption, 10px);
+    --time-picker-menu-title-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -11268,7 +11268,7 @@
     
     
     
-    --step-circle-item-node-font-size: var(--font-size-caption, 10px);
+    --step-circle-item-node-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -11432,7 +11432,7 @@
     
     
     
-    --step-circle-item-content-font-size: var(--font-size-caption, 10px);
+    --step-circle-item-content-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -12473,10 +12473,6 @@
     
     
     
-    --tab-item-padding-lr-size-m: var(--s-3, 12px);
-    
-    
-    
     --tab-item-font-weight-selected: var(--font-weight-medium, 500);
     
     
@@ -12706,6 +12702,10 @@
     
     
     --tab-item-padding-tb-size-s: 6px;
+    
+    
+    
+    --tab-item-padding-lr-size-m: var(--s-5, 20px);
     
     
     /* ------------------------ calendar ------------------------ */
