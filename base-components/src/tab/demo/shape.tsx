@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Tab, Radio } from '@alicloudfe/components'
+import { Tab, Radio, Badge } from '@alicloudfe/components'
 
 function onChange(key) {
   console.log(key)
@@ -27,10 +27,21 @@ const Demo = () => {
       <br />
       <br />
       <Tab shape={shape} onChange={onChange}>
-        <Tab.Item key="home" title="Home">
+        <Tab.Item key="home" title={
+          <>
+            ome
+            <Badge count={4} showZero />
+          </>
+        }>
           This is home page
         </Tab.Item>
-        <Tab.Item key="document" title="Document">
+        <Tab.Item key="document" title={
+          <>
+            Document
+            <Badge count={4} showZero />
+          </>
+          
+        }>
           This is document page
         </Tab.Item>
         <Tab.Item key="api" title="API">

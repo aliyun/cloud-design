@@ -204,12 +204,12 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   // 云效主题align在上方
   const defaultAlign = (() => {
-    if (theme === 'yunxiao' || theme === 'yunxiao-dark') return 'tc tc'
+    if (theme === 'yunxiao' || theme === 'yunxiao-dark' || theme.startsWith('yunxiao')) return 'tc tc'
     return 'cc cc'
   })()
 
   const defaultMinMargin = (() => {
-    if (theme === 'yunxiao' || theme === 'yunxiao-dark') return 100
+    if (theme === 'yunxiao' || theme === 'yunxiao-dark' || theme.startsWith('yunxiao')) return 100
     return 40
   })()
 
@@ -240,19 +240,20 @@ const showDefaultFooterActions = (theme: string) => {
     theme === 'yunxiao' ||
     theme === 'yunxiao-dark' ||
     theme === 'hybridcloud' ||
-    theme === 'hybridcloud-dark'
+    theme === 'hybridcloud-dark' ||
+    theme.startsWith('yunxiao')
   )
     return ['cancel', 'ok']
   return ['ok', 'cancel']
 }
 
 const showDefaultAlign = (theme: string) => {
-  if (theme === 'yunxiao' || theme === 'yunxiao-dark') return 'tc tc'
+  if (theme === 'yunxiao' || theme === 'yunxiao-dark' || theme.startsWith('yunxiao')) return 'tc tc'
   return 'cc cc'
 }
 
 const showDefaultMinMargin = (theme: string) => {
-  if (theme === 'yunxiao' || theme === 'yunxiao-dark') return 100
+  if (theme === 'yunxiao' || theme === 'yunxiao-dark' || theme.startsWith('yunxiao')) return 100
   return 40
 }
 

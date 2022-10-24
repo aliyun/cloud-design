@@ -1,70 +1,94 @@
 // 云效胶囊 tab 独有样式覆盖
 .is-yunxiao.next-tabs.next-tabs-capsule {
-    &.next-medium {
-      .next-tabs-nav {
-        height: 36px;
-        padding: 0 2px;
-        background-color: var(--tab-capsule-bg-color, #F7F7F7);
+  &.next-medium {
+    .next-tabs-nav {
+      height: 36px;
+      padding: 0 2px;
+      background-color: var(--tab-capsule-bg-color, #f7f7f7);
+      border-radius: 4px;
+      .next-tabs-tab.active {
+        background-color: var(--tab-capsule-active-bg-color, #fff);
+        transition: background-color 0.2s;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
         border-radius: 4px;
-        .next-tabs-tab.active {
-          background-color: var(--tab-capsule-active-bg-color, #fff);
-          transition: background-color .2s;
-          box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
-          border-radius: 4px;
-          height: 32px;
-          margin-top: 2px;
-        }
-        .next-tabs-tab {
-          background-color: transparent;
-          transition: background-color .2s;
-          height: 36px;
-          .next-tabs-tab-inner {
-            height: 32px;
-            margin-top: -2px;
-          }
-        }
-      }
-    }
-    &.next-small {
-      .next-tabs-nav {
         height: 32px;
-        padding: 0 2px;
-        background-color: var(--tab-capsule-bg-color, #F7F7F7);
-        border-radius: 4px;
-        .next-tabs-tab.active {
-          background-color: var(--tab-capsule-active-bg-color, #fff);
-          transition: background-color .2s;
-          box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
-          border-radius: 4px;
-          height: 28px;
-          margin-top: 2px;
-        }
-        .next-tabs-tab {
-          background-color: transparent;
-          transition: background-color .2s;
+        margin-top: 2px;
+      }
+      .next-tabs-tab {
+        background-color: transparent;
+        transition: background-color 0.2s;
+        height: 36px;
+        .next-tabs-tab-inner {
           height: 32px;
-          .next-tabs-tab-inner {
-            height: 28px;
-            margin-top: -3px;
-          }
+          margin-top: -2px;
         }
       }
     }
   }
-  
-  .is-yunxiao.next-tabs-pure > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab:before {
-    border-radius: 1px;
+  &.next-small {
+    .next-tabs-nav {
+      height: 32px;
+      padding: 0 2px;
+      background-color: var(--tab-capsule-bg-color, #f7f7f7);
+      border-radius: 4px;
+      .next-tabs-tab.active {
+        background-color: var(--tab-capsule-active-bg-color, #fff);
+        transition: background-color 0.2s;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        height: 28px;
+        margin-top: 2px;
+      }
+      .next-tabs-tab {
+        background-color: transparent;
+        transition: background-color 0.2s;
+        height: 32px;
+        .next-tabs-tab-inner {
+          height: 28px;
+          margin-top: -3px;
+        }
+      }
+    }
   }
+}
+
+.is-yunxiao.next-tabs-pure
+  > .next-tabs-bar
+  .next-tabs-nav-container
+  .next-tabs-tab:before {
+  border-radius: 1px;
+}
 
 .next-tabs-wrapped .next-tabs-bar {
-    .next-tabs-tab.active{
-      border-radius: 4px;
-    }
-    .next-tabs-tab:hover {
-      border-radius: 4px;
+  // tab后跟着的badge的样式hack
+  .next-badge {
+    margin-left: 6px;
+    .next-badge-count {
+      box-shadow: none;
+      background: var(--color-brand3-2, #e9edf0);
+      color: var(--color-brand3-7, #62656f);
     }
   }
 
-  .next-tabs.next-tabs-vertical.next-tabs-left.next-medium > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab {
-    margin: 8px 0;
+  .next-tabs-tab.active {
+    border-radius: 4px;
+    // tab后跟着的badge的样式hack
+    .next-badge {
+      .next-badge-count {
+        box-shadow: none;
+        background: var(--color-brand1-1, #f0f9ff);
+        color: var(--color-brand1-6, #1b9aee);
+      }
+    }
   }
+  .next-tabs-tab:hover {
+    border-radius: 4px;
+  }
+}
+
+.next-tabs.next-tabs-vertical.next-tabs-left.next-medium
+  > .next-tabs-bar
+  .next-tabs-nav-container
+  .next-tabs-tab {
+  margin: 8px 0;
+}
