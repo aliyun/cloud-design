@@ -1,6 +1,397 @@
 #{$css-var-scope} {
     
     
+    /* ------------------------ color ------------------------ */
+    
+    
+    
+    --color-fill1-6: rgba(107,107,107,1);
+    
+    
+    
+    --color-text1-6: rgba(206,206,206,0.7);
+    
+    
+    
+    --color-text1-7: rgba(139,139,139,1);
+    
+    
+    
+    --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
+    
+    
+    
+    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
+    
+    
+    
+    --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
+    
+    
+    
+    --color-gradient-1: linear-gradient(270deg, rgb(121, 232, 199) 0%, rgb(8, 194, 158) 100%);
+    
+    
+    
+    --color-transparent: transparent;
+    
+    
+    
+    --color-black: #000000;
+    
+    
+    
+    --color-white: #FFFFFF;
+    
+    
+    
+    --color-fill1-8: rgba(98,101,111,1);
+    
+    
+    
+    --color-fill1-9: rgba(73,78,84,1);
+    
+    
+    
+    --color-line1-5: rgba(177,184,191,1);
+    
+    
+    
+    --color-fill1-7: rgba(125,131,137,1);
+    
+    
+    
+    --color-fill1-5: rgba(198,205,212,1);
+    
+    
+    
+    --color-fill1-4: rgba(218,224,229,1);
+    
+    
+    
+    --color-fill1-3: rgba(233,237,240,1);
+    
+    
+    
+    --color-fill1-2: rgba(242,245,247,1);
+    
+    
+    
+    --color-line1-3: rgba(198,205,212,1);
+    
+    
+    
+    --color-line1-2: rgba(218,224,229,1);
+    
+    
+    
+    --color-line1-1: rgba(233,237,240,1);
+    
+    
+    
+    --color-brand3-1: rgba(242,245,247,1);
+    
+    
+    
+    --color-brand3-2: rgba(233,237,240,1);
+    
+    
+    
+    --color-brand3-4: rgba(198,205,212,1);
+    
+    
+    
+    --color-brand3-3: rgba(218,224,229,1);
+    
+    
+    
+    --color-brand3-6: rgba(125,131,137,1);
+    
+    
+    
+    --color-brand3-5: rgba(177,184,191,1);
+    
+    
+    
+    --color-brand3-7: rgba(98,101,111,1);
+    
+    
+    
+    --color-brand3-8: rgba(73,78,84,1);
+    
+    
+    
+    --color-text1-5: rgba(206,206,206,0.4);
+    
+    
+    
+    --color-brand2-1: rgba(144,205,245,0.4);
+    
+    
+    
+    --color-brand2-2: rgba(144,205,245,0.7);
+    
+    
+    
+    --color-notice-7: rgba(104,187,242,1);
+    
+    
+    
+    --color-warning-7: rgba(255,185,110,1);
+    
+    
+    
+    --color-error-7: rgba(242,136,126,1);
+    
+    
+    
+    --color-help-7: rgba(255,235,107,1);
+    
+    
+    
+    --color-success-7: rgba(103,207,152,1);
+    
+    
+    
+    --color-help-5: #FAD414;
+    
+    
+    
+    --color-help-6: #D1B10D;
+    
+    
+    
+    --color-brand1-7: #127FC7;
+    
+    
+    
+    --color-brand1-8: #0B65A1;
+    
+    
+    
+    --color-notice-5: #1B9AEE;
+    
+    
+    
+    --color-notice-6: #127FC7;
+    
+    
+    
+    --color-warning-5: #F98E1B;
+    
+    
+    
+    --color-warning-6: #CF7413;
+    
+    
+    
+    --color-error-5: #E84738;
+    
+    
+    
+    --color-error-6: #C43123;
+    
+    
+    
+    --color-success-6: #159953;
+    
+    
+    
+    --color-success-5: #23B066;
+    
+    
+    
+    --color-brand1-2: #C5E8FF;
+    
+    
+    
+    --color-brand1-3: #90CDF5;
+    
+    
+    
+    --color-brand1-4: #68BBF2;
+    
+    
+    
+    --color-brand1-5: #41AAF0;
+    
+    
+    
+    --color-brand1-10: #000508;
+    
+    
+    
+    --color-text1-4: #292929;
+    
+    
+    
+    --color-text1-3: #575757;
+    
+    
+    
+    --color-text1-2: #6E6E6E;
+    
+    
+    
+    --color-text1-1: rgba(173,173,173,1);
+    
+    
+    
+    --color-fill1-1: #FFFFFF;
+    
+    
+    
+    --color-line1-4: #FFFFFF;
+    
+    
+    
+    --color-other-3: #131415;
+    
+    
+    
+    --color-other-2: #FFFFFF;
+    
+    
+    
+    --color-other-1: #3A3C4B;
+    
+    
+    
+    --color-link-3: #1B9AEE;
+    
+    
+    
+    --color-link-2: #41AAF0;
+    
+    
+    
+    --color-link-1: #127FC7;
+    
+    
+    
+    --color-help-4: #F8E71C;
+    
+    
+    
+    --color-help-3: #FFEE96;
+    
+    
+    
+    --color-help-2: #FFF5C2;
+    
+    
+    
+    --color-help-1: #FFFCF0;
+    
+    
+    
+    --color-error-4: #ED675A;
+    
+    
+    
+    --color-error-3: #F7AAA3;
+    
+    
+    
+    --color-error-2: #FCCECA;
+    
+    
+    
+    --color-error-1: #FFF1F0;
+    
+    
+    
+    --color-warning-4: #FFA545;
+    
+    
+    
+    --color-warning-3: #FFCD96;
+    
+    
+    
+    --color-warning-2: #FFE0BF;
+    
+    
+    
+    --color-warning-1: #FFF8F0;
+    
+    
+    
+    --color-notice-4: #41AAF0;
+    
+    
+    
+    --color-notice-3: #90CDF5;
+    
+    
+    
+    --color-notice-2: #C5E8FF;
+    
+    
+    
+    --color-notice-1: #F0F9FF;
+    
+    
+    
+    --color-success-4: #43BF7E;
+    
+    
+    
+    --color-success-3: #90DEB5;
+    
+    
+    
+    --color-success-2: #BBF2D5;
+    
+    
+    
+    --color-success-1: #F0FFF7;
+    
+    
+    
+    --color-data1-8: #5C60E6;
+    
+    
+    
+    --color-data1-7: #4AD051;
+    
+    
+    
+    --color-data1-6: #FAB34F;
+    
+    
+    
+    --color-data1-5: #FF6A00;
+    
+    
+    
+    --color-data1-4: #FF656B;
+    
+    
+    
+    --color-data1-3: #9979F2;
+    
+    
+    
+    --color-data1-2: #006CD9;
+    
+    
+    
+    --color-data1-1: #5CCDBB;
+    
+    
+    
+    --color-brand1-9: #064C7A;
+    
+    
+    
+    --color-brand1-6: #1B9AEE;
+    
+    
+    
+    --color-brand1-1: #F0F9FF;
+    
+    
     /* ------------------------ font ------------------------ */
     
     
@@ -4288,393 +4679,6 @@
     --corner-3: 50px;
     
     
-    /* ------------------------ color ------------------------ */
-    
-    
-    
-    --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
-    
-    
-    
-    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
-    
-    
-    
-    --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
-    
-    
-    
-    --color-gradient-1: linear-gradient(270deg, rgb(121, 232, 199) 0%, rgb(8, 194, 158) 100%);
-    
-    
-    
-    --color-transparent: transparent;
-    
-    
-    
-    --color-black: #000000;
-    
-    
-    
-    --color-white: #FFFFFF;
-    
-    
-    
-    --color-fill1-8: rgba(98,101,111,1);
-    
-    
-    
-    --color-fill1-9: rgba(73,78,84,1);
-    
-    
-    
-    --color-line1-5: rgba(177,184,191,1);
-    
-    
-    
-    --color-fill1-7: rgba(125,131,137,1);
-    
-    
-    
-    --color-fill1-5: rgba(198,205,212,1);
-    
-    
-    
-    --color-fill1-6: rgba(177,184,191,1);
-    
-    
-    
-    --color-fill1-4: rgba(218,224,229,1);
-    
-    
-    
-    --color-fill1-3: rgba(233,237,240,1);
-    
-    
-    
-    --color-fill1-2: rgba(242,245,247,1);
-    
-    
-    
-    --color-line1-3: rgba(198,205,212,1);
-    
-    
-    
-    --color-line1-2: rgba(218,224,229,1);
-    
-    
-    
-    --color-line1-1: rgba(233,237,240,1);
-    
-    
-    
-    --color-brand3-1: rgba(242,245,247,1);
-    
-    
-    
-    --color-brand3-2: rgba(233,237,240,1);
-    
-    
-    
-    --color-brand3-4: rgba(198,205,212,1);
-    
-    
-    
-    --color-brand3-3: rgba(218,224,229,1);
-    
-    
-    
-    --color-brand3-6: rgba(125,131,137,1);
-    
-    
-    
-    --color-brand3-5: rgba(177,184,191,1);
-    
-    
-    
-    --color-brand3-7: rgba(98,101,111,1);
-    
-    
-    
-    --color-brand3-8: rgba(73,78,84,1);
-    
-    
-    
-    --color-text1-5: rgba(206,206,206,0.4);
-    
-    
-    
-    --color-brand2-1: rgba(144,205,245,0.4);
-    
-    
-    
-    --color-text1-6: rgba(206,206,206,0.7);
-    
-    
-    
-    --color-brand2-2: rgba(144,205,245,0.7);
-    
-    
-    
-    --color-notice-7: rgba(104,187,242,1);
-    
-    
-    
-    --color-warning-7: rgba(255,185,110,1);
-    
-    
-    
-    --color-error-7: rgba(242,136,126,1);
-    
-    
-    
-    --color-help-7: rgba(255,235,107,1);
-    
-    
-    
-    --color-success-7: rgba(103,207,152,1);
-    
-    
-    
-    --color-help-5: #FAD414;
-    
-    
-    
-    --color-help-6: #D1B10D;
-    
-    
-    
-    --color-brand1-7: #127FC7;
-    
-    
-    
-    --color-brand1-8: #0B65A1;
-    
-    
-    
-    --color-notice-5: #1B9AEE;
-    
-    
-    
-    --color-notice-6: #127FC7;
-    
-    
-    
-    --color-warning-5: #F98E1B;
-    
-    
-    
-    --color-warning-6: #CF7413;
-    
-    
-    
-    --color-error-5: #E84738;
-    
-    
-    
-    --color-error-6: #C43123;
-    
-    
-    
-    --color-success-6: #159953;
-    
-    
-    
-    --color-success-5: #23B066;
-    
-    
-    
-    --color-brand1-2: #C5E8FF;
-    
-    
-    
-    --color-brand1-3: #90CDF5;
-    
-    
-    
-    --color-brand1-4: #68BBF2;
-    
-    
-    
-    --color-brand1-5: #41AAF0;
-    
-    
-    
-    --color-brand1-10: #000508;
-    
-    
-    
-    --color-text1-4: #292929;
-    
-    
-    
-    --color-text1-3: #575757;
-    
-    
-    
-    --color-text1-2: #6E6E6E;
-    
-    
-    
-    --color-text1-1: rgba(173,173,173,1);
-    
-    
-    
-    --color-fill1-1: #FFFFFF;
-    
-    
-    
-    --color-line1-4: #FFFFFF;
-    
-    
-    
-    --color-other-3: #131415;
-    
-    
-    
-    --color-other-2: #FFFFFF;
-    
-    
-    
-    --color-other-1: #3A3C4B;
-    
-    
-    
-    --color-link-3: #1B9AEE;
-    
-    
-    
-    --color-link-2: #41AAF0;
-    
-    
-    
-    --color-link-1: #127FC7;
-    
-    
-    
-    --color-help-4: #F8E71C;
-    
-    
-    
-    --color-help-3: #FFEE96;
-    
-    
-    
-    --color-help-2: #FFF5C2;
-    
-    
-    
-    --color-help-1: #FFFCF0;
-    
-    
-    
-    --color-error-4: #ED675A;
-    
-    
-    
-    --color-error-3: #F7AAA3;
-    
-    
-    
-    --color-error-2: #FCCECA;
-    
-    
-    
-    --color-error-1: #FFF1F0;
-    
-    
-    
-    --color-warning-4: #FFA545;
-    
-    
-    
-    --color-warning-3: #FFCD96;
-    
-    
-    
-    --color-warning-2: #FFE0BF;
-    
-    
-    
-    --color-warning-1: #FFF8F0;
-    
-    
-    
-    --color-notice-4: #41AAF0;
-    
-    
-    
-    --color-notice-3: #90CDF5;
-    
-    
-    
-    --color-notice-2: #C5E8FF;
-    
-    
-    
-    --color-notice-1: #F0F9FF;
-    
-    
-    
-    --color-success-4: #43BF7E;
-    
-    
-    
-    --color-success-3: #90DEB5;
-    
-    
-    
-    --color-success-2: #BBF2D5;
-    
-    
-    
-    --color-success-1: #F0FFF7;
-    
-    
-    
-    --color-data1-8: #5C60E6;
-    
-    
-    
-    --color-data1-7: #4AD051;
-    
-    
-    
-    --color-data1-6: #FAB34F;
-    
-    
-    
-    --color-data1-5: #FF6A00;
-    
-    
-    
-    --color-data1-4: #FF656B;
-    
-    
-    
-    --color-data1-3: #9979F2;
-    
-    
-    
-    --color-data1-2: #006CD9;
-    
-    
-    
-    --color-data1-1: #5CCDBB;
-    
-    
-    
-    --color-brand1-9: #064C7A;
-    
-    
-    
-    --color-brand1-6: #1B9AEE;
-    
-    
-    
-    --color-brand1-1: #F0F9FF;
-    
-    
     /* ------------------------ checkbox ------------------------ */
     
     
@@ -4711,7 +4715,7 @@
     
     
     
-    --checkbox-disabled-label-color: var(--color-fill1-6, #b1b8bf);
+    --checkbox-disabled-label-color: var(--color-fill1-6, #6b6b6b);
     
     
     
@@ -4961,11 +4965,11 @@
     
     
     
-    --cascader-menu-icon-expand-color: var(--color-fill1-6, #b1b8bf);
+    --cascader-menu-icon-expand-color: var(--color-fill1-6, #6b6b6b);
     
     
     
-    --cascader-menu-icon-hover-expand-color: var(--color-fill1-6, #b1b8bf);
+    --cascader-menu-icon-hover-expand-color: var(--color-fill1-6, #6b6b6b);
     
     
     
@@ -5087,7 +5091,7 @@
     
     
     
-    --range-normal-slider-border-color-disabled: var(--color-fill1-6, #b1b8bf);
+    --range-normal-slider-border-color-disabled: var(--color-fill1-6, #6b6b6b);
     
     
     
@@ -5174,7 +5178,7 @@
     
     
     
-    --rating-grade-low-overlay-color: var(--color-fill1-6, #b1b8bf);
+    --rating-grade-low-overlay-color: var(--color-fill1-6, #6b6b6b);
     
     
     
@@ -5608,7 +5612,7 @@
     
     
     
-    --split-btn-trigger-normal-icon-color: var(--color-fill1-6, #b1b8bf);
+    --split-btn-trigger-normal-icon-color: var(--color-fill1-6, #6b6b6b);
     
     
     
@@ -5631,7 +5635,7 @@
     
     
     
-    --tree-switch-arrow-color: var(--color-fill1-6, #b1b8bf);
+    --tree-switch-arrow-color: var(--color-fill1-6, #6b6b6b);
     
     
     
@@ -8660,15 +8664,15 @@
     
     
     
-    --message-help-color-icon-inline: var(--color-fill1-6, #b1b8bf);
+    --message-help-color-icon-inline: var(--color-fill1-6, #6b6b6b);
     
     
     
-    --message-help-color-icon-addon: var(--color-fill1-6, #b1b8bf);
+    --message-help-color-icon-addon: var(--color-fill1-6, #6b6b6b);
     
     
     
-    --message-help-color-icon-toast: var(--color-fill1-6, #b1b8bf);
+    --message-help-color-icon-toast: var(--color-fill1-6, #6b6b6b);
     
     
     
@@ -8684,11 +8688,11 @@
     
     
     
-    --message-close-icon-color: var(--color-fill1-6, #b1b8bf);
+    --message-close-icon-color: var(--color-fill1-6, #6b6b6b);
     
     
     
-    --message-hover-close-icon-color: var(--color-fill1-6, #b1b8bf);
+    --message-hover-close-icon-color: var(--color-fill1-6, #6b6b6b);
     
     
     
@@ -10250,7 +10254,7 @@
     
     
     
-    --collapse-icon-color: var(--color-fill1-6, #b1b8bf);
+    --collapse-icon-color: var(--color-fill1-6, #6b6b6b);
     
     
     
@@ -11727,7 +11731,7 @@
     
     
     
-    --menu-arrow-color: var(--color-fill1-6, #b1b8bf);
+    --menu-arrow-color: var(--color-fill1-6, #6b6b6b);
     
     
     
@@ -12840,11 +12844,11 @@
     
     
     
-    --calendar-btn-arrow-color: var(--color-fill1-6, #b1b8bf);
+    --calendar-btn-arrow-color: var(--color-fill1-6, #6b6b6b);
     
     
     
-    --calendar-btn-arrow-color-hover: var(--color-fill1-6, #b1b8bf);
+    --calendar-btn-arrow-color-hover: var(--color-fill1-6, #6b6b6b);
     
     
     
@@ -12940,7 +12944,7 @@
     
     
     
-    --calendar-card-table-head-color: var(--color-fill1-6, #b1b8bf);
+    --calendar-card-table-head-color: var(--color-fill1-6, #6b6b6b);
     
     
     
