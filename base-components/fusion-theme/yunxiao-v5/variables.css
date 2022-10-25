@@ -1,38 +1,258 @@
 :root {
     
     
-    /* ------------------------ line ------------------------ */
+    /* ------------------------ font ------------------------ */
     
     
     
-    --line-dotted: dotted;
+    --font-size-caption: 12px;
     
     
     
-    --line-dashed: dashed;
+    --font-size-body-1: 14px;
     
     
     
-    --line-solid: solid;
+    --font-size-body-2: 14px;
     
     
     
-    --line-2: 2px;
+    --font-weight-ultra-bold: 900;
     
     
     
-    --line-1: 1px;
+    --font-weight-extra-bold: 800;
     
     
     
-    --line-zero: 0px;
+    --font-weight-3: bold;
     
     
     
-    --line-3: 4px;
+    --font-weight-semi-bold: 600;
     
     
     /* ------------------------ popup ------------------------ */
+    
+    --font-weight-medium: 500;
+    
+    
+    --popup-global-shadow: var(--shadow-2-down, 0px 5px 15px 0px rgba(0, 0, 0, 0.15));
+    
+    --font-weight-2: normal;
+    
+    
+    --popup-global-corner: var(--corner-1, 2px);
+    
+    --font-weight-light: 300;
+    
+    
+    --popup-global-border-color: var(--color-line1-2, #dae0e5);
+    
+    --font-weight-thin: 200;
+    
+    
+    --popup-global-border-style: var(--line-solid, solid);
+    
+    --font-weight-1: lighter;
+    
+    
+    --popup-global-border-width: var(--line-zero, 0px);
+    
+    --font-lineheight-2: 1.5;
+    
+    
+    --popup-local-border-style: var(--line-solid, solid);
+    
+    --font-name-bold: Alibaba-PuHuiTi-Bold;
+    
+    
+    --popup-local-shadow: var(--shadow-2-down, 0px 5px 15px 0px rgba(0, 0, 0, 0.15));
+    
+    --font-name-medium: Alibaba-PuHuiTi-Medium;
+    
+    
+    --popup-local-corner: var(--corner-2, 4px);
+    
+    --font-name-light: Alibaba-PuHuiTi-Light;
+    
+    
+    --popup-local-border-color: var(--color-transparent, transparent);
+    
+    --font-name-regular: Alibaba-PuHuiTi-Regular;
+    
+    
+    --popup-local-border-width: var(--line-1, 1px);
+    
+    --font-custom-name: 阿里巴巴普惠体;
+    
+    
+    --popup-spacing-tb: var(--s-2, 8px);
+    
+    --font-name-thin: Alibaba-PuHuiTi-Light;
+    
+    
+    --popup-spacing-lr: var(--s-2, 8px);
+    
+    --font-custom-path: "//alifd.alicdn.com/fonts/ali-puhuiti/";
+    
+    /* ------------------------ mask ------------------------ */
+    
+    
+    --font-size-subhead: 14px;
+    
+    --mask-background: var(--color-black, #000000);
+    
+    
+    --font-size-title: 16px;
+    
+    --mask-opacity: 0.4;
+    
+    
+    --font-size-headline: 18px;
+    
+    
+    
+    --font-size-display-3: 40px;
+    
+    
+    
+    --font-lineheight-3: 2;
+    
+    
+    
+    --font-lineheight-1: 1;
+    
+    
+    
+    --font-family-base: 阿里巴巴普惠体,"Helvetica Neue","PingFang SC","Noto Sans","Noto Sans CJK SC","Microsoft YaHei","微软雅黑",sans-serif;
+    
+    
+    
+    --font-size-display-1: 24px;
+    
+    
+    
+    --font-size-display-2: 32px;
+    
+    
+    /* ------------------------ form-element ------------------------ */
+    
+    --form-element-small-preview-height: var(--s-5, 20px);
+    
+    
+    --form-element-medium-corner: var(--corner-2, 4px);
+    
+    --form-element-medium-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --form-element-small-corner: var(--corner-2, 4px);
+    
+    --form-element-small-font-size: var(--font-size-caption, 10px);
+    
+    
+    --form-element-preview-text-color: var(--color-text1-4, #292929);
+    
+    --form-element-large-corner: var(--corner-2, 4px);
+    
+    
+    --form-element-preview-label-color: var(--color-text1-3, #575757);
+    
+    --form-element-medium-corner: var(--corner-1, 2px);
+    
+    
+    --form-element-large-preview-font-size: var(--font-size-subhead, 14px);
+    
+    --form-element-small-corner: var(--corner-1, 2px);
+    
+    
+    --form-element-large-preview-label-font-size: var(--font-size-subhead, 14px);
+    
+    --form-element-large-icon-size: var(--icon-m, 20px);
+    
+    
+    --form-element-small-preview-font-size: var(--font-size-caption, 12px);
+    
+    --form-element-medium-icon-size: var(--icon-m, 20px);
+    
+    
+    --form-element-small-preview-label-font-size: var(--font-size-caption, 12px);
+    
+    --form-element-small-icon-size: var(--icon-s, 16px);
+    
+    
+    --form-element-small-preview-height: var(--s-5, 20px);
+    
+    --form-element-medium-preview-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --form-element-medium-font-size: var(--font-size-body-1, 14px);
+    
+    --form-element-medium-preview-label-font-size: var(--font-size-body-1, 12px);
+    
+    
+    --form-element-small-font-size: var(--font-size-caption, 12px);
+    
+    --form-element-large-preview-height: var(--s-5, 20px);
+    
+    
+    --form-element-large-corner: var(--corner-2, 4px);
+    
+    --form-element-medium-preview-height: var(--s-5, 20px);
+    
+    
+    --form-element-large-icon-size: var(--icon-m, 20px);
+    
+    --form-element-large-font-size: var(--font-size-body-2, 13px);
+    
+    
+    --form-element-medium-icon-size: var(--icon-m, 20px);
+    
+    --form-element-large-height: var(--s-9, 36px);
+    
+    
+    --form-element-small-icon-size: var(--icon-s, 16px);
+    
+    --form-element-medium-height: var(--s-8, 32px);
+    
+    
+    --form-element-medium-preview-font-size: var(--font-size-body-1, 14px);
+    
+    --form-element-small-height: var(--s-6, 24px);
+    
+    
+    --form-element-medium-preview-label-font-size: var(--font-size-body-1, 14px);
+    
+    
+    
+    --form-element-large-preview-height: var(--s-5, 20px);
+    
+    
+    
+    --form-element-medium-preview-height: var(--s-5, 20px);
+    
+    
+    
+    --form-element-large-font-size: var(--font-size-body-2, 14px);
+    
+    
+    
+    --form-element-large-height: var(--s-9, 36px);
+    
+    
+    
+    --form-element-medium-height: var(--s-8, 32px);
+    
+    
+    
+    --form-element-small-height: var(--s-6, 24px);
+    
+    
+    /* ------------------------ popup ------------------------ */
+    
+    
+    
+    --popup-spacing-tb: var(--s-zero, 0px);
     
     
     
@@ -76,11 +296,38 @@
     
     
     
-    --popup-spacing-tb: var(--s-2, 8px);
-    
-    
-    
     --popup-spacing-lr: var(--s-2, 8px);
+    
+    
+    /* ------------------------ line ------------------------ */
+    
+    
+    
+    --line-dotted: dotted;
+    
+    
+    
+    --line-dashed: dashed;
+    
+    
+    
+    --line-solid: solid;
+    
+    
+    
+    --line-2: 2px;
+    
+    
+    
+    --line-1: 1px;
+    
+    
+    
+    --line-zero: 0px;
+    
+    
+    
+    --line-3: 4px;
     
     
     /* ------------------------ mask ------------------------ */
@@ -92,101 +339,6 @@
     
     
     --mask-opacity: 0.4;
-    
-    
-    /* ------------------------ form-element ------------------------ */
-    
-    
-    
-    --form-element-preview-text-color: var(--color-text1-4, #292929);
-    
-    
-    
-    --form-element-preview-label-color: var(--color-text1-3, #575757);
-    
-    
-    
-    --form-element-large-preview-font-size: var(--font-size-subhead, 14px);
-    
-    
-    
-    --form-element-large-preview-label-font-size: var(--font-size-subhead, 14px);
-    
-    
-    
-    --form-element-small-preview-font-size: var(--font-size-caption, 10px);
-    
-    
-    
-    --form-element-small-preview-label-font-size: var(--font-size-caption, 10px);
-    
-    
-    
-    --form-element-small-preview-height: var(--s-5, 20px);
-    
-    
-    
-    --form-element-medium-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --form-element-small-font-size: var(--font-size-caption, 10px);
-    
-    
-    
-    --form-element-large-corner: var(--corner-2, 4px);
-    
-    
-    
-    --form-element-medium-corner: var(--corner-1, 2px);
-    
-    
-    
-    --form-element-small-corner: var(--corner-1, 2px);
-    
-    
-    
-    --form-element-large-icon-size: var(--icon-m, 20px);
-    
-    
-    
-    --form-element-medium-icon-size: var(--icon-m, 20px);
-    
-    
-    
-    --form-element-small-icon-size: var(--icon-s, 16px);
-    
-    
-    
-    --form-element-medium-preview-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --form-element-medium-preview-label-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --form-element-large-preview-height: var(--s-5, 20px);
-    
-    
-    
-    --form-element-medium-preview-height: var(--s-5, 20px);
-    
-    
-    
-    --form-element-large-font-size: var(--font-size-body-2, 13px);
-    
-    
-    
-    --form-element-large-height: var(--s-9, 36px);
-    
-    
-    
-    --form-element-medium-height: var(--s-8, 32px);
-    
-    
-    
-    --form-element-small-height: var(--s-6, 24px);
     
     
     /* ------------------------ size ------------------------ */
@@ -4142,125 +4294,6 @@
     --icon-font-path: "//at.alicdn.com/t/c/font_3583384_81vddj1m98";
     
     
-    /* ------------------------ font ------------------------ */
-    
-    
-    
-    --font-weight-ultra-bold: 900;
-    
-    
-    
-    --font-weight-extra-bold: 800;
-    
-    
-    
-    --font-weight-3: bold;
-    
-    
-    
-    --font-weight-semi-bold: 600;
-    
-    
-    
-    --font-weight-medium: 500;
-    
-    
-    
-    --font-weight-2: normal;
-    
-    
-    
-    --font-weight-light: 300;
-    
-    
-    
-    --font-weight-thin: 200;
-    
-    
-    
-    --font-weight-1: lighter;
-    
-    
-    
-    --font-lineheight-2: 1.5;
-    
-    
-    
-    --font-name-bold: Alibaba-PuHuiTi-Bold;
-    
-    
-    
-    --font-name-medium: Alibaba-PuHuiTi-Medium;
-    
-    
-    
-    --font-name-light: Alibaba-PuHuiTi-Light;
-    
-    
-    
-    --font-name-regular: Alibaba-PuHuiTi-Regular;
-    
-    
-    
-    --font-custom-name: 阿里巴巴普惠体;
-    
-    
-    
-    --font-name-thin: Alibaba-PuHuiTi-Light;
-    
-    
-    
-    --font-custom-path: "//alifd.alicdn.com/fonts/ali-puhuiti/";
-    
-    
-    
-    --font-size-caption: 10px;
-    
-    
-    
-    --font-size-body-1: 12px;
-    
-    
-    
-    --font-size-body-2: 13px;
-    
-    
-    
-    --font-size-subhead: 14px;
-    
-    
-    
-    --font-size-title: 16px;
-    
-    
-    
-    --font-size-headline: 18px;
-    
-    
-    
-    --font-size-display-3: 40px;
-    
-    
-    
-    --font-lineheight-3: 2;
-    
-    
-    
-    --font-lineheight-1: 1;
-    
-    
-    
-    --font-family-base: 阿里巴巴普惠体,"Helvetica Neue","PingFang SC","Noto Sans","Noto Sans CJK SC","Microsoft YaHei","微软雅黑",sans-serif;
-    
-    
-    
-    --font-size-display-1: 24px;
-    
-    
-    
-    --font-size-display-2: 32px;
-    
-    
     /* ------------------------ corner ------------------------ */
     
     
@@ -4290,14 +4323,17 @@
     
     /* ------------------------ color ------------------------ */
     
+    --font-weight-light: 300;
     
     
     --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
     
+    --font-weight-thin: 200;
     
     
     --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
     
+    --font-weight-1: lighter;
     
     
     --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
@@ -4407,114 +4443,142 @@
     --color-brand2-1: rgba(144,205,245,0.4);
     
     
+    /* ------------------------ color ------------------------ */
     
     --color-text1-6: rgba(206,206,206,0.7);
     
     
+    --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
     
     --color-brand2-2: rgba(144,205,245,0.7);
     
     
+    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
     
     --color-notice-7: rgba(104,187,242,1);
     
     
+    --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
     
     --color-warning-7: rgba(255,185,110,1);
     
     
+    --color-gradient-1: linear-gradient(270deg, rgb(121, 232, 199) 0%, rgb(8, 194, 158) 100%);
     
     --color-error-7: rgba(242,136,126,1);
     
     
+    --color-transparent: transparent;
     
     --color-help-7: rgba(255,235,107,1);
     
     
+    --color-black: #000000;
     
     --color-success-7: rgba(103,207,152,1);
     
     
+    --color-white: #FFFFFF;
     
     --color-help-5: #FAD414;
     
     
+    --color-fill1-8: rgba(98,101,111,1);
     
     --color-help-6: #D1B10D;
     
     
+    --color-fill1-9: rgba(73,78,84,1);
     
     --color-brand1-7: #127FC7;
     
     
+    --color-line1-5: rgba(177,184,191,1);
     
     --color-brand1-8: #0B65A1;
     
     
+    --color-fill1-7: rgba(125,131,137,1);
     
     --color-notice-5: #1B9AEE;
     
     
+    --color-fill1-5: rgba(198,205,212,1);
     
     --color-notice-6: #127FC7;
     
     
+    --color-fill1-6: rgba(177,184,191,1);
     
     --color-warning-5: #F98E1B;
     
     
+    --color-fill1-4: rgba(218,224,229,1);
     
     --color-warning-6: #CF7413;
     
     
+    --color-fill1-3: rgba(233,237,240,1);
     
     --color-error-5: #E84738;
     
     
+    --color-fill1-2: rgba(242,245,247,1);
     
     --color-error-6: #C43123;
     
     
+    --color-line1-3: rgba(198,205,212,1);
     
     --color-success-6: #159953;
     
     
+    --color-line1-2: rgba(218,224,229,1);
     
     --color-success-5: #23B066;
     
     
+    --color-line1-1: rgba(233,237,240,1);
     
     --color-brand1-2: #C5E8FF;
     
     
+    --color-brand3-1: rgba(242,245,247,1);
     
     --color-brand1-3: #90CDF5;
     
     
+    --color-brand3-2: rgba(233,237,240,1);
     
     --color-brand1-4: #68BBF2;
     
     
+    --color-brand3-4: rgba(198,205,212,1);
     
     --color-brand1-5: #41AAF0;
     
     
+    --color-brand3-3: rgba(218,224,229,1);
     
     --color-brand1-10: #000508;
     
     
+    --color-brand3-6: rgba(125,131,137,1);
     
     --color-text1-4: #292929;
     
     
+    --color-brand3-5: rgba(177,184,191,1);
     
     --color-text1-3: #575757;
     
     
+    --color-brand3-7: rgba(98,101,111,1);
     
     --color-text1-2: #6E6E6E;
     
     
+    --color-brand3-8: rgba(73,78,84,1);
     
     --color-text1-1: rgba(173,173,173,1);
     
@@ -4619,58 +4683,72 @@
     --color-success-4: #43BF7E;
     
     
+    --color-brand1-10: #000508;
     
     --color-success-3: #90DEB5;
     
     
+    --color-text1-4: #292929;
     
     --color-success-2: #BBF2D5;
     
     
+    --color-text1-3: #575757;
     
     --color-success-1: #F0FFF7;
     
     
+    --color-text1-2: #6E6E6E;
     
     --color-data1-8: #5C60E6;
     
     
+    --color-text1-1: rgba(173,173,173,1);
     
     --color-data1-7: #4AD051;
     
     
+    --color-fill1-1: #FFFFFF;
     
     --color-data1-6: #FAB34F;
     
     
+    --color-line1-4: #FFFFFF;
     
     --color-data1-5: #FF6A00;
     
     
+    --color-other-3: #131415;
     
     --color-data1-4: #FF656B;
     
     
+    --color-other-2: #FFFFFF;
     
     --color-data1-3: #9979F2;
     
     
+    --color-other-1: #3A3C4B;
     
     --color-data1-2: #006CD9;
     
     
+    --color-link-3: #1B9AEE;
     
     --color-data1-1: #5CCDBB;
     
     
+    --color-link-2: #41AAF0;
     
     --color-brand1-9: #064C7A;
     
     
+    --color-link-1: #127FC7;
     
     --color-brand1-6: #1B9AEE;
     
     
+    --color-help-4: #F8E71C;
     
     --color-brand1-1: #F0F9FF;
     
@@ -4771,27 +4849,32 @@
     
     
     
-    --checkbox-font-size: var(--font-size-body-1, 12px);
+    --checkbox-font-size: var(--font-size-body-1, 14px);
     
     
     /* ------------------------ timeline ------------------------ */
     
+    --color-data1-2: #006CD9;
     
     
     --timeline-item-content-margin-left: var(--s-2, 8px);
     
+    --color-data1-1: #5CCDBB;
     
     
-    --timeline-item-body-font-size: var(--font-size-body-1, 12px);
+    --timeline-item-body-font-size: var(--font-size-body-1, 14px);
+    
+    --color-brand1-9: #064C7A;
     
     
+    --timeline-item-left-body-font-size: var(--font-size-caption, 12px);
     
-    --timeline-item-left-body-font-size: var(--font-size-caption, 10px);
-    
+    --color-brand1-6: #1B9AEE;
     
     
     --timeline-item-success-background: var(--color-success-4, #43BF7E);
     
+    --color-brand1-1: #F0F9FF;
     
     
     --timeline-item-error-background: var(--color-error-4, #ED675A);
@@ -4810,7 +4893,7 @@
     
     
     
-    --timeline-item-title-font-size: var(--font-size-body-2, 13px);
+    --timeline-item-title-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -4826,7 +4909,7 @@
     
     
     
-    --timeline-item-time-font-size: var(--font-size-body-1, 12px);
+    --timeline-item-time-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -4850,7 +4933,7 @@
     
     
     
-    --timeline-item-custom-node-font-size: var(--font-size-caption, 10px);
+    --timeline-item-custom-node-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -4874,7 +4957,7 @@
     
     
     
-    --timeline-item-folder-font-size: var(--font-size-caption, 10px);
+    --timeline-item-folder-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -4893,38 +4976,47 @@
     --timeline-item-tail-color: var(--color-line1-2, #dae0e5);
     
     
+    /* ------------------------ timeline ------------------------ */
     
     --timeline-item-done-dot-size: var(--s-2, 8px);
     
     
+    --timeline-item-content-margin-left: var(--s-2, 8px);
     
     --timeline-item-done-color: var(--color-white, #FFFFFF);
     
     
+    --timeline-item-body-font-size: var(--font-size-body-1, 12px);
     
     --timeline-item-process-dot-size: var(--s-2, 8px);
     
     
+    --timeline-item-left-body-font-size: var(--font-size-caption, 10px);
     
     --timeline-item-process-background: var(--color-brand1-6, #1B9AEE);
     
     
+    --timeline-item-success-background: var(--color-success-4, #43BF7E);
     
     --timeline-item-process-color: var(--color-white, #FFFFFF);
     
     
+    --timeline-item-error-background: var(--color-error-4, #ED675A);
     
     --timeline-item-success-dot-size: var(--s-2, 8px);
     
     
+    --timeline-item-node-size: var(--s-4, 16px);
     
     --timeline-item-success-color: var(--color-white, #FFFFFF);
     
     
+    --timeline-item-node-padding: var(--s-1, 4px);
     
     --timeline-item-error-dot-size: var(--s-2, 8px);
     
     
+    --timeline-item-body-margin-top: var(--s-1, 4px);
     
     --timeline-item-error-color: var(--color-white, #FFFFFF);
     
@@ -4978,30 +5070,37 @@
     
     /* ------------------------ menu-button ------------------------ */
     
+    --timeline-item-icon-size: var(--icon-xs, 12px);
     
     
     --menu-btn-disabled-icon-color: var(--color-text1-1, #adadad);
     
+    --timeline-item-tail-size: var(--line-1, 1px);
     
     
     --menu-btn-fold-icon-content: var(--icon-content-arrow-down, "");
     
+    --timeline-item-left-content-width: var(--s-20, 80px);
     
     
     --menu-btn-unfold-icon-content: var(--icon-content-arrow-up, "");
     
+    --timeline-item-title-font-weight: var(--font-weight-3, bold);
     
     
     --menu-btn-pure-text-secondary-icon-color: var(--color-text1-2, #6E6E6E);
     
+    --timeline-item-folder-font-size: var(--font-size-caption, 10px);
     
     
     --menu-btn-text-text-normal-icon-color: var(--color-brand1-6, #1B9AEE);
     
+    --timeline-item-folder-margin-top: var(--s-1, 4px);
     
     
     --menu-btn-pure-text-normal-icon-color: var(--color-fill1-7, #7d8389);
     
+    --timeline-item-folder-margin-bottom: var(--s-1, 4px);
     
     
     --menu-btn-ghost-light-disabled-icon-color: var(--btn-ghost-light-color-disabled, rgba(0, 0, 0, 0.1));
@@ -5049,30 +5148,37 @@
     
     --range-normal-selected-color: var(--color-brand1-4, #68BBF2);
     
+    /* ------------------------ cascader ------------------------ */
     
     
     --range-normal-mark-color: var(--color-text1-1, #adadad);
     
+    --cascader-menu-icon-expand-size: var(--icon-s, 16px);
     
     
     --range-normal-mark-selected-color: var(--color-text1-1, #adadad);
     
+    --cascader-menu-item-expanded-color: var(--color-text1-4, #292929);
     
     
     --range-normal-unselected-color-hover: var(--color-line1-1, #e9edf0);
     
+    --cascader-menu-border-width: var(--line-zero, 0px);
     
     
     --range-size-m-slider-shadow-hover: var(--shadow-1-down, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
     
+    --cascader-menu-min-width: var(--s-40, 160px);
     
     
     --range-normal-mark-color-hover: var(--color-text1-1, #adadad);
     
+    --cascader-menu-height: var(--s-50, 200px);
     
     
     --range-normal-mark-selected-color-hover: var(--color-text1-1, #adadad);
     
+    --cascader-menu-border-color: var(--color-fill1-2, #f2f5f7);
     
     
     --range-normal-unselected-color-disabled: var(--color-line1-1, #e9edf0);
@@ -5123,7 +5229,7 @@
     
     
     
-    --range-size-m-mark-font-size: var(--font-size-body-1, 12px);
+    --range-size-m-mark-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -5146,18 +5252,22 @@
     --range-normal-slider-bg-color: var(--color-white, #FFFFFF);
     
     
+    /* ------------------------ range ------------------------ */
     
     --range-normal-slider-bg-color-hover: var(--color-white, #FFFFFF);
     
     
+    --range-size-m-track-height: 6px;
     
     --range-normal-slider-border-color-hover: var(--color-transparent, transparent);
     
     
+    --range-size-m-slider-hw: var(--s-5, 20px);
     
     --range-normal-mark-color-disabled: var(--color-text1-1, #adadad);
     
     
+    --range-size-slider-border-width: var(--line-3, 4px);
     
     --range-normal-mark-selected-color-disabled: var(--color-text1-2, #6E6E6E);
     
@@ -5198,7 +5308,7 @@
     
     
     
-    --rating-small-font-size: var(--font-size-caption, 10px);
+    --rating-small-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -5210,7 +5320,7 @@
     
     
     
-    --rating-medium-font-size: var(--font-size-body-1, 12px);
+    --rating-medium-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -5235,54 +5345,62 @@
     
     /* ------------------------ search ------------------------ */
     
-    
-    
-    --search-normal-corner: var(--corner-1, 2px);
-    
+    --range-size-slider-border-style: var(--line-solid, solid);
     
     
     --search-normal-primary-split-color: var(--color-line1-1, #e9edf0);
     
+    --range-size-m-mark-top: 30px;
     
     
     --search-normal-primary-btn-hover-bg-color: var(--color-brand1-5, #41AAF0);
     
+    --range-size-m-mark-font-size: var(--font-size-body-1, 12px);
     
     
     --search-normal-primary-border-width: var(--line-1, 1px);
     
+    --range-size-m-mark-font-weight: var(--font-weight-2, normal);
     
     
     --search-normal-primary-l-height: var(--s-9, 36px);
     
+    --range-size-m-mark-font-lineheight: 20px;
     
     
     --search-normal-primary-l-icon-size: var(--icon-m, 20px);
     
+    --range-size-m-scale-radius: var(--corner-zero, 0px);
     
     
-    --search-normal-primary-l-btn-text-size: var(--font-size-body-1, 12px);
+    --search-normal-primary-l-btn-text-size: var(--font-size-body-1, 14px);
     
+    --range-size-m-slider-shadow-moving: var(--shadow-2, 0px 5px 15px 0px rgba(0, 0, 0, 0.15));
     
     
     --search-normal-primary-m-height: var(--s-8, 32px);
     
+    --range-normal-slider-bg-color: var(--color-white, #FFFFFF);
     
     
-    --search-normal-primary-m-btn-text-size: var(--font-size-body-1, 12px);
+    --search-normal-primary-m-btn-text-size: var(--font-size-body-1, 14px);
     
+    --range-normal-slider-bg-color-hover: var(--color-white, #FFFFFF);
     
     
     --search-normal-secondary-split-color: var(--color-line1-1, #e9edf0);
     
+    --range-normal-slider-border-color-hover: var(--color-transparent, transparent);
     
     
     --search-normal-secondary-l-height: var(--s-9, 36px);
     
+    --range-normal-mark-color-disabled: var(--color-text1-1, #adadad);
     
     
     --search-normal-secondary-l-icon-size: var(--icon-m, 20px);
     
+    --range-normal-mark-selected-color-disabled: var(--color-text1-2, #6E6E6E);
     
     
     --search-normal-secondary-m-height: var(--s-8, 32px);
@@ -5294,10 +5412,6 @@
     
     
     --search-normal-normal-split-color: var(--color-line1-2, #dae0e5);
-    
-    
-    
-    --search-normal-normal-hover-color: var(--color-line1-2, #dae0e5);
     
     
     
@@ -5321,10 +5435,6 @@
     
     
     
-    --search-simple-corner: var(--corner-1, 2px);
-    
-    
-    
     --search-simple-l-icon-margin-right: var(--s-4, 16px);
     
     
@@ -5334,10 +5444,6 @@
     
     
     --search-simple-normal-color: var(--color-line1-1, #e9edf0);
-    
-    
-    
-    --search-simple-normal-hover-color: var(--color-text1-1, #adadad);
     
     
     
@@ -5390,10 +5496,6 @@
     
     
     --search-normal-secondary-color: var(--color-line1-3, #c6cdd4);
-    
-    
-    
-    --search-normal-secondary-hover-color: var(--color-brand1-6, #1B9AEE);
     
     
     
@@ -5604,6 +5706,26 @@
     --search-search-icon-content: var(--icon-content-search, "");
     
     
+    
+    --search-normal-normal-hover-color: var(--color-brand1-6, #1B9AEE);
+    
+    
+    
+    --search-simple-normal-hover-color: var(--color-brand1-4, #68BBF2);
+    
+    
+    
+    --search-normal-corner: var(--corner-2, 4px);
+    
+    
+    
+    --search-normal-secondary-hover-color: var(--color-brand1-4, #68BBF2);
+    
+    
+    
+    --search-simple-corner: var(--corner-2, 4px);
+    
+    
     /* ------------------------ split-button ------------------------ */
     
     
@@ -5663,15 +5785,11 @@
     
     
     
-    --tree-node-padding: var(--s-zero, 0px);
-    
-    
-    
     --tree-node-title-margin: var(--s-zero, 0px);
     
     
     
-    --tree-node-title-font-size: var(--font-size-body-1, 12px);
+    --tree-node-title-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -5697,18 +5815,22 @@
     
     --tree-line-color: var(--color-line1-1, #e9edf0);
     
+    /* ------------------------ split-button ------------------------ */
     
     
     --tree-switch-hover-arrow-color: var(--color-fill1-7, #7d8389);
     
+    --split-btn-trigger-normal-icon-color: var(--color-fill1-6, #b1b8bf);
     
     
     --tree-switch-hover-icon-color: var(--color-text1-3, #575757);
     
+    --split-btn-fold-icon-content: var(--icon-content-arrow-down, "");
     
     
     --tree-switch-hover-bg-color: var(--color-fill1-3, #e9edf0);
     
+    --split-btn-unfold-icon-content: var(--icon-reset, var(--icon-reset));
     
     
     --tree-node-selected-color: var(--color-text1-4, #292929);
@@ -5758,27 +5880,35 @@
     --tree-node-disabled-color: var(--color-text1-1, #adadad);
     
     
+    
+    --tree-node-padding: var(--s-1, 4px);
+    
+    
     /* ------------------------ card ------------------------ */
     
+    --tree-node-title-font-size: var(--font-size-body-1, 12px);
     
     
     --card-corner: var(--corner-2, 4px);
     
+    --tree-switch-arrow-size: var(--icon-s, 16px);
     
     
     --card-padding-lr: var(--s-8, 32px);
     
+    --tree-switch-icon-size: var(--icon-xxs, 8px);
     
     
     --card-border-width: var(--line-1, 1px);
     
+    --tree-node-normal-background: var(--color-transparent, transparent);
     
     
     --card-head-bottom-border-width: var(--line-1, 1px);
     
     
     
-    --card-sub-title-font-size: var(--font-size-body-1, 12px);
+    --card-sub-title-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -5798,10 +5928,6 @@
     
     
     
-    --card-title-font-size: var(--font-size-subhead, 14px);
-    
-    
-    
     --card-title-font-weight: var(--font-weight-medium, 500);
     
     
@@ -5810,7 +5936,7 @@
     
     
     
-    --card-content-font-size: var(--font-size-body-2, 13px);
+    --card-content-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -5842,7 +5968,7 @@
     
     
     
-    --card-title-extra-font-size: var(--font-size-body-1, 12px);
+    --card-title-extra-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -5878,7 +6004,7 @@
     
     
     
-    --card-more-btn-font-size: var(--font-size-body-1, 12px);
+    --card-more-btn-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -5909,48 +6035,63 @@
     --card-more-btn-background: var(--color-white, #FFFFFF);
     
     
+    
+    --card-title-font-size: var(--font-size-title, 16px);
+    
+    
     /* ------------------------ paragraph ------------------------ */
     
+    --card-header-background: var(--color-white, #FFFFFF);
     
     
     --paragraph-text-color: var(--color-text1-2, #6E6E6E);
     
+    --card-head-padding-bottom: var(--s-3, 12px);
     
     
-    --paragraph-s-font-size: var(--font-size-body-1, 12px);
+    --paragraph-s-font-size: var(--font-size-body-1, 14px);
+    
+    --card-head-main-height: var(--s-10, 40px);
     
     
+    --paragraph-m-font-size: var(--font-size-body-2, 14px);
     
-    --paragraph-m-font-size: var(--font-size-body-2, 13px);
-    
+    --card-head-main-margin-top: var(--s-2, 8px);
     
     
     --paragraph-s-line-height: var(--font-lineheight-2, 1.5);
     
+    --card-head-main-margin-bottom: var(--s-zero, 0px);
     
     
     --paragraph-l-line-height: var(--font-lineheight-3, 2);
     
+    --card-title-extra-font-size: var(--font-size-body-1, 12px);
     
     /* ------------------------ switch ------------------------ */
     
     
+    --card-title-bullet-width: var(--line-3, 4px);
     
     --switch-size-m-width: var(--s-9, 36px);
     
     
+    --card-title-bullet-height: var(--s-4, 16px);
     
     --switch-size-m-radius-container: var(--corner-3, 50px);
     
     
+    --card-title-padding-left: var(--s-2, 8px);
     
     --switch-size-m-trigger: var(--s-4, 16px);
     
     
+    --card-sub-title-padding-left: var(--s-2, 8px);
     
     --switch-size-m-radius-trigger: var(--corner-semicircle, 500px);
     
     
+    --card-body-hide-divider-padding-top: var(--s-zero, 0px);
     
     --switch-size-m-inner-icon: var(--s-4, 16px);
     
@@ -5998,26 +6139,32 @@
     
     --switch-disabled-on-color-font: var(--color-transparent, transparent);
     
+    /* ------------------------ paragraph ------------------------ */
     
     
     --switch-on-shadow: var(--shadow-zero, none);
     
+    --paragraph-text-color: var(--color-text1-2, #6E6E6E);
     
     
     --switch-hover-off-bg-color: var(--color-fill1-5, #c6cdd4);
     
+    --paragraph-s-font-size: var(--font-size-body-1, 12px);
     
     
     --switch-disabled-off-bg-color: var(--color-fill1-3, #e9edf0);
     
+    --paragraph-m-font-size: var(--font-size-body-2, 13px);
     
     
     --switch-disabled-off-trigger-bg-color: var(--color-white, #FFFFFF);
     
+    --paragraph-s-line-height: var(--font-lineheight-2, 1.5);
     
     
     --switch-normal-off-color-font: var(--color-transparent, transparent);
     
+    --paragraph-l-line-height: var(--font-lineheight-3, 2);
     
     
     --switch-disabled-off-color-font: var(--color-transparent, transparent);
@@ -6113,78 +6260,97 @@
     
     /* ------------------------ typography ------------------------ */
     
+    --switch-normal-off-border-color: var(--color-transparent, transparent);
     
     
     --typography-text-mark-background: var(--color-warning-2, #FFE0BF);
     
+    --switch-hover-off-border-color: var(--color-transparent, transparent);
     
     
     --typography-text-color: var(--color-text1-3, #575757);
     
+    --switch-text-off-right: var(--s-2, 8px);
     
     
     --typography-text-code-background: var(--color-white, #FFFFFF);
     
+    --switch-size-s-text-off-right: var(--s-4, 16px);
     
     
     --typography-text-code-border-color: var(--color-transparent, transparent);
     
+    --switch-text-on-left: var(--s-2, 8px);
     
     
     --typography-title-font-weight: var(--font-weight-medium, 500);
     
+    --switch-normal-off-bg-color: var(--color-fill1-7, #7d8389);
     
     
     --typography-text-strong-font-weight: var(--font-weight-semi-bold, 600);
     
+    --switch-size-m-trigger-padding-l: var(--s-2, 8px);
     
     
     --typography-text-code-corner: var(--corner-1, 2px);
     
+    --switch-size-m-trigger-padding-r: var(--s-2, 8px);
     
     
     --typography-text-mark-color: var(--color-text1-4, #292929);
     
+    --switch-size-s-radius-container: var(--corner-3, 50px);
     
     
     --typography-text-code-color: var(--color-text1-4, #292929);
     
+    --switch-size-s-inner-icon: var(--s-3, 12px);
     
     
-    --typography-paragraph-font-size: var(--font-size-body-2, 13px);
+    --typography-paragraph-font-size: var(--font-size-body-2, 14px);
     
+    --switch-size-s-trigger-padding-l: var(--s-2, 8px);
     
     
     --typography-paragraph-line-height: var(--font-lineheight-2, 1.5);
     
+    --switch-size-s-trigger-padding-r: var(--s-2, 8px);
     
     
     --typography-title-h1-font-size: var(--font-size-headline, 18px);
     
+    --switch-normal-on-trigger-bg-color: var(--color-white, #FFFFFF);
     
     
     --typography-title-h2-font-size: var(--font-size-title, 16px);
     
+    --switch-hover-on-trigger-bg-color: var(--color-white, #FFFFFF);
     
     
     --typography-title-h3-font-size: var(--font-size-subhead, 14px);
     
+    --switch-disabled-on-border-color: var(--color-line1-3, #c6cdd4);
     
     
     --typography-title-h4-font-size: var(--font-size-subhead, 14px);
     
+    --switch-handle-on-border-color: var(--color-transparent, transparent);
     
     
-    --typography-title-h5-font-size: var(--font-size-body-2, 13px);
+    --typography-title-h5-font-size: var(--font-size-body-2, 14px);
+    
+    --switch-normal-off-trigger-bg-color: var(--color-white, #FFFFFF);
     
     
+    --typography-title-h6-font-size: var(--font-size-body-1, 14px);
     
-    --typography-title-h6-font-size: var(--font-size-body-1, 12px);
-    
+    --switch-hover-off-trigger-bg-color: var(--color-white, #FFFFFF);
     
     /* ------------------------ button ------------------------ */
     
     
+    --switch-handle-disabled-border-color: transparent;
     
     --btn-shadow: var(--shadow-zero, none);
     
@@ -6198,7 +6364,7 @@
     
     
     
-    --btn-size-s-font: var(--font-size-caption, 10px);
+    --btn-size-s-font: var(--font-size-caption, 12px);
     
     
     
@@ -6378,7 +6544,7 @@
     
     
     
-    --btn-text-size-s-font: var(--font-size-body-2, 13px);
+    --btn-text-size-s-font: var(--font-size-body-2, 14px);
     
     
     
@@ -6491,18 +6657,6 @@
     
     
     --btn-text-disabled-color: var(--color-text1-1, #adadad);
-    
-    
-    
-    --btn-text-normal-color: var(--color-text1-4, #292929);
-    
-    
-    
-    --btn-text-size-s-height: var(--s-6, 24px);
-    
-    
-    
-    --btn-text-size-m-height: var(--s-8, 32px);
     
     
     
@@ -6745,6 +6899,18 @@
     --btn-text-size-l-font: var(--font-size-subhead, 14px);
     
     
+    
+    --btn-text-size-s-height: var(--s-4, 16px);
+    
+    
+    
+    --btn-text-size-m-height: var(--s-5, 20px);
+    
+    
+    
+    --btn-text-normal-color: var(--color-text1-3, #575757);
+    
+    
     /* ------------------------ tag ------------------------ */
     
     
@@ -6781,11 +6947,11 @@
     
     
     
-    --tag-size-l-text-size: var(--font-size-body-2, 13px);
+    --tag-size-l-text-size: var(--font-size-body-2, 14px);
     
     
     
-    --tag-size-m-text-size: var(--font-size-caption, 10px);
+    --tag-size-m-text-size: var(--font-size-caption, 12px);
     
     
     
@@ -7153,7 +7319,7 @@
     
     
     
-    --tag-size-s-text-size: var(--font-size-caption, 10px);
+    --tag-size-s-text-size: var(--font-size-caption, 12px);
     
     
     
@@ -7400,10 +7566,6 @@
     
     
     
-    --input-hover-border-color: var(--color-brand1-5, #41AAF0);
-    
-    
-    
     --input-l-icon-padding-right: var(--s-3, 12px);
     
     
@@ -7424,7 +7586,7 @@
     
     
     
-    --input-multiple-font-size: var(--font-size-body-1, 12px);
+    --input-multiple-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -7472,11 +7634,16 @@
     
     
     
-    --input-maxlen-font-size: var(--font-size-caption, 10px);
+    --input-maxlen-font-size: var(--font-size-caption, 12px);
     
     
     
     --input-hint-hover-color: var(--color-text1-3, #575757);
+    
+    
+    /* ------------------------ form ------------------------ */
+    
+    --input-hover-border-color: var(--color-brand1-4, #68BBF2);
     
     
     /* ------------------------ form ------------------------ */
@@ -7511,15 +7678,11 @@
     
     
     
-    --form-help-font-size: var(--font-size-body-1, 12px);
+    --form-help-font-size: var(--font-size-body-1, 14px);
     
     
     
     --form-help-color: var(--color-text1-1, #adadad);
-    
-    
-    
-    --form-top-label-margin-b: var(--s-zero, 0px);
     
     
     
@@ -7540,9 +7703,14 @@
     
     /* ------------------------ table ------------------------ */
     
+    --form-top-label-margin-b: var(--s-1, 4px);
     
     
-    --table-th-font-size: var(--font-size-body-1, 12px);
+    /* ------------------------ table ------------------------ */
+    
+    
+    
+    --table-th-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -7587,10 +7755,6 @@
     
     
     --table-th-bg: var(--color-fill1-1, #FFFFFF);
-    
-    
-    
-    --table-th-color: var(--color-fill1-6, #b1b8bf);
     
     
     
@@ -7662,7 +7826,7 @@
     
     
     
-    --table-body-font-size: var(--font-size-body-1, 12px);
+    --table-body-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -7737,6 +7901,10 @@
     --table-expanded-ctrl-disabled-color: var(--color-text1-2, #6E6E6E);
     
     
+    
+    --table-th-color: var(--color-text1-1, #adadad);
+    
+    
     /* ------------------------ upload ------------------------ */
     
     
@@ -7753,7 +7921,7 @@
     
     
     
-    --upload-text-list-font-size: var(--font-size-caption, 10px);
+    --upload-text-list-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -7833,7 +8001,7 @@
     
     
     
-    --upload-card-add-text-size: var(--font-size-caption, 10px);
+    --upload-card-add-text-size: var(--font-size-caption, 12px);
     
     
     
@@ -7933,7 +8101,7 @@
     
     
     
-    --upload-image-list-item-font-size: var(--font-size-body-1, 12px);
+    --upload-image-list-item-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -8013,11 +8181,11 @@
     
     
     
-    --upload-card-list-thumbnail-font-size: var(--font-size-caption, 10px);
+    --upload-card-list-thumbnail-font-size: var(--font-size-caption, 12px);
     
     
     
-    --upload-card-list-name-font-size: var(--font-size-caption, 10px);
+    --upload-card-list-name-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -8041,7 +8209,7 @@
     
     
     
-    --upload-drag-zone-font-size: var(--font-size-body-2, 13px);
+    --upload-drag-zone-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -8049,7 +8217,7 @@
     
     
     
-    --upload-drag-zone-hint-font-size: var(--font-size-caption, 10px);
+    --upload-drag-zone-hint-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -8064,6 +8232,7 @@
     --upload-drag-zone-upload-normal-title-color: var(--color-text1-3, #575757);
     
     
+    /* ------------------------ badge ------------------------ */
     
     --upload-drag-zone-upload-normal-hint-color: var(--color-text1-2, #6E6E6E);
     
@@ -8088,7 +8257,7 @@
     
     
     
-    --badge-size-count-font: var(--font-size-caption, 10px);
+    --badge-size-count-font: var(--font-size-caption, 12px);
     
     
     
@@ -8239,7 +8408,7 @@
     
     
     
-    --balloon-content-font-size: var(--font-size-body-1, 12px);
+    --balloon-content-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -8255,7 +8424,7 @@
     
     
     
-    --balloon-tooltip-content-font-size: var(--font-size-body-1, 12px);
+    --balloon-tooltip-content-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -8294,10 +8463,6 @@
     
     
     
-    --select-color: var(--color-brand1-6, #1B9AEE);
-    
-    
-    
     --select-hint-color: var(--color-text1-2, #6E6E6E);
     
     
@@ -8306,7 +8471,7 @@
     
     
     
-    --select-highlight-font: var(--font-size-body-1, 12px);
+    --select-highlight-font: var(--font-size-body-1, 14px);
     
     
     
@@ -8325,6 +8490,10 @@
     --select-unfold-icon-content: var(--icon-reset, var(--icon-reset));
     
     
+    
+    --select-color: var(--color-text1-2, #6E6E6E);
+    
+    
     /* ------------------------ drawer ------------------------ */
     
     
@@ -8341,10 +8510,6 @@
     
     
     
-    --drawer-border-color: var(--color-line1-1, #e9edf0);
-    
-    
-    
     --drawer-shadow: var(--shadow-3-left, 0px 0px 20px 0px rgba(0, 0, 0, 0.3));
     
     
@@ -8353,15 +8518,7 @@
     
     
     
-    --drawer-title-padding-top: var(--s-4, 16px);
-    
-    
-    
-    --drawer-title-padding-bottom: var(--s-4, 16px);
-    
-    
-    
-    --drawer-content-font-size: var(--font-size-body-2, 13px);
+    --drawer-content-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -8370,10 +8527,6 @@
     
     
     --drawer-content-padding-bottom: var(--s-4, 16px);
-    
-    
-    
-    --drawer-close-top: var(--s-4, 16px);
     
     
     
@@ -8428,6 +8581,22 @@
     --drawer-close-bg-hovered: var(--color-transparent, transparent);
     
     
+    
+    --drawer-title-padding-top: var(--s-3, 12px);
+    
+    
+    
+    --drawer-title-padding-bottom: var(--s-3, 12px);
+    
+    
+    
+    --drawer-close-top: var(--s-3, 12px);
+    
+    
+    
+    --drawer-border-color: var(--color-transparent, transparent);
+    
+    
     /* ------------------------ message ------------------------ */
     
     
@@ -8452,7 +8621,7 @@
     
     
     
-    --message-size-l-content-font: var(--font-size-body-2, 13px);
+    --message-size-l-content-font: var(--font-size-body-2, 14px);
     
     
     
@@ -8480,7 +8649,7 @@
     
     
     
-    --message-size-m-title-font: var(--font-size-body-2, 13px);
+    --message-size-m-title-font: var(--font-size-body-2, 14px);
     
     
     
@@ -8488,7 +8657,7 @@
     
     
     
-    --message-size-m-content-font: var(--font-size-body-2, 13px);
+    --message-size-m-content-font: var(--font-size-body-2, 14px);
     
     
     
@@ -8915,10 +9084,6 @@
     
     
     
-    --dialog-border-width: var(--line-zero, 0px);
-    
-    
-    
     --dialog-title-border-width: var(--line-1, 1px);
     
     
@@ -8935,19 +9100,11 @@
     
     
     
-    --dialog-content-font-size: var(--font-size-body-2, 13px);
+    --dialog-content-font-size: var(--font-size-body-2, 14px);
     
     
     
     --dialog-content-padding-bottom: var(--s-4, 16px);
-    
-    
-    
-    --dialog-footer-padding-top: var(--s-4, 16px);
-    
-    
-    
-    --dialog-footer-padding-bottom: var(--s-4, 16px);
     
     
     
@@ -8956,10 +9113,6 @@
     
     
     --dialog-footer-button-spacing: var(--s-2, 8px);
-    
-    
-    
-    --dialog-close-size: var(--icon-s, 16px);
     
     
     
@@ -8992,22 +9145,6 @@
     
     
     --dialog-content-padding-top: var(--s-4, 16px);
-    
-    
-    
-    --dialog-footer-border-width: var(--line-zero, 0px);
-    
-    
-    
-    --dialog-close-top: var(--s-2, 8px);
-    
-    
-    
-    --dialog-close-right: var(--s-3, 12px);
-    
-    
-    
-    --dialog-close-width: var(--s-9, 36px);
     
     
     
@@ -9055,15 +9192,47 @@
     
     
     
-    --dialog-footer-bg-color: var(--color-transparent, transparent);
-    
-    
-    
     --dialog-close-color: var(--color-text1-2, #6E6E6E);
     
     
     
     --dialog-close-bg-hovered: var(--color-transparent, transparent);
+    
+    
+    
+    --dialog-border-width: var(--line-1, 1px);
+    
+    
+    
+    --dialog-footer-border-width: var(--line-1, 1px);
+    
+    
+    
+    --dialog-footer-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --dialog-footer-padding-top: var(--s-3, 12px);
+    
+    
+    
+    --dialog-footer-padding-bottom: var(--s-3, 12px);
+    
+    
+    
+    --dialog-close-right: var(--s-5, 20px);
+    
+    
+    
+    --dialog-close-width: var(--s-4, 16px);
+    
+    
+    
+    --dialog-close-size: var(--icon-m, 20px);
+    
+    
+    
+    --dialog-close-top: 14px;
     
     
     /* ------------------------ number-picker ------------------------ */
@@ -9162,14 +9331,6 @@
     
     
     /* ------------------------ progress ------------------------ */
-    
-    
-    
-    --progress-line-underlay-color: var(--color-line1-1, #e9edf0);
-    
-    
-    
-    --progress-line-font-color: var(--color-fill1-6, #b1b8bf);
     
     
     
@@ -9293,19 +9454,27 @@
     
     
     
-    --progress-line-font-l: var(--font-size-body-1, 12px);
+    --progress-line-font-l: var(--font-size-body-1, 14px);
     
     
     
-    --progress-line-font-m: var(--font-size-caption, 10px);
+    --progress-line-font-m: var(--font-size-caption, 12px);
     
     
     
-    --progress-line-font-s: var(--font-size-caption, 10px);
+    --progress-line-font-s: var(--font-size-caption, 12px);
     
     
     
     --progress-line-underlay-border-color: var(--color-line1-2, #dae0e5);
+    
+    
+    
+    --progress-line-font-color: var(--color-text1-1, #adadad);
+    
+    
+    
+    --progress-line-underlay-color: var(--color-line1-2, #dae0e5);
     
     
     /* ------------------------ shell ------------------------ */
@@ -9520,7 +9689,7 @@
     
     
     
-    --shell-light-footer-font-size: var(--font-size-body-2, 13px);
+    --shell-light-footer-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -9792,7 +9961,7 @@
     
     
     
-    --shell-dark-footer-font-size: var(--font-size-body-2, 13px);
+    --shell-dark-footer-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -10064,7 +10233,7 @@
     
     
     
-    --shell-brand-footer-font-size: var(--font-size-body-2, 13px);
+    --shell-brand-footer-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -10254,7 +10423,7 @@
     
     
     
-    --collapse-content-font-size: var(--font-size-body-1, 12px);
+    --collapse-content-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -10314,15 +10483,11 @@
     
     
     
-    --collapse-title-disabled-bg-color: var(--color-fill1-2, #f2f5f7);
-    
-    
-    
     --collapse-title-font-disabled-color: var(--color-text1-1, #adadad);
     
     
     
-    --collapse-title-font-size: var(--font-size-body-2, 13px);
+    --collapse-title-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -10333,6 +10498,10 @@
     --collapse-content-bg-color: var(--color-white, #FFFFFF);
     
     
+    
+    --collapse-title-disabled-bg-color: var(--color-fill1-2, #f2f5f7);
+    
+    
     /* ------------------------ pagination ------------------------ */
     
     
@@ -10341,7 +10510,7 @@
     
     
     
-    --pagination-total-font-size: var(--font-size-body-2, 13px);
+    --pagination-total-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -10357,11 +10526,11 @@
     
     
     
-    --pagination-large-current-font-size: var(--font-size-body-1, 12px);
+    --pagination-large-current-font-size: var(--font-size-body-1, 14px);
     
     
     
-    --pagination-large-total-font-size: var(--font-size-body-1, 12px);
+    --pagination-large-total-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -10369,7 +10538,7 @@
     
     
     
-    --pagination-large-jump-font-size: var(--font-size-body-1, 12px);
+    --pagination-large-jump-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -10441,11 +10610,11 @@
     
     
     
-    --pagination-current-font-size: var(--font-size-body-2, 13px);
+    --pagination-current-font-size: var(--font-size-body-2, 14px);
     
     
     
-    --pagination-jump-font-size: var(--font-size-body-2, 13px);
+    --pagination-jump-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -10529,11 +10698,11 @@
     
     
     
-    --pagination-small-current-font-size: var(--font-size-caption, 10px);
+    --pagination-small-current-font-size: var(--font-size-caption, 12px);
     
     
     
-    --pagination-small-total-font-size: var(--font-size-caption, 10px);
+    --pagination-small-total-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -10541,7 +10710,7 @@
     
     
     
-    --pagination-small-jump-font-size: var(--font-size-caption, 10px);
+    --pagination-small-jump-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -10590,69 +10759,72 @@
     
     /* ------------------------ transfer ------------------------ */
     
+    --pagination-large-size-selector-number-padding: var(--s-4, 16px);
     
     
     --transfer-operation-margin-left-right: var(--s-2, 8px);
     
-    
-    
-    --transfer-panel-search-margin-top: var(--s-1, 4px);
-    
-    
-    
-    --transfer-panel-search-margin-left-right: var(--s-1, 4px);
+    --pagination-small-total-font-size: var(--font-size-caption, 10px);
     
     
     
-    --transfer-operation-icon-size: var(--icon-s, 16px);
+    --pagination-small-input-width: var(--s-7, 28px);
     
     
     
-    --transfer-panel-header-padding-top-bottom: var(--s-2, 8px);
+    --pagination-small-jump-font-size: var(--font-size-caption, 10px);
     
     
     
-    --transfer-panel-header-text-size: var(--font-size-body-2, 13px);
+    --pagination-small-size-selector-number-padding: var(--s-2, 8px);
     
     
     
-    --transfer-panel-list-width: var(--s-50, 200px);
+    --pagination-size-selector-title-color: var(--color-text1-2, #6E6E6E);
+    
+    
+    --transfer-panel-header-text-size: var(--font-size-body-2, 14px);
+    
+    --pagination-size-selector-filter-color: var(--color-text1-3, #575757);
     
     
     
-    --transfer-panel-list-height: var(--s-50, 200px);
+    --pagination-size-selector-filter-current-color: var(--color-brand1-6, #1B9AEE);
     
     
     
-    --transfer-panel-footer-padding-top-bottom: var(--s-2, 8px);
+    --pagination-item-hover-border-color: var(--color-line1-4, #FFFFFF);
     
     
     
-    --transfer-panel-border-corner: var(--corner-2, 4px);
+    --pagination-item-hover-color: var(--color-text1-4, #292929);
     
     
     
-    --transfer-panel-background-color: var(--color-transparent, transparent);
+    --pagination-item-hover-bg: var(--color-fill1-2, #f2f5f7);
     
     
     
-    --transfer-panel-header-text-color: var(--color-text1-4, #292929);
+    --pagination-icon-prev-content: var(--icon-content-arrow-left, "");
     
     
     
-    --transfer-panel-header-background-color: var(--color-transparent, transparent);
+    --pagination-icon-next-content: var(--icon-content-arrow-right, "");
     
     
     
-    --transfer-panel-footer-text-color: var(--color-text1-2, #6E6E6E);
+    --pagination-icon-ellipsis-content: var(--icon-content-ellipsis, "");
     
     
     
-    --transfer-panel-footer-background-color: var(--color-transparent, transparent);
+    --pagination-arrow-hover-color-noboder: var(--color-brand1-6, #1B9AEE);
+    
+    
+    /* ------------------------ transfer ------------------------ */
     
     
     
-    --transfer-simple-panel-item-hover-text-color: var(--color-brand1-6, #1B9AEE);
+    --transfer-operation-margin-left-right: var(--s-2, 8px);
     
     
     
@@ -10701,6 +10873,7 @@
     
     /* ------------------------ radio ------------------------ */
     
+    --transfer-panel-header-background-color: var(--color-transparent, transparent);
     
     
     --radio-width: var(--s-4, 16px);
@@ -10711,7 +10884,7 @@
     
     
     
-    --radio-font-size: var(--font-size-body-2, 13px);
+    --radio-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -10895,11 +11068,11 @@
     
     
     
-    --radio-button-font-size-medium: var(--font-size-body-1, 12px);
+    --radio-button-font-size-medium: var(--font-size-body-1, 14px);
     
     
     
-    --radio-button-font-size-small: var(--font-size-caption, 10px);
+    --radio-button-font-size-small: var(--font-size-caption, 12px);
     
     
     
@@ -10914,7 +11087,7 @@
     
     
     
-    --time-picker-menu-item-font-size: var(--font-size-body-2, 13px);
+    --time-picker-menu-item-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -10966,7 +11139,7 @@
     
     
     
-    --time-picker-menu-title-font-size: var(--font-size-caption, 10px);
+    --time-picker-menu-title-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -11268,7 +11441,7 @@
     
     
     
-    --step-circle-item-node-font-size: var(--font-size-caption, 10px);
+    --step-circle-item-node-font-size: var(--font-size-caption, 12px);
     
     
     
@@ -11384,7 +11557,7 @@
     
     
     
-    --step-dot-item-content-font-size: var(--font-size-body-1, 12px);
+    --step-dot-item-content-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -11396,7 +11569,7 @@
     
     
     
-    --step-arrow-item-title-size: var(--font-size-body-2, 13px);
+    --step-arrow-item-title-size: var(--font-size-body-2, 14px);
     
     
     
@@ -11432,11 +11605,11 @@
     
     
     
-    --step-circle-item-content-font-size: var(--font-size-caption, 10px);
+    --step-circle-item-content-font-size: var(--font-size-caption, 12px);
     
     
     
-    --step-circle-item-title-size: var(--font-size-body-2, 13px);
+    --step-circle-item-title-size: var(--font-size-body-2, 14px);
     
     
     
@@ -11496,7 +11669,7 @@
     
     
     
-    --step-circle-item-node-process-percent-size: var(--font-size-body-1, 12px);
+    --step-circle-item-node-process-percent-size: var(--font-size-body-1, 14px);
     
     
     
@@ -11544,7 +11717,7 @@
     
     
     
-    --step-dot-item-title-size: var(--font-size-body-1, 12px);
+    --step-dot-item-title-size: var(--font-size-body-1, 14px);
     
     
     
@@ -11651,7 +11824,7 @@
     
     
     
-    --menu-font-size: var(--font-size-body-2, 13px);
+    --menu-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -11751,7 +11924,7 @@
     
     
     
-    --menu-submenu-title-size: var(--font-size-body-1, 12px);
+    --menu-submenu-title-size: var(--font-size-body-1, 14px);
     
     
     
@@ -11942,7 +12115,7 @@
     
     
     
-    --nav-ver-font-size: var(--font-size-body-2, 13px);
+    --nav-ver-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -11958,7 +12131,7 @@
     
     
     
-    --nav-ver-sub-nav-font-size: var(--font-size-body-2, 13px);
+    --nav-ver-sub-nav-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -11974,15 +12147,11 @@
     
     
     
-    --nav-normal-shadow: var(--shadow-1, 0px 3px 8px 0px rgba(0, 0, 0, 0.06));
-    
-    
-    
     --nav-hoz-height: var(--s-11, 44px);
     
     
     
-    --nav-hoz-font-size: var(--font-size-body-1, 12px);
+    --nav-hoz-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -12367,6 +12536,11 @@
     
     /* ------------------------ tab ------------------------ */
     
+    --nav-normal-shadow: var(--shadow-zero, none);
+    
+    
+    /* ------------------------ tab ------------------------ */
+    
     
     
     --tab-nav-close-icon-size-m: var(--icon-s, 16px);
@@ -12385,7 +12559,7 @@
     
     
     
-    --tab-item-text-size-m: var(--font-size-body-2, 13px);
+    --tab-item-text-size-m: var(--font-size-body-2, 14px);
     
     
     
@@ -12473,10 +12647,6 @@
     
     
     
-    --tab-item-padding-lr-size-m: var(--s-3, 12px);
-    
-    
-    
     --tab-item-font-weight-selected: var(--font-weight-medium, 500);
     
     
@@ -12525,11 +12695,7 @@
     
     
     
-    --tab-item-padding-tb-size-s: 8px;
-    
-    
-    
-    --tab-item-text-size-s: var(--font-size-body-1, 12px);
+    --tab-item-text-size-s: var(--font-size-body-1, 14px);
     
     
     
@@ -12542,10 +12708,6 @@
     
     
     --tab-capsule-text-color: var(--color-text1-4, #292929);
-    
-    
-    
-    --tab-capsule-text-color-selected: var(--color-brand1-6, #1B9AEE);
     
     
     
@@ -12677,10 +12839,6 @@
     
     
     
-    --tab-capsule-text-color-hover: var(--color-text1-4, #292929);
-    
-    
-    
     --tab-capsule-text-color-disabled: var(--color-text1-1, #adadad);
     
     
@@ -12710,9 +12868,29 @@
     
     /* ------------------------ calendar ------------------------ */
     
+    --tab-capsule-text-color-hover: var(--color-text1-2, #6E6E6E);
     
     
     --calendar-fullscreen-table-head-font-size: var(--font-size-body-1, 12px);
+    
+    --tab-capsule-text-color-selected: var(--color-text1-4, #292929);
+    
+    
+    --calendar-fullscreen-table-cell-boder-top-width: var(--line-1, 1px);
+    
+    --tab-item-padding-tb-size-s: 6px;
+    
+    
+    --calendar-fullscreen-table-cell-margin-tb: var(--s-zero, 0px);
+    
+    --tab-item-padding-lr-size-m: var(--s-5, 20px);
+    
+    
+    /* ------------------------ calendar ------------------------ */
+    
+    
+    
+    --calendar-fullscreen-table-head-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -12756,11 +12934,11 @@
     
     
     
-    --calendar-card-table-head-font-size: var(--font-size-body-1, 12px);
+    --calendar-card-table-head-font-size: var(--font-size-body-1, 14px);
     
     
     
-    --calendar-card-table-cell-font-size: var(--font-size-body-1, 12px);
+    --calendar-card-table-cell-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -12888,7 +13066,7 @@
     
     
     
-    --calendar-fullscreen-table-cell-font-size: var(--font-size-body-1, 12px);
+    --calendar-fullscreen-table-cell-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -13051,18 +13229,22 @@
     --calendar-card-table-cell-current-background: var(--color-white, #FFFFFF);
     
     
+    /* ------------------------ breadcrumb ------------------------ */
     
     --calendar-card-table-cell-current-color: var(--color-brand1-6, #1B9AEE);
     
     
+    --breadcrumb-size-m-font-size: var(--font-size-body-2, 13px);
     
     --calendar-card-table-cell-current-border-color: var(--color-transparent, transparent);
     
     
+    --breadcrumb-size-ellipsis-font-size: var(--font-size-body-2, 13px);
     
     --calendar-btn-date-margin-lr: var(--s-1, 4px);
     
     
+    --breadcrumb-text-color: var(--color-text1-2, #6E6E6E);
     
     --calendar-btn-arrow-double-offset-lr: var(--s-2, 8px);
     
@@ -13071,11 +13253,11 @@
     
     
     
-    --breadcrumb-size-m-font-size: var(--font-size-body-2, 13px);
+    --breadcrumb-size-m-font-size: var(--font-size-body-2, 14px);
     
     
     
-    --breadcrumb-size-ellipsis-font-size: var(--font-size-body-2, 13px);
+    --breadcrumb-size-ellipsis-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -13110,18 +13292,22 @@
     --breadcrumb-text-keyword-color: var(--color-brand1-6, #1B9AEE);
     
     
+    /* ------------------------ date-picker ------------------------ */
     
     --breadcrumb-icon-sep-content: var(--icon-content-arrow-right, "");
     
     
+    --date-picker-panel-background: var(--color-white, #FFFFFF);
     
     --breadcrumb-text-color-hover: var(--color-brand1-6, #1B9AEE);
     
     
+    --date-picker-panel-footer-padding-lr: var(--s-5, 20px);
     
     --breadcrumb-text-current-color-hover: var(--color-brand1-6, #1B9AEE);
     
     
+    --date-picker-panel-footer-padding-tb: var(--s-2, 8px);
     
     --breadcrumb-text-keyword-color-hover: var(--color-brand1-6, #1B9AEE);
     
@@ -13140,18 +13326,22 @@
     
     --date-picker-panel-footer-padding-tb: var(--s-2, 8px);
     
+    /* ------------------------ loading ------------------------ */
     
     
     --date-picker-panel-time-panel-separator-color: var(--color-line1-2, #dae0e5);
     
+    --loading-icon-size: var(--icon-xl, 32px);
     
     
     --date-picker-calendar-icon: var(--icon-content-calendar, "");
     
+    --loading-dot-color: var(--color-brand1-6, #1B9AEE);
     
     /* ------------------------ cascader-select ------------------------ */
     
     
+    --loading-large-size: var(--s-12, 48px);
     
     --cascader-select: "cascader-select";
     
@@ -13167,18 +13357,22 @@
     --loading-dot-color: var(--color-brand1-6, #1B9AEE);
     
     
+    /* ------------------------ tree-select ------------------------ */
     
     --loading-large-size: var(--s-12, 48px);
     
     
+    --tree-select-padding-vertical: var(--s-2, 8px);
     
     --loading-large-dot-size: var(--icon-xs, 12px);
     
     
+    --tree-select-padding-horizontal: var(--s-5, 20px);
     
     --loading-medium-size: var(--s-8, 32px);
     
     
+    --tree-select-background: var(--color-white, #FFFFFF);
     
     --loading-medium-dot-size: var(--icon-xxs, 8px);
     
@@ -13222,7 +13416,7 @@
     
     
     
-    --list-size-s-item-content-font-size: var(--font-size-body-1, 12px);
+    --list-size-s-item-content-font-size: var(--font-size-body-1, 14px);
     
     
     
@@ -13234,7 +13428,7 @@
     
     
     
-    --list-size-s-item-title-font-size: var(--font-size-body-2, 13px);
+    --list-size-s-item-title-font-size: var(--font-size-body-2, 14px);
     
     
     
@@ -13262,7 +13456,7 @@
     
     
     
-    --list-size-m-item-content-font-size: var(--font-size-body-2, 13px);
+    --list-size-m-item-content-font-size: var(--font-size-body-2, 14px);
     
     
     

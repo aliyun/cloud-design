@@ -1,6 +1,6 @@
 {
   "name": "@alicloudfe/components",
-  "version": "1.3.40",
+  "version": "1.4.0-beta.11",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "types/index.d.ts",
@@ -71,6 +71,7 @@
     "cpy-comp": "node ./scripts/copy-comp.js",
     "cpy-scss": "cpy \"**/*.scss\" \"../lib\" --cwd=src --parents",
     "build-css": "node ./scripts/build-css.js",
+    "build-css-test": "node ./scripts/filter-css-var.js",
     "prepare": "npm run clean && concurrently --kill-others-on-fail --success all \"npm:babel\" \"npm:cpy-scss\" \"npm:build-css\" \"npm:babel:esm\" \"npm:build\" \"npm:build-xconsole\" \"npm:types\" && echo \"Prepare package successfully!\"",
     "sync-demo": "node ./scripts/sync-demo.js",
     "gene-def": "node ./scripts/gene-css-def.js",

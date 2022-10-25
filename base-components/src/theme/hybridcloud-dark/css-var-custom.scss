@@ -51,6 +51,7 @@
   --message-error-border-color: var(--color-error-7);
   --message-notice-border-color: var(--color-brand1-4);
   --message-help-border-color: var(--color-brand1-4);
+  --message-size-m-title-content-padding-right: var(--s-3);
   /* transfer */
   --transfer-panel-padding-mb: 8px;
   --transfer-panel-margin-mb: 0px;
@@ -97,11 +98,11 @@
 
   /* table */
   --color-table-selected-border: var(--color-brand1-6);
-  --table-lock-right-shadow: -2px 0 3px rgb(0 0 0 / 64%);
-  --table-lock-left-shadow: 2px 0 3px rgb(0 0 0 / 64%);
+  --table-lock-right-shadow: -2px 0 3px rgb(0 0 0 / 90%);
+  --table-lock-left-shadow: 2px 0 3px rgb(0 0 0 / 90%);
   // 用于 Table.StickyLock
-  --table-ping-right-shadow: inset -10px 0 8px -8px rgb(0 0 0 / 64%);
-  --table-ping-left-shadow: inset 10px 0 8px -8px rgb(0 0 0 / 64%);
+  --table-ping-right-shadow: inset -8px 0 8px -4px rgb(0 0 0 / 50%);
+  --table-ping-left-shadow: inset 8px 0 8px -4px rgb(0 0 0 / 50%);
   // 在弹窗、抽屉、卡片 中，表格的内容背景色为G10、表头背景色为G20
   --table-tr-fill-color:var(--color-fill1-3);
   --table-th-fill-color:var(--color-fill1-4);
@@ -146,16 +147,16 @@
   --step-circle-item-tail-finish-color: var(--color-brand1-6);
 
   /* mention */
-  --color-mention-1: #260B50;
-  --color-mention-2: #411D7A;
-  --color-mention-3: #6A3FAF;
-  --color-mention-4: #885BCF;
-  --color-mention-5: #AA98FB;
-  --color-mention-6: #9684EA;
-  --color-mention-7: #885BCF;
-  --color-mention-8: #6A3FAF;
-  --color-mention-9: #411D7A;
-  --color-mention-10: #260B50;
+  --color-mention-1: #18172E;
+  --color-mention-2: #2D2854;
+  --color-mention-3: #3A3470;
+  --color-mention-4: #484091;
+  --color-mention-5: #5B50BA;
+  --color-mention-6: ##6154D6;
+  --color-mention-7: #7E75FF;
+  --color-mention-8: #9B94FF;
+  --color-mention-9: #BAB5FF;
+  --color-mention-10: #D8D6FF;
 
   /* space grey */
   --space-grey-1: #131414;
@@ -169,18 +170,6 @@
   --space-grey-9: #B6BDCC;
   --space-grey-10: #D8DEEB;
 
-  /** normal-grey */
-  --G0: #0A0A0A;
-  --G10: #141414;
-  --G20: #262626;
-  --G30: #383838;
-  --G40: #4D4D4D;
-  --G50: #6B6B6B;
-  --G60: #8A8A8A;
-  --G70: #CCCCCC;
-  --G80: #DDDDDD;
-  --G90: #E6E6E6;
-  
   /* link */
   --color-link-1: var(--color-brand1-6);
   --color-link-2: var(--color-brand1-5);
@@ -188,5 +177,14 @@
 
   /* card-bg */
   --color-card-1-bg: #141414;
-  --color-card-2-bg: #262626;  
+  --color-card-2-bg: #1c1c1c;  
+
+  /* rgb color */
+  --color-error-2-rgb: 82,40,37;
+  --color-success-2-rgb: 28,66,46;
+  --color-brand1-2-rgb: 29,57,87;
+  --color-warning-2-rgb: 84,61,36;
+  --color-help-2-rgb: 82,68,28;
+  --color-mention-2-rgb: 65,29,122;
+
 }

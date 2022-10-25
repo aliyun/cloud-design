@@ -1,15 +1,553 @@
 :root {
     
     
+    /* ------------------------ color ------------------------ */
+    
+    
+    
+    --color-text1-2: rgba(238,238,238,1);
+    
+    
+    
+    --color-text1-1: rgba(246,246,246,1);
+    
+    
+    
+    --color-error-5: rgba(255,104,104,1);
+    
+    
+    
+    --color-error-6: rgba(255,19,19,1);
+    
+    
+    
+    --color-error-7: rgba(224,0,0,1);
+    
+    
+    
+    --color-error-8: rgba(185,0,0,1);
+    
+    
+    
+    --color-error-9: rgba(150,0,0,1);
+    
+    
+    
+    --color-error-10: rgba(112,0,0,1);
+    
+    
+    
+    --color-error-4: rgba(255,139,139,1);
+    
+    
+    
+    --color-error-3: rgba(250,170,170,1);
+    
+    
+    
+    --color-error-2: rgba(255,217,217,1);
+    
+    
+    
+    --color-error-1: rgba(255,234,234,1);
+    
+    
+    
+    --color-warning-5: rgba(255,230,104,1);
+    
+    
+    
+    --color-warning-6: rgba(255,216,19,1);
+    
+    
+    
+    --color-warning-7: rgba(224,187,0,1);
+    
+    
+    
+    --color-warning-8: rgba(185,155,0,1);
+    
+    
+    
+    --color-warning-9: rgba(150,125,0,1);
+    
+    
+    
+    --color-warning-10: rgba(119,99,0,1);
+    
+    
+    
+    --color-warning-4: rgba(255,236,139,1);
+    
+    
+    
+    --color-warning-3: rgba(255,241,170,1);
+    
+    
+    
+    --color-warning-2: rgba(255,249,217,1);
+    
+    
+    
+    --color-warning-1: rgba(255,251,234,1);
+    
+    
+    
+    --color-success-6: rgba(0,211,70,1);
+    
+    
+    
+    --color-success-7: rgba(0,148,49,1);
+    
+    
+    
+    --color-success-8: rgba(0,122,41,1);
+    
+    
+    
+    --color-success-9: rgba(0,99,33,1);
+    
+    
+    
+    --color-success-10: rgba(0,78,26,1);
+    
+    
+    
+    --color-success-5: rgba(63,255,127,1);
+    
+    
+    
+    --color-success-4: rgba(108,255,157,1);
+    
+    
+    
+    --color-success-3: rgba(147,255,183,1);
+    
+    
+    
+    --color-success-2: rgba(207,255,223,1);
+    
+    
+    
+    --color-success-1: rgba(228,255,237,1);
+    
+    
+    
+    --color-text1-10: rgba(17,17,17,1);
+    
+    
+    
+    --color-text1-9: rgba(51,51,51,1);
+    
+    
+    
+    --color-text1-8: rgba(85,85,85,1);
+    
+    
+    
+    --color-text1-7: rgba(128,128,128,1);
+    
+    
+    
+    --color-text1-6: rgba(150,150,150,1);
+    
+    
+    
+    --color-text1-5: rgba(170,170,170,1);
+    
+    
+    
+    --color-text1-4: rgba(203,203,203,1);
+    
+    
+    
+    --color-text1-3: rgba(229,229,229,1);
+    
+    
+    
+    --color-brand2-1: rgba(247,249,250,1);
+    
+    
+    
+    --color-brand2-2: rgba(239,243,248,1);
+    
+    
+    
+    --color-brand2-3: rgba(230,238,245,1);
+    
+    
+    
+    --color-brand1-2: rgba(214,234,255,1);
+    
+    
+    
+    --color-brand1-10: rgba(0,53,105,1);
+    
+    
+    
+    --color-brand1-8: rgba(0,82,164,1);
+    
+    
+    
+    --color-brand1-7: rgba(0,100,200,1);
+    
+    
+    
+    --color-brand1-5: rgba(92,173,255,1);
+    
+    
+    
+    --color-brand1-4: rgba(129,192,255,1);
+    
+    
+    
+    --color-brand1-3: rgba(162,209,255,1);
+    
+    
+    
+    --color-brand1-9: rgba(0,67,133,1);
+    
+    
+    
+    --color-brand1-6: rgba(0,126,253,1);
+    
+    
+    
+    --color-brand1-1: rgba(232,244,255,1);
+    
+    
+    
+    --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
+    
+    
+    
+    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
+    
+    
+    
+    --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
+    
+    
+    
+    --color-gradient-1: linear-gradient(270deg, rgb(121, 232, 199) 0%, rgb(8, 194, 158) 100%);
+    
+    
+    
+    --color-data1-8: rgba(0,100,200,1);
+    
+    
+    
+    --color-data1-7: rgba(205,92,151,1);
+    
+    
+    
+    --color-data1-6: rgba(92,96,230,1);
+    
+    
+    
+    --color-data1-5: rgba(74,208,81,1);
+    
+    
+    
+    --color-data1-4: rgba(0,108,217,1);
+    
+    
+    
+    --color-data1-3: rgba(153,121,242,1);
+    
+    
+    
+    --color-data1-2: rgba(250,205,79,1);
+    
+    
+    
+    --color-data1-1: rgba(92,205,187,1);
+    
+    
+    
+    --color-data1-9: rgba(82,215,255,1);
+    
+    
+    
+    --color-data1-10: rgba(250,179,79,1);
+    
+    
+    
+    --color-data2-1: rgba(0,100,200,1);
+    
+    
+    
+    --color-data2-2: rgba(21,114,207,1);
+    
+    
+    
+    --color-data2-3: rgba(42,127,212,1);
+    
+    
+    
+    --color-data2-4: rgba(65,141,217,1);
+    
+    
+    
+    --color-data2-5: rgba(89,155,222,1);
+    
+    
+    
+    --color-data2-6: rgba(113,170,227,1);
+    
+    
+    
+    --color-data2-7: rgba(139,186,232,1);
+    
+    
+    
+    --color-data2-8: rgba(168,204,240,1);
+    
+    
+    
+    --color-data2-9: rgba(196,220,245,1);
+    
+    
+    
+    --color-data2-10: rgba(225,237,250,1);
+    
+    
+    
+    --color-fill1-8: #D1D5D9;
+    
+    
+    
+    --color-fill1-7: #003C78;
+    
+    
+    
+    --color-fill1-6: #0050A0;
+    
+    
+    
+    --color-fill1-5: #0064C8;
+    
+    
+    
+    --color-fill1-4: #004080;
+    
+    
+    
+    --color-line1-4: #D1D5D9;
+    
+    
+    
+    --color-link-3: #0064C8;
+    
+    
+    
+    --color-link-2: #0064C8;
+    
+    
+    
+    --color-link-1: #0064C8;
+    
+    
+    
+    --color-brand2-4: #C0C6CC;
+    
+    
+    
+    --color-brand2-5: #92A3B3;
+    
+    
+    
+    --color-brand2-7: #004080;
+    
+    
+    
+    --color-brand2-8: #003366;
+    
+    
+    
+    --color-brand2-9: #00264D;
+    
+    
+    
+    --color-brand2-10: #001A33;
+    
+    
+    
+    --color-brand3-1: #FFFFFF;
+    
+    
+    
+    --color-brand3-6: #FF6A00;
+    
+    
+    
+    --color-brand2-6: #577899;
+    
+    
+    
+    --color-brand7-9: #2D559C;
+    
+    
+    
+    --color-brand7-6: #4F74B3;
+    
+    
+    
+    --color-brand7-4: #A9BAD0;
+    
+    
+    
+    --color-brand7-5: #657C99;
+    
+    
+    
+    --color-fill1-9: #1C1C1C;
+    
+    
+    
+    --color-fill1-3: #EFF3F8;
+    
+    
+    
+    --color-fill1-2: #F7F9FA;
+    
+    
+    
+    --color-fill1-1: #F8F8F9;
+    
+    
+    
+    --color-line1-3: #577899;
+    
+    
+    
+    --color-line1-2: #C0C6CC;
+    
+    
+    
+    --color-line1-1: #E3E4E6;
+    
+    
+    
+    --color-other-3: #FFFFFF;
+    
+    
+    
+    --color-other-2: #FFFFFF;
+    
+    
+    
+    --color-other-1: #0070CC;
+    
+    
+    
+    --color-help-4: #333333;
+    
+    
+    
+    --color-help-3: #888888;
+    
+    
+    
+    --color-help-2: #C9C9C9;
+    
+    
+    
+    --color-help-1: #F5F5F5;
+    
+    
+    
+    --color-notice-4: #005AA5;
+    
+    
+    
+    --color-notice-3: #0070CC;
+    
+    
+    
+    --color-notice-2: #A0CDED;
+    
+    
+    
+    --color-notice-1: #E5F3FF;
+    
+    
+    
+    --color-transparent: transparent;
+    
+    
+    
+    --color-black: #000000;
+    
+    
+    
+    --color-white: #FFFFFF;
+    
+    
+    
+    --color-line1-5: #EBEBEB;
+    
+    
+    /* ------------------------ popup ------------------------ */
+    
+    
+    
+    --popup-local-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --popup-global-shadow: var(--shadow-2-down, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
+    
+    
+    
+    --popup-global-corner: var(--corner-1, 2px);
+    
+    
+    
+    --popup-global-border-color: var(--color-line1-2, #C0C6CC);
+    
+    
+    
+    --popup-global-border-style: var(--line-solid, solid);
+    
+    
+    
+    --popup-global-border-width: var(--line-zero, 0px);
+    
+    
+    
+    --popup-local-corner: var(--corner-1, 2px);
+    
+    
+    
+    --popup-local-border-style: var(--line-solid, solid);
+    
+    
+    
+    --popup-local-border-width: var(--line-1, 1px);
+    
+    
+    
+    --popup-spacing-tb: var(--s-zero, 0px);
+    
+    
+    
+    --popup-spacing-lr: var(--s-zero, 0px);
+    
+    
+    
+    --popup-local-shadow: var(--shadow-1, 0px 2px 4px 0px rgba(0, 0, 0, 0.16));
+    
+    
     /* ------------------------ form-element ------------------------ */
     
     
     
-    --form-element-preview-label-color: var(--color-text1-3, #555555);
+    --form-element-preview-label-color: var(--color-text1-8, #555555);
     
     
     
-    --form-element-preview-text-color: var(--color-text1-4, #111111);
+    --form-element-preview-text-color: var(--color-text1-4, #cbcbcb);
     
     
     
@@ -96,35 +634,419 @@
     --form-element-large-font-size: var(--font-size-body-2, 14px);
     
     
+    /* ------------------------ line ------------------------ */
+    
+    
+    
+    --line-dotted: dotted;
+    
+    
+    
+    --line-dashed: dashed;
+    
+    
+    
+    --line-solid: solid;
+    
+    
+    
+    --line-zero: 0px;
+    
+    
+    
+    --line-3: 3px;
+    
+    
+    
+    --line-2: 2px;
+    
+    
+    
+    --line-1: 1px;
+    
+    
+    /* ------------------------ mask ------------------------ */
+    
+    
+    
+    --mask-background: var(--color-black, #000000);
+    
+    
+    
+    --mask-opacity: 0.45;
+    
+    
+    /* ------------------------ size ------------------------ */
+    
+    
+    
+    --s-50: 200px;
+    
+    
+    
+    --s-49: 196px;
+    
+    
+    
+    --s-48: 192px;
+    
+    
+    
+    --s-47: 188px;
+    
+    
+    
+    --s-46: 184px;
+    
+    
+    
+    --s-45: 180px;
+    
+    
+    
+    --s-44: 176px;
+    
+    
+    
+    --s-43: 172px;
+    
+    
+    
+    --s-42: 168px;
+    
+    
+    
+    --s-41: 164px;
+    
+    
+    
+    --s-40: 160px;
+    
+    
+    
+    --s-39: 156px;
+    
+    
+    
+    --s-38: 152px;
+    
+    
+    
+    --s-37: 148px;
+    
+    
+    
+    --s-36: 144px;
+    
+    
+    
+    --s-35: 140px;
+    
+    
+    
+    --s-34: 136px;
+    
+    
+    
+    --s-33: 132px;
+    
+    
+    
+    --s-32: 128px;
+    
+    
+    
+    --s-31: 124px;
+    
+    
+    
+    --s-30: 120px;
+    
+    
+    
+    --s-29: 116px;
+    
+    
+    
+    --s-28: 112px;
+    
+    
+    
+    --s-27: 108px;
+    
+    
+    
+    --s-26: 104px;
+    
+    
+    
+    --s-25: 100px;
+    
+    
+    
+    --s-24: 96px;
+    
+    
+    
+    --s-23: 92px;
+    
+    
+    
+    --s-22: 88px;
+    
+    
+    
+    --s-21: 84px;
+    
+    
+    
+    --s-20: 80px;
+    
+    
+    
+    --s-19: 76px;
+    
+    
+    
+    --s-18: 72px;
+    
+    
+    
+    --s-17: 68px;
+    
+    
+    
+    --s-16: 64px;
+    
+    
+    
+    --s-15: 60px;
+    
+    
+    
+    --s-14: 56px;
+    
+    
+    
+    --s-13: 52px;
+    
+    
+    
+    --s-12: 48px;
+    
+    
+    
+    --s-11: 44px;
+    
+    
+    
+    --s-10: 40px;
+    
+    
+    
+    --s-9: 36px;
+    
+    
+    
+    --s-8: 32px;
+    
+    
+    
+    --s-7: 28px;
+    
+    
+    
+    --s-6: 24px;
+    
+    
+    
+    --s-5: 20px;
+    
+    
+    
+    --s-4: 16px;
+    
+    
+    
+    --s-3: 12px;
+    
+    
+    
+    --s-2: 8px;
+    
+    
+    
+    --s-1: 4px;
+    
+    
+    
+    --s-zero: 0px;
+    
+    
+    
+    --size-base: 4px;
+    
+    
+    /* ------------------------ shadow ------------------------ */
+    
+    
+    
+    --shadow-3-left: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    
+    
+    --shadow-3-down: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    
+    
+    --shadow-3-right: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    
+    
+    --shadow-3-up: 0px -8px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    
+    
+    --shadow-3: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    
+    
+    
+    --shadow-2-left: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    
+    --shadow-2-down: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    
+    --shadow-2-right: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    
+    --shadow-2-up: 0px -4px 8px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    
+    --shadow-2: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    
+    --shadow-1-left: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    
+    --shadow-1-down: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    
+    --shadow-1-right: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    
+    --shadow-1-up: 0px -2px 4px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    
+    --shadow-1: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+    
+    
+    
+    --shadow-zero: none;
+    
+    
+    
+    --shadow-opacity-sd1: 0.16;
+    
+    
+    
+    --shadow-opacity-sd3: 0.2;
+    
+    
+    
+    --shadow-opacity-sd2: 0.16;
+    
+    
+    
+    --shadow-distance-sd3y: 8;
+    
+    
+    
+    --shadow-distance-sd2y: 4;
+    
+    
+    
+    --shadow-distance-sd3: 0;
+    
+    
+    
+    --shadow-distance-sd2: 0;
+    
+    
+    
+    --shadow-distance-sd1y: 2;
+    
+    
+    
+    --shadow-distance-sd1: 0;
+    
+    
+    
+    --shadow-spread-sd3: 0;
+    
+    
+    
+    --shadow-spread-sd2: 0;
+    
+    
+    
+    --shadow-spread-sd1: 0;
+    
+    
+    
+    --shadow-sides-left: "left";
+    
+    
+    
+    --shadow-sides-down: "down";
+    
+    
+    
+    --shadow-sides-right: "right";
+    
+    
+    
+    --shadow-sides-up: "up";
+    
+    
+    
+    --shadow-sides-base: "base";
+    
+    
+    
+    --shadow-blur-sd3: 16;
+    
+    
+    
+    --shadow-blur-sd2: 8;
+    
+    
+    
+    --shadow-blur-sd1: 4;
+    
+    
+    
+    --shadow-color-sd3: var(--color-black, #000000);
+    
+    
+    
+    --shadow-color-sd2: var(--color-black, #000000);
+    
+    
+    
+    --shadow-color-sd1: var(--color-black, #000000);
+    
+    
     /* ------------------------ icon ------------------------ */
-    
-    
-    
-    --icon-content-d-up-for-component: "\ea37";
-    
-    
-    
-    --icon-font-path: "//at.alicdn.com/t/font_1899989_lqawitevtzp";
-    
-    
-    
-    --icon-content-zoom-in-line1: "\ea36";
-    
-    
-    
-    --icon-content-zoom-out-line1: "\ea35";
-    
-    
-    
-    --icon-content-a-rank-line2: "\ea34";
-    
-    
-    
-    --icon-content-a-drag-line2: "\ea33";
-    
-    
-    
-    --icon-content-a-filter-line2: "\ea32";
     
     
     
@@ -165,6 +1087,34 @@
     
     
     --icon-font-name: "icon";
+    
+    
+    
+    --icon-content-d-up-for-component: "\ea37";
+    
+    
+    
+    --icon-font-path: "//at.alicdn.com/t/font_1899989_lqawitevtzp";
+    
+    
+    
+    --icon-content-zoom-in-line1: "\ea36";
+    
+    
+    
+    --icon-content-zoom-out-line1: "\ea35";
+    
+    
+    
+    --icon-content-a-rank-line2: "\ea34";
+    
+    
+    
+    --icon-content-a-drag-line2: "\ea33";
+    
+    
+    
+    --icon-content-a-filter-line2: "\ea32";
     
     
     
@@ -4451,473 +5401,6 @@
     --icon-content-smile: "\e65f";
     
     
-    /* ------------------------ line ------------------------ */
-    
-    
-    
-    --line-dotted: dotted;
-    
-    
-    
-    --line-dashed: dashed;
-    
-    
-    
-    --line-solid: solid;
-    
-    
-    
-    --line-zero: 0px;
-    
-    
-    
-    --line-3: 3px;
-    
-    
-    
-    --line-2: 2px;
-    
-    
-    
-    --line-1: 1px;
-    
-    
-    /* ------------------------ popup ------------------------ */
-    
-    
-    
-    --popup-global-shadow: var(--shadow-2-down, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
-    
-    
-    
-    --popup-global-corner: var(--corner-1, 2px);
-    
-    
-    
-    --popup-global-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --popup-global-border-style: var(--line-solid, solid);
-    
-    
-    
-    --popup-global-border-width: var(--line-zero, 0px);
-    
-    
-    
-    --popup-local-corner: var(--corner-1, 2px);
-    
-    
-    
-    --popup-local-border-style: var(--line-solid, solid);
-    
-    
-    
-    --popup-local-border-width: var(--line-1, 1px);
-    
-    
-    
-    --popup-spacing-tb: var(--s-zero, 0px);
-    
-    
-    
-    --popup-spacing-lr: var(--s-zero, 0px);
-    
-    
-    
-    --popup-local-shadow: var(--shadow-1, 0px 2px 4px 0px rgba(0, 0, 0, 0.16));
-    
-    
-    
-    --popup-local-border-color: var(--color-brand2-4, #C0C6CC);
-    
-    
-    /* ------------------------ mask ------------------------ */
-    
-    
-    
-    --mask-background: var(--color-black, #000000);
-    
-    
-    
-    --mask-opacity: 0.45;
-    
-    
-    /* ------------------------ size ------------------------ */
-    
-    
-    
-    --s-50: 200px;
-    
-    
-    
-    --s-49: 196px;
-    
-    
-    
-    --s-48: 192px;
-    
-    
-    
-    --s-47: 188px;
-    
-    
-    
-    --s-46: 184px;
-    
-    
-    
-    --s-45: 180px;
-    
-    
-    
-    --s-44: 176px;
-    
-    
-    
-    --s-43: 172px;
-    
-    
-    
-    --s-42: 168px;
-    
-    
-    
-    --s-41: 164px;
-    
-    
-    
-    --s-40: 160px;
-    
-    
-    
-    --s-39: 156px;
-    
-    
-    
-    --s-38: 152px;
-    
-    
-    
-    --s-37: 148px;
-    
-    
-    
-    --s-36: 144px;
-    
-    
-    
-    --s-35: 140px;
-    
-    
-    
-    --s-34: 136px;
-    
-    
-    
-    --s-33: 132px;
-    
-    
-    
-    --s-32: 128px;
-    
-    
-    
-    --s-31: 124px;
-    
-    
-    
-    --s-30: 120px;
-    
-    
-    
-    --s-29: 116px;
-    
-    
-    
-    --s-28: 112px;
-    
-    
-    
-    --s-27: 108px;
-    
-    
-    
-    --s-26: 104px;
-    
-    
-    
-    --s-25: 100px;
-    
-    
-    
-    --s-24: 96px;
-    
-    
-    
-    --s-23: 92px;
-    
-    
-    
-    --s-22: 88px;
-    
-    
-    
-    --s-21: 84px;
-    
-    
-    
-    --s-20: 80px;
-    
-    
-    
-    --s-19: 76px;
-    
-    
-    
-    --s-18: 72px;
-    
-    
-    
-    --s-17: 68px;
-    
-    
-    
-    --s-16: 64px;
-    
-    
-    
-    --s-15: 60px;
-    
-    
-    
-    --s-14: 56px;
-    
-    
-    
-    --s-13: 52px;
-    
-    
-    
-    --s-12: 48px;
-    
-    
-    
-    --s-11: 44px;
-    
-    
-    
-    --s-10: 40px;
-    
-    
-    
-    --s-9: 36px;
-    
-    
-    
-    --s-8: 32px;
-    
-    
-    
-    --s-7: 28px;
-    
-    
-    
-    --s-6: 24px;
-    
-    
-    
-    --s-5: 20px;
-    
-    
-    
-    --s-4: 16px;
-    
-    
-    
-    --s-3: 12px;
-    
-    
-    
-    --s-2: 8px;
-    
-    
-    
-    --s-1: 4px;
-    
-    
-    
-    --s-zero: 0px;
-    
-    
-    
-    --s-auto: auto;
-    
-    
-    
-    --size-base: 4px;
-    
-    
-    /* ------------------------ shadow ------------------------ */
-    
-    
-    
-    --shadow-3-left: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
-    
-    
-    
-    --shadow-3-down: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    
-    
-    
-    --shadow-3-right: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
-    
-    
-    
-    --shadow-3-up: 0px -8px 16px 0px rgba(0, 0, 0, 0.2);
-    
-    
-    
-    --shadow-3: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    
-    
-    
-    --shadow-2-left: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    
-    --shadow-2-down: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    
-    --shadow-2-right: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    
-    --shadow-2-up: 0px -4px 8px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    
-    --shadow-2: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    
-    --shadow-1-left: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    
-    --shadow-1-down: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    
-    --shadow-1-right: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    
-    --shadow-1-up: 0px -2px 4px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    
-    --shadow-1: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
-    
-    
-    
-    --shadow-zero: none;
-    
-    
-    
-    --shadow-opacity-sd1: 0.16;
-    
-    
-    
-    --shadow-opacity-sd3: 0.2;
-    
-    
-    
-    --shadow-opacity-sd2: 0.16;
-    
-    
-    
-    --shadow-distance-sd3y: 8;
-    
-    
-    
-    --shadow-distance-sd2y: 4;
-    
-    
-    
-    --shadow-distance-sd3: 0;
-    
-    
-    
-    --shadow-distance-sd2: 0;
-    
-    
-    
-    --shadow-distance-sd1y: 2;
-    
-    
-    
-    --shadow-distance-sd1: 0;
-    
-    
-    
-    --shadow-spread-sd3: 0;
-    
-    
-    
-    --shadow-spread-sd2: 0;
-    
-    
-    
-    --shadow-spread-sd1: 0;
-    
-    
-    
-    --shadow-sides-left: "left";
-    
-    
-    
-    --shadow-sides-down: "down";
-    
-    
-    
-    --shadow-sides-right: "right";
-    
-    
-    
-    --shadow-sides-up: "up";
-    
-    
-    
-    --shadow-sides-base: "base";
-    
-    
-    
-    --shadow-blur-sd3: 16;
-    
-    
-    
-    --shadow-blur-sd2: 8;
-    
-    
-    
-    --shadow-blur-sd1: 4;
-    
-    
-    
-    --shadow-color-sd3: var(--color-black, #000000);
-    
-    
-    
-    --shadow-color-sd2: var(--color-black, #000000);
-    
-    
-    
-    --shadow-color-sd1: var(--color-black, #000000);
-    
-    
     /* ------------------------ font ------------------------ */
     
     
@@ -5021,7 +5504,7 @@
     
     
     
-    --corner-zero: 0;
+    --corner-zero: 0px;
     
     
     
@@ -5052,493 +5535,6 @@
     --corner-0: 0px;
     
     
-    /* ------------------------ color ------------------------ */
-    
-    
-    
-    --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
-    
-    
-    
-    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
-    
-    
-    
-    --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
-    
-    
-    
-    --color-gradient-1: linear-gradient(270deg, rgb(121, 232, 199) 0%, rgb(8, 194, 158) 100%);
-    
-    
-    
-    --color-text1-5: rgba(179,179,179,1);
-    
-    
-    
-    --color-data1-8: rgba(0,100,200,1);
-    
-    
-    
-    --color-data1-7: rgba(205,92,151,1);
-    
-    
-    
-    --color-data1-6: rgba(92,96,230,1);
-    
-    
-    
-    --color-data1-5: rgba(74,208,81,1);
-    
-    
-    
-    --color-data1-4: rgba(0,108,217,1);
-    
-    
-    
-    --color-data1-3: rgba(153,121,242,1);
-    
-    
-    
-    --color-data1-2: rgba(250,205,79,1);
-    
-    
-    
-    --color-data1-1: rgba(92,205,187,1);
-    
-    
-    
-    --color-data1-9: rgba(82,215,255,1);
-    
-    
-    
-    --color-data1-10: rgba(250,179,79,1);
-    
-    
-    
-    --color-data2-1: rgba(0,100,200,1);
-    
-    
-    
-    --color-data2-2: rgba(21,114,207,1);
-    
-    
-    
-    --color-data2-3: rgba(42,127,212,1);
-    
-    
-    
-    --color-data2-4: rgba(65,141,217,1);
-    
-    
-    
-    --color-data2-5: rgba(89,155,222,1);
-    
-    
-    
-    --color-data2-6: rgba(113,170,227,1);
-    
-    
-    
-    --color-data2-7: rgba(139,186,232,1);
-    
-    
-    
-    --color-data2-8: rgba(168,204,240,1);
-    
-    
-    
-    --color-data2-9: rgba(196,220,245,1);
-    
-    
-    
-    --color-data2-10: rgba(225,237,250,1);
-    
-    
-    
-    --color-brand1-3: #FBFCFD;
-    
-    
-    
-    --color-text1-4: #111111;
-    
-    
-    
-    --color-text1-3: #555555;
-    
-    
-    
-    --color-text1-2: #888888;
-    
-    
-    
-    --color-text1-1: #C1C1C1;
-    
-    
-    
-    --color-error-2: #FAF7F7;
-    
-    
-    
-    --color-fill1-8: #D1D5D9;
-    
-    
-    
-    --color-fill1-7: #003C78;
-    
-    
-    
-    --color-fill1-6: #0050A0;
-    
-    
-    
-    --color-fill1-5: #0064C8;
-    
-    
-    
-    --color-fill1-4: #004080;
-    
-    
-    
-    --color-line1-4: #D1D5D9;
-    
-    
-    
-    --color-success-6: #32C832;
-    
-    
-    
-    --color-success-7: #00A700;
-    
-    
-    
-    --color-success-8: #008501;
-    
-    
-    
-    --color-success-9: #006401;
-    
-    
-    
-    --color-success-10: #004301;
-    
-    
-    
-    --color-warning-5: #FFDE5C;
-    
-    
-    
-    --color-warning-6: #FAC800;
-    
-    
-    
-    --color-warning-7: #DDA200;
-    
-    
-    
-    --color-warning-8: #A77E00;
-    
-    
-    
-    --color-warning-9: #7D5C00;
-    
-    
-    
-    --color-warning-10: #533B00;
-    
-    
-    
-    --color-error-5: #E6BFBF;
-    
-    
-    
-    --color-error-6: #D77A7A;
-    
-    
-    
-    --color-error-7: #C80000;
-    
-    
-    
-    --color-error-8: #A00000;
-    
-    
-    
-    --color-error-9: #780000;
-    
-    
-    
-    --color-error-10: #500000;
-    
-    
-    
-    --color-success-5: #7BDA7B;
-    
-    
-    
-    --color-link-3: #0064C8;
-    
-    
-    
-    --color-link-2: #0064C8;
-    
-    
-    
-    --color-link-1: #0064C8;
-    
-    
-    
-    --color-error-4: #F5E6E6;
-    
-    
-    
-    --color-error-3: #F8EFEF;
-    
-    
-    
-    --color-error-1: #FDFBFB;
-    
-    
-    
-    --color-warning-4: #FFF097;
-    
-    
-    
-    --color-warning-3: #FFF3B4;
-    
-    
-    
-    --color-warning-2: #FFF7D1;
-    
-    
-    
-    --color-warning-1: #FFFAE8;
-    
-    
-    
-    --color-success-4: #ABEBAC;
-    
-    
-    
-    --color-success-3: #C1F0C2;
-    
-    
-    
-    --color-success-2: #D8F5D8;
-    
-    
-    
-    --color-success-1: #EBFAEB;
-    
-    
-    
-    --color-brand2-1: #F8F8F9;
-    
-    
-    
-    --color-brand2-2: #E3E4E6;
-    
-    
-    
-    --color-brand2-3: #D1D5D9;
-    
-    
-    
-    --color-brand2-4: #C0C6CC;
-    
-    
-    
-    --color-brand2-5: #92A3B3;
-    
-    
-    
-    --color-brand2-7: #004080;
-    
-    
-    
-    --color-brand2-8: #003366;
-    
-    
-    
-    --color-brand2-9: #00264D;
-    
-    
-    
-    --color-brand2-10: #001A33;
-    
-    
-    
-    --color-brand3-1: #FFFFFF;
-    
-    
-    
-    --color-brand3-6: #FF6A00;
-    
-    
-    
-    --color-text1-10: #1A1A1A;
-    
-    
-    
-    --color-text1-9: #333333;
-    
-    
-    
-    --color-text1-8: #4D4D4D;
-    
-    
-    
-    --color-text1-7: #666666;
-    
-    
-    
-    --color-text1-6: #808080;
-    
-    
-    
-    --color-brand1-2: #EFF3F8;
-    
-    
-    
-    --color-brand2-6: #577899;
-    
-    
-    
-    --color-brand7-9: #2D559C;
-    
-    
-    
-    --color-brand7-6: #4F74B3;
-    
-    
-    
-    --color-brand7-4: #A9BAD0;
-    
-    
-    
-    --color-brand7-5: #657C99;
-    
-    
-    
-    --color-fill1-9: #1C1C1C;
-    
-    
-    
-    --color-brand1-10: #001428;
-    
-    
-    
-    --color-brand1-8: #003C78;
-    
-    
-    
-    --color-brand1-7: #0050A0;
-    
-    
-    
-    --color-brand1-5: #7AA9D7;
-    
-    
-    
-    --color-brand1-4: #BFD2E6;
-    
-    
-    
-    --color-fill1-3: #EFF3F8;
-    
-    
-    
-    --color-fill1-2: #F7F9FA;
-    
-    
-    
-    --color-fill1-1: #F8F8F9;
-    
-    
-    
-    --color-line1-3: #577899;
-    
-    
-    
-    --color-line1-2: #C0C6CC;
-    
-    
-    
-    --color-line1-1: #E3E4E6;
-    
-    
-    
-    --color-brand1-9: #002850;
-    
-    
-    
-    --color-brand1-6: #0064C8;
-    
-    
-    
-    --color-brand1-1: #F7F9FA;
-    
-    
-    
-    --color-other-3: #FFFFFF;
-    
-    
-    
-    --color-other-2: #FFFFFF;
-    
-    
-    
-    --color-other-1: #0070CC;
-    
-    
-    
-    --color-help-4: #333333;
-    
-    
-    
-    --color-help-3: #888888;
-    
-    
-    
-    --color-help-2: #C9C9C9;
-    
-    
-    
-    --color-help-1: #F5F5F5;
-    
-    
-    
-    --color-notice-4: #005AA5;
-    
-    
-    
-    --color-notice-3: #0070CC;
-    
-    
-    
-    --color-notice-2: #A0CDED;
-    
-    
-    
-    --color-notice-1: #E5F3FF;
-    
-    
-    
-    --color-transparent: transparent;
-    
-    
-    
-    --color-black: #000000;
-    
-    
-    
-    --color-white: #FFFFFF;
-    
-    
-    
-    --color-line1-5: #EBEBEB;
-    
-    
     /* ------------------------ checkbox ------------------------ */
     
     
@@ -5551,22 +5547,6 @@
     
     
     
-    --checkbox-border-color: var(--color-line1-3, #577899);
-    
-    
-    
-    --checkbox-hovered-border-color: var(--color-fill1-4, #004080);
-    
-    
-    
-    --checkbox-checked-border-color: var(--color-fill1-4, #004080);
-    
-    
-    
-    --checkbox-disabled-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --checkbox-checked-hovered-border-color: var(--color-fill1-4, #004080);
     
     
@@ -5575,19 +5555,7 @@
     
     
     
-    --checkbox-disabled-circle-color: var(--color-text1-3, #555555);
-    
-    
-    
-    --checkbox-checked-bg-color: var(--color-fill1-5, #0064C8);
-    
-    
-    
     --checkbox-checked-hovered-bg-color: var(--color-fill1-5, #0064C8);
-    
-    
-    
-    --checkbox-disabled-bg-color: var(--color-fill1-2, #F7F9FA);
     
     
     
@@ -5595,7 +5563,7 @@
     
     
     
-    --checkbox-disabled-label-color: var(--color-text1-5, #b3b3b3);
+    --checkbox-disabled-label-color: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -5638,51 +5606,32 @@
     --checkbox-font-size: var(--font-size-body-1, 12px);
     
     
-    /* ------------------------ cascader ------------------------ */
+    
+    --checkbox-border-color: var(--color-text1-4, #cbcbcb);
     
     
     
-    --cascader-menu-border-color: var(--color-line1-1, #E3E4E6);
+    --checkbox-hovered-border-color: var(--color-brand1-8, #0052a4);
     
     
     
-    --cascader-menu-icon-expand-color: var(--color-text1-9, #333333);
+    --checkbox-checked-border-color: var(--color-brand1-8, #0052a4);
     
     
     
-    --cascader-menu-icon-hover-expand-color: var(--color-text1-9, #333333);
+    --checkbox-disabled-border-color: var(--color-text1-4, #cbcbcb);
     
     
     
-    --cascader-menu-item-expanded-color: var(--color-text1-9, #333333);
+    --checkbox-checked-bg-color: var(--color-brand1-7, #0064c8);
     
     
     
-    --cascader-menu-icon-expand-size: var(--icon-xxs, 8px);
+    --checkbox-disabled-bg-color: var(--color-text1-1, #f6f6f6);
     
     
     
-    --cascader-menu-border-width: var(--line-1, 1px);
-    
-    
-    
-    --cascader-menu-width: var(--s-auto, auto);
-    
-    
-    
-    --cascader-menu-min-width: var(--s-25, 100px);
-    
-    
-    
-    --cascader-menu-height: var(--s-48, 192px);
-    
-    
-    
-    --cascader-menu-border-radius: var(--corner-1, 2px);
-    
-    
-    
-    --cascader-menu-item-expanded-background-color: var(--color-fill1-2, #F7F9FA);
+    --checkbox-disabled-circle-color: var(--color-text1-5, #aaaaaa);
     
     
     /* ------------------------ search ------------------------ */
@@ -5717,14 +5666,6 @@
     
     
     
-    --search-normal-normal-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --search-normal-normal-btn-hover-bg-color: var(--color-fill1-1, #F8F8F9);
-    
-    
-    
     --search-normal-normal-l-height: var(--s-9, 36px);
     
     
@@ -5737,15 +5678,15 @@
     
     
     
-    --search-normal-dark-color: var(--color-brand1-6, #0064C8);
+    --search-normal-dark-color: var(--color-brand1-6, #007efd);
     
     
     
-    --search-normal-dark-hover-color: var(--color-brand1-7, #0050A0);
+    --search-normal-dark-hover-color: var(--color-brand1-7, #0064c8);
     
     
     
-    --search-normal-dark-btn-hover-bg-color: var(--color-brand1-7, #0050A0);
+    --search-normal-dark-btn-hover-bg-color: var(--color-brand1-7, #0064c8);
     
     
     
@@ -5761,18 +5702,6 @@
     
     
     
-    --search-simple-normal-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --search-simple-normal-split-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --search-simple-normal-icon-text-color: var(--color-text1-2, #888888);
-    
-    
-    
     --search-simple-normal-l-icon-size: var(--icon-s, 16px);
     
     
@@ -5785,31 +5714,7 @@
     
     
     
-    --search-normal-primary-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --search-normal-primary-hover-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --search-normal-primary-split-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --search-normal-primary-shadow: var(--shadow-zero, none);
-    
-    
-    
-    --search-normal-primary-btn-text-color: var(--color-text1-9, #333333);
-    
-    
-    
-    --search-normal-primary-btn-hover-bg-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --search-normal-primary-btn-hover-text-color: var(--color-text1-9, #333333);
     
     
     
@@ -5877,10 +5782,6 @@
     
     
     
-    --search-search-icon-content: var(--icon-content-search-for-component, "");
-    
-    
-    
     --search-normal-corner: var(--corner-1, 2px);
     
     
@@ -5905,19 +5806,7 @@
     
     
     
-    --search-normal-normal-split-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --search-normal-normal-hover-color: var(--color-line1-4, #D1D5D9);
-    
-    
-    
     --search-normal-normal-shadow: var(--shadow-zero, none);
-    
-    
-    
-    --search-normal-normal-btn-bg-color: var(--color-fill1-1, #F8F8F9);
     
     
     
@@ -5993,15 +5882,7 @@
     
     
     
-    --search-simple-normal-hover-color: var(--color-line1-4, #D1D5D9);
-    
-    
-    
     --search-simple-normal-shadow: var(--shadow-zero, none);
-    
-    
-    
-    --search-simple-normal-icon-hover-text-color: var(--color-text1-3, #555555);
     
     
     
@@ -6037,11 +5918,11 @@
     
     
     
-    --search-simple-dark-icon-text-color: var(--color-text1-2, #888888);
+    --search-simple-dark-icon-text-color: var(--color-text1-2, #eeeeee);
     
     
     
-    --search-simple-dark-icon-hover-text-color: var(--color-text1-3, #555555);
+    --search-simple-dark-icon-hover-text-color: var(--color-text1-3, #e5e5e5);
     
     
     
@@ -6054,6 +5935,74 @@
     
     
     --search-simple-dark-border-width: var(--line-1, 1px);
+    
+    
+    
+    --search-normal-primary-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --search-normal-primary-hover-color: var(--color-brand1-8, #0052a4);
+    
+    
+    
+    --search-normal-primary-split-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --search-normal-primary-btn-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --search-normal-primary-btn-hover-bg-color: var(--color-brand1-8, #0052a4);
+    
+    
+    
+    --search-normal-primary-btn-hover-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --search-normal-normal-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --search-normal-normal-split-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --search-normal-normal-hover-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --search-normal-normal-btn-bg-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --search-normal-normal-btn-hover-bg-color: var(--color-brand2-1, #f7f9fa);
+    
+    
+    
+    --search-simple-normal-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --search-simple-normal-hover-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --search-simple-normal-split-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --search-simple-normal-icon-text-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --search-simple-normal-icon-hover-text-color: var(--color-text1-7, gray);
+    
+    
+    
+    --search-search-icon-content: var(--icon-content-search-for-component, "");
     
     
     /* ------------------------ card ------------------------ */
@@ -6093,10 +6042,6 @@
     
     
     --card-head-bottom-border-color: var(--color-transparent, transparent);
-    
-    
-    
-    --card-border-color: var(--color-line1-1, #E3E4E6);
     
     
     
@@ -6184,7 +6129,7 @@
     
     
     
-    --card-sub-title-color: var(--color-text1-3, #555555);
+    --card-sub-title-color: var(--color-text1-3, #e5e5e5);
     
     
     
@@ -6192,11 +6137,7 @@
     
     
     
-    --card-title-bullet-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --card-content-color: var(--color-text1-3, #555555);
+    --card-title-bullet-color: var(--color-brand1-6, #007efd);
     
     
     
@@ -6205,6 +6146,14 @@
     
     
     --card-more-btn-background: var(--color-white, #FFFFFF);
+    
+    
+    
+    --card-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --card-content-color: var(--color-text1-9, #333333);
     
     
     /* ------------------------ switch ------------------------ */
@@ -6227,10 +6176,6 @@
     
     
     
-    --switch-normal-off-color-font: var(--color-fill1-1, #F8F8F9);
-    
-    
-    
     --switch-normal-off-border-color: var(--color-transparent, transparent);
     
     
@@ -6247,15 +6192,7 @@
     
     
     
-    --switch-normal-on-bg-color: var(--color-success-7, #00A700);
-    
-    
-    
-    --switch-hover-on-bg-color: var(--color-success-7, #00A700);
-    
-    
-    
-    --switch-disabled-on-bg-color: var(--color-fill1-8, #D1D5D9);
+    --switch-normal-on-bg-color: var(--color-success-7, #009431);
     
     
     
@@ -6263,19 +6200,7 @@
     
     
     
-    --switch-hover-off-bg-color: var(--color-brand2-6, #577899);
-    
-    
-    
-    --switch-disabled-off-bg-color: var(--color-fill1-8, #D1D5D9);
-    
-    
-    
     --switch-text-off-right: var(--s-2, 8px);
-    
-    
-    
-    --switch-disabled-off-color-font: var(--color-text1-3, #555555);
     
     
     
@@ -6284,10 +6209,6 @@
     
     
     --switch-size-s-trigger: var(--s-4, 16px);
-    
-    
-    
-    --switch-disabled-on-color-font: var(--color-text1-5, #b3b3b3);
     
     
     
@@ -6359,10 +6280,6 @@
     
     
     
-    --switch-disabled-off-trigger-bg-color: var(--color-fill1-1, #F8F8F9);
-    
-    
-    
     --switch-handle-off-border-color: var(--color-transparent, transparent);
     
     
@@ -6375,7 +6292,39 @@
     
     
     
-    --switch-normal-off-bg-color: var(--color-text1-7, #666666);
+    --switch-disabled-on-bg-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --switch-normal-off-bg-color: var(--color-text1-7, gray);
+    
+    
+    
+    --switch-disabled-off-bg-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --switch-disabled-off-trigger-bg-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --switch-hover-on-bg-color: var(--color-success-8, #007a29);
+    
+    
+    
+    --switch-disabled-on-color-font: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --switch-hover-off-bg-color: var(--color-text1-8, #555555);
+    
+    
+    
+    --switch-normal-off-color-font: var(--color-white, #FFFFFF);
+    
+    
+    
+    --switch-disabled-off-color-font: var(--color-text1-5, #aaaaaa);
     
     
     /* ------------------------ button ------------------------ */
@@ -6430,11 +6379,11 @@
     
     
     
-    --btn-ghost-light-color: var(--color-brand1-6, #0064C8);
+    --btn-ghost-light-color: var(--color-brand1-6, #007efd);
     
     
     
-    --btn-ghost-light-border-color: var(--color-brand1-6, #0064C8);
+    --btn-ghost-light-border-color: var(--color-brand1-6, #007efd);
     
     
     
@@ -6454,7 +6403,7 @@
     
     
     
-    --btn-ghost-light-bg-hover-rgb: var(--color-brand1-7, #0050A0);
+    --btn-ghost-light-bg-hover-rgb: var(--color-brand1-7, #0064c8);
     
     
     
@@ -6462,7 +6411,7 @@
     
     
     
-    --btn-ghost-light-color-disabled-rgb: var(--color-text1-1, #C1C1C1);
+    --btn-ghost-light-color-disabled-rgb: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -6479,14 +6428,6 @@
     
     
     --btn-ghost-light-border-color-disabled-opacity: 1;
-    
-    
-    
-    --btn-warning-primary-border-color: var(--color-error-3, #F8EFEF);
-    
-    
-    
-    --btn-warning-primary-border-color-disabled: var(--color-white, #FFFFFF);
     
     
     
@@ -6518,23 +6459,7 @@
     
     
     
-    --btn-pure-normal-bg-hover: var(--color-brand1-1, #F7F9FA);
-    
-    
-    
     --btn-size-l-padding: var(--s-4, 16px);
-    
-    
-    
-    --btn-pure-normal-border-color-hover: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --btn-pure-primary-bg: var(--color-fill1-5, #0064C8);
-    
-    
-    
-    --btn-pure-primary-bg-hover: var(--color-fill1-5, #0064C8);
     
     
     
@@ -6558,35 +6483,23 @@
     
     
     
-    --btn-warning-primary-bg: var(--color-error-7, #C80000);
+    --btn-warning-primary-bg: var(--color-error-7, #e00000);
     
     
     
-    --btn-warning-primary-bg-hover: var(--color-error-7, #C80000);
+    --btn-warning-normal-color: var(--color-error-7, #e00000);
     
     
     
-    --btn-warning-primary-color-disabled: var(--color-white, #FFFFFF);
+    --btn-warning-normal-color-hover: var(--color-error-7, #e00000);
     
     
     
-    --btn-warning-primary-bg-disabled: var(--color-fill1-8, #D1D5D9);
+    --btn-warning-normal-border-color: var(--color-error-7, #e00000);
     
     
     
-    --btn-warning-normal-color: var(--color-error-7, #C80000);
-    
-    
-    
-    --btn-warning-normal-color-hover: var(--color-error-7, #C80000);
-    
-    
-    
-    --btn-warning-normal-border-color: var(--color-error-7, #C80000);
-    
-    
-    
-    --btn-warning-normal-border-color-hover: var(--color-error-7, #C80000);
+    --btn-warning-normal-border-color-hover: var(--color-error-7, #e00000);
     
     
     
@@ -6594,27 +6507,15 @@
     
     
     
-    --btn-warning-normal-bg-hover: var(--color-error-2, #FAF7F7);
+    --btn-pure-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
-    --btn-warning-normal-border-color-disabled: var(--color-line1-4, #D1D5D9);
+    --btn-warning-normal-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
-    --btn-warning-normal-bg-disabled: var(--color-white, #FFFFFF);
-    
-    
-    
-    --btn-pure-color-disabled: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --btn-warning-normal-color-disabled: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --btn-text-disabled-color: var(--color-text1-5, #b3b3b3);
+    --btn-text-disabled-color: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -6622,11 +6523,7 @@
     
     
     
-    --btn-pure-normal-color-disabled: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --btn-pure-normal-bg-disabled: var(--color-white, #FFFFFF);
+    --btn-pure-normal-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -6634,39 +6531,19 @@
     
     
     
-    --btn-pure-normal-border-color-active: var(--color-line1-2, #C0C6CC);
+    --btn-pure-secondary-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
-    --btn-pure-secondary-color-disabled: var(--color-text1-5, #b3b3b3);
+    --btn-warning-normal-color-active: var(--color-error-7, #e00000);
     
     
     
-    --btn-pure-secondary-bg-disabled: var(--color-white, #FFFFFF);
+    --btn-warning-normal-border-color-active: var(--color-error-7, #e00000);
     
     
     
-    --btn-warning-primary-bg-active: var(--color-error-7, #C80000);
-    
-    
-    
-    --btn-warning-normal-color-active: var(--color-error-7, #C80000);
-    
-    
-    
-    --btn-warning-normal-border-color-active: var(--color-error-7, #C80000);
-    
-    
-    
-    --btn-warning-normal-bg-active: var(--color-error-2, #FAF7F7);
-    
-    
-    
-    --btn-pure-normal-border-color-disabled: var(--color-line1-4, #D1D5D9);
-    
-    
-    
-    --btn-pure-normal-bg-active: var(--color-fill1-3, #EFF3F8);
+    --btn-warning-normal-bg-active: var(--color-error-2, #ffd9d9);
     
     
     
@@ -6682,23 +6559,7 @@
     
     
     
-    --btn-pure-secondary-bg-hover: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
     --btn-pure-secondary-bg-active: var(--color-fill1-3, #EFF3F8);
-    
-    
-    
-    --btn-pure-primary-color-disabled: var(--color-white, #FFFFFF);
-    
-    
-    
-    --btn-pure-primary-bg-disabled: var(--color-fill1-8, #D1D5D9);
-    
-    
-    
-    --btn-pure-primary-border-color-disabled: var(--color-transparent, transparent);
     
     
     
@@ -6710,15 +6571,7 @@
     
     
     
-    --btn-pure-normal-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --btn-shadow-hover: var(--shadow-1, 0px 2px 4px 0px rgba(0, 0, 0, 0.16));
-    
-    
-    
-    --btn-pure-secondary-border-color-disabled: var(--color-line1-4, #D1D5D9);
     
     
     
@@ -6894,19 +6747,11 @@
     
     
     
-    --btn-warning-primary-border-color-hover: var(--color-error-4, #F5E6E6);
-    
-    
-    
-    --btn-warning-primary-border-color-active: var(--color-error-4, #F5E6E6);
-    
-    
-    
     --btn-text-primary-color: var(--color-link-1, #0064C8);
     
     
     
-    --btn-text-loading-color: var(--color-text1-4, #111111);
+    --btn-text-loading-color: var(--color-text1-4, #cbcbcb);
     
     
     
@@ -6939,6 +6784,110 @@
     
     
     --btn-text-icon-l-margin: var(--s-1, 4px);
+    
+    
+    
+    --btn-pure-normal-bg-hover: var(--color-brand2-1, #f7f9fa);
+    
+    
+    
+    --btn-pure-normal-border-color-hover: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --btn-pure-primary-bg: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --btn-pure-primary-bg-hover: var(--color-brand1-8, #0052a4);
+    
+    
+    
+    --btn-warning-primary-border-color: var(--color-transparent, transparent);
+    
+    
+    
+    --btn-warning-primary-border-color-hover: var(--color-transparent, transparent);
+    
+    
+    
+    --btn-warning-primary-border-color-active: var(--color-transparent, transparent);
+    
+    
+    
+    --btn-warning-primary-bg-hover: var(--color-error-8, #b90000);
+    
+    
+    
+    --btn-warning-primary-bg-active: var(--color-error-9, #960000);
+    
+    
+    
+    --btn-warning-normal-bg-hover: var(--color-error-1, #ffeaea);
+    
+    
+    
+    --btn-pure-normal-bg-disabled: var(--color-text1-1, #f6f6f6);
+    
+    
+    
+    --btn-pure-normal-border-color-disabled: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --btn-pure-normal-bg-active: var(--color-brand2-2, #eff3f8);
+    
+    
+    
+    --btn-pure-normal-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --btn-pure-normal-border-color-active: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --btn-pure-secondary-bg-disabled: var(--color-text1-1, #f6f6f6);
+    
+    
+    
+    --btn-pure-secondary-border-color-disabled: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --btn-pure-secondary-bg-hover: var(--color-brand2-1, #f7f9fa);
+    
+    
+    
+    --btn-pure-primary-color-disabled: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --btn-pure-primary-bg-disabled: var(--color-text1-1, #f6f6f6);
+    
+    
+    
+    --btn-pure-primary-border-color-disabled: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --btn-warning-primary-color-disabled: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --btn-warning-primary-border-color-disabled: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --btn-warning-primary-bg-disabled: var(--color-text1-1, #f6f6f6);
+    
+    
+    
+    --btn-warning-normal-border-color-disabled: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --btn-warning-normal-bg-disabled: var(--color-text1-1, #f6f6f6);
     
     
     /* ------------------------ balloon ------------------------ */
@@ -6994,14 +6943,6 @@
     
     
     --balloon-tooltip-size-padding-left: var(--s-3, 12px);
-    
-    
-    
-    --balloon-normal-color-border: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --balloon-normal-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
     
     
     
@@ -7112,6 +7053,14 @@
     --balloon-tooltip-border-style: var(--line-solid, solid);
     
     
+    
+    --balloon-normal-color-border: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --balloon-normal-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
+    
+    
     /* ------------------------ message ------------------------ */
     
     
@@ -7121,18 +7070,6 @@
     
     
     --message-size-l-title-content-padding-right: var(--s-4, 16px);
-    
-    
-    
-    --message-help-color-icon-toast: var(--color-help-3, #888888);
-    
-    
-    
-    --message-loading-color-border-inline: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --message-loading-color-icon-toast: var(--color-text1-2, #888888);
     
     
     
@@ -7168,10 +7105,6 @@
     
     
     
-    --message-success-color-border-toast: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --message-success-color-title-toast: var(--color-text1-9, #333333);
     
     
@@ -7180,7 +7113,7 @@
     
     
     
-    --message-success-color-icon-toast: var(--color-success-7, #00A700);
+    --message-success-color-icon-toast: var(--color-success-7, #009431);
     
     
     
@@ -7204,7 +7137,7 @@
     
     
     
-    --message-error-color-icon-toast: var(--color-error-7, #C80000);
+    --message-error-color-icon-toast: var(--color-error-7, #e00000);
     
     
     
@@ -7220,7 +7153,7 @@
     
     
     
-    --message-warning-color-icon-toast: var(--color-warning-6, #FAC800);
+    --message-warning-color-icon-toast: var(--color-warning-6, #ffd813);
     
     
     
@@ -7244,19 +7177,7 @@
     
     
     
-    --message-success-color-bg-inline: var(--color-success-2, #D8F5D8);
-    
-    
-    
     --message-success-color-content-inline: var(--color-text1-9, #333333);
-    
-    
-    
-    --message-success-color-icon-inline: var(--color-success-7, #00A700);
-    
-    
-    
-    --message-error-color-bg-inline: var(--color-error-3, #F8EFEF);
     
     
     
@@ -7264,35 +7185,11 @@
     
     
     
-    --message-error-color-icon-inline: var(--color-error-7, #C80000);
-    
-    
-    
-    --message-warning-color-bg-inline: var(--color-warning-2, #FFF7D1);
-    
-    
-    
     --message-warning-color-content-inline: var(--color-text1-9, #333333);
     
     
     
-    --message-warning-color-icon-inline: var(--color-warning-6, #FAC800);
-    
-    
-    
-    --message-notice-color-bg-inline: var(--color-fill1-3, #EFF3F8);
-    
-    
-    
     --message-notice-color-content-inline: var(--color-text1-9, #333333);
-    
-    
-    
-    --message-notice-color-icon-inline: var(--color-fill1-5, #0064C8);
-    
-    
-    
-    --message-help-color-bg-inline: var(--color-fill1-1, #F8F8F9);
     
     
     
@@ -7336,7 +7233,7 @@
     
     
     
-    --message-notice-color-content-toast: var(--color-text1-7, #666666);
+    --message-notice-color-content-toast: var(--color-text1-7, gray);
     
     
     
@@ -7348,55 +7245,11 @@
     
     
     
-    --message-error-color-title-addon: var(--color-text1-4, #111111);
-    
-    
-    
-    --message-help-color-title-addon: var(--color-text1-4, #111111);
-    
-    
-    
-    --message-loading-color-title-addon: var(--color-text1-4, #111111);
-    
-    
-    
-    --message-success-color-title-addon: var(--color-text1-4, #111111);
-    
-    
-    
-    --message-success-color-content-addon: var(--color-text1-3, #555555);
-    
-    
-    
-    --message-success-color-icon-addon: var(--color-success-6, #32C832);
-    
-    
-    
-    --message-error-color-icon-addon: var(--color-error-7, #C80000);
-    
-    
-    
-    --message-warning-color-title-addon: var(--color-text1-4, #111111);
-    
-    
-    
-    --message-warning-color-content-addon: var(--color-text1-3, #555555);
-    
-    
-    
-    --message-warning-color-icon-addon: var(--color-warning-5, #FFDE5C);
-    
-    
-    
     --message-help-color-title-toast: var(--color-text1-9, #333333);
     
     
     
     --message-help-color-icon-addon: var(--color-help-4, #333333);
-    
-    
-    
-    --message-loading-color-icon-addon: var(--color-fill1-9, #1C1C1C);
     
     
     
@@ -7449,6 +7302,10 @@
     
     
     --message-size-m-padding: var(--s-3, 12px);
+    
+    
+    
+    --message-size-m-border-width: var(--line-1, 1px);
     
     
     
@@ -7508,10 +7365,6 @@
     
     
     
-    --message-error-color-content-addon: var(--color-text1-3, #555555);
-    
-    
-    
     --message-warning-color-bg-addon: var(--color-transparent, transparent);
     
     
@@ -7532,22 +7385,6 @@
     
     
     
-    --message-notice-color-title-addon: var(--color-text1-4, #111111);
-    
-    
-    
-    --message-notice-color-content-addon: var(--color-text1-3, #555555);
-    
-    
-    
-    --message-notice-color-icon-addon: var(--color-notice-3, #0070CC);
-    
-    
-    
-    --message-notice-color-icon-toast: var(--color-notice-3, #0070CC);
-    
-    
-    
     --message-help-color-bg-addon: var(--color-transparent, transparent);
     
     
@@ -7557,14 +7394,6 @@
     
     
     --message-help-color-border-toast: var(--color-white, #FFFFFF);
-    
-    
-    
-    --message-help-color-content-addon: var(--color-text1-3, #555555);
-    
-    
-    
-    --message-help-color-content-toast: var(--color-text1-3, #555555);
     
     
     
@@ -7584,15 +7413,135 @@
     
     
     
-    --message-loading-color-content-addon: var(--color-text1-3, #555555);
+    --message-success-color-bg-inline: var(--color-success-1, #e4ffed);
     
     
     
-    --message-loading-color-content-toast: var(--color-text1-3, #555555);
+    --message-success-color-icon-inline: var(--color-success-7, #009431);
     
     
     
-    --message-size-m-border-width: var(--line-1, 1px);
+    --message-error-color-bg-inline: var(--color-error-1, #ffeaea);
+    
+    
+    
+    --message-error-color-icon-inline: var(--color-error-7, #e00000);
+    
+    
+    
+    --message-warning-color-bg-inline: var(--color-warning-2, #fff9d9);
+    
+    
+    
+    --message-warning-color-icon-inline: var(--color-warning-6, #ffd813);
+    
+    
+    
+    --message-notice-color-bg-inline: var(--color-brand1-1, #e8f4ff);
+    
+    
+    
+    --message-notice-color-icon-inline: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --message-loading-color-border-inline: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --message-success-color-border-toast: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --message-success-color-title-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-success-color-content-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-success-color-icon-addon: var(--color-success-7, #009431);
+    
+    
+    
+    --message-error-color-title-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-error-color-content-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-error-color-icon-addon: var(--color-error-7, #e00000);
+    
+    
+    
+    --message-warning-color-title-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-warning-color-content-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-warning-color-icon-addon: var(--color-warning-6, #ffd813);
+    
+    
+    
+    --message-notice-color-title-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-notice-color-content-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-notice-color-icon-addon: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --message-notice-color-icon-toast: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --message-help-color-title-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-help-color-content-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-help-color-content-toast: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-help-color-icon-toast: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-loading-color-title-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-loading-color-content-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-loading-color-content-toast: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-loading-color-icon-addon: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-loading-color-icon-toast: var(--color-text1-9, #333333);
+    
+    
+    
+    --message-help-color-bg-inline: var(--color-text1-1, #f6f6f6);
     
     
     /* ------------------------ progress ------------------------ */
@@ -7611,31 +7560,15 @@
     
     
     
-    --progress-line-normal-color: var(--color-brand1-6, #0064C8);
+    --progress-circle-started-color: var(--color-brand1-6, #007efd);
     
     
     
-    --progress-line-started-color: var(--color-brand1-6, #0064C8);
+    --progress-circle-middle-color: var(--color-brand1-6, #007efd);
     
     
     
-    --progress-line-middle-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --progress-line-finishing-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --progress-circle-started-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --progress-circle-middle-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --progress-circle-finishing-color: var(--color-brand1-6, #0064C8);
+    --progress-circle-finishing-color: var(--color-brand1-6, #007efd);
     
     
     
@@ -7651,19 +7584,15 @@
     
     
     
-    --progress-line-underlay-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
     --progress-line-font-color: var(--color-text1-9, #333333);
     
     
     
-    --progress-line-error-color: var(--color-error-7, #C80000);
+    --progress-line-error-color: var(--color-error-7, #e00000);
     
     
     
-    --progress-line-success-color: var(--color-success-7, #00A700);
+    --progress-line-success-color: var(--color-success-7, #009431);
     
     
     
@@ -7691,15 +7620,15 @@
     
     
     
-    --progress-circle-text-color: var(--color-text1-7, #666666);
+    --progress-circle-text-color: var(--color-text1-7, gray);
     
     
     
-    --progress-circle-error-color: var(--color-error-7, #C80000);
+    --progress-circle-error-color: var(--color-error-7, #e00000);
     
     
     
-    --progress-circle-success-color: var(--color-success-7, #00A700);
+    --progress-circle-success-color: var(--color-success-7, #009431);
     
     
     
@@ -7739,7 +7668,27 @@
     
     
     
-    --progress-circle-normal-color: var(--color-brand1-6, #0064C8);
+    --progress-circle-normal-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --progress-line-underlay-color: var(--color-text1-3, #e5e5e5);
+    
+    
+    
+    --progress-line-normal-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --progress-line-started-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --progress-line-middle-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --progress-line-finishing-color: var(--color-brand1-7, #0064c8);
     
     
     /* ------------------------ collapse ------------------------ */
@@ -7755,14 +7704,6 @@
     
     
     --collapse-icon-margin-l: var(--s-4, 16px);
-    
-    
-    
-    --collapse-border-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --collapse-panel-border-color: var(--color-line1-1, #E3E4E6);
     
     
     
@@ -7782,31 +7723,7 @@
     
     
     
-    --collapse-title-border-width: var(--line-1, 1px);
-    
-    
-    
-    --collapse-disabled-border-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --collapse-title-disabled-bg-color: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
-    --collapse-title-font-disabled-color: var(--color-text1-5, #b3b3b3);
-    
-    
-    
     --collapse-content-padding-x: var(--s-4, 16px);
-    
-    
-    
-    --collapse-title-bg-color: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
-    --collapse-title-hover-bg-color: var(--color-fill1-3, #EFF3F8);
     
     
     
@@ -7850,15 +7767,47 @@
     
     
     
-    --collapse-content-bg-color: var(--color-white, #FFFFFF);
-    
-    
-    
     --collapse-content-font-size: var(--font-size-body-1, 12px);
     
     
     
     --collapse-unfold-icon-content: var(--icon-reset, var(--icon-reset));
+    
+    
+    
+    --collapse-border-color: var(--color-transparent, transparent);
+    
+    
+    
+    --collapse-panel-border-color: var(--color-transparent, transparent);
+    
+    
+    
+    --collapse-disabled-border-color: var(--color-transparent, transparent);
+    
+    
+    
+    --collapse-title-bg-color: var(--color-brand2-2, #eff3f8);
+    
+    
+    
+    --collapse-title-font-disabled-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --collapse-title-hover-bg-color: var(--color-brand2-2, #eff3f8);
+    
+    
+    
+    --collapse-title-border-width: var(--line-2, 2px);
+    
+    
+    
+    --collapse-title-disabled-bg-color: var(--color-brand2-1, #f7f9fa);
+    
+    
+    
+    --collapse-content-bg-color: var(--color-transparent, transparent);
     
     
     /* ------------------------ radio ------------------------ */
@@ -7881,10 +7830,6 @@
     
     
     
-    --radio-disabled-bg-color: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
     --radio-checked-hovered-bg-color: var(--color-white, #FFFFFF);
     
     
@@ -7898,34 +7843,6 @@
     
     
     --radio-button-height-small: var(--s-6, 24px);
-    
-    
-    
-    --radio-button-bg-color-hovered: var(--color-white, #FFFFFF);
-    
-    
-    
-    --radio-button-bg-color-checked-disabled: var(--color-fill1-4, #004080);
-    
-    
-    
-    --radio-button-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --radio-button-border-color-hovered: var(--color-line1-4, #D1D5D9);
-    
-    
-    
-    --radio-button-border-color-checked: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --radio-button-font-color: var(--color-text1-3, #555555);
-    
-    
-    
-    --radio-button-font-color-checked: var(--color-brand1-6, #0064C8);
     
     
     
@@ -7949,43 +7866,7 @@
     
     
     
-    --radio-checked-hovered-circle-color: var(--color-fill1-5, #0064C8);
-    
-    
-    
-    --radio-disabled-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --radio-checked-disabled-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --radio-checked-hovered-border-color: var(--color-fill1-4, #004080);
-    
-    
-    
-    --radio-checked-circle-color: var(--color-fill1-5, #0064C8);
-    
-    
-    
-    --radio-disabled-circle-color: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --radio-normal-font-color-disabled: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --radio-hovered-border-color: var(--color-fill1-4, #004080);
-    
-    
-    
-    --radio-checked-disabled-bg-color: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
-    --radio-checked-disabled-circle-color: var(--color-text1-5, #b3b3b3);
     
     
     
@@ -8002,10 +7883,6 @@
     
     
     --radio-bg-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --radio-border-color: var(--color-line1-3, #577899);
     
     
     
@@ -8045,31 +7922,103 @@
     
     
     
-    --radio-button-bg-color-checked: var(--color-white, #FFFFFF);
-    
-    
-    
     --radio-button-bg-color-disabled: var(--color-fill1-1, #F8F8F9);
     
     
     
-    --radio-button-border-color-disabled: var(--color-line1-1, #E3E4E6);
+    --radio-disabled-bg-color: var(--color-text1-1, #f6f6f6);
     
     
     
-    --radio-button-border-color-checked-disabled: var(--color-line1-1, #E3E4E6);
+    --radio-checked-disabled-bg-color: var(--color-text1-1, #f6f6f6);
     
     
     
-    --radio-button-font-color-hovered: var(--color-text1-4, #111111);
+    --radio-border-color: var(--color-brand1-8, #0052a4);
     
     
     
-    --radio-button-font-color-disabled: var(--color-text1-1, #C1C1C1);
+    --radio-hovered-border-color: var(--color-brand1-8, #0052a4);
     
     
     
-    --radio-button-font-color-checked-disabled: var(--color-text1-1, #C1C1C1);
+    --radio-disabled-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --radio-checked-disabled-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --radio-checked-circle-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --radio-disabled-circle-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --radio-checked-hovered-circle-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --radio-checked-disabled-circle-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --radio-normal-font-color-disabled: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --radio-button-bg-color-hovered: var(--color-brand2-1, #f7f9fa);
+    
+    
+    
+    --radio-button-bg-color-checked: var(--color-brand2-2, #eff3f8);
+    
+    
+    
+    --radio-button-bg-color-checked-disabled: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --radio-button-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --radio-button-border-color-hovered: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --radio-button-border-color-checked: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --radio-button-border-color-disabled: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --radio-button-border-color-checked-disabled: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --radio-button-font-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --radio-button-font-color-hovered: var(--color-text1-9, #333333);
+    
+    
+    
+    --radio-button-font-color-checked: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --radio-button-font-color-disabled: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --radio-button-font-color-checked-disabled: var(--color-text1-5, #aaaaaa);
     
     
     /* ------------------------ tab ------------------------ */
@@ -8088,18 +8037,6 @@
     
     
     
-    --tab-pure-text-color-hover: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --tab-pure-text-color-selected: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --tab-pure-ink-bar-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
     --tab-pure-divider-border-color: var(--color-line1-1, #E3E4E6);
     
     
@@ -8108,39 +8045,11 @@
     
     
     
-    --tab-wrapped-ink-bar-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --tab-wrapped-border-line-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
     --tab-wrapped-bg-color: var(--color-white, #FFFFFF);
     
     
     
-    --tab-wrapped-bg-color-hover: var(--color-fill1-1, #F8F8F9);
-    
-    
-    
-    --tab-wrapped-border-line-color-hover: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --tab-capsule-text-color-selected: var(--color-brand1-6, #0064C8);
-    
-    
-    
     --tab-capsule-bg-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --tab-text-text-color-hover: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --tab-wrapped-text-color-selected: var(--color-brand1-6, #0064C8);
     
     
     
@@ -8149,10 +8058,6 @@
     
     
     --tab-text-item-sep-height: var(--s-3, 12px);
-    
-    
-    
-    --tab-text-text-color-selected: var(--color-brand1-6, #0064C8);
     
     
     
@@ -8165,10 +8070,6 @@
     
     
     --tab-pure-divider-line-width: var(--line-1, 1px);
-    
-    
-    
-    --tab-pure-text-color-normal: var(--color-text1-9, #333333);
     
     
     
@@ -8196,10 +8097,6 @@
     
     
     
-    --tab-capsule-tab-border-line-color-active: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --tab-item-padding-lr-size-s: var(--s-4, 16px);
     
     
@@ -8216,11 +8113,7 @@
     
     
     
-    --tab-nav-arrow-color-hover: var(--color-fill1-5, #0064C8);
-    
-    
-    
-    --tab-nav-arrow-color-disabled: var(--color-text1-3, #555555);
+    --tab-nav-arrow-color-disabled: var(--color-text1-3, #e5e5e5);
     
     
     
@@ -8236,7 +8129,7 @@
     
     
     
-    --tab-wrapped-tab-corner-radius: var(--corner-zero, 0);
+    --tab-wrapped-tab-corner-radius: var(--corner-zero, 0px);
     
     
     
@@ -8292,15 +8185,15 @@
     
     
     
-    --tab-close-icon-color: var(--color-text1-3, #555555);
+    --tab-close-icon-color: var(--color-text1-3, #e5e5e5);
     
     
     
-    --tab-close-icon-color-hover: var(--color-text1-4, #111111);
+    --tab-close-icon-color-hover: var(--color-text1-4, #cbcbcb);
     
     
     
-    --tab-close-icon-color-selected: var(--color-brand1-6, #0064C8);
+    --tab-close-icon-color-selected: var(--color-brand1-6, #007efd);
     
     
     
@@ -8309,6 +8202,10 @@
     
     
     --tab-pure-ink-bar-width: var(--line-2, 2px);
+    
+    
+    
+    --tab-pure-ink-bar-padding-l: var(--s-zero, 0px);
     
     
     
@@ -8344,7 +8241,11 @@
     
     
     
-    --tab-wrapped-nav-item-border-color-active: var(--color-brand1-6, #0064C8);
+    --tab-wrapped-ink-bar-padding-l: var(--s-zero, 0px);
+    
+    
+    
+    --tab-wrapped-nav-item-border-color-active: var(--color-brand1-6, #007efd);
     
     
     
@@ -8360,7 +8261,7 @@
     
     
     
-    --tab-wrapped-text-color-disabled: var(--color-text1-1, #C1C1C1);
+    --tab-wrapped-text-color-disabled: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -8368,7 +8269,7 @@
     
     
     
-    --tab-capsule-text-color-disabled: var(--color-text1-1, #C1C1C1);
+    --tab-capsule-text-color-disabled: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -8396,26 +8297,74 @@
     
     
     
-    --tab-text-item-sep-color: var(--color-line1-2, #C0C6CC);
+    --tab-text-text-color-disabled: var(--color-text1-1, #f6f6f6);
     
     
     
-    --tab-text-text-color-normal: var(--color-text1-3, #555555);
+    --tab-nav-arrow-color-hover: var(--color-brand1-7, #0064c8);
     
     
     
-    --tab-text-text-color-disabled: var(--color-text1-1, #C1C1C1);
+    --tab-pure-text-color-normal: var(--color-text1-9, #333333);
+    
+    
+    
+    --tab-pure-text-color-hover: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tab-pure-text-color-selected: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tab-pure-ink-bar-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tab-wrapped-ink-bar-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tab-wrapped-border-line-color: var(--color-text1-3, #e5e5e5);
+    
+    
+    
+    --tab-wrapped-bg-color-hover: var(--color-brand2-1, #f7f9fa);
+    
+    
+    
+    --tab-wrapped-border-line-color-hover: var(--color-text1-3, #e5e5e5);
+    
+    
+    
+    --tab-wrapped-text-color-selected: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tab-capsule-text-color-selected: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tab-capsule-tab-border-line-color-active: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tab-text-item-sep-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tab-text-text-color-normal: var(--color-text1-9, #333333);
+    
+    
+    
+    --tab-text-text-color-hover: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tab-text-text-color-selected: var(--color-brand1-7, #0064c8);
     
     
     /* ------------------------ calendar ------------------------ */
-    
-    
-    
-    --calendar-fullscreen-table-cell-hover-background: var(--color-brand1-1, #F7F9FA);
-    
-    
-    
-    --calendar-fullscreen-table-cell-select-background: var(--color-brand1-1, #F7F9FA);
     
     
     
@@ -8423,55 +8372,7 @@
     
     
     
-    --calendar-fullscreen-table-head-color: var(--color-text1-2, #888888);
-    
-    
-    
-    --calendar-fullscreen-table-cell-normal-color: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --calendar-fullscreen-table-cell-normal-border-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --calendar-fullscreen-table-cell-hover-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --calendar-fullscreen-table-cell-hover-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --calendar-fullscreen-table-cell-select-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --calendar-fullscreen-table-cell-select-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --calendar-fullscreen-table-cell-current-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --calendar-fullscreen-table-cell-current-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --calendar-fullscreen-table-cell-disabled-background: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
     --calendar-card-table-cell-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --calendar-card-table-cell-select-background: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --calendar-card-table-cell-select-border-color: var(--color-brand1-6, #0064C8);
     
     
     
@@ -8479,19 +8380,11 @@
     
     
     
-    --calendar-card-table-cell-current-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
     --calendar-card-table-cell-inrange-border-color: var(--color-transparent, transparent);
     
     
     
-    --calendar-btn-date-color-hover: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --calendar-card-table-head-color: var(--color-text1-7, #666666);
+    --calendar-card-table-head-color: var(--color-text1-7, gray);
     
     
     
@@ -8508,10 +8401,6 @@
     
     
     --calendar-card-table-cell-select-font-weight: var(--font-weight-2, normal);
-    
-    
-    
-    --calendar-card-table-cell-other-color: var(--color-text1-3, #555555);
     
     
     
@@ -8536,10 +8425,6 @@
     
     
     --calendar-btn-arrow-color: var(--color-text1-9, #333333);
-    
-    
-    
-    --calendar-btn-arrow-color-hover: var(--color-brand1-6, #0064C8);
     
     
     
@@ -8587,11 +8472,7 @@
     
     
     
-    --calendar-card-table-cell-current-border-color: var(--color-fill1-5, #0064C8);
-    
-    
-    
-    --calendar-card-table-cell-disabled-color: var(--color-text1-5, #b3b3b3);
+    --calendar-card-table-cell-disabled-color: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -8679,19 +8560,7 @@
     
     
     
-    --calendar-fullscreen-table-cell-other-color: var(--color-text1-1, #C1C1C1);
-    
-    
-    
     --calendar-fullscreen-table-cell-other-border-color: var(--color-transparent, transparent);
-    
-    
-    
-    --calendar-fullscreen-table-cell-disabled-color: var(--color-text1-1, #C1C1C1);
-    
-    
-    
-    --calendar-fullscreen-table-cell-disabled-border-color: var(--color-line1-1, #E3E4E6);
     
     
     
@@ -8739,7 +8608,7 @@
     
     
     
-    --calendar-card-table-cell-corner: var(--corner-zero, 0);
+    --calendar-card-table-cell-corner: var(--corner-zero, 0px);
     
     
     
@@ -8751,10 +8620,6 @@
     
     
     
-    --calendar-card-table-cell-select-color: var(--color-white, #FFFFFF);
-    
-    
-    
     --calendar-card-table-cell-other-background: var(--color-white, #FFFFFF);
     
     
@@ -8763,73 +8628,106 @@
     
     
     
-    --calendar-card-table-cell-current-background: var(--color-white, #FFFFFF);
-    
-    
-    /* ------------------------ breadcrumb ------------------------ */
+    --calendar-fullscreen-table-head-color: var(--color-text1-7, gray);
     
     
     
-    --breadcrumb-text-keyword-color: var(--color-link-1, #0064C8);
+    --calendar-fullscreen-table-cell-normal-color: var(--color-text1-9, #333333);
     
     
     
-    --breadcrumb-size-m-font-size: var(--font-size-body-1, 12px);
+    --calendar-fullscreen-table-cell-normal-border-color: var(--color-text1-4, #cbcbcb);
     
     
     
-    --breadcrumb-text-color: var(--color-text1-7, #666666);
+    --calendar-fullscreen-table-cell-hover-background: var(--color-brand2-1, #f7f9fa);
     
     
     
-    --breadcrumb-icon-color: var(--color-brand2-2, #E3E4E6);
+    --calendar-fullscreen-table-cell-hover-color: var(--color-brand1-7, #0064c8);
     
     
     
-    --breadcrumb-text-color-hover: var(--color-text1-9, #333333);
+    --calendar-fullscreen-table-cell-hover-border-color: var(--color-brand1-7, #0064c8);
     
     
     
-    --breadcrumb-text-current-color-hover: var(--color-text1-5, #b3b3b3);
+    --calendar-fullscreen-table-cell-select-background: var(--color-brand2-1, #f7f9fa);
     
     
     
-    --breadcrumb-size-m-icon-size: var(--icon-xs, 12px);
+    --calendar-fullscreen-table-cell-select-color: var(--color-brand1-7, #0064c8);
     
     
     
-    --breadcrumb-text-current-color: var(--color-text1-5, #b3b3b3);
+    --calendar-fullscreen-table-cell-select-border-color: var(--color-brand1-7, #0064c8);
     
     
     
-    --breadcrumb-icon-sep-content: var(--icon-content-xiexian, "");
+    --calendar-fullscreen-table-cell-current-color: var(--color-brand1-7, #0064c8);
     
     
     
-    --breadcrumb-size-ellipsis-font-size: var(--font-size-caption, 12px);
+    --calendar-fullscreen-table-cell-current-border-color: var(--color-brand1-7, #0064c8);
     
     
     
-    --breadcrumb-size-m-icon-margin: var(--s-2, 8px);
+    --calendar-fullscreen-table-cell-other-color: var(--color-text1-5, #aaaaaa);
     
     
     
-    --breadcrumb-text-current-weight: var(--font-weight-2, normal);
+    --calendar-fullscreen-table-cell-disabled-background: var(--color-transparent, transparent);
     
     
     
-    --breadcrumb-text-ellipsis-color: var(--color-text1-3, #555555);
+    --calendar-fullscreen-table-cell-disabled-color: var(--color-text1-5, #aaaaaa);
     
     
     
-    --breadcrumb-text-keyword-color-hover: var(--color-brand1-6, #0064C8);
+    --calendar-fullscreen-table-cell-disabled-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --calendar-card-table-cell-select-background: var(--color-transparent, transparent);
+    
+    
+    
+    --calendar-card-table-cell-select-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --calendar-card-table-cell-select-border-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --calendar-card-table-cell-current-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --calendar-card-table-cell-current-border-color: var(--color-transparent, transparent);
+    
+    
+    
+    --calendar-card-table-cell-other-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --calendar-card-table-cell-current-background: var(--color-brand2-2, #eff3f8);
+    
+    
+    
+    --calendar-btn-arrow-color-hover: var(--color-text1-9, #333333);
+    
+    
+    
+    --calendar-btn-date-color-hover: var(--color-brand1-7, #0064c8);
     
     
     /* ------------------------ menu-button ------------------------ */
     
     
     
-    --menu-btn-ghost-light-icon-color: var(--color-brand1-6, #0064C8);
+    --menu-btn-ghost-light-icon-color: var(--color-brand1-6, #007efd);
     
     
     
@@ -8837,19 +8735,15 @@
     
     
     
-    --menu-btn-pure-text-normal-icon-color: var(--color-text1-7, #666666);
+    --menu-btn-pure-text-secondary-icon-color: var(--color-text1-7, gray);
     
     
     
-    --menu-btn-pure-text-secondary-icon-color: var(--color-text1-7, #666666);
+    --menu-btn-disabled-icon-color: var(--color-text1-1, #f6f6f6);
     
     
     
-    --menu-btn-disabled-icon-color: var(--color-text1-1, #C1C1C1);
-    
-    
-    
-    --menu-btn-ghost-light-disabled-icon-color: var(--btn-ghost-light-color-disabled, #c1c1c1);
+    --menu-btn-ghost-light-disabled-icon-color: var(--btn-ghost-light-color-disabled, #f6f6f6);
     
     
     
@@ -8861,7 +8755,7 @@
     
     
     
-    --menu-btn-text-text-normal-icon-color: var(--color-text1-4, #111111);
+    --menu-btn-text-text-normal-icon-color: var(--color-text1-4, #cbcbcb);
     
     
     
@@ -8876,6 +8770,10 @@
     --menu-btn-unfold-icon-content: var(--icon-reset, var(--icon-reset));
     
     
+    
+    --menu-btn-pure-text-normal-icon-color: var(--color-text1-9, #333333);
+    
+    
     /* ------------------------ tree ------------------------ */
     
     
@@ -8884,31 +8782,7 @@
     
     
     
-    --tree-switch-icon-color: var(--color-text1-3, #555555);
-    
-    
-    
-    --tree-switch-border-color: var(--color-fill1-7, #003C78);
-    
-    
-    
-    --tree-line-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --tree-switch-hover-icon-color: var(--color-text1-3, #555555);
-    
-    
-    
     --tree-switch-hover-bg-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --tree-switch-hover-border-color: var(--color-text1-3, #555555);
-    
-    
-    
-    --tree-node-selected-color: var(--color-brand1-6, #0064C8);
     
     
     
@@ -8940,23 +8814,7 @@
     
     
     
-    --tree-switch-arrow-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --tree-node-hover-color: var(--color-text1-9, #333333);
-    
-    
-    
-    --tree-node-hover-bg-color: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
-    --tree-switch-hover-arrow-color: var(--color-fill1-5, #0064C8);
-    
-    
-    
-    --tree-node-disabled-color: var(--color-text1-3, #555555);
     
     
     
@@ -9015,6 +8873,46 @@
     --tree-unfold-icon-content: var(--icon-reset, var(--icon-reset));
     
     
+    
+    --tree-switch-arrow-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --tree-node-hover-bg-color: var(--color-brand2-1, #f7f9fa);
+    
+    
+    
+    --tree-switch-hover-arrow-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tree-node-selected-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tree-node-disabled-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --tree-switch-icon-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --tree-switch-border-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --tree-line-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tree-switch-hover-icon-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --tree-switch-hover-border-color: var(--color-text1-9, #333333);
+    
+    
     /* ------------------------ tag ------------------------ */
     
     
@@ -9023,15 +8921,7 @@
     
     
     
-    --tag-secondary-text-color-hover: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --tag-checkable-primary-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --tag-corner-radius: var(--corner-3, 12px);
+    --tag-checkable-primary-border-color: var(--color-brand1-6, #007efd);
     
     
     
@@ -9043,15 +8933,7 @@
     
     
     
-    --tag-bordered-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --tag-bordered-bg: var(--color-white, #FFFFFF);
-    
-    
-    
-    --tag-bordered-border-color-disabled: var(--color-line1-4, #D1D5D9);
     
     
     
@@ -9071,10 +8953,6 @@
     
     
     
-    --tag-bordered-border-color-hover: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --tag-checkable-normal-text-color: var(--color-text1-9, #333333);
     
     
@@ -9087,10 +8965,6 @@
     
     
     
-    --tag-checkable-normal-border-color-hover: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --tag-checkable-normal-bg-hover: var(--color-fill1-2, #F7F9FA);
     
     
@@ -9100,10 +8974,6 @@
     
     
     --tag-closable-bordered-text-color: var(--color-text1-9, #333333);
-    
-    
-    
-    --tag-closable-bordered-border-color: var(--color-line1-2, #C0C6CC);
     
     
     
@@ -9120,10 +8990,6 @@
     
     
     --tag-closable-normal-bg-hover: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
-    --tag-closable-bordered-border-color-hover: var(--color-line1-2, #C0C6CC);
     
     
     
@@ -9175,31 +9041,15 @@
     
     
     
-    --tag-fill-tail-color-disabled: var(--color-text1-5, #b3b3b3);
+    --tag-fill-tail-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
-    --tag-bordered-text-color-disabled: var(--color-text1-5, #b3b3b3);
+    --tag-checkable-normal-text-selected-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
-    --tag-checkable-normal-text-selected-disabled: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --tag-closable-primary-fill-text-color-disabled: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --tag-checkable-normal-bg-selected: var(--color-white, #FFFFFF);
-    
-    
-    
-    --tag-checkable-normal-bg-selected-hover: var(--color-transparent, transparent);
-    
-    
-    
-    --tag-checkable-normal-text-color-hover: var(--color-fill1-5, #0064C8);
+    --tag-closable-primary-fill-text-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -9247,7 +9097,7 @@
     
     
     
-    --tag-checkable-primary-text-color: var(--color-brand1-6, #0064C8);
+    --tag-checkable-primary-text-color: var(--color-brand1-6, #007efd);
     
     
     
@@ -9255,7 +9105,7 @@
     
     
     
-    --tag-checkable-primary-text-color-hover: var(--color-brand1-6, #0064C8);
+    --tag-checkable-primary-text-color-hover: var(--color-brand1-6, #007efd);
     
     
     
@@ -9263,7 +9113,7 @@
     
     
     
-    --tag-checkable-fill-text-color-disabled: var(--color-text1-5, #b3b3b3);
+    --tag-checkable-fill-text-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -9275,7 +9125,7 @@
     
     
     
-    --tag-checkable-primary-text-color-disabled: var(--color-text1-5, #b3b3b3);
+    --tag-checkable-primary-text-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -9287,27 +9137,15 @@
     
     
     
-    --tag-closable-bordered-text-color-hover: var(--color-brand1-6, #0064C8);
-    
-    
-    
     --tag-closable-bordered-border-color-disabled: var(--color-line1-4, #D1D5D9);
     
     
     
-    --tag-closable-bordered-text-color-disabled: var(--color-text1-5, #b3b3b3);
+    --tag-closable-bordered-text-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
-    --tag-fill-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --tag-fill-border-color-hover: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --tag-fill-text-color-disabled: var(--color-text1-5, #b3b3b3);
+    --tag-fill-text-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -9319,23 +9157,11 @@
     
     
     
-    --tag-secondary-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
     --tag-fill-text-color-hover: var(--color-text1-9, #333333);
     
     
     
     --tag-bordered-text-color-hover: var(--color-text1-9, #333333);
-    
-    
-    
-    --tag-secondary-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --tag-secondary-border-color-hover: var(--color-brand1-6, #0064C8);
     
     
     
@@ -9351,15 +9177,11 @@
     
     
     
-    --tag-secondary-bg-hover: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
     --tag-checkable-primary-border-color-hover: var(--color-fill1-5, #0064C8);
     
     
     
-    --tag-closable-primary-fill-text-color-hover: var(--color-brand1-6, #0064C8);
+    --tag-closable-primary-fill-text-color-hover: var(--color-brand1-6, #007efd);
     
     
     
@@ -9439,11 +9261,7 @@
     
     
     
-    --tag-normal-text-color: var(--color-text1-4, #111111);
-    
-    
-    
-    --tag-fill-text-color: var(--color-text1-3, #555555);
+    --tag-normal-text-color: var(--color-text1-4, #cbcbcb);
     
     
     
@@ -9455,15 +9273,11 @@
     
     
     
-    --tag-closable-normal-bg: var(--color-line1-3, #577899);
-    
-    
-    
     --tag-closable-normal-bg-disabled: var(--color-line1-1, #E3E4E6);
     
     
     
-    --tag-closable-bordered-tail-color-disabled: var(--color-text1-1, #C1C1C1);
+    --tag-closable-bordered-tail-color-disabled: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -9471,31 +9285,31 @@
     
     
     
-    --tag-bordered-tail-color: var(--color-text1-3, #555555);
+    --tag-bordered-tail-color: var(--color-text1-3, #e5e5e5);
     
     
     
-    --tag-normal-text-color-hover: var(--color-brand1-6, #0064C8);
+    --tag-normal-text-color-hover: var(--color-brand1-6, #007efd);
     
     
     
-    --tag-bordered-tail-color-hover: var(--color-text1-4, #111111);
+    --tag-bordered-tail-color-hover: var(--color-text1-4, #cbcbcb);
     
     
     
-    --tag-bordered-tail-color-disabled: var(--color-text1-1, #C1C1C1);
+    --tag-bordered-tail-color-disabled: var(--color-text1-1, #f6f6f6);
     
     
     
-    --tag-checkable-secondary-bg-selected: var(--color-brand1-6, #0064C8);
+    --tag-checkable-secondary-bg-selected: var(--color-brand1-6, #007efd);
     
     
     
-    --tag-checkable-secondary-bg-selected-hover: var(--color-brand1-9, #002850);
+    --tag-checkable-secondary-bg-selected-hover: var(--color-brand1-9, #004385);
     
     
     
-    --tag-primary-background-color: var(--color-brand1-6, #0064C8);
+    --tag-primary-background-color: var(--color-brand1-6, #007efd);
     
     
     
@@ -9503,7 +9317,7 @@
     
     
     
-    --tag-text-color-disabled: var(--color-text1-1, #C1C1C1);
+    --tag-text-color-disabled: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -9511,15 +9325,15 @@
     
     
     
-    --tag-checkable-fill-tail-color: var(--color-text1-3, #555555);
+    --tag-checkable-fill-tail-color: var(--color-text1-3, #e5e5e5);
     
     
     
-    --tag-checkable-fill-tail-color-hover: var(--color-text1-4, #111111);
+    --tag-checkable-fill-tail-color-hover: var(--color-text1-4, #cbcbcb);
     
     
     
-    --tag-checkable-fill-tail-color-disabled: var(--color-text1-1, #C1C1C1);
+    --tag-checkable-fill-tail-color-disabled: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -9554,11 +9368,91 @@
     --tag-checkable-secondary-icon-color-selected-disabled: var(--color-white, #FFFFFF);
     
     
+    
+    --tag-corner-radius: var(--corner-1, 2px);
+    
+    
+    
+    --tag-fill-text-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --tag-closable-normal-bg: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tag-closable-bordered-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tag-closable-bordered-text-color-hover: var(--color-text1-9, #333333);
+    
+    
+    
+    --tag-closable-bordered-border-color-hover: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tag-fill-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tag-fill-border-color-hover: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tag-secondary-text-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tag-bordered-text-color-disabled: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --tag-bordered-border-color-disabled: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tag-secondary-text-color-hover: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tag-bordered-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tag-secondary-border-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tag-bordered-border-color-hover: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tag-secondary-border-color-hover: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --tag-checkable-normal-text-color-hover: var(--color-text1-9, #333333);
+    
+    
+    
+    --tag-checkable-normal-border-color-hover: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --tag-checkable-normal-bg-selected: var(--color-transparent, transparent);
+    
+    
+    
+    --tag-checkable-normal-bg-selected-hover: var(--color-transparent, transparent);
+    
+    
+    
+    --tag-secondary-bg-hover: var(--color-brand2-1, #f7f9fa);
+    
+    
     /* ------------------------ input ------------------------ */
-    
-    
-    
-    --input-disabled-bg-color: var(--color-fill1-2, #F7F9FA);
     
     
     
@@ -9570,11 +9464,7 @@
     
     
     
-    --input-addon-bg-color: var(--color-fill1-1, #F8F8F9);
-    
-    
-    
-    --input-feedback-loading-color: var(--color-text1-2, #888888);
+    --input-feedback-loading-color: var(--color-text1-2, #eeeeee);
     
     
     
@@ -9590,35 +9480,7 @@
     
     
     
-    --input-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --input-hover-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --input-focus-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --input-placeholder-color: var(--color-text1-7, #666666);
-    
-    
-    
-    --input-feedback-error-border-color: var(--color-error-7, #C80000);
-    
-    
-    
     --input-focus-shadow-spread: var(--line-zero, 0px);
-    
-    
-    
-    --input-disabled-color: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --input-disabled-border-color: var(--color-line1-2, #C0C6CC);
     
     
     
@@ -9638,15 +9500,11 @@
     
     
     
-    --input-feedback-warning-border-color: var(--color-warning-6, #FAC800);
+    --input-feedback-warning-color: var(--color-warning-6, #ffd813);
     
     
     
-    --input-feedback-warning-color: var(--color-warning-6, #FAC800);
-    
-    
-    
-    --input-feedback-success-color: var(--color-success-7, #00A700);
+    --input-feedback-success-color: var(--color-success-7, #009431);
     
     
     
@@ -9659,10 +9517,6 @@
     
     
     --input-feedback-clear-icon: var(--icon-content-closemark-for-component, "");
-    
-    
-    
-    --input-label-color: var(--color-text1-3, #555555);
     
     
     
@@ -9687,10 +9541,6 @@
     
     
     --input-multiple-corner: var(--corner-1, 2px);
-    
-    
-    
-    --input-addon-text-color: var(--color-text1-2, #888888);
     
     
     
@@ -9726,15 +9576,7 @@
     
     
     
-    --input-maxlen-error-color: var(--color-error-3, #F8EFEF);
-    
-    
-    
-    --input-maxlen-warning-color: var(--color-warning-3, #FFF3B4);
-    
-    
-    
-    --input-maxlen-color: var(--color-text1-2, #888888);
+    --input-maxlen-warning-color: var(--color-warning-3, #fff1aa);
     
     
     
@@ -9742,11 +9584,67 @@
     
     
     
-    --input-hint-color: var(--color-text1-2, #888888);
+    --input-hint-hover-color: var(--color-text1-3, #e5e5e5);
     
     
     
-    --input-hint-hover-color: var(--color-text1-3, #555555);
+    --input-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --input-label-color: var(--color-text1-7, gray);
+    
+    
+    
+    --input-hover-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --input-placeholder-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --input-disabled-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --input-disabled-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --input-disabled-bg-color: var(--color-text1-1, #f6f6f6);
+    
+    
+    
+    --input-addon-bg-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --input-addon-text-color: var(--color-text1-7, gray);
+    
+    
+    
+    --input-feedback-warning-border-color: var(--color-warning-7, #e0bb00);
+    
+    
+    
+    --input-feedback-error-border-color: var(--color-error-7, #e00000);
+    
+    
+    
+    --input-maxlen-error-color: var(--color-error-7, #e00000);
+    
+    
+    
+    --input-maxlen-color: var(--color-text1-7, gray);
+    
+    
+    
+    --input-hint-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --input-focus-border-color: var(--color-brand1-7, #0064c8);
     
     
     /* ------------------------ form ------------------------ */
@@ -9757,15 +9655,7 @@
     
     
     
-    --form-help-color: var(--color-text1-2, #888888);
-    
-    
-    
-    --form-label-color: var(--color-text1-3, #555555);
-    
-    
-    
-    --form-error-color: var(--color-error-7, #C80000);
+    --form-error-color: var(--color-error-7, #e00000);
     
     
     
@@ -9801,38 +9691,19 @@
     
     
     
-    --form-warning-color: var(--color-warning-3, #FFF3B4);
+    --form-warning-color: var(--color-warning-3, #fff1aa);
     
     
     
     --form-top-label-margin-b: 2px;
     
     
-    /* ------------------------ loading ------------------------ */
+    
+    --form-help-color: var(--color-text1-7, gray);
     
     
     
-    --loading-dot-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --loading-icon-size: var(--icon-xl, 32px);
-    
-    
-    
-    --loading-large-size: var(--s-12, 48px);
-    
-    
-    
-    --loading-large-dot-size: var(--icon-xs, 12px);
-    
-    
-    
-    --loading-medium-size: var(--s-8, 32px);
-    
-    
-    
-    --loading-medium-dot-size: var(--icon-xxs, 8px);
+    --form-label-color: var(--color-text1-8, #555555);
     
     
     /* ------------------------ table ------------------------ */
@@ -9843,15 +9714,7 @@
     
     
     
-    --table-empty-color: var(--color-text1-5, #b3b3b3);
-    
-    
-    
     --table-group-footer-bg: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
-    --table-normal-border-color: var(--color-line1-1, #E3E4E6);
     
     
     
@@ -9860,10 +9723,6 @@
     
     
     --table-row-color: var(--color-text1-9, #333333);
-    
-    
-    
-    --table-row-selected-bg: var(--color-fill1-3, #EFF3F8);
     
     
     
@@ -9900,10 +9759,6 @@
     
     
     --table-expand-unfold-icon-content: var(--icon-content-up, "");
-    
-    
-    
-    --table-th-bg: var(--color-fill1-3, #EFF3F8);
     
     
     
@@ -9955,11 +9810,11 @@
     
     
     
-    --table-header-corner-top: var(--corner-zero, 0);
+    --table-header-corner-top: var(--corner-zero, 0px);
     
     
     
-    --table-header-corner-bottom: var(--corner-zero, 0);
+    --table-header-corner-bottom: var(--corner-zero, 0px);
     
     
     
@@ -9983,19 +9838,19 @@
     
     
     
-    --table-group-header-corner-top: var(--corner-zero, 0);
+    --table-group-header-corner-top: var(--corner-zero, 0px);
     
     
     
-    --table-group-header-corner-bottom: var(--corner-zero, 0);
+    --table-group-header-corner-bottom: var(--corner-zero, 0px);
     
     
     
-    --table-group-footer-corner-top: var(--corner-zero, 0);
+    --table-group-footer-corner-top: var(--corner-zero, 0px);
     
     
     
-    --table-group-footer-corner-bottom: var(--corner-zero, 0);
+    --table-group-footer-corner-bottom: var(--corner-zero, 0px);
     
     
     
@@ -10003,11 +9858,11 @@
     
     
     
-    --table-sort-color: var(--color-text1-4, #111111);
+    --table-sort-color: var(--color-text1-4, #cbcbcb);
     
     
     
-    --table-group-th-color: var(--color-text1-4, #111111);
+    --table-group-th-color: var(--color-text1-4, #cbcbcb);
     
     
     
@@ -10023,15 +9878,31 @@
     
     
     
-    --table-group-footer-color: var(--color-text1-4, #111111);
+    --table-group-footer-color: var(--color-text1-4, #cbcbcb);
     
     
     
-    --table-sort-color-current: var(--color-brand1-6, #0064C8);
+    --table-sort-color-current: var(--color-brand1-6, #007efd);
     
     
     
-    --table-expanded-ctrl-disabled-color: var(--color-text1-2, #888888);
+    --table-expanded-ctrl-disabled-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --table-normal-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --table-th-bg: var(--color-brand2-2, #eff3f8);
+    
+    
+    
+    --table-empty-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --table-row-selected-bg: var(--color-brand2-1, #f7f9fa);
     
     
     /* ------------------------ upload ------------------------ */
@@ -10050,14 +9921,6 @@
     
     
     
-    --upload-text-list-name-font-color-hover: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --upload-text-list-size-font-color-hover: var(--color-brand1-6, #0064C8);
-    
-    
-    
     --upload-image-list-item-bg-color: var(--color-fill1-1, #F8F8F9);
     
     
@@ -10066,7 +9929,7 @@
     
     
     
-    --upload-image-list-item-error-bg-color: var(--color-error-1, #FDFBFB);
+    --upload-image-list-item-error-bg-color: var(--color-error-1, #ffeaea);
     
     
     
@@ -10079,14 +9942,6 @@
     
     
     --upload-image-list-item-border-color-hover: var(--color-transparent, transparent);
-    
-    
-    
-    --upload-image-list-item-picture-border-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --upload-image-list-item-picture-background-color: var(--color-fill1-1, #F8F8F9);
     
     
     
@@ -10106,7 +9961,7 @@
     
     
     
-    --upload-text-list-error-text-color: var(--color-error-7, #C80000);
+    --upload-text-list-error-text-color: var(--color-error-7, #e00000);
     
     
     
@@ -10118,7 +9973,7 @@
     
     
     
-    --upload-text-list-size-font-color: var(--color-text1-7, #666666);
+    --upload-text-list-size-font-color: var(--color-text1-7, gray);
     
     
     
@@ -10146,14 +10001,6 @@
     
     
     
-    --upload-card-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --upload-card-hover-border-color: var(--color-fill1-5, #0064C8);
-    
-    
-    
     --upload-card-font-color: var(--color-text1-9, #333333);
     
     
@@ -10162,23 +10009,7 @@
     
     
     
-    --upload-card-hover-font-color: var(--color-fill1-5, #0064C8);
-    
-    
-    
-    --upload-disable-text-color: var(--color-text1-3, #555555);
-    
-    
-    
-    --upload-disable-border-color: var(--color-line1-4, #D1D5D9);
-    
-    
-    
     --upload-card-list-uploading-bg-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --upload-card-list-thumbnail-font-color: var(--color-fill1-5, #0064C8);
     
     
     
@@ -10202,11 +10033,7 @@
     
     
     
-    --upload-card-list-border-color-error: var(--color-error-7, #C80000);
-    
-    
-    
-    --upload-drag-zone-border-color: var(--color-line1-4, #D1D5D9);
+    --upload-card-list-border-color-error: var(--color-error-7, #e00000);
     
     
     
@@ -10226,10 +10053,6 @@
     
     
     
-    --upload-drag-zone-upload-icon-color: var(--color-fill1-5, #0064C8);
-    
-    
-    
     --upload-drag-zone-upload-normal-title-color: var(--color-text1-9, #333333);
     
     
@@ -10243,10 +10066,6 @@
     
     
     --upload-text-list-bg-color-hover: var(--color-transparent, transparent);
-    
-    
-    
-    --upload-text-list-close-icon-color-hover: var(--color-fill1-5, #0064C8);
     
     
     
@@ -10266,7 +10085,7 @@
     
     
     
-    --upload-text-list-corner: var(--corner-zero, 0);
+    --upload-text-list-corner: var(--corner-zero, 0px);
     
     
     
@@ -10286,11 +10105,11 @@
     
     
     
-    --upload-image-list-item-picture-corner: var(--corner-zero, 0);
+    --upload-image-list-item-picture-corner: var(--corner-zero, 0px);
     
     
     
-    --upload-image-list-item-thumbnail-font-color: var(--color-text1-1, #C1C1C1);
+    --upload-image-list-item-thumbnail-font-color: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -10318,6 +10137,10 @@
     
     
     
+    --upload-card-border-radius: var(--corner-zero, 0px);
+    
+    
+    
     --upload-card-border-style: var(--line-dashed, dashed);
     
     
@@ -10342,7 +10165,7 @@
     
     
     
-    --upload-card-list-corner: var(--corner-zero, 0);
+    --upload-card-list-corner: var(--corner-zero, 0px);
     
     
     
@@ -10359,6 +10182,58 @@
     
     
     --upload-drag-zone-corner: var(--corner-1, 2px);
+    
+    
+    
+    --upload-disable-text-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --upload-disable-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --upload-text-list-close-icon-color-hover: var(--color-text1-9, #333333);
+    
+    
+    
+    --upload-text-list-name-font-color-hover: var(--color-text1-9, #333333);
+    
+    
+    
+    --upload-text-list-size-font-color-hover: var(--color-text1-7, gray);
+    
+    
+    
+    --upload-image-list-item-picture-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --upload-image-list-item-picture-background-color: var(--color-text1-1, #f6f6f6);
+    
+    
+    
+    --upload-card-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --upload-card-hover-border-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --upload-card-hover-font-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --upload-card-list-thumbnail-font-color: var(--color-error-7, #e00000);
+    
+    
+    
+    --upload-drag-zone-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --upload-drag-zone-upload-icon-color: var(--color-text1-9, #333333);
     
     
     /* ------------------------ dialog ------------------------ */
@@ -10389,10 +10264,6 @@
     
     
     
-    --dialog-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --dialog-shadow: var(--shadow-3, 0px 8px 16px 0px rgba(0, 0, 0, 0.2));
     
     
@@ -10417,10 +10288,6 @@
     
     
     
-    --dialog-close-color: var(--color-text1-7, #666666);
-    
-    
-    
     --dialog-close-bg-hovered: var(--color-white, #FFFFFF);
     
     
@@ -10442,18 +10309,6 @@
     
     
     --dialog-footer-button-spacing: var(--s-2, 8px);
-    
-    
-    
-    --dialog-title-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --dialog-footer-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --dialog-title-padding-bottom: var(--s-4, 16px);
     
     
     
@@ -10505,11 +10360,19 @@
     
     
     
+    --dialog-title-padding-bottom: var(--s-6, 24px);
+    
+    
+    
     --dialog-border-width: var(--line-1, 1px);
     
     
     
     --dialog-title-font-weight: var(--font-weight-2, normal);
+    
+    
+    
+    --dialog-content-margin-bottom-no-footer: var(--s-0, 0px);
     
     
     
@@ -10524,27 +10387,27 @@
     --dialog-border-style: var(--line-solid, solid);
     
     
+    
+    --dialog-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --dialog-title-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --dialog-footer-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --dialog-close-color: var(--color-text1-7, gray);
+    
+    
     /* ------------------------ pagination ------------------------ */
     
     
     
     --pagination-small-item-split: var(--s-1, 4px);
-    
-    
-    
-    --pagination-current-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --pagination-size-selector-filter-current-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --pagination-item-current-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --pagination-item-current-color: var(--color-brand1-6, #0064C8);
     
     
     
@@ -10556,7 +10419,7 @@
     
     
     
-    --pagination-item-hover-color: var(--color-text1-5, #b3b3b3);
+    --pagination-item-hover-color: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -10564,15 +10427,7 @@
     
     
     
-    --pagination-arrow-hover-color: var(--color-text1-3, #555555);
-    
-    
-    
     --pagination-item-split: var(--s-2, 8px);
-    
-    
-    
-    --pagination-ellipsis-margin: var(--s-2, 8px);
     
     
     
@@ -10604,10 +10459,6 @@
     
     
     
-    --pagination-item-bg: var(--color-transparent, transparent);
-    
-    
-    
     --pagination-arrow-color: var(--color-text1-9, #333333);
     
     
@@ -10632,10 +10483,6 @@
     
     
     
-    --pagination-item-current-hover-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
     --pagination-item-current-hover-bg: var(--color-white, #FFFFFF);
     
     
@@ -10649,10 +10496,6 @@
     
     
     --pagination-icon-next-content: var(--icon-content-right-for-component, "");
-    
-    
-    
-    --pagination-item-padding: 10px;
     
     
     
@@ -10752,14 +10595,6 @@
     
     
     
-    --pagination-size-selector-title-color: var(--color-text1-2, #888888);
-    
-    
-    
-    --pagination-size-selector-filter-color: var(--color-text1-3, #555555);
-    
-    
-    
     --pagination-item-shadow: var(--shadow-zero, none);
     
     
@@ -10776,7 +10611,51 @@
     
     
     
-    --pagination-arrow-hover-color-noboder: var(--color-brand1-6, #0064C8);
+    --pagination-item-padding: 8px;
+    
+    
+    
+    --pagination-ellipsis-margin: var(--s-2, 8px);
+    
+    
+    
+    --pagination-current-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --pagination-size-selector-title-color: var(--color-text1-7, gray);
+    
+    
+    
+    --pagination-size-selector-filter-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --pagination-size-selector-filter-current-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --pagination-item-current-border-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --pagination-item-current-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --pagination-item-current-hover-border-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --pagination-arrow-hover-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --pagination-item-bg: var(--color-transparent, transparent);
+    
+    
+    
+    --pagination-arrow-hover-color-noboder: var(--color-text1-9, #333333);
     
     
     /* ------------------------ transfer ------------------------ */
@@ -10784,10 +10663,6 @@
     
     
     --transfer-panel-header-background-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --transfer-simple-panel-item-hover-text-color: var(--color-link-1, #0064C8);
     
     
     
@@ -10816,10 +10691,6 @@
     
     
     --transfer-panel-search-margin-bottom: var(--s-2, 8px);
-    
-    
-    
-    --transfer-panel-border-color: var(--color-line1-2, #C0C6CC);
     
     
     
@@ -10879,7 +10750,7 @@
     
     
     
-    --transfer-panel-search-icon-color: var(--color-text1-2, #888888);
+    --transfer-panel-search-icon-color: var(--color-text1-2, #eeeeee);
     
     
     
@@ -10888,6 +10759,14 @@
     
     
     --transfer-panel-footer-shadow: var(--shadow-zero, none);
+    
+    
+    
+    --transfer-panel-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --transfer-simple-panel-item-hover-text-color: var(--color-brand1-7, #0064c8);
     
     
     /* ------------------------ step ------------------------ */
@@ -10902,11 +10781,11 @@
     
     
     
-    --step-arrow-item-process-background: var(--color-brand1-6, #0064C8);
+    --step-arrow-item-process-background: var(--color-brand1-6, #007efd);
     
     
     
-    --step-arrow-item-finish-background: var(--color-brand1-6, #0064C8);
+    --step-arrow-item-finish-background: var(--color-brand1-6, #007efd);
     
     
     
@@ -10918,39 +10797,11 @@
     
     
     
-    --step-circle-item-node-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --step-circle-item-content-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
     --step-circle-item-body-width: var(--s-24, 96px);
     
     
     
-    --step-circle-item-tail-finish-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --step-circle-item-node-process-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --step-circle-item-node-process-background: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --step-circle-item-node-process-percent-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
     --step-circle-item-node-process-percent-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --step-circle-item-node-finish-border-color: var(--color-brand1-6, #0064C8);
     
     
     
@@ -10970,19 +10821,19 @@
     
     
     
-    --step-dot-item-tail-finish-color: var(--color-brand1-6, #0064C8);
+    --step-dot-item-tail-finish-color: var(--color-brand1-6, #007efd);
     
     
     
-    --step-dot-item-title-wait-color: var(--color-text1-2, #888888);
+    --step-dot-item-title-wait-color: var(--color-text1-2, #eeeeee);
     
     
     
-    --step-dot-item-title-process-color: var(--color-text1-5, #b3b3b3);
+    --step-dot-item-title-process-color: var(--color-text1-5, #aaaaaa);
     
     
     
-    --step-dot-item-title-finish-color: var(--color-text1-5, #b3b3b3);
+    --step-dot-item-title-finish-color: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -10990,15 +10841,15 @@
     
     
     
-    --step-dot-item-node-process-color: var(--color-brand1-6, #0064C8);
+    --step-dot-item-node-process-color: var(--color-brand1-6, #007efd);
     
     
     
-    --step-dot-item-node-finish-border-color: var(--color-brand1-6, #0064C8);
+    --step-dot-item-node-finish-border-color: var(--color-brand1-6, #007efd);
     
     
     
-    --step-dot-item-node-finish-color: var(--color-brand1-6, #0064C8);
+    --step-dot-item-node-finish-color: var(--color-brand1-6, #007efd);
     
     
     
@@ -11010,19 +10861,7 @@
     
     
     
-    --step-circle-item-content-margin-top: var(--s-2, 8px);
-    
-    
-    
     --step-circle-item-title-weight: var(--font-weight-semi-bold, 600);
-    
-    
-    
-    --step-circle-item-tail-wait-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --step-circle-item-tail-process-color: var(--color-line1-2, #C0C6CC);
     
     
     
@@ -11030,23 +10869,7 @@
     
     
     
-    --step-circle-item-title-process-color: var(--color-text1-9, #333333);
-    
-    
-    
-    --step-circle-item-title-finish-color: var(--color-text1-9, #333333);
-    
-    
-    
-    --step-circle-item-node-wait-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --step-circle-item-node-wait-color: var(--color-text1-9, #333333);
-    
-    
-    
-    --step-circle-item-node-finish-color: var(--color-brand1-6, #0064C8);
     
     
     
@@ -11054,15 +10877,7 @@
     
     
     
-    --step-circle-item-node-process-size: var(--s-7, 28px);
-    
-    
-    
-    --step-circle-item-title-disabled-color: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --step-circle-item-node-disabled-color: var(--color-text1-5, #b3b3b3);
+    --step-circle-item-title-disabled-color: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -11074,7 +10889,7 @@
     
     
     
-    --step-arrow-item-title-wait-color: var(--color-text1-2, #888888);
+    --step-arrow-item-title-wait-color: var(--color-text1-2, #eeeeee);
     
     
     
@@ -11086,7 +10901,7 @@
     
     
     
-    --step-arrow-item-title-disabled-color: var(--color-text1-1, #C1C1C1);
+    --step-arrow-item-title-disabled-color: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -11122,10 +10937,6 @@
     
     
     
-    --step-circle-item-tail-disabled-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
     --step-circle-item-node-wait-font-weight: var(--font-weight-2, normal);
     
     
@@ -11154,10 +10965,6 @@
     
     
     
-    --step-circle-item-node-disabled-border-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
     --step-circle-item-node-disabled-background: var(--color-white, #FFFFFF);
     
     
@@ -11170,15 +10977,11 @@
     
     
     
-    --step-circle-vertical-item-title-margin-top: var(--s-2, 8px);
-    
-    
-    
     --step-circle-vertical-item-content-margin-top: var(--s-1, 4px);
     
     
     
-    --step-circle-item-content-color: var(--color-text1-3, #555555);
+    --step-circle-item-content-color: var(--color-text1-3, #e5e5e5);
     
     
     
@@ -11238,7 +11041,7 @@
     
     
     
-    --step-dot-item-title-disabled-color: var(--color-text1-1, #C1C1C1);
+    --step-dot-item-title-disabled-color: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -11246,15 +11049,15 @@
     
     
     
-    --step-dot-item-node-wait-color: var(--color-text1-2, #888888);
+    --step-dot-item-node-wait-color: var(--color-text1-2, #eeeeee);
     
     
     
-    --step-dot-item-node-process-border-color: var(--color-brand1-6, #0064C8);
+    --step-dot-item-node-process-border-color: var(--color-brand1-6, #007efd);
     
     
     
-    --step-dot-item-node-process-background: var(--color-brand1-6, #0064C8);
+    --step-dot-item-node-process-background: var(--color-brand1-6, #007efd);
     
     
     
@@ -11294,11 +11097,87 @@
     
     
     
-    --step-dot-item-content-color: var(--color-text1-3, #555555);
+    --step-dot-item-content-color: var(--color-text1-3, #e5e5e5);
     
     
     
     --step-dot-vertical-item-tail-size: var(--line-1, 1px);
+    
+    
+    
+    --step-circle-item-node-font-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --step-circle-item-content-margin-top: var(--s-1, 4px);
+    
+    
+    
+    --step-circle-item-content-font-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --step-circle-item-node-process-size: var(--s-8, 32px);
+    
+    
+    
+    --step-circle-item-tail-wait-color: var(--color-text1-3, #e5e5e5);
+    
+    
+    
+    --step-circle-item-tail-process-color: var(--color-text1-3, #e5e5e5);
+    
+    
+    
+    --step-circle-item-tail-finish-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --step-circle-item-tail-disabled-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --step-circle-item-title-process-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --step-circle-item-title-finish-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --step-circle-item-node-wait-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --step-circle-item-node-process-border-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --step-circle-item-node-process-background: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --step-circle-item-node-process-percent-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --step-circle-item-node-finish-border-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --step-circle-item-node-finish-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --step-circle-item-node-disabled-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --step-circle-item-node-disabled-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --step-circle-vertical-item-title-margin-top: var(--s-2, 8px);
     
     
     /* ------------------------ menu ------------------------ */
@@ -11310,10 +11189,6 @@
     
     
     --menu-color: var(--color-text1-9, #333333);
-    
-    
-    
-    --menu-background-hover: var(--color-fill1-2, #F7F9FA);
     
     
     
@@ -11353,10 +11228,6 @@
     
     
     
-    --menu-icon-selected-right: var(--s-2, 8px);
-    
-    
-    
     --menu-background: var(--color-white, #FFFFFF);
     
     
@@ -11377,15 +11248,7 @@
     
     
     
-    --menu-icon-selected-size: var(--icon-xs, 12px);
-    
-    
-    
     --menu-item-padding-ver-padding-l: var(--s-4, 16px);
-    
-    
-    
-    --menu-color-disabled: var(--color-text1-5, #b3b3b3);
     
     
     
@@ -11453,7 +11316,27 @@
     
     
     
+    --menu-arrow-right: 10px;
+    
+    
+    
     --menu-unfold-icon-content: var(--icon-reset, var(--icon-reset));
+    
+    
+    
+    --menu-icon-selected-right: var(--s-1, 4px);
+    
+    
+    
+    --menu-background-hover: var(--color-brand2-1, #f7f9fa);
+    
+    
+    
+    --menu-icon-selected-size: var(--icon-xs, 12px);
+    
+    
+    
+    --menu-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     /* ------------------------ timeline ------------------------ */
@@ -11500,27 +11383,7 @@
     
     
     
-    --timeline-item-time-color: var(--color-text1-7, #666666);
-    
-    
-    
-    --timeline-item-tail-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --timeline-item-done-background: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --timeline-item-process-background: var(--color-fill1-5, #0064C8);
-    
-    
-    
-    --timeline-item-success-background: var(--color-success-7, #00A700);
-    
-    
-    
-    --timeline-item-error-background: var(--color-error-7, #C80000);
+    --timeline-item-error-background: var(--color-error-7, #e00000);
     
     
     
@@ -11548,7 +11411,7 @@
     
     
     
-    --timeline-item-body-margin-top: var(--s-2, 8px);
+    --timeline-item-body-margin-top: var(--s-1, 4px);
     
     
     
@@ -11576,7 +11439,7 @@
     
     
     
-    --timeline-item-left-body-color: var(--color-text1-2, #888888);
+    --timeline-item-left-body-color: var(--color-text1-2, #eeeeee);
     
     
     
@@ -11611,15 +11474,27 @@
     --timeline-item-error-color: var(--color-white, #FFFFFF);
     
     
+    
+    --timeline-item-time-color: var(--color-text1-7, gray);
+    
+    
+    
+    --timeline-item-tail-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --timeline-item-done-background: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --timeline-item-process-background: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --timeline-item-success-background: var(--color-success-7, #009431);
+    
+    
     /* ------------------------ range ------------------------ */
-    
-    
-    
-    --range-normal-selected-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --range-normal-selected-color-hover: var(--color-brand1-6, #0064C8);
     
     
     
@@ -11635,18 +11510,6 @@
     
     
     
-    --range-normal-unselected-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --range-normal-unselected-color-hover: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --range-normal-slider-border-color: var(--color-line1-3, #577899);
-    
-    
-    
     --range-size-m-mark-font-lineheight: 20px;
     
     
@@ -11659,27 +11522,11 @@
     
     
     
-    --range-normal-unselected-color-disabled: var(--color-line1-1, #E3E4E6);
+    --range-normal-mark-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
-    --range-normal-slider-bg-color-disabled: var(--color-white, #FFFFFF);
-    
-    
-    
-    --range-normal-slider-border-color-disabled: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --range-normal-selected-color-disabled: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --range-normal-mark-color-disabled: var(--color-text1-5, #b3b3b3);
-    
-    
-    
-    --range-normal-mark-selected-color-disabled: var(--color-text1-5, #b3b3b3);
+    --range-normal-mark-selected-color-disabled: var(--color-text1-5, #aaaaaa);
     
     
     
@@ -11711,11 +11558,11 @@
     
     
     
-    --range-size-m-track-radius: var(--corner-zero, 0);
+    --range-size-m-track-radius: var(--corner-zero, 0px);
     
     
     
-    --range-size-m-scale-radius: var(--corner-zero, 0);
+    --range-size-m-scale-radius: var(--corner-zero, 0px);
     
     
     
@@ -11735,15 +11582,51 @@
     
     
     
-    --range-normal-mark-color-hover: var(--color-text1-2, #888888);
+    --range-normal-mark-color-hover: var(--color-text1-2, #eeeeee);
     
     
     
-    --range-normal-mark-selected-color-hover: var(--color-text1-4, #111111);
+    --range-normal-mark-selected-color-hover: var(--color-text1-4, #cbcbcb);
     
     
     
     --range-normal-slider-border-color-hover: var(--color-transparent, transparent);
+    
+    
+    
+    --range-normal-unselected-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --range-normal-selected-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --range-normal-unselected-color-hover: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --range-normal-selected-color-hover: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --range-normal-unselected-color-disabled: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --range-normal-selected-color-disabled: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --range-normal-slider-bg-color-disabled: var(--color-text1-1, #f6f6f6);
+    
+    
+    
+    --range-normal-slider-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --range-normal-slider-border-color-disabled: var(--color-text1-4, #cbcbcb);
     
     
     /* ------------------------ slider ------------------------ */
@@ -11850,11 +11733,11 @@
     
     
     
-    --slick-dots-background-color-hover: var(--color-black, #000000);
+    --slick-dots-background-color-hover: var(--color-white, #FFFFFF);
     
     
     
-    --slick-dots-background-color-selected: var(--color-brand1-6, #0064C8);
+    --slick-dots-background-color-selected: var(--color-brand1-6, #007efd);
     
     
     
@@ -11862,7 +11745,7 @@
     
     
     
-    --slick-dots-background-opacity-hover: .32;
+    --slick-dots-background-opacity-hover: .5;
     
     
     
@@ -11906,7 +11789,7 @@
     
     
     
-    --slick-arrow-icon-color-normal-outer: var(--color-text1-3, #555555);
+    --slick-arrow-icon-color-normal-outer: var(--color-text1-3, #e5e5e5);
     
     
     
@@ -11914,15 +11797,15 @@
     
     
     
-    --slick-arrow-icon-color-hover-outer: var(--color-text1-4, #111111);
+    --slick-arrow-icon-color-hover-outer: var(--color-text1-4, #cbcbcb);
     
     
     
-    --slick-arrow-icon-color-disabled: var(--color-text1-1, #C1C1C1);
+    --slick-arrow-icon-color-disabled: var(--color-text1-1, #f6f6f6);
     
     
     
-    --slick-arrow-icon-color-disabled-outer: var(--color-text1-1, #C1C1C1);
+    --slick-arrow-icon-color-disabled-outer: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -12012,19 +11895,11 @@
     
     
     
-    --time-picker-menu-item-color-selected: var(--color-white, #FFFFFF);
-    
-    
-    
-    --time-picker-menu-item-color-disabled: var(--color-text1-3, #555555);
+    --time-picker-menu-item-color-disabled: var(--color-text1-3, #e5e5e5);
     
     
     
     --time-picker-menu-item-background-hover: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
-    --time-picker-menu-item-background-selected: var(--color-fill1-5, #0064C8);
     
     
     
@@ -12079,6 +11954,14 @@
     --time-picker-menu-item-background-disabled: var(--color-white, #FFFFFF);
     
     
+    
+    --time-picker-menu-item-color-selected: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --time-picker-menu-item-background-selected: var(--color-brand2-2, #eff3f8);
+    
+    
     /* ------------------------ number-picker ------------------------ */
     
     
@@ -12112,6 +11995,14 @@
     
     
     --number-picker-inline-minus-icon: var(--icon-content-minus-for-component, "");
+    
+    
+    
+    --number-picker-normal-up-icon: var(--icon-content-t-up-for-component, "");
+    
+    
+    
+    --number-picker-normal-down-icon: var(--icon-content-d-up-for-component, "");
     
     
     
@@ -12166,12 +12057,63 @@
     --number-picker-inline-l-input-width: var(--s-32, 128px);
     
     
-    
-    --number-picker-normal-up-icon: var(--icon-content-t-up-for-component, "");
-    
+    /* ------------------------ breadcrumb ------------------------ */
     
     
-    --number-picker-normal-down-icon: var(--icon-content-d-up-for-component, "");
+    
+    --breadcrumb-size-m-font-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --breadcrumb-text-current-color-hover: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --breadcrumb-size-m-icon-size: var(--icon-xs, 12px);
+    
+    
+    
+    --breadcrumb-icon-sep-content: var(--icon-content-xiexian, "");
+    
+    
+    
+    --breadcrumb-size-ellipsis-font-size: var(--font-size-caption, 12px);
+    
+    
+    
+    --breadcrumb-size-m-icon-margin: var(--s-2, 8px);
+    
+    
+    
+    --breadcrumb-text-current-weight: var(--font-weight-2, normal);
+    
+    
+    
+    --breadcrumb-text-ellipsis-color: var(--color-text1-3, #e5e5e5);
+    
+    
+    
+    --breadcrumb-text-keyword-color-hover: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --breadcrumb-text-current-color: var(--color-text1-5, #aaaaaa);
+    
+    
+    
+    --breadcrumb-text-keyword-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --breadcrumb-icon-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --breadcrumb-text-color: var(--color-text1-8, #555555);
+    
+    
+    
+    --breadcrumb-text-color-hover: var(--color-text1-9, #333333);
     
     
     /* ------------------------ badge ------------------------ */
@@ -12182,11 +12124,11 @@
     
     
     
-    --badge-color-bg: var(--color-error-7, #C80000);
+    --badge-color-bg: var(--color-error-7, #e00000);
     
     
     
-    --badge-dot-color-bg: var(--color-error-7, #C80000);
+    --badge-dot-color-bg: var(--color-error-7, #e00000);
     
     
     
@@ -12229,19 +12171,11 @@
     
     
     
-    --drawer-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --drawer-shadow: var(--shadow-3, 0px 8px 16px 0px rgba(0, 0, 0, 0.2));
     
     
     
     --drawer-title-color: var(--color-text1-9, #333333);
-    
-    
-    
-    --drawer-title-border-color: var(--color-transparent, transparent);
     
     
     
@@ -12266,10 +12200,6 @@
     
     
     --drawer-close-size: var(--icon-s, 16px);
-    
-    
-    
-    --drawer-close-color: var(--color-text1-7, #666666);
     
     
     
@@ -12324,6 +12254,18 @@
     --drawer-close-bg-hovered: var(--color-transparent, transparent);
     
     
+    
+    --drawer-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --drawer-title-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --drawer-close-color: var(--color-text1-7, gray);
+    
+    
     /* ------------------------ select ------------------------ */
     
     
@@ -12348,11 +12290,11 @@
     
     
     
-    --select-hint-color: var(--color-text1-2, #888888);
+    --select-hint-color: var(--color-text1-2, #eeeeee);
     
     
     
-    --select-highlight-color: var(--color-brand1-6, #0064C8);
+    --select-highlight-color: var(--color-brand1-6, #007efd);
     
     
     
@@ -12364,10 +12306,6 @@
     
     
     /* ------------------------ typography ------------------------ */
-    
-    
-    
-    --typography-text-color: var(--color-text1-9, #333333);
     
     
     
@@ -12403,7 +12341,7 @@
     
     
     
-    --typography-text-mark-background: var(--color-warning-6, #FAC800);
+    --typography-text-mark-background: var(--color-warning-6, #ffd813);
     
     
     
@@ -12434,31 +12372,19 @@
     --typography-title-font-weight: var(--font-weight-semi-bold, 600);
     
     
+    
+    --typography-text-color: var(--color-text1-9, #333333);
+    
+    
     /* ------------------------ rating ------------------------ */
     
     
     
-    --rating-normal-underlay-color: var(--color-white, #FFFFFF);
+    --rating-grade-low-overlay-color: var(--color-warning-6, #ffd813);
     
     
     
-    --rating-grade-low-overlay-color: var(--color-warning-6, #FAC800);
-    
-    
-    
-    --rating-grade-high-overlay-color: var(--color-warning-6, #FAC800);
-    
-    
-    
-    --rating-normal-overlay-hover-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --rating-grade-high-overlay-hover-color: var(--color-warning-6, #FAC800);
-    
-    
-    
-    --rating-grade-icon-content: var(--icon-content-collection, "");
+    --rating-grade-high-overlay-hover-color: var(--color-warning-6, #ffd813);
     
     
     
@@ -12498,22 +12424,81 @@
     
     
     
-    --rating-normal-overlay-color: var(--color-brand1-6, #0064C8);
+    --rating-normal-overlay-color: var(--color-brand1-6, #007efd);
     
     
     
-    --rating-grade-low-overlay-hover-color: var(--color-text1-2, #888888);
+    --rating-grade-low-overlay-hover-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --rating-normal-underlay-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --rating-normal-overlay-hover-color: var(--color-warning-6, #ffd813);
+    
+    
+    
+    --rating-grade-high-overlay-color: var(--color-warning-6, #ffd813);
+    
+    
+    
+    --rating-grade-icon-content: var(--icon-content-favorites-filling, "");
+    
+    
+    /* ------------------------ cascader ------------------------ */
+    
+    
+    
+    --cascader-menu-icon-expand-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --cascader-menu-icon-hover-expand-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --cascader-menu-item-expanded-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --cascader-menu-icon-expand-size: var(--icon-xxs, 8px);
+    
+    
+    
+    --cascader-menu-border-width: var(--line-1, 1px);
+    
+    
+    
+    --cascader-menu-width: var(--s-auto, auto);
+    
+    
+    
+    --cascader-menu-min-width: var(--s-25, 100px);
+    
+    
+    
+    --cascader-menu-height: var(--s-48, 192px);
+    
+    
+    
+    --cascader-menu-border-radius: var(--corner-1, 2px);
+    
+    
+    
+    --cascader-menu-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --cascader-menu-item-expanded-background-color: var(--color-brand2-1, #f7f9fa);
     
     
     /* ------------------------ divider ------------------------ */
     
     
     
-    --divider-hoz-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --divider-hoz-text-color: var(--color-text1-7, #666666);
+    --divider-hoz-text-color: var(--color-text1-7, gray);
     
     
     
@@ -12549,11 +12534,15 @@
     
     
     
-    --divider-ver-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --divider-ver-marginLeft: var(--s-2, 8px);
+    
+    
+    
+    --divider-hoz-color: var(--color-text1-3, #e5e5e5);
+    
+    
+    
+    --divider-ver-color: var(--color-text1-4, #cbcbcb);
     
     
     /* ------------------------ split-button ------------------------ */
@@ -12564,11 +12553,582 @@
     
     
     
-    --split-btn-trigger-normal-icon-color: var(--color-text1-2, #888888);
-    
-    
-    
     --split-btn-unfold-icon-content: var(--icon-reset, var(--icon-reset));
+    
+    
+    
+    --split-btn-trigger-normal-icon-color: var(--color-text1-9, #333333);
+    
+    
+    /* ------------------------ nav ------------------------ */
+    
+    
+    
+    --nav-primary-item-childselected-text-style: normal;
+    
+    
+    
+    --nav-secondary-item-childselected-text-style: normal;
+    
+    
+    
+    --nav-normal-item-childselected-text-style: normal;
+    
+    
+    
+    --nav-line-item-childselected-text-style: normal;
+    
+    
+    
+    --nav-hoz-height: var(--s-11, 44px);
+    
+    
+    
+    --nav-hoz-font-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --nav-hoz-item-margin-tb: var(--s-zero, 0px);
+    
+    
+    
+    --nav-hoz-item-margin-lr: var(--s-zero, 0px);
+    
+    
+    
+    --nav-hoz-item-padding-lr: var(--s-5, 20px);
+    
+    
+    
+    --nav-hoz-item-corner: var(--corner-zero, 0px);
+    
+    
+    
+    --nav-hoz-item-selected-active-line: var(--line-2, 2px);
+    
+    
+    
+    --nav-hoz-item-hover-active-line: var(--line-zero, 0px);
+    
+    
+    
+    --nav-ver-height: var(--s-10, 40px);
+    
+    
+    
+    --nav-ver-font-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --nav-ver-item-margin-tb: var(--s-zero, 0px);
+    
+    
+    
+    --nav-ver-item-margin-lr: var(--s-zero, 0px);
+    
+    
+    
+    --nav-ver-item-padding-lr: var(--s-5, 20px);
+    
+    
+    
+    --nav-ver-item-corner: var(--corner-zero, 0px);
+    
+    
+    
+    --nav-ver-item-selected-active-line: var(--line-2, 2px);
+    
+    
+    
+    --nav-ver-item-hover-active-line: var(--line-zero, 0px);
+    
+    
+    
+    --nav-ver-sub-nav-height: var(--s-10, 40px);
+    
+    
+    
+    --nav-ver-sub-nav-font-size: var(--font-size-caption, 12px);
+    
+    
+    
+    --nav-group-height: var(--s-10, 40px);
+    
+    
+    
+    --nav-group-font-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --nav-icon-self-size: var(--icon-xs, 12px);
+    
+    
+    
+    --nav-icon-self-margin: var(--s-1, 4px);
+    
+    
+    
+    --nav-icon-only-font-size: var(--icon-s, 16px);
+    
+    
+    
+    --nav-primary-bg-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --nav-primary-border-width: var(--line-zero, 0px);
+    
+    
+    
+    --nav-primary-border-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --nav-primary-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-primary-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-primary-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
+    
+    
+    
+    --nav-primary-sub-nav-bg-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --nav-primary-sub-nav-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-primary-sub-nav-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-primary-group-text-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --nav-primary-group-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-primary-item-hover-bg-color: var(--color-black, #000000);
+    
+    
+    
+    --nav-primary-item-hover-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-primary-item-hover-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-primary-item-hover-active-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-primary-sub-nav-hover-bg-color: var(--color-black, #000000);
+    
+    
+    
+    --nav-primary-sub-nav-hover-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-primary-item-selected-bg-color: var(--color-black, #000000);
+    
+    
+    
+    --nav-primary-item-selected-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-primary-item-selected-text-style: var(--font-weight-3, bold);
+    
+    
+    
+    --nav-primary-item-childselected-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-primary-item-childselected-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-primary-item-selected-active-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-primary-sub-nav-selected-bg-color: var(--color-black, #000000);
+    
+    
+    
+    --nav-primary-sub-nav-selected-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-primary-sub-nav-active-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-primary-item-disabled-text-color: var(--color-text1-1, #f6f6f6);
+    
+    
+    
+    --nav-primary-item-opened-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-primary-item-opened-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-secondary-border-width: var(--line-zero, 0px);
+    
+    
+    
+    --nav-secondary-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-secondary-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-secondary-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
+    
+    
+    
+    --nav-secondary-sub-nav-bg-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-secondary-sub-nav-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-secondary-sub-nav-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-secondary-group-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-secondary-group-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-secondary-item-hover-bg-color: var(--color-brand1-9, #004385);
+    
+    
+    
+    --nav-secondary-item-hover-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-secondary-item-hover-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-secondary-item-hover-active-color: var(--color-brand1-9, #004385);
+    
+    
+    
+    --nav-secondary-sub-nav-hover-bg-color: var(--color-brand1-9, #004385);
+    
+    
+    
+    --nav-secondary-sub-nav-hover-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-secondary-item-selected-bg-color: var(--color-brand1-9, #004385);
+    
+    
+    
+    --nav-secondary-item-selected-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-secondary-item-selected-text-style: var(--font-weight-3, bold);
+    
+    
+    
+    --nav-secondary-item-childselected-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-secondary-item-childselected-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-secondary-item-selected-active-color: var(--color-brand1-9, #004385);
+    
+    
+    
+    --nav-secondary-sub-nav-selected-bg-color: var(--color-brand1-9, #004385);
+    
+    
+    
+    --nav-secondary-sub-nav-selected-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-secondary-sub-nav-active-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-secondary-item-disabled-text-color: var(--color-brand1-1, #e8f4ff);
+    
+    
+    
+    --nav-secondary-item-opened-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-secondary-item-opened-text-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-normal-bg-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-normal-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-normal-border-line: var(--line-1, 1px);
+    
+    
+    
+    --nav-normal-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
+    
+    
+    
+    --nav-normal-sub-nav-bg-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-normal-sub-nav-text-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --nav-normal-sub-nav-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-normal-group-text-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --nav-normal-group-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-normal-item-hover-bg-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --nav-normal-item-hover-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-normal-item-selected-bg-color: var(--color-fill1-2, #F7F9FA);
+    
+    
+    
+    --nav-normal-item-selected-text-style: var(--font-weight-3, bold);
+    
+    
+    
+    --nav-normal-item-childselected-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-normal-item-childselected-text-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-normal-sub-nav-selected-bg-color: var(--color-fill1-2, #F7F9FA);
+    
+    
+    
+    --nav-normal-sub-nav-selected-text-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-normal-sub-nav-active-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-normal-item-disabled-text-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --nav-normal-item-opened-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-line-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-line-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-line-border-line: var(--line-1, 1px);
+    
+    
+    
+    --nav-line-sub-nav-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-line-sub-nav-text-color: var(--color-text1-4, #cbcbcb);
+    
+    
+    
+    --nav-line-sub-nav-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-line-item-hover-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-line-item-hover-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-line-sub-nav-hover-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-line-sub-nav-hover-text-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-line-item-selected-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-line-item-selected-text-style: var(--font-weight-3, bold);
+    
+    
+    
+    --nav-line-item-childselected-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-line-item-childselected-text-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-line-sub-nav-selected-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-line-sub-nav-selected-text-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-line-sub-nav-active-color: var(--color-brand1-6, #007efd);
+    
+    
+    
+    --nav-line-item-disabled-text-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --nav-line-item-opened-bg-color: var(--color-transparent, transparent);
+    
+    
+    
+    --nav-line-group-text-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --nav-line-group-text-style: var(--font-weight-2, normal);
+    
+    
+    
+    --nav-secondary-bg-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-secondary-border-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-normal-border-color: var(--color-text1-3, #e5e5e5);
+    
+    
+    
+    --nav-normal-text-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --nav-normal-item-hover-text-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-normal-item-hover-active-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-normal-sub-nav-hover-bg-color: var(--color-brand2-1, #f7f9fa);
+    
+    
+    
+    --nav-normal-sub-nav-hover-text-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-normal-item-selected-text-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-normal-item-selected-active-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-normal-item-opened-text-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-line-border-color: var(--color-text1-2, #eeeeee);
+    
+    
+    
+    --nav-line-text-color: var(--color-text1-9, #333333);
+    
+    
+    
+    --nav-line-item-hover-text-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-line-item-hover-active-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-line-item-selected-text-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-line-item-selected-active-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --nav-line-item-opened-text-color: var(--color-brand1-7, #0064c8);
     
     
     /* ------------------------ cascader-select ------------------------ */
@@ -12582,7 +13142,7 @@
     
     
     
-    --paragraph-text-color: var(--color-text1-4, #111111);
+    --paragraph-text-color: var(--color-text1-4, #cbcbcb);
     
     
     
@@ -12599,6 +13159,33 @@
     
     
     --paragraph-l-line-height: var(--font-lineheight-3, 1.6);
+    
+    
+    /* ------------------------ loading ------------------------ */
+    
+    
+    
+    --loading-icon-size: var(--icon-xl, 32px);
+    
+    
+    
+    --loading-large-size: var(--s-12, 48px);
+    
+    
+    
+    --loading-large-dot-size: var(--icon-xs, 12px);
+    
+    
+    
+    --loading-medium-size: var(--s-8, 32px);
+    
+    
+    
+    --loading-medium-dot-size: var(--icon-xxs, 8px);
+    
+    
+    
+    --loading-dot-color: var(--color-brand1-7, #0064c8);
     
     
     /* ------------------------ shell ------------------------ */
@@ -12785,7 +13372,7 @@
     
     
     
-    --shell-light-footer-color: var(--color-text1-1, #C1C1C1);
+    --shell-light-footer-color: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -12865,15 +13452,15 @@
     
     
     
-    --shell-light-tooldock-item-color: var(--color-text1-3, #555555);
+    --shell-light-tooldock-item-color: var(--color-text1-3, #e5e5e5);
     
     
     
-    --shell-light-tooldock-item-color-hover: var(--color-text1-4, #111111);
+    --shell-light-tooldock-item-color-hover: var(--color-text1-4, #cbcbcb);
     
     
     
-    --shell-light-tooldock-item-color-active: var(--color-text1-4, #111111);
+    --shell-light-tooldock-item-color-active: var(--color-text1-4, #cbcbcb);
     
     
     
@@ -12973,7 +13560,7 @@
     
     
     
-    --shell-dark-navigation-ver-background: var(--color-text1-4, #111111);
+    --shell-dark-navigation-ver-background: var(--color-text1-4, #cbcbcb);
     
     
     
@@ -13069,7 +13656,7 @@
     
     
     
-    --shell-dark-footer-color: var(--color-text1-1, #C1C1C1);
+    --shell-dark-footer-color: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -13149,15 +13736,15 @@
     
     
     
-    --shell-dark-tooldock-item-color: var(--color-text1-3, #555555);
+    --shell-dark-tooldock-item-color: var(--color-text1-3, #e5e5e5);
     
     
     
-    --shell-dark-tooldock-item-color-hover: var(--color-text1-4, #111111);
+    --shell-dark-tooldock-item-color-hover: var(--color-text1-4, #cbcbcb);
     
     
     
-    --shell-dark-tooldock-item-color-active: var(--color-text1-4, #111111);
+    --shell-dark-tooldock-item-color-active: var(--color-text1-4, #cbcbcb);
     
     
     
@@ -13181,7 +13768,7 @@
     
     
     
-    --shell-brand-header-background: var(--color-brand1-6, #0064C8);
+    --shell-brand-header-background: var(--color-brand1-6, #007efd);
     
     
     
@@ -13353,7 +13940,7 @@
     
     
     
-    --shell-brand-footer-color: var(--color-text1-1, #C1C1C1);
+    --shell-brand-footer-color: var(--color-text1-1, #f6f6f6);
     
     
     
@@ -13433,15 +14020,15 @@
     
     
     
-    --shell-brand-tooldock-item-color: var(--color-text1-3, #555555);
+    --shell-brand-tooldock-item-color: var(--color-text1-3, #e5e5e5);
     
     
     
-    --shell-brand-tooldock-item-color-hover: var(--color-text1-4, #111111);
+    --shell-brand-tooldock-item-color-hover: var(--color-text1-4, #cbcbcb);
     
     
     
-    --shell-brand-tooldock-item-color-active: var(--color-text1-4, #111111);
+    --shell-brand-tooldock-item-color-active: var(--color-text1-4, #cbcbcb);
     
     
     
@@ -13469,577 +14056,6 @@
     
     
     --tree-select-background: var(--color-white, #FFFFFF);
-    
-    
-    /* ------------------------ nav ------------------------ */
-    
-    
-    
-    --nav-hoz-height: var(--s-11, 44px);
-    
-    
-    
-    --nav-hoz-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --nav-hoz-item-margin-tb: var(--s-zero, 0px);
-    
-    
-    
-    --nav-hoz-item-margin-lr: var(--s-zero, 0px);
-    
-    
-    
-    --nav-hoz-item-padding-lr: var(--s-5, 20px);
-    
-    
-    
-    --nav-hoz-item-corner: var(--corner-zero, 0);
-    
-    
-    
-    --nav-hoz-item-selected-active-line: var(--line-2, 2px);
-    
-    
-    
-    --nav-hoz-item-hover-active-line: var(--line-zero, 0px);
-    
-    
-    
-    --nav-ver-height: var(--s-10, 40px);
-    
-    
-    
-    --nav-ver-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --nav-ver-item-margin-tb: var(--s-zero, 0px);
-    
-    
-    
-    --nav-ver-item-margin-lr: var(--s-zero, 0px);
-    
-    
-    
-    --nav-ver-item-padding-lr: var(--s-5, 20px);
-    
-    
-    
-    --nav-ver-item-corner: var(--corner-zero, 0);
-    
-    
-    
-    --nav-ver-item-selected-active-line: var(--line-2, 2px);
-    
-    
-    
-    --nav-ver-item-hover-active-line: var(--line-zero, 0px);
-    
-    
-    
-    --nav-ver-sub-nav-height: var(--s-10, 40px);
-    
-    
-    
-    --nav-ver-sub-nav-font-size: var(--font-size-caption, 12px);
-    
-    
-    
-    --nav-group-height: var(--s-10, 40px);
-    
-    
-    
-    --nav-group-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --nav-icon-self-size: var(--icon-xs, 12px);
-    
-    
-    
-    --nav-icon-self-margin: var(--s-1, 4px);
-    
-    
-    
-    --nav-icon-only-font-size: var(--icon-s, 16px);
-    
-    
-    
-    --nav-primary-bg-color: var(--color-text1-4, #111111);
-    
-    
-    
-    --nav-primary-border-width: var(--line-zero, 0px);
-    
-    
-    
-    --nav-primary-border-color: var(--color-text1-4, #111111);
-    
-    
-    
-    --nav-primary-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-primary-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-primary-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
-    
-    
-    
-    --nav-primary-sub-nav-bg-color: var(--color-text1-4, #111111);
-    
-    
-    
-    --nav-primary-sub-nav-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-primary-sub-nav-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-primary-group-text-color: var(--color-text1-2, #888888);
-    
-    
-    
-    --nav-primary-group-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-primary-item-hover-bg-color: var(--color-black, #000000);
-    
-    
-    
-    --nav-primary-item-hover-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-primary-item-hover-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-primary-item-hover-active-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-primary-sub-nav-hover-bg-color: var(--color-black, #000000);
-    
-    
-    
-    --nav-primary-sub-nav-hover-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-primary-item-selected-bg-color: var(--color-black, #000000);
-    
-    
-    
-    --nav-primary-item-selected-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-primary-item-selected-text-style: var(--font-weight-3, bold);
-    
-    
-    
-    --nav-primary-item-childselected-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-primary-item-childselected-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-primary-item-selected-active-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-primary-sub-nav-selected-bg-color: var(--color-black, #000000);
-    
-    
-    
-    --nav-primary-sub-nav-selected-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-primary-sub-nav-active-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-primary-item-disabled-text-color: var(--color-text1-1, #C1C1C1);
-    
-    
-    
-    --nav-primary-item-opened-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-primary-item-opened-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-secondary-bg-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-secondary-border-width: var(--line-zero, 0px);
-    
-    
-    
-    --nav-secondary-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-secondary-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-secondary-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-secondary-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
-    
-    
-    
-    --nav-secondary-sub-nav-bg-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-secondary-sub-nav-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-secondary-sub-nav-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-secondary-group-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-secondary-group-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-secondary-item-hover-bg-color: var(--color-brand1-9, #002850);
-    
-    
-    
-    --nav-secondary-item-hover-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-secondary-item-hover-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-secondary-item-hover-active-color: var(--color-brand1-9, #002850);
-    
-    
-    
-    --nav-secondary-sub-nav-hover-bg-color: var(--color-brand1-9, #002850);
-    
-    
-    
-    --nav-secondary-sub-nav-hover-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-secondary-item-selected-bg-color: var(--color-brand1-9, #002850);
-    
-    
-    
-    --nav-secondary-item-selected-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-secondary-item-selected-text-style: var(--font-weight-3, bold);
-    
-    
-    
-    --nav-secondary-item-childselected-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-secondary-item-childselected-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-secondary-item-selected-active-color: var(--color-brand1-9, #002850);
-    
-    
-    
-    --nav-secondary-sub-nav-selected-bg-color: var(--color-brand1-9, #002850);
-    
-    
-    
-    --nav-secondary-sub-nav-selected-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-secondary-sub-nav-active-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-secondary-item-disabled-text-color: var(--color-brand1-1, #F7F9FA);
-    
-    
-    
-    --nav-secondary-item-opened-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-secondary-item-opened-text-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-normal-bg-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-normal-border-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --nav-normal-text-color: var(--color-text1-4, #111111);
-    
-    
-    
-    --nav-normal-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-normal-border-line: var(--line-1, 1px);
-    
-    
-    
-    --nav-normal-shadow: var(--shadow-2, 0px 4px 8px 0px rgba(0, 0, 0, 0.16));
-    
-    
-    
-    --nav-normal-sub-nav-bg-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-normal-sub-nav-text-color: var(--color-text1-4, #111111);
-    
-    
-    
-    --nav-normal-sub-nav-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-normal-group-text-color: var(--color-text1-2, #888888);
-    
-    
-    
-    --nav-normal-group-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-normal-item-hover-bg-color: var(--color-white, #FFFFFF);
-    
-    
-    
-    --nav-normal-item-hover-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-normal-item-hover-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-normal-item-hover-active-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-normal-sub-nav-hover-bg-color: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
-    --nav-normal-sub-nav-hover-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-normal-item-selected-bg-color: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
-    --nav-normal-item-selected-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-normal-item-selected-text-style: var(--font-weight-3, bold);
-    
-    
-    
-    --nav-normal-item-childselected-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-normal-item-childselected-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-normal-item-selected-active-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-normal-sub-nav-selected-bg-color: var(--color-fill1-2, #F7F9FA);
-    
-    
-    
-    --nav-normal-sub-nav-selected-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-normal-sub-nav-active-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-normal-item-disabled-text-color: var(--color-text1-2, #888888);
-    
-    
-    
-    --nav-normal-item-opened-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-normal-item-opened-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-line-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-line-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
-    --nav-line-text-color: var(--color-text1-4, #111111);
-    
-    
-    
-    --nav-line-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-line-border-line: var(--line-1, 1px);
-    
-    
-    
-    --nav-line-sub-nav-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-line-sub-nav-text-color: var(--color-text1-4, #111111);
-    
-    
-    
-    --nav-line-sub-nav-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-line-item-hover-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-line-item-hover-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-line-item-hover-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-line-item-hover-active-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-line-sub-nav-hover-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-line-sub-nav-hover-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-line-item-selected-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-line-item-selected-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-line-item-selected-text-style: var(--font-weight-3, bold);
-    
-    
-    
-    --nav-line-item-childselected-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-line-item-childselected-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-line-item-selected-active-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-line-sub-nav-selected-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-line-sub-nav-selected-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-line-sub-nav-active-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-line-item-disabled-text-color: var(--color-text1-2, #888888);
-    
-    
-    
-    --nav-line-item-opened-bg-color: var(--color-transparent, transparent);
-    
-    
-    
-    --nav-line-item-opened-text-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --nav-line-group-text-color: var(--color-text1-2, #888888);
-    
-    
-    
-    --nav-line-group-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-primary-item-childselected-text-style: normal;
-    
-    
-    
-    --nav-secondary-item-childselected-text-style: normal;
-    
-    
-    
-    --nav-normal-item-childselected-text-style: normal;
-    
-    
-    
-    --nav-line-item-childselected-text-style: normal;
     
     
     /* ------------------------ list ------------------------ */
@@ -14126,38 +14142,38 @@
     
     
     
-    --list-divider-color: var(--color-line1-2, #C0C6CC);
+    --list-divider-color: var(--color-text1-4, #cbcbcb);
     
     
     
-    --list-title-color: var(--color-text1-4, #111111);
+    --list-title-color: var(--color-text1-9, #333333);
     
     
     
-    --list-content-color: var(--color-text1-3, #555555);
+    --list-content-color: var(--color-text1-7, gray);
     
     
     
-    --list-extra-color: var(--color-text1-2, #888888);
+    --list-extra-color: var(--color-text1-9, #333333);
     
     
     /* ------------------------ avatar ------------------------ */
     
     
     
-    --avatar-size-large: var(--s-13, 52px);
-    
-    
-    
-    --avatar-size-medium: var(--s-10, 40px);
-    
-    
-    
-    --avatar-size-small: var(--s-7, 28px);
-    
-    
-    
     --avatar-border-radius: var(--corner-1, 2px);
+    
+    
+    
+    --avatar-size-large: 52px;
+    
+    
+    
+    --avatar-size-medium: 40px;
+    
+    
+    
+    --avatar-size-small: 24px;
     
     
 

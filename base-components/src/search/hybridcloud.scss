@@ -1,6 +1,12 @@
+.next-input-group.next-search-left.next-input-group.next-search-left.next-input-group.next-search-left {
+  border-color: var(--input-border-color);
+  &:hover {
+    border-color: var(--input-hover-border-color);
+  }
+}
 .next-search.next-search.next-search.next-search {
   box-shadow: none;
-  border-color: var(--input-focus-border-color, #ababab);
+  border-color: var(--input-border-color);
   .next-input-inner {
     margin: var(--search-before-title-icon-margin, 0 8px 0 0);
     i.next-icon.next-icon {

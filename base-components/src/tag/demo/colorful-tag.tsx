@@ -7,9 +7,9 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 import { Tag, Icon, ConfigProvider } from '@alicloudfe/components'
-import TeamixIcon from '@teamix/icon'
+// import TeamixIcon from '@teamix/icon'
 
-TeamixIcon.setConfig(TeamixIcon.YUNXIAO)
+// TeamixIcon.setConfig(TeamixIcon.YUNXIAO)
 
 const { Group: TagGroup } = Tag
 
