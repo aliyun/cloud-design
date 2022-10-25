@@ -620,7 +620,9 @@ const whiteVarList = [
   '--card-content-color',
   '--card-body-show-divider-padding-top',
   '--timeline-item-node-padding',
-  '--date-picker2-time-bg'
+  '--date-picker2-time-bg',
+  '--menu-item-padding-ver-padding-r',
+  '--menu-item-padding-ver-padding-l'
 ]
 // 递归文件
 const fileDisplay = filePath => {
