@@ -41,18 +41,6 @@ class Demo extends React.Component {
           onCancel={this.onClose.bind(this, 'cancelClick')}
           onClose={this.onClose}
           size="large"
-          sidebar={
-            <>
-              <Tab
-                shape="wrapped"
-                tabPosition="left"
-              >
-                <Tab.Item title="Tab 1" key="1"/>
-                <Tab.Item title="Tab 2" key="2"/>
-                <Tab.Item title="Tab 3" key="3"/>
-              </Tab>
-            </>
-          }
         >
           Start your business here by searching a popular product
         </Dialog>

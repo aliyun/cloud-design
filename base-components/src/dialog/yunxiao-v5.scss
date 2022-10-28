@@ -34,6 +34,10 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
         margin: -16px 20px -16px -20px;
         padding: 16px 20px;
         border-right: 1px solid var(--color-line1-1, #e8e8e8);
+
+        .#{$css-prefix}tabs-wrapped.#{$css-prefix}tabs-left > .#{$css-prefix}tabs-bar {
+          float: initial; // hack sidebar内的竖向Tab，以撑满Sidebar
+        }
       }
     }
   }
