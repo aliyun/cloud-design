@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-57669@0.2.4 (https://fusion.design)
+ * @alife/theme-57669@0.2.5 (https://fusion.design)
  * @alifd/next@1.25.51 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -5341,43 +5341,43 @@ small {
     border-style: solid;
     border-style: var(--btn-ghost-border-style, solid); }
     .next-btn-ghost.next-btn-dark {
-      background: rgba(0, 0, 0, 0);
+      background: white;
       border-color: #c6cdd4;
       border-color: var(--btn-ghost-dark-border-color, #c6cdd4); }
       .next-btn-ghost.next-btn-dark, .next-btn-ghost.next-btn-dark:link, .next-btn-ghost.next-btn-dark:visited, .next-btn-ghost.next-btn-dark.visited {
-        color: #292929;
-        color: var(--btn-ghost-dark-color, #292929); }
+        color: #575757;
+        color: var(--btn-ghost-dark-color, #575757); }
       .next-btn-ghost.next-btn-dark:focus, .next-btn-ghost.next-btn-dark:hover, .next-btn-ghost.next-btn-dark.hover {
-        color: #FFFFFF;
-        color: var(--btn-ghost-dark-color-hover, #FFFFFF);
-        background: rgba(255, 255, 255, 0.8);
+        color: #1B9AEE;
+        color: var(--btn-ghost-dark-color-hover, #1B9AEE);
+        background: white;
         border-color: #FFFFFF;
         border-color: var(--btn-ghost-dark-border-color-hover, #FFFFFF);
         text-decoration: none; }
       .next-btn-ghost.next-btn-dark:active, .next-btn-ghost.next-btn-dark.active {
-        color: #FFFFFF;
-        color: var(--btn-ghost-dark-color-hover, #FFFFFF);
-        background: rgba(255, 255, 255, 0.8);
+        color: #1B9AEE;
+        color: var(--btn-ghost-dark-color-hover, #1B9AEE);
+        background: white;
         border-color: #FFFFFF;
         border-color: var(--btn-ghost-dark-border-color-hover, #FFFFFF);
         text-decoration: none; }
       .next-btn-ghost.next-btn-dark.disabled, .next-btn-ghost.next-btn-dark[disabled] {
-        background: transparent;
-        background: var(--btn-ghost-dark-bg-disabled, transparent);
-        border-color: rgba(255, 255, 255, 0.4); }
+        background: #FFFFFF;
+        background: var(--btn-ghost-dark-bg-disabled, #FFFFFF);
+        border-color: #dae0e5; }
         .next-btn-ghost.next-btn-dark.disabled, .next-btn-ghost.next-btn-dark.disabled:link, .next-btn-ghost.next-btn-dark.disabled:visited, .next-btn-ghost.next-btn-dark.disabled.visited, .next-btn-ghost.next-btn-dark[disabled], .next-btn-ghost.next-btn-dark[disabled]:link, .next-btn-ghost.next-btn-dark[disabled]:visited, .next-btn-ghost.next-btn-dark[disabled].visited {
-          color: rgba(255, 255, 255, 0.4); }
+          color: #adadad; }
         .next-btn-ghost.next-btn-dark.disabled:focus, .next-btn-ghost.next-btn-dark.disabled:hover, .next-btn-ghost.next-btn-dark.disabled.hover, .next-btn-ghost.next-btn-dark[disabled]:focus, .next-btn-ghost.next-btn-dark[disabled]:hover, .next-btn-ghost.next-btn-dark[disabled].hover {
-          color: rgba(255, 255, 255, 0.4);
-          background: transparent;
-          background: var(--btn-ghost-dark-bg-disabled, transparent);
-          border-color: rgba(255, 255, 255, 0.4);
+          color: #adadad;
+          background: #FFFFFF;
+          background: var(--btn-ghost-dark-bg-disabled, #FFFFFF);
+          border-color: #dae0e5;
           text-decoration: none; }
         .next-btn-ghost.next-btn-dark.disabled:active, .next-btn-ghost.next-btn-dark.disabled.active, .next-btn-ghost.next-btn-dark[disabled]:active, .next-btn-ghost.next-btn-dark[disabled].active {
-          color: rgba(255, 255, 255, 0.4);
-          background: transparent;
-          background: var(--btn-ghost-dark-bg-disabled, transparent);
-          border-color: rgba(255, 255, 255, 0.4);
+          color: #adadad;
+          background: #FFFFFF;
+          background: var(--btn-ghost-dark-bg-disabled, #FFFFFF);
+          border-color: #dae0e5;
           text-decoration: none; }
     .next-btn-ghost.next-btn-light {
       background: rgba(255, 255, 255, 0.99);
@@ -5401,22 +5401,22 @@ small {
         border-color: var(--btn-ghost-light-border-color-hover, #dae0e5);
         text-decoration: none; }
       .next-btn-ghost.next-btn-light.disabled, .next-btn-ghost.next-btn-light[disabled] {
-        background: transparent;
-        background: var(--btn-ghost-light-bg-disabled, transparent);
-        border-color: rgba(0, 0, 0, 0.1); }
+        background: #FFFFFF;
+        background: var(--btn-ghost-light-bg-disabled, #FFFFFF);
+        border-color: #dae0e5; }
         .next-btn-ghost.next-btn-light.disabled, .next-btn-ghost.next-btn-light.disabled:link, .next-btn-ghost.next-btn-light.disabled:visited, .next-btn-ghost.next-btn-light.disabled.visited, .next-btn-ghost.next-btn-light[disabled], .next-btn-ghost.next-btn-light[disabled]:link, .next-btn-ghost.next-btn-light[disabled]:visited, .next-btn-ghost.next-btn-light[disabled].visited {
-          color: rgba(0, 0, 0, 0.1); }
+          color: rgba(173, 173, 173, 0.99); }
         .next-btn-ghost.next-btn-light.disabled:focus, .next-btn-ghost.next-btn-light.disabled:hover, .next-btn-ghost.next-btn-light.disabled.hover, .next-btn-ghost.next-btn-light[disabled]:focus, .next-btn-ghost.next-btn-light[disabled]:hover, .next-btn-ghost.next-btn-light[disabled].hover {
-          color: rgba(0, 0, 0, 0.1);
-          background: transparent;
-          background: var(--btn-ghost-light-bg-disabled, transparent);
-          border-color: rgba(0, 0, 0, 0.1);
+          color: rgba(173, 173, 173, 0.99);
+          background: #FFFFFF;
+          background: var(--btn-ghost-light-bg-disabled, #FFFFFF);
+          border-color: #dae0e5;
           text-decoration: none; }
         .next-btn-ghost.next-btn-light.disabled:active, .next-btn-ghost.next-btn-light.disabled.active, .next-btn-ghost.next-btn-light[disabled]:active, .next-btn-ghost.next-btn-light[disabled].active {
-          color: rgba(0, 0, 0, 0.1);
-          background: transparent;
-          background: var(--btn-ghost-light-bg-disabled, transparent);
-          border-color: rgba(0, 0, 0, 0.1);
+          color: rgba(173, 173, 173, 0.99);
+          background: #FFFFFF;
+          background: var(--btn-ghost-light-bg-disabled, #FFFFFF);
+          border-color: #dae0e5;
           text-decoration: none; }
   .next-btn-group {
     position: relative;
@@ -14105,8 +14105,8 @@ small {
     color: #FFFFFF;
     color: var(--menu-btn-ghost-dark-icon-color, #FFFFFF); }
   .next-menu-btn.next-btn-ghost.next-btn-dark:hover .next-menu-btn-arrow {
-    color: #FFFFFF;
-    color: var(--btn-ghost-dark-color-hover, #FFFFFF); }
+    color: #1B9AEE;
+    color: var(--btn-ghost-dark-color-hover, #1B9AEE); }
   .next-menu-btn.disabled .next-menu-btn-arrow,
   .next-menu-btn[disabled] .next-menu-btn-arrow {
     color: #adadad;
@@ -14116,11 +14116,11 @@ small {
     color: #adadad;
     color: var(--menu-btn-disabled-icon-color, #adadad); }
   .next-menu-btn[disabled].next-btn-ghost.next-btn-dark .next-menu-btn-arrow {
-    color: rgba(255, 255, 255, 0.4);
-    color: var(--menu-btn-ghost-dark-disabled-icon-color, rgba(255, 255, 255, 0.4)); }
+    color: #adadad;
+    color: var(--menu-btn-ghost-dark-disabled-icon-color, #adadad); }
   .next-menu-btn[disabled].next-btn-ghost.next-btn-light .next-menu-btn-arrow {
-    color: rgba(0, 0, 0, 0.1);
-    color: var(--menu-btn-ghost-light-disabled-icon-color, rgba(0, 0, 0, 0.1)); }
+    color: rgba(173, 173, 173, 0.99);
+    color: var(--menu-btn-ghost-light-disabled-icon-color, rgba(173, 173, 173, 0.99)); }
 
 .next-nav {
   -webkit-box-sizing: border-box;
