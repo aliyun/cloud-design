@@ -2,3 +2,13 @@
 	font-weight: var(--font-weight-medium, 500);
 	color: var(--color-text1-4, #292929);
 }
+
+.next-select {
+  &.next-active {
+		.next-noborder {
+			&.next-select-inner {
+				box-shadow: none;
+			}
+		}
+  }
+}
