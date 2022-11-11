@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Dialog, Tab } from '@alicloudfe/components'
+import { Button, Dialog } from '@alicloudfe/components'
 
 class Demo extends React.Component {
   state = {
@@ -41,7 +41,7 @@ class Demo extends React.Component {
           onCancel={this.onClose.bind(this, 'cancelClick')}
           onClose={this.onClose}
           size="large"
-          sidebar={<>test</>}
+          sidebar={<>side bar</>}
         >
           Start your business here by searching a popular product
         </Dialog>
