@@ -16,11 +16,11 @@ module.exports = [
     themeName: 'wind'
   },
   {
-    packageName: '@alife/theme-hybridcloud-v1@0.21.1',
+    packageName: '@alife/theme-hybridcloud-v1',
     themeName: 'hybridcloud'
   },
   {
-    packageName: '@alife/theme-hybridcloud-v1-dark@0.11.2',
+    packageName: '@alife/theme-hybridcloud-v1-dark',
     themeName: 'hybridcloud-dark'
   },
   {

@@ -51,6 +51,7 @@
   --message-error-border-color: var(--color-error-7);
   --message-notice-border-color: var(--color-brand1-4);
   --message-help-border-color: var(--color-brand1-4);
+  --message-size-m-title-content-padding-right: var(--s-3);
   /* transfer */
   --transfer-panel-padding-mb: 8px;
   --transfer-panel-margin-mb: 0px;
@@ -97,11 +98,11 @@
 
   /* table */
   --color-table-selected-border: var(--color-brand1-6);
-  --table-lock-right-shadow: -2px 0 3px rgb(0 0 0 / 64%);
-  --table-lock-left-shadow: 2px 0 3px rgb(0 0 0 / 64%);
+  --table-lock-right-shadow: -2px 0 3px rgb(0 0 0 / 90%);
+  --table-lock-left-shadow: 2px 0 3px rgb(0 0 0 / 90%);
   // 用于 Table.StickyLock
-  --table-ping-right-shadow: inset -10px 0 8px -8px rgb(0 0 0 / 64%);
-  --table-ping-left-shadow: inset 10px 0 8px -8px rgb(0 0 0 / 64%);
+  --table-ping-right-shadow: inset -8px 0 8px -4px rgb(0 0 0 / 50%);
+  --table-ping-left-shadow: inset 8px 0 8px -4px rgb(0 0 0 / 50%);
   // 在弹窗、抽屉、卡片 中，表格的内容背景色为G10、表头背景色为G20
   --table-tr-fill-color:var(--color-fill1-3);
   --table-th-fill-color:var(--color-fill1-4);
@@ -146,16 +147,16 @@
   --step-circle-item-tail-finish-color: var(--color-brand1-6);
 
   /* mention */
-  --color-mention-1: #260B50;
-  --color-mention-2: #411D7A;
-  --color-mention-3: #6A3FAF;
-  --color-mention-4: #885BCF;
-  --color-mention-5: #AA98FB;
-  --color-mention-6: #9684EA;
-  --color-mention-7: #885BCF;
-  --color-mention-8: #6A3FAF;
-  --color-mention-9: #411D7A;
-  --color-mention-10: #260B50;
+  --color-mention-1: #18172E;
+  --color-mention-2: #2D2854;
+  --color-mention-3: #3A3470;
+  --color-mention-4: #484091;
+  --color-mention-5: #5B50BA;
+  --color-mention-6: #6154D6;
+  --color-mention-7: #7E75FF;
+  --color-mention-8: #9B94FF;
+  --color-mention-9: #BAB5FF;
+  --color-mention-10: #D8D6FF;
 
   /* space grey */
   --space-grey-1: #131414;
@@ -169,18 +170,6 @@
   --space-grey-9: #B6BDCC;
   --space-grey-10: #D8DEEB;
 
-  /** normal-grey */
-  --G0: #0A0A0A;
-  --G10: #141414;
-  --G20: #262626;
-  --G30: #383838;
-  --G40: #4D4D4D;
-  --G50: #6B6B6B;
-  --G60: #8A8A8A;
-  --G70: #CCCCCC;
-  --G80: #DDDDDD;
-  --G90: #E6E6E6;
-  
   /* link */
   --color-link-1: var(--color-brand1-6);
   --color-link-2: var(--color-brand1-5);
@@ -188,5 +177,134 @@
 
   /* card-bg */
   --color-card-1-bg: #141414;
-  --color-card-2-bg: #262626;  
+  --color-card-2-bg: #1c1c1c;
+
+  /* rgb color */
+  --color-error-2-rgb: 82,40,37;
+  --color-success-2-rgb: 28,66,46;
+  --color-brand1-2-rgb: 29,57,87;
+  --color-warning-2-rgb: 84,61,36;
+  --color-help-2-rgb: 82,68,28;
+  --color-mention-2-rgb: 65,29,122;
+
+  /** 樱桃红 **/
+  --color-C0: #291619;
+  --color-C10: #4D222B;
+  --color-C20: #662633;
+  --color-C30: #822638;
+  --color-C40: #9E213A;
+  --color-C50: #B81838;
+  --color-C60: #C9304F;
+  --color-C70: #E04F6C;
+  --color-C80: #ED98A9;
+  --color-C90: #FFCCD6;
+
+  /** 绛红 **/
+  --color-PR0: #291514;
+  --color-PR10: #47221F;
+  --color-PR20: #662B27;
+  --color-PR30: #85322A;
+  --color-PR40: #A3322A;
+  --color-PR50: #C22D23;
+  --color-PR60: #D15047;
+  --color-PR70: #E0766E;
+  --color-PR80: #F0A199;
+  --color-PR90: #FFCFCC;
+
+  /** 琥珀橙 **/
+  --color-A0: #241912;
+  --color-A10: #472E1D;
+  --color-A20: #6B3F20;
+  --color-A30: #8F4C1D;
+  --color-A40: #B55612;
+  --color-A50: #E66000;
+  --color-A60: #ED7E2F;
+  --color-A70: #F29D61;
+  --color-A80: #F7BE94;
+  --color-A90: #FFE1CC;
+
+  /** 香槟金 **/
+  --color-Gold0: #242112;
+  --color-Gold10: #474122;
+  --color-Gold20: #695F2F;
+  --color-Gold30: #8C7F3B;
+  --color-Gold40: #B0A046;
+  --color-Gold50: #D1BD4D;
+  --color-Gold60: #DECD6F;
+  --color-Gold70: #E8DA8B;
+  --color-Gold80: #F2E7AA;
+  --color-Gold90: #FFF7CC;
+
+  /** 青柠绿 **/
+  --color-L0: #191F10;
+  --color-L10: #303D1A;
+  --color-L20: #40571C;
+  --color-L30: #4E7018;
+  --color-L40: #527D0E;
+  --color-L50: #68A800;
+  --color-L60: #93CC47;
+  --color-L70: #AEDE6F;
+  --color-L80: #C9ED9A;
+  --color-L90: #EBFFCC;
+
+  /** 翡翠绿 **/
+  --color-E0: #101F1C;
+  --color-E10: #1C3B37;
+  --color-E20: #21524B;
+  --color-E30: #25695F;
+  --color-E40: #258073;
+  --color-E50: #229989;
+  --color-E60: #42B3A4;
+  --color-E70: #6ACCBF;
+  --color-E80: #9AE6DB;
+  --color-E90: #CCFFF8;
+
+  /** 孔雀蓝 **/
+  --color-M0: #0F1D1F;
+  --color-M10: #1F494F;
+  --color-M20: #1D727D;
+  --color-M30: #0E9DAD;
+  --color-M40: #00BACF;
+  --color-M50: #00C5DB;
+  --color-M60: #2ED3E6;
+  --color-M70: #5FDFED;
+  --color-M80: #94EDF7;
+  --color-M90: #CCFAFF;
+
+  /** 海洋蓝 **/
+  --color-Ocean0: #121E24;
+  --color-Ocean10: #1E3C47;
+  --color-Ocean20: #215A70;
+  --color-Ocean30: #19779C;
+  --color-Ocean40: #1289B8;
+  --color-Ocean50: #38A3C9;
+  --color-Ocean60: #58B2D6;
+  --color-Ocean70: #7BC5E3;
+  --color-Ocean80: #A1D9F0;
+  --color-Ocean90: #CCF1FF;
+
+  /** 天空蓝 **/
+  --color-Sky0: #152029;
+  --color-Sky10: #294359;
+  --color-Sky20: #345E82;
+  --color-Sky30: #3A76AB;
+  --color-Sky40: #398CD4;
+  --color-Sky50: #33A0FF;
+  --color-Sky60: #59B2FF;
+  --color-Sky70: #80C4FF;
+  --color-Sky80: #A6D5FF;
+  --color-Sky90: #CCE7FF;
+
+  /** 丁香紫 **/
+  --color-LP0: #211829;
+  --color-LP10: #452F5C;
+  --color-LP20: #5D3685;
+  --color-LP30: #7236AD;
+  --color-LP40: #781AD6;
+  --color-LP50: #8F1FFF;
+  --color-LP60: #B463FF;
+  --color-LP70: #C68AFF;
+  --color-LP80: #D9B0FF;
+  --color-LP90: #EBD6FF;
+
 }
