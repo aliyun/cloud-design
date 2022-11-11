@@ -9,4 +9,12 @@
     &:active {
         border-width: 1px;
     }
+    &:hover,
+    &.#{$css-prefix}focus {
+        box-shadow: none;
+    }
+}
+
+.next-input-group:hover {
+    box-shadow: none;
 }

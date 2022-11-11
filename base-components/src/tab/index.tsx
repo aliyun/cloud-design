@@ -16,7 +16,7 @@ const Tab: typeof NextTab = withThemeClass(
     
     const theme = useCssVar('--alicloudfe-components-theme').trim()
     
-    if (theme === 'hybridcloud' || theme === "hybridcloud-dark") {
+    if (theme === 'hybridcloud' || theme === "hybridcloud-dark" || theme.startsWith("yunxiao")) {
       return (
         <NextTab animation={false} {...props} ref={ref as any}>
           {children}

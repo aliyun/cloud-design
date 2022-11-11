@@ -1,7 +1,9 @@
 .next-modal-header {
-  height: var(--modal-header-height, 56px);
+  height: var(--modal-header-height, 48px);
   padding: var(--s-2) var(--s-8);
   gap: 64px;
+  box-shadow: none;
+  border-bottom: 1px solid var(--color-line1-1,#e8e8e8);
 
   .left-part {
     display: flex;
@@ -37,13 +39,16 @@
     align-items: center;
 
     .next-modal-title-icon {
-      color: var(--color-fill1-6, #8b8b8b);
+      color: var(--color-text1-2, #6e6e6e);
       font-size: var(--modal-title-icon-font-size, 30px);
       margin-right: var(--modal-title-icon-margin-right, 12px);
       cursor: pointer;
       transform: translateY(var(--modal-title-icon-transform-top, -1px));
       &::before {
         font-size: var(--modal-title-icon-font-size, 30px);
+      }
+      &:hover {
+        color: var(--color-brand1-6, #1b9aee);
       }
     }
   }
@@ -55,7 +60,7 @@
 }
 
 .next-modal-header-extra {
-  height: 56px;
+  height: 48px;
   padding: 8px 32px;
   background: var(--color-fill1-1, #fff);
   border-top: 1px solid var(--color-line1-1, #e8e8e8);
@@ -66,7 +71,7 @@
   background: var(--color-fill1-1, #fff);
 }
 .next-modal-body {
-  height: calc(100% - var(--modal-header-height, 56px));
+  height: calc(100% - var(--modal-header-height, 48px));
   background: var(--color-fill1-1, #fff);
 }
 .next-modal {

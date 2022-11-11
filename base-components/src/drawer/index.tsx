@@ -250,7 +250,8 @@ const Drawer: React.FC<DrawerProps> & {
     const drawerCustomClassName = cls({
       [`${prefix}drawer-has-footer`]: onOk || onCancel || renderFooter,
       [className]: !!className,
-      [`${prefix}drawer-large`]: size === 'large'
+      [`${prefix}drawer-large`]: size === 'large',
+      [`${prefix}drawer-has-sidebar`]: !!sidebar && theme === 'yunxiao-v5'
     })
 
     const drawerFooterClassName = cls({
