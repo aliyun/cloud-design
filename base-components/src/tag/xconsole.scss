@@ -18,9 +18,9 @@ $color-text1-2: var(--color-text1-2);
     &#{$tag-prefix}#{$tag-prefix}:hover {
       color: var(--tag-hover-color);
       background-color: var(--tag-hover-bg);
-      #{$icon-prefix}-close::before {
-        content: var(--icon-content-delete-filling);
-      }
+      // #{$icon-prefix}-close::before {
+      //   content: var(--icon-content-delete-filling);
+      // }
     }
   }
 }

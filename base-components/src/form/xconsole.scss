@@ -28,6 +28,7 @@ $form-cls-name: '#{$css-prefix}form';
 
     // 表示必填的*总是放在左边
     .#{$form-item-label-cls-name} {
+      color: #555555;
       label[required]::before {
         display: inline;
       }
@@ -37,6 +38,7 @@ $form-cls-name: '#{$css-prefix}form';
     }
 
     &-control {
+      color: #333333;
       .#{$select-cls-name} {
         // 修复表单中的下拉选择框的外边距问题, 该问题会将表单项撑高, 破坏整体视觉的连贯性
         margin: 0;
