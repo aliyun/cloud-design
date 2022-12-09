@@ -44,10 +44,10 @@ let Select: typeof NextSelect = React.forwardRef(
   }
 ) as any
 
-Select = HOC(Select) as any
+Select = HOC(Select, false) as any
 
 hoistNonReactStatics(Select, NextSelect)
 
-Select.AutoComplete = HOC(NextSelect.AutoComplete) as any
+Select.AutoComplete = HOC(NextSelect.AutoComplete, false) as any
 
 export default Select
