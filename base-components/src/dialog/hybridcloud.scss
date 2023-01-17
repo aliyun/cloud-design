@@ -10,6 +10,12 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
   .next-dialog-header {
     font-weight: 500;
   }
+  .next-dialog-body {
+    max-height: calc(100% - 121px) !important;
+  }
+  .next-dialog-body-no-footer {
+    max-height: calc(100% - 46px) !important;
+  }
 }
 
 .next-dialog-message.next-message.next-addon .next-message-content {
