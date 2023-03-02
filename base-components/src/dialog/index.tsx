@@ -78,7 +78,7 @@ const getQuickCustomWidth = (
   theme: string
 ) => {
   const sizeWidth = theme.startsWith('yunxiao')
-    ? yunxiaoSizeMap[size]
+    ? (theme === 'yunxiao-v5' ? yunxiaoV5SizeMap[size] : yunxiaoSizeMap[size])
     : sizeMap[size]
   if (sizeWidth) {
     return sizeWidth
