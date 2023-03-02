@@ -104,8 +104,8 @@
   --table-ping-right-shadow: inset -8px 0 8px -4px rgb(0 0 0 / 50%);
   --table-ping-left-shadow: inset 8px 0 8px -4px rgb(0 0 0 / 50%);
   // 在弹窗、抽屉、卡片 中，表格的内容背景色为G10、表头背景色为G20
-  --table-tr-fill-color:var(--color-fill1-3);
-  --table-th-fill-color:var(--color-fill1-4);
+  --table-tr-fill-color: var(--color-fill1-3);
+  --table-th-fill-color: var(--color-fill1-4);
 
   /* skeleton */
   --color-skeleton-bg-normal: #303030;
@@ -157,6 +157,16 @@
   --color-mention-8: #9B94FF;
   --color-mention-9: #BAB5FF;
   --color-mention-10: #D8D6FF;
+  --color-mention-1-rgb: 24, 23, 46;
+  --color-mention-2-rgb: 45, 40, 84;
+  --color-mention-3-rgb: 58, 52, 112;
+  --color-mention-4-rgb: 72, 64, 145;
+  --color-mention-5-rgb: 91, 80, 186;
+  --color-mention-6-rgb: 97, 84, 214;
+  --color-mention-7-rgb: 126, 117, 255;
+  --color-mention-8-rgb: 155, 148, 255;
+  --color-mention-9-rgb: 186, 181, 255;
+  --color-mention-10-rgb: 216, 214, 255;
 
   /* space grey */
   --space-grey-1: #131414;
@@ -169,6 +179,16 @@
   --space-grey-8: #9199A8;
   --space-grey-9: #B6BDCC;
   --space-grey-10: #D8DEEB;
+  --space-grey-1-rgb: 19, 20, 20;
+  --space-grey-2-rgb: 28, 29, 31;
+  --space-grey-3-rgb: 34, 35, 38;
+  --space-grey-4-rgb: 48, 51, 56;
+  --space-grey-5-rgb: 63, 67, 77;
+  --space-grey-6-rgb: 89, 95, 107;
+  --space-grey-7-rgb: 114, 122, 138;
+  --space-grey-8-rgb: 145, 153, 168;
+  --space-grey-9-rgb: 182, 189, 204;
+  --space-grey-10-rgb: 216, 222, 235;
 
   /* link */
   --color-link-1: var(--color-brand1-6);
@@ -180,12 +200,61 @@
   --color-card-2-bg: #1c1c1c;
 
   /* rgb color */
-  --color-error-2-rgb: 82,40,37;
-  --color-success-2-rgb: 28,66,46;
-  --color-brand1-2-rgb: 29,57,87;
-  --color-warning-2-rgb: 84,61,36;
-  --color-help-2-rgb: 82,68,28;
-  --color-mention-2-rgb: 65,29,122;
+  --color-error-10-rgb: 255, 208, 204;
+  --color-error-9-rgb: 250, 172, 165;
+  --color-error-8-rgb: 247, 139, 129;
+  --color-error-7-rgb: 245, 106, 93;
+  --color-error-5-rgb: 204, 73, 61;
+  --color-error-6-rgb: 242, 73, 58;
+  --color-error-4-rgb: 163, 66, 57;
+  --color-error-3-rgb: 122, 55, 49;
+  --color-error-2-rgb: 82, 40, 37;
+  --color-error-1-rgb: 41, 22, 20;
+
+  --color-success-10-rgb: 204, 255, 229;
+  --color-success-9-rgb: 152, 237, 193;
+  --color-success-8-rgb: 101, 219, 158;
+  --color-success-7-rgb: 56, 201, 127;
+  --color-success-5-rgb: 27, 150, 87;
+  --color-success-6-rgb: 18, 184, 98;
+  --color-success-4-rgb: 32, 122, 76;
+  --color-success-3-rgb: 32, 94, 62;
+  --color-success-2-rgb: 28, 66, 46;
+  --color-success-1-rgb: 15, 31, 22;
+
+  --color-brand1-7-rgb: 78, 159, 245;
+  --color-brand1-8-rgb: 119, 181, 247;
+  --color-brand1-2-rgb: 38, 60, 84;
+  --color-brand1-3-rgb: 47, 85, 125;
+  --color-brand1-4-rgb: 51, 105, 163;
+  --color-brand1-5-rgb: 48, 122, 201;
+  --color-brand1-10-rgb: 204, 229, 255;
+  --color-brand1-9-rgb: 160, 203, 250;
+  --color-brand1-6-rgb: 39, 137, 242;
+  --color-brand1-1-rgb: 24, 35, 46;
+
+  --color-warning-10-rgb: 255, 230, 204;
+  --color-warning-9-rgb: 255, 208, 158;
+  --color-warning-8-rgb: 255, 186, 112;
+  --color-warning-7-rgb: 255, 165, 69;
+  --color-warning-5-rgb: 212, 120, 21;
+  --color-warning-6-rgb: 230, 124, 11;
+  --color-warning-4-rgb: 168, 108, 44;
+  --color-warning-3-rgb: 128, 87, 45;
+  --color-warning-2-rgb: 84, 61, 36;
+  --color-warning-1-rgb: 36, 27, 18;
+
+  --color-help-10-rgb: 255, 242, 204;
+  --color-help-9-rgb: 255, 231, 161;
+  --color-help-8-rgb: 255, 220, 115;
+  --color-help-7-rgb: 255, 209, 71;
+  --color-help-5-rgb: 214, 168, 28;
+  --color-help-6-rgb: 255, 198, 25;
+  --color-help-4-rgb: 171, 140, 46;
+  --color-help-3-rgb: 128, 107, 46;
+  --color-help-2-rgb: 82, 68, 28;
+  --color-help-1-rgb: 36, 31, 18;
+
 
   /** 樱桃红 **/
   --color-C0: #291619;
@@ -194,10 +263,20 @@
   --color-C30: #822638;
   --color-C40: #9E213A;
   --color-C50: #B81838;
-  --color-C60: #C9304F;
+  --color-C60: #E81E47;
   --color-C70: #E04F6C;
   --color-C80: #ED98A9;
   --color-C90: #FFCCD6;
+  --color-C0-rgb: 41, 22, 25;
+  --color-C10-rgb: 77, 34, 43;
+  --color-C20-rgb: 102, 38, 51;
+  --color-C30-rgb: 130, 38, 56;
+  --color-C40-rgb: 158, 33, 58;
+  --color-C50-rgb: 184, 24, 56;
+  --color-C60-rgb: 232, 30, 71;
+  --color-C70-rgb: 224, 79, 108;
+  --color-C80-rgb: 237, 152, 169;
+  --color-C90-rgb: 255, 204, 214;
 
   /** 绛红 **/
   --color-PR0: #291514;
@@ -210,6 +289,16 @@
   --color-PR70: #E0766E;
   --color-PR80: #F0A199;
   --color-PR90: #FFCFCC;
+  --color-PR0-rgb: 41, 21, 20;
+  --color-PR10-rgb: 71, 34, 31;
+  --color-PR20-rgb: 102, 43, 39;
+  --color-PR30-rgb: 133, 50, 42;
+  --color-PR40-rgb: 163, 50, 42;
+  --color-PR50-rgb: 194, 45, 35;
+  --color-PR60-rgb: 209, 80, 71;
+  --color-PR70-rgb: 224, 118, 110;
+  --color-PR80-rgb: 240, 161, 153;
+  --color-PR90-rgb: 255, 207, 204;
 
   /** 琥珀橙 **/
   --color-A0: #241912;
@@ -222,6 +311,16 @@
   --color-A70: #F29D61;
   --color-A80: #F7BE94;
   --color-A90: #FFE1CC;
+  --color-A0-rgb: 36, 25, 18;
+  --color-A10-rgb: 71, 46, 29;
+  --color-A20-rgb: 107, 63, 32;
+  --color-A30-rgb: 143, 76, 29;
+  --color-A40-rgb: 181, 86, 18;
+  --color-A50-rgb: 230, 96, 0;
+  --color-A60-rgb: 237, 126, 47;
+  --color-A70-rgb: 242, 157, 97;
+  --color-A80-rgb: 247, 190, 148;
+  --color-A90-rgb: 255, 225, 204;
 
   /** 香槟金 **/
   --color-Gold0: #242112;
@@ -234,6 +333,16 @@
   --color-Gold70: #E8DA8B;
   --color-Gold80: #F2E7AA;
   --color-Gold90: #FFF7CC;
+  --color-Gold0-rgb: 36, 33, 18;
+  --color-Gold10-rgb: 71, 65, 34;
+  --color-Gold20-rgb: 105, 95, 47;
+  --color-Gold30-rgb: 140, 127, 59;
+  --color-Gold40-rgb: 176, 160, 70;
+  --color-Gold50-rgb: 209, 189, 77;
+  --color-Gold60-rgb: 222, 205, 111;
+  --color-Gold70-rgb: 232, 218, 139;
+  --color-Gold80-rgb: 242, 231, 170;
+  --color-Gold90-rgb: 255, 247, 204;
 
   /** 青柠绿 **/
   --color-L0: #191F10;
@@ -246,6 +355,16 @@
   --color-L70: #AEDE6F;
   --color-L80: #C9ED9A;
   --color-L90: #EBFFCC;
+  --color-L0-rgb: 25, 31, 16;
+  --color-L10-rgb: 48, 61, 26;
+  --color-L20-rgb: 64, 87, 28;
+  --color-L30-rgb: 78, 112, 24;
+  --color-L40-rgb: 82, 125, 14;
+  --color-L50-rgb: 104, 168, 0;
+  --color-L60-rgb: 147, 204, 71;
+  --color-L70-rgb: 174, 222, 111;
+  --color-L80-rgb: 201, 237, 154;
+  --color-L90-rgb: 235, 255, 204;
 
   /** 翡翠绿 **/
   --color-E0: #101F1C;
@@ -258,6 +377,16 @@
   --color-E70: #6ACCBF;
   --color-E80: #9AE6DB;
   --color-E90: #CCFFF8;
+  --color-E0-rgb: 16, 31, 28;
+  --color-E10-rgb: 28, 59, 55;
+  --color-E20-rgb: 33, 82, 75;
+  --color-E30-rgb: 37, 105, 95;
+  --color-E40-rgb: 37, 128, 115;
+  --color-E50-rgb: 34, 153, 137;
+  --color-E60-rgb: 66, 179, 164;
+  --color-E70-rgb: 106, 204, 191;
+  --color-E80-rgb: 154, 230, 219;
+  --color-E90-rgb: 204, 255, 248;
 
   /** 孔雀蓝 **/
   --color-M0: #0F1D1F;
@@ -270,6 +399,16 @@
   --color-M70: #5FDFED;
   --color-M80: #94EDF7;
   --color-M90: #CCFAFF;
+  --color-M0-rgb: 15, 29, 31;
+  --color-M10-rgb: 31, 73, 79;
+  --color-M20-rgb: 29, 114, 125;
+  --color-M30-rgb: 14, 157, 173;
+  --color-M40-rgb: 0, 186, 207;
+  --color-M50-rgb: 0, 197, 219;
+  --color-M60-rgb: 46, 211, 230;
+  --color-M70-rgb: 95, 223, 237;
+  --color-M80-rgb: 148, 237, 247;
+  --color-M90-rgb: 204, 250, 255;
 
   /** 海洋蓝 **/
   --color-Ocean0: #121E24;
@@ -282,6 +421,16 @@
   --color-Ocean70: #7BC5E3;
   --color-Ocean80: #A1D9F0;
   --color-Ocean90: #CCF1FF;
+  --color-Ocean0-rgb: 18, 30, 36;
+  --color-Ocean10-rgb: 30, 60, 71;
+  --color-Ocean20-rgb: 33, 90, 112;
+  --color-Ocean30-rgb: 25, 119, 156;
+  --color-Ocean40-rgb: 18, 137, 184;
+  --color-Ocean50-rgb: 56, 163, 201;
+  --color-Ocean60-rgb: 88, 178, 214;
+  --color-Ocean70-rgb: 123, 197, 227;
+  --color-Ocean80-rgb: 161, 217, 240;
+  --color-Ocean90-rgb: 204, 241, 255;
 
   /** 天空蓝 **/
   --color-Sky0: #152029;
@@ -294,6 +443,16 @@
   --color-Sky70: #80C4FF;
   --color-Sky80: #A6D5FF;
   --color-Sky90: #CCE7FF;
+  --color-Sky0-rgb: 21, 32, 41;
+  --color-Sky10-rgb: 41, 67, 89;
+  --color-Sky20-rgb: 52, 94, 130;
+  --color-Sky30-rgb: 58, 118, 171;
+  --color-Sky40-rgb: 57, 140, 212;
+  --color-Sky50-rgb: 51, 160, 255;
+  --color-Sky60-rgb: 89, 178, 255;
+  --color-Sky70-rgb: 128, 196, 255;
+  --color-Sky80-rgb: 166, 213, 255;
+  --color-Sky90-rgb: 204, 231, 255;
 
   /** 丁香紫 **/
   --color-LP0: #211829;
@@ -306,5 +465,39 @@
   --color-LP70: #C68AFF;
   --color-LP80: #D9B0FF;
   --color-LP90: #EBD6FF;
+  --color-LP0-rgb: 33, 24, 41;
+  --color-LP10-rgb: 69, 47, 92;
+  --color-LP20-rgb: 93, 54, 133;
+  --color-LP30-rgb: 114, 54, 173;
+  --color-LP40-rgb: 120, 26, 214;
+  --color-LP50-rgb: 143, 31, 255;
+  --color-LP60-rgb: 180, 99, 255;
+  --color-LP70-rgb: 198, 138, 255;
+  --color-LP80-rgb: 217, 176, 255;
+  --color-LP90-rgb: 235, 214, 255;
+
+  /** 中性灰 **/
+  --G0-rgb: 10, 10, 10;
+  --G10-rgb: 20, 20, 20;
+  --G20-rgb: 28, 28, 28;
+  --G30-rgb: 51, 51, 51;
+  --G40-rgb: 77, 77, 77;
+  --G50-rgb: 102, 102, 102;
+  --G60-rgb: 140, 140, 140;
+  --G70-rgb: 204, 204, 204;
+  --G80-rgb: 217, 217, 217;
+  --G90-rgb: 230, 230, 230;
+
+  /** 太空灰 **/
+  --S0-rgb: 19, 20, 20;
+  --S10-rgb: 55, 58, 61;
+  --S20-rgb: 65, 68, 74;
+  --S30-rgb: 72, 76, 84;
+  --S40-rgb: 82, 87, 97;
+  --S50-rgb: 89, 95, 107;
+  --S60-rgb: 114, 122, 138;
+  --S70-rgb: 145, 153, 168;
+  --S80-rgb: 182, 189, 204;
+  --S90-rgb: 216, 222, 235;
 
 }

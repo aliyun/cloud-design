@@ -622,7 +622,8 @@ const whiteVarList = [
   '--timeline-item-node-padding',
   '--date-picker2-time-bg',
   '--menu-item-padding-ver-padding-r',
-  '--menu-item-padding-ver-padding-l'
+  '--menu-item-padding-ver-padding-l',
+  '--search-before-title-icon-margin'
 ]
 // 递归文件
 const fileDisplay = filePath => {

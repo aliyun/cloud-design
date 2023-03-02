@@ -1,6 +1,7 @@
 .next-table-row {
   .next-table-cell.next-table-selection {
     position: relative;
+
     .next-checkbox-wrapper.checked {
       &::before {
         content: '';
@@ -23,18 +24,18 @@
 }
 
 .next-table-ping-right
-  .next-table-expanded-area
-  .next-table-ping-right
-  .next-table-fix-right-first:after,
+.next-table-expanded-area
+.next-table-ping-right
+.next-table-fix-right-first:after,
 .next-table-ping-right .next-table-fix-right-first:after {
   box-shadow: var(--table-ping-right-shadow);
 }
 
 .next-table-ping-left
-  .next-table-expanded-area
-  .next-table-ping-left
-  .next-table-fix-left-last::after,
-  .next-table-ping-left .next-table-fix-left-last::after {
+.next-table-expanded-area
+.next-table-ping-left
+.next-table-fix-left-last::after,
+.next-table-ping-left .next-table-fix-left-last::after {
   box-shadow: var(--table-ping-left-shadow);
 }
 
@@ -46,15 +47,26 @@
   word-break: break-word;
 }
 
-/** 
+/**
   在弹窗、抽屉、卡片 中，表格的内容背景色为G10、表头背景色为G20
 */
 .next-dialog, .next-drawer, .next-card {
   .next-table th {
-    background: var(--table-th-fill-color,#f7f7f7);
+    background: var(--table-th-fill-color, #f7f7f7);
   }
 
-  .next-table-row{
+  .next-table-row {
     background: var(--table-tr-fill-color, #ffffff);
+  }
+}
+
+// 表格批量操作第一列多选框没居中
+.next-table-row {
+  .next-table-cell.first {
+    .next-table-cell-wrapper {
+      .next-checkbox-wrapper {
+        display: flex;
+      }
+    }
   }
 }
