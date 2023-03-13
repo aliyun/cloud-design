@@ -5,6 +5,42 @@
     
     
     
+    --color-text1-8: rgba(64,64,64,1);
+    
+    
+    
+    --color-tag-disable: rgba(104,187,242,1);
+    
+    
+    
+    --color-other-16: rgba(104,187,242,1);
+    
+    
+    
+    --color-tag-hover: rgba(0,62,124,1);
+    
+    
+    
+    --color-other-15: rgba(0,62,124,1);
+    
+    
+    
+    --color-tag-bg: rgba(197,232,255,1);
+    
+    
+    
+    --color-other-14: rgba(197,232,255,1);
+    
+    
+    
+    --color-tag-al: rgba(0,85,171,1);
+    
+    
+    
+    --color-other-13: rgba(0,85,171,1);
+    
+    
+    
     --color-fill1-10: rgba(247,247,247,1);
     
     
@@ -6917,10 +6953,6 @@
     
     
     
-    --tag-fill-text-color: var(--color-brand1-8, #003e7c);
-    
-    
-    
     --tag-closable-normal-icon-color: var(--color-transparent, transparent);
     
     
@@ -6969,10 +7001,6 @@
     
     
     
-    --tag-fill-tail-color: var(--color-brand1-6, #006ad4);
-    
-    
-    
     --tag-fill-border-color: var(--color-transparent, transparent);
     
     
@@ -6993,15 +7021,7 @@
     
     
     
-    --tag-secondary-text-color: var(--color-brand1-8, #003e7c);
-    
-    
-    
     --tag-fill-text-color-hover: var(--color-brand1-8, #003e7c);
-    
-    
-    
-    --tag-fill-tail-color-hover: var(--color-brand1-6, #006ad4);
     
     
     
@@ -7057,19 +7077,11 @@
     
     
     
-    --tag-secondary-bg: var(--color-brand2-1, #ddf1ff);
-    
-    
-    
     --tag-fill-bg-color-hover: var(--color-brand2-2, #c5e8ff);
     
     
     
     --tag-bordered-bg-hover: var(--color-text1-6, rgba(206, 206, 206, 0.7));
-    
-    
-    
-    --tag-secondary-bg-hover: var(--color-brand2-2, #c5e8ff);
     
     
     
@@ -7145,31 +7157,11 @@
     
     
     
-    --tag-checkable-primary-text-color: var(--color-brand1-8, #003e7c);
-    
-    
-    
-    --tag-checkable-primary-bg-color: var(--color-brand2-1, #ddf1ff);
-    
-    
-    
     --tag-checkable-primary-border-color: var(--color-transparent, transparent);
     
     
     
-    --tag-checkable-primary-text-color-hover: var(--color-brand1-8, #003e7c);
-    
-    
-    
-    --tag-checkable-primary-bg-color-hover: var(--color-brand2-2, #c5e8ff);
-    
-    
-    
     --tag-checkable-primary-border-color-hover: var(--color-transparent, transparent);
-    
-    
-    
-    --tag-checkable-primary-bg-color-disabled: var(--color-brand2-1, #ddf1ff);
     
     
     
@@ -7185,19 +7177,7 @@
     
     
     
-    --tag-closable-primary-fill-text-color: var(--color-brand1-8, #003e7c);
-    
-    
-    
     --tag-closable-primary-fill-border-color: var(--color-transparent, transparent);
-    
-    
-    
-    --tag-closable-primary-fill-bg-color: var(--color-brand2-1, #ddf1ff);
-    
-    
-    
-    --tag-closable-primary-fill-text-color-hover: var(--color-brand1-8, #003e7c);
     
     
     
@@ -7205,15 +7185,7 @@
     
     
     
-    --tag-closable-primary-fill-bg-color-hover: var(--color-brand2-2, #c5e8ff);
-    
-    
-    
     --tag-closable-primary-fill-border-color-disabled: var(--color-transparent, transparent);
-    
-    
-    
-    --tag-closable-primary-fill-bg-color-disabled: var(--color-brand2-1, #ddf1ff);
     
     
     
@@ -7353,15 +7325,79 @@
     
     
     
-    --tag-fill-tail-color-disabled: var(--color-brand1-3, #68bbf2);
+    --tag-fill-text-color: var(--color-notice-6, #0055ab);
     
     
     
-    --tag-checkable-primary-text-color-disabled: var(--color-brand1-3, #68bbf2);
+    --tag-fill-tail-color: var(--color-tag-al, #0055ab);
     
     
     
-    --tag-closable-primary-fill-text-color-disabled: var(--color-brand1-4, #2a9feb);
+    --tag-fill-tail-color-hover: var(--color-tag-al, #0055ab);
+    
+    
+    
+    --tag-checkable-primary-text-color: var(--color-tag-al, #0055ab);
+    
+    
+    
+    --tag-checkable-primary-bg-color: var(--color-tag-bg, #c5e8ff);
+    
+    
+    
+    --tag-checkable-primary-text-color-hover: var(--color-tag-hover, #003e7c);
+    
+    
+    
+    --tag-closable-primary-fill-text-color: var(--color-tag-al, #0055ab);
+    
+    
+    
+    --tag-closable-primary-fill-text-color-hover: var(--color-tag-hover, #003e7c);
+    
+    
+    
+    --tag-closable-primary-fill-bg-color-hover: var(--color-tag-bg, #c5e8ff);
+    
+    
+    
+    --tag-fill-tail-color-disabled: var(--color-tag-disable, #68bbf2);
+    
+    
+    
+    --tag-secondary-text-color: var(--color-tag-al, #0055ab);
+    
+    
+    
+    --tag-secondary-bg: var(--color-tag-bg, #c5e8ff);
+    
+    
+    
+    --tag-secondary-bg-hover: var(--color-tag-bg, #c5e8ff);
+    
+    
+    
+    --tag-checkable-primary-text-color-disabled: var(--color-tag-disable, #68bbf2);
+    
+    
+    
+    --tag-checkable-primary-bg-color-hover: var(--color-tag-bg, #c5e8ff);
+    
+    
+    
+    --tag-checkable-primary-bg-color-disabled: var(--color-tag-bg, #c5e8ff);
+    
+    
+    
+    --tag-closable-primary-fill-bg-color: var(--color-tag-bg, #c5e8ff);
+    
+    
+    
+    --tag-closable-primary-fill-text-color-disabled: var(--color-tag-disable, #68bbf2);
+    
+    
+    
+    --tag-closable-primary-fill-bg-color-disabled: var(--color-tag-bg, #c5e8ff);
     
     
     /* ------------------------ input ------------------------ */
@@ -7504,10 +7540,6 @@
     
     
     
-    --input-multiple-corner: var(--corner-1, 2px);
-    
-    
-    
     --input-addon-padding: var(--s-2, 8px);
     
     
@@ -7557,6 +7589,10 @@
     
     
     --input-hover-border-color: var(--color-brand1-4, #2a9feb);
+    
+    
+    
+    --input-multiple-corner: var(--corner-2, 4px);
     
     
     /* ------------------------ form ------------------------ */
@@ -11986,10 +12022,6 @@
     
     
     
-    --nav-normal-item-selected-bg-color: var(--color-brand1-1, #ddf1ff);
-    
-    
-    
     --nav-normal-item-selected-text-color: var(--color-text1-4, #292929);
     
     
@@ -12443,6 +12475,10 @@
     
     
     --nav-normal-shadow: var(--shadow-zero, none);
+    
+    
+    
+    --nav-normal-item-selected-bg-color: var(--color-brand1-2, #C5E8FF);
     
     
     /* ------------------------ tab ------------------------ */
