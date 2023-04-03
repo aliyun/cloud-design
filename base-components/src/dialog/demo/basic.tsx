@@ -6,7 +6,9 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import { Button, Dialog } from '@alicloudfe/components'
+import { Button, Dialog, Form, Input } from '@alicloudfe/components'
+
+const FormItem = Form.Item;
 
 class Demo extends React.Component {
   state = {

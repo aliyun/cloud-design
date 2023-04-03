@@ -229,7 +229,10 @@ const Dialog: React.FC<CustomDialogProps> & {
         theme === 'yunxiao-v5' && sidebar && <div className='next-dialog-sidebar'>{sidebar}</div>
       }
       {
-        children
+        theme === 'yunxiao-v5' && sidebar && <div className='next-dialog-content'>{children}</div>
+      }
+      {
+        !(theme === 'yunxiao-v5' && sidebar) && children
       }
     </NextDialog>
   )
