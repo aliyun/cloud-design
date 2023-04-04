@@ -266,7 +266,7 @@ class Modal extends React.Component<
         <div className={`${prefix}modal-title-box`}>
           {this.props.hasArrow && (
             <Icon
-              type="LeftNormal"
+              type="Back"
               className={`${prefix}modal-title-icon`}
               onClick={() => {
                 const { onBack } = this.props

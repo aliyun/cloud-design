@@ -47,10 +47,11 @@
       font-size: 20px;
       margin-right: var(--modal-title-icon-margin-right, 12px);
       cursor: pointer;
-      transform: translateY(var(--modal-title-icon-transform-top, -1px));
+      transform: translateY(0px);
       &::before {
         font-size: 20px;
         width: 32px;
+        vertical-align: 0em;
       }
       &:hover {
         color: var(--color-brand1-6, #1b9aee);
