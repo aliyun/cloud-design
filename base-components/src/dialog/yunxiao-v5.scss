@@ -29,6 +29,7 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
       min-width: 800px;
     }
     &#{$dialog-prefix}-with-sidebar #{$dialog-prefix}-body {
+      overflow-y: hidden !important;
       display: flex;
       #{$dialog-prefix}-sidebar {
         width: 160px;
@@ -39,6 +40,12 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
         .#{$css-prefix}tabs-wrapped.#{$css-prefix}tabs-left > .#{$css-prefix}tabs-bar {
           float: initial; // hack sidebar内的竖向Tab，以撑满Sidebar
         }
+      }
+      .#{$css-prefix}-content {
+        width: calc(100% - 120px);
+        overflow-y: scroll;
+        margin: -16px -20px;
+        padding: 16px 20px;
       }
     }
   }

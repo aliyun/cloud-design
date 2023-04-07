@@ -1,4 +1,4 @@
-import { Dialog as NextDialog } from '@alifd/next'
+import { Dialog as NextDialog, Message } from '@alifd/next'
 import ReactDOM from 'react-dom'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import React, { useEffect, useRef } from 'react'
@@ -8,6 +8,7 @@ import {
   QuickShowConfig,
   QuickShowRet
 } from '@alifd/next/types/dialog'
+import { MessageProps } from '@alifd/next/types/message'
 
 type CustomDialogProps = DialogProps & {
   /**
@@ -18,6 +19,9 @@ type CustomDialogProps = DialogProps & {
   sidebar?: React.ReactNode,
   /** extra 区域 **/
   extra?: React.ReactNode;
+  // 是否是快捷类型，仅云效主题生效
+  quickShow?: boolean;
+  messageProps?: MessageProps,
 }
 
 type CustomQuickShowConfig = QuickShowConfig & {
@@ -138,7 +142,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   moderateAlert: (config: CustomQuickShowConfig) => QuickShowRet
   severeAlert: (config: CustomQuickShowConfig) => QuickShowRet
 } = (props) => {
-  const { size, sidebar, extra, title, children, ...others } = props
+  const { size, sidebar, extra, title, children, quickShow, messageProps = {type: 'notice'}, ...others } = props
   const { prefix = 'next-' } = props
   const theme = useCssVar('--alicloudfe-components-theme').trim()
 
@@ -215,8 +219,8 @@ const Dialog: React.FC<CustomDialogProps> & {
 
   return (
     <NextDialog
-      className={`${size === 'large' ? 'next-dialog-large' : ''}${theme === 'yunxiao-v5' && sidebar ? ' next-dialog-with-sidebar': ''}`}
-      title={renderTitle(prefix, theme, title, extra)}
+      className={`${size === 'large' ? `${prefix}dialog-large` : ''}${theme === 'yunxiao-v5' && sidebar ? ` ${prefix}dialog-with-sidebar`: ''}${theme === 'yunxiao-v5' && quickShow ? ` ${prefix}dialog-quick` : ''}`}
+      title={!(theme === 'yunxiao-v5' && quickShow) && renderTitle(prefix, theme, title, extra)}
       width={getCustomWidth(size, theme)}
       footerActions={defaultFooterActions}
       v2
@@ -226,11 +230,19 @@ const Dialog: React.FC<CustomDialogProps> & {
       ref={customRef}
     >
       {
-        theme === 'yunxiao-v5' && sidebar && <div className='next-dialog-sidebar'>{sidebar}</div>
+        theme === 'yunxiao-v5' && !quickShow && (
+          <>
+            {sidebar ? (
+              <>
+                <div className={`${prefix}dialog-sidebar`}>{sidebar}</div>
+                <div className={`${prefix}dialog-content`}>{children}</div>
+              </>
+              ) : children}
+          </>
+        )
       }
-      {
-        children
-      }
+      { theme === 'yunxiao-v5' && quickShow && <Message className={`${prefix}dialog-message`} title={title} shape="addon" {...messageProps} >{children}</Message> }
+      { theme !== 'yunxiao-v5' && children }
     </NextDialog>
   )
 }

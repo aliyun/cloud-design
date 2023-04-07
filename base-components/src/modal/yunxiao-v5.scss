@@ -40,12 +40,18 @@
 
     .next-modal-title-icon {
       color: var(--color-text1-2, #6e6e6e);
-      font-size: var(--modal-title-icon-font-size, 30px);
+      line-height: 32px;
+      width: 32px;
+      background-color: var(--color-brand3-1,#f2f5f7);
+      border-radius: 4px;
+      font-size: 20px;
       margin-right: var(--modal-title-icon-margin-right, 12px);
       cursor: pointer;
-      transform: translateY(var(--modal-title-icon-transform-top, -1px));
+      transform: translateY(0px);
       &::before {
-        font-size: var(--modal-title-icon-font-size, 30px);
+        font-size: 20px;
+        width: 32px;
+        vertical-align: 0em;
       }
       &:hover {
         color: var(--color-brand1-6, #1b9aee);
