@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-57669@1.5.1 (https://fusion.design)
+ * @alife/theme-57669@1.5.3 (https://fusion.design)
  * @alifd/next@1.25.51 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -2774,8 +2774,8 @@
     color: var(--balloon-primary-color, #FFFFFF);
     border-color: transparent;
     border-color: var(--balloon-primary-color-border, transparent);
-    background-color: #62656f;
-    background-color: var(--balloon-primary-color-bg, #62656f);
+    background-color: #404040;
+    background-color: var(--balloon-primary-color-bg, #404040);
     -webkit-box-shadow: none;
     -webkit-box-shadow: var(--balloon-primary-shadow, none);
             box-shadow: none;
@@ -2829,8 +2829,8 @@
               box-sizing: content-box !important;
       border: 1px solid transparent;
       border: var(--balloon-primary-border-width, 1px) var(--balloon-border-style, solid) var(--balloon-primary-color-border, transparent);
-      background-color: #62656f;
-      background-color: var(--balloon-primary-color-bg, #62656f);
+      background-color: #404040;
+      background-color: var(--balloon-primary-color-bg, #404040);
       z-index: -1; }
     .next-balloon-primary.next-balloon-top:after {
       top: calc(0px - 8px/2 - 1px);
@@ -3098,8 +3098,8 @@
   color: var(--balloon-tooltip-color, #FFFFFF);
   border-color: transparent;
   border-color: var(--balloon-tooltip-color-border, transparent);
-  background-color: #62656f;
-  background-color: var(--balloon-tooltip-color-bg, #62656f);
+  background-color: #404040;
+  background-color: var(--balloon-tooltip-color-bg, #404040);
   -webkit-box-shadow: none;
   -webkit-box-shadow: var(--balloon-tooltip-shadow, none);
           box-shadow: none;
@@ -3135,8 +3135,8 @@
       height: 8px;
       height: var(--balloon-size-arrow-size, 8px);
       margin: auto;
-      background-color: #62656f;
-      background-color: var(--balloon-tooltip-color-bg, #62656f);
+      background-color: #404040;
+      background-color: var(--balloon-tooltip-color-bg, #404040);
       border: 1px solid transparent;
       border: var(--balloon-tooltip-border-width, 1px) var(--balloon-tooltip-border-style, solid) var(--balloon-tooltip-color-border, transparent);
       pointer-events: auto; }
@@ -3289,8 +3289,8 @@
   .next-balloon-tooltip.hidden {
     display: none; }
   .next-balloon-tooltip-medium {
-    padding: 4px 12px 4px 12px;
-    padding: var(--balloon-tooltip-size-padding-top, 4px) var(--balloon-tooltip-size-padding-right, 12px) var(--balloon-tooltip-size-padding-bottom, 4px) var(--balloon-tooltip-size-padding-left, 12px); }
+    padding: 8px 12px 8px 12px;
+    padding: var(--balloon-tooltip-size-padding-top, 8px) var(--balloon-tooltip-size-padding-right, 12px) var(--balloon-tooltip-size-padding-bottom, 8px) var(--balloon-tooltip-size-padding-left, 12px); }
 
 .next-balloon[dir="rtl"] {
   /* 带关闭按钮的右侧padding变大 */ }
@@ -3510,8 +3510,8 @@
     left: calc(var(--balloon-size-arrow-margin, 12px) - 2px);
     right: auto; }
   .next-balloon-tooltip[dir="rtl"].next-balloon-tooltip-medium {
-    padding: 4px 12px 4px 12px;
-    padding: var(--balloon-tooltip-size-padding-top, 4px) var(--balloon-tooltip-size-padding-left, 12px) var(--balloon-tooltip-size-padding-bottom, 4px) var(--balloon-tooltip-size-padding-right, 12px); }
+    padding: 8px 12px 8px 12px;
+    padding: var(--balloon-tooltip-size-padding-top, 8px) var(--balloon-tooltip-size-padding-left, 12px) var(--balloon-tooltip-size-padding-bottom, 8px) var(--balloon-tooltip-size-padding-right, 12px); }
 
 .next-menu[dir="rtl"] .next-menu-item-helper {
   float: left; }
