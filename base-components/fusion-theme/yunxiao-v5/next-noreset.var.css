@@ -1,5 +1,5 @@
 /*!
- * @alife/theme-57669@1.5.4 (https://fusion.design)
+ * @alife/theme-57669@1.5.7 (https://fusion.design)
  * @alifd/next@1.25.51 (https://fusion.design)
  * Copyright 2018-present Alibaba Group,
  * Licensed under MIT (https://github.com/alibaba-fusion/next/blob/master/LICENSE)
@@ -7623,8 +7623,8 @@
       color: #292929;
       color: var(--message-success-color-title-inline, #292929); }
     .next-message.next-message-success.next-inline .next-message-content {
-      color: #6E6E6E;
-      color: var(--message-success-color-content-inline, #6E6E6E); }
+      color: #575757;
+      color: var(--message-success-color-content-inline, #575757); }
     .next-message.next-message-success.next-inline .next-message-symbol {
       color: #35af58;
       color: var(--message-success-color-icon-inline, #35af58); }
@@ -7642,8 +7642,8 @@
       color: #292929;
       color: var(--message-success-color-title-addon, #292929); }
     .next-message.next-message-success.next-addon .next-message-content {
-      color: #6E6E6E;
-      color: var(--message-success-color-content-addon, #6E6E6E); }
+      color: #575757;
+      color: var(--message-success-color-content-addon, #575757); }
     .next-message.next-message-success.next-addon .next-message-symbol {
       color: #35af58;
       color: var(--message-success-color-icon-addon, #35af58); }
@@ -7703,8 +7703,8 @@
       color: #292929;
       color: var(--message-warning-color-title-addon, #292929); }
     .next-message.next-message-warning.next-addon .next-message-content {
-      color: #6E6E6E;
-      color: var(--message-warning-color-content-addon, #6E6E6E); }
+      color: #575757;
+      color: var(--message-warning-color-content-addon, #575757); }
     .next-message.next-message-warning.next-addon .next-message-symbol {
       color: #e28200;
       color: var(--message-warning-color-icon-addon, #e28200); }
@@ -7764,8 +7764,8 @@
       color: #292929;
       color: var(--message-error-color-title-addon, #292929); }
     .next-message.next-message-error.next-addon .next-message-content {
-      color: #6E6E6E;
-      color: var(--message-error-color-content-addon, #6E6E6E); }
+      color: #575757;
+      color: var(--message-error-color-content-addon, #575757); }
     .next-message.next-message-error.next-addon .next-message-symbol {
       color: #cd3021;
       color: var(--message-error-color-icon-addon, #cd3021); }
@@ -7806,8 +7806,8 @@
       color: #292929;
       color: var(--message-notice-color-title-inline, #292929); }
     .next-message.next-message-notice.next-inline .next-message-content {
-      color: #6E6E6E;
-      color: var(--message-notice-color-content-inline, #6E6E6E); }
+      color: #575757;
+      color: var(--message-notice-color-content-inline, #575757); }
     .next-message.next-message-notice.next-inline .next-message-symbol {
       color: #006ad4;
       color: var(--message-notice-color-icon-inline, #006ad4); }
@@ -7825,8 +7825,8 @@
       color: #292929;
       color: var(--message-notice-color-title-addon, #292929); }
     .next-message.next-message-notice.next-addon .next-message-content {
-      color: #6E6E6E;
-      color: var(--message-notice-color-content-addon, #6E6E6E); }
+      color: #575757;
+      color: var(--message-notice-color-content-addon, #575757); }
     .next-message.next-message-notice.next-addon .next-message-symbol {
       color: #006ad4;
       color: var(--message-notice-color-icon-addon, #006ad4); }
@@ -7985,8 +7985,8 @@
   .next-message.next-medium {
     border-width: 1px;
     border-width: var(--message-size-m-border-width, 1px);
-    padding: 8px;
-    padding: var(--message-size-m-padding, 8px); }
+    padding: 4px;
+    padding: var(--message-size-m-padding, 4px); }
     .next-message.next-medium .next-message-symbol {
       float: left;
       line-height: 20px;
@@ -8010,8 +8010,8 @@
       margin-top: var(--message-size-m-content-margin-top, 4px);
       padding: 0 8px 0 calc(8px + 20px);
       padding: 0 var(--message-size-m-title-content-padding-right, 8px) 0 calc(var(--message-size-m-title-content-padding-left, 8px) + var(--message-size-m-icon, 20px));
-      font-size: 14px;
-      font-size: var(--message-size-m-content-font, 14px);
+      font-size: 12px;
+      font-size: var(--message-size-m-content-font, 12px);
       line-height: 1.5;
       line-height: var(--font-lineheight-2, 1.5); }
     .next-message.next-medium .next-message-symbol + .next-message-content {
@@ -17051,7 +17051,7 @@
         border-radius: var(--slick-dots-border-radius, 50%);
         background: rgba(0, 0, 0, 0.2); }
         .next-slick-dots-item button:focus, .next-slick-dots-item button:hover {
-          background-color: rgba(255, 255, 255, 0.2);
+          background-color: rgba(0, 0, 0, 0.4);
           /* border-width: $slick-dots-border-width-hover; */
           border-color: white; }
       .next-slick-dots-item.active button {

@@ -1,0 +1,46 @@
+.next-balloon-tooltip,
+.next-balloon {
+  max-height: 320px;
+
+  .next-balloon-content {
+    overflow-y: scroll;
+    max-height: calc(320px - 2 * var(--balloon-size-padding-top, 8px));
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--color-text1-7, #8b8b8b); // 滑块颜色
+      border-radius: 1px; // 滑块圆角
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: var(--color-text1-2, #6e6e6e); // 鼠标移入滑块变色
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 0; // 轨道圆角
+      background-color: var(--color-text1-8, #404040); // 轨道颜色
+    }
+  }
+  &:not(.next-balloon-closable) {
+    .next-balloon-content {
+      margin-right: calc(-1 * var(--balloon-size-padding-right, 12px));
+      padding-right: var(--balloon-size-padding-right, 12px);
+    }
+  }
+
+  &.next-balloon-closable {
+    .next-balloon-content {
+      margin-right: calc(-1 * var(--balloon-size-padding-closable-right, 40px));
+      padding-right: var(--balloon-size-padding-closable-right, 40px);
+    }
+  }
+
+  &.next-balloon-normal {
+    .next-balloon-content {
+      &::-webkit-scrollbar-track {
+        border-radius: 0; // 轨道圆角
+        background-color: var(--balloon-normal-color-bg, #FFFFFF); // 轨道颜色
+      }
+    }
+  }
+}
