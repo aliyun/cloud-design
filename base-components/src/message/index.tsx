@@ -7,8 +7,8 @@ import { useCssVar } from '../utils/useCssVar'
 type NextMessageProps = MessageProps & {
   // message附带额外的操作区，仅云效主题生效
   extra?: string | React.ReactNode
-  // 操作区为单个string时，跳转的路径
-  link?: string
+  // 操作区为单个string时，跳转a标签的属性
+  linkProps?: React.AnchorHTMLAttributes<HTMLAnchorElement>
   // extra的位置，紧跟文字 或 右对齐，仅云效主题生效
   extraPlace?: 'left' | 'right'
 }
@@ -16,14 +16,14 @@ type NextMessageProps = MessageProps & {
 const renderWithLink = (
   component: React.ReactNode,
   extra?: string | React.ReactNode,
-  link?: string,
+  linkProps?: React.AnchorHTMLAttributes<HTMLAnchorElement>,
   extraPlace?: 'left' | 'right'
 ) => {
   if (typeof extra === 'string') {
     return (
       <>
         {component}
-        <a href={link} className={`next-message-link ${extraPlace}`}>
+        <a {...linkProps} className={`next-message-link ${extraPlace}`}>
           {extra}
         </a>
       </>
@@ -41,15 +41,15 @@ const renderWithLink = (
 const Message: typeof NextMessage = React.forwardRef(
   (props: NextMessageProps, ref) => {
     const theme = useCssVar('--alicloudfe-components-theme').trim()
-    const { link = '', extraPlace = 'right', extra = '', ...others } = props
+    const { linkProps = {}, extraPlace = 'right', extra = '', ...others } = props
     if (theme.startsWith('yunxiao')) {
       const title =
         others.title && extra
-          ? renderWithLink(others.title, extra, link, extraPlace)
+          ? renderWithLink(others.title, extra, linkProps, extraPlace)
           : others.title
       const content =
         !others.title && extra
-          ? renderWithLink(others.children, extra, link, extraPlace)
+          ? renderWithLink(others.children, extra, linkProps, extraPlace)
           : others.children
       return (
         <NextMessage
