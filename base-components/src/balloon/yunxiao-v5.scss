@@ -3,7 +3,7 @@
   max-height: 320px;
 
   .next-balloon-content {
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: calc(320px - 2 * var(--balloon-size-padding-top, 8px));
     &::-webkit-scrollbar {
       width: 8px;

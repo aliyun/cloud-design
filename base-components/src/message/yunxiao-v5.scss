@@ -1,0 +1,33 @@
+// 调整关闭图标位置
+.next-message.next-message .next-message-close {
+  top: 6.5px;
+}
+
+.next-message {
+  .next-message-content,
+  .next-message-title {
+    .next-message-extra,
+    .next-message-link {
+      &.right {
+        float: right;
+      }
+    }
+  }
+  .next-message-close + .next-message-symbol-icon + .next-message-title {
+    .next-message-extra,
+    .next-message-link {
+      &.right {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .next-message-close + .next-message-symbol-icon + .next-message-content {
+    .next-message-extra,
+    .next-message-link {
+      &.right {
+        margin-right: 24px;
+      }
+    }
+  }
+}
