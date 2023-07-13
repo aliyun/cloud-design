@@ -87,21 +87,46 @@
 }
 
 // 纵向
-.next-tabs.next-tabs-wrapped.next-tabs-vertical.next-tabs-left.next-medium > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab {
+.next-tabs.next-tabs-wrapped.next-tabs-vertical.next-tabs-left.next-medium
+  > .next-tabs-bar
+  .next-tabs-nav-container
+  .next-tabs-tab {
   margin: 8px 0;
   &:first-child {
     margin-top: 0;
   }
   .next-tabs-tab-inner {
-    padding: var(--tab-item-padding-tb-size-m, 8px) var(--tab-item-padding-lr-size-m, 20px);
+    padding: var(--tab-item-padding-tb-size-m, 8px)
+      var(--tab-item-padding-lr-size-m, 20px);
   }
 }
-.next-tabs.next-tabs-wrapped.next-tabs-vertical.next-tabs-left.next-small > .next-tabs-bar .next-tabs-nav-container .next-tabs-tab {
+.next-tabs.next-tabs-wrapped.next-tabs-vertical.next-tabs-left.next-small
+  > .next-tabs-bar
+  .next-tabs-nav-container
+  .next-tabs-tab {
   margin: 8px 0;
   &:first-child {
     margin-top: 0;
   }
   .next-tabs-tab-inner {
-    padding: var(--tab-item-padding-tb-size-s, 6px) var(--tab-item-padding-lr-size-s, 12px);
+    padding: var(--tab-item-padding-tb-size-s, 6px)
+      var(--tab-item-padding-lr-size-s, 12px);
   }
+}
+
+// 关掉tab的动画
+.next-tabs-nav {
+  transition: none;
+  &-enter,
+  &-appear {
+    animation: none;
+  }
+
+  &-leave {
+    animation: none;
+  }
+}
+
+.next-tabs-tab:before {
+  transition: none;
 }
