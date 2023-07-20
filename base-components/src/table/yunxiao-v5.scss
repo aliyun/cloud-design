@@ -1,0 +1,11 @@
+.next-table-fixed {
+  // 防止锁列时header不对齐
+  .next-table-inner {
+    .next-table-header {
+      margin-right: 6px !important;
+      .next-table-header-fixer {
+        width: 6px !important;
+      }
+    }
+  }
+}
