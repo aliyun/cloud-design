@@ -56,6 +56,8 @@ themes.forEach(async (theme) => {
   fs.ensureDirSync(path.join(__dirname, '../dist'))
   fs.writeFileSync(path.join(__dirname, `../dist/${themeName}.css`), cssText)
 
+  fs.writeFileSync(path.join(__dirname, `../dist/${themeName}-without-icon-font.css`), withoutIconFont(cssText))
+
   // 生成不带css var定义的css
   log(`generate ${themeName}-no-var.css...`)
   const noVarResult = sass.renderSync({
@@ -153,4 +155,21 @@ themes.forEach(async (theme) => {
 //     })
 //   }
 // }
+
+function withoutIconFont(originalText) {
+  /*
+  匹配css中的以下声明：
+  @font-face {
+    font-family: NextIcon
+    src: url("//at.alicdn.com/t/font_1435786_mueafw9pwd.eot");
+    src: url("//at.alicdn.com/t/font_1435786_mueafw9pwd.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.woff2") format("woff2"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.woff") format("woff"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.ttf") format("truetype"), url("//at.alicdn.com/t/font_1435786_mueafw9pwd.svg#NextIcon") format("svg"); }
+  */
+  const reg =
+    /@font-face\s*{(\s|\n)*font-family:(\s|\n)*NextIcon;[\s\S\n]*?format\("svg"\);(\s|\n|.)*?}/g
+
+  const result = originalText.replace(reg, '')
+
+  return result
+}
+
 
