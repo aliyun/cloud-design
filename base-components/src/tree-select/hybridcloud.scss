@@ -8,3 +8,26 @@
     font-size: var(--font-size-body-1, 12px);
   }
 }
+.next-virtual-tree-container {
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {  
+    background-color: var(--scrollbar-thumb-bg, #6b6b6b);
+    border-radius: var(--scrollbar-track-border-radius, 3px);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track-bg, #303030);
+    width: 100%;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track-bg, #303030);
+    width: 100%;
+  }
+}
