@@ -10,6 +10,8 @@ import {
 } from '@alifd/next/types/dialog'
 import { MessageProps } from '@alifd/next/types/message'
 
+const { Inner: NextInner } = NextDialog; 
+
 type CustomDialogProps = DialogProps & {
   /**
    * 抽屉大小
@@ -478,6 +480,19 @@ const success: (config: CustomQuickShowConfig) => QuickShowRet = (config) => {
   })
 }
 
+const Inner = (props) => {
+  const { style = {}, ...others} = props;
+  const theme = window
+    .getComputedStyle?.(window.document.body)
+    .getPropertyValue('--alicloudfe-components-theme')
+    .trim();
+  if (isYunxiaoTheme(theme)) {
+    return <NextInner {...others} style={style} />
+  } else {
+    return <NextInner {...props} />
+  }
+}
+
 hoistNonReactStatics(Dialog, NextDialog, { show: true, confirm: true })
 Dialog.show = show
 Dialog.confirm = confirm
@@ -486,6 +501,7 @@ Dialog.error = error
 Dialog.success = success
 Dialog.moderateAlert = moderateAlert
 Dialog.severeAlert = severeAlert
+Dialog.Inner = Inner;
 
 export type { DialogProps } from '@alifd/next/lib/dialog'
 export default Dialog
