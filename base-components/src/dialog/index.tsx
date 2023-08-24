@@ -143,6 +143,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   success: (config: CustomQuickShowConfig) => QuickShowRet
   moderateAlert: (config: CustomQuickShowConfig) => QuickShowRet
   severeAlert: (config: CustomQuickShowConfig) => QuickShowRet
+  Inner: (props) => JSX.Element, // Dialog.Inner
 } = (props) => {
   const { size, sidebar, extra, title, children, quickShow, messageProps = {type: 'notice'}, ...others } = props
   const { prefix = 'next-' } = props
