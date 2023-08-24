@@ -10,7 +10,7 @@ import {
 } from '@alifd/next/types/dialog'
 import { MessageProps } from '@alifd/next/types/message'
 
-const { Inner: NextInner } = NextDialog; 
+const { Inner: NextInner } = NextDialog as any; 
 
 type CustomDialogProps = DialogProps & {
   /**
