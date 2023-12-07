@@ -52,6 +52,8 @@ themes.forEach(async (theme) => {
   let cssText = transferUniCodeCss(result.css.toString(), themeName)
   if (themeName.startsWith('hybridcloud')) {
     cssText = filterCssVar(cssText)
+      // 如果是 hybridcloud 的主题，把挂载到 root 的变量挂载到 theme-hybridcloud 上去,
+     cssText = cssText.replace(/:root/g, '.theme-hybridcloud')
   }
   fs.ensureDirSync(path.join(__dirname, '../dist'))
   fs.writeFileSync(path.join(__dirname, `../dist/${themeName}.css`), cssText)
@@ -119,7 +121,7 @@ themes.forEach(async (theme) => {
   log(`generate ${themeName}.min.css...`)
   const unMinifyCssPath = path.join(__dirname, `../dist/${themeName}.css`)
   const unMinifyCssContent = fs.readFileSync(unMinifyCssPath)
-  const minifyCssResult = (
+  let minifyCssResult = (
     await postcss([
       require('cssnano')({
         preset: [
@@ -134,6 +136,12 @@ themes.forEach(async (theme) => {
       })
     ]).process(unMinifyCssContent, { from: unMinifyCssPath })
   ).css
+
+  if (themeName.startsWith('hybridcloud')) {
+    // minifyCssResult min 的 css 部分
+    // 如果是 hybridcloud 的主题，把挂载到 root 的变量挂载到 theme-hybridcloud 上去,
+    minifyCssResult = minifyCssResult.replace(/:root/g, '.theme-hybridcloud')
+  }
 
   fs.writeFileSync(
     path.join(__dirname, `../dist/${themeName}.min.css`),
