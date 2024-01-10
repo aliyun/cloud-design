@@ -163,7 +163,7 @@ const Dialog: React.FC<CustomDialogProps> & {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setFooterShadowOfRef()
-      const drawerDom = ReactDOM.findDOMNode(customRef.current)
+      const drawerDom = ReactDOM.findDOMNode(customRef.current) as Element
       const drawerBodyDom = drawerDom?.getElementsByClassName(
         `${prefix}dialog-body`
       )?.[0]

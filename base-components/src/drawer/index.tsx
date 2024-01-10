@@ -184,7 +184,7 @@ const Drawer: React.FC<DrawerProps> & {
     // 超出一屏 设置 footer 阴影
     const setFooterShadow = (iRef: any) => {
       if (iRef?.current && theme !== 'wind' && !theme.startsWith('xconsole')) {
-        const drawerDom = ReactDOM.findDOMNode(iRef.current)
+        const drawerDom = ReactDOM.findDOMNode(iRef.current) as any
         const drawerFirstDom = drawerDom?.getElementsByClassName(
           `${prefix}drawer`
         )?.[0]?.firstChild
@@ -217,7 +217,7 @@ const Drawer: React.FC<DrawerProps> & {
     // 绑定监听器
     useEffect(() => {
       setFooterShadow(ref ?? customRef)
-      const drawerDom = ReactDOM.findDOMNode((ref ?? customRef).current)
+      const drawerDom = ReactDOM.findDOMNode((ref ?? customRef).current) as Element
       const drawerBodyDom = drawerDom?.getElementsByClassName(
         `${prefix}drawer-body`
       )?.[0]

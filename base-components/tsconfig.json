@@ -2,6 +2,9 @@
   "exclude": ["**/demo/**/*"],
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "react": ["../node_modules/@types/react"],
+    },
   }
 }

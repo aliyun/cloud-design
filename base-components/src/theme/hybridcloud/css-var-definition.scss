@@ -1,807 +1,5 @@
+
 #{$css-var-scope} {
-    
-    
-    /* ------------------------ color ------------------------ */
-    
-    
-    
-    --color-help-7: rgba(222,172,22,1);
-    
-    
-    
-    --color-event-p9: rgba(121,197,224,1);
-    
-    
-    
-    --color-data2-9: rgba(121,197,224,1);
-    
-    
-    
-    --color-event-p10: rgba(175,222,240,1);
-    
-    
-    
-    --color-data2-10: rgba(175,222,240,1);
-    
-    
-    
-    --color-event-p8: rgba(73,173,209,1);
-    
-    
-    
-    --color-data2-8: rgba(73,173,209,1);
-    
-    
-    
-    --color-help-9: rgba(128,98,8,1);
-    
-    
-    
-    --color-help-8: rgba(168,130,13,1);
-    
-    
-    
-    --color-help-6: rgba(250,195,30,1);
-    
-    
-    
-    --color-help-10: rgba(87,66,3,1);
-    
-    
-    
-    --color-help-5: rgba(255,210,74,1);
-    
-    
-    
-    --color-help-4: rgba(255,221,117,1);
-    
-    
-    
-    --color-help-3: rgba(255,231,161,1);
-    
-    
-    
-    --color-help-2: rgba(255,242,204,1);
-    
-    
-    
-    --color-help-1: rgba(255,247,224,1);
-    
-    
-    
-    --color-error-10: rgba(82,7,0,1);
-    
-    
-    
-    --color-error-9: rgba(125,18,7,1);
-    
-    
-    
-    --color-error-8: rgba(161,31,19,1);
-    
-    
-    
-    --color-error-7: rgba(196,49,35,1);
-    
-    
-    
-    --color-error-5: rgba(237,103,90,1);
-    
-    
-    
-    --color-error-6: rgba(232,71,56,1);
-    
-    
-    
-    --color-error-4: rgba(242,136,126,1);
-    
-    
-    
-    --color-error-1: rgba(255,236,235,1);
-    
-    
-    
-    --color-warning-10: rgba(82,42,0,1);
-    
-    
-    
-    --color-warning-9: rgba(119,65,6,1);
-    
-    
-    
-    --color-warning-8: rgba(163,90,10,1);
-    
-    
-    
-    --color-warning-7: rgba(207,116,18,1);
-    
-    
-    
-    --color-warning-5: rgba(247,168,84,1);
-    
-    
-    
-    --color-warning-6: rgba(249,142,26,1);
-    
-    
-    
-    --color-warning-4: rgba(255,185,110,1);
-    
-    
-    
-    --color-warning-1: rgba(255,245,235,1);
-    
-    
-    
-    --color-success-10: rgba(0,82,38,1);
-    
-    
-    
-    --color-success-9: rgba(2,107,52,1);
-    
-    
-    
-    --color-success-8: rgba(10,130,67,1);
-    
-    
-    
-    --color-success-7: rgba(21,153,83,1);
-    
-    
-    
-    --color-success-5: rgba(67,191,126,1);
-    
-    
-    
-    --color-success-6: rgba(35,176,102,1);
-    
-    
-    
-    --color-success-4: rgba(103,207,152,1);
-    
-    
-    
-    --color-success-2: rgba(209,244,225,1);
-    
-    
-    
-    --color-success-1: rgba(235,255,246,1);
-    
-    
-    
-    --G80: rgba(38,38,38,1);
-    
-    
-    
-    --color-other-19: rgba(38,38,38,1);
-    
-    
-    
-    --color-border-5: rgba(217,217,217,1);
-    
-    
-    
-    --color-other-48: rgba(217,217,217,1);
-    
-    
-    
-    --color-border-4: rgba(229,229,229,1);
-    
-    
-    
-    --color-other-47: rgba(229,229,229,1);
-    
-    
-    
-    --color-border-3: rgba(170,170,170,1);
-    
-    
-    
-    --color-other-46: rgba(170,170,170,1);
-    
-    
-    
-    --color-fill-3: rgba(240,247,255,1);
-    
-    
-    
-    --color-other-45: rgba(240,247,255,1);
-    
-    
-    
-    --color-fill-2: rgba(247,247,247,1);
-    
-    
-    
-    --color-other-44: rgba(247,247,247,1);
-    
-    
-    
-    --color-fill-1: rgba(255,255,255,1);
-    
-    
-    
-    --color-other-43: rgba(255,255,255,1);
-    
-    
-    
-    --color-text-1: rgba(26,26,26,1);
-    
-    
-    
-    --color-other-38: rgba(26,26,26,1);
-    
-    
-    
-    --color-text-2: rgba(51,51,51,1);
-    
-    
-    
-    --color-other-39: rgba(51,51,51,1);
-    
-    
-    
-    --color-text-3: rgba(105,105,105,1);
-    
-    
-    
-    --color-other-40: rgba(105,105,105,1);
-    
-    
-    
-    --color-text-4: rgba(128,128,128,1);
-    
-    
-    
-    --color-other-41: rgba(128,128,128,1);
-    
-    
-    
-    --color-text-5: rgba(170,170,170,1);
-    
-    
-    
-    --color-other-42: rgba(170,170,170,1);
-    
-    
-    
-    --color-border-1: rgba(217,217,217,1);
-    
-    
-    
-    --color-other-36: rgba(217,217,217,1);
-    
-    
-    
-    --color-border-2: rgba(204,204,204,1);
-    
-    
-    
-    --color-other-37: rgba(204,204,204,1);
-    
-    
-    
-    --G0: rgba(247,247,247,1);
-    
-    
-    
-    --color-other-11: rgba(247,247,247,1);
-    
-    
-    
-    --G10: rgba(229,229,229,1);
-    
-    
-    
-    --color-other-12: rgba(229,229,229,1);
-    
-    
-    
-    --G20: rgba(217,217,217,1);
-    
-    
-    
-    --color-other-13: rgba(217,217,217,1);
-    
-    
-    
-    --G30: rgba(204,204,204,1);
-    
-    
-    
-    --color-other-14: rgba(204,204,204,1);
-    
-    
-    
-    --G40: rgba(170,170,170,1);
-    
-    
-    
-    --color-other-15: rgba(170,170,170,1);
-    
-    
-    
-    --G50: rgba(128,128,128,1);
-    
-    
-    
-    --color-other-16: rgba(128,128,128,1);
-    
-    
-    
-    --G60: rgba(105,105,105,1);
-    
-    
-    
-    --color-other-17: rgba(105,105,105,1);
-    
-    
-    
-    --G70: rgba(51,51,51,1);
-    
-    
-    
-    --color-other-18: rgba(51,51,51,1);
-    
-    
-    
-    --S0: rgba(240,242,245,1);
-    
-    
-    
-    --color-other-21: rgba(240,242,245,1);
-    
-    
-    
-    --S10: rgba(220,224,232,1);
-    
-    
-    
-    --color-other-22: rgba(220,224,232,1);
-    
-    
-    
-    --G90: rgba(26,26,26,1);
-    
-    
-    
-    --color-other-20: rgba(26,26,26,1);
-    
-    
-    
-    --S20: rgba(209,215,227,1);
-    
-    
-    
-    --color-other-23: rgba(209,215,227,1);
-    
-    
-    
-    --S30: rgba(190,198,212,1);
-    
-    
-    
-    --color-other-24: rgba(190,198,212,1);
-    
-    
-    
-    --S40: rgba(164,172,189,1);
-    
-    
-    
-    --color-other-25: rgba(164,172,189,1);
-    
-    
-    
-    --S50: rgba(129,138,156,1);
-    
-    
-    
-    --color-other-26: rgba(129,138,156,1);
-    
-    
-    
-    --S60: rgba(88,97,115,1);
-    
-    
-    
-    --color-other-27: rgba(88,97,115,1);
-    
-    
-    
-    --S70: rgba(63,69,79,1);
-    
-    
-    
-    --color-other-28: rgba(63,69,79,1);
-    
-    
-    
-    --S80: rgba(45,51,61,1);
-    
-    
-    
-    --color-other-29: rgba(45,51,61,1);
-    
-    
-    
-    --S90: rgba(25,27,31,1);
-    
-    
-    
-    --color-other-30: rgba(25,27,31,1);
-    
-    
-    
-    --color-bg-1: rgba(255,255,255,1);
-    
-    
-    
-    --color-other-31: rgba(255,255,255,1);
-    
-    
-    
-    --color-bg-2: rgba(247,247,247,1);
-    
-    
-    
-    --color-other-32: rgba(247,247,247,1);
-    
-    
-    
-    --color-bg-3: rgba(255,255,255,1);
-    
-    
-    
-    --color-other-33: rgba(255,255,255,1);
-    
-    
-    
-    --color-bg-4: rgba(247,247,247,1);
-    
-    
-    
-    --color-other-34: rgba(247,247,247,1);
-    
-    
-    
-    --snow: rgba(255,255,255,1);
-    
-    
-    
-    --color-other-5: rgba(255,255,255,1);
-    
-    
-    
-    --black: rgba(0,0,0,1);
-    
-    
-    
-    --color-other-6: rgba(0,0,0,1);
-    
-    
-    
-    --color-bg-5: rgba(255,255,255,1);
-    
-    
-    
-    --color-other-35: rgba(255,255,255,1);
-    
-    
-    
-    --color-text1-8: rgba(128,128,128,1);
-    
-    
-    
-    --color-text1-7: rgba(105,105,105,1);
-    
-    
-    
-    --color-text1-6: rgba(105,105,105,1);
-    
-    
-    
-    --color-line1-5: rgba(170,170,170,1);
-    
-    
-    
-    --color-text1-5: rgba(38,38,38,1);
-    
-    
-    
-    --color-fill1-5: rgba(128,128,128,1);
-    
-    
-    
-    --color-fill1-6: rgba(128,128,128,1);
-    
-    
-    
-    --color-text1-2: rgba(105,105,105,1);
-    
-    
-    
-    --color-fill1-4: rgba(217,217,217,1);
-    
-    
-    
-    --color-fill1-3: rgba(229,229,229,1);
-    
-    
-    
-    --color-fill1-2: rgba(247,247,247,1);
-    
-    
-    
-    --color-line1-3: rgba(204,204,204,1);
-    
-    
-    
-    --color-line1-2: rgba(217,217,217,1);
-    
-    
-    
-    --color-line1-1: rgba(229,229,229,1);
-    
-    
-    
-    --space-grey-1: rgba(26,26,26,1);
-    
-    
-    
-    --color-other-4: rgba(26,26,26,1);
-    
-    
-    
-    --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
-    
-    
-    
-    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
-    
-    
-    
-    --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
-    
-    
-    
-    --color-gradient-1: linear-gradient(270deg, rgb(121, 232, 199) 0%, rgb(8, 194, 158) 100%);
-    
-    
-    
-    --color-transparent: transparent;
-    
-    
-    
-    --color-black: #000000;
-    
-    
-    
-    --color-white: #FFFFFF;
-    
-    
-    
-    --color-event-p1: rgba(191,0,48,1);
-    
-    
-    
-    --color-data2-1: rgba(191,0,48,1);
-    
-    
-    
-    --color-event-p2: rgba(232,71,56,1);
-    
-    
-    
-    --color-data2-2: rgba(232,71,56,1);
-    
-    
-    
-    --color-event-p3: rgba(249,142,26,1);
-    
-    
-    
-    --color-data2-3: rgba(249,142,26,1);
-    
-    
-    
-    --color-event-p4: rgba(250,195,30,1);
-    
-    
-    
-    --color-data2-4: rgba(250,195,30,1);
-    
-    
-    
-    --color-event-p5: rgba(209,187,79,1);
-    
-    
-    
-    --color-data2-5: rgba(209,187,79,1);
-    
-    
-    
-    --color-event-p6: rgba(0,179,199,1);
-    
-    
-    
-    --color-data2-6: rgba(0,179,199,1);
-    
-    
-    
-    --color-event-p7: rgba(0,146,199,1);
-    
-    
-    
-    --color-data2-7: rgba(0,146,199,1);
-    
-    
-    
-    --color-text1-4: #1A1A1A;
-    
-    
-    
-    --color-text1-3: rgba(51,51,51,1);
-    
-    
-    
-    --color-notice-7: rgba(88,154,219,1);
-    
-    
-    
-    --color-notice-5: rgba(0,100,200,1);
-    
-    
-    
-    --color-notice-6: rgba(0,87,173,1);
-    
-    
-    
-    --color-notice-4: rgba(42,125,209,1);
-    
-    
-    
-    --color-notice-3: rgba(144,192,239,1);
-    
-    
-    
-    --color-notice-2: rgba(202,227,253,1);
-    
-    
-    
-    --color-notice-1: rgba(240,247,255,1);
-    
-    
-    
-    --color-link-3: rgba(42,125,209,1);
-    
-    
-    
-    --color-link-2: rgba(0,87,173,1);
-    
-    
-    
-    --color-link-1: rgba(0,100,200,1);
-    
-    
-    
-    --color-text1-1: #CCCCCC;
-    
-    
-    
-    --color-other-3: #1A1A1A;
-    
-    
-    
-    --color-brand1-7: #0057AD;
-    
-    
-    
-    --color-brand1-8: #003E7C;
-    
-    
-    
-    --color-fill1-7: #595959;
-    
-    
-    
-    --color-brand1-2: #CAE3FD;
-    
-    
-    
-    --color-brand1-3: #90C0EF;
-    
-    
-    
-    --color-brand1-4: #589ADB;
-    
-    
-    
-    --color-brand1-5: #2A7DD1;
-    
-    
-    
-    --color-brand1-10: #002952;
-    
-    
-    
-    --color-fill1-1: #FFFFFF;
-    
-    
-    
-    --color-line1-4: #FFFFFF;
-    
-    
-    
-    --color-error-3: #F7AAA3;
-    
-    
-    
-    --color-error-2: #FCCECA;
-    
-    
-    
-    --color-warning-3: #FFCD96;
-    
-    
-    
-    --color-warning-2: #FFE0BF;
-    
-    
-    
-    --color-success-3: #90DEB5;
-    
-    
-    
-    --color-data1-8: #5C60E6;
-    
-    
-    
-    --color-data1-7: #4AD051;
-    
-    
-    
-    --color-data1-6: #FAB34F;
-    
-    
-    
-    --color-data1-4: #FF656B;
-    
-    
-    
-    --color-other-2: #FFFFFF;
-    
-    
-    
-    --color-other-1: #3A3C4B;
-    
-    
-    
-    --color-data1-5: #FF6A00;
-    
-    
-    
-    --color-data1-3: #9979F2;
-    
-    
-    
-    --color-data1-2: #006CD9;
-    
-    
-    
-    --color-data1-1: #5CCDBB;
-    
-    
-    
-    --color-brand1-9: #003263;
-    
-    
-    
-    --color-brand1-6: #0064C8;
-    
-    
-    
-    --color-brand1-1: #F0F7FF;
     
     
     /* ------------------------ line ------------------------ */
@@ -2631,6 +1829,809 @@
     --corner-1: 2px;
     
     
+    /* ------------------------ color ------------------------ */
+    
+    
+    
+    --color-gradient-4: linear-gradient(270deg, rgb(255, 163, 166) 0%, rgb(245, 39, 67) 100%);
+    
+    
+    
+    --color-gradient-3: linear-gradient(270deg, rgb(255, 237, 117) 0%, rgb(245, 203, 34) 100%);
+    
+    
+    
+    --color-gradient-2: linear-gradient(270deg, rgb(125, 238, 255) 0%, rgb(3, 193, 253) 100%);
+    
+    
+    
+    --color-gradient-1: linear-gradient(270deg, rgb(121, 232, 199) 0%, rgb(8, 194, 158) 100%);
+    
+    
+    
+    --color-transparent: transparent;
+    
+    
+    
+    --color-black: #000000;
+    
+    
+    
+    --color-white: #FFFFFF;
+    
+    
+    
+    --color-help-7: rgba(222,172,22,1);
+    
+    
+    
+    --color-event-p9: rgba(121,197,224,1);
+    
+    
+    
+    --color-data2-9: rgba(121,197,224,1);
+    
+    
+    
+    --color-event-p10: rgba(175,222,240,1);
+    
+    
+    
+    --color-data2-10: rgba(175,222,240,1);
+    
+    
+    
+    --color-event-p8: rgba(73,173,209,1);
+    
+    
+    
+    --color-data2-8: rgba(73,173,209,1);
+    
+    
+    
+    --color-help-9: rgba(128,98,8,1);
+    
+    
+    
+    --color-help-8: rgba(168,130,13,1);
+    
+    
+    
+    --color-help-6: rgba(250,195,30,1);
+    
+    
+    
+    --color-help-10: rgba(87,66,3,1);
+    
+    
+    
+    --color-help-5: rgba(255,210,74,1);
+    
+    
+    
+    --color-help-4: rgba(255,221,117,1);
+    
+    
+    
+    --color-help-3: rgba(255,231,161,1);
+    
+    
+    
+    --color-help-2: rgba(255,242,204,1);
+    
+    
+    
+    --color-help-1: rgba(255,247,224,1);
+    
+    
+    
+    --color-error-10: rgba(82,7,0,1);
+    
+    
+    
+    --color-error-9: rgba(125,18,7,1);
+    
+    
+    
+    --color-error-8: rgba(161,31,19,1);
+    
+    
+    
+    --color-error-7: rgba(196,49,35,1);
+    
+    
+    
+    --color-error-5: rgba(237,103,90,1);
+    
+    
+    
+    --color-error-6: rgba(232,71,56,1);
+    
+    
+    
+    --color-error-4: rgba(242,136,126,1);
+    
+    
+    
+    --color-error-1: rgba(255,236,235,1);
+    
+    
+    
+    --color-warning-10: rgba(82,42,0,1);
+    
+    
+    
+    --color-warning-9: rgba(119,65,6,1);
+    
+    
+    
+    --color-warning-8: rgba(163,90,10,1);
+    
+    
+    
+    --color-warning-7: rgba(207,116,18,1);
+    
+    
+    
+    --color-warning-5: rgba(247,168,84,1);
+    
+    
+    
+    --color-warning-6: rgba(249,142,26,1);
+    
+    
+    
+    --color-warning-4: rgba(255,185,110,1);
+    
+    
+    
+    --color-warning-1: rgba(255,245,235,1);
+    
+    
+    
+    --color-success-10: rgba(0,82,38,1);
+    
+    
+    
+    --color-success-9: rgba(2,107,52,1);
+    
+    
+    
+    --color-success-8: rgba(10,130,67,1);
+    
+    
+    
+    --color-success-7: rgba(21,153,83,1);
+    
+    
+    
+    --color-success-5: rgba(67,191,126,1);
+    
+    
+    
+    --color-success-6: rgba(35,176,102,1);
+    
+    
+    
+    --color-success-4: rgba(103,207,152,1);
+    
+    
+    
+    --color-success-2: rgba(209,244,225,1);
+    
+    
+    
+    --color-success-1: rgba(235,255,246,1);
+    
+    
+    
+    --G80: rgba(38,38,38,1);
+    
+    
+    
+    --color-other-19: rgba(38,38,38,1);
+    
+    
+    
+    --color-border-5: rgba(217,217,217,1);
+    
+    
+    
+    --color-other-48: rgba(217,217,217,1);
+    
+    
+    
+    --color-border-4: rgba(229,229,229,1);
+    
+    
+    
+    --color-other-47: rgba(229,229,229,1);
+    
+    
+    
+    --color-border-3: rgba(170,170,170,1);
+    
+    
+    
+    --color-other-46: rgba(170,170,170,1);
+    
+    
+    
+    --color-fill-3: rgba(240,247,255,1);
+    
+    
+    
+    --color-other-45: rgba(240,247,255,1);
+    
+    
+    
+    --color-fill-2: rgba(247,247,247,1);
+    
+    
+    
+    --color-other-44: rgba(247,247,247,1);
+    
+    
+    
+    --color-fill-1: rgba(255,255,255,1);
+    
+    
+    
+    --color-other-43: rgba(255,255,255,1);
+    
+    
+    
+    --color-text-1: rgba(26,26,26,1);
+    
+    
+    
+    --color-other-38: rgba(26,26,26,1);
+    
+    
+    
+    --color-text-2: rgba(51,51,51,1);
+    
+    
+    
+    --color-other-39: rgba(51,51,51,1);
+    
+    
+    
+    --color-text-3: rgba(105,105,105,1);
+    
+    
+    
+    --color-other-40: rgba(105,105,105,1);
+    
+    
+    
+    --color-text-4: rgba(128,128,128,1);
+    
+    
+    
+    --color-other-41: rgba(128,128,128,1);
+    
+    
+    
+    --color-text-5: rgba(170,170,170,1);
+    
+    
+    
+    --color-other-42: rgba(170,170,170,1);
+    
+    
+    
+    --color-border-1: rgba(217,217,217,1);
+    
+    
+    
+    --color-other-36: rgba(217,217,217,1);
+    
+    
+    
+    --color-border-2: rgba(204,204,204,1);
+    
+    
+    
+    --color-other-37: rgba(204,204,204,1);
+    
+    
+    
+    --G0: rgba(247,247,247,1);
+    
+    
+    
+    --color-other-11: rgba(247,247,247,1);
+    
+    
+    
+    --G10: rgba(229,229,229,1);
+    
+    
+    
+    --color-other-12: rgba(229,229,229,1);
+    
+    
+    
+    --G20: rgba(217,217,217,1);
+    
+    
+    
+    --color-other-13: rgba(217,217,217,1);
+    
+    
+    
+    --G30: rgba(204,204,204,1);
+    
+    
+    
+    --color-other-14: rgba(204,204,204,1);
+    
+    
+    
+    --G40: rgba(170,170,170,1);
+    
+    
+    
+    --color-other-15: rgba(170,170,170,1);
+    
+    
+    
+    --G50: rgba(128,128,128,1);
+    
+    
+    
+    --color-other-16: rgba(128,128,128,1);
+    
+    
+    
+    --G60: rgba(105,105,105,1);
+    
+    
+    
+    --color-other-17: rgba(105,105,105,1);
+    
+    
+    
+    --G70: rgba(51,51,51,1);
+    
+    
+    
+    --color-other-18: rgba(51,51,51,1);
+    
+    
+    
+    --S0: rgba(240,242,245,1);
+    
+    
+    
+    --color-other-21: rgba(240,242,245,1);
+    
+    
+    
+    --S10: rgba(220,224,232,1);
+    
+    
+    
+    --color-other-22: rgba(220,224,232,1);
+    
+    
+    
+    --G90: rgba(26,26,26,1);
+    
+    
+    
+    --color-other-20: rgba(26,26,26,1);
+    
+    
+    
+    --S20: rgba(209,215,227,1);
+    
+    
+    
+    --color-other-23: rgba(209,215,227,1);
+    
+    
+    
+    --S30: rgba(190,198,212,1);
+    
+    
+    
+    --color-other-24: rgba(190,198,212,1);
+    
+    
+    
+    --S40: rgba(164,172,189,1);
+    
+    
+    
+    --color-other-25: rgba(164,172,189,1);
+    
+    
+    
+    --S50: rgba(129,138,156,1);
+    
+    
+    
+    --color-other-26: rgba(129,138,156,1);
+    
+    
+    
+    --S60: rgba(88,97,115,1);
+    
+    
+    
+    --color-other-27: rgba(88,97,115,1);
+    
+    
+    
+    --S70: rgba(63,69,79,1);
+    
+    
+    
+    --color-other-28: rgba(63,69,79,1);
+    
+    
+    
+    --S80: rgba(45,51,61,1);
+    
+    
+    
+    --color-other-29: rgba(45,51,61,1);
+    
+    
+    
+    --S90: rgba(25,27,31,1);
+    
+    
+    
+    --color-other-30: rgba(25,27,31,1);
+    
+    
+    
+    --color-bg-1: rgba(255,255,255,1);
+    
+    
+    
+    --color-other-31: rgba(255,255,255,1);
+    
+    
+    
+    --color-bg-2: rgba(247,247,247,1);
+    
+    
+    
+    --color-other-32: rgba(247,247,247,1);
+    
+    
+    
+    --color-bg-3: rgba(255,255,255,1);
+    
+    
+    
+    --color-other-33: rgba(255,255,255,1);
+    
+    
+    
+    --color-bg-4: rgba(247,247,247,1);
+    
+    
+    
+    --color-other-34: rgba(247,247,247,1);
+    
+    
+    
+    --snow: rgba(255,255,255,1);
+    
+    
+    
+    --color-other-5: rgba(255,255,255,1);
+    
+    
+    
+    --black: rgba(0,0,0,1);
+    
+    
+    
+    --color-other-6: rgba(0,0,0,1);
+    
+    
+    
+    --color-bg-5: rgba(255,255,255,1);
+    
+    
+    
+    --color-other-35: rgba(255,255,255,1);
+    
+    
+    
+    --color-text1-8: rgba(128,128,128,1);
+    
+    
+    
+    --color-text1-7: rgba(105,105,105,1);
+    
+    
+    
+    --color-text1-6: rgba(105,105,105,1);
+    
+    
+    
+    --color-line1-5: rgba(170,170,170,1);
+    
+    
+    
+    --color-text1-5: rgba(38,38,38,1);
+    
+    
+    
+    --color-fill1-5: rgba(128,128,128,1);
+    
+    
+    
+    --color-fill1-6: rgba(128,128,128,1);
+    
+    
+    
+    --color-text1-2: rgba(105,105,105,1);
+    
+    
+    
+    --color-fill1-4: rgba(217,217,217,1);
+    
+    
+    
+    --color-fill1-3: rgba(229,229,229,1);
+    
+    
+    
+    --color-fill1-2: rgba(247,247,247,1);
+    
+    
+    
+    --color-line1-3: rgba(204,204,204,1);
+    
+    
+    
+    --color-line1-2: rgba(217,217,217,1);
+    
+    
+    
+    --color-line1-1: rgba(229,229,229,1);
+    
+    
+    
+    --space-grey-1: rgba(26,26,26,1);
+    
+    
+    
+    --color-other-4: rgba(26,26,26,1);
+    
+    
+    
+    --color-event-p1: rgba(191,0,48,1);
+    
+    
+    
+    --color-data2-1: rgba(191,0,48,1);
+    
+    
+    
+    --color-event-p2: rgba(232,71,56,1);
+    
+    
+    
+    --color-data2-2: rgba(232,71,56,1);
+    
+    
+    
+    --color-event-p3: rgba(249,142,26,1);
+    
+    
+    
+    --color-data2-3: rgba(249,142,26,1);
+    
+    
+    
+    --color-event-p4: rgba(250,195,30,1);
+    
+    
+    
+    --color-data2-4: rgba(250,195,30,1);
+    
+    
+    
+    --color-event-p5: rgba(209,187,79,1);
+    
+    
+    
+    --color-data2-5: rgba(209,187,79,1);
+    
+    
+    
+    --color-event-p6: rgba(0,179,199,1);
+    
+    
+    
+    --color-data2-6: rgba(0,179,199,1);
+    
+    
+    
+    --color-event-p7: rgba(0,146,199,1);
+    
+    
+    
+    --color-data2-7: rgba(0,146,199,1);
+    
+    
+    
+    --color-text1-4: #1A1A1A;
+    
+    
+    
+    --color-text1-3: rgba(51,51,51,1);
+    
+    
+    
+    --color-notice-7: rgba(88,154,219,1);
+    
+    
+    
+    --color-notice-5: rgba(0,100,200,1);
+    
+    
+    
+    --color-notice-6: rgba(0,87,173,1);
+    
+    
+    
+    --color-notice-4: rgba(42,125,209,1);
+    
+    
+    
+    --color-notice-3: rgba(144,192,239,1);
+    
+    
+    
+    --color-notice-2: rgba(202,227,253,1);
+    
+    
+    
+    --color-notice-1: rgba(240,247,255,1);
+    
+    
+    
+    --color-link-3: rgba(42,125,209,1);
+    
+    
+    
+    --color-link-2: rgba(0,87,173,1);
+    
+    
+    
+    --color-link-1: rgba(0,100,200,1);
+    
+    
+    
+    --color-text1-1: #CCCCCC;
+    
+    
+    
+    --color-other-3: #1A1A1A;
+    
+    
+    
+    --color-brand1-7: #0057AD;
+    
+    
+    
+    --color-brand1-8: #003E7C;
+    
+    
+    
+    --color-fill1-7: #595959;
+    
+    
+    
+    --color-brand1-2: #CAE3FD;
+    
+    
+    
+    --color-brand1-3: #90C0EF;
+    
+    
+    
+    --color-brand1-4: #589ADB;
+    
+    
+    
+    --color-brand1-5: #2A7DD1;
+    
+    
+    
+    --color-brand1-10: #002952;
+    
+    
+    
+    --color-fill1-1: #FFFFFF;
+    
+    
+    
+    --color-line1-4: #FFFFFF;
+    
+    
+    
+    --color-error-3: #F7AAA3;
+    
+    
+    
+    --color-error-2: #FCCECA;
+    
+    
+    
+    --color-warning-3: #FFCD96;
+    
+    
+    
+    --color-warning-2: #FFE0BF;
+    
+    
+    
+    --color-success-3: #90DEB5;
+    
+    
+    
+    --color-data1-8: #5C60E6;
+    
+    
+    
+    --color-data1-7: #4AD051;
+    
+    
+    
+    --color-data1-6: #FAB34F;
+    
+    
+    
+    --color-data1-4: #FF656B;
+    
+    
+    
+    --color-other-2: #FFFFFF;
+    
+    
+    
+    --color-other-1: #3A3C4B;
+    
+    
+    
+    --color-data1-5: #FF6A00;
+    
+    
+    
+    --color-data1-3: #9979F2;
+    
+    
+    
+    --color-data1-2: #006CD9;
+    
+    
+    
+    --color-data1-1: #5CCDBB;
+    
+    
+    
+    --color-brand1-9: #003263;
+    
+    
+    
+    --color-brand1-6: #0064C8;
+    
+    
+    
+    --color-brand1-1: #F0F7FF;
+    
+    
     /* ------------------------ search ------------------------ */
     
     
@@ -3002,6 +3003,38 @@
     --search-simple-dark-l-icon-size: var(--icon-m, 20px);
     
     
+    
+    --search-foucs-normal-primary-border-color: var(--color-brand1-6, #0064C8);
+    
+    
+    
+    --search-foucs-normal-secondary-border-color: var(--color-brand1-6, #0064C8);
+    
+    
+    
+    --search-foucs-normal-normal-border-color: var(--color-line1-4, #FFFFFF);
+    
+    
+    
+    --search-foucs-normal-dark-border-color: var(--color-brand1-6, #0064C8);
+    
+    
+    
+    --search-foucs-simple-normal-border-color: var(--color-line1-4, #FFFFFF);
+    
+    
+    
+    --search-foucs-simple-dark-border-color: var(--color-line1-3, #cccccc);
+    
+    
+    
+    --search-focus-bg-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --search-focus-shadow-spread: var(--shadow-zero, none);
+    
+    
     /* ------------------------ card ------------------------ */
     
     
@@ -3039,6 +3072,26 @@
     
     
     --card-corner: var(--corner-1, 2px);
+    
+    
+    
+    --card-background: var(--color-bg-3, white);
+    
+    
+    
+    --card-title-color: var(--color-text-1, #1a1a1a);
+    
+    
+    
+    --card-content-color: var(--color-text-2, #333333);
+    
+    
+    
+    --card-border-color: var(--color-border-4, #e5e5e5);
+    
+    
+    
+    --card-padding-lr: var(--s-5, 20px);
     
     
     
@@ -3131,26 +3184,6 @@
     
     
     --card-more-btn-background: var(--color-white, #FFFFFF);
-    
-    
-    
-    --card-background: var(--color-bg-3, white);
-    
-    
-    
-    --card-title-color: var(--color-text-1, #1a1a1a);
-    
-    
-    
-    --card-content-color: var(--color-text-2, #333333);
-    
-    
-    
-    --card-border-color: var(--color-border-4, #e5e5e5);
-    
-    
-    
-    --card-padding-lr: var(--s-5, 20px);
     
     
     /* ------------------------ button ------------------------ */
@@ -4027,6 +4060,10 @@
     
     
     
+    --nav-normal-bg-color: var(--color-bg-3, white);
+    
+    
+    
     --nav-hoz-height: var(--s-11, 44px);
     
     
@@ -4452,10 +4489,6 @@
     
     
     --nav-line-group-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-normal-bg-color: var(--color-bg-3, white);
     
     
     /* ------------------------ calendar ------------------------ */
@@ -5325,6 +5358,26 @@
     
     
     
+    --switch-normal-off-bg-color: var(--G30, #cccccc);
+    
+    
+    
+    --switch-hover-off-bg-color: var(--color-border-5, #d9d9d9);
+    
+    
+    
+    --switch-disabled-off-bg-color: var(--color-border-2, #cccccc);
+    
+    
+    
+    --switch-normal-off-color-font: var(--color-text-3, dimgray);
+    
+    
+    
+    --switch-disabled-off-color-font: var(--color-text-5, #aaaaaa);
+    
+    
+    
     --switch-size-m-inner-icon: var(--s-4, 16px);
     
     
@@ -5400,26 +5453,6 @@
     --switch-rtl-on-shadow: var(--shadow-1-left, 0px 0px 8px 0px rgba(0, 0, 0, 0.06));
     
     
-    
-    --switch-normal-off-bg-color: var(--G30, #cccccc);
-    
-    
-    
-    --switch-hover-off-bg-color: var(--color-border-5, #d9d9d9);
-    
-    
-    
-    --switch-disabled-off-bg-color: var(--color-border-2, #cccccc);
-    
-    
-    
-    --switch-normal-off-color-font: var(--color-text-3, dimgray);
-    
-    
-    
-    --switch-disabled-off-color-font: var(--color-text-5, #aaaaaa);
-    
-    
     /* ------------------------ badge ------------------------ */
     
     
@@ -5457,6 +5490,14 @@
     
     
     --badge-size-custom-padding-lr: var(--s-1, 4px);
+    
+    
+    
+    --badge-size-count-border-width: var(--line-zero, 0px);
+    
+    
+    
+    --badge-normal-count-border-color: var(--color-white, #FFFFFF);
     
     
     
@@ -5783,6 +5824,22 @@
     
     
     
+    --message-size-m-title-content-padding-right: var(--s-3, 12px);
+    
+    
+    
+    --message-success-color-icon-addon: var(--color-success-5, #43bf7e);
+    
+    
+    
+    --message-error-color-icon-addon: var(--color-error-5, #ed675a);
+    
+    
+    
+    --message-warning-color-icon-addon: var(--color-warning-5, #f7a854);
+    
+    
+    
     --message-size-m-border-width: var(--line-1, 1px);
     
     
@@ -5934,22 +5991,6 @@
     --message-loading-color-icon-toast: var(--color-brand1-6, #0064C8);
     
     
-    
-    --message-size-m-title-content-padding-right: var(--s-3, 12px);
-    
-    
-    
-    --message-success-color-icon-addon: var(--color-success-5, #43bf7e);
-    
-    
-    
-    --message-error-color-icon-addon: var(--color-error-5, #ed675a);
-    
-    
-    
-    --message-warning-color-icon-addon: var(--color-warning-5, #f7a854);
-    
-    
     /* ------------------------ dialog ------------------------ */
     
     
@@ -6074,6 +6115,14 @@
     
     
     
+    --dialog-bg: var(--color-bg-3, white);
+    
+    
+    
+    --dialog-footer-bg-color: var(--color-bg-3, white);
+    
+    
+    
     --dialog-title-font-weight: var(--font-weight-2, normal);
     
     
@@ -6095,14 +6144,6 @@
     
     
     --dialog-close-bg-hovered: var(--color-transparent, transparent);
-    
-    
-    
-    --dialog-bg: var(--color-bg-3, white);
-    
-    
-    
-    --dialog-footer-bg-color: var(--color-bg-3, white);
     
     
     /* ------------------------ progress ------------------------ */
@@ -7544,7 +7585,43 @@
     
     
     
+    --menu-color: var(--color-text-2, #333333);
+    
+    
+    
+    --menu-background: var(--color-bg-5, white);
+    
+    
+    
+    --menu-arrow-color: var(--G50, gray);
+    
+    
+    
+    --menu-background-selected: var(--color-fill-3, #f0f7ff);
+    
+    
+    
+    --menu-color-selected: var(--G70, #333333);
+    
+    
+    
+    --menu-background-hover: var(--color-fill-2, #f7f7f7);
+    
+    
+    
+    --menu-color-hover: var(--color-text-2, #333333);
+    
+    
+    
+    --menu-arrow-color-hover: var(--color-text-1, #1a1a1a);
+    
+    
+    
     --menu-padding-hoz-padding-lr: var(--s-zero, 0px);
+    
+    
+    
+    --menu-item-border-radius: var(--corner-zero, 0px);
     
     
     
@@ -7601,38 +7678,6 @@
     
     
     --menu-popupfold-icon-content: var(--icon-content-arrow-right, "");
-    
-    
-    
-    --menu-color: var(--color-text-2, #333333);
-    
-    
-    
-    --menu-background: var(--color-bg-5, white);
-    
-    
-    
-    --menu-arrow-color: var(--G50, gray);
-    
-    
-    
-    --menu-background-selected: var(--color-fill-3, #f0f7ff);
-    
-    
-    
-    --menu-color-selected: var(--G70, #333333);
-    
-    
-    
-    --menu-background-hover: var(--color-fill-2, #f7f7f7);
-    
-    
-    
-    --menu-color-hover: var(--color-text-2, #333333);
-    
-    
-    
-    --menu-arrow-color-hover: var(--color-text-1, #1a1a1a);
     
     
     /* ------------------------ timeline ------------------------ */
@@ -8180,6 +8225,50 @@
     
     
     
+    --tag-secondary-border-color: var(--color-brand1-6, #0064C8);
+    
+    
+    
+    --tag-secondary-bg: var(--color-brand1-1, #F0F7FF);
+    
+    
+    
+    --tag-checkable-normal-text-color: var(--color-text-2, #333333);
+    
+    
+    
+    --tag-checkable-normal-border-color: var(--G20, #d9d9d9);
+    
+    
+    
+    --tag-checkable-normal-bg: var(--color-white, #FFFFFF);
+    
+    
+    
+    --tag-checkable-normal-text-color-hover: var(--color-text-2, #333333);
+    
+    
+    
+    --tag-checkable-normal-border-color-hover: var(--G30, #cccccc);
+    
+    
+    
+    --tag-checkable-normal-bg-hover: var(--G0, #f7f7f7);
+    
+    
+    
+    --tag-checkable-normal-border-selected-disabled: var(--G20, #d9d9d9);
+    
+    
+    
+    --tag-checkable-normal-bg-selected-disabled: var(--color-white, #FFFFFF);
+    
+    
+    
+    --tag-checkable-normal-tick-bg-selected-disabled: var(--G0, #f7f7f7);
+    
+    
+    
     --tag-size-l-spacing: var(--s-4, 16px);
     
     
@@ -8403,50 +8492,6 @@
     --tag-closable-primary-fill-text-color-disabled: var(--color-text1-1, #CCCCCC);
     
     
-    
-    --tag-secondary-border-color: var(--color-brand1-6, #0064C8);
-    
-    
-    
-    --tag-secondary-bg: var(--color-brand1-1, #F0F7FF);
-    
-    
-    
-    --tag-checkable-normal-text-color: var(--color-text-2, #333333);
-    
-    
-    
-    --tag-checkable-normal-border-color: var(--G20, #d9d9d9);
-    
-    
-    
-    --tag-checkable-normal-bg: var(--color-white, #FFFFFF);
-    
-    
-    
-    --tag-checkable-normal-text-color-hover: var(--color-text-2, #333333);
-    
-    
-    
-    --tag-checkable-normal-border-color-hover: var(--G30, #cccccc);
-    
-    
-    
-    --tag-checkable-normal-bg-hover: var(--G0, #f7f7f7);
-    
-    
-    
-    --tag-checkable-normal-border-selected-disabled: var(--G20, #d9d9d9);
-    
-    
-    
-    --tag-checkable-normal-bg-selected-disabled: var(--color-white, #FFFFFF);
-    
-    
-    
-    --tag-checkable-normal-tick-bg-selected-disabled: var(--G0, #f7f7f7);
-    
-    
     /* ------------------------ input ------------------------ */
     
     
@@ -8476,6 +8521,86 @@
     
     
     --input-focus-shadow-spread: var(--line-zero, 0px);
+    
+    
+    
+    --input-hover-border-color: var(--color-border-2, #cccccc);
+    
+    
+    
+    --input-placeholder-color: var(--color-text-5, #aaaaaa);
+    
+    
+    
+    --input-text-color: var(--color-text-2, #333333);
+    
+    
+    
+    --input-border-color: var(--color-border-1, #d9d9d9);
+    
+    
+    
+    --input-label-color: var(--color-text-5, #aaaaaa);
+    
+    
+    
+    --input-disabled-border-color: var(--color-border-2, #cccccc);
+    
+    
+    
+    --input-disabled-bg-color: var(--color-fill-2, #f7f7f7);
+    
+    
+    
+    --input-addon-bg-color: var(--color-bg-3, white);
+    
+    
+    
+    --input-addon-text-color: var(--color-text-3, dimgray);
+    
+    
+    
+    --input-feedback-warning-bg-color: var(--color-fill-1, white);
+    
+    
+    
+    --input-feedback-loading-color: var(--color-text-4, gray);
+    
+    
+    
+    --input-feedback-error-bg-color: var(--color-fill-1, white);
+    
+    
+    
+    --input-maxlen-color: var(--color-text-5, #aaaaaa);
+    
+    
+    
+    --input-hint-color: var(--color-text-3, dimgray);
+    
+    
+    
+    --input-hint-hover-color: var(--color-text-4, gray);
+    
+    
+    
+    --input-disabled-color: var(--color-text-5, #aaaaaa);
+    
+    
+    
+    --input-focus-border-color: var(--color-border-3, #aaaaaa);
+    
+    
+    
+    --input-hover-bg-color: var(--color-fill-1, white);
+    
+    
+    
+    --input-bg-color: var(--color-fill-1, white);
+    
+    
+    
+    --input-focus-bg-color: var(--color-fill-1, white);
     
     
     
@@ -8562,86 +8687,6 @@
     --input-feedback-clear-icon: var(--icon-content-delete-filling, "");
     
     
-    
-    --input-hover-border-color: var(--color-border-2, #cccccc);
-    
-    
-    
-    --input-placeholder-color: var(--color-text-5, #aaaaaa);
-    
-    
-    
-    --input-text-color: var(--color-text-2, #333333);
-    
-    
-    
-    --input-border-color: var(--color-border-1, #d9d9d9);
-    
-    
-    
-    --input-label-color: var(--color-text-5, #aaaaaa);
-    
-    
-    
-    --input-disabled-border-color: var(--color-border-2, #cccccc);
-    
-    
-    
-    --input-disabled-bg-color: var(--color-fill-2, #f7f7f7);
-    
-    
-    
-    --input-addon-bg-color: var(--color-bg-3, white);
-    
-    
-    
-    --input-addon-text-color: var(--color-text-3, dimgray);
-    
-    
-    
-    --input-feedback-warning-bg-color: var(--color-fill-1, white);
-    
-    
-    
-    --input-feedback-loading-color: var(--color-text-4, gray);
-    
-    
-    
-    --input-feedback-error-bg-color: var(--color-fill-1, white);
-    
-    
-    
-    --input-maxlen-color: var(--color-text-5, #aaaaaa);
-    
-    
-    
-    --input-hint-color: var(--color-text-3, dimgray);
-    
-    
-    
-    --input-hint-hover-color: var(--color-text-4, gray);
-    
-    
-    
-    --input-disabled-color: var(--color-text-5, #aaaaaa);
-    
-    
-    
-    --input-focus-border-color: var(--color-border-3, #aaaaaa);
-    
-    
-    
-    --input-hover-bg-color: var(--color-fill-1, white);
-    
-    
-    
-    --input-bg-color: var(--color-fill-1, white);
-    
-    
-    
-    --input-focus-bg-color: var(--color-fill-1, white);
-    
-    
     /* ------------------------ form ------------------------ */
     
     
@@ -8682,6 +8727,10 @@
     
     
     
+    --form-help-color: var(--color-text-4, gray);
+    
+    
+    
     --form-label-padding-r: var(--s-3, 12px);
     
     
@@ -8695,10 +8744,6 @@
     
     
     --form-warning-color: var(--color-warning-3, #FFCD96);
-    
-    
-    
-    --form-help-color: var(--color-text-4, gray);
     
     
     /* ------------------------ upload ------------------------ */
@@ -9095,6 +9140,14 @@
     
     
     
+    --drawer-bg: var(--color-bg-3, white);
+    
+    
+    
+    --drawer-title-bg-color: var(--snow, white);
+    
+    
+    
     --drawer-title-padding-top: var(--s-3, 12px);
     
     
@@ -9164,14 +9217,6 @@
     
     
     --drawer-close-bg-hovered: var(--color-transparent, transparent);
-    
-    
-    
-    --drawer-bg: var(--color-bg-3, white);
-    
-    
-    
-    --drawer-title-bg-color: var(--snow, white);
     
     
     /* ------------------------ number-picker ------------------------ */
@@ -10053,6 +10098,62 @@
     
     
     
+    --table-th-color: var(--color-text-4, gray);
+    
+    
+    
+    --table-group-th-bg: var(--color-bg-4, #f7f7f7);
+    
+    
+    
+    --table-group-th-color: var(--color-text-3, dimgray);
+    
+    
+    
+    --table-row-bg: var(--color-bg-1, white);
+    
+    
+    
+    --table-row-color: var(--color-text-2, #333333);
+    
+    
+    
+    --table-empty-color: var(--color-text-5, #aaaaaa);
+    
+    
+    
+    --table-group-footer-bg: var(--color-bg-4, #f7f7f7);
+    
+    
+    
+    --table-group-footer-color: var(--color-text-3, dimgray);
+    
+    
+    
+    --table-row-hover-color: var(--color-text-2, #333333);
+    
+    
+    
+    --table-row-selected-color: var(--color-text-2, #333333);
+    
+    
+    
+    --table-th-bg: var(--color-bg-4, #f7f7f7);
+    
+    
+    
+    --table-row-selected-bg: var(--color-fill-3, #f0f7ff);
+    
+    
+    
+    --table-row-hover-bg: var(--color-fill-2, #f7f7f7);
+    
+    
+    
+    --table-normal-border-color: var(--G10, #e5e5e5);
+    
+    
+    
     --table-th-font-size: var(--font-size-body-1, 12px);
     
     
@@ -10154,62 +10255,6 @@
     
     
     --table-expand-unfold-icon-content: var(--icon-content-minus, "");
-    
-    
-    
-    --table-th-color: var(--color-text-4, gray);
-    
-    
-    
-    --table-group-th-bg: var(--color-bg-4, #f7f7f7);
-    
-    
-    
-    --table-group-th-color: var(--color-text-3, dimgray);
-    
-    
-    
-    --table-row-bg: var(--color-bg-1, white);
-    
-    
-    
-    --table-row-color: var(--color-text-2, #333333);
-    
-    
-    
-    --table-empty-color: var(--color-text-5, #aaaaaa);
-    
-    
-    
-    --table-group-footer-bg: var(--color-bg-4, #f7f7f7);
-    
-    
-    
-    --table-group-footer-color: var(--color-text-3, dimgray);
-    
-    
-    
-    --table-row-hover-color: var(--color-text-2, #333333);
-    
-    
-    
-    --table-row-selected-color: var(--color-text-2, #333333);
-    
-    
-    
-    --table-th-bg: var(--color-bg-4, #f7f7f7);
-    
-    
-    
-    --table-row-selected-bg: var(--color-fill-3, #f0f7ff);
-    
-    
-    
-    --table-row-hover-bg: var(--color-fill-2, #f7f7f7);
-    
-    
-    
-    --table-normal-border-color: var(--G10, #e5e5e5);
     
     
     /* ------------------------ list ------------------------ */
@@ -10353,14 +10398,11 @@
     --loading-medium-dot-size: var(--icon-xxs, 8px);
     
     
-    /* ------------------------ cascader-select ------------------------ */
-    
-    
-    
-    --cascader-select: "cascader-select";
-    
-    
     /* ------------------------ paragraph ------------------------ */
+    
+    
+    
+    --paragraph-text-color: var(--space-grey-1, #1a1a1a);
     
     
     
@@ -10379,8 +10421,11 @@
     --paragraph-l-line-height: var(--font-lineheight-3, 1.5);
     
     
+    /* ------------------------ cascader-select ------------------------ */
     
-    --paragraph-text-color: var(--space-grey-1, #1a1a1a);
+    
+    
+    --cascader-select: "cascader-select";
     
     
     /* ------------------------ shell ------------------------ */
@@ -11269,7 +11314,19 @@
     
     
     
+    --avatar-size-border-width: var(--line-zero, 0px);
+    
+    
+    
     --avatar-border-radius: var(--corner-1, 2px);
+    
+    
+    
+    --avatar-border-color: var(--color-white, #FFFFFF);
+    
+    
+    
+    --avatar-shadow: var(--shadow-zero, none);
     
     
 
