@@ -36,3 +36,28 @@
     line-height: inherit;
   }
 }
+
+// 新版 Fusion css 层级更改了 对于沾满一行的需要覆盖
+
+
+.next-tree.next-node-block .next-tree-node-inner:hover, .next-tree.next-node-block .next-tree-node-inner:focus {
+  color: #333333;
+  color: var(--tree-node-hover-color, #333333);
+  background-color: #f7f7f7;
+  background-color: var(--color-fill1-2,rgba(247,247,247,1));
+}
+.next-tree.next-node-block.next-tree.next-node-block {
+  .next-tree-node-label-wrapper, .next-tree-node-label-wrapper:hover, .next-tree-node-label-wrapper:focus {
+    background-color: transparent;
+  }
+}
+.next-tree.next-node-block .next-tree-node-inner.next-disabled .next-tree-node-label, .next-tree.next-node-block .next-tree-node-inner.next-disabled:hover .next-tree-node-label {
+  background-color: transparent;
+}
+
+.next-tree.next-node-block .next-tree-node-inner.next-selected {
+  color: #0064C8;
+  color: var(--tree-node-selected-color, #0064C8);
+  background-color: #F0F7FF;
+  background-color: var(--tree-node-selected-background, #F0F7FF);
+}
