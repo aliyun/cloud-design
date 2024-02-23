@@ -8,31 +8,19 @@ const { RangePicker, MonthPicker, YearPicker, WeekPicker } = NextDatePicker2
 function withDefaultFormat<T>(WrappedComponent: T): T {
 
   const Wrapper = React.forwardRef((props: any, ref) => {
-    let defaultFormat = useMemo(() => {
-      // 从全局moment对象获取当前的moment文案
-      if (props?.showTime) {
-        return moment().format('MMM DD, YYYY HH:mm:ss')
-      }
-      return moment().format('MMM DD, YYYY')
-    }, [])
-
-    // 从props的moment对象获取当前的moment文案
     const { value, defaultValue, showTime } = props
-    const exactValue = value || defaultValue
-    if (moment.isMoment(exactValue)) {
-      defaultFormat = moment().format('MMM DD, YYYY')
 
-      if (showTime) {
-        defaultFormat = moment().format('MMM DD, YYYY HH:mm:ss')
-      }
-    }
-    let format = props.format ?? defaultFormat
+    let format = props?.format;
     if (moment.locale().split('-')[0] === 'zh') {
       format = props.format ?? undefined
+    } if (moment.locale().split('-')[0] === 'en') {
+      format = ('MMM DD, YYYY')
+      if (showTime) {
+        format = ('MMM DD, YYYY HH:mm:ss')
+      }
     }
-
     // @ts-ignore
-    return <WrappedComponent {...props} format={format} ref={ref} />
+    return <WrappedComponent {...props}  format={format} ref={ref} />
   })
   hoistNonReactStatics(Wrapper, WrappedComponent as any)
   return (Wrapper as any) as T
