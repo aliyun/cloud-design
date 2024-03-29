@@ -117,7 +117,7 @@ const setFooterShadow = (dom, prefix) => {
 
 // 渲染表头
 const renderTitle = (prefix: string, theme: string, title: React.ReactNode, extra: React.ReactNode) => {
-  if (!(theme.startsWith('hybridcloud') || theme.startsWith('hybridcloud-dark'))) {
+  if (!(theme.startsWith('hybridcloud') || theme.startsWith('hybridcloud-dark') ||  theme.startsWith('teamix'))) {
     return title
   }
   if (extra) {
