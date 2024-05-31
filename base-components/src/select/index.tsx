@@ -7,7 +7,9 @@ import { useCssVar } from '../utils/useCssVar'
 type NextSelectProps = React.ComponentProps<typeof NextSelect>
 
 let Select: typeof NextSelect = React.forwardRef(
-  (props: NextSelectProps, ref) => {
+  (props: NextSelectProps & {
+    hideEmptyOptionGroup?: boolean
+  }, ref) => {
     const theme = useCssVar('--alicloudfe-components-theme')
     const isWind = theme.trim() === 'wind'
     // 用于临时保存当前搜索内容
