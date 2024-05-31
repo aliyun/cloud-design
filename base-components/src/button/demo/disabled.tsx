@@ -14,7 +14,7 @@ export default function DemoComponent() {
       <Box wrap direction="column" spacing={20}>
         <Box direction="row" spacing={20}>
           <Button type="primary">Primary</Button>
-          <Button component="a" type="primary" disabled>
+          <Button disabledTooltip={<div>'This is a disabled button'</div>} component="a" type="primary" disabled>
             Primary
           </Button>
         </Box>

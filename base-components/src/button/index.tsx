@@ -1,4 +1,4 @@
-import { Button as NextButton } from '@alifd/next'
+import { Button as NextButton, Overlay} from '@alifd/next'
 import React, { Children } from 'react'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import cls from 'classnames'
@@ -6,8 +6,18 @@ import cls from 'classnames'
 import { withThemeClass } from '../utils/withThemeClass'
 import { useCssVar } from '../utils/useCssVar'
 import isReactFragment from '../utils/isReactFragment'
+import {
+  OverlayProps as NextOverlayProps,
+} from '@alifd/next/types/overlay';
+import {
+  ButtonProps as NextButtonProps,
+} from '@alifd/next/types/button'
 
-type NextButtonProps = React.ComponentProps<typeof NextButton>
+
+type INextButtonProps = NextButtonProps & {
+  disabledTooltip?: React.ReactNode;
+  popupProps?: NextOverlayProps;
+}
 
 const rxTwoToThreeCNChar = /^[\u4e00-\u9fa5]{2,3}$/
 const rxFourCNChar = /^[\u4e00-\u9fa5]{4}$/
@@ -23,9 +33,9 @@ const mapTeamixIconSize = (size: string) => {
   }[size]
 }
 
-const Button: typeof NextButton = withThemeClass(
-  React.forwardRef((props: NextButtonProps, ref) => {
-    const { className, iconSize, size = 'medium' } = props
+const Button: React.FC<INextButtonProps> = withThemeClass(
+  React.forwardRef((props: INextButtonProps, ref) => {
+    const { className, iconSize, size = 'medium', disabledTooltip,  popupProps } = props
     let { children } = props
     const count = Children.count(children)
     const theme = useCssVar('--alicloudfe-components-theme').trim()
@@ -106,6 +116,19 @@ const Button: typeof NextButton = withThemeClass(
       }
       return child
     })
+    if (disabledTooltip && props?.disabled === true) {
+      return (
+        <div>
+          <Overlay.Popup { ...popupProps } trigger={
+            (<NextButton {...props} className={className} ref={ref as any}>
+              {clonedChildren}
+            </NextButton>)
+            } >
+          <div>{disabledTooltip}</div>
+        </Overlay.Popup>
+       </div>
+      )
+    }
     return (
       <NextButton {...props} className={className} ref={ref as any}>
         {clonedChildren}
