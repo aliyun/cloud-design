@@ -1,14 +1,17 @@
 import { Select as NextSelect } from '@alifd/next'
-import React, { useMemo, useState } from 'react'
+import React, { Children, ReactComponentElement, ReactNode, useMemo, useState } from 'react'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 
 import HOC from '../utils/popupHoc'
 import { useCssVar } from '../utils/useCssVar'
 type NextSelectProps = React.ComponentProps<typeof NextSelect>
-
+interface ChildComponentProps {
+  filter: (any) => any; // 定义filter函数类型
+}
 let Select: typeof NextSelect = React.forwardRef(
   (props: NextSelectProps & {
-    hideEmptyOptionGroup?: boolean
+    children?: React.ReactElement<ChildComponentProps>; // 使用ReactElement明确子元素类型
+    hideEmptyOptionGroup?: boolean;
   }, ref) => {
     const theme = useCssVar('--alicloudfe-components-theme')
     const isWind = theme.trim() === 'wind'
@@ -34,12 +37,12 @@ let Select: typeof NextSelect = React.forwardRef(
         )
 
       })
-      const tempChildren = children?.filter?.(item => {
+      const tempChildren = Children.toArray(children).filter?.((item: React.ReactElement) => {
         return (
           // 对于reactnode型，如果子节点有包含搜索内容，则保留，否则过滤
           item?.props.children
           // 且子节点中有包含搜索内容，可能是label也可能在children
-          && (item?.props?.children.some(item => item?.props?.children?.indexOf?.(searchCache) > -1 || item?.props?.label?.indexOf?.(searchCache) > -1))
+          && (Children.toArray(item?.props?.children).some((item: React.ReactElement) => item?.props?.children?.indexOf?.(searchCache) > -1 || item?.props?.label?.indexOf?.(searchCache) > -1))
         )
       })
       return {
