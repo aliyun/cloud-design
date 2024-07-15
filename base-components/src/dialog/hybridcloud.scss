@@ -99,8 +99,18 @@ $dialog-prefix: '.' + $css-prefix + 'dialog';
     }
   }
 
-  .next-dialog-close-icon {
+  .next-dialog-close-icon.next-dialog-close-icon.next-dialog-close-icon {
     color: var(--color-fill1-6, #848484);
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -6px;
+    left: -6px;
+    margin-top: 0;
+    margin-left: 0;
+
   }
 }
 
