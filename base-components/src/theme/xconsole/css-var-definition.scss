@@ -123,14 +123,6 @@
     
     
     
-    --form-element-large-preview-font-size: var(--font-size-subhead, 14px);
-    
-    
-    
-    --form-element-large-preview-label-font-size: var(--font-size-subhead, 14px);
-    
-    
-    
     --form-element-medium-preview-font-size: var(--font-size-body-1, 12px);
     
     
@@ -147,6 +139,22 @@
     
     
     
+    --form-element-preview-label-color: var(--color-text1-8, gray);
+    
+    
+    
+    --form-element-large-preview-font-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --form-element-large-preview-label-font-size: var(--font-size-body-1, 12px);
+    
+    
+    
+    --form-element-large-preview-height: var(--s-8, 32px);
+    
+    
+    
     --form-element-medium-preview-height: var(--s-4, 16px);
     
     
@@ -155,15 +163,7 @@
     
     
     
-    --form-element-preview-label-color: var(--color-text1-8, gray);
-    
-    
-    
     --form-element-small-height: var(--s-6, 24px);
-    
-    
-    
-    --form-element-large-preview-height: var(--s-4, 16px);
     
     
     
@@ -6170,10 +6170,6 @@
     
     
     
-    --card-sub-title-color: var(--color-text1-3, #eeeeee);
-    
-    
-    
     --card-title-extra-color: var(--color-link-1, #0064C8);
     
     
@@ -6187,6 +6183,10 @@
     
     
     --card-more-btn-background: var(--color-white, #FFFFFF);
+    
+    
+    
+    --card-sub-title-color: var(--color-text1-9, #555555);
     
     
     /* ------------------------ switch ------------------------ */
@@ -6548,10 +6548,6 @@
     
     
     
-    --btn-pure-primary-bg-active: var(--color-fill1-7, #003C78);
-    
-    
-    
     --btn-text-normal-color-hover: var(--color-fill1-5, #0064C8);
     
     
@@ -6737,6 +6733,10 @@
     
     
     --btn-warning-primary-color-disabled: var(--color-text1-6, #aaaaaa);
+    
+    
+    
+    --btn-pure-primary-bg-active: var(--color-brand1-9, #004385);
     
     
     
@@ -9513,14 +9513,6 @@
     
     
     
-    --input-s-padding: var(--s-3, 12px);
-    
-    
-    
-    --input-l-icon-padding-right: var(--s-3, 12px);
-    
-    
-    
     --input-feedback-warning-color: var(--color-warning-6, #ffd813);
     
     
@@ -9542,10 +9534,6 @@
     
     
     --input-label-color: var(--color-text1-7, #969696);
-    
-    
-    
-    --input-disabled-color: var(--color-text1-5, #cbcbcb);
     
     
     
@@ -9605,11 +9593,7 @@
     
     
     
-    --input-l-padding: var(--s-3, 12px);
-    
-    
-    
-    --input-m-padding: var(--s-3, 12px);
+    --input-disabled-color: var(--color-text1-6, #aaaaaa);
     
     
     
@@ -9678,6 +9662,22 @@
     
     
     --input-hint-hover-color: var(--color-text1-3, #eeeeee);
+    
+    
+    
+    --input-l-padding: var(--s-4, 16px);
+    
+    
+    
+    --input-l-icon-padding-right: var(--s-3, 12px);
+    
+    
+    
+    --input-m-padding: var(--s-4, 16px);
+    
+    
+    
+    --input-s-padding: var(--s-4, 16px);
     
     
     /* ------------------------ form ------------------------ */
@@ -10631,10 +10631,6 @@
     
     
     
-    --step-circle-item-body-width: var(--s-24, 96px);
-    
-    
-    
     --step-circle-item-node-process-percent-size: var(--font-size-body-1, 12px);
     
     
@@ -10644,50 +10640,6 @@
     
     
     --step-dot-item-body-width: var(--s-24, 96px);
-    
-    
-    
-    --step-dot-item-tail-wait-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --step-dot-item-tail-process-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --step-dot-item-tail-finish-color: var(--color-brand1-6, #007efd);
-    
-    
-    
-    --step-dot-item-title-wait-color: var(--color-text1-2, #f6f6f6);
-    
-    
-    
-    --step-dot-item-title-process-color: var(--color-text1-5, #cbcbcb);
-    
-    
-    
-    --step-dot-item-title-finish-color: var(--color-text1-5, #cbcbcb);
-    
-    
-    
-    --step-dot-item-node-wait-border-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --step-dot-item-node-process-color: var(--color-brand1-6, #007efd);
-    
-    
-    
-    --step-dot-item-node-finish-border-color: var(--color-brand1-6, #007efd);
-    
-    
-    
-    --step-dot-item-node-finish-color: var(--color-brand1-6, #007efd);
-    
-    
-    
-    --step-dot-item-tail-bg-color: var(--color-fill1-1, #F8F8F9);
     
     
     
@@ -10720,10 +10672,6 @@
     
     
     --step-circle-item-content-font-size: var(--font-size-body-1, 12px);
-    
-    
-    
-    --step-circle-item-node-process-size: var(--s-8, 32px);
     
     
     
@@ -10791,15 +10739,75 @@
     
     
     
+    --step-dot-item-tail-wait-color: var(--color-text1-4, #e5e5e5);
+    
+    
+    
+    --step-dot-item-tail-process-color: var(--color-text1-5, #cbcbcb);
+    
+    
+    
+    --step-dot-item-tail-finish-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --step-dot-item-tail-disabled-color: var(--color-text1-4, #e5e5e5);
+    
+    
+    
+    --step-dot-item-title-wait-color: var(--color-text1-8, gray);
+    
+    
+    
+    --step-dot-item-title-process-color: var(--color-text1-10, #333333);
+    
+    
+    
+    --step-dot-item-title-finish-color: var(--color-text1-10, #333333);
+    
+    
+    
+    --step-dot-item-title-disabled-color: var(--color-text1-6, #aaaaaa);
+    
+    
+    
+    --step-dot-item-node-wait-border-color: var(--color-text1-5, #cbcbcb);
+    
+    
+    
+    --step-dot-item-node-wait-color: var(--color-text1-5, #cbcbcb);
+    
+    
+    
+    --step-dot-item-node-process-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --step-dot-item-node-finish-border-color: var(--color-brand1-7, #0064c8);
+    
+    
+    
+    --step-dot-item-node-finish-color: var(--color-text1-10, #333333);
+    
+    
+    
+    --step-dot-item-node-disabled-border-color: var(--color-text1-5, #cbcbcb);
+    
+    
+    
+    --step-dot-item-node-disabled-color: var(--color-text1-6, #aaaaaa);
+    
+    
+    
+    --step-dot-item-tail-bg-color: var(--color-transparent, transparent);
+    
+    
+    
     --step-arrow-item-height: var(--s-8, 32px);
     
     
     
     --step-arrow-item-title-size: var(--font-size-body-2, 14px);
-    
-    
-    
-    --step-arrow-item-title-wait-color: var(--color-text1-2, #f6f6f6);
     
     
     
@@ -10947,19 +10955,7 @@
     
     
     
-    --step-dot-item-tail-disabled-color: var(--color-line1-1, #E3E4E6);
-    
-    
-    
-    --step-dot-item-title-disabled-color: var(--color-text1-1, #fbfbfb);
-    
-    
-    
     --step-dot-item-node-wait-background: var(--color-white, #FFFFFF);
-    
-    
-    
-    --step-dot-item-node-wait-color: var(--color-text1-2, #f6f6f6);
     
     
     
@@ -10975,15 +10971,7 @@
     
     
     
-    --step-dot-item-node-disabled-border-color: var(--color-line1-2, #C0C6CC);
-    
-    
-    
     --step-dot-item-node-disabled-background: var(--color-white, #FFFFFF);
-    
-    
-    
-    --step-dot-item-node-disabled-color: var(--color-line1-1, #E3E4E6);
     
     
     
@@ -11012,6 +11000,18 @@
     
     
     --step-dot-vertical-item-tail-size: var(--line-1, 1px);
+    
+    
+    
+    --step-circle-item-node-process-size: var(--s-8, 32px);
+    
+    
+    
+    --step-circle-item-body-width: var(--s-35, 140px);
+    
+    
+    
+    --step-arrow-item-title-wait-color: var(--color-text1-6, #aaaaaa);
     
     
     /* ------------------------ menu ------------------------ */
@@ -11114,11 +11114,27 @@
     
     
     
+    --menu-divider-margin-ver: var(--s-4, 16px);
+    
+    
+    
+    --menu-divider-margin-hoz: var(--s-4, 16px);
+    
+    
+    
+    --menu-divider-color: var(--color-text1-4, #e5e5e5);
+    
+    
+    
     --menu-padding-hoz-padding-lr: var(--s-zero, 0px);
     
     
     
     --menu-padding-hoz-padding-tb: var(--s-2, 8px);
+    
+    
+    
+    --menu-item-border-radius: var(--corner-zero, 0px);
     
     
     
@@ -11159,18 +11175,6 @@
     
     
     --menu-unfold-icon-content: var(--icon-reset, var(--icon-reset));
-    
-    
-    
-    --menu-divider-margin-ver: var(--s-4, 16px);
-    
-    
-    
-    --menu-divider-margin-hoz: var(--s-4, 16px);
-    
-    
-    
-    --menu-divider-color: var(--color-text1-4, #e5e5e5);
     
     
     /* ------------------------ timeline ------------------------ */
@@ -12761,6 +12765,14 @@
     
     
     
+    --nav-ver-height: var(--s-9, 36px);
+    
+    
+    
+    --nav-ver-item-padding-lr: var(--s-6, 24px);
+    
+    
+    
     --nav-hoz-height: var(--s-11, 44px);
     
     
@@ -13162,14 +13174,6 @@
     
     
     --nav-line-group-text-style: var(--font-weight-2, normal);
-    
-    
-    
-    --nav-ver-height: var(--s-9, 36px);
-    
-    
-    
-    --nav-ver-item-padding-lr: var(--s-6, 24px);
     
     
     /* ------------------------ list ------------------------ */
